@@ -1,29 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "floracore",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "FloraCore",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Linkle",
+    "AndEditor7"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/ValleyCraft-Dev-Team",
+    "sources": "https://github.com/ValleyCraft-Dev-Team/flora-core"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/floracore/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.linkle.floracore.Main"
+    ],
+    "client": [
+      "net.linkle.floracore.client.Client"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "floracore.mixins.json"
   ],
 
   "depends": {
