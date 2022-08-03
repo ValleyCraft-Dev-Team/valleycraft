@@ -1,6 +1,9 @@
 package net.linkle.floracore;
 
 import net.fabricmc.api.ModInitializer;
+import net.linkle.floracore.init.Contents;
+import net.linkle.floracore.init.ModBlocks;
+import net.linkle.floracore.init.ModItems;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -12,11 +15,9 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
+		ModBlocks.initialize();
+		ModItems.initialize();
+		Contents.initialize();
 	}
 	
 	public static Identifier makeId(String id) {

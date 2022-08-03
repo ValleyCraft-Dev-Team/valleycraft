@@ -29,6 +29,14 @@
   "mixins": [
     "floracore.mixins.json"
   ],
+  
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/kfpmJ5PtnF"
+      }
+    }
+  },
 
   "depends": {
     "fabricloader": ">=0.14.6",
