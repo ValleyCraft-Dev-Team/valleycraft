@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "floracore:black_dahlia",
+    "floracore:black_tulip",
+    "floracore:fluffy_dandelion",
+    "floracore:honeycluster",
+    "floracore:lavender",
+    "floracore:light_blue_tulip",
+    "floracore:myrtles",
+    "floracore:orange_beauty",
+    "floracore:pink_lupine",
+    "floracore:purple_tulip",
+    "floracore:red_lupine",
+    "floracore:snowflower",
+    "floracore:yellow_lupine",
+    "floracore:yellow_tulip"
+  ]
+}

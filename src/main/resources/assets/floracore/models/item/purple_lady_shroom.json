@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "floracore:block/purple_lady_shroom"
+  }
+}

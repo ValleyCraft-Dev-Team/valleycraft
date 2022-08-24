@@ -3,6 +3,7 @@ package net.linkle.floracore;
 import net.fabricmc.api.ModInitializer;
 import net.linkle.floracore.init.Contents;
 import net.linkle.floracore.init.ModBlocks;
+import net.linkle.floracore.init.ModGroups;
 import net.linkle.floracore.init.ModItems;
 import net.minecraft.util.Identifier;
 
@@ -18,6 +19,7 @@ public class Main implements ModInitializer {
 		ModBlocks.initialize();
 		ModItems.initialize();
 		Contents.initialize();
+		ModGroups.initialize();
 	}
 	
 	public static Identifier makeId(String id) {

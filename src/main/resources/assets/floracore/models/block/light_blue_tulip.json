@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "floracore:block/light_blue_tulip"
+  }
+}

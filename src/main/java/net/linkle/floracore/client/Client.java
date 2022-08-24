@@ -9,6 +9,6 @@ public class Client implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        
+        RenderLayers.intialize();
     }
 }

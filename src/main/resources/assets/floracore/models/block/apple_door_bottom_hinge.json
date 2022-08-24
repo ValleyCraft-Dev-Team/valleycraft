@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_rh",
+  "textures": {
+    "top": "floracore:block/apple_door_top",
+    "bottom": "floracore:block/apple_door_bottom"
+  }
+}

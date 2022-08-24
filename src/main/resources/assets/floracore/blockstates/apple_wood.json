@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "floracore:block/apple_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "floracore:block/apple_wood"
+    },
+    "axis=z": {
+      "model": "floracore:block/apple_wood",
+      "x": 90
+    }
+  }
+}

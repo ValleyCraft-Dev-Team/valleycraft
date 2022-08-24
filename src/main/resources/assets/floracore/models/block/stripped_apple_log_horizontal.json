@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "floracore:block/apple_stripped_log_top",
+    "side": "floracore:block/apple_stripped_log_side"
+  }
+}

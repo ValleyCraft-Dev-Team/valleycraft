@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "floracore:block/apple_slab"
+    },
+    "type=double": {
+      "model": "floracore:block/apple_planks"
+    },
+    "type=top": {
+      "model": "floracore:block/apple_slab_top"
+    }
+  }
+}
