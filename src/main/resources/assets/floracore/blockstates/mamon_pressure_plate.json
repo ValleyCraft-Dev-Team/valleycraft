@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "floracore:block/mamon_pressure_plate"
+    },
+    "powered=true": {
+      "model": "floracore:block/mamon_pressure_plate_down"
+    }
+  }
+}

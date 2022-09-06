@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_planks"
+    "floracore:apple_planks",
+    "floracore:mamon_planks"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_slab"
+    "floracore:apple_slab",
+    "floracore:mamon_slab"
   ]
 }

@@ -21,6 +21,8 @@ class RenderLayers {
 
         // Example
         // put(Blocks.GLASS, cullout);
+        put(MAMON_DOOR, cullout);
+        put(MAMON_TRAPDOOR, cullout);
         put(BLACK_DAHLIA, cullout);
         put(BLACK_TULIP, cullout);
         put(FLOWERING_CACTUS, cullout);
@@ -68,7 +70,8 @@ class RenderLayers {
         put(LIVING_BUSH, cullout);
         put(STALAGMITE, cullout);
         put(STALAGTITE, cullout);
-
+        put(BIG_FERN, cullout);
+        put(WILD_MINERS_LETTUCE, cullout);
     }
 
     private static void put(Block block, RenderLayer layer) {

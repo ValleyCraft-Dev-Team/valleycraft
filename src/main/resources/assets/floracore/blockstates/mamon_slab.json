@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "floracore:block/mamon_slab"
+    },
+    "type=double": {
+      "model": "floracore:block/mamon_planks"
+    },
+    "type=top": {
+      "model": "floracore:block/mamon_slab_top"
+    }
+  }
+}

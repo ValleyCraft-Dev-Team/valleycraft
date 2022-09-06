@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_pressure_plate"
+    "floracore:apple_pressure_plate",
+    "floracore:mamon_pressure_plate"
   ]
 }

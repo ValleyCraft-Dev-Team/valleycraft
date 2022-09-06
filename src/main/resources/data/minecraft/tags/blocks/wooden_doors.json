@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-  	"floracore:apple_door"
+  	"floracore:apple_door",
+  	"floracore:mamon_door"
   ]
 }

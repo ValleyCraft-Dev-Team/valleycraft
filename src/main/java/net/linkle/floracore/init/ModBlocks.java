@@ -1,7 +1,19 @@
 package net.linkle.floracore.init;
 
-
 import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.DoorBlock;
+import net.minecraft.block.FenceBlock;
+import net.minecraft.block.FenceGateBlock;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.Material;
+import net.minecraft.block.PillarBlock;
+import net.minecraft.block.PressurePlateBlock;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
+import net.minecraft.block.TrapdoorBlock;
+import net.minecraft.block.WoodenButtonBlock;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
@@ -39,6 +51,20 @@ public class ModBlocks {
     public static final Block APPLE_FENCE_GATE = new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE));
     public static final Block APPLE_PRESSURE_PLATE = new PressurePlateBlock(ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE));
     
+    public static final Block MAMON_WOOD = new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD));
+    public static final Block MAMON_LOG = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
+    public static final Block STRIPPED_MAMON_WOOD = new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD));
+    public static final Block STRIPPED_MAMON_LOG = new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG));
+    public static final Block MAMON_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block MAMON_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR));
+    public static final Block MAMON_TRAPDOOR = new TrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR));
+    public static final Block MAMON_SLAB = new SlabBlock(Block.Settings.copy(Blocks.OAK_SLAB));
+    public static final Block MAMON_STAIRS = new StairsBlock(MAMON_PLANKS.getDefaultState(), Block.Settings.copy(Blocks.OAK_STAIRS));
+    public static final Block MAMON_BUTTON = new WoodenButtonBlock(Block.Settings.copy(Blocks.OAK_BUTTON));
+    public static final Block MAMON_FENCE = new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE));
+    public static final Block MAMON_FENCE_GATE = new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE));
+    public static final Block MAMON_PRESSURE_PLATE = new PressurePlateBlock(ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE));
+
     public static final Block BLACK_DAHLIA = new ModPlantBlock();
     public static final Block BLACK_TULIP = new ModPlantBlock();
     public static final Block FLOWERING_CACTUS = new ModPlantBlock().setGround(ModPlantBlock.SAND);
@@ -61,25 +87,25 @@ public class ModBlocks {
     public static final Block PURPLE_TULIP = new ModPlantBlock();
     public static final Block RED_LUPINE = new ModPlantBlock();
 	public static final Block ROOTED_WATCHER = new ModPlantBlock();
-
     public static final Block SHIVERCAP = new ModPlantBlock();
-	public static final Block SHORT_GRASS = new ModPlantBlock();
-	public static final Block SNOWFLOWER = new ModPlantBlock();
-	public static final Block SPROUT = new ModPlantBlock();
-	public static final Block THORNY_BUSH = new ModPlantBlock();
-	public static final Block WARDING_SHROOM = new ModPlantBlock();
-	public static final Block WEAPING_GHOST_WILLOW = new ModPlantBlock();
-	public static final Block WILD_BEET = new ModPlantBlock();
-	public static final Block WILD_CARROT = new ModPlantBlock();
-	public static final Block WILD_POTATO = new ModPlantBlock();
-	public static final Block WILD_WHEAT = new ModPlantBlock();
-	public static final Block YELLOW_LUPINE = new ModPlantBlock();
-	public static final Block YELLOW_TULIP = new ModPlantBlock();
+    public static final Block SHORT_GRASS = new ModPlantBlock();
+    public static final Block SNOWFLOWER = new ModPlantBlock();
+    public static final Block SPROUT = new ModPlantBlock();
+    public static final Block THORNY_BUSH = new ModPlantBlock();
+    public static final Block WARDING_SHROOM = new ModPlantBlock();
+    public static final Block WEAPING_GHOST_WILLOW = new ModPlantBlock();
+    public static final Block WILD_BEET = new ModPlantBlock();
+    public static final Block WILD_CARROT = new ModPlantBlock();
+    public static final Block WILD_MINERS_LETTUCE = new ModPlantBlock();
+    public static final Block WILD_POTATO = new ModPlantBlock();
+    public static final Block WILD_WHEAT = new ModPlantBlock();
+    public static final Block YELLOW_LUPINE = new ModPlantBlock();
+    public static final Block YELLOW_TULIP = new ModPlantBlock();
+
     public static final Block GOOP_CAP = new ModPlantBlock();
     public static final Block ORANGE_POPPY = new ModPlantBlock();
     public static final Block YELLOW_POPPY = new ModPlantBlock();
     public static final Block WHITE_POPPY = new ModPlantBlock();
-
     public static final Block CAVE_ROOTS = new ModPlantBlock();
     public static final Block DESERT_SHRUB = new ModPlantBlock();
     public static final Block BUSH = new ModPlantBlock();
@@ -88,6 +114,8 @@ public class ModBlocks {
     public static final Block STALAGMITE = new ModPlantBlock();
     public static final Block STALAGTITE = new ModPlantBlock();
     public static final Block WILD_PUFF_BALL = new ModPlantBlock();
+    
+    public static final Block BIG_FERN = new ModPlantBlock();
 
     public static void initialize() {
         Reg.registerWithItem("dry_dirt", DRY_DIRT, itemSettings());
@@ -118,6 +146,20 @@ public class ModBlocks {
         Reg.registerWithItem("apple_fence_gate", APPLE_FENCE_GATE, itemSettings());
         Reg.registerWithItem("apple_pressure_plate", APPLE_PRESSURE_PLATE, itemSettings());
         
+        Reg.registerWithItem("mamon_wood", MAMON_WOOD, itemSettings());
+        Reg.registerWithItem("mamon_log", MAMON_LOG, itemSettings());
+        Reg.registerWithItem("stripped_mamon_wood", STRIPPED_MAMON_WOOD, itemSettings());
+        Reg.registerWithItem("stripped_mamon_log", STRIPPED_MAMON_LOG, itemSettings());
+        Reg.registerWithItem("mamon_planks", MAMON_PLANKS, itemSettings());
+        Reg.registerWithItem("mamon_door", MAMON_DOOR, itemSettings());
+        Reg.registerWithItem("mamon_trapdoor", MAMON_TRAPDOOR, itemSettings());
+        Reg.registerWithItem("mamon_slab", MAMON_SLAB, itemSettings());
+        Reg.registerWithItem("mamon_stairs", MAMON_STAIRS, itemSettings());
+        Reg.registerWithItem("mamon_button", MAMON_BUTTON, itemSettings());
+        Reg.registerWithItem("mamon_fence", MAMON_FENCE, itemSettings());
+        Reg.registerWithItem("mamon_fence_gate", MAMON_FENCE_GATE, itemSettings());
+        Reg.registerWithItem("mamon_pressure_plate", MAMON_PRESSURE_PLATE, itemSettings());
+
         Reg.registerWithItem("black_dahlia", BLACK_DAHLIA, itemSettings());
         Reg.registerWithItem("flowering_cactus", FLOWERING_CACTUS, itemSettings());
         Reg.registerWithItem("fluffy_dandelion", FLUFFY_DANDELION, itemSettings());
@@ -160,6 +202,7 @@ public class ModBlocks {
         Reg.registerWithItem("weaping_ghost_willow", WEAPING_GHOST_WILLOW, itemSettings());
         Reg.registerWithItem("wild_beet", WILD_BEET, itemSettings());
         Reg.registerWithItem("wild_carrot", WILD_CARROT, itemSettings());
+        Reg.registerWithItem("wild_miners_lettuce", WILD_MINERS_LETTUCE, itemSettings());
         Reg.registerWithItem("wild_potato", WILD_POTATO, itemSettings());
         Reg.registerWithItem("wild_wheat", WILD_WHEAT, itemSettings());
 
@@ -171,13 +214,14 @@ public class ModBlocks {
         Reg.registerWithItem("lush_bush", LIVING_BUSH, itemSettings());
         Reg.registerWithItem("stalagmite", STALAGMITE, itemSettings());
         Reg.registerWithItem("stalagtite", STALAGTITE, itemSettings());
-
+        
+        Reg.registerWithItem("big_fern", BIG_FERN, itemSettings());
     }
-    
+
     private static Item.Settings itemSettings() {
         return new Item.Settings().group(ModGroups.FLORA_GROUP);
     }
-    
+
     private static PillarBlock createLogBlock(MapColor topMapColor, MapColor sideMapColor) {
         return new PillarBlock(Block.Settings.of(Material.WOOD, state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor).strength(2.0f).sounds(BlockSoundGroup.WOOD));
     }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_fence_gate"
+    "floracore:apple_fence_gate",
+    "floracore:mamon_fence_gate"
   ]
 }

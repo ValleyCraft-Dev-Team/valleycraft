@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "top": "floracore:block/mamon_door_top",
+    "bottom": "floracore:block/mamon_door_bottom"
+  }
+}

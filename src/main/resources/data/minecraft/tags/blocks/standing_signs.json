@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_sign"
+    "floracore:apple_sign",
+    "floracore:mamon_sign"
   ]
 }
