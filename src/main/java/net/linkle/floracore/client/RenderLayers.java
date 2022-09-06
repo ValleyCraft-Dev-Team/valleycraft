@@ -36,12 +36,10 @@ class RenderLayers {
         put(LIGHT_BLUE_TULIP, cullout);
         put(MINERS_LETTUCE, cullout);
         put(MOSS_SPROUTLET, cullout);
-        put(MYRTLES, cullout);
         put(ORANGE_BEAUTY, cullout);
         put(ORANGE_FERN, cullout);
         put(PINK_LUPINE, cullout);
         put(POISON_BLOSSOM, cullout);
-        put(PURPLE_LADY_SHROOM, cullout);
         put(PURPLE_TULIP, cullout);
         put(RED_LUPINE, cullout);
         put(ROOTED_WATCHER, cullout);
@@ -49,7 +47,6 @@ class RenderLayers {
         put(SHORT_GRASS, cullout);
         put(SNOWFLOWER, cullout);
         put(SPROUT, cullout);
-        put(SWEET_SHROOM, cullout);
         put(THORNY_BUSH, cullout);
         put(WARDING_SHROOM, cullout);
         put(WEAPING_GHOST_WILLOW, cullout);
@@ -59,6 +56,11 @@ class RenderLayers {
         put(WILD_WHEAT, cullout);
         put(YELLOW_LUPINE, cullout);
         put(YELLOW_TULIP, cullout);
+        put(YELLOW_POPPY, cullout);
+        put(ORANGE_POPPY, cullout);
+        put(WHITE_POPPY, cullout);
+        put(GOOP_CAP, cullout);
+
     }
 
     private static void put(Block block, RenderLayer layer) {

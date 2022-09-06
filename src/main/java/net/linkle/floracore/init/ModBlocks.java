@@ -52,12 +52,10 @@ public class ModBlocks {
     public static final Block LIGHT_BLUE_TULIP = new ModPlantBlock();
     public static final Block MINERS_LETTUCE = new ModPlantBlock();
     public static final Block MOSS_SPROUTLET = new ModPlantBlock();
-    public static final Block MYRTLES = new ModPlantBlock();
     public static final Block ORANGE_BEAUTY = new ModPlantBlock();
     public static final Block ORANGE_FERN = new ModPlantBlock();
     public static final Block PINK_LUPINE = new ModPlantBlock();
     public static final Block POISON_BLOSSOM = new ModPlantBlock();
-    public static final Block PURPLE_LADY_SHROOM = new ModPlantBlock();
     public static final Block PURPLE_TULIP = new ModPlantBlock();
     public static final Block RED_LUPINE = new ModPlantBlock();
 	public static final Block ROOTED_WATCHER = new ModPlantBlock();
@@ -65,7 +63,6 @@ public class ModBlocks {
 	public static final Block SHORT_GRASS = new ModPlantBlock();
 	public static final Block SNOWFLOWER = new ModPlantBlock();
 	public static final Block SPROUT = new ModPlantBlock();
-	public static final Block SWEET_SHROOM = new ModPlantBlock();
 	public static final Block THORNY_BUSH = new ModPlantBlock();
 	public static final Block WARDING_SHROOM = new ModPlantBlock();
 	public static final Block WEAPING_GHOST_WILLOW = new ModPlantBlock();
@@ -107,11 +104,9 @@ public class ModBlocks {
         Reg.registerWithItem("leatherleaf_fern", LEATHERLEAF_FERN, itemSettings());
         Reg.registerWithItem("miners_lettuce", MINERS_LETTUCE, itemSettings());
         Reg.registerWithItem("moss_sproutlet", MOSS_SPROUTLET, itemSettings());
-        //Reg.registerWithItem("myrtles", MYRTLES, itemSettings());
         Reg.registerWithItem("orange_beauty", ORANGE_BEAUTY, itemSettings());
         Reg.registerWithItem("orange_fern", ORANGE_FERN, itemSettings());
         Reg.registerWithItem("poison_blossom", POISON_BLOSSOM, itemSettings());
-        //Reg.registerWithItem("purple_lady_shroom", PURPLE_LADY_SHROOM, itemSettings());
         Reg.registerWithItem("purple_tulip", PURPLE_TULIP, itemSettings());
         Reg.registerWithItem("yellow_tulip", YELLOW_TULIP, itemSettings());
         Reg.registerWithItem("light_blue_tulip", LIGHT_BLUE_TULIP, itemSettings());
@@ -137,7 +132,6 @@ public class ModBlocks {
         Reg.registerWithItem("short_grass", SHORT_GRASS, itemSettings());
         Reg.registerWithItem("snowflower", SNOWFLOWER, itemSettings());
         Reg.registerWithItem("sprout", SPROUT, itemSettings());
-        //Reg.registerWithItem("sweet_shroom", SWEET_SHROOM, itemSettings());
         Reg.registerWithItem("thorny_bush", THORNY_BUSH, itemSettings());
         Reg.registerWithItem("weaping_ghost_willow", WEAPING_GHOST_WILLOW, itemSettings());
         Reg.registerWithItem("wild_beet", WILD_BEET, itemSettings());
