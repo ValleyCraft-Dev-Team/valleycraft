@@ -78,6 +78,8 @@ public class ModBlocks {
     public static final Block ORANGE_POPPY = new ModPlantBlock();
     public static final Block YELLOW_POPPY = new ModPlantBlock();
     public static final Block WHITE_POPPY = new ModPlantBlock();
+    
+    public static final Block BIG_FERN = new ModPlantBlock();
 
     public static void initialize() {
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
@@ -138,6 +140,8 @@ public class ModBlocks {
         Reg.registerWithItem("wild_carrot", WILD_CARROT, itemSettings());
         Reg.registerWithItem("wild_potato", WILD_POTATO, itemSettings());
         Reg.registerWithItem("wild_wheat", WILD_WHEAT, itemSettings());
+        
+        Reg.registerWithItem("big_fern", BIG_FERN, itemSettings());
     }
     
     private static Item.Settings itemSettings() {

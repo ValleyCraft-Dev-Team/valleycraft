@@ -60,7 +60,7 @@ class RenderLayers {
         put(ORANGE_POPPY, cullout);
         put(WHITE_POPPY, cullout);
         put(GOOP_CAP, cullout);
-
+        put(BIG_FERN, cullout);
     }
 
     private static void put(Block block, RenderLayer layer) {
