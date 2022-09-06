@@ -60,6 +60,14 @@ class RenderLayers {
         put(ORANGE_POPPY, cullout);
         put(WHITE_POPPY, cullout);
         put(GOOP_CAP, cullout);
+        put(WILD_PUFF_BALL, cullout);
+        put(CAVE_ROOTS, cullout);
+        put(BONE_WEED, cullout);
+        put(DESERT_SHRUB, cullout);
+        put(BUSH, cullout);
+        put(LIVING_BUSH, cullout);
+        put(STALAGMITE, cullout);
+        put(STALAGTITE, cullout);
 
     }
 

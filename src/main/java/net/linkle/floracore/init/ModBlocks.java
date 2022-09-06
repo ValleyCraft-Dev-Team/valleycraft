@@ -1,19 +1,7 @@
 package net.linkle.floracore.init;
 
 
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.DoorBlock;
-import net.minecraft.block.FenceBlock;
-import net.minecraft.block.FenceGateBlock;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.Material;
-import net.minecraft.block.PillarBlock;
-import net.minecraft.block.PressurePlateBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.TrapdoorBlock;
-import net.minecraft.block.WoodenButtonBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
@@ -22,7 +10,21 @@ import net.linkle.floracore.block.ModPlantBlock;
 import net.linkle.floracore.util.Reg;
 
 public class ModBlocks {
-    
+
+    public static final Block DRY_DIRT = new Block(Block.Settings.copy(Blocks.COARSE_DIRT));
+    public static final Block SANDY_GRAVEL = new FallingBlock(Block.Settings.copy(Blocks.GRAVEL));
+    public static final Block ARID_MOSSY_STONE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block MOSSY_STONE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block CARMINE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block DIABASE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block SERPENTINITE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block GRIMESTONE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block LIMESTONE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block SHIVERSTONE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block VERDANTINE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block VOLCANIC_STONE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block VOLCANIC_ASH = new FallingBlock(Block.Settings.copy(Blocks.SAND));
+
     public static final Block APPLE_WOOD = new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD));
     public static final Block APPLE_LOG = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
     public static final Block STRIPPED_APPLE_WOOD = new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD));
@@ -59,7 +61,8 @@ public class ModBlocks {
     public static final Block PURPLE_TULIP = new ModPlantBlock();
     public static final Block RED_LUPINE = new ModPlantBlock();
 	public static final Block ROOTED_WATCHER = new ModPlantBlock();
-	public static final Block SHIVERCAP = new ModPlantBlock();
+
+    public static final Block SHIVERCAP = new ModPlantBlock();
 	public static final Block SHORT_GRASS = new ModPlantBlock();
 	public static final Block SNOWFLOWER = new ModPlantBlock();
 	public static final Block SPROUT = new ModPlantBlock();
@@ -72,14 +75,35 @@ public class ModBlocks {
 	public static final Block WILD_WHEAT = new ModPlantBlock();
 	public static final Block YELLOW_LUPINE = new ModPlantBlock();
 	public static final Block YELLOW_TULIP = new ModPlantBlock();
-
     public static final Block GOOP_CAP = new ModPlantBlock();
-
     public static final Block ORANGE_POPPY = new ModPlantBlock();
     public static final Block YELLOW_POPPY = new ModPlantBlock();
     public static final Block WHITE_POPPY = new ModPlantBlock();
 
+    public static final Block CAVE_ROOTS = new ModPlantBlock();
+    public static final Block DESERT_SHRUB = new ModPlantBlock();
+    public static final Block BUSH = new ModPlantBlock();
+    public static final Block BONE_WEED = new ModPlantBlock();
+    public static final Block LIVING_BUSH = new ModPlantBlock();
+    public static final Block STALAGMITE = new ModPlantBlock();
+    public static final Block STALAGTITE = new ModPlantBlock();
+    public static final Block WILD_PUFF_BALL = new ModPlantBlock();
+
     public static void initialize() {
+        Reg.registerWithItem("dry_dirt", DRY_DIRT, itemSettings());
+        Reg.registerWithItem("sandy_gravel", SANDY_GRAVEL, itemSettings());
+        Reg.registerWithItem("arid_mossy_stone", ARID_MOSSY_STONE, itemSettings());
+        Reg.registerWithItem("mossy_stone", MOSSY_STONE, itemSettings());
+        Reg.registerWithItem("carmine", CARMINE, itemSettings());
+        Reg.registerWithItem("diabase", DIABASE, itemSettings());
+        Reg.registerWithItem("serpentinite", SERPENTINITE, itemSettings());
+        Reg.registerWithItem("grimestone", GRIMESTONE, itemSettings());
+        Reg.registerWithItem("limestone", LIMESTONE, itemSettings());
+        Reg.registerWithItem("shiverstone", SHIVERSTONE, itemSettings());
+        Reg.registerWithItem("verdantine", VERDANTINE, itemSettings());
+        Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
+        Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
+
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
         Reg.registerWithItem("apple_log", APPLE_LOG, itemSettings());
         Reg.registerWithItem("stripped_apple_wood", STRIPPED_APPLE_WOOD, itemSettings());
@@ -138,6 +162,16 @@ public class ModBlocks {
         Reg.registerWithItem("wild_carrot", WILD_CARROT, itemSettings());
         Reg.registerWithItem("wild_potato", WILD_POTATO, itemSettings());
         Reg.registerWithItem("wild_wheat", WILD_WHEAT, itemSettings());
+
+        Reg.registerWithItem("wild_puff_ball", WILD_PUFF_BALL, itemSettings());
+        Reg.registerWithItem("cave_roots", CAVE_ROOTS, itemSettings());
+        Reg.registerWithItem("bone_weed", BONE_WEED, itemSettings());
+        Reg.registerWithItem("desert_shrub", DESERT_SHRUB, itemSettings());
+        Reg.registerWithItem("bush", BUSH, itemSettings());
+        Reg.registerWithItem("lush_bush", LIVING_BUSH, itemSettings());
+        Reg.registerWithItem("stalagmite", STALAGMITE, itemSettings());
+        Reg.registerWithItem("stalagtite", STALAGTITE, itemSettings());
+
     }
     
     private static Item.Settings itemSettings() {
