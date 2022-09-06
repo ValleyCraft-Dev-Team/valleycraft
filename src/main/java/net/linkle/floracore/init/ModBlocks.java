@@ -1,7 +1,6 @@
 package net.linkle.floracore.init;
 
-import net.linkle.floracore.block.ModPlantBlock;
-import net.linkle.floracore.util.Reg;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.DoorBlock;
@@ -19,6 +18,8 @@ import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Direction;
+import net.linkle.floracore.block.ModPlantBlock;
+import net.linkle.floracore.util.Reg;
 
 public class ModBlocks {
     
@@ -74,7 +75,13 @@ public class ModBlocks {
 	public static final Block WILD_WHEAT = new ModPlantBlock();
 	public static final Block YELLOW_LUPINE = new ModPlantBlock();
 	public static final Block YELLOW_TULIP = new ModPlantBlock();
-    
+
+    public static final Block GOOP_CAP = new ModPlantBlock();
+
+    public static final Block ORANGE_POPPY = new ModPlantBlock();
+    public static final Block YELLOW_POPPY = new ModPlantBlock();
+    public static final Block WHITE_POPPY = new ModPlantBlock();
+
     public static void initialize() {
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
         Reg.registerWithItem("apple_log", APPLE_LOG, itemSettings());
@@ -91,43 +98,47 @@ public class ModBlocks {
         Reg.registerWithItem("apple_pressure_plate", APPLE_PRESSURE_PLATE, itemSettings());
         
         Reg.registerWithItem("black_dahlia", BLACK_DAHLIA, itemSettings());
-        Reg.registerWithItem("black_tulip", BLACK_TULIP, itemSettings());
         Reg.registerWithItem("flowering_cactus", FLOWERING_CACTUS, itemSettings());
         Reg.registerWithItem("fluffy_dandelion", FLUFFY_DANDELION, itemSettings());
         Reg.registerWithItem("foxtail_fern", FOXTAIL_FERN, itemSettings());
-        Reg.registerWithItem("gilded_cap", GILDED_CAP, itemSettings());
-        Reg.registerWithItem("glow_cap", GLOW_CAP, itemSettings());
+
         Reg.registerWithItem("honeycluster", HONEYCLUSTER, itemSettings());
-        Reg.registerWithItem("ironshroom", IRONSHROOM, itemSettings());
-        Reg.registerWithItem("jungle_cap", JUNGLE_CAP, itemSettings());
         Reg.registerWithItem("lavender", LAVENDER, itemSettings());
         Reg.registerWithItem("leatherleaf_fern", LEATHERLEAF_FERN, itemSettings());
-        Reg.registerWithItem("light_blue_tulip", LIGHT_BLUE_TULIP, itemSettings());
         Reg.registerWithItem("miners_lettuce", MINERS_LETTUCE, itemSettings());
         Reg.registerWithItem("moss_sproutlet", MOSS_SPROUTLET, itemSettings());
-        Reg.registerWithItem("myrtles", MYRTLES, itemSettings());
+        //Reg.registerWithItem("myrtles", MYRTLES, itemSettings());
         Reg.registerWithItem("orange_beauty", ORANGE_BEAUTY, itemSettings());
         Reg.registerWithItem("orange_fern", ORANGE_FERN, itemSettings());
-        Reg.registerWithItem("pink_lupine", PINK_LUPINE, itemSettings());
         Reg.registerWithItem("poison_blossom", POISON_BLOSSOM, itemSettings());
-        Reg.registerWithItem("purple_lady_shroom", PURPLE_LADY_SHROOM, itemSettings());
+        //Reg.registerWithItem("purple_lady_shroom", PURPLE_LADY_SHROOM, itemSettings());
         Reg.registerWithItem("purple_tulip", PURPLE_TULIP, itemSettings());
+        Reg.registerWithItem("yellow_tulip", YELLOW_TULIP, itemSettings());
+        Reg.registerWithItem("light_blue_tulip", LIGHT_BLUE_TULIP, itemSettings());
+        Reg.registerWithItem("black_tulip", BLACK_TULIP, itemSettings());
+
         Reg.registerWithItem("red_lupine", RED_LUPINE, itemSettings());
-        Reg.registerWithItem("rooted_watcher", ROOTED_WATCHER, itemSettings());
+        Reg.registerWithItem("yellow_lupine", YELLOW_LUPINE, itemSettings());
+        Reg.registerWithItem("pink_lupine", PINK_LUPINE, itemSettings());
+
         Reg.registerWithItem("shivercap", SHIVERCAP, itemSettings());
+        Reg.registerWithItem("warding_shroom", WARDING_SHROOM, itemSettings());
+        Reg.registerWithItem("glow_cap", GLOW_CAP, itemSettings());
+        Reg.registerWithItem("jungle_cap", JUNGLE_CAP, itemSettings());
+        Reg.registerWithItem("gilded_cap", GILDED_CAP, itemSettings());
+        Reg.registerWithItem("ironshroom", IRONSHROOM, itemSettings());
+        Reg.registerWithItem("rooted_watcher", ROOTED_WATCHER, itemSettings());
+
         Reg.registerWithItem("short_grass", SHORT_GRASS, itemSettings());
         Reg.registerWithItem("snowflower", SNOWFLOWER, itemSettings());
         Reg.registerWithItem("sprout", SPROUT, itemSettings());
-        Reg.registerWithItem("sweet_shroom", SWEET_SHROOM, itemSettings());
+        //Reg.registerWithItem("sweet_shroom", SWEET_SHROOM, itemSettings());
         Reg.registerWithItem("thorny_bush", THORNY_BUSH, itemSettings());
-        Reg.registerWithItem("warding_shroom", WARDING_SHROOM, itemSettings());
         Reg.registerWithItem("weaping_ghost_willow", WEAPING_GHOST_WILLOW, itemSettings());
         Reg.registerWithItem("wild_beet", WILD_BEET, itemSettings());
         Reg.registerWithItem("wild_carrot", WILD_CARROT, itemSettings());
         Reg.registerWithItem("wild_potato", WILD_POTATO, itemSettings());
         Reg.registerWithItem("wild_wheat", WILD_WHEAT, itemSettings());
-        Reg.registerWithItem("yellow_lupine", YELLOW_LUPINE, itemSettings());
-        Reg.registerWithItem("yellow_tulip", YELLOW_TULIP, itemSettings());
     }
     
     private static Item.Settings itemSettings() {
