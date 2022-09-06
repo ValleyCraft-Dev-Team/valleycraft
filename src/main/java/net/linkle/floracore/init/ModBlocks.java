@@ -121,8 +121,13 @@ public class ModBlocks {
         Reg.registerWithItem("yellow_lupine", YELLOW_LUPINE, itemSettings());
         Reg.registerWithItem("pink_lupine", PINK_LUPINE, itemSettings());
 
+        Reg.registerWithItem("orange_poppy", ORANGE_POPPY, itemSettings());
+        Reg.registerWithItem("yellow_poppy", YELLOW_POPPY, itemSettings());
+        Reg.registerWithItem("white_poppy", WHITE_POPPY, itemSettings());
+
         Reg.registerWithItem("shivercap", SHIVERCAP, itemSettings());
         Reg.registerWithItem("warding_shroom", WARDING_SHROOM, itemSettings());
+        Reg.registerWithItem("goop_cap", GOOP_CAP, itemSettings());
         Reg.registerWithItem("glow_cap", GLOW_CAP, itemSettings());
         Reg.registerWithItem("jungle_cap", JUNGLE_CAP, itemSettings());
         Reg.registerWithItem("gilded_cap", GILDED_CAP, itemSettings());
