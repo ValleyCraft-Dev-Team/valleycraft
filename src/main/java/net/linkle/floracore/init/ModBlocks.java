@@ -18,7 +18,10 @@ import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Direction;
+import net.linkle.floracore.block.GloomBerryBodyBlock;
+import net.linkle.floracore.block.GloomBerryHeadBlock;
 import net.linkle.floracore.block.ModPlantBlock;
+import net.linkle.floracore.util.BlockPres;
 import net.linkle.floracore.util.Reg;
 
 public class ModBlocks {
@@ -28,7 +31,10 @@ public class ModBlocks {
     public static final Block ARID_MOSSY_STONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block MOSSY_STONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block CARMINE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block CARMINE_COBBLESTONE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block CARMINE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block DIABASE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block DIABASE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block SERPENTINITE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block GRIMESTONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block LIMESTONE = new Block(Block.Settings.copy(Blocks.STONE));
@@ -66,9 +72,10 @@ public class ModBlocks {
     public static final Block MAMON_FENCE_GATE = new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE));
     public static final Block MAMON_PRESSURE_PLATE = new PressurePlateBlock(ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE));
 
+    public static final Block ARGENTSHROOM = new ModPlantBlock();
     public static final Block BLACK_DAHLIA = new ModPlantBlock();
     public static final Block BLACK_TULIP = new ModPlantBlock();
-    public static final Block FLOWERING_CACTUS = new ModPlantBlock().setGround(ModPlantBlock.SAND);
+    public static final Block FLOWERING_CACTUS = new ModPlantBlock().setGround(BlockPres.SAND);
     public static final Block FLUFFY_DANDELION = new ModPlantBlock();
     public static final Block FOXTAIL_FERN = new ModPlantBlock();
     public static final Block GILDED_CAP = new ModPlantBlock();
@@ -117,6 +124,9 @@ public class ModBlocks {
     public static final Block WILD_PUFF_BALL = new ModPlantBlock();
     
     public static final Block BIG_FERN = new ModPlantBlock();
+    
+    public static final Block GLOOM_BERRY = new GloomBerryHeadBlock();
+    public static final Block GLOOM_BERRY_PLANT = new GloomBerryBodyBlock();
 
     public static void initialize() {
         Reg.registerWithItem("dry_dirt", DRY_DIRT, itemSettings());
@@ -124,7 +134,10 @@ public class ModBlocks {
         Reg.registerWithItem("arid_mossy_stone", ARID_MOSSY_STONE, itemSettings());
         Reg.registerWithItem("mossy_stone", MOSSY_STONE, itemSettings());
         Reg.registerWithItem("carmine", CARMINE, itemSettings());
+        Reg.registerWithItem("carmine_cobblestone", CARMINE_COBBLESTONE, itemSettings());
+        Reg.registerWithItem("carmine_smooth", CARMINE_SMOOTH, itemSettings());
         Reg.registerWithItem("diabase", DIABASE, itemSettings());
+        Reg.registerWithItem("diabase_smooth", DIABASE_SMOOTH, itemSettings());
         Reg.registerWithItem("serpentinite", SERPENTINITE, itemSettings());
         Reg.registerWithItem("grimestone", GRIMESTONE, itemSettings());
         Reg.registerWithItem("limestone", LIMESTONE, itemSettings());
@@ -162,6 +175,7 @@ public class ModBlocks {
         Reg.registerWithItem("mamon_fence_gate", MAMON_FENCE_GATE, itemSettings());
         Reg.registerWithItem("mamon_pressure_plate", MAMON_PRESSURE_PLATE, itemSettings());
 
+        Reg.registerWithItem("argentshroom", ARGENTSHROOM, itemSettings());
         Reg.registerWithItem("black_dahlia", BLACK_DAHLIA, itemSettings());
         Reg.registerWithItem("flowering_cactus", FLOWERING_CACTUS, itemSettings());
         Reg.registerWithItem("fluffy_dandelion", FLUFFY_DANDELION, itemSettings());
@@ -218,6 +232,9 @@ public class ModBlocks {
         Reg.registerWithItem("stalagtite", STALAGTITE, itemSettings());
         
         Reg.registerWithItem("big_fern", BIG_FERN, itemSettings());
+        
+        Reg.register("gloom_berry", GLOOM_BERRY);
+        Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);
     }
 
     private static Item.Settings itemSettings() {

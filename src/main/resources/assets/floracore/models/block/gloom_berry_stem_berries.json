@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "floracore:block/gloom_berry_stem_berries"
+  }
+}

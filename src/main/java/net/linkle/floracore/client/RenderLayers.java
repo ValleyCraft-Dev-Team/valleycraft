@@ -72,6 +72,8 @@ class RenderLayers {
         put(STALAGTITE, cullout);
         put(BIG_FERN, cullout);
         put(WILD_MINERS_LETTUCE, cullout);
+        put(GLOOM_BERRY, cullout);
+        put(GLOOM_BERRY_PLANT, cullout);
     }
 
     private static void put(Block block, RenderLayer layer) {
