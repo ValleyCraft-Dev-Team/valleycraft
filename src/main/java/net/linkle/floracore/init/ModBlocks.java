@@ -36,6 +36,7 @@ public class ModBlocks {
     public static final Block VERDANTINE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VOLCANIC_STONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VOLCANIC_ASH = new FallingBlock(Block.Settings.copy(Blocks.SAND));
+    public static final Block PUMICE = new Block(Block.Settings.copy(Blocks.STONE));
 
     public static final Block APPLE_WOOD = new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD));
     public static final Block APPLE_LOG = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
@@ -131,6 +132,7 @@ public class ModBlocks {
         Reg.registerWithItem("verdantine", VERDANTINE, itemSettings());
         Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
         Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
+        Reg.registerWithItem("pumice", PUMICE, itemSettings());
 
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
         Reg.registerWithItem("apple_log", APPLE_LOG, itemSettings());
