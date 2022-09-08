@@ -1,0 +1,6 @@
+{
+  "parent": "floracore:block/template_lilypad",
+  "textures": {
+    "texture": "floracore:block/white_flowering_lilypad"
+  }
+}

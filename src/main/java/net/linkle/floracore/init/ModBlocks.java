@@ -4,13 +4,12 @@ import net.minecraft.block.*;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.Item;
+import net.minecraft.item.LilyPadItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.linkle.floracore.block.GhostPumpkinBlock;
 import net.linkle.floracore.block.GloomBerryBodyBlock;
 import net.linkle.floracore.block.GloomBerryHeadBlock;
@@ -123,6 +122,7 @@ public class ModBlocks {
     public static final Block WILD_PUFF_BALL = new ModPlantBlock();
     
     public static final Block BIG_FERN = new ModPlantBlock();
+    public static final Block FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
     
     public static final Block GLOOM_BERRY = new GloomBerryHeadBlock();
     public static final Block GLOOM_BERRY_PLANT = new GloomBerryBodyBlock();
@@ -235,6 +235,8 @@ public class ModBlocks {
         Reg.registerWithItem("stalagtite", STALAGTITE, itemSettings());
         
         Reg.registerWithItem("big_fern", BIG_FERN, itemSettings());
+        Reg.register("flowering_lilypad", FLOWERING_LILYPAD);
+        Reg.register("flowering_lilypad", new LilyPadItem(FLOWERING_LILYPAD, itemSettings()));
         
         Reg.register("gloom_berry", GLOOM_BERRY);
         Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);
