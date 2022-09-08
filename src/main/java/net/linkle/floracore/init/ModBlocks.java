@@ -1,25 +1,20 @@
 package net.linkle.floracore.init;
 
 import net.minecraft.block.*;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.DoorBlock;
-import net.minecraft.block.FenceBlock;
-import net.minecraft.block.FenceGateBlock;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.Material;
-import net.minecraft.block.PillarBlock;
-import net.minecraft.block.PressurePlateBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.TrapdoorBlock;
-import net.minecraft.block.WoodenButtonBlock;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.world.BlockView;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.linkle.floracore.block.GhostPumpkinBlock;
 import net.linkle.floracore.block.GloomBerryBodyBlock;
 import net.linkle.floracore.block.GloomBerryHeadBlock;
+import net.linkle.floracore.block.ModCarvedPumpkinBlock;
 import net.linkle.floracore.block.ModPlantBlock;
 import net.linkle.floracore.util.BlockPres;
 import net.linkle.floracore.util.Reg;
@@ -71,6 +66,10 @@ public class ModBlocks {
     public static final Block MAMON_FENCE = new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE));
     public static final Block MAMON_FENCE_GATE = new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE));
     public static final Block MAMON_PRESSURE_PLATE = new PressurePlateBlock(ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE));
+    
+    public static final Block GHOST_PUMPKIN = new GhostPumpkinBlock();
+    public static final Block GHOST_PUMPKIN_CARVED = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always));
+    public static final Block GHOST_JACK_O_LANTERN = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().luminance(15).allowsSpawning(ModBlocks::always));
 
     public static final Block ARGENTSHROOM = new ModPlantBlock();
     public static final Block BLACK_DAHLIA = new ModPlantBlock();
@@ -174,6 +173,10 @@ public class ModBlocks {
         Reg.registerWithItem("mamon_fence", MAMON_FENCE, itemSettings());
         Reg.registerWithItem("mamon_fence_gate", MAMON_FENCE_GATE, itemSettings());
         Reg.registerWithItem("mamon_pressure_plate", MAMON_PRESSURE_PLATE, itemSettings());
+        
+        Reg.registerWithItem("ghost_pumpkin", GHOST_PUMPKIN, itemSettings());
+        Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i->EquipmentSlot.HEAD));
+        Reg.registerWithItem("ghost_jack_o_lantern", GHOST_JACK_O_LANTERN, itemSettings());
 
         Reg.registerWithItem("argentshroom", ARGENTSHROOM, itemSettings());
         Reg.registerWithItem("black_dahlia", BLACK_DAHLIA, itemSettings());
@@ -237,8 +240,12 @@ public class ModBlocks {
         Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);
     }
 
-    private static Item.Settings itemSettings() {
-        return new Item.Settings().group(ModGroups.FLORA_GROUP);
+    private static FabricItemSettings itemSettings() {
+        return new FabricItemSettings().group(ModGroups.FLORA_GROUP);
+    }
+    
+    private static Boolean always(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
+        return true;
     }
 
     private static PillarBlock createLogBlock(MapColor topMapColor, MapColor sideMapColor) {

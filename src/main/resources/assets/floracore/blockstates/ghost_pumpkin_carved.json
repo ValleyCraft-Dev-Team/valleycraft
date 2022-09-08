@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "floracore:block/ghost_pumpkin_carved",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "floracore:block/ghost_pumpkin_carved"
+    },
+    "facing=south": {
+      "model": "floracore:block/ghost_pumpkin_carved",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "floracore:block/ghost_pumpkin_carved",
+      "y": 270
+    }
+  }
+}

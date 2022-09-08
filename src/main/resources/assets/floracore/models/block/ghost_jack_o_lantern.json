@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "floracore:block/ghost_pumpkin_top",
+    "front": "floracore:block/ghost_jack_o_lantern",
+    "side": "floracore:block/ghost_pumpkin_side"
+  }
+}
