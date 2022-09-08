@@ -38,7 +38,7 @@ public class ModBlocks {
     public static final Block VOLCANIC_ASH = new FallingBlock(Block.Settings.copy(Blocks.SAND));
     public static final Block PUMICE = new Block(Block.Settings.copy(Blocks.STONE));
 
-    public static final Block BEE_NEST_WALL = new Block(Block.Settings.copy(Blocks.OAK_LEAVES));
+    public static final Block BEE_NEST_WALL = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
 
     public static final Block APPLE_WOOD = new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD));
     public static final Block APPLE_LOG = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
@@ -110,6 +110,12 @@ public class ModBlocks {
     public static final Block YELLOW_LUPINE = new ModPlantBlock();
     public static final Block YELLOW_TULIP = new ModPlantBlock();
 
+    public static final Block PANFLOWERS = new ModPlantBlock();
+    public static final Block JUNGLE_BUSH = new ModPlantBlock();
+
+    public static final Block BONE_JOINT = new Block(Block.Settings.copy(Blocks.BONE_BLOCK));
+    public static final Block ROCKS = new RockBlock(Block.Settings.copy(Blocks.STONE));
+
     public static final Block STICKY_SHROOM = new ModPlantBlock();
     public static final Block GOOP_CAP = new ModPlantBlock();
     public static final Block ORANGE_POPPY = new ModPlantBlock();
@@ -148,6 +154,9 @@ public class ModBlocks {
         Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
         Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
         Reg.registerWithItem("pumice", PUMICE, itemSettings());
+        Reg.registerWithItem("rocks", ROCKS, itemSettings());
+
+        Reg.registerWithItem("bone_joint", BONE_JOINT, itemSettings());
 
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
         Reg.registerWithItem("apple_log", APPLE_LOG, itemSettings());
@@ -186,6 +195,8 @@ public class ModBlocks {
         Reg.registerWithItem("flowering_cactus", FLOWERING_CACTUS, itemSettings());
         Reg.registerWithItem("fluffy_dandelion", FLUFFY_DANDELION, itemSettings());
         Reg.registerWithItem("foxtail_fern", FOXTAIL_FERN, itemSettings());
+        Reg.registerWithItem("jungle_bush", JUNGLE_BUSH, itemSettings());
+        Reg.registerWithItem("panflowers", PANFLOWERS, itemSettings());
 
         Reg.registerWithItem("honeycluster", HONEYCLUSTER, itemSettings());
         Reg.registerWithItem("lavender", LAVENDER, itemSettings());
