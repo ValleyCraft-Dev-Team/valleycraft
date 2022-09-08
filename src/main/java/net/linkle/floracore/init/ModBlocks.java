@@ -38,6 +38,8 @@ public class ModBlocks {
     public static final Block VOLCANIC_ASH = new FallingBlock(Block.Settings.copy(Blocks.SAND));
     public static final Block PUMICE = new Block(Block.Settings.copy(Blocks.STONE));
 
+    public static final Block BEE_NEST_WALL = new Block(Block.Settings.copy(Blocks.OAK_LEAVES));
+
     public static final Block APPLE_WOOD = new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD));
     public static final Block APPLE_LOG = new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG));
     public static final Block STRIPPED_APPLE_WOOD = new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD));
@@ -108,6 +110,7 @@ public class ModBlocks {
     public static final Block YELLOW_LUPINE = new ModPlantBlock();
     public static final Block YELLOW_TULIP = new ModPlantBlock();
 
+    public static final Block STICKY_SHROOM = new ModPlantBlock();
     public static final Block GOOP_CAP = new ModPlantBlock();
     public static final Block ORANGE_POPPY = new ModPlantBlock();
     public static final Block YELLOW_POPPY = new ModPlantBlock();
@@ -205,6 +208,8 @@ public class ModBlocks {
         Reg.registerWithItem("yellow_poppy", YELLOW_POPPY, itemSettings());
         Reg.registerWithItem("white_poppy", WHITE_POPPY, itemSettings());
 
+        Reg.registerWithItem("bee_nest_wall", BEE_NEST_WALL, itemSettings());
+        Reg.registerWithItem("sticky_shroom", STICKY_SHROOM, itemSettings());
         Reg.registerWithItem("shivercap", SHIVERCAP, itemSettings());
         Reg.registerWithItem("warding_shroom", WARDING_SHROOM, itemSettings());
         Reg.registerWithItem("goop_cap", GOOP_CAP, itemSettings());
