@@ -108,15 +108,28 @@ public class ModBlocks {
     public static final Block WILD_MINERS_LETTUCE = new ModPlantBlock();
     public static final Block WILD_POTATO = new ModPlantBlock();
     public static final Block WILD_WHEAT = new ModPlantBlock();
+    public static final Block WILD_SPICY_PEPPERS = new ModPlantBlock();
+    public static final Block WILD_ONION = new ModPlantBlock();
+    public static final Block WILD_CAVE_ROOT = new ModPlantBlock();
+    public static final Block WILD_HERBS = new ModPlantBlock();
+    public static final Block WILD_ALOE = new ModPlantBlock();
+    public static final Block WILD_AMETHYSTLE = new ModPlantBlock();
+    public static final Block WILD_PUFF_BALL = new ModPlantBlock();
+
     public static final Block YELLOW_LUPINE = new ModPlantBlock();
     public static final Block YELLOW_TULIP = new ModPlantBlock();
 
     public static final Block PANFLOWERS = new ModPlantBlock();
     public static final Block JUNGLE_BUSH = new ModPlantBlock();
+    public static final Block FROSTFERN = new ModPlantBlock();
+    public static final Block TALL_CORNFLOWER = new ModPlantBlock();
+    public static final Block TALL_OYXEYE_DAISY = new ModPlantBlock();
 
     public static final Block BONE_JOINT = new Block(Block.Settings.copy(Blocks.BONE_BLOCK));
     public static final Block ROCKS = new RockBlock();
 
+    public static final Block STALWART_SHROOM = new ModPlantBlock();
+    public static final Block MOREL = new ModPlantBlock();
     public static final Block STICKY_SHROOM = new ModPlantBlock();
     public static final Block GOOP_CAP = new ModPlantBlock();
     public static final Block ORANGE_POPPY = new ModPlantBlock();
@@ -129,8 +142,7 @@ public class ModBlocks {
     public static final Block LIVING_BUSH = new ModPlantBlock();
     public static final Block STALAGMITE = new ModPlantBlock();
     public static final Block STALAGTITE = new ModPlantBlock();
-    public static final Block WILD_PUFF_BALL = new ModPlantBlock();
-    
+
     public static final Block BIG_FERN = new ModPlantBlock();
     public static final Block FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
     
