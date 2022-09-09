@@ -15,6 +15,7 @@ import net.linkle.floracore.block.GloomBerryBodyBlock;
 import net.linkle.floracore.block.GloomBerryHeadBlock;
 import net.linkle.floracore.block.ModCarvedPumpkinBlock;
 import net.linkle.floracore.block.ModPlantBlock;
+import net.linkle.floracore.block.RockBlock;
 import net.linkle.floracore.util.BlockPres;
 import net.linkle.floracore.util.Reg;
 
@@ -114,7 +115,7 @@ public class ModBlocks {
     public static final Block JUNGLE_BUSH = new ModPlantBlock();
 
     public static final Block BONE_JOINT = new Block(Block.Settings.copy(Blocks.BONE_BLOCK));
-    public static final Block ROCKS = new RockBlock(Block.Settings.copy(Blocks.STONE));
+    public static final Block ROCKS = new RockBlock();
 
     public static final Block STICKY_SHROOM = new ModPlantBlock();
     public static final Block GOOP_CAP = new ModPlantBlock();

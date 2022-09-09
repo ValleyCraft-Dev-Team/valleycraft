@@ -81,7 +81,7 @@ public class SimpleConfig {
     /** Flush the current changes and save as a file. */
     public void flush() {
         // Clear unused values.
-        var temp = new LinkedHashMap<String, Config>(Math.max(map.size()<<1, 64) );
+        var temp = new LinkedHashMap<String, Config>(Math.max(map.size()<<1, 64));
         temp.putAll(map);
         map.clear();
 

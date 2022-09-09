@@ -15,27 +15,23 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.WorldAccess;
 
 /**
- * Commonly used for blocks with waterloggable. Overriding some method such as
- * appendProperties without calling the subclass method
- * 'super.appendProperties()' is prone to break block's waterloggable.
+ * Commonly used for blocks with horizontal facing and waterlogged. Overriding
+ * some method without calling the subclass's method 'super.appendProperties()'
+ * is prone to break block's horizontal facing and waterlogged.
  */
-public class BlockWithWater extends Block implements Waterloggable {
+public class HorizontalWithWaterBlock extends HorizontalBlock implements Waterloggable {
     protected static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
-    protected BlockWithWater(Settings settings) {
+    protected HorizontalWithWaterBlock(Settings settings) {
         super(settings);
     }
-
-    /** A common method to set its default state. */
-    protected final void setDefaultState() {
-        setDefaultState(newDefaultState());
-    }
     
-    /** A common method to get a new default state. */
+    @Override
     protected BlockState newDefaultState() {
-        return stateManager.getDefaultState().with(WATERLOGGED, false);
+        return super.newDefaultState().with(WATERLOGGED, false);
     }
 
+    /** Please call this subclass method to append facing and waterlogged properties: <code>super.getPlacementState(ctx)</code> */
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return super.getPlacementState(ctx).with(WATERLOGGED, Util.inWater(ctx));
@@ -51,7 +47,6 @@ public class BlockWithWater extends Block implements Waterloggable {
         return super.getStateForNeighborUpdate(state, direction, newState, world, pos, posFrom);
     }
 
-    /** Please call this subclass method to append waterlogged property: <code>super.appendProperties(builder)</code> */
     @Override
     protected void appendProperties(Builder<Block, BlockState> builder) {
         super.appendProperties(builder);
