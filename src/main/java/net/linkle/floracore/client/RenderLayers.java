@@ -75,6 +75,10 @@ class RenderLayers {
         put(GLOOM_BERRY, cullout);
         put(GLOOM_BERRY_PLANT, cullout);
         put(FLOWERING_LILYPAD, cullout);
+        put(STICKY_SHROOM, cullout);
+        put(PANFLOWERS, cullout);
+        put(JUNGLE_BUSH, cullout);
+        put(ROCKS, cullout);
     }
 
     private static void put(Block block, RenderLayer layer) {
