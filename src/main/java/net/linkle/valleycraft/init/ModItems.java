@@ -12,6 +12,8 @@ public class ModItems {
     
     public static void initialize() {
         Reg.register("gloom_berry", GLOOM_BERRY);
+        
+        FoodItems.initialize();
     }
     
     private static Item.Settings itemSettings() {

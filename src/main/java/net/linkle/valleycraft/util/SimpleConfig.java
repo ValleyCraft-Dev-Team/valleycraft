@@ -24,6 +24,7 @@ public class SimpleConfig {
     private final LinkedHashSet<String> set = new LinkedHashSet<>();
     private final LinkedHashMap<String, Config> map = new LinkedHashMap<>();
     private final File file;
+    private Config lastConfig;
 
     /** Create and read the config file. */
     public SimpleConfig(String name, int version) {
