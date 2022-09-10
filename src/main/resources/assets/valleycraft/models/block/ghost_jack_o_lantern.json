@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "valleycraft:block/ghost_pumpkin_top",
+    "front": "valleycraft:block/ghost_jack_o_lantern",
+    "side": "valleycraft:block/ghost_pumpkin_side"
+  }
+}

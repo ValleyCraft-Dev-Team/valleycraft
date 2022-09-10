@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "berries=false": {
+      "model": "valleycraft:block/gloom_berry_stem"
+    },
+    "berries=true": {
+      "model": "valleycraft:block/gloom_berry_stem_berries"
+    }
+  }
+}

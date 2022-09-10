@@ -1,0 +1,6 @@
+{
+  "parent": "valleycraft:block/template_lilypad",
+  "textures": {
+    "texture": "valleycraft:block/white_flowering_lilypad"
+  }
+}

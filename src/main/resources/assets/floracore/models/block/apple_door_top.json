@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_top",
-  "textures": {
-    "top": "floracore:block/apple_door_top",
-    "bottom": "floracore:block/apple_door_bottom"
-  }
-}

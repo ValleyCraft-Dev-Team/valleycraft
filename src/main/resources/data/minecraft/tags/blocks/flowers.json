@@ -1,21 +1,21 @@
 {
   "replace": false,
   "values": [
-    "floracore:black_dahlia",
-    "floracore:black_tulip",
-    "floracore:fluffy_dandelion",
-    "floracore:honeycluster",
-    "floracore:lavender",
-    "floracore:light_blue_tulip",
-    "floracore:orange_beauty",
-    "floracore:pink_lupine",
-    "floracore:purple_tulip",
-    "floracore:red_lupine",
-    "floracore:snowflower",
-    "floracore:yellow_lupine",
-    "floracore:yellow_tulip",
-    "floracore:orange_poppy",
-    "floracore:white_poppy",
-    "floracore:yellow_poppy"
+    "valleycraft:black_dahlia",
+    "valleycraft:black_tulip",
+    "valleycraft:fluffy_dandelion",
+    "valleycraft:honeycluster",
+    "valleycraft:lavender",
+    "valleycraft:light_blue_tulip",
+    "valleycraft:orange_beauty",
+    "valleycraft:pink_lupine",
+    "valleycraft:purple_tulip",
+    "valleycraft:red_lupine",
+    "valleycraft:snowflower",
+    "valleycraft:yellow_lupine",
+    "valleycraft:yellow_tulip",
+    "valleycraft:orange_poppy",
+    "valleycraft:white_poppy",
+    "valleycraft:yellow_poppy"
   ]
 }

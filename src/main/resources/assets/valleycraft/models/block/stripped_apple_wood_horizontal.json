@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "valleycraft:block/apple_stripped_log_side",
+    "side": "valleycraft:block/apple_stripped_log_side"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_trapdoor",
-    "floracore:mamon_trapdoor"
+    "valleycraft:apple_trapdoor",
+    "valleycraft:mamon_trapdoor"
   ]
 }

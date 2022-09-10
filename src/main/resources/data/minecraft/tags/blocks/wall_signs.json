@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_wall_sign",
-    "floracore:mamon_wall_sign"
+    "valleycraft:apple_wall_sign",
+    "valleycraft:mamon_wall_sign"
   ]
 }

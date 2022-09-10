@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/apple_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/apple_planks"
+    },
+    "type=top": {
+      "model": "valleycraft:block/apple_slab_top"
+    }
+  }
+}

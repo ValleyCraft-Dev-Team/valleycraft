@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_button",
-    "floracore:mamon_button"
+    "valleycraft:apple_button",
+    "valleycraft:mamon_button"
   ]
 }

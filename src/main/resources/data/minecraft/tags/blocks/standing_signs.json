@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_sign",
-    "floracore:mamon_sign"
+    "valleycraft:apple_sign",
+    "valleycraft:mamon_sign"
   ]
 }

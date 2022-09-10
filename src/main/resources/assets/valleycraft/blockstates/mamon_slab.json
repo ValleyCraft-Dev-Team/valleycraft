@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/mamon_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/mamon_planks"
+    },
+    "type=top": {
+      "model": "valleycraft:block/mamon_slab_top"
+    }
+  }
+}

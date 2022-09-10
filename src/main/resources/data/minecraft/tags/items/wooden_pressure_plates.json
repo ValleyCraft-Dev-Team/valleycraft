@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_pressure_plate",
-    "floracore:mamon_pressure_plate"
+    "valleycraft:apple_pressure_plate",
+    "valleycraft:mamon_pressure_plate"
   ]
 }

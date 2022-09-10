@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "valleycraft:block/bee_nest_wall_top",
+    "side": "valleycraft:block/bee_nest_wall"
+  }
+}

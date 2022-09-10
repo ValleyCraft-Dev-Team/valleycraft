@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_fence",
-    "floracore:mamon_fence"
+    "valleycraft:apple_fence",
+    "valleycraft:mamon_fence"
   ]
 }

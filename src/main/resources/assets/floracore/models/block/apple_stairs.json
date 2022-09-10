@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "floracore:block/apple_planks",
-    "top": "floracore:block/apple_planks",
-    "side": "floracore:block/apple_planks"
-  }
-}

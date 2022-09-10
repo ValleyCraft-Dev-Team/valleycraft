@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "floracore:block/mamon_log_top",
-    "side": "floracore:block/mamon_log_side"
-  }
-}

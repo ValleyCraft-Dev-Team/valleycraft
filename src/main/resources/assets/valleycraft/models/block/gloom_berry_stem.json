@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "valleycraft:block/gloom_berry_stem"
+  }
+}

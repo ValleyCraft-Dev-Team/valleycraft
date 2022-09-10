@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "floracore:apple_sapling",
-    "floracore:mamon_sapling"
+    "valleycraft:apple_sapling",
+    "valleycraft:mamon_sapling"
   ]
 }

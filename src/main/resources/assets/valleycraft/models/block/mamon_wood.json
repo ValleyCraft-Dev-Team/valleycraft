@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "valleycraft:block/mamon_log_side",
+    "side": "valleycraft:block/mamon_log_side"
+  }
+}

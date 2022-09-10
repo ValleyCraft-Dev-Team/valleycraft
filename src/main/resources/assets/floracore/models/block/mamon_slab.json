@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "floracore:block/mamon_planks",
-    "top": "floracore:block/mamon_planks",
-    "side": "floracore:block/mamon_planks"
-  }
-}
