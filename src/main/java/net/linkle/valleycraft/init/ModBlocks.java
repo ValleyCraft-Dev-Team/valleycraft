@@ -38,6 +38,7 @@ public class ModBlocks {
     public static final Block VOLCANIC_STONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VOLCANIC_ASH = new FallingBlock(Block.Settings.copy(Blocks.SAND));
     public static final Block PUMICE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block OPTIC_GLASS = new GlassBlock(Block.Settings.copy(Blocks.GLASS));
 
     public static final Block BEE_NEST_WALL = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
 
@@ -166,6 +167,7 @@ public class ModBlocks {
         Reg.registerWithItem("verdantine", VERDANTINE, itemSettings());
         Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
         Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
+        Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings());
         Reg.registerWithItem("pumice", PUMICE, itemSettings());
         Reg.registerWithItem("rocks", ROCKS, itemSettings());
 
