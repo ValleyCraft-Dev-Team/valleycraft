@@ -16,6 +16,7 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+	    Config.initialize();
 		ModBlocks.initialize();
 		ModItems.initialize();
 		Contents.initialize();
