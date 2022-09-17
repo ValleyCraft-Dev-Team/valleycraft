@@ -10,12 +10,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.linkle.valleycraft.block.AppleLeavesBlock;
 import net.linkle.valleycraft.block.GhostPumpkinBlock;
 import net.linkle.valleycraft.block.GloomBerryBodyBlock;
 import net.linkle.valleycraft.block.GloomBerryHeadBlock;
 import net.linkle.valleycraft.block.ModCarvedPumpkinBlock;
 import net.linkle.valleycraft.block.ModPlantBlock;
 import net.linkle.valleycraft.block.RockBlock;
+import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.util.BlockPres;
 import net.linkle.valleycraft.util.Reg;
 
@@ -149,6 +151,10 @@ public class ModBlocks {
     
     public static final Block GLOOM_BERRY = new GloomBerryHeadBlock();
     public static final Block GLOOM_BERRY_PLANT = new GloomBerryBodyBlock();
+    
+    public static final Block APPLE_LEAVES_EMPTY = new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES));
+    public static final Block APPLE_LEAVES = new AppleLeavesBlock();
+    public static final Block APPLE_SAPLING = new SaplingBlock(new AppleSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING));
 
     public static void initialize() {
         Reg.registerWithItem("dry_dirt", DRY_DIRT, itemSettings());
@@ -271,6 +277,10 @@ public class ModBlocks {
         
         Reg.register("gloom_berry", GLOOM_BERRY);
         Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);
+        
+        Reg.registerWithItem("apple_leaves_empty", APPLE_LEAVES_EMPTY, itemSettings());
+        Reg.registerWithItem("apple_leaves", APPLE_LEAVES, itemSettings());
+        Reg.registerWithItem("apple_sapling", APPLE_SAPLING, itemSettings());
     }
 
     private static FabricItemSettings itemSettings() {

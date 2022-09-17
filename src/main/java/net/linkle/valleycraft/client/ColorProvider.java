@@ -30,6 +30,11 @@ public class ColorProvider {
         itemColor((stack, tintIndex) -> {
             return GrassColors.getColor(0.5, 1.0);
         }, ModBlocks.BIG_FERN, ModBlocks.SHORT_GRASS);
+        
+        blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, ModBlocks.APPLE_LEAVES);
+        itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, ModBlocks.APPLE_LEAVES);
+        blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, ModBlocks.APPLE_LEAVES_EMPTY);
+        itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, ModBlocks.APPLE_LEAVES_EMPTY);
     }
     
     private static void blockColor(BlockColorProvider provider, Block... block) {

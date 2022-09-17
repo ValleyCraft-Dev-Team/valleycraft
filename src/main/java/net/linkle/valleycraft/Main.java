@@ -1,6 +1,7 @@
 package net.linkle.valleycraft;
 
 import net.fabricmc.api.ModInitializer;
+import net.linkle.valleycraft.gen.features.TreeConfigFeatures;
 import net.linkle.valleycraft.init.Contents;
 import net.linkle.valleycraft.init.ModBlocks;
 import net.linkle.valleycraft.init.ModGroups;
@@ -21,6 +22,7 @@ public class Main implements ModInitializer {
 		ModItems.initialize();
 		Contents.initialize();
 		ModGroups.initialize();
+		TreeConfigFeatures.initialize();
 	}
 	
 	public static Identifier makeId(String id) {
