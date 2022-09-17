@@ -79,8 +79,11 @@ class RenderLayers {
         put(PANFLOWERS, cullout);
         put(JUNGLE_BUSH, cullout);
         put(ROCKS, cullout);
+        put(APPLE_LEAVES, cullout);
+        put(APPLE_LEAVES_EMPTY, cullout);
+        put(APPLE_SAPLING, cullout);
+        
         put(OPTIC_GLASS, translucent);
-
     }
 
     private static void put(Block block, RenderLayer layer) {

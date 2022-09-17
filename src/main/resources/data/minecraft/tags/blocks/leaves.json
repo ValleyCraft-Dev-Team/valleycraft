@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:apple_leaves"
+    "valleycraft:apple_leaves",
+    "valleycraft:apple_leaves_empty"
   ]
 }

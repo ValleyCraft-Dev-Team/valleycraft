@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "apples=true": {
+      "model": "valleycraft:block/apple_leaves"
+    },
+    "apples=false": {
+      "model": "valleycraft:block/apple_leaves_empty"
+    }
+  }
+}

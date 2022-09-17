@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:apple_log",
+    "valleycraft:apple_wood",
+    "valleycraft:stripped_apple_log",
+    "valleycraft:stripped_apple_wood"
+  ]
+}
