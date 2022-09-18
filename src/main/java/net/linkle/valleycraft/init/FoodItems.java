@@ -32,15 +32,15 @@ public class FoodItems {
     public static final Item SWEET_RABBIT_STEAK = new Tier2Normal(settings(), 4, 2, StatusEffects.FIRE_RESISTANCE);
     
     // tier 3
-    public static final Item ANCIENT_FLOWER_SOUP = new Tier3Bowl(settings().maxCount(1), 4, 2, StatusEffects.HEALTH_BOOST);
-    public static final Item CARROT_STEW = new Tier3Bowl(settings().maxCount(1), 4, 2, StatusEffects.SPEED);
-    public static final Item COD_CHOWDER = new Tier3Bowl(settings().maxCount(1), 4, 2, StatusEffects.RESISTANCE);
-    public static final Item CREAMY_HEART_STEW = new Tier3Bowl(settings().maxCount(1), 4, 2, StatusEffects.STRENGTH);
-    public static final Item GLOW_BERRY_STEW = new Tier3Bowl(settings().maxCount(1), 4, 2, StatusEffects.NIGHT_VISION);
-    public static final Item GLOW_SQUID_SOUP = new Tier3Bowl(settings().maxCount(1), 4, 2, StatusEffects.WATER_BREATHING);
-    public static final Item SHIVERCAP_STIR_FRY = new Tier3Bowl(settings().maxCount(1), 4, 2, StatusEffects.FIRE_RESISTANCE);
-    public static final Item SPICY_BEEF_RISOTTO = new Tier3Bowl(settings().maxCount(1), 4, 2, StatusEffects.HASTE);
-    public static final Item SWEET_CHICKEN_RISOTTO = new Tier3Bowl(settings().maxCount(1), 4, 2, StatusEffects.REGENERATION);
+    public static final Item ANCIENT_FLOWER_SOUP = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.HEALTH_BOOST);
+    public static final Item CARROT_STEW = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.SPEED);
+    public static final Item COD_CHOWDER = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.RESISTANCE);
+    public static final Item CREAMY_HEART_STEW = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.STRENGTH);
+    public static final Item GLOW_BERRY_STEW = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.NIGHT_VISION);
+    public static final Item GLOW_SQUID_SOUP = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.WATER_BREATHING);
+    public static final Item SHIVERCAP_STIR_FRY = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.FIRE_RESISTANCE);
+    public static final Item SPICY_BEEF_RISOTTO = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.HASTE);
+    public static final Item SWEET_CHICKEN_RISOTTO = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.REGENERATION);
     
     /** Called from ModItem */
     static void initialize() {
