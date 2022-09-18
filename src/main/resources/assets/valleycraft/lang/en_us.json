@@ -146,5 +146,34 @@
   "block.valleycraft.salt_ore": "Salt Ore",
 
   "item.valleycraft.salt": "Salt",
-  
+
+  "item.valleycraft.amethystle_salad": "Amethystle Salad",
+  "item.valleycraft.carrot_salad": "Endura Carrot Salad",
+  "item.valleycraft.dried_spicy_glow_berries": "Spicy Dried Glow Berries",
+  "item.valleycraft.fruit_and_veggie_mix": "Florals Fruits and Veggies Mix",
+  "item.valleycraft.hearty_skewer": "Hearty Beetroot Skewer",
+  "item.valleycraft.honeyed_apple": "Honey-Glazed Apple",
+  "item.valleycraft.savory_shroom_skewer": "Savory Shroom Skewer",
+  "item.valleycraft.shivercap_skewer": "Sweet Shivercap Skewer",
+  "item.valleycraft.spicy_calamari_skewer": "Spicy Squid Skewer",
+
+  "item.valleycraft.glow_berry_egg_pudding": "Glow Berry Egg Pudding",
+  "item.valleycraft.glow_squid_sushi": "Glow Squid Sushi",
+  "item.valleycraft.honey_glazed_crepe": "Honey Glazed Crepe",
+  "item.valleycraft.spicy_grilled_lamb": "Spicy Grilled Lamb",
+  "item.valleycraft.spicy_salmon_and_carrots": "Spicy Salmon and Carrot Dish",
+  "item.valleycraft.steamed_vegetables": "Steamed Vegetables",
+  "item.valleycraft.stuffed_baked_potato": "Stuffed Baked Potato",
+  "item.valleycraft.stuffed_onion": "Stuffed Onion",
+  "item.valleycraft.sweet_rabbit_steak": "Sweet Rabbit Steak",
+
+  "item.valleycraft.ancient_flower_soup": "Ancient Flower Soup",
+  "item.valleycraft.carrot_stew": "Endura Carrot Stew",
+  "item.valleycraft.cod_chowder": "Cod Chowder",
+  "item.valleycraft.creamy_heart_stew": "Creamy Heart Stew",
+  "item.valleycraft.glow_berry_stew": "Glow Berry Stew",
+  "item.valleycraft.glow_squid_soup": "Glow Squid Soup",
+  "item.valleycraft.shivercap_stir_fry": "Shivercap Stir Fry",
+  "item.valleycraft.spicy_beef_risotto": "Spicy Beef Risotto",
+  "item.valleycraft.sweet_chicken_risotto": "Sweet Chicken Tikka Masala"
 }
