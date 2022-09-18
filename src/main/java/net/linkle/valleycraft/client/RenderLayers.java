@@ -83,6 +83,14 @@ class RenderLayers {
         put(APPLE_LEAVES_EMPTY, cullout);
         put(APPLE_SAPLING, cullout);
         put(ALGAE, cullout);
+        put(FROSTFERN, cullout);
+        put(CLARET_LEAF, cullout);
+        put(GLOW_KELP, cullout);
+        put(GLOW_KELP_PLANT, cullout);
+        put(GODDESS_LILY, cullout);
+        put(MOREL, cullout);
+        put(ORANGE_KELP, cullout);
+        put(ORANGE_KELP_PLANT, cullout);
         
         put(OPTIC_GLASS, translucent);
     }

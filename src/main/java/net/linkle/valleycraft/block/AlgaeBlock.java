@@ -81,14 +81,6 @@ public class AlgaeBlock extends PlantBlock {
     }
 
     @Override
-    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        super.onEntityCollision(state, world, pos, entity);
-        if (world instanceof ServerWorld && entity instanceof BoatEntity) {
-            world.breakBlock(new BlockPos(pos), true, entity);
-        }
-    }
-
-    @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;
     }

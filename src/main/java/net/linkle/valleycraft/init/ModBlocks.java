@@ -10,14 +10,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.linkle.valleycraft.block.AlgaeBlock;
-import net.linkle.valleycraft.block.AppleLeavesBlock;
-import net.linkle.valleycraft.block.GhostPumpkinBlock;
-import net.linkle.valleycraft.block.GloomBerryBodyBlock;
-import net.linkle.valleycraft.block.GloomBerryHeadBlock;
-import net.linkle.valleycraft.block.ModCarvedPumpkinBlock;
-import net.linkle.valleycraft.block.ModPlantBlock;
-import net.linkle.valleycraft.block.RockBlock;
+import net.linkle.valleycraft.block.*;
 import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.util.BlockPres;
 import net.linkle.valleycraft.util.Reg;
@@ -34,14 +27,22 @@ public class ModBlocks {
     public static final Block DIABASE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block DIABASE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block SERPENTINITE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block SERPENTINITE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block GRIMESTONE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block GRIMESTONE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block LIMESTONE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block LIMESTONE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block SHIVERSTONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VERDANTINE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VOLCANIC_STONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VOLCANIC_ASH = new FallingBlock(Block.Settings.copy(Blocks.SAND));
     public static final Block PUMICE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block PUMICE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block OPTIC_GLASS = new GlassBlock(Block.Settings.copy(Blocks.GLASS));
+    public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
+    public static final Block SALT_ORE = new Block(Block.Settings.copy(Blocks.COAL_ORE));
+    public static final Block NETHER_SALT_ORE = new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE));
+    public static final Block NETHER_COAL_ORE = new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE));
 
     public static final Block BEE_NEST_WALL = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
 
@@ -76,6 +77,9 @@ public class ModBlocks {
     public static final Block GHOST_PUMPKIN = new GhostPumpkinBlock();
     public static final Block GHOST_PUMPKIN_CARVED = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always));
     public static final Block GHOST_JACK_O_LANTERN = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().luminance(15).allowsSpawning(ModBlocks::always));
+    
+    public static final Block FIBER_BALE = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK).mapColor(MapColor.TERRACOTTA_GREEN));
+    public static final Block ROTTEN_FLESH_BLOCK = new Block(Block.Settings.copy(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.TERRACOTTA_RED));
 
     public static final Block ARGENTSHROOM = new ModPlantBlock();
     public static final Block BLACK_DAHLIA = new ModPlantBlock();
@@ -85,6 +89,7 @@ public class ModBlocks {
     public static final Block FOXTAIL_FERN = new ModPlantBlock();
     public static final Block GILDED_CAP = new ModPlantBlock();
     public static final Block GLOW_CAP = new ModPlantBlock();
+    public static final Block GODDESS_LILY = new ModPlantBlock();
     public static final Block HONEYCLUSTER = new ModPlantBlock();
     public static final Block IRONSHROOM = new ModPlantBlock();
     public static final Block JUNGLE_CAP = new ModPlantBlock();
@@ -93,6 +98,7 @@ public class ModBlocks {
     public static final Block LIGHT_BLUE_TULIP = new ModPlantBlock();
     public static final Block MINERS_LETTUCE = new ModPlantBlock();
     public static final Block MOSS_SPROUTLET = new ModPlantBlock();
+    public static final Block MOREL = new ModPlantBlock();
     public static final Block ORANGE_BEAUTY = new ModPlantBlock();
     public static final Block ORANGE_FERN = new ModPlantBlock();
     public static final Block PINK_LUPINE = new ModPlantBlock();
@@ -125,7 +131,7 @@ public class ModBlocks {
 
     public static final Block PANFLOWERS = new ModPlantBlock();
     public static final Block JUNGLE_BUSH = new ModPlantBlock();
-    //public static final Block FROSTFERN = new ModPlantBlock();
+    public static final Block FROSTFERN = new ModPlantBlock();
     //public static final Block TALL_CORNFLOWER = new ModPlantBlock();
     //public static final Block TALL_OYXEYE_DAISY = new ModPlantBlock();
 
@@ -133,7 +139,7 @@ public class ModBlocks {
     public static final Block ROCKS = new RockBlock();
 
     //public static final Block STALWART_SHROOM = new ModPlantBlock();
-    //public static final Block MOREL = new ModPlantBlock();
+    public static final Block CLARET_LEAF = new ModPlantBlock();
     public static final Block STICKY_SHROOM = new ModPlantBlock();
     public static final Block GOOP_CAP = new ModPlantBlock();
     public static final Block ORANGE_POPPY = new ModPlantBlock();
@@ -150,6 +156,12 @@ public class ModBlocks {
     public static final Block BIG_FERN = new ModPlantBlock();
     public static final Block FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
     public static final Block ALGAE = new AlgaeBlock();
+    public static final Block GLOW_KELP_BLOCK = new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TEAL).luminance(s->10));
+    public static final Block GLOW_KELP = new GlowKelpBlock();
+    public static final Block GLOW_KELP_PLANT = new GlowKelpPlantBlock();
+    public static final Block ORANGE_KELP_BLOCK = new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TERRACOTTA_GRAY));
+    public static final Block ORANGE_KELP = new OrangeKelpBlock();
+    public static final Block ORANGE_KELP_PLANT = new OrangeKelpPlantBlock();
     
     public static final Block GLOOM_BERRY = new GloomBerryHeadBlock();
     public static final Block GLOOM_BERRY_PLANT = new GloomBerryBodyBlock();
@@ -187,6 +199,10 @@ public class ModBlocks {
         Reg.registerWithItem("mamon_fence_gate", MAMON_FENCE_GATE, itemSettings());
         Reg.registerWithItem("mamon_pressure_plate", MAMON_PRESSURE_PLATE, itemSettings());
         
+        Reg.registerWithItem("salt_ore", SALT_ORE, itemSettings());
+        Reg.registerWithItem("nether_salt_ore", NETHER_SALT_ORE, itemSettings());
+        Reg.registerWithItem("nether_coal_ore", NETHER_COAL_ORE, itemSettings());
+        Reg.registerWithItem("charcoal_block", CHARCOAL_BLOCK, itemSettings());
         Reg.registerWithItem("dry_dirt", DRY_DIRT, itemSettings());
         Reg.registerWithItem("sandy_gravel", SANDY_GRAVEL, itemSettings());
         Reg.registerWithItem("arid_mossy_stone", ARID_MOSSY_STONE, itemSettings());
@@ -197,20 +213,27 @@ public class ModBlocks {
         Reg.registerWithItem("diabase", DIABASE, itemSettings());
         Reg.registerWithItem("diabase_smooth", DIABASE_SMOOTH, itemSettings());
         Reg.registerWithItem("serpentinite", SERPENTINITE, itemSettings());
+        Reg.registerWithItem("serpentinite_smooth", SERPENTINITE_SMOOTH, itemSettings());
         Reg.registerWithItem("grimestone", GRIMESTONE, itemSettings());
+        Reg.registerWithItem("grimestone_smooth", GRIMESTONE_SMOOTH, itemSettings());
         Reg.registerWithItem("limestone", LIMESTONE, itemSettings());
+        Reg.registerWithItem("limestone_smooth", LIMESTONE_SMOOTH, itemSettings());
         Reg.registerWithItem("shiverstone", SHIVERSTONE, itemSettings());
         Reg.registerWithItem("verdantine", VERDANTINE, itemSettings());
         Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
         Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
         Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings());
         Reg.registerWithItem("pumice", PUMICE, itemSettings());
+        Reg.registerWithItem("pumice_smooth", PUMICE_SMOOTH, itemSettings());
         Reg.registerWithItem("rocks", ROCKS, itemSettings());
         Reg.registerWithItem("bone_joint", BONE_JOINT, itemSettings());
         
         Reg.registerWithItem("ghost_pumpkin", GHOST_PUMPKIN, itemSettings());
         Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i->EquipmentSlot.HEAD));
         Reg.registerWithItem("ghost_jack_o_lantern", GHOST_JACK_O_LANTERN, itemSettings());
+        
+        Reg.registerWithItem("fiber_bale", FIBER_BALE, itemSettings());
+        Reg.registerWithItem("rotten_flesh_block", ROTTEN_FLESH_BLOCK, itemSettings());
 
         Reg.registerWithItem("argentshroom", ARGENTSHROOM, itemSettings());
         Reg.registerWithItem("black_dahlia", BLACK_DAHLIA, itemSettings());
@@ -232,6 +255,10 @@ public class ModBlocks {
         Reg.registerWithItem("yellow_tulip", YELLOW_TULIP, itemSettings());
         Reg.registerWithItem("light_blue_tulip", LIGHT_BLUE_TULIP, itemSettings());
         Reg.registerWithItem("black_tulip", BLACK_TULIP, itemSettings());
+        Reg.registerWithItem("frostfern", FROSTFERN, itemSettings());
+        Reg.registerWithItem("claret_leaf", CLARET_LEAF, itemSettings());
+        Reg.registerWithItem("goddess_lily", GODDESS_LILY, itemSettings());
+        Reg.registerWithItem("morel", MOREL, itemSettings());
 
         Reg.registerWithItem("red_lupine", RED_LUPINE, itemSettings());
         Reg.registerWithItem("yellow_lupine", YELLOW_LUPINE, itemSettings());
@@ -278,6 +305,13 @@ public class ModBlocks {
         
         Reg.register("gloom_berry", GLOOM_BERRY);
         Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);
+        
+        Reg.registerWithItem("glow_kelp_block", GLOW_KELP_BLOCK, itemSettings());
+        Reg.registerWithItem("glow_kelp", GLOW_KELP, itemSettings());
+        Reg.register("glow_kelp_plant", GLOW_KELP_PLANT);
+        Reg.registerWithItem("orange_kelp_block", ORANGE_KELP_BLOCK, itemSettings());
+        Reg.registerWithItem("orange_kelp", ORANGE_KELP, itemSettings());
+        Reg.register("orange_kelp_plant", ORANGE_KELP_PLANT);
         
         Reg.register("algae", ALGAE);
         Reg.register("algae", new LilyPadItem(ALGAE, itemSettings()));

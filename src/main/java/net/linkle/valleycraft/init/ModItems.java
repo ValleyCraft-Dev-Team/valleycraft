@@ -9,9 +9,11 @@ import net.minecraft.item.ItemGroup;
 public class ModItems {
 
     public static final Item GLOOM_BERRY = new AliasedBlockItem(ModBlocks.GLOOM_BERRY, itemSettings().food(FoodComponents.GLOW_BERRIES).group(ItemGroup.FOOD));
+    public static final Item SALT = new Item(itemSettings());
     
     public static void initialize() {
         Reg.register("gloom_berry", GLOOM_BERRY);
+        Reg.register("salt", SALT);
         
         FoodItems.initialize();
     }
