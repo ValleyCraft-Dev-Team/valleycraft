@@ -82,6 +82,7 @@ class RenderLayers {
         put(APPLE_LEAVES, cullout);
         put(APPLE_LEAVES_EMPTY, cullout);
         put(APPLE_SAPLING, cullout);
+        put(ALGAE, cullout);
         
         put(OPTIC_GLASS, translucent);
     }

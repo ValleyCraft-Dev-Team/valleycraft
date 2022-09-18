@@ -10,6 +10,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.linkle.valleycraft.block.AlgaeBlock;
 import net.linkle.valleycraft.block.AppleLeavesBlock;
 import net.linkle.valleycraft.block.GhostPumpkinBlock;
 import net.linkle.valleycraft.block.GloomBerryBodyBlock;
@@ -148,6 +149,7 @@ public class ModBlocks {
 
     public static final Block BIG_FERN = new ModPlantBlock();
     public static final Block FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
+    public static final Block ALGAE = new AlgaeBlock();
     
     public static final Block GLOOM_BERRY = new GloomBerryHeadBlock();
     public static final Block GLOOM_BERRY_PLANT = new GloomBerryBodyBlock();
@@ -157,28 +159,6 @@ public class ModBlocks {
     public static final Block APPLE_SAPLING = new SaplingBlock(new AppleSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING));
 
     public static void initialize() {
-        Reg.registerWithItem("dry_dirt", DRY_DIRT, itemSettings());
-        Reg.registerWithItem("sandy_gravel", SANDY_GRAVEL, itemSettings());
-        Reg.registerWithItem("arid_mossy_stone", ARID_MOSSY_STONE, itemSettings());
-        Reg.registerWithItem("mossy_stone", MOSSY_STONE, itemSettings());
-        Reg.registerWithItem("carmine", CARMINE, itemSettings());
-        Reg.registerWithItem("carmine_cobblestone", CARMINE_COBBLESTONE, itemSettings());
-        Reg.registerWithItem("carmine_smooth", CARMINE_SMOOTH, itemSettings());
-        Reg.registerWithItem("diabase", DIABASE, itemSettings());
-        Reg.registerWithItem("diabase_smooth", DIABASE_SMOOTH, itemSettings());
-        Reg.registerWithItem("serpentinite", SERPENTINITE, itemSettings());
-        Reg.registerWithItem("grimestone", GRIMESTONE, itemSettings());
-        Reg.registerWithItem("limestone", LIMESTONE, itemSettings());
-        Reg.registerWithItem("shiverstone", SHIVERSTONE, itemSettings());
-        Reg.registerWithItem("verdantine", VERDANTINE, itemSettings());
-        Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
-        Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
-        Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings());
-        Reg.registerWithItem("pumice", PUMICE, itemSettings());
-        Reg.registerWithItem("rocks", ROCKS, itemSettings());
-
-        Reg.registerWithItem("bone_joint", BONE_JOINT, itemSettings());
-
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
         Reg.registerWithItem("apple_log", APPLE_LOG, itemSettings());
         Reg.registerWithItem("stripped_apple_wood", STRIPPED_APPLE_WOOD, itemSettings());
@@ -206,6 +186,27 @@ public class ModBlocks {
         Reg.registerWithItem("mamon_fence", MAMON_FENCE, itemSettings());
         Reg.registerWithItem("mamon_fence_gate", MAMON_FENCE_GATE, itemSettings());
         Reg.registerWithItem("mamon_pressure_plate", MAMON_PRESSURE_PLATE, itemSettings());
+        
+        Reg.registerWithItem("dry_dirt", DRY_DIRT, itemSettings());
+        Reg.registerWithItem("sandy_gravel", SANDY_GRAVEL, itemSettings());
+        Reg.registerWithItem("arid_mossy_stone", ARID_MOSSY_STONE, itemSettings());
+        Reg.registerWithItem("mossy_stone", MOSSY_STONE, itemSettings());
+        Reg.registerWithItem("carmine", CARMINE, itemSettings());
+        Reg.registerWithItem("carmine_cobblestone", CARMINE_COBBLESTONE, itemSettings());
+        Reg.registerWithItem("carmine_smooth", CARMINE_SMOOTH, itemSettings());
+        Reg.registerWithItem("diabase", DIABASE, itemSettings());
+        Reg.registerWithItem("diabase_smooth", DIABASE_SMOOTH, itemSettings());
+        Reg.registerWithItem("serpentinite", SERPENTINITE, itemSettings());
+        Reg.registerWithItem("grimestone", GRIMESTONE, itemSettings());
+        Reg.registerWithItem("limestone", LIMESTONE, itemSettings());
+        Reg.registerWithItem("shiverstone", SHIVERSTONE, itemSettings());
+        Reg.registerWithItem("verdantine", VERDANTINE, itemSettings());
+        Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
+        Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
+        Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings());
+        Reg.registerWithItem("pumice", PUMICE, itemSettings());
+        Reg.registerWithItem("rocks", ROCKS, itemSettings());
+        Reg.registerWithItem("bone_joint", BONE_JOINT, itemSettings());
         
         Reg.registerWithItem("ghost_pumpkin", GHOST_PUMPKIN, itemSettings());
         Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i->EquipmentSlot.HEAD));
@@ -277,6 +278,9 @@ public class ModBlocks {
         
         Reg.register("gloom_berry", GLOOM_BERRY);
         Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);
+        
+        Reg.register("algae", ALGAE);
+        Reg.register("algae", new LilyPadItem(ALGAE, itemSettings()));
         
         Reg.registerWithItem("apple_leaves_empty", APPLE_LEAVES_EMPTY, itemSettings());
         Reg.registerWithItem("apple_leaves", APPLE_LEAVES, itemSettings());
