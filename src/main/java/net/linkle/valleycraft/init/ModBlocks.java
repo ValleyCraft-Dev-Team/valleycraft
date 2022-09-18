@@ -81,7 +81,6 @@ public class ModBlocks {
     public static final Block FIBER_BALE = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK).mapColor(MapColor.TERRACOTTA_GREEN));
     public static final Block ROTTEN_FLESH_BLOCK = new Block(Block.Settings.copy(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.TERRACOTTA_RED));
 
-    public static final Block ARGENTSHROOM = new ModPlantBlock();
     public static final Block BLACK_DAHLIA = new ModPlantBlock();
     public static final Block BLACK_TULIP = new ModPlantBlock();
     public static final Block FLOWERING_CACTUS = new ModPlantBlock().setGround(BlockPres.SAND);
@@ -96,7 +95,6 @@ public class ModBlocks {
     public static final Block LAVENDER = new ModPlantBlock();
     public static final Block LEATHERLEAF_FERN = new ModPlantBlock();
     public static final Block LIGHT_BLUE_TULIP = new ModPlantBlock();
-    public static final Block MINERS_LETTUCE = new ModPlantBlock();
     public static final Block MOSS_SPROUTLET = new ModPlantBlock();
     public static final Block MOREL = new ModPlantBlock();
     public static final Block ORANGE_BEAUTY = new ModPlantBlock();
@@ -235,7 +233,6 @@ public class ModBlocks {
         Reg.registerWithItem("fiber_bale", FIBER_BALE, itemSettings());
         Reg.registerWithItem("rotten_flesh_block", ROTTEN_FLESH_BLOCK, itemSettings());
 
-        Reg.registerWithItem("argentshroom", ARGENTSHROOM, itemSettings());
         Reg.registerWithItem("black_dahlia", BLACK_DAHLIA, itemSettings());
         Reg.registerWithItem("flowering_cactus", FLOWERING_CACTUS, itemSettings());
         Reg.registerWithItem("fluffy_dandelion", FLUFFY_DANDELION, itemSettings());
@@ -246,7 +243,6 @@ public class ModBlocks {
         Reg.registerWithItem("honeycluster", HONEYCLUSTER, itemSettings());
         Reg.registerWithItem("lavender", LAVENDER, itemSettings());
         Reg.registerWithItem("leatherleaf_fern", LEATHERLEAF_FERN, itemSettings());
-        Reg.registerWithItem("miners_lettuce", MINERS_LETTUCE, itemSettings());
         Reg.registerWithItem("moss_sproutlet", MOSS_SPROUTLET, itemSettings());
         Reg.registerWithItem("orange_beauty", ORANGE_BEAUTY, itemSettings());
         Reg.registerWithItem("orange_fern", ORANGE_FERN, itemSettings());

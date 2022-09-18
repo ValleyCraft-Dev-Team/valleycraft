@@ -36,7 +36,6 @@ class RenderLayers {
         put(LAVENDER, cullout);
         put(LEATHERLEAF_FERN, cullout);
         put(LIGHT_BLUE_TULIP, cullout);
-        put(MINERS_LETTUCE, cullout);
         put(MOSS_SPROUTLET, cullout);
         put(ORANGE_BEAUTY, cullout);
         put(ORANGE_FERN, cullout);
