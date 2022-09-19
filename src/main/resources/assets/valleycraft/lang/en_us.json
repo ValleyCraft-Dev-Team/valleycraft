@@ -1,5 +1,7 @@
 { 
-  "itemGroup.valleycraft.flora": "ValleyCraft: Wilder Horizons",
+  "itemGroup.valleycraft.flora": "Flora and Fauna",
+  "itemGroup.valleycraft.ingredients": "Ingredients",
+  "itemGroup.valleycraft.dishes": "Special Dishes",
 
   "block.valleycraft.mamon_wood": "Amberblossom Wood",
   "block.valleycraft.mamon_log": "Amberblossom Log",
@@ -147,6 +149,7 @@
   "block.valleycraft.salt_ore": "Salt Ore",
 
   "item.valleycraft.salt": "Salt",
+  "item.valleycraft.gloom_berry": "Gloom Berry",
 
   "item.valleycraft.amethystle_salad": "Amethystle Salad",
   "item.valleycraft.carrot_salad": "Endura Carrot Salad",

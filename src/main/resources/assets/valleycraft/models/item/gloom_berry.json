@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/gloom_berry"
+    "layer0": "valleycraft:item/food/raw_ingredients/gloom_berry"
   }
 }

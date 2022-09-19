@@ -7,7 +7,7 @@ import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 
-public class FoodItems {
+public class TieredFoodItems {
     
     // tier 1
     public static final Item AMETHYSTLE_SALAD = new Tier1Normal(settings(), 4, 2, StatusEffects.HASTE);
@@ -79,6 +79,6 @@ public class FoodItems {
     }
     
     private static Item.Settings settings() {
-        return new Item.Settings().group(ModGroups.FLORA_GROUP);
+        return new Item.Settings().group(ModGroups.TIERED_DISHES);
     }
 }
