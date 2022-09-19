@@ -7,6 +7,8 @@ import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 
+import static net.linkle.valleycraft.init.ModGroups.TIERED_DISHES;
+
 public class TieredFoodItems {
     
     // tier 1
@@ -79,6 +81,6 @@ public class TieredFoodItems {
     }
     
     private static Item.Settings settings() {
-        return new Item.Settings().group(ModGroups.TIERED_DISHES);
+        return new Item.Settings().group(TIERED_DISHES);
     }
 }
