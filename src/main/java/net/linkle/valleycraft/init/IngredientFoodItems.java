@@ -1,0 +1,109 @@
+package net.linkle.valleycraft.init;
+
+import net.linkle.valleycraft.item.*;
+import net.linkle.valleycraft.util.Reg;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.Item;
+
+import static net.linkle.valleycraft.init.ModGroups.*;
+
+public class IngredientFoodItems {
+
+    //public static final Item AMETHYSTLE_SALAD = new Tier1Normal(settings(), 4, 2, StatusEffects.HASTE);
+
+    //raw ingredients
+    public static final Item ALOE = new FoodItem(settings(), 3, 1);
+    public static final Item AMETHYSTLE = new FoodItem(settings(), 2, 1);
+    public static final Item ANCIENT_FLOWER = new FoodItem(settings(), 6, 2);
+    public static final Item CAVE_ROOT = new FoodItem(settings(), 4, 2);
+    public static final Item ENDURA_CARROT = new FoodItem(settings(), 5, 3);
+    public static final Item FIRE_PEPPER = new FoodItem(settings(), 3, 3);
+    public static final Item GLOW_BERRY_JUICE = new Tier0Bottle(settings(), 4, 2, StatusEffects.GLOWING);
+    public static final Item GLOOM_BERRY_JUICE = new Tier0Bottle(settings(), 4, 2, StatusEffects.NIGHT_VISION);
+    public static final Item ALOE_VERA_JUICE = new Tier0Bottle(settings(), 4, 2, StatusEffects.HEALTH_BOOST);
+
+    public static final Item HEARTY_BEETROOT = new FoodItem(settings(), 4, 4);
+    public static final Item MAIZE = new FoodItem(settings(), 3, 4);
+    public static final Item MINERS_LETTUCE = new FoodItem(settings(), 3, 2);
+    public static final Item MONSTER_GUTS = new Tier1Normal(settings(), 6, 2, StatusEffects.HUNGER);
+    public static final Item MOREL_OIL = new Tier1Bottle(settings(), 2, 5, StatusEffects.SLOWNESS);
+    public static final Item ONION = new FoodItem(settings(), 3, 3);
+    public static final Item RAW_BACON = new FoodItem(settings(), 2, 1);
+    public static final Item RAW_BAT = new FoodItem(settings(), 2, 1);
+    public static final Item GHOST_PUMPKIN_SLICE = new FoodItem(settings(), 2, 2);
+    public static final Item PUMPKIN_SLICE = new FoodItem(settings(), 2, 2);
+    public static final Item RAW_GLOWSQUID = new FoodItem(settings(), 2, 1.2f);
+    public static final Item RAW_SQUID = new FoodItem(settings(), 2, 1.2f);
+    public static final Item RAW_RICE = new FoodItem(settings(), 2, 3);
+    public static final Item RAW_SILVERFISH = new FoodItem(settings(), 1, 1);
+    public static final Item RAW_PHANTOM = new Tier1Normal(settings(), 3, 1.4f, StatusEffects.NAUSEA);
+    public static final Item RAW_TURTLE = new FoodItem(settings(), 4, 0.8f);
+    public static final Item RAW_BIRD = new FoodItem(settings(), 2, 1);
+
+    public static final Item BREAD_DOUGH = new FoodItem(settings(), 3, 3);
+    public static final Item CAKE_DOUGH = new FoodItem(settings(), 3, 3);
+    public static final Item HARDTACK_DOUGH = new FoodItem(settings(), 1, 3);
+    public static final Item UBE_BREAD_DOUGH = new FoodItem(settings(), 3, 3);
+    public static final Item PUMPKIN_SPICE_COOKIE_DOUGH = new FoodItem(settings(), 1, 3);
+    public static final Item PUMPKIN_PIE_DOUGH = new FoodItem(settings(), 3, 3);
+    public static final Item COOKIE_DOUGH = new FoodItem(settings(), 1, 3);
+    public static final Item CHORUS_FRUIT_PIE_DOUGH = new FoodItem(settings(), 3, 3);
+    public static final Item CHOCOLATE_PIE_DOUGH = new FoodItem(settings(), 3, 3);
+    public static final Item APPLE_PIE_DOUGH = new FoodItem(settings(), 3, 3);
+    public static final Item SWEET_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
+    public static final Item GLOW_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
+    public static final Item GLOOM_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
+
+
+    /** Called from ModItem */
+    static void initialize() {
+        Reg.register("aloe_vera", ALOE);
+        Reg.register("amethystle", AMETHYSTLE);
+        Reg.register("ancient_flower", ANCIENT_FLOWER);
+        Reg.register("cave_root", CAVE_ROOT);
+        Reg.register("endura_carrot", ENDURA_CARROT);
+        Reg.register("fire_pepper", FIRE_PEPPER);
+        Reg.register("glow_berry_juice", GLOW_BERRY_JUICE);
+        Reg.register("hearty_beetroot", HEARTY_BEETROOT);
+        Reg.register("maize", MAIZE);
+        Reg.register("miners_lettuce_item", MINERS_LETTUCE);
+        Reg.register("morel_oil", MOREL_OIL);
+        Reg.register("onion", ONION);
+        Reg.register("raw_rice", RAW_RICE);
+
+        Reg.register("pumpkin_slice", PUMPKIN_SLICE);
+        Reg.register("ghost_pumpkin_slice", GHOST_PUMPKIN_SLICE);
+
+        Reg.register("monster_guts", MONSTER_GUTS);
+        Reg.register("raw_bat_wing", RAW_BAT);
+        Reg.register("raw_silverfish", RAW_SILVERFISH);
+        Reg.register("raw_phantom_eye", RAW_PHANTOM);
+
+        Reg.register("raw_glowsquid_tentacle", RAW_GLOWSQUID);
+        Reg.register("raw_squid_tentacle", RAW_SQUID);
+        Reg.register("raw_bacon", RAW_BACON);
+        Reg.register("raw_turtle_neck", RAW_TURTLE);
+        Reg.register("raw_bird_thigh", RAW_BIRD);
+
+        Reg.register("hardtack_dough", HARDTACK_DOUGH);
+        Reg.register("bread_dough", BREAD_DOUGH);
+        Reg.register("ube_bread_dough", UBE_BREAD_DOUGH);
+        Reg.register("cookie_dough", COOKIE_DOUGH);
+        Reg.register("pumpkin_spice_cookie_dough", PUMPKIN_SPICE_COOKIE_DOUGH);
+
+        Reg.register("pumpkin_pie_dough", PUMPKIN_PIE_DOUGH);
+        Reg.register("chocolate_pie_dough", CHOCOLATE_PIE_DOUGH);
+        Reg.register("apple_pie_dough", APPLE_PIE_DOUGH);
+        Reg.register("sweet_berry_pie_dough", SWEET_BERRY_PIE_DOUGH);
+        Reg.register("glow_berry_pie_dough", GLOW_BERRY_PIE_DOUGH);
+        Reg.register("gloom_berry_pie_dough", GLOOM_BERRY_PIE_DOUGH);
+        Reg.register("chorus_fruit_pie_dough", CHORUS_FRUIT_PIE_DOUGH);
+
+        Reg.register("cake_dough", CAKE_DOUGH);
+
+    }
+    
+    private static Item.Settings settings() {
+        return new Item.Settings().group(INGREDIENTS);
+    }
+}

@@ -4,7 +4,6 @@ import net.linkle.valleycraft.util.Reg;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 
 import static net.linkle.valleycraft.init.ModGroups.INGREDIENTS;
 import static net.linkle.valleycraft.init.ModGroups.ITEMS;
@@ -37,6 +36,7 @@ public class ModItems {
         Reg.register("crows_feather", CROWS_FEATHER);
 
         TieredFoodItems.initialize();
+        IngredientFoodItems.initialize();
     }
     
     private static Item.Settings itemSettings() {
