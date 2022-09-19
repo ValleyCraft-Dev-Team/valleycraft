@@ -1,8 +1,12 @@
 { 
-  "itemGroup.valleycraft.flora": "VC: Flora and Fauna",
+  "itemGroup.valleycraft.flora": "VC: Flora",
   "itemGroup.valleycraft.ingredients": "VC: Ingredients",
+  "itemGroup.valleycraft.regular_dishes": "VC: Regular Dishes",
   "itemGroup.valleycraft.dishes": "VC: Special Dishes",
   "itemGroup.valleycraft.blocks": "VC: Building Blocks",
+  "itemGroup.valleycraft.items": "VC: Misc Items",
+  "itemGroup.valleycraft.books": "VC: Books",
+  "itemGroup.valleycraft.tools": "VC: Equipment",
 
   "block.valleycraft.mamon_wood": "Amberblossom Wood",
   "block.valleycraft.mamon_log": "Amberblossom Log",
@@ -182,5 +186,14 @@
   "item.valleycraft.glow_squid_soup": "Glow Squid Soup",
   "item.valleycraft.shivercap_stir_fry": "Shivercap Stir Fry",
   "item.valleycraft.spicy_beef_risotto": "Spicy Beef Risotto",
-  "item.valleycraft.sweet_chicken_risotto": "Sweet Chicken Tikka Masala"
+  "item.valleycraft.sweet_chicken_risotto": "Sweet Chicken Tikka Masala",
+
+  "item.valleycraft.flour": "Flour",
+
+  "item.valleycraft.fiber": "Grass Fiber",
+  "item.valleycraft.book_cover": "Fiber Book Cover",
+  "item.valleycraft.mulch": "Mulch",
+  "item.valleycraft.crows_feather": "Crow Feather",
+  "item.valleycraft.seagulls_feather": "Seagull Feather",
+  "item.valleycraft.ducks_feather": "Duck Feather"
 }

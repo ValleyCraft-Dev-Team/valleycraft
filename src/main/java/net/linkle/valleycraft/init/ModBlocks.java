@@ -36,7 +36,9 @@ public class ModBlocks {
     public static final Block LIMESTONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block LIMESTONE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block SHIVERSTONE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block SHIVERSTONE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VERDANTINE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block VERDANTINE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VOLCANIC_STONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VOLCANIC_ASH = new FallingBlock(Block.Settings.copy(Blocks.SAND));
     public static final Block PUMICE = new Block(Block.Settings.copy(Blocks.STONE));
@@ -225,7 +227,10 @@ public class ModBlocks {
         Reg.registerWithItem("limestone", LIMESTONE, itemSettings());
         Reg.registerWithItem("limestone_smooth", LIMESTONE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("shiverstone", SHIVERSTONE, itemSettings());
+        Reg.registerWithItem("shiverstone_smooth", SHIVERSTONE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("verdantine", VERDANTINE, itemSettings());
+        Reg.registerWithItem("verdantine_smooth", VERDANTINE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
+
         Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
         Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
         Reg.registerWithItem("pumice", PUMICE, itemSettings());
