@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "sprinkling=true": {
+      "model": "valleycraft:block/sprinkler_on"
+    },
+    "sprinkling=false": {
+      "model": "valleycraft:block/sprinkler_off"
+    }
+  }
+}

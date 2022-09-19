@@ -1,0 +1,77 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"base": "valleycraft:block/sprinkler",
+		"bottom": "valleycraft:block/sprinkler_bottom",
+		"particle": "valleycraft:block/sprinkler"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 6, 16],
+			"faces": {
+				"north": {"uv": [0, 10, 16, 16], "texture": "#base"},
+				"east": {"uv": [0, 10, 16, 16], "texture": "#base"},
+				"south": {"uv": [0, 10, 16, 16], "texture": "#base"},
+				"west": {"uv": [0, 10, 16, 16], "texture": "#base"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#bottom"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [6, 6, 6],
+			"to": [10, 9, 10],
+			"faces": {
+				"north": {"uv": [6, 7, 10, 10], "texture": "#base"},
+				"east": {"uv": [6, 7, 10, 10], "texture": "#base"},
+				"south": {"uv": [6, 7, 10, 10], "texture": "#base"},
+				"west": {"uv": [6, 7, 10, 10], "texture": "#base"},
+				"up": {"uv": [6, 7, 7, 8], "texture": "#base"},
+				"down": {"uv": [6, 7, 7, 8], "texture": "#base"}
+			}
+		},
+		{
+			"from": [4, 9, 4],
+			"to": [12, 12, 12],
+			"faces": {
+				"north": {"uv": [4, 4, 12, 7], "texture": "#base"},
+				"east": {"uv": [4, 4, 12, 7], "texture": "#base"},
+				"south": {"uv": [4, 4, 12, 7], "texture": "#base"},
+				"west": {"uv": [4, 4, 12, 7], "texture": "#base"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#head"},
+				"down": {"uv": [8, 8, 16, 16], "texture": "#head"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 225, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

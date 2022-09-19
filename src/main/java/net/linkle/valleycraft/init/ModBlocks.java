@@ -175,6 +175,8 @@ public class ModBlocks {
     public static final Block APPLE_LEAVES_EMPTY = new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES));
     public static final Block APPLE_LEAVES = new AppleLeavesBlock();
     public static final Block APPLE_SAPLING = new SaplingBlock(new AppleSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING));
+    
+    public static final Block SPRINKLER = new SprinklerBlock();
 
     public static void initialize() {
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
@@ -336,6 +338,8 @@ public class ModBlocks {
         Reg.registerWithItem("apple_leaves_empty", APPLE_LEAVES_EMPTY, itemSettings());
         Reg.registerWithItem("apple_leaves", APPLE_LEAVES, itemSettings());
         Reg.registerWithItem("apple_sapling", APPLE_SAPLING, itemSettings());
+        
+        Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));
     }
 
     private static FabricItemSettings itemSettings() {

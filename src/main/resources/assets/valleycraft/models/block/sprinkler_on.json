@@ -1,0 +1,6 @@
+{
+  "parent": "valleycraft:block/sprinkler",
+  "textures": {
+    "head": "valleycraft:block/sprinkler_head_on"
+  }
+}
