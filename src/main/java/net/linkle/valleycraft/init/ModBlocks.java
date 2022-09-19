@@ -221,14 +221,14 @@ public class ModBlocks {
         Reg.registerWithItem("grimestone", GRIMESTONE, itemSettings());
         Reg.registerWithItem("grimestone_smooth", GRIMESTONE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("limestone", LIMESTONE, itemSettings());
-        Reg.registerWithItem("limestone_smooth", LIMESTONE_SMOOTH, itemSettings());
+        Reg.registerWithItem("limestone_smooth", LIMESTONE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("shiverstone", SHIVERSTONE, itemSettings());
         Reg.registerWithItem("verdantine", VERDANTINE, itemSettings());
         Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
         Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
         Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("pumice", PUMICE, itemSettings());
-        Reg.registerWithItem("pumice_smooth", PUMICE_SMOOTH, itemSettings());
+        Reg.registerWithItem("pumice_smooth", PUMICE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("rocks", ROCKS, itemSettings());
         Reg.registerWithItem("bone_joint", BONE_JOINT, itemSettings());
         
@@ -238,7 +238,7 @@ public class ModBlocks {
         
         Reg.registerWithItem("fiber_bale", FIBER_BALE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("rotten_flesh_block", ROTTEN_FLESH_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("salt_block", SALT_BLOCK, itemSettings());
+        Reg.registerWithItem("salt_block", SALT_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
 
         Reg.registerWithItem("black_dahlia", BLACK_DAHLIA, itemSettings());
         Reg.registerWithItem("flowering_cactus", FLOWERING_CACTUS, itemSettings());
@@ -317,10 +317,10 @@ public class ModBlocks {
         Reg.register("gloom_berry", GLOOM_BERRY);
         Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);
         
-        Reg.registerWithItem("glow_kelp_block", GLOW_KELP_BLOCK, itemSettings());
+        Reg.registerWithItem("glow_kelp_block", GLOW_KELP_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("glow_kelp", GLOW_KELP, itemSettings());
         Reg.register("glow_kelp_plant", GLOW_KELP_PLANT);
-        Reg.registerWithItem("orange_kelp_block", ORANGE_KELP_BLOCK, itemSettings());
+        Reg.registerWithItem("orange_kelp_block", ORANGE_KELP_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("orange_kelp", ORANGE_KELP, itemSettings());
         Reg.register("orange_kelp_plant", ORANGE_KELP_PLANT);
         

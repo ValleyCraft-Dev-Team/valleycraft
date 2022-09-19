@@ -1,7 +1,8 @@
 { 
-  "itemGroup.valleycraft.flora": "Flora and Fauna",
-  "itemGroup.valleycraft.ingredients": "Ingredients",
-  "itemGroup.valleycraft.dishes": "Special Dishes",
+  "itemGroup.valleycraft.flora": "VC: Flora and Fauna",
+  "itemGroup.valleycraft.ingredients": "VC: Ingredients",
+  "itemGroup.valleycraft.dishes": "VC: Special Dishes",
+  "itemGroup.valleycraft.blocks": "VC: Building Blocks",
 
   "block.valleycraft.mamon_wood": "Amberblossom Wood",
   "block.valleycraft.mamon_log": "Amberblossom Log",
