@@ -256,7 +256,6 @@ public class ModBlocks {
         Reg.registerWithItem("frostfern", FROSTFERN, itemSettings());
         Reg.registerWithItem("claret_leaf", CLARET_LEAF, itemSettings());
         Reg.registerWithItem("goddess_lily", GODDESS_LILY, itemSettings());
-        Reg.registerWithItem("morel", MOREL, itemSettings());
 
         Reg.registerWithItem("red_lupine", RED_LUPINE, itemSettings());
         Reg.registerWithItem("yellow_lupine", YELLOW_LUPINE, itemSettings());
@@ -268,6 +267,7 @@ public class ModBlocks {
 
         Reg.registerWithItem("bee_nest_wall", BEE_NEST_WALL, itemSettings());
         Reg.registerWithItem("sticky_shroom", STICKY_SHROOM, itemSettings());
+        Reg.registerWithItem("morel", MOREL, itemSettings());
         Reg.registerWithItem("shivercap", SHIVERCAP, itemSettings());
         Reg.registerWithItem("warding_shroom", WARDING_SHROOM, itemSettings());
         Reg.registerWithItem("goop_cap", GOOP_CAP, itemSettings());
