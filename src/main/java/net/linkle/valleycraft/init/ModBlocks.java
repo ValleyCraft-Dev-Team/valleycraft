@@ -202,7 +202,9 @@ public class ModBlocks {
         Reg.registerWithItem("mamon_fence", MAMON_FENCE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("mamon_fence_gate", MAMON_FENCE_GATE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("mamon_pressure_plate", MAMON_PRESSURE_PLATE, itemSettings().group(NON_NATURAL_BLOCKS));
-        
+
+        Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings().group(NON_NATURAL_BLOCKS));
+
         Reg.registerWithItem("salt_ore", SALT_ORE, itemSettings());
         Reg.registerWithItem("nether_salt_ore", NETHER_SALT_ORE, itemSettings());
         Reg.registerWithItem("nether_coal_ore", NETHER_COAL_ORE, itemSettings());
@@ -226,12 +228,11 @@ public class ModBlocks {
         Reg.registerWithItem("verdantine", VERDANTINE, itemSettings());
         Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
         Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
-        Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("pumice", PUMICE, itemSettings());
         Reg.registerWithItem("pumice_smooth", PUMICE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("rocks", ROCKS, itemSettings());
         Reg.registerWithItem("bone_joint", BONE_JOINT, itemSettings());
-        
+
         Reg.registerWithItem("ghost_pumpkin", GHOST_PUMPKIN, itemSettings());
         Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i->EquipmentSlot.HEAD).group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("ghost_jack_o_lantern", GHOST_JACK_O_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
