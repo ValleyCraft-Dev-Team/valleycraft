@@ -116,12 +116,14 @@ public class ModBlocks {
     public static final Block WILD_MINERS_LETTUCE = new ModPlantBlock();
     public static final Block WILD_POTATO = new ModPlantBlock();
     public static final Block WILD_WHEAT = new ModPlantBlock();
-    //public static final Block WILD_SPICY_PEPPERS = new ModPlantBlock();
-    //public static final Block WILD_ONION = new ModPlantBlock();
-    //public static final Block WILD_CAVE_ROOT = new ModPlantBlock();
-    //public static final Block WILD_HERBS = new ModPlantBlock();
+    public static final Block WILD_FIRE_PEPPER = new ModPlantBlock();
+    public static final Block WILD_ONION = new ModPlantBlock();
+    public static final Block WILD_CAVE_ROOT = new ModPlantBlock();
+    public static final Block WILD_RICE = new ModPlantBlock();
+    public static final Block WILD_HERBS = new ModPlantBlock();
+
     //public static final Block WILD_ALOE = new ModPlantBlock();
-    //public static final Block WILD_AMETHYSTLE = new ModPlantBlock();
+    public static final Block WILD_AMETHYSTLE = new ModPlantBlock();
     public static final Block WILD_PUFF_BALL = new ModPlantBlock();
 
     public static final Block YELLOW_LUPINE = new ModPlantBlock();
@@ -280,13 +282,21 @@ public class ModBlocks {
         Reg.registerWithItem("sprout", SPROUT, itemSettings());
         Reg.registerWithItem("thorny_bush", THORNY_BUSH, itemSettings());
         Reg.registerWithItem("weaping_ghost_willow", WEAPING_GHOST_WILLOW, itemSettings());
-        Reg.registerWithItem("wild_beet", WILD_BEET, itemSettings());
-        Reg.registerWithItem("wild_carrot", WILD_CARROT, itemSettings());
-        Reg.registerWithItem("wild_miners_lettuce", WILD_MINERS_LETTUCE, itemSettings());
-        Reg.registerWithItem("wild_potato", WILD_POTATO, itemSettings());
-        Reg.registerWithItem("wild_wheat", WILD_WHEAT, itemSettings());
 
+        Reg.registerWithItem("wild_wheat", WILD_WHEAT, itemSettings());
+        Reg.registerWithItem("wild_potato", WILD_POTATO, itemSettings());
+        Reg.registerWithItem("wild_carrot", WILD_CARROT, itemSettings());
+        Reg.registerWithItem("wild_beet", WILD_BEET, itemSettings());
+
+        Reg.registerWithItem("wild_miners_lettuce", WILD_MINERS_LETTUCE, itemSettings());
+        Reg.registerWithItem("wild_fire_pepper", WILD_FIRE_PEPPER, itemSettings());
+        Reg.registerWithItem("wild_rice", WILD_RICE, itemSettings());
+        Reg.registerWithItem("wild_amethystle", WILD_AMETHYSTLE, itemSettings());
+        Reg.registerWithItem("wild_cave_root", WILD_CAVE_ROOT, itemSettings());
+        Reg.registerWithItem("wild_onion", WILD_ONION, itemSettings());
+        Reg.registerWithItem("wild_herbs", WILD_HERBS, itemSettings());
         Reg.registerWithItem("wild_puff_ball", WILD_PUFF_BALL, itemSettings());
+
         Reg.registerWithItem("cave_roots", CAVE_ROOTS, itemSettings());
         Reg.registerWithItem("bone_weed", BONE_WEED, itemSettings());
         Reg.registerWithItem("desert_shrub", DESERT_SHRUB, itemSettings());

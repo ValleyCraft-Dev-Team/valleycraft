@@ -90,7 +90,13 @@ class RenderLayers {
         put(MOREL, cullout);
         put(ORANGE_KELP, cullout);
         put(ORANGE_KELP_PLANT, cullout);
-        
+        put(WILD_CAVE_ROOT, cullout);
+        put(WILD_RICE, cullout);
+        put(WILD_FIRE_PEPPER, cullout);
+        put(WILD_HERBS, cullout);
+        put(WILD_AMETHYSTLE, cullout);
+        put(WILD_ONION, cullout);
+
         put(OPTIC_GLASS, translucent);
     }
 
