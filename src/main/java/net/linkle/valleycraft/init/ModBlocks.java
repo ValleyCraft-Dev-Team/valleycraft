@@ -15,6 +15,9 @@ import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.util.BlockPres;
 import net.linkle.valleycraft.util.Reg;
 
+import static net.linkle.valleycraft.init.ModGroups.INGREDIENTS;
+import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
+
 public class ModBlocks {
 
     public static final Block DRY_DIRT = new Block(Block.Settings.copy(Blocks.COARSE_DIRT));
@@ -137,6 +140,7 @@ public class ModBlocks {
 
     public static final Block BONE_JOINT = new Block(Block.Settings.copy(Blocks.BONE_BLOCK));
     public static final Block ROCKS = new RockBlock();
+    public static final Block SALT_BLOCK = new Block(Block.Settings.copy(Blocks.SANDSTONE));
 
     //public static final Block STALWART_SHROOM = new ModPlantBlock();
     public static final Block CLARET_LEAF = new ModPlantBlock();
@@ -175,65 +179,66 @@ public class ModBlocks {
         Reg.registerWithItem("apple_log", APPLE_LOG, itemSettings());
         Reg.registerWithItem("stripped_apple_wood", STRIPPED_APPLE_WOOD, itemSettings());
         Reg.registerWithItem("stripped_apple_log", STRIPPED_APPLE_LOG, itemSettings());
-        Reg.registerWithItem("apple_planks", APPLE_PLANKS, itemSettings());
-        Reg.registerWithItem("apple_door", APPLE_DOOR, itemSettings());
-        Reg.registerWithItem("apple_trapdoor", APPLE_TRAPDOOR, itemSettings());
-        Reg.registerWithItem("apple_slab", APPLE_SLAB, itemSettings());
-        Reg.registerWithItem("apple_stairs", APPLE_STAIRS, itemSettings());
-        Reg.registerWithItem("apple_button", APPLE_BUTTON, itemSettings());
-        Reg.registerWithItem("apple_fence", APPLE_FENCE, itemSettings());
-        Reg.registerWithItem("apple_fence_gate", APPLE_FENCE_GATE, itemSettings());
-        Reg.registerWithItem("apple_pressure_plate", APPLE_PRESSURE_PLATE, itemSettings());
+        Reg.registerWithItem("apple_planks", APPLE_PLANKS, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("apple_door", APPLE_DOOR, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("apple_trapdoor", APPLE_TRAPDOOR, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("apple_slab", APPLE_SLAB, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("apple_stairs", APPLE_STAIRS, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("apple_button", APPLE_BUTTON, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("apple_fence", APPLE_FENCE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("apple_fence_gate", APPLE_FENCE_GATE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("apple_pressure_plate", APPLE_PRESSURE_PLATE, itemSettings().group(NON_NATURAL_BLOCKS));
         
         Reg.registerWithItem("mamon_wood", MAMON_WOOD, itemSettings());
         Reg.registerWithItem("mamon_log", MAMON_LOG, itemSettings());
         Reg.registerWithItem("stripped_mamon_wood", STRIPPED_MAMON_WOOD, itemSettings());
         Reg.registerWithItem("stripped_mamon_log", STRIPPED_MAMON_LOG, itemSettings());
-        Reg.registerWithItem("mamon_planks", MAMON_PLANKS, itemSettings());
-        Reg.registerWithItem("mamon_door", MAMON_DOOR, itemSettings());
-        Reg.registerWithItem("mamon_trapdoor", MAMON_TRAPDOOR, itemSettings());
-        Reg.registerWithItem("mamon_slab", MAMON_SLAB, itemSettings());
-        Reg.registerWithItem("mamon_stairs", MAMON_STAIRS, itemSettings());
-        Reg.registerWithItem("mamon_button", MAMON_BUTTON, itemSettings());
-        Reg.registerWithItem("mamon_fence", MAMON_FENCE, itemSettings());
-        Reg.registerWithItem("mamon_fence_gate", MAMON_FENCE_GATE, itemSettings());
-        Reg.registerWithItem("mamon_pressure_plate", MAMON_PRESSURE_PLATE, itemSettings());
+        Reg.registerWithItem("mamon_planks", MAMON_PLANKS, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("mamon_door", MAMON_DOOR, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("mamon_trapdoor", MAMON_TRAPDOOR, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("mamon_slab", MAMON_SLAB, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("mamon_stairs", MAMON_STAIRS, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("mamon_button", MAMON_BUTTON, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("mamon_fence", MAMON_FENCE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("mamon_fence_gate", MAMON_FENCE_GATE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("mamon_pressure_plate", MAMON_PRESSURE_PLATE, itemSettings().group(NON_NATURAL_BLOCKS));
         
         Reg.registerWithItem("salt_ore", SALT_ORE, itemSettings());
         Reg.registerWithItem("nether_salt_ore", NETHER_SALT_ORE, itemSettings());
         Reg.registerWithItem("nether_coal_ore", NETHER_COAL_ORE, itemSettings());
-        Reg.registerWithItem("charcoal_block", CHARCOAL_BLOCK, itemSettings());
+        Reg.registerWithItem("charcoal_block", CHARCOAL_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("dry_dirt", DRY_DIRT, itemSettings());
         Reg.registerWithItem("sandy_gravel", SANDY_GRAVEL, itemSettings());
         Reg.registerWithItem("arid_mossy_stone", ARID_MOSSY_STONE, itemSettings());
         Reg.registerWithItem("mossy_stone", MOSSY_STONE, itemSettings());
         Reg.registerWithItem("carmine", CARMINE, itemSettings());
         Reg.registerWithItem("carmine_cobblestone", CARMINE_COBBLESTONE, itemSettings());
-        Reg.registerWithItem("carmine_smooth", CARMINE_SMOOTH, itemSettings());
+        Reg.registerWithItem("carmine_smooth", CARMINE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("diabase", DIABASE, itemSettings());
-        Reg.registerWithItem("diabase_smooth", DIABASE_SMOOTH, itemSettings());
+        Reg.registerWithItem("diabase_smooth", DIABASE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("serpentinite", SERPENTINITE, itemSettings());
-        Reg.registerWithItem("serpentinite_smooth", SERPENTINITE_SMOOTH, itemSettings());
+        Reg.registerWithItem("serpentinite_smooth", SERPENTINITE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("grimestone", GRIMESTONE, itemSettings());
-        Reg.registerWithItem("grimestone_smooth", GRIMESTONE_SMOOTH, itemSettings());
+        Reg.registerWithItem("grimestone_smooth", GRIMESTONE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("limestone", LIMESTONE, itemSettings());
         Reg.registerWithItem("limestone_smooth", LIMESTONE_SMOOTH, itemSettings());
         Reg.registerWithItem("shiverstone", SHIVERSTONE, itemSettings());
         Reg.registerWithItem("verdantine", VERDANTINE, itemSettings());
         Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
         Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
-        Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings());
+        Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("pumice", PUMICE, itemSettings());
         Reg.registerWithItem("pumice_smooth", PUMICE_SMOOTH, itemSettings());
         Reg.registerWithItem("rocks", ROCKS, itemSettings());
         Reg.registerWithItem("bone_joint", BONE_JOINT, itemSettings());
         
         Reg.registerWithItem("ghost_pumpkin", GHOST_PUMPKIN, itemSettings());
-        Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i->EquipmentSlot.HEAD));
-        Reg.registerWithItem("ghost_jack_o_lantern", GHOST_JACK_O_LANTERN, itemSettings());
+        Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i->EquipmentSlot.HEAD).group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("ghost_jack_o_lantern", GHOST_JACK_O_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
         
-        Reg.registerWithItem("fiber_bale", FIBER_BALE, itemSettings());
-        Reg.registerWithItem("rotten_flesh_block", ROTTEN_FLESH_BLOCK, itemSettings());
+        Reg.registerWithItem("fiber_bale", FIBER_BALE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("rotten_flesh_block", ROTTEN_FLESH_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("salt_block", SALT_BLOCK, itemSettings());
 
         Reg.registerWithItem("black_dahlia", BLACK_DAHLIA, itemSettings());
         Reg.registerWithItem("flowering_cactus", FLOWERING_CACTUS, itemSettings());
