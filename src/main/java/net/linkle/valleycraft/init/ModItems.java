@@ -1,11 +1,9 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.item.FoodItem;
-import net.linkle.valleycraft.item.Tier0Normal;
+import net.linkle.valleycraft.item.SalveItem;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
@@ -25,7 +23,7 @@ public class ModItems {
     public static final Item DUCKS_FEATHER = new Item(itemSettings().group(ITEMS));
 
     //salve
-    public static final Item SALVE = new Tier0Normal(itemSettings().group(TOOLS), 0, 0.0f, StatusEffects.REGENERATION);
+    public static final Item SALVE = new SalveItem(itemSettings().group(TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION);
     public static final Item DOG_BISCUIT = new FoodItem(itemSettings().group(TOOLS), 2, 2, true);
 
 

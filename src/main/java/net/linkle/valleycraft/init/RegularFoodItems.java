@@ -11,77 +11,92 @@ import static net.linkle.valleycraft.init.ModGroups.REGULAR_DISHES;
 public class RegularFoodItems {
 
     // cooked
-    public static final Item BAKED_APPLE = new FoodItem(settings(), 6, 4.8f);
-    public static final Item BAKED_BEETROOT = new FoodItem(settings(), 2, 2.4f);
-    public static final Item BAKED_HEARTY_BEETROOT = new FoodItem(settings(), 7, 6);
-    public static final Item BAKED_CARROT = new FoodItem(settings(), 5, 4);
-    public static final Item BAKED_ENDURA_CARROT = new FoodItem(settings(), 6, 7);
-    public static final Item BAKED_FIRE_PEPPER = new FoodItem(settings(), 5, 4);
-    public static final Item BAKED_GHOST_PUMPKIN_SLICE = new FoodItem(settings(), 4, 3);
-    public static final Item BAKED_PUMPKIN_SLICE = new FoodItem(settings(), 4, 3);
-    public static final Item BAKED_MELON_SLICE = new FoodItem(settings(), 3, 2);
-    public static final Item BAKED_ONION = new FoodItem(settings(), 4, 3);
-    public static final Item BAKED_SEEDS = new FoodItem(settings(), 2, 3);
-    public static final Item BAKED_SWEET_BERRIES = new FoodItem(settings(), 4, 2);
-    public static final Item BAKED_GLOW_BERRIES = new FoodItem(settings(), 4, 3);
-    public static final Item BAKED_GLOOM_BERRIES = new FoodItem(settings(), 4, 3);
-    public static final Item COOKED_RICE = new FoodItem(settings(), 4, 6);
-    public static final Item COOKED_CAVE_ROOT = new FoodItem(settings(), 5, 2);
+    public static final Item BAKED_APPLE = new FoodItem(settings(), 6, 0.6f);
+    public static final Item BAKED_BEETROOT = new FoodItem(settings(), 2, 0.6f);
+    public static final Item BAKED_HEARTY_BEETROOT = new FoodItem(settings(), 7, 0.6f);
+    public static final Item BAKED_CARROT = new FoodItem(settings(), 5, 0.6f);
+    public static final Item BAKED_ENDURA_CARROT = new FoodItem(settings(), 6, 0.6f);
+    public static final Item BAKED_FIRE_PEPPER = new FoodItem(settings(), 5, 0.6f);
+    public static final Item BAKED_GHOST_PUMPKIN_SLICE = new FoodItem(settings(), 4, 0.6f);
+    public static final Item BAKED_PUMPKIN_SLICE = new FoodItem(settings(), 4, 0.6f);
+    public static final Item BAKED_MELON_SLICE = new FoodItem(settings(), 3, 0.6f);
+    public static final Item BAKED_ONION = new FoodItem(settings(), 4, 0.6f);
+    public static final Item BAKED_SEEDS = new FoodItem(settings(), 2, 0.6f);
+    public static final Item BAKED_SWEET_BERRIES = new FoodItem(settings(), 4, 0.6f);
+    public static final Item BAKED_GLOW_BERRIES = new FoodItem(settings(), 4, 0.6f);
+    public static final Item BAKED_GLOOM_BERRIES = new FoodItem(settings(), 4, 0.6f);
+    public static final Item COOKED_RICE = new FoodItem(settings(), 4, 0.6f);
+    public static final Item COOKED_CAVE_ROOT = new FoodItem(settings(), 5, 0.6f);
 
-    public static final Item COOKED_SQUID = new FoodItem(settings(), 4, 2.6f);
-    public static final Item COOKED_SILVERFISH = new FoodItem(settings(), 3, 2);
-    public static final Item COOKED_PHANTOM = new FoodItem(settings(), 6, 3);
-    public static final Item COOKED_TURTLE = new FoodItem(settings(), 8, 2f);
-    public static final Item COOKED_BIRD = new FoodItem(settings(), 4, 2);
-    public static final Item COOKED_BACON = new FoodItem(settings(), 4, 2);
-    public static final Item COOKED_BAT = new FoodItem(settings(), 5, 3);
-    public static final Item FRIED_EGG = new FoodItem(settings(), 4, 3);
-    public static final Item COOKED_ROTTEN_FLESH = new FoodItem(settings(), 6, 2);
-    public static final Item COOKED_TROPICAL_FISH = new FoodItem(settings(), 4, 3);
+    public static final Item COOKED_SQUID = new FoodItem(settings(), 4, 0.6f);
+    public static final Item COOKED_SILVERFISH = new FoodItem(settings(), 3, 0.6f);
+    public static final Item COOKED_PHANTOM = new FoodItem(settings(), 6, 0.6f);
+    public static final Item COOKED_TURTLE = new FoodItem(settings(), 8, 0.6f);
+    public static final Item COOKED_BIRD = new FoodItem(settings(), 4, 0.6f);
+    public static final Item COOKED_BACON = new FoodItem(settings(), 4, 0.6f);
+    public static final Item COOKED_BAT = new FoodItem(settings(), 5, 0.6f);
+    public static final Item FRIED_EGG = new FoodItem(settings(), 4, 0.6f);
+    public static final Item COOKED_ROTTEN_FLESH = new FoodItem(settings(), 6, 0.4f);
+    public static final Item COOKED_TROPICAL_FISH = new FoodItem(settings(), 4, 0.6f);
 
     // pastries
-    public static final Item CAKE_SLICE = new FoodItem(settings(), 2, 0.4f);
-    public static final Item HARDTACK = new FoodItem(settings(), 3, 3);
-    public static final Item UBE_BREAD = new FoodItem(settings(), 8, 8);
-    public static final Item PUMPKIN_SPICE_COOKIE = new FoodItem(settings(), 3, 0.4f);
-    public static final Item CHORUS_FRUIT_PIE = new FoodItem(settings(), 9, 4.8f);
-    public static final Item CHOCOLATE_PIE = new FoodItem(settings(), 7, 5.8f);
-    public static final Item APPLE_PIE = new FoodItem(settings(), 6, 4.8f);
-    public static final Item SWEET_BERRY_PIE = new FoodItem(settings(), 6, 3.8f);
-    public static final Item GLOW_BERRY_PIE = new FoodItem(settings(), 6, 3.8f);
-    public static final Item GLOOM_BERRY_PIE = new FoodItem(settings(), 6, 3.8f);
+    public static final Item CAKE_SLICE = new FoodItem(settings(), 2, 0.1f);
+    public static final Item HARDTACK = new FoodItem(settings(), 3, 0.8f);
+    public static final Item UBE_BREAD = new FoodItem(settings(), 8, 0.6f);
+    public static final Item PUMPKIN_SPICE_COOKIE = new FoodItem(settings(), 3, 0.2f);
+    public static final Item CHORUS_FRUIT_PIE = new FoodItem(settings(), 9, 0.5f);
+    public static final Item CHOCOLATE_PIE = new FoodItem(settings(), 7, 0.5f);
+    public static final Item APPLE_PIE = new FoodItem(settings(), 6, 0.3f);
+    public static final Item SWEET_BERRY_PIE = new FoodItem(settings(), 6, 0.3f);
+    public static final Item GLOW_BERRY_PIE = new FoodItem(settings(), 6, 0.3f);
+    public static final Item GLOOM_BERRY_PIE = new FoodItem(settings(), 6, 0.3f);
 
     // no tier bottles
-    public static final Item CHOCOLATE_MILK = new BottleItem(settings().maxCount(16), 3, 2).setMilk();
-    public static final Item APPLE_JUICE = new BottleItem(settings().maxCount(16), 4, 2);
-    public static final Item SWEET_BERRY_JUICE = new BottleItem(settings().maxCount(16), 4, 2);
-    public static final Item CHORUS_FRUIT_JUICE = new BottleItem(settings().maxCount(16), 4, 2);
-    public static final Item WARM_PUMPKIN_SOUP_BOTTLE = new BottleItem(settings().maxCount(16), 9, 8);
-    public static final Item GLOOM_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 2, StatusEffects.NIGHT_VISION);
-    public static final Item ALOE_VERA_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 2, StatusEffects.HEALTH_BOOST);
+    public static final Item CHOCOLATE_MILK = new BottleItem(settings().maxCount(16), 3, 0.3f).setMilk();
+    public static final Item APPLE_JUICE = new BottleItem(settings().maxCount(16), 4, 0.3f);
+    public static final Item SWEET_BERRY_JUICE = new BottleItem(settings().maxCount(16), 4, 0.3f);
+    public static final Item CHORUS_FRUIT_JUICE = new BottleItem(settings().maxCount(16), 4, 0.3f);
+    public static final Item WARM_PUMPKIN_SOUP_BOTTLE = new BottleItem(settings().maxCount(16), 9, 0.8f);
+    public static final Item GLOOM_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.NIGHT_VISION);
+    public static final Item ALOE_VERA_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.HEALTH_BOOST);
 
     // no tier items
-    public static final Item CAVE_ROOT_STIR_FRY = new BowlItem(settings(), 10, 1.8f);
+    public static final Item CAVE_ROOT_STIR_FRY = new BowlItem(settings(), 10, 0.6f);
     public static final Item COOKED_MONSTER_GUTS = new BowlItem(settings(), 8, 3.8f);
     public static final Item MONSTER_STEW = new BowlItem(settings(), 6, 5.8f);
 
-    public static final Item FRUIT_MIX = new BowlItem(settings(), 6, 1.8f);
-    public static final Item VEGETABLE_MIX = new BowlItem(settings(), 6, 1.8f);
+    public static final Item FRUIT_MIX = new BowlItem(settings(), 6, 0.6f);
+    public static final Item VEGETABLE_MIX = new BowlItem(settings(), 6, 0.6f);
     public static final Item SAVORY_BREAKFAST = new BowlItem(settings(), 10, 5.8f);
     public static final Item SAUTEED_EYES = new FoodItem(settings(), 8, 7.8f);
 
-    public static final Item MAGMA_CREME_SOUP = new BowlItem(settings(), 7, 5.2f);
-    public static final Item SLIME_SOUP = new BowlItem(settings(), 5, 7.2f);
-    public static final Item PUMPKIN_SOUP = new BowlItem(settings(), 8, 6.2f);
-    public static final Item FUNGUS_STEW = new BowlItem(settings(), 8, 5.2f);
-    public static final Item MUSHROOM_SKEWER = new FoodItem(settings(), 8, 5.2f);
+    public static final Item MAGMA_CREME_SOUP = new BowlItem(settings(), 7, 0.6f);
+    public static final Item SLIME_SOUP = new BowlItem(settings(), 5, 0.6f);
+    public static final Item PUMPKIN_SOUP = new BowlItem(settings(), 8, 0.8f);
+    public static final Item FUNGUS_STEW = new BowlItem(settings(), 8, 0.8f);
+    public static final Item MUSHROOM_SKEWER = new FoodItem(settings(), 8, 0.8f);
 
-    public static final Item SANDWICH_CHICKEN = new FoodItem(settings(), 10, 5.2f);
-    public static final Item SANDWICH_MUTTON = new FoodItem(settings(), 10, 5.2f);
-    public static final Item SANDWICH_BEEF = new FoodItem(settings(), 10, 5.2f);
-    public static final Item SANDWICH_PORK = new FoodItem(settings(), 10, 5.2f);
+    public static final Item SANDWICH_CHICKEN = new FoodItem(settings(), 10, 0.8f);
+    public static final Item SANDWICH_MUTTON = new FoodItem(settings(), 10, 0.8f);
+    public static final Item SANDWICH_BEEF = new FoodItem(settings(), 10, 0.8f);
+    public static final Item SANDWICH_PORK = new FoodItem(settings(), 10, 0.8f);
 
     // golden
+    public static final Item GOLDEN_WATERMELON_JUICE = new BottleItem(settings(), 2, 1.2f);
+    public static final Item GOLDEN_POTATO = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_ALOE_VERA = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_CAVE_ROOT = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_CHORUS_FRUIT = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_ENDURA_CARROT = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_BEETROOT = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_HEARTY_BEETROOT = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_FIRE_PEPPER = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_SWEET_BERRIES = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_GLOW_BERRIES = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_GLOOM_BERRY = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_ANCIENT_MAIZE = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_ONION = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_PUMPKIN_SLICE = new FoodItem(settings(), 4, 1.2f);
 
     /** Called from {@link ModItems} */
     static void initialize() {
@@ -157,6 +172,23 @@ public class RegularFoodItems {
         Reg.register("slime_soup", SLIME_SOUP);
         Reg.register("magma_creme_soup", MAGMA_CREME_SOUP);
         Reg.register("sauteed_eyes_and_mushrooms", SAUTEED_EYES);
+
+        //golden
+        Reg.register("golden_watermelon_juice", GOLDEN_WATERMELON_JUICE);
+        Reg.register("golden_potato", GOLDEN_POTATO);
+        Reg.register("golden_endura_carrot", GOLDEN_ENDURA_CARROT);
+        Reg.register("golden_beetroot", GOLDEN_BEETROOT);
+        Reg.register("golden_hearty_beetroot", GOLDEN_HEARTY_BEETROOT);
+        Reg.register("golden_fire_pepper", GOLDEN_FIRE_PEPPER);
+        Reg.register("golden_ancient_maize", GOLDEN_ANCIENT_MAIZE);
+        Reg.register("golden_onion", GOLDEN_ONION);
+        Reg.register("golden_pumpkin_slice", GOLDEN_PUMPKIN_SLICE);
+        Reg.register("golden_cave_root", GOLDEN_CAVE_ROOT);
+        Reg.register("golden_aloe_vera", GOLDEN_ALOE_VERA);
+        Reg.register("golden_sweet_berries", GOLDEN_SWEET_BERRIES);
+        Reg.register("golden_glow_berries", GOLDEN_GLOW_BERRIES);
+        Reg.register("golden_gloom_berry", GOLDEN_GLOOM_BERRY);
+        Reg.register("golden_chorus_fruit", GOLDEN_CHORUS_FRUIT);
     }
 
     private static Item.Settings settings() {
