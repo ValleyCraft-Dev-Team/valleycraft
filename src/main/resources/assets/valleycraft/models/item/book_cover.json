@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/plant_fiber_book_cover"
+    "layer0": "valleycraft:item/misc/plant_fiber_book_cover"
   }
 }

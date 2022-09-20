@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/ducks_feather"
+    "layer0": "valleycraft:item/misc/ducks_feather"
   }
 }

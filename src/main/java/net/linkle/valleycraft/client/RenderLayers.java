@@ -45,6 +45,7 @@ class RenderLayers {
         put(RED_LUPINE, cullout);
         put(ROOTED_WATCHER, cullout);
         put(SHIVERCAP, cullout);
+        put(STALWART_SHROOM, cullout);
         put(SHORT_GRASS, cullout);
         put(SNOWFLOWER, cullout);
         put(SPROUT, cullout);

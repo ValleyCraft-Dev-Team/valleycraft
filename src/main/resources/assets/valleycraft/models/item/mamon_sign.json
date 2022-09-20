@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "valleycraft:item/mamon_sign"
+    "layer0": "valleycraft:item/block_items/mamon_sign"
   }
 }

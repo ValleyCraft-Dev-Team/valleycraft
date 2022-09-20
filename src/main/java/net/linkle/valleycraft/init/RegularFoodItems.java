@@ -5,8 +5,8 @@ import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 
-import static net.linkle.valleycraft.init.ModGroups.INGREDIENTS;
-import static net.linkle.valleycraft.init.ModGroups.REGULAR_DISHES;
+import static net.linkle.valleycraft.init.ModGroups.*;
+import static net.linkle.valleycraft.init.ModGroups.TOOLS;
 
 public class RegularFoodItems {
 
@@ -34,10 +34,11 @@ public class RegularFoodItems {
     public static final Item COOKED_TURTLE = new FoodItem(settings(), 8, 0.6f);
     public static final Item COOKED_BIRD = new FoodItem(settings(), 4, 0.6f);
     public static final Item COOKED_BACON = new FoodItem(settings(), 4, 0.6f);
-    public static final Item COOKED_BAT = new FoodItem(settings(), 5, 0.6f);
+    public static final Item COOKED_BAT = new FoodItem(settings(), 5, 0.6f, true);
     public static final Item FRIED_EGG = new FoodItem(settings(), 4, 0.6f);
-    public static final Item COOKED_ROTTEN_FLESH = new FoodItem(settings(), 6, 0.4f);
+    public static final Item COOKED_ROTTEN_FLESH = new FoodItem(settings(), 6, 0.4f,true);
     public static final Item COOKED_TROPICAL_FISH = new FoodItem(settings(), 4, 0.6f);
+    public static final Item BEAST_LIVER_COOKED = new FoodItem(settings(), 8, 0.4f, true);
 
     // pastries
     public static final Item CAKE_SLICE = new FoodItem(settings(), 2, 0.1f);
@@ -128,6 +129,7 @@ public class RegularFoodItems {
         Reg.register("fried_egg", FRIED_EGG);
         Reg.register("cooked_rotten_flesh", COOKED_ROTTEN_FLESH);
         Reg.register("cooked_tropical_fish", COOKED_TROPICAL_FISH);
+        Reg.register("cooked_beast_liver", BEAST_LIVER_COOKED);
 
         // pastries
         Reg.register("hardtack", HARDTACK);

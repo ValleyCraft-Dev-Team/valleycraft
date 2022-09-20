@@ -94,6 +94,8 @@ public class ModBlocks {
     public static final Block GLOW_CAP = new ModPlantBlock();
     public static final Block GODDESS_LILY = new ModPlantBlock();
     public static final Block HONEYCLUSTER = new ModPlantBlock();
+    public static final Block STALWART_SHROOM = new ModPlantBlock();
+
     public static final Block IRONSHROOM = new ModPlantBlock();
     public static final Block JUNGLE_CAP = new ModPlantBlock();
     public static final Block LAVENDER = new ModPlantBlock();
@@ -281,6 +283,7 @@ public class ModBlocks {
         Reg.registerWithItem("sticky_shroom", STICKY_SHROOM, itemSettings());
         Reg.registerWithItem("morel", MOREL, itemSettings());
         Reg.registerWithItem("shivercap", SHIVERCAP, itemSettings());
+        Reg.registerWithItem("stalwart_shroom", STALWART_SHROOM, itemSettings());
         Reg.registerWithItem("warding_shroom", WARDING_SHROOM, itemSettings());
         Reg.registerWithItem("goop_cap", GOOP_CAP, itemSettings());
         Reg.registerWithItem("glow_cap", GLOW_CAP, itemSettings());

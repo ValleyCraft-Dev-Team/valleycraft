@@ -27,6 +27,7 @@ public class IngredientFoodItems {
     public static final Item MAIZE = new FoodItem(settings(), 3, 4);
     public static final Item MINERS_LETTUCE = new FoodItem(settings(), 3, 2);
     public static final Item MONSTER_GUTS = new Tier1Normal(settings(), 6, 2, StatusEffects.HUNGER);
+    public static final Item MONSTER_FLESH = new Tier2Normal(settings(), 8, 2, StatusEffects.HUNGER);
     public static final Item MOREL_OIL = new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS);
     public static final Item ONION = new FoodItem(settings(), 3, 3);
     public static final Item RAW_BACON = new FoodItem(settings(), 2, 1);
@@ -56,6 +57,7 @@ public class IngredientFoodItems {
     public static final Item GLOOM_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
     public static final Item GLOOM_BERRY = new AliasedBlockItem(ModBlocks.GLOOM_BERRY, settings().food(FoodComponents.GLOW_BERRIES));
     public static final Item MILK = new BottleItem(settings().maxCount(16), 0, 2).setMilk();
+    public static final Item BEAST_LIVER_RAW = new FoodItem(settings(), 4, 0.4f, true);
 
 
     /** Called from {@link ModItems} */
@@ -81,6 +83,8 @@ public class IngredientFoodItems {
         Reg.register("ghost_pumpkin_slice", GHOST_PUMPKIN_SLICE);
 
         Reg.register("monster_guts", MONSTER_GUTS);
+        Reg.register("monster_flesh", MONSTER_FLESH);
+
         Reg.register("raw_bat_wing", RAW_BAT);
         Reg.register("raw_silverfish", RAW_SILVERFISH);
         Reg.register("raw_phantom_eye", RAW_PHANTOM);
@@ -90,6 +94,7 @@ public class IngredientFoodItems {
         Reg.register("raw_bacon", RAW_BACON);
         Reg.register("raw_turtle_neck", RAW_TURTLE);
         Reg.register("raw_bird_thigh", RAW_BIRD);
+        Reg.register("raw_beast_liver", BEAST_LIVER_RAW);
 
         Reg.register("hardtack_dough", HARDTACK_DOUGH);
         Reg.register("bread_dough", BREAD_DOUGH);

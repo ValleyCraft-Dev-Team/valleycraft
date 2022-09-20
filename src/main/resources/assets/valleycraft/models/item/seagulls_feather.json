@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/seagulls_feather"
+    "layer0": "valleycraft:item/misc/seagulls_feather"
   }
 }

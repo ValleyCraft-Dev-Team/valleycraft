@@ -21,10 +21,16 @@ public class ModItems {
     public static final Item CROWS_FEATHER = new Item(itemSettings().group(ITEMS));
     public static final Item SEAGULLS_FEATHER = new Item(itemSettings().group(ITEMS));
     public static final Item DUCKS_FEATHER = new Item(itemSettings().group(ITEMS));
+    public static final Item BEAST_BONE = new Item(itemSettings().group(ITEMS));
+    public static final Item EVIL_CRYSTAL = new Item(itemSettings().group(ITEMS));
+    public static final Item MONSTER_CLAW = new Item(itemSettings().group(ITEMS));
+    public static final Item MONSTER_TOOTH = new Item(itemSettings().group(ITEMS));
+    public static final Item JELLY_BLOB = new Item(itemSettings().group(ITEMS));
+    public static final Item STRING = new Item(itemSettings().group(ITEMS));
 
     //salve
     public static final Item SALVE = new SalveItem(itemSettings().group(TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION);
-    public static final Item DOG_BISCUIT = new FoodItem(itemSettings().group(TOOLS), 2, 2, true);
+    public static final Item DOG_BISCUIT = new FoodItem(itemSettings().group(TOOLS), 2, 0.4f, true);
 
 
     public static void initialize() {
@@ -34,12 +40,23 @@ public class ModItems {
         Reg.register("flour", FLOUR);
         Reg.register("salt", SALT);
 
-        Reg.register("mulch", MULCH);
         Reg.register("fiber", FIBER);
-        Reg.register("book_cover", COVER);
+
+        Reg.register("beast_bone", BEAST_BONE);
+
         Reg.register("seagulls_feather", SEAGULLS_FEATHER);
         Reg.register("ducks_feather", DUCKS_FEATHER);
         Reg.register("crows_feather", CROWS_FEATHER);
+
+        Reg.register("jelly_blob", JELLY_BLOB);
+        Reg.register("monster_claw", MONSTER_CLAW);
+        Reg.register("monster_tooth", MONSTER_TOOTH);
+        Reg.register("evil_crystal", EVIL_CRYSTAL);
+
+        Reg.register("book_cover", COVER);
+        Reg.register("plant_fiber_string", STRING);
+
+        Reg.register("mulch", MULCH);
 
         TieredFoodItems.initialize();
         IngredientFoodItems.initialize();

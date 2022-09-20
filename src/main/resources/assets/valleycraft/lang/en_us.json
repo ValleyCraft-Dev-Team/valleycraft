@@ -309,12 +309,24 @@
 
   "item.valleycraft.flour": "Flour",
 
-  "item.valleycraft.fiber": "Grass Fiber",
+  "item.valleycraft.fiber": "Plant Fiber",
   "item.valleycraft.book_cover": "Fiber Book Cover",
   "item.valleycraft.mulch": "Mulch",
   "item.valleycraft.crows_feather": "Crow Feather",
   "item.valleycraft.seagulls_feather": "Seagull Feather",
   "item.valleycraft.ducks_feather": "Duck Feather",
 
-  "item.valleycraft.salve": "Healing Salve"
+  "item.valleycraft.salve": "Healing Salve",
+  "item.valleycraft.beast_bone": "Small Beast Bone",
+  "item.valleycraft.cooked_beast_liver": "Cooked Beast Liver",
+  "item.valleycraft.raw_beast_liver": "Raw Beast Liver",
+
+  "item.valleycraft.monster_claw": "Monster Claw",
+  "item.valleycraft.monster_tooth": "Monster Tooth",
+  "item.valleycraft.jelly_blob": "Jelly Blob",
+  "block.valleycraft.stalwart_shroom": "Stalwart Ironshroom",
+  "item.valleycraft.monster_flesh": "Monster Flesh",
+  "item.valleycraft.plant_fiber_string": "Fiber String",
+
+  "item.valleycraft.evil_crystal": "Evil Crystal"
 }
