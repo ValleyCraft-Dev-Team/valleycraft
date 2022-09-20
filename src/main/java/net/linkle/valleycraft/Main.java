@@ -19,10 +19,10 @@ public class Main implements ModInitializer {
 	@Override
 	public void onInitialize() {
 	    Config.initialize();
+	    ModGroups.initialize();
 		ModBlocks.initialize();
 		ModItems.initialize();
 		Contents.initialize();
-		ModGroups.initialize();
 		TreeConfigFeatures.initialize();
 		ModParticles.initialize();
 	}

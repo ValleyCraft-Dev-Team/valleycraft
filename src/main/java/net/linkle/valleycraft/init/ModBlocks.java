@@ -15,7 +15,6 @@ import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.util.BlockPres;
 import net.linkle.valleycraft.util.Reg;
 
-import static net.linkle.valleycraft.init.ModGroups.INGREDIENTS;
 import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
 
 public class ModBlocks {

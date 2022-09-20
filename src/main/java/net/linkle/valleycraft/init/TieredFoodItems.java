@@ -44,7 +44,7 @@ public class TieredFoodItems {
     public static final Item SPICY_BEEF_RISOTTO = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.HASTE);
     public static final Item SWEET_CHICKEN_RISOTTO = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.REGENERATION);
     
-    /** Called from ModItem */
+    /** Called from {@link ModItems} */
     static void initialize() {
         // tier 1
         Reg.register("amethystle_salad", AMETHYSTLE_SALAD);

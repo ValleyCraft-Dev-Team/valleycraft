@@ -52,7 +52,7 @@ public class SprinklerBlock extends Block {
                 world.emitGameEvent(null, GameEvent.FLUID_PLACE, pos);
             }
             return ActionResult.success(world.isClient);
-        } else if (item == Items.BUCKET && state.get(SPRINKLING)) { // empty sprinkler
+        } if (item == Items.BUCKET && state.get(SPRINKLING)) { // empty sprinkler
             if (!world.isClient) {
                 player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, new ItemStack(Items.WATER_BUCKET)));
                 player.incrementStat(Stats.USED.getOrCreateStat(item));

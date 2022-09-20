@@ -55,7 +55,7 @@ public class IngredientFoodItems {
     public static final Item GLOOM_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
 
 
-    /** Called from ModItem */
+    /** Called from {@link ModItems} */
     static void initialize() {
         Reg.register("aloe_vera", ALOE);
         Reg.register("amethystle", AMETHYSTLE);
@@ -64,6 +64,8 @@ public class IngredientFoodItems {
         Reg.register("endura_carrot", ENDURA_CARROT);
         Reg.register("fire_pepper", FIRE_PEPPER);
         Reg.register("glow_berry_juice", GLOW_BERRY_JUICE);
+        Reg.register("gloom_berry_juice", GLOOM_BERRY_JUICE);
+        Reg.register("aloe_vera_juice", ALOE_VERA_JUICE);
         Reg.register("hearty_beetroot", HEARTY_BEETROOT);
         Reg.register("maize", MAIZE);
         Reg.register("miners_lettuce_item", MINERS_LETTUCE);

@@ -37,6 +37,7 @@ public class ModItems {
 
         TieredFoodItems.initialize();
         IngredientFoodItems.initialize();
+        RegularFoodItems.initialize();
     }
     
     private static Item.Settings itemSettings() {

@@ -7,9 +7,12 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsage;
 import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.stat.Stats;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
 public class Tier3Bowl extends FoodItem {
@@ -18,6 +21,7 @@ public class Tier3Bowl extends FoodItem {
         super(settings, hunger, satMod, new FoodStatusEffect(new StatusEffectInstance(effect, 120 * 20)));
     }
 
+    @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         super.finishUsing(stack, world, user);
         if (user instanceof ServerPlayerEntity player) {
@@ -34,5 +38,10 @@ public class Tier3Bowl extends FoodItem {
             }
         }
         return stack;
+    }
+    
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        return ItemUsage.consumeHeldItem(world, user, hand);
     }
 }
