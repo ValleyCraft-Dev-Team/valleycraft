@@ -3,8 +3,10 @@ package net.linkle.valleycraft.block;
 import java.util.Random;
 
 import net.linkle.valleycraft.init.ModParticles;
+import net.linkle.valleycraft.init.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.FurnaceBlock;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.block.ShapeContext;
@@ -82,6 +84,9 @@ public class SprinklerBlock extends Block {
             double x = pos.getX()+0.5;
             double y = pos.getY()+0.75;
             double z = pos.getZ()+0.5;
+            if (random.nextFloat() < 0.1f) {
+                world.playSound(x, y, z, ModSounds.SPRINKLER, SoundCategory.BLOCKS, 0.4f, 1.0f, false);
+            }
             for (int i = 0; i < 6; i++) {
                 double speed = random.nextDouble(0.2, 0.5);
                 double angle = random.nextDouble(Math.PI*2.0);

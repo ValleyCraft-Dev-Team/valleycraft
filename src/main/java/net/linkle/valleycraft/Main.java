@@ -7,6 +7,7 @@ import net.linkle.valleycraft.init.ModBlocks;
 import net.linkle.valleycraft.init.ModGroups;
 import net.linkle.valleycraft.init.ModItems;
 import net.linkle.valleycraft.init.ModParticles;
+import net.linkle.valleycraft.init.ModSounds;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -19,12 +20,16 @@ public class Main implements ModInitializer {
 	@Override
 	public void onInitialize() {
 	    Config.initialize();
+	    
 	    ModGroups.initialize();
 		ModBlocks.initialize();
 		ModItems.initialize();
+		
 		Contents.initialize();
 		TreeConfigFeatures.initialize();
+		
 		ModParticles.initialize();
+		ModSounds.initialize();
 	}
 	
 	public static Identifier makeId(String id) {

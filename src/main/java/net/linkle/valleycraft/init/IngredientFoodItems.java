@@ -54,7 +54,7 @@ public class IngredientFoodItems {
     public static final Item SWEET_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
     public static final Item GLOW_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
     public static final Item GLOOM_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
-    public static final Item GLOOM_BERRY = new AliasedBlockItem(ModBlocks.GLOOM_BERRY, itemSettings().food(FoodComponents.GLOW_BERRIES).group(INGREDIENTS));
+    public static final Item GLOOM_BERRY = new AliasedBlockItem(ModBlocks.GLOOM_BERRY, settings().food(FoodComponents.GLOW_BERRIES));
     public static final Item MILK = new BottleItem(settings().maxCount(16), 0, 2).setMilk();
 
 
