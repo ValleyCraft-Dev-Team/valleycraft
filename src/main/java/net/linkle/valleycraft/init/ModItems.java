@@ -11,7 +11,6 @@ import static net.linkle.valleycraft.init.ModGroups.ITEMS;
 public class ModItems {
 
     //ingredients
-    public static final Item GLOOM_BERRY = new AliasedBlockItem(ModBlocks.GLOOM_BERRY, itemSettings().food(FoodComponents.GLOW_BERRIES).group(INGREDIENTS));
     public static final Item SALT = new Item(itemSettings());
     public static final Item FLOUR = new Item(itemSettings());
 
@@ -26,7 +25,6 @@ public class ModItems {
     public static void initialize() {
         Reg.register("flour", FLOUR);
         Reg.register("salt", SALT);
-        Reg.register("gloom_berry", GLOOM_BERRY);
 
         Reg.register("mulch", MULCH);
         Reg.register("fiber", FIBER);

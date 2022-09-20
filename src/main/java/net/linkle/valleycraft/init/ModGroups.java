@@ -36,7 +36,7 @@ public class ModGroups {
         return builder.icon(() -> new ItemStack(item)).build();
     }
 
-    private static Item.Settings itemSettings() {
+    static Item.Settings itemSettings() {
         return new Item.Settings();
     }
 }

@@ -3,9 +3,12 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
+import static net.minecraft.item.Items.GLASS_BOTTLE;
 
 public class IngredientFoodItems {
 
@@ -18,15 +21,13 @@ public class IngredientFoodItems {
     public static final Item CAVE_ROOT = new FoodItem(settings(), 4, 2);
     public static final Item ENDURA_CARROT = new FoodItem(settings(), 5, 3);
     public static final Item FIRE_PEPPER = new FoodItem(settings(), 3, 3);
-    public static final Item GLOW_BERRY_JUICE = new Tier0Bottle(settings(), 4, 2, StatusEffects.GLOWING);
-    public static final Item GLOOM_BERRY_JUICE = new Tier0Bottle(settings(), 4, 2, StatusEffects.NIGHT_VISION);
-    public static final Item ALOE_VERA_JUICE = new Tier0Bottle(settings(), 4, 2, StatusEffects.HEALTH_BOOST);
+    public static final Item GLOW_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 2, StatusEffects.GLOWING);
 
     public static final Item HEARTY_BEETROOT = new FoodItem(settings(), 4, 4);
     public static final Item MAIZE = new FoodItem(settings(), 3, 4);
     public static final Item MINERS_LETTUCE = new FoodItem(settings(), 3, 2);
     public static final Item MONSTER_GUTS = new Tier1Normal(settings(), 6, 2, StatusEffects.HUNGER);
-    public static final Item MOREL_OIL = new Tier1Bottle(settings(), 2, 5, StatusEffects.SLOWNESS);
+    public static final Item MOREL_OIL = new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS);
     public static final Item ONION = new FoodItem(settings(), 3, 3);
     public static final Item RAW_BACON = new FoodItem(settings(), 2, 1);
     public static final Item RAW_BAT = new FoodItem(settings(), 2, 1);
@@ -53,23 +54,26 @@ public class IngredientFoodItems {
     public static final Item SWEET_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
     public static final Item GLOW_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
     public static final Item GLOOM_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
+    public static final Item GLOOM_BERRY = new AliasedBlockItem(ModBlocks.GLOOM_BERRY, itemSettings().food(FoodComponents.GLOW_BERRIES).group(INGREDIENTS));
+    public static final Item MILK = new BottleItem(settings().maxCount(16), 0, 2).setMilk();
 
 
     /** Called from {@link ModItems} */
     static void initialize() {
+        Reg.register("milk", MILK);
+        Reg.register("morel_oil", MOREL_OIL);
+        Reg.register("glow_berry_juice", GLOW_BERRY_JUICE);
+
+        Reg.register("gloom_berry", GLOOM_BERRY);
         Reg.register("aloe_vera", ALOE);
         Reg.register("amethystle", AMETHYSTLE);
         Reg.register("ancient_flower", ANCIENT_FLOWER);
         Reg.register("cave_root", CAVE_ROOT);
         Reg.register("endura_carrot", ENDURA_CARROT);
         Reg.register("fire_pepper", FIRE_PEPPER);
-        Reg.register("glow_berry_juice", GLOW_BERRY_JUICE);
-        Reg.register("gloom_berry_juice", GLOOM_BERRY_JUICE);
-        Reg.register("aloe_vera_juice", ALOE_VERA_JUICE);
         Reg.register("hearty_beetroot", HEARTY_BEETROOT);
         Reg.register("maize", MAIZE);
         Reg.register("miners_lettuce_item", MINERS_LETTUCE);
-        Reg.register("morel_oil", MOREL_OIL);
         Reg.register("onion", ONION);
         Reg.register("raw_rice", RAW_RICE);
 
@@ -104,7 +108,7 @@ public class IngredientFoodItems {
         Reg.register("cake_dough", CAKE_DOUGH);
 
     }
-    
+
     private static Item.Settings settings() {
         return new Item.Settings().group(INGREDIENTS);
     }

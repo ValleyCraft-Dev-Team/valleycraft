@@ -2,6 +2,7 @@ package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.Reg;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 
 import static net.linkle.valleycraft.init.ModGroups.INGREDIENTS;
@@ -27,12 +28,16 @@ public class RegularFoodItems {
     public static final Item COOKED_RICE = new FoodItem(settings(), 4, 6);
     public static final Item COOKED_CAVE_ROOT = new FoodItem(settings(), 5, 2);
 
-    public static final Item COOKED_GLOWSQUID = new FoodItem(settings(), 4, 2.6f);
     public static final Item COOKED_SQUID = new FoodItem(settings(), 4, 2.6f);
     public static final Item COOKED_SILVERFISH = new FoodItem(settings(), 3, 2);
     public static final Item COOKED_PHANTOM = new FoodItem(settings(), 6, 3);
     public static final Item COOKED_TURTLE = new FoodItem(settings(), 8, 2f);
     public static final Item COOKED_BIRD = new FoodItem(settings(), 4, 2);
+    public static final Item COOKED_BACON = new FoodItem(settings(), 4, 2);
+    public static final Item COOKED_BAT = new FoodItem(settings(), 5, 3);
+    public static final Item FRIED_EGG = new FoodItem(settings(), 4, 3);
+    public static final Item COOKED_ROTTEN_FLESH = new FoodItem(settings(), 6, 2);
+    public static final Item COOKED_TROPICAL_FISH = new FoodItem(settings(), 4, 3);
 
     // pastries
     public static final Item CAKE_SLICE = new FoodItem(settings(), 2, 0.4f);
@@ -47,12 +52,13 @@ public class RegularFoodItems {
     public static final Item GLOOM_BERRY_PIE = new FoodItem(settings(), 6, 3.8f);
 
     // no tier bottles
-    public static final Item CHOCOLATE_MILK = new BottleItem(settings(), 3, 2).setMilk();
-    public static final Item MILK = new BottleItem(settings(), 2, 2).setMilk();
-    public static final Item APPLE_JUICE = new BottleItem(settings(), 4, 2);
-    public static final Item SWEET_BERRY_JUICE = new BottleItem(settings(), 4, 2);
-    public static final Item CHORUS_FRUIT_JUICE = new BottleItem(settings(), 4, 2);
-    public static final Item WARM_PUMPKIN_SOUP_BOTTLE = new BottleItem(settings(), 8, 6);
+    public static final Item CHOCOLATE_MILK = new BottleItem(settings().maxCount(16), 3, 2).setMilk();
+    public static final Item APPLE_JUICE = new BottleItem(settings().maxCount(16), 4, 2);
+    public static final Item SWEET_BERRY_JUICE = new BottleItem(settings().maxCount(16), 4, 2);
+    public static final Item CHORUS_FRUIT_JUICE = new BottleItem(settings().maxCount(16), 4, 2);
+    public static final Item WARM_PUMPKIN_SOUP_BOTTLE = new BottleItem(settings().maxCount(16), 8, 6);
+    public static final Item GLOOM_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 2, StatusEffects.NIGHT_VISION);
+    public static final Item ALOE_VERA_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 2, StatusEffects.HEALTH_BOOST);
 
     // no tier items
 
@@ -67,8 +73,8 @@ public class RegularFoodItems {
         Reg.register("baked_carrot", BAKED_CARROT);
         Reg.register("baked_endura_carrot", BAKED_ENDURA_CARROT);
         Reg.register("baked_fire_pepper", BAKED_FIRE_PEPPER);
-        Reg.register("baked_ghost_pumpkin_slice", BAKED_GHOST_PUMPKIN_SLICE);
         Reg.register("baked_pumpkin_slice", BAKED_PUMPKIN_SLICE);
+        Reg.register("baked_ghost_pumpkin_slice", BAKED_GHOST_PUMPKIN_SLICE);
         Reg.register("baked_melon_slice", BAKED_MELON_SLICE);
         Reg.register("baked_onion", BAKED_ONION);
         Reg.register("baked_seeds", BAKED_SEEDS);
@@ -78,31 +84,38 @@ public class RegularFoodItems {
         Reg.register("cooked_rice", COOKED_RICE);
         Reg.register("cooked_cave_root", COOKED_CAVE_ROOT);
         
-        Reg.register("cooked_glowsquid", COOKED_GLOWSQUID);
         Reg.register("cooked_squid", COOKED_SQUID);
         Reg.register("cooked_silverfish", COOKED_SILVERFISH);
         Reg.register("cooked_phantom", COOKED_PHANTOM);
         Reg.register("cooked_turtle", COOKED_TURTLE);
         Reg.register("cooked_bird", COOKED_BIRD);
-        
+        Reg.register("cooked_bat", COOKED_BAT);
+        Reg.register("cooked_bacon", COOKED_BACON);
+        Reg.register("fried_egg", FRIED_EGG);
+        Reg.register("cooked_rotten_flesh", COOKED_ROTTEN_FLESH);
+        Reg.register("cooked_tropical_fish", COOKED_TROPICAL_FISH);
+
         // pastries
-        Reg.register("cake_slice", CAKE_SLICE);
         Reg.register("hardtack", HARDTACK);
         Reg.register("ube_bread", UBE_BREAD);
         Reg.register("pumpkin_spice_cookie", PUMPKIN_SPICE_COOKIE);
-        Reg.register("chorus_fruit_pie", CHORUS_FRUIT_PIE);
         Reg.register("chocolate_pie", CHOCOLATE_PIE);
         Reg.register("apple_pie", APPLE_PIE);
         Reg.register("sweet_berry_pie", SWEET_BERRY_PIE);
         Reg.register("glow_berry_pie", GLOW_BERRY_PIE);
         Reg.register("gloom_berry_pie", GLOOM_BERRY_PIE);
-        
+        Reg.register("chorus_fruit_pie", CHORUS_FRUIT_PIE);
+        Reg.register("cake_slice", CAKE_SLICE);
+
         // no tier bottles
         Reg.register("chocolate_milk", CHOCOLATE_MILK);
-        Reg.register("milk", MILK);
+        Reg.register("aloe_vera_juice", ALOE_VERA_JUICE);
         Reg.register("apple_juice", APPLE_JUICE);
         Reg.register("sweet_berry_juice", SWEET_BERRY_JUICE);
+        Reg.register("gloom_berry_juice", GLOOM_BERRY_JUICE);
         Reg.register("chorus_fruit_juice", CHORUS_FRUIT_JUICE);
+
+        //soups
         Reg.register("warm_pumpkin_soup_bottle", WARM_PUMPKIN_SOUP_BOTTLE);
     }
 

@@ -2,6 +2,7 @@ package net.linkle.valleycraft.block;
 
 import java.util.Random;
 
+import net.linkle.valleycraft.init.IngredientFoodItems;
 import net.linkle.valleycraft.init.ModBlocks;
 import net.linkle.valleycraft.init.ModItems;
 import net.minecraft.block.AbstractPlantBlock;
@@ -44,13 +45,13 @@ public class GloomBerryBodyBlock extends AbstractPlantBlock implements Fertiliza
 
     @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
-        return new ItemStack(ModItems.GLOOM_BERRY);
+        return new ItemStack(IngredientFoodItems.GLOOM_BERRY);
     }
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (state.get(BERRIES).booleanValue()) {
-            Block.dropStack(world, pos, new ItemStack(ModItems.GLOOM_BERRY, 1));
+            Block.dropStack(world, pos, new ItemStack(IngredientFoodItems.GLOOM_BERRY, 1));
             float f = MathHelper.nextBetween(world.random, 0.8f, 1.2f);
             world.playSound(null, pos, SoundEvents.BLOCK_CAVE_VINES_PICK_BERRIES, SoundCategory.BLOCKS, 1.0f, f);
             world.setBlockState(pos, (BlockState)state.with(BERRIES, false), Block.NOTIFY_LISTENERS);
