@@ -23,6 +23,7 @@ public class ModItems {
     public static final Item DUCKS_FEATHER = new Item(itemSettings().group(ITEMS));
     public static final Item BEAST_BONE = new Item(itemSettings().group(ITEMS));
     public static final Item EVIL_CRYSTAL = new Item(itemSettings().group(ITEMS));
+    public static final Item GRATITUDE_CRYSTAL = new Item(itemSettings().group(ITEMS));
     public static final Item MONSTER_CLAW = new Item(itemSettings().group(ITEMS));
     public static final Item MONSTER_TOOTH = new Item(itemSettings().group(ITEMS));
     public static final Item JELLY_BLOB = new Item(itemSettings().group(ITEMS));
@@ -52,6 +53,7 @@ public class ModItems {
         Reg.register("monster_claw", MONSTER_CLAW);
         Reg.register("monster_tooth", MONSTER_TOOTH);
         Reg.register("evil_crystal", EVIL_CRYSTAL);
+        Reg.register("gratitude_crystal", GRATITUDE_CRYSTAL);
 
         Reg.register("book_cover", COVER);
         Reg.register("plant_fiber_string", STRING);
