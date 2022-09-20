@@ -56,11 +56,30 @@ public class RegularFoodItems {
     public static final Item APPLE_JUICE = new BottleItem(settings().maxCount(16), 4, 2);
     public static final Item SWEET_BERRY_JUICE = new BottleItem(settings().maxCount(16), 4, 2);
     public static final Item CHORUS_FRUIT_JUICE = new BottleItem(settings().maxCount(16), 4, 2);
-    public static final Item WARM_PUMPKIN_SOUP_BOTTLE = new BottleItem(settings().maxCount(16), 8, 6);
+    public static final Item WARM_PUMPKIN_SOUP_BOTTLE = new BottleItem(settings().maxCount(16), 9, 8);
     public static final Item GLOOM_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 2, StatusEffects.NIGHT_VISION);
     public static final Item ALOE_VERA_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 2, StatusEffects.HEALTH_BOOST);
 
     // no tier items
+    public static final Item CAVE_ROOT_STIR_FRY = new BowlItem(settings(), 10, 1.8f);
+    public static final Item COOKED_MONSTER_GUTS = new BowlItem(settings(), 8, 3.8f);
+    public static final Item MONSTER_STEW = new BowlItem(settings(), 6, 5.8f);
+
+    public static final Item FRUIT_MIX = new BowlItem(settings(), 6, 1.8f);
+    public static final Item VEGETABLE_MIX = new BowlItem(settings(), 6, 1.8f);
+    public static final Item SAVORY_BREAKFAST = new BowlItem(settings(), 10, 5.8f);
+    public static final Item SAUTEED_EYES = new FoodItem(settings(), 8, 7.8f);
+
+    public static final Item MAGMA_CREME_SOUP = new BowlItem(settings(), 7, 5.2f);
+    public static final Item SLIME_SOUP = new BowlItem(settings(), 5, 7.2f);
+    public static final Item PUMPKIN_SOUP = new BowlItem(settings(), 8, 6.2f);
+    public static final Item FUNGUS_STEW = new BowlItem(settings(), 8, 5.2f);
+    public static final Item MUSHROOM_SKEWER = new FoodItem(settings(), 8, 5.2f);
+
+    public static final Item SANDWICH_CHICKEN = new FoodItem(settings(), 10, 5.2f);
+    public static final Item SANDWICH_MUTTON = new FoodItem(settings(), 10, 5.2f);
+    public static final Item SANDWICH_BEEF = new FoodItem(settings(), 10, 5.2f);
+    public static final Item SANDWICH_PORK = new FoodItem(settings(), 10, 5.2f);
 
     // golden
 
@@ -117,6 +136,27 @@ public class RegularFoodItems {
 
         //soups
         Reg.register("warm_pumpkin_soup_bottle", WARM_PUMPKIN_SOUP_BOTTLE);
+
+        //no tier
+        Reg.register("pumpkin_soup", PUMPKIN_SOUP);
+        Reg.register("savory_breakfast", SAVORY_BREAKFAST);
+        Reg.register("cave_root_stir_fry", CAVE_ROOT_STIR_FRY);
+        Reg.register("fruit_mix", FRUIT_MIX);
+        Reg.register("vegetable_mix", VEGETABLE_MIX);
+
+        Reg.register("fungus_stew", FUNGUS_STEW);
+        Reg.register("mushroom_skewer", MUSHROOM_SKEWER);
+
+        Reg.register("sandwich_chicken", SANDWICH_CHICKEN);
+        Reg.register("sandwich_mutton", SANDWICH_MUTTON);
+        Reg.register("sandwich_beef", SANDWICH_BEEF);
+        Reg.register("sandwich_pork", SANDWICH_PORK);
+
+        Reg.register("monster_stew", MONSTER_STEW);
+        Reg.register("stir_fried_monster_guts", COOKED_MONSTER_GUTS);
+        Reg.register("slime_soup", SLIME_SOUP);
+        Reg.register("magma_creme_soup", MAGMA_CREME_SOUP);
+        Reg.register("sauteed_eyes_and_mushrooms", SAUTEED_EYES);
     }
 
     private static Item.Settings settings() {

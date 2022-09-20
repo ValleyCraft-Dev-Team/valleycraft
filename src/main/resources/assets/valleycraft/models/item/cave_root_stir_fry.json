@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/food/no_tier/cave_root_stir_fry"
+  }
+}
