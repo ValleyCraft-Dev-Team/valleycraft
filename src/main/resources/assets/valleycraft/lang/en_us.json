@@ -332,5 +332,13 @@
   "item.valleycraft.plant_fiber_string": "Fiber String",
 
   "item.valleycraft.evil_crystal": "Crystalized Evil",
-  "item.valleycraft.gratitude_crystal": "Crystalized Gratitude"
+  "item.valleycraft.gratitude_crystal": "Crystalized Gratitude",
+
+  "item.valleycraft.totem_of_trade": "Totem of Trade",
+  "item.valleycraft.totem_of_appreciation": "Totem of Appreciation",
+  "item.valleycraft.totem_of_exploration": "Totem of Exploration",
+  "item.valleycraft.totem_of_knowledge": "Totem of Knowledge",
+  "item.valleycraft.totem_of_friendship": "Totem of Friendship",
+  "item.valleycraft.totem_of_visitors": "Totem of Remembrance",
+  "item.valleycraft.totem_of_protection": "Totem of Protection"
 }
