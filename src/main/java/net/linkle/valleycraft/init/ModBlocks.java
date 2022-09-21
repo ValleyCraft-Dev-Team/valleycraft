@@ -178,6 +178,8 @@ public class ModBlocks {
     public static final Block APPLE_SAPLING = new SaplingBlock(new AppleSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING));
     
     public static final Block SPRINKLER = new SprinklerBlock();
+    public static final Block CANVAS_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET));
+    public static final Block CANVAS_CARPET = new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET));
 
     public static void initialize() {
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
@@ -342,6 +344,9 @@ public class ModBlocks {
         Reg.registerWithItem("apple_sapling", APPLE_SAPLING, itemSettings());
         
         Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("canvas_block", CANVAS_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("canvas_carpet", CANVAS_CARPET, itemSettings().group(NON_NATURAL_BLOCKS));
+
     }
 
     private static FabricItemSettings itemSettings() {

@@ -128,6 +128,9 @@
   "block.valleycraft.bone_joint": "Bone Joint Block",
   "block.valleycraft.rocks": "Rock Pile",
 
+  "block.valleycraft.canvas_block": "Canvas Block",
+  "block.valleycraft.canvas_carpet": "Canvas Carpet",
+
   "block.valleycraft.pumice_smooth": "Polished Pumice",
   "block.valleycraft.pumice": "Pumice",
   "block.valleycraft.optic_glass": "Terrarium Glass",
@@ -310,7 +313,7 @@
   "item.valleycraft.flour": "Flour",
 
   "item.valleycraft.fiber": "Plant Fiber",
-  "item.valleycraft.book_cover": "Fiber Book Cover",
+  "item.valleycraft.book_cover": "Fiber Canvas",
   "item.valleycraft.mulch": "Mulch",
   "item.valleycraft.crows_feather": "Crow Feather",
   "item.valleycraft.seagulls_feather": "Seagull Feather",
