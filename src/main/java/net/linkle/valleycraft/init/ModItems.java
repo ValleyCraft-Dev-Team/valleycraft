@@ -5,6 +5,7 @@ import net.linkle.valleycraft.item.SalveItem;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
+import net.minecraft.util.Rarity;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
 
@@ -25,6 +26,14 @@ public class ModItems {
     public static final Item STRING = new Item(itemSettings().group(ITEMS));
     public static final Item SALVE = new SalveItem(itemSettings().group(TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION);
     public static final Item DOG_BISCUIT = new FoodItem(itemSettings().group(TOOLS), 2, 0.4f, true);
+
+    public static final Item T_TRADE = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
+    public static final Item T_APPRECIATION = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
+    public static final Item T_EXPLORATION = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
+    public static final Item T_KNOWLEDGE = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
+    public static final Item T_FRIENDSHIP = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
+    public static final Item T_VISITORS = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
+    public static final Item T_PROTECTION = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
 
     //disabled unless needed in future
     //public static final Item EVIL_CRYSTAL = new Item(itemSettings().group(ITEMS));
@@ -58,6 +67,14 @@ public class ModItems {
         Reg.register("plant_fiber_string", STRING);
 
         Reg.register("mulch", MULCH);
+
+        Reg.register("totem_of_protection", T_PROTECTION);
+        Reg.register("totem_of_trade", T_TRADE);
+        Reg.register("totem_of_knowledge", T_KNOWLEDGE);
+        Reg.register("totem_of_appreciation", T_APPRECIATION);
+        Reg.register("totem_of_friendship", T_FRIENDSHIP);
+        Reg.register("totem_of_exploration", T_EXPLORATION);
+        Reg.register("totem_of_visitors", T_VISITORS);
 
         TieredFoodItems.initialize();
         IngredientFoodItems.initialize();

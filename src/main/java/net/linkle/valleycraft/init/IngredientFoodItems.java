@@ -6,6 +6,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
+import net.minecraft.util.Rarity;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
 import static net.minecraft.item.Items.GLASS_BOTTLE;
@@ -17,14 +18,14 @@ public class IngredientFoodItems {
     //raw ingredients
     public static final Item ALOE = new FoodItem(settings(), 3, 1);
     public static final Item AMETHYSTLE = new FoodItem(settings(), 2, 1);
-    public static final Item ANCIENT_FLOWER = new FoodItem(settings(), 6, 2);
+    public static final Item ANCIENT_FLOWER = new FoodItem(settings().rarity(Rarity.RARE), 6, 2);
     public static final Item CAVE_ROOT = new FoodItem(settings(), 4, 2);
-    public static final Item ENDURA_CARROT = new FoodItem(settings(), 5, 3);
+    public static final Item ENDURA_CARROT = new FoodItem(settings().rarity(Rarity.UNCOMMON), 5, 3);
     public static final Item FIRE_PEPPER = new FoodItem(settings(), 3, 3);
     public static final Item GLOW_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 2, StatusEffects.GLOWING);
 
-    public static final Item HEARTY_BEETROOT = new FoodItem(settings(), 4, 4);
-    public static final Item MAIZE = new FoodItem(settings(), 3, 4);
+    public static final Item HEARTY_BEETROOT = new FoodItem(settings().rarity(Rarity.UNCOMMON), 4, 4);
+    public static final Item MAIZE = new FoodItem(settings().rarity(Rarity.RARE), 3, 4);
     public static final Item MINERS_LETTUCE = new FoodItem(settings(), 3, 2);
     public static final Item MONSTER_GUTS = new Tier1Normal(settings(), 6, 2, StatusEffects.HUNGER);
     public static final Item MOREL_OIL = new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS);
