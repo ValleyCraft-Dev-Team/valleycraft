@@ -1,0 +1,37 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "valleycraft:block/maize_stage0"
+    },
+    "age=1": {
+      "model": "valleycraft:block/maize_stage1"
+    },
+    "age=2": {
+      "model": "valleycraft:block/maize_stage2"
+    },
+    "age=3": {
+      "model": "valleycraft:block/maize_stage3"
+    },
+    "age=4": {
+      "model": "valleycraft:block/maize_stage4"
+    },
+    "age=5": {
+      "model": "valleycraft:block/maize_stage5"
+    },
+    "age=6": {
+      "model": "valleycraft:block/maize_stage6"
+    },
+    "age=7": {
+      "model": "valleycraft:block/maize_stage7"
+    },
+    "age=8": {
+      "model": "valleycraft:block/maize_stage8"
+    },
+    "age=9": {
+      "model": "valleycraft:block/maize_stage9"
+    },
+    "age=10": {
+      "model": "valleycraft:block/maize_stage10"
+    }
+  }
+}

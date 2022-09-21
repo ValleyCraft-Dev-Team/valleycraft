@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "valleycraft:block/fire_pepper_stage2"
+  }
+}
