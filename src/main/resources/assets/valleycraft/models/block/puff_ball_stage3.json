@@ -1,0 +1,6 @@
+{
+  "parent": "valleycraft:block/crop_cross",
+  "textures": {
+    "cross": "valleycraft:block/puff_ball_stage3"
+  }
+}

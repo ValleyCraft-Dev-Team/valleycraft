@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "valleycraft:block/miners_lettuce_stage3"
+  }
+}

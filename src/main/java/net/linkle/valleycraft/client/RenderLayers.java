@@ -97,6 +97,17 @@ class RenderLayers {
         put(WILD_HERBS, cullout);
         put(WILD_AMETHYSTLE, cullout);
         put(WILD_ONION, cullout);
+        put(MAIZE, cullout);
+        
+        put(RICES, cullout);
+        put(PUFF_BALL, cullout);
+        put(ONIONS, cullout);
+        put(MINERS_LETTUCES, cullout);
+        put(FIRE_PEPPERS, cullout);
+        put(CAVE_ROOT_CROP, cullout);
+        put(ANCIENT_FLOWERS, cullout);
+        put(AMETHYSTLES, cullout);
+        put(ALOE_VERAS, cullout);
 
         put(OPTIC_GLASS, translucent);
     }

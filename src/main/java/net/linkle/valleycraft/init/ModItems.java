@@ -4,6 +4,7 @@ import net.linkle.valleycraft.item.FoodItem;
 import net.linkle.valleycraft.item.SalveItem;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
@@ -26,6 +27,16 @@ public class ModItems {
     public static final Item STRING = new Item(itemSettings().group(ITEMS));
     public static final Item SALVE = new SalveItem(itemSettings().group(TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION);
     public static final Item DOG_BISCUIT = new FoodItem(itemSettings().group(TOOLS), 2, 0.4f, true);
+    
+    // crops
+    public static final Item RICE_SEEDS = new AliasedBlockItem(ModBlocks.RICES, itemSettings().group(ITEMS));
+    public static final Item PUFF_BALL_SEEDS = new AliasedBlockItem(ModBlocks.PUFF_BALL, itemSettings().group(ITEMS));
+    public static final Item ONION_SEEDS = new AliasedBlockItem(ModBlocks.ONIONS, itemSettings().group(ITEMS));
+    public static final Item MINERS_LETTUCE = new AliasedBlockItem(ModBlocks.MINERS_LETTUCES, itemSettings().group(ITEMS));
+    public static final Item FIRE_PEPPER_SEEDS = new AliasedBlockItem(ModBlocks.FIRE_PEPPERS, itemSettings().group(ITEMS));
+    public static final Item CAVE_ROOT_SEEDS = new AliasedBlockItem(ModBlocks.CAVE_ROOT_CROP, itemSettings().group(ITEMS));
+    public static final Item ANCIENT_FLOWER_SEEDS = new AliasedBlockItem(ModBlocks.ANCIENT_FLOWERS, itemSettings().group(ITEMS));
+    public static final Item AMETHYSTLE_SEEDS = new AliasedBlockItem(ModBlocks.AMETHYSTLES, itemSettings().group(ITEMS));
 
     public static final Item T_TRADE = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
     public static final Item T_APPRECIATION = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
@@ -67,6 +78,16 @@ public class ModItems {
         Reg.register("plant_fiber_string", STRING);
 
         Reg.register("mulch", MULCH);
+        
+        // crops
+        Reg.register("rice_seeds", RICE_SEEDS);
+        Reg.register("puff_ball_seeds", PUFF_BALL_SEEDS);
+        Reg.register("onion_seeds", ONION_SEEDS);
+        Reg.register("miners_lettuce", MINERS_LETTUCE);
+        Reg.register("fire_pepper_seeds", FIRE_PEPPER_SEEDS);
+        Reg.register("cave_root_seeds", CAVE_ROOT_SEEDS);
+        Reg.register("ancient_flower_seeds", ANCIENT_FLOWER_SEEDS);
+        Reg.register("amethystle_seeds", AMETHYSTLE_SEEDS);
 
         Reg.register("totem_of_protection", T_PROTECTION);
         Reg.register("totem_of_trade", T_TRADE);
