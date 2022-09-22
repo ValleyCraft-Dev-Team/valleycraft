@@ -340,5 +340,13 @@
   "item.valleycraft.totem_of_knowledge": "Totem of Knowledge",
   "item.valleycraft.totem_of_friendship": "Totem of Friendship",
   "item.valleycraft.totem_of_visitors": "Totem of Remembrance",
-  "item.valleycraft.totem_of_protection": "Totem of Protection"
+  "item.valleycraft.totem_of_protection": "Totem of Protection",
+
+  "item.valleycraft.rice_seeds": "Rice Seedlings",
+  "item.valleycraft.puff_ball_seeds": "Puff Ball Seeds",
+  "item.valleycraft.onion_seeds": "Onion Seeds",
+  "item.valleycraft.fire_pepper_seeds": "Spicy Pepper Seeds",
+  "item.valleycraft.cave_root_seeds": "Cave Root Seeds",
+  "item.valleycraft.ancient_flower_seeds": "Ancient Flower Seed Bulbs",
+  "item.valleycraft.amethystle_seeds": "Amethystle Seeds"
 }

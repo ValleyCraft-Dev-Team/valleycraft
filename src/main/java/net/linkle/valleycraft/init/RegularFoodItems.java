@@ -89,9 +89,9 @@ public class RegularFoodItems {
     public static final Item GOLDEN_ALOE_VERA = new FoodItem(settings(), 4, 1.2f);
     public static final Item GOLDEN_CAVE_ROOT = new FoodItem(settings(), 4, 1.2f);
     public static final Item GOLDEN_CHORUS_FRUIT = new FoodItem(settings(), 4, 1.2f);
-    public static final Item GOLDEN_ENDURA_CARROT = new FoodItem(settings().rarity(Rarity.UNCOMMON), 4, 1.2f);
+    public static final Item GOLDEN_ENDURA_CARROT = new FoodItem(settings().rarity(Rarity.RARE), 4, 1.2f);
     public static final Item GOLDEN_BEETROOT = new FoodItem(settings(), 4, 1.2f);
-    public static final Item GOLDEN_HEARTY_BEETROOT = new FoodItem(settings().rarity(Rarity.UNCOMMON), 4, 1.2f);
+    public static final Item GOLDEN_HEARTY_BEETROOT = new FoodItem(settings().rarity(Rarity.RARE), 4, 1.2f);
     public static final Item GOLDEN_FIRE_PEPPER = new FoodItem(settings(), 4, 1.2f);
     public static final Item GOLDEN_SWEET_BERRIES = new FoodItem(settings(), 4, 1.2f);
     public static final Item GOLDEN_GLOW_BERRIES = new FoodItem(settings(), 4, 1.2f);

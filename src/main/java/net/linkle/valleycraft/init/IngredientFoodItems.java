@@ -24,7 +24,7 @@ public class IngredientFoodItems {
     public static final Item FIRE_PEPPER = new FoodItem(settings(), 3, 3);
     public static final Item GLOW_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 2, StatusEffects.GLOWING);
 
-    public static final Item HEARTY_BEETROOT = new FoodItem(settings(), 4, 4);
+    public static final Item HEARTY_BEETROOT = new FoodItem(settings().rarity(Rarity.UNCOMMON), 4, 4);
     public static final Item MAIZE = new AliasedBlockItem(ModBlocks.MAIZE, settings().rarity(Rarity.RARE).food(Foods.create(3, 4)));
     public static final Item MINERS_LETTUCE = new FoodItem(settings(), 3, 2);
     public static final Item MONSTER_GUTS = new Tier1Normal(settings(), 6, 2, StatusEffects.HUNGER);

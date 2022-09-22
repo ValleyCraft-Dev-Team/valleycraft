@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:block/puff_ball_stage3"
+    "layer0": "valleycraft:item/seeds/onion_seeds"
   }
 }
