@@ -41,10 +41,14 @@ public class HorizontalWithWaterBlock extends HorizontalBlock implements Waterlo
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState newState,
             WorldAccess world, BlockPos pos, BlockPos posFrom) {
         if (state.get(WATERLOGGED)) {
-            world.createAndScheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
+            fluidTick(world, pos);
         }
 
         return super.getStateForNeighborUpdate(state, direction, newState, world, pos, posFrom);
+    }
+    
+    protected static void fluidTick(WorldAccess world, BlockPos pos) {
+        world.createAndScheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
     }
 
     @Override
