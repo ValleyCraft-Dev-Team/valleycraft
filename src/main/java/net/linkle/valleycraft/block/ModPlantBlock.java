@@ -23,7 +23,7 @@ public class ModPlantBlock extends PlantBlock {
     }
     
     /** Set ground whitelist for placing plant. */
-    public ModPlantBlock setGround(Predicate<BlockState> predicate) {
+    public ModPlantBlock ground(Predicate<BlockState> predicate) {
         groundList = predicate;
         return this;
     }

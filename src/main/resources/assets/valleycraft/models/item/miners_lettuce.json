@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:block/miners_lettuce"
+    "layer0": "valleycraft:item/food/raw_ingredients/miners_lettuce"
   }
 }

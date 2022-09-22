@@ -89,7 +89,7 @@ public class ModBlocks {
 
     public static final Block BLACK_DAHLIA = new ModPlantBlock();
     public static final Block BLACK_TULIP = new ModPlantBlock();
-    public static final Block FLOWERING_CACTUS = new ModPlantBlock().setGround(BlockPres.SAND);
+    public static final Block FLOWERING_CACTUS = new ModPlantBlock().ground(BlockPres.SAND);
     public static final Block FLUFFY_DANDELION = new ModPlantBlock();
     public static final Block FOXTAIL_FERN = new ModPlantBlock();
     public static final Block GILDED_CAP = new ModPlantBlock();
@@ -146,15 +146,15 @@ public class ModBlocks {
     // crops
     public static final Block MAIZE = new MaizeBlock();
     public static final Block MAIZE_BOX = new MaizeBoxBlock();
-    public static final Block RICES = new MultiCropBlock(MultiCropBlock.settings(), r -> new ItemStack(IngredientFoodItems.RAW_RICE, r.nextInt(1, 3)));
-    public static final Block PUFF_BALL = new MultiCropBlock(MultiCropBlock.settings(), r -> new ItemStack(Items.SUGAR, r.nextInt(1, 3))).genSize(3, 13/16f);
-    public static final Block ONIONS = new MultiCropBlock(MultiCropBlock.settings(), r -> new ItemStack(IngredientFoodItems.ONION, r.nextInt(1, 3))).genSize(2, 13/16f);
-    public static final Block MINERS_LETTUCES = new MultiCropBlock(MultiCropBlock.settings(), r -> new ItemStack(ModItems.MINERS_LETTUCE, r.nextInt(1, 3))).genSize(0, 12/16f);
-    public static final Block FIRE_PEPPERS = new MultiCropBlock(MultiCropBlock.settings(), r -> new ItemStack(IngredientFoodItems.FIRE_PEPPER, r.nextInt(1, 3)));
-    public static final Block CAVE_ROOT_CROP = new MultiCropBlock(MultiCropBlock.settings(), r -> new ItemStack(IngredientFoodItems.CAVE_ROOT, r.nextInt(1, 3))).genSize(1, 10/16f);
-    public static final Block ANCIENT_FLOWERS = new MultiCropBlock(MultiCropBlock.settings(), r -> new ItemStack(IngredientFoodItems.ANCIENT_FLOWER, r.nextInt(1, 3))).genSize(2, 12/16f);
-    public static final Block AMETHYSTLES = new MultiCropBlock(MultiCropBlock.settings(), r -> new ItemStack(IngredientFoodItems.AMETHYSTLE, r.nextInt(1, 3))).genSize(1, 12/16f);
-    public static final Block ALOE_VERAS = new MultiCropBlock(MultiCropBlock.settings(), r -> new ItemStack(IngredientFoodItems.ALOE, r.nextInt(1, 3))).genSize(1, 11/16f);
+    public static final Block RICES = new MultiCropBlock(MultiCropBlock.settings());
+    public static final Block PUFF_BALL = new MultiCropBlock(MultiCropBlock.settings()).genSize(3, 13/16f);
+    public static final Block ONIONS = new MultiCropBlock(MultiCropBlock.settings()).genSize(2, 13/16f);
+    public static final Block MINERS_LETTUCES = new MultiCropBlock(MultiCropBlock.settings()).genSize(0, 12/16f);
+    public static final Block FIRE_PEPPERS = new MultiCropBlock(MultiCropBlock.settings());
+    public static final Block CAVE_ROOT_CROP = new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 10/16f);
+    public static final Block ANCIENT_FLOWERS = new MultiCropBlock(MultiCropBlock.settings()).genSize(2, 12/16f);
+    public static final Block AMETHYSTLES = new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 12/16f);
+    public static final Block ALOE_VERAS = new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(BlockPres.SAND).AloeShape();
 
     public static final Block BONE_JOINT = new Block(Block.Settings.copy(Blocks.BONE_BLOCK));
     public static final Block ROCKS = new RockBlock();
@@ -339,7 +339,7 @@ public class ModBlocks {
         Reg.register("cave_root_crop", CAVE_ROOT_CROP);
         Reg.register("ancient_flowers", ANCIENT_FLOWERS);
         Reg.register("amethystles", AMETHYSTLES);
-        Reg.registerWithItem("aloe_veras", ALOE_VERAS, itemSettings().group(ModGroups.ITEMS));
+        Reg.register("aloe_veras", ALOE_VERAS);
 
         Reg.registerWithItem("cave_roots", CAVE_ROOTS, itemSettings());
         Reg.registerWithItem("bone_weed", BONE_WEED, itemSettings());
