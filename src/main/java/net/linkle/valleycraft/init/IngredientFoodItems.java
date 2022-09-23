@@ -45,7 +45,6 @@ public class IngredientFoodItems {
     public static final Item BREAD_DOUGH = new FoodItem(settings(), 3, 3);
     public static final Item CAKE_DOUGH = new FoodItem(settings(), 3, 3);
     public static final Item HARDTACK_DOUGH = new FoodItem(settings(), 1, 3);
-    public static final Item UBE_BREAD_DOUGH = new FoodItem(settings(), 3, 3);
     public static final Item PUMPKIN_SPICE_COOKIE_DOUGH = new FoodItem(settings(), 1, 3);
     public static final Item PUMPKIN_PIE_DOUGH = new FoodItem(settings(), 3, 3);
     public static final Item COOKIE_DOUGH = new FoodItem(settings(), 1, 3);
@@ -100,7 +99,6 @@ public class IngredientFoodItems {
 
         Reg.register("hardtack_dough", HARDTACK_DOUGH);
         Reg.register("bread_dough", BREAD_DOUGH);
-        Reg.register("ube_bread_dough", UBE_BREAD_DOUGH);
         Reg.register("cookie_dough", COOKIE_DOUGH);
         Reg.register("pumpkin_spice_cookie_dough", PUMPKIN_SPICE_COOKIE_DOUGH);
 

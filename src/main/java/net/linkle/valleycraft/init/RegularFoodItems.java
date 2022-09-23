@@ -44,7 +44,6 @@ public class RegularFoodItems {
     // pastries
     public static final Item CAKE_SLICE = new FoodItem(settings(), 2, 0.1f);
     public static final Item HARDTACK = new FoodItem(settings(), 3, 0.8f);
-    public static final Item UBE_BREAD = new FoodItem(settings(), 8, 0.6f);
     public static final Item PUMPKIN_SPICE_COOKIE = new FoodItem(settings(), 3, 0.2f);
     public static final Item CHORUS_FRUIT_PIE = new FoodItem(settings(), 9, 0.5f);
     public static final Item CHOCOLATE_PIE = new FoodItem(settings(), 7, 0.5f);
@@ -134,7 +133,6 @@ public class RegularFoodItems {
 
         // pastries
         Reg.register("hardtack", HARDTACK);
-        Reg.register("ube_bread", UBE_BREAD);
         Reg.register("pumpkin_spice_cookie", PUMPKIN_SPICE_COOKIE);
         Reg.register("chocolate_pie", CHOCOLATE_PIE);
         Reg.register("apple_pie", APPLE_PIE);
