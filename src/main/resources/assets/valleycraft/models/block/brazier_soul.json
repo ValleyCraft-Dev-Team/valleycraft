@@ -1,0 +1,7 @@
+{
+	"parent": "botg:block/brazier",
+	"textures": {
+		"fire": "botg:blocks/campfire_pot_fire_alt_soul",
+		"pot": "botg:blocks/polished_stone_bricks"
+	}
+}
