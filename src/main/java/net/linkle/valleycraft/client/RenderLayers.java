@@ -68,8 +68,6 @@ class RenderLayers {
         put(DESERT_SHRUB, cullout);
         put(BUSH, cullout);
         put(LIVING_BUSH, cullout);
-        put(STALAGMITE, cullout);
-        put(STALAGTITE, cullout);
         put(BIG_FERN, cullout);
         put(WILD_MINERS_LETTUCE, cullout);
         put(GLOOM_BERRY, cullout);

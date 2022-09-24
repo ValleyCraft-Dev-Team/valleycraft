@@ -172,8 +172,6 @@ public class ModBlocks {
     public static final Block BUSH = new ModPlantBlock();
     public static final Block BONE_WEED = new ModPlantBlock();
     public static final Block LIVING_BUSH = new ModPlantBlock();
-    public static final Block STALAGMITE = new ModPlantBlock();
-    public static final Block STALAGTITE = new ModPlantBlock();
 
     public static final Block BIG_FERN = new ModPlantBlock();
     public static final Block FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
@@ -347,8 +345,6 @@ public class ModBlocks {
         Reg.registerWithItem("desert_shrub", DESERT_SHRUB, itemSettings());
         Reg.registerWithItem("bush", BUSH, itemSettings());
         Reg.registerWithItem("lush_bush", LIVING_BUSH, itemSettings());
-        Reg.registerWithItem("stalagmite", STALAGMITE, itemSettings());
-        Reg.registerWithItem("stalagtite", STALAGTITE, itemSettings());
         
         Reg.registerWithItem("big_fern", BIG_FERN, itemSettings());
         Reg.register("flowering_lilypad", FLOWERING_LILYPAD);

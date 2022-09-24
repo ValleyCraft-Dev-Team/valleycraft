@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/cube_bottom_top",
+	"textures": {
+		"bottom": "valleycraft:block/sandstone_pot_bottom",
+		"side": "valleycraft:block/sandstone_pot_side",
+		"top": "valleycraft:block/sandstone_pot_top"
+	}
+}
