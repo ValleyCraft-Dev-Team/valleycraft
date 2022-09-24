@@ -1,9 +1,9 @@
-# Fabric Example Mod
+# Valleycraft Mod
+Wiki [here](https://wilder-horizons.fandom.com/wiki/Wilder_Horizons_Wiki)
 
-## Setup
+## Sound Attributions:
+* [Duck Quack](https://freesound.org/people/qubodup/sounds/442820/) By **qubodup**
+Licensed Under [Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/)
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+* [Curtain](https://freesound.org/people/Tats14/sounds/408784/) By **Tats14**
+Licensed Under [Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0)](https://creativecommons.org/licenses/by-nc/3.0/)

@@ -19,6 +19,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
@@ -55,8 +56,9 @@ public class AppleLeavesBlock extends LeavesBlock implements Fertilizable {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (state.get(APPLES)) {
-            Block.dropStack(world, pos, hit.getSide(), new ItemStack(Items.APPLE, 1));
-            world.playSound(null, pos, SoundEvents.BLOCK_CAVE_VINES_PICK_BERRIES, SoundCategory.BLOCKS, 1.0f, 0.8f + world.random.nextFloat() * 0.4f);
+            var random = world.random;
+            Block.dropStack(world, pos, hit.getSide(), new ItemStack(Items.APPLE, MathHelper.nextInt(random, 1, 2)));
+            world.playSound(null, pos, SoundEvents.BLOCK_CAVE_VINES_PICK_BERRIES, SoundCategory.BLOCKS, 1.0f, random.nextFloat(0.8f, 1.2f));
             world.setBlockState(pos, state.with(APPLES, false), Block.NOTIFY_LISTENERS);
             return ActionResult.success(world.isClient);
         }

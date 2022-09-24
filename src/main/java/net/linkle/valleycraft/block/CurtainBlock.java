@@ -1,13 +1,17 @@
 package net.linkle.valleycraft.block;
 
+import net.linkle.valleycraft.init.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.LeverBlock;
 import net.minecraft.block.Material;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager.Builder;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
@@ -57,11 +61,11 @@ public class CurtainBlock extends HorizontalWithWaterBlock {
         
         var face = state.get(FACING);
         var left = face.rotateYCounterclockwise();
-        if (pos.getY() == posFrom.getY() && newState.getBlock() instanceof CurtainBlock && face == newState.get(FACING)) {
-            boolean isOpen = newState.get(OPEN);
-            if (state.get(OPEN) != isOpen) {
-                state = state.with(OPEN, isOpen);
-            }
+        if (left.getAxis() == direction.getAxis() && 
+            pos.getY() == posFrom.getY() && 
+            newState.getBlock() instanceof CurtainBlock && 
+            face == newState.get(FACING)) {
+            state = state.with(OPEN, newState.get(OPEN));
         }
         
         var block = world.getBlockState(pos.offset(left));
@@ -142,6 +146,9 @@ public class CurtainBlock extends HorizontalWithWaterBlock {
         if (state.get(WATERLOGGED)) {
             fluidTick(world, pos);
         }
+        boolean isOpen = state.get(OPEN);
+        var sound = isOpen ? ModSounds.CURTAIN_OPEN : ModSounds.CURTAIN_CLOSE;
+        world.playSound(null, pos, sound, SoundCategory.BLOCKS, 0.5f, isOpen ? 1.0f : 0.95f);
         world.emitGameEvent(player, state.get(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
         return ActionResult.success(world.isClient);
     }

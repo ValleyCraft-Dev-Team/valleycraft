@@ -8,6 +8,9 @@ public class ModSounds {
     
     public static final SoundEvent SPRINKLER = register("sprinkler");
     
+    public static final SoundEvent CURTAIN_OPEN = register("curtain_open");
+    public static final SoundEvent CURTAIN_CLOSE = register("curtain_close");
+    
     public static void initialize() {
     }
     

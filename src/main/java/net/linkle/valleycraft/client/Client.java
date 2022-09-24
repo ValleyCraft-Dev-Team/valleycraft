@@ -3,6 +3,7 @@ package net.linkle.valleycraft.client;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.linkle.valleycraft.init.ModEnitites;
 import net.linkle.valleycraft.init.ModParticles;
 
 @Environment(EnvType.CLIENT)
@@ -13,5 +14,6 @@ public class Client implements ClientModInitializer {
         RenderLayers.intialize();
         ColorProvider.intialize();
         ModParticles.initializeClient();
+        ModEnitites.initializeClient();
     }
 }
