@@ -3,5 +3,15 @@
     "sounds": [
       "valleycraft:sprinkler"
     ]
+  },
+  "curtain_open": {
+    "sounds": [
+      "valleycraft:curtain_open"
+    ]
+  },
+  "curtain_close": {
+    "sounds": [
+      "valleycraft:curtain_close"
+    ]
   }
 }

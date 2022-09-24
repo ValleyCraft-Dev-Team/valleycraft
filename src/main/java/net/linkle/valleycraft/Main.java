@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.linkle.valleycraft.gen.features.TreeConfigFeatures;
 import net.linkle.valleycraft.init.Contents;
 import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.init.ModEnitites;
 import net.linkle.valleycraft.init.ModGroups;
 import net.linkle.valleycraft.init.ModItems;
 import net.linkle.valleycraft.init.ModParticles;
@@ -30,6 +31,7 @@ public class Main implements ModInitializer {
 		
 		ModParticles.initialize();
 		ModSounds.initialize();
+		ModEnitites.initialize();
 	}
 	
 	public static Identifier makeId(String id) {
