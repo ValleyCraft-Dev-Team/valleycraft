@@ -5,6 +5,7 @@ import net.linkle.valleycraft.item.SalveItem;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
@@ -25,8 +26,8 @@ public class ModItems {
     public static final Item DUCKS_FEATHER = new Item(itemSettings().group(ITEMS));
     public static final Item BEAST_BONE = new Item(itemSettings().group(ITEMS));
     public static final Item STRING = new Item(itemSettings().group(ITEMS));
-    public static final Item SALVE = new SalveItem(itemSettings().group(TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION);
-    public static final Item DOG_BISCUIT = new FoodItem(itemSettings().group(TOOLS), 2, 0.4f, true);
+    public static final Item SALVE = new SalveItem(itemSettings().group(VC_TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION);
+    public static final Item DOG_BISCUIT = new FoodItem(itemSettings().group(VC_TOOLS), 2, 0.4f, true);
     
     // crops
     public static final Item RICE_SEEDS = new AliasedBlockItem(ModBlocks.RICES, itemSettings().group(ITEMS));
@@ -38,12 +39,8 @@ public class ModItems {
     public static final Item AMETHYSTLE_SEEDS = new AliasedBlockItem(ModBlocks.AMETHYSTLES, itemSettings().group(ITEMS));
 
     public static final Item T_TRADE = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
-    public static final Item T_APPRECIATION = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
-    public static final Item T_EXPLORATION = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
-    public static final Item T_KNOWLEDGE = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
-    public static final Item T_FRIENDSHIP = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
-    public static final Item T_VISITORS = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
-    public static final Item T_PROTECTION = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
+    public static final Item T_APPRECIATION = new Item(itemSettings().group(BOOKS).rarity(Rarity.RARE).maxCount(1));
+    public static final Item T_VISITORS = new Item(itemSettings().group(BOOKS).rarity(Rarity.EPIC).maxCount(1));
 
     //disabled unless needed in future
     //public static final Item EVIL_CRYSTAL = new Item(itemSettings().group(ITEMS));
@@ -51,6 +48,10 @@ public class ModItems {
     //public static final Item MONSTER_CLAW = new Item(itemSettings().group(ITEMS));
     //public static final Item MONSTER_TOOTH = new Item(itemSettings().group(ITEMS));
     //public static final Item JELLY_BLOB = new Item(itemSettings().group(ITEMS));
+    //public static final Item T_PROTECTION = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
+    //public static final Item T_EXPLORATION = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
+    //public static final Item T_KNOWLEDGE = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
+    //public static final Item T_FRIENDSHIP = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
 
     public static void initialize() {
         Reg.register("salve", SALVE);
@@ -87,14 +88,15 @@ public class ModItems {
         Reg.register("ancient_flower_seeds", ANCIENT_FLOWER_SEEDS);
         Reg.register("amethystle_seeds", AMETHYSTLE_SEEDS);
 
-        Reg.register("totem_of_protection", T_PROTECTION);
+        //Reg.register("totem_of_protection", T_PROTECTION);
         Reg.register("totem_of_trade", T_TRADE);
-        Reg.register("totem_of_knowledge", T_KNOWLEDGE);
+        //Reg.register("totem_of_knowledge", T_KNOWLEDGE);
         Reg.register("totem_of_appreciation", T_APPRECIATION);
-        Reg.register("totem_of_friendship", T_FRIENDSHIP);
-        Reg.register("totem_of_exploration", T_EXPLORATION);
+        //Reg.register("totem_of_friendship", T_FRIENDSHIP);
+        //Reg.register("totem_of_exploration", T_EXPLORATION);
         Reg.register("totem_of_visitors", T_VISITORS);
 
+        ModArmors.initialize();
         TieredFoodItems.initialize();
         IngredientFoodItems.initialize();
         RegularFoodItems.initialize();

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/special/mogars_broken_golemite_goggles"
+  }
+}

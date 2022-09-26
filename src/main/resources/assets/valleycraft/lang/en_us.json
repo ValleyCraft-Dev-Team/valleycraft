@@ -56,7 +56,7 @@
   "block.valleycraft.bush": "Bush",
   "block.valleycraft.desert_shrub": "Desert Shrub",
   "block.valleycraft.bone_weed": "Boneweed",
-  "block.valleycraft.cave_roots": "Cave Tuber",
+  "block.valleycraft.cave_roots": "Twisting Cave Taproots",
 
   "block.valleycraft.wild_puff_ball": "Wild Puff Ball",
   "block.valleycraft.wild_wheat": "Wild Wheat",
@@ -71,7 +71,7 @@
   "block.valleycraft.wild_amethystle": "Wild Amethystle",
   "block.valleycraft.wild_herbs": "Wild Herbs",
 
-  "block.valleycraft.weaping_ghost_willow": "Weeping Ghost Willow",
+  "block.valleycraft.weeping_ghost_willow": "Weeping Cave Willow",
   "block.valleycraft.thorny_bush": "Thorny Bush",
   "block.valleycraft.sprout": "Sproutlet",
   "block.valleycraft.snowflower": "Snowflower",
@@ -128,6 +128,7 @@
 
   "block.valleycraft.canvas_block": "Canvas Block",
   "block.valleycraft.canvas_carpet": "Canvas Carpet",
+  "block.valleycraft.curtain": "Canvas Curtain",
 
   "block.valleycraft.pumice_smooth": "Polished Pumice",
   "block.valleycraft.pumice": "Pumice",
@@ -193,6 +194,7 @@
 
   "item.valleycraft.milk": "Milk Bottle",
   "item.valleycraft.morel_oil": "Morel Oil Bottle",
+  "block.valleycraft.morel": "Morel",
   "item.valleycraft.glow_berry_juice": "Glow Berry Juice Bottle",
   "item.valleycraft.aloe_vera": "Aloe Vera",
   "item.valleycraft.amethystle": "Amethystle",
@@ -316,7 +318,7 @@
   "item.valleycraft.ducks_feather": "Duck Feather",
 
   "item.valleycraft.salve": "Healing Salve",
-  "item.valleycraft.beast_bone": "Small Beast Bone",
+  "item.valleycraft.beast_bone": "Small Bone",
   "item.valleycraft.cooked_beast_liver": "Cooked Beast Liver",
   "item.valleycraft.raw_beast_liver": "Raw Beast Liver",
 
@@ -331,12 +333,20 @@
   "item.valleycraft.gratitude_crystal": "Crystalized Gratitude",
 
   "item.valleycraft.totem_of_trade": "Totem of Trade",
-  "item.valleycraft.totem_of_appreciation": "Totem of Appreciation",
+  "item.valleycraft.totem_of_appreciation": "Totem of Friendship",
   "item.valleycraft.totem_of_exploration": "Totem of Exploration",
   "item.valleycraft.totem_of_knowledge": "Totem of Knowledge",
-  "item.valleycraft.totem_of_friendship": "Totem of Friendship",
   "item.valleycraft.totem_of_visitors": "Totem of Remembrance",
   "item.valleycraft.totem_of_protection": "Totem of Protection",
+
+  "item.valleycraft.moblin_talisman": "Moblin Talisman",
+  "item.valleycraft.flower_crown": "Flowering Azaelea Crown",
+  "item.valleycraft.turtle_chestplate": "Turtle Chestplate",
+  "item.valleycraft.turtle_leggings": "Turtle Leggings",
+  "item.valleycraft.turtle_boots": "Turtle Boots",
+  "item.valleycraft.straw_hat": "Straw Hat",
+  "item.valleycraft.mogars_broken_golemite_goggles": "Mogar's Broken Golemite Goggles",
+  "item.valleycraft.mogars_fixed_golemite_goggles": "Fixed Golemite Goggles",
 
   "item.valleycraft.rice_seeds": "Rice Seedlings",
   "item.valleycraft.puff_ball_seeds": "Puff Ball Seeds",
@@ -344,5 +354,23 @@
   "item.valleycraft.fire_pepper_seeds": "Spicy Pepper Seeds",
   "item.valleycraft.cave_root_seeds": "Cave Root Seeds",
   "item.valleycraft.ancient_flower_seeds": "Ancient Flower Seed Bulbs",
-  "item.valleycraft.amethystle_seeds": "Amethystle Seeds"
+  "item.valleycraft.amethystle_seeds": "Amethystle Seeds",
+
+  "item.valleycraft.knife_wooden": "Wooden Knife",
+  "item.valleycraft.knife_stone": "Stone Knife",
+  "item.valleycraft.knife_golden": "Golden Knife",
+  "item.valleycraft.knife_iron": "Iron Knife",
+  "item.valleycraft.knife_diamond": "Diamond Knife",
+  "item.valleycraft.knife_netherite": "Netherite Knife",
+
+  "item.valleycraft.woodcutter_axe_wooden": "Wooden Timbercutter's Axe",
+  "item.valleycraft.woodcutter_axe_stone": "Stone Timbercutter's Axe",
+  "item.valleycraft.woodcutter_axe_golden": "Golden Timbercutter's Axe",
+  "item.valleycraft.woodcutter_axe_iron": "Iron Timbercutter's Axe",
+  "item.valleycraft.woodcutter_axe_diamond": "Diamond Timbercutter's Axe",
+  "item.valleycraft.woodcutter_axe_netherite": "Netherite Timbercutter's Axe",
+
+  "item.valleycraft.knife_coral_encrusted": "Coral Encrusted Knife",
+  "item.valleycraft.rapier_cave_fishers": "Cave-Fisher's Rapier",
+  "item.valleycraft.axe_timber_red": "Sharp Timbercutter's Axe"
 }

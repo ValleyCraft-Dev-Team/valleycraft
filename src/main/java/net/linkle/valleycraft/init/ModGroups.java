@@ -23,10 +23,11 @@ public class ModGroups {
     public static final ItemGroup TIERED_DISHES = create("dishes", TIERED_DISHES_ICON);
 
     public static final ItemGroup ITEMS = create("items", ITEMS_ICON);
+    public static final ItemGroup VC_TOOLS = create("tools", TOOLS_ICON);
     public static final ItemGroup BOOKS = create("books", BOOKS_ICON);
-    public static final ItemGroup TOOLS = create("tools", TOOLS_ICON);
 
     public static final ItemGroup NON_NATURAL_BLOCKS = create("blocks", ModBlocks.APPLE_DOOR);
+
 
     public static void initialize() {
     }

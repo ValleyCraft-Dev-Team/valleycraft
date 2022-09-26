@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "valleycraft:item/tools/mob_unique_weapons/drowned/cave_fishers_rapier"
+  }
+}

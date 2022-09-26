@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "valleycraft:item/tools/mob_unique_weapons/drowned/coral_encrusted_knife"
+  }
+}

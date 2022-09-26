@@ -2,13 +2,7 @@ package net.linkle.valleycraft;
 
 import net.fabricmc.api.ModInitializer;
 import net.linkle.valleycraft.gen.features.TreeConfigFeatures;
-import net.linkle.valleycraft.init.Contents;
-import net.linkle.valleycraft.init.ModBlocks;
-import net.linkle.valleycraft.init.ModEnitites;
-import net.linkle.valleycraft.init.ModGroups;
-import net.linkle.valleycraft.init.ModItems;
-import net.linkle.valleycraft.init.ModParticles;
-import net.linkle.valleycraft.init.ModSounds;
+import net.linkle.valleycraft.init.*;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -25,6 +19,7 @@ public class Main implements ModInitializer {
 	    ModGroups.initialize();
 		ModBlocks.initialize();
 		ModItems.initialize();
+		ModTools.initialize();
 		
 		Contents.initialize();
 		TreeConfigFeatures.initialize();

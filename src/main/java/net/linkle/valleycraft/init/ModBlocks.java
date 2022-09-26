@@ -118,7 +118,7 @@ public class ModBlocks {
     public static final Block SPROUT = new ModPlantBlock();
     public static final Block THORNY_BUSH = new ModPlantBlock();
     public static final Block WARDING_SHROOM = new ModPlantBlock();
-    public static final Block WEAPING_GHOST_WILLOW = new ModPlantBlock();
+    public static final Block WEEPING_GHOST_WILLOW = new ModPlantBlock();
     public static final Block WILD_BEET = new ModPlantBlock();
     public static final Block WILD_CARROT = new ModPlantBlock();
     public static final Block WILD_MINERS_LETTUCE = new ModPlantBlock();
@@ -312,7 +312,7 @@ public class ModBlocks {
         Reg.registerWithItem("snowflower", SNOWFLOWER, itemSettings());
         Reg.registerWithItem("sprout", SPROUT, itemSettings());
         Reg.registerWithItem("thorny_bush", THORNY_BUSH, itemSettings());
-        Reg.registerWithItem("weaping_ghost_willow", WEAPING_GHOST_WILLOW, itemSettings());
+        Reg.registerWithItem("weeping_ghost_willow", WEEPING_GHOST_WILLOW, itemSettings());
 
         Reg.registerWithItem("wild_wheat", WILD_WHEAT, itemSettings());
         Reg.registerWithItem("wild_potato", WILD_POTATO, itemSettings());

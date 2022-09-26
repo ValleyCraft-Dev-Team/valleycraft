@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/misc/clay_bucket_water"
+    "layer0": "valleycraft:item/tools/scythes/primsteel_scythe"
   }
 }

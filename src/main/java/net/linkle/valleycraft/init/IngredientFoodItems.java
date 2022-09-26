@@ -39,7 +39,6 @@ public class IngredientFoodItems {
     public static final Item RAW_RICE = new FoodItem(settings(), 2, 3);
     public static final Item RAW_SILVERFISH = new FoodItem(settings(), 1, 1);
     public static final Item RAW_PHANTOM = new Tier1Normal(settings(), 3, 1.4f, StatusEffects.NAUSEA);
-    public static final Item RAW_TURTLE = new FoodItem(settings(), 4, 0.8f);
     public static final Item RAW_BIRD = new FoodItem(settings(), 2, 1);
 
     public static final Item BREAD_DOUGH = new FoodItem(settings(), 3, 3);
@@ -58,8 +57,10 @@ public class IngredientFoodItems {
     public static final Item MILK = new BottleItem(settings().maxCount(16), 0, 2).setMilk();
     public static final Item BEAST_LIVER_RAW = new FoodItem(settings(), 4, 0.4f, true);
 
-    //disabled
+    //1.1 planned
     //public static final Item MONSTER_FLESH = new Tier2Normal(settings(), 8, 2, StatusEffects.HUNGER);
+    //dw its not sea turtles!
+    //public static final Item RAW_TURTLE = new FoodItem(settings(), 4, 0.8f);
 
     /** Called from {@link ModItems} */
     static void initialize() {
@@ -84,7 +85,6 @@ public class IngredientFoodItems {
         Reg.register("ghost_pumpkin_slice", GHOST_PUMPKIN_SLICE);
 
         Reg.register("monster_guts", MONSTER_GUTS);
-        //Reg.register("monster_flesh", MONSTER_FLESH);
 
         Reg.register("raw_bat_wing", RAW_BAT);
         Reg.register("raw_silverfish", RAW_SILVERFISH);
@@ -93,9 +93,10 @@ public class IngredientFoodItems {
         Reg.register("raw_glowsquid_tentacle", RAW_GLOWSQUID);
         Reg.register("raw_squid_tentacle", RAW_SQUID);
         Reg.register("raw_bacon", RAW_BACON);
-        Reg.register("raw_turtle_neck", RAW_TURTLE);
+
         Reg.register("raw_bird_thigh", RAW_BIRD);
         Reg.register("raw_beast_liver", BEAST_LIVER_RAW);
+        //Reg.register("raw_turtle_neck", RAW_TURTLE);
 
         Reg.register("hardtack_dough", HARDTACK_DOUGH);
         Reg.register("bread_dough", BREAD_DOUGH);
@@ -112,6 +113,7 @@ public class IngredientFoodItems {
 
         Reg.register("cake_dough", CAKE_DOUGH);
 
+        //Reg.register("monster_flesh", MONSTER_FLESH);
     }
 
     private static Item.Settings settings() {

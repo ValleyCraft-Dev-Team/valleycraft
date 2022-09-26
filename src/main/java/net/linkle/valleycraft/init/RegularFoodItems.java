@@ -7,7 +7,6 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
-import static net.linkle.valleycraft.init.ModGroups.TOOLS;
 
 public class RegularFoodItems {
 
@@ -32,7 +31,6 @@ public class RegularFoodItems {
     public static final Item COOKED_SQUID = new FoodItem(settings(), 4, 0.6f);
     public static final Item COOKED_SILVERFISH = new FoodItem(settings(), 3, 0.6f);
     public static final Item COOKED_PHANTOM = new FoodItem(settings(), 6, 0.6f);
-    public static final Item COOKED_TURTLE = new FoodItem(settings(), 8, 0.6f);
     public static final Item COOKED_BIRD = new FoodItem(settings(), 4, 0.6f);
     public static final Item COOKED_BACON = new FoodItem(settings(), 4, 0.6f);
     public static final Item COOKED_BAT = new FoodItem(settings(), 5, 0.6f, true);
@@ -99,6 +97,8 @@ public class RegularFoodItems {
     public static final Item GOLDEN_ONION = new FoodItem(settings(), 4, 1.2f);
     public static final Item GOLDEN_PUMPKIN_SLICE = new FoodItem(settings(), 4, 1.2f);
 
+    //1.1 planned - dw its not sea turtles!
+    //public static final Item COOKED_TURTLE = new FoodItem(settings(), 8, 0.6f);
     /** Called from {@link ModItems} */
     static void initialize() {
         // cooked
@@ -122,7 +122,7 @@ public class RegularFoodItems {
         Reg.register("cooked_squid", COOKED_SQUID);
         Reg.register("cooked_silverfish", COOKED_SILVERFISH);
         Reg.register("cooked_phantom", COOKED_PHANTOM);
-        Reg.register("cooked_turtle", COOKED_TURTLE);
+        //Reg.register("cooked_turtle", COOKED_TURTLE);
         Reg.register("cooked_bird", COOKED_BIRD);
         Reg.register("cooked_bat", COOKED_BAT);
         Reg.register("cooked_bacon", COOKED_BACON);

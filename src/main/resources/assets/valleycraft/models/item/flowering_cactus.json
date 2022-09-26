@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:block/flowering_cactus"
+    "layer0": "valleycraft:item/block_items/small_flowering_cactus"
   }
 }
