@@ -194,6 +194,24 @@ public class ModBlocks {
     public static final Block CANVAS_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET));
     public static final Block CANVAS_CARPET = new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET));
     public static final Block CURTAIN = new CurtainBlock();
+    
+    public static final Block LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.TERRACOTTA_ORANGE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block BLACK_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLACK).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block BLUE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLUE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block BROWN_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BROWN).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block CYAN_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.CYAN).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block GREEN_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.GREEN).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block GREY_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.GRAY).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block LIGHT_BLUE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.LIGHT_BLUE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block LIGHT_GREY_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.LIGHT_GRAY).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block LIME_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.LIME).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block MAGENTA_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.MAGENTA).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block ORANGE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.ORANGE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block PINK_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.PINK).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block PURPLE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.PURPLE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block RED_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.RED).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block WHITE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.WHITE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block YELLOW_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.YELLOW).strength(0.8f).sounds(BlockSoundGroup.WOOL));
 
     public static void initialize() {
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
@@ -371,7 +389,24 @@ public class ModBlocks {
         Reg.registerWithItem("canvas_block", CANVAS_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("canvas_carpet", CANVAS_CARPET, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("curtain", CURTAIN, itemSettings().group(NON_NATURAL_BLOCKS));
-
+        
+        Reg.registerWithItem("leather_block", LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("black_leather_block", BLACK_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("blue_leather_block", BLUE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("brown_leather_block", BROWN_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("cyan_leather_block", CYAN_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("green_leather_block", GREEN_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("grey_leather_block", GREY_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("light_blue_leather_block", LIGHT_BLUE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("light_grey_leather_block", LIGHT_GREY_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("lime_leather_block", LIME_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("magenta_leather_block", MAGENTA_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("orange_leather_block", ORANGE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("pink_leather_block", PINK_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("purple_leather_block", PURPLE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("red_leather_block", RED_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("white_leather_block", WHITE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("yellow_leather_block", YELLOW_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
     }
 
     private static FabricItemSettings itemSettings() {
