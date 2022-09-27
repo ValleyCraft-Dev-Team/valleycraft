@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.init;
 
+import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.item.Tier1Normal;
 import net.linkle.valleycraft.item.Tier2Normal;
 import net.linkle.valleycraft.item.Tier3Bowl;

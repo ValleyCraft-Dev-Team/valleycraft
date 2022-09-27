@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.init;
 
+import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
@@ -28,6 +29,7 @@ public class IngredientFoodItems {
     public static final Item MAIZE = new AliasedBlockItem(ModBlocks.MAIZE, settings().rarity(Rarity.RARE).food(Foods.create(3, 4)));
     public static final Item MINERS_LETTUCE = new AliasedBlockItem(ModBlocks.MINERS_LETTUCES, settings().food(Foods.create(3, 2)));
     public static final Item MONSTER_GUTS = new Tier1Normal(settings(), 6, 2, StatusEffects.HUNGER);
+    public static final Item MONSTER_LIVER = new Tier1Normal(settings(), 3, 2, StatusEffects.POISON);
     public static final Item MOREL_OIL = new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS);
     public static final Item ONION = new FoodItem(settings(), 3, 3);
     public static final Item RAW_BACON = new FoodItem(settings(), 2, 1);
@@ -85,6 +87,7 @@ public class IngredientFoodItems {
         Reg.register("ghost_pumpkin_slice", GHOST_PUMPKIN_SLICE);
 
         Reg.register("monster_guts", MONSTER_GUTS);
+        Reg.register("infected_monster_liver", MONSTER_LIVER);
 
         Reg.register("raw_bat_wing", RAW_BAT);
         Reg.register("raw_silverfish", RAW_SILVERFISH);

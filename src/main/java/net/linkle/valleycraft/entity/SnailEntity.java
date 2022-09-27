@@ -1,12 +1,10 @@
 package net.linkle.valleycraft.entity;
 
-import net.linkle.valleycraft.init.ModEnitites;
+import net.linkle.valleycraft.init.ModEntities;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.ai.TargetPredicate;
 import net.minecraft.entity.ai.goal.ActiveTargetGoal;
 import net.minecraft.entity.ai.goal.AnimalMateGoal;
-import net.minecraft.entity.ai.goal.EscapeDangerGoal;
 import net.minecraft.entity.ai.goal.FollowParentGoal;
 import net.minecraft.entity.ai.goal.LookAroundGoal;
 import net.minecraft.entity.ai.goal.LookAtEntityGoal;
@@ -21,9 +19,7 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
 public class SnailEntity extends AnimalEntity {
@@ -92,7 +88,7 @@ public class SnailEntity extends AnimalEntity {
 
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return ModEnitites.SNAIL.create(world);
+        return ModEntities.SNAIL.create(world);
     }
     
     public static DefaultAttributeContainer.Builder createSnailAttributes() {

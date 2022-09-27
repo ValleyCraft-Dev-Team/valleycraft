@@ -222,7 +222,7 @@ public class ModBlocks {
     public static final Block YELLOW_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.YELLOW).strength(0.8f).sounds(BlockSoundGroup.WOOL));
 
     public static final Block SLUDGE_FLUID_BLOCK = registerBlockWithoutBlockItem("sludge_fluid_block",
-            new ModFluidBlock(ModFluids.SLUDGE_STILL, FabricBlockSettings.of(Material.WATER).noCollision().dropsNothing()), NON_NATURAL_BLOCKS);
+            new ModFluidBlock(ModFluids.SLUDGE_STILL, FabricBlockSettings.of(Material.WATER).noCollision().dropsNothing().nonOpaque()), NON_NATURAL_BLOCKS);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group) {
         return Registry.register(Registry.BLOCK, new Identifier(Main.ID, name), block);

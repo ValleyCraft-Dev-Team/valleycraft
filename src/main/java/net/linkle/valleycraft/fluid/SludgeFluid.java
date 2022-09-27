@@ -1,11 +1,16 @@
 package net.linkle.valleycraft.fluid;
 
+import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.init.ModBlocks;
 import net.linkle.valleycraft.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FluidBlock;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
@@ -34,25 +39,27 @@ public class SludgeFluid extends FlowableFluid {
     public Fluid getFlowing() {
         return ModFluids.SLUDGE_FLOWING;
     }
+
     public Fluid getStill() {
         return ModFluids.SLUDGE_STILL;
     }
+
     public Item getBucketItem() {
         return ModItems.SLUDGE_BUCKET;
     }
 
     public void randomDisplayTick(World world, BlockPos pos, FluidState state, Random random) {
-        if (!state.isStill() && !(Boolean)state.get(FALLING)) {
+        if (!state.isStill() && !(Boolean) state.get(FALLING)) {
             if (random.nextInt(64) == 0) {
-                world.playSound((double)pos.getX() + 0.5D,
-                        (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D,
+                world.playSound((double) pos.getX() + 0.5D,
+                        (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D,
                         SoundEvents.BLOCK_WATER_AMBIENT, SoundCategory.BLOCKS, random.nextFloat() * 0.25F + 0.75F, random.nextFloat() + 0.5F, false);
             }
         } else if (random.nextInt(10) == 0) {
-            world.addParticle(ParticleTypes.UNDERWATER, (double)pos.getX() + random.nextDouble(),
-                    (double)pos.getY() + random.nextDouble(),
-                    (double)pos.getZ() + random.nextDouble(),
-                    0.0D,0.0D,0.0D);
+            world.addParticle(ParticleTypes.UNDERWATER, (double) pos.getX() + random.nextDouble(),
+                    (double) pos.getY() + random.nextDouble(),
+                    (double) pos.getZ() + random.nextDouble(),
+                    0.0D, 0.0D, 0.0D);
         }
 
     }
@@ -72,7 +79,7 @@ public class SludgeFluid extends FlowableFluid {
     }
 
     public int getFlowSpeed(WorldView world) {
-        return 5;
+        return 2;
     }
 
     public BlockState toBlockState(FluidState state) {
@@ -89,7 +96,7 @@ public class SludgeFluid extends FlowableFluid {
     }
 
     public int getLevelDecreasePerBlock(WorldView world) {
-        return 1;
+        return 2;
     }
 
     @Override
@@ -121,7 +128,7 @@ public class SludgeFluid extends FlowableFluid {
         }
 
         public int getLevel(FluidState state) {
-            return (Integer)state.get(LEVEL);
+            return (Integer) state.get(LEVEL);
         }
 
         public boolean isStill(FluidState state) {
@@ -132,11 +139,17 @@ public class SludgeFluid extends FlowableFluid {
     public static class Still extends SludgeFluid {
 
         public int getLevel(FluidState state) {
-            return 4;
+            return 8;
         }
 
         public boolean isStill(FluidState state) {
             return true;
+        }
+    }
+
+    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+        if (entity instanceof LivingEntity living) {
+            living.addStatusEffect(new StatusEffectInstance(ModEffects.ROT_BLIGHT, 7 * 20));
         }
     }
 }

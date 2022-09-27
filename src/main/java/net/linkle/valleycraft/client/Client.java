@@ -6,7 +6,7 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.linkle.valleycraft.fluid.ModFluids;
-import net.linkle.valleycraft.init.ModEnitites;
+import net.linkle.valleycraft.init.ModEntities;
 import net.linkle.valleycraft.init.ModParticles;
 
 @Environment(EnvType.CLIENT)
@@ -17,7 +17,7 @@ public class Client implements ClientModInitializer {
         RenderLayers.intialize();
         ColorProvider.intialize();
         ModParticles.initializeClient();
-        ModEnitites.initializeClient();
+        ModEntities.initializeClient();
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.SLUDGE_STILL,
                 new SimpleFluidRenderHandler(SimpleFluidRenderHandler.WATER_STILL,

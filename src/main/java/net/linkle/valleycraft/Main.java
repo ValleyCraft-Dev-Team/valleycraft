@@ -1,8 +1,10 @@
 package net.linkle.valleycraft;
 
 import net.fabricmc.api.ModInitializer;
+import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.gen.features.TreeConfigFeatures;
 import net.linkle.valleycraft.init.*;
+import net.linkle.valleycraft.potion.ModPotions;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -15,7 +17,7 @@ public class Main implements ModInitializer {
 	@Override
 	public void onInitialize() {
 	    Config.initialize();
-	    
+
 	    ModGroups.initialize();
 		ModBlocks.initialize();
 		ModItems.initialize();
@@ -26,8 +28,11 @@ public class Main implements ModInitializer {
 		
 		ModParticles.initialize();
 		ModSounds.initialize();
-		ModEnitites.initialize();
+		ModEntities.initialize();
 		ModPaintings.registerPaintings();
+
+		ModEffects.registerEffects();
+		ModPotions.registerPotions();
 	}
 	
 	public static Identifier makeId(String id) {
