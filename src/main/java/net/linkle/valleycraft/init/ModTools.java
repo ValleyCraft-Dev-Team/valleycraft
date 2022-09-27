@@ -3,11 +3,10 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.tool.knife.KnifeBase;
 import net.linkle.valleycraft.tool.knife.special.CoralDaggerItem;
 import net.linkle.valleycraft.tool.knife.special.CoralDaggerToolMaterial;
+import net.linkle.valleycraft.tool.sword.special.*;
 import net.linkle.valleycraft.tool.woodcutter_axe.WoodcutterAxeBase;
 import net.linkle.valleycraft.tool.woodcutter_axe.special.TimberAxeItem;
 import net.linkle.valleycraft.tool.woodcutter_axe.special.TimberAxeToolMaterial;
-import net.linkle.valleycraft.tool.sword.special.CaveFisherSwordItem;
-import net.linkle.valleycraft.tool.sword.special.CaveFisherToolMaterial;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterials;
@@ -18,6 +17,8 @@ public class ModTools {
     //When we need to access a tool or weapon elsewhere in the codebase, such as to inject them into loot tables, we need them stored in variables.
     public static final Item CORAL_KNIFE = new CoralDaggerItem(new CoralDaggerToolMaterial(), 3, -1.4f);
     public static final Item CAVE_FISHERS_RAPIER = new CaveFisherSwordItem(new CaveFisherToolMaterial(), 4, -1.4f);
+    public static final Item SEAOLOGER_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.6f);
+    public static final Item SEAOLOGER_FIXED = new FixedSeagerCutlassItem(new FixedSeagerToolMaterial(), 5, -1.6f);
 
     //The base attack damage of each tool type.
     //These values are added to the attack stats of their materials when they're registered.
@@ -53,11 +54,16 @@ public class ModTools {
         //Undead Artifacts
         //Drowned
         Reg.register("knife_coral_encrusted", CORAL_KNIFE);
-        Reg.register("rapier_cave_fishers", CAVE_FISHERS_RAPIER);                                         //Mermaid's Sword
+        Reg.register("rapier_cave_fishers", CAVE_FISHERS_RAPIER);
+        //Mermaid's Sword
         //Arid & Husk
         //Mossy
         //Frozen
         //Zombified
+
+        //Sea-O-Logers
+        Reg.register("seaologer_broken", SEAOLOGER_BROKEN);                                         //Mermaid's Sword
+        Reg.register("seaologer_fixed", SEAOLOGER_FIXED);                                         //Mermaid's Sword
 
         //1.1 planned
         //Reg.register("axe_timber_red", new TimberAxeItem(new TimberAxeToolMaterial()));

@@ -15,7 +15,7 @@ public class ModGroups {
     private static final Item ITEMS_ICON = Reg.register("items_icon", new Item(itemSettings()));
     private static final Item BOOKS_ICON = Reg.register("books_icon", new Item(itemSettings()));
     private static final Item TOOLS_ICON = Reg.register("tools_icon", new Item(itemSettings()));
-    private static final Item CLOTHES_ICON = Reg.register("clothes_icon", new Item(itemSettings()));
+    private static final Item CLOTHES_ICON = Reg.register("clothes", new Item(itemSettings()));
 
     public static final ItemGroup FLORA_GROUP = create("flora", ModBlocks.LAVENDER);
 

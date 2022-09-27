@@ -39,12 +39,13 @@ public class ModItems {
     public static final Item ONION_SEEDS = new AliasedBlockItem(ModBlocks.ONIONS, itemSettings().group(VC_ITEMS));
     public static final Item FIRE_PEPPER_SEEDS = new AliasedBlockItem(ModBlocks.FIRE_PEPPERS, itemSettings().group(VC_ITEMS));
     public static final Item CAVE_ROOT_SEEDS = new AliasedBlockItem(ModBlocks.CAVE_ROOT_CROP, itemSettings().group(VC_ITEMS));
-    public static final Item ANCIENT_FLOWER_SEEDS = new AliasedBlockItem(ModBlocks.ANCIENT_FLOWERS, itemSettings().group(VC_ITEMS));
+    public static final Item ANCIENT_FLOWER_SEEDS = new AliasedBlockItem(ModBlocks.ANCIENT_FLOWERS, itemSettings().group(VC_ITEMS).rarity(Rarity.RARE));
     public static final Item AMETHYSTLE_SEEDS = new AliasedBlockItem(ModBlocks.AMETHYSTLES, itemSettings().group(VC_ITEMS));
 
     public static final Item T_TRADE = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
     public static final Item T_APPRECIATION = new Item(itemSettings().group(BOOKS).rarity(Rarity.RARE).maxCount(1));
     public static final Item T_VISITORS = new Item(itemSettings().group(BOOKS).rarity(Rarity.EPIC).maxCount(1));
+    public static final Item S_TOKEN = new Item(itemSettings().group(BOOKS).rarity(Rarity.COMMON).maxCount(64));
 
     //disabled unless needed in future
     //public static final Item EVIL_CRYSTAL = new Item(itemSettings().group(VC_ITEMS));
@@ -100,6 +101,7 @@ public class ModItems {
         //Reg.register("totem_of_friendship", T_FRIENDSHIP);
         //Reg.register("totem_of_exploration", T_EXPLORATION);
         Reg.register("totem_of_visitors", T_VISITORS);
+        Reg.register("seaologer_token", S_TOKEN);
 
         ModArmors.initialize();
         TieredFoodItems.initialize();

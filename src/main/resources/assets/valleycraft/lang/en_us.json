@@ -348,10 +348,21 @@
   "item.valleycraft.straw_hat": "Straw Hat",
   "item.valleycraft.mogars_broken_golemite_goggles": "Mogar's Broken Golemite Goggles",
   "item.valleycraft.mogars_fixed_golemite_goggles": "Fixed Golemite Goggles",
+  "item.valleycraft.seaologer_broken": "Broken Golemite Cutlass",
+  "item.valleycraft.seaologer_fixed": "Fixed Golemite Cutlass",
+  "item.valleycraft.pillager_eyepatch": "§aSeaologer Eyepatch",
+  "item.valleycraft.fur_boots": "§aWarm Fur Boots",
+  "item.valleycraft.alchemists_leggings": "Ancient Leggings",
+  "item.valleycraft.seaologer_token": "Seaologer Coin",
+
+  "item.valleycraft.canvas_hood": "Canvas Hood",
+  "item.valleycraft.canvas_tunic": "Canvas Tunic",
+  "item.valleycraft.canvas_leggings": "Canvas Leggings",
+  "item.valleycraft.canvas_boots": "Canvas Boots",
 
   "item.valleycraft.sludge_bucket": "Bucket of Rotten Sludge",
   "effect.valleycraft.rot_blight": "Rot Blight",
-  "item.valleycraft.infected_monster_liver": "Blighted Monster Liver",
+  "item.valleycraft.infected_monster_liver": "§aBlighted Monster Liver",
 
   "item.minecraft.potion.effect.rot_blight_potion": "Rot Blight Potion",
   "item.minecraft.splash_potion.effect.rot_blight_potion": "Splash Potion of Rot Blight",

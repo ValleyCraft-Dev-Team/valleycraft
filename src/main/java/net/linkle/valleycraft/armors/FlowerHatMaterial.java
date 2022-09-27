@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.armors;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
@@ -8,7 +9,7 @@ import net.minecraft.sound.SoundEvents;
 public class FlowerHatMaterial implements ArmorMaterial {
     public static final ArmorMaterial INSTANCE = new FlowerHatMaterial();
 
-    static final int[] PROTECTION_VALUES = {2, 5, 6, 2};
+    static final int[] PROTECTION_VALUES = {1, 5, 6, 2};
 
     @Override
     public int getDurability(EquipmentSlot slot) {
@@ -32,7 +33,7 @@ public class FlowerHatMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems();
+        return Ingredient.ofItems(Blocks.FLOWERING_AZALEA);
     }
 
     @Override

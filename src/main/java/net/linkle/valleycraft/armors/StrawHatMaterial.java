@@ -1,6 +1,7 @@
 package net.linkle.valleycraft.armors;
 
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -32,7 +33,7 @@ public class StrawHatMaterial implements ArmorMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems();
+        return Ingredient.ofItems(Items.WHEAT);
     }
 
     @Override

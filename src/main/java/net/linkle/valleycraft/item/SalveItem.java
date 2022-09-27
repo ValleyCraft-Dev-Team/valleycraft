@@ -18,10 +18,6 @@ public class SalveItem extends FoodItem {
         return UseAction.DRINK;
     }
 
-    public int getMaxUseTime(ItemStack stack) {
-        return 3;
-    }
-
     public SoundEvent getDrinkSound() {
         return SoundEvents.ITEM_HONEY_BOTTLE_DRINK;
     }

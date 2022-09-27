@@ -8,7 +8,7 @@ import net.minecraft.sound.SoundEvents;
 public class MogarsBrokenMaterial implements ArmorMaterial {
     public static final ArmorMaterial INSTANCE = new MogarsBrokenMaterial();
 
-    static final int[] PROTECTION_VALUES = {2, 5, 6, 2};
+    static final int[] PROTECTION_VALUES = {1, 5, 6, 2};
 
     @Override
     public int getDurability(EquipmentSlot slot) {

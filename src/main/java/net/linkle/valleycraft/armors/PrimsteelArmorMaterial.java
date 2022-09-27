@@ -39,6 +39,6 @@ public class PrimsteelArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return "moblin";
+        return "primsteel";
     }
 }
