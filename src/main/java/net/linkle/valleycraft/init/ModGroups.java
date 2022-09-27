@@ -15,6 +15,7 @@ public class ModGroups {
     private static final Item ITEMS_ICON = Reg.register("items_icon", new Item(itemSettings()));
     private static final Item BOOKS_ICON = Reg.register("books_icon", new Item(itemSettings()));
     private static final Item TOOLS_ICON = Reg.register("tools_icon", new Item(itemSettings()));
+    private static final Item CLOTHES_ICON = Reg.register("clothes_icon", new Item(itemSettings()));
 
     public static final ItemGroup FLORA_GROUP = create("flora", ModBlocks.LAVENDER);
 
@@ -22,8 +23,9 @@ public class ModGroups {
     public static final ItemGroup REGULAR_DISHES = create("regular_dishes", REGULAR_DISHES_ICON);
     public static final ItemGroup TIERED_DISHES = create("dishes", TIERED_DISHES_ICON);
 
-    public static final ItemGroup ITEMS = create("items", ITEMS_ICON);
+    public static final ItemGroup VC_ITEMS = create("items", ITEMS_ICON);
     public static final ItemGroup VC_TOOLS = create("tools", TOOLS_ICON);
+    public static final ItemGroup CLOTHING = create("clothing", CLOTHES_ICON);
     public static final ItemGroup BOOKS = create("books", BOOKS_ICON);
 
     public static final ItemGroup NON_NATURAL_BLOCKS = create("blocks", ModBlocks.APPLE_DOOR);

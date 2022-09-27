@@ -8,11 +8,10 @@ import net.minecraft.item.ArmorMaterials;
 import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
-import static net.linkle.valleycraft.init.ModGroups.BOOKS;
-import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
+import static net.linkle.valleycraft.init.ModGroups.*;
 
 public class ModArmors {
-    private static final Item.Settings settings = new Item.Settings().group(VC_TOOLS);
+    private static final Item.Settings settings = new Item.Settings().group(CLOTHING);
     private static final Item.Settings settings_artifacts = new Item.Settings().group(BOOKS).rarity(Rarity.RARE);
     private static final Item.Settings settings_artifacts_repaired = new Item.Settings().group(BOOKS).rarity(Rarity.EPIC);
 
