@@ -27,6 +27,7 @@ public class Main implements ModInitializer {
 		ModParticles.initialize();
 		ModSounds.initialize();
 		ModEnitites.initialize();
+		ModPaintings.registerPaintings();
 	}
 	
 	public static Identifier makeId(String id) {

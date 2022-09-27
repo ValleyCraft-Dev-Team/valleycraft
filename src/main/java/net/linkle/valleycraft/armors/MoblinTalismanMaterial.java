@@ -34,7 +34,6 @@ public class MoblinTalismanMaterial implements ArmorMaterial {
     public Ingredient getRepairIngredient() {
         return Ingredient.ofItems();
     }
-
     @Override
     public String getName() {
         return "moblin_talisman";

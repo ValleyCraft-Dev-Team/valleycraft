@@ -1,8 +1,6 @@
 package net.linkle.valleycraft.init;
 
-import net.linkle.valleycraft.armors.FlowerHatMaterial;
-import net.linkle.valleycraft.armors.MoblinTalismanMaterial;
-import net.linkle.valleycraft.armors.StrawHatMaterial;
+import net.linkle.valleycraft.armors.*;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
@@ -16,10 +14,11 @@ import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
 public class ModArmors {
     private static final Item.Settings settings = new Item.Settings().group(VC_TOOLS);
     private static final Item.Settings settings_artifacts = new Item.Settings().group(BOOKS).rarity(Rarity.RARE);
+    private static final Item.Settings settings_artifacts_repaired = new Item.Settings().group(BOOKS).rarity(Rarity.EPIC);
 
     public static final Item MOBLIN_TALISMAN = new ArmorItem(MoblinTalismanMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts);
-    public static final Item MOGARS_BROKEN = new ArmorItem(MoblinTalismanMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts);
-    public static final Item MOGARS_FIXED = new ArmorItem(MoblinTalismanMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts);
+    public static final Item MOGARS_BROKEN = new ArmorItem(MogarsBrokenMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_repaired);
+    public static final Item MOGARS_FIXED = new ArmorItem(MogarsFixedMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_repaired);
 
     public static final Item FLOWER_CROWN = new ArmorItem(FlowerHatMaterial.INSTANCE, EquipmentSlot.HEAD, settings);
     public static final Item STRAW_HAT = new ArmorItem(StrawHatMaterial.INSTANCE, EquipmentSlot.HEAD, settings);

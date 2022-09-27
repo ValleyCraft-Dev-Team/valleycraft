@@ -1,11 +1,14 @@
 package net.linkle.valleycraft.init;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.linkle.valleycraft.fluid.ModFluids;
 import net.linkle.valleycraft.item.FoodItem;
 import net.linkle.valleycraft.item.SalveItem;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
@@ -16,6 +19,9 @@ public class ModItems {
     //ingredients
     public static final Item SALT = new Item(itemSettings());
     public static final Item FLOUR = new Item(itemSettings());
+
+    //fluids
+    public static final Item SLUDGE_BUCKET = new BucketItem(ModFluids.SLUDGE_STILL, itemSettings().group(ITEMS).maxCount(1));
 
     //misc
     public static final Item FIBER = new Item(itemSettings().group(ITEMS));
@@ -56,6 +62,7 @@ public class ModItems {
     public static void initialize() {
         Reg.register("salve", SALVE);
         Reg.register("dog_biscuit", DOG_BISCUIT);
+        Reg.register("sludge_bucket", SLUDGE_BUCKET);
 
         Reg.register("flour", FLOUR);
         Reg.register("salt", SALT);
