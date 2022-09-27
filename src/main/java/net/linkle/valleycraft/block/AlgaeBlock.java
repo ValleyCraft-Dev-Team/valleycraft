@@ -51,6 +51,14 @@ public class AlgaeBlock extends PlantBlock {
         }
     }
     
+    @Override
+    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+        super.onEntityCollision(state, world, pos, entity);
+        if (world instanceof ServerWorld && entity instanceof BoatEntity) {
+            world.breakBlock(new BlockPos(pos), true, entity);
+        }
+    }
+    
     @Nullable
     private BlockPos canGrow(ServerWorld world, BlockPos pos, Random random) {
         var loop = BlockPos.iterate(pos.getX()-2, pos.getY(), pos.getZ()-2, pos.getX()+2, pos.getY(), pos.getZ()+2);

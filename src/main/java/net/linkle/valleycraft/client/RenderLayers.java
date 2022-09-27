@@ -108,7 +108,7 @@ class RenderLayers {
         put(ALOE_VERAS, cullout);
 
         put(OPTIC_GLASS, translucent);
-        put(SLUDGE_FLUID_BLOCK, translucent);
+        put(SLUDGE_FLUID, translucent);
     }
 
     private static void put(Block block, RenderLayer layer) {

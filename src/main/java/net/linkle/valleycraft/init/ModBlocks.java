@@ -13,6 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.LilyPadItem;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.tag.FluidTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -221,14 +222,10 @@ public class ModBlocks {
     public static final Block WHITE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.WHITE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
     public static final Block YELLOW_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.YELLOW).strength(0.8f).sounds(BlockSoundGroup.WOOL));
 
-    public static final Block SLUDGE_FLUID_BLOCK = registerBlockWithoutBlockItem("sludge_fluid_block",
-            new ModFluidBlock(ModFluids.SLUDGE_STILL, FabricBlockSettings.of(Material.WATER).noCollision().dropsNothing().nonOpaque()), NON_NATURAL_BLOCKS);
-
-    private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group) {
-        return Registry.register(Registry.BLOCK, new Identifier(Main.ID, name), block);
-    }
-
+    public static final Block SLUDGE_FLUID = new SludgeFluidBlock(ModFluids.SLUDGE_STILL);
+    
     public static void initialize() {
+        Reg.register("sludge_fluid", SLUDGE_FLUID);
 
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
         Reg.registerWithItem("apple_log", APPLE_LOG, itemSettings());
