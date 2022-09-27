@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:block/stalwart_shroom"
+    "layer0": "valleycraft:item/food/raw_ingredients/stalwart_shroom"
   }
 }
