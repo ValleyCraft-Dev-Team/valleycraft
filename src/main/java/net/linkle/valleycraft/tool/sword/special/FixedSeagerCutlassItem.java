@@ -13,7 +13,7 @@ public class FixedSeagerCutlassItem
 extends SwordItem
 implements EnchantmentHandler {
     public FixedSeagerCutlassItem(ToolMaterial material, int attackDamage, float attackSpeed) {
-        super(material, attackDamage, attackSpeed, new Settings().group(BOOKS).rarity(Rarity.RARE));
+        super(material, attackDamage, attackSpeed, new Settings().group(BOOKS).rarity(Rarity.UNCOMMON));
     }
 
     //Make the sword accept Impaling

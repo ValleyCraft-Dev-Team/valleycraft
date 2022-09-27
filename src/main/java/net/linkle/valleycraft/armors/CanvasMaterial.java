@@ -9,7 +9,7 @@ import net.minecraft.sound.SoundEvents;
 public class CanvasMaterial implements ArmorMaterial {
     public static final ArmorMaterial INSTANCE = new CanvasMaterial();
 
-    static final int[] PROTECTION_VALUES = {1, 2, 1, 1};
+    static final int[] PROTECTION_VALUES = {1, 1, 2, 1};
 
     @Override
     public int getDurability(EquipmentSlot slot) {

@@ -9,6 +9,61 @@
   "itemGroup.valleycraft.tools": "VC: Equipment",
   "itemGroup.valleycraft.clothing": "VC: Clothing",
 
+  "item.valley.broken.tooltip": "Broken",
+
+  "nourishing_items": "§6",
+  "block.valleycraft.shivercap": "§6Shivercap",
+  "block.valleycraft.stalwart_shroom": "§6Stalwart Ironshroom",
+  "item.valleycraft.raw_glowsquid_tentacle": "§6Raw Glow Squid Tentacle",
+  "item.valleycraft.hearty_beetroot": "§6Hearty Beetroot",
+  "item.valleycraft.syrupy_honeycomb": "§6Syrupy Honeycomb",
+  "item.valleycraft.glow_berry_juice": "§6Glow Berry Juice Bottle",
+  "item.valleycraft.amethystle": "§6Amethystle",
+  "item.valleycraft.ancient_flower": "§6Ancient Flower",
+  "item.valleycraft.endura_carrot": "§6Staminella Carrot",
+
+  "seldom_items": "§a",
+  "item.valleycraft.monster_guts": "§aMonster Guts",
+  "item.valleycraft.raw_beast_liver": "§aRaw Beast Liver",
+  "item.valleycraft.infected_monster_liver": "§aBlighted Monster Liver",
+  "item.valleycraft.seaologer_broken": "§aGolemite Cutlass",
+  "item.valleycraft.arrow_bundle": "§aArrow Bundle",
+  "item.valleycraft.bomb_bag": "§aBomb Bag",
+  "item.valleycraft.hot_plate": "Hot Plate",
+  "item.valleycraft.golemite_raw": "Raw Golemite",
+  "item.valleycraft.golemite_nugget": "Golemite Nugget",
+  "item.valleycraft.golemite_ingot": "Golemite Ingot",
+  "item.valleycraft.primsteel_raw": "Raw Primsteel",
+  "item.valleycraft.primsteel_nugget": "Primsteel Nugget",
+  "item.valleycraft.primsteel_ingot": "Primsteel Ingot",
+  "item.valleycraft.anthracite": "Anthracite",
+
+  "item.valleycraft.agitator": "Redstone Agitator",
+  "item.valleycraft.nether_coal": "Anthracite",
+  "item.valleycraft.beast_bone": "§aBeast Bone",
+  "item.valleycraft.bow_string": "§aBow Drawstring",
+  "item.valleycraft.bb_snail": "§aSnail in a Bottle",
+  "item.valleycraft.bb_cave_snail": "§aCave Snail in a Bottle",
+  "item.valleycraft.bb_rhino_beetle": "§aRhino Beetle in a Bottle",
+  "item.valleycraft.big_bottle": "Big Bottle",
+
+  "mythic_items": "§c",
+  "item.valleycraft.book_runecalling": "§cBook of Runecalling",
+
+  "uncommon_items": "yellow",
+  "item.valleycraft.rune_etching_blade": "Rune Etching Blade",
+
+  "rare_items": "aqua",
+  "block.valleycraft.ornate_obsidian_table": "Ornate Obsidian Table",
+  "item.valleycraft.thermal_blaze_core": "Thermal Blaze Core",
+
+  "common_items_and_blocks": "grey",
+  "item.valleycraft.cloth": "Cloth",
+  "item.valleycraft.handle": "Tool Handle",
+  "item.valleycraft.rosegold_ingot": "Rose Gold Ingot",
+  "item.valleycraft.plank": "Wood Plank",
+  "item.valleycraft.sheep_hide": "Sheep Hide",
+
   "block.valleycraft.mamon_wood": "Amberblossom Wood",
   "block.valleycraft.mamon_log": "Amberblossom Log",
   "block.valleycraft.stripped_mamon_wood": "Stripped Amberblossom Wood",
@@ -84,7 +139,6 @@
   "block.valleycraft.glow_cap": "Glowcap",
   "block.valleycraft.goop_cap": "Goopshroom",
   "block.valleycraft.warding_shroom": "Warding Shroomlets",
-  "block.valleycraft.shivercap": "§cShivercap",
   "block.valleycraft.sticky_shroom": "Honeycap",
 
   "block.valleycraft.bee_nest_wall": "Bee Nest Wall",
@@ -156,7 +210,7 @@
   "block.valleycraft.sandy_gravel": "Sandy Gravel",
   "block.valleycraft.dry_dirt": "Arid Dirt",
   "block.valleycraft.charcoal_block": "Charcoal Block",
-  "block.valleycraft.nether_coal_ore": "Nether Coal Ore",
+  "block.valleycraft.nether_coal_ore": "Nether Anthracite Ore",
   "block.valleycraft.nether_salt_ore": "Nether Salt Ore",
   "block.valleycraft.salt_ore": "Salt Ore",
 
@@ -196,15 +250,9 @@
   "item.valleycraft.milk": "Milk Bottle",
   "item.valleycraft.morel_oil": "Morel Oil Bottle",
   "block.valleycraft.morel": "Morel",
-  "item.valleycraft.glow_berry_juice": "§cGlow Berry Juice Bottle",
   "item.valleycraft.aloe_vera": "Aloe Vera",
-  "item.valleycraft.amethystle": "§cAmethystle",
-  "item.valleycraft.ancient_flower": "§cAncient Flower",
   "item.valleycraft.cave_root": "Cave Root",
-  "item.valleycraft.endura_carrot": "§cStaminella Carrot",
   "item.valleycraft.fire_pepper": "Spicy Pepper",
-  "item.valleycraft.hearty_beetroot": "§cHearty Beetroot",
-  "item.valleycraft.syrupy_honeycomb": "§cSyrupy Honeycomb",
 
   "item.valleycraft.maize": "Ancient Maize",
   "item.valleycraft.miners_lettuce": "Miner's Lettuce",
@@ -212,11 +260,11 @@
   "item.valleycraft.raw_rice": "Raw Rice",
   "item.valleycraft.pumpkin_slice": "Pumpkin Slice",
   "item.valleycraft.ghost_pumpkin_slice": "Ghost Pumpkin Slice",
-  "item.valleycraft.monster_guts": "§aMonster Guts",
+
   "item.valleycraft.raw_bat_wing": "Raw Bat Wing",
   "item.valleycraft.raw_silverfish": "Raw Silverfish",
   "item.valleycraft.raw_phantom_eye": "Raw Phantom Eye",
-  "item.valleycraft.raw_glowsquid_tentacle": "§cRaw Glow Squid Tentacle",
+
   "item.valleycraft.raw_squid_tentacle": "Raw Squid Tentacle",
   "item.valleycraft.raw_bacon": "Raw Bacon",
   "item.valleycraft.raw_turtle_neck": "Raw Turtle Neck",
@@ -321,14 +369,12 @@
   "item.valleycraft.ducks_feather": "Duck Feather",
 
   "item.valleycraft.salve": "Healing Salve",
-  "item.valleycraft.beast_bone": "Small Bone",
   "item.valleycraft.cooked_beast_liver": "Cooked Beast Liver",
-  "item.valleycraft.raw_beast_liver": "§aRaw Beast Liver",
 
   "item.valleycraft.monster_claw": "Monster Claw",
   "item.valleycraft.monster_tooth": "Monster Tooth",
   "item.valleycraft.jelly_blob": "Jelly Blob",
-  "block.valleycraft.stalwart_shroom": "§cStalwart Ironshroom",
+
   "item.valleycraft.monster_flesh": "Monster Flesh",
   "item.valleycraft.plant_fiber_string": "Fiber String",
 
@@ -348,14 +394,14 @@
   "item.valleycraft.turtle_leggings": "Turtle Leggings",
   "item.valleycraft.turtle_boots": "Turtle Boots",
   "item.valleycraft.straw_hat": "Straw Hat",
-  "item.valleycraft.mogars_broken_golemite_goggles": "Mogar's Broken Golemite Goggles",
+  "item.valleycraft.mogars_broken_golemite_goggles": "Mogar's Golemite Goggles",
   "item.valleycraft.mogars_fixed_golemite_goggles": "Fixed Golemite Goggles",
-  "item.valleycraft.seaologer_broken": "Broken Golemite Cutlass",
   "item.valleycraft.seaologer_fixed": "Fixed Golemite Cutlass",
-  "item.valleycraft.pillager_eyepatch": "§aSeaologer Eyepatch",
-  "item.valleycraft.fur_boots": "§aWarm Fur Boots",
+  "item.valleycraft.pillager_eyepatch": "Seaologer Eyepatch",
+  "item.valleycraft.fur_boots": "Warm Fur Boots",
+
   "item.valleycraft.alchemists_leggings": "Ancient Leggings",
-  "item.valleycraft.seaologer_token": "Seaologer Coin",
+  "item.valleycraft.seaologer_token": "§aSeaologer Coin",
   "item.valleycraft.strayas_cartography_bag": "Archaeologist's Gear",
 
   "item.valleycraft.canvas_hood": "Canvas Hood",
@@ -365,7 +411,6 @@
 
   "item.valleycraft.sludge_bucket": "Bucket of Rotten Sludge",
   "effect.valleycraft.rot_blight": "Rot Blight",
-  "item.valleycraft.infected_monster_liver": "§aBlighted Monster Liver",
 
   "item.minecraft.potion.effect.rot_blight_potion": "Rot Blight Potion",
   "item.minecraft.splash_potion.effect.rot_blight_potion": "Splash Potion of Rot Blight",

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/books/book_of_runecalling"
+  }
+}

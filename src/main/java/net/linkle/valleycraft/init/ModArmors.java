@@ -18,7 +18,7 @@ public class ModArmors {
     private static final Item.Settings settings_artifacts_epic = new Item.Settings().group(BOOKS).rarity(Rarity.EPIC);
     private static final Item.Settings settings_artifacts_repaired = new Item.Settings().group(BOOKS).rarity(Rarity.EPIC);
 
-    public static final Item MOBLIN_TALISMAN = new ArmorItem(MoblinTalismanMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts_rare);
+    public static final Item MOBLIN_TALISMAN = new ArmorItem(MoblinTalismanMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
     public static final Item MOGARS_BROKEN = new ArmorItem(MogarsBrokenMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_epic);
     public static final Item MOGARS_FIXED = new ArmorItem(MogarsFixedMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_repaired);
 
@@ -26,9 +26,9 @@ public class ModArmors {
 
     public static final Item OLDWORLD_LEGGINGS = new ArmorItem(LeggingsMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_rare);
 
-    public static final Item FUR_BOOTS = new ArmorItem(FurMaterial.INSTANCE, EquipmentSlot.FEET, settings_artifacts_scarce);
+    public static final Item FUR_BOOTS = new ArmorItem(FurMaterial.INSTANCE, EquipmentSlot.FEET, settings_artifacts_uncommon);
 
-    public static final Item EYEPATCH = new ArmorItem(EyePatchMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_scarce);
+    public static final Item EYEPATCH = new ArmorItem(EyePatchMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_uncommon);
 
     public static final Item FLOWER_CROWN = new ArmorItem(FlowerHatMaterial.INSTANCE, EquipmentSlot.HEAD, settings);
     public static final Item STRAW_HAT = new ArmorItem(StrawHatMaterial.INSTANCE, EquipmentSlot.HEAD, settings);

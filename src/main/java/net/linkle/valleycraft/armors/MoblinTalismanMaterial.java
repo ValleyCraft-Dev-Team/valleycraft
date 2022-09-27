@@ -8,7 +8,7 @@ import net.minecraft.sound.SoundEvents;
 public class MoblinTalismanMaterial implements ArmorMaterial {
     public static final ArmorMaterial INSTANCE = new MoblinTalismanMaterial();
 
-    static final int[] PROTECTION_VALUES = {2, 1, 6, 2};
+    static final int[] PROTECTION_VALUES = {2, 2, 3, 2};
 
     @Override
     public int getDurability(EquipmentSlot slot) {

@@ -10,7 +10,7 @@ import static net.minecraft.item.Items.LEATHER;
 public class LeggingsMaterial implements ArmorMaterial {
     public static final ArmorMaterial INSTANCE = new LeggingsMaterial();
 
-    static final int[] PROTECTION_VALUES = {1, 2, 6, 2};
+    static final int[] PROTECTION_VALUES = {1, 2, 2, 2};
 
     @Override
     public int getDurability(EquipmentSlot slot) {

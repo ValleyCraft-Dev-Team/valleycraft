@@ -10,7 +10,7 @@ import static net.minecraft.item.Items.LEATHER;
 public class EyePatchMaterial implements ArmorMaterial {
     public static final ArmorMaterial INSTANCE = new EyePatchMaterial();
 
-    static final int[] PROTECTION_VALUES = {2, 5, 6, 2};
+    static final int[] PROTECTION_VALUES = {1, 1, 1, 1};
 
     @Override
     public int getDurability(EquipmentSlot slot) {
