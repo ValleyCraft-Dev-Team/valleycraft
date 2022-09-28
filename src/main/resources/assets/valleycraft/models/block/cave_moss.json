@@ -1,0 +1,6 @@
+{
+  "parent": "valleycraft:block/template_wall_plane",
+  "textures": {
+    "texture": "valleycraft:block/cave_moss"
+  }
+}

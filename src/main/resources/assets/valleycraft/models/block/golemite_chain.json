@@ -1,0 +1,7 @@
+{
+    "parent": "block/chain",
+    "textures": {
+        "particle": "valleycraft:block/golemite_chain",
+        "all": "valleycraft:block/golemite_chain"
+    }
+}

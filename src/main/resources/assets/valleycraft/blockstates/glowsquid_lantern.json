@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "valleycraft:block/glowsquid_lantern"
+    },
+    "hanging=true": {
+      "model": "valleycraft:block/glowsquid_lantern_hanging"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "block/chain",
+    "textures": {
+        "particle": "valleycraft:block/primsteel_chain",
+        "all": "valleycraft:block/primsteel_chain"
+    }
+}

@@ -96,7 +96,6 @@ class RenderLayers {
         put(WILD_AMETHYSTLE, cullout);
         put(WILD_ONION, cullout);
         put(MAIZE, cullout);
-        
         put(RICES, cullout);
         put(PUFF_BALL, cullout);
         put(ONIONS, cullout);
@@ -106,6 +105,16 @@ class RenderLayers {
         put(ANCIENT_FLOWERS, cullout);
         put(AMETHYSTLES, cullout);
         put(ALOE_VERAS, cullout);
+        put(CAVE_MOSS, cullout);
+        put(CRYSTAL_CAVE_MOSS, cullout);
+        put(ORANGE_SEAGRASS, cullout);
+        put(GLOWSQUID_LANTERN, cullout);
+        put(GOLEMITE_BARS, cullout);
+        put(GOLEMITE_CHAIN, cullout);
+        put(GOLEMITE_GRATE, cullout);
+        put(GOLEMITE_LADDER, cullout);
+        put(IRON_GRATE, cullout);
+        put(PRIMSTEEL_CHAIN, cullout);
 
         put(OPTIC_GLASS, translucent);
         put(SLUDGE_FLUID, translucent);
