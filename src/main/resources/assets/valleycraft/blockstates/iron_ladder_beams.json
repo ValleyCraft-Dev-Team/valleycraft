@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "valleycraft:block/iron_ladder_beams",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "valleycraft:block/iron_ladder_beams"
+    },
+    "facing=south": {
+      "model": "valleycraft:block/iron_ladder_beams",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "valleycraft:block/iron_ladder_beams",
+      "y": 270
+    }
+  }
+}

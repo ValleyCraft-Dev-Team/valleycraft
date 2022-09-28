@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "valleycraft:block/golemite_erdstone_ore"
+  }
+}

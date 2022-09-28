@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/iron_bars_post_ends",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "valleycraft:block/golemite_bars",
+        "edge": "valleycraft:block/golemite_bars"
+    }
+}

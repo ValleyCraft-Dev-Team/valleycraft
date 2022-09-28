@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/ladder",
+  "textures": {
+      "particle": "valleycraft:block/golemite_ladder",
+      "texture": "valleycraft:block/golemite_ladder"
+  }
+}

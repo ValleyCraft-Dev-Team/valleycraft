@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "valleycraft:block/sludge"
+      "model": "valleycraft:block/sludge_fluid"
     }
   }
 }
