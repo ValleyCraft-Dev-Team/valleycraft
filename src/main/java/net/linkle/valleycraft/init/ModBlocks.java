@@ -236,8 +236,6 @@ public class ModBlocks {
     public static final Block HARDENED_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS));
     public static final Block HARDENED_POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE));
     public static final Block IRON_GRATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
-    public static final Block IRON_LADDER_BARS = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
-    public static final Block IRON_LADDER_BEAMS = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
     public static final Block MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS));
     public static final Block ORANGE_SEAGRASS = new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS));
     public static final Block POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE));
@@ -446,8 +444,6 @@ public class ModBlocks {
         Reg.registerWithItem("hardened_erdstone_bricks", HARDENED_ERDSTONE_BRICKS, itemSettings());
         Reg.registerWithItem("hardened_polished_erdstone", HARDENED_POLISHED_ERDSTONE, itemSettings());
         Reg.registerWithItem("iron_grate", IRON_GRATE, itemSettings());
-        Reg.registerWithItem("iron_ladder_bars", IRON_LADDER_BARS, itemSettings());
-        Reg.registerWithItem("iron_ladder_beams", IRON_LADDER_BEAMS, itemSettings());
         Reg.registerWithItem("mossy_erdstone_bricks", MOSSY_ERDSTONE_BRICKS, itemSettings());
         Reg.registerWithItem("orange_seagrass", ORANGE_SEAGRASS, itemSettings());
         Reg.registerWithItem("polished_erdstone", POLISHED_ERDSTONE, itemSettings());

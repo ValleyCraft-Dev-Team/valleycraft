@@ -114,8 +114,6 @@ class RenderLayers {
         put(GOLEMITE_GRATE, cullout);
         put(GOLEMITE_LADDER, cullout);
         put(IRON_GRATE, cullout);
-        put(IRON_LADDER_BARS, cullout);
-        put(IRON_LADDER_BEAMS, cullout);
         put(PRIMSTEEL_CHAIN, cullout);
 
         put(OPTIC_GLASS, translucent);

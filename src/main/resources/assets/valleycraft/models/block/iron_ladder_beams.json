@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/ladder",
-  "textures": {
-      "particle": "valleycraft:block/iron_ladder_beams",
-      "texture": "valleycraft:block/iron_ladder_beams"
-  }
-}
