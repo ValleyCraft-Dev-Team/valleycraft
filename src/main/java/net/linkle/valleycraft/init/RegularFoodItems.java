@@ -58,6 +58,7 @@ public class RegularFoodItems {
     public static final Item WARM_PUMPKIN_SOUP_BOTTLE = new BottleItem(settings().maxCount(16), 9, 0.8f);
     public static final Item GLOOM_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.NIGHT_VISION);
     public static final Item ALOE_VERA_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.HEALTH_BOOST);
+    public static final Item MOBLIN_ELIXER = new TierRareBottle(settings().maxCount(1).rarity(Rarity.UNCOMMON), 0, 0, StatusEffects.NIGHT_VISION, StatusEffects.NAUSEA);
 
     // no tier items
     public static final Item CAVE_ROOT_STIR_FRY = new BowlItem(settings(), 10, 0.6f);
@@ -190,6 +191,10 @@ public class RegularFoodItems {
         Reg.register("golden_glow_berries", GOLDEN_GLOW_BERRIES);
         Reg.register("golden_gloom_berry", GOLDEN_GLOOM_BERRY);
         Reg.register("golden_chorus_fruit", GOLDEN_CHORUS_FRUIT);
+
+        //rare
+        Reg.register("moblin_elixer", MOBLIN_ELIXER);
+
     }
 
     private static Item.Settings settings() {

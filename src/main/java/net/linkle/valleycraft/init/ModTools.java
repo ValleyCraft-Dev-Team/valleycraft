@@ -1,12 +1,11 @@
 package net.linkle.valleycraft.init;
 
+import net.linkle.valleycraft.tool.environmental.*;
 import net.linkle.valleycraft.tool.knife.KnifeBase;
 import net.linkle.valleycraft.tool.knife.special.CoralDaggerItem;
 import net.linkle.valleycraft.tool.knife.special.CoralDaggerToolMaterial;
 import net.linkle.valleycraft.tool.sword.special.*;
 import net.linkle.valleycraft.tool.woodcutter_axe.WoodcutterAxeBase;
-import net.linkle.valleycraft.tool.woodcutter_axe.special.TimberAxeItem;
-import net.linkle.valleycraft.tool.woodcutter_axe.special.TimberAxeToolMaterial;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterials;
@@ -15,6 +14,11 @@ import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
 
 public class ModTools {
     //When we need to access a tool or weapon elsewhere in the codebase, such as to inject them into loot tables, we need them stored in variables.
+    //environmental tools
+    public static final Item BRANCH = new BranchToolItem(new BranchToolMaterial(), 3, -2.0f);
+    public static final Item FLINT = new FlintToolItem(new FlintToolMaterial());
+    public static final Item HEFTY_ROCK = new RockToolItem(new RockToolMaterial());
+
     public static final Item CORAL_KNIFE = new CoralDaggerItem(new CoralDaggerToolMaterial(), 3, -1.4f);
     public static final Item CAVE_FISHERS_RAPIER = new CaveFisherSwordItem(new CaveFisherToolMaterial(), 4, -2.4f);
     public static final Item SEAOLOGER_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
@@ -35,6 +39,11 @@ public class ModTools {
     public static final Item.Settings BASIC_WOODCUTTER_SETTINGS = new Item.Settings().group(VC_TOOLS);
 
     public static void initialize() {
+        //Environmental
+        Reg.register("branch", BRANCH);
+        Reg.register("sharp_flint", FLINT);
+        Reg.register("hefty_rock", HEFTY_ROCK);
+
         //Knives
         Reg.register("knife_wooden", new KnifeBase(ToolMaterials.WOOD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
         Reg.register("knife_stone", new KnifeBase(ToolMaterials.STONE, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));

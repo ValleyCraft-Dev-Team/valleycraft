@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "valleycraft:item/tools/environment_unique_weapons/sharp_flint"
+  }
+}

@@ -67,63 +67,17 @@ public class ModItems {
     public static final Item PRIMSTEEL_INGOT = new Item(itemSettings().group(VC_ITEMS));
     public static final Item ANTHRACITE = new Item(itemSettings().group(VC_ITEMS));
     public static final Item BIG_BOTTLE = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item BB_SNAIL = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item BB_CAVE_SNAIL = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item BB_RHINO = new Item(itemSettings().group(VC_ITEMS));
+    public static final Item BB_SNAIL = new Item(itemSettings().group(VC_ITEMS).maxCount(16));
+    public static final Item BB_CAVE_SNAIL = new Item(itemSettings().group(VC_ITEMS).maxCount(16));
+    public static final Item BB_RHINO = new Item(itemSettings().group(VC_ITEMS).maxCount(16));
+    public static final Item MONSTER_CLAW = new Item(itemSettings().group(VC_ITEMS));
+    public static final Item DAUB = new Item(itemSettings().group(VC_ITEMS));
+    public static final Item PIG_HIDE = new Item(itemSettings().group(VC_ITEMS));
+    public static final Item AMBER = new Item(itemSettings().group(VC_ITEMS));
 
     public static void initialize() {
         ModBookItems.initialize();
 
-        Reg.register("plank", PLANK);
-        Reg.register("fiber", FIBER);
-        Reg.register("handle", HANDLE);
-
-        Reg.register("cloth", CLOTH);
-        Reg.register("flour", FLOUR);
-        Reg.register("salt", SALT);
-
-        Reg.register("primsteel_nugget", PRIMSTEEL_NUGGET);
-        Reg.register("primsteel_raw", PRIMSTEEL_RAW);
-        Reg.register("primsteel_ingot", PRIMSTEEL_INGOT);
-
-        Reg.register("rosegold_ingot", ROSEGOLD);
-
-        Reg.register("golemite_raw", GOLEMITE_RAW);
-        Reg.register("golemite_nugget", GOLEMITE_NUGGET);
-        Reg.register("golemite_ingot", GOLEMITE_INGOT);
-
-        Reg.register("anthracite", ANTHRACITE);
-        Reg.register("hot_plate", HOT_PLATE);
-        Reg.register("agitator", AGITATOR);
-        Reg.register("thermal_blaze_core", THERMAL);
-        Reg.register("bomb_bag", BOMB_BAG);
-        Reg.register("arrow_bundle", ARROW_BUNDLE);
-
-        Reg.register("big_bottle", BIG_BOTTLE);
-        Reg.register("bb_snail", BB_SNAIL);
-        Reg.register("bb_cave_snail", BB_CAVE_SNAIL);
-        Reg.register("bb_rhino_beetle", BB_RHINO);
-
-        Reg.register("beast_bone", BEAST_BONE);
-        Reg.register("bow_string", BOW_STRING);
-        Reg.register("sheep_hide", SHEEP_HIDE);
-        Reg.register("seagulls_feather", SEAGULLS_FEATHER);
-        Reg.register("ducks_feather", DUCKS_FEATHER);
-        Reg.register("crows_feather", CROWS_FEATHER);
-        Reg.register("dog_biscuit", DOG_BISCUIT);
-        Reg.register("sludge_bucket", SLUDGE_BUCKET);
-
-        //Reg.register("jelly_blob", JELLY_BLOB);
-        //Reg.register("monster_claw", MONSTER_CLAW);
-        //Reg.register("monster_tooth", MONSTER_TOOTH);
-        //Reg.register("evil_crystal", EVIL_CRYSTAL);
-        //Reg.register("gratitude_crystal", GRATITUDE_CRYSTAL);
-
-        Reg.register("book_cover", COVER);
-        Reg.register("plant_fiber_string", STRING);
-
-        Reg.register("mulch", MULCH);
-        
         // crops
         Reg.register("rice_seeds", RICE_SEEDS);
         Reg.register("puff_ball_seeds", PUFF_BALL_SEEDS);
@@ -132,16 +86,57 @@ public class ModItems {
         Reg.register("cave_root_seeds", CAVE_ROOT_SEEDS);
         Reg.register("ancient_flower_seeds", ANCIENT_FLOWER_SEEDS);
         Reg.register("amethystle_seeds", AMETHYSTLE_SEEDS);
+
+        Reg.register("fiber", FIBER);
+        Reg.register("plank", PLANK);
+        Reg.register("salt", SALT);
+        Reg.register("monster_claw", MONSTER_CLAW);
+        Reg.register("beast_bone", BEAST_BONE);
+        Reg.register("sheep_hide", SHEEP_HIDE);
+        Reg.register("pig_hide", PIG_HIDE);
+        Reg.register("seagulls_feather", SEAGULLS_FEATHER);
+        Reg.register("ducks_feather", DUCKS_FEATHER);
+        Reg.register("crows_feather", CROWS_FEATHER);
+        Reg.register("primsteel_nugget", PRIMSTEEL_NUGGET);
+        Reg.register("primsteel_raw", PRIMSTEEL_RAW);
+        Reg.register("golemite_raw", GOLEMITE_RAW);
+        Reg.register("golemite_nugget", GOLEMITE_NUGGET);
+        Reg.register("amber", AMBER);
+        Reg.register("anthracite", ANTHRACITE);
+
+        Reg.register("mulch", MULCH);
+        Reg.register("daub", DAUB);
+        Reg.register("handle", HANDLE);
+        Reg.register("cloth", CLOTH);
+        Reg.register("plant_fiber_string", STRING);
+        Reg.register("book_cover", COVER);
+        Reg.register("bow_string", BOW_STRING);
+        Reg.register("flour", FLOUR);
+
+        Reg.register("primsteel_ingot", PRIMSTEEL_INGOT);
+        Reg.register("golemite_ingot", GOLEMITE_INGOT);
+        Reg.register("rosegold_ingot", ROSEGOLD);
+        Reg.register("hot_plate", HOT_PLATE);
+        Reg.register("agitator", AGITATOR);
+        Reg.register("thermal_blaze_core", THERMAL);
+
+        Reg.register("big_bottle", BIG_BOTTLE);
+        Reg.register("bb_snail", BB_SNAIL);
+        Reg.register("bb_cave_snail", BB_CAVE_SNAIL);
+        Reg.register("bb_rhino_beetle", BB_RHINO);
+
+        Reg.register("sludge_bucket", SLUDGE_BUCKET);
+
+        Reg.register("dog_biscuit", DOG_BISCUIT);
         Reg.register("salve", SALVE);
 
-        //Reg.register("totem_of_protection", T_PROTECTION);
-        Reg.register("totem_of_trade", T_TRADE);
-        //Reg.register("totem_of_knowledge", T_KNOWLEDGE);
-        Reg.register("totem_of_appreciation", T_APPRECIATION);
-        //Reg.register("totem_of_friendship", T_FRIENDSHIP);
-        //Reg.register("totem_of_exploration", T_EXPLORATION);
-        Reg.register("totem_of_visitors", T_VISITORS);
         Reg.register("seaologer_token", S_TOKEN);
+        Reg.register("totem_of_trade", T_TRADE);
+        Reg.register("totem_of_appreciation", T_APPRECIATION);
+        Reg.register("totem_of_visitors", T_VISITORS);
+
+        Reg.register("bomb_bag", BOMB_BAG);
+        Reg.register("arrow_bundle", ARROW_BUNDLE);
 
         ModArmors.initialize();
         TieredFoodItems.initialize();

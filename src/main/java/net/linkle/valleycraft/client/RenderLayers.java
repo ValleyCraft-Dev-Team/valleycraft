@@ -118,6 +118,7 @@ class RenderLayers {
 
         put(OPTIC_GLASS, translucent);
         put(SLUDGE_FLUID, translucent);
+
     }
 
     private static void put(Block block, RenderLayer layer) {

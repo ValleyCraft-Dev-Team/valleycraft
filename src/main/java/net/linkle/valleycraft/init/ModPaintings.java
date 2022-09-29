@@ -16,7 +16,9 @@ public class ModPaintings {
     public static final PaintingMotive GWEYIRS_FINAL_VOYAGE = register("gweyirs_final_voyage", 48, 32);
     public static final PaintingMotive ANCIENT_HISTORY = register("ancient_history", 16, 16);
     public static final PaintingMotive ILLAGER_HOME = register("home", 32, 16);
-    
+    public static final PaintingMotive HEXS_AIRSHIP = register("hex_airship", 48, 32);
+    public static final PaintingMotive CYCLES = register("cycles", 32, 16);
+
     public static void initialize() {
         Main.LOGGER.debug("Registering paintings for Wilder Horizons");
     }

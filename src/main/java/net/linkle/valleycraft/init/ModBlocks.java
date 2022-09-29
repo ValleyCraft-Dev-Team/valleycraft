@@ -3,10 +3,15 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.fluid.ModFluids;
 import net.minecraft.block.*;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.LilyPadItem;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
@@ -17,6 +22,9 @@ import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.util.BlockPres;
 import net.linkle.valleycraft.util.Reg;
 
+import java.util.List;
+
+import static net.linkle.valleycraft.init.ModGroups.BOOKS;
 import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
 
 public class ModBlocks {
@@ -311,8 +319,7 @@ public class ModBlocks {
 
         Reg.registerWithItem("ghost_pumpkin", GHOST_PUMPKIN, itemSettings());
         Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i->EquipmentSlot.HEAD).group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("ghost_jack_o_lantern", GHOST_JACK_O_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
-        
+
         Reg.registerWithItem("fiber_bale", FIBER_BALE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("rotten_flesh_block", ROTTEN_FLESH_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("salt_block", SALT_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));

@@ -42,6 +42,13 @@ public class ModArmors {
     public static final Item TURTLE_LEGGINGS = new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, settings);
     public static final Item TURTLE_BOOTS = new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settings);
 
+    public static final Item TRADER_HEAD_SCARF = new ArmorItem(TraderMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_uncommon);
+    public static final Item TRADER_COAT = new ArmorItem(TraderMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
+    public static final Item TRADER_SKIRT = new ArmorItem(TraderMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
+    public static final Item TRADER_SANDALS = new ArmorItem(TraderMaterial.INSTANCE, EquipmentSlot.FEET, settings_artifacts_uncommon);
+
+    public static final Item LIBRARIAN = new ArmorItem(LibrarianMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_uncommon);
+
     //public static final Item GOLEMITE_HELMET = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
     //public static final Item GOLEMITE_CHESTPLATE = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
     //public static final Item GOLEMITE_LEGGINGS = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
@@ -60,7 +67,12 @@ public class ModArmors {
         Reg.register("strayas_cartography_bag", STRAYA);
         Reg.register("alchemists_leggings", OLDWORLD_LEGGINGS);
         Reg.register("fur_boots", FUR_BOOTS);
+        Reg.register("librarians_hat", LIBRARIAN);
         Reg.register("pillager_eyepatch", EYEPATCH);
+        Reg.register("trader_head_scarf", TRADER_HEAD_SCARF);
+        Reg.register("trader_coat", TRADER_COAT);
+        Reg.register("trader_skirt", TRADER_SKIRT);
+        Reg.register("trader_sandals", TRADER_SANDALS);
 
         //regular clothing
         Reg.register("straw_hat", STRAW_HAT);
