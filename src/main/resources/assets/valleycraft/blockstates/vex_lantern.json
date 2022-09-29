@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "valleycraft:block/vex_lantern_sitting"
+    },
+    "hanging=true": {
+      "model": "valleycraft:block/vex_lantern_hanging"
+    }
+  }
+}

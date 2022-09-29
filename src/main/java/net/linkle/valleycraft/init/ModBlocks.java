@@ -3,15 +3,11 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.fluid.ModFluids;
 import net.minecraft.block.*;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
-import net.minecraft.client.item.TooltipContext;
+import net.minecraft.client.render.entity.VexEntityRenderer;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.LilyPadItem;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
-import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
@@ -22,9 +18,6 @@ import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.util.BlockPres;
 import net.linkle.valleycraft.util.Reg;
 
-import java.util.List;
-
-import static net.linkle.valleycraft.init.ModGroups.BOOKS;
 import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
 
 public class ModBlocks {
@@ -229,13 +222,13 @@ public class ModBlocks {
     public static final Block CAVE_MOSS = new CaveMossBlock();
     public static final Block CRYSTAL_CAVE_MOSS = new CaveMossBlock();
     public static final Block ERDCOBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLESTONE));
+    public static final Block CRACKED_COBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLESTONE));
     public static final Block ERDSTONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS));
     public static final Block GLOWSQUID_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 12));
     public static final Block GOLEMITE_BARS = new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS));
     public static final Block GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block GOLEMITE_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
-    public static final Block GOLEMITE_DEEPSLATE_ORE = new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE));
     public static final Block GOLEMITE_ERDSTONE_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
     public static final Block GOLEMITE_GRATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block GOLEMITE_LADDER = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
@@ -249,13 +242,14 @@ public class ModBlocks {
     public static final Block POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE));
     public static final Block PRIMSTEEL_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
     public static final Block PRIMSTEEL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
+    public static final Block PRIMSTEEL_DEEPSLATE_ORE = new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE));
     public static final Block PRIMSTEEL_PLATE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block PRIMSTEEL_TILED_PLATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block SCORCHSTONE = new Block(Block.Settings.copy(Blocks.STONE));
+    public static final Block VEX_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
     
     public static void initialize() {
         Reg.register("sludge_fluid", SLUDGE_FLUID);
-
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
         Reg.registerWithItem("apple_log", APPLE_LOG, itemSettings());
         Reg.registerWithItem("stripped_apple_wood", STRIPPED_APPLE_WOOD, itemSettings());
@@ -319,7 +313,8 @@ public class ModBlocks {
 
         Reg.registerWithItem("ghost_pumpkin", GHOST_PUMPKIN, itemSettings());
         Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i->EquipmentSlot.HEAD).group(NON_NATURAL_BLOCKS));
-
+        Reg.registerWithItem("ghost_jack_o_lantern", GHOST_JACK_O_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
+        
         Reg.registerWithItem("fiber_bale", FIBER_BALE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("rotten_flesh_block", ROTTEN_FLESH_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("salt_block", SALT_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
@@ -435,6 +430,7 @@ public class ModBlocks {
         Reg.registerWithItem("arid_vines", ARID_VINES, itemSettings());
         Reg.registerWithItem("cave_moss", CAVE_MOSS, itemSettings());
         Reg.registerWithItem("crystal_cave_moss", CRYSTAL_CAVE_MOSS, itemSettings());
+        Reg.registerWithItem("cracked_cobblestone", CRACKED_COBBLESTONE, itemSettings());
         Reg.registerWithItem("erdcobblestone", ERDCOBBLESTONE, itemSettings());
         Reg.registerWithItem("erdstone", ERDSTONE, itemSettings());
         Reg.registerWithItem("erdstone_bricks", ERDSTONE_BRICKS, itemSettings());
@@ -442,7 +438,6 @@ public class ModBlocks {
         Reg.registerWithItem("golemite_bars", GOLEMITE_BARS, itemSettings());
         Reg.registerWithItem("golemite_block", GOLEMITE_BLOCK, itemSettings());
         Reg.registerWithItem("golemite_chain", GOLEMITE_CHAIN, itemSettings());
-        Reg.registerWithItem("golemite_deepslate_ore", GOLEMITE_DEEPSLATE_ORE, itemSettings());
         Reg.registerWithItem("golemite_erdstone_ore", GOLEMITE_ERDSTONE_ORE, itemSettings());
         Reg.registerWithItem("golemite_grate", GOLEMITE_GRATE, itemSettings());
         Reg.registerWithItem("golemite_ladder", GOLEMITE_LADDER, itemSettings());
@@ -456,9 +451,11 @@ public class ModBlocks {
         Reg.registerWithItem("polished_erdstone", POLISHED_ERDSTONE, itemSettings());
         Reg.registerWithItem("primsteel_chain", PRIMSTEEL_CHAIN, itemSettings());
         Reg.registerWithItem("primsteel_ore", PRIMSTEEL_ORE, itemSettings());
+        Reg.registerWithItem("primsteel_deepslate_ore", PRIMSTEEL_DEEPSLATE_ORE, itemSettings());
         Reg.registerWithItem("primsteel_plate_block", PRIMSTEEL_PLATE_BLOCK, itemSettings());
         Reg.registerWithItem("primsteel_tiled_plate", PRIMSTEEL_TILED_PLATE, itemSettings());
         Reg.registerWithItem("scorchstone", SCORCHSTONE, itemSettings());
+        Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings());
         
         Reg.registerWithItem("leather_block", LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("black_leather_block", BLACK_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
