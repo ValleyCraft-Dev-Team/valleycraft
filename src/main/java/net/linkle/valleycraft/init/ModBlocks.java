@@ -437,6 +437,7 @@ public class ModBlocks {
         Reg.registerWithItem("glowsquid_lantern", GLOWSQUID_LANTERN, itemSettings());
         Reg.registerWithItem("golemite_bars", GOLEMITE_BARS, itemSettings());
         Reg.registerWithItem("golemite_block", GOLEMITE_BLOCK, itemSettings());
+        Reg.registerWithItem("golemite_chain", GOLEMITE_CHAIN, itemSettings());
         Reg.registerWithItem("golemite_erdstone_ore", GOLEMITE_ERDSTONE_ORE, itemSettings());
         Reg.registerWithItem("golemite_grate", GOLEMITE_GRATE, itemSettings());
         Reg.registerWithItem("golemite_ladder", GOLEMITE_LADDER, itemSettings());
