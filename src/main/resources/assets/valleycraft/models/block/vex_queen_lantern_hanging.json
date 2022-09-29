@@ -3,7 +3,7 @@
 	"parent": "block/block",
 	"textures": {
 		"0": "valleycraft:block/lantern_dead",
-		"1": "valleycraft:block/vex_jar",
+		"1": "valleycraft:block/vex_queen_jar",
 		"particle": "valleycraft:block/lantern_dead"
 	},
 	"elements": [

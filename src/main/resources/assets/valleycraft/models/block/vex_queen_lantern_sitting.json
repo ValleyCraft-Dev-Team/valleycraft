@@ -3,8 +3,8 @@
 	"parent": "block/block",
 	"textures": {
 		"1": "valleycraft:block/lantern_dead",
-		"2": "valleycraft:block/vex_jar",
-		"particle": "valleycraft:block/vex_jar"
+		"2": "valleycraft:block/vex_queen_jar",
+		"particle": "valleycraft:block/vex_queen_jar"
 	},
 	"elements": [
 		{
