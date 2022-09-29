@@ -10,7 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "valleycraft:golemite_deepslate_ore",
+              "name": "valleycraft:primsteel_deepslate_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -29,7 +29,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "valleycraft:golemite_raw",
+              "name": "valleycraft:primsteel_raw",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",

@@ -29,6 +29,7 @@ import net.minecraft.state.StateManager;
 import net.minecraft.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
@@ -71,6 +72,11 @@ public abstract class SludgeFluid extends FlowableFluid {
     protected void beforeBreakingBlock(WorldAccess world, BlockPos pos, BlockState state) {
         BlockEntity blockEntity = state.hasBlockEntity() ? world.getBlockEntity(pos) : null;
         Block.dropStacks(state, world, pos, blockEntity);
+    }
+    
+    @Override
+    public Vec3d getVelocity(BlockView world, BlockPos pos, FluidState state) {
+        return super.getVelocity(world, pos, state).multiply(0.5);
     }
 
     @Override
