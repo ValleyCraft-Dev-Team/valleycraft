@@ -1,8 +1,7 @@
-package net.linkle.valleycraft.potion;
+package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.effect.ModEffects;
-import net.linkle.valleycraft.init.IngredientFoodItems;
 import net.linkle.valleycraft.mixin.BrewingRecipeRegistryMixin;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.Item;

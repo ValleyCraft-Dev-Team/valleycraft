@@ -1,6 +1,5 @@
 package net.linkle.valleycraft.init;
 
-import net.linkle.valleycraft.fluid.ModFluids;
 import net.linkle.valleycraft.item.FoodItem;
 import net.linkle.valleycraft.item.SalveItem;
 import net.linkle.valleycraft.util.Reg;

@@ -1,10 +1,10 @@
 {
   "variants": {
     "hanging=false": {
-      "model": "valleycraft:block/vex_lantern_sitting"
+      "model": "valleycraft:block/dead_lantern_sitting"
     },
     "hanging=true": {
-      "model": "valleycraft:block/vex_lantern_hanging"
+      "model": "valleycraft:block/dead_lantern_hanging"
     }
   }
 }

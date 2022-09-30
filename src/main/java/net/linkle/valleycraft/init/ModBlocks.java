@@ -1,6 +1,5 @@
 package net.linkle.valleycraft.init;
 
-import net.linkle.valleycraft.fluid.ModFluids;
 import net.minecraft.block.*;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.client.render.entity.VexEntityRenderer;
@@ -249,7 +248,7 @@ public class ModBlocks {
     public static final Block PRIMSTEEL_PLATE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block PRIMSTEEL_TILED_PLATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block SCORCHSTONE = new Block(Block.Settings.copy(Blocks.STONE));
-    public static final Block VEX_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
+    public static final Block VEX_LANTERN = new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN));
     
     public static void initialize() {
         Reg.register("sludge_fluid", SLUDGE_FLUID);
