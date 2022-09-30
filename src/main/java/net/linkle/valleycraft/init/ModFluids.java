@@ -1,6 +1,9 @@
-package net.linkle.valleycraft.fluid;
+package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.fluid.SludgeFluid;
+import net.linkle.valleycraft.fluid.SludgeFluid.Flowing;
+import net.linkle.valleycraft.fluid.SludgeFluid.Still;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.util.registry.Registry;

@@ -7,6 +7,7 @@ import javax.annotation.Nullable;
 
 import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.init.ModFluids;
 import net.linkle.valleycraft.init.ModItems;
 import net.linkle.valleycraft.tags.ModFluidTags;
 import net.minecraft.block.Block;
