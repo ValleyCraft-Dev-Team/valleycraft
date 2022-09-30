@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/books/ancient_text"
+    "layer0": "valleycraft:item/books/estrid"
   }
 }

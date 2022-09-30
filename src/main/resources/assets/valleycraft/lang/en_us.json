@@ -23,7 +23,7 @@
   "item.valleycraft.endura_carrot": "§6Staminella Carrot",
 
   "seldom_items": "§a",
-  "item.valleycraft.monster_guts": "§Strange Guts",
+  "item.valleycraft.monster_guts": "§aStrange Guts",
   "item.valleycraft.raw_beast_liver": "§aRaw Liver",
   "item.valleycraft.infected_monster_liver": "§aBlighted Liver",
   "item.valleycraft.seaologer_broken": "§aGolemite Cutlass",
@@ -57,7 +57,18 @@
 
   "mythic_items": "§c",
   "item.valleycraft.book_runecalling": "§cBook of Runecalling",
-  "item.valleycraft.book_golemancy": "§cZonja's Notes on Golemancy",
+  "item.valleycraft.book_golemancy": "§cLanjya's Notes on Golemancy",
+  "item.valleycraft.book_survival_guide": "§cWulfrid's Survival Guide",
+  "item.valleycraft.book_cooking_tier_one": "§cEstrid's Notes",
+  "item.valleycraft.book_cooking_tier_two": "§cGweyir's Recipes",
+  "item.valleycraft.book_cooking_tier_three": "§cGondo's Culinary Creations",
+  "item.valleycraft.book_straya_vol_one": "§cStraya's History of the Overworld: Vol 1",
+  "item.valleycraft.book_straya_vol_two": "§cStraya's History of the Overworld: Vol 2",
+  "item.valleycraft.book_straya_vol_three": "§cStraya's History of the Overworld: Vol 3",
+  "item.valleycraft.book_straya_vol_four": "§cStraya's History of the Overworld: Vol 4",
+  "item.valleycraft.book_straya_vol_five": "§cStraya's History of the Overworld: Vol 5",
+  "item.valleycraft.book_hex": "§cHex's Logbook",
+  "item.valleycraft.book_aether": "§cEdison Wrenk's Recipe Book",
 
   "uncommon_items": "yellow",
   "item.valleycraft.rune_etching_blade": "Rune Etching Blade",
@@ -386,7 +397,7 @@
   "item.valleycraft.salve": "Healing Salve",
   "item.valleycraft.cooked_beast_liver": "Cooked Liver",
 
-  "item.valleycraft.monster_claw": "Sharp Claw",
+  "item.valleycraft.monster_claw": "§aSharp Claw",
   "item.valleycraft.plant_fiber_string": "Fiber String",
 
   "item.valleycraft.totem_of_trade": "Totem of Trade",
