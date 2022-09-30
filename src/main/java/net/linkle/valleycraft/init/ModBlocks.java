@@ -19,8 +19,7 @@ import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.util.BlockPres;
 import net.linkle.valleycraft.util.Reg;
 
-import static net.linkle.valleycraft.init.ModGroups.BOOKS;
-import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
+import static net.linkle.valleycraft.init.ModGroups.*;
 
 public class ModBlocks {
 
@@ -311,7 +310,7 @@ public class ModBlocks {
         Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
         Reg.registerWithItem("pumice", PUMICE, itemSettings());
         Reg.registerWithItem("pumice_smooth", PUMICE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("rocks", ROCKS, itemSettings());
+        Reg.registerWithItem("rocks", ROCKS, itemSettings().group(ModGroups.VC_ITEMS));
         Reg.registerWithItem("bone_joint", BONE_JOINT, itemSettings());
 
         Reg.registerWithItem("ghost_pumpkin", GHOST_PUMPKIN, itemSettings());
@@ -355,8 +354,8 @@ public class ModBlocks {
         Reg.registerWithItem("bee_nest_wall", BEE_NEST_WALL, itemSettings());
         Reg.registerWithItem("sticky_shroom", STICKY_SHROOM, itemSettings());
         Reg.registerWithItem("morel", MOREL, itemSettings());
-        Reg.registerWithItem("shivercap", SHIVERCAP, itemSettings());
-        Reg.registerWithItem("stalwart_shroom", STALWART_SHROOM, itemSettings());
+        Reg.registerWithItem("shivercap", SHIVERCAP, itemSettings().group(INGREDIENTS));
+        Reg.registerWithItem("stalwart_shroom", STALWART_SHROOM, itemSettings().group(INGREDIENTS));
         Reg.registerWithItem("warding_shroom", WARDING_SHROOM, itemSettings());
         Reg.registerWithItem("goop_cap", GOOP_CAP, itemSettings());
         Reg.registerWithItem("glow_cap", GLOW_CAP, itemSettings());
@@ -445,7 +444,7 @@ public class ModBlocks {
         Reg.registerWithItem("golemite_erdstone_ore", GOLEMITE_ERDSTONE_ORE, itemSettings());
         Reg.registerWithItem("golemite_grate", GOLEMITE_GRATE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("golemite_ladder", GOLEMITE_LADDER, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("iron_grate", IRON_GRATE, itemSettings());
+        Reg.registerWithItem("iron_grate", IRON_GRATE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("mossy_erdstone_bricks", MOSSY_ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("orange_seagrass", ORANGE_SEAGRASS, itemSettings());
         Reg.registerWithItem("polished_erdstone", POLISHED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));

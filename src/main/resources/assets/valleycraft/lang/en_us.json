@@ -38,6 +38,7 @@
   "item.valleycraft.primsteel_ingot": "Primsteel Ingot",
   "item.valleycraft.anthracite": "Anthracite",
   "item.valleycraft.moblin_elixer": "Moblin Elixer",
+  "item.valleycraft.piglin_tonic": "Piglin War Tonic",
   "item.valleycraft.librarians_hat": "§aLibrarian Hat and Glasses",
   "item.valleycraft.branch": "§aTree Branch",
   "item.valleycraft.sharp_flint": "§aSharp Flint",
@@ -82,11 +83,10 @@
   "item.valleycraft.thermal_blaze_core": "Thermal Blaze Core",
   "item.valleycraft.visor": "Golemancer Smithing Mask",
 
-  "item.valleycraft.bikini": "Wretch's Femme Undergarment",
+  "item.valleycraft.bikini": "Wretch's Femme Undergarments",
   "item.valleycraft.bikini_masc": "Wretch's Masc Undergarments",
   "item.valleycraft.bikini_coat": "Wretch's Coat",
   "block.valleycraft.stablehand_station": "Stablehand Table",
-
 
   "item.valleycraft.cloth": "Cloth",
   "item.valleycraft.handle": "Tool Handle",
@@ -210,7 +210,7 @@
   "block.valleycraft.ghost_pumpkin_carved": "Carved Ghost Pumpkin",
   "block.valleycraft.ghost_pumpkin": "Ghost Pumpkin",
   "block.valleycraft.bone_joint": "Bone Joint Block",
-  "block.valleycraft.rocks": "Rock Pile",
+  "block.valleycraft.rocks": "Rock",
 
   "block.valleycraft.canvas_block": "Canvas Block",
   "block.valleycraft.canvas_carpet": "Canvas Carpet",
@@ -294,12 +294,12 @@
 
   "item.valleycraft.raw_bat_wing": "Raw Bat Wing",
   "item.valleycraft.raw_silverfish": "Raw Silverfish",
-  "item.valleycraft.raw_phantom_eye": "Raw Phantom Eye",
+  "item.valleycraft.raw_phantom_eye": "§aRaw Phantom Eye",
 
   "item.valleycraft.raw_squid_tentacle": "Raw Squid Tentacle",
   "item.valleycraft.raw_bacon": "Raw Bacon",
   "item.valleycraft.raw_turtle_neck": "Raw Turtle Neck",
-  "item.valleycraft.raw_bird_thigh": "Raw Bird Thigh",
+  "item.valleycraft.raw_bird_thigh": "§aRaw Bird Thigh",
   "item.valleycraft.hardtack_dough": "Hardtack Dough",
   "item.valleycraft.bread_dough": "Bread Dough",
   "item.valleycraft.cookie_dough": "Cookie Dough",
@@ -424,7 +424,7 @@
   "item.valleycraft.pillager_eyepatch": "Seaologer Eyepatch",
   "item.valleycraft.fur_boots": "Warm Fur Boots",
 
-  "item.valleycraft.alchemists_leggings": "Ancient Leggings",
+  "item.valleycraft.alchemists_leggings": "Ancient Alchemist Stockings",
   "item.valleycraft.seaologer_token": "§aSeaologer Rune",
   "item.valleycraft.strayas_cartography_bag": "Archaeologist's Gear",
 

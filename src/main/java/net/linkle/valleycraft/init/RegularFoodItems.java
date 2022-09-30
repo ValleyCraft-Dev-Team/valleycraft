@@ -3,10 +3,12 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.EnchantedGoldenAppleItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
+import static net.minecraft.util.Rarity.EPIC;
 
 public class RegularFoodItems {
 
@@ -58,7 +60,6 @@ public class RegularFoodItems {
     public static final Item WARM_PUMPKIN_SOUP_BOTTLE = new BottleItem(settings().maxCount(16), 9, 0.8f);
     public static final Item GLOOM_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.NIGHT_VISION);
     public static final Item ALOE_VERA_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.HEALTH_BOOST);
-    public static final Item MOBLIN_ELIXER = new TierRareBottle(settings().maxCount(1).rarity(Rarity.UNCOMMON), 0, 0, StatusEffects.NIGHT_VISION, StatusEffects.NAUSEA);
 
     // no tier items
     public static final Item CAVE_ROOT_STIR_FRY = new BowlItem(settings(), 10, 0.6f);
@@ -86,7 +87,7 @@ public class RegularFoodItems {
     public static final Item GOLDEN_POTATO = new FoodItem(settings(), 4, 1.2f);
     public static final Item GOLDEN_ALOE_VERA = new FoodItem(settings(), 4, 1.2f);
     public static final Item GOLDEN_CAVE_ROOT = new FoodItem(settings(), 4, 1.2f);
-    public static final Item GOLDEN_CHORUS_FRUIT = new FoodItem(settings(), 4, 1.2f);
+    public static final Item GOLDEN_CHORUS_FRUIT = new FoodItem(settings().rarity(Rarity.RARE), 4, 1.2f);
     public static final Item GOLDEN_ENDURA_CARROT = new FoodItem(settings().rarity(Rarity.RARE), 4, 1.2f);
     public static final Item GOLDEN_BEETROOT = new FoodItem(settings(), 4, 1.2f);
     public static final Item GOLDEN_HEARTY_BEETROOT = new FoodItem(settings().rarity(Rarity.RARE), 4, 1.2f);
@@ -97,6 +98,13 @@ public class RegularFoodItems {
     public static final Item GOLDEN_ANCIENT_MAIZE = new FoodItem(settings().rarity(Rarity.RARE), 4, 1.2f);
     public static final Item GOLDEN_ONION = new FoodItem(settings(), 4, 1.2f);
     public static final Item GOLDEN_PUMPKIN_SLICE = new FoodItem(settings(), 4, 1.2f);
+
+    //special items
+    public static final Item MOBLIN_ELIXER = new TierRareBottle(settings().maxCount(1).rarity(Rarity.UNCOMMON), 0, 0, StatusEffects.NIGHT_VISION, StatusEffects.NAUSEA);
+    public static final Item PIGLIN_TONIC = new TonicBottle(settings().maxCount(1).rarity(Rarity.UNCOMMON), 0, 0, StatusEffects.STRENGTH, StatusEffects.NAUSEA);
+    //public static final Item ENCHANTED_CHORUS_FRUIT = new EnchantedFoodItem(settings().rarity(EPIC)4, 1.2f);
+    public static final Item ENCHANTED_CHORUS_FRUIT = new EnchantedFoodItem(settings().rarity(EPIC), 4, 1.2f, StatusEffects.SLOW_FALLING);
+    public static final Item ENCHANTED_APPLE_PIE = new EnchantedFoodItem(settings().rarity(EPIC), 6, 1.6f, StatusEffects.FIRE_RESISTANCE);
 
     //1.1 planned - dw its not sea turtles!
     //public static final Item COOKED_TURTLE = new FoodItem(settings(), 8, 0.6f);
@@ -194,6 +202,9 @@ public class RegularFoodItems {
 
         //rare
         Reg.register("moblin_elixer", MOBLIN_ELIXER);
+        Reg.register("piglin_tonic", PIGLIN_TONIC);
+        Reg.register("enchanted_apple_pie", ENCHANTED_APPLE_PIE);
+        Reg.register("enchanted_chorus_fruit", ENCHANTED_CHORUS_FRUIT);
 
     }
 
