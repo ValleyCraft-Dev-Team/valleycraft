@@ -24,6 +24,7 @@ public class BlockWithWater extends Block implements Waterloggable {
 
     protected BlockWithWater(Settings settings) {
         super(settings);
+        setDefaultState();
     }
 
     /** A common method to set its default state. */
