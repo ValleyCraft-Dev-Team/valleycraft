@@ -20,6 +20,7 @@ public class ModPaintings {
     public static final PaintingMotive CYCLES = register("cycles", 32, 16);
     //public static final PaintingMotive ROSETTA = register("translation_canvas", 32, 32);
     public static final PaintingMotive WINGS = register("wings_to_the_sky", 32, 32);
+    public static final PaintingMotive MONSTER_DAYS = register("monster_days", 32, 32);
 
     public static void initialize() {
         Main.LOGGER.debug("Registering paintings for Wilder Horizons");

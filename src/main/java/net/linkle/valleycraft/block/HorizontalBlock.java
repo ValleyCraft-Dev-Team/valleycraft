@@ -14,7 +14,7 @@ import net.minecraft.util.math.Direction;
  */
 public class HorizontalBlock extends HorizontalFacingBlock {
 
-    protected HorizontalBlock(Settings settings) {
+    public HorizontalBlock(Settings settings) {
         super(settings);
     }
 

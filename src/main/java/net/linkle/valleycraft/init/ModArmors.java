@@ -38,6 +38,10 @@ public class ModArmors {
     public static final Item CANVAS_LEGGINGS = new ArmorItem(CanvasMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
     public static final Item CANVAS_BOOTS = new ArmorItem(CanvasMaterial.INSTANCE, EquipmentSlot.FEET, settings);
 
+    public static final Item BIKINI_MASC = new ArmorItem(BikiniMascMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
+    public static final Item BIKINI = new ArmorItem(BikiniMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
+    public static final Item BIKINI_COAT = new ArmorItem(BikiniCoatMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
+
     public static final Item TURTLE_CHESTPLATE = new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settings);
     public static final Item TURTLE_LEGGINGS = new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, settings);
     public static final Item TURTLE_BOOTS = new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settings);
@@ -48,6 +52,7 @@ public class ModArmors {
     public static final Item TRADER_SANDALS = new ArmorItem(TraderMaterial.INSTANCE, EquipmentSlot.FEET, settings_artifacts_uncommon);
 
     public static final Item LIBRARIAN = new ArmorItem(LibrarianMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_uncommon);
+    public static final Item VISOR = new ArmorItem(VisorMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_rare);
 
     //public static final Item GOLEMITE_HELMET = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
     //public static final Item GOLEMITE_CHESTPLATE = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
@@ -68,6 +73,7 @@ public class ModArmors {
         Reg.register("alchemists_leggings", OLDWORLD_LEGGINGS);
         Reg.register("fur_boots", FUR_BOOTS);
         Reg.register("librarians_hat", LIBRARIAN);
+        Reg.register("visor", VISOR);
         Reg.register("pillager_eyepatch", EYEPATCH);
         Reg.register("trader_head_scarf", TRADER_HEAD_SCARF);
         Reg.register("trader_coat", TRADER_COAT);
@@ -83,6 +89,10 @@ public class ModArmors {
         Reg.register("canvas_tunic", CANVAS_TUNIC);
         Reg.register("canvas_leggings", CANVAS_LEGGINGS);
         Reg.register("canvas_boots", CANVAS_BOOTS);
+
+        Reg.register("bikini_masc", BIKINI_MASC);
+        Reg.register("bikini", BIKINI);
+        Reg.register("bikini_coat", BIKINI_COAT);
 
         Reg.register("turtle_chestplate", TURTLE_CHESTPLATE);
         Reg.register("turtle_leggings", TURTLE_LEGGINGS);

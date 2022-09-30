@@ -8,6 +8,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.LilyPadItem;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
@@ -18,6 +19,7 @@ import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.util.BlockPres;
 import net.linkle.valleycraft.util.Reg;
 
+import static net.linkle.valleycraft.init.ModGroups.BOOKS;
 import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
 
 public class ModBlocks {
@@ -161,6 +163,7 @@ public class ModBlocks {
     public static final Block BONE_JOINT = new Block(Block.Settings.copy(Blocks.BONE_BLOCK));
     public static final Block ROCKS = new RockBlock();
     public static final Block SALT_BLOCK = new Block(Block.Settings.copy(Blocks.SANDSTONE));
+    public static final Block STABLEHAND = new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
 
     //public static final Block STALWART_SHROOM = new ModPlantBlock();
     public static final Block CLARET_LEAF = new ModPlantBlock();
@@ -232,10 +235,10 @@ public class ModBlocks {
     public static final Block GOLEMITE_ERDSTONE_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
     public static final Block GOLEMITE_GRATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block GOLEMITE_LADDER = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
-    public static final Block HARDENED_ERDCOBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE));
-    public static final Block HARDENED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE));
-    public static final Block HARDENED_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS));
-    public static final Block HARDENED_POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE));
+    //public static final Block HARDENED_ERDCOBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE));
+    //public static final Block HARDENED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE));
+    //public static final Block HARDENED_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS));
+    //public static final Block HARDENED_POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE));
     public static final Block IRON_GRATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS));
     public static final Block ORANGE_SEAGRASS = new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS));
@@ -420,42 +423,39 @@ public class ModBlocks {
         Reg.registerWithItem("apple_leaves_empty", APPLE_LEAVES_EMPTY, itemSettings());
         Reg.registerWithItem("apple_leaves", APPLE_LEAVES, itemSettings());
         Reg.registerWithItem("apple_sapling", APPLE_SAPLING, itemSettings());
-        
+
         Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("stablehand_station", STABLEHAND, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("canvas_block", CANVAS_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("canvas_carpet", CANVAS_CARPET, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("curtain", CURTAIN, itemSettings().group(NON_NATURAL_BLOCKS));
         
-        Reg.registerWithItem("arid_mossy_erdstone_bricks", ARID_MOSSY_ERDSTONE_BRICKS, itemSettings());
+        Reg.registerWithItem("arid_mossy_erdstone_bricks", ARID_MOSSY_ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("arid_vines", ARID_VINES, itemSettings());
         Reg.registerWithItem("cave_moss", CAVE_MOSS, itemSettings());
         Reg.registerWithItem("crystal_cave_moss", CRYSTAL_CAVE_MOSS, itemSettings());
         Reg.registerWithItem("cracked_cobblestone", CRACKED_COBBLESTONE, itemSettings());
         Reg.registerWithItem("erdcobblestone", ERDCOBBLESTONE, itemSettings());
         Reg.registerWithItem("erdstone", ERDSTONE, itemSettings());
-        Reg.registerWithItem("erdstone_bricks", ERDSTONE_BRICKS, itemSettings());
-        Reg.registerWithItem("glowsquid_lantern", GLOWSQUID_LANTERN, itemSettings());
-        Reg.registerWithItem("golemite_bars", GOLEMITE_BARS, itemSettings());
-        Reg.registerWithItem("golemite_block", GOLEMITE_BLOCK, itemSettings());
-        Reg.registerWithItem("golemite_chain", GOLEMITE_CHAIN, itemSettings());
+        Reg.registerWithItem("erdstone_bricks", ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("glowsquid_lantern", GLOWSQUID_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("golemite_bars", GOLEMITE_BARS, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("golemite_block", GOLEMITE_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("golemite_chain", GOLEMITE_CHAIN, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("golemite_erdstone_ore", GOLEMITE_ERDSTONE_ORE, itemSettings());
-        Reg.registerWithItem("golemite_grate", GOLEMITE_GRATE, itemSettings());
-        Reg.registerWithItem("golemite_ladder", GOLEMITE_LADDER, itemSettings());
-        Reg.registerWithItem("hardened_erdcobblestone", HARDENED_ERDCOBBLESTONE, itemSettings());
-        Reg.registerWithItem("hardened_erdstone", HARDENED_ERDSTONE, itemSettings());
-        Reg.registerWithItem("hardened_erdstone_bricks", HARDENED_ERDSTONE_BRICKS, itemSettings());
-        Reg.registerWithItem("hardened_polished_erdstone", HARDENED_POLISHED_ERDSTONE, itemSettings());
+        Reg.registerWithItem("golemite_grate", GOLEMITE_GRATE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("golemite_ladder", GOLEMITE_LADDER, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("iron_grate", IRON_GRATE, itemSettings());
-        Reg.registerWithItem("mossy_erdstone_bricks", MOSSY_ERDSTONE_BRICKS, itemSettings());
+        Reg.registerWithItem("mossy_erdstone_bricks", MOSSY_ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("orange_seagrass", ORANGE_SEAGRASS, itemSettings());
-        Reg.registerWithItem("polished_erdstone", POLISHED_ERDSTONE, itemSettings());
-        Reg.registerWithItem("primsteel_chain", PRIMSTEEL_CHAIN, itemSettings());
+        Reg.registerWithItem("polished_erdstone", POLISHED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("primsteel_chain", PRIMSTEEL_CHAIN, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("primsteel_ore", PRIMSTEEL_ORE, itemSettings());
         Reg.registerWithItem("primsteel_deepslate_ore", PRIMSTEEL_DEEPSLATE_ORE, itemSettings());
-        Reg.registerWithItem("primsteel_plate_block", PRIMSTEEL_PLATE_BLOCK, itemSettings());
-        Reg.registerWithItem("primsteel_tiled_plate", PRIMSTEEL_TILED_PLATE, itemSettings());
-        Reg.registerWithItem("scorchstone", SCORCHSTONE, itemSettings());
-        Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings());
+        Reg.registerWithItem("primsteel_plate_block", PRIMSTEEL_PLATE_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("primsteel_tiled_plate", PRIMSTEEL_TILED_PLATE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("scorchstone", SCORCHSTONE, itemSettings().fireproof());
+        Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof());
         
         Reg.registerWithItem("leather_block", LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("black_leather_block", BLACK_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));

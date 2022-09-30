@@ -80,9 +80,14 @@
   "rare_items": "aqua",
   "block.valleycraft.ornate_obsidian_table": "Ornate Obsidian Table",
   "item.valleycraft.thermal_blaze_core": "Thermal Blaze Core",
+  "item.valleycraft.visor": "Golemancer Smithing Mask",
+
+  "item.valleycraft.bikini": "Wretch's Femme Undergarment",
+  "item.valleycraft.bikini_masc": "Wretch's Masc Undergarments",
+  "item.valleycraft.bikini_coat": "Wretch's Coat",
+  "block.valleycraft.stablehand_station": "Stablehand Table",
 
 
-  "common_items_and_blocks": "grey",
   "item.valleycraft.cloth": "Cloth",
   "item.valleycraft.handle": "Tool Handle",
   "item.valleycraft.rosegold_ingot": "Rose Gold Ingot",
@@ -450,14 +455,13 @@
   "item.valleycraft.knife_diamond": "Diamond Knife",
   "item.valleycraft.knife_netherite": "Netherite Knife",
 
-  "item.valleycraft.woodcutter_axe_wooden": "Wooden Timbercutter's Axe",
-  "item.valleycraft.woodcutter_axe_stone": "Stone Timbercutter's Axe",
-  "item.valleycraft.woodcutter_axe_golden": "Golden Timbercutter's Axe",
-  "item.valleycraft.woodcutter_axe_iron": "Iron Timbercutter's Axe",
-  "item.valleycraft.woodcutter_axe_diamond": "Diamond Timbercutter's Axe",
-  "item.valleycraft.woodcutter_axe_netherite": "Netherite Timbercutter's Axe",
+  "item.valleycraft.woodcutter_axe_wooden": "Wooden Timbercutter Axe",
+  "item.valleycraft.woodcutter_axe_stone": "Stone Timbercutter Axe",
+  "item.valleycraft.woodcutter_axe_golden": "Golden Timbercutter Axe",
+  "item.valleycraft.woodcutter_axe_iron": "Iron Timbercutter Axe",
+  "item.valleycraft.woodcutter_axe_diamond": "Diamond Timbercutter Axe",
+  "item.valleycraft.woodcutter_axe_netherite": "Netherite Timbercutter Axe",
 
   "item.valleycraft.knife_coral_encrusted": "Coral Encrusted Knife",
-  "item.valleycraft.rapier_cave_fishers": "Cave-Fisher's Rapier",
-  "item.valleycraft.axe_timber_red": "Sharp Timbercutter's Axe"
+  "item.valleycraft.rapier_cave_fishers": "Cave-Fisher's Rapier"
 }

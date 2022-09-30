@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "valleycraft:block/stablehand_station",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "valleycraft:block/stablehand_station"
+    },
+    "facing=south": {
+      "model": "valleycraft:block/stablehand_station",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "valleycraft:block/stablehand_station",
+      "y": 270
+    }
+  }
+}
