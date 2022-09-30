@@ -18,6 +18,7 @@ public class DirectionBlock extends FacingBlock {
 
     protected DirectionBlock(Settings settings) {
         super(settings);
+        setDefaultState();
     }
 
     /** A common method to set its default state. */

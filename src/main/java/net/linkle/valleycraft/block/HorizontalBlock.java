@@ -16,6 +16,7 @@ public class HorizontalBlock extends HorizontalFacingBlock {
 
     public HorizontalBlock(Settings settings) {
         super(settings);
+        setDefaultState();
     }
 
     /** A common method to set its default state. */
