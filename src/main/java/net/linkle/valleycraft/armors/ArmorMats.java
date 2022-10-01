@@ -92,11 +92,11 @@ public class ArmorMats {
         return SoundEvents.ITEM_ARMOR_EQUIP_LEATHER;
     }
     
-    private static SoundEvent equipNETHERITE() {
+    private static SoundEvent equipNetherite() {
         return SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE;
     }
     
-    private static SoundEvent equipTURTLE() {
+    private static SoundEvent equipTurtle() {
         return SoundEvents.ITEM_ARMOR_EQUIP_TURTLE;
     }
 }

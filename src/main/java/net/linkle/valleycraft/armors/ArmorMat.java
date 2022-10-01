@@ -11,8 +11,8 @@ public final class ArmorMat implements ArmorMaterial {
     static final int[] BASE_DURABILITY = {13, 15, 16, 11};
 
     private final String name;
-    private final int durabilityMultiplier;
     private final int[] protectionAmounts;
+    private final int durabilityMultiplier;
     private final int enchantability;
     private final SoundEvent equipSound;
     private final Ingredient repairIngredient;
@@ -25,8 +25,8 @@ public final class ArmorMat implements ArmorMaterial {
     
     public ArmorMat(String name, int[] prtAmts, int durMul, int ench, SoundEvent sound, Ingredient repair, float tough, float knockback) {
         this.name = name;
-        this.durabilityMultiplier = durMul;
         this.protectionAmounts = prtAmts;
+        this.durabilityMultiplier = durMul;
         this.enchantability = ench;
         this.equipSound = sound;
         this.repairIngredient = repair;
