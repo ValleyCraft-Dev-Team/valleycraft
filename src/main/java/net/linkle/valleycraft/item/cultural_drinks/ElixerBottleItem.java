@@ -1,10 +1,12 @@
-package net.linkle.valleycraft.item;
+package net.linkle.valleycraft.item.cultural_drinks;
 
+import net.linkle.valleycraft.item.FoodItem;
 import net.linkle.valleycraft.util.FoodStatusEffect;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
@@ -16,10 +18,10 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class TierRareBottle extends FoodItem {
+public class ElixerBottleItem extends FoodItem {
 
-    public TierRareBottle(Settings settings, int hunger, float satMod, StatusEffect effect, StatusEffect effect_2) {
-        super(settings, hunger, satMod, new FoodStatusEffect(new StatusEffectInstance(effect, 960 * 20), new StatusEffectInstance(effect_2, 15 * 20)));
+    public ElixerBottleItem(Settings settings, int hunger, float satMod, StatusEffect effect, StatusEffect effect_2, StatusEffect effect_3) {
+        super(settings, hunger, satMod, new FoodStatusEffect(new StatusEffectInstance(effect, 180 * 20), new StatusEffectInstance(effect_2, 30 * 20, 2), new StatusEffectInstance(effect_3, 30 * 20)));
     }
 
     public boolean hasGlint(ItemStack stack) {

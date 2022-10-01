@@ -24,15 +24,15 @@ public class TieredFoodItems {
     public static final Item SPICY_CALAMARI_SKEWER = new Tier1Normal(settings(), 4, 2, StatusEffects.WATER_BREATHING);
     
     // tier 2
-    public static final Item GLOW_BERRY_EGG_PUDDING = new Tier2Normal(settings(), 4, 2, StatusEffects.NIGHT_VISION);
-    public static final Item GLOW_SQUID_SUSHI = new Tier2Normal(settings(), 4, 2, StatusEffects.WATER_BREATHING);
-    public static final Item HONEY_GLAZED_CREPE = new Tier2Normal(settings(), 4, 2, StatusEffects.REGENERATION);
-    public static final Item SPICY_GRILLED_LAMB = new Tier2Normal(settings(), 4, 2, StatusEffects.HASTE);
-    public static final Item SPICY_SALMON_AND_CARROTS = new Tier2Normal(settings(), 4, 2, StatusEffects.SPEED);
-    public static final Item STEAMED_VEGETABLES = new Tier2Normal(settings(), 4, 2, StatusEffects.HEALTH_BOOST);
-    public static final Item STUFFED_BAKED_POTATO = new Tier2Normal(settings(), 4, 2, StatusEffects.STRENGTH);
-    public static final Item STUFFED_ONION = new Tier2Normal(settings(), 4, 2, StatusEffects.RESISTANCE);
-    public static final Item SWEET_RABBIT_STEAK = new Tier2Normal(settings(), 4, 2, StatusEffects.FIRE_RESISTANCE);
+    public static final Item GLOW_BERRY_EGG_PUDDING = new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.NIGHT_VISION);
+    public static final Item GLOW_SQUID_SUSHI = new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.WATER_BREATHING);
+    public static final Item HONEY_GLAZED_CREPE = new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.REGENERATION);
+    public static final Item SPICY_GRILLED_LAMB = new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.HASTE);
+    public static final Item SPICY_SALMON_AND_CARROTS = new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.SPEED);
+    public static final Item STEAMED_VEGETABLES = new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.HEALTH_BOOST);
+    public static final Item STUFFED_BAKED_POTATO = new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.STRENGTH);
+    public static final Item STUFFED_ONION = new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.RESISTANCE);
+    public static final Item SWEET_RABBIT_STEAK = new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.FIRE_RESISTANCE);
     
     // tier 3
     public static final Item ANCIENT_FLOWER_SOUP = new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.HEALTH_BOOST);

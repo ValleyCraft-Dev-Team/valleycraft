@@ -1,5 +1,6 @@
-package net.linkle.valleycraft.item;
+package net.linkle.valleycraft.item.cultural_drinks;
 
+import net.linkle.valleycraft.item.FoodItem;
 import net.linkle.valleycraft.util.FoodStatusEffect;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
@@ -16,10 +17,10 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class TonicBottle extends FoodItem {
+public class ElixerBottleItemMoblin extends FoodItem {
 
-    public TonicBottle(Settings settings, int hunger, float satMod, StatusEffect effect, StatusEffect effect_2) {
-        super(settings, hunger, satMod, new FoodStatusEffect(new StatusEffectInstance(effect, 480 * 20, 2), new StatusEffectInstance(effect_2, 480 * 20, 2)));
+    public ElixerBottleItemMoblin(Settings settings, int hunger, float satMod, StatusEffect effect, StatusEffect effect_2, StatusEffect effect_3) {
+        super(settings, hunger, satMod, new FoodStatusEffect(new StatusEffectInstance(effect, 16 * 60 * 20), new StatusEffectInstance(effect_2, 30 * 20, 2), new StatusEffectInstance(effect_3, 30 * 20)));
     }
 
     public boolean hasGlint(ItemStack stack) {

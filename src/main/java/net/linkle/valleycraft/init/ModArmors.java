@@ -61,9 +61,9 @@ public class ModArmors {
     public static final Item PILLAGER_BOOTS = new ArmorItem(PillagerMaterial.INSTANCE, EquipmentSlot.FEET, settings_artifacts_rare);
 
     //public static final Item BRUTE_TUNIC = new ArmorItem(BruteMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
-    //public static final Item BRUTE_SKIRT = new ArmorItem(BruteMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
+    public static final Item BRUTE_SKIRT = new ArmorItem(BruteMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_rare);
     //public static final Item PIGLIN_TUNIC = new ArmorItem(PiglinMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
-    //public static final Item PIGLIN_SKIRT = new ArmorItem(PiglinMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
+    public static final Item PIGLIN_SKIRT = new ArmorItem(PiglinMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_rare);
 
     //public static final Item ALEX_SHIRT = new ArmorItem(AlexMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
     //public static final Item ALEX_SHORTS = new ArmorItem(AlexMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
@@ -78,6 +78,10 @@ public class ModArmors {
     public static final Item STRAY_HOOD = new ArmorItem(StrayMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_uncommon);
     public static final Item STRAY_COAT = new ArmorItem(StrayMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
     public static final Item STRAY_SKIRT = new ArmorItem(StrayMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
+
+    public static final Item FIXED_DROWNED_CLOTHES = new ArmorItem(DrownedMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
+    public static final Item FIXED_HUSK_SHIRT = new ArmorItem(HuskMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
+    public static final Item FIXED_HUSK_SHORTS = new ArmorItem(HuskMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
 
     //public static final Item GOLEMITE_HELMET = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
     //public static final Item GOLEMITE_CHESTPLATE = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
