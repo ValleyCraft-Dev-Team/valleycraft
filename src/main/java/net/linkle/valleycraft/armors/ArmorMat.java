@@ -19,11 +19,11 @@ public final class ArmorMat implements ArmorMaterial {
     private final float toughness;
     private final float knockbackResistance;
     
-    public ArmorMat(String name, int durMul, int[] prtAmts, int ench, SoundEvent sound, Ingredient repair) {
-        this(name, durMul, prtAmts, ench, sound, repair, 0, 0);
+    public ArmorMat(String name, int[] prtAmts, int durMul, int ench, SoundEvent sound, Ingredient repair) {
+        this(name, prtAmts, durMul, ench, sound, repair, 0, 0);
     }
     
-    public ArmorMat(String name, int durMul, int[] prtAmts, int ench, SoundEvent sound, Ingredient repair, float tough, float knockback) {
+    public ArmorMat(String name, int[] prtAmts, int durMul, int ench, SoundEvent sound, Ingredient repair, float tough, float knockback) {
         this.name = name;
         this.durabilityMultiplier = durMul;
         this.protectionAmounts = prtAmts;
