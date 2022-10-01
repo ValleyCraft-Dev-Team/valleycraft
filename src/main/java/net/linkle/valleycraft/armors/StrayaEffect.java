@@ -1,7 +1,7 @@
 package net.linkle.valleycraft.armors;
 
 import com.google.common.collect.ImmutableMap;
-import net.linkle.valleycraft.init.ModArmors;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -12,12 +12,14 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-import java.util.Map;
 public class StrayaEffect extends ArmorItem {
-    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
-            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(StrayaMaterial.STRAYA,
-                            new StatusEffectInstance(StatusEffects.LUCK, 400, 1)).build();
+    private static final ImmutableMap<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP;
+    
+    static {
+        var builder = new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>();
+        builder.put(ArmorMats.STRAYA, new StatusEffectInstance(StatusEffects.LUCK, 400, 1));
+        MATERIAL_TO_EFFECT_MAP = builder.build();
+    }
 
     public StrayaEffect(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -25,38 +27,33 @@ public class StrayaEffect extends ArmorItem {
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
-        if(!world.isClient()) {
-            if(entity instanceof PlayerEntity) {
-                PlayerEntity player = (PlayerEntity)entity;
-
-                if(hasFullSuitOfArmorOn(player)) {
-                    evaluateArmorEffects(player);
-                }
+        if(!world.isClient() && entity instanceof PlayerEntity player) {
+            if(hasFullSuitOfArmorOn(player)) {
+                evaluateArmorEffects(player);
             }
         }
-
         super.inventoryTick(stack, world, entity, slot, selected);
     }
 
     private void evaluateArmorEffects(PlayerEntity player) {
-        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
-            ArmorMaterial mapArmorMaterial = entry.getKey();
-            StatusEffectInstance mapStatusEffect = entry.getValue();
+        for (var entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
+            var material = entry.getKey();
+            var effect = entry.getValue();
 
-            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
-                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            if(hasCorrectArmorOn(material, player)) {
+                addStatusEffectForMaterial(player, material, effect);
             }
         }
     }
 
-    private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial, StatusEffectInstance mapStatusEffect) {
-        boolean hasPlayerEffect = player.hasStatusEffect(mapStatusEffect.getEffectType());
+    private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial material, StatusEffectInstance effect) {
+        boolean hasPlayerEffect = player.hasStatusEffect(effect.getEffectType());
 
-        if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
-            player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
-                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
+        if(hasCorrectArmorOn(material, player) && !hasPlayerEffect) {
+            player.addStatusEffect(new StatusEffectInstance(effect));
 
-            // if(new Random().nextFloat() > 0.6f) { // 40% of damaging the armor! Possibly!
+            // var random = player.getRandom();
+            // if(random.nextFloat() < 0.4f) { // 40% of damaging the armor! Possibly!
             //     player.getInventory().damageArmor(DamageSource.MAGIC, 1f, new int[]{0, 1, 2, 3});
             // }
         }

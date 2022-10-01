@@ -23,7 +23,7 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
-	// Patchoulimod for books.
+	// Patchouli mod for books.
 	modImplementation "vazkii.patchouli:Patchouli:${project.patchouli_version}"
 
 	// Uncomment the following line to enable the deprecated Fabric API modules. 

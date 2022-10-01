@@ -11,6 +11,8 @@ import net.minecraft.util.Rarity;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
 
+import net.linkle.valleycraft.armors.ArmorMats;
+
 public class ModItems {
 
     //ingredients
@@ -136,11 +138,12 @@ public class ModItems {
 
         Reg.register("bomb_bag", BOMB_BAG);
         Reg.register("arrow_bundle", ARROW_BUNDLE);
-
-        ModArmors.initialize();
+        
         TieredFoodItems.initialize();
         IngredientFoodItems.initialize();
         RegularFoodItems.initialize();
+        ArmorMats.initialize();
+        ModArmors.initialize();
     }
     
     private static Item.Settings itemSettings() {
