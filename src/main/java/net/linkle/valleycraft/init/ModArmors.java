@@ -19,79 +19,75 @@ public class ModArmors {
     private static final Item.Settings settings_artifacts_repaired = new Item.Settings().group(BOOKS).rarity(Rarity.EPIC);
     private static final Item.Settings settings_uncommon = new Item.Settings().group(CLOTHING).rarity(Rarity.UNCOMMON);
 
-    public static final Item MOBLIN_TALISMAN = new ArmorItem(MoblinTalismanMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
-    public static final Item MOGARS_BROKEN = new ArmorItem(MogarsBrokenMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_epic);
-    public static final Item MOGARS_FIXED = new ArmorItem(MogarsFixedMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_repaired);
+    public static final Item MOBLIN_TALISMAN = new ArmorItem(ArmorMats.MOBLIN_TALISMAN, EquipmentSlot.CHEST, settings_artifacts_uncommon);
+    public static final Item MOGARS_BROKEN = new ArmorItem(ArmorMats.MOGARS_BROKEN, EquipmentSlot.HEAD, settings_artifacts_epic);
+    public static final Item MOGARS_FIXED = new ArmorItem(ArmorMats.MOGARS_FIXED, EquipmentSlot.HEAD, settings_artifacts_repaired);
 
-    public static final Item STRAYA = new ArmorItem(StrayaMaterial.STRAYA, EquipmentSlot.CHEST, settings_artifacts_epic);
+    public static final Item STRAYA = new ArmorItem(ArmorMats.STRAYA, EquipmentSlot.CHEST, settings_artifacts_epic);
 
-    public static final Item OLDWORLD_LEGGINGS = new ArmorItem(LeggingsMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_rare);
+    public static final Item OLDWORLD_LEGGINGS = new ArmorItem(ArmorMats.LEGGINGS, EquipmentSlot.LEGS, settings_artifacts_rare);
 
-    public static final Item FUR_BOOTS = new ArmorItem(FurMaterial.INSTANCE, EquipmentSlot.FEET, settings_uncommon);
+    public static final Item FUR_BOOTS = new ArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settings_uncommon);
 
-    public static final Item EYEPATCH = new ArmorItem(EyePatchMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_uncommon);
+    public static final Item EYEPATCH = new ArmorItem(ArmorMats.EYEPATCH, EquipmentSlot.HEAD, settings_artifacts_uncommon);
 
-    public static final Item FLOWER_CROWN = new ArmorItem(FlowerHatMaterial.INSTANCE, EquipmentSlot.HEAD, settings);
-    public static final Item STRAW_HAT = new ArmorItem(StrawHatMaterial.INSTANCE, EquipmentSlot.HEAD, settings);
+    public static final Item FLOWER_CROWN = new ArmorItem(ArmorMats.FLOWERING_HAT, EquipmentSlot.HEAD, settings);
+    public static final Item STRAW_HAT = new ArmorItem(ArmorMats.STRAW_HAT, EquipmentSlot.HEAD, settings);
 
-    public static final Item CANVAS_HOOD = new ArmorItem(CanvasMaterial.INSTANCE, EquipmentSlot.HEAD, settings);
-    public static final Item CANVAS_TUNIC = new ArmorItem(CanvasMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
-    public static final Item CANVAS_LEGGINGS = new ArmorItem(CanvasMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
-    public static final Item CANVAS_BOOTS = new ArmorItem(CanvasMaterial.INSTANCE, EquipmentSlot.FEET, settings);
+    public static final Item CANVAS_HOOD = new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.HEAD, settings);
+    public static final Item CANVAS_TUNIC = new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.CHEST, settings);
+    public static final Item CANVAS_LEGGINGS = new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.LEGS, settings);
+    public static final Item CANVAS_BOOTS = new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.FEET, settings);
 
-    public static final Item BIKINI_MASC = new ArmorItem(BikiniMascMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
-    public static final Item BIKINI = new ArmorItem(BikiniMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
-    public static final Item BIKINI_COAT = new ArmorItem(BikiniCoatMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
+    public static final Item BIKINI_MASC = new ArmorItem(ArmorMats.BIKINI_MASC, EquipmentSlot.LEGS, settings);
+    public static final Item BIKINI = new ArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settings);
+    public static final Item BIKINI_COAT = new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settings);
 
     public static final Item TURTLE_CHESTPLATE = new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settings);
     public static final Item TURTLE_LEGGINGS = new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, settings);
     public static final Item TURTLE_BOOTS = new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settings);
 
-    public static final Item TRADER_HEAD_SCARF = new ArmorItem(TraderMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_uncommon);
-    public static final Item TRADER_COAT = new ArmorItem(TraderMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
-    public static final Item TRADER_SKIRT = new ArmorItem(TraderMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
-    public static final Item TRADER_SANDALS = new ArmorItem(TraderMaterial.INSTANCE, EquipmentSlot.FEET, settings_artifacts_uncommon);
+    public static final Item TRADER_HEAD_SCARF = new ArmorItem(ArmorMats.TRADER, EquipmentSlot.HEAD, settings_artifacts_uncommon);
+    public static final Item TRADER_COAT = new ArmorItem(ArmorMats.TRADER, EquipmentSlot.CHEST, settings_artifacts_uncommon);
+    public static final Item TRADER_SKIRT = new ArmorItem(ArmorMats.TRADER, EquipmentSlot.LEGS, settings_artifacts_uncommon);
+    public static final Item TRADER_SANDALS = new ArmorItem(ArmorMats.TRADER, EquipmentSlot.FEET, settings_artifacts_uncommon);
 
-    public static final Item LIBRARIAN = new ArmorItem(LibrarianMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_scarce);
-    public static final Item VISOR = new ArmorItem(VisorMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_rare);
-    public static final Item SNOW_CAP = new ArmorItem(CapMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_scarce);
-    public static final Item VILLAGER_TUNIC = new ArmorItem(VillagerMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_scarce);
+    public static final Item LIBRARIAN = new ArmorItem(ArmorMats.LIBRARIAN, EquipmentSlot.HEAD, settings_artifacts_scarce);
+    public static final Item VISOR = new ArmorItem(ArmorMats.VISOR, EquipmentSlot.HEAD, settings_artifacts_rare);
+    public static final Item SNOW_CAP = new ArmorItem(ArmorMats.SNOW_CAP, EquipmentSlot.HEAD, settings_artifacts_scarce);
+    public static final Item VILLAGER_TUNIC = new ArmorItem(ArmorMats.VILLAGER, EquipmentSlot.LEGS, settings_artifacts_scarce);
 
-    public static final Item PILLAGER_FLANNEL = new ArmorItem(PillagerMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts_rare);
-    public static final Item PILLAGER_BOOTS = new ArmorItem(PillagerMaterial.INSTANCE, EquipmentSlot.FEET, settings_artifacts_rare);
+    public static final Item PILLAGER_FLANNEL = new ArmorItem(ArmorMats.PILLAGER, EquipmentSlot.CHEST, settings_artifacts_rare);
+    public static final Item PILLAGER_BOOTS = new ArmorItem(ArmorMats.PILLAGER, EquipmentSlot.FEET, settings_artifacts_rare);
 
-    //public static final Item BRUTE_TUNIC = new ArmorItem(BruteMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
-    public static final Item BRUTE_SKIRT = new ArmorItem(BruteMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_rare);
-    //public static final Item PIGLIN_TUNIC = new ArmorItem(PiglinMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
-    public static final Item PIGLIN_SKIRT = new ArmorItem(PiglinMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_rare);
+    //public static final Item BRUTE_TUNIC = new ArmorItem(ArmorMats.BRUTE, EquipmentSlot.CHEST, settings);
+    //public static final Item BRUTE_SKIRT = new ArmorItem(ArmorMats.BRUTE, EquipmentSlot.LEGS, settings);
+    //public static final Item PIGLIN_TUNIC = new ArmorItem(ArmorMats.PIGLIN, EquipmentSlot.CHEST, settings);
+    //public static final Item PIGLIN_SKIRT = new ArmorItem(ArmorMats.PIGLIN, EquipmentSlot.LEGS, settings);
 
-    //public static final Item ALEX_SHIRT = new ArmorItem(AlexMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
-    //public static final Item ALEX_SHORTS = new ArmorItem(AlexMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
-    public static final Item ALEX_BOOTS = new ArmorItem(AlexMaterial.INSTANCE, EquipmentSlot.FEET, settings_artifacts_uncommon);
-    //public static final Item STEVE_SHIRT = new ArmorItem(SteveMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
-    //public static final Item STEVE_PANTS = new ArmorItem(SteveMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
-    //public static final Item STEVE_SHOES = new ArmorItem(SteveMaterial.INSTANCE, EquipmentSlot.FEET, settings);
+    //public static final Item ALEX_SHIRT = new ArmorItem(ArmorMats.ALEX, EquipmentSlot.CHEST, settings);
+    //public static final Item ALEX_SHORTS = new ArmorItem(ArmorMats.ALEX, EquipmentSlot.LEGS, settings);
+    public static final Item ALEX_BOOTS = new ArmorItem(ArmorMats.ALEX, EquipmentSlot.FEET, settings_artifacts_uncommon);
+    //public static final Item STEVE_SHIRT = new ArmorItem(ArmorMats.STEVE, EquipmentSlot.CHEST, settings);
+    //public static final Item STEVE_PANTS = new ArmorItem(ArmorMats.STEVE, EquipmentSlot.LEGS, settings);
+    //public static final Item STEVE_SHOES = new ArmorItem(ArmorMats.STEVE, EquipmentSlot.FEET, settings);
 
-    public static final Item DROWNED_CLOTHES = new ArmorItem(DrownedMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
-    public static final Item HUSK_SHIRT = new ArmorItem(HuskMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
-    public static final Item HUSK_SHORTS = new ArmorItem(HuskMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
-    public static final Item STRAY_HOOD = new ArmorItem(StrayMaterial.INSTANCE, EquipmentSlot.HEAD, settings_artifacts_uncommon);
-    public static final Item STRAY_COAT = new ArmorItem(StrayMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
-    public static final Item STRAY_SKIRT = new ArmorItem(StrayMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
+    public static final Item DROWNED_CLOTHES = new ArmorItem(ArmorMats.DROWNED, EquipmentSlot.LEGS, settings_artifacts_uncommon);
+    public static final Item HUSK_SHIRT = new ArmorItem(ArmorMats.HUSK, EquipmentSlot.CHEST, settings_artifacts_uncommon);
+    public static final Item HUSK_SHORTS = new ArmorItem(ArmorMats.HUSK, EquipmentSlot.LEGS, settings_artifacts_uncommon);
+    public static final Item STRAY_HOOD = new ArmorItem(ArmorMats.STRAY, EquipmentSlot.HEAD, settings_artifacts_uncommon);
+    public static final Item STRAY_COAT = new ArmorItem(ArmorMats.STRAY, EquipmentSlot.CHEST, settings_artifacts_uncommon);
+    public static final Item STRAY_SKIRT = new ArmorItem(ArmorMats.STRAY, EquipmentSlot.LEGS, settings_artifacts_uncommon);
 
-    public static final Item FIXED_DROWNED_CLOTHES = new ArmorItem(DrownedMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
-    public static final Item FIXED_HUSK_SHIRT = new ArmorItem(HuskMaterial.INSTANCE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
-    public static final Item FIXED_HUSK_SHORTS = new ArmorItem(HuskMaterial.INSTANCE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
+    //public static final Item GOLEMITE_HELMET = new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.CHEST, settings);
+    //public static final Item GOLEMITE_CHESTPLATE = new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.CHEST, settings);
+    //public static final Item GOLEMITE_LEGGINGS = new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.LEGS, settings);
+    //public static final Item GOLEMITE_BOOTS = new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.FEET, settings);
 
-    //public static final Item GOLEMITE_HELMET = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
-    //public static final Item GOLEMITE_CHESTPLATE = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
-    //public static final Item GOLEMITE_LEGGINGS = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
-    //public static final Item GOLEMITE_BOOTS = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.FEET, settings);
-
-    //public static final Item PRIMSTEEL_HELMET = new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
-    //public static final Item PRIMSTEEL_CHESTPLATE = new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
-    //public static final Item PRIMSTEEL_LEGGINGS = new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
-    //public static final Item PRIMSTEEL_BOOTS = new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.FEET, settings);
+    //public static final Item PRIMSTEEL_HELMET = new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.CHEST, settings);
+    //public static final Item PRIMSTEEL_CHESTPLATE = new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.CHEST, settings);
+    //public static final Item PRIMSTEEL_LEGGINGS = new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.LEGS, settings);
+    //public static final Item PRIMSTEEL_BOOTS = new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.FEET, settings);
 
     public static void initialize() {
         //artifact armors
