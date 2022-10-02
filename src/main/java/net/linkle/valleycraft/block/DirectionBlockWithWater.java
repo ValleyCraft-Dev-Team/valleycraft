@@ -22,7 +22,7 @@ import net.minecraft.world.WorldAccess;
 public class DirectionBlockWithWater extends DirectionBlock implements Waterloggable {
     protected static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
-    protected DirectionBlockWithWater(Settings settings) {
+    public DirectionBlockWithWater(Settings settings) {
         super(settings);
     }
 

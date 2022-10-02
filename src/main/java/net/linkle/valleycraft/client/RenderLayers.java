@@ -117,7 +117,15 @@ class RenderLayers {
         put(PRIMSTEEL_CHAIN, cullout);
         put(OPTIC_GLASS, cullout);
         put(VEX_LANTERN, cullout);
-        
+        put(ANCIENT_WAGON_WHEEL, cullout);
+        put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);
+        put(ANCIENT_WAGON_WHEEL_TABLE, cullout);
+        put(WATTLE_STOOL, cullout);
+        put(WATTLE_TABLE, cullout);
+        put(WATTLE_TABLE_CLOTHE, cullout);
+        put(WATTLE_CHAIR, cullout);
+        put(STUCK_ARROW_BLOCK, cullout);
+
         put(SLUDGE_FLUID, translucent);
 
     }

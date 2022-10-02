@@ -6,7 +6,9 @@ import net.minecraft.client.render.entity.VexEntityRenderer;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.LilyPadItem;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -50,6 +52,7 @@ public class ModBlocks {
     public static final Block SALT_ORE = new Block(Block.Settings.copy(Blocks.COAL_ORE));
     public static final Block NETHER_SALT_ORE = new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE));
     public static final Block NETHER_COAL_ORE = new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE));
+    public static final Block NETHER_FOSSIL_ORE = new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE));
 
     public static final Block BEE_NEST_WALL = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
 
@@ -162,8 +165,19 @@ public class ModBlocks {
     public static final Block ROCKS = new RockBlock();
     public static final Block SALT_BLOCK = new Block(Block.Settings.copy(Blocks.SANDSTONE));
     public static final Block STABLEHAND = new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block EMPTY_BOOKSHELF = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block POTION_BOOKSHELF = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block ANTHRO_BOOKSHELF = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
 
-    //public static final Block STALWART_SHROOM = new ModPlantBlock();
+    public static final Block ANCIENT_WAGON_WHEEL = new WagonWheelBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+    public static final Block ANCIENT_WAGON_WHEEL_PLATFORM = new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+    public static final Block ANCIENT_WAGON_WHEEL_TABLE = new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+    public static final Block WATTLE_TABLE = new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+    public static final Block WATTLE_TABLE_CLOTHE = new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+    public static final Block WATTLE_STOOL = new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+    public static final Block WATTLE_CHAIR = new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+    public static final Block STUCK_ARROW_BLOCK = new ArrowBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BAMBOO));
+
     public static final Block CLARET_LEAF = new ModPlantBlock();
     public static final Block STICKY_SHROOM = new ModPlantBlock();
     public static final Block GOOP_CAP = new ModPlantBlock();
@@ -231,6 +245,18 @@ public class ModBlocks {
     public static final Block GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block GOLEMITE_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
     public static final Block GOLEMITE_ERDSTONE_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
+    public static final Block ERDSTONE_AMBER_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
+    public static final Block ERDSTONE_FOSSIL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
+    public static final Block ROSEGOLD_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
+    public static final Block RAW_PRIMSTEEL_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
+    public static final Block RAW_GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
+    public static final Block ANTHRACITE_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK).strength(4.2f, 5.0f));
+    public static final Block AMBER_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
+
+    public static final Block FOSSIL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
+    public static final Block AMBER_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
+    public static final Block ERDSTONE_COAL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
+
     public static final Block GOLEMITE_GRATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block GOLEMITE_LADDER = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
     //public static final Block HARDENED_ERDCOBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE));
@@ -248,7 +274,8 @@ public class ModBlocks {
     public static final Block PRIMSTEEL_TILED_PLATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block SCORCHSTONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VEX_LANTERN = new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN));
-    
+    public static final Block DEEPSLATE_FOSSIL_ORE = new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE));
+
     public static void initialize() {
         Reg.register("sludge_fluid", SLUDGE_FLUID);
         Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
@@ -311,6 +338,7 @@ public class ModBlocks {
         Reg.registerWithItem("pumice_smooth", PUMICE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("rocks", ROCKS, itemSettings().group(ModGroups.VC_ITEMS));
         Reg.registerWithItem("bone_joint", BONE_JOINT, itemSettings());
+        Reg.registerWithItem("arrow_block", STUCK_ARROW_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
 
         Reg.registerWithItem("ghost_pumpkin", GHOST_PUMPKIN, itemSettings());
         Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i->EquipmentSlot.HEAD).group(NON_NATURAL_BLOCKS));
@@ -424,6 +452,18 @@ public class ModBlocks {
 
         Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("stablehand_station", STABLEHAND, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("empty_bookshelf", EMPTY_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("potion_bookshelf", POTION_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("anthro_bookshelf", ANTHRO_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
+
+        Reg.registerWithItem("ancient_wagon_wheel", ANCIENT_WAGON_WHEEL, itemSettings().group(BOOKS));
+        Reg.registerWithItem("ancient_wagon_wheel_platform", ANCIENT_WAGON_WHEEL_PLATFORM, itemSettings().group(BOOKS));
+        Reg.registerWithItem("ancient_wagon_wheel_table", ANCIENT_WAGON_WHEEL_TABLE, itemSettings().group(BOOKS));
+        Reg.registerWithItem("wattle_stool", WATTLE_STOOL, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("wattle_chair", WATTLE_CHAIR, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("wattle_table", WATTLE_TABLE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("wattle_table_clothe", WATTLE_TABLE_CLOTHE, itemSettings().group(NON_NATURAL_BLOCKS));
+
         Reg.registerWithItem("canvas_block", CANVAS_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("canvas_carpet", CANVAS_CARPET, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("curtain", CURTAIN, itemSettings().group(NON_NATURAL_BLOCKS));
@@ -435,6 +475,7 @@ public class ModBlocks {
         Reg.registerWithItem("cracked_cobblestone", CRACKED_COBBLESTONE, itemSettings());
         Reg.registerWithItem("erdcobblestone", ERDCOBBLESTONE, itemSettings());
         Reg.registerWithItem("erdstone", ERDSTONE, itemSettings());
+        Reg.registerWithItem("erdstone_coal_ore", ERDSTONE_COAL_ORE, itemSettings());
         Reg.registerWithItem("erdstone_bricks", ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("glowsquid_lantern", GLOWSQUID_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("golemite_bars", GOLEMITE_BARS, itemSettings().group(NON_NATURAL_BLOCKS));
@@ -449,12 +490,23 @@ public class ModBlocks {
         Reg.registerWithItem("polished_erdstone", POLISHED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("primsteel_chain", PRIMSTEEL_CHAIN, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("primsteel_ore", PRIMSTEEL_ORE, itemSettings());
-        Reg.registerWithItem("primsteel_deepslate_ore", PRIMSTEEL_DEEPSLATE_ORE, itemSettings());
+        Reg.registerWithItem("deepslate_primsteel_ore", PRIMSTEEL_DEEPSLATE_ORE, itemSettings());
         Reg.registerWithItem("primsteel_plate_block", PRIMSTEEL_PLATE_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("primsteel_tiled_plate", PRIMSTEEL_TILED_PLATE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("scorchstone", SCORCHSTONE, itemSettings().fireproof());
         Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof());
-        
+        Reg.registerWithItem("amber_ore", AMBER_ORE, itemSettings());
+        Reg.registerWithItem("erdstone_amber_ore", ERDSTONE_AMBER_ORE, itemSettings());
+        Reg.registerWithItem("amber_block", AMBER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("fossil_ore", FOSSIL_ORE, itemSettings());
+        Reg.registerWithItem("erdstone_fossil_ore", ERDSTONE_FOSSIL_ORE, itemSettings());
+        Reg.registerWithItem("deepslate_fossil_ore", DEEPSLATE_FOSSIL_ORE, itemSettings());
+        Reg.registerWithItem("nether_fossil_ore", NETHER_FOSSIL_ORE, itemSettings());
+        Reg.registerWithItem("anthracite_block", ANTHRACITE_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("raw_golemite_block", RAW_GOLEMITE_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("raw_primsteel_block", RAW_PRIMSTEEL_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("rosegold_block", ROSEGOLD_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+
         Reg.registerWithItem("leather_block", LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("black_leather_block", BLACK_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("blue_leather_block", BLUE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));

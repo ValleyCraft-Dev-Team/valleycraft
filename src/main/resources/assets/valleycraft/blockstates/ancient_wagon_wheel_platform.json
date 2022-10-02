@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "valleycraft:block/ancient_wagon_wheel_platform"
+    },
+    "facing=south": {
+      "model": "valleycraft:block/ancient_wagon_wheel_platform_south"
+    },
+    "facing=east": {
+      "model": "valleycraft:block/ancient_wagon_wheel_platform_east"
+    },
+    "facing=west": {
+      "model": "valleycraft:block/ancient_wagon_wheel_platform_west"
+    }
+  }
+}

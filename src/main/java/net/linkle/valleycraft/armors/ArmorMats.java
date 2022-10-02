@@ -21,11 +21,13 @@ public class ArmorMats {
     public static final ArmorMat CANVAS = new ArmorMat("canvas", ints(1,1,2,1), 10, 15, equipLeather(), items(ModItems.COVER));
     public static final ArmorMat SNOW_CAP = new ArmorMat("snow_cap", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH));
     public static final ArmorMat DROWNED = new ArmorMat("ruined_drowned", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH));
+    public static final ArmorMat REPAIRED_DROWNED = new ArmorMat("repaired_drowned", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH));
     public static final ArmorMat EYEPATCH = new ArmorMat("eyepatch", ints(1), 10, 15, equipLeather(), items(Items.LEATHER));
     public static final ArmorMat FUR = new ArmorMat("fur_boots", ints(2,3), 10, 15, equipLeather(), items());
     public static final ArmorMat FLOWERING_HAT = new ArmorMat("flower_crown", ints(1,5,6,2), 10, 15, equipLeather(), items(Blocks.FLOWERING_AZALEA));
     public static final ArmorMat GOLEMITE = new ArmorMat("moblin", ints(1,3,5,2), 15, 0, equipLeather(), items(ModItems.BEAST_BONE));
     public static final ArmorMat HUSK = new ArmorMat("ruined_husk", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH));
+    public static final ArmorMat REPAIRED_HUSK = new ArmorMat("repaired_husk", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH));
     public static final ArmorMat LEGGINGS = new ArmorMat("leggings", ints(1,2,2,2), 30, 15, equipLeather(), items(Items.LEATHER));
     public static final ArmorMat LIBRARIAN = new ArmorMat("librarian", ints(1), 10, 15, equipLeather(), items(Items.BOOK));
     public static final ArmorMat MOBLIN_TALISMAN = new ArmorMat("moblin_talisman", ints(2,2,3,2), 10, 15, equipLeather(), items());

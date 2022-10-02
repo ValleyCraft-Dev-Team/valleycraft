@@ -8,7 +8,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
-import static net.minecraft.util.Rarity.EPIC;
+import static net.minecraft.util.Rarity.*;
 
 public class RegularFoodItems {
 
@@ -100,12 +100,13 @@ public class RegularFoodItems {
     public static final Item GOLDEN_PUMPKIN_SLICE = new FoodItem(settings(), 4, 1.2f);
 
     //special items
-    public static final Item VILLAGER_ELIXER = new ElixerBottleItem(settings().maxCount(1).group(BOOKS), 0, 0, StatusEffects.REGENERATION, StatusEffects.NAUSEA, StatusEffects.SLOWNESS);
-    public static final Item MOBLIN_ELIXER = new ElixerBottleItem(settings().maxCount(1).group(BOOKS), 0, 0, StatusEffects.NIGHT_VISION, StatusEffects.NAUSEA, StatusEffects.POISON);
-    public static final Item PILLAGER_TONIC = new ElixerBottleItem(settings().maxCount(1).group(BOOKS), 0, 0, StatusEffects.STRENGTH, StatusEffects.NAUSEA, StatusEffects.POISON);
+    public static final Item VILLAGER_ELIXER = new ElixerBottleItem(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.REGENERATION, StatusEffects.NAUSEA, StatusEffects.SLOWNESS);
+    public static final Item MOBLIN_ELIXER = new ElixerBottleItem(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.NIGHT_VISION, StatusEffects.NAUSEA, StatusEffects.POISON);
+    public static final Item PILLAGER_TONIC = new ElixerBottleItem(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.STRENGTH, StatusEffects.NAUSEA, StatusEffects.POISON);
     //public static final Item ENCHANTED_CHORUS_FRUIT = new EnchantedFoodItem(settings().rarity(EPIC)4, 1.2f);
     public static final Item ENCHANTED_CHORUS_FRUIT = new EnchantedFoodItem(settings().rarity(EPIC), 4, 1.2f, StatusEffects.SLOW_FALLING);
     public static final Item ENCHANTED_APPLE_PIE = new EnchantedFoodItem(settings().rarity(EPIC), 6, 1.6f, StatusEffects.FIRE_RESISTANCE);
+    public static final Item SOUL_ITEM = new SoulItem(settings().rarity(UNCOMMON).group(VC_ITEMS));
 
     //1.1 planned - dw its not sea turtles!
     //public static final Item COOKED_TURTLE = new FoodItem(settings(), 8, 0.6f);
@@ -207,7 +208,7 @@ public class RegularFoodItems {
         Reg.register("moblin_elixer", MOBLIN_ELIXER);
         Reg.register("enchanted_apple_pie", ENCHANTED_APPLE_PIE);
         Reg.register("enchanted_chorus_fruit", ENCHANTED_CHORUS_FRUIT);
-
+        Reg.register("soul_item", SOUL_ITEM);
     }
 
     private static Item.Settings settings() {
