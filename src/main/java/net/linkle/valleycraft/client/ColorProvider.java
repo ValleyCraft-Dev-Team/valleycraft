@@ -22,7 +22,6 @@ public class ColorProvider {
         ItemColorProvider itemProvider;
         
         blockColor((state, world, pos, tintIndex) -> {
-            System.out.println("fff");
             return BiomeColors.getGrassColor(world, pos);
         }, ModBlocks.BIG_FERN, ModBlocks.SHORT_GRASS);
         
