@@ -3,9 +3,9 @@ package net.linkle.valleycraft.client.block.entity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.block.entity.WispLanternBlockEntity;
+import net.linkle.valleycraft.client.Renderer;
 import net.linkle.valleycraft.client.Sprites;
 import net.minecraft.block.LanternBlock;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.block.entity.BlockEntityRenderer;
@@ -23,7 +23,6 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
     }
     
     @Override
-    @SuppressWarnings("resource")
     public void render(WispLanternBlockEntity entity, float delta, MatrixStack matrix, VertexConsumerProvider provider, int light, int overlay) {
         float val = entity.ticks + delta;
         
@@ -33,9 +32,6 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
         float shakeStrength = 8.5f;
         float shakeLength = 0.34f;
         float shakeSpeed = 1.65f;
-        
-        var camera = MinecraftClient.getInstance().gameRenderer.getCamera();
-        var consumer = VEX_TEXTURE.getVertexConsumer(provider, RenderLayer::getEntityCutout);
         
         float offset = entity.getCachedState().get(LanternBlock.HANGING) ? 4.3f/16f : 3.3f/16f;
         matrix.push();
@@ -47,7 +43,8 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
         roll = MathHelper.sin(val*shakeSpeed) * shakeStrength;
         roll = sin > MathHelper.PI ? 0 : roll*MathHelper.sin(sin);
         
-        Sprites.renderBillboard(consumer, camera, matrix.peek(), 0.18f, roll, light, overlay);
+        var consumer = VEX_TEXTURE.getVertexConsumer(provider, RenderLayer::getEntityCutout);
+        Renderer.billboard(consumer, matrix.peek(), 0.18f, roll, light, overlay);
         matrix.pop();
     }
 }

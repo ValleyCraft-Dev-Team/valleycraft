@@ -5,7 +5,6 @@ import java.util.Random;
 import net.linkle.valleycraft.init.ModBlockEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
@@ -33,7 +32,7 @@ public class WispLanternBlockEntity extends BlockEntity {
             ticks = 0;
         }
         sine++; // Bobbing speed
-        sine %= 1000000;
+        sine %= 5000000;
     }
     
     private void resetTimer() {
