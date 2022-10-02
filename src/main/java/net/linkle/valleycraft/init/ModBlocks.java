@@ -156,7 +156,7 @@ public class ModBlocks {
     public static final Block CAVE_ROOT_CROP = new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 10/16f);
     public static final Block ANCIENT_FLOWERS = new MultiCropBlock(MultiCropBlock.settings()).genSize(2, 12/16f);
     public static final Block AMETHYSTLES = new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 12/16f);
-    public static final Block ALOE_VERAS = new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(BlockPres.SAND).AloeShape();
+    public static final Block ALOE_VERAS = new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(BlockPres.SAND.and(BlockPres.DIRT)).AloeShape();
 
     public static final Block BONE_JOINT = new Block(Block.Settings.copy(Blocks.BONE_BLOCK));
     public static final Block ROCKS = new RockBlock();
@@ -219,7 +219,8 @@ public class ModBlocks {
     public static final Block SLUDGE_FLUID = new SludgeFluidBlock(ModFluids.SLUDGE_STILL);
     
     public static final Block ARID_MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS));
-    public static final Block ARID_VINES = new VineBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final VineHeadBlock ARID_VINES = new VineHeadBlock();
+    public static final VineBodyBlock ARID_VINES_PLANT = new VineBodyBlock();
     public static final Block CAVE_MOSS = new CaveMossBlock();
     public static final Block CRYSTAL_CAVE_MOSS = new CaveMossBlock();
     public static final Block ERDCOBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLESTONE));
@@ -231,13 +232,13 @@ public class ModBlocks {
     public static final Block GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block GOLEMITE_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
     public static final Block GOLEMITE_ERDSTONE_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
-    public static final Block GOLEMITE_GRATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
+    public static final Block GOLEMITE_GRATE = new BlockWithWater(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block GOLEMITE_LADDER = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
     //public static final Block HARDENED_ERDCOBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE));
     //public static final Block HARDENED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE));
     //public static final Block HARDENED_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS));
     //public static final Block HARDENED_POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE));
-    public static final Block IRON_GRATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
+    public static final Block IRON_GRATE = new BlockWithWater(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS));
     public static final Block ORANGE_SEAGRASS = new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS));
     public static final Block POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE));
@@ -428,8 +429,12 @@ public class ModBlocks {
         Reg.registerWithItem("canvas_carpet", CANVAS_CARPET, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("curtain", CURTAIN, itemSettings().group(NON_NATURAL_BLOCKS));
         
-        Reg.registerWithItem("arid_mossy_erdstone_bricks", ARID_MOSSY_ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
+        ARID_VINES.setPlant(ARID_VINES_PLANT);
+        ARID_VINES_PLANT.setStem(ARID_VINES);
         Reg.registerWithItem("arid_vines", ARID_VINES, itemSettings());
+        Reg.register("arid_vines_plant", ARID_VINES_PLANT);
+        
+        Reg.registerWithItem("arid_mossy_erdstone_bricks", ARID_MOSSY_ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("cave_moss", CAVE_MOSS, itemSettings());
         Reg.registerWithItem("crystal_cave_moss", CRYSTAL_CAVE_MOSS, itemSettings());
         Reg.registerWithItem("cracked_cobblestone", CRACKED_COBBLESTONE, itemSettings());

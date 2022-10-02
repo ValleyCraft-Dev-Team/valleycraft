@@ -4,7 +4,6 @@ import java.util.Random;
 
 import net.linkle.valleycraft.init.IngredientFoodItems;
 import net.linkle.valleycraft.init.ModBlocks;
-import net.linkle.valleycraft.init.ModItems;
 import net.minecraft.block.AbstractPlantStemBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

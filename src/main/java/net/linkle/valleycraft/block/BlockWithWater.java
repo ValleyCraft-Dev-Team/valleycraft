@@ -22,7 +22,7 @@ import net.minecraft.world.WorldAccess;
 public class BlockWithWater extends Block implements Waterloggable {
     protected static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
-    protected BlockWithWater(Settings settings) {
+    public BlockWithWater(Settings settings) {
         super(settings);
         setDefaultState();
     }

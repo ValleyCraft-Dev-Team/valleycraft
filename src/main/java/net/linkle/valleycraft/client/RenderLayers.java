@@ -117,6 +117,8 @@ class RenderLayers {
         put(PRIMSTEEL_CHAIN, cullout);
         put(OPTIC_GLASS, cullout);
         put(VEX_LANTERN, cullout);
+        put(ARID_VINES, cullout);
+        put(ARID_VINES_PLANT, cullout);
         
         put(SLUDGE_FLUID, translucent);
 

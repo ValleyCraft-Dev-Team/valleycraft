@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:block/arid_vines"
+    "layer0": "valleycraft:block/arid_vines_plant"
   }
 }

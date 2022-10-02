@@ -137,7 +137,7 @@ public class Renderer {
         }
         
         private static final Vec3f[] quad() {
-            return new Vec3f[]{new Vec3f(-1, 0, -1), new Vec3f(-1, 0, 1), new Vec3f(1, 0, 1), new Vec3f(1, 0, -1)};
+            return new Vec3f[]{new Vec3f(-0.5f, 0, -0.5f), new Vec3f(-0.5f, 0, 0.5f), new Vec3f(0.5f, 0, 0.5f), new Vec3f(0.5f, 0, -0.5f)};
         }
     }
 }

@@ -22,9 +22,8 @@ public class ColorProvider {
         ItemColorProvider itemProvider;
         
         blockColor((state, world, pos, tintIndex) -> {
-            if (world == null || pos == null) {
-                return GrassColors.getColor(0.5, 1.0);
-            } return BiomeColors.getGrassColor(world, pos);
+            System.out.println("fff");
+            return BiomeColors.getGrassColor(world, pos);
         }, ModBlocks.BIG_FERN, ModBlocks.SHORT_GRASS);
         
         itemColor((stack, tintIndex) -> {
