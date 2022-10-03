@@ -126,10 +126,8 @@ public class ModNaturalBlocks {
     public static final Block BIG_FERN = new ModPlantBlock();
     public static final Block FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
     public static final Block ALGAE = new AlgaeBlock();
-    public static final Block GLOW_KELP_BLOCK = new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TEAL).luminance(s->10));
     public static final Block GLOW_KELP = new GlowKelpBlock();
     public static final Block GLOW_KELP_PLANT = new GlowKelpPlantBlock();
-    public static final Block ORANGE_KELP_BLOCK = new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TERRACOTTA_GRAY));
     public static final Block ORANGE_KELP = new OrangeKelpBlock();
     public static final Block ORANGE_KELP_PLANT = new OrangeKelpPlantBlock();
 
@@ -147,16 +145,16 @@ public class ModNaturalBlocks {
     public static final Block ARID_VINES = new VineBlock(Block.Settings.copy(Blocks.POPPY));
     public static final Block CAVE_MOSS = new CaveMossBlock();
     public static final Block CRYSTAL_CAVE_MOSS = new CaveMossBlock();
-    public static final Block ERDCOBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLESTONE));
-    public static final Block CRACKED_COBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLESTONE));
-    public static final Block ERDSTONE = new Block(Block.Settings.copy(Blocks.STONE));
-    public static final Block GOLEMITE_ERDSTONE_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
-    public static final Block ERDSTONE_AMBER_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
-    public static final Block ERDSTONE_FOSSIL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
+    public static final Block ERDCOBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLESTONE).hardness(2));
+    public static final Block CRACKED_COBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLESTONE).hardness(2));
+    public static final Block ERDSTONE = new Block(Block.Settings.copy(Blocks.STONE).hardness(2));
+    public static final Block GOLEMITE_ERDSTONE_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE).hardness(2));
+    public static final Block ERDSTONE_AMBER_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE).hardness(2));
+    public static final Block ERDSTONE_FOSSIL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE).hardness(2));
 
     public static final Block FOSSIL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
     public static final Block AMBER_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
-    public static final Block ERDSTONE_COAL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
+    public static final Block ERDSTONE_COAL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE).hardness(2));
 
     public static final Block ORANGE_SEAGRASS = new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS));
     public static final Block PRIMSTEEL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
@@ -253,11 +251,9 @@ public class ModNaturalBlocks {
         
         Reg.register("gloom_berry", GLOOM_BERRY);
         Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);
-        
-        Reg.registerWithItem("glow_kelp_block", GLOW_KELP_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+
         Reg.registerWithItem("glow_kelp", GLOW_KELP, itemSettings());
         Reg.register("glow_kelp_plant", GLOW_KELP_PLANT);
-        Reg.registerWithItem("orange_kelp_block", ORANGE_KELP_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("orange_kelp", ORANGE_KELP, itemSettings());
         Reg.register("orange_kelp_plant", ORANGE_KELP_PLANT);
         

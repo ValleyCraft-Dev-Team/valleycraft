@@ -127,8 +127,13 @@ class RenderLayers {
         put(WATTLE_CHAIR, cullout);
         put(STUCK_ARROW_BLOCK, cullout);
 
-        put(SLUDGE_FLUID, translucent);
+        put(GUIDESTONE, cullout);
+        put(GUIDESTONE_ARROW, cullout);
+        put(GUIDESTONE_DANGER, cullout);
+        put(GUIDESTONE_HOME, cullout);
+        put(GUIDESTONE_INTEREST, cullout);
 
+        put(SLUDGE_FLUID, translucent);
     }
 
     private static void put(Block block, RenderLayer layer) {

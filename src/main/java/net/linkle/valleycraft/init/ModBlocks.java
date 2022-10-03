@@ -18,8 +18,8 @@ import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
 public class ModBlocks {
     public static final Block PRIMSTEEL_PLATE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block PRIMSTEEL_TILED_PLATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
-    public static final Block POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE));
-    public static final Block MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS));
+    public static final Block POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE).hardness(2));
+    public static final Block MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS).hardness(2));
     public static final Block IRON_GRATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block PRIMSTEEL_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
     public static final Block VEX_LANTERN = new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN));
@@ -30,12 +30,12 @@ public class ModBlocks {
     public static final Block AMBER_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
     public static final Block GOLEMITE_GRATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block GOLEMITE_LADDER = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
-    public static final Block ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS));
+    public static final Block ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS).hardness(2));
     public static final Block GLOWSQUID_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 12));
     public static final Block GOLEMITE_BARS = new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS));
     public static final Block GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block GOLEMITE_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
-    public static final Block ARID_MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS));
+    public static final Block ARID_MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS).hardness(2));
     public static final Block SPRINKLER = new SprinklerBlock();
     public static final Block CANVAS_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET));
     public static final Block CANVAS_CARPET = new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET));
@@ -76,7 +76,8 @@ public class ModBlocks {
     public static final Block GHOST_JACK_O_LANTERN = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().luminance(15).allowsSpawning(ModBlocks::always));
 
     public static final Block FIBER_BALE = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK).mapColor(MapColor.TERRACOTTA_GREEN));
-
+    public static final Block GLOW_KELP_BLOCK = new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TEAL).luminance(s->10));
+    public static final Block ORANGE_KELP_BLOCK = new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TERRACOTTA_GRAY));
     public static final Block ROTTEN_FLESH_BLOCK = new Block(Block.Settings.copy(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.TERRACOTTA_RED));
     public static final Block APPLE_WOOD = new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD));
     public static final Block STRIPPED_APPLE_WOOD = new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD));
@@ -114,12 +115,21 @@ public class ModBlocks {
     public static final Block CARMINE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block LIMESTONE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
 
+    public static final Block GUIDESTONE = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
+    public static final Block GUIDESTONE_ARROW = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
+    public static final Block GUIDESTONE_HOME = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
+    public static final Block GUIDESTONE_INTEREST = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
+    public static final Block GUIDESTONE_DANGER = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
+
+    public static final Block CRATE = new CrateBlock(Block.Settings.copy(Blocks.BARREL));
+
     public static void initialize() {
         //furniture
         Reg.registerWithItem("stablehand_station", STABLEHAND, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("empty_bookshelf", EMPTY_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("potion_bookshelf", POTION_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("anthro_bookshelf", ANTHRO_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("crate", CRATE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("wattle_stool", WATTLE_STOOL, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("wattle_chair", WATTLE_CHAIR, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("wattle_table", WATTLE_TABLE, itemSettings().group(NON_NATURAL_BLOCKS));
@@ -133,18 +143,22 @@ public class ModBlocks {
         Reg.registerWithItem("canvas_carpet", CANVAS_CARPET, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("curtain", CURTAIN, itemSettings().group(NON_NATURAL_BLOCKS));
 
+        //guidestones
+        Reg.registerWithItem("guidestone", GUIDESTONE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("guidestone_arrow", GUIDESTONE_ARROW, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("guidestone_home", GUIDESTONE_HOME, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("guidestone_interest", GUIDESTONE_INTEREST, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("guidestone_danger", GUIDESTONE_DANGER, itemSettings().group(NON_NATURAL_BLOCKS));
+
+        //odd blocks go here
+        Reg.registerWithItem("arrow_block", STUCK_ARROW_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("glowsquid_lantern", GLOWSQUID_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof());
+
         //redstonery
         Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings().group(NON_NATURAL_BLOCKS));
 
-        //rare and special blocks go here
-        Reg.registerWithItem("glowsquid_lantern", GLOWSQUID_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof());
-        Reg.registerWithItem("arrow_block", STUCK_ARROW_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        //carved
-        Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i-> EquipmentSlot.HEAD).group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("ghost_jack_o_lantern", GHOST_JACK_O_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
 
         //wood types
         //wattle and daub
@@ -175,7 +189,12 @@ public class ModBlocks {
         Reg.registerWithItem("apple_fence_gate", APPLE_FENCE_GATE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("apple_pressure_plate", APPLE_PRESSURE_PLATE, itemSettings().group(NON_NATURAL_BLOCKS));
 
+        //carved
+        Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i-> EquipmentSlot.HEAD).group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("ghost_jack_o_lantern", GHOST_JACK_O_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
         //bales
+        Reg.registerWithItem("glow_kelp_block", GLOW_KELP_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("orange_kelp_block", ORANGE_KELP_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("fiber_bale", FIBER_BALE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("rotten_flesh_block", ROTTEN_FLESH_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         //seperator of raw blocks and bales
@@ -199,13 +218,11 @@ public class ModBlocks {
         Reg.registerWithItem("golemite_ladder", GOLEMITE_LADDER, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("golemite_bars", GOLEMITE_BARS, itemSettings().group(NON_NATURAL_BLOCKS));
 
-
         //stones
         Reg.registerWithItem("polished_erdstone", POLISHED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("erdstone_bricks", ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("mossy_erdstone_bricks", MOSSY_ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("arid_mossy_erdstone_bricks", ARID_MOSSY_ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
-
 
         //polished stones
         Reg.registerWithItem("serpentinite_smooth", SERPENTINITE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));

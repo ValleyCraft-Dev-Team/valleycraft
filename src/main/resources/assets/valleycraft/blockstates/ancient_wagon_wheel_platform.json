@@ -1,16 +1,26 @@
 {
   "variants": {
     "facing=north": {
-      "model": "valleycraft:block/ancient_wagon_wheel_platform"
+      "y": 0,
+      "model": "valleycraft:block/ancient_wagon_wheel_horizontal"
     },
     "facing=south": {
-      "model": "valleycraft:block/ancient_wagon_wheel_platform_south"
+      "y": 180,
+      "model": "valleycraft:block/ancient_wagon_wheel_horizontal"
     },
     "facing=east": {
-      "model": "valleycraft:block/ancient_wagon_wheel_platform_east"
+      "y": 90,
+      "model": "valleycraft:block/ancient_wagon_wheel_horizontal"
     },
     "facing=west": {
-      "model": "valleycraft:block/ancient_wagon_wheel_platform_west"
+      "y": 270,
+      "model": "valleycraft:block/ancient_wagon_wheel_horizontal"
+    },
+    "facing=up": {
+      "model": "valleycraft:block/ancient_wagon_wheel_up"
+    },
+    "facing=down": {
+      "model": "valleycraft:block/ancient_wagon_wheel_down"
     }
   }
 }
