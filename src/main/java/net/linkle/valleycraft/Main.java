@@ -20,7 +20,7 @@ public class Main implements ModInitializer {
 	    Config.initialize();
 
 	    ModGroups.initialize();
-		ModBlocks.initialize();
+		ModNaturalBlocks.initialize();
 		ModBlockEntities.initialize();
 		ModFluids.initialize();
 		ModItems.initialize();

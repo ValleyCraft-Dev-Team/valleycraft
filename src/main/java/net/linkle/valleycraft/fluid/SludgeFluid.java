@@ -5,29 +5,22 @@ import java.util.Random;
 
 import javax.annotation.Nullable;
 
-import net.linkle.valleycraft.effect.ModEffects;
-import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.linkle.valleycraft.init.ModFluids;
 import net.linkle.valleycraft.init.ModItems;
-import net.linkle.valleycraft.tags.ModFluidTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FluidBlock;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
-import net.minecraft.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
@@ -87,7 +80,7 @@ public abstract class SludgeFluid extends FlowableFluid {
 
     @Override
     public BlockState toBlockState(FluidState state) {
-        return ModBlocks.SLUDGE_FLUID.getDefaultState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
+        return ModNaturalBlocks.SLUDGE_FLUID.getDefaultState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
     }
 
     @Override

@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 
 import static net.linkle.valleycraft.init.ModBlocks.*;
+import static net.linkle.valleycraft.init.ModNaturalBlocks.*;
 
 @Environment(EnvType.CLIENT)
 class RenderLayers {

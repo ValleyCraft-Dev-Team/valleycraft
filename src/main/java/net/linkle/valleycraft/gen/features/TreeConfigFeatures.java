@@ -2,7 +2,7 @@ package net.linkle.valleycraft.gen.features;
 
 import java.util.OptionalInt;
 
-import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.collection.DataPool;
@@ -21,11 +21,11 @@ public class TreeConfigFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<?, ?>> APPLE_TREE = 
     Reg.register("apple_tree", Feature.TREE,
-            new TreeFeatureConfig.Builder(BlockStateProvider.of(ModBlocks.APPLE_LOG),
+            new TreeFeatureConfig.Builder(BlockStateProvider.of(ModNaturalBlocks.APPLE_LOG),
             new LargeOakTrunkPlacer(5, 9, 0), 
             new WeightedBlockStateProvider(new DataPool.Builder<BlockState>()
-                .add(ModBlocks.APPLE_LEAVES_EMPTY.getDefaultState(), 4)
-                .add(ModBlocks.APPLE_LEAVES.getDefaultState(), 1)), 
+                .add(ModNaturalBlocks.APPLE_LEAVES_EMPTY.getDefaultState(), 4)
+                .add(ModNaturalBlocks.APPLE_LEAVES.getDefaultState(), 1)),
             new LargeOakFoliagePlacer(ConstantIntProvider.create(2), 
             ConstantIntProvider.create(4), 4),
             new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).ignoreVines().build());

@@ -1,6 +1,5 @@
 package net.linkle.valleycraft.init;
 
-import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
@@ -10,14 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
-import static net.minecraft.item.Items.GLASS_BOTTLE;
 
 public class IngredientFoodItems {
 
     //public static final Item AMETHYSTLE_SALAD = new Tier1Normal(settings(), 4, 2, StatusEffects.HASTE);
 
     //raw ingredients
-    public static final Item ALOE = new AliasedBlockItem(ModBlocks.ALOE_VERAS, settings().food(Foods.create(3, 1)));
+    public static final Item ALOE = new AliasedBlockItem(ModNaturalBlocks.ALOE_VERAS, settings().food(Foods.create(3, 1)));
     public static final Item AMETHYSTLE = new FoodItem(settings(), 2, 1);
     public static final Item ANCIENT_FLOWER = new FoodItem(settings(), 6, 2);
     public static final Item CAVE_ROOT = new FoodItem(settings(), 4, 2);
@@ -26,8 +24,8 @@ public class IngredientFoodItems {
     public static final Item GLOW_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 2, StatusEffects.GLOWING);
 
     public static final Item HEARTY_BEETROOT = new FoodItem(settings(), 4, 4);
-    public static final Item MAIZE = new AliasedBlockItem(ModBlocks.MAIZE, settings().rarity(Rarity.RARE).food(Foods.create(3, 4)));
-    public static final Item MINERS_LETTUCE = new AliasedBlockItem(ModBlocks.MINERS_LETTUCES, settings().food(Foods.create(3, 2)));
+    public static final Item MAIZE = new AliasedBlockItem(ModNaturalBlocks.MAIZE, settings().rarity(Rarity.RARE).food(Foods.create(3, 4)));
+    public static final Item MINERS_LETTUCE = new AliasedBlockItem(ModNaturalBlocks.MINERS_LETTUCES, settings().food(Foods.create(3, 2)));
     public static final Item MONSTER_GUTS = new Tier1Normal(settings(), 6, 2, StatusEffects.HUNGER);
     public static final Item MONSTER_LIVER = new Tier1Normal(settings(), 3, 2, StatusEffects.POISON);
     public static final Item SYRUPY_HONEYCOMB = new Tier0Normal(settings(), 3, 2, StatusEffects.REGENERATION);
@@ -57,7 +55,7 @@ public class IngredientFoodItems {
     public static final Item SWEET_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
     public static final Item GLOW_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
     public static final Item GLOOM_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
-    public static final Item GLOOM_BERRY = new AliasedBlockItem(ModBlocks.GLOOM_BERRY, settings().food(FoodComponents.GLOW_BERRIES));
+    public static final Item GLOOM_BERRY = new AliasedBlockItem(ModNaturalBlocks.GLOOM_BERRY, settings().food(FoodComponents.GLOW_BERRIES));
     public static final Item MILK = new BottleItem(settings().maxCount(16), 0, 2).setMilk();
     public static final Item BEAST_LIVER_RAW = new FoodItem(settings(), 4, 0.4f, true);
 

@@ -27,7 +27,7 @@ public class ArrowBlock extends DirectionBlockWithWater implements Waterloggable
     protected static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
     protected static final VoxelShape NORTH_SHAPE = Block.createCuboidShape(0,0, 0, 16, 16, 1);
     protected static final VoxelShape WEST_SHAPE = Block.createCuboidShape(0, 0, 0, 1, 16, 16);
-    protected static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(0, 0, 0, 1, 16, 16);
+    protected static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(0, 0, 15, 16, 16, 16);
     protected static final VoxelShape EAST_SHAPE = Block.createCuboidShape(15, 0, 0, 16, 16, 16);
     protected static final VoxelShape UP_SHAPE = Block.createCuboidShape(0,15, 0, 16, 16, 16);
     protected static final VoxelShape DOWN_SHAPE = Block.createCuboidShape(0,0, 0, 16, 1, 16);

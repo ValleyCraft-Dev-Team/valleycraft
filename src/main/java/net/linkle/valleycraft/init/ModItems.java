@@ -35,13 +35,13 @@ public class ModItems {
     public static final Item DOG_BISCUIT = new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true);
 
     // crops
-    public static final Item RICE_SEEDS = new AliasedBlockItem(ModBlocks.RICES, itemSettings().group(VC_ITEMS));
-    public static final Item PUFF_BALL_SEEDS = new AliasedBlockItem(ModBlocks.PUFF_BALL, itemSettings().group(VC_ITEMS));
-    public static final Item ONION_SEEDS = new AliasedBlockItem(ModBlocks.ONIONS, itemSettings().group(VC_ITEMS));
-    public static final Item FIRE_PEPPER_SEEDS = new AliasedBlockItem(ModBlocks.FIRE_PEPPERS, itemSettings().group(VC_ITEMS));
-    public static final Item CAVE_ROOT_SEEDS = new AliasedBlockItem(ModBlocks.CAVE_ROOT_CROP, itemSettings().group(VC_ITEMS));
-    public static final Item ANCIENT_FLOWER_SEEDS = new AliasedBlockItem(ModBlocks.ANCIENT_FLOWERS, itemSettings().group(VC_ITEMS).rarity(Rarity.RARE));
-    public static final Item AMETHYSTLE_SEEDS = new AliasedBlockItem(ModBlocks.AMETHYSTLES, itemSettings().group(VC_ITEMS));
+    public static final Item RICE_SEEDS = new AliasedBlockItem(ModNaturalBlocks.RICES, itemSettings().group(VC_ITEMS));
+    public static final Item PUFF_BALL_SEEDS = new AliasedBlockItem(ModNaturalBlocks.PUFF_BALL, itemSettings().group(VC_ITEMS));
+    public static final Item ONION_SEEDS = new AliasedBlockItem(ModNaturalBlocks.ONIONS, itemSettings().group(VC_ITEMS));
+    public static final Item FIRE_PEPPER_SEEDS = new AliasedBlockItem(ModNaturalBlocks.FIRE_PEPPERS, itemSettings().group(VC_ITEMS));
+    public static final Item CAVE_ROOT_SEEDS = new AliasedBlockItem(ModNaturalBlocks.CAVE_ROOT_CROP, itemSettings().group(VC_ITEMS));
+    public static final Item ANCIENT_FLOWER_SEEDS = new AliasedBlockItem(ModNaturalBlocks.ANCIENT_FLOWERS, itemSettings().group(VC_ITEMS).rarity(Rarity.RARE));
+    public static final Item AMETHYSTLE_SEEDS = new AliasedBlockItem(ModNaturalBlocks.AMETHYSTLES, itemSettings().group(VC_ITEMS));
 
     public static final Item T_TRADE = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
     public static final Item T_APPRECIATION = new Item(itemSettings().group(BOOKS).rarity(Rarity.RARE).maxCount(1));

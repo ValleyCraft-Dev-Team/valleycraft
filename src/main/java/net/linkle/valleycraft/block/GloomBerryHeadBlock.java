@@ -3,7 +3,7 @@ package net.linkle.valleycraft.block;
 import java.util.Random;
 
 import net.linkle.valleycraft.init.IngredientFoodItems;
-import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.minecraft.block.AbstractPlantStemBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -45,7 +45,7 @@ public class GloomBerryHeadBlock extends AbstractPlantStemBlock implements Ferti
 
     @Override
     protected Block getPlant() {
-        return ModBlocks.GLOOM_BERRY_PLANT;
+        return ModNaturalBlocks.GLOOM_BERRY_PLANT;
     }
 
     @Override

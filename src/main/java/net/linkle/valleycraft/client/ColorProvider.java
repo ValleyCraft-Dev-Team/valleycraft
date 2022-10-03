@@ -3,14 +3,12 @@ package net.linkle.valleycraft.client;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
-import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
 import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.item.ItemColorProvider;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.color.world.GrassColors;
-import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemConvertible;
 
 @Environment(EnvType.CLIENT)
@@ -23,16 +21,16 @@ public class ColorProvider {
         
         blockColor((state, world, pos, tintIndex) -> {
             return BiomeColors.getGrassColor(world, pos);
-        }, ModBlocks.BIG_FERN, ModBlocks.SHORT_GRASS);
+        }, ModNaturalBlocks.BIG_FERN, ModNaturalBlocks.SHORT_GRASS);
         
         itemColor((stack, tintIndex) -> {
             return GrassColors.getColor(0.5, 1.0);
-        }, ModBlocks.BIG_FERN, ModBlocks.SHORT_GRASS);
+        }, ModNaturalBlocks.BIG_FERN, ModNaturalBlocks.SHORT_GRASS);
         
-        blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, ModBlocks.APPLE_LEAVES);
-        itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, ModBlocks.APPLE_LEAVES);
-        blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, ModBlocks.APPLE_LEAVES_EMPTY);
-        itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, ModBlocks.APPLE_LEAVES_EMPTY);
+        blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, ModNaturalBlocks.APPLE_LEAVES);
+        itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, ModNaturalBlocks.APPLE_LEAVES);
+        blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, ModNaturalBlocks.APPLE_LEAVES_EMPTY);
+        itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, ModNaturalBlocks.APPLE_LEAVES_EMPTY);
     }
     
     private static void blockColor(BlockColorProvider provider, Block... block) {

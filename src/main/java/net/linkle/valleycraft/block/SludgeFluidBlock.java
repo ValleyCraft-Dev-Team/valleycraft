@@ -6,7 +6,7 @@ import com.google.common.collect.ImmutableMap;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricMaterialBuilder;
 import net.linkle.valleycraft.effect.ModEffects;
-import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -20,7 +20,6 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
@@ -33,7 +32,7 @@ public class SludgeFluidBlock extends FluidBlock {
     private static final ImmutableMap<Block, Supplier<Block>> MAP;
     static {
         var builder = new ImmutableMap.Builder<Block, Supplier<Block>>();
-        builder.put(Blocks.COBBLESTONE, ()->ModBlocks.CRACKED_COBBLESTONE);
+        builder.put(Blocks.COBBLESTONE, ()-> ModNaturalBlocks.CRACKED_COBBLESTONE);
         builder.put(Blocks.DEEPSLATE_BRICKS, ()->Blocks.CRACKED_DEEPSLATE_BRICKS);
         builder.put(Blocks.DEEPSLATE_TILES, ()->Blocks.CRACKED_DEEPSLATE_TILES);
         builder.put(Blocks.NETHER_BRICKS, ()->Blocks.CRACKED_NETHER_BRICKS);

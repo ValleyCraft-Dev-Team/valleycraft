@@ -2,10 +2,10 @@ package net.linkle.valleycraft.block;
 
 import java.util.Random;
 
+import net.linkle.valleycraft.init.ModNaturalBlocks;
 import org.jetbrains.annotations.Nullable;
 
 import net.linkle.valleycraft.init.IngredientFoodItems;
-import net.linkle.valleycraft.init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -37,7 +37,7 @@ public class MaizeBlock extends ModCropBlock {
     
     @Override
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
-        if (world.getBlockState(pos.up()).isOf(ModBlocks.MAIZE_BOX)) {
+        if (world.getBlockState(pos.up()).isOf(ModNaturalBlocks.MAIZE_BOX)) {
             return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
         }
         return Blocks.AIR.getDefaultState();
@@ -45,7 +45,7 @@ public class MaizeBlock extends ModCropBlock {
     
     @Override
     public void onPlaced(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack itemStack) {
-        world.setBlockState(pos.up(), ModBlocks.MAIZE_BOX.getDefaultState(), Block.NOTIFY_ALL);
+        world.setBlockState(pos.up(), ModNaturalBlocks.MAIZE_BOX.getDefaultState(), Block.NOTIFY_ALL);
     }
     
     @Override
