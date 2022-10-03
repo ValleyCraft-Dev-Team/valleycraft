@@ -36,7 +36,7 @@ public class ModNaturalBlocks {
     public static final Block VOLCANIC_STONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VOLCANIC_ASH = new FallingBlock(Block.Settings.copy(Blocks.SAND));
     public static final Block PUMICE = new Block(Block.Settings.copy(Blocks.STONE));
-     public static final Block SALT_ORE = new Block(Block.Settings.copy(Blocks.COAL_ORE));
+    public static final Block SALT_ORE = new Block(Block.Settings.copy(Blocks.COAL_ORE));
     public static final Block NETHER_SALT_ORE = new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE));
     public static final Block NETHER_COAL_ORE = new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE));
     public static final Block NETHER_FOSSIL_ORE = new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE));
@@ -89,7 +89,6 @@ public class ModNaturalBlocks {
     public static final Block WILD_RICE = new ModPlantBlock();
     public static final Block WILD_HERBS = new ModPlantBlock();
 
-    //public static final Block WILD_ALOE = new ModPlantBlock();
     public static final Block WILD_AMETHYSTLE = new ModPlantBlock();
     public static final Block WILD_PUFF_BALL = new ModPlantBlock();
 
@@ -99,8 +98,6 @@ public class ModNaturalBlocks {
     public static final Block PANFLOWERS = new ModPlantBlock();
     public static final Block JUNGLE_BUSH = new ModPlantBlock();
     public static final Block FROSTFERN = new ModPlantBlock();
-    //public static final Block TALL_CORNFLOWER = new ModPlantBlock();
-    //public static final Block TALL_OYXEYE_DAISY = new ModPlantBlock();
     
     // crops
     public static final Block MAIZE = new MaizeBlock();
@@ -165,10 +162,6 @@ public class ModNaturalBlocks {
     public static final Block AMBER_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
     public static final Block ERDSTONE_COAL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
 
-    //public static final Block HARDENED_ERDCOBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE));
-    //public static final Block HARDENED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE));
-    //public static final Block HARDENED_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS));
-    //public static final Block HARDENED_POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE));
     public static final Block ORANGE_SEAGRASS = new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS));
     public static final Block PRIMSTEEL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE));
     public static final Block PRIMSTEEL_DEEPSLATE_ORE = new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE));
@@ -337,13 +330,5 @@ public class ModNaturalBlocks {
 
     private static FabricItemSettings itemSettings() {
         return new FabricItemSettings().group(ModGroups.FLORA_GROUP);
-    }
-    
-    private static Boolean always(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
-        return true;
-    }
-
-    private static PillarBlock createLogBlock(MapColor topMapColor, MapColor sideMapColor) {
-        return new PillarBlock(Block.Settings.of(Material.WOOD, state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor).strength(2.0f).sounds(BlockSoundGroup.WOOD));
     }
 }

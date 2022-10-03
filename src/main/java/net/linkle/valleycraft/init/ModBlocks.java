@@ -235,9 +235,6 @@ public class ModBlocks {
         Reg.registerWithItem("red_leather_block", RED_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("white_leather_block", WHITE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("yellow_leather_block", YELLOW_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        //keep this at the bottom
-        ModBookItems.initialize();
     }
 
     private static FabricItemSettings itemSettings() {
@@ -246,9 +243,5 @@ public class ModBlocks {
 
     private static Boolean always(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
         return true;
-    }
-
-    private static PillarBlock createLogBlock(MapColor topMapColor, MapColor sideMapColor) {
-        return new PillarBlock(Block.Settings.of(Material.WOOD, state -> state.get(PillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor).strength(2.0f).sounds(BlockSoundGroup.WOOD));
     }
 }

@@ -21,6 +21,7 @@ public class Main implements ModInitializer {
 
 	    ModGroups.initialize();
 		ModNaturalBlocks.initialize();
+		ModBookItems.initialize();
 		ModBlockEntities.initialize();
 		ModFluids.initialize();
 		ModItems.initialize();
