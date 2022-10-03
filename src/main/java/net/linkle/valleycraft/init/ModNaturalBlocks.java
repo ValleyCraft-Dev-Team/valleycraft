@@ -1,18 +1,14 @@
 package net.linkle.valleycraft.init;
 
 import net.minecraft.block.*;
-import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.LilyPadItem;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.linkle.valleycraft.block.*;
-import net.linkle.valleycraft.block.VineBlock;
 import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.util.BlockPres;
 import net.linkle.valleycraft.util.Reg;
@@ -36,7 +32,7 @@ public class ModNaturalBlocks {
     public static final Block VOLCANIC_STONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block VOLCANIC_ASH = new FallingBlock(Block.Settings.copy(Blocks.SAND));
     public static final Block PUMICE = new Block(Block.Settings.copy(Blocks.STONE));
-     public static final Block SALT_ORE = new Block(Block.Settings.copy(Blocks.COAL_ORE));
+    public static final Block SALT_ORE = new Block(Block.Settings.copy(Blocks.COAL_ORE));
     public static final Block NETHER_SALT_ORE = new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE));
     public static final Block NETHER_COAL_ORE = new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE));
     public static final Block NETHER_FOSSIL_ORE = new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE));
