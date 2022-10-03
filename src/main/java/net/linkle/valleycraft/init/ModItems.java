@@ -2,6 +2,7 @@ package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.item.FoodItem;
 import net.linkle.valleycraft.item.SalveItem;
+import net.linkle.valleycraft.item.SoulItem;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AliasedBlockItem;
@@ -10,6 +11,8 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
+import static net.minecraft.util.Rarity.EPIC;
+import static net.minecraft.util.Rarity.UNCOMMON;
 
 import net.linkle.valleycraft.armors.ArmorMats;
 
@@ -45,7 +48,7 @@ public class ModItems {
 
     public static final Item T_TRADE = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
     public static final Item T_APPRECIATION = new Item(itemSettings().group(BOOKS).rarity(Rarity.RARE).maxCount(1));
-    public static final Item T_VISITORS = new Item(itemSettings().group(BOOKS).rarity(Rarity.EPIC).maxCount(1));
+    public static final Item T_VISITORS = new Item(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1));
     public static final Item S_TOKEN = new Item(itemSettings().group(BOOKS).rarity(Rarity.COMMON).maxCount(64));
 
     //
@@ -75,6 +78,9 @@ public class ModItems {
     public static final Item DAUB = new Item(itemSettings().group(VC_ITEMS));
     public static final Item PIG_HIDE = new Item(itemSettings().group(VC_ITEMS));
     public static final Item AMBER = new Item(itemSettings().group(VC_ITEMS));
+
+    public static final Item SOUL_ITEM = new SoulItem(itemSettings().rarity(UNCOMMON).group(VC_ITEMS));
+    public static final Item SOUL_ITEM_PET = new SoulItem(itemSettings().rarity(EPIC).group(VC_ITEMS));
 
     public static void initialize() {
         ModBookItems.initialize();
@@ -138,7 +144,11 @@ public class ModItems {
 
         Reg.register("bomb_bag", BOMB_BAG);
         Reg.register("arrow_bundle", ARROW_BUNDLE);
-        
+
+        //souls
+        Reg.register("soul_item", SOUL_ITEM);
+        Reg.register("soul_item_pet", SOUL_ITEM_PET);
+
         TieredFoodItems.initialize();
         IngredientFoodItems.initialize();
         RegularFoodItems.initialize();

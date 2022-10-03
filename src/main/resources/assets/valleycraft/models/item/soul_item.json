@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/special/soul_item"
+    "layer0": "valleycraft:item/souls/soul_item"
   }
 }

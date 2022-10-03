@@ -100,7 +100,8 @@
   "item.valleycraft.trader_coat": "Wandering Trader Coat",
   "item.valleycraft.trader_skirt": "Wandering Trader Skirt",
   "item.valleycraft.trader_sandals": "Wandering Trader Sandals",
-  "item.valleycraft.soul_item": "Soul",
+  "item.valleycraft.soul_item": "Lost Soul",
+  "item.valleycraft.soul_item_pet": "Lost Soul of a Friend",
 
   "rare_items": "aqua",
   "block.valleycraft.ornate_obsidian_table": "Ornate Obsidian Table",

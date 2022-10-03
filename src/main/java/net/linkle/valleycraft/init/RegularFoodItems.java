@@ -106,7 +106,6 @@ public class RegularFoodItems {
     //public static final Item ENCHANTED_CHORUS_FRUIT = new EnchantedFoodItem(settings().rarity(EPIC)4, 1.2f);
     public static final Item ENCHANTED_CHORUS_FRUIT = new EnchantedFoodItem(settings().rarity(EPIC), 4, 1.2f, StatusEffects.SLOW_FALLING);
     public static final Item ENCHANTED_APPLE_PIE = new EnchantedFoodItem(settings().rarity(EPIC), 6, 1.6f, StatusEffects.FIRE_RESISTANCE);
-    public static final Item SOUL_ITEM = new SoulItem(settings().rarity(UNCOMMON).group(VC_ITEMS));
 
     //1.1 planned - dw its not sea turtles!
     //public static final Item COOKED_TURTLE = new FoodItem(settings(), 8, 0.6f);
@@ -208,7 +207,6 @@ public class RegularFoodItems {
         Reg.register("moblin_elixer", MOBLIN_ELIXER);
         Reg.register("enchanted_apple_pie", ENCHANTED_APPLE_PIE);
         Reg.register("enchanted_chorus_fruit", ENCHANTED_CHORUS_FRUIT);
-        Reg.register("soul_item", SOUL_ITEM);
     }
 
     private static Item.Settings settings() {
