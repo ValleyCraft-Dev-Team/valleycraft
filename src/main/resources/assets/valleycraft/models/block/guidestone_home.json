@@ -5,7 +5,8 @@
 		"2": "valleycraft:block/guidestone_h",
 		"3": "valleycraft:block/guidestone_m",
 		"4": "valleycraft:block/guidestone_o",
-		"7": "valleycraft:block/guidestone_top"
+		"7": "valleycraft:block/guidestone_top",
+		"particle": "valleycraft:block/erdcobblestone"
 	},
 	"elements": [
 		{

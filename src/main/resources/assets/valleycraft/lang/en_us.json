@@ -10,6 +10,7 @@
   "itemGroup.valleycraft.clothing": "VC: Clothing",
 
   "item.valley.broken.tooltip": "Broken",
+  "block.valley.defective.tooltip": "Broken beyond repair.",
 
   "nourishing_items": "§6",
   "block.valleycraft.shivercap": "§6Shivercap",
@@ -63,6 +64,8 @@
   "item.valleycraft.sharp_flint": "§aSharp Flint",
   "item.valleycraft.hefty_rock": "§aHefty Rock",
   "item.valleycraft.amber": "Amber",
+  "item.valleycraft.rusted_sword": "Rusty Sword",
+  "block.valleycraft.sword_block": "Lodged Rusty Sword",
 
   "item.valleycraft.agitator": "Redstone Agitator",
   "item.valleycraft.nether_coal": "Anthracite",
@@ -93,6 +96,7 @@
   "item.valleycraft.book_straya_vol_five": "§cStraya's History of the Overworld: Vol 5",
   "item.valleycraft.book_hex": "§cHex's Logbook",
   "item.valleycraft.book_aether": "§cEdison Wrenk's Recipe Book",
+  "block.valleycraft.defective_spawner": "Defective Spawner",
 
   "uncommon_items": "yellow",
   "item.valleycraft.rune_etching_blade": "Rune Etching Blade",
@@ -107,6 +111,7 @@
   "block.valleycraft.ornate_obsidian_table": "Ornate Obsidian Table",
   "item.valleycraft.thermal_blaze_core": "Thermal Blaze Core",
   "item.valleycraft.visor": "Golemancer Smithing Mask",
+  "item.valleycraft.strange_catalyst": "Radiating Catalyst",
 
   "item.valleycraft.bikini": "Wretch's Femme Undergarments",
   "item.valleycraft.bikini_masc": "Wretch's Masc Undergarments",
@@ -141,6 +146,15 @@
   "block.valleycraft.empty_bookshelf": "Empty Shelf",
   "block.valleycraft.potion_bookshelf": "Potion Shelf",
   "block.valleycraft.anthro_bookshelf": "Archaeology Shelf",
+
+  "block.valleycraft.guidestone": "Boundary Stone",
+  "block.valleycraft.guidestone_arrow": "Direction Boundary Stone",
+  "block.valleycraft.guidestone_home": "Home Boundary Stone",
+  "block.valleycraft.guidestone_interest": "Interest Boundary Stone",
+  "block.valleycraft.guidestone_danger": "Danger Boundary Stone",
+  "block.valleycraft.crate": "Crate",
+  "container.valleycraft.crate": "Crate",
+
 
   "block.valleycraft.sprinkler": "Sprinkler",
 

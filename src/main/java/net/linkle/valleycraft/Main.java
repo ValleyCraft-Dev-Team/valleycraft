@@ -23,10 +23,10 @@ public class Main implements ModInitializer {
 		ModNaturalBlocks.initialize();
 		ModBlockEntities.initialize();
 		ModFluids.initialize();
-		ModBlocks.initialize();
 		ModItems.initialize();
 		ModTools.initialize();
-		
+		ModBlocks.initialize();
+
 		Contents.initialize();
 		TreeConfigFeatures.initialize();
 		

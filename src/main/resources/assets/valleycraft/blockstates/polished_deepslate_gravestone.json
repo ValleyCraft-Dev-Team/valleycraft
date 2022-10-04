@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=north": {
+      "y": 0,
+      "model": "valleycraft:block/polished_deepslate_gravestone"
+    },
+    "facing=south": {
+      "y": 180,
+      "model": "valleycraft:block/polished_deepslate_gravestone"
+    },
+    "facing=east": {
+      "y": 90,
+      "model": "valleycraft:block/polished_deepslate_gravestone"
+    },
+    "facing=west": {
+      "y": 270,
+      "model": "valleycraft:block/polished_deepslate_gravestone"
+    },
+    "facing=up": {
+      "model": "valleycraft:block/polished_deepslate_gravestone"
+    },
+    "facing=down": {
+      "model": "valleycraft:block/polished_deepslate_gravestone"
+    }
+  }
+}

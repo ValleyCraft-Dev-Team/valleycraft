@@ -11,8 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
-import static net.minecraft.util.Rarity.EPIC;
-import static net.minecraft.util.Rarity.UNCOMMON;
+import static net.minecraft.util.Rarity.*;
 
 import net.linkle.valleycraft.armors.ArmorMats;
 
@@ -82,6 +81,9 @@ public class ModItems {
     public static final Item SOUL_ITEM = new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS));
     public static final Item SOUL_ITEM_PET = new SoulItem(itemSettings().rarity(EPIC).group(BOOKS));
 
+    public static final Item STRANGE_CATALYST = new Item(itemSettings().group(VC_ITEMS).rarity(RARE));
+    public static final Item ALLOYED_DIAMOND_INGOT = new Item(itemSettings().group(VC_ITEMS));
+
     public static void initialize() {
         ModBookItems.initialize();
 
@@ -126,6 +128,7 @@ public class ModItems {
         Reg.register("hot_plate", HOT_PLATE);
         Reg.register("agitator", AGITATOR);
         Reg.register("thermal_blaze_core", THERMAL);
+        Reg.register("strange_catalyst", STRANGE_CATALYST);
 
         Reg.register("big_bottle", BIG_BOTTLE);
         Reg.register("bb_snail", BB_SNAIL);

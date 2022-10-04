@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"5": "valleycraft:block/guidestone_blank",
-		"7": "valleycraft:block/guidestone_top"
+		"7": "valleycraft:block/guidestone_top",
+		"particle": "valleycraft:block/erdcobblestone"
 	},
 	"elements": [
 		{

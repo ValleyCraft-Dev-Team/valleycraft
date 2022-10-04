@@ -10,6 +10,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
 import static net.linkle.valleycraft.init.ModGroups.BOOKS;
@@ -40,6 +41,7 @@ public class ModBlocks {
     public static final Block CANVAS_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET));
     public static final Block CANVAS_CARPET = new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET));
     public static final Block CURTAIN = new CurtainBlock();
+    public static final Block DEFECTIVE_SPAWNER = new DefectiveBlock(Block.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.METAL).strength(5f, 5.0f).nonOpaque());
 
     public static final Block LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.TERRACOTTA_ORANGE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
     public static final Block BLACK_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLACK).strength(0.8f).sounds(BlockSoundGroup.WOOL));
@@ -72,6 +74,7 @@ public class ModBlocks {
     public static final Block WATTLE_STOOL = new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
     public static final Block WATTLE_CHAIR = new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
     public static final Block STUCK_ARROW_BLOCK = new ArrowBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BAMBOO).noCollision());
+    public static final Block SWORD_BLOCK = new SwordBlock(Block.Settings.copy(Blocks.IRON_BLOCK).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN));
     public static final Block GHOST_PUMPKIN_CARVED = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always));
     public static final Block GHOST_JACK_O_LANTERN = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().luminance(15).allowsSpawning(ModBlocks::always));
 
@@ -123,6 +126,15 @@ public class ModBlocks {
 
     public static final Block CRATE = new CrateBlock(Block.Settings.copy(Blocks.BARREL));
 
+    public static final Block MARKER_GRAVE = new GraveBlock(Block.Settings.copy(Blocks.STONE_BRICKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.DEEPSLATE));
+    public static final Block MARKER_GRAVE_PET = new GraveBlock(Block.Settings.copy(Blocks.STONE_BRICKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.DEEPSLATE));
+    public static final Block ERD_GRAVE = new GraveBlock(Block.Settings.copy(Blocks.STONE_BRICKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.DEEPSLATE));
+    public static final Block ERD_GRAVE_PET = new GraveBlock(Block.Settings.copy(Blocks.STONE_BRICKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.DEEPSLATE));
+    //public static final Block SMOOTH_STONE_GRAVE = new GraveBlock(Block.Settings.copy(Blocks.STONE_BRICKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.DEEPSLATE));
+    //public static final Block SMOOTH_STONE_GRAVE_PET = new GraveBlock(Block.Settings.copy(Blocks.STONE_BRICKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.DEEPSLATE));
+    //public static final Block POLISHED_GRAVE = new GraveBlock(Block.Settings.copy(Blocks.STONE_BRICKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.DEEPSLATE));
+    //public static final Block POLISHED_GRAVE_PET = new GraveBlock(Block.Settings.copy(Blocks.STONE_BRICKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.DEEPSLATE));
+
     public static void initialize() {
         //furniture
         Reg.registerWithItem("stablehand_station", STABLEHAND, itemSettings().group(NON_NATURAL_BLOCKS));
@@ -152,13 +164,14 @@ public class ModBlocks {
 
         //odd blocks go here
         Reg.registerWithItem("arrow_block", STUCK_ARROW_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("sword_block", SWORD_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
         Reg.registerWithItem("glowsquid_lantern", GLOWSQUID_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof());
+        Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings().rarity(Rarity.RARE).group(BOOKS).fireproof());
+        Reg.registerWithItem("defective_spawner", DEFECTIVE_SPAWNER, itemSettings().rarity(Rarity.RARE).group(BOOKS).fireproof());
 
         //redstonery
         Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings().group(NON_NATURAL_BLOCKS));
-
 
         //wood types
         //wattle and daub
@@ -192,6 +205,17 @@ public class ModBlocks {
         //carved
         Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i-> EquipmentSlot.HEAD).group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("ghost_jack_o_lantern", GHOST_JACK_O_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
+
+        //tombstones
+        Reg.registerWithItem("grave_marker", MARKER_GRAVE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("grave_marker_pet", MARKER_GRAVE_PET, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("erd_stone_gravestone", ERD_GRAVE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("erd_stone_gravestone_pet", ERD_GRAVE_PET, itemSettings().group(NON_NATURAL_BLOCKS));
+        //Reg.registerWithItem("smooth_stone_gravestone", SMOOTH_STONE_GRAVE, itemSettings().group(NON_NATURAL_BLOCKS));
+        //Reg.registerWithItem("smooth_stone_gravestone_pet", SMOOTH_STONE_GRAVE_PET, itemSettings().group(NON_NATURAL_BLOCKS));
+        //Reg.registerWithItem("polished_deepslate_gravestone", POLISHED_GRAVE, itemSettings().group(NON_NATURAL_BLOCKS));
+        //Reg.registerWithItem("polished_deepslate_gravestone_pet", POLISHED_GRAVE_PET, itemSettings().group(NON_NATURAL_BLOCKS));
+
         //bales
         Reg.registerWithItem("glow_kelp_block", GLOW_KELP_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("orange_kelp_block", ORANGE_KELP_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));

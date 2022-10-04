@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=north": {
+      "y": 0,
+      "model": "valleycraft:block/erd_gravestone_pet"
+    },
+    "facing=south": {
+      "y": 180,
+      "model": "valleycraft:block/erd_gravestone_pet"
+    },
+    "facing=east": {
+      "y": 90,
+      "model": "valleycraft:block/erd_gravestone_pet"
+    },
+    "facing=west": {
+      "y": 270,
+      "model": "valleycraft:block/erd_gravestone_pet"
+    },
+    "facing=up": {
+      "model": "valleycraft:block/erd_gravestone_pet"
+    },
+    "facing=down": {
+      "model": "valleycraft:block/erd_gravestone_pet"
+    }
+  }
+}

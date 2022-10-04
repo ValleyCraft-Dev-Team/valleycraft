@@ -18,6 +18,7 @@ public class ModTools {
     public static final Item BRANCH = new BranchToolItem(new BranchToolMaterial(), 3, -2.0f);
     public static final Item FLINT = new FlintToolItem(new FlintToolMaterial());
     public static final Item HEFTY_ROCK = new RockToolItem(new RockToolMaterial());
+    public static final Item RUSTY_SWORD = new RustySwordItem(new RustySwordMaterial(),4, -2.4f);
 
     public static final Item CORAL_KNIFE = new CoralDaggerItem(new CoralDaggerToolMaterial(), 3, -1.4f);
     public static final Item CAVE_FISHERS_RAPIER = new CaveFisherSwordItem(new CaveFisherToolMaterial(), 4, -2.4f);
@@ -43,6 +44,7 @@ public class ModTools {
         Reg.register("branch", BRANCH);
         Reg.register("sharp_flint", FLINT);
         Reg.register("hefty_rock", HEFTY_ROCK);
+        Reg.register("rusted_sword", RUSTY_SWORD);
 
         //Knives
         Reg.register("knife_wooden", new KnifeBase(ToolMaterials.WOOD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));

@@ -26,7 +26,7 @@ implements EnchantmentHandler {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add( new TranslatableText("item.valley.broken.tooltip").formatted(Formatting.GRAY) );
+        tooltip.add( new TranslatableText("item.valley.broken.tooltip").formatted(Formatting.GRAY));
     }
 
     //Make the sword accept Impaling
