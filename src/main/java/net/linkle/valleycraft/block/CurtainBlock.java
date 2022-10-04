@@ -93,7 +93,8 @@ public class CurtainBlock extends HorizontalWithWaterBlock {
     
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        return !world.getBlockState(pos.offset(state.get(FACING).getOpposite())).isAir();
+        var otherState = world.getBlockState(pos.offset(state.get(FACING).getOpposite()));
+        return !otherState.isAir() && !otherState.getMaterial().isReplaceable();
     }
     
     @Override

@@ -20,7 +20,7 @@ public class ModBlocks {
     public static final Block PRIMSTEEL_TILED_PLATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE).hardness(2));
     public static final Block MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS).hardness(2));
-    public static final Block IRON_GRATE = new BlockWithWater(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
+    public static final Block IRON_GRATE = new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block PRIMSTEEL_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
     public static final Block VEX_LANTERN = new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN));
     public static final Block ROSEGOLD_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
@@ -28,7 +28,7 @@ public class ModBlocks {
     public static final Block RAW_GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
     public static final Block ANTHRACITE_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK).strength(4.2f, 5.0f));
     public static final Block AMBER_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
-    public static final Block GOLEMITE_GRATE = new BlockWithWater(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
+    public static final Block GOLEMITE_GRATE = new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block GOLEMITE_LADDER = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
     public static final Block ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS).hardness(2));
     public static final Block GLOWSQUID_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 12));
@@ -66,14 +66,14 @@ public class ModBlocks {
 
     public static final Block ANCIENT_WAGON_WHEEL = new WagonWheelBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
     public static final Block ANCIENT_WAGON_WHEEL_PLATFORM = new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
-    public static final Block ANCIENT_WAGON_WHEEL_TABLE = new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
-    public static final Block WATTLE_TABLE = new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
-    public static final Block WATTLE_TABLE_CLOTHE = new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+    public static final Block ANCIENT_WAGON_WHEEL_TABLE = new WagonWheelTableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+    public static final Block WATTLE_TABLE = new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+    public static final Block WATTLE_TABLE_CLOTHE = new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
     public static final Block WATTLE_STOOL = new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
     public static final Block WATTLE_CHAIR = new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
 
-    public static final Block STUCK_SWORD_BLOCK = new SwordBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN).noCollision());
-    public static final Block STUCK_ARROW_BLOCK = new ArrowBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BAMBOO).noCollision());
+    public static final Block STUCK_SWORD_BLOCK = new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN).noCollision());
+    public static final Block STUCK_ARROW_BLOCK = new ArrowBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BAMBOO).noCollision());
     public static final Block GHOST_PUMPKIN_CARVED = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always));
     public static final Block GHOST_JACK_O_LANTERN = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().luminance(15).allowsSpawning(ModBlocks::always));
 
