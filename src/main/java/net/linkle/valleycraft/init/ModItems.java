@@ -78,8 +78,8 @@ public class ModItems {
     public static final Item PIG_HIDE = new Item(itemSettings().group(VC_ITEMS));
     public static final Item AMBER = new Item(itemSettings().group(VC_ITEMS));
 
-    public static final Item SOUL_ITEM = new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS));
-    public static final Item SOUL_ITEM_PET = new SoulItem(itemSettings().rarity(EPIC).group(BOOKS));
+    public static final Item SOUL_ITEM = new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof());
+    public static final Item SOUL_ITEM_PET = new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof());
 
     public static final Item STRANGE_CATALYST = new Item(itemSettings().group(VC_ITEMS).rarity(RARE));
 

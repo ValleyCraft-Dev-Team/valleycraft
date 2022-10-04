@@ -129,7 +129,7 @@ public class ModBlocks {
     public static final Block GRAVE_MARKER_PET = new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(2).nonOpaque());
 
     public static final Block CRATE = new CrateBlock(Block.Settings.copy(Blocks.BARREL));
-    public static final Block DEFECTIVE_SPAWNER = new DefectiveBlock(Block.Settings.copy(Blocks.IRON_BLOCK));
+    public static final Block DEFECTIVE_SPAWNER = new DefectiveBlock(Block.Settings.copy(Blocks.IRON_BLOCK).nonOpaque());
 
     public static void initialize() {
         //furniture
@@ -159,16 +159,16 @@ public class ModBlocks {
         Reg.registerWithItem("guidestone_danger", GUIDESTONE_DANGER, itemSettings().group(NON_NATURAL_BLOCKS));
 
         //odd blocks go here
-        Reg.registerWithItem("sword_block", STUCK_SWORD_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.RARE));
+        Reg.registerWithItem("sword_block", STUCK_SWORD_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
         Reg.registerWithItem("arrow_block", STUCK_ARROW_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("glowsquid_lantern", GLOWSQUID_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof());
         Reg.registerWithItem("defective_spawner", DEFECTIVE_SPAWNER, itemSettings().rarity(Rarity.RARE).maxCount(64).group(BOOKS).fireproof());
 
-        Reg.registerWithItem("grave_marker", GRAVE_MARKER, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("grave_marker_pet", GRAVE_MARKER_PET, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("erd_stone_gravestone", ERDSTONE_GRAVE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("erd_stone_gravestone_pet", ERDSTONE_GRAVE_PET, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("grave_marker", GRAVE_MARKER, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.UNCOMMON));
+        Reg.registerWithItem("grave_marker_pet", GRAVE_MARKER_PET, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.EPIC));
+        Reg.registerWithItem("erd_stone_gravestone", ERDSTONE_GRAVE, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.UNCOMMON));
+        Reg.registerWithItem("erd_stone_gravestone_pet", ERDSTONE_GRAVE_PET, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.EPIC));
 
         //redstonery
         Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));

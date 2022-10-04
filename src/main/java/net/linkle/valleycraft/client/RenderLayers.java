@@ -147,6 +147,7 @@ class RenderLayers {
         put(ERDSTONE_GRAVE_PET, cullout);
         put(DEFECTIVE_SPAWNER, cullout);
         put(STUCK_SWORD_BLOCK, cullout);
+        put(SOULSPORE, cullout);
 
         put(SLUDGE_FLUID, translucent);
     }

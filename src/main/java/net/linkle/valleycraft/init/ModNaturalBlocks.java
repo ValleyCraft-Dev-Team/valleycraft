@@ -4,6 +4,7 @@ import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.LilyPadItem;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
@@ -52,6 +53,7 @@ public class ModNaturalBlocks {
     public static final Block GODDESS_LILY = new ModPlantBlock();
     public static final Block HONEYCLUSTER = new ModPlantBlock();
     public static final Block STALWART_SHROOM = new ModPlantBlock();
+    public static final Block SOULSPORE = new ModPlantBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.GLOW_LICHEN)).ground(BlockPres.STONE);
 
     public static final Block IRONSHROOM = new ModPlantBlock();
     public static final Block JUNGLE_CAP = new ModPlantBlock();
@@ -214,6 +216,7 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("gilded_cap", GILDED_CAP, itemSettings());
         Reg.registerWithItem("ironshroom", IRONSHROOM, itemSettings());
         Reg.registerWithItem("rooted_watcher", ROOTED_WATCHER, itemSettings());
+        Reg.registerWithItem("soulspore", SOULSPORE, itemSettings().rarity(Rarity.UNCOMMON));
 
         Reg.registerWithItem("short_grass", SHORT_GRASS, itemSettings());
         Reg.registerWithItem("snowflower", SNOWFLOWER, itemSettings());

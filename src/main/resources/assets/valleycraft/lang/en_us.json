@@ -11,7 +11,7 @@
 
   "item.valley.broken.tooltip": "Broken",
   "block.valleycraft.defective_spawner.tooltip": "Broken beyond repair. It's only",
-  "block.valleycraft.defective_spawner.tooltip_2": "use is now purely decorative.",
+  "block.valleycraft.defective_spawner.tooltip_2": "use now is purely decorative.",
 
   "nourishing_items": "§6",
   "block.valleycraft.shivercap": "§6Shivercap",
@@ -107,6 +107,7 @@
   "item.valleycraft.trader_sandals": "Wandering Trader Sandals",
   "item.valleycraft.soul_item": "Lost Soul",
   "item.valleycraft.soul_item_pet": "Lost Soul of a Friend",
+  "block.valleycraft.soulspore": "Soulspore Mushroom",
 
   "rare_items": "aqua",
   "block.valleycraft.ornate_obsidian_table": "Ornate Obsidian Table",
