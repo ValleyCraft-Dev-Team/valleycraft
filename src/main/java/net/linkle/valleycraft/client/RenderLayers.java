@@ -149,6 +149,9 @@ class RenderLayers {
         put(STUCK_SWORD_BLOCK, cullout);
         put(SOULSPORE, cullout);
 
+        put(BROWN_CLAY_POT, cullout);
+        put(BLUE_CLAY_POT, cullout);
+
         put(SLUDGE_FLUID, translucent);
     }
 

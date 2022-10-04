@@ -53,7 +53,7 @@ public class ModNaturalBlocks {
     public static final Block GODDESS_LILY = new ModPlantBlock();
     public static final Block HONEYCLUSTER = new ModPlantBlock();
     public static final Block STALWART_SHROOM = new ModPlantBlock();
-    public static final Block SOULSPORE = new ModPlantBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.GLOW_LICHEN)).ground(BlockPres.STONE);
+    public static final Block SOULSPORE = new ModPlantBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).ground(BlockPres.STONE);
 
     public static final Block IRONSHROOM = new ModPlantBlock();
     public static final Block JUNGLE_CAP = new ModPlantBlock();
@@ -112,6 +112,7 @@ public class ModNaturalBlocks {
 
     public static final Block BONE_JOINT = new Block(Block.Settings.copy(Blocks.BONE_BLOCK));
     public static final Block ROCKS = new RockBlock();
+    public static final Block FLINT_ROCKS = new RockBlock();
 
     public static final Block CLARET_LEAF = new ModPlantBlock();
     public static final Block STICKY_SHROOM = new ModPlantBlock();
@@ -321,6 +322,7 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("volcanic_stone", VOLCANIC_STONE, itemSettings());
         Reg.registerWithItem("volcanic_ash", VOLCANIC_ASH, itemSettings());
         Reg.registerWithItem("rocks", ROCKS, itemSettings().group(ModGroups.VC_ITEMS));
+        Reg.registerWithItem("flint_rocks", FLINT_ROCKS, itemSettings().group(FLORA_GROUP));
         Reg.registerWithItem("bone_joint", BONE_JOINT, itemSettings());
 
         Reg.registerWithItem("erdstone", ERDSTONE, itemSettings());

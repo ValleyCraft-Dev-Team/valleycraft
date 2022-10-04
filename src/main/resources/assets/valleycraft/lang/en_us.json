@@ -108,6 +108,8 @@
   "item.valleycraft.soul_item": "Lost Soul",
   "item.valleycraft.soul_item_pet": "Lost Soul of a Friend",
   "block.valleycraft.soulspore": "Soulspore Mushroom",
+  "block.valleycraft.brown_clay_pot": "Ancient Brown Clay Pot",
+  "block.valleycraft.blue_clay_pot": "Ancient Blue Clay Pot",
 
   "rare_items": "aqua",
   "block.valleycraft.ornate_obsidian_table": "Ornate Obsidian Table",
@@ -305,6 +307,7 @@
   "block.valleycraft.ghost_pumpkin": "Ghost Pumpkin",
   "block.valleycraft.bone_joint": "Bone Joint Block",
   "block.valleycraft.rocks": "Rock",
+  "block.valleycraft.flint_rocks": "Flint Rock Pile",
 
   "block.valleycraft.canvas_block": "Canvas Block",
   "block.valleycraft.canvas_carpet": "Canvas Carpet",

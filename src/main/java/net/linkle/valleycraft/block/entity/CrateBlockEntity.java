@@ -6,13 +6,12 @@ import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.BlockPos;
 
-public class CrateEntity extends BarrelBlockEntity {
-    public CrateEntity(BlockPos pos, BlockState state) {
+public class CrateBlockEntity extends BarrelBlockEntity {
+    public CrateBlockEntity(BlockPos pos, BlockState state) {
         super(pos, state);
     }
 
     protected Text getContainerName() {
         return new TranslatableText("container.valleycraft.crate");
     }
-
 }

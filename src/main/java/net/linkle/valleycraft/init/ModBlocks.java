@@ -131,6 +131,9 @@ public class ModBlocks {
     public static final Block CRATE = new CrateBlock(Block.Settings.copy(Blocks.BARREL));
     public static final Block DEFECTIVE_SPAWNER = new DefectiveBlock(Block.Settings.copy(Blocks.IRON_BLOCK).nonOpaque());
 
+    public static final Block BROWN_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.NETHER_BRICKS));
+    public static final Block BLUE_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.NETHER_BRICKS));
+
     public static void initialize() {
         //furniture
         Reg.registerWithItem("stablehand_station", STABLEHAND, itemSettings().group(NON_NATURAL_BLOCKS));
@@ -169,6 +172,10 @@ public class ModBlocks {
         Reg.registerWithItem("grave_marker_pet", GRAVE_MARKER_PET, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.EPIC));
         Reg.registerWithItem("erd_stone_gravestone", ERDSTONE_GRAVE, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.UNCOMMON));
         Reg.registerWithItem("erd_stone_gravestone_pet", ERDSTONE_GRAVE_PET, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.EPIC));
+
+        //clay pots go here (not the baking item one)
+        Reg.registerWithItem("brown_clay_pot", BROWN_CLAY_POT, itemSettings().group(BOOKS).rarity(Rarity.RARE));
+        Reg.registerWithItem("blue_clay_pot", BLUE_CLAY_POT, itemSettings().group(BOOKS).rarity(Rarity.RARE));
 
         //redstonery
         Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));
