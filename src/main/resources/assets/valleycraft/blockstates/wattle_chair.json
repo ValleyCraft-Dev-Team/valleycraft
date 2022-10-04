@@ -1,7 +1,6 @@
 {
   "variants": {
     "facing=north": {
-      "y": 0,
       "model": "valleycraft:block/wattle_chair"
     },
     "facing=south": {
@@ -14,12 +13,6 @@
     },
     "facing=west": {
       "y": 270,
-      "model": "valleycraft:block/wattle_chair"
-    },
-    "facing=up": {
-      "model": "valleycraft:block/wattle_chair"
-    },
-    "facing=down": {
       "model": "valleycraft:block/wattle_chair"
     }
   }

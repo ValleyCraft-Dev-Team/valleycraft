@@ -15,12 +15,6 @@
     "facing=west": {
       "y": 270,
       "model": "valleycraft:block/guidestone_home"
-    },
-    "facing=up": {
-      "model": "valleycraft:block/guidestone_home"
-    },
-    "facing=down": {
-      "model": "valleycraft:block/guidestone_home"
     }
   }
 }

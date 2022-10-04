@@ -15,12 +15,6 @@
     "facing=west": {
       "y": 270,
       "model": "valleycraft:block/guidestone_danger"
-    },
-    "facing=up": {
-      "model": "valleycraft:block/guidestone_danger"
-    },
-    "facing=down": {
-      "model": "valleycraft:block/guidestone_danger"
     }
   }
 }
