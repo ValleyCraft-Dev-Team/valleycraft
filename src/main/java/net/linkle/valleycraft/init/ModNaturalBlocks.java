@@ -124,7 +124,15 @@ public class ModNaturalBlocks {
     public static final Block LIVING_BUSH = new ModPlantBlock();
 
     public static final Block BIG_FERN = new ModPlantBlock();
-    public static final Block FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
+    public static final Block SMALLEST_LILYPADS = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
+    public static final Block SMALL_LILYPADS = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
+    public static final Block SMALL_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
+    public static final Block YELLOW_FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
+    public static final Block WHITE_FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
+    public static final Block RED_FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
+    public static final Block PURPLE_FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
+    public static final Block PINK_FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
+    public static final Block BLUE_FLOWERING_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
     public static final Block ALGAE = new AlgaeBlock();
     public static final Block GLOW_KELP = new GlowKelpBlock();
     public static final Block GLOW_KELP_PLANT = new GlowKelpPlantBlock();
@@ -246,8 +254,24 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("lush_bush", LIVING_BUSH, itemSettings());
         
         Reg.registerWithItem("big_fern", BIG_FERN, itemSettings());
-        Reg.register("flowering_lilypad", FLOWERING_LILYPAD);
-        Reg.register("flowering_lilypad", new LilyPadItem(FLOWERING_LILYPAD, itemSettings()));
+        Reg.register("smallest_lilypads", SMALLEST_LILYPADS);
+        Reg.register("smallest_lilypads", new LilyPadItem(SMALLEST_LILYPADS, itemSettings()));
+        Reg.register("small_lilypads", SMALL_LILYPADS);
+        Reg.register("small_lilypads", new LilyPadItem(SMALL_LILYPADS, itemSettings()));
+        Reg.register("small_lilypad", SMALL_LILYPAD);
+        Reg.register("small_lilypad", new LilyPadItem(SMALL_LILYPAD, itemSettings()));
+        Reg.register("yellow_flowering_lilypad", YELLOW_FLOWERING_LILYPAD);
+        Reg.register("yellow_flowering_lilypad", new LilyPadItem(YELLOW_FLOWERING_LILYPAD, itemSettings()));
+        Reg.register("white_flowering_lilypad", WHITE_FLOWERING_LILYPAD);
+        Reg.register("white_flowering_lilypad", new LilyPadItem(WHITE_FLOWERING_LILYPAD, itemSettings()));
+        Reg.register("red_flowering_lilypad", RED_FLOWERING_LILYPAD);
+        Reg.register("red_flowering_lilypad", new LilyPadItem(RED_FLOWERING_LILYPAD, itemSettings()));
+        Reg.register("purple_flowering_lilypad", PURPLE_FLOWERING_LILYPAD);
+        Reg.register("purple_flowering_lilypad", new LilyPadItem(PURPLE_FLOWERING_LILYPAD, itemSettings()));
+        Reg.register("pink_flowering_lilypad", PINK_FLOWERING_LILYPAD);
+        Reg.register("pink_flowering_lilypad", new LilyPadItem(PINK_FLOWERING_LILYPAD, itemSettings()));
+        Reg.register("blue_flowering_lilypad", BLUE_FLOWERING_LILYPAD);
+        Reg.register("blue_flowering_lilypad", new LilyPadItem(BLUE_FLOWERING_LILYPAD, itemSettings()));
         
         Reg.register("gloom_berry", GLOOM_BERRY);
         Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);

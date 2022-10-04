@@ -9,7 +9,6 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
 
 import static net.linkle.valleycraft.init.ModGroups.BOOKS;
@@ -20,7 +19,7 @@ public class ModBlocks {
     public static final Block PRIMSTEEL_TILED_PLATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE).hardness(2));
     public static final Block MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS).hardness(2));
-    public static final Block IRON_GRATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
+    public static final Block IRON_GRATE = new BlockWithWater(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block PRIMSTEEL_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
     public static final Block VEX_LANTERN = new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN));
     public static final Block ROSEGOLD_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
@@ -28,7 +27,7 @@ public class ModBlocks {
     public static final Block RAW_GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
     public static final Block ANTHRACITE_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK).strength(4.2f, 5.0f));
     public static final Block AMBER_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
-    public static final Block GOLEMITE_GRATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
+    public static final Block GOLEMITE_GRATE = new BlockWithWater(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
     public static final Block GOLEMITE_LADDER = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
     public static final Block ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS).hardness(2));
     public static final Block GLOWSQUID_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 12));

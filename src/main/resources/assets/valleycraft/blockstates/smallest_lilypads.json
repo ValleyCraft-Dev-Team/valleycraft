@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "valleycraft:block/smallest_lilypads"
+      },
+      {
+        "model": "valleycraft:block/smallest_lilypads",
+        "y": 90
+      },
+      {
+        "model": "valleycraft:block/smallest_lilypads",
+        "y": 180
+      },
+      {
+        "model": "valleycraft:block/smallest_lilypads",
+        "y": 270
+      }
+    ]
+  }
+}
