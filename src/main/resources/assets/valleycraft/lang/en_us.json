@@ -10,7 +10,8 @@
   "itemGroup.valleycraft.clothing": "VC: Clothing",
 
   "item.valley.broken.tooltip": "Broken",
-  "block.valley.defective.tooltip": "Broken beyond repair.",
+  "block.valleycraft.defective_spawner.tooltip": "Broken beyond repair. It's only",
+  "block.valleycraft.defective_spawner.tooltip_2": "use is now purely decorative.",
 
   "nourishing_items": "§6",
   "block.valleycraft.shivercap": "§6Shivercap",

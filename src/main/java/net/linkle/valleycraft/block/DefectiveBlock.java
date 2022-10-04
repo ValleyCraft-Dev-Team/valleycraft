@@ -17,6 +17,7 @@ public class DefectiveBlock extends Block {
 
     @Override
     public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add( new TranslatableText("block.valleycraft.defective.tooltip").formatted(Formatting.GRAY) );
+        tooltip.add( new TranslatableText("block.valleycraft.defective_spawner.tooltip").formatted(Formatting.GRAY) );
+        tooltip.add( new TranslatableText("block.valleycraft.defective_spawner.tooltip_2").formatted(Formatting.GRAY) );
     }
 }

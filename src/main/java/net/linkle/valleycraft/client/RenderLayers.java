@@ -141,12 +141,12 @@ class RenderLayers {
         put(GUIDESTONE_HOME, cullout);
         put(GUIDESTONE_INTEREST, cullout);
 
-        put(MARKER_GRAVE, cullout);
-        put(MARKER_GRAVE_PET, cullout);
-        put(ERD_GRAVE, cullout);
-        put(ERD_GRAVE_PET, cullout);
+        put(GRAVE_MARKER, cullout);
+        put(GRAVE_MARKER_PET, cullout);
+        put(ERDSTONE_GRAVE, cullout);
+        put(ERDSTONE_GRAVE_PET, cullout);
         put(DEFECTIVE_SPAWNER, cullout);
-        put(SWORD_BLOCK, cullout);
+        put(STUCK_SWORD_BLOCK, cullout);
 
         put(SLUDGE_FLUID, translucent);
     }

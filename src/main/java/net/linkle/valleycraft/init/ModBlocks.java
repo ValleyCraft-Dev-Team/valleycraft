@@ -7,6 +7,7 @@ import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
@@ -70,6 +71,8 @@ public class ModBlocks {
     public static final Block WATTLE_TABLE_CLOTHE = new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
     public static final Block WATTLE_STOOL = new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
     public static final Block WATTLE_CHAIR = new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+
+    public static final Block STUCK_SWORD_BLOCK = new SwordBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN).noCollision());
     public static final Block STUCK_ARROW_BLOCK = new ArrowBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BAMBOO).noCollision());
     public static final Block GHOST_PUMPKIN_CARVED = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always));
     public static final Block GHOST_JACK_O_LANTERN = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().luminance(15).allowsSpawning(ModBlocks::always));
@@ -120,7 +123,13 @@ public class ModBlocks {
     public static final Block GUIDESTONE_INTEREST = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
     public static final Block GUIDESTONE_DANGER = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
 
+    public static final Block ERDSTONE_GRAVE = new GraveBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
+    public static final Block ERDSTONE_GRAVE_PET = new GraveBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
+    public static final Block GRAVE_MARKER = new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(2).nonOpaque());
+    public static final Block GRAVE_MARKER_PET = new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(2).nonOpaque());
+
     public static final Block CRATE = new CrateBlock(Block.Settings.copy(Blocks.BARREL));
+    public static final Block DEFECTIVE_SPAWNER = new DefectiveBlock(Block.Settings.copy(Blocks.IRON_BLOCK));
 
     public static void initialize() {
         //furniture
@@ -150,14 +159,20 @@ public class ModBlocks {
         Reg.registerWithItem("guidestone_danger", GUIDESTONE_DANGER, itemSettings().group(NON_NATURAL_BLOCKS));
 
         //odd blocks go here
+        Reg.registerWithItem("sword_block", STUCK_SWORD_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.RARE));
         Reg.registerWithItem("arrow_block", STUCK_ARROW_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("glowsquid_lantern", GLOWSQUID_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof());
+        Reg.registerWithItem("defective_spawner", DEFECTIVE_SPAWNER, itemSettings().rarity(Rarity.RARE).maxCount(64).group(BOOKS).fireproof());
+
+        Reg.registerWithItem("grave_marker", GRAVE_MARKER, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("grave_marker_pet", GRAVE_MARKER_PET, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("erd_stone_gravestone", ERDSTONE_GRAVE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("erd_stone_gravestone_pet", ERDSTONE_GRAVE_PET, itemSettings().group(NON_NATURAL_BLOCKS));
 
         //redstonery
         Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings().group(NON_NATURAL_BLOCKS));
-
 
         //wood types
         //wattle and daub
