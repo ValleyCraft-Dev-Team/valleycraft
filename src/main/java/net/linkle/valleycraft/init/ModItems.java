@@ -82,7 +82,6 @@ public class ModItems {
     public static final Item SOUL_ITEM_PET = new SoulItem(itemSettings().rarity(EPIC).group(BOOKS));
 
     public static final Item STRANGE_CATALYST = new Item(itemSettings().group(VC_ITEMS).rarity(RARE));
-    public static final Item ALLOYED_DIAMOND_INGOT = new Item(itemSettings().group(VC_ITEMS));
 
     public static void initialize() {
         ModBookItems.initialize();
