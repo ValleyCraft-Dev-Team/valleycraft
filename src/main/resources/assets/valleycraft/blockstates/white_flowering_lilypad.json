@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "valleycraft:block/white_flowering_lilypad"
+      },
+      {
+        "model": "valleycraft:block/white_flowering_lilypad",
+        "y": 90
+      },
+      {
+        "model": "valleycraft:block/white_flowering_lilypad",
+        "y": 180
+      },
+      {
+        "model": "valleycraft:block/white_flowering_lilypad",
+        "y": 270
+      }
+    ]
+  }
+}

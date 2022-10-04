@@ -73,7 +73,15 @@ class RenderLayers {
         put(WILD_MINERS_LETTUCE, cullout);
         put(GLOOM_BERRY, cullout);
         put(GLOOM_BERRY_PLANT, cullout);
-        put(FLOWERING_LILYPAD, cullout);
+        put(SMALLEST_LILYPADS, cullout);
+        put(SMALL_LILYPADS, cullout);
+        put(SMALL_LILYPAD, cullout);
+        put(YELLOW_FLOWERING_LILYPAD, cullout);
+        put(WHITE_FLOWERING_LILYPAD, cullout);
+        put(RED_FLOWERING_LILYPAD, cullout);
+        put(PURPLE_FLOWERING_LILYPAD, cullout);
+        put(PINK_FLOWERING_LILYPAD, cullout);
+        put(BLUE_FLOWERING_LILYPAD, cullout);
         put(STICKY_SHROOM, cullout);
         put(PANFLOWERS, cullout);
         put(JUNGLE_BUSH, cullout);
