@@ -43,7 +43,7 @@ public class ArmorMats {
     public static final ArmorMat TRADER = new ArmorMat("trader", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER));
     public static final ArmorMat VILLAGER = new ArmorMat("villager", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER));
     public static final ArmorMat VISOR = new ArmorMat("visor", ints(3), 10, 15, equipChain(), items(Items.COPPER_INGOT));
-    
+
     public static void initialize() {
         
     }

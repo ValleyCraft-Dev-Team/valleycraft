@@ -277,7 +277,7 @@
   "block.valleycraft.yellow_lupine": "Yellow Lupine",
   "block.valleycraft.red_lupine": "Red Lupine",
   "block.valleycraft.goddess_lily": "Goddess Lily",
-  "block.valleycraft.claret_leaf": "Arteria Claret Leaf",
+  "block.valleycraft.claret_leaf": "Arterium Claret Leaf",
   "block.valleycraft.frostfern": "Frostfern",
 
   "block.valleycraft.black_tulip": "Black Tulip",
@@ -490,6 +490,9 @@
   "item.valleycraft.enchanted_apple_pie": "Enchanted Golden Apple Pie",
 
   "item.valleycraft.flour": "Flour",
+  "item.valleycraft.corn_flour": "Maize Flour",
+  "item.valleycraft.corn_bread_dough": "Maize Bread Dough",
+  "item.valleycraft.corn_bread": "Maize Bread",
 
   "item.valleycraft.fiber": "Plant Fiber",
   "item.valleycraft.book_cover": "Fiber Canvas",
@@ -563,5 +566,7 @@
   "item.valleycraft.woodcutter_axe_netherite": "Netherite Timbercutter Axe",
 
   "item.valleycraft.knife_coral_encrusted": "Coral Encrusted Knife",
-  "item.valleycraft.rapier_cave_fishers": "Cave-Fisher's Rapier"
+  "item.valleycraft.rapier_cave_fishers": "Cave-Fisher's Rapier",
+
+  "item.valleycraft.wooden_oar": "Wooden Oar"
 }

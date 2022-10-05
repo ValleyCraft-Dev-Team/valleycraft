@@ -51,7 +51,7 @@ class RenderLayers {
         put(SNOWFLOWER, cullout);
         put(SPROUT, cullout);
         put(THORNY_BUSH, cullout);
-        put(WARDING_SHROOM, cullout);
+        //put(WARDING_SHROOM, cullout);
         put(WEEPING_GHOST_WILLOW, cullout);
         put(WILD_BEET, cullout);
         put(WILD_CARROT, cullout);

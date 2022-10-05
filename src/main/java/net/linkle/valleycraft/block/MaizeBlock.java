@@ -71,7 +71,7 @@ public class MaizeBlock extends ModCropBlock {
     
     @Override
     protected int getGrowthAmount(World world) {
-        return world.random.nextInt(2, 4);
+        return world.random.nextInt(1, 2);
     }
     
     @Override
@@ -91,11 +91,11 @@ public class MaizeBlock extends ModCropBlock {
 
     @Override
     protected ItemStack getPickItem(Random random) {
-        return new ItemStack(IngredientFoodItems.MAIZE, random.nextInt(3, 5));
+        return new ItemStack(IngredientFoodItems.MAIZE, random.nextInt(2, 4));
     }
 
     @Override
     protected int getPickedMinAge() {
-        return 7;
+        return 10;
     }
 }

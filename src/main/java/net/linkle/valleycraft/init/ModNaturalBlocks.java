@@ -74,7 +74,7 @@ public class ModNaturalBlocks {
     public static final Block SNOWFLOWER = new ModPlantBlock();
     public static final Block SPROUT = new ModPlantBlock();
     public static final Block THORNY_BUSH = new ModPlantBlock();
-    public static final Block WARDING_SHROOM = new ModPlantBlock();
+    //public static final Block WARDING_SHROOM = new ModPlantBlock();
     public static final Block WEEPING_GHOST_WILLOW = new ModPlantBlock();
     public static final Block WILD_BEET = new ModPlantBlock();
     public static final Block WILD_CARROT = new ModPlantBlock();
@@ -210,7 +210,7 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("morel", MOREL, itemSettings());
         Reg.registerWithItem("shivercap", SHIVERCAP, itemSettings().group(INGREDIENTS));
         Reg.registerWithItem("stalwart_shroom", STALWART_SHROOM, itemSettings().group(INGREDIENTS));
-        Reg.registerWithItem("warding_shroom", WARDING_SHROOM, itemSettings());
+        //Reg.registerWithItem("warding_shroom", WARDING_SHROOM, itemSettings());
         Reg.registerWithItem("goop_cap", GOOP_CAP, itemSettings());
         Reg.registerWithItem("glow_cap", GLOW_CAP, itemSettings());
         Reg.registerWithItem("jungle_cap", JUNGLE_CAP, itemSettings());

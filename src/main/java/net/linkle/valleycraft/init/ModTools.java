@@ -4,10 +4,14 @@ import net.linkle.valleycraft.tool.environmental.*;
 import net.linkle.valleycraft.tool.knife.KnifeBase;
 import net.linkle.valleycraft.tool.knife.special.CoralDaggerItem;
 import net.linkle.valleycraft.tool.knife.special.CoralDaggerToolMaterial;
+import net.linkle.valleycraft.tool.shovel.special.OarItem;
+import net.linkle.valleycraft.tool.shovel.special.OarToolMaterial;
 import net.linkle.valleycraft.tool.sword.special.*;
 import net.linkle.valleycraft.tool.woodcutter_axe.WoodcutterAxeBase;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.item.Item;
+import net.minecraft.item.ShovelItem;
+import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterials;
 
 import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
@@ -19,6 +23,7 @@ public class ModTools {
     public static final Item FLINT = new FlintToolItem(new FlintToolMaterial());
     public static final Item HEFTY_ROCK = new RockToolItem(new RockToolMaterial());
     public static final Item RUSTY_SWORD = new RustySwordItem(new RustySwordMaterial(),4, -2.4f);
+    public static final Item OAR = new OarItem(new OarToolMaterial(),3, -2.5f);
 
     public static final Item CORAL_KNIFE = new CoralDaggerItem(new CoralDaggerToolMaterial(), 3, -1.4f);
     public static final Item CAVE_FISHERS_RAPIER = new CaveFisherSwordItem(new CaveFisherToolMaterial(), 4, -2.4f);
@@ -45,6 +50,9 @@ public class ModTools {
         Reg.register("sharp_flint", FLINT);
         Reg.register("hefty_rock", HEFTY_ROCK);
         Reg.register("rusted_sword", RUSTY_SWORD);
+
+        //Material technically
+        Reg.register("wooden_oar", OAR);
 
         //Knives
         Reg.register("knife_wooden", new KnifeBase(ToolMaterials.WOOD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));

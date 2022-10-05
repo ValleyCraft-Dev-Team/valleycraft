@@ -1,6 +1,6 @@
 {
   "parent": "valleycraft:block/maize",
   "textures": {
-    "texture": "valleycraft:block/maize_stage0"
+    "texture": "valleycraft:block/maize_stage_0"
   }
 }

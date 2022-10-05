@@ -93,6 +93,11 @@ public class ModArmors {
     //public static final Item PRIMSTEEL_LEGGINGS = new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
     //public static final Item PRIMSTEEL_BOOTS = new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.FEET, settings);
 
+    //public static final Item ROSEGOLD_HELMET = new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
+    //public static final Item ROSEGOLD_CHESTPLATE = new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
+    //public static final Item ROSEGOLD_LEGGINGS = new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
+    //public static final Item ROSEGOLD_BOOTS = new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.FEET, settings);
+
     public static void initialize() {
         //artifact armors
         Reg.register("moblin_talisman", MOBLIN_TALISMAN);
