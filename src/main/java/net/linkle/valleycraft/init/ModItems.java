@@ -77,6 +77,7 @@ public class ModItems {
     public static final Item DAUB = new Item(itemSettings().group(VC_ITEMS));
     public static final Item PIG_HIDE = new Item(itemSettings().group(VC_ITEMS));
     public static final Item AMBER = new Item(itemSettings().group(VC_ITEMS));
+    public static final Item ADVENTURINE_SHARDS = new Item(itemSettings().group(VC_ITEMS));
 
     public static final Item SOUL_ITEM = new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof());
     public static final Item SOUL_ITEM_PET = new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof());
@@ -110,6 +111,7 @@ public class ModItems {
         Reg.register("golemite_raw", GOLEMITE_RAW);
         Reg.register("golemite_nugget", GOLEMITE_NUGGET);
         Reg.register("amber", AMBER);
+        Reg.register("adventurine_shards", ADVENTURINE_SHARDS);
         Reg.register("anthracite", ANTHRACITE);
 
         Reg.register("mulch", MULCH);

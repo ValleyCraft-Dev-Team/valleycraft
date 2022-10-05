@@ -152,6 +152,9 @@ class RenderLayers {
         put(BROWN_CLAY_POT, cullout);
         put(BLUE_CLAY_POT, cullout);
 
+        put(ERDSTONE_WINDOW, cullout);
+        put(ERDSTONE_WINDOW_POWERED, cullout);
+
         put(SLUDGE_FLUID, translucent);
     }
 

@@ -158,7 +158,8 @@ public class ModNaturalBlocks {
     public static final Block CRYSTAL_CAVE_MOSS = new CaveMossBlock();
     public static final Block ERDCOBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLESTONE).hardness(2));
     public static final Block CRACKED_COBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLESTONE).hardness(2));
-    public static final Block ERDSTONE = new Block(Block.Settings.copy(Blocks.STONE).hardness(2));
+    public static final Block ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2));
+    public static final Block ADVENTURINE = new Block(Block.Settings.copy(Blocks.STONE).hardness(25).luminance(s ->1));
     public static final Block GOLEMITE_ERDSTONE_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE).hardness(2));
     public static final Block ERDSTONE_AMBER_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE).hardness(2));
     public static final Block ERDSTONE_FOSSIL_ORE = new Block(Block.Settings.copy(Blocks.IRON_ORE).hardness(2));
@@ -325,6 +326,7 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("flint_rocks", FLINT_ROCKS, itemSettings().group(FLORA_GROUP));
         Reg.registerWithItem("bone_joint", BONE_JOINT, itemSettings());
 
+        Reg.registerWithItem("adventurine", ADVENTURINE, itemSettings());
         Reg.registerWithItem("erdstone", ERDSTONE, itemSettings());
         Reg.registerWithItem("erdcobblestone", ERDCOBBLESTONE, itemSettings());
         Reg.registerWithItem("erdstone_amber_ore", ERDSTONE_AMBER_ORE, itemSettings());

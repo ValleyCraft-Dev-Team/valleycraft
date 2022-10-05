@@ -18,24 +18,24 @@ import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
 public class ModBlocks {
     public static final Block PRIMSTEEL_PLATE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block PRIMSTEEL_TILED_PLATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
-    public static final Block POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE).hardness(2));
-    public static final Block MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS).hardness(2));
-    public static final Block IRON_GRATE = new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
+    public static final Block POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
+    public static final Block MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
+    public static final Block IRON_GRATE = new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque());
     public static final Block PRIMSTEEL_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
     public static final Block VEX_LANTERN = new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN));
-    public static final Block ROSEGOLD_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
-    public static final Block RAW_PRIMSTEEL_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
-    public static final Block RAW_GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
-    public static final Block ANTHRACITE_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK).strength(4.2f, 5.0f));
-    public static final Block AMBER_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f));
-    public static final Block GOLEMITE_GRATE = new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.2f, 5.0f).nonOpaque());
+    public static final Block ROSEGOLD_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f));
+    public static final Block RAW_PRIMSTEEL_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f));
+    public static final Block RAW_GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f));
+    public static final Block ANTHRACITE_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK).strength(4.1f, 5.0f));
+    public static final Block AMBER_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f));
+    public static final Block GOLEMITE_GRATE = new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque());
     public static final Block GOLEMITE_LADDER = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
-    public static final Block ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS).hardness(2));
-    public static final Block GLOWSQUID_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 12));
+    public static final Block ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
+    public static final Block GLOWSQUID_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 11));
     public static final Block GOLEMITE_BARS = new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS));
     public static final Block GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block GOLEMITE_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
-    public static final Block ARID_MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.STONE_BRICKS).hardness(2));
+    public static final Block ARID_MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
     public static final Block SPRINKLER = new SprinklerBlock();
     public static final Block CANVAS_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET));
     public static final Block CANVAS_CARPET = new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET));
@@ -117,22 +117,42 @@ public class ModBlocks {
     public static final Block CARMINE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block LIMESTONE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
 
-    public static final Block GUIDESTONE = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
-    public static final Block GUIDESTONE_ARROW = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
-    public static final Block GUIDESTONE_HOME = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
-    public static final Block GUIDESTONE_INTEREST = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
-    public static final Block GUIDESTONE_DANGER = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
+    public static final Block GUIDESTONE = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque());
+    public static final Block GUIDESTONE_ARROW = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque());
+    public static final Block GUIDESTONE_HOME = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque());
+    public static final Block GUIDESTONE_INTEREST = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque());
+    public static final Block GUIDESTONE_DANGER = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque());
 
-    public static final Block ERDSTONE_GRAVE = new GraveBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
-    public static final Block ERDSTONE_GRAVE_PET = new GraveBlock(Block.Settings.copy(Blocks.STONE).hardness(2).nonOpaque());
-    public static final Block GRAVE_MARKER = new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(2).nonOpaque());
-    public static final Block GRAVE_MARKER_PET = new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(2).nonOpaque());
+    public static final Block ERDSTONE_GRAVE = new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque());
+    public static final Block ERDSTONE_GRAVE_PET = new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque());
+    public static final Block GRAVE_MARKER = new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque());
+    public static final Block GRAVE_MARKER_PET = new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque());
 
     public static final Block CRATE = new CrateBlock(Block.Settings.copy(Blocks.BARREL));
     public static final Block DEFECTIVE_SPAWNER = new DefectiveBlock(Block.Settings.copy(Blocks.IRON_BLOCK).nonOpaque());
 
     public static final Block BROWN_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.NETHER_BRICKS));
     public static final Block BLUE_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.NETHER_BRICKS));
+
+    public static final Block ERDSTONE_PILLAR = new PillarBlock(Block.Settings.copy(Blocks.QUARTZ_PILLAR).sounds(BlockSoundGroup.DEEPSLATE).hardness(1));
+    public static final Block ERDSTONE_TILES = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
+    public static final Block CHISELED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
+    public static final Block CHISELED_ERDSTONE_FACE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
+    public static final Block CHISELED_ERDSTONE_BRICK_FACE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
+    public static final Block ERDSTONE_WINDOW = new GlassBlock(Block.Settings.copy(Blocks.GLASS).sounds(BlockSoundGroup.DEEPSLATE).hardness(1).nonOpaque());
+    public static final Block PATTERNED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
+    public static final Block ERDSTONE_TARGET_BLOCK = new TargetBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1));
+    public static final Block ERDSTONE_DISPENSER = new DispenserBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1));
+
+    public static final Block POLISHED_ADVENTURINE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(25).resistance(2500f).luminance(s ->5));
+
+    public static final Block ERDSTONE_PILLAR_POWERED = new PillarBlock(Block.Settings.copy(Blocks.QUARTZ_PILLAR).sounds(BlockSoundGroup.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
+    public static final Block CHISELED_ERDSTONE_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
+    public static final Block ERDSTONE_TILES_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
+    public static final Block CHISELED_ERDSTONE_FACE_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
+    public static final Block ERDSTONE_BRICK_FACE_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
+    public static final Block ERDSTONE_WINDOW_POWERED = new GlassBlock(Block.Settings.copy(Blocks.GLASS).sounds(BlockSoundGroup.DEEPSLATE).hardness(50).resistance(2500f).nonOpaque().luminance(s ->3));
+    public static final Block PATTERNED_ERDSTONE_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
 
     public static void initialize() {
         //furniture
@@ -239,12 +259,36 @@ public class ModBlocks {
         Reg.registerWithItem("golemite_ladder", GOLEMITE_LADDER, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("golemite_bars", GOLEMITE_BARS, itemSettings().group(NON_NATURAL_BLOCKS));
 
-        //stones
+        //erdstone
         Reg.registerWithItem("polished_erdstone", POLISHED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("erdstone_bricks", ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("mossy_erdstone_bricks", MOSSY_ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("arid_mossy_erdstone_bricks", ARID_MOSSY_ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
 
+        Reg.registerWithItem("erdstone_pillar", ERDSTONE_PILLAR, itemSettings().group(NON_NATURAL_BLOCKS));
+
+        Reg.registerWithItem("erdstone_tiles", ERDSTONE_TILES, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("chiseled_erdstone", CHISELED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("chiseled_erdstone_face", CHISELED_ERDSTONE_FACE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("chiseled_erdstone_brick_face", CHISELED_ERDSTONE_BRICK_FACE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("erdstone_window", ERDSTONE_WINDOW, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("patterned_erdstone", PATTERNED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("erdstone_target_block", ERDSTONE_TARGET_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
+        Reg.registerWithItem("erdstone_dispenser", ERDSTONE_DISPENSER, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
+
+        //adventurine
+        Reg.registerWithItem("polished_adventurine", POLISHED_ADVENTURINE, itemSettings().group(NON_NATURAL_BLOCKS));
+
+        //adventurine infused erdstone
+        Reg.registerWithItem("erdstone_pillar_powered", ERDSTONE_PILLAR_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("erdstone_tiles_powered", ERDSTONE_TILES_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("chiseled_erdstone_powered", CHISELED_ERDSTONE_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("chiseled_erdstone_face_powered", CHISELED_ERDSTONE_FACE_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("chiseled_erdstone_brick_face_powered", ERDSTONE_BRICK_FACE_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("erdstone_window_powered", ERDSTONE_WINDOW_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("patterned_erdstone_powered", PATTERNED_ERDSTONE_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
+
+        //stones
         //polished stones
         Reg.registerWithItem("serpentinite_smooth", SERPENTINITE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("diabase_smooth", DIABASE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));

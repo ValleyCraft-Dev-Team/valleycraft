@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "valleycraft:block/polished_erdstone",
+    "front": "valleycraft:block/erdstone_dispenser",
+    "side": "valleycraft:block/polished_erdstone"
+  }
+}

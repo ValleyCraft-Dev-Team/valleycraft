@@ -165,15 +165,15 @@
   "block.valleycraft.vex_lantern": "Lantern-Caged Vex",
   "block.valleycraft.glowsquid_lantern": "Glow Squid Lantern",
 
-  "block.valleycraft.arid_mossy_erdstone_bricks": "Arid Mossy Erd Stone Bricks",
-  "block.valleycraft.mossy_erdstone_bricks": "Mossy Erd Stone Bricks",
+  "block.valleycraft.arid_mossy_erdstone_bricks": "Arid Mossy Erdstone Bricks",
+  "block.valleycraft.mossy_erdstone_bricks": "Mossy Erdstone Bricks",
   "block.valleycraft.arid_vines": "Arid Vines",
   "block.valleycraft.cave_moss": "Cave Moss",
   "block.valleycraft.crystal_cave_moss": "Crystal Cave Moss",
   "block.valleycraft.cracked_cobblestone": "Cracked Cobblestone",
   "block.valleycraft.erdcobblestone": "Erd Cobblestone",
-  "block.valleycraft.erdstone": "Erd Stone",
-  "block.valleycraft.erdstone_bricks": "Erd Stone Bricks",
+  "block.valleycraft.erdstone": "Erdstone",
+  "block.valleycraft.erdstone_bricks": "Erdstone Bricks",
   "block.valleycraft.golemite_bars": "Golemite Bars",
   "block.valleycraft.golemite_block": "Block of Golemite",
   "block.valleycraft.golemite_chain": "Golemite Chain",
@@ -191,21 +191,42 @@
   "block.valleycraft.golemite_ladder": "Golemite Ladder",
   "block.valleycraft.primsteel_ladder": "Primsteel Ladder",
   "block.valleycraft.iron_ladder": "Iron Ladder",
-  "block.valleycraft.polished_erdstone": "Polished Erd Stone",
+  "block.valleycraft.polished_erdstone": "Polished Erdstone",
+
+  "block.valleycraft.erdstone_pillar": "Erdstone Pillar",
+  "block.valleycraft.erdstone_tiles": "Erdstone Tiles",
+  "block.valleycraft.chiseled_erdstone": "Chiseled Erdstone",
+  "block.valleycraft.chiseled_erdstone_face": "Chiseled Erdstone Face",
+  "block.valleycraft.chiseled_erdstone_brick_face": "Chiseled Erdstone Brick Face",
+  "block.valleycraft.erdstone_window": "Erdstone and Primsteel Window",
+  "block.valleycraft.patterned_erdstone": "Large Erdstone Tiles",
+
+  "block.valleycraft.erdstone_target_block": "Ancient Erdstone Eye Sensor",
+  "block.valleycraft.erdstone_dispenser": "Ancient Erdstone Dispenser",
+
+  "block.valleycraft.polished_adventurine": "Polished Adventurine",
+
+  "block.valleycraft.erdstone_tiles_powered": "Imbued Erdstone Tiles",
+  "block.valleycraft.chiseled_erdstone_powered": "Imbued Chiseled Erdstone",
+  "block.valleycraft.chiseled_erdstone_face_powered": "Imbued Chiseled Erdstone Face",
+  "block.valleycraft.chiseled_erdstone_brick_face_powered": "Imbued Chiseled Erdstone Brick Face",
+  "block.valleycraft.erdstone_window_powered": "Imbued Erdstone and Primsteel Window",
+  "block.valleycraft.patterned_erdstone_powered": "Imbued Large Erdstone Tiles",
+  "block.valleycraft.erdstone_pillar_powered": "Imbued Erdstone Pillar",
 
   "block.valleycraft.amber_ore": "Amber Ore",
-  "block.valleycraft.erdstone_amber_ore": "Erd Stone Amber Ore",
+  "block.valleycraft.erdstone_amber_ore": "Erdstone Amber Ore",
   "block.valleycraft.deepslate_amber_ore": "Deepslate Amber Ore",
   "block.valleycraft.amber_block": "Amber Block",
   "block.valleycraft.fossil_ore": "Fossil Ore",
-  "block.valleycraft.erdstone_fossil_ore": "Erd Stone Fossil Ore",
+  "block.valleycraft.erdstone_fossil_ore": "Erdstone Fossil Ore",
   "block.valleycraft.deepslate_fossil_ore": "Deepslate Fossil Ore",
   "block.valleycraft.nether_fossil_ore": "Nether Fossil Ore",
   "block.valleycraft.anthracite_block": "Block of Anthracite",
   "block.valleycraft.raw_golemite_block": "Block of Raw Golemite",
   "block.valleycraft.raw_primsteel_block": "Block of Raw Primsteel",
   "block.valleycraft.rosegold_block": "Block of Rose Gold",
-  "block.valleycraft.erdstone_coal_ore": "Erd Stone Coal Ore",
+  "block.valleycraft.erdstone_coal_ore": "Erdstone Coal Ore",
 
   "block.valleycraft.apple_wood": "Apple Wood",
   "block.valleycraft.apple_log": "Apple Log",
@@ -568,5 +589,9 @@
   "item.valleycraft.knife_coral_encrusted": "Coral Encrusted Knife",
   "item.valleycraft.rapier_cave_fishers": "Cave-Fisher's Rapier",
 
-  "item.valleycraft.wooden_oar": "Wooden Oar"
+  "item.valleycraft.wooden_oar": "Wooden Oar",
+
+  "item.valleycraft.adventurine_shards": "Adventurine Shards",
+  "block.valleycraft.adventurine": "Adventurine"
+
 }

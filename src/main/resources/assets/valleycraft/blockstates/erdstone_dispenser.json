@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "valleycraft:block/erdstone_dispenser_vertical",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "valleycraft:block/erdstone_dispenser",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "valleycraft:block/erdstone_dispenser"
+    },
+    "facing=south": {
+      "model": "valleycraft:block/erdstone_dispenser",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "valleycraft:block/erdstone_dispenser_vertical"
+    },
+    "facing=west": {
+      "model": "valleycraft:block/erdstone_dispenser",
+      "y": 270
+    }
+  }
+}
