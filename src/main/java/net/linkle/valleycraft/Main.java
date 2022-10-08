@@ -24,6 +24,7 @@ public class Main implements ModInitializer {
 		ModBlockEntities.initialize();
 		ModFluids.initialize();
 		ModItems.initialize();
+		ModFishing.initialize();
 		ModTools.initialize();
 		ModBlocks.initialize();
 

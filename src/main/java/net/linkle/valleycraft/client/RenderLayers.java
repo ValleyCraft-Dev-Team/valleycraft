@@ -44,7 +44,7 @@ class RenderLayers {
         put(POISON_BLOSSOM, cullout);
         put(PURPLE_TULIP, cullout);
         put(RED_LUPINE, cullout);
-        put(ROOTED_WATCHER, cullout);
+        //put(ROOTED_WATCHER, cullout);
         put(SHIVERCAP, cullout);
         put(STALWART_SHROOM, cullout);
         put(SHORT_GRASS, cullout);
@@ -82,7 +82,7 @@ class RenderLayers {
         put(PURPLE_FLOWERING_LILYPAD, cullout);
         put(PINK_FLOWERING_LILYPAD, cullout);
         put(BLUE_FLOWERING_LILYPAD, cullout);
-        put(STICKY_SHROOM, cullout);
+        //put(STICKY_SHROOM, cullout);
         put(PANFLOWERS, cullout);
         put(JUNGLE_BUSH, cullout);
         put(ROCKS, cullout);
@@ -156,6 +156,21 @@ class RenderLayers {
         put(ERDSTONE_WINDOW_POWERED, cullout);
 
         put(SLUDGE_FLUID, translucent);
+
+        //put(BIG_RED, cullout);
+        //put(BIG_BROWN, cullout);
+        put(BROWN_CLUSTER, cullout);
+        put(RED_CLUSTER, cullout);
+        put(SOULSPORE_SINGLE, cullout);
+        put(GLOW_CAP_CLUSTER, cullout);
+        put(JUNGLE_CAP_CLUSTER, cullout);
+        put(BURNT_OUT_TORCH, cullout);
+        put(BURNT_OUT_CANDLE, cullout);
+        put(SKELETAL_REMAINS, cullout);
+        put(SKELETAL_MINING_REMAINS, cullout);
+        put(STUCK_PICKAXE_BLOCK, cullout);
+        put(DEAD_LANTERN, cullout);
+        put(STAKE, cullout);
     }
 
     private static void put(Block block, RenderLayer layer) {

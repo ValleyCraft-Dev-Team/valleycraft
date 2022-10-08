@@ -2,6 +2,9 @@ package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.item.cultural_drinks.ElixerBottleItem;
+import net.linkle.valleycraft.item.cultural_drinks.ElixerBottleItemMoblin;
+import net.linkle.valleycraft.item.cultural_drinks.ElixerBottleItemPillager;
+import net.linkle.valleycraft.item.cultural_drinks.ElixerBottleItemVillager;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
@@ -101,9 +104,9 @@ public class RegularFoodItems {
     public static final Item GOLDEN_PUMPKIN_SLICE = new FoodItem(settings(), 4, 1.2f);
 
     //special items
-    public static final Item VILLAGER_ELIXER = new ElixerBottleItem(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.REGENERATION, StatusEffects.NAUSEA, StatusEffects.SLOWNESS);
-    public static final Item MOBLIN_ELIXER = new ElixerBottleItem(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.NIGHT_VISION, StatusEffects.NAUSEA, StatusEffects.POISON);
-    public static final Item PILLAGER_TONIC = new ElixerBottleItem(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.STRENGTH, StatusEffects.NAUSEA, StatusEffects.POISON);
+    public static final Item VILLAGER_ELIXER = new ElixerBottleItemVillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.REGENERATION, StatusEffects.NAUSEA, StatusEffects.SLOWNESS);
+    public static final Item MOBLIN_ELIXER = new ElixerBottleItemMoblin(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.NIGHT_VISION, StatusEffects.NAUSEA, StatusEffects.POISON);
+    public static final Item PILLAGER_TONIC = new ElixerBottleItemPillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.STRENGTH, StatusEffects.NAUSEA, StatusEffects.POISON);
     //public static final Item ENCHANTED_CHORUS_FRUIT = new EnchantedFoodItem(settings().rarity(EPIC)4, 1.2f);
     public static final Item ENCHANTED_CHORUS_FRUIT = new EnchantedFoodItem(settings().rarity(EPIC), 4, 1.2f, StatusEffects.SLOW_FALLING);
     public static final Item ENCHANTED_APPLE_PIE = new EnchantedFoodItem(settings().rarity(EPIC), 6, 1.6f, StatusEffects.FIRE_RESISTANCE);

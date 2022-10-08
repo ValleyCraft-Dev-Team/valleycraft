@@ -30,7 +30,8 @@ public class ArmorMats {
     public static final ArmorMat REPAIRED_HUSK = new ArmorMat("repaired_husk", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH));
     public static final ArmorMat LEGGINGS = new ArmorMat("leggings", ints(1,2,2,2), 30, 15, equipLeather(), items(Items.LEATHER));
     public static final ArmorMat LIBRARIAN = new ArmorMat("librarian", ints(1), 10, 15, equipLeather(), items(Items.BOOK));
-    public static final ArmorMat MOBLIN_TALISMAN = new ArmorMat("moblin_talisman", ints(2,2,3,2), 10, 15, equipLeather(), items());
+    public static final ArmorMat MOBLIN_TALISMAN = new ArmorMat("moblin_talisman", ints(2,2,3,2), 10, 15, equipChain(), items());
+    public static final ArmorMat EMERALD_TALISMAN = new ArmorMat("emerald_talisman", ints(2,2,2,2), 10, 22, equipChain(), items());
     public static final ArmorMat MOGARS_BROKEN = new ArmorMat("mogars_broken_golemite_goggles", ints(1,5,6,2), 10, 15, equipChain(), items());
     public static final ArmorMat MOGARS_FIXED = new ArmorMat("mogars_fixed_golemite_goggles", ints(2,5,6,2), 10, 15, equipChain(), items());
     public static final ArmorMat PIGLIN = new ArmorMat("piglin", ints(2), 10, 15, equipLeather(), items(Items.LEATHER));

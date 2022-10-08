@@ -31,7 +31,8 @@ public class ModBlocks {
     public static final Block GOLEMITE_GRATE = new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque());
     public static final Block GOLEMITE_LADDER = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
     public static final Block ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
-    public static final Block GLOWSQUID_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 11));
+    public static final Block GLOWSQUID_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 6));
+    public static final Block DEAD_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
     public static final Block GOLEMITE_BARS = new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS));
     public static final Block GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block GOLEMITE_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
@@ -40,6 +41,7 @@ public class ModBlocks {
     public static final Block CANVAS_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET));
     public static final Block CANVAS_CARPET = new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET));
     public static final Block CURTAIN = new CurtainBlock();
+    public static final Block STAKE = new StakeBlock(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD).breakInstantly());
 
     public static final Block LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.TERRACOTTA_ORANGE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
     public static final Block BLACK_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLACK).strength(0.8f).sounds(BlockSoundGroup.WOOL));
@@ -72,8 +74,14 @@ public class ModBlocks {
     public static final Block WATTLE_STOOL = new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
     public static final Block WATTLE_CHAIR = new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
 
-    public static final Block STUCK_SWORD_BLOCK = new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN).noCollision());
+    public static final Block STUCK_SWORD_BLOCK = new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN));
     public static final Block STUCK_ARROW_BLOCK = new ArrowBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BAMBOO).noCollision());
+    public static final Block BURNT_OUT_TORCH = new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.WOOD));
+    public static final Block BURNT_OUT_CANDLE = new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CANDLE));
+    public static final Block SKELETAL_REMAINS = new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE));
+    public static final Block STUCK_PICKAXE_BLOCK = new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN));
+    public static final Block SKELETAL_MINING_REMAINS = new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE));
+
     public static final Block GHOST_PUMPKIN_CARVED = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always));
     public static final Block GHOST_JACK_O_LANTERN = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().luminance(15).allowsSpawning(ModBlocks::always));
 
@@ -131,8 +139,8 @@ public class ModBlocks {
     public static final Block CRATE = new CrateBlock(Block.Settings.copy(Blocks.BARREL));
     public static final Block DEFECTIVE_SPAWNER = new DefectiveBlock(Block.Settings.copy(Blocks.IRON_BLOCK).nonOpaque());
 
-    public static final Block BROWN_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.NETHER_BRICKS));
-    public static final Block BLUE_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.NETHER_BRICKS));
+    public static final Block BROWN_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.GLASS));
+    public static final Block BLUE_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.GLASS));
 
     public static final Block ERDSTONE_PILLAR = new PillarBlock(Block.Settings.copy(Blocks.QUARTZ_PILLAR).sounds(BlockSoundGroup.DEEPSLATE).hardness(1));
     public static final Block ERDSTONE_TILES = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
@@ -153,6 +161,8 @@ public class ModBlocks {
     public static final Block ERDSTONE_BRICK_FACE_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
     public static final Block ERDSTONE_WINDOW_POWERED = new GlassBlock(Block.Settings.copy(Blocks.GLASS).sounds(BlockSoundGroup.DEEPSLATE).hardness(50).resistance(2500f).nonOpaque().luminance(s ->3));
     public static final Block PATTERNED_ERDSTONE_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
+
+    public static final Block RUSTED_CHEST_BLOCK = new RustedChestBlock(Block.Settings.copy(Blocks.OAK_WOOD));
 
     public static void initialize() {
         //furniture
@@ -183,10 +193,19 @@ public class ModBlocks {
 
         //odd blocks go here
         Reg.registerWithItem("sword_block", STUCK_SWORD_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
+        Reg.registerWithItem("pickaxe_block", STUCK_PICKAXE_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
+
         Reg.registerWithItem("arrow_block", STUCK_ARROW_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("burnt_out_torch", BURNT_OUT_TORCH, itemSettings().group(BOOKS));
+        Reg.registerWithItem("burnt_out_candle", BURNT_OUT_CANDLE, itemSettings().group(BOOKS));
+        Reg.registerWithItem("skeletal_remains", SKELETAL_REMAINS, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
+        Reg.registerWithItem("skeletal_mining_remains", SKELETAL_MINING_REMAINS, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
+        Reg.registerWithItem("rusted_chest", RUSTED_CHEST_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.RARE));
+
         Reg.registerWithItem("glowsquid_lantern", GLOWSQUID_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof());
         Reg.registerWithItem("defective_spawner", DEFECTIVE_SPAWNER, itemSettings().rarity(Rarity.RARE).maxCount(64).group(BOOKS).fireproof());
+        Reg.registerWithItem("dead_lantern", DEAD_LANTERN, itemSettings().group(BOOKS));
 
         Reg.registerWithItem("grave_marker", GRAVE_MARKER, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.UNCOMMON));
         Reg.registerWithItem("grave_marker_pet", GRAVE_MARKER_PET, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.EPIC));
@@ -198,6 +217,7 @@ public class ModBlocks {
         Reg.registerWithItem("blue_clay_pot", BLUE_CLAY_POT, itemSettings().group(BOOKS).rarity(Rarity.RARE));
 
         //redstonery
+        Reg.registerWithItem("stake", STAKE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings().group(NON_NATURAL_BLOCKS));
 
@@ -270,8 +290,8 @@ public class ModBlocks {
         Reg.registerWithItem("erdstone_tiles", ERDSTONE_TILES, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("chiseled_erdstone", CHISELED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("chiseled_erdstone_face", CHISELED_ERDSTONE_FACE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("chiseled_erdstone_brick_face", CHISELED_ERDSTONE_BRICK_FACE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("erdstone_window", ERDSTONE_WINDOW, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("chiseled_erdstone_brick_face", CHISELED_ERDSTONE_BRICK_FACE, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
+        Reg.registerWithItem("erdstone_window", ERDSTONE_WINDOW, itemSettings().group(BOOKS));
         Reg.registerWithItem("patterned_erdstone", PATTERNED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("erdstone_target_block", ERDSTONE_TARGET_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
         Reg.registerWithItem("erdstone_dispenser", ERDSTONE_DISPENSER, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
@@ -284,8 +304,8 @@ public class ModBlocks {
         Reg.registerWithItem("erdstone_tiles_powered", ERDSTONE_TILES_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("chiseled_erdstone_powered", CHISELED_ERDSTONE_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("chiseled_erdstone_face_powered", CHISELED_ERDSTONE_FACE_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("chiseled_erdstone_brick_face_powered", ERDSTONE_BRICK_FACE_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("erdstone_window_powered", ERDSTONE_WINDOW_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("chiseled_erdstone_brick_face_powered", ERDSTONE_BRICK_FACE_POWERED, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
+        Reg.registerWithItem("erdstone_window_powered", ERDSTONE_WINDOW_POWERED, itemSettings().group(BOOKS));
         Reg.registerWithItem("patterned_erdstone_powered", PATTERNED_ERDSTONE_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
 
         //stones

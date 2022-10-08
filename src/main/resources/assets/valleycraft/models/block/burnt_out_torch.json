@@ -1,0 +1,54 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "valleycraft:block/burnt_out_torch",
+		"particle": "valleycraft:block/burnt_out_torch"
+	},
+	"elements": [
+		{
+			"from": [6, 0, -1],
+			"to": [16, 2, 1],
+			"rotation": {"angle": -45, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [7, 6, 9, 16], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [7, 6, 9, 8], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [7, 6, 9, 16], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [7, 13, 9, 15], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [7, 6, 9, 16], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [7, 6, 9, 16], "rotation": 90, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 225, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [0, 3.25, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	}
+}

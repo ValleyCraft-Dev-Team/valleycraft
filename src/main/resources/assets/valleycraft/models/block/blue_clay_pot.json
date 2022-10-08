@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "valleycraft:block/blue_clay_pot",
+		"1": "valleycraft:block/charcoal_block",
 		"particle": "valleycraft:block/blue_clay_pot"
 	},
 	"elements": [
@@ -267,6 +268,18 @@
 				"west": {"uv": [2, 4, 14, 11], "texture": "#0"},
 				"up": {"uv": [0, 0, 1, 12], "texture": "#0"},
 				"down": {"uv": [0, 0, 1, 12], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 11, 6],
+			"to": [10, 12, 10],
+			"faces": {
+				"north": {"uv": [6, 8, 10, 9], "texture": "#1"},
+				"east": {"uv": [6, 8, 10, 9], "texture": "#1"},
+				"south": {"uv": [6, 8, 10, 9], "texture": "#1"},
+				"west": {"uv": [6, 5, 10, 6], "texture": "#1"},
+				"up": {"uv": [2, 2, 3, 3], "texture": "#1"},
+				"down": {"uv": [6, 5, 10, 9], "texture": "#1"}
 			}
 		}
 	],

@@ -48,28 +48,32 @@ public class ModNaturalBlocks {
     public static final Block FLOWERING_CACTUS = new ModPlantBlock().ground(BlockPres.SAND);
     public static final Block FLUFFY_DANDELION = new ModPlantBlock();
     public static final Block FOXTAIL_FERN = new ModPlantBlock();
-    public static final Block GILDED_CAP = new ModPlantBlock();
-    public static final Block GLOW_CAP = new ModPlantBlock();
-    public static final Block GODDESS_LILY = new ModPlantBlock();
-    public static final Block HONEYCLUSTER = new ModPlantBlock();
-    public static final Block STALWART_SHROOM = new ModPlantBlock();
-    public static final Block SOULSPORE = new ModPlantBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).ground(BlockPres.STONE);
 
-    public static final Block IRONSHROOM = new ModPlantBlock();
-    public static final Block JUNGLE_CAP = new ModPlantBlock();
+    public static final Block GILDED_CAP = new ModLargerMushroomBlock();
+    public static final Block GLOW_CAP = new ModLargerMushroomBlock();
+    public static final Block GLOW_CAP_CLUSTER = new ModLargerMushroomBlock();
+    public static final Block GODDESS_LILY = new ModLargerMushroomBlock();
+    public static final Block HONEYCLUSTER = new ModLargerMushroomBlock();
+    public static final Block STALWART_SHROOM = new ModLargerMushroomBlock();
+    public static final Block SOULSPORE = new ModLargerMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).ground(BlockPres.STONE);
+    public static final Block SOULSPORE_SINGLE = new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).ground(BlockPres.STONE);
+    public static final Block IRONSHROOM = new ModLargerMushroomBlock();
+    public static final Block JUNGLE_CAP = new ModLargerMushroomBlock();
+    public static final Block JUNGLE_CAP_CLUSTER = new ModLargerMushroomBlock();
+
     public static final Block LAVENDER = new ModPlantBlock();
     public static final Block LEATHERLEAF_FERN = new ModPlantBlock();
     public static final Block LIGHT_BLUE_TULIP = new ModPlantBlock();
     public static final Block MOSS_SPROUTLET = new ModPlantBlock();
-    public static final Block MOREL = new ModPlantBlock();
+    public static final Block MOREL = new ModLargerMushroomBlock();
     public static final Block ORANGE_BEAUTY = new ModPlantBlock();
     public static final Block ORANGE_FERN = new ModPlantBlock();
     public static final Block PINK_LUPINE = new ModPlantBlock();
     public static final Block POISON_BLOSSOM = new ModPlantBlock();
     public static final Block PURPLE_TULIP = new ModPlantBlock();
     public static final Block RED_LUPINE = new ModPlantBlock();
-	public static final Block ROOTED_WATCHER = new ModPlantBlock();
-    public static final Block SHIVERCAP = new ModPlantBlock();
+	//public static final Block ROOTED_WATCHER = new ModPlantBlock();
+    public static final Block SHIVERCAP = new ModLargerMushroomBlock();
     public static final Block SHORT_GRASS = new ModPlantBlock();
     public static final Block SNOWFLOWER = new ModPlantBlock();
     public static final Block SPROUT = new ModPlantBlock();
@@ -115,8 +119,8 @@ public class ModNaturalBlocks {
     public static final Block FLINT_ROCKS = new RockBlock();
 
     public static final Block CLARET_LEAF = new ModPlantBlock();
-    public static final Block STICKY_SHROOM = new ModPlantBlock();
-    public static final Block GOOP_CAP = new ModPlantBlock();
+    //public static final Block STICKY_SHROOM = new ModLargerMushroomBlock();
+    public static final Block GOOP_CAP = new ModLargerMushroomBlock();
     public static final Block ORANGE_POPPY = new ModPlantBlock();
     public static final Block YELLOW_POPPY = new ModPlantBlock();
     public static final Block WHITE_POPPY = new ModPlantBlock();
@@ -127,6 +131,10 @@ public class ModNaturalBlocks {
     public static final Block LIVING_BUSH = new ModPlantBlock();
 
     public static final Block BIG_FERN = new ModPlantBlock();
+    public static final Block RED_CLUSTER = new ModLargerMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM));
+    public static final Block BROWN_CLUSTER = new ModLargerMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM));
+    //public static final Block BIG_RED = new ModPlantBlock(Block.Settings.copy(Blocks.RED_MUSHROOM));
+    //public static final Block BIG_BROWN = new ModPlantBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM));
     public static final Block SMALLEST_LILYPADS = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
     public static final Block SMALL_LILYPADS = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
     public static final Block SMALL_LILYPAD = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));
@@ -173,6 +181,7 @@ public class ModNaturalBlocks {
     public static final Block PRIMSTEEL_DEEPSLATE_ORE = new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE));
     public static final Block SCORCHSTONE = new Block(Block.Settings.copy(Blocks.STONE));
     public static final Block DEEPSLATE_FOSSIL_ORE = new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE));
+    public static final Block FALLING_ROCKS = new FallingRockBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.NETHER_BRICKS));
 
     public static void initialize() {
 
@@ -207,18 +216,29 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("white_poppy", WHITE_POPPY, itemSettings());
 
         Reg.registerWithItem("bee_nest_wall", BEE_NEST_WALL, itemSettings());
-        Reg.registerWithItem("sticky_shroom", STICKY_SHROOM, itemSettings());
+
+        //mushrooms that can cluster
+        Reg.registerWithItem("red_cluster", RED_CLUSTER, itemSettings());
+        //Reg.registerWithItem("big_red_mushroom", BIG_RED, itemSettings());
+        Reg.registerWithItem("brown_cluster", BROWN_CLUSTER, itemSettings());
+        //Reg.registerWithItem("big_brown_mushroom", BIG_BROWN, itemSettings());
+        Reg.registerWithItem("glow_cap", GLOW_CAP, itemSettings());
+        Reg.registerWithItem("glow_cap_cluster", GLOW_CAP_CLUSTER, itemSettings());
+        Reg.registerWithItem("jungle_cap", JUNGLE_CAP, itemSettings());
+        Reg.registerWithItem("jungle_cap_cluster", JUNGLE_CAP_CLUSTER, itemSettings());
+        Reg.registerWithItem("soulspore_single", SOULSPORE_SINGLE, itemSettings().rarity(Rarity.UNCOMMON));
+        Reg.registerWithItem("soulspore", SOULSPORE, itemSettings().rarity(Rarity.RARE));
+
+        //non-clustering mushrooms
+        //Reg.registerWithItem("sticky_shroom", STICKY_SHROOM, itemSettings());
         Reg.registerWithItem("morel", MOREL, itemSettings());
         Reg.registerWithItem("shivercap", SHIVERCAP, itemSettings().group(INGREDIENTS));
         Reg.registerWithItem("stalwart_shroom", STALWART_SHROOM, itemSettings().group(INGREDIENTS));
         //Reg.registerWithItem("warding_shroom", WARDING_SHROOM, itemSettings());
         Reg.registerWithItem("goop_cap", GOOP_CAP, itemSettings());
-        Reg.registerWithItem("glow_cap", GLOW_CAP, itemSettings());
-        Reg.registerWithItem("jungle_cap", JUNGLE_CAP, itemSettings());
         Reg.registerWithItem("gilded_cap", GILDED_CAP, itemSettings());
         Reg.registerWithItem("ironshroom", IRONSHROOM, itemSettings());
-        Reg.registerWithItem("rooted_watcher", ROOTED_WATCHER, itemSettings());
-        Reg.registerWithItem("soulspore", SOULSPORE, itemSettings().rarity(Rarity.UNCOMMON));
+        //Reg.registerWithItem("rooted_watcher", ROOTED_WATCHER, itemSettings());
 
         Reg.registerWithItem("short_grass", SHORT_GRASS, itemSettings());
         Reg.registerWithItem("snowflower", SNOWFLOWER, itemSettings());
@@ -239,7 +259,7 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("wild_onion", WILD_ONION, itemSettings());
         Reg.registerWithItem("wild_herbs", WILD_HERBS, itemSettings());
         Reg.registerWithItem("wild_puff_ball", WILD_PUFF_BALL, itemSettings());
-        
+
         Reg.register("maize", MAIZE);
         Reg.register("maize_box", MAIZE_BOX);
         Reg.register("rices", RICES);
@@ -257,7 +277,7 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("desert_shrub", DESERT_SHRUB, itemSettings());
         Reg.registerWithItem("bush", BUSH, itemSettings());
         Reg.registerWithItem("lush_bush", LIVING_BUSH, itemSettings());
-        
+
         Reg.registerWithItem("big_fern", BIG_FERN, itemSettings());
         Reg.register("smallest_lilypads", SMALLEST_LILYPADS);
         Reg.register("smallest_lilypads", new LilyPadItem(SMALLEST_LILYPADS, itemSettings()));
@@ -277,7 +297,7 @@ public class ModNaturalBlocks {
         Reg.register("pink_flowering_lilypad", new LilyPadItem(PINK_FLOWERING_LILYPAD, itemSettings()));
         Reg.register("blue_flowering_lilypad", BLUE_FLOWERING_LILYPAD);
         Reg.register("blue_flowering_lilypad", new LilyPadItem(BLUE_FLOWERING_LILYPAD, itemSettings()));
-        
+
         Reg.register("gloom_berry", GLOOM_BERRY);
         Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);
 
@@ -285,7 +305,7 @@ public class ModNaturalBlocks {
         Reg.register("glow_kelp_plant", GLOW_KELP_PLANT);
         Reg.registerWithItem("orange_kelp", ORANGE_KELP, itemSettings());
         Reg.register("orange_kelp_plant", ORANGE_KELP_PLANT);
-        
+
         Reg.register("algae", ALGAE);
         Reg.register("algae", new LilyPadItem(ALGAE, itemSettings()));
         Reg.registerWithItem("orange_seagrass", ORANGE_SEAGRASS, itemSettings());
@@ -334,6 +354,7 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("golemite_erdstone_ore", GOLEMITE_ERDSTONE_ORE, itemSettings());
         Reg.registerWithItem("erdstone_fossil_ore", ERDSTONE_FOSSIL_ORE, itemSettings());
 
+        Reg.registerWithItem("loose_rocks", FALLING_ROCKS, itemSettings());
         Reg.registerWithItem("cracked_cobblestone", CRACKED_COBBLESTONE, itemSettings());
 
         Reg.registerWithItem("amber_ore", AMBER_ORE, itemSettings());

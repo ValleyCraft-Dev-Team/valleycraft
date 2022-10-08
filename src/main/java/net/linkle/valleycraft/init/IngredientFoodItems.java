@@ -8,6 +8,7 @@ import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
+import static net.linkle.valleycraft.init.ModFishing.ZOD;
 import static net.linkle.valleycraft.init.ModGroups.*;
 
 public class IngredientFoodItems {
@@ -90,6 +91,7 @@ public class IngredientFoodItems {
 
         Reg.register("monster_guts", MONSTER_GUTS);
         Reg.register("infected_monster_liver", MONSTER_LIVER);
+        Reg.register("zod", ZOD);
 
         Reg.register("raw_bat_wing", RAW_BAT);
         Reg.register("raw_silverfish", RAW_SILVERFISH);

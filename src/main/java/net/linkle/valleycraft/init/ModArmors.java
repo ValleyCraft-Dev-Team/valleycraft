@@ -19,6 +19,7 @@ public class ModArmors {
     private static final Item.Settings settings_artifacts_repaired = new Item.Settings().group(BOOKS).rarity(Rarity.EPIC);
     private static final Item.Settings settings_uncommon = new Item.Settings().group(CLOTHING).rarity(Rarity.UNCOMMON);
 
+    public static final Item EMERALD_TALISMAN = new ArmorItem(ArmorMats.EMERALD_TALISMAN, EquipmentSlot.CHEST, settings_artifacts_uncommon);
     public static final Item MOBLIN_TALISMAN = new ArmorItem(ArmorMats.MOBLIN_TALISMAN, EquipmentSlot.CHEST, settings_artifacts_uncommon);
     public static final Item MOGARS_BROKEN = new BrokenArmorItem(ArmorMats.MOGARS_BROKEN, EquipmentSlot.HEAD, settings_artifacts_epic);
     public static final Item MOGARS_FIXED = new ArmorItem(ArmorMats.MOGARS_FIXED, EquipmentSlot.HEAD, settings_artifacts_repaired);
@@ -109,6 +110,7 @@ public class ModArmors {
         Reg.register("librarians_hat", LIBRARIAN);
         Reg.register("snow_cap", SNOW_CAP);
         Reg.register("villager_tunic", VILLAGER_TUNIC);
+        Reg.register("emerald_talisman", EMERALD_TALISMAN);
 
         Reg.register("trader_head_scarf", TRADER_HEAD_SCARF);
         Reg.register("trader_coat", TRADER_COAT);
