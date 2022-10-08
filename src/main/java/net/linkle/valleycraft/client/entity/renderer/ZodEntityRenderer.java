@@ -30,7 +30,7 @@ public class ZodEntityRenderer extends MobEntityRenderer<MobEntity, ZodEntityMod
 
     /** @param texture file name of the snail texture. */
     public static EntityRendererFactory<MobEntity> create(String texture) {
-        var id = Main.makeId("textures/entity/fish" + texture + ".png");
+        var id = Main.makeId("textures/entity/fish/" + texture + ".png");
         return context -> new ZodEntityRenderer(context, id);
     }
 }
