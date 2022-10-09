@@ -32,7 +32,7 @@ public class SludgeFluidBlock extends FluidBlock {
     private static final ImmutableMap<Block, Supplier<Block>> MAP;
     static {
         var builder = new ImmutableMap.Builder<Block, Supplier<Block>>();
-        builder.put(Blocks.COBBLESTONE, ()-> ModNaturalBlocks.CRACKED_COBBLESTONE);
+        builder.put(Blocks.COBBLESTONE, ()->ModNaturalBlocks.CRACKED_COBBLESTONE);
         builder.put(Blocks.DEEPSLATE_BRICKS, ()->Blocks.CRACKED_DEEPSLATE_BRICKS);
         builder.put(Blocks.DEEPSLATE_TILES, ()->Blocks.CRACKED_DEEPSLATE_TILES);
         builder.put(Blocks.NETHER_BRICKS, ()->Blocks.CRACKED_NETHER_BRICKS);
@@ -49,7 +49,7 @@ public class SludgeFluidBlock extends FluidBlock {
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if ((pos.getY() + state.getFluidState().getHeight(world, pos)) >= entity.getBoundingBox().minY) {
-            entity.setVelocity(entity.getVelocity().multiply(0.8, 0.85, 0.8));
+            entity.setVelocity(entity.getVelocity().multiply(0.9, 0.9, 0.9));
             if (entity instanceof LivingEntity living) {
                 living.addStatusEffect(new StatusEffectInstance(ModEffects.ROT_BLIGHT, 7 * 20));
             }

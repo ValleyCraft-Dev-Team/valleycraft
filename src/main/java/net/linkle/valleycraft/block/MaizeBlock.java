@@ -18,6 +18,7 @@ import net.minecraft.state.StateManager.Builder;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -71,7 +72,7 @@ public class MaizeBlock extends ModCropBlock {
     
     @Override
     protected int getGrowthAmount(World world) {
-        return world.random.nextInt(1, 2);
+        return 1;
     }
     
     @Override
@@ -91,11 +92,11 @@ public class MaizeBlock extends ModCropBlock {
 
     @Override
     protected ItemStack getPickItem(Random random) {
-        return new ItemStack(IngredientFoodItems.MAIZE, random.nextInt(2, 4));
+        return new ItemStack(IngredientFoodItems.MAIZE, MathHelper.nextInt(random, 2, 4));
     }
 
     @Override
     protected int getPickedMinAge() {
-        return 10;
+        return 7;
     }
 }
