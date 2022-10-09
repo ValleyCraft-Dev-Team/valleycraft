@@ -12,13 +12,13 @@ import net.linkle.valleycraft.tool.throwing.BoneDartItem;
 import net.linkle.valleycraft.tool.woodcutter_axe.WoodcutterAxeBase;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.item.Item;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
+
+import net.linkle.valleycraft.item.ClimbingAxeItem;
 
 public class ModTools {
     //When we need to access a tool or weapon elsewhere in the codebase, such as to inject them into loot tables, we need them stored in variables.
@@ -33,6 +33,7 @@ public class ModTools {
     public static final Item CAVE_FISHERS_RAPIER = new CaveFisherSwordItem(new CaveFisherToolMaterial(), 4, -2.4f);
     public static final Item SEAOLOGER_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
     public static final Item SEAOLOGER_FIXED = new FixedSeagerCutlassItem(new FixedSeagerToolMaterial(), 5, -1.8f);
+    public static final Item CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.IRON, new Item.Settings().group(VC_TOOLS));
 
     //The base attack damage of each tool type.
     //These values are added to the attack stats of their materials when they're registered.
@@ -90,5 +91,7 @@ public class ModTools {
 
         //1.1 planned
         //Reg.register("axe_timber_red", new TimberAxeItem(new TimberAxeToolMaterial()));
+        
+        Reg.register("climbing_axe", CLIMBING_AXE);
     }
 }

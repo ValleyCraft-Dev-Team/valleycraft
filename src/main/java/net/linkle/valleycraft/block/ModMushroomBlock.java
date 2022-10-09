@@ -1,19 +1,9 @@
 package net.linkle.valleycraft.block;
 
-import net.linkle.valleycraft.util.BlockPres;
-import net.minecraft.block.*;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.world.BlockView;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 
-import java.util.function.Predicate;
-
-public class ModMushroomBlock extends PlantBlock {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(5, 0, 5, 11, 6, 11);
-
-    /** The ground whitelist for placing plant. */
-    private Predicate<BlockState> groundList = BlockPres.DIRT;
-
+public class ModMushroomBlock extends ModPlantBlock {
     public ModMushroomBlock() {
         this(Settings.copy(Blocks.POPPY));
     }
@@ -21,20 +11,9 @@ public class ModMushroomBlock extends PlantBlock {
     public ModMushroomBlock(Settings settings) {
         super(settings);
     }
-
-    /** Set ground whitelist for placing plant. */
-    public ModMushroomBlock ground(Predicate<BlockState> predicate) {
-        groundList = predicate;
+    
+    public ModMushroomBlock large() {
+        shape(Block.createCuboidShape(4, 0, 4, 12, 9, 12));
         return this;
-    }
-
-    @Override
-    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
-    }
-
-    @Override
-    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return groundList.test(floor);
     }
 }

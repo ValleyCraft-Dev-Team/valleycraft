@@ -1,6 +1,7 @@
 package net.linkle.valleycraft.init;
 
 import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock.Settings;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.LilyPadItem;
 import net.minecraft.sound.BlockSoundGroup;
@@ -49,23 +50,23 @@ public class ModNaturalBlocks {
     public static final Block FLUFFY_DANDELION = new ModPlantBlock();
     public static final Block FOXTAIL_FERN = new ModPlantBlock();
 
-    public static final Block GILDED_CAP = new ModLargerMushroomBlock();
-    public static final Block GLOW_CAP = new ModLargerMushroomBlock();
-    public static final Block GLOW_CAP_CLUSTER = new ModLargerMushroomBlock();
-    public static final Block GODDESS_LILY = new ModLargerMushroomBlock();
-    public static final Block HONEYCLUSTER = new ModLargerMushroomBlock();
-    public static final Block STALWART_SHROOM = new ModLargerMushroomBlock();
-    public static final Block SOULSPORE = new ModLargerMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).ground(BlockPres.STONE);
-    public static final Block SOULSPORE_SINGLE = new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).ground(BlockPres.STONE);
-    public static final Block IRONSHROOM = new ModLargerMushroomBlock();
-    public static final Block JUNGLE_CAP = new ModLargerMushroomBlock();
-    public static final Block JUNGLE_CAP_CLUSTER = new ModLargerMushroomBlock();
+    public static final Block GILDED_CAP = new ModMushroomBlock().large();
+    public static final Block GLOW_CAP = new ModMushroomBlock().large();
+    public static final Block GLOW_CAP_CLUSTER = new ModMushroomBlock().large();
+    public static final Block GODDESS_LILY = new ModMushroomBlock().large();
+    public static final Block HONEYCLUSTER = new ModMushroomBlock().large();
+    public static final Block STALWART_SHROOM = new ModMushroomBlock().large();
+    public static final Block SOULSPORE = new ModMushroomBlock(Block.Settings.copy(Blocks.POPPY).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).ground(BlockPres.STONE).shape(Block.createCuboidShape(4, 0, 4, 12, 9, 12));
+    public static final Block SOULSPORE_SINGLE = new ModMushroomBlock(Block.Settings.copy(Blocks.POPPY).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).ground(BlockPres.STONE).shape(Block.createCuboidShape(5, 0, 5, 11, 6, 11));
+    public static final Block IRONSHROOM = new ModMushroomBlock().large();
+    public static final Block JUNGLE_CAP = new ModMushroomBlock().large();
+    public static final Block JUNGLE_CAP_CLUSTER = new ModMushroomBlock().large();
 
     public static final Block LAVENDER = new ModPlantBlock();
     public static final Block LEATHERLEAF_FERN = new ModPlantBlock();
     public static final Block LIGHT_BLUE_TULIP = new ModPlantBlock();
     public static final Block MOSS_SPROUTLET = new ModPlantBlock();
-    public static final Block MOREL = new ModLargerMushroomBlock();
+    public static final Block MOREL = new ModMushroomBlock().large();
     public static final Block ORANGE_BEAUTY = new ModPlantBlock();
     public static final Block ORANGE_FERN = new ModPlantBlock();
     public static final Block PINK_LUPINE = new ModPlantBlock();
@@ -73,7 +74,7 @@ public class ModNaturalBlocks {
     public static final Block PURPLE_TULIP = new ModPlantBlock();
     public static final Block RED_LUPINE = new ModPlantBlock();
 	//public static final Block ROOTED_WATCHER = new ModPlantBlock();
-    public static final Block SHIVERCAP = new ModLargerMushroomBlock();
+    public static final Block SHIVERCAP = new ModMushroomBlock().large();
     public static final Block SHORT_GRASS = new ModPlantBlock();
     public static final Block SNOWFLOWER = new ModPlantBlock();
     public static final Block SPROUT = new ModPlantBlock();
@@ -120,7 +121,7 @@ public class ModNaturalBlocks {
 
     public static final Block CLARET_LEAF = new ModPlantBlock();
     //public static final Block STICKY_SHROOM = new ModLargerMushroomBlock();
-    public static final Block GOOP_CAP = new ModLargerMushroomBlock();
+    public static final Block GOOP_CAP = new ModMushroomBlock().large();
     public static final Block ORANGE_POPPY = new ModPlantBlock();
     public static final Block YELLOW_POPPY = new ModPlantBlock();
     public static final Block WHITE_POPPY = new ModPlantBlock();
@@ -131,8 +132,8 @@ public class ModNaturalBlocks {
     public static final Block LIVING_BUSH = new ModPlantBlock();
 
     public static final Block BIG_FERN = new ModPlantBlock();
-    public static final Block RED_CLUSTER = new ModLargerMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM));
-    public static final Block BROWN_CLUSTER = new ModLargerMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM));
+    public static final Block RED_CLUSTER = new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM)).large();
+    public static final Block BROWN_CLUSTER = new ModMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM)).large();
     //public static final Block BIG_RED = new ModPlantBlock(Block.Settings.copy(Blocks.RED_MUSHROOM));
     //public static final Block BIG_BROWN = new ModPlantBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM));
     public static final Block SMALLEST_LILYPADS = new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD));

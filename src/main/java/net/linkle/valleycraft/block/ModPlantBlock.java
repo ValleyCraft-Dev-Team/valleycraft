@@ -9,10 +9,12 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
 public class ModPlantBlock extends PlantBlock {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(1, 0, 1, 15, 15, 15);
+    protected static final VoxelShape SHAPE = Block.createCuboidShape(2, 0, 2, 14, 14, 14);
+    
+    protected VoxelShape shape = SHAPE;
 
     /** The ground whitelist for placing plant. */
-    private Predicate<BlockState> groundList = BlockPres.DIRT;
+    protected Predicate<BlockState> groundList = BlockPres.DIRT;
 
     public ModPlantBlock() {
         this(Settings.copy(Blocks.POPPY));
@@ -27,10 +29,16 @@ public class ModPlantBlock extends PlantBlock {
         groundList = predicate;
         return this;
     }
+    
+    /** Set ground whitelist for placing plant. */
+    public ModPlantBlock shape(VoxelShape shape) {
+        this.shape = shape;
+        return this;
+    }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
+        return shape;
     }
 
     @Override
