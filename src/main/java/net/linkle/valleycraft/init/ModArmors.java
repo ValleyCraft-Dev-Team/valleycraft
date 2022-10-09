@@ -30,6 +30,9 @@ public class ModArmors {
 
     public static final Item FUR_BOOTS = new ArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settings_uncommon);
 
+    public static final Item REINFORCED_IRON_HELMET = new ArmorItem(ArmorMats.SCALE, EquipmentSlot.HEAD, settings_uncommon);
+    public static final Item SCALE_MAIL = new ArmorItem(ArmorMats.SCALE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
+
     public static final Item EYEPATCH = new ArmorItem(ArmorMats.EYEPATCH, EquipmentSlot.HEAD, settings_artifacts_uncommon);
 
     public static final Item FLOWER_CROWN = new ArmorItem(ArmorMats.FLOWERING_HAT, EquipmentSlot.HEAD, settings);
@@ -40,7 +43,7 @@ public class ModArmors {
     public static final Item CANVAS_LEGGINGS = new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.LEGS, settings);
     public static final Item CANVAS_BOOTS = new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.FEET, settings);
 
-    public static final Item BIKINI_MASC = new ArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settings);
+    public static final Item BIKINI_MASC = new ArmorItem(ArmorMats.BIKINI_MASC, EquipmentSlot.LEGS, settings);
     public static final Item BIKINI = new ArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settings);
     public static final Item BIKINI_COAT = new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settings);
 
@@ -106,7 +109,6 @@ public class ModArmors {
         Reg.register("mogars_fixed_golemite_goggles", MOGARS_FIXED);
         Reg.register("strayas_cartography_bag", STRAYA);
         Reg.register("alchemists_leggings", OLDWORLD_LEGGINGS);
-        Reg.register("fur_boots", FUR_BOOTS);
         Reg.register("librarians_hat", LIBRARIAN);
         Reg.register("snow_cap", SNOW_CAP);
         Reg.register("villager_tunic", VILLAGER_TUNIC);
@@ -131,6 +133,7 @@ public class ModArmors {
         //Reg.register("zombie_shoes", STEVE_SHOES);
         //Reg.register("zombie_shirt_femme", ALEX_SHIRT);
         //Reg.register("zombie_shorts", ALEX_SHORTS);
+        Reg.register("scale_mail", SCALE_MAIL);
         Reg.register("zombie_boots", ALEX_BOOTS);
 
         Reg.register("drowned_clothes", DROWNED_CLOTHES);
@@ -149,6 +152,9 @@ public class ModArmors {
         Reg.register("straw_hat", STRAW_HAT);
 
         Reg.register("flower_crown", FLOWER_CROWN);
+
+        Reg.register("reinforced_iron_helmet", REINFORCED_IRON_HELMET);
+        Reg.register("fur_boots", FUR_BOOTS);
 
         Reg.register("canvas_hood", CANVAS_HOOD);
         Reg.register("canvas_tunic", CANVAS_TUNIC);

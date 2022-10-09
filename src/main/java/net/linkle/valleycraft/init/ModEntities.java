@@ -13,6 +13,7 @@ import net.linkle.valleycraft.client.entity.model.ZodEntityModel;
 import net.linkle.valleycraft.client.entity.renderer.SnailEntityRenderer;
 import net.linkle.valleycraft.client.entity.renderer.ZodEntityRenderer;
 import net.linkle.valleycraft.entity.SnailEntity;
+import net.linkle.valleycraft.entity.ThrownBoneDartEntity;
 import net.linkle.valleycraft.entity.ZodEntity;
 import net.minecraft.client.render.entity.CodEntityRenderer;
 import net.minecraft.entity.*;
@@ -33,6 +34,15 @@ public class ModEntities {
             FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.WATER_AMBIENT).entityFactory(ZodEntity::new)
                     .trackRangeBlocks(4).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
                     .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZodEntity::canSpawn).build()
+    );
+
+    public static final EntityType<ThrownBoneDartEntity> ThrownBoneDartEntityType = Registry.register(
+            Registry.ENTITY_TYPE,
+            new Identifier(Main.ID, "bone_dart"),
+            FabricEntityTypeBuilder.<ThrownBoneDartEntity>create(SpawnGroup.MISC, ThrownBoneDartEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.25F, 0.25F))
+                    .trackRangeBlocks(4).trackedUpdateRate(10) // necessary for all thrown projectiles (as it prevents it from breaking, lol)
+                    .build() // VERY IMPORTANT DONT DELETE FOR THE LOVE OF GOD PSLSSSSSS
     );
 
     public static void initialize() {
