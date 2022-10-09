@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "valleycraft:block/stake",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "valleycraft:block/stake"
+    },
+    "axis=z": {
+      "model": "valleycraft:block/stake",
+      "x": 90
     }
   }
 }

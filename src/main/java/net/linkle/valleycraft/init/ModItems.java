@@ -3,6 +3,7 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.item.FoodItem;
 import net.linkle.valleycraft.item.SalveItem;
 import net.linkle.valleycraft.item.SoulItem;
+import net.linkle.valleycraft.item.SoulPetItem;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AliasedBlockItem;
@@ -80,7 +81,7 @@ public class ModItems {
     public static final Item ADVENTURINE_SHARDS = new Item(itemSettings().group(VC_ITEMS));
 
     public static final Item SOUL_ITEM = new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof());
-    public static final Item SOUL_ITEM_PET = new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof());
+    public static final Item SOUL_ITEM_PET = new SoulPetItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof());
 
     public static final Item STRANGE_CATALYST = new Item(itemSettings().group(VC_ITEMS).rarity(RARE));
 

@@ -29,16 +29,13 @@ public class ModEntities {
             FabricEntityTypeBuilder.createMob().entityFactory(SnailEntity::new).spawnGroup(SpawnGroup.CREATURE)
             .dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(8).build());
 
-    public static final EntityType<ZodEntity> ZOD = Registry.register(Registry.ENTITY_TYPE,
-            new Identifier(Main.ID, "zod"),
+    public static final EntityType<ZodEntity> ZOD = register("zod",
             FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.WATER_AMBIENT).entityFactory(ZodEntity::new)
                     .trackRangeBlocks(4).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
                     .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZodEntity::canSpawn).build()
     );
 
-    public static final EntityType<ThrownBoneDartEntity> ThrownBoneDartEntityType = Registry.register(
-            Registry.ENTITY_TYPE,
-            new Identifier(Main.ID, "bone_dart"),
+    public static final EntityType<ThrownBoneDartEntity> ThrownBoneDartEntityType = register("bone_dart",
             FabricEntityTypeBuilder.<ThrownBoneDartEntity>create(SpawnGroup.MISC, ThrownBoneDartEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25F, 0.25F))
                     .trackRangeBlocks(4).trackedUpdateRate(10) // necessary for all thrown projectiles (as it prevents it from breaking, lol)

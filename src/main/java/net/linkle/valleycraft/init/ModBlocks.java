@@ -32,7 +32,7 @@ public class ModBlocks {
     public static final Block GOLEMITE_LADDER = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
     public static final Block ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
     public static final Block GLOWSQUID_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 6));
-    public static final Block DEAD_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN));
+    public static final Block DEAD_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(s->0));
     public static final Block GOLEMITE_BARS = new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS));
     public static final Block GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
     public static final Block GOLEMITE_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
@@ -41,7 +41,7 @@ public class ModBlocks {
     public static final Block CANVAS_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET));
     public static final Block CANVAS_CARPET = new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET));
     public static final Block CURTAIN = new CurtainBlock();
-    public static final Block STAKE = new StakeBlock(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD).breakInstantly());
+    public static final Block STAKE = new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly());
 
     public static final Block LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.TERRACOTTA_ORANGE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
     public static final Block BLACK_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLACK).strength(0.8f).sounds(BlockSoundGroup.WOOL));
@@ -77,7 +77,7 @@ public class ModBlocks {
     public static final Block STUCK_SWORD_BLOCK = new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN));
     public static final Block STUCK_ARROW_BLOCK = new ArrowBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BAMBOO).noCollision());
     public static final Block BURNT_OUT_TORCH = new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.WOOD));
-    public static final Block BURNT_OUT_CANDLE = new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CANDLE));
+    public static final Block BURNT_OUT_CANDLE = new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CANDLE)).shape(4, 12);
     public static final Block SKELETAL_REMAINS = new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE));
     public static final Block STUCK_PICKAXE_BLOCK = new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN));
     public static final Block SKELETAL_MINING_REMAINS = new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE));
@@ -137,10 +137,10 @@ public class ModBlocks {
     public static final Block GRAVE_MARKER_PET = new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque());
 
     public static final Block CRATE = new CrateBlock(Block.Settings.copy(Blocks.BARREL));
-    public static final Block DEFECTIVE_SPAWNER = new DefectiveBlock(Block.Settings.copy(Blocks.IRON_BLOCK).nonOpaque());
+    public static final Block DEFECTIVE_SPAWNER = new DefectiveBlock(Block.Settings.copy(Blocks.SPAWNER));
 
-    public static final Block BROWN_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.GLASS));
-    public static final Block BLUE_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().breakInstantly().sounds(BlockSoundGroup.GLASS));
+    public static final Block BROWN_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly());
+    public static final Block BLUE_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly());
 
     public static final Block ERDSTONE_PILLAR = new PillarBlock(Block.Settings.copy(Blocks.QUARTZ_PILLAR).sounds(BlockSoundGroup.DEEPSLATE).hardness(1));
     public static final Block ERDSTONE_TILES = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
