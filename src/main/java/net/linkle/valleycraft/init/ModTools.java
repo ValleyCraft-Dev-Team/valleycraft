@@ -1,14 +1,19 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.tool.ModToolMaterials;
 import net.linkle.valleycraft.tool.environmental.*;
 import net.linkle.valleycraft.tool.knife.KnifeBase;
+import net.linkle.valleycraft.tool.knife.ModdedKnifeBase;
 import net.linkle.valleycraft.tool.knife.special.CoralDaggerItem;
 import net.linkle.valleycraft.tool.knife.special.CoralDaggerToolMaterial;
+import net.linkle.valleycraft.tool.scythe.ModdedScytheBase;
+import net.linkle.valleycraft.tool.scythe.ScytheBase;
 import net.linkle.valleycraft.tool.shovel.special.OarItem;
 import net.linkle.valleycraft.tool.shovel.special.OarToolMaterial;
 import net.linkle.valleycraft.tool.sword.special.*;
 import net.linkle.valleycraft.tool.throwing.BoneDartItem;
+import net.linkle.valleycraft.tool.woodcutter_axe.ModdedWoodcutterAxeBase;
 import net.linkle.valleycraft.tool.woodcutter_axe.WoodcutterAxeBase;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.item.Item;
@@ -43,14 +48,17 @@ public class ModTools {
     //The attack stats are listed in RoseGoldToolMaterial.class.
     public static final Integer KNIFE_BASE_DAMAGE = 1;
     public static final Integer WOODCUTTER_BASE_DAMAGE = 2;
+    public static final Integer SCYTHE_BASE_DAMAGE = 2;
     //The base attack speed of each tool type.
     //These numbers are subtracted from four, so 4.0 will make the tool never charge, and higher will likely cause issues.
     //Larger number = slower, smaller number = faster.
     public static final Float KNIFE_BASE_SPEED = -2.0f;
-    public static final Float WOODCUTTER_BASE_SPEED = -3.5f;
+    public static final Float WOODCUTTER_BASE_SPEED = -3.0f;
+    public static final Float SCYTHE_BASE_SPEED = -2.5f;
     //The item settings for knives made of 'basic' materials- wood, gold, stone, iron, rose gold, diamond, netherite
     public static final Item.Settings BASIC_KNIFE_SETTINGS = new Item.Settings().group(VC_TOOLS);
     public static final Item.Settings BASIC_WOODCUTTER_SETTINGS = new Item.Settings().group(VC_TOOLS);
+    public static final Item.Settings BASIC_SCYTHE_SETTINGS = new Item.Settings().group(VC_TOOLS);
 
     public static void initialize() {
         //Environmental
@@ -66,7 +74,10 @@ public class ModTools {
         Reg.register("knife_wooden", new KnifeBase(ToolMaterials.WOOD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
         Reg.register("knife_stone", new KnifeBase(ToolMaterials.STONE, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
         Reg.register("knife_golden", new KnifeBase(ToolMaterials.GOLD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
+        Reg.register("knife_primsteel", new ModdedKnifeBase(ModToolMaterials.PRIMSTEEL, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
         Reg.register("knife_iron", new KnifeBase(ToolMaterials.IRON, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
+        Reg.register("knife_rosegold", new ModdedKnifeBase(ModToolMaterials.ROSEGOLD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
+        Reg.register("knife_golemite", new ModdedKnifeBase(ModToolMaterials.GOLEMITE, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
         Reg.register("knife_diamond", new KnifeBase(ToolMaterials.DIAMOND, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
         Reg.register("knife_netherite", new KnifeBase(ToolMaterials.NETHERITE, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
 
@@ -74,9 +85,23 @@ public class ModTools {
         Reg.register("woodcutter_axe_wooden", new WoodcutterAxeBase(ToolMaterials.WOOD, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_WOODCUTTER_SETTINGS));
         Reg.register("woodcutter_axe_stone", new WoodcutterAxeBase(ToolMaterials.STONE, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_WOODCUTTER_SETTINGS));
         Reg.register("woodcutter_axe_golden", new WoodcutterAxeBase(ToolMaterials.GOLD, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_WOODCUTTER_SETTINGS));
+        Reg.register("woodcutter_axe_primsteel", new ModdedWoodcutterAxeBase(ModToolMaterials.PRIMSTEEL, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_WOODCUTTER_SETTINGS));
         Reg.register("woodcutter_axe_iron", new WoodcutterAxeBase(ToolMaterials.IRON, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_WOODCUTTER_SETTINGS));
+        Reg.register("woodcutter_axe_rosegold", new ModdedWoodcutterAxeBase(ModToolMaterials.ROSEGOLD, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_WOODCUTTER_SETTINGS));
+        Reg.register("woodcutter_axe_golemite", new ModdedWoodcutterAxeBase(ModToolMaterials.GOLEMITE, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_WOODCUTTER_SETTINGS));
         Reg.register("woodcutter_axe_diamond", new WoodcutterAxeBase(ToolMaterials.DIAMOND, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_WOODCUTTER_SETTINGS));
         Reg.register("woodcutter_axe_netherite", new WoodcutterAxeBase(ToolMaterials.NETHERITE, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_WOODCUTTER_SETTINGS));
+
+        //Scythes
+        Reg.register("scythe_wooden", new ScytheBase(ToolMaterials.WOOD, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SCYTHE_SETTINGS));
+        Reg.register("scythe_stone", new ScytheBase(ToolMaterials.STONE, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SCYTHE_SETTINGS));
+        Reg.register("scythe_golden", new ScytheBase(ToolMaterials.GOLD, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SCYTHE_SETTINGS));
+        Reg.register("scythe_primsteel", new ModdedScytheBase(ModToolMaterials.PRIMSTEEL, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SCYTHE_SETTINGS));
+        Reg.register("scythe_iron", new ScytheBase(ToolMaterials.IRON, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SCYTHE_SETTINGS));
+        Reg.register("scythe_rosegold", new ModdedScytheBase(ModToolMaterials.ROSEGOLD, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SCYTHE_SETTINGS));
+        Reg.register("scythe_golemite", new ModdedScytheBase(ModToolMaterials.GOLEMITE, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SCYTHE_SETTINGS));
+        Reg.register("scythe_diamond", new ScytheBase(ToolMaterials.DIAMOND, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SCYTHE_SETTINGS));
+        Reg.register("scythe_netherite", new ScytheBase(ToolMaterials.NETHERITE, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SCYTHE_SETTINGS));
 
         //Undead Artifacts
         //Drowned
