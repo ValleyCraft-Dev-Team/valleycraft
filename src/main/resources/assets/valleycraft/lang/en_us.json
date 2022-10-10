@@ -13,6 +13,11 @@
   "block.valleycraft.defective_spawner.tooltip": "Broken beyond repair. It's only",
   "block.valleycraft.defective_spawner.tooltip_2": "use now is purely decorative.",
 
+  "entity.minecraft.villager.stablehand": "Stablehand",
+  "entity.minecraft.villager.lumberjack": "Lumberjack",
+  "entity.minecraft.villager.innkeeper": "Innkeeper",
+  "entity.minecraft.villager.diaspora": "Diaspora",
+
   "nourishing_items": "§6",
   "block.valleycraft.shivercap": "§6Shivercap",
   "block.valleycraft.stalwart_shroom": "§6Stalwart Ironshroom",
@@ -80,7 +85,12 @@
   "item.valleycraft.bb_cave_snail": "§aCave Snail in a Bottle",
   "item.valleycraft.bb_rhino_beetle": "§aRhino Beetle in a Bottle",
   "item.valleycraft.big_bottle": "Big Bottle",
-  "block.valleycraft.stablehand_station": "§aStablehand Table",
+  "block.valleycraft.stablehand_station": "Stablehand Post",
+  "block.valleycraft.stablehand_counter": "Stablehand Counter",
+  "block.valleycraft.lumberjack_station": "Lumberjack Resting Spot",
+  "block.valleycraft.stove": "Stove",
+  "block.valleycraft.campfire_pot": "§aDiaspora's Campfire",
+
   "block.valleycraft.ancient_wagon_wheel": "§aAncient Wagon Wheel",
   "block.valleycraft.ancient_wagon_wheel_platform": "§aAncient Wagon Wheel Connection Rod",
   "block.valleycraft.ancient_wagon_wheel_table": "§aAncient Wagon Wheel Table",
@@ -163,6 +173,7 @@
   "block.valleycraft.guidestone_danger": "Danger Boundary Stone",
   "block.valleycraft.crate": "Crate",
   "container.valleycraft.crate": "Crate",
+  "container.valleycraft.stove": "Stove",
 
   "block.valleycraft.stake": "Stake",
   "block.valleycraft.sprinkler": "Sprinkler",
@@ -613,6 +624,43 @@
   "item.valleycraft.wooden_oar": "Wooden Oar",
 
   "item.valleycraft.adventurine_shards": "Adventurine Shards",
-  "block.valleycraft.adventurine": "Adventurine"
+  "block.valleycraft.adventurine": "Adventurine",
 
+  "block.valleycraft.smallest_lilypads": "Tiny Lilypads",
+  "block.valleycraft.small_lilypads": "Small Lilypads",
+  "block.valleycraft.small_lilypad": "Small Lilypad",
+  "block.valleycraft.yellow_flowering_lilypad": "Yellow Flowering Lilypad",
+  "block.valleycraft.white_flowering_lilypad": "White Flowering Lilypad",
+  "block.valleycraft.red_flowering_lilypad": "Red Flowering Lilypad",
+  "block.valleycraft.purple_flowering_lilypad": "Purple Flowering Lilypad",
+  "block.valleycraft.pink_flowering_lilypad": "Pink Flowering Lilypad",
+  "block.valleycraft.blue_flowering_lilypad": "Blue Flowering Lilypad",
+  "block.valleycraft.orange_seagrass": "Orange Seagrass",
+  "block.valleycraft.grave_marker": "Grave Marker",
+  "block.valleycraft.grave_marker_pet": "Pet Grave Marker",
+  "block.valleycraft.erd_stone_gravestone": "Gravestone",
+  "block.valleycraft.erd_stone_gravestone_pet": "Pet Gravestone",
+
+  "block.valleycraft.leather_block": "Leather Block",
+  "block.valleycraft.black_leather_block": "Black Leather Block",
+  "block.valleycraft.white_leather_block": "White Leather Block",
+  "block.valleycraft.blue_leather_block": "Blue Leather Block",
+  "block.valleycraft.brown_leather_block": "Brown Leather Block",
+  "block.valleycraft.cyan_leather_block": "Cyan Leather Block",
+  "block.valleycraft.green_leather_block": "Green Leather Block",
+  "block.valleycraft.grey_leather_block": "Gray Leather Block",
+  "block.valleycraft.light_blue_leather_block": "Light Blue Leather Block",
+  "block.valleycraft.light_grey_leather_block": "Light Gray Leather Block",
+  "block.valleycraft.lime_leather_block": "Lime Leather Block",
+  "block.valleycraft.magenta_leather_block": "Magenta Leather Block",
+  "block.valleycraft.orange_leather_block": "Orange Leather Block",
+  "block.valleycraft.pink_leather_block": "Pink Leather Block",
+  "block.valleycraft.purple_leather_block": "Purple Leather Block",
+  "block.valleycraft.red_leather_block": "Red Leather Block",
+  "block.valleycraft.yellow_leather_block": "Yellow Leather Block",
+  "block.valleycraft.tanned_leather_block": "Tanned Leather Block",
+
+  "item.valleycraft.climbing_axe": "Mountain Climbing Axe",
+  "item.valleycraft.ancient_climbing_axe": "Ancient Ice Climbing Axe",
+  "item.valleycraft.button": "Peculiar Buttons"
 }

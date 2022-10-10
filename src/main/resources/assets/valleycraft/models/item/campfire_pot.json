@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "valleycraft:item/block_items/campfire_pot_item"
+  }
+}

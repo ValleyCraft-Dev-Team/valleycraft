@@ -43,7 +43,8 @@ public class ModBlocks {
     public static final Block CURTAIN = new CurtainBlock();
     public static final Block STAKE = new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly());
 
-    public static final Block LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.TERRACOTTA_ORANGE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block LEATHER_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+    public static final Block TANNED_LEATHER_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL));
     public static final Block BLACK_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLACK).strength(0.8f).sounds(BlockSoundGroup.WOOL));
     public static final Block BLUE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLUE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
     public static final Block BROWN_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BROWN).strength(0.8f).sounds(BlockSoundGroup.WOOL));
@@ -62,6 +63,7 @@ public class ModBlocks {
     public static final Block YELLOW_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.YELLOW).strength(0.8f).sounds(BlockSoundGroup.WOOL));
     public static final Block SALT_BLOCK = new Block(Block.Settings.copy(Blocks.SANDSTONE));
     public static final Block STABLEHAND = new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
+    public static final Block STABLEHAND_COUNTER = new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
     public static final Block EMPTY_BOOKSHELF = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
     public static final Block POTION_BOOKSHELF = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
     public static final Block ANTHRO_BOOKSHELF = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
@@ -81,6 +83,7 @@ public class ModBlocks {
     public static final Block SKELETAL_REMAINS = new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE));
     public static final Block STUCK_PICKAXE_BLOCK = new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN));
     public static final Block SKELETAL_MINING_REMAINS = new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE));
+    public static final Block LUMBERJACK_STATION = new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN));
 
     public static final Block GHOST_PUMPKIN_CARVED = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always));
     public static final Block GHOST_JACK_O_LANTERN = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().luminance(15).allowsSpawning(ModBlocks::always));
@@ -138,6 +141,8 @@ public class ModBlocks {
 
     public static final Block CRATE = new CrateBlock(Block.Settings.copy(Blocks.BARREL));
     public static final Block DEFECTIVE_SPAWNER = new DefectiveBlock(Block.Settings.copy(Blocks.SPAWNER));
+    public static final Block STOVE = new StoveBlock(Block.Settings.copy(Blocks.SMOKER));
+    public static final Block CAMPFIRE_POT = new CampfirePotBlock(Block.Settings.copy(Blocks.CAULDRON).luminance(s -> 13).nonOpaque());
 
     public static final Block BROWN_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly());
     public static final Block BLUE_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly());
@@ -167,10 +172,16 @@ public class ModBlocks {
     public static void initialize() {
         //furniture
         Reg.registerWithItem("stablehand_station", STABLEHAND, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("stablehand_counter", STABLEHAND_COUNTER, itemSettings().group(NON_NATURAL_BLOCKS));
+
+        Reg.registerWithItem("lumberjack_station", LUMBERJACK_STATION, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("stove", STOVE, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("campfire_pot", CAMPFIRE_POT, itemSettings().group(BOOKS));
+
+        Reg.registerWithItem("crate", CRATE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("empty_bookshelf", EMPTY_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("potion_bookshelf", POTION_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("anthro_bookshelf", ANTHRO_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("crate", CRATE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("wattle_stool", WATTLE_STOOL, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("wattle_chair", WATTLE_CHAIR, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("wattle_table", WATTLE_TABLE, itemSettings().group(NON_NATURAL_BLOCKS));
@@ -321,6 +332,7 @@ public class ModBlocks {
 
         //leathers are last
         Reg.registerWithItem("leather_block", LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        Reg.registerWithItem("tanned_leather_block", TANNED_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("black_leather_block", BLACK_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("blue_leather_block", BLUE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("brown_leather_block", BROWN_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));

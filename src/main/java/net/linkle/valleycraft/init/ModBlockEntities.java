@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityT
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder.Factory;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.block.entity.CrateBlockEntity;
+import net.linkle.valleycraft.block.entity.StoveEntity;
 import net.linkle.valleycraft.block.entity.WispLanternBlockEntity;
 import net.linkle.valleycraft.client.block.entity.WispLanternRenderer;
 import net.minecraft.block.Block;
@@ -18,10 +19,12 @@ public class ModBlockEntities {
 
     public static BlockEntityType<WispLanternBlockEntity> WISP_LANTERN;
     public static BlockEntityType<CrateBlockEntity> CRATE;
-    
+    public static BlockEntityType<StoveEntity> STOVE;
+
     public static void initialize() {
         WISP_LANTERN = create("wisp_lantern", WispLanternBlockEntity::new, ModBlocks.VEX_LANTERN);
         CRATE = create("crate", CrateBlockEntity::new, ModBlocks.CRATE);
+        STOVE = create("stove", StoveEntity::new, ModBlocks.STOVE);
     }
     
     @Environment(EnvType.CLIENT)

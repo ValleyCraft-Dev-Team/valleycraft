@@ -56,8 +56,8 @@ public class ModNaturalBlocks {
     public static final Block GODDESS_LILY = new ModMushroomBlock().large();
     public static final Block HONEYCLUSTER = new ModMushroomBlock().large();
     public static final Block STALWART_SHROOM = new ModMushroomBlock().large();
-    public static final Block SOULSPORE = new ModMushroomBlock(Block.Settings.copy(Blocks.POPPY).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).ground(BlockPres.STONE).shape(Block.createCuboidShape(4, 0, 4, 12, 9, 12));
-    public static final Block SOULSPORE_SINGLE = new ModMushroomBlock(Block.Settings.copy(Blocks.POPPY).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).ground(BlockPres.STONE).shape(Block.createCuboidShape(5, 0, 5, 11, 6, 11));
+    public static final Block SOULSPORE = new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(4, 0, 4, 12, 9, 12));
+    public static final Block SOULSPORE_SINGLE = new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(5, 0, 5, 11, 6, 11));
     public static final Block IRONSHROOM = new ModMushroomBlock().large();
     public static final Block JUNGLE_CAP = new ModMushroomBlock().large();
     public static final Block JUNGLE_CAP_CLUSTER = new ModMushroomBlock().large();
@@ -121,7 +121,7 @@ public class ModNaturalBlocks {
 
     public static final Block CLARET_LEAF = new ModPlantBlock();
     //public static final Block STICKY_SHROOM = new ModLargerMushroomBlock();
-    public static final Block GOOP_CAP = new ModMushroomBlock().large();
+    public static final Block GOOP_CAP = new ModMushroomBlock(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 2)).large();
     public static final Block ORANGE_POPPY = new ModPlantBlock();
     public static final Block YELLOW_POPPY = new ModPlantBlock();
     public static final Block WHITE_POPPY = new ModPlantBlock();

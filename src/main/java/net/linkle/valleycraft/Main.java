@@ -5,7 +5,9 @@ import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.gen.features.TreeConfigFeatures;
 import net.linkle.valleycraft.init.*;
 import net.linkle.valleycraft.tags.ModFluidTags;
-import net.minecraft.block.Blocks;
+import net.linkle.valleycraft.villager.CustomTradeRegistry;
+import net.linkle.valleycraft.villager.ModVillagers;
+import net.linkle.valleycraft.villager.ModVillagerDiaspora;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -39,6 +41,10 @@ public class Main implements ModInitializer {
 
 		ModEffects.initialize();
 		ModPotions.initialize();
+
+		CustomTradeRegistry.setupTrades();
+		ModVillagers.setupPOIs();
+		ModVillagerDiaspora.setupPOIs();
 	}
 	
 	public static Identifier makeId(String id) {

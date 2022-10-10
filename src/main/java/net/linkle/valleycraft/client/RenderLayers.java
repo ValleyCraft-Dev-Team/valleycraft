@@ -171,6 +171,8 @@ class RenderLayers {
         put(STUCK_PICKAXE_BLOCK, cullout);
         put(DEAD_LANTERN, cullout);
         put(STAKE, cullout);
+        put(LUMBERJACK_STATION, cullout);
+        put(CAMPFIRE_POT, cullout);
     }
 
     private static void put(Block block, RenderLayer layer) {

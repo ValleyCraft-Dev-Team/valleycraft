@@ -87,6 +87,8 @@ public class ModArmors {
     public static final Item FIXED_HUSK_SHIRT = new ArmorItem(ArmorMats.REPAIRED_HUSK, EquipmentSlot.CHEST, settings_artifacts_rare);
     public static final Item FIXED_HUSK_SHORTS = new ArmorItem(ArmorMats.REPAIRED_HUSK, EquipmentSlot.LEGS, settings_artifacts_rare);
 
+    public static final Item BUTTON = new ArmorItem(ArmorMats.BUTTON, EquipmentSlot.HEAD, settings_artifacts_rare);
+
     //public static final Item GOLEMITE_HELMET = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
     //public static final Item GOLEMITE_CHESTPLATE = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settings);
     //public static final Item GOLEMITE_LEGGINGS = new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.LEGS, settings);
@@ -113,6 +115,7 @@ public class ModArmors {
         Reg.register("snow_cap", SNOW_CAP);
         Reg.register("villager_tunic", VILLAGER_TUNIC);
         Reg.register("emerald_talisman", EMERALD_TALISMAN);
+        Reg.register("button", BUTTON);
 
         Reg.register("trader_head_scarf", TRADER_HEAD_SCARF);
         Reg.register("trader_coat", TRADER_COAT);

@@ -16,49 +16,49 @@ public class IngredientFoodItems {
     //public static final Item AMETHYSTLE_SALAD = new Tier1Normal(settings(), 4, 2, StatusEffects.HASTE);
 
     //raw ingredients
-    public static final Item ALOE = new AliasedBlockItem(ModNaturalBlocks.ALOE_VERAS, settings().food(Foods.create(3, 1)));
-    public static final Item AMETHYSTLE = new FoodItem(settings(), 2, 1);
-    public static final Item ANCIENT_FLOWER = new FoodItem(settings(), 6, 2);
-    public static final Item CAVE_ROOT = new FoodItem(settings(), 4, 2);
-    public static final Item ENDURA_CARROT = new FoodItem(settings(), 5, 3);
-    public static final Item FIRE_PEPPER = new FoodItem(settings(), 3, 3);
-    public static final Item GLOW_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 2, StatusEffects.GLOWING);
+    public static final Item ALOE = new AliasedBlockItem(ModNaturalBlocks.ALOE_VERAS, settings().food(Foods.create(3, 0.3f)));
+    public static final Item AMETHYSTLE = new FoodItem(settings(), 2, 0.3f);
+    public static final Item ANCIENT_FLOWER = new FoodItem(settings(), 6, 0.7f);
+    public static final Item CAVE_ROOT = new FoodItem(settings(), 4, 0.3f);
+    public static final Item ENDURA_CARROT = new FoodItem(settings(), 5, 0.3f);
+    public static final Item FIRE_PEPPER = new FoodItem(settings(), 3, 0.3f);
+    public static final Item GLOW_BERRY_JUICE = new Tier0Bottle(settings().maxCount(16), 4, 0.5f, StatusEffects.GLOWING);
 
-    public static final Item HEARTY_BEETROOT = new FoodItem(settings(), 4, 4);
-    public static final Item MAIZE = new AliasedBlockItem(ModNaturalBlocks.MAIZE, settings().rarity(Rarity.RARE).food(Foods.create(3, 4)));
-    public static final Item MINERS_LETTUCE = new AliasedBlockItem(ModNaturalBlocks.MINERS_LETTUCES, settings().food(Foods.create(3, 2)));
-    public static final Item MONSTER_GUTS = new Tier1Normal(settings(), 6, 2, StatusEffects.HUNGER);
-    public static final Item MONSTER_LIVER = new Tier1Normal(settings(), 3, 2, StatusEffects.POISON);
-    public static final Item SYRUPY_HONEYCOMB = new Tier0Normal(settings(), 3, 2, StatusEffects.REGENERATION);
+    public static final Item HEARTY_BEETROOT = new FoodItem(settings(), 4, 0.6f);
+    public static final Item MAIZE = new AliasedBlockItem(ModNaturalBlocks.MAIZE, settings().rarity(Rarity.RARE).food(Foods.create(3, 0.3f)));
+    public static final Item MINERS_LETTUCE = new AliasedBlockItem(ModNaturalBlocks.MINERS_LETTUCES, settings().food(Foods.create(3, 0.3f)));
+    public static final Item MONSTER_GUTS = new Tier1Normal(settings(), 6, 0.3f, StatusEffects.HUNGER);
+    public static final Item MONSTER_LIVER = new Tier1Normal(settings(), 3, 0.4f, StatusEffects.POISON);
+    public static final Item SYRUPY_HONEYCOMB = new Tier0Normal(settings(), 3, 0.6f, StatusEffects.REGENERATION);
 
     public static final Item MOREL_OIL = new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS);
-    public static final Item ONION = new FoodItem(settings(), 3, 3);
-    public static final Item RAW_BACON = new FoodItem(settings(), 2, 1);
-    public static final Item RAW_BAT = new FoodItem(settings(), 2, 1);
-    public static final Item GHOST_PUMPKIN_SLICE = new FoodItem(settings(), 2, 2);
-    public static final Item PUMPKIN_SLICE = new FoodItem(settings(), 2, 2);
-    public static final Item RAW_GLOWSQUID = new FoodItem(settings(), 2, 1.2f);
-    public static final Item RAW_SQUID = new FoodItem(settings(), 2, 1.2f);
-    public static final Item RAW_RICE = new FoodItem(settings(), 2, 3);
-    public static final Item RAW_SILVERFISH = new FoodItem(settings(), 1, 1);
-    public static final Item RAW_PHANTOM = new Tier1Normal(settings(), 3, 1.4f, StatusEffects.NAUSEA);
-    public static final Item RAW_BIRD = new FoodItem(settings(), 2, 1);
+    public static final Item ONION = new FoodItem(settings(), 3, 0.3f);
+    public static final Item RAW_BACON = new FoodItem(settings(), 2, 0.2f);
+    public static final Item RAW_BAT = new FoodItem(settings(), 2, 0.1f);
+    public static final Item GHOST_PUMPKIN_SLICE = new FoodItem(settings(), 2, 0.4f);
+    public static final Item PUMPKIN_SLICE = new FoodItem(settings(), 2, 0.4f);
+    public static final Item RAW_GLOWSQUID = new FoodItem(settings(), 2, 0.2f);
+    public static final Item RAW_SQUID = new FoodItem(settings(), 2, 0.3f);
+    public static final Item RAW_RICE = new FoodItem(settings(), 2, 0.3f);
+    public static final Item RAW_SILVERFISH = new FoodItem(settings(), 1, 0.1f);
+    public static final Item RAW_PHANTOM = new Tier1Normal(settings(), 3, 0.3f, StatusEffects.NAUSEA);
+    public static final Item RAW_BIRD = new FoodItem(settings(), 2, 0.2f);
 
-    public static final Item BREAD_DOUGH = new FoodItem(settings(), 3, 3);
-    public static final Item CORN_BREAD_DOUGH = new FoodItem(settings(), 2, 4);
-    public static final Item CAKE_DOUGH = new FoodItem(settings(), 3, 3);
-    public static final Item HARDTACK_DOUGH = new FoodItem(settings(), 1, 3);
-    public static final Item PUMPKIN_SPICE_COOKIE_DOUGH = new FoodItem(settings(), 1, 3);
-    public static final Item PUMPKIN_PIE_DOUGH = new FoodItem(settings(), 3, 3);
-    public static final Item COOKIE_DOUGH = new FoodItem(settings(), 1, 3);
-    public static final Item CHORUS_FRUIT_PIE_DOUGH = new FoodItem(settings(), 3, 3);
-    public static final Item CHOCOLATE_PIE_DOUGH = new FoodItem(settings(), 3, 3);
-    public static final Item APPLE_PIE_DOUGH = new FoodItem(settings(), 3, 3);
-    public static final Item SWEET_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
-    public static final Item GLOW_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
-    public static final Item GLOOM_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 3);
+    public static final Item BREAD_DOUGH = new FoodItem(settings(), 3, 0.2f);
+    public static final Item CORN_BREAD_DOUGH = new FoodItem(settings(), 2, 0.2f);
+    public static final Item CAKE_DOUGH = new FoodItem(settings(), 3, 0.2f);
+    public static final Item HARDTACK_DOUGH = new FoodItem(settings(), 1, 0.2f);
+    public static final Item PUMPKIN_SPICE_COOKIE_DOUGH = new FoodItem(settings(), 1, 0.2f);
+    public static final Item PUMPKIN_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
+    public static final Item COOKIE_DOUGH = new FoodItem(settings(), 1, 0.2f);
+    public static final Item CHORUS_FRUIT_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
+    public static final Item CHOCOLATE_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
+    public static final Item APPLE_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
+    public static final Item SWEET_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
+    public static final Item GLOW_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
+    public static final Item GLOOM_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
     public static final Item GLOOM_BERRY = new AliasedBlockItem(ModNaturalBlocks.GLOOM_BERRY, settings().food(FoodComponents.GLOW_BERRIES));
-    public static final Item MILK = new BottleItem(settings().maxCount(16), 0, 2).setMilk();
+    public static final Item MILK = new BottleItem(settings().maxCount(16), 0, 0.2f).setMilk();
     public static final Item BEAST_LIVER_RAW = new FoodItem(settings(), 4, 0.4f, true);
 
     //1.1 planned

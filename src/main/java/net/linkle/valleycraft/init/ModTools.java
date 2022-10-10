@@ -14,8 +14,10 @@ import net.linkle.valleycraft.util.Reg;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterials;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
+import static net.linkle.valleycraft.init.ModGroups.BOOKS;
 import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
 
 import net.linkle.valleycraft.item.ClimbingAxeItem;
@@ -34,6 +36,7 @@ public class ModTools {
     public static final Item SEAOLOGER_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
     public static final Item SEAOLOGER_FIXED = new FixedSeagerCutlassItem(new FixedSeagerToolMaterial(), 5, -1.8f);
     public static final Item CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.IRON, new Item.Settings().group(VC_TOOLS));
+    public static final Item ANCIENT_CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.DIAMOND, new Item.Settings().group(BOOKS).rarity(Rarity.EPIC));
 
     //The base attack damage of each tool type.
     //These values are added to the attack stats of their materials when they're registered.
@@ -93,5 +96,6 @@ public class ModTools {
         //Reg.register("axe_timber_red", new TimberAxeItem(new TimberAxeToolMaterial()));
         
         Reg.register("climbing_axe", CLIMBING_AXE);
+        Reg.register("ancient_climbing_axe", ANCIENT_CLIMBING_AXE);
     }
 }
