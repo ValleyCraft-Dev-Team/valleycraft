@@ -34,7 +34,8 @@ public class ModTools {
     public static final Item FLINT = new FlintToolItem(new FlintToolMaterial());
     public static final Item HEFTY_ROCK = new RockToolItem(new RockToolMaterial());
     public static final Item RUSTY_SWORD = new RustySwordItem(new RustySwordMaterial(),4, -2.4f);
-    public static final Item OAR = new OarItem(new OarToolMaterial(),3, -2.5f);
+    public static final Item OAR = new OarItem(new OarToolMaterial(),3, -2.8f);
+    public static final Item LADLE = new OarItem(new OarToolMaterial(),2, -2.5f);
     public static final Item BONE_DART_ITEM = new BoneDartItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
     public static final Item CORAL_KNIFE = new CoralDaggerItem(new CoralDaggerToolMaterial(), 3, -1.4f);
     public static final Item CAVE_FISHERS_RAPIER = new CaveFisherSwordItem(new CaveFisherToolMaterial(), 4, -2.4f);
@@ -46,19 +47,22 @@ public class ModTools {
     //The base attack damage of each tool type.
     //These values are added to the attack stats of their materials when they're registered.
     //The attack stats are listed in RoseGoldToolMaterial.class.
-    public static final Integer KNIFE_BASE_DAMAGE = 1;
-    public static final Integer WOODCUTTER_BASE_DAMAGE = 2;
-    public static final Integer SCYTHE_BASE_DAMAGE = 2;
+    public static final Integer KNIFE_BASE_DAMAGE = 2;
+    public static final Integer DAGGER_BASE_DAMAGE = 3;
+    public static final Integer WOODCUTTER_BASE_DAMAGE = 8;
+    public static final Integer SCYTHE_BASE_DAMAGE = 4;
     //The base attack speed of each tool type.
     //These numbers are subtracted from four, so 4.0 will make the tool never charge, and higher will likely cause issues.
     //Larger number = slower, smaller number = faster.
     public static final Float KNIFE_BASE_SPEED = -2.0f;
-    public static final Float WOODCUTTER_BASE_SPEED = -3.0f;
-    public static final Float SCYTHE_BASE_SPEED = -2.5f;
+    public static final Float WOODCUTTER_BASE_SPEED = -3.4f;
+    public static final Float SCYTHE_BASE_SPEED = -2.7f;
+    public static final Float DAGGER_BASE_SPEED = -2.6f;
     //The item settings for knives made of 'basic' materials- wood, gold, stone, iron, rose gold, diamond, netherite
     public static final Item.Settings BASIC_KNIFE_SETTINGS = new Item.Settings().group(VC_TOOLS);
     public static final Item.Settings BASIC_WOODCUTTER_SETTINGS = new Item.Settings().group(VC_TOOLS);
     public static final Item.Settings BASIC_SCYTHE_SETTINGS = new Item.Settings().group(VC_TOOLS);
+    public static final Item.Settings BASIC_DAGGER_SETTINGS = new Item.Settings().group(VC_TOOLS);
 
     public static void initialize() {
         //Environmental
@@ -69,6 +73,10 @@ public class ModTools {
         Reg.register("rusted_sword", RUSTY_SWORD);
         //Material technically
         Reg.register("wooden_oar", OAR);
+        //Ladle
+        Reg.register("ladle", LADLE);
+        //Climbing Axes
+        Reg.register("climbing_axe", CLIMBING_AXE);
 
         //Knives
         Reg.register("knife_wooden", new KnifeBase(ToolMaterials.WOOD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
@@ -80,6 +88,17 @@ public class ModTools {
         Reg.register("knife_golemite", new ModdedKnifeBase(ModToolMaterials.GOLEMITE, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
         Reg.register("knife_diamond", new KnifeBase(ToolMaterials.DIAMOND, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
         Reg.register("knife_netherite", new KnifeBase(ToolMaterials.NETHERITE, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_KNIFE_SETTINGS));
+
+        //Dagger
+        Reg.register("dagger_wooden", new KnifeBase(ToolMaterials.WOOD, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_DAGGER_SETTINGS));
+        Reg.register("dagger_stone", new KnifeBase(ToolMaterials.STONE, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_DAGGER_SETTINGS));
+        Reg.register("dagger_golden", new KnifeBase(ToolMaterials.GOLD, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_DAGGER_SETTINGS));
+        Reg.register("dagger_primsteel", new ModdedKnifeBase(ModToolMaterials.PRIMSTEEL, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_DAGGER_SETTINGS));
+        Reg.register("dagger_iron", new KnifeBase(ToolMaterials.IRON, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_DAGGER_SETTINGS));
+        Reg.register("dagger_rosegold", new ModdedKnifeBase(ModToolMaterials.ROSEGOLD, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_DAGGER_SETTINGS));
+        Reg.register("dagger_golemite", new ModdedKnifeBase(ModToolMaterials.GOLEMITE, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_DAGGER_SETTINGS));
+        Reg.register("dagger_diamond", new KnifeBase(ToolMaterials.DIAMOND, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_DAGGER_SETTINGS));
+        Reg.register("dagger_netherite", new KnifeBase(ToolMaterials.NETHERITE, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_DAGGER_SETTINGS));
 
         //Woodcutter's Axes
         Reg.register("woodcutter_axe_wooden", new WoodcutterAxeBase(ToolMaterials.WOOD, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_WOODCUTTER_SETTINGS));
@@ -120,7 +139,6 @@ public class ModTools {
         //1.1 planned
         //Reg.register("axe_timber_red", new TimberAxeItem(new TimberAxeToolMaterial()));
         
-        Reg.register("climbing_axe", CLIMBING_AXE);
         Reg.register("ancient_climbing_axe", ANCIENT_CLIMBING_AXE);
     }
 }
