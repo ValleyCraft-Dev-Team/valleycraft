@@ -11,9 +11,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import net.linkle.valleycraft.Debugs;
 import net.linkle.valleycraft.extension.LivingEntityExt;
+import net.linkle.valleycraft.init.ModItems;
+import net.linkle.valleycraft.item.SoulPetItem;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.MathHelper;
@@ -64,5 +67,19 @@ abstract class LivingEntityMixin extends Entity implements LivingEntityExt {
     @Inject(method = "isClimbing", at = @At("HEAD"), cancellable = true)
     void climbingAxe(CallbackInfoReturnable<Boolean> info) {
         Debugs.climbingAxe((LivingEntity)(Object)this, info);
+    }
+    
+    @Inject(method = "updatePostDeath", at = @At("TAIL"))
+    void updatePostDeath(CallbackInfo info) {
+        if (world.isClient) return; 
+        Object obj = this;
+        if (getRemovalReason() == RemovalReason.KILLED && obj instanceof TameableEntity pet && pet.isTamed()) {
+            var owner = (Entity)pet.getOwner();
+            if (owner != null) {
+                var stack = new ItemStack(ModItems.SOUL_ITEM_PET);
+                SoulPetItem.setTag(stack, pet);
+                dropStack(stack);
+            }
+        }
     }
 }
