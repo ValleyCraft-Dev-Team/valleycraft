@@ -20,7 +20,7 @@ public class BoneDartItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand); // creates a new ItemStack instance of the user's itemStack in-hand
         world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SNOWBALL_THROW, SoundCategory.NEUTRAL, 0.5F, 1F); // plays a globalSoundEvent
-		user.getItemCooldownManager().set(this, 3 * 20);
+		user.getItemCooldownManager().set(this, 1 * 10);
         if (!world.isClient) {
             ThrownBoneDartEntity boneDartEntity = new ThrownBoneDartEntity(world, user);
             boneDartEntity.setItem(itemStack);
