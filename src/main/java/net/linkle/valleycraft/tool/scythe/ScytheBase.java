@@ -5,7 +5,9 @@ import com.google.common.collect.Multimap;
 import net.linkle.valleycraft.api.EnchantmentHandler;
 import net.linkle.valleycraft.tool.ModToolMaterials;
 import net.minecraft.block.BlockState;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -75,4 +77,11 @@ public class ScytheBase
     public List<EnchantmentTarget> getEnchantmentTypes() {
         return Collections.singletonList(EnchantmentTarget.WEAPON);
     }
+    public boolean isExplicitlyValid(Enchantment enchantment) {
+        return enchantment.equals(Enchantments.SWEEPING);
+    }
+    public boolean isInvalid(Enchantment enchantment) {
+        return enchantment.equals(Enchantments.IMPALING);
+    }
+
 }

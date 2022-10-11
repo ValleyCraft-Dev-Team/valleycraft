@@ -6,6 +6,7 @@ import net.linkle.valleycraft.gen.features.TreeConfigFeatures;
 import net.linkle.valleycraft.init.*;
 import net.linkle.valleycraft.tags.ModFluidTags;
 import net.linkle.valleycraft.tool.ModToolMaterials;
+import net.linkle.valleycraft.tool.ModToolMaterialsExtended;
 import net.linkle.valleycraft.villager.CustomTradeRegistry;
 import net.linkle.valleycraft.villager.ModVillagers;
 import net.linkle.valleycraft.villager.ModVillagerDiaspora;
@@ -27,6 +28,7 @@ public class Main implements ModInitializer {
 		ModBlockEntities.initialize();
 		ModFluids.initialize();
 		ModItems.initialize();
+		ModToolMaterialsExtended.initialize();
 		ModToolMaterials.initialize();
 		ModFishing.initialize();
 		ModTools.initialize();

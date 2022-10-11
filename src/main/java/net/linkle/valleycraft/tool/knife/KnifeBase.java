@@ -85,6 +85,9 @@ public class KnifeBase
 
     //Make the knife *not* accept Sweeping Edge, even though it's in the above category
     @Override
+    public boolean isExplicitlyValid(Enchantment enchantment) {
+        return enchantment.equals(Enchantments.IMPALING);
+    }
     public boolean isInvalid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.SWEEPING);
     }

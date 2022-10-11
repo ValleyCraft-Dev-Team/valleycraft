@@ -1,11 +1,12 @@
-package net.linkle.valleycraft.tool.woodcutter_axe;
+package net.linkle.valleycraft.tool.hatchet;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.linkle.valleycraft.api.EnchantmentHandler;
-import net.linkle.valleycraft.tool.ModToolMaterials;
 import net.minecraft.block.BlockState;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -13,6 +14,7 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.Vanishable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -20,13 +22,13 @@ import net.minecraft.world.World;
 import java.util.Collections;
 import java.util.List;
 
-public class ModdedWoodcutterAxeBase
+public class HatchetAxeBase
         extends ToolItem
         implements Vanishable, EnchantmentHandler {
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
-    public ModdedWoodcutterAxeBase(ModToolMaterials material, int attackDamage, float attackSpeed, Settings settings) {
+    public HatchetAxeBase(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
         super(material, settings);
         this.attackDamage = attackDamage + material.getAttackDamage();
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
@@ -73,5 +75,8 @@ public class ModdedWoodcutterAxeBase
     @Override
     public List<EnchantmentTarget> getEnchantmentTypes() {
         return Collections.singletonList(EnchantmentTarget.WEAPON);
+    }
+    public boolean isExplicitlyValid(Enchantment enchantment) {
+        return enchantment.equals(Enchantments.FIRE_ASPECT);
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "valleycraft:item/tools/travelers_swords/iron_travelers_sword"
+  }
+}

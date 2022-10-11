@@ -1,11 +1,12 @@
-package net.linkle.valleycraft.tool.scythe;
+package net.linkle.valleycraft.tool.knife;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.linkle.valleycraft.api.EnchantmentHandler;
-import net.linkle.valleycraft.tool.ModToolMaterials;
 import net.minecraft.block.BlockState;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
@@ -21,13 +22,13 @@ import net.minecraft.world.World;
 import java.util.Collections;
 import java.util.List;
 
-public class ModdedScytheBase
+public class DaggerBase
         extends ToolItem
         implements Vanishable, EnchantmentHandler {
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
-    public ModdedScytheBase(ModToolMaterials material, int attackDamage, float attackSpeed, Settings settings) {
+    public DaggerBase(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
         super(material, settings);
         this.attackDamage = attackDamage + material.getAttackDamage();
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
@@ -47,7 +48,7 @@ public class ModdedScytheBase
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if (state.getHardness(world, pos) != 0.0f) {
-            stack.damage(1, miner, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
+            stack.damage(2, miner, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
         }
         return true;
     }
@@ -70,9 +71,18 @@ public class ModdedScytheBase
     //These two methods use our special mixin to force specific enchantments to work on the sickle
     //despite enchantment compatibility being hardcoded in vanilla.
 
-    //Make the scythe accept any weapon enchantments
+    //Make the knife accept any weapon enchantments
     @Override
     public List<EnchantmentTarget> getEnchantmentTypes() {
         return Collections.singletonList(EnchantmentTarget.WEAPON);
+    }
+
+    //Make the knife *not* accept Sweeping Edge, even though it's in the above category
+    @Override
+    public boolean isExplicitlyValid(Enchantment enchantment) {
+        return enchantment.equals(Enchantments.SWEEPING);
+    }
+    public boolean isInvalid(Enchantment enchantment) {
+        return enchantment.equals(Enchantments.IMPALING);
     }
 }
