@@ -18,6 +18,18 @@
   "entity.minecraft.villager.innkeeper": "Innkeeper",
   "entity.minecraft.villager.diaspora": "Diaspora",
 
+  "block.valleycraft.dishes.tooltip": "Used in special dishes to",
+  "item.valleycraft.dishes.tooltip": "Used in special dishes to",
+  "block.valleycraft.dishes.tooltip_2": "give fire resistance.",
+  "block.valleycraft.dishes.tooltip_3": "give damage resistance.",
+  "item.valleycraft.dishes.tooltip_4": "give water breathing.",
+  "item.valleycraft.dishes.tooltip_5": "give regenerative effects.",
+  "item.valleycraft.dishes.tooltip_6": "give strengthening effects.",
+  "item.valleycraft.dishes.tooltip_7": "give health-boosting effects.",
+  "item.valleycraft.dishes.tooltip_8": "give night vision.",
+  "item.valleycraft.dishes.tooltip_9": "give invigorating speed.",
+  "item.valleycraft.dishes.tooltip_10": "give hastening energy.",
+
   "nourishing_items": "§6",
   "block.valleycraft.shivercap": "§6Shivercap",
   "block.valleycraft.stalwart_shroom": "§6Stalwart Ironshroom",

@@ -55,7 +55,7 @@ public class ModNaturalBlocks {
     public static final Block GLOW_CAP_CLUSTER = new ModMushroomBlock().large();
     public static final Block GODDESS_LILY = new ModMushroomBlock().large();
     public static final Block HONEYCLUSTER = new ModMushroomBlock().large();
-    public static final Block STALWART_SHROOM = new ModMushroomBlock().large();
+    public static final Block STALWART_SHROOM = new StalwartBlock().large();
     public static final Block SOULSPORE = new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(4, 0, 4, 12, 9, 12));
     public static final Block SOULSPORE_SINGLE = new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(5, 0, 5, 11, 6, 11));
     public static final Block IRONSHROOM = new ModMushroomBlock().large();
@@ -74,7 +74,7 @@ public class ModNaturalBlocks {
     public static final Block PURPLE_TULIP = new ModPlantBlock();
     public static final Block RED_LUPINE = new ModPlantBlock();
 	//public static final Block ROOTED_WATCHER = new ModPlantBlock();
-    public static final Block SHIVERCAP = new ModMushroomBlock().large();
+    public static final Block SHIVERCAP = new ShivercapBlock().large();
     public static final Block SHORT_GRASS = new ModPlantBlock();
     public static final Block SNOWFLOWER = new ModPlantBlock();
     public static final Block SPROUT = new ModPlantBlock();
