@@ -7,6 +7,7 @@ import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3f;
 import net.minecraft.util.math.Vector4f;
 
@@ -14,49 +15,15 @@ import net.minecraft.util.math.Vector4f;
 @Environment(EnvType.CLIENT)
 @SuppressWarnings("resource")
 public class Renderer {
-
-    public static void billboard(VertexConsumer consumer, MatrixStack.Entry matrix, float size, float roll, int light, int overlay) {
-        var camera = client().gameRenderer.getCamera();
-        var camRot = camera.getRotation();
-        
-        Vector4f[] verts = quad();
-        for (int i = 0; i < 4; ++i) {
-            var vert = verts[i];
-            var quat = camera.getHorizontalPlane().getDegreesQuaternion(roll);
-            quat.hamiltonProduct(camRot);
-            vert.set(vert.getX()*size, vert.getY()*size, vert.getZ()*size, 1);
-            vert.rotate(quat);
-            //
-            vert.transform(matrix.getPositionMatrix());
-        }
-        
-        Vec3f nor = new Vec3f(0, 1, 0);
-        nor.transform(matrix.getNormalMatrix());
-        float uMin = 0.005f;
-        float uMax = 0.995f;
-        float vMin = 0.005f;
-        float vMax = 0.995f;
-        consumer.vertex(verts[0].getX(), verts[0].getY(), verts[0].getZ(), 1, 1, 1, 1, uMax, vMax, overlay, light, nor.getX(), nor.getY(), nor.getZ());
-        consumer.vertex(verts[1].getX(), verts[1].getY(), verts[1].getZ(), 1, 1, 1, 1, uMax, vMin, overlay, light, nor.getX(), nor.getY(), nor.getZ());
-        consumer.vertex(verts[2].getX(), verts[2].getY(), verts[2].getZ(), 1, 1, 1, 1, uMin, vMin, overlay, light, nor.getX(), nor.getY(), nor.getZ());
-        consumer.vertex(verts[3].getX(), verts[3].getY(), verts[3].getZ(), 1, 1, 1, 1, uMin, vMax, overlay, light, nor.getX(), nor.getY(), nor.getZ());
+    
+    
+    private static MinecraftClient client() {
+        return MinecraftClient.getInstance();
     }
     
-    public static void quad(VertexConsumer consumer, MatrixStack.Entry matrix, int light, int overlay) {
-        var verts = quad();
-        for (var vert : verts) {
-            vert.transform(matrix.getPositionMatrix());
-        }
-        var nor = new Vec3f(0, 0, 1);
-        nor.transform(matrix.getNormalMatrix());
-        float uMin = 0.005f;
-        float uMax = 0.995f;
-        float vMin = 0.005f;
-        float vMax = 0.995f;
-        consumer.vertex(verts[0].getX(), verts[0].getY(), verts[0].getZ(), 1, 1, 1, 1, uMax, vMax, overlay, light, nor.getX(), nor.getY(), nor.getZ());
-        consumer.vertex(verts[1].getX(), verts[1].getY(), verts[1].getZ(), 1, 1, 1, 1, uMax, vMin, overlay, light, nor.getX(), nor.getY(), nor.getZ());
-        consumer.vertex(verts[2].getX(), verts[2].getY(), verts[2].getZ(), 1, 1, 1, 1, uMin, vMin, overlay, light, nor.getX(), nor.getY(), nor.getZ());
-        consumer.vertex(verts[3].getX(), verts[3].getY(), verts[3].getZ(), 1, 1, 1, 1, uMin, vMax, overlay, light, nor.getX(), nor.getY(), nor.getZ());
+    private static final Vector4f[] quad() {
+        final float a = 0.5f;
+        return new Vector4f[]{new Vector4f(-a, -a, 0, 1), new Vector4f(-a, a, 0, 1), new Vector4f(a, a, 0, 1), new Vector4f(a, -a, 0, 1)};
     }
     
     public static void rotate(ModelPart part, MatrixStack matrices) {
@@ -70,14 +37,6 @@ public class Renderer {
         if (part.pitch != 0.0f) {
             matrices.multiply(Vec3f.POSITIVE_X.getRadialQuaternion(part.pitch));
         }
-    }
-
-    private static MinecraftClient client() {
-        return MinecraftClient.getInstance();
-    }
-    
-    private static final Vector4f[] quad() {
-        return new Vector4f[]{new Vector4f(-1, -1, 0, 1), new Vector4f(-1, 1, 0, 1), new Vector4f(1, 1, 0, 1), new Vector4f(1, -1, 0, 1)};
     }
     
     /** The quad renderer. Might need fixing */
@@ -138,6 +97,88 @@ public class Renderer {
         
         private static final Vec3f[] quad() {
             return new Vec3f[]{new Vec3f(-0.5f, 0, -0.5f), new Vec3f(-0.5f, 0, 0.5f), new Vec3f(0.5f, 0, 0.5f), new Vec3f(0.5f, 0, -0.5f)};
+        }
+    }
+    
+    /** The billboard renderer. */
+    public static class Billboard {
+        
+        /** Uses Degree */
+        public float roll;
+        public float xOffset, yOffset;
+        public float xScale=1, yScale=1;
+        public float uMin, uMax=1, vMin, vMax=1;
+        public float r=1, g=1, b=1, a=1;
+        
+        public Billboard() {
+        }
+        
+        public Billboard(float uMin, float uMax, float vMin, float vMax) {
+            setUV(uMin, uMax, vMin, vMax);
+        }
+        
+        public void setRollDeg(float roll) {
+            this.roll = roll;
+        }
+        
+        public void setRollRad(float roll) {
+            this.roll = roll * MathHelper.DEGREES_PER_RADIAN;
+        }
+        
+        public void setScale(float scale) {
+            setScale(scale, scale);
+        }
+        
+        public void setScale(float xScale, float yScale) {
+            this.xScale = xScale;
+            this.yScale = yScale;
+        }
+        
+        public void setOffset(float xOffset, float yOffset) {
+            this.xOffset = xOffset;
+            this.yOffset = yOffset;
+        }
+        
+        public void setUV(float uMin, float uMax, float vMin, float vMax) {
+            this.uMin = uMin;
+            this.uMax = uMax;
+            this.vMin = vMin;
+            this.vMax = vMax;
+        }
+        
+        public void setRGB(float r, float g, float b) {
+            setRGBA(r, g, b, a);
+        }
+        
+        public void setRGBA(float r, float g, float b, float a) {
+            this.r = r;
+            this.g = g;
+            this.b = b;
+            this.a = a;
+        }
+        
+        public void render(VertexConsumer consumer, MatrixStack.Entry matrix, int light, int overlay) {
+            var camera = client().gameRenderer.getCamera();
+            var quat = camera.getRotation();
+            
+            if (Math.abs(roll) > 0.001f) {
+                quat.hamiltonProduct(camera.getHorizontalPlane().getDegreesQuaternion(roll));
+            }
+            
+            Vector4f[] verts = quad();
+            for (int i = 0; i < 4; ++i) {
+                var vert = verts[i];
+                vert.set((vert.getX()+xOffset)*xScale, (vert.getY()+yOffset)*yScale, vert.getZ(), 1);
+                vert.rotate(quat);
+                vert.transform(matrix.getPositionMatrix());
+            }
+            
+            Vec3f nor = new Vec3f(0, 1, 0);
+            nor.transform(matrix.getNormalMatrix());
+            consumer.vertex(verts[0].getX(), verts[0].getY(), verts[0].getZ(), r, g, b, a, uMax, vMax, overlay, light, nor.getX(), nor.getY(), nor.getZ());
+            consumer.vertex(verts[1].getX(), verts[1].getY(), verts[1].getZ(), r, g, b, a, uMax, vMin, overlay, light, nor.getX(), nor.getY(), nor.getZ());
+            consumer.vertex(verts[2].getX(), verts[2].getY(), verts[2].getZ(), r, g, b, a, uMin, vMin, overlay, light, nor.getX(), nor.getY(), nor.getZ());
+            consumer.vertex(verts[3].getX(), verts[3].getY(), verts[3].getZ(), r, g, b, a, uMin, vMax, overlay, light, nor.getX(), nor.getY(), nor.getZ());
         }
     }
 }

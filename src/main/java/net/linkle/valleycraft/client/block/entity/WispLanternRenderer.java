@@ -17,9 +17,11 @@ import net.minecraft.util.math.MathHelper;
 @Environment(EnvType.CLIENT)
 public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlockEntity> {
     public static final SpriteIdentifier VEX_TEXTURE = Sprites.create("entity/sprites/vex_jar");
+    
+    private final Renderer.Billboard billboard = new Renderer.Billboard();
 
     public WispLanternRenderer(Context context) {
-        
+        billboard.setScale(0.26f);
     }
     
     @Override
@@ -44,7 +46,8 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
         roll = sin > MathHelper.PI ? 0 : roll*MathHelper.sin(sin);
         
         var consumer = VEX_TEXTURE.getVertexConsumer(provider, RenderLayer::getEntityCutout);
-        Renderer.billboard(consumer, matrix.peek(), 0.18f, roll, light, overlay);
+        billboard.setRollRad(roll);
+        billboard.render(consumer, matrix.peek(), light, overlay);
         matrix.pop();
     }
 }
