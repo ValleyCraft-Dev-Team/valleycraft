@@ -1,14 +1,9 @@
 package net.linkle.valleycraft.init;
 
 import net.minecraft.block.*;
-import net.minecraft.block.AbstractBlock.Settings;
-import net.minecraft.entity.EntityType;
 import net.minecraft.item.LilyPadItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Rarity;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
-import net.minecraft.world.BlockView;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.linkle.valleycraft.block.*;
 import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
@@ -75,7 +70,7 @@ public class ModNaturalBlocks {
     public static final Block RED_LUPINE = new ModPlantBlock();
 	//public static final Block ROOTED_WATCHER = new ModPlantBlock();
     public static final Block SHIVERCAP = new ShivercapBlock().large();
-    public static final Block SHORT_GRASS = new ModPlantBlock();
+    public static final Block SHORT_GRASS = new ShortGrassBlock();
     public static final Block SNOWFLOWER = new ModPlantBlock();
     public static final Block SPROUT = new ModPlantBlock();
     public static final Block THORNY_BUSH = new ModPlantBlock();
