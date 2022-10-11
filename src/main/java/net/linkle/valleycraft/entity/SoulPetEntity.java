@@ -16,7 +16,7 @@ import static net.minecraft.util.math.MathHelper.nextDouble;
 
 public class SoulPetEntity extends Entity {
     
-    public static final int MAX_AGE = 8 * 20; // 6
+    public static final int MAX_AGE = 7 * 20; // 6
     
     private ItemStack stack = ItemStack.EMPTY;
     

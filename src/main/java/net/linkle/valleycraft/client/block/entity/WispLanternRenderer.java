@@ -21,7 +21,13 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
     private final Renderer.Billboard billboard = new Renderer.Billboard();
 
     public WispLanternRenderer(Context context) {
-        billboard.setScale(0.26f);
+        billboard.setScale(0.4f);
+        billboard.scaleOffset(0.005f);
+    }
+    
+    @Override
+    public int getRenderDistance() {
+        return 50;
     }
     
     @Override
@@ -44,9 +50,8 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
         float sin = val * shakeLength;
         roll = MathHelper.sin(val*shakeSpeed) * shakeStrength;
         roll = sin > MathHelper.PI ? 0 : roll*MathHelper.sin(sin);
-        
         var consumer = VEX_TEXTURE.getVertexConsumer(provider, RenderLayer::getEntityCutout);
-        billboard.setRollRad(roll);
+        billboard.setRollDeg(roll);
         billboard.render(consumer, matrix.peek(), light, overlay);
         matrix.pop();
     }

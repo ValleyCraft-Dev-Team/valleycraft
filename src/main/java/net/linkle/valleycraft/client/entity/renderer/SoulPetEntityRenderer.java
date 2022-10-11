@@ -2,6 +2,7 @@ package net.linkle.valleycraft.client.entity.renderer;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.client.Renderer;
+import net.linkle.valleycraft.util.Util;
 import net.minecraft.client.render.LightmapTextureManager;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
@@ -37,6 +38,12 @@ public class SoulPetEntityRenderer extends EntityRenderer<Entity> {
     @Override
     public void render(Entity entity, float yaw, float delta, MatrixStack matrices, VertexConsumerProvider provider, int light) {
         float tick = entity.age+delta;
+        int overlay = OverlayTexture.DEFAULT_UV;
+        
+        // start animation
+        float scale = smooth(Math.min(tick/40f, 1f));
+        scale = MathHelper.lerp(0.75f, scale, 1f);
+        billboard.setScale(scale);
         
         // barks animation
         float val = bob(entity.age, 70, 5, delta);
@@ -47,13 +54,15 @@ public class SoulPetEntityRenderer extends EntityRenderer<Entity> {
         float floatUp = smooth(MathHelper.clamp(tick / 40f, 0, 1));
         float offset = MathHelper.lerp(floatUp, -1f, 0f);
         
-        // final animation
-        float strength = Math.max(tick-(float)(6*20), 0f) / 40f;
-        strength = strength*strength; // can go pass the value of 1
-        float wave = MathHelper.sin(tick*0.71f);
-        float sin = MathHelper.lerp(0.5f, (wave/2f)+0.5f, 1f);
-        int overlay = OverlayTexture.getUv(sin*Math.min(strength, 1f) , false);
-        billboard.setScale(1+(wave*strength*0.8f), 1-(wave*strength*0.65f));
+        // final animation (warbling)
+        float strength = 0;
+        if (tick > 6*20) {
+            strength = Math.max(tick-(float)(6*20), 0f) / 20f;
+            strength = Util.pow(strength, 6); // can go pass the value of 1
+            float wave = MathHelper.sin(tick*0.722f);
+            overlay = OverlayTexture.getUv(Math.min(strength, 1f) * 0.7f, false);
+            billboard.setScale(1+(wave*strength*0.7f), 1-(wave*strength*0.5f));
+        }
         
         matrices.push();
         matrices.translate(0.0, offset + 0.08f, 0.0);

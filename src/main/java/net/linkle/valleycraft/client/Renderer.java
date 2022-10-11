@@ -42,32 +42,38 @@ public class Renderer {
     /** The quad renderer. Might need fixing */
     public static class Quad {
         
-        public float uMin;
-        public float uMax;
-        public float vMin;
-        public float vMax;
-        
+        public float uMin, uMax=1, vMin, vMax=1;
         public float r=1, g=1, b=1, a=1;
         
         private final Direction facing;
         private final Vec3f[] verts;
         
         public Quad(Direction facing) {
-            this(facing, 0.005f, 0.995f, 0.005f, 0.995f);
-        }
-        
-        public Quad(Direction facing, float uMin, float uMax, float vMin, float vMax) {
             this.facing = facing;
-            this.uMin = uMin;
-            this.uMax = uMax;
-            this.vMin = vMin;
-            this.vMax = vMax;
-            
             verts = quad();
             var quat = facing.getRotationQuaternion();
             for (var vert : verts) {
                 vert.rotate(quat);
             }
+        }
+        
+        public Quad(Direction facing, float uMin, float uMax, float vMin, float vMax) {
+            this(facing);
+            setUV(uMin, uMax, vMin, vMax);
+        }
+        
+        public void scaleOffset(float offset) {
+            uMin += offset;
+            vMin += offset;
+            uMax -= offset;
+            vMax -= offset;
+        }
+        
+        public void setUV(float uMin, float uMax, float vMin, float vMax) {
+            this.uMin = uMin;
+            this.uMax = uMax;
+            this.vMin = vMin;
+            this.vMax = vMax;
         }
         
         public void setRGB(float r, float g, float b) {
@@ -117,6 +123,13 @@ public class Renderer {
             setUV(uMin, uMax, vMin, vMax);
         }
         
+        public void scaleOffset(float offset) {
+            uMin += offset;
+            vMin += offset;
+            uMax -= offset;
+            vMax -= offset;
+        }
+        
         public void setRollDeg(float roll) {
             this.roll = roll;
         }
@@ -162,7 +175,9 @@ public class Renderer {
             var quat = camera.getRotation();
             
             if (Math.abs(roll) > 0.001f) {
-                quat.hamiltonProduct(camera.getHorizontalPlane().getDegreesQuaternion(roll));
+                var q = camera.getHorizontalPlane().getDegreesQuaternion(roll);
+                q.hamiltonProduct(quat);
+                quat = q;
             }
             
             Vector4f[] verts = quad();
