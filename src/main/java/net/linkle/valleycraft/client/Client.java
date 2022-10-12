@@ -13,7 +13,7 @@ import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.render.entity.model.ArmorStandArmorEntityModel;
 import net.minecraft.resource.ResourceType;
 
-import static net.linkle.valleycraft.init.ModEntities.ThrownBoneDartEntityType;
+import static net.linkle.valleycraft.init.ModEntities.THROWN_ROCK;
 
 @Environment(EnvType.CLIENT)
 public class Client implements ClientModInitializer {
@@ -30,7 +30,7 @@ public class Client implements ClientModInitializer {
         Armors.intialize();
 
         //sorry idk the correct place to put this but i know it works here
-        EntityRendererRegistry.register(ThrownBoneDartEntityType, (context) ->
+        EntityRendererRegistry.register(THROWN_ROCK, (context) ->
                 new FlyingItemEntityRenderer(context));
     }
 }

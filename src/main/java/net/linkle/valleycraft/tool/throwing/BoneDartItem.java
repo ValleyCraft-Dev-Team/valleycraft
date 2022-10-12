@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.tool.throwing;
 
-import net.linkle.valleycraft.entity.ThrownBoneDartEntity;
+import net.linkle.valleycraft.entity.ThrownRockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -22,7 +22,7 @@ public class BoneDartItem extends Item {
         world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SNOWBALL_THROW, SoundCategory.NEUTRAL, 0.5F, 1F); // plays a globalSoundEvent
 		user.getItemCooldownManager().set(this, 1 * 10);
         if (!world.isClient) {
-            ThrownBoneDartEntity boneDartEntity = new ThrownBoneDartEntity(world, user);
+            ThrownRockEntity boneDartEntity = new ThrownRockEntity(world, user);
             boneDartEntity.setItem(itemStack);
             boneDartEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1.5F, 0F);
             world.spawnEntity(boneDartEntity);
