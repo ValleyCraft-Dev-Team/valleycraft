@@ -40,6 +40,7 @@ public class Renderer {
     }
     
     /** The quad renderer. Might need fixing */
+    @Environment(EnvType.CLIENT)
     public static class Quad {
         
         public float uMin, uMax=1, vMin, vMax=1;
@@ -107,6 +108,7 @@ public class Renderer {
     }
     
     /** The billboard renderer. */
+    @Environment(EnvType.CLIENT)
     public static class Billboard {
         
         /** Uses Degree */
