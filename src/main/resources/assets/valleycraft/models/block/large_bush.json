@@ -1,0 +1,43 @@
+{
+	"textures": {
+		"particle": "valleycraft:block/large_bush"
+	},
+	"elements": [
+		{
+			"from": [17.5, 0, -16],
+			"to": [17.5, 16, 16],
+			"rotation": {"angle": -45, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#particle", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#particle", "tintindex": 0}
+			}
+		},
+		{
+			"from": [5.5, 0, -16],
+			"to": [5.5, 16, 16],
+			"rotation": {"angle": -45, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#particle", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#particle", "tintindex": 0}
+			}
+		},
+		{
+			"from": [6, 0, -4.5],
+			"to": [6, 16, 27.5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#particle", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#particle", "tintindex": 0}
+			}
+		},
+		{
+			"from": [-6, 0, -4.5],
+			"to": [-6, 16, 27.5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#particle", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#particle", "tintindex": 0}
+			}
+		}
+	]
+}
