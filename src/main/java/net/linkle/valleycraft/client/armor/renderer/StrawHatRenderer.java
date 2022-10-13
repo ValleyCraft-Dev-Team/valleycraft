@@ -46,7 +46,7 @@ public class StrawHatRenderer implements ArmorRenderer {
         hatModel.render(matrices, consumer, light, OverlayTexture.DEFAULT_UV);
         
         matrices.push();
-        Renderer.rotate(contextModel.getHead(), matrices);
+        Renderer.multiply(contextModel.getHead(), matrices);
         matrices.translate(0, -5/16f, 0);
         hatRim.render(consumer, matrices.peek(), light, OverlayTexture.DEFAULT_UV);
         matrices.pop();

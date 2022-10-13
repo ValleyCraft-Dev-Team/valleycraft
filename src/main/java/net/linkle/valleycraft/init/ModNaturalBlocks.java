@@ -1,23 +1,22 @@
 package net.linkle.valleycraft.init;
 
-import net.minecraft.block.*;
-import net.minecraft.item.LilyPadItem;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Rarity;
+import static net.linkle.valleycraft.init.ModGroups.*;
+
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.linkle.valleycraft.block.*;
 import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
-import net.linkle.valleycraft.util.BlockPres;
-import net.linkle.valleycraft.util.Reg;
+import net.linkle.valleycraft.util.*;
+import net.minecraft.block.*;
+import net.minecraft.item.*;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.shape.VoxelShape;
 
-import static net.linkle.valleycraft.init.ModGroups.*;
-
 public class ModNaturalBlocks {
-    /** VoxelShapes used by various plant blocks */
+    // VoxelShapes used by various plant blocks
     public static VoxelShape DEFAULT_PLANT_SHAPE = Block.createCuboidShape(2, 0, 2, 14, 14, 14);
     public static VoxelShape SHORT_GRASS_SHAPE = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    public static VoxelShape FLOWER_SHAPE = Block.createCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 10.0D, 11.0D);
+    public static VoxelShape FLOWER_SHAPE = Block.createCuboidShape(5, 0, 5, 11, 10, 11);
 
     public static final Block DRY_DIRT = new Block(Block.Settings.copy(Blocks.COARSE_DIRT));
     public static final Block SANDY_GRAVEL = new FallingBlock(Block.Settings.copy(Blocks.GRAVEL));
@@ -101,6 +100,14 @@ public class ModNaturalBlocks {
     public static final Block PANFLOWERS = new OffsetPlantBlock(FLOWER_SHAPE);
     public static final Block JUNGLE_BUSH = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
     public static final Block FROSTFERN = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    
+    public static final Block TALL_LIVING_BUSH = new ModTallFlowerBlock();
+    public static final Block TALL_DEAD_BUSH = new ModTallPlantBlock().ground(BlockPres.SAND);
+    public static final Block TALL_CORNFLOWER = new ModTallFlowerBlock();
+    public static final Block TALL_OXEYE_DAISY = new ModTallFlowerBlock();
+    public static final Block TALL_ALLIUM = new ModTallFlowerBlock();
+    public static final Block TALL_LAVENDER = new ModTallFlowerBlock();
+    public static final Block TALL_AZURE_BLUET = new ModTallFlowerBlock();
     
     // crops
     public static final Block MAIZE = new MaizeBlock();
@@ -186,7 +193,6 @@ public class ModNaturalBlocks {
     public static final Block FALLING_ROCKS = new FallingRockBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.NETHER_BRICKS));
 
     public static void initialize() {
-
         Reg.registerWithItem("black_dahlia", BLACK_DAHLIA, itemSettings());
         Reg.registerWithItem("flowering_cactus", FLOWERING_CACTUS, itemSettings());
         Reg.registerWithItem("fluffy_dandelion", FLUFFY_DANDELION, itemSettings());
@@ -216,6 +222,14 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("orange_poppy", ORANGE_POPPY, itemSettings());
         Reg.registerWithItem("yellow_poppy", YELLOW_POPPY, itemSettings());
         Reg.registerWithItem("white_poppy", WHITE_POPPY, itemSettings());
+        
+        Reg.registerWithItem("tall_azure_bluet", TALL_AZURE_BLUET, itemSettings(), TallBlockItem::new);
+        Reg.registerWithItem("tall_allium", TALL_ALLIUM, itemSettings(), TallBlockItem::new);
+        Reg.registerWithItem("tall_cornflower", TALL_CORNFLOWER, itemSettings(), TallBlockItem::new);
+        Reg.registerWithItem("tall_dead_bush", TALL_DEAD_BUSH, itemSettings(), TallBlockItem::new);
+        Reg.registerWithItem("tall_lavender", TALL_LAVENDER, itemSettings(), TallBlockItem::new);
+        Reg.registerWithItem("tall_living_bush", TALL_LIVING_BUSH, itemSettings(), TallBlockItem::new);
+        Reg.registerWithItem("tall_oxeye_daisy", TALL_OXEYE_DAISY, itemSettings(), TallBlockItem::new);
 
         Reg.registerWithItem("bee_nest_wall", BEE_NEST_WALL, itemSettings());
 
@@ -282,24 +296,15 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("lush_bush", LIVING_BUSH, itemSettings());
 
         Reg.registerWithItem("big_fern", BIG_FERN, itemSettings());
-        Reg.register("smallest_lilypads", SMALLEST_LILYPADS);
-        Reg.register("smallest_lilypads", new LilyPadItem(SMALLEST_LILYPADS, itemSettings()));
-        Reg.register("small_lilypads", SMALL_LILYPADS);
-        Reg.register("small_lilypads", new LilyPadItem(SMALL_LILYPADS, itemSettings()));
-        Reg.register("small_lilypad", SMALL_LILYPAD);
-        Reg.register("small_lilypad", new LilyPadItem(SMALL_LILYPAD, itemSettings()));
-        Reg.register("yellow_flowering_lilypad", YELLOW_FLOWERING_LILYPAD);
-        Reg.register("yellow_flowering_lilypad", new LilyPadItem(YELLOW_FLOWERING_LILYPAD, itemSettings()));
-        Reg.register("white_flowering_lilypad", WHITE_FLOWERING_LILYPAD);
-        Reg.register("white_flowering_lilypad", new LilyPadItem(WHITE_FLOWERING_LILYPAD, itemSettings()));
-        Reg.register("red_flowering_lilypad", RED_FLOWERING_LILYPAD);
-        Reg.register("red_flowering_lilypad", new LilyPadItem(RED_FLOWERING_LILYPAD, itemSettings()));
-        Reg.register("purple_flowering_lilypad", PURPLE_FLOWERING_LILYPAD);
-        Reg.register("purple_flowering_lilypad", new LilyPadItem(PURPLE_FLOWERING_LILYPAD, itemSettings()));
-        Reg.register("pink_flowering_lilypad", PINK_FLOWERING_LILYPAD);
-        Reg.register("pink_flowering_lilypad", new LilyPadItem(PINK_FLOWERING_LILYPAD, itemSettings()));
-        Reg.register("blue_flowering_lilypad", BLUE_FLOWERING_LILYPAD);
-        Reg.register("blue_flowering_lilypad", new LilyPadItem(BLUE_FLOWERING_LILYPAD, itemSettings()));
+        Reg.registerWithItem("smallest_lilypads", SMALLEST_LILYPADS, itemSettings(), LilyPadItem::new);
+        Reg.registerWithItem("small_lilypads", SMALL_LILYPADS, itemSettings(), LilyPadItem::new);
+        Reg.registerWithItem("small_lilypad", SMALL_LILYPAD, itemSettings(), LilyPadItem::new);
+        Reg.registerWithItem("yellow_flowering_lilypad", YELLOW_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
+        Reg.registerWithItem("white_flowering_lilypad", WHITE_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
+        Reg.registerWithItem("red_flowering_lilypad", RED_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
+        Reg.registerWithItem("purple_flowering_lilypad", PURPLE_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
+        Reg.registerWithItem("pink_flowering_lilypad", PINK_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
+        Reg.registerWithItem("blue_flowering_lilypad", BLUE_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
 
         Reg.register("gloom_berry", GLOOM_BERRY);
         Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);

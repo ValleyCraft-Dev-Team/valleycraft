@@ -13,20 +13,24 @@ import net.minecraft.util.math.Vector4f;
 
 /** Rendering Utilities */
 @Environment(EnvType.CLIENT)
-@SuppressWarnings("resource")
 public class Renderer {
-    
     
     private static MinecraftClient client() {
         return MinecraftClient.getInstance();
     }
     
-    private static final Vector4f[] quad() {
+    private static final Vector4f[] quadVec4f() {
         final float a = 0.5f;
         return new Vector4f[]{new Vector4f(-a, -a, 0, 1), new Vector4f(-a, a, 0, 1), new Vector4f(a, a, 0, 1), new Vector4f(a, -a, 0, 1)};
     }
     
-    public static void rotate(ModelPart part, MatrixStack matrices) {
+    private static final Vec3f[] quadVec3f() {
+        final float a = 0.5f;
+        return new Vec3f[]{new Vec3f(-a, 0, -a), new Vec3f(-a, 0, a), new Vec3f(a, 0, a), new Vec3f(a, 0, -a)};
+    }
+    
+    /** Copied from {@link ModelPart#rotate(MatrixStack)} */
+    public static void multiply(ModelPart part, MatrixStack matrices) {
         matrices.translate(part.pivotX / 16.0f, part.pivotY / 16.0f, part.pivotZ / 16.0f);
         if (part.roll != 0.0f) {
             matrices.multiply(Vec3f.POSITIVE_Z.getRadialQuaternion(part.roll));
@@ -39,7 +43,7 @@ public class Renderer {
         }
     }
     
-    /** The quad renderer. Might need fixing */
+    /** The quad renderer. It might need fixing. Like, is the direction facing correctly?  */
     @Environment(EnvType.CLIENT)
     public static class Quad {
         
@@ -51,7 +55,7 @@ public class Renderer {
         
         public Quad(Direction facing) {
             this.facing = facing;
-            verts = quad();
+            verts = quadVec3f();
             var quat = facing.getRotationQuaternion();
             for (var vert : verts) {
                 vert.rotate(quat);
@@ -101,17 +105,13 @@ public class Renderer {
             consumer.vertex(verts[2].getX(), verts[2].getY(), verts[2].getZ(), r, g, b, a, uMin, vMin, overlay, light, nor.getX(), nor.getY(), nor.getZ());
             consumer.vertex(verts[3].getX(), verts[3].getY(), verts[3].getZ(), r, g, b, a, uMin, vMax, overlay, light, nor.getX(), nor.getY(), nor.getZ());
         }
-        
-        private static final Vec3f[] quad() {
-            return new Vec3f[]{new Vec3f(-0.5f, 0, -0.5f), new Vec3f(-0.5f, 0, 0.5f), new Vec3f(0.5f, 0, 0.5f), new Vec3f(0.5f, 0, -0.5f)};
-        }
     }
     
     /** The billboard renderer. */
     @Environment(EnvType.CLIENT)
     public static class Billboard {
         
-        /** Uses Degree */
+        /** Uses Degree (Not Radial) */
         public float roll;
         public float xOffset, yOffset;
         public float xScale=1, yScale=1;
@@ -125,7 +125,7 @@ public class Renderer {
             setUV(uMin, uMax, vMin, vMax);
         }
         
-        public void scaleOffset(float offset) {
+        public void shinkOffset(float offset) {
             uMin += offset;
             vMin += offset;
             uMax -= offset;
@@ -161,17 +161,20 @@ public class Renderer {
             this.vMax = vMax;
         }
         
-        public void setRGB(float r, float g, float b) {
-            setRGBA(r, g, b, a);
+        /** Set color for this billboard (value of 0.0f to 1.0f. Leaves the alpha value unchanged) */
+        public void setColor(float r, float g, float b) {
+            setColor(r, g, b, a);
         }
         
-        public void setRGBA(float r, float g, float b, float a) {
+        /** Set color for this billboard (value of 0.0f to 1.0f) */
+        public void setColor(float r, float g, float b, float a) {
             this.r = r;
             this.g = g;
             this.b = b;
             this.a = a;
         }
         
+        @SuppressWarnings("resource")
         public void render(VertexConsumer consumer, MatrixStack.Entry matrix, int light, int overlay) {
             var camera = client().gameRenderer.getCamera();
             var quat = camera.getRotation();
@@ -182,7 +185,7 @@ public class Renderer {
                 quat = q;
             }
             
-            Vector4f[] verts = quad();
+            var verts = quadVec4f();
             for (int i = 0; i < 4; ++i) {
                 var vert = verts[i];
                 vert.set((vert.getX()+xOffset)*xScale, (vert.getY()+yOffset)*yScale, vert.getZ(), 1);
@@ -190,7 +193,7 @@ public class Renderer {
                 vert.transform(matrix.getPositionMatrix());
             }
             
-            Vec3f nor = new Vec3f(0, 1, 0);
+            var nor = new Vec3f(0, 1, 0);
             nor.transform(matrix.getNormalMatrix());
             consumer.vertex(verts[0].getX(), verts[0].getY(), verts[0].getZ(), r, g, b, a, uMax, vMax, overlay, light, nor.getX(), nor.getY(), nor.getZ());
             consumer.vertex(verts[1].getX(), verts[1].getY(), verts[1].getZ(), r, g, b, a, uMax, vMin, overlay, light, nor.getX(), nor.getY(), nor.getZ());

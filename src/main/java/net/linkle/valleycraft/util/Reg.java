@@ -3,6 +3,7 @@ package net.linkle.valleycraft.util;
 import static net.linkle.valleycraft.Main.makeId;
 
 import java.util.List;
+import java.util.function.*;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -47,9 +48,21 @@ public class Reg {
      * @param settings for the item.
      */
     public static void registerWithItem(String id, Block block, Item.Settings settings) {
+        registerWithItem(id, block, settings, BlockItem::new);
+    }
+    
+    /**
+     * Register the block with item. (Advanced)
+     * 
+     * @param id for the block and the item.
+     * @param block to register.
+     * @param settings for the item.
+     * @param constructor for the item class. Example: {@code BlockItem::new}
+     */
+    public static void registerWithItem(String id, Block block, Item.Settings settings, BiFunction<Block, Item.Settings, Item> constructor) {
         var identifier = makeId(id);
         Registry.register(Registry.BLOCK, identifier, block);
-        Registry.register(Registry.ITEM, identifier, new BlockItem(block, settings));
+        Registry.register(Registry.ITEM, identifier, constructor.apply(block, settings));
     }
 
     public static <C extends FeatureConfig> Feature<C> register(String id, Feature<C> feature) {
