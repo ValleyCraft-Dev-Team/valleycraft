@@ -173,6 +173,7 @@ class RenderLayers {
         put(STAKE, cullout);
         put(LUMBERJACK_STATION, cullout);
         put(CAMPFIRE_POT, cullout);
+        put(LANTERN_HANGER, cullout);
     }
 
     private static void put(Block block, RenderLayer layer) {

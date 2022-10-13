@@ -23,6 +23,9 @@ public class ModVillagers {
     public static final PointOfInterestType LUMBERJACK_POI = registerPOI( "lumberjack_poi", ModBlocks.LUMBERJACK_STATION);
     public static final VillagerProfession LUMBERJACK = registerProfession("lumberjack", LUMBERJACK_POI);
 
+    public static final PointOfInterestType DIASPORA_POI = registerPOI( "diaspora_poi", ModBlocks.CAMPFIRE_POT);
+    public static final VillagerProfession DIASPORA = registerProfession("diaspora", DIASPORA_POI);
+
     public static VillagerProfession registerProfession(String name, PointOfInterestType type) {
         return Registry.register(Registry.VILLAGER_PROFESSION, new Identifier(Main.ID, name),
                 VillagerProfessionAccessor.create(name, type, ImmutableSet.of(), ImmutableSet.of(),
@@ -38,5 +41,6 @@ public class ModVillagers {
         PointOfInterestTypeAccessor.callSetup(STABLEHAND_POI);
         PointOfInterestTypeAccessor.callSetup(LUMBERJACK_POI);
         PointOfInterestTypeAccessor.callSetup(INNKEEPER_POI);
+        PointOfInterestTypeAccessor.callSetup(DIASPORA_POI);
     }
 }

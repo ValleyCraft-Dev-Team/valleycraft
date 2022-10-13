@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "valleycraft:block/lantern_hanger"
+    },
+    "facing=south": {
+      "model": "valleycraft:block/lantern_hanger"
+    },
+    "facing=east": {
+      "model": "valleycraft:block/lantern_hanger"
+    },
+    "facing=west": {
+      "model": "valleycraft:block/lantern_hanger"
+    }
+  }
+}
