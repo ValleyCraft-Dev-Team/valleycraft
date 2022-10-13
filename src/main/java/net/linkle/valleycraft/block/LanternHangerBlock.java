@@ -10,7 +10,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
 public class LanternHangerBlock extends HorizontalWithWaterBlock {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(7, 0, 7, 9, 9, 9);
+    protected static final VoxelShape SHAPE = Block.createCuboidShape(6.5, 0, 6.5, 8.5, 9, 8.5);
 
     public LanternHangerBlock(Settings settings) {
         super(settings);
