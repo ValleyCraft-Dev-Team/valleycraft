@@ -5,9 +5,14 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.util.registry.Registry;
 
 import static net.linkle.valleycraft.init.ModBlocks.*;
 import static net.linkle.valleycraft.init.ModNaturalBlocks.*;
+
+import java.util.HashSet;
+
+import static net.linkle.valleycraft.Main.LOGGER;
 
 @Environment(EnvType.CLIENT)
 class RenderLayers {
@@ -44,14 +49,14 @@ class RenderLayers {
         put(POISON_BLOSSOM, cullout);
         put(PURPLE_TULIP, cullout);
         put(RED_LUPINE, cullout);
-        //put(ROOTED_WATCHER, cullout);
+        // put(ROOTED_WATCHER, cullout);
         put(SHIVERCAP, cullout);
         put(STALWART_SHROOM, cullout);
         put(SHORT_GRASS, cullout);
         put(SNOWFLOWER, cullout);
         put(SPROUT, cullout);
         put(THORNY_BUSH, cullout);
-        //put(WARDING_SHROOM, cullout);
+        // put(WARDING_SHROOM, cullout);
         put(WEEPING_GHOST_WILLOW, cullout);
         put(WILD_BEET, cullout);
         put(WILD_CARROT, cullout);
@@ -83,7 +88,7 @@ class RenderLayers {
         put(PURPLE_FLOWERING_LILYPAD, cullout);
         put(PINK_FLOWERING_LILYPAD, cullout);
         put(BLUE_FLOWERING_LILYPAD, cullout);
-        //put(STICKY_SHROOM, cullout);
+        // put(STICKY_SHROOM, cullout);
         put(PANFLOWERS, cullout);
         put(JUNGLE_BUSH, cullout);
         put(ROCKS, cullout);
@@ -136,6 +141,14 @@ class RenderLayers {
         put(WATTLE_CHAIR, cullout);
         put(STUCK_ARROW_BLOCK, cullout);
 
+        put(TALL_ALLIUM, cullout);
+        put(TALL_CORNFLOWER, cullout);
+        put(TALL_DEAD_BUSH, cullout);
+        put(TALL_LAVENDER, cullout);
+        put(TALL_LIVING_BUSH, cullout);
+        put(TALL_OXEYE_DAISY, cullout);
+        put(TALL_AZURE_BLUET, cullout);
+
         put(GUIDESTONE, cullout);
         put(GUIDESTONE_ARROW, cullout);
         put(GUIDESTONE_DANGER, cullout);
@@ -158,8 +171,8 @@ class RenderLayers {
 
         put(SLUDGE_FLUID, translucent);
 
-        //put(BIG_RED, cullout);
-        //put(BIG_BROWN, cullout);
+        // put(BIG_RED, cullout);
+        // put(BIG_BROWN, cullout);
         put(BROWN_CLUSTER, cullout);
         put(RED_CLUSTER, cullout);
         put(SOULSPORE_SINGLE, cullout);
@@ -174,9 +187,23 @@ class RenderLayers {
         put(STAKE, cullout);
         put(LUMBERJACK_STATION, cullout);
         put(CAMPFIRE_POT, cullout);
+        put(LANTERN_HANGER, cullout);
     }
 
+    /**
+     * Used to check for the block registered twice or more for the block render
+     * layer and output warning logs if there is one.
+     */
+    private static final HashSet<Block> BLOCKS = new HashSet<>(1000);
+
     private static void put(Block block, RenderLayer layer) {
+
+        // To developers, please remove the block that has registered twice or more.
+        if (!BLOCKS.add(block)) {
+            var id = Registry.BLOCK.getId(block);
+            LOGGER.warn("{} has registerd again for block render layer", id);
+        }
+
         BlockRenderLayerMap.INSTANCE.putBlock(block, layer);
     }
 }

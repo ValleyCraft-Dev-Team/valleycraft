@@ -3,7 +3,10 @@ package net.linkle.valleycraft.block;
 import java.util.function.Predicate;
 
 import net.linkle.valleycraft.util.BlockPres;
-import net.minecraft.block.*;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.PlantBlock;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
@@ -11,13 +14,14 @@ import net.minecraft.world.BlockView;
 public class ModPlantBlock extends PlantBlock {
 
     protected VoxelShape shape;
+    protected OffsetType offset = OffsetType.NONE;
 
     /** The ground whitelist for placing plant. */
     protected Predicate<BlockState> groundList = BlockPres.DIRT;
 
     public ModPlantBlock(VoxelShape shape) {
         this(Settings.copy(Blocks.POPPY));
-        this.shape = shape;
+        shape(shape);
     }
     
     public ModPlantBlock(Settings settings) {
@@ -30,15 +34,26 @@ public class ModPlantBlock extends PlantBlock {
         return this;
     }
     
-    /** Set ground whitelist for placing plant. */
+    /** Set shape size for this plant block. */
     public ModPlantBlock shape(VoxelShape shape) {
         this.shape = shape;
+        return this;
+    }
+    
+    /** Set random offset for this plant block. */
+    public ModPlantBlock offset(OffsetType offset) {
+        this.offset = offset;
         return this;
     }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return shape;
+    }
+    
+    @Override
+    public OffsetType getOffsetType() {
+        return offset;
     }
 
     @Override

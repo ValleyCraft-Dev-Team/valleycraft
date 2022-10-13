@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "valleycraft:block/tall_azure_bluet_bottom"
+    },
+    "half=upper": {
+      "model": "valleycraft:block/tall_azure_bluet_top"
+    }
+  }
+}

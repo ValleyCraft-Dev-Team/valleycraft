@@ -9,7 +9,6 @@ import net.linkle.valleycraft.tool.ModToolMaterials;
 import net.linkle.valleycraft.tool.ModToolMaterialsExtended;
 import net.linkle.valleycraft.villager.CustomTradeRegistry;
 import net.linkle.valleycraft.villager.ModVillagers;
-import net.linkle.valleycraft.villager.ModVillagerDiaspora;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
@@ -48,7 +47,6 @@ public class Main implements ModInitializer {
 
 		CustomTradeRegistry.setupTrades();
 		ModVillagers.setupPOIs();
-		ModVillagerDiaspora.setupPOIs();
 	}
 	
 	public static Identifier makeId(String id) {

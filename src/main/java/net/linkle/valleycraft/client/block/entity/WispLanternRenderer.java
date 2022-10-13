@@ -22,7 +22,7 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
 
     public WispLanternRenderer(Context context) {
         billboard.setScale(0.4f);
-        billboard.scaleOffset(0.005f);
+        billboard.shinkOffset(0.005f); // Fix texture UV
     }
     
     @Override

@@ -157,7 +157,6 @@ public class ModItems {
         TieredFoodItems.initialize();
         IngredientFoodItems.initialize();
         RegularFoodItems.initialize();
-        ArmorMats.initialize();
         ModArmors.initialize();
     }
     

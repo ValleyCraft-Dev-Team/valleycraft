@@ -154,15 +154,15 @@ public class ModTools {
         Reg.register("dagger_netherite", new DaggerBase(ToolMaterials.NETHERITE, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_DAGGER_SETTINGS));
 
         //Spear
-        Reg.register("traveler_wooden", new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_DAMAGE, BASIC_TRAVELER_SETTINGS));
-        Reg.register("traveler_stone", new TravelerBase(ToolMaterials.STONE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_DAMAGE, BASIC_TRAVELER_SETTINGS));
-        Reg.register("traveler_golden", new TravelerBase(ToolMaterials.GOLD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_DAMAGE, BASIC_TRAVELER_SETTINGS));
-        Reg.register("traveler_primsteel", new TravelerBase(ModToolMaterials.PRIMSTEEL, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_DAMAGE, BASIC_TRAVELER_SETTINGS));
-        Reg.register("traveler_iron", new TravelerBase(ToolMaterials.IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_DAMAGE, BASIC_TRAVELER_SETTINGS));
-        Reg.register("traveler_rosegold", new TravelerBase(ModToolMaterials.ROSEGOLD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_DAMAGE, BASIC_TRAVELER_SETTINGS));
-        Reg.register("traveler_golemite", new TravelerBase(ModToolMaterials.GOLEMITE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_DAMAGE, BASIC_TRAVELER_SETTINGS));
-        Reg.register("traveler_diamond", new TravelerBase(ToolMaterials.DIAMOND, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_DAMAGE, BASIC_TRAVELER_SETTINGS));
-        Reg.register("traveler_netherite", new TravelerBase(ToolMaterials.NETHERITE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_DAMAGE, BASIC_TRAVELER_SETTINGS));
+        Reg.register("traveler_wooden", new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_TRAVELER_SETTINGS));
+        Reg.register("traveler_stone", new TravelerBase(ToolMaterials.STONE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_TRAVELER_SETTINGS));
+        Reg.register("traveler_golden", new TravelerBase(ToolMaterials.GOLD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_TRAVELER_SETTINGS));
+        Reg.register("traveler_primsteel", new TravelerBase(ModToolMaterials.PRIMSTEEL, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_TRAVELER_SETTINGS));
+        Reg.register("traveler_iron", new TravelerBase(ToolMaterials.IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_TRAVELER_SETTINGS));
+        Reg.register("traveler_rosegold", new TravelerBase(ModToolMaterials.ROSEGOLD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_TRAVELER_SETTINGS));
+        Reg.register("traveler_golemite", new TravelerBase(ModToolMaterials.GOLEMITE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_TRAVELER_SETTINGS));
+        Reg.register("traveler_diamond", new TravelerBase(ToolMaterials.DIAMOND, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_TRAVELER_SETTINGS));
+        Reg.register("traveler_netherite", new TravelerBase(ToolMaterials.NETHERITE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_TRAVELER_SETTINGS));
 
         //Undead Artifacts
         //Drowned
