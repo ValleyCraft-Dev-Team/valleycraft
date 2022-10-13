@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "valleycraft:block/tall_oxeye_daisy_bottom"
+  }
+}
