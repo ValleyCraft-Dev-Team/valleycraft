@@ -68,6 +68,7 @@ class RenderLayers {
         put(BONE_WEED, cullout);
         put(DESERT_SHRUB, cullout);
         put(BUSH, cullout);
+        put(LARGE_BUSH, cullout);
         put(LIVING_BUSH, cullout);
         put(BIG_FERN, cullout);
         put(WILD_MINERS_LETTUCE, cullout);

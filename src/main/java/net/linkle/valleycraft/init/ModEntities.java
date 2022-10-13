@@ -11,9 +11,11 @@ import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.client.entity.model.SnailEntityModel;
 import net.linkle.valleycraft.client.entity.model.ZodEntityModel;
 import net.linkle.valleycraft.client.entity.renderer.SnailEntityRenderer;
+import net.linkle.valleycraft.client.entity.renderer.SoulPetEntityRenderer;
 import net.linkle.valleycraft.client.entity.renderer.ZodEntityRenderer;
 import net.linkle.valleycraft.entity.SnailEntity;
-import net.linkle.valleycraft.entity.ThrownBoneDartEntity;
+import net.linkle.valleycraft.entity.SoulPetEntity;
+import net.linkle.valleycraft.entity.ThrownRockEntity;
 import net.linkle.valleycraft.entity.ZodEntity;
 import net.minecraft.client.render.entity.CodEntityRenderer;
 import net.minecraft.entity.*;
@@ -27,33 +29,36 @@ public class ModEntities {
 
     public static final EntityType<SnailEntity> SNAIL = register("snail", 
             FabricEntityTypeBuilder.createMob().entityFactory(SnailEntity::new).spawnGroup(SpawnGroup.CREATURE)
-            .dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(8).build());
+            .dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(5).build());
 
     public static final EntityType<ZodEntity> ZOD = register("zod",
-            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.WATER_AMBIENT).entityFactory(ZodEntity::new)
-                    .trackRangeBlocks(4).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
+            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.MONSTER).entityFactory(ZodEntity::new)
+                    .trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
                     .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZodEntity::canSpawn).build()
     );
 
-    public static final EntityType<ThrownBoneDartEntity> ThrownBoneDartEntityType = register("bone_dart",
-            FabricEntityTypeBuilder.<ThrownBoneDartEntity>create(SpawnGroup.MISC, ThrownBoneDartEntity::new)
+    public static final EntityType<ThrownRockEntity> THROWN_ROCK = register("thrown_rock",
+            FabricEntityTypeBuilder.<ThrownRockEntity>create(SpawnGroup.MISC, ThrownRockEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25F, 0.25F))
-                    .trackRangeBlocks(4).trackedUpdateRate(10) // necessary for all thrown projectiles (as it prevents it from breaking, lol)
-                    .build() // VERY IMPORTANT DONT DELETE FOR THE LOVE OF GOD PSLSSSSSS
+                    .trackRangeBlocks(4).trackedUpdateRate(10)
+                    .build()
     );
+    
+    public static final EntityType<SoulPetEntity> SOUL_PET = register("soul_pet", 
+            FabricEntityTypeBuilder.create(SpawnGroup.MISC, SoulPetEntity::new)
+            .trackRangeChunks(8).dimensions(EntityDimensions.fixed(0.25F, 0.25F)).build());
 
     public static void initialize() {
         FabricDefaultAttributeRegistry.register(SNAIL, SnailEntity.createSnailAttributes());
-        FabricDefaultAttributeRegistry.register(ZOD, FishEntity.createFishAttributes());
+        FabricDefaultAttributeRegistry.register(ZOD, ZodEntity.createZodAttributes());
     }
 
     @Environment(EnvType.CLIENT)
     public static void initializeClient() {
-        EntityModelLayerRegistry.registerModelLayer(SnailEntityModel.LAYER, ()->SnailEntityModel.getTexturedModelData());
-        EntityModelLayerRegistry.registerModelLayer(ZodEntityModel.LAYER, ()->ZodEntityModel.getTexturedModelData());
+        EntityModelLayerRegistry.registerModelLayer(SnailEntityModel.LAYER, SnailEntityModel::getTexturedModelData);
         EntityRendererRegistry.register(SNAIL, SnailEntityRenderer.create("snail"));
         EntityRendererRegistry.register(ZOD, ZodEntityRenderer.create("zod"));
-
+        EntityRendererRegistry.register(SOUL_PET, SoulPetEntityRenderer::new);
     }
     
     private static <T extends Entity> EntityType<T> register(String id, EntityType<T> entity) {

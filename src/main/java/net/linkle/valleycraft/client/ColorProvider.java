@@ -31,6 +31,10 @@ public class ColorProvider {
         itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, ModNaturalBlocks.APPLE_LEAVES);
         blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, ModNaturalBlocks.APPLE_LEAVES_EMPTY);
         itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, ModNaturalBlocks.APPLE_LEAVES_EMPTY);
+        blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, ModNaturalBlocks.BUSH);
+        itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, ModNaturalBlocks.BUSH);
+        blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, ModNaturalBlocks.LARGE_BUSH);
+        itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, ModNaturalBlocks.LARGE_BUSH);
     }
     
     private static void blockColor(BlockColorProvider provider, Block... block) {

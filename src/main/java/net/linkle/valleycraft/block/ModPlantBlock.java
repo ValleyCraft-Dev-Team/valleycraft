@@ -9,15 +9,15 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
 public class ModPlantBlock extends PlantBlock {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(2, 0, 2, 14, 14, 14);
-    
-    protected VoxelShape shape = SHAPE;
+
+    protected VoxelShape shape;
 
     /** The ground whitelist for placing plant. */
     protected Predicate<BlockState> groundList = BlockPres.DIRT;
 
-    public ModPlantBlock() {
+    public ModPlantBlock(VoxelShape shape) {
         this(Settings.copy(Blocks.POPPY));
+        this.shape = shape;
     }
     
     public ModPlantBlock(Settings settings) {

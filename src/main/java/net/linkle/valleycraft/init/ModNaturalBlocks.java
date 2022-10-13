@@ -1,23 +1,23 @@
 package net.linkle.valleycraft.init;
 
 import net.minecraft.block.*;
-import net.minecraft.block.AbstractBlock.Settings;
-import net.minecraft.entity.EntityType;
 import net.minecraft.item.LilyPadItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Rarity;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
-import net.minecraft.world.BlockView;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.linkle.valleycraft.block.*;
 import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.util.BlockPres;
 import net.linkle.valleycraft.util.Reg;
+import net.minecraft.util.shape.VoxelShape;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
 
 public class ModNaturalBlocks {
+    /** VoxelShapes used by various plant blocks */
+    public static VoxelShape DEFAULT_PLANT_SHAPE = Block.createCuboidShape(2, 0, 2, 14, 14, 14);
+    public static VoxelShape SHORT_GRASS_SHAPE = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
+    public static VoxelShape FLOWER_SHAPE = Block.createCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 10.0D, 11.0D);
 
     public static final Block DRY_DIRT = new Block(Block.Settings.copy(Blocks.COARSE_DIRT));
     public static final Block SANDY_GRAVEL = new FallingBlock(Block.Settings.copy(Blocks.GRAVEL));
@@ -44,17 +44,17 @@ public class ModNaturalBlocks {
 
     public static final Block GHOST_PUMPKIN = new GhostPumpkinBlock();
 
-    public static final Block BLACK_DAHLIA = new ModPlantBlock();
-    public static final Block BLACK_TULIP = new ModPlantBlock();
-    public static final Block FLOWERING_CACTUS = new ModPlantBlock().ground(BlockPres.SAND);
-    public static final Block FLUFFY_DANDELION = new ModPlantBlock();
-    public static final Block FOXTAIL_FERN = new ModPlantBlock();
+    public static final Block BLACK_DAHLIA = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block BLACK_TULIP = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block FLOWERING_CACTUS = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE).ground(BlockPres.SAND);
+    public static final Block FLUFFY_DANDELION = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block FOXTAIL_FERN = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
 
     public static final Block GILDED_CAP = new ModMushroomBlock().large();
     public static final Block GLOW_CAP = new ModMushroomBlock().large();
     public static final Block GLOW_CAP_CLUSTER = new ModMushroomBlock().large();
-    public static final Block GODDESS_LILY = new ModMushroomBlock().large();
-    public static final Block HONEYCLUSTER = new ModMushroomBlock().large();
+    public static final Block GODDESS_LILY = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block HONEYCLUSTER = new OffsetPlantBlock(FLOWER_SHAPE);
     public static final Block STALWART_SHROOM = new StalwartBlock().large();
     public static final Block SOULSPORE = new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(4, 0, 4, 12, 9, 12));
     public static final Block SOULSPORE_SINGLE = new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(5, 0, 5, 11, 6, 11));
@@ -62,45 +62,45 @@ public class ModNaturalBlocks {
     public static final Block JUNGLE_CAP = new ModMushroomBlock().large();
     public static final Block JUNGLE_CAP_CLUSTER = new ModMushroomBlock().large();
 
-    public static final Block LAVENDER = new ModPlantBlock();
-    public static final Block LEATHERLEAF_FERN = new ModPlantBlock();
-    public static final Block LIGHT_BLUE_TULIP = new ModPlantBlock();
-    public static final Block MOSS_SPROUTLET = new ModPlantBlock();
+    public static final Block LAVENDER = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block LEATHERLEAF_FERN = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block LIGHT_BLUE_TULIP = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block MOSS_SPROUTLET = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
     public static final Block MOREL = new ModMushroomBlock().large();
-    public static final Block ORANGE_BEAUTY = new ModPlantBlock();
-    public static final Block ORANGE_FERN = new ModPlantBlock();
-    public static final Block PINK_LUPINE = new ModPlantBlock();
-    public static final Block POISON_BLOSSOM = new ModPlantBlock();
-    public static final Block PURPLE_TULIP = new ModPlantBlock();
-    public static final Block RED_LUPINE = new ModPlantBlock();
+    public static final Block ORANGE_BEAUTY = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block ORANGE_FERN = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block PINK_LUPINE = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block POISON_BLOSSOM = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block PURPLE_TULIP = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block RED_LUPINE = new OffsetPlantBlock(FLOWER_SHAPE);
 	//public static final Block ROOTED_WATCHER = new ModPlantBlock();
     public static final Block SHIVERCAP = new ShivercapBlock().large();
-    public static final Block SHORT_GRASS = new ModPlantBlock();
-    public static final Block SNOWFLOWER = new ModPlantBlock();
-    public static final Block SPROUT = new ModPlantBlock();
-    public static final Block THORNY_BUSH = new ModPlantBlock();
+    public static final Block SHORT_GRASS = new OffsetPlantBlock(SHORT_GRASS_SHAPE);
+    public static final Block SNOWFLOWER = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block SPROUT = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block THORNY_BUSH = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
     //public static final Block WARDING_SHROOM = new ModPlantBlock();
-    public static final Block WEEPING_GHOST_WILLOW = new ModPlantBlock();
-    public static final Block WILD_BEET = new ModPlantBlock();
-    public static final Block WILD_CARROT = new ModPlantBlock();
-    public static final Block WILD_MINERS_LETTUCE = new ModPlantBlock();
-    public static final Block WILD_POTATO = new ModPlantBlock();
-    public static final Block WILD_WHEAT = new ModPlantBlock();
-    public static final Block WILD_FIRE_PEPPER = new ModPlantBlock();
-    public static final Block WILD_ONION = new ModPlantBlock();
-    public static final Block WILD_CAVE_ROOT = new ModPlantBlock();
-    public static final Block WILD_RICE = new ModPlantBlock();
-    public static final Block WILD_HERBS = new ModPlantBlock();
+    public static final Block WEEPING_GHOST_WILLOW = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block WILD_BEET = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block WILD_CARROT = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block WILD_MINERS_LETTUCE = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block WILD_POTATO = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block WILD_WHEAT = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block WILD_FIRE_PEPPER = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block WILD_ONION = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block WILD_CAVE_ROOT = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block WILD_RICE = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block WILD_HERBS = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
 
-    public static final Block WILD_AMETHYSTLE = new ModPlantBlock();
-    public static final Block WILD_PUFF_BALL = new ModPlantBlock();
+    public static final Block WILD_AMETHYSTLE = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block WILD_PUFF_BALL = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
 
-    public static final Block YELLOW_LUPINE = new ModPlantBlock();
-    public static final Block YELLOW_TULIP = new ModPlantBlock();
+    public static final Block YELLOW_LUPINE = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block YELLOW_TULIP = new OffsetPlantBlock(FLOWER_SHAPE);
 
-    public static final Block PANFLOWERS = new ModPlantBlock();
-    public static final Block JUNGLE_BUSH = new ModPlantBlock();
-    public static final Block FROSTFERN = new ModPlantBlock();
+    public static final Block PANFLOWERS = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block JUNGLE_BUSH = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block FROSTFERN = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
     
     // crops
     public static final Block MAIZE = new MaizeBlock();
@@ -119,19 +119,20 @@ public class ModNaturalBlocks {
     public static final Block ROCKS = new RockBlock();
     public static final Block FLINT_ROCKS = new RockBlock();
 
-    public static final Block CLARET_LEAF = new ModPlantBlock();
+    public static final Block CLARET_LEAF = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
     //public static final Block STICKY_SHROOM = new ModLargerMushroomBlock();
     public static final Block GOOP_CAP = new ModMushroomBlock(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 2)).large();
-    public static final Block ORANGE_POPPY = new ModPlantBlock();
-    public static final Block YELLOW_POPPY = new ModPlantBlock();
-    public static final Block WHITE_POPPY = new ModPlantBlock();
-    public static final Block CAVE_ROOTS = new ModPlantBlock();
-    public static final Block DESERT_SHRUB = new ModPlantBlock();
-    public static final Block BUSH = new ModPlantBlock();
-    public static final Block BONE_WEED = new ModPlantBlock();
-    public static final Block LIVING_BUSH = new ModPlantBlock();
+    public static final Block ORANGE_POPPY = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block YELLOW_POPPY = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block WHITE_POPPY = new OffsetPlantBlock(FLOWER_SHAPE);
+    public static final Block CAVE_ROOTS = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block DESERT_SHRUB = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block BUSH = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block LARGE_BUSH = new ModPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block BONE_WEED = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
+    public static final Block LIVING_BUSH = new OffsetPlantBlock(DEFAULT_PLANT_SHAPE);
 
-    public static final Block BIG_FERN = new ModPlantBlock();
+    public static final Block BIG_FERN = new ModPlantBlock(DEFAULT_PLANT_SHAPE);
     public static final Block RED_CLUSTER = new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM)).large();
     public static final Block BROWN_CLUSTER = new ModMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM)).large();
     //public static final Block BIG_RED = new ModPlantBlock(Block.Settings.copy(Blocks.RED_MUSHROOM));
@@ -277,6 +278,7 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("bone_weed", BONE_WEED, itemSettings());
         Reg.registerWithItem("desert_shrub", DESERT_SHRUB, itemSettings());
         Reg.registerWithItem("bush", BUSH, itemSettings());
+        Reg.registerWithItem("large_bush", LARGE_BUSH, itemSettings());
         Reg.registerWithItem("lush_bush", LIVING_BUSH, itemSettings());
 
         Reg.registerWithItem("big_fern", BIG_FERN, itemSettings());
