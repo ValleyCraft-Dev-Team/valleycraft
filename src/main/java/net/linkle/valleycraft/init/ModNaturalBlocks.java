@@ -170,7 +170,8 @@ public class ModNaturalBlocks {
 
     public static final Block SLUDGE_FLUID = new SludgeFluidBlock(ModFluids.SLUDGE_STILL);
     
-    public static final Block ARID_VINES = new VineBlock(Block.Settings.copy(Blocks.POPPY));
+    public static final VineHeadBlock ARID_VINES = new VineHeadBlock();
+    public static final VineBodyBlock ARID_VINES_PLANT = new VineBodyBlock();
     public static final Block CAVE_MOSS = new CaveMossBlock();
     public static final Block CRYSTAL_CAVE_MOSS = new CaveMossBlock();
     public static final Block ERDCOBBLESTONE = new Block(Block.Settings.copy(Blocks.COBBLESTONE).hardness(2));
@@ -325,7 +326,11 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("apple_leaves", APPLE_LEAVES, itemSettings());
         Reg.registerWithItem("apple_log", APPLE_LOG, itemSettings());
 
+        ARID_VINES.setPlant(ARID_VINES_PLANT);
+        ARID_VINES_PLANT.setStem(ARID_VINES);
+        
         Reg.registerWithItem("arid_vines", ARID_VINES, itemSettings());
+        Reg.register("arid_vines", ARID_VINES_PLANT);
         Reg.registerWithItem("cave_moss", CAVE_MOSS, itemSettings());
         Reg.registerWithItem("crystal_cave_moss", CRYSTAL_CAVE_MOSS, itemSettings());
 

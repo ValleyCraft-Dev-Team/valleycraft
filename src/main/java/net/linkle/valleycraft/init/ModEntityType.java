@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.init;
 
+import static net.linkle.valleycraft.init.ModEntityType.THROWN_ROCK;
+
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -18,6 +20,7 @@ import net.linkle.valleycraft.entity.SoulPetEntity;
 import net.linkle.valleycraft.entity.ThrownRockEntity;
 import net.linkle.valleycraft.entity.ZodEntity;
 import net.minecraft.client.render.entity.CodEntityRenderer;
+import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.entity.*;
 import net.minecraft.entity.passive.FishEntity;
 import net.minecraft.util.Identifier;
@@ -25,7 +28,7 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.biome.BiomeKeys;
 
-public class ModEntities {
+public class ModEntityType {
 
     public static final EntityType<SnailEntity> SNAIL = register("snail", 
             FabricEntityTypeBuilder.createMob().entityFactory(SnailEntity::new).spawnGroup(SpawnGroup.CREATURE)
@@ -59,6 +62,7 @@ public class ModEntities {
         EntityRendererRegistry.register(SNAIL, SnailEntityRenderer.create("snail"));
         EntityRendererRegistry.register(ZOD, ZodEntityRenderer.create("zod"));
         EntityRendererRegistry.register(SOUL_PET, SoulPetEntityRenderer::new);
+        EntityRendererRegistry.register(THROWN_ROCK, FlyingItemEntityRenderer::new);
     }
     
     private static <T extends Entity> EntityType<T> register(String id, EntityType<T> entity) {

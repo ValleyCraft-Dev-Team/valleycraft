@@ -36,7 +36,7 @@ public class Main implements ModInitializer {
 		
 		ModParticles.initialize();
 		ModSounds.initialize();
-		ModEntities.initialize();
+		ModEntityType.initialize();
 		ModPaintings.initialize();
 		ModFluidTags.initialize();
 

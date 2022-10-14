@@ -10,7 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "valleycraft:hardened_erdstone",
+              "name": "valleycraft:deepslate_primsteel_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -29,10 +29,15 @@
             },
             {
               "type": "minecraft:item",
-              "name": "valleycraft:hardened_erdcobblestone",
-              "conditions": [
+              "name": "valleycraft:primsteel_raw",
+              "functions": [
                 {
-                  "condition": "minecraft:survives_explosion"
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                },
+                {
+                  "function": "minecraft:explosion_decay"
                 }
               ]
             }

@@ -1,7 +1,8 @@
 package net.linkle.valleycraft.client.armor.renderer;
 
 import net.fabricmc.fabric.api.client.rendering.v1.ArmorRenderer;
-import net.linkle.valleycraft.client.Renderer;
+import net.linkle.valleycraft.client.renderer.QuadRenderer;
+import net.linkle.valleycraft.client.renderer.Renderer;
 import net.minecraft.client.model.Dilation;
 import net.minecraft.client.model.ModelData;
 import net.minecraft.client.model.ModelPart;
@@ -25,7 +26,7 @@ public class StrawHatRenderer implements ArmorRenderer {
     private static final Identifier TEXTURE = new Identifier("textures/entity/villager/profession/farmer.png");
     
     private final ModelPart hatModel;
-    private final Renderer.Quad hatRim;
+    private final QuadRenderer hatRim;
     
     {
         var root = new ModelData().getRoot();
@@ -35,7 +36,7 @@ public class StrawHatRenderer implements ArmorRenderer {
         float size = 16/64f;
         float u = 31/64f;
         float v = 48/64f;
-        hatRim = new Renderer.Quad(Direction.DOWN, u+size, u, v+size, v);
+        hatRim = new QuadRenderer(Direction.DOWN, u+size, u, v+size, v);
     }
     
     @Override
@@ -48,7 +49,7 @@ public class StrawHatRenderer implements ArmorRenderer {
         matrices.push();
         Renderer.multiply(contextModel.getHead(), matrices);
         matrices.translate(0, -5/16f, 0);
-        hatRim.render(consumer, matrices.peek(), light, OverlayTexture.DEFAULT_UV);
+        hatRim.render(consumer, matrices.peek(), light);
         matrices.pop();
     }
 }

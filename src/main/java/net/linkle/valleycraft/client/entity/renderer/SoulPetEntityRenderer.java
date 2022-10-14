@@ -1,7 +1,7 @@
 package net.linkle.valleycraft.client.entity.renderer;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.client.Renderer;
+import net.linkle.valleycraft.client.renderer.BillboardRenderer;
 import net.linkle.valleycraft.util.Util;
 import net.minecraft.client.render.LightmapTextureManager;
 import net.minecraft.client.render.OverlayTexture;
@@ -24,7 +24,7 @@ public class SoulPetEntityRenderer extends EntityRenderer<Entity> {
     private static final float W = 16/32f;
     private static final float H = 16/80f;
     
-    private final Renderer.Billboard billboard = new Renderer.Billboard();
+    private final BillboardRenderer billboard = new BillboardRenderer();
 
     public SoulPetEntityRenderer(Context ctx) {
         super(ctx);
