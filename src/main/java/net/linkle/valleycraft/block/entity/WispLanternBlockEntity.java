@@ -5,7 +5,6 @@ import net.linkle.valleycraft.util.Util;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
 public class WispLanternBlockEntity extends BlockEntity {    
@@ -33,7 +32,7 @@ public class WispLanternBlockEntity extends BlockEntity {
     }
     
     private void resetTimer() {
-        timer = (short)MathHelper.nextInt(Util.RANDOM, 20*20, 60*20);
+        timer = (short)Util.nextInt(Util.RANDOM, 20*20, 60*20);
         //timer = 60;
     }
 }

@@ -3,11 +3,12 @@
   "id": "valleycraft",
   "version": "${version}",
 
-  "name": "FloraCore",
+  "name": "Wilder Horizons",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
     "Linkle",
-    "AndEditor7"
+    "AndEditor7",
+    "SaltySeaDoggo"
   ],
   "contact": {
     "homepage": "https://github.com/ValleyCraft-Dev-Team",
@@ -39,9 +40,9 @@
   },
 
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": ">=0.14.9",
     "fabric": "*",
-    "minecraft": "1.18.2",
+    "minecraft": "~1.19",
     "java": ">=17"
   },
   "suggests": {

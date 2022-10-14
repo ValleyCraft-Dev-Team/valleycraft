@@ -7,15 +7,12 @@ import org.jetbrains.annotations.Nullable;
 import net.linkle.valleycraft.util.FoodStatusEffect;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffectUtil;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.text.BaseText;
-import net.minecraft.text.Text;
+import net.minecraft.item.*;
+import net.minecraft.text.*;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 
-public class FoodItem extends Item {
+public class FoodItem extends ModItem {
 
     public FoodItem(Settings settings) {
         super(settings);
@@ -73,7 +70,7 @@ public class FoodItem extends Item {
         for (var pair : list) {
             var effect = pair.getFirst();
             var name = effect.getEffectType().getName();
-            if (name instanceof BaseText text) {
+            if (name instanceof MutableText text) {
                 var color = effect.getEffectType().isBeneficial() ? Formatting.BLUE : Formatting.RED;
                 var build = new StringBuilder();
 
@@ -92,5 +89,7 @@ public class FoodItem extends Item {
                 tooltip.add(text.formatted(color).append(build.toString()));
             }
         }
+        
+        super.appendTooltip(stack, world, tooltip, context);
     }
 }

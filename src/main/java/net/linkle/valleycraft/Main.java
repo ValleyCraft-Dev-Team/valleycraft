@@ -27,8 +27,6 @@ public class Main implements ModInitializer {
 		ModBlockEntities.initialize();
 		ModFluids.initialize();
 		ModItems.initialize();
-		ModToolMaterialsExtended.initialize();
-		ModToolMaterials.initialize();
 		ModFishing.initialize();
 		ModTools.initialize();
 		ModBlocks.initialize();
@@ -45,11 +43,15 @@ public class Main implements ModInitializer {
 		ModEffects.initialize();
 		ModPotions.initialize();
 
+		ModVillagers.initialize();
 		CustomTradeRegistry.setupTrades();
-		ModVillagers.setupPOIs();
 	}
 	
 	public static Identifier makeId(String id) {
 	    return new Identifier(ID, id);
+	}
+	
+	public String toId(String id) {
+	    return ID + ':' + id;
 	}
 }

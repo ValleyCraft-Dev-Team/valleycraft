@@ -1,7 +1,5 @@
 package net.linkle.valleycraft.block;
 
-import java.util.Random;
-
 import net.linkle.valleycraft.init.ModParticles;
 import net.linkle.valleycraft.init.ModSounds;
 import net.minecraft.block.Block;
@@ -23,7 +21,8 @@ import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.*;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
@@ -88,8 +87,8 @@ public class SprinklerBlock extends Block {
                 world.playSound(x, y, z, ModSounds.SPRINKLER, SoundCategory.BLOCKS, 0.4f, 1.0f, false);
             }
             for (int i = 0; i < 6; i++) {
-                double speed = random.nextDouble(0.2, 0.5);
-                double angle = random.nextDouble(Math.PI*2.0);
+                double speed = MathHelper.nextDouble(random, 0.2, 0.5);
+                double angle = random.nextDouble() * Math.PI*2.0;
                 double sin = Math.sin(angle);
                 double cos = Math.cos(angle);
                 world.addParticle(ModParticles.SPRINKLE, x+(sin*0.2f), y, z+(cos*0.2f), sin*speed, 0.2, cos*speed);

@@ -51,10 +51,11 @@ public class ModPlantBlock extends PlantBlock {
         return shape;
     }
     
+    /* The get offset is no longer exist in the block class. I don't know where they changed/moved it.
     @Override
     public OffsetType getOffsetType() {
         return offset;
-    }
+    } */
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {

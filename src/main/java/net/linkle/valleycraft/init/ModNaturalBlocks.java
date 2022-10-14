@@ -296,15 +296,15 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("lush_bush", LIVING_BUSH, itemSettings());
 
         Reg.registerWithItem("big_fern", BIG_FERN, itemSettings());
-        Reg.registerWithItem("smallest_lilypads", SMALLEST_LILYPADS, itemSettings(), LilyPadItem::new);
-        Reg.registerWithItem("small_lilypads", SMALL_LILYPADS, itemSettings(), LilyPadItem::new);
-        Reg.registerWithItem("small_lilypad", SMALL_LILYPAD, itemSettings(), LilyPadItem::new);
-        Reg.registerWithItem("yellow_flowering_lilypad", YELLOW_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
-        Reg.registerWithItem("white_flowering_lilypad", WHITE_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
-        Reg.registerWithItem("red_flowering_lilypad", RED_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
-        Reg.registerWithItem("purple_flowering_lilypad", PURPLE_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
-        Reg.registerWithItem("pink_flowering_lilypad", PINK_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
-        Reg.registerWithItem("blue_flowering_lilypad", BLUE_FLOWERING_LILYPAD, itemSettings(), LilyPadItem::new);
+        Reg.registerWithItem("smallest_lilypads", SMALLEST_LILYPADS, itemSettings(), PlaceableOnWaterItem::new);
+        Reg.registerWithItem("small_lilypads", SMALL_LILYPADS, itemSettings(), PlaceableOnWaterItem::new);
+        Reg.registerWithItem("small_lilypad", SMALL_LILYPAD, itemSettings(), PlaceableOnWaterItem::new);
+        Reg.registerWithItem("yellow_flowering_lilypad", YELLOW_FLOWERING_LILYPAD, itemSettings(), PlaceableOnWaterItem::new);
+        Reg.registerWithItem("white_flowering_lilypad", WHITE_FLOWERING_LILYPAD, itemSettings(), PlaceableOnWaterItem::new);
+        Reg.registerWithItem("red_flowering_lilypad", RED_FLOWERING_LILYPAD, itemSettings(), PlaceableOnWaterItem::new);
+        Reg.registerWithItem("purple_flowering_lilypad", PURPLE_FLOWERING_LILYPAD, itemSettings(), PlaceableOnWaterItem::new);
+        Reg.registerWithItem("pink_flowering_lilypad", PINK_FLOWERING_LILYPAD, itemSettings(), PlaceableOnWaterItem::new);
+        Reg.registerWithItem("blue_flowering_lilypad", BLUE_FLOWERING_LILYPAD, itemSettings(), PlaceableOnWaterItem::new);
 
         Reg.register("gloom_berry", GLOOM_BERRY);
         Reg.register("gloom_berry_plant", GLOOM_BERRY_PLANT);
@@ -314,8 +314,7 @@ public class ModNaturalBlocks {
         Reg.registerWithItem("orange_kelp", ORANGE_KELP, itemSettings());
         Reg.register("orange_kelp_plant", ORANGE_KELP_PLANT);
 
-        Reg.register("algae", ALGAE);
-        Reg.register("algae", new LilyPadItem(ALGAE, itemSettings()));
+        Reg.registerWithItem("algae", ALGAE, itemSettings(), PlaceableOnWaterItem::new);
         Reg.registerWithItem("orange_seagrass", ORANGE_SEAGRASS, itemSettings());
 
         //mamon

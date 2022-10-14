@@ -1,7 +1,6 @@
 package net.linkle.valleycraft.block;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -19,6 +18,7 @@ import net.minecraft.fluid.Fluids;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;

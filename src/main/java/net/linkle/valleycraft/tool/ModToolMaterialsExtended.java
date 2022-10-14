@@ -56,10 +56,6 @@ public enum ModToolMaterialsExtended implements ToolMaterial {
         this.repairIngredient = new Lazy(repairIngredient);
     }
 
-    public static void initialize() {
-        return;
-    }
-
     public int getDurability() {
         return this.itemDurability;
     }

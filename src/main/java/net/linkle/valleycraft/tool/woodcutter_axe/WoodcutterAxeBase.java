@@ -78,6 +78,8 @@ public class WoodcutterAxeBase
     public List<EnchantmentTarget> getEnchantmentTypes() {
         return Collections.singletonList(EnchantmentTarget.WEAPON);
     }
+    
+    @Override
     public boolean isExplicitlyValid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.SWEEPING);
     }

@@ -76,9 +76,13 @@ public class TravelerBase
     public List<EnchantmentTarget> getEnchantmentTypes() {
         return Collections.singletonList(EnchantmentTarget.WEAPON);
     }
+    
+    @Override
     public boolean isExplicitlyValid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.IMPALING);
     }
+    
+    @Override
     public boolean isInvalid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.SWEEPING);
     }

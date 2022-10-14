@@ -7,6 +7,8 @@ public class SoulItem extends Item {
     public SoulItem(Settings settings) {
         super(settings);
     }
+    
+    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }

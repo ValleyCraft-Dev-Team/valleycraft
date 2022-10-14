@@ -32,6 +32,7 @@ public class ThrownRockEntity extends ThrownItemEntity {
         return BONE_DART_ITEM;
     }
 
+    @Override
     protected void onEntityHit(EntityHitResult entityHitResult) { // called on entity hit.
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity(); // sets a new Entity instance as the EntityHitResult (victim)
@@ -42,6 +43,7 @@ public class ThrownRockEntity extends ThrownItemEntity {
         }
     }
 
+    @Override
     protected void onCollision(HitResult hitResult) { // called on collision with a block
         super.onCollision(hitResult);
         if (!this.world.isClient) { // checks if the world is client

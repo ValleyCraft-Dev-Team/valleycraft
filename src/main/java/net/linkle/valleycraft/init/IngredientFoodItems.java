@@ -1,12 +1,12 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.item.*;
-import net.linkle.valleycraft.util.Reg;
-import net.minecraft.entity.effect.StatusEffects;
+import net.linkle.valleycraft.util.*;
+import net.minecraft.entity.effect.*;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
-import net.minecraft.util.Rarity;
+import net.minecraft.util.*;
 
 import static net.linkle.valleycraft.init.ModFishing.ZOD;
 import static net.linkle.valleycraft.init.ModGroups.*;
@@ -17,27 +17,35 @@ public class IngredientFoodItems {
 
     //raw ingredients
     public static final Item ALOE = new AliasedBlockItem(ModNaturalBlocks.ALOE_VERAS, settings().food(Foods.create(3, 0.3f)));
-    public static final Item AMETHYSTLE = new AmethystleFoodItem(settings(), 2, 0.3f);
-    public static final Item ANCIENT_FLOWER = new AncientFlowerFoodItem(settings(), 6, 0.7f);
+    
+    public static final Item AMETHYSTLE = new FoodItem(settings(), 2, 0.3f)
+            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_10", Formatting.GRAY);
+    public static final Item ENDURA_CARROT = new FoodItem(settings(), 5, 0.3f)
+            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_9", Formatting.GRAY);
+    public static final Item GLOW_BERRY_JUICE = new BottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 15 * 20)))
+            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_8", Formatting.GRAY);
+    public static final Item ANCIENT_FLOWER = new FoodItem(settings(), 6, 0.7f)
+            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_7", Formatting.GRAY);
+    public static final Item HEARTY_BEETROOT = new FoodItem(settings(), 4, 0.6f)
+            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_6", Formatting.GRAY);
+    public static final Item SYRUPY_HONEYCOMB = new FoodItem(settings(), 3, 0.6f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 5 * 20)))
+            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_5", Formatting.GRAY);
+    public static final Item RAW_GLOWSQUID = new FoodItem(settings(), 2, 0.2f)
+            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_4", Formatting.GRAY);
+    
     public static final Item CAVE_ROOT = new FoodItem(settings(), 4, 0.3f);
-    public static final Item ENDURA_CARROT = new StaminellaCarrotFoodItem(settings(), 5, 0.3f);
     public static final Item FIRE_PEPPER = new FoodItem(settings(), 3, 0.3f);
-    public static final Item GLOW_BERRY_JUICE = new GlowJuiceBottle(settings().maxCount(16), 4, 0.5f, StatusEffects.GLOWING);
-
-    public static final Item HEARTY_BEETROOT = new HeartyBeetrootFoodItem(settings(), 4, 0.6f);
     public static final Item MAIZE = new AliasedBlockItem(ModNaturalBlocks.MAIZE, settings().rarity(Rarity.RARE).food(Foods.create(3, 0.3f)));
     public static final Item MINERS_LETTUCE = new AliasedBlockItem(ModNaturalBlocks.MINERS_LETTUCES, settings().food(Foods.create(3, 0.3f)));
     public static final Item MONSTER_GUTS = new Tier1Normal(settings(), 6, 0.3f, StatusEffects.HUNGER);
     public static final Item MONSTER_LIVER = new Tier1Normal(settings(), 3, 0.4f, StatusEffects.POISON);
-    public static final Item SYRUPY_HONEYCOMB = new SyrupyHoneycombFoodItem(settings(), 3, 0.6f, StatusEffects.REGENERATION);
-
+    
     public static final Item MOREL_OIL = new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS);
     public static final Item ONION = new FoodItem(settings(), 3, 0.3f);
     public static final Item RAW_BACON = new FoodItem(settings(), 2, 0.2f);
     public static final Item RAW_BAT = new FoodItem(settings(), 2, 0.1f);
     public static final Item GHOST_PUMPKIN_SLICE = new FoodItem(settings(), 2, 0.4f);
     public static final Item PUMPKIN_SLICE = new FoodItem(settings(), 2, 0.4f);
-    public static final Item RAW_GLOWSQUID = new GlowSquidFoodItem(settings(), 2, 0.2f);
     public static final Item RAW_SQUID = new FoodItem(settings(), 2, 0.3f);
     public static final Item RAW_RICE = new FoodItem(settings(), 2, 0.3f);
     public static final Item RAW_SILVERFISH = new FoodItem(settings(), 1, 0.1f);

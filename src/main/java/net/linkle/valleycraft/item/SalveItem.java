@@ -18,6 +18,7 @@ public class SalveItem extends FoodItem {
         return UseAction.DRINK;
     }
 
+    @Override
     public SoundEvent getDrinkSound() {
         return SoundEvents.ITEM_HONEY_BOTTLE_DRINK;
     }

@@ -27,7 +27,6 @@ public class ClimbingAxeItem extends ToolItem {
             if(livingExt.isAxeClimbing() && livingExt.isYmoved()) {
                 var hand = living.getMainHandStack().getItem() instanceof ClimbingAxeItem ? Hand.MAIN_HAND : Hand.OFF_HAND;
                 var axe = hand == Hand.MAIN_HAND ? living.getMainHandStack() : living.getOffHandStack();
-                System.out.println("Hello");
                 axe.damage(1, living, e -> {
                     living.sendEquipmentBreakStatus(hand == Hand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND);
                 });
