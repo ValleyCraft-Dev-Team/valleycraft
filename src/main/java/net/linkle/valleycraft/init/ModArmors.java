@@ -31,7 +31,8 @@ public class ModArmors {
     public static final Item FUR_BOOTS = new ArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settings_uncommon);
 
     public static final Item REINFORCED_IRON_HELMET = new ArmorItem(ArmorMats.SCALE, EquipmentSlot.HEAD, settings_uncommon);
-    public static final Item SCALE_MAIL = new ArmorItem(ArmorMats.SCALE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
+    public static final Item SCALE_MAIL = new ArmorItem(ArmorMats.SCALE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
+    public static final Item SCALE_MAIL_SKIRT = new ArmorItem(ArmorMats.SCALE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
 
     public static final Item EYEPATCH = new ArmorItem(ArmorMats.EYEPATCH, EquipmentSlot.HEAD, settings_artifacts_uncommon);
 
@@ -143,6 +144,7 @@ public class ModArmors {
         //Reg.register("zombie_shirt_femme", ALEX_SHIRT);
         //Reg.register("zombie_shorts", ALEX_SHORTS);
         Reg.register("scale_mail", SCALE_MAIL);
+        Reg.register("scale_mail_skirt", SCALE_MAIL_SKIRT);
         Reg.register("zombie_boots", ALEX_BOOTS);
 
         Reg.register("drowned_clothes", DROWNED_CLOTHES);

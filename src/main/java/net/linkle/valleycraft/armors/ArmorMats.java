@@ -47,7 +47,7 @@ public enum ArmorMats implements ArmorMaterial {
     TRADER("trader", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER)),
     VILLAGER("villager", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER)),
     VISOR("visor", ints(3), 10, 15, equipChain(), items(Items.COPPER_INGOT)),
-    SCALE("scale", ints(0,0,7,3), 10, 15, equipChain(), items(Items.IRON_INGOT)),
+    SCALE("scale", ints(0,6,7,3), 10, 15, equipChain(), items(Items.IRON_INGOT)),
     BUTTON("button", ints(0,0,7,2), 10, 15, equipChain(), items(Items.STRING)),
     RED_CLOAK("red_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH));
 
