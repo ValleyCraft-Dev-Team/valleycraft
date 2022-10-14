@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.entity;
 
-import net.linkle.valleycraft.init.ModEntities;
+import net.linkle.valleycraft.init.ModEntityType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.ActiveTargetGoal;
@@ -88,7 +88,7 @@ public class SnailEntity extends AnimalEntity {
 
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return ModEntities.SNAIL.create(world);
+        return ModEntityType.SNAIL.create(world);
     }
     
     public static DefaultAttributeContainer.Builder createSnailAttributes() {

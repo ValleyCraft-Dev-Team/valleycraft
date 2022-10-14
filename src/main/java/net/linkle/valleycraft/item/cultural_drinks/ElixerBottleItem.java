@@ -24,6 +24,7 @@ public class ElixerBottleItem extends FoodItem {
         super(settings, hunger, satMod, new FoodStatusEffect(new StatusEffectInstance(effect, 180 * 20), new StatusEffectInstance(effect_2, 30 * 20, 2), new StatusEffectInstance(effect_3, 30 * 20)));
     }
 
+    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }

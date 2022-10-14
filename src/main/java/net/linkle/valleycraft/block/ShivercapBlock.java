@@ -5,7 +5,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.BlockView;
 
@@ -27,7 +26,7 @@ public class ShivercapBlock extends ModPlantBlock {
 
     @Override
     public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add( new TranslatableText("block.valleycraft.dishes.tooltip").formatted(Formatting.GRAY) );
-        tooltip.add( new TranslatableText("block.valleycraft.dishes.tooltip_2").formatted(Formatting.GRAY) );
+        tooltip.add( Text.translatable("block.valleycraft.dishes.tooltip").formatted(Formatting.GRAY) );
+        tooltip.add( Text.translatable("block.valleycraft.dishes.tooltip_2").formatted(Formatting.GRAY) );
     }
 }

@@ -5,7 +5,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BarrelBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.BlockPos;
 
 public class CrateBlockEntity extends BarrelBlockEntity {
@@ -15,7 +14,7 @@ public class CrateBlockEntity extends BarrelBlockEntity {
 
     @Override
     protected Text getContainerName() {
-        return new TranslatableText("container.valleycraft.crate");
+        return Text.translatable("container.valleycraft.crate");
     }
     
     @Override

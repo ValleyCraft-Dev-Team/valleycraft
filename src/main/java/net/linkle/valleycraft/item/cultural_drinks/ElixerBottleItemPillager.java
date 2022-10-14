@@ -23,6 +23,7 @@ public class ElixerBottleItemPillager extends FoodItem {
         super(settings, hunger, satMod, new FoodStatusEffect(new StatusEffectInstance(effect, 8 * 60 * 20), new StatusEffectInstance(effect_2, 8 * 60 * 20, 2), new StatusEffectInstance(effect_3, 30 * 20)));
     }
 
+    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }

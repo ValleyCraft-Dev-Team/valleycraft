@@ -44,16 +44,4 @@ public class ColorProvider {
     private static void itemColor(ItemColorProvider provider, ItemConvertible... item) {
         ColorProviderRegistry.ITEM.register(provider, item);
     }
-    
-    private static BlockColorProvider newBlockColor(int color) {
-        return (state, view, pos, index) -> color;
-    }
-    
-    private static ItemColorProvider newItemColor(int color) {
-        return (stack, index) -> color;
-    }
-    
-    private static ItemColorProvider newItemColor(int index, int color) {
-        return (stack, idx) -> index == idx ? color : 0xFFFFFFFF;
-    }
 }

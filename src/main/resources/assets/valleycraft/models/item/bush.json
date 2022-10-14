@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/block_items/bush"
+    "layer0": "valleycraft:block/bush"
   }
 }

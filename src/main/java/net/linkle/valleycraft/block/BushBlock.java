@@ -1,6 +1,5 @@
 package net.linkle.valleycraft.block;
 
-import java.util.Random;
 import java.util.function.Predicate;
 
 import net.minecraft.block.Block;
@@ -20,7 +19,8 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.*;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -40,6 +40,7 @@ public class BushBlock extends ModPlantBlock implements Fertilizable {
         setDefaultState(stateManager.getDefaultState().with(AGE, 0));
     }
     
+    @Override
     public BushBlock ground(Predicate<BlockState> predicate) {
         super.ground(predicate);
         return this;
@@ -84,9 +85,9 @@ public class BushBlock extends ModPlantBlock implements Fertilizable {
         }
         if (age > 1) {
             Random random = world.random;
-            int amount = random.nextInt(1, 2) + (mature ? 1 : 0);
+            int amount = random.nextBetween(1, 2) + (mature ? 1 : 0);
             BushBlock.dropStack(world, pos, new ItemStack(this, amount));
-            world.playSound(null, pos, sound, SoundCategory.BLOCKS, 1.0f, random.nextFloat(0.8f, 1.2f));
+            world.playSound(null, pos, sound, SoundCategory.BLOCKS, 1.0f, MathHelper.nextFloat(random, 0.8f, 1.2f));
             world.setBlockState(pos, state.with(AGE, 1), NOTIFY_LISTENERS);
             return ActionResult.success(world.isClient);
         }

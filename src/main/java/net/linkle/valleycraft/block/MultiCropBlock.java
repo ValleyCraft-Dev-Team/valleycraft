@@ -1,11 +1,11 @@
 package net.linkle.valleycraft.block;
 
-import java.util.Random;
 import java.util.function.Function;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.random.Random;
 
 public class MultiCropBlock extends ModCropBlock {
     

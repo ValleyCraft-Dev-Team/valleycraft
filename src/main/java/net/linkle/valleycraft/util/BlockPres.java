@@ -8,10 +8,10 @@ import net.minecraft.tag.BlockTags;
 
 /** Block Predicates */
 public enum BlockPres implements Predicate<BlockState> {
-    DIRT(floor -> floor.isIn(BlockTags.DIRT) || floor.isOf(Blocks.FARMLAND)),
-    SAND(floor -> floor.isIn(BlockTags.SAND)),
-    TERRACOTTA(floor -> floor.isIn(BlockTags.TERRACOTTA)),
-    STONE(floor -> floor.isIn(BlockTags.BASE_STONE_OVERWORLD));
+    DIRT(state -> state.isIn(BlockTags.DIRT) || state.isOf(Blocks.FARMLAND)),
+    SAND(state -> state.isIn(BlockTags.SAND)),
+    TERRACOTTA(state -> state.isIn(BlockTags.TERRACOTTA)),
+    STONE(state -> state.isIn(BlockTags.BASE_STONE_OVERWORLD));
 
     private final Predicate<BlockState> predicate;
     

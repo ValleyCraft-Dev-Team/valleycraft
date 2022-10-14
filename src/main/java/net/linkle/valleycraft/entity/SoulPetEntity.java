@@ -2,7 +2,7 @@ package net.linkle.valleycraft.entity;
 
 import org.jetbrains.annotations.Nullable;
 
-import net.linkle.valleycraft.init.ModEntities;
+import net.linkle.valleycraft.init.ModEntityType;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ItemEntity;

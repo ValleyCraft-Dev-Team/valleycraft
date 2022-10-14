@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import net.linkle.valleycraft.Debugs;
 import net.linkle.valleycraft.extension.LivingEntityExt;
-import net.linkle.valleycraft.init.ModEntities;
+import net.linkle.valleycraft.init.ModEntityType;
 import net.linkle.valleycraft.init.ModItems;
 import net.linkle.valleycraft.item.SoulPetItem;
 import net.minecraft.entity.Entity;
@@ -79,7 +79,7 @@ abstract class LivingEntityMixin extends Entity implements LivingEntityExt {
             if (owner != null) {
                 var stack = new ItemStack(ModItems.SOUL_ITEM_PET);
                 SoulPetItem.setTag(stack, pet);
-                var soul = ModEntities.SOUL_PET.create(world).setStack(stack);
+                var soul = ModEntityType.SOUL_PET.create(world).setStack(stack);
                 soul.setPosition(getPos().add(0, 1.5, 0));
                 world.spawnEntity(soul);
             }

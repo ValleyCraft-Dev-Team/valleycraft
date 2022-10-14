@@ -17,10 +17,12 @@ public class FallingRockBlock extends FallingBlock {
         super(settings);
     }
 
+    @Override
     protected void configureFallingBlockEntity(FallingBlockEntity entity) {
         entity.setHurtEntities(2.0F, 40);
     }
 
+    @Override
     public void onLanding(World world, BlockPos pos, BlockState fallingBlockState, BlockState currentStateInPos, FallingBlockEntity fallingBlockEntity) {
         if (!fallingBlockEntity.isSilent()) {
             world.playSound((double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, SoundEvents.BLOCK_NETHER_BRICKS_BREAK, SoundCategory.BLOCKS, 1.5F, 0.5f, false);
@@ -28,6 +30,7 @@ public class FallingRockBlock extends FallingBlock {
 
     }
 
+    @Override
     public DamageSource getDamageSource() {
         return DamageSource.FALLING_BLOCK;
     }

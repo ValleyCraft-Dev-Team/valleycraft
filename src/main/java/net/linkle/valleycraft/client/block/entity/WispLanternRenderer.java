@@ -3,8 +3,8 @@ package net.linkle.valleycraft.client.block.entity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.block.entity.WispLanternBlockEntity;
-import net.linkle.valleycraft.client.Renderer;
 import net.linkle.valleycraft.client.Sprites;
+import net.linkle.valleycraft.client.renderer.BillboardRenderer;
 import net.minecraft.block.LanternBlock;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumerProvider;
@@ -18,7 +18,7 @@ import net.minecraft.util.math.MathHelper;
 public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlockEntity> {
     public static final SpriteIdentifier VEX_TEXTURE = Sprites.create("entity/sprites/vex_jar");
     
-    private final Renderer.Billboard billboard = new Renderer.Billboard();
+    private final BillboardRenderer billboard = new BillboardRenderer();
 
     public WispLanternRenderer(Context context) {
         billboard.setScale(0.4f);

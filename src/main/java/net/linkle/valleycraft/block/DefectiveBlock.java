@@ -13,7 +13,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
@@ -53,7 +52,7 @@ public class DefectiveBlock extends Block {
 
     @Override
     public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add( new TranslatableText("block.valleycraft.defective_spawner.tooltip").formatted(Formatting.GRAY) );
-        tooltip.add( new TranslatableText("block.valleycraft.defective_spawner.tooltip_2").formatted(Formatting.GRAY) );
+        tooltip.add( Text.translatable("block.valleycraft.defective_spawner.tooltip").formatted(Formatting.GRAY) );
+        tooltip.add( Text.translatable("block.valleycraft.defective_spawner.tooltip_2").formatted(Formatting.GRAY) );
     }
 }

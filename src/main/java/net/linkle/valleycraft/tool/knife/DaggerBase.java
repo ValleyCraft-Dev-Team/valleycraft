@@ -82,6 +82,8 @@ public class DaggerBase
     public boolean isExplicitlyValid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.SWEEPING);
     }
+    
+    @Override
     public boolean isInvalid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.IMPALING);
     }

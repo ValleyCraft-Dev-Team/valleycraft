@@ -1,7 +1,5 @@
 package net.linkle.valleycraft.block;
 
-import java.util.Random;
-
 import net.minecraft.block.AbstractPlantBlock;
 import net.minecraft.block.AbstractPlantStemBlock;
 import net.minecraft.block.Block;
@@ -11,6 +9,7 @@ import net.minecraft.block.Fertilizable;
 import net.minecraft.block.Material;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 
 public class VineHeadBlock extends AbstractPlantStemBlock implements Fertilizable, CaveVines {

@@ -2,7 +2,6 @@ package net.linkle.valleycraft.tool.knife;
 
 import net.linkle.valleycraft.api.EnchantmentHandler;
 import net.minecraft.block.BlockState;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.enchantment.Enchantments;
@@ -16,9 +15,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.Vanishable;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -88,6 +84,8 @@ public class KnifeBase
     public boolean isExplicitlyValid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.IMPALING);
     }
+    
+    @Override
     public boolean isInvalid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.SWEEPING);
     }

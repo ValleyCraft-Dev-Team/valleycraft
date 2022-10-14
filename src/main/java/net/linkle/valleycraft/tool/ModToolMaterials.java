@@ -1,15 +1,11 @@
 package net.linkle.valleycraft.tool;
 
-import net.linkle.valleycraft.init.ModItems;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
-import net.minecraft.item.ToolMaterial;
-import net.minecraft.item.ToolMaterials;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.tag.ItemTags;
-import net.minecraft.util.Lazy;
+import com.google.common.base.Supplier;
+import com.google.common.base.Suppliers;
 
-import java.util.function.Supplier;
+import net.linkle.valleycraft.init.ModItems;
+import net.minecraft.item.ToolMaterial;
+import net.minecraft.recipe.Ingredient;
 
 public enum ModToolMaterials implements ToolMaterial {
 
@@ -28,7 +24,7 @@ public enum ModToolMaterials implements ToolMaterial {
     private final float miningSpeed;
     private final float attackDamage;
     private final int enchantability;
-    private final Lazy<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
     private ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
@@ -36,11 +32,7 @@ public enum ModToolMaterials implements ToolMaterial {
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        this.repairIngredient = new Lazy(repairIngredient);
-    }
-
-    public static void initialize() {
-        return;
+        this.repairIngredient = Suppliers.memoize(repairIngredient);
     }
 
     public int getDurability() {
@@ -64,6 +56,6 @@ public enum ModToolMaterials implements ToolMaterial {
     }
 
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return repairIngredient.get();
     }
 }

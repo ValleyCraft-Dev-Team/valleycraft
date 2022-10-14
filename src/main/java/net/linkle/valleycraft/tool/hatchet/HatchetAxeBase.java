@@ -76,6 +76,8 @@ public class HatchetAxeBase
     public List<EnchantmentTarget> getEnchantmentTypes() {
         return Collections.singletonList(EnchantmentTarget.WEAPON);
     }
+    
+    @Override
     public boolean isExplicitlyValid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.FIRE_ASPECT);
     }

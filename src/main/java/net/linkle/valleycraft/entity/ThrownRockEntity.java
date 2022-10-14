@@ -2,7 +2,7 @@ package net.linkle.valleycraft.entity;
 
 import static net.linkle.valleycraft.init.ModTools.BONE_DART_ITEM;
 
-import net.linkle.valleycraft.init.ModEntities;
+import net.linkle.valleycraft.init.ModEntityType;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -20,11 +20,11 @@ public class ThrownRockEntity extends ThrownItemEntity {
     }
 
     public ThrownRockEntity(World world, LivingEntity owner) {
-        super(ModEntities.THROWN_ROCK, owner, world);
+        super(ModEntityType.THROWN_ROCK, owner, world);
     }
 
     public ThrownRockEntity(World world, double x, double y, double z) {
-        super(ModEntities.THROWN_ROCK, x, y, z, world);
+        super(ModEntityType.THROWN_ROCK, x, y, z, world);
     }
 
     @Override
@@ -32,6 +32,7 @@ public class ThrownRockEntity extends ThrownItemEntity {
         return BONE_DART_ITEM;
     }
 
+    @Override
     protected void onEntityHit(EntityHitResult entityHitResult) { // called on entity hit.
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity(); // sets a new Entity instance as the EntityHitResult (victim)
@@ -42,6 +43,7 @@ public class ThrownRockEntity extends ThrownItemEntity {
         }
     }
 
+    @Override
     protected void onCollision(HitResult hitResult) { // called on collision with a block
         super.onCollision(hitResult);
         if (!this.world.isClient) { // checks if the world is client

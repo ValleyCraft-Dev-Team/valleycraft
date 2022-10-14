@@ -17,7 +17,9 @@ public class ModMushroomBlock extends ModPlantBlock {
         return this;
     }
 
+    /** see ModPlantBlock class for info. 
+    @Override
     public OffsetType getOffsetType() {
         return OffsetType.XZ;
-    }
+    } */
 }

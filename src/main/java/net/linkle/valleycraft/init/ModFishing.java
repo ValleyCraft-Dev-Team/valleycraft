@@ -11,7 +11,7 @@ import net.minecraft.sound.SoundEvents;
 import static net.linkle.valleycraft.init.ModGroups.TIERED_DISHES;
 
 public class ModFishing {
-    public static final Item ZOD_BUCKET = new EntityBucketItem(ModEntities.ZOD, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1));
+    public static final Item ZOD_BUCKET = new EntityBucketItem(ModEntityType.ZOD, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1));
     public static final Item ZOD = new Tier1Normal(settings().group(ModGroups.INGREDIENTS), 5, 2, StatusEffects.HUNGER);
 
     public static void initialize() {

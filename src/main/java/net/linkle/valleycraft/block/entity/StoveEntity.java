@@ -5,7 +5,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.entity.SmokerBlockEntity;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.BlockPos;
 
 public class StoveEntity extends SmokerBlockEntity {
@@ -15,7 +14,7 @@ public class StoveEntity extends SmokerBlockEntity {
 
     @Override
     protected Text getContainerName() {
-        return new TranslatableText("container.valleycraft.stove");
+        return Text.translatable("container.valleycraft.stove");
     }
 
     @Override

@@ -9,8 +9,9 @@ import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.util.math.MathHelper;
 
-public class Util {
+public class Util extends net.minecraft.util.Util {
     public static final Random RANDOM = new Random();
     
     public static boolean inWater(ItemPlacementContext context) {
@@ -22,6 +23,10 @@ public class Util {
     @SuppressWarnings("unchecked")
     public static <E extends BlockEntity, A extends BlockEntity> BlockEntityTicker<A> checkType(BlockEntityType<A> givenType, BlockEntityType<E> expectedType, BlockEntityTicker<? super E> ticker) {
         return expectedType == givenType ? (BlockEntityTicker<A>) ticker : null;
+    }
+    
+    public static int nextInt(Random random, int min, int max) {
+        return random.nextInt(max - min + 1) + min;
     }
     
     public static float pow(float val, int num) {
