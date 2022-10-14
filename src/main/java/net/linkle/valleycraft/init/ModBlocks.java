@@ -43,6 +43,7 @@ public class ModBlocks {
     public static final Block CURTAIN = new CurtainBlock();
     public static final Block STAKE = new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly());
     public static final Block LANTERN_HANGER = new LanternHangerBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD));
+    public static final Block LOG_SLAB = new SlabBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).nonOpaque());
 
     public static final Block LEATHER_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL));
     public static final Block TANNED_LEATHER_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL));
@@ -178,6 +179,7 @@ public class ModBlocks {
         Reg.registerWithItem("lumberjack_station", LUMBERJACK_STATION, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("stove", STOVE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("campfire_pot", CAMPFIRE_POT, itemSettings().group(BOOKS));
+        Reg.registerWithItem("log_pile", LOG_SLAB, itemSettings().group(NON_NATURAL_BLOCKS));
 
         Reg.registerWithItem("crate", CRATE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("empty_bookshelf", EMPTY_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
@@ -232,6 +234,8 @@ public class ModBlocks {
         Reg.registerWithItem("stake", STAKE, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("lantern_hanger", LANTERN_HANGER, itemSettings().group(NON_NATURAL_BLOCKS));
         Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));
+
+        //misc decor?
         Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings().group(NON_NATURAL_BLOCKS));
 
         //wood types

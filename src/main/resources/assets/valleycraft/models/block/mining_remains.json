@@ -3,7 +3,8 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "valleycraft:block/rusted_pickaxe_zombie",
-		"1": "valleycraft:block/zombie_skull"
+		"1": "valleycraft:block/zombie_skull",
+		"particle": "valleycraft:block/zombie_skull"
 	},
 	"elements": [
 		{

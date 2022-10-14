@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/log_pile_bottom"
+    },
+    "type=double": {
+      "model": "valleycraft:block/log_pile_full"
+    },
+    "type=top": {
+      "model": "valleycraft:block/log_pile_top"
+    }
+  }
+}

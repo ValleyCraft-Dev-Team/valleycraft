@@ -31,7 +31,7 @@ public class ModArmors {
     public static final Item FUR_BOOTS = new ArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settings_uncommon);
 
     public static final Item REINFORCED_IRON_HELMET = new ArmorItem(ArmorMats.SCALE, EquipmentSlot.HEAD, settings_uncommon);
-    public static final Item SCALE_MAIL = new ArmorItem(ArmorMats.SCALE, EquipmentSlot.CHEST, settings_artifacts_uncommon);
+    public static final Item SCALE_MAIL = new ArmorItem(ArmorMats.SCALE, EquipmentSlot.LEGS, settings_artifacts_uncommon);
 
     public static final Item EYEPATCH = new ArmorItem(ArmorMats.EYEPATCH, EquipmentSlot.HEAD, settings_artifacts_uncommon);
 
@@ -43,9 +43,12 @@ public class ModArmors {
     public static final Item CANVAS_LEGGINGS = new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.LEGS, settings);
     public static final Item CANVAS_BOOTS = new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.FEET, settings);
 
-    public static final Item BIKINI_MASC = new ArmorItem(ArmorMats.BIKINI_MASC, EquipmentSlot.LEGS, settings);
-    public static final Item BIKINI = new ArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settings);
+    public static final Item BIKINI_MASC = new ArmorItem(ArmorMats.BIKINI_MASC, EquipmentSlot.LEGS, settings_artifacts_scarce);
+    public static final Item BIKINI = new ArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settings_artifacts_scarce);
     public static final Item BIKINI_COAT = new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settings);
+
+    public static final Item BIKINI_MASC_REPAIRED = new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settings);
+    public static final Item BIKINI_REPAIRED = new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settings);
 
     public static final Item TURTLE_CHESTPLATE = new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settings);
     public static final Item TURTLE_LEGGINGS = new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, settings);
@@ -55,6 +58,9 @@ public class ModArmors {
     public static final Item TRADER_COAT = new ArmorItem(ArmorMats.TRADER, EquipmentSlot.CHEST, settings_artifacts_uncommon);
     public static final Item TRADER_SKIRT = new ArmorItem(ArmorMats.TRADER, EquipmentSlot.LEGS, settings_artifacts_uncommon);
     public static final Item TRADER_SANDALS = new ArmorItem(ArmorMats.TRADER, EquipmentSlot.FEET, settings_artifacts_uncommon);
+
+    public static final Item RED_CLOAK_HEAD = new ArmorItem(ArmorMats.RED_CLOAK, EquipmentSlot.HEAD, settings_artifacts_epic);
+    public static final Item RED_CLOAK_CHEST = new ArmorItem(ArmorMats.RED_CLOAK, EquipmentSlot.CHEST, settings_artifacts_epic);
 
     public static final Item LIBRARIAN = new ArmorItem(ArmorMats.LIBRARIAN, EquipmentSlot.HEAD, settings_artifacts_scarce);
     public static final Item VISOR = new ArmorItem(ArmorMats.VISOR, EquipmentSlot.HEAD, settings_artifacts_rare);
@@ -150,6 +156,8 @@ public class ModArmors {
         Reg.register("stray_coat", STRAY_COAT);
         Reg.register("stray_skirt", STRAY_SKIRT);
 
+        Reg.register("red_hood", RED_CLOAK_HEAD);
+        Reg.register("red_cloak", RED_CLOAK_CHEST);
 
         //regular clothing
         Reg.register("straw_hat", STRAW_HAT);
@@ -167,6 +175,8 @@ public class ModArmors {
         Reg.register("bikini_masc", BIKINI_MASC);
         Reg.register("bikini", BIKINI);
         Reg.register("bikini_coat", BIKINI_COAT);
+        Reg.register("bikini_masc_repaired", BIKINI_MASC_REPAIRED);
+        Reg.register("bikini_repaired", BIKINI_REPAIRED);
 
         Reg.register("turtle_chestplate", TURTLE_CHESTPLATE);
         Reg.register("turtle_leggings", TURTLE_LEGGINGS);

@@ -102,7 +102,10 @@
   "block.valleycraft.lumberjack_station": "Lumberjack Resting Spot",
   "block.valleycraft.stove": "Stove",
   "block.valleycraft.campfire_pot": "§aDiaspora's Campfire",
-  "block.valleycraft.lantern_hanger": "Lantern Hanging Post",
+  "block.valleycraft.lantern_hanger": "Lantern Hanging Stake",
+
+  "item.valleycraft.red_hood": "Crimson Hood",
+  "item.valleycraft.red_cloak": "Crimson Cloak",
 
   "block.valleycraft.ancient_wagon_wheel": "§aAncient Wagon Wheel",
   "block.valleycraft.ancient_wagon_wheel_platform": "§aAncient Wagon Wheel Connection Rod",
@@ -145,9 +148,14 @@
   "item.valleycraft.visor": "Golemancer Smithing Mask",
   "item.valleycraft.strange_catalyst": "Radiating Catalyst",
 
-  "item.valleycraft.bikini": "Wretch's Femme Undergarments",
-  "item.valleycraft.bikini_masc": "Wretch's Masc Undergarments",
-  "item.valleycraft.bikini_coat": "Wretch's Coat",
+  "block.valleycraft.log_pile": "Log Pile",
+
+  "item.valleycraft.bikini": "§aWretch's Femme Undergarments",
+  "item.valleycraft.bikini_masc": "§aWretch's Masc Undergarments",
+  "item.valleycraft.bikini_coat": "§aWretch's Coat",
+
+  "item.valleycraft.bikini_repaired": "§aFemme Undergarments",
+  "item.valleycraft.bikini_masc_repaired": "§aMasc Undergarments",
 
   "item.valleycraft.cloth": "Cloth",
   "item.valleycraft.handle": "Tool Handle",

@@ -16,8 +16,10 @@ public enum ArmorMats implements ArmorMaterial {
     
     ALEX("ruined_alex_zombie", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI("bikini", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    BIKINI_REPAIRED("bikini_repaired", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI_COAT("wretch", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI_MASC("bikini_masc", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    BIKINI_MASC_REPAIRED("bikini_masc_repaired", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BRUTE("brute", ints(3), 10, 15, equipLeather(), items(Items.LEATHER)),
     CANVAS("canvas", ints(1,1,2,1), 10, 15, equipLeather(), items(ModItems.COVER)),
     SNOW_CAP("snow_cap", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
@@ -46,8 +48,9 @@ public enum ArmorMats implements ArmorMaterial {
     VILLAGER("villager", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER)),
     VISOR("visor", ints(3), 10, 15, equipChain(), items(Items.COPPER_INGOT)),
     SCALE("scale", ints(0,0,7,3), 10, 15, equipChain(), items(Items.IRON_INGOT)),
-    BUTTON("button", ints(0,0,7,2), 10, 15, equipChain(), items(Items.STRING));
-    
+    BUTTON("button", ints(0,0,7,2), 10, 15, equipChain(), items(Items.STRING)),
+    RED_CLOAK("red_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH));
+
     // ### Other Utility Methods ###
     
     private static Ingredient items(ItemConvertible... items) {
