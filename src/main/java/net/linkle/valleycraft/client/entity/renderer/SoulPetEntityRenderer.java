@@ -42,7 +42,7 @@ public class SoulPetEntityRenderer extends EntityRenderer<Entity> {
         
         // start animation
         float scale = smooth(Math.min(tick/40f, 1f));
-        scale = MathHelper.lerp(0.75f, scale, 1f);
+        scale = MathHelper.lerp(0.8f, scale, 1f);
         billboard.setScale(scale);
         
         // barks animation

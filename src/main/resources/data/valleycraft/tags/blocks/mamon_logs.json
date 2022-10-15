@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:mamon_log",
+    "valleycraft:mamon_wood",
+    "valleycraft:stripped_mamon_log",
+    "valleycraft:stripped_mamon_wood"
+  ]
+}
