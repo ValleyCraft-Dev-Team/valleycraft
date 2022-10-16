@@ -25,6 +25,9 @@
     ],
     "client": [
       "net.linkle.valleycraft.client.Client"
+    ],
+    "terrablender": [
+      "net.linkle.valleycraft.TerraBlender"
     ]
   },
   "mixins": [
