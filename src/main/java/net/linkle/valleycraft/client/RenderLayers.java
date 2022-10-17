@@ -3,12 +3,13 @@ package net.linkle.valleycraft.client;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.registry.Registry;
 
 import static net.linkle.valleycraft.init.ModBlocks.*;
-import static net.linkle.valleycraft.init.ModNaturalBlocks.*;
+import static net.linkle.valleycraft.init.NaturalBlocks.*;
 
 import java.util.HashSet;
 
@@ -74,7 +75,7 @@ class RenderLayers {
         put(DESERT_SHRUB, cullout);
         put(BUSH, cullout);
         put(LARGE_BUSH, cullout);
-        put(LIVING_BUSH, cullout);
+        put(LUSH_BUSH, cullout);
         put(BIG_FERN, cullout);
         put(WILD_MINERS_LETTUCE, cullout);
         put(GLOOM_BERRY, cullout);
@@ -139,7 +140,7 @@ class RenderLayers {
         put(WATTLE_TABLE, cullout);
         put(WATTLE_TABLE_CLOTHE, cullout);
         put(WATTLE_CHAIR, cullout);
-        put(STUCK_ARROW_BLOCK, cullout);
+        put(ARROW_BLOCK, cullout);
 
         put(TALL_ALLIUM, cullout);
         put(TALL_CORNFLOWER, cullout);
@@ -157,10 +158,10 @@ class RenderLayers {
 
         put(GRAVE_MARKER, cullout);
         put(GRAVE_MARKER_PET, cullout);
-        put(ERDSTONE_GRAVE, cullout);
-        put(ERDSTONE_GRAVE_PET, cullout);
+        put(ERD_STONE_GRAVESTONE, cullout);
+        put(ERD_STONE_GRAVESTONE_PET, cullout);
         put(DEFECTIVE_SPAWNER, cullout);
-        put(STUCK_SWORD_BLOCK, cullout);
+        put(SWORD_BLOCK, cullout);
         put(SOULSPORE, cullout);
 
         put(BROWN_CLAY_POT, cullout);
@@ -182,13 +183,13 @@ class RenderLayers {
         put(BURNT_OUT_CANDLE, cullout);
         put(SKELETAL_REMAINS, cullout);
         put(SKELETAL_MINING_REMAINS, cullout);
-        put(STUCK_PICKAXE_BLOCK, cullout);
+        put(PICKAXE_BLOCK, cullout);
         put(DEAD_LANTERN, cullout);
         put(STAKE, cullout);
         put(LUMBERJACK_STATION, cullout);
         put(CAMPFIRE_POT, cullout);
         put(LANTERN_HANGER, cullout);
-        put(LOG_SLAB, cullout);
+        put(LOG_PILE, cullout);
     }
 
     /**
@@ -197,6 +198,11 @@ class RenderLayers {
      */
     private static final HashSet<Block> BLOCKS = new HashSet<>(1000);
 
+    
+    private static void put(BlockConvertible block, RenderLayer layer) {
+        put(block.asBlock(), layer);
+    }
+    
     private static void put(Block block, RenderLayer layer) {
 
         // To developers, please remove the block that has registered twice or more.

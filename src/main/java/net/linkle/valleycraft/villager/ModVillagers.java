@@ -18,16 +18,16 @@ import net.minecraft.world.poi.PointOfInterestType;
 
 public class ModVillagers {
 
-    public static final PointOfInterestType STABLEHAND_POI = registerPOI("stablehand_poi", 1, 1, ModBlocks.STABLEHAND);
+    public static final PointOfInterestType STABLEHAND_POI = registerPOI("stablehand_poi", 1, 1, ModBlocks.STABLEHAND_STATION.block);
     public static final VillagerProfession STABLEHAND = registerPro("stablehand", "stablehand_poi", SoundEvents.ENTITY_VILLAGER_WORK_LEATHERWORKER);
 
-    public static final PointOfInterestType INNKEEPER_POI = registerPOI("innkeeper_poi", 1, 1, ModBlocks.STOVE);
+    public static final PointOfInterestType INNKEEPER_POI = registerPOI("innkeeper_poi", 1, 1, ModBlocks.STOVE.block);
     public static final VillagerProfession INNKEEPER = registerPro("innkeeper", "innkeeper_poi", SoundEvents.ENTITY_VILLAGER_WORK_LEATHERWORKER);
 
-    public static final PointOfInterestType LUMBERJACK_POI = registerPOI("lumberjack_poi", 1, 1, ModBlocks.LUMBERJACK_STATION);
+    public static final PointOfInterestType LUMBERJACK_POI = registerPOI("lumberjack_poi", 1, 1, ModBlocks.LUMBERJACK_STATION.block);
     public static final VillagerProfession LUMBERJACK = registerPro("lumberjack", "lumberjack_poi", SoundEvents.ENTITY_VILLAGER_WORK_LEATHERWORKER);
 
-    public static final PointOfInterestType DIASPORA_POI = registerPOI("diaspora_poi", 1, 1, ModBlocks.CAMPFIRE_POT);
+    public static final PointOfInterestType DIASPORA_POI = registerPOI("diaspora_poi", 1, 1, ModBlocks.CAMPFIRE_POT.block);
     public static final VillagerProfession DIASPORA = registerPro("diaspora", "diaspora_poi", SoundEvents.ENTITY_VILLAGER_WORK_LEATHERWORKER);
 
     private static VillagerProfession registerPro(String name, String heldWorkstation, @Nullable SoundEvent workSound) {

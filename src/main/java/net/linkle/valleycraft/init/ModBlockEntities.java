@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.init;
 
+import java.util.stream.Stream;
+
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
@@ -10,6 +12,7 @@ import net.linkle.valleycraft.block.entity.CrateBlockEntity;
 import net.linkle.valleycraft.block.entity.StoveEntity;
 import net.linkle.valleycraft.block.entity.WispLanternBlockEntity;
 import net.linkle.valleycraft.client.block.entity.WispLanternRenderer;
+import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
@@ -33,8 +36,13 @@ public class ModBlockEntities {
     }
     
     /** Create block entity */
-    private static <T extends BlockEntity> BlockEntityType<T> create(String id, Factory<T> factory, Block... block) {
-        var entity = FabricBlockEntityTypeBuilder.create(factory, block).build();
+    private static <T extends BlockEntity> BlockEntityType<T> create(String id, Factory<T> factory, BlockConvertible... blocks) {
+        return create(id, factory, Stream.of(blocks).map(BlockConvertible::asBlock).toArray(Block[]::new));
+    }
+    
+    /** Create block entity */
+    private static <T extends BlockEntity> BlockEntityType<T> create(String id, Factory<T> factory, Block... blocks) {
+        var entity = FabricBlockEntityTypeBuilder.create(factory, blocks).build();
         return Registry.register(Registry.BLOCK_ENTITY_TYPE, Main.makeId(id), entity);
     }
 }

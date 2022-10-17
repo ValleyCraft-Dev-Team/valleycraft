@@ -21,8 +21,8 @@ public class VineBodyBlock extends AbstractPlantBlock {
         super(settings, Direction.DOWN, SHAPE, false);
     }
     
-    public void setStem(AbstractPlantStemBlock stem) {
-        this.stem = stem;
+    public void setStem(Block stem) {
+        this.stem = (AbstractPlantStemBlock)stem;
     }
 
     @Override

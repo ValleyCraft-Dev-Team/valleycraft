@@ -1,7 +1,6 @@
 package net.linkle.valleycraft.mixin;
 
 import net.linkle.valleycraft.init.ModBlocks;
-import net.linkle.valleycraft.init.ModNaturalBlocks;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -14,7 +13,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.WorldView;
 
 @Mixin(FarmlandBlock.class)
-class FarmlandBlockMixin extends Block {
+abstract class FarmlandBlockMixin extends Block {
 
     FarmlandBlockMixin(Settings settings) {
         super(settings);
@@ -24,7 +23,7 @@ class FarmlandBlockMixin extends Block {
     private static void isSprinklerNearby(WorldView world, BlockPos pos, CallbackInfoReturnable<Boolean> info) {
         for (var p : BlockPos.iterate(pos.add(-8, -1, -8), pos.add(8, 1, 8))) {
             var state = world.getBlockState(p);
-            if (state.isOf(ModBlocks.SPRINKLER) && state.get(SprinklerBlock.SPRINKLING)) {
+            if (state.isOf(ModBlocks.SPRINKLER.block) && state.get(SprinklerBlock.SPRINKLING)) {
                 info.setReturnValue(true);
             }
         }

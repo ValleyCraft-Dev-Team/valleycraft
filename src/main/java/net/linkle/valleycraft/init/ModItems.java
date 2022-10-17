@@ -9,151 +9,81 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.util.Rarity;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
 import static net.minecraft.util.Rarity.*;
 
-import net.linkle.valleycraft.armors.ArmorMats;
-
-public class ModItems {
-
-    //ingredients
-    public static final Item SALT = new Item(itemSettings());
-    public static final Item FLOUR = new Item(itemSettings());
-
-    //fluids
-    public static final Item SLUDGE_BUCKET = new BucketItem(ModFluids.SLUDGE_STILL, itemSettings().group(VC_ITEMS).maxCount(1));
-
-    //misc
-    public static final Item FIBER = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item COVER = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item MULCH = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item CROWS_FEATHER = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item SEAGULLS_FEATHER = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item DUCKS_FEATHER = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item BEAST_BONE = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item STRING = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item SALVE = new SalveItem(itemSettings().group(VC_TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION);
-    public static final Item DOG_BISCUIT = new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true);
+public enum ModItems implements ItemConvertible {
 
     // crops
-    public static final Item RICE_SEEDS = new AliasedBlockItem(ModNaturalBlocks.RICES, itemSettings().group(VC_ITEMS));
-    public static final Item PUFF_BALL_SEEDS = new AliasedBlockItem(ModNaturalBlocks.PUFF_BALL, itemSettings().group(VC_ITEMS));
-    public static final Item ONION_SEEDS = new AliasedBlockItem(ModNaturalBlocks.ONIONS, itemSettings().group(VC_ITEMS));
-    public static final Item FIRE_PEPPER_SEEDS = new AliasedBlockItem(ModNaturalBlocks.FIRE_PEPPERS, itemSettings().group(VC_ITEMS));
-    public static final Item CAVE_ROOT_SEEDS = new AliasedBlockItem(ModNaturalBlocks.CAVE_ROOT_CROP, itemSettings().group(VC_ITEMS));
-    public static final Item ANCIENT_FLOWER_SEEDS = new AliasedBlockItem(ModNaturalBlocks.ANCIENT_FLOWERS, itemSettings().group(VC_ITEMS).rarity(Rarity.RARE));
-    public static final Item AMETHYSTLE_SEEDS = new AliasedBlockItem(ModNaturalBlocks.AMETHYSTLES, itemSettings().group(VC_ITEMS));
+    RICE_SEEDS(new AliasedBlockItem(NaturalBlocks.RICES.block, itemSettings())),
+    PUFF_BALL_SEEDS(new AliasedBlockItem(NaturalBlocks.PUFF_BALL.block, itemSettings())),
+    ONION_SEEDS(new AliasedBlockItem(NaturalBlocks.ONIONS.block, itemSettings())),
+    FIRE_PEPPER_SEEDS(new AliasedBlockItem(NaturalBlocks.FIRE_PEPPERS.block, itemSettings())),
+    CAVE_ROOT_SEEDS(new AliasedBlockItem(NaturalBlocks.CAVE_ROOT_CROP.block, itemSettings())),
+    ANCIENT_FLOWER_SEEDS(new AliasedBlockItem(NaturalBlocks.ANCIENT_FLOWERS.block, itemSettings().rarity(Rarity.RARE))),
+    AMETHYSTLE_SEEDS(new AliasedBlockItem(NaturalBlocks.AMETHYSTLES.block, itemSettings())),
+    
+    FIBER(new Item(itemSettings())),
+    PLANK(new Item(itemSettings())),
+    SALT(new Item(itemSettings())),
+    MONSTER_CLAW(new Item(itemSettings())),
+    BEAST_BONE(new Item(itemSettings())),
+    SHEEP_HIDE(new Item(itemSettings())),
+    PIG_HIDE(new Item(itemSettings())),
+    SEAGULLS_FEATHER(new Item(itemSettings())),
+    DUCKS_FEATHER(new Item(itemSettings())),
+    CROWS_FEATHER(new Item(itemSettings())),
+    PRIMSTEEL_NUGGET(new Item(itemSettings())),
+    PRIMSTEEL_RAW(new Item(itemSettings())),
+    GOLEMITE_RAW(new Item(itemSettings())),
+    GOLEMITE_NUGGET(new Item(itemSettings())),
+    AMBER(new Item(itemSettings())),
+    ADVENTURINE_SHARDS(new Item(itemSettings())),
+    ANTHRACITE(new Item(itemSettings())),
 
-    public static final Item T_TRADE = new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1));
-    public static final Item T_APPRECIATION = new Item(itemSettings().group(BOOKS).rarity(Rarity.RARE).maxCount(1));
-    public static final Item T_VISITORS = new Item(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1));
-    public static final Item S_TOKEN = new Item(itemSettings().group(BOOKS).rarity(Rarity.COMMON).maxCount(64));
+    MULCH(new Item(itemSettings())),
+    DAUB(new Item(itemSettings())),
+    HANDLE(new Item(itemSettings())),
+    CLOTH(new Item(itemSettings())),
+    PLANT_FIBER_STRING(new Item(itemSettings())),
+    BOOK_COVER(new Item(itemSettings())),
+    BOW_STRING(new Item(itemSettings())),
+    FLOUR(new Item(itemSettings())),
 
-    //
-    public static final Item ARROW_BUNDLE = new Item(itemSettings().group(VC_TOOLS));
-    public static final Item BOMB_BAG = new Item(itemSettings().group(BOOKS));
-    public static final Item SHEEP_HIDE = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item BOW_STRING = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item CLOTH = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item HANDLE = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item PLANK = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item AGITATOR = new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE));
-    public static final Item HOT_PLATE = new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE));
-    public static final Item THERMAL = new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE));
-    public static final Item ROSEGOLD = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item GOLEMITE_RAW = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item PRIMSTEEL_RAW = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item GOLEMITE_NUGGET = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item PRIMSTEEL_NUGGET = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item GOLEMITE_INGOT = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item PRIMSTEEL_INGOT = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item ANTHRACITE = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item BIG_BOTTLE = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item BB_SNAIL = new Item(itemSettings().group(VC_ITEMS).maxCount(16));
-    public static final Item BB_CAVE_SNAIL = new Item(itemSettings().group(VC_ITEMS).maxCount(16));
-    public static final Item BB_RHINO = new Item(itemSettings().group(VC_ITEMS).maxCount(16));
-    public static final Item MONSTER_CLAW = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item DAUB = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item PIG_HIDE = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item AMBER = new Item(itemSettings().group(VC_ITEMS));
-    public static final Item ADVENTURINE_SHARDS = new Item(itemSettings().group(VC_ITEMS));
+    PRIMSTEEL_INGOT(new Item(itemSettings())),
+    GOLEMITE_INGOT(new Item(itemSettings())),
+    ROSEGOLD_INGOT(new Item(itemSettings())),
+    HOT_PLATE(new Item(itemSettings().rarity(Rarity.RARE))),
+    AGITATOR(new Item(itemSettings().rarity(Rarity.RARE))),
+    THERMAL_BLAZE_CORE(new Item(itemSettings().rarity(Rarity.RARE))),
+    STRANGE_CATALYST(new Item(itemSettings().rarity(RARE))),
 
-    public static final Item SOUL_ITEM = new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof());
-    public static final Item SOUL_ITEM_PET = new SoulPetItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof());
+    BIG_BOTTLE(new Item(itemSettings())),
+    BB_SNAIL(new Item(itemSettings().maxCount(16))),
+    BB_CAVE_SNAIL(new Item(itemSettings().maxCount(16))),
+    BB_RHINO_BEETLE(new Item(itemSettings().maxCount(16))),
 
-    public static final Item STRANGE_CATALYST = new Item(itemSettings().group(VC_ITEMS).rarity(RARE));
+    SLUDGE_BUCKET(new BucketItem(ModFluids.SLUDGE_STILL, itemSettings().maxCount(1))),
+    
+    DOG_BISCUIT(new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true)),
+    SALVE(new SalveItem(itemSettings().group(VC_TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION)),
+    
+    SEAOLOGER_TOKEN(new Item(itemSettings().group(BOOKS).rarity(Rarity.COMMON).maxCount(64))),
+    TOTEM_OF_TRADE(new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1))),
+    TOTEM_OF_APPRECIATION(new Item(itemSettings().group(BOOKS).rarity(Rarity.RARE).maxCount(1))),
+    TOTEM_OF_VISITORS(new Item(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1))),
+
+    BOMB_BAG(new Item(itemSettings().group(BOOKS))),
+    ARROW_BUNDLE(new Item(itemSettings().group(VC_TOOLS))),
+
+    SOUL_ITEM(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof())),
+    SOUL_ITEM_PET(new SoulPetItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof()));
 
     public static void initialize() {
         ModBookItems.initialize();
-
-        // crops
-        Reg.register("rice_seeds", RICE_SEEDS);
-        Reg.register("puff_ball_seeds", PUFF_BALL_SEEDS);
-        Reg.register("onion_seeds", ONION_SEEDS);
-        Reg.register("fire_pepper_seeds", FIRE_PEPPER_SEEDS);
-        Reg.register("cave_root_seeds", CAVE_ROOT_SEEDS);
-        Reg.register("ancient_flower_seeds", ANCIENT_FLOWER_SEEDS);
-        Reg.register("amethystle_seeds", AMETHYSTLE_SEEDS);
-
-        Reg.register("fiber", FIBER);
-        Reg.register("plank", PLANK);
-        Reg.register("salt", SALT);
-        Reg.register("monster_claw", MONSTER_CLAW);
-        Reg.register("beast_bone", BEAST_BONE);
-        Reg.register("sheep_hide", SHEEP_HIDE);
-        Reg.register("pig_hide", PIG_HIDE);
-        Reg.register("seagulls_feather", SEAGULLS_FEATHER);
-        Reg.register("ducks_feather", DUCKS_FEATHER);
-        Reg.register("crows_feather", CROWS_FEATHER);
-        Reg.register("primsteel_nugget", PRIMSTEEL_NUGGET);
-        Reg.register("primsteel_raw", PRIMSTEEL_RAW);
-        Reg.register("golemite_raw", GOLEMITE_RAW);
-        Reg.register("golemite_nugget", GOLEMITE_NUGGET);
-        Reg.register("amber", AMBER);
-        Reg.register("adventurine_shards", ADVENTURINE_SHARDS);
-        Reg.register("anthracite", ANTHRACITE);
-
-        Reg.register("mulch", MULCH);
-        Reg.register("daub", DAUB);
-        Reg.register("handle", HANDLE);
-        Reg.register("cloth", CLOTH);
-        Reg.register("plant_fiber_string", STRING);
-        Reg.register("book_cover", COVER);
-        Reg.register("bow_string", BOW_STRING);
-        Reg.register("flour", FLOUR);
-
-        Reg.register("primsteel_ingot", PRIMSTEEL_INGOT);
-        Reg.register("golemite_ingot", GOLEMITE_INGOT);
-        Reg.register("rosegold_ingot", ROSEGOLD);
-        Reg.register("hot_plate", HOT_PLATE);
-        Reg.register("agitator", AGITATOR);
-        Reg.register("thermal_blaze_core", THERMAL);
-        Reg.register("strange_catalyst", STRANGE_CATALYST);
-
-        Reg.register("big_bottle", BIG_BOTTLE);
-        Reg.register("bb_snail", BB_SNAIL);
-        Reg.register("bb_cave_snail", BB_CAVE_SNAIL);
-        Reg.register("bb_rhino_beetle", BB_RHINO);
-
-        Reg.register("sludge_bucket", SLUDGE_BUCKET);
-
-        Reg.register("dog_biscuit", DOG_BISCUIT);
-        Reg.register("salve", SALVE);
-
-        Reg.register("seaologer_token", S_TOKEN);
-        Reg.register("totem_of_trade", T_TRADE);
-        Reg.register("totem_of_appreciation", T_APPRECIATION);
-        Reg.register("totem_of_visitors", T_VISITORS);
-
-        Reg.register("bomb_bag", BOMB_BAG);
-        Reg.register("arrow_bundle", ARROW_BUNDLE);
-
-        //souls
-        Reg.register("soul_item", SOUL_ITEM);
-        Reg.register("soul_item_pet", SOUL_ITEM_PET);
-
         TieredFoodItems.initialize();
         IngredientFoodItems.initialize();
         RegularFoodItems.initialize();
@@ -161,6 +91,19 @@ public class ModItems {
     }
     
     private static Item.Settings itemSettings() {
-        return new Item.Settings().group(INGREDIENTS);
+        return new Item.Settings().group(VC_ITEMS);
+    }
+    
+    // ### The Enum Class Itself ###
+    
+    public final Item item;
+    
+    ModItems(Item item) {
+        this.item = Reg.register(name().toLowerCase(), item);
+    }
+
+    @Override
+    public Item asItem() {
+        return item;
     }
 }

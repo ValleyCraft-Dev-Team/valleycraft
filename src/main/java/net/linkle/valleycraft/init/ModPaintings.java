@@ -1,32 +1,36 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
-import net.minecraft.entity.decoration.painting.*;
-import net.minecraft.util.Identifier;
+import net.minecraft.entity.decoration.painting.PaintingVariant;
 import net.minecraft.util.registry.Registry;
 
-public class ModPaintings {
+public enum ModPaintings {
 
-    public static final PaintingVariant MOGAR = register("mogar", 32, 32);
-    public static final PaintingVariant HORSE_PATRON = register("belaenu", 16, 32);
-    public static final PaintingVariant TERRA_INCOGNITA = register("terra_incognita", 32, 64);
-    public static final PaintingVariant FINAL_RITUAL = register("final_ritual", 96, 64);
-    public static final PaintingVariant FATE = register("fate", 32, 16);
-    public static final PaintingVariant STRANGE_DREAM = register("strange_dream", 16, 16);
-    public static final PaintingVariant GWEYIRS_FINAL_VOYAGE = register("gweyirs_final_voyage", 48, 32);
-    public static final PaintingVariant ANCIENT_HISTORY = register("ancient_history", 16, 16);
-    public static final PaintingVariant ILLAGER_HOME = register("home", 32, 16);
-    public static final PaintingVariant HEXS_AIRSHIP = register("hex_airship", 48, 32);
-    public static final PaintingVariant CYCLES = register("cycles", 32, 16);
-    //public static final PaintingMotive ROSETTA = register("translation_canvas", 32, 32);
-    public static final PaintingVariant WINGS = register("wings_to_the_sky", 32, 32);
-    public static final PaintingVariant MONSTER_DAYS = register("monster_days", 32, 32);
+    MOGAR(32, 32),
+    BELAENU(16, 32),
+    TERRA_INCOGNITA(32, 64),
+    FINAL_RITUAL(96, 64),
+    FATE(32, 16),
+    STRANGE_DREAM(16, 16),
+    GWEYIRS_FINAL_VOYAGE(48, 32),
+    ANCIENT_HISTORY(16, 16),
+    HOME(32, 16),
+    HEX_AIRSHIP(48, 32),
+    CYCLES(32, 16),
+    //TRANSLATION_CANVAS(32, 32),
+    WINGS_TO_THE_SKY(32, 32),
+    MONSTER_DAYS(32, 32);
 
     public static void initialize() {
         Main.LOGGER.debug("Registering paintings for Wilder Horizons");
     }
     
-    private static PaintingVariant register(String name, int width, int height) {
-        return Registry.register(Registry.PAINTING_VARIANT, new Identifier(Main.ID, name), new PaintingVariant(width, height));
+    
+    // ### The Enum Class Itself ###
+    
+    public final PaintingVariant painting;
+    
+    ModPaintings(int width, int height) {
+        painting = Registry.register(Registry.PAINTING_VARIANT, Main.makeId(name().toLowerCase()), new PaintingVariant(width, height));
     }
 }

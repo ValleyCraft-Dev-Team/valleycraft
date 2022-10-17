@@ -84,7 +84,7 @@ public class SprinklerBlock extends Block {
             double y = pos.getY()+0.75;
             double z = pos.getZ()+0.5;
             if (random.nextFloat() < 0.1f) {
-                world.playSound(x, y, z, ModSounds.SPRINKLER, SoundCategory.BLOCKS, 0.4f, 1.0f, false);
+                world.playSound(x, y, z, ModSounds.SPRINKLER.sound, SoundCategory.BLOCKS, 0.4f, 1.0f, false);
             }
             for (int i = 0; i < 6; i++) {
                 double speed = MathHelper.nextDouble(random, 0.2, 0.5);

@@ -2,7 +2,7 @@ package net.linkle.valleycraft.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.linkle.valleycraft.init.ModBlocks;
-import net.linkle.valleycraft.init.ModNaturalBlocks;
+import net.linkle.valleycraft.init.NaturalBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.MapColor;
@@ -37,7 +37,7 @@ public class GhostPumpkinBlock extends Block {
                 Direction direction = hit.getSide();
                 Direction direction2 = direction.getAxis() == Direction.Axis.Y ? player2.getHorizontalFacing().getOpposite() : direction;
                 world.playSound(null, pos, SoundEvents.BLOCK_PUMPKIN_CARVE, SoundCategory.BLOCKS, 1.0f, 1.0f);
-                world.setBlockState(pos, ModBlocks.GHOST_PUMPKIN_CARVED.getDefaultState().with(ModCarvedPumpkinBlock.FACING, direction2), Block.NOTIFY_ALL | Block.REDRAW_ON_MAIN_THREAD);
+                world.setBlockState(pos, ModBlocks.GHOST_PUMPKIN_CARVED.getState().with(ModCarvedPumpkinBlock.FACING, direction2), Block.NOTIFY_ALL | Block.REDRAW_ON_MAIN_THREAD);
                 ItemEntity itemEntity = new ItemEntity(world, (double)pos.getX() + 0.5 + (double)direction2.getOffsetX() * 0.65, (double)pos.getY() + 0.1, (double)pos.getZ() + 0.5 + (double)direction2.getOffsetZ() * 0.65, new ItemStack(Items.PUMPKIN_SEEDS, 4));
                 itemEntity.setVelocity(0.05 * (double)direction2.getOffsetX() + world.random.nextDouble() * 0.02, 0.05, 0.05 * (double)direction2.getOffsetZ() + world.random.nextDouble() * 0.02);
                 world.spawnEntity(itemEntity);

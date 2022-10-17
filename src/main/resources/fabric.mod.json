@@ -31,7 +31,8 @@
     ]
   },
   "mixins": [
-    "valleycraft.mixins.json"
+    "valleycraft.mixins.json",
+    "valleycraft.wideners.json"
   ],
   
   "custom": {

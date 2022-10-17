@@ -3,10 +3,7 @@ package net.linkle.valleycraft.init;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.util.Reg;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 
 public class ModGroups {
     private static final Item TIERED_DISHES_ICON = Reg.register("tiered_dishes_icon", new Item(itemSettings()));
@@ -17,7 +14,7 @@ public class ModGroups {
     private static final Item TOOLS_ICON = Reg.register("tools_icon", new Item(itemSettings()));
     private static final Item CLOTHES_ICON = Reg.register("clothes", new Item(itemSettings()));
 
-    public static final ItemGroup FLORA_GROUP = create("flora", ModNaturalBlocks.LAVENDER);
+    public static final ItemGroup FLORA_GROUP = create("flora", Items.LILAC );
 
     public static final ItemGroup INGREDIENTS = create("ingredients", INGREDIENTS_ICON);
     public static final ItemGroup REGULAR_DISHES = create("regular_dishes", REGULAR_DISHES_ICON);
@@ -28,7 +25,7 @@ public class ModGroups {
     public static final ItemGroup CLOTHING = create("clothing", CLOTHES_ICON);
     public static final ItemGroup BOOKS = create("books", BOOKS_ICON);
 
-    public static final ItemGroup NON_NATURAL_BLOCKS = create("blocks", ModBlocks.APPLE_DOOR);
+    public static final ItemGroup NON_NATURAL_BLOCKS = create("blocks", Items.BIRCH_DOOR);
 
 
     public static void initialize() {
@@ -36,7 +33,7 @@ public class ModGroups {
     
     private static ItemGroup create(String id, ItemConvertible item) {
         var builder = FabricItemGroupBuilder.create(Main.makeId(id));
-        return builder.icon(() -> new ItemStack(item)).build();
+        return builder.icon(() -> new ItemStack(item.asItem().asItem())).build();
     }
 
     private static Item.Settings itemSettings() {
