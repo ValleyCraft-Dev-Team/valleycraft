@@ -4,7 +4,7 @@ import java.util.Optional;
 
 import org.jetbrains.annotations.Nullable;
 
-import net.linkle.valleycraft.init.ModNaturalBlocks;
+import net.linkle.valleycraft.init.NaturalBlocks;
 import net.linkle.valleycraft.init.ModFluids;
 import net.linkle.valleycraft.init.ModItems;
 import net.minecraft.block.Block;
@@ -43,7 +43,7 @@ public abstract class SludgeFluid extends FlowableFluid {
 
     @Override
     public Item getBucketItem() {
-        return ModItems.SLUDGE_BUCKET;
+        return ModItems.SLUDGE_BUCKET.item;
     }
 
     @Override
@@ -80,7 +80,7 @@ public abstract class SludgeFluid extends FlowableFluid {
 
     @Override
     public BlockState toBlockState(FluidState state) {
-        return ModNaturalBlocks.SLUDGE_FLUID.getDefaultState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
+        return NaturalBlocks.SLUDGE_FLUID.getState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
     }
 
     @Override

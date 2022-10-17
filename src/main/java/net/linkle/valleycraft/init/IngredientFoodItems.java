@@ -6,133 +6,107 @@ import net.minecraft.entity.effect.*;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.util.*;
 
-import static net.linkle.valleycraft.init.ModFishing.ZOD;
 import static net.linkle.valleycraft.init.ModGroups.*;
 
-public class IngredientFoodItems {
+public enum IngredientFoodItems implements ItemConvertible {
 
-    //public static final Item AMETHYSTLE_SALAD = new Tier1Normal(settings(), 4, 2, StatusEffects.HASTE);
+    //AMETHYSTLE_SALAD(new Tier1Normal(settings(), 4, 2, StatusEffects.HASTE);
+    
+    MILK(new BottleItem(settings().maxCount(16), 0, 0.2f).setMilk()),
+    MOREL_OIL(new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS)),
+    
+    GLOW_BERRY_JUICE(new BottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 15 * 20)))
+    .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_8", Formatting.GRAY)),
 
-    //raw ingredients
-    public static final Item ALOE = new AliasedBlockItem(ModNaturalBlocks.ALOE_VERAS, settings().food(Foods.create(3, 0.3f)));
+    GLOOM_BERRY(new AliasedBlockItem(NaturalBlocks.GLOOM_BERRY.block, settings().food(FoodComponents.GLOW_BERRIES))),
+    ALOE_VERA(new AliasedBlockItem(NaturalBlocks.ALOE_VERAS.block, settings().food(Foods.create(3, 0.3f)))),
     
-    public static final Item AMETHYSTLE = new FoodItem(settings(), 2, 0.3f)
-            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_10", Formatting.GRAY);
-    public static final Item ENDURA_CARROT = new FoodItem(settings(), 5, 0.3f)
-            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_9", Formatting.GRAY);
-    public static final Item GLOW_BERRY_JUICE = new BottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 15 * 20)))
-            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_8", Formatting.GRAY);
-    public static final Item ANCIENT_FLOWER = new FoodItem(settings(), 6, 0.7f)
-            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_7", Formatting.GRAY);
-    public static final Item HEARTY_BEETROOT = new FoodItem(settings(), 4, 0.6f)
-            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_6", Formatting.GRAY);
-    public static final Item SYRUPY_HONEYCOMB = new FoodItem(settings(), 3, 0.6f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 5 * 20)))
-            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_5", Formatting.GRAY);
-    public static final Item RAW_GLOWSQUID = new FoodItem(settings(), 2, 0.2f)
-            .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_4", Formatting.GRAY);
+    AMETHYSTLE(new FoodItem(settings(), 2, 0.3f)
+    .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_10")),
     
-    public static final Item CAVE_ROOT = new FoodItem(settings(), 4, 0.3f);
-    public static final Item FIRE_PEPPER = new FoodItem(settings(), 3, 0.3f);
-    public static final Item MAIZE = new AliasedBlockItem(ModNaturalBlocks.MAIZE, settings().rarity(Rarity.RARE).food(Foods.create(3, 0.3f)));
-    public static final Item MINERS_LETTUCE = new AliasedBlockItem(ModNaturalBlocks.MINERS_LETTUCES, settings().food(Foods.create(3, 0.3f)));
-    public static final Item MONSTER_GUTS = new Tier1Normal(settings(), 6, 0.3f, StatusEffects.HUNGER);
-    public static final Item MONSTER_LIVER = new Tier1Normal(settings(), 3, 0.4f, StatusEffects.POISON);
+    ANCIENT_FLOWER(new FoodItem(settings(), 6, 0.7f)
+    .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_7")),
     
-    public static final Item MOREL_OIL = new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS);
-    public static final Item ONION = new FoodItem(settings(), 3, 0.3f);
-    public static final Item RAW_BACON = new FoodItem(settings(), 2, 0.2f);
-    public static final Item RAW_BAT = new FoodItem(settings(), 2, 0.1f);
-    public static final Item GHOST_PUMPKIN_SLICE = new FoodItem(settings(), 2, 0.4f);
-    public static final Item PUMPKIN_SLICE = new FoodItem(settings(), 2, 0.4f);
-    public static final Item RAW_SQUID = new FoodItem(settings(), 2, 0.3f);
-    public static final Item RAW_RICE = new FoodItem(settings(), 2, 0.3f);
-    public static final Item RAW_SILVERFISH = new FoodItem(settings(), 1, 0.1f);
-    public static final Item RAW_PHANTOM = new Tier1Normal(settings(), 3, 0.3f, StatusEffects.NAUSEA);
-    public static final Item RAW_BIRD = new FoodItem(settings(), 2, 0.2f);
-
-    public static final Item BREAD_DOUGH = new FoodItem(settings(), 3, 0.2f);
-    public static final Item CORN_BREAD_DOUGH = new FoodItem(settings(), 2, 0.2f);
-    public static final Item CAKE_DOUGH = new FoodItem(settings(), 3, 0.2f);
-    public static final Item HARDTACK_DOUGH = new FoodItem(settings(), 1, 0.2f);
-    public static final Item PUMPKIN_SPICE_COOKIE_DOUGH = new FoodItem(settings(), 1, 0.2f);
-    public static final Item PUMPKIN_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
-    public static final Item COOKIE_DOUGH = new FoodItem(settings(), 1, 0.2f);
-    public static final Item CHORUS_FRUIT_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
-    public static final Item CHOCOLATE_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
-    public static final Item APPLE_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
-    public static final Item SWEET_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
-    public static final Item GLOW_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
-    public static final Item GLOOM_BERRY_PIE_DOUGH = new FoodItem(settings(), 3, 0.2f);
-    public static final Item GLOOM_BERRY = new AliasedBlockItem(ModNaturalBlocks.GLOOM_BERRY, settings().food(FoodComponents.GLOW_BERRIES));
-    public static final Item MILK = new BottleItem(settings().maxCount(16), 0, 0.2f).setMilk();
-    public static final Item BEAST_LIVER_RAW = new FoodItem(settings(), 4, 0.4f, true);
+    CAVE_ROOT(new FoodItem(settings(), 4, 0.3f)),
+    
+    ENDURA_CARROT(new FoodItem(settings(), 5, 0.3f)
+    .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_9")),
+    
+    FIRE_PEPPER(new FoodItem(settings(), 3, 0.3f)),
+    
+    HEARTY_BEETROOT(new FoodItem(settings(), 4, 0.6f)
+    .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_6")),
+    
+    MAIZE(new AliasedBlockItem(NaturalBlocks.MAIZE.block, settings().rarity(Rarity.RARE).food(Foods.create(3, 0.3f)))),
+    MINERS_LETTUCE(new AliasedBlockItem(NaturalBlocks.MINERS_LETTUCES.block, settings().food(Foods.create(3, 0.3f)))),
+    ONION(new FoodItem(settings(), 3, 0.3f)),
+    RAW_RICE(new FoodItem(settings(), 2, 0.3f)),
+    
+    SYRUPY_HONEYCOMB(new FoodItem(settings(), 3, 0.6f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 5 * 20)))
+    .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_5")),
+    
+    PUMPKIN_SLICE(new FoodItem(settings(), 2, 0.4f)),
+    GHOST_PUMPKIN_SLICE(new FoodItem(settings(), 2, 0.4f)),
+    MONSTER_GUTS(new Tier1Normal(settings(), 6, 0.3f, StatusEffects.HUNGER)),
+    INFECTED_MONSTER_LIVER(new Tier1Normal(settings(), 3, 0.4f, StatusEffects.POISON)),
+    ZOD(new Tier1Normal(settings().group(ModGroups.INGREDIENTS), 5, 2, StatusEffects.HUNGER)),
+    
+    RAW_BAT_WING(new FoodItem(settings(), 2, 0.1f)),
+    RAW_SILVERFISH(new FoodItem(settings(), 1, 0.1f)),
+    RAW_PHANTOM_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.NAUSEA)),
+    
+    RAW_GLOWSQUID_TENTACLE(new FoodItem(settings(), 2, 0.2f)
+    .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_4")),
+    
+    RAW_SQUID_TENTACLE(new FoodItem(settings(), 2, 0.3f)),
+    RAW_BACON(new FoodItem(settings(), 2, 0.2f)),
+    
+    RAW_BIRD_THIGH(new FoodItem(settings(), 2, 0.2f)),
+    RAW_BEAST_LIVER(new FoodItem(settings(), 4, 0.4f, true)),
+    
+    HARDTACK_DOUGH(new FoodItem(settings(), 1, 0.2f)),
+    BREAD_DOUGH(new FoodItem(settings(), 3, 0.2f)),
+    CORN_BREAD_DOUGH(new FoodItem(settings(), 2, 0.2f)),
+    COOKIE_DOUGH(new FoodItem(settings(), 1, 0.2f)),
+    PUMPKIN_SPICE_COOKIE_DOUGH(new FoodItem(settings(), 1, 0.2f)),
+    PUMPKIN_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
+    CHOCOLATE_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
+    APPLE_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
+    SWEET_BERRY_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
+    GLOW_BERRY_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
+    GLOOM_BERRY_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
+    CHORUS_FRUIT_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
+    CAKE_DOUGH(new FoodItem(settings(), 3, 0.2f));
 
     //1.1 planned
-    //public static final Item MONSTER_FLESH = new Tier2Normal(settings(), 8, 2, StatusEffects.HUNGER);
+    //MONSTER_FLESH(new Tier2Normal(settings(), 8, 2, StatusEffects.HUNGER)),
     //dw its not sea turtles!
-    //public static final Item RAW_TURTLE = new FoodItem(settings(), 4, 0.8f);
+    //RAW_TURTLE(new FoodItem(settings(), 4, 0.8f)),
 
     /** Called from {@link ModItems} */
     static void initialize() {
-        Reg.register("milk", MILK);
-        Reg.register("morel_oil", MOREL_OIL);
-        Reg.register("glow_berry_juice", GLOW_BERRY_JUICE);
-
-        Reg.register("gloom_berry", GLOOM_BERRY);
-        Reg.register("aloe_vera", ALOE);
-        Reg.register("amethystle", AMETHYSTLE);
-        Reg.register("ancient_flower", ANCIENT_FLOWER);
-        Reg.register("cave_root", CAVE_ROOT);
-        Reg.register("endura_carrot", ENDURA_CARROT);
-        Reg.register("fire_pepper", FIRE_PEPPER);
-        Reg.register("hearty_beetroot", HEARTY_BEETROOT);
-        Reg.register("maize", MAIZE);
-        Reg.register("miners_lettuce", MINERS_LETTUCE);
-        Reg.register("onion", ONION);
-        Reg.register("raw_rice", RAW_RICE);
-        Reg.register("syrupy_honeycomb", SYRUPY_HONEYCOMB);
-
-        Reg.register("pumpkin_slice", PUMPKIN_SLICE);
-        Reg.register("ghost_pumpkin_slice", GHOST_PUMPKIN_SLICE);
-
-        Reg.register("monster_guts", MONSTER_GUTS);
-        Reg.register("infected_monster_liver", MONSTER_LIVER);
-        Reg.register("zod", ZOD);
-
-        Reg.register("raw_bat_wing", RAW_BAT);
-        Reg.register("raw_silverfish", RAW_SILVERFISH);
-        Reg.register("raw_phantom_eye", RAW_PHANTOM);
-
-        Reg.register("raw_glowsquid_tentacle", RAW_GLOWSQUID);
-        Reg.register("raw_squid_tentacle", RAW_SQUID);
-        Reg.register("raw_bacon", RAW_BACON);
-
-        Reg.register("raw_bird_thigh", RAW_BIRD);
-        Reg.register("raw_beast_liver", BEAST_LIVER_RAW);
-        //Reg.register("raw_turtle_neck", RAW_TURTLE);
-
-        Reg.register("hardtack_dough", HARDTACK_DOUGH);
-        Reg.register("bread_dough", BREAD_DOUGH);
-        Reg.register("corn_bread_dough", CORN_BREAD_DOUGH);
-        Reg.register("cookie_dough", COOKIE_DOUGH);
-        Reg.register("pumpkin_spice_cookie_dough", PUMPKIN_SPICE_COOKIE_DOUGH);
-
-        Reg.register("pumpkin_pie_dough", PUMPKIN_PIE_DOUGH);
-        Reg.register("chocolate_pie_dough", CHOCOLATE_PIE_DOUGH);
-        Reg.register("apple_pie_dough", APPLE_PIE_DOUGH);
-        Reg.register("sweet_berry_pie_dough", SWEET_BERRY_PIE_DOUGH);
-        Reg.register("glow_berry_pie_dough", GLOW_BERRY_PIE_DOUGH);
-        Reg.register("gloom_berry_pie_dough", GLOOM_BERRY_PIE_DOUGH);
-        Reg.register("chorus_fruit_pie_dough", CHORUS_FRUIT_PIE_DOUGH);
-
-        Reg.register("cake_dough", CAKE_DOUGH);
-
-        //Reg.register("monster_flesh", MONSTER_FLESH);
+        
     }
 
     private static Item.Settings settings() {
         return new Item.Settings().group(INGREDIENTS);
+    }
+    
+    
+    
+    // ### The Enum Class Itself ###
+    
+    public final Item item;
+    
+    IngredientFoodItems(Item item) {
+        this.item = Reg.register(name().toLowerCase(), item);
+    }
+    
+    @Override
+    public Item asItem() {
+        return item;
     }
 }

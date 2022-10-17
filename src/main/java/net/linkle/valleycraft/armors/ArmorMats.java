@@ -21,7 +21,7 @@ public enum ArmorMats implements ArmorMaterial {
     BIKINI_MASC("bikini_masc", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI_MASC_REPAIRED("bikini_masc_repaired", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BRUTE("brute", ints(3), 10, 15, equipLeather(), items(Items.LEATHER)),
-    CANVAS("canvas", ints(1,1,2,1), 10, 15, equipLeather(), items(ModItems.COVER)),
+    CANVAS("canvas", ints(1,1,2,1), 10, 15, equipLeather(), items(ModItems.BOOK_COVER)),
     SNOW_CAP("snow_cap", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     DROWNED("ruined_drowned", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     REPAIRED_DROWNED("repaired_drowned", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),

@@ -2,366 +2,276 @@ package net.linkle.valleycraft.init;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.linkle.valleycraft.block.*;
+import net.linkle.valleycraft.util.BlockConvertible;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 
+import static net.linkle.valleycraft.Main.makeId;
 import static net.linkle.valleycraft.init.ModGroups.BOOKS;
 import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
 
-public class ModBlocks {
-    public static final Block PRIMSTEEL_PLATE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
-    public static final Block PRIMSTEEL_TILED_PLATE = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
-    public static final Block POLISHED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
-    public static final Block MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
-    public static final Block IRON_GRATE = new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque());
-    public static final Block PRIMSTEEL_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
-    public static final Block VEX_LANTERN = new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN));
-    public static final Block ROSEGOLD_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f));
-    public static final Block RAW_PRIMSTEEL_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f));
-    public static final Block RAW_GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f));
-    public static final Block ANTHRACITE_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK).strength(4.1f, 5.0f));
-    public static final Block AMBER_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f));
-    public static final Block GOLEMITE_GRATE = new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque());
-    public static final Block GOLEMITE_LADDER = new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque());
-    public static final Block ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
-    public static final Block GLOWSQUID_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 6));
-    public static final Block DEAD_LANTERN = new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(s->0));
-    public static final Block GOLEMITE_BARS = new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS));
-    public static final Block GOLEMITE_BLOCK = new Block(Block.Settings.copy(Blocks.IRON_BLOCK));
-    public static final Block GOLEMITE_CHAIN = new ChainBlock(Block.Settings.copy(Blocks.CHAIN));
-    public static final Block ARID_MOSSY_ERDSTONE_BRICKS = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
-    public static final Block SPRINKLER = new SprinklerBlock();
-    public static final Block CANVAS_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET));
-    public static final Block CANVAS_CARPET = new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET));
-    public static final Block CURTAIN = new CurtainBlock();
-    public static final Block STAKE = new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly());
-    public static final Block LANTERN_HANGER = new LanternHangerBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD));
-    public static final Block LOG_SLAB = new SlabBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).nonOpaque());
+import java.util.function.BiFunction;
 
-    public static final Block LEATHER_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block TANNED_LEATHER_BLOCK = new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block BLACK_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLACK).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block BLUE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLUE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block BROWN_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BROWN).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block CYAN_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.CYAN).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block GREEN_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.GREEN).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block GREY_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.GRAY).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block LIGHT_BLUE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.LIGHT_BLUE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block LIGHT_GREY_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.LIGHT_GRAY).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block LIME_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.LIME).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block MAGENTA_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.MAGENTA).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block ORANGE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.ORANGE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block PINK_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.PINK).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block PURPLE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.PURPLE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block RED_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.RED).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block WHITE_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.WHITE).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block YELLOW_LEATHER_BLOCK = new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.YELLOW).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-    public static final Block SALT_BLOCK = new Block(Block.Settings.copy(Blocks.SANDSTONE));
-    public static final Block STABLEHAND = new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block STABLEHAND_COUNTER = new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block EMPTY_BOOKSHELF = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block POTION_BOOKSHELF = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block ANTHRO_BOOKSHELF = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
+import org.jetbrains.annotations.Nullable;
 
-    public static final Block ANCIENT_WAGON_WHEEL = new WagonWheelBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
-    public static final Block ANCIENT_WAGON_WHEEL_PLATFORM = new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
-    public static final Block ANCIENT_WAGON_WHEEL_TABLE = new WagonWheelTableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
-    public static final Block WATTLE_TABLE = new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
-    public static final Block WATTLE_TABLE_CLOTHE = new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
-    public static final Block WATTLE_STOOL = new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
-    public static final Block WATTLE_CHAIR = new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque());
+public enum ModBlocks implements ItemConvertible, BlockConvertible {
+    
+    // furniture
+    STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    
+    LUMBERJACK_STATION(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings()),
+    STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
+    CAMPFIRE_POT(new CampfirePotBlock(Block.Settings.copy(Blocks.CAULDRON).luminance(s -> 13).nonOpaque()), itemSettings()),
+    LOG_PILE(new SlabBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
+    CRATE(new CrateBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
+    EMPTY_BOOKSHELF(new Block(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    POTION_BOOKSHELF(new Block(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    ANTHRO_BOOKSHELF(new Block(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    WATTLE_STOOL(new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    WATTLE_CHAIR(new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    WATTLE_TABLE(new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    WATTLE_TABLE_CLOTHE(new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    
+    ANCIENT_WAGON_WHEEL(new WagonWheelBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS)),
+    ANCIENT_WAGON_WHEEL_PLATFORM(new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS)),
+    ANCIENT_WAGON_WHEEL_TABLE(new WagonWheelTableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS)),
+    
+    CANVAS_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
+    CANVAS_CARPET(new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
+    CURTAIN(new CurtainBlock(), itemSettings()),
+    
+    // guidestones
+    GUIDESTONE(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque()), itemSettings()),
+    GUIDESTONE_ARROW(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque()), itemSettings()),
+    GUIDESTONE_HOME(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque()), itemSettings()),
+    GUIDESTONE_INTEREST(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque()), itemSettings()),
+    GUIDESTONE_DANGER(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque()), itemSettings()),
+    
+    // odd blocks go here
+    SWORD_BLOCK(new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    PICKAXE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    
+    ARROW_BLOCK(new ArrowBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BAMBOO).noCollision()), itemSettings()),
+    BURNT_OUT_TORCH(new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.WOOD)), itemSettings().group(BOOKS)),
+    BURNT_OUT_CANDLE(new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CANDLE)).shape(4, 12), itemSettings().group(BOOKS)),
+    SKELETAL_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    SKELETAL_MINING_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    RUSTED_CHEST(new RustedChestBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
+    
+    GLOWSQUID_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 6)), itemSettings()),
+    VEX_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof()),
+    DEFECTIVE_SPAWNER(new DefectiveBlock(Block.Settings.copy(Blocks.SPAWNER)), itemSettings().rarity(Rarity.RARE).maxCount(64).group(BOOKS).fireproof()),
+    DEAD_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(s->0)), itemSettings().group(BOOKS)),
+    
+    GRAVE_MARKER(new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque()), itemSettings().rarity(Rarity.UNCOMMON)),
+    GRAVE_MARKER_PET(new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque()), itemSettings().rarity(Rarity.EPIC)),
+    ERD_STONE_GRAVESTONE(new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque()), itemSettings().rarity(Rarity.UNCOMMON)),
+    ERD_STONE_GRAVESTONE_PET(new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque()), itemSettings().rarity(Rarity.EPIC)),
+    
+    // clay pots go here (not the baking item one)
+    BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
+    BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
+    
+    // redstonery
+    STAKE(new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly()), itemSettings()),
+    LANTERN_HANGER(new LanternHangerBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD)), itemSettings()),
+    SPRINKLER(new SprinklerBlock(), itemSettings()),
+    
+    // misc decor?
+    OPTIC_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()),
+    
+    // wood types
+    // wattle and daub
+    // mamon
+    MAMON_WOOD(new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings()),
+    STRIPPED_MAMON_WOOD(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD)), itemSettings()),
+    STRIPPED_MAMON_LOG(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    MAMON_PLANKS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    MAMON_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR)), itemSettings()),
+    MAMON_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR)), itemSettings()),
+    MAMON_SLAB(new SlabBlock(Block.Settings.copy(Blocks.OAK_SLAB)), itemSettings()),
+    MAMON_STAIRS(new StairsBlock(MAMON_PLANKS.getState(), Block.Settings.copy(Blocks.OAK_STAIRS)), itemSettings()),
+    MAMON_BUTTON(new WoodenButtonBlock(Block.Settings.copy(Blocks.OAK_BUTTON)), itemSettings()),
+    MAMON_FENCE(new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE)), itemSettings()),
+    MAMON_FENCE_GATE(new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE)), itemSettings()),
+    MAMON_PRESSURE_PLATE(new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)), itemSettings()),
+    
+    // apple
+    APPLE_WOOD(new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings()),
+    STRIPPED_APPLE_WOOD(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD)), itemSettings()),
+    STRIPPED_APPLE_LOG(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    APPLE_PLANKS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    APPLE_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR)), itemSettings()),
+    APPLE_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR)), itemSettings()),
+    APPLE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.OAK_SLAB)), itemSettings()),
+    APPLE_STAIRS(new StairsBlock(APPLE_PLANKS.getState(), Block.Settings.copy(Blocks.OAK_STAIRS)), itemSettings()),
+    APPLE_BUTTON(new WoodenButtonBlock(Block.Settings.copy(Blocks.OAK_BUTTON)), itemSettings()),
+    APPLE_FENCE(new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE)), itemSettings()),
+    APPLE_FENCE_GATE(new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE)), itemSettings()),
+    APPLE_PRESSURE_PLATE(new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)), itemSettings()),
+    
+    // carved
+    GHOST_PUMPKIN_CARVED(new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always)), itemSettings().equipmentSlot(i-> EquipmentSlot.HEAD)),
+    GHOST_JACK_O_LANTERN(new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().luminance(15).allowsSpawning(ModBlocks::always)), itemSettings()),
+    
+    // bales
+    GLOW_KELP_BLOCK(new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TEAL).luminance(s->10)), itemSettings()),
+    ORANGE_KELP_BLOCK(new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TERRACOTTA_GRAY)), itemSettings()),
+    FIBER_BALE(new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK).mapColor(MapColor.TERRACOTTA_GREEN)), itemSettings()),
+    ROTTEN_FLESH_BLOCK(new Block(Block.Settings.copy(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.TERRACOTTA_RED)), itemSettings()),
+    
+    // Separator of raw blocks and bales
+    SALT_BLOCK(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
 
-    public static final Block STUCK_SWORD_BLOCK = new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN));
-    public static final Block STUCK_ARROW_BLOCK = new ArrowBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BAMBOO).noCollision());
-    public static final Block BURNT_OUT_TORCH = new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.WOOD));
-    public static final Block BURNT_OUT_CANDLE = new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CANDLE)).shape(4, 12);
-    public static final Block SKELETAL_REMAINS = new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE));
-    public static final Block STUCK_PICKAXE_BLOCK = new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN));
-    public static final Block SKELETAL_MINING_REMAINS = new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE));
-    public static final Block LUMBERJACK_STATION = new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN));
+    // raw blocks of "_____"
+    RAW_GOLEMITE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
+    RAW_PRIMSTEEL_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
+    CHARCOAL_BLOCK(new Block(Block.Settings.copy(Blocks.COAL_BLOCK)), itemSettings()),
+    
+    // not strictly either
+    ANTHRACITE_BLOCK(new Block(Block.Settings.copy(Blocks.COAL_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
+    AMBER_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
+    
+    // refined blocks of "___"
+    ROSEGOLD_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
+    PRIMSTEEL_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    PRIMSTEEL_TILED_PLATE(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    PRIMSTEEL_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
+    IRON_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
+    GOLEMITE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    GOLEMITE_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
+    GOLEMITE_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
+    GOLEMITE_LADDER(new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
+    GOLEMITE_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
+    
+    // erdstone
+    POLISHED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    MOSSY_ERDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ARID_MOSSY_ERDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    
+    ERDSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.QUARTZ_PILLAR).sounds(BlockSoundGroup.DEEPSLATE).hardness(1)), itemSettings()),
+    
+    ERDSTONE_TILES(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    CHISELED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    CHISELED_ERDSTONE_FACE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    CHISELED_ERDSTONE_BRICK_FACE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    ERDSTONE_WINDOW(new GlassBlock(Block.Settings.copy(Blocks.GLASS).sounds(BlockSoundGroup.DEEPSLATE).hardness(1).nonOpaque()), itemSettings().group(BOOKS)),
+    PATTERNED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_TARGET_BLOCK(new TargetBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    ERDSTONE_DISPENSER(new DispenserBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    
+    // adventurine
+    POLISHED_ADVENTURINE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(25).resistance(2500f).luminance(s ->5)), itemSettings()),
+    
+    // adventurine infused erdstone
+    ERDSTONE_PILLAR_POWERED(new PillarBlock(Block.Settings.copy(Blocks.QUARTZ_PILLAR).sounds(BlockSoundGroup.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3)), itemSettings()),
+    ERDSTONE_TILES_POWERED(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3)), itemSettings()),
+    CHISELED_ERDSTONE_POWERED(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3)), itemSettings()),
+    CHISELED_ERDSTONE_FACE_POWERED(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3)), itemSettings()),
+    CHISELED_ERDSTONE_BRICK_FACE_POWERED(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    ERDSTONE_WINDOW_POWERED(new GlassBlock(Block.Settings.copy(Blocks.GLASS).sounds(BlockSoundGroup.DEEPSLATE).hardness(50).resistance(2500f).nonOpaque().luminance(s ->3)), itemSettings().group(BOOKS)),
+    PATTERNED_ERDSTONE_POWERED(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3)), itemSettings()),
+    
+    // stones
+    // polished stones
+    PUMICE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    VERDANTINE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SHIVERSTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    GRIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SERPENTINITE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    DIABASE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    CARMINE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    LIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
 
-    public static final Block GHOST_PUMPKIN_CARVED = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always));
-    public static final Block GHOST_JACK_O_LANTERN = new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().luminance(15).allowsSpawning(ModBlocks::always));
-
-    public static final Block FIBER_BALE = new HayBlock(Block.Settings.copy(Blocks.HAY_BLOCK).mapColor(MapColor.TERRACOTTA_GREEN));
-    public static final Block GLOW_KELP_BLOCK = new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TEAL).luminance(s->10));
-    public static final Block ORANGE_KELP_BLOCK = new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TERRACOTTA_GRAY));
-    public static final Block ROTTEN_FLESH_BLOCK = new Block(Block.Settings.copy(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.TERRACOTTA_RED));
-    public static final Block APPLE_WOOD = new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD));
-    public static final Block STRIPPED_APPLE_WOOD = new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD));
-    public static final Block STRIPPED_APPLE_LOG = new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG));
-    public static final Block APPLE_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block APPLE_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR));
-    public static final Block APPLE_TRAPDOOR = new TrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR));
-    public static final Block APPLE_SLAB = new SlabBlock(Block.Settings.copy(Blocks.OAK_SLAB));
-    public static final Block APPLE_STAIRS = new StairsBlock(APPLE_PLANKS.getDefaultState(), Block.Settings.copy(Blocks.OAK_STAIRS));
-    public static final Block APPLE_BUTTON = new WoodenButtonBlock(Block.Settings.copy(Blocks.OAK_BUTTON));
-    public static final Block APPLE_FENCE = new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE));
-    public static final Block APPLE_FENCE_GATE = new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE));
-    public static final Block APPLE_PRESSURE_PLATE = new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE));
-
-    public static final Block MAMON_WOOD = new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD));
-    public static final Block STRIPPED_MAMON_WOOD = new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD));
-    public static final Block STRIPPED_MAMON_LOG = new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG));
-    public static final Block MAMON_PLANKS = new Block(Block.Settings.copy(Blocks.OAK_PLANKS));
-    public static final Block MAMON_DOOR = new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR));
-    public static final Block MAMON_TRAPDOOR = new TrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR));
-    public static final Block MAMON_SLAB = new SlabBlock(Block.Settings.copy(Blocks.OAK_SLAB));
-    public static final Block MAMON_STAIRS = new StairsBlock(MAMON_PLANKS.getDefaultState(), Block.Settings.copy(Blocks.OAK_STAIRS));
-    public static final Block MAMON_BUTTON = new WoodenButtonBlock(Block.Settings.copy(Blocks.OAK_BUTTON));
-    public static final Block MAMON_FENCE = new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE));
-    public static final Block MAMON_FENCE_GATE = new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE));
-    public static final Block MAMON_PRESSURE_PLATE = new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE));
-    public static final Block PUMICE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
-    public static final Block OPTIC_GLASS = new GlassBlock(Block.Settings.copy(Blocks.GLASS));
-    public static final Block CHARCOAL_BLOCK = new Block(Block.Settings.copy(Blocks.COAL_BLOCK));
-    public static final Block VERDANTINE_SMOOTH = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE));
-    public static final Block SHIVERSTONE_SMOOTH = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE));
-    public static final Block GRIMESTONE_SMOOTH = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE));
-    public static final Block SERPENTINITE_SMOOTH = new Block(Block.Settings.copy(Blocks.SMOOTH_STONE));
-    public static final Block DIABASE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
-    public static final Block CARMINE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
-    public static final Block LIMESTONE_SMOOTH = new Block(Block.Settings.copy(Blocks.STONE));
-
-    public static final Block GUIDESTONE = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque());
-    public static final Block GUIDESTONE_ARROW = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque());
-    public static final Block GUIDESTONE_HOME = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque());
-    public static final Block GUIDESTONE_INTEREST = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque());
-    public static final Block GUIDESTONE_DANGER = new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque());
-
-    public static final Block ERDSTONE_GRAVE = new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque());
-    public static final Block ERDSTONE_GRAVE_PET = new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque());
-    public static final Block GRAVE_MARKER = new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque());
-    public static final Block GRAVE_MARKER_PET = new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque());
-
-    public static final Block CRATE = new CrateBlock(Block.Settings.copy(Blocks.BARREL));
-    public static final Block DEFECTIVE_SPAWNER = new DefectiveBlock(Block.Settings.copy(Blocks.SPAWNER));
-    public static final Block STOVE = new StoveBlock(Block.Settings.copy(Blocks.SMOKER));
-    public static final Block CAMPFIRE_POT = new CampfirePotBlock(Block.Settings.copy(Blocks.CAULDRON).luminance(s -> 13).nonOpaque());
-
-    public static final Block BROWN_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly());
-    public static final Block BLUE_CLAY_POT = new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly());
-
-    public static final Block ERDSTONE_PILLAR = new PillarBlock(Block.Settings.copy(Blocks.QUARTZ_PILLAR).sounds(BlockSoundGroup.DEEPSLATE).hardness(1));
-    public static final Block ERDSTONE_TILES = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
-    public static final Block CHISELED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
-    public static final Block CHISELED_ERDSTONE_FACE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
-    public static final Block CHISELED_ERDSTONE_BRICK_FACE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
-    public static final Block ERDSTONE_WINDOW = new GlassBlock(Block.Settings.copy(Blocks.GLASS).sounds(BlockSoundGroup.DEEPSLATE).hardness(1).nonOpaque());
-    public static final Block PATTERNED_ERDSTONE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1));
-    public static final Block ERDSTONE_TARGET_BLOCK = new TargetBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1));
-    public static final Block ERDSTONE_DISPENSER = new DispenserBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1));
-
-    public static final Block POLISHED_ADVENTURINE = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(25).resistance(2500f).luminance(s ->5));
-
-    public static final Block ERDSTONE_PILLAR_POWERED = new PillarBlock(Block.Settings.copy(Blocks.QUARTZ_PILLAR).sounds(BlockSoundGroup.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
-    public static final Block CHISELED_ERDSTONE_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
-    public static final Block ERDSTONE_TILES_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
-    public static final Block CHISELED_ERDSTONE_FACE_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
-    public static final Block ERDSTONE_BRICK_FACE_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
-    public static final Block ERDSTONE_WINDOW_POWERED = new GlassBlock(Block.Settings.copy(Blocks.GLASS).sounds(BlockSoundGroup.DEEPSLATE).hardness(50).resistance(2500f).nonOpaque().luminance(s ->3));
-    public static final Block PATTERNED_ERDSTONE_POWERED = new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3));
-
-    public static final Block RUSTED_CHEST_BLOCK = new RustedChestBlock(Block.Settings.copy(Blocks.OAK_WOOD));
+    // leathers are last
+    LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    TANNED_LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    BLACK_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLACK).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    BLUE_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLUE).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    BROWN_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BROWN).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    CYAN_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.CYAN).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    GREEN_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.GREEN).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    GREY_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.GRAY).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    LIGHT_BLUE_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.LIGHT_BLUE).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    LIGHT_GREY_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.LIGHT_GRAY).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    LIME_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.LIME).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    MAGENTA_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.MAGENTA).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    ORANGE_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.ORANGE).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    PINK_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.PINK).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    PURPLE_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.PURPLE).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    RED_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.RED).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    WHITE_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.WHITE).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    YELLOW_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.YELLOW).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings());
 
     public static void initialize() {
-        //furniture
-        Reg.registerWithItem("stablehand_station", STABLEHAND, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("stablehand_counter", STABLEHAND_COUNTER, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        Reg.registerWithItem("lumberjack_station", LUMBERJACK_STATION, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("stove", STOVE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("campfire_pot", CAMPFIRE_POT, itemSettings().group(BOOKS));
-        Reg.registerWithItem("log_pile", LOG_SLAB, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        Reg.registerWithItem("crate", CRATE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("empty_bookshelf", EMPTY_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("potion_bookshelf", POTION_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("anthro_bookshelf", ANTHRO_BOOKSHELF, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("wattle_stool", WATTLE_STOOL, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("wattle_chair", WATTLE_CHAIR, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("wattle_table", WATTLE_TABLE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("wattle_table_clothe", WATTLE_TABLE_CLOTHE, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        Reg.registerWithItem("ancient_wagon_wheel", ANCIENT_WAGON_WHEEL, itemSettings().group(BOOKS));
-        Reg.registerWithItem("ancient_wagon_wheel_platform", ANCIENT_WAGON_WHEEL_PLATFORM, itemSettings().group(BOOKS));
-        Reg.registerWithItem("ancient_wagon_wheel_table", ANCIENT_WAGON_WHEEL_TABLE, itemSettings().group(BOOKS));
-
-        Reg.registerWithItem("canvas_block", CANVAS_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("canvas_carpet", CANVAS_CARPET, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("curtain", CURTAIN, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        //guidestones
-        Reg.registerWithItem("guidestone", GUIDESTONE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("guidestone_arrow", GUIDESTONE_ARROW, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("guidestone_home", GUIDESTONE_HOME, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("guidestone_interest", GUIDESTONE_INTEREST, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("guidestone_danger", GUIDESTONE_DANGER, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        //odd blocks go here
-        Reg.registerWithItem("sword_block", STUCK_SWORD_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
-        Reg.registerWithItem("pickaxe_block", STUCK_PICKAXE_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
-
-        Reg.registerWithItem("arrow_block", STUCK_ARROW_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("burnt_out_torch", BURNT_OUT_TORCH, itemSettings().group(BOOKS));
-        Reg.registerWithItem("burnt_out_candle", BURNT_OUT_CANDLE, itemSettings().group(BOOKS));
-        Reg.registerWithItem("skeletal_remains", SKELETAL_REMAINS, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
-        Reg.registerWithItem("skeletal_mining_remains", SKELETAL_MINING_REMAINS, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
-        Reg.registerWithItem("rusted_chest", RUSTED_CHEST_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.RARE));
-
-        Reg.registerWithItem("glowsquid_lantern", GLOWSQUID_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("vex_lantern", VEX_LANTERN, itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof());
-        Reg.registerWithItem("defective_spawner", DEFECTIVE_SPAWNER, itemSettings().rarity(Rarity.RARE).maxCount(64).group(BOOKS).fireproof());
-        Reg.registerWithItem("dead_lantern", DEAD_LANTERN, itemSettings().group(BOOKS));
-
-        Reg.registerWithItem("grave_marker", GRAVE_MARKER, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.UNCOMMON));
-        Reg.registerWithItem("grave_marker_pet", GRAVE_MARKER_PET, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.EPIC));
-        Reg.registerWithItem("erd_stone_gravestone", ERDSTONE_GRAVE, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.UNCOMMON));
-        Reg.registerWithItem("erd_stone_gravestone_pet", ERDSTONE_GRAVE_PET, itemSettings().group(NON_NATURAL_BLOCKS).rarity(Rarity.EPIC));
-
-        //clay pots go here (not the baking item one)
-        Reg.registerWithItem("brown_clay_pot", BROWN_CLAY_POT, itemSettings().group(BOOKS).rarity(Rarity.RARE));
-        Reg.registerWithItem("blue_clay_pot", BLUE_CLAY_POT, itemSettings().group(BOOKS).rarity(Rarity.RARE));
-
-        //redstonery
-        Reg.registerWithItem("stake", STAKE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("lantern_hanger", LANTERN_HANGER, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("sprinkler", SPRINKLER, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        //misc decor?
-        Reg.registerWithItem("optic_glass", OPTIC_GLASS, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        //wood types
-        //wattle and daub
-        //mamon
-        Reg.registerWithItem("mamon_wood", MAMON_WOOD, itemSettings());
-        Reg.registerWithItem("stripped_mamon_wood", STRIPPED_MAMON_WOOD, itemSettings());
-        Reg.registerWithItem("stripped_mamon_log", STRIPPED_MAMON_LOG, itemSettings());
-        Reg.registerWithItem("mamon_planks", MAMON_PLANKS, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("mamon_door", MAMON_DOOR, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("mamon_trapdoor", MAMON_TRAPDOOR, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("mamon_slab", MAMON_SLAB, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("mamon_stairs", MAMON_STAIRS, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("mamon_button", MAMON_BUTTON, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("mamon_fence", MAMON_FENCE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("mamon_fence_gate", MAMON_FENCE_GATE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("mamon_pressure_plate", MAMON_PRESSURE_PLATE, itemSettings().group(NON_NATURAL_BLOCKS));
-        //apple
-        Reg.registerWithItem("apple_wood", APPLE_WOOD, itemSettings());
-        Reg.registerWithItem("stripped_apple_wood", STRIPPED_APPLE_WOOD, itemSettings());
-        Reg.registerWithItem("stripped_apple_log", STRIPPED_APPLE_LOG, itemSettings());
-        Reg.registerWithItem("apple_planks", APPLE_PLANKS, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("apple_door", APPLE_DOOR, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("apple_trapdoor", APPLE_TRAPDOOR, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("apple_slab", APPLE_SLAB, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("apple_stairs", APPLE_STAIRS, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("apple_button", APPLE_BUTTON, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("apple_fence", APPLE_FENCE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("apple_fence_gate", APPLE_FENCE_GATE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("apple_pressure_plate", APPLE_PRESSURE_PLATE, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        //carved
-        Reg.registerWithItem("ghost_pumpkin_carved", GHOST_PUMPKIN_CARVED, itemSettings().equipmentSlot(i-> EquipmentSlot.HEAD).group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("ghost_jack_o_lantern", GHOST_JACK_O_LANTERN, itemSettings().group(NON_NATURAL_BLOCKS));
-        //bales
-        Reg.registerWithItem("glow_kelp_block", GLOW_KELP_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("orange_kelp_block", ORANGE_KELP_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("fiber_bale", FIBER_BALE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("rotten_flesh_block", ROTTEN_FLESH_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        //seperator of raw blocks and bales
-        Reg.registerWithItem("salt_block", SALT_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        //raw blocks of "_____"
-        Reg.registerWithItem("raw_golemite_block", RAW_GOLEMITE_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("raw_primsteel_block", RAW_PRIMSTEEL_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("charcoal_block", CHARCOAL_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        //not strictly either
-        Reg.registerWithItem("anthracite_block", ANTHRACITE_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("amber_block", AMBER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        //refined blocks of "___"
-        Reg.registerWithItem("rosegold_block", ROSEGOLD_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("primsteel_plate_block", PRIMSTEEL_PLATE_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("primsteel_tiled_plate", PRIMSTEEL_TILED_PLATE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("primsteel_chain", PRIMSTEEL_CHAIN, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("iron_grate", IRON_GRATE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("golemite_block", GOLEMITE_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("golemite_chain", GOLEMITE_CHAIN, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("golemite_grate", GOLEMITE_GRATE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("golemite_ladder", GOLEMITE_LADDER, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("golemite_bars", GOLEMITE_BARS, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        //erdstone
-        Reg.registerWithItem("polished_erdstone", POLISHED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("erdstone_bricks", ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("mossy_erdstone_bricks", MOSSY_ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("arid_mossy_erdstone_bricks", ARID_MOSSY_ERDSTONE_BRICKS, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        Reg.registerWithItem("erdstone_pillar", ERDSTONE_PILLAR, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        Reg.registerWithItem("erdstone_tiles", ERDSTONE_TILES, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("chiseled_erdstone", CHISELED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("chiseled_erdstone_face", CHISELED_ERDSTONE_FACE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("chiseled_erdstone_brick_face", CHISELED_ERDSTONE_BRICK_FACE, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
-        Reg.registerWithItem("erdstone_window", ERDSTONE_WINDOW, itemSettings().group(BOOKS));
-        Reg.registerWithItem("patterned_erdstone", PATTERNED_ERDSTONE, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("erdstone_target_block", ERDSTONE_TARGET_BLOCK, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
-        Reg.registerWithItem("erdstone_dispenser", ERDSTONE_DISPENSER, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
-
-        //adventurine
-        Reg.registerWithItem("polished_adventurine", POLISHED_ADVENTURINE, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        //adventurine infused erdstone
-        Reg.registerWithItem("erdstone_pillar_powered", ERDSTONE_PILLAR_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("erdstone_tiles_powered", ERDSTONE_TILES_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("chiseled_erdstone_powered", CHISELED_ERDSTONE_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("chiseled_erdstone_face_powered", CHISELED_ERDSTONE_FACE_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("chiseled_erdstone_brick_face_powered", ERDSTONE_BRICK_FACE_POWERED, itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON));
-        Reg.registerWithItem("erdstone_window_powered", ERDSTONE_WINDOW_POWERED, itemSettings().group(BOOKS));
-        Reg.registerWithItem("patterned_erdstone_powered", PATTERNED_ERDSTONE_POWERED, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        //stones
-        //polished stones
-        Reg.registerWithItem("serpentinite_smooth", SERPENTINITE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("diabase_smooth", DIABASE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("carmine_smooth", CARMINE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("grimestone_smooth", GRIMESTONE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("limestone_smooth", LIMESTONE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("shiverstone_smooth", SHIVERSTONE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("pumice_smooth", PUMICE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("verdantine_smooth", VERDANTINE_SMOOTH, itemSettings().group(NON_NATURAL_BLOCKS));
-
-        //leathers are last
-        Reg.registerWithItem("leather_block", LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("tanned_leather_block", TANNED_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("black_leather_block", BLACK_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("blue_leather_block", BLUE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("brown_leather_block", BROWN_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("cyan_leather_block", CYAN_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("green_leather_block", GREEN_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("grey_leather_block", GREY_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("light_blue_leather_block", LIGHT_BLUE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("light_grey_leather_block", LIGHT_GREY_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("lime_leather_block", LIME_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("magenta_leather_block", MAGENTA_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("orange_leather_block", ORANGE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("pink_leather_block", PINK_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("purple_leather_block", PURPLE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("red_leather_block", RED_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("white_leather_block", WHITE_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
-        Reg.registerWithItem("yellow_leather_block", YELLOW_LEATHER_BLOCK, itemSettings().group(NON_NATURAL_BLOCKS));
+        
     }
 
     private static FabricItemSettings itemSettings() {
-        return new FabricItemSettings().group(ModGroups.NON_NATURAL_BLOCKS);
+        return new FabricItemSettings().group(NON_NATURAL_BLOCKS);
     }
 
     private static Boolean always(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
         return true;
+    }
+    
+    
+    // ### The Enum Class Itself ###
+    
+    public final Block block;
+    
+    @Nullable
+    public final Item item;
+    
+    /** Register the block without the item. */
+    ModBlocks(Block block) {
+        this.block = block;
+        this.item = null;
+        Reg.register(id(), block);
+    }
+    
+    /** Register the block without the item. */
+    ModBlocks(Block block, Item.Settings settings) {
+        this(block, settings, BlockItem::new);
+    }
+
+    /** Register the block with the item.
+     * @param function create and register the block item. Example: BlockItem::new  */
+    ModBlocks(Block block, Item.Settings settings, BiFunction<Block, Item.Settings, Item> function) {
+        this.block = block;
+        var id = makeId(id());
+        Registry.register(Registry.BLOCK, id, block);
+        Registry.register(Registry.ITEM, id, item = function.apply(block, settings));
+    }
+    
+    private String id() {
+        return name().toLowerCase();
+    }
+    
+    /** Get default state */
+    public BlockState getState() {
+        return block.getDefaultState();
+    }
+
+    @Override
+    public Item asItem() {
+        return item;
+    }
+
+    @Override
+    public Block asBlock() {
+        return block;
     }
 }

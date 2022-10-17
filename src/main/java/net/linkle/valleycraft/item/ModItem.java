@@ -17,6 +17,14 @@ public class ModItem extends Item {
     }
     
     /** Append text to tooltip. 
+     * @see ModItem#addText(String, Formatting)
+     * @param trans translatable text. */
+    public ModItem addText(String trans) {
+        return addText(trans, Formatting.GRAY);
+    }
+    
+    /** Append text to tooltip. 
+     * @see ModItem#addText(Text)
      * @param trans translatable text. */
     public ModItem addText(String trans, Formatting format) {
         return addText(Text.translatable(trans).formatted(format));

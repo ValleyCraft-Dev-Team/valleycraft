@@ -149,7 +149,7 @@ public class CurtainBlock extends HorizontalWithWaterBlock {
         }
         boolean isOpen = state.get(OPEN);
         var sound = isOpen ? ModSounds.CURTAIN_OPEN : ModSounds.CURTAIN_CLOSE;
-        world.playSound(null, pos, sound, SoundCategory.BLOCKS, 0.5f, isOpen ? 1.0f : 0.95f);
+        world.playSound(null, pos, sound.sound, SoundCategory.BLOCKS, 0.5f, isOpen ? 1.0f : 0.95f);
         world.emitGameEvent(player, state.get(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
         return ActionResult.success(world.isClient);
     }

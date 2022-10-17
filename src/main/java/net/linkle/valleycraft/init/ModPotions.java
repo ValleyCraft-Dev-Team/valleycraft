@@ -2,7 +2,7 @@ package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.effect.ModEffects;
-import net.linkle.valleycraft.mixin.BrewingRecipeRegistryMixin;
+import net.linkle.valleycraft.widener.BrewingRecipeRegistryWideners;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.Item;
 import net.minecraft.potion.Potion;
@@ -14,7 +14,7 @@ public class ModPotions {
     public static Potion ROT_BLIGHT_POTION = registerPotion("rot_blight_potion", new Potion(new StatusEffectInstance(ModEffects.ROT_BLIGHT, 45 * 20)));
 
     public static void initialize() {
-        registerRecipe(Potions.AWKWARD, IngredientFoodItems.MONSTER_LIVER, ModPotions.ROT_BLIGHT_POTION);
+        registerRecipe(Potions.AWKWARD, IngredientFoodItems.INFECTED_MONSTER_LIVER.item, ModPotions.ROT_BLIGHT_POTION);
     }
     
     private static Potion registerPotion(String name, Potion potion) {
@@ -22,6 +22,6 @@ public class ModPotions {
     }
     
     private static void registerRecipe(Potion input, Item item, Potion output) {
-        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, IngredientFoodItems.MONSTER_LIVER, ModPotions.ROT_BLIGHT_POTION);
+        BrewingRecipeRegistryWideners.invokeRegisterPotionRecipe(Potions.AWKWARD, IngredientFoodItems.INFECTED_MONSTER_LIVER.item, ModPotions.ROT_BLIGHT_POTION);
     }
 }

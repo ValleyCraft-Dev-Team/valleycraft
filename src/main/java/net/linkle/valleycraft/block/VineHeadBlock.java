@@ -26,8 +26,8 @@ public class VineHeadBlock extends AbstractPlantStemBlock implements Fertilizabl
         super(settings, Direction.DOWN, SHAPE, false, 0.1);
     }
     
-    public void setPlant(AbstractPlantBlock plant) {
-        this.plant = plant;
+    public void setPlant(Block plant) {
+        this.plant = (AbstractPlantBlock)plant;
     }
 
     @Override

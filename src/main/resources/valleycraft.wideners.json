@@ -1,11 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.linkle.valleycraft.mixin",
+  "package": "net.linkle.valleycraft.widener",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "FarmlandBlockMixin",
-    "LivingEntityMixin"
+    "BrewingRecipeRegistryWideners",
+    "OverworldBiomeWideners"
   ],
   "client": [
     
