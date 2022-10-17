@@ -6,10 +6,10 @@ import net.minecraft.util.registry.Registry;
 
 public enum ModSounds {
     
-    SPRINKLER("sprinkler"),
+    SPRINKLER,
+    CURTAIN_OPEN,
     
-    CURTAIN_OPEN("curtain_open"),
-    CURTAIN_CLOSE("curtain_close");
+    CURTAIN_CLOSE;
 
     public static void initialize() {
     }
@@ -19,8 +19,8 @@ public enum ModSounds {
     
     public final SoundEvent sound;
     
-    ModSounds(String id) {
-        sound = new SoundEvent(Main.makeId(id));
+    ModSounds() {
+        sound = new SoundEvent(Main.makeId(name().toLowerCase()));
         Registry.register(Registry.SOUND_EVENT, sound.getId(), sound);
     }
 }
