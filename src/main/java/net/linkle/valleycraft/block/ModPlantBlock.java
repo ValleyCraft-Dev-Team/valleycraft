@@ -3,17 +3,14 @@ package net.linkle.valleycraft.block;
 import java.util.function.Predicate;
 
 import net.linkle.valleycraft.util.BlockPres;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.PlantBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
 public class ModPlantBlock extends PlantBlock {
 
-    protected VoxelShape shape;
+    protected VoxelShape shape = Block.createCuboidShape(2, 0, 2, 14, 14, 14);
     protected OffsetType offset = OffsetType.NONE;
 
     /** The ground whitelist for placing plant. */

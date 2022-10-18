@@ -4,8 +4,9 @@
   "package": "net.linkle.valleycraft.widener",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "BrewingRecipeRegistryWideners",
-    "OverworldBiomeWideners"
+    "BrewingRecipeRegistryWidener",
+    "OverworldBiomeWidener",
+    "FoliagePlacerTypeWidener"
   ],
   "client": [
     
