@@ -190,6 +190,8 @@ class RenderLayers {
         put(CAMPFIRE_POT, cullout);
         put(LANTERN_HANGER, cullout);
         put(LOG_PILE, cullout);
+        put(KEG, cullout);
+
     }
 
     /**

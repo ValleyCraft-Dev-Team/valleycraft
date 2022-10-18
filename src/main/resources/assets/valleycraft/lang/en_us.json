@@ -12,11 +12,13 @@
   "item.valley.broken.tooltip": "Broken",
   "block.valleycraft.defective_spawner.tooltip": "Broken beyond repair. It's only",
   "block.valleycraft.defective_spawner.tooltip_2": "use now is purely decorative.",
-
+  "block.valleycraft.keg.tooltip": "Refills buckets, clay pots,",
+  "block.vallecraft.keg.tooltip_2": "and bottles with water.",
   "entity.minecraft.villager.stablehand": "Stablehand",
   "entity.minecraft.villager.lumberjack": "Lumberjack",
   "entity.minecraft.villager.innkeeper": "Innkeeper",
   "entity.minecraft.villager.diaspora": "Diaspora",
+  "entity.minecraft.villager.chef": "Cook",
 
   "block.valleycraft.dishes.tooltip": "Used in special dishes to",
   "item.valleycraft.dishes.tooltip": "Used in special dishes to",
@@ -100,6 +102,7 @@
   "block.valleycraft.stablehand_station": "Stablehand Post",
   "block.valleycraft.stablehand_counter": "Stablehand Counter",
   "block.valleycraft.lumberjack_station": "Lumberjack Resting Spot",
+  "block.valleycraft.miner_station": "Ore Processing Table",
   "block.valleycraft.stove": "Stove",
   "block.valleycraft.campfire_pot": "§aDiaspora's Campfire",
   "block.valleycraft.lantern_hanger": "Lantern Hanging Stake",
@@ -718,6 +721,7 @@
   "block.valleycraft.red_leather_block": "Red Leather Block",
   "block.valleycraft.yellow_leather_block": "Yellow Leather Block",
   "block.valleycraft.tanned_leather_block": "Tanned Leather Block",
+  "block.valleycraft.keg": "Keg",
 
   "item.valleycraft.climbing_axe": "Mountain Climbing Axe",
   "item.valleycraft.ancient_climbing_axe": "Ancient Ice Climbing Axe",
