@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "valleycraft:block/dried_oak_sapling"
+  }
+}

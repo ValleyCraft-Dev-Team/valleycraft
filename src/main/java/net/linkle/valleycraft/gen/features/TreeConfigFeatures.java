@@ -9,6 +9,7 @@ import net.minecraft.world.gen.feature.Feature;
 public class TreeConfigFeatures {
 
     public static final RegistryEntry<ConfiguredFeature<?, ?>> APPLE_TREE = Reg.register("apple_tree", Feature.TREE, Trees.appleTree());
+    public static final RegistryEntry<ConfiguredFeature<?, ?>> WARM_BIRCH_TREE = Reg.register("warm_birch_tree", Feature.TREE, Trees.warmBirchTree());
 
     public static void initialize() {
         //TreeFeatureConfig

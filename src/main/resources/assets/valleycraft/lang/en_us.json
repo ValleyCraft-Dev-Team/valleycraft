@@ -725,5 +725,11 @@
 
   "item.valleycraft.climbing_axe": "Mountain Climbing Axe",
   "item.valleycraft.ancient_climbing_axe": "Ancient Ice Climbing Axe",
-  "item.valleycraft.button": "Peculiar Buttons"
+  "item.valleycraft.button": "Peculiar Buttons",
+
+  "block.valleycraft.block_daub": "Daub",
+  "block.valleycraft.small_cactus": "Small Cactus",
+  "block.valleycraft.faded_soul_rose": "Faded Soul Rose",
+  "block.valleycraft.dried_sapling": "Dried Sapling"
+
 }

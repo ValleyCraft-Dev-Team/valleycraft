@@ -58,7 +58,20 @@ public enum ModBlocks implements ItemConvertible, BlockConvertible {
     GUIDESTONE_HOME(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque()), itemSettings()),
     GUIDESTONE_INTEREST(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque()), itemSettings()),
     GUIDESTONE_DANGER(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque()), itemSettings()),
-    
+
+    //wattle and daub
+    BLOCK_DAUB(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_WATTLE_AND_DAUB(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_WATTLE_AND_DAUB_CROSS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_WATTLE_AND_DAUB_PLUS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
+
+    BLOCK_WATTLE_AND_GLASS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_WATTLE_AND_GLASS_CROSS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_WATTLE_AND_GLASS_PLUS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
+
+    WATTLE_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR)), itemSettings()),
+    WATTLE_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR)), itemSettings()),
+
     // odd blocks go here
     SWORD_BLOCK(new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
     PICKAXE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
@@ -88,12 +101,16 @@ public enum ModBlocks implements ItemConvertible, BlockConvertible {
     STAKE(new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly()), itemSettings()),
     LANTERN_HANGER(new LanternHangerBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD)), itemSettings()),
     SPRINKLER(new SprinklerBlock(), itemSettings()),
-    
+    SCARECROW(new ScarecrowBlock(false), itemSettings()),
+    SCARECROW_GLOWING(new ScarecrowBlock(true), itemSettings()),
+    SCARECROW_HAT(new ScarecrowBlock(false), itemSettings()),
+    SCARECROW_HAT_GLOWING(new ScarecrowBlock(true), itemSettings()),
+    SCARECROW_TARGET(new ScarecrowBlock(false), itemSettings()),
+
     // misc decor?
     OPTIC_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()),
     
     // wood types
-    // wattle and daub
     // mamon
     MAMON_WOOD(new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings()),
     STRIPPED_MAMON_WOOD(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD)), itemSettings()),
@@ -107,7 +124,12 @@ public enum ModBlocks implements ItemConvertible, BlockConvertible {
     MAMON_FENCE(new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE)), itemSettings()),
     MAMON_FENCE_GATE(new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE)), itemSettings()),
     MAMON_PRESSURE_PLATE(new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)), itemSettings()),
-    
+    //ancient
+    ANCIENT_WOOD(new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings()),
+    STRIPPED_ANCIENT_WOOD(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD)), itemSettings()),
+    STRIPPED_ANCIENT_LOG(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    ANCIENT_PLANKS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+
     // apple
     APPLE_WOOD(new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings()),
     STRIPPED_APPLE_WOOD(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD)), itemSettings()),
@@ -149,6 +171,10 @@ public enum ModBlocks implements ItemConvertible, BlockConvertible {
     PRIMSTEEL_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     PRIMSTEEL_TILED_PLATE(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     PRIMSTEEL_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
+    PRIMSTEEL_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
+    PRIMSTEEL_LADDER(new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
+    PRIMSTEEL_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
+
     IRON_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
     GOLEMITE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     GOLEMITE_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "valleycraft:block/miner_station_bottom",
+    "east": "valleycraft:block/miner_station_side_2",
+    "north": "valleycraft:block/miner_station_side_1",
+    "particle": "valleycraft:block/miner_station_side_1",
+    "south": "valleycraft:block/miner_station_side_2",
+    "up": "valleycraft:block/miner_station_top",
+    "west": "valleycraft:block/miner_station_side_1"
+  }
+}

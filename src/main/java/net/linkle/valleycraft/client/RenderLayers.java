@@ -191,6 +191,12 @@ class RenderLayers {
         put(LANTERN_HANGER, cullout);
         put(LOG_PILE, cullout);
         put(KEG, cullout);
+        put(SMALL_CACTUS, cullout);
+        put(FADING_SOUL_ROSE, cullout);
+        put(DRIED_SAPLING, cullout);
+        put(WARM_BIRCH_LEAVES, cullout);
+        put(WARM_BIRCH_SAPLING, cullout);
+        put(PRIMSTEEL_BARS, cullout);
 
     }
 
