@@ -110,6 +110,59 @@ public enum ModBlocks implements ItemConvertible, BlockConvertible {
 
     // misc decor?
     OPTIC_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()),
+
+    // Potted flowers
+    POTTED_BLACK_DAHLIA(new FlowerPotBlock(NaturalBlocks.BLACK_DAHLIA.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_FLUFFY_DANDELION(new FlowerPotBlock(NaturalBlocks.FLUFFY_DANDELION.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_FADED_SOUL_ROSE(new FlowerPotBlock(NaturalBlocks.FADED_SOUL_ROSE.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_HONEYCLUSTER(new FlowerPotBlock(NaturalBlocks.HONEYCLUSTER.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_LAVENDER(new FlowerPotBlock(NaturalBlocks.LAVENDER.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_ORANGE_BEAUTY(new FlowerPotBlock(NaturalBlocks.ORANGE_BEAUTY.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_POISON_BLOSSOM(new FlowerPotBlock(NaturalBlocks.POISON_BLOSSOM.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_PURPLE_TULIP(new FlowerPotBlock(NaturalBlocks.PURPLE_TULIP.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_YELLOW_TULIP(new FlowerPotBlock(NaturalBlocks.YELLOW_TULIP.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_LIGHT_BLUE_TULIP(new FlowerPotBlock(NaturalBlocks.LIGHT_BLUE_TULIP.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_BLACK_TULIP(new FlowerPotBlock(NaturalBlocks.BLACK_TULIP.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_GODDESS_LILY(new FlowerPotBlock(NaturalBlocks.GODDESS_LILY.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_RED_LUPINE(new FlowerPotBlock(NaturalBlocks.RED_LUPINE.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_YELLOW_LUPINE(new FlowerPotBlock(NaturalBlocks.YELLOW_LUPINE.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_PINK_LUPINE(new FlowerPotBlock(NaturalBlocks.PINK_LUPINE.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_ORANGE_POPPY(new FlowerPotBlock(NaturalBlocks.ORANGE_POPPY.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_WHITE_POPPY(new FlowerPotBlock(NaturalBlocks.WHITE_POPPY.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_SNOWFLOWER(new FlowerPotBlock(NaturalBlocks.SNOWFLOWER.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+
+    // Potted mushrooms
+    POTTED_GLOWCAP(new FlowerPotBlock(NaturalBlocks.GLOW_CAP.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_JUNGLE_CAP(new FlowerPotBlock(NaturalBlocks.JUNGLE_CAP.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_SOULSPORE(new FlowerPotBlock(NaturalBlocks.SOULSPORE_SINGLE.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_MOREL(new FlowerPotBlock(NaturalBlocks.MOREL.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_GOOP_CAP(new FlowerPotBlock(NaturalBlocks.GOOP_CAP.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_GILDED_CAP(new FlowerPotBlock(NaturalBlocks.GILDED_CAP.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_IRONSHROOM(new FlowerPotBlock(NaturalBlocks.IRONSHROOM.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+
+    // Potted saplings
+    POTTED_DRIED_SAPLING(new FlowerPotBlock(NaturalBlocks.DRIED_SAPLING.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_MAMON_SAPLING(new FlowerPotBlock(NaturalBlocks.MAMON_SAPLING.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_APPLE_SAPLING(new FlowerPotBlock(NaturalBlocks.APPLE_SAPLING.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_WARM_BIRCH_SAPLING(new FlowerPotBlock(NaturalBlocks.WARM_BIRCH_SAPLING.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+
+    // Other potted plants
+    POTTED_FOXTAIL_FERN(new FlowerPotBlock(NaturalBlocks.FOXTAIL_FERN.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_LEATHERLEAF_FERN(new FlowerPotBlock(NaturalBlocks.LEATHERLEAF_FERN.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_MOSS_SPROUTLET(new FlowerPotBlock(NaturalBlocks.MOSS_SPROUTLET.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_ORANGE_FERN(new FlowerPotBlock(NaturalBlocks.ORANGE_FERN.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_SPROUT(new FlowerPotBlock(NaturalBlocks.SPROUT.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_DESERT_SHRUB(new FlowerPotBlock(NaturalBlocks.DESERT_SHRUB.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_LUSH_BUSH(new FlowerPotBlock(NaturalBlocks.LUSH_BUSH.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+
+    // Potted plants that need custom models (due to not using the cross shape, or their texture being too big for the pot)
+    POTTED_FLOWERING_CACTUS(new FlowerPotBlock(NaturalBlocks.FLOWERING_CACTUS.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_JUNGLE_BUSH(new FlowerPotBlock(NaturalBlocks.JUNGLE_BUSH.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_PANFLOWERS(new FlowerPotBlock(NaturalBlocks.PANFLOWERS.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_FROSTFERN(new FlowerPotBlock(NaturalBlocks.FROSTFERN.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_CLARET_LEAF(new FlowerPotBlock(NaturalBlocks.CLARET_LEAF.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_WEEPING_GHOST_WILLOW(new FlowerPotBlock(NaturalBlocks.WEEPING_GHOST_WILLOW.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_BONE_WEED(new FlowerPotBlock(NaturalBlocks.BONE_WEED.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
     
     // wood types
     // mamon
