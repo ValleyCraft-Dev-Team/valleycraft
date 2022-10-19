@@ -215,20 +215,17 @@ public enum NaturalBlocks implements ItemConvertible, BlockConvertible {
     }
     
     // VoxelShapes used by various plant blocks
-    private static final VoxelShape DEFAULT_PLANT_SHAPE = Block.createCuboidShape(2, 0, 2, 14, 14, 14);
-    private static final VoxelShape SHORT_GRASS_SHAPE = Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    private static final VoxelShape FLOWER_SHAPE = Block.createCuboidShape(5, 0, 5, 11, 10, 11);
     
     public static VoxelShape defaultPlantShape() {
-        return DEFAULT_PLANT_SHAPE;
+        return Block.createCuboidShape(2, 0, 2, 14, 14, 14);
     }
     
     public static VoxelShape shortGrassShape() {
-        return SHORT_GRASS_SHAPE;
+        return Block.createCuboidShape(2, 0, 2, 14, 7, 14);
     }
     
     public static VoxelShape flowerShape() {
-        return FLOWER_SHAPE;
+        return Block.createCuboidShape(5, 0, 5, 11, 10, 11);
     }
     
     

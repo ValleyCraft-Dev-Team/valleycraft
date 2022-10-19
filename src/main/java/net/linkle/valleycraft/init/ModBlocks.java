@@ -29,7 +29,7 @@ public enum ModBlocks implements ItemConvertible, BlockConvertible {
     // furniture
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
-    KEG(new KegBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings()),
+    KEG(new KegBlock(), itemSettings()),
 
     LUMBERJACK_STATION(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings()),
     STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),

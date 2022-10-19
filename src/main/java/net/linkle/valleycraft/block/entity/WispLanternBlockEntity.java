@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.block.entity;
 
-import net.linkle.valleycraft.init.ModBlockEntities;
+import net.linkle.valleycraft.init.ModBlockEntityType;
 import net.linkle.valleycraft.util.Util;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -12,7 +12,7 @@ public class WispLanternBlockEntity extends BlockEntity {
     public int sine = Util.RANDOM.nextInt(1000);
 
     public WispLanternBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.WISP_LANTERN, pos, state);
+        super(ModBlockEntityType.WISP_LANTERN, pos, state);
         resetTimer();
     }
     

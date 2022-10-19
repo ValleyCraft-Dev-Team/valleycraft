@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import net.fabricmc.api.ModInitializer;
 import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.gen.feature.TreeConfigs;
+import net.linkle.valleycraft.gen.feature.VegetationPlaced;
 import net.linkle.valleycraft.gen.foliage.ModFoliagePlacerType;
 import net.linkle.valleycraft.init.*;
 import net.linkle.valleycraft.tags.ModFluidTags;
@@ -24,7 +25,7 @@ public class Main implements ModInitializer {
 
 	    ModGroups.initialize();
 		NaturalBlocks.initialize();
-		ModBlockEntities.initialize();
+		ModBlockEntityType.initialize();
 		ModFluids.initialize();
 		ModItems.initialize();
 		ModFishing.initialize();
@@ -34,6 +35,7 @@ public class Main implements ModInitializer {
 		Contents.initialize();
 		ModFoliagePlacerType.initialize();
 		TreeConfigs.initialize();
+		VegetationPlaced.initialize();
 		ModBiomes.initialize();
 		
 		ModParticles.initialize();

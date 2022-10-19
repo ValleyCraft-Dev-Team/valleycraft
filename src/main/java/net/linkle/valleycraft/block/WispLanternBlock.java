@@ -1,7 +1,7 @@
 package net.linkle.valleycraft.block;
 
 import net.linkle.valleycraft.block.entity.WispLanternBlockEntity;
-import net.linkle.valleycraft.init.ModBlockEntities;
+import net.linkle.valleycraft.init.ModBlockEntityType;
 import net.linkle.valleycraft.util.Util;
 import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockState;
@@ -25,6 +25,6 @@ public class WispLanternBlock extends LanternBlock implements BlockEntityProvide
     
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return world.isClient ? Util.checkType(type, ModBlockEntities.WISP_LANTERN, WispLanternBlockEntity::tickClient) : null;
+        return world.isClient ? Util.checkType(type, ModBlockEntityType.WISP_LANTERN, WispLanternBlockEntity::tickClient) : null;
     }
 }

@@ -2,8 +2,11 @@ package net.linkle.valleycraft.gen;
 
 import java.util.OptionalInt;
 
+import com.google.common.collect.ImmutableList;
+
 import net.linkle.valleycraft.init.NaturalBlocks;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
@@ -14,6 +17,7 @@ import net.minecraft.world.gen.foliage.DarkOakFoliagePlacer;
 import net.minecraft.world.gen.foliage.LargeOakFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
+import net.minecraft.world.gen.treedecorator.AlterGroundTreeDecorator;
 import net.minecraft.world.gen.trunk.DarkOakTrunkPlacer;
 import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
 
@@ -41,6 +45,6 @@ public class Trees {
         var trunkPlacer = new DarkOakTrunkPlacer(9, 3, 1);
         var minimumSize = new ThreeLayersFeatureSize(1, 1, 0, 1, 2, OptionalInt.empty());
         var builder = new TreeFeatureConfig.Builder(trunkProvider, trunkPlacer, foliageProvider, foliagePlacer, minimumSize);
-        return builder.ignoreVines().build();
+        return builder.decorators(ImmutableList.of(new AlterGroundTreeDecorator(BlockStateProvider.of(Blocks.PODZOL)))).ignoreVines().build();
     }
 }

@@ -10,7 +10,7 @@ import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
 import net.minecraft.world.gen.feature.TreeFeatureConfig;
 
 /** Known as {@link TreeConfiguredFeatures} */
-public enum TreeConfigs {
+public enum TreeConfigs implements ConfigFeature {
 
     APPLE_TREE(Trees.appleTree()),
     AMBER_TREE(Trees.amberTree());
@@ -25,11 +25,20 @@ public enum TreeConfigs {
     // ### The Enum Class Itself ###
     
     public final ConfiguredFeature<TreeFeatureConfig, Feature<TreeFeatureConfig>> config;
-    public final RegistryEntry<ConfiguredFeature<?, ?>> key;
+    public final RegistryEntry<ConfiguredFeature<?, ?>> entry;
     
     TreeConfigs(TreeFeatureConfig config) {
-        var configured = new ConfiguredFeature<TreeFeatureConfig, Feature<TreeFeatureConfig>>(Feature.TREE, config);
-        this.config = configured;
-        key = Reg.add(BuiltinRegistries.CONFIGURED_FEATURE, name().toLowerCase(), configured);
+        this.config = new ConfiguredFeature<TreeFeatureConfig, Feature<TreeFeatureConfig>>(Feature.TREE, config);
+        entry = Reg.add(BuiltinRegistries.CONFIGURED_FEATURE, name().toLowerCase(), this.config);
+    }
+
+    @Override
+    public ConfiguredFeature<?, ?> getConfig() {
+        return config;
+    }
+
+    @Override
+    public RegistryEntry<ConfiguredFeature<?, ?>> getEntry() {
+        return entry;
     }
 }

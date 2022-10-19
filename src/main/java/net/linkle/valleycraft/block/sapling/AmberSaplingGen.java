@@ -9,6 +9,6 @@ import net.minecraft.world.gen.feature.ConfiguredFeature;
 public class AmberSaplingGen extends SaplingGenerator {
     @Override
     protected RegistryEntry<? extends ConfiguredFeature<?, ?>> getTreeFeature(Random random, boolean bees) {
-        return TreeConfigs.APPLE_TREE.key;
+        return TreeConfigs.APPLE_TREE.entry;
     }
 }

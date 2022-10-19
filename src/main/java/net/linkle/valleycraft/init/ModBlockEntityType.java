@@ -9,7 +9,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityT
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder.Factory;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.block.entity.CrateBlockEntity;
-import net.linkle.valleycraft.block.entity.StoveEntity;
+import net.linkle.valleycraft.block.entity.StoveBlockEntity;
 import net.linkle.valleycraft.block.entity.WispLanternBlockEntity;
 import net.linkle.valleycraft.client.block.entity.WispLanternRenderer;
 import net.linkle.valleycraft.util.BlockConvertible;
@@ -18,16 +18,16 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.registry.Registry;
 
-public class ModBlockEntities {
+public class ModBlockEntityType {
 
     public static BlockEntityType<WispLanternBlockEntity> WISP_LANTERN;
     public static BlockEntityType<CrateBlockEntity> CRATE;
-    public static BlockEntityType<StoveEntity> STOVE;
+    public static BlockEntityType<StoveBlockEntity> STOVE;
 
     public static void initialize() {
         WISP_LANTERN = create("wisp_lantern", WispLanternBlockEntity::new, ModBlocks.VEX_LANTERN);
         CRATE = create("crate", CrateBlockEntity::new, ModBlocks.CRATE);
-        STOVE = create("stove", StoveEntity::new, ModBlocks.STOVE);
+        STOVE = create("stove", StoveBlockEntity::new, ModBlocks.STOVE);
     }
     
     @Environment(EnvType.CLIENT)
