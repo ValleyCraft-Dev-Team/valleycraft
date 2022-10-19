@@ -30,6 +30,8 @@ class RenderLayers {
         // put(Blocks.GLASS, cullout);
         put(MAMON_DOOR, cullout);
         put(MAMON_TRAPDOOR, cullout);
+        put(WATTLE_DOOR, cullout);
+        put(WATTLE_TRAPDOOR, cullout);
         put(BLACK_DAHLIA, cullout);
         put(BLACK_TULIP, cullout);
         put(FLOWERING_CACTUS, cullout);
@@ -96,7 +98,9 @@ class RenderLayers {
         put(APPLE_LEAVES, cullout);
         put(APPLE_LEAVES_EMPTY, cullout);
         put(APPLE_SAPLING, cullout);
+        put(MAMON_SAPLING, cullout);
         put(ALGAE, cullout);
+        put(KNAPWEED, cullout);
         put(FROSTFERN, cullout);
         put(CLARET_LEAF, cullout);
         put(GLOW_KELP, cullout);
@@ -129,6 +133,9 @@ class RenderLayers {
         put(GOLEMITE_CHAIN, cullout);
         put(GOLEMITE_GRATE, cullout);
         put(GOLEMITE_LADDER, cullout);
+        put(PRIMSTEEL_BARS, cullout);
+        put(PRIMSTEEL_LADDER, cullout);
+        put(PRIMSTEEL_GRATE, cullout);
         put(IRON_GRATE, cullout);
         put(PRIMSTEEL_CHAIN, cullout);
         put(OPTIC_GLASS, cullout);
@@ -192,10 +199,14 @@ class RenderLayers {
         put(LOG_PILE, cullout);
         put(KEG, cullout);
         put(SMALL_CACTUS, cullout);
-        put(FADING_SOUL_ROSE, cullout);
+        put(FADED_SOUL_ROSE, cullout);
         put(DRIED_SAPLING, cullout);
         put(WARM_BIRCH_SAPLING, cullout);
         put(PRIMSTEEL_BARS, cullout);
+        put(BLOCK_WATTLE_AND_GLASS, translucent);
+        put(BLOCK_WATTLE_AND_GLASS_PLUS, translucent);
+        put(BLOCK_WATTLE_AND_GLASS_CROSS, translucent);
+
     }
 
     /**

@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
+		"1": "valleycraft:block/stake_ends",
 		"particle": "valleycraft:block/lantern_hanger",
 		"all": "valleycraft:block/lantern_hanger"
 	},
@@ -30,9 +31,9 @@
 			"from": [7, 7, 6],
 			"to": [9, 9, 16],
 			"faces": {
-				"north": {"uv": [10, 2, 12, 4], "rotation": 90, "texture": "#all", "cullface": "down"},
+				"north": {"uv": [13, 7, 15, 9], "rotation": 90, "texture": "#1", "cullface": "down"},
 				"east": {"uv": [10, 6, 12, 16], "rotation": 90, "texture": "#all"},
-				"south": {"uv": [10, 5, 12, 7], "rotation": 90, "texture": "#all", "cullface": "up"},
+				"south": {"uv": [10, 5, 12, 7], "rotation": 90, "texture": "#1", "cullface": "up"},
 				"west": {"uv": [10, 6, 12, 16], "rotation": 270, "texture": "#all"},
 				"up": {"uv": [10, 6, 12, 16], "texture": "#all"},
 				"down": {"uv": [10, 6, 12, 16], "rotation": 180, "texture": "#all"}

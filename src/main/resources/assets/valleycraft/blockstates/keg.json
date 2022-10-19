@@ -16,14 +16,10 @@
       "model": "valleycraft:block/keg_horizontal"
     },
     "facing=up": {
-      "x": 270,
-      "y": 90,
-      "model": "valleycraft:block/keg_up"
+      "model": "valleycraft:block/keg_down"
     },
     "facing=down": {
-      "x": 90,
-      "y": 90,
-      "model": "valleycraft:block/keg_down"
+      "model": "valleycraft:block/keg_up"
     }
   }
 }

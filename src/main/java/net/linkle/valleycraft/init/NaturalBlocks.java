@@ -30,8 +30,8 @@ public enum NaturalBlocks implements ItemConvertible, BlockConvertible {
     JUNGLE_BUSH(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     PANFLOWERS(new OffsetPlantBlock(flowerShape()), itemSettings()),
     
-    DRIED_SAPLING(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    FADING_SOUL_ROSE(new OffsetPlantBlock(flowerShape()), itemSettings()),
+    DRIED_SAPLING(new ModPlantBlock(defaultPlantShape()), itemSettings()),
+    FADED_SOUL_ROSE(new OffsetPlantBlock(flowerShape()), itemSettings()),
     
     HONEYCLUSTER(new OffsetPlantBlock(flowerShape()), itemSettings()),
     LAVENDER(new OffsetPlantBlock(flowerShape()), itemSettings()),

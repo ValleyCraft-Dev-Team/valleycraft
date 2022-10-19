@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "top": "valleycraft:block/wattle_door_top",
+    "bottom": "valleycraft:block/wattle_door_bottom"
+  }
+}

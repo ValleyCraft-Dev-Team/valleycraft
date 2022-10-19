@@ -23,13 +23,15 @@ public class Main implements ModInitializer {
 	public void onInitialize() {
 	    Config.initialize();
 
+		/** Keep these inits above the blocks so the creative inventory stays sorted properly. **/
+		ModItems.initialize();
+		ModFishing.initialize();
+		ModTools.initialize();
+
 	    ModGroups.initialize();
 		NaturalBlocks.initialize();
 		ModBlockEntityType.initialize();
 		ModFluids.initialize();
-		ModItems.initialize();
-		ModFishing.initialize();
-		ModTools.initialize();
 		ModBlocks.initialize();
 
 		Contents.initialize();
@@ -47,7 +49,7 @@ public class Main implements ModInitializer {
 		ModEffects.initialize();
 		ModPotions.initialize();
 
-		ModVillagers.initialize();
+		ModVillagers.registerVillagers();
 		CustomTradeRegistry.setupTrades();
 	}
 	

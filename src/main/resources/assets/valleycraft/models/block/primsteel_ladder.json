@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/ladder",
+  "textures": {
+      "particle": "valleycraft:block/primsteel_ladder",
+      "texture": "valleycraft:block/primsteel_ladder"
+  }
+}

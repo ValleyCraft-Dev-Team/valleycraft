@@ -30,7 +30,8 @@ public enum ModBlocks implements ItemConvertible, BlockConvertible {
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     KEG(new KegBlock(), itemSettings()),
-
+    MINER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     LUMBERJACK_STATION(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings()),
     STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
     CAMPFIRE_POT(new CampfirePotBlock(Block.Settings.copy(Blocks.CAULDRON).luminance(s -> 13).nonOpaque()), itemSettings()),
@@ -60,14 +61,14 @@ public enum ModBlocks implements ItemConvertible, BlockConvertible {
     GUIDESTONE_DANGER(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque()), itemSettings()),
 
     //wattle and daub
-    BLOCK_DAUB(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
-    BLOCK_WATTLE_AND_DAUB(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
-    BLOCK_WATTLE_AND_DAUB_CROSS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
-    BLOCK_WATTLE_AND_DAUB_PLUS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_DAUB(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.TUFF)), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_WATTLE_AND_DAUB(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.TUFF)), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_WATTLE_AND_DAUB_CROSS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.TUFF)), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_WATTLE_AND_DAUB_PLUS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.TUFF)), itemSettings().group(NON_NATURAL_BLOCKS)),
 
-    BLOCK_WATTLE_AND_GLASS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
-    BLOCK_WATTLE_AND_GLASS_CROSS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
-    BLOCK_WATTLE_AND_GLASS_PLUS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_WATTLE_AND_GLASS(new GlassBlock(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.GLASS).nonOpaque()), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_WATTLE_AND_GLASS_CROSS(new GlassBlock(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.GLASS).nonOpaque()), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLOCK_WATTLE_AND_GLASS_PLUS(new GlassBlock(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.GLASS).nonOpaque()), itemSettings().group(NON_NATURAL_BLOCKS)),
 
     WATTLE_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR)), itemSettings()),
     WATTLE_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR)), itemSettings()),

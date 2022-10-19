@@ -1,5 +1,8 @@
 package net.linkle.valleycraft.villager;
 
+import net.fabricmc.fabric.api.object.builder.v1.villager.VillagerProfessionBuilder;
+import net.minecraft.block.Blocks;
+import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Nullable;
 
 import com.google.common.collect.ImmutableSet;
@@ -17,50 +20,45 @@ import net.minecraft.village.VillagerProfession;
 import net.minecraft.world.poi.PointOfInterestType;
 
 public class ModVillagers {
+    /** this code is held together by rubber bands and rusty paper clips. please do NOT CHANGE IT **/
 
     //can generate in stables
-    public static final PointOfInterestType STABLEHAND_POI = registerPOI("stablehand_poi", 1, 1, ModBlocks.STABLEHAND_STATION.block);
-    public static final VillagerProfession STABLEHAND = registerPro("stablehand", "stablehand_poi", SoundEvents.ENTITY_VILLAGER_WORK_LEATHERWORKER);
+    public static final PointOfInterestType STABLEHAND_POI = registerPOI("stablehand_poi", ModBlocks.STABLEHAND_STATION.block);
+    public static final VillagerProfession STABLEHAND = registerPro("stablehand", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "stablehand_poi")));
 
-    public static final PointOfInterestType INNKEEPER_POI = registerPOI("innkeeper_poi", 1, 1, ModBlocks.STOVE.block);
-    public static final VillagerProfession INNKEEPER = registerPro("innkeeper", "innkeeper_poi", SoundEvents.ENTITY_VILLAGER_WORK_BUTCHER);
+    public static final PointOfInterestType INNKEEPER_POI = registerPOI("innkeeper_poi", ModBlocks.STOVE.block);
+    public static final VillagerProfession INNKEEPER = registerPro("innkeeper", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "innkeeper_poi")));
 
     //can generate alone
-    public static final PointOfInterestType LUMBERJACK_POI = registerPOI("lumberjack_poi", 1, 1, ModBlocks.LUMBERJACK_STATION.block);
-    public static final VillagerProfession LUMBERJACK = registerPro("lumberjack", "lumberjack_poi", SoundEvents.ENTITY_VILLAGER_WORK_FLETCHER);
+    public static final PointOfInterestType LUMBERJACK_POI = registerPOI("lumberjack_poi", ModBlocks.LUMBERJACK_STATION.block);
+    public static final VillagerProfession LUMBERJACK = registerPro("lumberjack", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "lumberjack_poi")));
 
     //can generate in diaspora camps
-    public static final PointOfInterestType DIASPORA_POI = registerPOI("diaspora_poi", 1, 1, ModBlocks.CAMPFIRE_POT.block);
-    public static final VillagerProfession DIASPORA = registerPro("diaspora", "diaspora_poi", SoundEvents.ENTITY_VILLAGER_WORK_LEATHERWORKER);
+    public static final PointOfInterestType DIASPORA_POI = registerPOI("diaspora_poi", ModBlocks.CAMPFIRE_POT.block);
+    public static final VillagerProfession DIASPORA = registerPro("diaspora", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "diaspora_poi")));
 
     //can generate in villages
-    public static final PointOfInterestType BARTENDER_POI = registerPOI("bartender_poi", 1, 1, ModBlocks.KEG.block);
-    public static final VillagerProfession BARTENDER = registerPro("bartender", "bartender_poi", SoundEvents.ENTITY_VILLAGER_WORK_CLERIC);
+    public static final PointOfInterestType COOK_POI = registerPOI("cook_poi", ModBlocks.KEG.block);
+    public static final VillagerProfession COOK = registerPro("cook", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "cook_poi")));
 
-    private static VillagerProfession registerPro(String name, String heldWorkstation, @Nullable SoundEvent workSound) {
-        return registerPro(name, heldWorkstation, heldWorkstation, workSound);
+    public static final PointOfInterestType BEEKEEPER_POI = registerPOI("beekeeper_poi", ModBlocks.BEEKEEPER_STATION.block);
+    public static final VillagerProfession BEEKEEPER = registerPro("beekeeper",RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "beekeeper_poi")));
+
+    //can generate in mining camps
+    public static final PointOfInterestType MINER_POI = registerPOI("miner_poi", ModBlocks.MINER_STATION.block);
+    public static final VillagerProfession MINER = registerPro("miner", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "miner_poi")));
+
+    public static final VillagerProfession registerPro(String name, RegistryKey<PointOfInterestType> type) {
+        return Registry.register(Registry.VILLAGER_PROFESSION, new Identifier(Main.ID, name),
+                VillagerProfessionBuilder.create().id(new Identifier(Main.ID, name)).workstation(type).workSound(SoundEvents.ENTITY_VILLAGER_WORK_LEATHERWORKER).build());
     }
 
-    private static VillagerProfession registerPro(String name, String heldWorkstation, String acquirableWorkstation, @Nullable SoundEvent workSound) {
-        return registerPro(name, heldWorkstation, acquirableWorkstation, ImmutableSet.of(), ImmutableSet.of(), workSound);
+    public static final PointOfInterestType registerPOI(String name, Block block) {
+        return PointOfInterestHelper.register(new Identifier(Main.ID, name),
+                1, 1, ImmutableSet.copyOf(block.getStateManager().getStates()));
     }
-
-    private static VillagerProfession registerPro(String name, String heldWorkstation, ImmutableSet<Item> gatherableItems, ImmutableSet<Block> secondaryJobSites, @Nullable SoundEvent workSound) {
-        return registerPro(name, heldWorkstation, heldWorkstation, gatherableItems, secondaryJobSites, workSound);
-    }
-
-    private static VillagerProfession registerPro(String name, String heldWorkstation, String acquirableWorkstation, ImmutableSet<Item> gatherableItems, ImmutableSet<Block> secondaryJobSites, @Nullable SoundEvent workSound) {
-        var key1 = RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, Main.makeId(heldWorkstation));
-        var key2 = RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, Main.makeId(acquirableWorkstation));
-        return Registry.register(Registry.VILLAGER_PROFESSION, Main.makeId(name), new VillagerProfession(Main.ID + ":" + name, entry -> entry.matchesKey(key1), entry -> entry.matchesKey(key2), gatherableItems, secondaryJobSites, workSound));
-    }
-
-    /** @see PointOfInterestHelper#register(net.minecraft.util.Identifier, int, int, Block...) */
-    private static PointOfInterestType registerPOI(String name, int ticketCount, int searchDistance, Block... block) {
-        return PointOfInterestHelper.register(Main.makeId(name), ticketCount, searchDistance, block);
-    }
-
-    public static void initialize() {
-        
+    public static void registerVillagers() {
+        Main.LOGGER.debug("Registering villagers for " + Main.ID);
+        //looks like it just outputs but its actually needed here DO NOT REMOVE IT!//
     }
 }

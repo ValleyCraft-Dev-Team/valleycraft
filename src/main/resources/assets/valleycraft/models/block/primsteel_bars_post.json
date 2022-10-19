@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/iron_bars_post",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "valleycraft:block/primsteel_bars",
+        "bars": "valleycraft:block/primsteel_bars"
+    }
+}
