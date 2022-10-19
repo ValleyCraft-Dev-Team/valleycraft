@@ -7,9 +7,17 @@ import net.minecraft.world.biome.GenerationSettings;
 import net.minecraft.world.biome.OverworldBiomeCreator;
 
 @Mixin(OverworldBiomeCreator.class)
-public interface OverworldBiomeWideners {
+public interface OverworldBiomeWidener {
+    
+    /** {@link OverworldBiomeCreator#addBasicFeatures} */
     @Invoker("addBasicFeatures")
     static void addBasicFeatures(GenerationSettings.Builder builder) {
+        throw new AssertionError();
+    }
+    
+    /** {@link OverworldBiomeCreator#getSkyColor} */
+    @Invoker("getSkyColor")
+    static int getSkyColor(float temperature) {
         throw new AssertionError();
     }
 }

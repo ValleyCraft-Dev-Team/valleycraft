@@ -7,8 +7,8 @@ import net.minecraft.util.registry.Registry;
 public enum ModSounds {
     
     SPRINKLER,
-    CURTAIN_OPEN,
     
+    CURTAIN_OPEN,
     CURTAIN_CLOSE;
 
     public static void initialize() {
