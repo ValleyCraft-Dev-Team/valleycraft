@@ -13,11 +13,12 @@ import net.minecraft.world.gen.feature.TreeFeatureConfig;
 public enum TreeConfigs implements ConfigFeature {
 
     APPLE_TREE(Trees.appleTree()),
-    AMBER_TREE(Trees.amberTree());
+    AMBER_TREE(Trees.amberTree()),
+    WARM_BIRCH_TREE(Trees.warmBirchTree());
 
     
     public static void initialize() {
-        //TreePlaced.initialize();
+        
     }
     
     

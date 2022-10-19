@@ -5,12 +5,13 @@ import static net.linkle.valleycraft.init.ModGroups.*;
 
 import java.util.function.BiFunction;
 
-import net.linkle.valleycraft.block.sapling.WarmBirchSaplingGen;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.linkle.valleycraft.block.*;
+import net.linkle.valleycraft.block.sapling.AmberSaplingGen;
 import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
+import net.linkle.valleycraft.block.sapling.WarmBirchSaplingGen;
 import net.linkle.valleycraft.util.*;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
@@ -28,9 +29,10 @@ public enum NaturalBlocks implements ItemConvertible, BlockConvertible {
     FOXTAIL_FERN(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     JUNGLE_BUSH(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     PANFLOWERS(new OffsetPlantBlock(flowerShape()), itemSettings()),
+    
     DRIED_SAPLING(new OffsetPlantBlock(flowerShape()), itemSettings()),
     FADING_SOUL_ROSE(new OffsetPlantBlock(flowerShape()), itemSettings()),
-
+    
     HONEYCLUSTER(new OffsetPlantBlock(flowerShape()), itemSettings()),
     LAVENDER(new OffsetPlantBlock(flowerShape()), itemSettings()),
     LEATHERLEAF_FERN(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
@@ -45,8 +47,9 @@ public enum NaturalBlocks implements ItemConvertible, BlockConvertible {
     FROSTFERN(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     CLARET_LEAF(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     GODDESS_LILY(new OffsetPlantBlock(flowerShape()), itemSettings()),
+    
     KNAPWEED(new OffsetPlantBlock(flowerShape()), itemSettings()),
-
+    
     RED_LUPINE(new OffsetPlantBlock(flowerShape()), itemSettings()),
     YELLOW_LUPINE(new OffsetPlantBlock(flowerShape()), itemSettings()),
     PINK_LUPINE(new OffsetPlantBlock(flowerShape()), itemSettings()),
@@ -144,13 +147,15 @@ public enum NaturalBlocks implements ItemConvertible, BlockConvertible {
 
     MAMON_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
     ANCIENT_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
+    MAMON_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES)), itemSettings()),
+    MAMON_SAPLING(new SaplingBlock(new AmberSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
 
     APPLE_SAPLING(new SaplingBlock(new AppleSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
     APPLE_LEAVES_EMPTY(new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES)), itemSettings()),
     APPLE_LEAVES(new AppleLeavesBlock(), itemSettings()),
     APPLE_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
-
-    WARM_BIRCH_LEAVES(new AppleLeavesBlock(), itemSettings()),
+    
+    WARM_BIRCH_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES)), itemSettings()),
     WARM_BIRCH_SAPLING(new SaplingBlock(new WarmBirchSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
 
     ARID_VINES(new VineHeadBlock(), itemSettings()),
@@ -178,6 +183,7 @@ public enum NaturalBlocks implements ItemConvertible, BlockConvertible {
     VOLCANIC_STONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     VOLCANIC_MAGMA_STONE(new Block(Block.Settings.copy(Blocks.MAGMA_BLOCK)), itemSettings()),
     VOLCANIC_ASH(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
+    
     METEORITE(new Block(Block.Settings.copy(Blocks.DEEPSLATE)), itemSettings()),
 
     BONE_JOINT(new Block(Block.Settings.copy(Blocks.BONE_BLOCK)), itemSettings()),
