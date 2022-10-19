@@ -1,24 +1,24 @@
 package net.linkle.valleycraft.block;
 
-import net.linkle.valleycraft.util.Util;
+import java.util.List;
+
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Waterloggable;
+import net.minecraft.block.Material;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.fluid.FluidState;
-import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
 import net.minecraft.item.Items;
 import net.minecraft.potion.PotionUtil;
 import net.minecraft.potion.Potions;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.state.StateManager.Builder;
-import net.minecraft.state.property.BooleanProperty;
-import net.minecraft.state.property.Properties;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
@@ -26,54 +26,33 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.minecraft.world.WorldAccess;
 
-import java.util.List;
+public class KegBlock extends DirectionBlockWithWater {
+    
+    public static final VoxelShape SHAPE = Block.createCuboidShape(1, 0, 1, 15, 13, 15);
 
-/**
- * Commonly used for blocks with facing and waterlogged. Overriding
- * some method without calling the subclass's method 'super.appendProperties()'
- * is prone to break block's facing and waterlogged.
- */
-public class KegBlock extends DirectionBlock implements Waterloggable {
-    protected static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
-
-    public KegBlock(Settings settings) {
-        super(settings);
+    public KegBlock() {
+        super(Settings.of(Material.WOOD).nonOpaque()
+                .sounds(BlockSoundGroup.WOOD)
+                .strength(1.0f, 2.0f));
     }
 
     @Override
-    protected BlockState newDefaultState(Direction facing) {
-        return super.newDefaultState(facing).with(WATERLOGGED, false);
-    }
-
-    /** Please call this subclass method to append facing and waterlogged properties: <code>super.appendProperties(builder)</code> */
-    @Override
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return super.getPlacementState(ctx).with(WATERLOGGED, Util.inWater(ctx));
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return SHAPE;
     }
 
     @Override
-    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState newState,
-            WorldAccess world, BlockPos pos, BlockPos posFrom) {
-        if (state.get(WATERLOGGED)) {
-            world.createAndScheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
-        }
-
-        return super.getStateForNeighborUpdate(state, direction, newState, world, pos, posFrom);
+    protected Direction getFacing(ItemPlacementContext ctx) {
+        return super.getFacing(ctx).getOpposite();
     }
 
     @Override
-    protected void appendProperties(Builder<Block, BlockState> builder) {
-        super.appendProperties(builder);
-        builder.add(WATERLOGGED);
-    }
-
-    @Override
-    public FluidState getFluidState(BlockState state) {
-        return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
+    public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
+        return false;
     }
 
     @Override

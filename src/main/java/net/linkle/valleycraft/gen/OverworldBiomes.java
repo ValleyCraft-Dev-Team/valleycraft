@@ -4,10 +4,10 @@ import static net.minecraft.world.gen.feature.DefaultBiomeFeatures.*;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.gen.feature.TreeConfigs;
+import net.linkle.valleycraft.gen.feature.VegetationPlaced;
 import net.linkle.valleycraft.init.ModBiomes;
 import net.linkle.valleycraft.init.ModEntityType;
 import net.linkle.valleycraft.init.NaturalBlocks;
-import net.linkle.valleycraft.util.Reg;
 import net.linkle.valleycraft.widener.OverworldBiomeWidener;
 import net.minecraft.client.sound.MusicType;
 import net.minecraft.entity.SpawnGroup;
@@ -21,7 +21,6 @@ import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
-import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
 
 /** Register the biome at {@link ModBiomes} */
 public class OverworldBiomes {
@@ -49,6 +48,7 @@ public class OverworldBiomes {
         addDefaultMushrooms(gens);
         addDefaultVegetation(gens);
         gens.feature(GenerationStep.Feature.VEGETAL_DECORATION, AMBER_PLACED);
+        gens.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlaced.PATCH_PUMPKIN.entry);
         
         var spawns = new SpawnSettings.Builder();
         addFarmAnimals(spawns);
@@ -69,6 +69,6 @@ public class OverworldBiomes {
     private static final RegistryEntry<PlacedFeature> AMBER_PLACED;
     static {
       var list = VegetationPlacedFeatures.modifiersWithWouldSurvive(CountPlacementModifier.of(2), NaturalBlocks.MAMON_SAPLING.block);
-      AMBER_PLACED = BuiltinRegistries.add(BuiltinRegistries.PLACED_FEATURE, Main.makeId("amber_placed"), new PlacedFeature(RegistryEntry.upcast(TreeConfigs.AMBER_TREE.key), list));
+      AMBER_PLACED = BuiltinRegistries.add(BuiltinRegistries.PLACED_FEATURE, Main.makeId("amber_placed"), new PlacedFeature(RegistryEntry.upcast(TreeConfigs.AMBER_TREE.entry), list));
     }
 }
