@@ -23,9 +23,17 @@ public enum ModArmors implements ItemEnum {
     ALCHEMISTS_LEGGINGS(new ArmorItem(ArmorMats.LEGGINGS, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
     LIBRARIANS_HAT(new ArmorItem(ArmorMats.LIBRARIAN, EquipmentSlot.HEAD, settingsArtifacts())),
     SNOW_CAP(new ArmorItem(ArmorMats.SNOW_CAP, EquipmentSlot.HEAD, settingsArtifacts())),
+    STABLEHAND_HAT(new ArmorItem(ArmorMats.STABLEHAND_HAT, EquipmentSlot.HEAD, settingsArtifacts())),
     VILLAGER_TUNIC(new ArmorItem(ArmorMats.VILLAGER, EquipmentSlot.LEGS, settingsArtifacts())),
-    EMERALD_TALISMAN(new ArmorItem(ArmorMats.EMERALD_TALISMAN, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
+    EMERALD_TALISMAN(new ArmorItem(ArmorMats.EMERALD_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.UNCOMMON))),
+    AMETHYST_TALISMAN(new ArmorItem(ArmorMats.AMETHYST_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.UNCOMMON))),
+    ECHO_SHARD_TALISMAN(new ArmorItem(ArmorMats.ECHO_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.EPIC))),
+    GOLDEN_GLASSES(new ArmorItem(ArmorMats.GOLDEN_GLASSES, EquipmentSlot.HEAD, settingsNormal(Rarity.UNCOMMON))),
+    ROSEGOLD_GLASSES(new ArmorItem(ArmorMats.ROSEGOLD_GLASSES, EquipmentSlot.HEAD, settingsNormal(Rarity.RARE))),
+
     BUTTON(new ArmorItem(ArmorMats.BUTTON, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
+    CHEF_HAT(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsNormal())),
+    CHEF_APRON(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.LEGS, settingsNormal())),
 
     TRADER_HEAD_SCARF(new ArmorItem(ArmorMats.TRADER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
     TRADER_COAT(new ArmorItem(ArmorMats.TRADER, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
@@ -63,7 +71,7 @@ public enum ModArmors implements ItemEnum {
 
     FLOWER_CROWN(new ArmorItem(ArmorMats.FLOWERING_HAT, EquipmentSlot.HEAD, settingsNormal())),
     
-    REINFORCED_IRON_HELMET(new ArmorItem(ArmorMats.SCALE, EquipmentSlot.HEAD, settingsNormal(Rarity.UNCOMMON))),
+    REINFORCED_IRON_HELMET(new ArmorItem(ArmorMats.SCALE, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
     FUR_BOOTS(new ArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settingsNormal(Rarity.UNCOMMON))),
     
     CANVAS_HOOD(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.HEAD, settingsNormal())),
@@ -79,7 +87,7 @@ public enum ModArmors implements ItemEnum {
 
     TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
     TURTLE_LEGGINGS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, settingsNormal())),
-    TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal()));
+    TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
     //ALEX_SHIRT(new ArmorItem(AlexMaterial.INSTANCE, EquipmentSlot.CHEST, settingsNormal())),
     //ALEX_SHORTS(new ArmorItem(AlexMaterial.INSTANCE, EquipmentSlot.LEGS, settingsNormal())),
@@ -87,20 +95,20 @@ public enum ModArmors implements ItemEnum {
     //STEVE_PANTS(new ArmorItem(SteveMaterial.INSTANCE, EquipmentSlot.LEGS, settingsNormal())),
     //STEVE_SHOES(new ArmorItem(SteveMaterial.INSTANCE, EquipmentSlot.FEET, settingsNormal())),
 
-    //GOLEMITE_HELMET(new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settingsNormal())),
-    //GOLEMITE_CHESTPLATE(new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settingsNormal())),
-    //GOLEMITE_LEGGINGS(new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.LEGS, settingsNormal())),
-    //GOLEMITE_BOOTS(new ArmorItem(GolemiteArmorMaterial.INSTANCE, EquipmentSlot.FEET, settingsNormal())),
+    PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
+    PRIMSTEEL_CHESTPLATE(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
+    PRIMSTEEL_LEGGINGS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    PRIMSTEEL_BOOTS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
 
-    //PRIMSTEEL_HELMET(new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settingsNormal())),
-    //PRIMSTEEL_CHESTPLATE(new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settingsNormal())),
-    //PRIMSTEEL_LEGGINGS(new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.LEGS, settingsNormal())),
-    //PRIMSTEEL_BOOTS(new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.FEET, settingsNormal())),
+    ROSEGOLD_HELMET(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
+    ROSEGOLD_CHESTPLATE(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),
+    ROSEGOLD_LEGGINGS(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
+    ROSEGOLD_BOOTS(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.FEET, settingsNormal())),
 
-    //ROSEGOLD_HELMET(new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settingsNormal())),
-    //ROSEGOLD_CHESTPLATE(new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.CHEST, settingsNormal())),
-    //ROSEGOLD_LEGGINGS(new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.LEGS, settingsNormal())),
-    //ROSEGOLD_BOOTS(new ArmorItem(PrimsteelArmorMaterial.INSTANCE, EquipmentSlot.FEET, settingsNormal()));
+    GOLEMITE_HELMET(new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.HEAD, settingsNormal())),
+    GOLEMITE_CHESTPLATE(new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.CHEST, settingsNormal())),
+    GOLEMITE_LEGGINGS(new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.LEGS, settingsNormal())),
+    GOLEMITE_BOOTS(new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.FEET, settingsNormal()));
 
     /** Called from {@link ModItems} */
     static void initialize() {

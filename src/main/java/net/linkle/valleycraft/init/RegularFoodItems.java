@@ -48,7 +48,8 @@ public enum RegularFoodItems implements ItemEnum {
     FRIED_EGG(new FoodItem(settings(), 4, 0.6f)),
     COOKED_ROTTEN_FLESH(new FoodItem(settings(), 6, 0.4f,true)),
     COOKED_TROPICAL_FISH(new FoodItem(settings(), 4, 0.6f)),
-    COOKED_BEAST_LIVER(new FoodItem(settings(), 8, 0.4f, true)),
+    COOKED_BEAST_LIVER(new FoodItem(settings(), 8, 0.8f, true)),
+    COOKED_BEAST_HEART(new FoodItem(settings(), 10, 1f, true)),
 
     // pastries
     CAKE_SLICE(new FoodItem(settings(), 2, 0.1f)),

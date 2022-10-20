@@ -206,7 +206,21 @@ class RenderLayers {
         put(BLOCK_WATTLE_AND_GLASS, translucent);
         put(BLOCK_WATTLE_AND_GLASS_PLUS, translucent);
         put(BLOCK_WATTLE_AND_GLASS_CROSS, translucent);
-
+        put(TUMBLEWEED, cullout);
+        put(ROPE, cullout);
+        put(NET, cullout);
+        put(ROPE_BRIDGE, cullout);
+        put(ROPE_BRIDGE_ANCHOR, cullout);
+        put(SCARECROW, cullout);
+        put(SCARECROW_GLOWING, cullout);
+        put(SCARECROW_HAT, cullout);
+        put(SCARECROW_HAT_GLOWING, cullout);
+        put(SCARECROW_TARGET, cullout);
+        put(GLOW_SEAGRASS, cullout);
+        put(IRON_LADDER, cullout);
+        put(PRIMSTEEL_LADDER, cullout);
+        put(GOLEMITE_LADDER, cullout);
+        put(BAMBOO_LADDER, cullout);
     }
 
     /**

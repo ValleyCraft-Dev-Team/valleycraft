@@ -15,7 +15,7 @@ public class RustySwordMaterial implements ToolMaterial {
         //Golden: 32
         //Diamond: 1561
         //Netherite: 2031
-        return 131;
+        return 95;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class RustySwordMaterial implements ToolMaterial {
         //Diamond: 8.0f
         //Netherite: 10.0f
         //Gold: 12.0f
-        return 6.0f;
+        return 3.0f;
     }
 
     @Override
@@ -64,7 +64,7 @@ public class RustySwordMaterial implements ToolMaterial {
         //Diamond: 10
         //Gold: 22
         //Netherite: ??
-        return 20;
+        return 10;
     }
 
     @Override

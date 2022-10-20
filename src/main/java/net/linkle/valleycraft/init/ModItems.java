@@ -1,10 +1,7 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.item.FoodItem;
-import net.linkle.valleycraft.item.SalveItem;
-import net.linkle.valleycraft.item.SoulItem;
-import net.linkle.valleycraft.item.SoulPetItem;
+import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
@@ -53,6 +50,7 @@ public enum ModItems implements ItemEnum {
     DAUB(new Item(itemSettings())),
     HANDLE(new Item(itemSettings())),
     CLOTH(new Item(itemSettings())),
+    RAW_CLAY_POT(new Item(itemSettings())),
     PLANT_FIBER_STRING(new Item(itemSettings())),
     BOOK_COVER(new Item(itemSettings())),
     BOW_STRING(new Item(itemSettings())),
@@ -81,11 +79,17 @@ public enum ModItems implements ItemEnum {
     TOTEM_OF_APPRECIATION(new Item(itemSettings().group(BOOKS).rarity(Rarity.RARE).maxCount(1))),
     TOTEM_OF_VISITORS(new Item(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1))),
 
-    BOMB_BAG(new Item(itemSettings().group(BOOKS))),
-    ARROW_BUNDLE(new Item(itemSettings().group(VC_TOOLS))),
+    BOMB_BAG(new BombBagItem(itemSettings().group(BOOKS))),
+    ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_TOOLS))),
 
+    SOUL_ITEM_WITHERED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof())),
+    SOUL_ITEM_FADING(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof())),
     SOUL_ITEM(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof())),
-    SOUL_ITEM_PET(new SoulPetItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof()));
+    SOUL_ITEM_ENRAGED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof())),
+    SOUL_ITEM_PET(new SoulPetItem(itemSettings().group(BOOKS).fireproof())),
+    SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof()));
 
     public static void initialize() {
         ModBookItems.initialize();

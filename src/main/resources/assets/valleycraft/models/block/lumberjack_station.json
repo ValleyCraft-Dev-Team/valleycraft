@@ -4,8 +4,8 @@
 	"textures": {
 		"0": "valleycraft:block/rusted_pickaxe_zombie",
 		"1": "valleycraft:item/tools/woodcutter_axes/iron_woodcutter",
-		"2": "valleycraft:block/spruce_log_top",
-		"3": "valleycraft:block/spruce_log",
+		"2": "block/spruce_log_top",
+		"3": "block/spruce_log",
 		"particle": "valleycraft:item/tools/woodcutter_axes/iron_woodcutter"
 	},
 	"elements": [

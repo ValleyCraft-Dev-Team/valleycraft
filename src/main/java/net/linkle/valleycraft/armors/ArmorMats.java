@@ -23,23 +23,28 @@ public enum ArmorMats implements ArmorMaterial {
     BRUTE("brute", ints(3), 10, 15, equipLeather(), items(Items.LEATHER)),
     CANVAS("canvas", ints(1,1,2,1), 10, 15, equipLeather(), items(ModItems.BOOK_COVER)),
     SNOW_CAP("snow_cap", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    STABLEHAND_HAT("stablehand", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     DROWNED("ruined_drowned", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     REPAIRED_DROWNED("repaired_drowned", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     EYEPATCH("eyepatch", ints(1), 10, 15, equipLeather(), items(Items.LEATHER)),
     FUR("fur_boots", ints(2,3), 10, 15, equipLeather(), items()),
     FLOWERING_HAT("flower_crown", ints(1,5,6,2), 10, 15, equipLeather(), items(Blocks.FLOWERING_AZALEA)),
-    GOLEMITE("moblin", ints(1,3,5,2), 15, 0, equipLeather(), items(ModItems.BEAST_BONE)),
+    MOBLIN("moblin", ints(1,3,5,2), 15, 0, equipLeather(), items(ModItems.BEAST_BONE)),
     HUSK("ruined_husk", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     REPAIRED_HUSK("repaired_husk", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     LEGGINGS("leggings", ints(1,2,2,2), 30, 15, equipLeather(), items(Items.LEATHER)),
     LIBRARIAN("librarian", ints(1), 10, 15, equipLeather(), items(Items.BOOK)),
     MOBLIN_TALISMAN("moblin_talisman", ints(2,2,3,2), 10, 15, equipChain(), items()),
     EMERALD_TALISMAN("emerald_talisman", ints(2,2,2,2), 10, 22, equipChain(), items()),
+    ECHO_TALISMAN("echo_shard", ints(2,2,2,2), 10, 25, equipChain(), items()),
+    AMETHYST_TALISMAN("amethyst_talisman", ints(2,2,2,2), 10, 22, equipChain(), items()),
+    GOLDEN_GLASSES("golden_glasses", ints(2,2,2,2), 10, 22, equipChain(), items()),
+    ROSEGOLD_GLASSES("rosegold_glasses", ints(2,2,2,3), 10, 22, equipChain(), items()),
+
     MOGARS_BROKEN("mogars_broken_golemite_goggles", ints(1,5,6,2), 10, 15, equipChain(), items()),
     MOGARS_FIXED("mogars_fixed_golemite_goggles", ints(2,5,6,2), 10, 15, equipChain(), items()),
     PIGLIN("piglin", ints(2), 10, 15, equipLeather(), items(Items.LEATHER)),
     PILLAGER("pillager", ints(3), 10, 15, equipLeather(), items(Items.LEATHER)),
-    PRIMSTEEL("primsteel", ints(1,3,5,2), 15, 0, equipLeather(), items(ModItems.BEAST_BONE)),
     STEVE("ruined_steve_zombie", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     STRAW_HAT("straw_hat", ints(2,5,6,2), 10, 15, equipLeather(), items(Items.WHEAT)),
     STRAYA("cartographers_bag", ints(1,5,6,2), 15, 15, equipChain(), items(Items.LEATHER)),
@@ -49,7 +54,13 @@ public enum ArmorMats implements ArmorMaterial {
     VISOR("visor", ints(3), 10, 15, equipChain(), items(Items.COPPER_INGOT)),
     SCALE("scale", ints(0,6,7,3), 10, 15, equipChain(), items(Items.IRON_INGOT)),
     BUTTON("button", ints(0,0,7,2), 10, 15, equipChain(), items(Items.STRING)),
-    RED_CLOAK("red_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH));
+    RED_CLOAK("red_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
+    CHEF("chef", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+
+    PRIMSTEEL("golemite", ints(1,4,5,2), 15, 18, equipIron(), items(ModItems.PRIMSTEEL_INGOT)),
+    ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ModItems.ROSEGOLD_INGOT)),
+    GOLEMITE("primsteel", ints(2,5,7,2), 15, 5, equipIron(), items(ModItems.GOLEMITE_INGOT));
+
 
     // ### Other Utility Methods ###
     

@@ -68,7 +68,8 @@ public enum IngredientFoodItems implements ItemEnum {
     
     RAW_BIRD_THIGH(new FoodItem(settings(), 2, 0.2f)),
     RAW_BEAST_LIVER(new FoodItem(settings(), 4, 0.4f, true)),
-    
+    RAW_BEAST_HEART(new FoodItem(settings(), 6, 0.4f, true)),
+
     HARDTACK_DOUGH(new FoodItem(settings(), 1, 0.2f)),
     BREAD_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     CORN_BREAD_DOUGH(new FoodItem(settings(), 2, 0.2f)),

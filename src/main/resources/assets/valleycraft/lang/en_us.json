@@ -50,12 +50,17 @@
   "item.valleycraft.pillager_elixer": "Pillager War Elixir",
 
   "seldom_items": "§a",
+  "item.valleycraft.stablehand_hat": "§aStablehand Cap",
+
   "item.valleycraft.monster_guts": "§aStrange Guts",
   "item.valleycraft.raw_beast_liver": "§aRaw Liver",
+  "item.valleycraft.raw_beast_heart": "§aRaw Heart",
   "item.valleycraft.zod": "Raw Zod",
   "item.valleycraft.zod_bucket": "Bucket of Zod",
   "item.valleycraft.infected_monster_liver": "§aBlighted Liver",
   "item.valleycraft.seaologer_broken": "§aGolemite Cutlass",
+  "item.valleycraft.rusted_sword": "§aRusty Iron Sword",
+  "item.valleycraft.rusted_pickaxe": "§aRusty Iron Pickaxe",
   "item.valleycraft.arrow_bundle": "§aArrow Bundle",
   "item.valleycraft.bomb_bag": "§aBomb Bag",
   "item.valleycraft.hot_plate": "Hot Plate",
@@ -89,7 +94,6 @@
   "item.valleycraft.sharp_flint": "§aSharp Flint",
   "item.valleycraft.hefty_rock": "§aHefty Rock",
   "item.valleycraft.amber": "Amber",
-  "item.valleycraft.rusted_sword": "Rusty Sword",
   "block.valleycraft.sword_block": "Lodged Rusty Sword",
   "block.valleycraft.pickaxe_block": "Lodged Rusty Pickaxe",
 
@@ -141,7 +145,7 @@
   "item.valleycraft.trader_skirt": "Wandering Trader Skirt",
   "item.valleycraft.trader_sandals": "Wandering Trader Sandals",
   "item.valleycraft.soul_item": "Lost Soul",
-  "item.valleycraft.soul_item_pet": "Lost Soul of a Friend",
+  "item.valleycraft.soul_item_pet": "§cLost Soul of a Friend",
   "block.valleycraft.soulspore": "Soulspore Mushroom Cluster",
   "block.valleycraft.soulspore_single": "Soulspore Mushroom",
   "block.valleycraft.brown_clay_pot": "Ancient Brown Clay Pot",
@@ -602,7 +606,7 @@
   "item.valleycraft.seaologer_fixed": "Fixed Golemite Cutlass",
   "item.valleycraft.pillager_eyepatch": "Seaologer Eyepatch",
   "item.valleycraft.fur_boots": "Warm Fur Boots",
-  "item.valleycraft.reinforced_iron_helmet": "§aReinforced Iron Helmet",
+  "item.valleycraft.reinforced_iron_helmet": "Reinforced Iron Helmet",
   "item.valleycraft.scale_mail": "Scale Mail Chestplate",
   "item.valleycraft.scale_mail_skirt": "Scale Mail Skirt",
   "item.valleycraft.throwing_rock": "Throwing Rock",
@@ -701,9 +705,9 @@
   "block.valleycraft.blue_flowering_lilypad": "Blue Flowering Lilypad",
   "block.valleycraft.orange_seagrass": "Orange Seagrass",
   "block.valleycraft.grave_marker": "Grave Marker",
-  "block.valleycraft.grave_marker_pet": "Pet Grave Marker",
+  "block.valleycraft.grave_marker_pet": "§cPet Grave Marker",
   "block.valleycraft.erd_stone_gravestone": "Gravestone",
-  "block.valleycraft.erd_stone_gravestone_pet": "Pet Gravestone",
+  "block.valleycraft.erd_stone_gravestone_pet": "§cPet Gravestone",
 
   "block.valleycraft.leather_block": "Leather Block",
   "block.valleycraft.black_leather_block": "Black Leather Block",
@@ -731,7 +735,7 @@
 
   "block.valleycraft.block_daub": "Daub",
   "block.valleycraft.small_cactus": "Small Cactus",
-  "block.valleycraft.faded_soul_rose": "Faded Soul Rose",
-  "block.valleycraft.dried_sapling": "Dried Sapling"
-
+  "block.valleycraft.faded_soul_rose": "§aFaded Soul Rose",
+  "block.valleycraft.dried_sapling": "Dried Sapling",
+  "item.valleycraft.ladle": "Ladle"
 }

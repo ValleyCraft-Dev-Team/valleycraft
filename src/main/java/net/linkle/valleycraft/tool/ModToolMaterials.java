@@ -4,6 +4,8 @@ import com.google.common.base.Supplier;
 import com.google.common.base.Suppliers;
 
 import net.linkle.valleycraft.init.ModItems;
+import net.linkle.valleycraft.init.NaturalBlocks;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -17,6 +19,23 @@ public enum ModToolMaterials implements ToolMaterial {
     }),
     GOLEMITE(2, 705, 8.0F, 2.5F, 5, () -> {
         return Ingredient.ofItems(ModItems.GOLEMITE_INGOT);
+    }),
+
+    METEORITE(2, 440, 7.0F, 2.0F, 18, () -> {
+        return Ingredient.ofItems(NaturalBlocks.METEORITE);
+    }),
+
+    PRISMARINE(2, 190, 5.0F, 2.0F, 14, () -> {
+        return Ingredient.ofItems(Items.PRISMARINE_SHARD);
+    }),
+
+    BROKEN(2, 195, 5.0F, 2.0F, 10, () -> {
+        return Ingredient.ofItems(Items.IRON_INGOT);
+    }),
+
+    //unique - only used once
+    NATURES_BLESSING(2, 440, 7.0F, 2.0F, 22, () -> {
+        return Ingredient.ofItems(Items.VINE);
     });
 
     private final int miningLevel;

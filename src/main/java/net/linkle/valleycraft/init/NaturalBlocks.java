@@ -25,15 +25,17 @@ import net.minecraft.util.shape.VoxelShape;
 public enum NaturalBlocks implements ItemEnum, BlockEnum {
 
     BLACK_DAHLIA(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    FLOWERING_CACTUS(new OffsetPlantBlock(defaultPlantShape()).ground(BlockPres.SAND), itemSettings()),
-    SMALL_CACTUS(new ModPlantBlock(defaultPlantShape()).ground(BlockPres.SAND), itemSettings()),
+    FLOWERING_CACTUS(new OffsetPlantBlock(defaultPlantShape()).ground(BlockPres.ARID_DESERT_PLANTS), itemSettings()),
+    SMALL_CACTUS(new ModPlantBlock(defaultPlantShape()).ground(BlockPres.ARID_DESERT_PLANTS), itemSettings()),
+    TUMBLEWEED(new ModPlantBlock(tumbleweedShape()).ground(BlockPres.ARID_DESERT_PLANTS), itemSettings()),
+    THORNY_BUSH(new OffsetPlantBlock(defaultPlantShape()).ground(BlockPres.ARID_DESERT_PLANTS), itemSettings()),
     FLUFFY_DANDELION(new OffsetPlantBlock(flowerShape()), itemSettings()),
     FOXTAIL_FERN(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     JUNGLE_BUSH(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     PANFLOWERS(new OffsetPlantBlock(flowerShape()), itemSettings()),
     
     DRIED_SAPLING(new ModPlantBlock(defaultPlantShape()), itemSettings()),
-    FADED_SOUL_ROSE(new OffsetPlantBlock(flowerShape()), itemSettings()),
+    FADED_SOUL_ROSE(new OffsetPlantBlock(flowerShape()).ground(BlockPres.SOUL_PLANTS), itemSettings()),
     
     HONEYCLUSTER(new OffsetPlantBlock(flowerShape()), itemSettings()),
     LAVENDER(new OffsetPlantBlock(flowerShape()), itemSettings()),
@@ -50,7 +52,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     CLARET_LEAF(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     GODDESS_LILY(new OffsetPlantBlock(flowerShape()), itemSettings()),
     
-    KNAPWEED(new OffsetPlantBlock(flowerShape()), itemSettings()),
+    KNAPWEED(new OffsetPlantBlock(flowerShape()).ground(BlockPres.ARID_DESERT_PLANTS), itemSettings()),
     
     RED_LUPINE(new OffsetPlantBlock(flowerShape()), itemSettings()),
     YELLOW_LUPINE(new OffsetPlantBlock(flowerShape()), itemSettings()),
@@ -89,7 +91,6 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     SHORT_GRASS(new OffsetPlantBlock(shortGrassShape()), itemSettings()),
     SNOWFLOWER(new OffsetPlantBlock(flowerShape()), itemSettings()),
     SPROUT(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    THORNY_BUSH(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     WEEPING_GHOST_WILLOW(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
 
     WILD_WHEAT(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
@@ -116,7 +117,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     CAVE_ROOT_CROP(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 10/16f)),
     ANCIENT_FLOWERS(new MultiCropBlock(MultiCropBlock.settings()).genSize(2, 12/16f)),
     AMETHYSTLES(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 12/16f)),
-    ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(BlockPres.SAND).AloeShape()),
+    ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(BlockPres.ARID_DESERT_PLANTS).AloeShape()),
 
     CAVE_ROOTS(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     BONE_WEED(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
@@ -146,6 +147,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     
     ALGAE(new AlgaeBlock(), itemSettings(), PlaceableOnWaterItem::new),
     ORANGE_SEAGRASS(new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS)), itemSettings()),
+    GLOW_SEAGRASS(new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS).luminance(s -> 8)), itemSettings()),
 
     MAMON_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
     ANCIENT_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
@@ -239,7 +241,11 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     public static VoxelShape defaultPlantShape() {
         return Block.createCuboidShape(2, 0, 2, 14, 14, 14);
     }
-    
+
+    public static VoxelShape tumbleweedShape() {
+        return Block.createCuboidShape(2.0D, 0.0D, 2.0D, 14.0D, 14.0D, 14.0D);
+    }
+
     public static VoxelShape shortGrassShape() {
         return Block.createCuboidShape(2, 0, 2, 14, 7, 14);
     }

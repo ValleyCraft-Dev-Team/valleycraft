@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "valley:block/ropebridgemiddle",
-		"particle": "valley:block/ropebridgemiddle"
+		"0": "valleycraft:block/ropebridgemiddle",
+		"particle": "valleycraft:block/ropebridgemiddle"
 	},
 	"elements": [
 		{
@@ -138,6 +138,7 @@
 		{
 			"name": "group",
 			"origin": [0, 0, 0],
+			"color": 0,
 			"children": [0, 1, 2, 3, 4, 5, 6, 7]
 		}
 	]

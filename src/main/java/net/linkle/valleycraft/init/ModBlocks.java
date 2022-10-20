@@ -52,7 +52,12 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     CANVAS_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
     CANVAS_CARPET(new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
     CURTAIN(new CurtainBlock(), itemSettings()),
-    
+    ROPE(new ChainBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
+    NET(new NetBlock(), itemSettings()),
+    ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().noCollision()), itemSettings()),
+    ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    BAMBOO_LADDER(new LadderBlock(Block.Settings.copy(Blocks.BAMBOO).strength(1.0f).sounds(BlockSoundGroup.BAMBOO).nonOpaque()), itemSettings()),
+
     // guidestones
     GUIDESTONE(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque()), itemSettings()),
     GUIDESTONE_ARROW(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).hardness(1).nonOpaque()), itemSettings()),
@@ -90,9 +95,9 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     DEAD_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(s->0)), itemSettings().group(BOOKS)),
     
     GRAVE_MARKER(new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque()), itemSettings().rarity(Rarity.UNCOMMON)),
-    GRAVE_MARKER_PET(new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque()), itemSettings().rarity(Rarity.EPIC)),
+    GRAVE_MARKER_PET(new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque()), itemSettings()),
     ERD_STONE_GRAVESTONE(new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque()), itemSettings().rarity(Rarity.UNCOMMON)),
-    ERD_STONE_GRAVESTONE_PET(new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque()), itemSettings().rarity(Rarity.EPIC)),
+    ERD_STONE_GRAVESTONE_PET(new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque()), itemSettings()),
     
     // clay pots go here (not the baking item one)
     BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
@@ -222,19 +227,23 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     AMBER_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
     
     // refined blocks of "___"
-    ROSEGOLD_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
+
     PRIMSTEEL_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     PRIMSTEEL_TILED_PLATE(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     PRIMSTEEL_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     PRIMSTEEL_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
-    PRIMSTEEL_LADDER(new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
+    PRIMSTEEL_LADDER(new LadderBlock(Block.Settings.of(Material.DECORATION).strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
     PRIMSTEEL_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
 
+    IRON_LADDER(new LadderBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
     IRON_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
+
+    ROSEGOLD_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
+
     GOLEMITE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     GOLEMITE_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     GOLEMITE_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
-    GOLEMITE_LADDER(new LadderBlock(Block.Settings.of(Material.DECORATION).requiresTool().strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
+    GOLEMITE_LADDER(new LadderBlock(Block.Settings.of(Material.DECORATION).strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
     GOLEMITE_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
     
     // erdstone

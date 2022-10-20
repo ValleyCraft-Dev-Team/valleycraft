@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "valleycraft:block/climbable_rope",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "valleycraft:block/climbable_rope"
+    },
+    "axis=z": {
+      "model": "valleycraft:block/climbable_rope",
+      "x": 90
+    }
+  }
+}
