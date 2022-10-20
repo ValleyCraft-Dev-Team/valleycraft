@@ -1,7 +1,8 @@
 package net.linkle.valleycraft.gen.feature;
 
+import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.gen.Trees;
-import net.linkle.valleycraft.util.Reg;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
@@ -26,11 +27,13 @@ public enum TreeConfigs implements ConfigFeature {
     // ### The Enum Class Itself ###
     
     public final ConfiguredFeature<TreeFeatureConfig, Feature<TreeFeatureConfig>> config;
-    public final RegistryEntry<ConfiguredFeature<?, ?>> entry;
+    
+    private final RegistryEntry<ConfiguredFeature<?, ?>> entry;
+    private final Identifier id;
     
     TreeConfigs(TreeFeatureConfig config) {
         this.config = new ConfiguredFeature<TreeFeatureConfig, Feature<TreeFeatureConfig>>(Feature.TREE, config);
-        entry = Reg.add(BuiltinRegistries.CONFIGURED_FEATURE, name().toLowerCase(), this.config);
+        entry = BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_FEATURE, id = Main.makeId(name().toLowerCase()), this.config);
     }
 
     @Override
@@ -41,5 +44,10 @@ public enum TreeConfigs implements ConfigFeature {
     @Override
     public RegistryEntry<ConfiguredFeature<?, ?>> getEntry() {
         return entry;
+    }
+
+    @Override
+    public Identifier getId() {
+        return id;
     }
 }

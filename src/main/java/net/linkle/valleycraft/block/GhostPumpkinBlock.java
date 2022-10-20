@@ -51,11 +51,13 @@ public class GhostPumpkinBlock extends GourdBlock {
         return FabricBlockSettings.of(Material.GOURD, MapColor.WHITE_GRAY).strength(1.0f).sounds(BlockSoundGroup.WOOD);
     }
 
+    @Override
     public StemBlock getStem() {
-        return (StemBlock)NaturalBlocks.GHOST_PUMPKIN_STEM;
+        return (StemBlock)NaturalBlocks.GHOST_PUMPKIN_STEM.block;
     }
 
+    @Override
     public AttachedStemBlock getAttachedStem() {
-        return (AttachedStemBlock)NaturalBlocks.ATTACHED_GHOST_PUMPKIN_STEM;
+        return (AttachedStemBlock)NaturalBlocks.ATTACHED_GHOST_PUMPKIN_STEM.block;
     }
 }

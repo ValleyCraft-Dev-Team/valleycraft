@@ -1,21 +1,25 @@
 package net.linkle.valleycraft.init;
 
+import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.item.FoodItem;
 import net.linkle.valleycraft.item.SalveItem;
 import net.linkle.valleycraft.item.SoulItem;
 import net.linkle.valleycraft.item.SoulPetItem;
+import net.linkle.valleycraft.util.ItemEnum;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.registry.Registry;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
 import static net.minecraft.util.Rarity.*;
 
-public enum ModItems implements ItemConvertible {
+public enum ModItems implements ItemEnum {
 
     // crops
     RICE_SEEDS(new AliasedBlockItem(NaturalBlocks.RICES.block, itemSettings())),
@@ -67,7 +71,7 @@ public enum ModItems implements ItemConvertible {
     BB_CAVE_SNAIL(new Item(itemSettings().maxCount(16))),
     BB_RHINO_BEETLE(new Item(itemSettings().maxCount(16))),
 
-    SLUDGE_BUCKET(new BucketItem(ModFluids.SLUDGE_STILL, itemSettings().maxCount(1))),
+    SLUDGE_BUCKET(new BucketItem(ModFluids.SLUDGE_STILL.fluid, itemSettings().maxCount(1))),
     
     DOG_BISCUIT(new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true)),
     SALVE(new SalveItem(itemSettings().group(VC_TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION)),
@@ -98,9 +102,10 @@ public enum ModItems implements ItemConvertible {
     // ### The Enum Class Itself ###
     
     public final Item item;
+    public final Identifier id;
     
     ModItems(Item item) {
-        this.item = Reg.register(name().toLowerCase(), item);
+        this.item = Registry.register(Registry.ITEM, id = Main.makeId(name().toLowerCase()), item);
     }
 
     @Override

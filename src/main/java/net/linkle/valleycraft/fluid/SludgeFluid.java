@@ -33,12 +33,12 @@ public abstract class SludgeFluid extends FlowableFluid {
 
     @Override
     public Fluid getFlowing() {
-        return ModFluids.SLUDGE_FLOWING;
+        return ModFluids.SLUDGE_FLOWING.fluid;
     }
 
     @Override
     public Fluid getStill() {
-        return ModFluids.SLUDGE_STILL;
+        return ModFluids.SLUDGE_STILL.fluid;
     }
 
     @Override
@@ -85,7 +85,7 @@ public abstract class SludgeFluid extends FlowableFluid {
 
     @Override
     public boolean matchesType(Fluid fluid) {
-        return fluid == ModFluids.SLUDGE_STILL || fluid == ModFluids.SLUDGE_FLOWING;
+        return fluid == ModFluids.SLUDGE_STILL.fluid || fluid == ModFluids.SLUDGE_FLOWING.fluid;
     }
 
     @Override

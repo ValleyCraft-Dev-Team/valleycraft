@@ -5,17 +5,21 @@ import static net.linkle.valleycraft.init.ModGroups.REGULAR_DISHES;
 import static net.minecraft.util.Rarity.EPIC;
 import static net.minecraft.util.Rarity.UNCOMMON;
 
+import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.item.cultural_drinks.ElixerBottleItemMoblin;
 import net.linkle.valleycraft.item.cultural_drinks.ElixerBottleItemPillager;
 import net.linkle.valleycraft.item.cultural_drinks.ElixerBottleItemVillager;
+import net.linkle.valleycraft.util.ItemEnum;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.registry.Registry;
 
-public enum RegularFoodItems implements ItemConvertible {
+public enum RegularFoodItems implements ItemEnum {
 
     // cooked
     BAKED_APPLE(new FoodItem(settings(), 6, 0.6f)),
@@ -129,9 +133,10 @@ public enum RegularFoodItems implements ItemConvertible {
     // ### The Enum Class Itself ###
     
     public final Item item;
+    public final Identifier id;
     
     RegularFoodItems(Item item) {
-        this.item = Reg.register(name().toLowerCase(), item);
+        this.item = Registry.register(Registry.ITEM, id = Main.makeId(name().toLowerCase()), item);
     }
     
     @Override

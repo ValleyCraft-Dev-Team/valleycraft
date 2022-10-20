@@ -1,10 +1,11 @@
 package net.linkle.valleycraft.gen.feature;
 
-import net.linkle.valleycraft.util.Reg;
+import net.linkle.valleycraft.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.tag.BlockTags;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.RegistryEntry;
@@ -36,12 +37,13 @@ public enum VegetationConfigs implements ConfigFeature {
     
     // Enum
     
-    public final ConfiguredFeature<?, ?> config;
-    public final RegistryEntry<ConfiguredFeature<?, ?>> entry;
+    private final ConfiguredFeature<?, ?> config;
+    private final RegistryEntry<ConfiguredFeature<?, ?>> entry;
+    private final Identifier id;
 
     <T extends FeatureConfig> VegetationConfigs(Feature<T> feature, T config) {
         this.config = new ConfiguredFeature<T, Feature<T>>(feature, config);
-        entry = Reg.add(BuiltinRegistries.CONFIGURED_FEATURE, name().toLowerCase(), this.config);
+        entry = BuiltinRegistries.add(BuiltinRegistries.CONFIGURED_FEATURE, id = Main.makeId(name().toLowerCase()), this.config);
     }
 
     @Override
@@ -52,5 +54,10 @@ public enum VegetationConfigs implements ConfigFeature {
     @Override
     public RegistryEntry<ConfiguredFeature<?, ?>> getEntry() {
         return entry;
+    }
+
+    @Override
+    public Identifier getId() {
+        return id;
     }
 }

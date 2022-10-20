@@ -10,7 +10,7 @@ public class AmberSaplingGen extends LargeTreeSaplingGenerator {
 
     @Override
     protected RegistryEntry<? extends ConfiguredFeature<?, ?>> getLargeTreeFeature(Random random) {
-        return TreeConfigs.AMBER_TREE.entry;
+        return TreeConfigs.AMBER_TREE.getEntry();
     }
 
     @Override

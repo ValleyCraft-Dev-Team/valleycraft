@@ -28,6 +28,10 @@ public class FluidRenders {
         register(ModFluids.SLUDGE_FLOWING, sludge_tex);
     }
     
+    private static void register(ModFluids fluid, FluidRenderHandler renderer) {
+        register(fluid.fluid, renderer);
+    }
+    
     private static void register(Fluid fluid, FluidRenderHandler renderer) {
         FluidRenderHandlerRegistry.INSTANCE.register(fluid, renderer);
     }

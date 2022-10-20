@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
-import net.minecraft.block.Block;
+import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.tag.TagKey;
@@ -39,16 +39,16 @@ public class Contents {
         
     }
     
-    private static void putStrip(Block input, Block stripped) {
-        StrippableBlockRegistry.register(input, stripped);
+    private static void putStrip(BlockConvertible input, BlockConvertible stripped) {
+        StrippableBlockRegistry.register(input.asBlock(), stripped.asBlock());
     }
     
     private static void putCompost(ItemConvertible item, Float chance) {
         CompostingChanceRegistry.INSTANCE.add(item, chance);
     }
     
-    private static void putFlammable(Block block, int burn, int spread) {
-        FlammableBlockRegistry.getDefaultInstance().add(block, burn, spread);;
+    private static void putFlammable(BlockConvertible block, int burn, int spread) {
+        FlammableBlockRegistry.getDefaultInstance().add(block.asBlock(), burn, spread);;
     }
     
     private static void putFuels(ItemConvertible item, Integer tick) {

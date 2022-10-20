@@ -1,22 +1,5 @@
 package net.linkle.valleycraft.init;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.linkle.valleycraft.block.*;
-import net.linkle.valleycraft.util.BlockConvertible;
-import net.linkle.valleycraft.util.Reg;
-import net.minecraft.block.*;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.Rarity;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.world.BlockView;
-
-import static net.linkle.valleycraft.Main.makeId;
 import static net.linkle.valleycraft.init.ModGroups.BOOKS;
 import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
 
@@ -24,7 +7,24 @@ import java.util.function.BiFunction;
 
 import org.jetbrains.annotations.Nullable;
 
-public enum ModBlocks implements ItemConvertible, BlockConvertible {
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.block.*;
+import net.linkle.valleycraft.util.BlockEnum;
+import net.linkle.valleycraft.util.ItemEnum;
+import net.minecraft.block.*;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.world.BlockView;
+
+public enum ModBlocks implements ItemEnum, BlockEnum {
     
     // furniture
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
@@ -317,11 +317,13 @@ public enum ModBlocks implements ItemConvertible, BlockConvertible {
     @Nullable
     public final Item item;
     
+    public final Identifier id;
+    
     /** Register the block without the item. */
     ModBlocks(Block block) {
         this.block = block;
         this.item = null;
-        Reg.register(id(), block);
+        Registry.register(Registry.BLOCK, id = id(), block);
     }
     
     /** Register the block without the item. */
@@ -333,21 +335,17 @@ public enum ModBlocks implements ItemConvertible, BlockConvertible {
      * @param function create and register the block item. Example: BlockItem::new  */
     ModBlocks(Block block, Item.Settings settings, BiFunction<Block, Item.Settings, Item> function) {
         this.block = block;
-        var id = makeId(id());
+        this.id = id();
         Registry.register(Registry.BLOCK, id, block);
         Registry.register(Registry.ITEM, id, item = function.apply(block, settings));
     }
     
-    private String id() {
-        return name().toLowerCase();
+    private Identifier id() {
+        return Main.makeId(name().toLowerCase());
     }
     
-    /** Get default state */
-    public BlockState getState() {
-        return block.getDefaultState();
-    }
-
     @Override
+    @Nullable
     public Item asItem() {
         return item;
     }

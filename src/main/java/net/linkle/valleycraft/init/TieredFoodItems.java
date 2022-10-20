@@ -3,14 +3,17 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.item.Tier1Normal;
 import net.linkle.valleycraft.item.Tier2Normal;
 import net.linkle.valleycraft.item.Tier3Bowl;
-import net.linkle.valleycraft.util.Reg;
+import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 import static net.linkle.valleycraft.init.ModGroups.TIERED_DISHES;
 
-public enum TieredFoodItems implements ItemConvertible {
+import net.linkle.valleycraft.Main;
+
+public enum TieredFoodItems implements ItemEnum {
     
     // tier 1
     AMETHYSTLE_SALAD(new Tier1Normal(settings(), 4, 2, StatusEffects.HASTE)),
@@ -56,9 +59,10 @@ public enum TieredFoodItems implements ItemConvertible {
     // ### The Enum Class Itself ###
     
     public final Item item;
+    public final Identifier id;
     
     TieredFoodItems(Item item) {
-        this.item = Reg.register(name().toLowerCase(), item);
+        this.item = Registry.register(Registry.ITEM, id = Main.makeId(name().toLowerCase()), item);
     }
 
     @Override

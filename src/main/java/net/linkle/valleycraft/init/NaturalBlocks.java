@@ -8,6 +8,7 @@ import java.util.function.BiFunction;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.block.*;
 import net.linkle.valleycraft.block.sapling.AmberSaplingGen;
 import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
@@ -16,11 +17,12 @@ import net.linkle.valleycraft.util.*;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.shape.VoxelShape;
 
-public enum NaturalBlocks implements ItemConvertible, BlockConvertible {
+public enum NaturalBlocks implements ItemEnum, BlockEnum {
 
     BLACK_DAHLIA(new OffsetPlantBlock(flowerShape()), itemSettings()),
     FLOWERING_CACTUS(new OffsetPlantBlock(defaultPlantShape()).ground(BlockPres.SAND), itemSettings()),
@@ -164,10 +166,10 @@ public enum NaturalBlocks implements ItemConvertible, BlockConvertible {
     CRYSTAL_CAVE_MOSS(new CaveMossBlock(), itemSettings()),
 
     GHOST_PUMPKIN(new GhostPumpkinBlock(), itemSettings()),
-    GHOST_PUMPKIN_STEM(new StemBlock(ModItems.GHOST_PUMPKIN_SEEDS), itemSettings()),
-    ATTACHED_GHOST_PUMPKIN_STEM(new AttachedStemBlock(ModItems.GHOST_PUMPKIN_SEEDS), itemSettings()),
+    GHOST_PUMPKIN_STEM(new StemBlock((GourdBlock)GHOST_PUMPKIN.asBlock(), ()->ModItems.GHOST_PUMPKIN_SEEDS.item, Block.Settings.copy(Blocks.PUMPKIN_STEM))),
+    ATTACHED_GHOST_PUMPKIN_STEM(new AttachedStemBlock((GourdBlock)GHOST_PUMPKIN.asBlock(), ()->ModItems.GHOST_PUMPKIN_SEEDS.item, Block.Settings.copy(Blocks.ATTACHED_PUMPKIN_STEM))),
 
-    SLUDGE_FLUID(new SludgeFluidBlock(ModFluids.SLUDGE_STILL)),
+    SLUDGE_FLUID(new SludgeFluidBlock(ModFluids.SLUDGE_STILL.flowable())),
 
     DRY_DIRT(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
     SANDY_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),
@@ -255,11 +257,13 @@ public enum NaturalBlocks implements ItemConvertible, BlockConvertible {
     @Nullable
     public final Item item;
     
+    public final Identifier id;
+    
     /** Register the block without the item. */
     NaturalBlocks(Block block) {
         this.block = block;
         this.item = null;
-        Reg.register(id(), block);
+        Registry.register(Registry.BLOCK, id = id(), block);
     }
     
     /** Register the block without the item. */
@@ -271,21 +275,17 @@ public enum NaturalBlocks implements ItemConvertible, BlockConvertible {
      * @param function create and register the block item. Example: BlockItem::new  */
     NaturalBlocks(Block block, Item.Settings settings, BiFunction<Block, Item.Settings, Item> function) {
         this.block = block;
-        var id = makeId(id());
+        this.id = id();
         Registry.register(Registry.BLOCK, id, block);
         Registry.register(Registry.ITEM, id, item = function.apply(block, settings));
     }
     
-    private String id() {
-        return name().toLowerCase();
-    }
-    
-    /** Get default state */
-    public BlockState getState() {
-        return block.getDefaultState();
+    private Identifier id() {
+        return Main.makeId(name().toLowerCase());
     }
 
     @Override
+    @Nullable
     public Item asItem() {
         return item;
     }

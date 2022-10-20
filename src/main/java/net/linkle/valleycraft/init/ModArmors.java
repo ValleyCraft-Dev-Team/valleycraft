@@ -1,17 +1,20 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.armors.*;
-import net.linkle.valleycraft.util.Reg;
+import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterials;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.registry.Registry;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
 
-public enum ModArmors implements ItemConvertible {
+import net.linkle.valleycraft.Main;
+
+public enum ModArmors implements ItemEnum {
     
     MOBLIN_TALISMAN(new ArmorItem(ArmorMats.MOBLIN_TALISMAN, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
     MOGARS_BROKEN_GOLEMITE_GOGGLES(new BrokenArmorItem(ArmorMats.MOGARS_BROKEN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
@@ -123,9 +126,10 @@ public enum ModArmors implements ItemConvertible {
     // ### The Enum Class Itself ###
     
     public final Item item;
+    public final Identifier id;
     
     ModArmors(Item item) {
-        this.item = Reg.register(name().toLowerCase(), item);
+        this.item = Registry.register(Registry.ITEM, id = Main.makeId(name().toLowerCase()), item);
     }
 
     @Override

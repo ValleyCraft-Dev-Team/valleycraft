@@ -6,12 +6,14 @@ import net.minecraft.entity.effect.*;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.util.*;
+import net.minecraft.util.registry.Registry;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
 
-public enum IngredientFoodItems implements ItemConvertible {
+import net.linkle.valleycraft.Main;
+
+public enum IngredientFoodItems implements ItemEnum {
 
     //AMETHYSTLE_SALAD(new Tier1Normal(settings(), 4, 2, StatusEffects.HASTE);
     
@@ -100,9 +102,10 @@ public enum IngredientFoodItems implements ItemConvertible {
     // ### The Enum Class Itself ###
     
     public final Item item;
+    public final Identifier id;
     
-    IngredientFoodItems(Item item) {
-        this.item = Reg.register(name().toLowerCase(), item);
+    private IngredientFoodItems(Item item) {
+        this.item = Registry.register(Registry.ITEM, id = Main.makeId(name().toLowerCase()), item);
     }
     
     @Override
