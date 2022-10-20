@@ -3,10 +3,7 @@ package net.linkle.valleycraft.block;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.linkle.valleycraft.init.ModBlocks;
 import net.linkle.valleycraft.init.NaturalBlocks;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -23,7 +20,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 
-public class GhostPumpkinBlock extends Block {
+public class GhostPumpkinBlock extends GourdBlock {
 
     public GhostPumpkinBlock() {
         super(settings());
@@ -52,5 +49,13 @@ public class GhostPumpkinBlock extends Block {
 
     public static FabricBlockSettings settings() {
         return FabricBlockSettings.of(Material.GOURD, MapColor.WHITE_GRAY).strength(1.0f).sounds(BlockSoundGroup.WOOD);
+    }
+
+    public StemBlock getStem() {
+        return (StemBlock)NaturalBlocks.GHOST_PUMPKIN_STEM;
+    }
+
+    public AttachedStemBlock getAttachedStem() {
+        return (AttachedStemBlock)NaturalBlocks.ATTACHED_GHOST_PUMPKIN_STEM;
     }
 }

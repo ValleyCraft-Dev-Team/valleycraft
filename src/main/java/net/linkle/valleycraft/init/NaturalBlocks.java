@@ -164,6 +164,8 @@ public enum NaturalBlocks implements ItemConvertible, BlockConvertible {
     CRYSTAL_CAVE_MOSS(new CaveMossBlock(), itemSettings()),
 
     GHOST_PUMPKIN(new GhostPumpkinBlock(), itemSettings()),
+    GHOST_PUMPKIN_STEM(new StemBlock(ModItems.GHOST_PUMPKIN_SEEDS), itemSettings()),
+    ATTACHED_GHOST_PUMPKIN_STEM(new AttachedStemBlock(ModItems.GHOST_PUMPKIN_SEEDS), itemSettings()),
 
     SLUDGE_FLUID(new SludgeFluidBlock(ModFluids.SLUDGE_STILL)),
 

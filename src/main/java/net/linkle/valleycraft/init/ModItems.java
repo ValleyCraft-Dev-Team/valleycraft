@@ -25,7 +25,8 @@ public enum ModItems implements ItemConvertible {
     CAVE_ROOT_SEEDS(new AliasedBlockItem(NaturalBlocks.CAVE_ROOT_CROP.block, itemSettings())),
     ANCIENT_FLOWER_SEEDS(new AliasedBlockItem(NaturalBlocks.ANCIENT_FLOWERS.block, itemSettings().rarity(Rarity.RARE))),
     AMETHYSTLE_SEEDS(new AliasedBlockItem(NaturalBlocks.AMETHYSTLES.block, itemSettings())),
-    
+    GHOST_PUMPKIN_SEEDS(new Item(itemSettings())),
+
     FIBER(new Item(itemSettings())),
     PLANK(new Item(itemSettings())),
     SALT(new Item(itemSettings())),
