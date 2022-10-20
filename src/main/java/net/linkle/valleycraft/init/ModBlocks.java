@@ -32,7 +32,7 @@ public enum ModBlocks implements ItemConvertible, BlockConvertible {
     KEG(new KegBlock(), itemSettings()),
     MINER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
-    LUMBERJACK_STATION(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings()),
+    LUMBERJACK_STATION(new LumberjackBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().sounds(BlockSoundGroup.CHAIN)), itemSettings()),
     STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
     CAMPFIRE_POT(new CampfirePotBlock(Block.Settings.copy(Blocks.CAULDRON).luminance(s -> 13).nonOpaque()), itemSettings()),
     LOG_PILE(new SlabBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
