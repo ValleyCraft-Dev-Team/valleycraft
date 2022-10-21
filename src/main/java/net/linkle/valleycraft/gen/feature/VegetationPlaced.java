@@ -13,16 +13,23 @@ import net.minecraft.world.gen.placementmodifier.*;
 
 /** Known as {@link VegetationPlacedFeatures} */
 public enum VegetationPlaced {
+    
     PATCH_PUMPKIN(VegetationConfigs.PATCH_PUMPKIN, RarityFilterPlacementModifier.of(12), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of()),
     AMBER_PLACED(TreeConfigs.AMBER_TREE, tree(CountPlacementModifier.of(3), NaturalBlocks.MAMON_SAPLING.block)),
     WARM_BIRCH_PLACED(TreeConfigs.WARM_BIRCH_TREE, tree(RarityFilterPlacementModifier.of(4), NaturalBlocks.MAMON_SAPLING.block));
     
-    public static void initialize() {
-        VegetationConfigs.initialize();
-    }
+    
+    // Utilities
     
     public static List<PlacementModifier> tree(PlacementModifier modifier, Block block) {
         return VegetationPlacedFeatures.modifiersWithWouldSurvive(modifier, block);
+    }
+    
+    
+    // Enum
+    
+    public static void initialize() {
+        VegetationConfigs.initialize();
     }
     
     public final RegistryEntry<PlacedFeature> entry;
