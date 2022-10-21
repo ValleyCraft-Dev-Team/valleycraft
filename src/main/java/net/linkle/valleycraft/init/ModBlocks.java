@@ -133,11 +133,12 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POTTED_YELLOW_LUPINE(new FlowerPotBlock(NaturalBlocks.YELLOW_LUPINE.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
     POTTED_PINK_LUPINE(new FlowerPotBlock(NaturalBlocks.PINK_LUPINE.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
     POTTED_ORANGE_POPPY(new FlowerPotBlock(NaturalBlocks.ORANGE_POPPY.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_YELLOW_POPPY(new FlowerPotBlock(NaturalBlocks.YELLOW_POPPY.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
     POTTED_WHITE_POPPY(new FlowerPotBlock(NaturalBlocks.WHITE_POPPY.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
     POTTED_SNOWFLOWER(new FlowerPotBlock(NaturalBlocks.SNOWFLOWER.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
 
     // Potted mushrooms
-    POTTED_GLOWCAP(new FlowerPotBlock(NaturalBlocks.GLOW_CAP.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
+    POTTED_GLOW_CAP(new FlowerPotBlock(NaturalBlocks.GLOW_CAP.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
     POTTED_JUNGLE_CAP(new FlowerPotBlock(NaturalBlocks.JUNGLE_CAP.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
     POTTED_SOULSPORE(new FlowerPotBlock(NaturalBlocks.SOULSPORE_SINGLE.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
     POTTED_MOREL(new FlowerPotBlock(NaturalBlocks.MOREL.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
@@ -285,6 +286,9 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     DIABASE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     CARMINE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     LIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+
+    // Polished stone stairs & slabs
+    CARMINE_SMOOTH_STAIRS(new StairsBlock(CARMINE_SMOOTH.getState(), Block.Settings.copy(Blocks.STONE_STAIRS)), itemSettings()),
 
     // leathers are last
     LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
