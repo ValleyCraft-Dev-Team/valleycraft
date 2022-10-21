@@ -5,6 +5,7 @@ import static net.linkle.valleycraft.init.ModGroups.*;
 
 import java.util.function.BiFunction;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -35,8 +36,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     PANFLOWERS(new OffsetPlantBlock(flowerShape()), itemSettings()),
     
     DRIED_SAPLING(new ModPlantBlock(defaultPlantShape()), itemSettings()),
-    FADED_SOUL_ROSE(new OffsetPlantBlock(flowerShape()).ground(BlockPres.SOUL_PLANTS), itemSettings()),
-    
+
     HONEYCLUSTER(new OffsetPlantBlock(flowerShape()), itemSettings()),
     LAVENDER(new OffsetPlantBlock(flowerShape()), itemSettings()),
     LEATHERLEAF_FERN(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
@@ -216,10 +216,13 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
 
     DEEPSLATE_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)), itemSettings()),
     DEEPSLATE_PRIMSTEEL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)), itemSettings()),
-    
+
+    //nether blocks
     NETHER_SALT_ORE(new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE)), itemSettings()),
     NETHER_COAL_ORE(new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE)), itemSettings()),
-    NETHER_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE)), itemSettings());
+    NETHER_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE)), itemSettings()),
+    BRIMSTONE_CRYSTAL(new BrimstoneCrystalClusterBlock(7,3, FabricBlockSettings.copyOf(Blocks.AMETHYST_CLUSTER).nonOpaque().luminance(s -> 8)), itemSettings()),
+    FADED_SOUL_ROSE(new OffsetPlantBlock(flowerShape()).ground(BlockPres.SOUL_PLANTS), itemSettings());
 
 	//ROOTED_WATCHER(new ModPlantBlock()),
     //WARDING_SHROOM(new ModPlantBlock()),

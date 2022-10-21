@@ -276,6 +276,8 @@ class RenderLayers {
         put(PRIMSTEEL_LADDER, cullout);
         put(GOLEMITE_LADDER, cullout);
         put(BAMBOO_LADDER, cullout);
+        put(BRIMSTONE_CRYSTAL, cullout);
+        put(BRIMSTONE_GLASS, translucent);
     }
 
     /**

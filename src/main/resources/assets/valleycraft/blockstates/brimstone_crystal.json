@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "valleycraft:block/brimstone_crystal",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "valleycraft:block/brimstone_crystal",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "valleycraft:block/brimstone_crystal",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "valleycraft:block/brimstone_crystal",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "valleycraft:block/brimstone_crystal"
+    },
+    "facing=west": {
+      "model": "valleycraft:block/brimstone_crystal",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

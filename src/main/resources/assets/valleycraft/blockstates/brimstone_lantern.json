@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "valleycraft:block/brimstone_lantern"
+    },
+    "hanging=true": {
+      "model": "valleycraft:block/brimstone_lantern_hanging"
+    }
+  }
+}
