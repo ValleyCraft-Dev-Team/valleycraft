@@ -118,6 +118,8 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     ANCIENT_FLOWERS(new MultiCropBlock(MultiCropBlock.settings()).genSize(2, 12/16f)),
     AMETHYSTLES(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 12/16f)),
     ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(BlockPres.ARID_DESERT_PLANTS).AloeShape()),
+    GLOOM_BERRY(new GloomBerryHeadBlock()),
+    GLOOM_BERRY_PLANT(new GloomBerryBodyBlock()),
 
     CAVE_ROOTS(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     BONE_WEED(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
@@ -137,17 +139,20 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     PINK_FLOWERING_LILYPAD(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),
     BLUE_FLOWERING_LILYPAD(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),
 
-    GLOOM_BERRY(new GloomBerryHeadBlock()),
-    GLOOM_BERRY_PLANT(new GloomBerryBodyBlock()),
+    ALGAE(new AlgaeBlock(), itemSettings(), PlaceableOnWaterItem::new),
 
     GLOW_KELP(new GlowKelpBlock(), itemSettings()),
     GLOW_KELP_PLANT(new GlowKelpPlantBlock()),
     ORANGE_KELP(new OrangeKelpBlock(), itemSettings()),
     ORANGE_KELP_PLANT(new OrangeKelpPlantBlock()),
-    
-    ALGAE(new AlgaeBlock(), itemSettings(), PlaceableOnWaterItem::new),
     ORANGE_SEAGRASS(new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS)), itemSettings()),
     GLOW_SEAGRASS(new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS).luminance(s -> 8)), itemSettings()),
+
+    DEEP_SEA_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
+    ABYSSAL_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
+    VOLCANIC_STONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    VOLCANIC_MAGMA_STONE(new Block(Block.Settings.copy(Blocks.MAGMA_BLOCK)), itemSettings()),
+    VOLCANIC_ASH(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
 
     MAMON_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
     ANCIENT_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
@@ -186,10 +191,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     SHIVERSTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     VERDANTINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     PUMICE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    VOLCANIC_STONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    VOLCANIC_MAGMA_STONE(new Block(Block.Settings.copy(Blocks.MAGMA_BLOCK)), itemSettings()),
-    VOLCANIC_ASH(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
-    
+
     METEORITE(new Block(Block.Settings.copy(Blocks.DEEPSLATE)), itemSettings()),
 
     BONE_JOINT(new Block(Block.Settings.copy(Blocks.BONE_BLOCK)), itemSettings()),

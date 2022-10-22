@@ -33,6 +33,42 @@ public class ModEntityType {
                     .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZodEntity::canSpawn).build()
     );
 
+    public static final EntityType<ZodEntity> BONEFIN = register("bonefin",
+            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.MONSTER).entityFactory(ZodEntity::new)
+                    .trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
+                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZodEntity::canSpawn).build()
+    );
+
+    public static final EntityType<StonetosserMinnowEntity> STONETOSSER_MINNOW = register("stonetosser_minnow",
+            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.WATER_CREATURE).entityFactory(StonetosserMinnowEntity::new)
+                    .trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
+                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, StonetosserMinnowEntity::canSpawn).build()
+    );
+
+    public static final EntityType<AbysswatcherEntity> ABYSSWATCHER = register("abysswatcher",
+            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.WATER_CREATURE).entityFactory(AbysswatcherEntity::new)
+                    .trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
+                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AbysswatcherEntity::canSpawn).build()
+    );
+
+    public static final EntityType<SardineEntity> SARDINE = register("sardine",
+            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.WATER_CREATURE).entityFactory(SardineEntity::new)
+                    .trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
+                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, SardineEntity::canSpawn).build()
+    );
+
+    public static final EntityType<RedPorgyEntity> RED_PORGY = register("red_porgy",
+            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.WATER_CREATURE).entityFactory(RedPorgyEntity::new)
+                    .trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
+                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, RedPorgyEntity::canSpawn).build()
+    );
+
+    public static final EntityType<PerchEntity> PERCH = register("perch",
+            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.WATER_CREATURE).entityFactory(PerchEntity::new)
+                    .trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
+                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, PerchEntity::canSpawn).build()
+    );
+
     public static final EntityType<ThrownRockEntity> THROWN_ROCK = register("thrown_rock",
             FabricEntityTypeBuilder.<ThrownRockEntity>create(SpawnGroup.MISC, ThrownRockEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25F, 0.25F))

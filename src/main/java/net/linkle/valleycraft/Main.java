@@ -49,7 +49,6 @@ public class Main implements ModInitializer {
 
 		ModEffects.initialize();
 		ModPotions.initialize();
-
 		ModVillagers.registerVillagers();
 		CustomTradeRegistry.setupTrades();
 	}

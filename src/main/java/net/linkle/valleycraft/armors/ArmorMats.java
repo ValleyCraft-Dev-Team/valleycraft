@@ -61,8 +61,9 @@ public enum ArmorMats implements ArmorMaterial {
 
     PRIMSTEEL("golemite", ints(1,4,5,2), 15, 18, equipIron(), items(ModItems.PRIMSTEEL_INGOT)),
     ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ModItems.ROSEGOLD_INGOT)),
-    GOLEMITE("primsteel", ints(2,5,7,2), 15, 5, equipIron(), items(ModItems.GOLEMITE_INGOT));
+    GOLEMITE("primsteel", ints(2,5,7,2), 15, 5, equipIron(), items(ModItems.GOLEMITE_INGOT)),
 
+    DIVING("diving", ints(2,5,7,2), 15, 5, equipLeather(), items(ModItems.GOLEMITE_INGOT));
 
     // ### Other Utility Methods ###
     
