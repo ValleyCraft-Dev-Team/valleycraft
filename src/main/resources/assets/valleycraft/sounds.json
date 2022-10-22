@@ -1,17 +1,29 @@
 {
   "sprinkler": {
+    "subtitle": "subtitle.valleycraft:sprinkler",
     "sounds": [
       "valleycraft:sprinkler"
     ]
   },
   "curtain_open": {
+    "subtitle": "subtitle.valleycraft:curtain_open",
     "sounds": [
       "valleycraft:curtain_open"
     ]
   },
   "curtain_close": {
+    "subtitle": "subtitle.valleycraft:curtain_close",
     "sounds": [
       "valleycraft:curtain_close"
+    ]
+  },
+
+  "ancient": {
+    "sounds": [
+      {
+        "name": "valleycraft:ancient",
+        "stream": true
+      }
     ]
   }
 }

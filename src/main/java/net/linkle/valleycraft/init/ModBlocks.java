@@ -27,6 +27,8 @@ import net.minecraft.world.BlockView;
 public enum ModBlocks implements ItemEnum, BlockEnum {
     
     // furniture
+    WAYPOINT(new WaypointBlock(Block.Settings.copy(Blocks.POLISHED_DEEPSLATE)), itemSettings()),
+
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     KEG(new KegBlock(), itemSettings()),

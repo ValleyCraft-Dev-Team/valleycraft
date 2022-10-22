@@ -32,6 +32,8 @@ public enum ArmorMats implements ArmorMaterial {
     MOBLIN("moblin", ints(1,3,5,2), 15, 0, equipLeather(), items(ModItems.BEAST_BONE)),
     HUSK("ruined_husk", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     REPAIRED_HUSK("repaired_husk", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    MINER("ruined_miner", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    REPAIRED_MINER("repaired_miner", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     LEGGINGS("leggings", ints(1,2,2,2), 30, 15, equipLeather(), items(Items.LEATHER)),
     LIBRARIAN("librarian", ints(1), 10, 15, equipLeather(), items(Items.BOOK)),
     MOBLIN_TALISMAN("moblin_talisman", ints(2,2,3,2), 10, 15, equipChain(), items()),

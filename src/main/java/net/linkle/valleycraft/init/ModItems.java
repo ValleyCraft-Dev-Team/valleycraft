@@ -5,10 +5,7 @@ import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.BucketItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
@@ -64,6 +61,8 @@ public enum ModItems implements ItemEnum {
     AGITATOR(new Item(itemSettings().rarity(Rarity.RARE))),
     THERMAL_BLAZE_CORE(new Item(itemSettings().rarity(Rarity.RARE))),
     STRANGE_CATALYST(new Item(itemSettings().rarity(RARE))),
+    SHATTERED_EYE_OF_ENDER(new Item(itemSettings().rarity(EPIC))),
+    EYE_OF_RETURN(new ReturnItem(itemSettings().rarity(UNCOMMON))),
 
     BIG_BOTTLE(new Item(itemSettings())),
     BB_SNAIL(new Item(itemSettings().maxCount(16))),
@@ -90,7 +89,10 @@ public enum ModItems implements ItemEnum {
     SOUL_ITEM_PET(new SoulPetItem(itemSettings().group(BOOKS).fireproof())),
     SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
     SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
-    SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof()));
+    SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+
+    //record items
+    ANCIENT_RECORD_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.ANCIENT, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),110));
 
     public static void initialize() {
         ModBookItems.initialize();
