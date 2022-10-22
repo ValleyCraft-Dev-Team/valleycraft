@@ -27,7 +27,7 @@ public class CampfirePotBlock extends Block {
             d = (double) pos.getX() + random.nextDouble();
             e = (double) pos.getY() + random.nextDouble() * 0.5D + 0.5D;
             f = (double) pos.getZ() + random.nextDouble();
-            world.addParticle(ParticleTypes.LARGE_SMOKE, d, e, f, 0.0D, 0.0D, 0.0D);
+            world.addParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE, d, e, f, 0.0D, 0.0D, 0.0D);
         }
     }
 }

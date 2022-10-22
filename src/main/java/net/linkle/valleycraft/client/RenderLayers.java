@@ -278,6 +278,11 @@ class RenderLayers {
         put(BAMBOO_LADDER, cullout);
         put(BRIMSTONE_CRYSTAL, cullout);
         put(BRIMSTONE_GLASS, translucent);
+
+        put(ICE_ORE, translucent);
+        put(DEEPSLATE_ICE_ORE, translucent);
+        put(ICICLE, cullout);
+        put(ICICLE_PACKED_ICE, translucent);
     }
 
     /**

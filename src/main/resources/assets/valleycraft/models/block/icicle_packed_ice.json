@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "minecraft:block/ice",
+    "bottom": "valleycraft:block/packed_ice_special_top",
+    "side": "minecraft:block/ice"
+  }
+}
