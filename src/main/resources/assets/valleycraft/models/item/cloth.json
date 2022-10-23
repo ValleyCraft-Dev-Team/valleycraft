@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/misc/cloth"
+    "layer0": "valleycraft:item/misc/cloth_alt"
   }
 }

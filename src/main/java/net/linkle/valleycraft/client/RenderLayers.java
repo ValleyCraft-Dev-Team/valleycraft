@@ -242,11 +242,23 @@ class RenderLayers {
         // put(BIG_BROWN, cullout);
         put(BROWN_CLUSTER, cullout);
         put(RED_CLUSTER, cullout);
+        put(WARDING_SHROOM, cullout);
+        put(MEADOW_FLOWERS, cullout);
+        put(BARNACLE_BLOCK, cullout);
+
+        put(TRANSLATION_CANVAS, cullout);
         put(GLOW_CAP_CLUSTER, cullout);
         put(JUNGLE_CAP_CLUSTER, cullout);
         put(BURNT_OUT_TORCH, cullout);
         put(BURNT_OUT_CANDLE, cullout);
         put(SKELETAL_REMAINS, cullout);
+        put(VILLAGER_SKELETAL_REMAINS, cullout);
+        put(PIGLIN_SKELETAL_REMAINS, cullout);
+        put(FROZEN_SKULL, cullout);
+        put(DAERDRI_SKULL, cullout);
+        put(GEITLIN_SKULL, cullout);
+        put(FROZEN_GEITLIN_SKULL, cullout);
+        put(MOBLIN_SKELETAL_REMAINS, cullout);
         put(SKELETAL_MINING_REMAINS, cullout);
         put(PICKAXE_BLOCK, cullout);
         put(DEAD_LANTERN, cullout);

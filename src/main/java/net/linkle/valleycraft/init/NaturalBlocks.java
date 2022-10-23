@@ -87,11 +87,13 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     GOOP_CAP(new ModMushroomBlock(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 2)).large(), itemSettings()),
     GILDED_CAP(new ModMushroomBlock().large(), itemSettings()),
     IRONSHROOM(new ModMushroomBlock().large(), itemSettings()),
+    WARDING_SHROOM(new ModMushroomBlock().large(), itemSettings()),
 
     SHORT_GRASS(new OffsetPlantBlock(shortGrassShape()), itemSettings()),
     SNOWFLOWER(new OffsetPlantBlock(flowerShape()), itemSettings()),
     SPROUT(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     WEEPING_GHOST_WILLOW(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
+    MEADOW_FLOWERS(new OffsetPlantBlock(shortFlowerShape()), itemSettings()),
 
     WILD_WHEAT(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
     WILD_POTATO(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
@@ -147,6 +149,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     ORANGE_KELP_PLANT(new OrangeKelpPlantBlock()),
     ORANGE_SEAGRASS(new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS)), itemSettings()),
     GLOW_SEAGRASS(new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS).luminance(s -> 8)), itemSettings()),
+    BARNACLE_BLOCK(new BarnacleBlock(), itemSettings()),
 
     DEEP_SEA_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
     ABYSSAL_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
@@ -272,8 +275,10 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     public static VoxelShape flowerShape() {
         return Block.createCuboidShape(5, 0, 5, 11, 10, 11);
     }
-    
-    
+
+    public static VoxelShape shortFlowerShape() {
+        return Block.createCuboidShape(2, 0, 2, 14, 2, 14);
+    }
     
     // ### The Enum Class Itself ###
     

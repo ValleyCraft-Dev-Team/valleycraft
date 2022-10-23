@@ -79,7 +79,8 @@ public enum RegularFoodItems implements ItemEnum {
 
     FRUIT_MIX(new BowlItem(settings(), 6, 0.6f)),
     VEGETABLE_MIX(new BowlItem(settings(), 6, 0.6f)),
-    SAVORY_BREAKFAST(new BowlItem(settings(), 10, 5.8f)),
+    SAVORY_BREAKFAST(new BowlItem(settings(), 9, 5.6f)),
+    HEARTY_BREAKFAST(new BowlItem(settings(), 10, 5.8f)),
     SAUTEED_EYES_AND_MUSHROOMS(new FoodItem(settings(), 8, 7.8f)),
 
     MAGMA_CREME_SOUP(new BowlItem(settings(), 7, 0.6f)),
