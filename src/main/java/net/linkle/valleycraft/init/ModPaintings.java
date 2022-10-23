@@ -22,6 +22,7 @@ public class ModPaintings {
     //public static final PaintingVariant TRANSLATION_CANVAS = registerPainting("", new PaintingVariant(32,32));
     public static final PaintingVariant WINGS_TO_THE_SKY = registerPainting("wings_to_the_sky", new PaintingVariant(32,32));
     public static final PaintingVariant MONSTER_DAYS = registerPainting("monster_days", new PaintingVariant(32,32));
+    public static final PaintingVariant TEMPLE = registerPainting("temple", new PaintingVariant(48,48));
 
     private static PaintingVariant registerPainting(String name, PaintingVariant paintingVariant) {
         return Registry.register(Registry.PAINTING_VARIANT, new Identifier(Main.ID, name), paintingVariant);

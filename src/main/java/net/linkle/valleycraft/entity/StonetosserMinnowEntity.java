@@ -30,22 +30,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Random;
 
-public class StonetosserMinnowEntity extends SchoolingFishEntity {
+public class StonetosserMinnowEntity extends FishEntity {
 
-    public StonetosserMinnowEntity(EntityType<? extends SchoolingFishEntity> type, World world) {
+    public StonetosserMinnowEntity(EntityType<? extends FishEntity> type, World world) {
         super(type, world);
     }
     
     @Override
     protected void initGoals() {
         goalSelector.add(1, new SwimToRandomPlaceGoal());
-}
-    
-    public boolean canZodTarget(@Nullable LivingEntity target) {
-        if (target != null) {
-            return target.isTouchingWater() || !(target instanceof StonetosserMinnowEntity);
-        }
-        return false;
     }
     
     @Override
@@ -63,10 +56,10 @@ public class StonetosserMinnowEntity extends SchoolingFishEntity {
         return SoundEvents.ENTITY_COD_FLOP;
     }
     
-    public static DefaultAttributeContainer.Builder CreateStonetosserMinnowAttributes() {
+    public static DefaultAttributeContainer.Builder createStonetosserMinnowAttributes() {
         return PassiveEntity.createMobAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 3.0);
     }
-    
+
     public static boolean canSpawn(EntityType<? extends WaterCreatureEntity> type, WorldAccess world, SpawnReason reason, BlockPos pos, Random random) {
         int level = world.getSeaLevel();
         int zone = level - 8;

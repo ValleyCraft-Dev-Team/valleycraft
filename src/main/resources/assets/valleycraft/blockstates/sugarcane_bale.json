@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "valleycraft:block/sugarcane_bale_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "valleycraft:block/sugarcane_bale"
+    },
+    "axis=z": {
+      "model": "valleycraft:block/sugarcane_bale_horizontal",
+      "x": 90
+    }
+  }
+}
