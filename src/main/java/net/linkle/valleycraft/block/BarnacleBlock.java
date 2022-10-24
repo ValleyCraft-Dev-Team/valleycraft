@@ -26,7 +26,7 @@ public class BarnacleBlock extends DirectionBlockWithWater {
     public BarnacleBlock() {
         super(FabricBlockSettings.of(Material.UNDERWATER_PLANT)
                 .nonOpaque()
-                .sounds(BlockSoundGroup.CALCITE)
+                .sounds(BlockSoundGroup.CORAL)
                 .strength(0.3f, 0.5f)
                 .ticksRandomly()
                 .noCollision());

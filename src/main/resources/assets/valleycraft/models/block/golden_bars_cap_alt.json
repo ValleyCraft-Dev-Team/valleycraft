@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/iron_bars_cap_alt",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "valleycraft:block/golden_bars",
+        "bars": "valleycraft:block/golden_bars",
+        "edge": "valleycraft:block/golden_bars"
+    }
+}

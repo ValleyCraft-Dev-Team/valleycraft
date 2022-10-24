@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "valleycraft:block/daerdri_skull",
-		"1": "misc box:block/ice",
+		"1": "minecraft:block/ice",
 		"particle": "valleycraft:block/daerdri_skull"
 	},
 	"elements": [

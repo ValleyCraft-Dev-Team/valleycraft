@@ -195,8 +195,10 @@ class RenderLayers {
         put(PRIMSTEEL_BARS, cullout);
         put(PRIMSTEEL_LADDER, cullout);
         put(PRIMSTEEL_GRATE, cullout);
-        put(IRON_GRATE, cullout);
         put(PRIMSTEEL_CHAIN, cullout);
+        put(IRON_GRATE, cullout);
+        put(GOLDEN_GRATE, cullout);
+        put(GOLDEN_BARS, cullout);
         put(OPTIC_GLASS, cullout);
         put(VEX_LANTERN, cullout);
         put(ANCIENT_WAGON_WHEEL, cullout);
@@ -244,7 +246,12 @@ class RenderLayers {
         put(RED_CLUSTER, cullout);
         put(WARDING_SHROOM, cullout);
         put(MEADOW_FLOWERS, cullout);
-        put(BARNACLE_BLOCK, cullout);
+        put(BARNACLE_BLOCK, translucent);
+        put(CLAM_BLOCK_ITEM, cullout);
+        put(URCHIN_BLOCK_ITEM, cullout);
+        put(STARFISH_BLOCK, cullout);
+        put(TUBE_WORMS_BLOCK, cullout);
+        put(RUSHES, cullout);
 
         put(TRANSLATION_CANVAS, cullout);
         put(GLOW_CAP_CLUSTER, cullout);
@@ -254,10 +261,10 @@ class RenderLayers {
         put(SKELETAL_REMAINS, cullout);
         put(VILLAGER_SKELETAL_REMAINS, cullout);
         put(PIGLIN_SKELETAL_REMAINS, cullout);
-        put(FROZEN_SKULL, cullout);
+        put(FROZEN_SKULL, translucent);
         put(DAERDRI_SKULL, cullout);
         put(GEITLIN_SKULL, cullout);
-        put(FROZEN_GEITLIN_SKULL, cullout);
+        put(FROZEN_GEITLIN_SKULL, translucent);
         put(MOBLIN_SKELETAL_REMAINS, cullout);
         put(SKELETAL_MINING_REMAINS, cullout);
         put(PICKAXE_BLOCK, cullout);

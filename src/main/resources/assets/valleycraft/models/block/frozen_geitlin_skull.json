@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "valleycraft:block/geitlin_skull",
-		"1": "misc box:block/ice",
+		"1": "minecraft:block/ice",
 		"particle": "valleycraft:block/geitlin_skull"
 	},
 	"elements": [

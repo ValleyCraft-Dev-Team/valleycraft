@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "valleycraft:block/gravel_sand"
+    "all": "valleycraft:block/golden_grate"
   }
 }

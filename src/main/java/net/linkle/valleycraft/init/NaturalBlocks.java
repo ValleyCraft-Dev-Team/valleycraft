@@ -130,6 +130,8 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     LARGE_BUSH(new ModPlantBlock(defaultPlantShape()), itemSettings()),
     LUSH_BUSH(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
 
+    RUSHES(new RushBlock(Block.Settings.copy(Blocks.SUGAR_CANE).nonOpaque().breakInstantly().noCollision()), itemSettings()),
+
     BIG_FERN(new ModPlantBlock(defaultPlantShape()), itemSettings()),
     SMALLEST_LILYPADS(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),
     SMALL_LILYPADS(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),
@@ -150,6 +152,10 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     ORANGE_SEAGRASS(new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS)), itemSettings()),
     GLOW_SEAGRASS(new SeagrassBlock(Block.Settings.copy(Blocks.SEAGRASS).luminance(s -> 8)), itemSettings()),
     BARNACLE_BLOCK(new BarnacleBlock(), itemSettings()),
+    TUBE_WORMS_BLOCK(new SeagrassBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque()), itemSettings()),
+    STARFISH_BLOCK(new StarfishBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque().noCollision().breakInstantly()), itemSettings()),
+    CLAM_BLOCK_ITEM(new ClamBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque().ticksRandomly().breakInstantly()), itemSettings()),
+    URCHIN_BLOCK_ITEM(new UrchinBlock(Block.Settings.copy(Blocks.SANDSTONE).nonOpaque().sounds(BlockSoundGroup.CORAL)), itemSettings()),
 
     DEEP_SEA_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
     ABYSSAL_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
@@ -217,10 +223,10 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     PRIMSTEEL_ORE(new Block(Block.Settings.copy(Blocks.IRON_ORE)), itemSettings()),
     SALT_ORE(new Block(Block.Settings.copy(Blocks.COAL_ORE)), itemSettings()),
 
-    ICE_ORE(new IceOreBlock(Block.Settings.copy(Blocks.IRON_ORE).nonOpaque()), itemSettings()),
+    ICE_ORE(new IceOreBlock(Block.Settings.copy(Blocks.IRON_ORE).sounds(BlockSoundGroup.GLASS).nonOpaque().slipperiness(0.98f)), itemSettings()),
     PACKED_SNOW(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    ICICLE_PACKED_ICE(new IcicleGrowingBlock(Block.Settings.copy(Blocks.PACKED_ICE).nonOpaque()), itemSettings()),
-    ICICLE(new IcicleBlock(Block.Settings.copy(Blocks.ICE).nonOpaque()), itemSettings()),
+    ICICLE_PACKED_ICE(new IcicleGrowingBlock(Block.Settings.copy(Blocks.PACKED_ICE).nonOpaque().slipperiness(0.98f)), itemSettings()),
+    ICICLE(new IcicleBlock(Block.Settings.copy(Blocks.ICE).nonOpaque().slipperiness(0.98f)), itemSettings()),
     STRATIFIED_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
     SCORCHSTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
 
@@ -233,7 +239,8 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
 
     DEEPSLATE_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)), itemSettings()),
     DEEPSLATE_PRIMSTEEL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)), itemSettings()),
-    DEEPSLATE_ICE_ORE(new IceOreBlock(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).nonOpaque()), itemSettings()),
+    DEEPSLATE_ADVENTURINE_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)), itemSettings()),
+    DEEPSLATE_ICE_ORE(new IceOreBlock(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).sounds(BlockSoundGroup.GLASS).nonOpaque().slipperiness(0.98f)), itemSettings()),
 
     //nether blocks
     NETHER_SALT_ORE(new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE)), itemSettings()),
@@ -241,7 +248,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     NETHER_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE)), itemSettings()),
     NETHER_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
     BRIMSTONE_CRYSTAL(new BrimstoneCrystalClusterBlock(7,3, FabricBlockSettings.copyOf(Blocks.AMETHYST_CLUSTER).nonOpaque().luminance(s -> 8)), itemSettings()),
-    FADED_SOUL_ROSE(new SoulRoseBlock(AbstractBlock.Settings.copy(Blocks.WITHER_ROSE)).ground(BlockPres.SOUL_PLANTS), itemSettings());
+    FADED_SOUL_ROSE(new SoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).nonOpaque()).ground(BlockPres.SOUL_PLANTS), itemSettings());
 
 	//ROOTED_WATCHER(new ModPlantBlock()),
     //WARDING_SHROOM(new ModPlantBlock()),
