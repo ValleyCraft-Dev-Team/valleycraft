@@ -77,8 +77,6 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     GLOW_CAP_CLUSTER(new ModMushroomBlock().large(), itemSettings()),
     JUNGLE_CAP(new ModMushroomBlock().large(), itemSettings()),
     JUNGLE_CAP_CLUSTER(new ModMushroomBlock().large(), itemSettings()),
-    SOULSPORE_SINGLE(new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(5, 0, 5, 11, 6, 11)), itemSettings().rarity(Rarity.UNCOMMON)),
-    SOULSPORE(new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 5).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(4, 0, 4, 12, 9, 12)), itemSettings().rarity(Rarity.RARE)),
 
     MOREL(new ModMushroomBlock().large(), itemSettings()),
     SHIVERCAP(new ShivercapBlock().large(), itemSettings().group(INGREDIENTS)),
@@ -247,10 +245,20 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     NETHER_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE)), itemSettings()),
     NETHER_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
     BRIMSTONE_CRYSTAL(new BrimstoneCrystalClusterBlock(7,3, FabricBlockSettings.copyOf(Blocks.AMETHYST_CLUSTER).nonOpaque().luminance(s -> 8)), itemSettings()),
-    SOUL_ROSE(new RegSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).nonOpaque()).ground(BlockPres.SOUL_PLANTS), itemSettings()),
-    FADED_SOUL_ROSE(new FadedSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).nonOpaque()).ground(BlockPres.SOUL_PLANTS), itemSettings());
 
-	//ROOTED_WATCHER(new ModPlantBlock()),
+    //soul blocks
+    FADED_SOUL_ROSE(new FadedSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque()), itemSettings()),
+    SOUL_ROSE(new RegSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque().luminance(s -> 3)), itemSettings().rarity(Rarity.UNCOMMON)),
+    BLUE_SOUL_ROSE(new BlueSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque().luminance(s -> 6)), itemSettings().rarity(Rarity.RARE)),
+    SOULSPORE_SINGLE(new GreenSoulsporeBlockSmall(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(5, 0, 5, 11, 6, 11)), itemSettings().rarity(Rarity.UNCOMMON)),
+    SOULSPORE(new GreenSoulsporeBlockLarge(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(4, 0, 4, 12, 9, 12)), itemSettings().rarity(Rarity.UNCOMMON)),
+    BLUE_SOULSPORE_SINGLE(new BlueSoulsporeBlockSmall(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(5, 0, 5, 11, 6, 11)), itemSettings().rarity(Rarity.RARE)),
+    BLUE_SOULSPORE(new BlueSoulsporeBlockLarge(Block.Settings.copy(Blocks.CRIMSON_FUNGUS).nonOpaque().luminance(s -> 6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).shape(Block.createCuboidShape(4, 0, 4, 12, 9, 12)), itemSettings().rarity(Rarity.RARE)),
+    FADED_CELESTIAL(new FadedSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque()), itemSettings()),
+    SOUL_CELESTIAL(new RegSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque().luminance(s -> 3)), itemSettings().rarity(Rarity.UNCOMMON)),
+    BLUE_SOUL_CELESTIAL(new BlueSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque().luminance(s -> 6)), itemSettings().rarity(Rarity.RARE));
+
+    //ROOTED_WATCHER(new ModPlantBlock()),
     //WARDING_SHROOM(new ModPlantBlock()),
     //STICKY_SHROOM(new ModLargerMushroomBlock()),
     //BIG_RED(new ModPlantBlock(Block.Settings.copy(Blocks.RED_MUSHROOM))),

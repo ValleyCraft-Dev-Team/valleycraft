@@ -1,9 +1,7 @@
 package net.linkle.valleycraft.block;
 
 import net.linkle.valleycraft.init.ModParticles;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -12,13 +10,19 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class RegSoulRoseBlock extends ModPlantBlock {
+public class RegSoulRoseBlock extends PlantBlock {
+    protected static final VoxelShape SHAPE = Block.createCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 10.0D, 11.0D);
+
     public RegSoulRoseBlock(Settings settings) {
         super(settings);
     }
 
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
         return super.canPlantOnTop(floor, world, pos) || floor.isOf(Blocks.NETHERRACK) || floor.isOf(Blocks.SOUL_SAND) || floor.isOf(Blocks.SOUL_SOIL);
+    }
+
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return SHAPE;
     }
 
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
