@@ -1,6 +1,5 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.Main.makeId;
 import static net.linkle.valleycraft.init.ModGroups.*;
 
 import java.util.function.BiFunction;
@@ -248,7 +247,8 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     NETHER_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE)), itemSettings()),
     NETHER_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
     BRIMSTONE_CRYSTAL(new BrimstoneCrystalClusterBlock(7,3, FabricBlockSettings.copyOf(Blocks.AMETHYST_CLUSTER).nonOpaque().luminance(s -> 8)), itemSettings()),
-    FADED_SOUL_ROSE(new SoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).nonOpaque()).ground(BlockPres.SOUL_PLANTS), itemSettings());
+    SOUL_ROSE(new RegSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).nonOpaque()).ground(BlockPres.SOUL_PLANTS), itemSettings()),
+    FADED_SOUL_ROSE(new FadedSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).nonOpaque()).ground(BlockPres.SOUL_PLANTS), itemSettings());
 
 	//ROOTED_WATCHER(new ModPlantBlock()),
     //WARDING_SHROOM(new ModPlantBlock()),

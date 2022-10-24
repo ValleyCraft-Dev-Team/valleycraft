@@ -1,8 +1,8 @@
 package net.linkle.valleycraft.block;
 
+import net.linkle.valleycraft.init.ModParticles;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-
 import net.minecraft.block.ShapeContext;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
@@ -12,8 +12,8 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class SoulRoseBlock extends ModPlantBlock {
-    public SoulRoseBlock(Settings settings) {
+public class RegSoulRoseBlock extends ModPlantBlock {
+    public RegSoulRoseBlock(Settings settings) {
         super(settings);
     }
 
@@ -29,7 +29,7 @@ public class SoulRoseBlock extends ModPlantBlock {
 
         for(int i = 0; i < 3; ++i) {
             if (random.nextBoolean()) {
-                world.addParticle(ParticleTypes.SMOKE, d + random.nextDouble() / 5.0D, (double)pos.getY() + (0.5D - random.nextDouble()), e + random.nextDouble() / 5.0D, 0.0D, 0.0D, 0.0D);
+                world.addParticle(ModParticles.GREEN_EXP_ORB, d + random.nextDouble() / 5.0D, (double)pos.getY() + (0.5D - random.nextDouble()), e + random.nextDouble() / 5.0D, 0.0D, 0.0D, 0.0D);
             }
         }
 
