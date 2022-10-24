@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.block.Block;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.DataWriter;
@@ -40,6 +41,10 @@ public abstract class LanguageDataProvider implements DataProvider {
         this.locale = locale;
     }
 
+    public void addBlock(BlockConvertible key, String name) {
+        addBlock(key.asBlock(), name);
+    }
+    
     public void addBlock(Block key, String name) {
         add(key.getTranslationKey(), name);
     }

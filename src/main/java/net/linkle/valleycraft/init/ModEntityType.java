@@ -9,15 +9,13 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.client.entity.model.PupkinEntityModel;
 import net.linkle.valleycraft.client.entity.model.SnailEntityModel;
-import net.linkle.valleycraft.client.entity.renderer.PupkinEntityRenderer;
-import net.linkle.valleycraft.client.entity.renderer.SnailEntityRenderer;
-import net.linkle.valleycraft.client.entity.renderer.SoulPetEntityRenderer;
-import net.linkle.valleycraft.client.entity.renderer.ZodEntityRenderer;
+import net.linkle.valleycraft.client.entity.renderer.*;
 import net.linkle.valleycraft.entity.*;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.entity.*;
 import net.minecraft.entity.SpawnRestriction.Location;
 import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.entity.passive.FishEntity;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.Heightmap;
 
@@ -30,13 +28,13 @@ public class ModEntityType {
     public static final EntityType<ZodEntity> ZOD = register("zod",
             FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.MONSTER).entityFactory(ZodEntity::new)
                     .trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
-                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZodEntity::canSpawn).build()
+                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, UndeadFishEntity::canSpawn).build()
     );
 
-    public static final EntityType<ZodEntity> BONEFIN = register("bonefin",
-            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.MONSTER).entityFactory(ZodEntity::new)
+    public static final EntityType<BonefinEntity> BONEFIN = register("bonefin",
+            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.MONSTER).entityFactory(BonefinEntity::new)
                     .trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
-                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZodEntity::canSpawn).build()
+                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, UndeadFishEntity::canSpawn).build()
     );
 
     public static final EntityType<StonetosserMinnowEntity> STONETOSSER_MINNOW = register("stonetosser_minnow",
@@ -85,10 +83,18 @@ public class ModEntityType {
             FabricEntityTypeBuilder.create(SpawnGroup.MISC, SoulPetEntity::new)
             .trackRangeChunks(8).dimensions(EntityDimensions.fixed(0.25F, 0.25F)).build());
 
+    
     public static void initialize() {
         FabricDefaultAttributeRegistry.register(SNAIL, SnailEntity.createSnailAttributes());
-        FabricDefaultAttributeRegistry.register(ZOD, ZodEntity.createZodAttributes());
         FabricDefaultAttributeRegistry.register(PUPKIN, PupkinEntity.createPupkinAttributes());
+        
+        FabricDefaultAttributeRegistry.register(ZOD, UndeadFishEntity.createUndeadFishAttributes());
+        FabricDefaultAttributeRegistry.register(BONEFIN, UndeadFishEntity.createUndeadFishAttributes());
+        FabricDefaultAttributeRegistry.register(STONETOSSER_MINNOW, FishEntity.createFishAttributes());
+        FabricDefaultAttributeRegistry.register(ABYSSWATCHER, FishEntity.createFishAttributes());
+        FabricDefaultAttributeRegistry.register(SARDINE, FishEntity.createFishAttributes());
+        FabricDefaultAttributeRegistry.register(RED_PORGY, FishEntity.createFishAttributes());
+        FabricDefaultAttributeRegistry.register(PERCH, FishEntity.createFishAttributes());
     }
 
     @Environment(EnvType.CLIENT)
@@ -99,10 +105,18 @@ public class ModEntityType {
         EntityModelLayerRegistry.registerModelLayer(PupkinEntityModel.LAYER, PupkinEntityModel::getTexturedModelData);
         EntityRendererRegistry.register(PUPKIN, PupkinEntityRenderer::new);
         
-        EntityRendererRegistry.register(ZOD, ZodEntityRenderer.create("zod"));
+        EntityRendererRegistry.register(ZOD, CodEntityRenderer.create("zod"));
+        EntityRendererRegistry.register(ABYSSWATCHER, CodEntityRenderer.create("abysswatcher"));
+        EntityRendererRegistry.register(BONEFIN, CodEntityRenderer.create("bonefin"));
+        EntityRendererRegistry.register(STONETOSSER_MINNOW, CodEntityRenderer.create("minnow"));
+        EntityRendererRegistry.register(PERCH, CodEntityRenderer.create("perch"));
+        EntityRendererRegistry.register(RED_PORGY, CodEntityRenderer.create("red_porgy"));
+        EntityRendererRegistry.register(SARDINE, CodEntityRenderer.create("sardine"));
+        
         EntityRendererRegistry.register(SOUL_PET, SoulPetEntityRenderer::new);
         EntityRendererRegistry.register(THROWN_ROCK, FlyingItemEntityRenderer::new);
     }
+    
     
     private static <T extends Entity> EntityType<T> register(String id, EntityType<T> entity) {
         return Registry.register(Registry.ENTITY_TYPE, Main.makeId(id), entity);
