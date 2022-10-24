@@ -261,10 +261,8 @@ class RenderLayers {
         put(SKELETAL_REMAINS, cullout);
         put(VILLAGER_SKELETAL_REMAINS, cullout);
         put(PIGLIN_SKELETAL_REMAINS, cullout);
-        put(FROZEN_SKULL, translucent);
         put(DAERDRI_SKULL, cullout);
         put(GEITLIN_SKULL, cullout);
-        put(FROZEN_GEITLIN_SKULL, translucent);
         put(MOBLIN_SKELETAL_REMAINS, cullout);
         put(SKELETAL_MINING_REMAINS, cullout);
         put(PICKAXE_BLOCK, cullout);
