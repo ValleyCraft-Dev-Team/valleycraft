@@ -68,13 +68,15 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerFlowerPotPlant(NaturalBlocks.DESERT_SHRUB.block, ModBlocks.POTTED_DESERT_SHRUB.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(NaturalBlocks.LUSH_BUSH.block, ModBlocks.POTTED_LUSH_BUSH.block, TintType.NOT_TINTED);
 
-        // Carmine
+        // Smooth Carmine
         TextureMap carmineTextureMap = new TextureMap()
                 .put(TextureKey.SIDE, Main.makeId("block/carmine_smooth"))
                 .put(TextureKey.END,  Main.makeId("block/carmine_smooth"))
                 .put(TextureKey.WALL, Main.makeId("block/carmine_smooth"));
 
         stairs(ModBlocks.CARMINE_SMOOTH_STAIRS.block, carmineTextureMap, generator);
+        slab(ModBlocks.CARMINE_SMOOTH_SLAB.block, ModBlocks.CARMINE_SMOOTH.block, carmineTextureMap, generator);
+        wall(ModBlocks.CARMINE_SMOOTH_WALL.block, carmineTextureMap, generator);
     }
 
     @Override
@@ -82,6 +84,12 @@ class ValleyModelGenerator extends FabricModelProvider {
         // ...
     }
 
+    /**
+     * Datagens the blockstate, block model and item model .jsons needed for a stairs block.~
+     * @param block The stairs block. Find this in ModBlocks or a similar block-initializing class.
+     * @param texture The TextureMap for the given block type. See my example with smooth carmine.
+     * @param generator Just type `generator` for this.
+     */
     void stairs(Block block, TextureMap texture, BlockStateModelGenerator generator) {
         var stairsInner = Models.INNER_STAIRS.upload(block, texture, generator.modelCollector);
         var stairsStraight = Models.STAIRS.upload(block, texture, generator.modelCollector);
@@ -91,19 +99,25 @@ class ValleyModelGenerator extends FabricModelProvider {
     }
 
     /**
-     * Datagens models for a slab block.
-     * @param slabBlock The slab block.
+     * Datagens the blockstate, block model and item model .jsons needed for a slab block.~
+     * @param slabBlock The slab block. Find this in ModBlocks or a similar block-initializing class.
      * @param fullBlock The matching full block.
-     * @param texture The texture map that the slab block should use.
-     * @param generator
+     * @param texture The TextureMap for the given block type. See my example with smooth carmine.
+     * @param generator Just type `generator` for this.
      */
     void slab(Block slabBlock, Block fullBlock, TextureMap texture, BlockStateModelGenerator generator) {
         var slabUpper = Models.SLAB_TOP.upload(slabBlock, texture, generator.modelCollector);
         var slabLower = Models.SLAB.upload(slabBlock, texture, generator.modelCollector);
-        generator.blockStateCollector.accept(BlockStateModelGenerator.createSlabBlockState(slabBlock, slabUpper, slabLower, ModelIds.getBlockModelId(fullBlock)));
+        generator.blockStateCollector.accept(BlockStateModelGenerator.createSlabBlockState(slabBlock, slabLower, slabUpper, ModelIds.getBlockModelId(fullBlock)));
         generator.registerParentedItemModel(slabBlock, slabLower);
     }
 
+    /**
+     * Datagens the blockstate, block model and item model .jsons needed for a wall block.~
+     * @param wallBlock The wall block. Find this in ModBlocks or a similar block-initializing class.
+     * @param texture The TextureMap for the given block type. See my example with smooth carmine.
+     * @param generator Just type `generator` for this.
+     */
     void wall(Block wallBlock, TextureMap texture, BlockStateModelGenerator generator) {
         Identifier identifier = Models.TEMPLATE_WALL_POST.upload(wallBlock, texture, generator.modelCollector);
         Identifier identifier2 = Models.TEMPLATE_WALL_SIDE.upload(wallBlock, texture, generator.modelCollector);
