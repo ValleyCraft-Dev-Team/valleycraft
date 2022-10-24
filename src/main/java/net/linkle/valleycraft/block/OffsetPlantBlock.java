@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.block;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.util.shape.VoxelShape;
 
 /**
@@ -8,12 +9,9 @@ import net.minecraft.util.shape.VoxelShape;
  */
 public class OffsetPlantBlock extends ModPlantBlock {
     
-    {
-        offset(OffsetType.XZ);
-    }
-    
     public OffsetPlantBlock(VoxelShape shape) {
-        super(shape);
+        this(Settings.copy(Blocks.POPPY));
+        shape(shape);
     }
     
     public OffsetPlantBlock(Settings settings) {

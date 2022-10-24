@@ -17,7 +17,7 @@ public class ModPlantBlock extends PlantBlock {
     protected Predicate<BlockState> groundList = BlockPres.DIRT;
 
     public ModPlantBlock(VoxelShape shape) {
-        this(Settings.copy(Blocks.POPPY));
+        this(Settings.copy(Blocks.POPPY).offsetType(OffsetType.NONE));
         shape(shape);
     }
     
@@ -34,12 +34,6 @@ public class ModPlantBlock extends PlantBlock {
     /** Set shape size for this plant block. */
     public ModPlantBlock shape(VoxelShape shape) {
         this.shape = shape;
-        return this;
-    }
-    
-    /** Set random offset for this plant block. */
-    public ModPlantBlock offset(OffsetType offset) {
-        this.offset = offset;
         return this;
     }
 
