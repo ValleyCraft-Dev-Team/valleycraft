@@ -204,6 +204,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     SHIVERSTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     VERDANTINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     PUMICE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
 
     METEORITE(new Block(Block.Settings.copy(Blocks.DEEPSLATE)), itemSettings()),
 

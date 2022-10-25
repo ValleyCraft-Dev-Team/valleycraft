@@ -211,6 +211,7 @@ class RenderLayers {
         put(OPTIC_GLASS, cullout);
         put(VEX_LANTERN, cullout);
         put(ALLAY_LANTERN, cullout);
+        put(WATTLE_BARS, cullout);
 
         put(ANCIENT_WAGON_WHEEL, cullout);
         put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);

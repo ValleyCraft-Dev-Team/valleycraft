@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/iron_bars_cap_alt",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "valleycraft:block/wattle_bars",
+        "bars": "valleycraft:block/wattle_bars",
+        "edge": "valleycraft:block/wattle_bars"
+    }
+}

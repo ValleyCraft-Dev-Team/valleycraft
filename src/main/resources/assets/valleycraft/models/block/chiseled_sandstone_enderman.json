@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "minecraft:block/sandstone_top",
+    "side": "valleycraft:block/chiseled_sandstone_enderman"
+  }
+}

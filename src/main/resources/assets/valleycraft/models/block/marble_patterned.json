@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "valleycraft:block/polished_marble",
+    "side": "valleycraft:block/marble_patterned"
+  }
+}
