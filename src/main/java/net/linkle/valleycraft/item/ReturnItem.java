@@ -1,41 +1,78 @@
 package net.linkle.valleycraft.item;
 
 import net.linkle.valleycraft.extension.ServerPlayerEntityExt;
+import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.network.ServerNetwork;
+import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
-import net.minecraft.util.UseAction;
+import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 
-public class ReturnItem extends PortalTotemBase {
+public class ReturnItem extends ModItem {
+    
+    public static final String WAYPOINT_NOT_SET = "text.valleycraft.waypoint.waypoint_not_set";
+    public static final String WAYPOINT_FAILED = "text.valleycraft.waypoint.waypoint_failed";
+    
     public ReturnItem(Settings settings) {
         super(settings);
     }
 
     @Override
-    public UseAction getUseAction(ItemStack stack, World world, LivingEntity user, Hand hand) {
-        ItemStack itemStack = super.finishUsing(stack, world, user);
-        if (!world.isClient) {
+    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+        PlayerEntity player = user instanceof PlayerEntity ? (PlayerEntity)user : null;
+        if (player instanceof ServerPlayerEntity serverPlayer) {
+            Criteria.CONSUME_ITEM.trigger(serverPlayer, stack);
+        }
 
-            if (user.hasVehicle()) {
-                user.stopRiding();
-            }
-
-            if (user instanceof PlayerEntity) {
-                ((PlayerEntity)user).getItemCooldownManager().set(this, 20);
-                BlockPos pos = ((ServerPlayerEntityExt)user).getWaypointPos();
-                if (pos != null) {
-                    user.teleport(pos.getX(), pos.getY()+1, pos.getZ(), true);
-                    world.emitGameEvent(user,GameEvent.TELEPORT, pos);
-                } else {
-                    user.sendMessage(Text.translatable("text.valleycraft.waypoint.waypoint_not_set"));
-                }
+        if (player != null) {
+            player.incrementStat(Stats.USED.getOrCreateStat(this));
+            if (!player.getAbilities().creativeMode) {
+                stack.decrement(1);
             }
         }
-        return UseAction.BLOCK;
+
+        return stack.isEmpty() ? ItemStack.EMPTY : stack;
+    }
+    
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        ItemStack stack = user.getStackInHand(hand);
+        if (!world.isClient) {
+            BlockPos pos = ((ServerPlayerEntityExt)user).getWaypointPos();
+            if (pos != null) {
+                
+                var block = world.getBlockState(pos);
+                if (block.isOf(ModBlocks.WAYPOINT.block)) {
+                    
+                }
+                
+                if (user.hasVehicle()) {
+                    user.stopRiding();
+                }
+                
+                pos = pos.up();
+                if (user.teleport(pos.getX(), pos.getY(), pos.getZ(), true)) {
+                    user.getItemCooldownManager().set(this, 20);
+                    ServerNetwork.sendFloatingItem((ServerPlayerEntity)user, stack);
+                    world.playSound(null, pos.getX()+0.5, user.getY()+0.5, user.getZ()+0.5, SoundEvents.BLOCK_PORTAL_TRAVEL, user.getSoundCategory(), 0.3f, 1f);
+                    world.emitGameEvent(GameEvent.TELEPORT, pos, GameEvent.Emitter.of(user));
+                    return TypedActionResult.consume(stack);
+                } else {
+                    user.sendMessage(Text.translatable("text.valleycraft.waypoint.waypoint_failed"));
+                }
+            } else {
+                user.sendMessage(Text.translatable("text.valleycraft.waypoint.waypoint_not_set"));
+            }
+        }
+        return TypedActionResult.fail(stack);
     }
 }

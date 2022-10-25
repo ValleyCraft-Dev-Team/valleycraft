@@ -13,13 +13,7 @@ public class ModMushroomBlock extends ModPlantBlock {
     }
     
     public ModMushroomBlock large() {
-        shape(Block.createCuboidShape(4, 0, 4, 12, 9, 12));
+        shape = Block.createCuboidShape(4, 0, 4, 12, 9, 12);
         return this;
     }
-
-    /** see ModPlantBlock class for info. 
-    @Override
-    public OffsetType getOffsetType() {
-        return OffsetType.XZ;
-    } */
 }

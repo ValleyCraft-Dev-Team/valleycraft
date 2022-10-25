@@ -2,7 +2,6 @@ package net.linkle.valleycraft.entity;
 
 import org.jetbrains.annotations.Nullable;
 
-import net.linkle.valleycraft.init.ModFishing;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityGroup;
 import net.minecraft.entity.EntityType;
@@ -19,7 +18,6 @@ import net.minecraft.entity.mob.Monster;
 import net.minecraft.entity.mob.WaterCreatureEntity;
 import net.minecraft.entity.passive.FishEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.tag.FluidTags;
@@ -45,7 +43,7 @@ public abstract class UndeadFishEntity extends FishEntity implements Monster {
     
     public boolean canZodTarget(@Nullable LivingEntity target) {
         if (target != null) {
-            return target.isTouchingWater() || !(target instanceof UndeadFishEntity);
+            return target.isTouchingWater() && !(target instanceof UndeadFishEntity);
         }
         return false;
     }

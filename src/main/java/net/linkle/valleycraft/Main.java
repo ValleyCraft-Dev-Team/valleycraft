@@ -9,6 +9,7 @@ import net.linkle.valleycraft.gen.feature.TreeConfigs;
 import net.linkle.valleycraft.gen.feature.VegetationPlaced;
 import net.linkle.valleycraft.gen.foliage.ModFoliagePlacerType;
 import net.linkle.valleycraft.init.*;
+import net.linkle.valleycraft.network.ServerNetwork;
 import net.linkle.valleycraft.tags.ModFluidTags;
 import net.linkle.valleycraft.villager.CustomTradeRegistry;
 import net.linkle.valleycraft.villager.ModVillagers;
@@ -51,6 +52,7 @@ public class Main implements ModInitializer {
 		ModPotions.initialize();
 		ModVillagers.registerVillagers();
 		CustomTradeRegistry.setupTrades();
+		ServerNetwork.initialize();
 	}
 	
 	public static Identifier makeId(String id) {

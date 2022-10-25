@@ -20,7 +20,7 @@ public class StalwartBlock extends ModPlantBlock {
     }
     
     public StalwartBlock large() {
-        shape(Block.createCuboidShape(4, 0, 4, 12, 9, 12));
+        shape = Block.createCuboidShape(4, 0, 4, 12, 9, 12);
         return this;
     }
 

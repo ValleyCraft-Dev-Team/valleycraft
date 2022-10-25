@@ -47,11 +47,6 @@ public abstract class PortalTotemBase extends Item {
         return 1;
     }
 
-    @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        return ItemUsage.consumeHeldItem(world, user, hand);
-    }
-
     protected void showFloatingItem(World world, LivingEntity user) {
         if (world.isClient) {
             var client = MinecraftClient.getInstance();
@@ -63,6 +58,4 @@ public abstract class PortalTotemBase extends Item {
             world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.BLOCK_PORTAL_TRAVEL, user.getSoundCategory(), 1, 1);
         }
     }
-
-    public abstract UseAction getUseAction(ItemStack stack, World world, LivingEntity user, Hand hand);
 }

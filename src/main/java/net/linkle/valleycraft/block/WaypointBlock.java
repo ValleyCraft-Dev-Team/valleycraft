@@ -2,8 +2,7 @@ package net.linkle.valleycraft.block;
 
 import net.linkle.valleycraft.block.entity.WaypointBlockEntity;
 import net.linkle.valleycraft.extension.ServerPlayerEntityExt;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockEntityProvider;
+import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.BlockWithEntity;
 import net.minecraft.block.entity.BlockEntity;
@@ -18,7 +17,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-public class WaypointBlock extends Block implements BlockEntityProvider {
+public class WaypointBlock extends BlockWithEntity {
     public WaypointBlock(Settings settings) {
         super(settings);
     }
@@ -37,6 +36,7 @@ public class WaypointBlock extends Block implements BlockEntityProvider {
         return ActionResult.success(world.isClient);
     }
 
+    @Override
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
         if (random.nextInt(5) == 0) {
             Direction direction = Direction.random(random);
@@ -57,5 +57,10 @@ public class WaypointBlock extends Block implements BlockEntityProvider {
                 }
             }
         }
+    }
+    
+    @Override
+    public BlockRenderType getRenderType(BlockState state) {
+        return BlockRenderType.MODEL;
     }
 }

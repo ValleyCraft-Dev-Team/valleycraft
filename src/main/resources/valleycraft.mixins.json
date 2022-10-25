@@ -6,7 +6,7 @@
   "mixins": [
     "FarmlandBlockMixin",
     "LivingEntityMixin",
-    "PlayerEntityMixin"
+    "ServerPlayerEntityMixin"
   ],
   "client": [
     

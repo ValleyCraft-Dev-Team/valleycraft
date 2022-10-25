@@ -107,7 +107,7 @@ public class ModEntityType {
         
         EntityRendererRegistry.register(ZOD, CodEntityRenderer.create("zod"));
         EntityRendererRegistry.register(ABYSSWATCHER, CodEntityRenderer.create("abysswatcher"));
-        EntityRendererRegistry.register(BONEFIN, CodEntityRenderer.create("bonefin"));
+        EntityRendererRegistry.register(BONEFIN, SalmonEntityRenderer.create("bonefin"));
         EntityRendererRegistry.register(STONETOSSER_MINNOW, CodEntityRenderer.create("minnow"));
         EntityRendererRegistry.register(PERCH, CodEntityRenderer.create("perch"));
         EntityRendererRegistry.register(RED_PORGY, CodEntityRenderer.create("red_porgy"));

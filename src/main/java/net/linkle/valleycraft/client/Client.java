@@ -8,6 +8,7 @@ import net.linkle.valleycraft.client.armor.Armors;
 import net.linkle.valleycraft.init.ModBlockEntityType;
 import net.linkle.valleycraft.init.ModEntityType;
 import net.linkle.valleycraft.init.ModParticles;
+import net.linkle.valleycraft.network.ClientNetwork;
 
 @Environment(EnvType.CLIENT)
 public class Client implements ClientModInitializer {
@@ -22,5 +23,6 @@ public class Client implements ClientModInitializer {
         FluidRenders.intialize();
         ModBlockEntityType.initializeClient();
         Armors.intialize();
+        ClientNetwork.initialize();
     }
 }
