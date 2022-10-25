@@ -8,17 +8,22 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
+/**
+ * Extension of the vanilla PlantBlock class with a few QOL utilities:
+ * - It uses the vanilla poppy's block settings by default, saving us from extra effort and clutter in NaturalBlocks.
+ * - It can use different VoxelShapes (hitbox shapes) depending on what we give it for each block.
+ */
+
 public class ModPlantBlock extends PlantBlock {
 
-    protected VoxelShape shape = Block.createCuboidShape(2, 0, 2, 14, 14, 14);
-    protected OffsetType offset = OffsetType.NONE;
+    protected VoxelShape shape;
 
     /** The ground whitelist for placing plant. */
     protected Predicate<BlockState> groundList = BlockPres.DIRT;
 
     public ModPlantBlock(VoxelShape shape) {
         this(Settings.copy(Blocks.POPPY).offsetType(OffsetType.NONE));
-        shape(shape);
+        this.shape = shape;
     }
     
     public ModPlantBlock(Settings settings) {
@@ -30,23 +35,11 @@ public class ModPlantBlock extends PlantBlock {
         groundList = predicate;
         return this;
     }
-    
-    /** Set shape size for this plant block. */
-    public ModPlantBlock shape(VoxelShape shape) {
-        this.shape = shape;
-        return this;
-    }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return shape;
     }
-    
-    /* The get offset is no longer exist in the block class. I don't know where they changed/moved it.
-    @Override
-    public OffsetType getOffsetType() {
-        return offset;
-    } */
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {

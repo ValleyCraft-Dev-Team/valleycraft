@@ -1,6 +1,8 @@
 package net.linkle.valleycraft.init;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
+import static net.linkle.valleycraft.util.Shapes.*;
+import static net.linkle.valleycraft.util.BlockPres.*;
 
 import java.util.function.BiFunction;
 
@@ -15,6 +17,7 @@ import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.block.sapling.WarmBirchSaplingGen;
 import net.linkle.valleycraft.util.*;
 import net.minecraft.block.*;
+import net.minecraft.block.AbstractBlock.OffsetType;
 import net.minecraft.item.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
@@ -24,45 +27,45 @@ import net.minecraft.util.shape.VoxelShape;
 
 public enum NaturalBlocks implements ItemEnum, BlockEnum {
 
-    BLACK_DAHLIA(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    FLOWERING_CACTUS(new OffsetPlantBlock(defaultPlantShape()).ground(BlockPres.ARID_DESERT_PLANTS), itemSettings()),
-    SMALL_CACTUS(new ModPlantBlock(defaultPlantShape()).ground(BlockPres.ARID_DESERT_PLANTS), itemSettings()),
-    TUMBLEWEED(new ModPlantBlock(tumbleweedShape()).ground(BlockPres.ARID_DESERT_PLANTS), itemSettings()),
-    THORNY_BUSH(new OffsetPlantBlock(defaultPlantShape()).ground(BlockPres.ARID_DESERT_PLANTS), itemSettings()),
-    FLUFFY_DANDELION(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    FOXTAIL_FERN(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    JUNGLE_BUSH(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    PANFLOWERS(new OffsetPlantBlock(flowerShape()), itemSettings()),
+    BLACK_DAHLIA(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    FLOWERING_CACTUS(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE).ground(ARID_DESERT_PLANTS), itemSettings()),
+    SMALL_CACTUS(new ModPlantBlock(DEFAULT_PLANT_SHAPE).ground(ARID_DESERT_PLANTS), itemSettings()),
+    TUMBLEWEED(new ModPlantBlock(TUMBLEWEED_SHAPE).ground(ARID_DESERT_PLANTS), itemSettings()),
+    THORNY_BUSH(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE).ground(ARID_DESERT_PLANTS), itemSettings()),
+    FLUFFY_DANDELION(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    FOXTAIL_FERN(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    JUNGLE_BUSH(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    PANFLOWERS(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
     
-    DRIED_SAPLING(new ModPlantBlock(defaultPlantShape()), itemSettings()),
+    DRIED_SAPLING(new ModPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
 
-    HONEYCLUSTER(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    LAVENDER(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    LEATHERLEAF_FERN(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    MOSS_SPROUTLET(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    ORANGE_BEAUTY(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    ORANGE_FERN(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    POISON_BLOSSOM(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    PURPLE_TULIP(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    YELLOW_TULIP(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    LIGHT_BLUE_TULIP(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    BLACK_TULIP(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    FROSTFERN(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    CLARET_LEAF(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    GODDESS_LILY(new OffsetPlantBlock(flowerShape()), itemSettings()),
+    HONEYCLUSTER(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    LAVENDER(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    LEATHERLEAF_FERN(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    MOSS_SPROUTLET(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    ORANGE_BEAUTY(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    ORANGE_FERN(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    POISON_BLOSSOM(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    PURPLE_TULIP(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    YELLOW_TULIP(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    LIGHT_BLUE_TULIP(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    BLACK_TULIP(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    FROSTFERN(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    CLARET_LEAF(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    GODDESS_LILY(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
     
-    KNAPWEED(new OffsetPlantBlock(flowerShape()).ground(BlockPres.ARID_DESERT_PLANTS), itemSettings()),
+    KNAPWEED(new OffsetPlantBlock(FLOWER_SHAPE).ground(ARID_DESERT_PLANTS), itemSettings()),
     
-    RED_LUPINE(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    YELLOW_LUPINE(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    PINK_LUPINE(new OffsetPlantBlock(flowerShape()), itemSettings()),
+    RED_LUPINE(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    YELLOW_LUPINE(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    PINK_LUPINE(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
     
-    ORANGE_POPPY(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    YELLOW_POPPY(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    WHITE_POPPY(new OffsetPlantBlock(flowerShape()), itemSettings()),
+    ORANGE_POPPY(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    YELLOW_POPPY(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    WHITE_POPPY(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
 
     TALL_LIVING_BUSH(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
-    TALL_DEAD_BUSH(new ModTallPlantBlock().ground(BlockPres.SAND), itemSettings(), TallBlockItem::new),
+    TALL_DEAD_BUSH(new ModTallPlantBlock().ground(SAND), itemSettings(), TallBlockItem::new),
     TALL_CORNFLOWER(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
     TALL_OXEYE_DAISY(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
     TALL_ALLIUM(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
@@ -86,25 +89,25 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     IRONSHROOM(new ModMushroomBlock().large(), itemSettings()),
     WARDING_SHROOM(new ModMushroomBlock().large(), itemSettings()),
 
-    SHORT_GRASS(new OffsetPlantBlock(shortGrassShape()), itemSettings()),
-    SNOWFLOWER(new OffsetPlantBlock(flowerShape()), itemSettings()),
-    SPROUT(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    WEEPING_GHOST_WILLOW(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    MEADOW_FLOWERS(new OffsetPlantBlock(shortFlowerShape()), itemSettings()),
+    SHORT_GRASS(new OffsetPlantBlock(SHORT_GRASS_SHAPE), itemSettings()),
+    SNOWFLOWER(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    SPROUT(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WEEPING_GHOST_WILLOW(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    MEADOW_FLOWERS(new OffsetPlantBlock(SHORT_FLOWER_SHAPE), itemSettings()),
 
-    WILD_WHEAT(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    WILD_POTATO(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    WILD_CARROT(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    WILD_BEET(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
+    WILD_WHEAT(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_POTATO(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_CARROT(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_BEET(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
 
-    WILD_MINERS_LETTUCE(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    WILD_FIRE_PEPPER(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    WILD_RICE(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    WILD_AMETHYSTLE(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    WILD_CAVE_ROOT(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    WILD_ONION(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    WILD_HERBS(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    WILD_PUFF_BALL(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
+    WILD_MINERS_LETTUCE(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_FIRE_PEPPER(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_RICE(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_AMETHYSTLE(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_CAVE_ROOT(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_ONION(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_HERBS(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_PUFF_BALL(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
 
     MAIZE(new MaizeBlock()),
     MAIZE_BOX(new MaizeBoxBlock()),
@@ -116,20 +119,20 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     CAVE_ROOT_CROP(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 10/16f)),
     ANCIENT_FLOWERS(new MultiCropBlock(MultiCropBlock.settings()).genSize(2, 12/16f)),
     AMETHYSTLES(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 12/16f)),
-    ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(BlockPres.ARID_DESERT_PLANTS).AloeShape()),
+    ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(ARID_DESERT_PLANTS).AloeShape()),
     GLOOM_BERRY(new GloomBerryHeadBlock()),
     GLOOM_BERRY_PLANT(new GloomBerryBodyBlock()),
 
-    CAVE_ROOTS(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    BONE_WEED(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    DESERT_SHRUB(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    BUSH(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
-    LARGE_BUSH(new ModPlantBlock(defaultPlantShape()), itemSettings()),
-    LUSH_BUSH(new OffsetPlantBlock(defaultPlantShape()), itemSettings()),
+    CAVE_ROOTS(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    BONE_WEED(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    DESERT_SHRUB(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    BUSH(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    LARGE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    LUSH_BUSH(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
 
     RUSHES(new RushBlock(Block.Settings.copy(Blocks.SUGAR_CANE).nonOpaque().breakInstantly().noCollision()), itemSettings()),
 
-    BIG_FERN(new ModPlantBlock(defaultPlantShape()), itemSettings()),
+    BIG_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
     SMALLEST_LILYPADS(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),
     SMALL_LILYPADS(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),
     SMALL_LILYPAD(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),
@@ -247,16 +250,16 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     BRIMSTONE_CRYSTAL(new BrimstoneCrystalClusterBlock(7,3, FabricBlockSettings.copyOf(Blocks.AMETHYST_CLUSTER).nonOpaque().luminance(s -> 8)), itemSettings()),
 
     //soul blocks
-    FADED_SOUL_ROSE(new FadedSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque()), itemSettings()),
-    SOUL_ROSE(new RegSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque().luminance(s -> 3)), itemSettings().rarity(Rarity.UNCOMMON)),
-    BLUE_SOUL_ROSE(new BlueSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque().luminance(s -> 6)), itemSettings().rarity(Rarity.RARE)),
-    SOULSPORE_SINGLE(new GreenSoulsporeBlockSmall(Block.Settings.copy(Blocks.RED_MUSHROOM).ticksRandomly().nonOpaque().luminance(s -> 3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.UNCOMMON)),
-    SOULSPORE(new GreenSoulsporeBlockLarge(Block.Settings.copy(Blocks.RED_MUSHROOM).ticksRandomly().nonOpaque().luminance(s -> 3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.UNCOMMON)),
-    BLUE_SOULSPORE_SINGLE(new BlueSoulsporeBlockSmall(Block.Settings.copy(Blocks.RED_MUSHROOM).ticksRandomly().nonOpaque().luminance(s -> 6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.RARE)),
-    BLUE_SOULSPORE(new BlueSoulsporeBlockLarge(Block.Settings.copy(Blocks.CRIMSON_FUNGUS).ticksRandomly().nonOpaque().luminance(s -> 6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.RARE)),
-    FADED_CELESTIAL(new FadedSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque()), itemSettings()),
-    SOUL_CELESTIAL(new RegSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque().luminance(s -> 3)), itemSettings().rarity(Rarity.UNCOMMON)),
-    BLUE_SOUL_CELESTIAL(new BlueSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(WitherRoseBlock.OffsetType.NONE).nonOpaque().luminance(s -> 6)), itemSettings().rarity(Rarity.RARE));
+    FADED_SOUL_ROSE(new FadedSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(OffsetType.NONE).nonOpaque()), itemSettings()),
+    SOUL_ROSE(new RegSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(OffsetType.NONE).nonOpaque().luminance(s -> 3)), itemSettings().rarity(Rarity.UNCOMMON)),
+    BLUE_SOUL_ROSE(new BlueSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(OffsetType.NONE).nonOpaque().luminance(s -> 6)), itemSettings().rarity(Rarity.RARE)),
+    SOULSPORE_SINGLE(new GreenSoulsporeBlockSmall(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.UNCOMMON)),
+    SOULSPORE(new GreenSoulsporeBlockLarge(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.UNCOMMON)),
+    BLUE_SOULSPORE_SINGLE(new BlueSoulsporeBlockSmall(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.RARE)),
+    BLUE_SOULSPORE(new BlueSoulsporeBlockLarge(Block.Settings.copy(Blocks.CRIMSON_FUNGUS).nonOpaque().luminance(s -> 6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.RARE)),
+    FADED_CELESTIAL(new FadedSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(OffsetType.NONE).nonOpaque()), itemSettings()),
+    SOUL_CELESTIAL(new RegSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(OffsetType.NONE).nonOpaque().luminance(s -> 3)), itemSettings().rarity(Rarity.UNCOMMON)),
+    BLUE_SOUL_CELESTIAL(new BlueSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).offsetType(OffsetType.NONE).nonOpaque().luminance(s -> 6)), itemSettings().rarity(Rarity.RARE));
 
     //ROOTED_WATCHER(new ModPlantBlock()),
     //WARDING_SHROOM(new ModPlantBlock()),
@@ -271,28 +274,6 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
 
     private static FabricItemSettings itemSettings() {
         return new FabricItemSettings().group(ModGroups.FLORA_GROUP);
-    }
-    
-    // VoxelShapes used by various plant blocks
-    
-    public static VoxelShape defaultPlantShape() {
-        return Block.createCuboidShape(2, 0, 2, 14, 14, 14);
-    }
-
-    public static VoxelShape tumbleweedShape() {
-        return Block.createCuboidShape(2.0D, 0.0D, 2.0D, 14.0D, 14.0D, 14.0D);
-    }
-
-    public static VoxelShape shortGrassShape() {
-        return Block.createCuboidShape(2, 0, 2, 14, 7, 14);
-    }
-    
-    public static VoxelShape flowerShape() {
-        return Block.createCuboidShape(5, 0, 5, 11, 10, 11);
-    }
-
-    public static VoxelShape shortFlowerShape() {
-        return Block.createCuboidShape(2, 0, 2, 14, 2, 14);
     }
     
     // ### The Enum Class Itself ###
