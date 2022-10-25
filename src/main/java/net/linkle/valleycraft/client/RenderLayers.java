@@ -39,6 +39,13 @@ class RenderLayers {
         put(FLUFFY_DANDELION, cullout);
         put(POTTED_FLUFFY_DANDELION, cullout);
         put(FADED_SOUL_ROSE, cullout);
+        put(SOUL_ROSE, cullout);
+        put(BLUE_SOUL_ROSE, cullout);
+        put(BLUE_SOULSPORE, cullout);
+        put(BLUE_SOULSPORE_SINGLE, cullout);
+        put(BLUE_SOUL_CELESTIAL, cullout);
+        put(SOUL_CELESTIAL, cullout);
+        put(FADED_CELESTIAL, cullout);
         put(POTTED_FADED_SOUL_ROSE, cullout);
         put(HONEYCLUSTER, cullout);
         put(POTTED_HONEYCLUSTER, cullout);

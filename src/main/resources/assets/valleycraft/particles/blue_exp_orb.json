@@ -1,5 +1,9 @@
 {
   "textures": [
-    "vallecraft:exp_orb_blue"
+    "valleycraft:exp_orb_blue_4",
+    "valleycraft:exp_orb_blue_3",
+    "valleycraft:exp_orb_blue_2",
+    "valleycraft:exp_orb_blue_1",
+    "valleycraft:exp_orb_blue_0"
   ]
 }

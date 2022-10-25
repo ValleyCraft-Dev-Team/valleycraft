@@ -2,7 +2,6 @@ package net.linkle.valleycraft.block;
 
 import net.linkle.valleycraft.init.ModParticles;
 import net.minecraft.block.*;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
@@ -10,10 +9,10 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class RegSoulRoseBlock extends PlantBlock {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 10.0D, 11.0D);
+public class GreenSoulsporeBlockSmall extends PlantBlock {
+    protected static final VoxelShape SHAPE = Block.createCuboidShape(4, 0, 4, 12, 9, 12);
 
-    public RegSoulRoseBlock(Settings settings) {
+    public GreenSoulsporeBlockSmall(Settings settings) {
         super(settings);
     }
 

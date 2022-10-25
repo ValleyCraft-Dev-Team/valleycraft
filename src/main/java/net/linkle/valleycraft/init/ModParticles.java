@@ -6,10 +6,10 @@ import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry.PendingParticleFactory;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.client.particle.BlueExpOrbParticle;
+import net.linkle.valleycraft.client.particle.SoulSmokeParticle;
 import net.linkle.valleycraft.client.particle.WaterSprinkleParticle.SprinkleFactory;
-import net.linkle.valleycraft.client.particle.GreenExpOrbParticle.GreenExpFactory;
-import net.linkle.valleycraft.client.particle.BlueExpOrbParticle.BlueExpFactory;
+import net.minecraft.client.particle.ExplosionSmokeParticle;
+import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleType;
@@ -23,6 +23,7 @@ public class ModParticles {
 
     public static void initialize() {
         register("sprinkle", SPRINKLE);
+        //these should render & animate like the small smoke particles seen on withered roses
         register("green_exp_orb", GREEN_EXP_ORB);
         register("blue_exp_orb", BLUE_EXP_ORB);
 
@@ -31,8 +32,8 @@ public class ModParticles {
     @Environment(EnvType.CLIENT)
     public static void initializeClient() {
         register(SPRINKLE, SprinkleFactory::new);
-        register(GREEN_EXP_ORB, GreenExpFactory::new);
-        register(BLUE_EXP_ORB, BlueExpFactory::new);
+        register(GREEN_EXP_ORB, SoulSmokeParticle.Factory::new);
+        register(BLUE_EXP_ORB, SoulSmokeParticle.Factory::new);
 
     }
 

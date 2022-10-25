@@ -1,26 +1,18 @@
 package net.linkle.valleycraft.block;
 
-import net.linkle.valleycraft.effect.ModEffects;
+import net.linkle.valleycraft.init.ModParticles;
 import net.minecraft.block.*;
-
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 
-public class FadedSoulRoseBlock extends PlantBlock {
+public class BlueSoulRoseBlock extends PlantBlock {
     protected static final VoxelShape SHAPE = Block.createCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 10.0D, 11.0D);
 
-    public FadedSoulRoseBlock(Settings settings) {
+    public BlueSoulRoseBlock(Settings settings) {
         super(settings);
     }
 
@@ -40,21 +32,9 @@ public class FadedSoulRoseBlock extends PlantBlock {
 
         for(int i = 0; i < 3; ++i) {
             if (random.nextBoolean()) {
-                world.addParticle(ParticleTypes.SMOKE, d + random.nextDouble() / 5.0D, (double)pos.getY() + (0.5D - random.nextDouble()), e + random.nextDouble() / 5.0D, 0.0D, 0.0D, 0.0D);
+                world.addParticle(ModParticles.BLUE_EXP_ORB, d + random.nextDouble() / 5.0D, (double)pos.getY() + (0.5D - random.nextDouble()), e + random.nextDouble() / 5.0D, 0.0D, 0.0D, 0.0D);
             }
         }
 
-    }
-
-    public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        if (!world.isClient && world.getDifficulty() != Difficulty.PEACEFUL) {
-            if (entity instanceof LivingEntity) {
-                LivingEntity livingEntity = (LivingEntity)entity;
-                if (!livingEntity.isInvulnerableTo(DamageSource.MAGIC)) {
-                    livingEntity.addStatusEffect(new StatusEffectInstance(ModEffects.SOUL_FADING, 40));
-                }
-            }
-
-        }
     }
 }
