@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "valleycraft:block/erdstone_bricks",
+    "end": "valleycraft:block/polished_erdstone",
     "side": "valleycraft:block/erdstone_chiseled_two"
   }
 }

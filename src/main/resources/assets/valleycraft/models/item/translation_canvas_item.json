@@ -1,6 +1,3 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "valleycraft:item/special/translation_canvas"
-  }
+  "parent": "valleycraft:block/translation_canvas"
 }

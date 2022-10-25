@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "valleycraft:block/hardened_erdstone_bricks"
+    "all": "valleycraft:block/chiseled_cobblestone_bricks"
   }
 }
