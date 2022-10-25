@@ -94,7 +94,7 @@ public enum ModArmors implements ItemEnum {
     TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
     DIVING_HELMET(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.HEAD, settingsNormal())),
-    DIVING_TUNIC(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.CHEST, settingsNormal())),
+    DIVING_CHESTPLATE(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.CHEST, settingsNormal())),
     DIVING_LEGGINGS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.LEGS, settingsNormal())),
     DIVING_BOOTS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.FEET, settingsNormal())),
 

@@ -6,6 +6,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.event.client.ClientSpriteRegistryCallback;
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.client.block.entity.AllayLanternRenderer;
 import net.linkle.valleycraft.client.block.entity.WispLanternRenderer;
 import net.minecraft.client.texture.SpriteAtlasTexture;
 import net.minecraft.client.util.SpriteIdentifier;
@@ -27,6 +28,7 @@ public class Sprites {
         ClientSpriteRegistryCallback.event(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE).register((atlas, registry) -> TEXS.forEach(registry::register));
 
         register(WispLanternRenderer.VEX_TEXTURE);
+        register(AllayLanternRenderer.ALLAY_TEXTURE);
     }
 
     /**

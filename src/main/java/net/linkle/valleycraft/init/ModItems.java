@@ -67,6 +67,7 @@ public enum ModItems implements ItemEnum {
     BIG_BOTTLE(new Item(itemSettings())),
     BB_SNAIL(new Item(itemSettings().maxCount(16))),
     BB_CAVE_SNAIL(new Item(itemSettings().maxCount(16))),
+    BB_SCULK_SNAIL(new Item(itemSettings().maxCount(16))),
     BB_RHINO_BEETLE(new Item(itemSettings().maxCount(16))),
 
     SLUDGE_BUCKET(new BucketItem(ModFluids.SLUDGE_STILL.fluid, itemSettings().maxCount(1))),

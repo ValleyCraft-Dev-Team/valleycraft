@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "valleycraft:block/tinted_glass_door_top",
+    "bottom": "valleycraft:block/tinted_glass_door_bottom"
+  }
+}

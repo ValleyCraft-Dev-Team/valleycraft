@@ -40,7 +40,7 @@ public class FadedSoulRoseBlock extends PlantBlock {
 
         for(int i = 0; i < 3; ++i) {
             if (random.nextBoolean()) {
-                world.addParticle(ParticleTypes.SMOKE, d + random.nextDouble() / 5.0D, (double)pos.getY() + (0.5D - random.nextDouble()), e + random.nextDouble() / 5.0D, 0.0D, 0.0D, 0.0D);
+                world.addParticle(ParticleTypes.SMOKE, 0, (double)pos.getY() + (0.5D - random.nextDouble()), 0, 0.0D, 0.0D, 0.0D);
             }
         }
 

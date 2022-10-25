@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/fish_buckets/bucket_of_red_porgy"
+  }
+}

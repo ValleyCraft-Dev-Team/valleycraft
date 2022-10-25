@@ -21,7 +21,7 @@ public class SoulSmokeParticle extends SpriteBillboardParticle {
         this.red = f;
         this.green = f;
         this.blue = f;
-        this.scale = 0.1F;
+        this.scale = 0.075F;
         this.maxAge = (int)(16.0D / ((double)this.random.nextFloat() * 0.8D + 0.2D)) + 2;
         this.setSpriteForAge(spriteProvider);
     }

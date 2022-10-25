@@ -32,6 +32,8 @@ class RenderLayers {
         put(MAMON_TRAPDOOR, cullout);
         put(WATTLE_DOOR, cullout);
         put(WATTLE_TRAPDOOR, cullout);
+        put(GLASS_DOOR, cullout);
+        put(TINTED_GLASS_DOOR, cullout);
 
         // Flowers and Potted Flowers
         put(BLACK_DAHLIA, cullout);
@@ -208,6 +210,8 @@ class RenderLayers {
         put(GOLDEN_BARS, cullout);
         put(OPTIC_GLASS, cullout);
         put(VEX_LANTERN, cullout);
+        put(ALLAY_LANTERN, cullout);
+
         put(ANCIENT_WAGON_WHEEL, cullout);
         put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);
         put(ANCIENT_WAGON_WHEEL_TABLE, cullout);
@@ -307,6 +311,25 @@ class RenderLayers {
         put(DEEPSLATE_ICE_ORE, translucent);
         put(ICICLE, cullout);
         put(ICICLE_PACKED_ICE, translucent);
+
+        put(COBBLESTONE_BRICK_CHIMNEY, cullout);
+        put(COBBLESTONE_CHIMNEY, cullout);
+        put(INDUSTRIAL_CHIMNEY, cullout);
+        put(STONE_BRICK_CHIMNEY, cullout);
+        put(BRICK_CHIMNEY, cullout);
+        put(MUD_BRICK_CHIMNEY, cullout);
+        put(ERDCOBBLESTONE_CHIMNEY, cullout);
+        put(ERDSTONE_BRICK_CHIMNEY, cullout);
+        put(SANDSTONE_CHIMNEY, cullout);
+        put(RED_SANDSTONE_CHIMNEY, cullout);
+        put(CARMINE_COBBLESTONE_CHIMNEY, cullout);
+        put(DRIPSTONE_BRICK_CHIMNEY, cullout);
+        put(DRIPSTONE_TILE_CHIMNEY, cullout);
+        put(DEEPSLATE_TILE_CHIMNEY, cullout);
+        put(DEEPSLATE_BRICK_CHIMNEY, cullout);
+        put(NETHER_BRICK_CHIMNEY, cullout);
+        put(RED_NETHER_BRICK_CHIMNEY, cullout);
+
     }
 
     /**
