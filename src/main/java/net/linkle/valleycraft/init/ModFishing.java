@@ -20,7 +20,7 @@ public enum ModFishing implements ItemEnum {
     PERCH_BUCKET(new EntityBucketItem(ModEntityType.PERCH, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1))),
 
     ZOD_BUCKET(new EntityBucketItem(ModEntityType.ZOD, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1))),
-    BONEFIN_BUCKET(new EntityBucketItem(ModEntityType.BONEFIN, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1))),
+    BONEFIN_BUCKET(new EntityBucketItem(ModEntityType.BONEFIN, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1)));
 
     public static void initialize() {
         //raw items are registered in IngredientFoodItems

@@ -39,17 +39,24 @@ public enum RegularFoodItems implements ItemEnum {
     COOKED_RICE(new FoodItem(settings(), 4, 0.6f)),
     COOKED_CAVE_ROOT(new FoodItem(settings(), 5, 0.6f)),
 
+    COOKED_TROPICAL_FISH(new FoodItem(settings(), 4, 0.6f)),
+    COOKED_ABYSSWATCHER(new FoodItem(settings(), 6, 0.7f)),
+    COOKED_STONETOSSER_MINNOW(new FoodItem(settings(), 3, 0.4f)),
+    COOKED_RED_PORGY(new FoodItem(settings(), 4, 0.6f)),
+    COOKED_PERCH(new FoodItem(settings(), 4, 0.6f)),
+    COOKED_CLAM(new FoodItem(settings(), 4, 0.3f)),
+    COOKED_SEA_URCHIN(new FoodItem(settings(), 6, 0.6f)),
     COOKED_SQUID(new FoodItem(settings(), 4, 0.6f)),
+
     COOKED_SILVERFISH(new FoodItem(settings(), 3, 0.6f)),
     COOKED_PHANTOM(new FoodItem(settings(), 6, 0.6f)),
     COOKED_BIRD(new FoodItem(settings(), 4, 0.6f)),
     COOKED_BACON(new FoodItem(settings(), 4, 0.6f)),
     COOKED_BAT(new FoodItem(settings(), 5, 0.6f, true)),
     FRIED_EGG(new FoodItem(settings(), 4, 0.6f)),
-    COOKED_ROTTEN_FLESH(new FoodItem(settings(), 6, 0.4f,true)),
-    COOKED_TROPICAL_FISH(new FoodItem(settings(), 4, 0.6f)),
     COOKED_BEAST_LIVER(new FoodItem(settings(), 8, 0.8f, true)),
     COOKED_BEAST_HEART(new FoodItem(settings(), 10, 1f, true)),
+    COOKED_ROTTEN_FLESH(new FoodItem(settings(), 6, 0.4f,true)),
 
     // pastries
     CAKE_SLICE(new FoodItem(settings(), 2, 0.1f)),
@@ -74,14 +81,20 @@ public enum RegularFoodItems implements ItemEnum {
 
     // no tier items
     CAVE_ROOT_STIR_FRY(new BowlItem(settings(), 10, 0.6f)),
-    STIR_FRIED_MONSTER_GUTS(new BowlItem(settings(), 8, 3.8f)),
-    MONSTER_STEW(new BowlItem(settings(), 6, 5.8f)),
+    STIR_FRIED_MONSTER_GUTS(new BowlItem(settings(), 8, 0.4f)),
+    MONSTER_STEW(new BowlItem(settings(), 6, 0.4f)),
+
+    KELP_SALAD(new BowlItem(settings(), 4, 0.5f)),
+    BROWN_MUSHROOM_SALAD(new BowlItem(settings(), 4, 0.5f)),
+    ORANGE_MUSHROOM_SALAD(new BowlItem(settings(), 4, 0.5f)),
+    RED_MUSHROOM_SALAD(new BowlItem(settings(), 4, 0.5f)),
 
     FRUIT_MIX(new BowlItem(settings(), 6, 0.6f)),
     VEGETABLE_MIX(new BowlItem(settings(), 6, 0.6f)),
-    SAVORY_BREAKFAST(new BowlItem(settings(), 9, 5.6f)),
-    HEARTY_BREAKFAST(new BowlItem(settings(), 10, 5.8f)),
-    SAUTEED_EYES_AND_MUSHROOMS(new FoodItem(settings(), 8, 7.8f)),
+    SAVORY_BREAKFAST(new BowlItem(settings(), 9, 0.6f)),
+    HEARTY_BREAKFAST(new BowlItem(settings(), 10, 0.8f)),
+    SAUTEED_EYES_AND_MUSHROOMS(new FoodItem(settings(), 8, 0.8f)),
+    SEA_URCHIN_CHOWDER(new FoodItem(settings(), 8, 0.8f)),
 
     MAGMA_CREME_SOUP(new BowlItem(settings(), 7, 0.6f)),
     SLIME_SOUP(new BowlItem(settings(), 5, 0.6f)),

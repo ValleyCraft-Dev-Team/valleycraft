@@ -52,23 +52,27 @@ public enum IngredientFoodItems implements ItemEnum {
     
     PUMPKIN_SLICE(new FoodItem(settings(), 2, 0.4f)),
     GHOST_PUMPKIN_SLICE(new FoodItem(settings(), 2, 0.4f)),
-    MONSTER_GUTS(new Tier1Normal(settings(), 6, 0.3f, StatusEffects.HUNGER)),
-    INFECTED_MONSTER_LIVER(new Tier1Normal(settings(), 3, 0.4f, StatusEffects.POISON)),
-    ZOD(new Tier1Normal(settings().group(ModGroups.INGREDIENTS), 5, 2, StatusEffects.HUNGER)),
     
-    RAW_BAT_WING(new FoodItem(settings(), 2, 0.1f)),
-    RAW_SILVERFISH(new FoodItem(settings(), 1, 0.1f)),
-    RAW_PHANTOM_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.NAUSEA)),
-    
-    RAW_GLOWSQUID_TENTACLE(new FoodItem(settings(), 2, 0.2f)
-    .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_4")),
-    
+    RAW_ABYSSWATCHER(new FoodItem(settings(), 3, 0.5f)),
+    RAW_STONETOSSER_MINNOW(new FoodItem(settings(), 1, 0.2f)),
+    RAW_RED_PORGY(new FoodItem(settings(), 2, 0.5f)),
+    RAW_PERCH(new FoodItem(settings(), 2, 0.4f)),
+
     RAW_SQUID_TENTACLE(new FoodItem(settings(), 2, 0.3f)),
+    RAW_GLOWSQUID_TENTACLE(new FoodItem(settings(), 2, 0.2f)
+            .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_4")),
+
     RAW_BACON(new FoodItem(settings(), 2, 0.2f)),
     
     RAW_BIRD_THIGH(new FoodItem(settings(), 2, 0.2f)),
     RAW_BEAST_LIVER(new FoodItem(settings(), 4, 0.4f, true)),
     RAW_BEAST_HEART(new FoodItem(settings(), 6, 0.4f, true)),
+    RAW_BAT_WING(new FoodItem(settings(), 2, 0.1f)),
+    RAW_SILVERFISH(new FoodItem(settings(), 1, 0.1f)),
+    RAW_PHANTOM_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.NAUSEA)),
+    MONSTER_GUTS(new Tier1Normal(settings(), 6, 0.3f, StatusEffects.HUNGER)),
+    INFECTED_MONSTER_LIVER(new Tier1Normal(settings(), 3, 0.4f, StatusEffects.POISON)),
+    ZOD(new Tier1Normal(settings().group(ModGroups.INGREDIENTS), 5, 2, StatusEffects.HUNGER)),
 
     HARDTACK_DOUGH(new FoodItem(settings(), 1, 0.2f)),
     BREAD_DOUGH(new FoodItem(settings(), 3, 0.2f)),
