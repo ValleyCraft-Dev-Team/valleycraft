@@ -22,8 +22,6 @@ public enum ModFishing implements ItemEnum {
     ZOD_BUCKET(new EntityBucketItem(ModEntityType.ZOD, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1))),
     BONEFIN_BUCKET(new EntityBucketItem(ModEntityType.BONEFIN, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1))),
 
-    SLIME_BUCKET(new EntityBucketItem(SLIME, null, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1)));
-
     public static void initialize() {
         //raw items are registered in IngredientFoodItems
         //cooked items are fully registered in RegularFoodItems or TieredFoodItems
