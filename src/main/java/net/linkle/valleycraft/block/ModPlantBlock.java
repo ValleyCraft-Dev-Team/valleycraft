@@ -10,7 +10,7 @@ import net.minecraft.world.BlockView;
 
 public class ModPlantBlock extends PlantBlock {
 
-    protected VoxelShape shape = Block.createCuboidShape(2, 0, 2, 14, 14, 14);
+    protected VoxelShape shape;
     protected OffsetType offset = OffsetType.NONE;
 
     /** The ground whitelist for placing plant. */
@@ -31,7 +31,7 @@ public class ModPlantBlock extends PlantBlock {
         return this;
     }
     
-    /** Set shape size for this plant block. */
+    /** Set the VoxelShape (hitbox shape shown when looking at the block) for this plant block. */
     public ModPlantBlock shape(VoxelShape shape) {
         this.shape = shape;
         return this;
@@ -41,12 +41,6 @@ public class ModPlantBlock extends PlantBlock {
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return shape;
     }
-    
-    /* The get offset is no longer exist in the block class. I don't know where they changed/moved it.
-    @Override
-    public OffsetType getOffsetType() {
-        return offset;
-    } */
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
