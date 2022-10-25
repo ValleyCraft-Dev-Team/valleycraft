@@ -19,14 +19,12 @@ import net.minecraft.util.registry.Registry;
 public class ModBlockEntityType {
 
     public static BlockEntityType<WispLanternBlockEntity> WISP_LANTERN;
-    public static BlockEntityType<AllayLanternBlockEntity> ALLAY_LANTERN;
     public static BlockEntityType<CrateBlockEntity> CRATE;
     public static BlockEntityType<StoveBlockEntity> STOVE;
     public static BlockEntityType<WaypointBlockEntity> WAYPOINT_ENTITY;
 
     public static void initialize() {
-        WISP_LANTERN = create("wisp_lantern", WispLanternBlockEntity::new, ModBlocks.VEX_LANTERN);
-        ALLAY_LANTERN = create("allay_lantern", AllayLanternBlockEntity::new, ModBlocks.ALLAY_LANTERN);
+        WISP_LANTERN = create("wisp_lantern", WispLanternBlockEntity::new, ModBlocks.VEX_LANTERN, ModBlocks.ALLAY_LANTERN);
         CRATE = create("crate", CrateBlockEntity::new, ModBlocks.CRATE);
         STOVE = create("stove", StoveBlockEntity::new, ModBlocks.STOVE);
         WAYPOINT_ENTITY = create("waypoint", WaypointBlockEntity::new, ModBlocks.WAYPOINT);

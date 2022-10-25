@@ -18,10 +18,14 @@ import net.linkle.valleycraft.block.sapling.WarmBirchSaplingGen;
 import net.linkle.valleycraft.util.*;
 import net.minecraft.block.*;
 import net.minecraft.block.AbstractBlock.OffsetType;
+import net.minecraft.client.particle.Particle;
 import net.minecraft.item.*;
+import net.minecraft.particle.ParticleType;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.shape.VoxelShape;
 
@@ -250,16 +254,16 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     BRIMSTONE_CRYSTAL(new BrimstoneCrystalClusterBlock(7,3, FabricBlockSettings.copyOf(Blocks.AMETHYST_CLUSTER).nonOpaque().luminance(s -> 8)), itemSettings()),
 
     //soul blocks
-    FADED_SOUL_ROSE(new FadedSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).ticksRandomly().offsetType(OffsetType.NONE).nonOpaque()), itemSettings()),
-    SOUL_ROSE(new RegSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).ticksRandomly().offsetType(OffsetType.NONE).nonOpaque().luminance(s -> 3)), itemSettings().rarity(Rarity.UNCOMMON)),
-    BLUE_SOUL_ROSE(new BlueSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).ticksRandomly().offsetType(OffsetType.NONE).nonOpaque().luminance(s -> 6)), itemSettings().rarity(Rarity.RARE)),
-    SOULSPORE_SINGLE(new GreenSoulsporeBlockSmall(Block.Settings.copy(Blocks.RED_MUSHROOM).ticksRandomly().nonOpaque().luminance(s -> 3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.UNCOMMON)),
-    SOULSPORE(new GreenSoulsporeBlockLarge(Block.Settings.copy(Blocks.RED_MUSHROOM).ticksRandomly().nonOpaque().luminance(s -> 3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.UNCOMMON)),
-    BLUE_SOULSPORE_SINGLE(new BlueSoulsporeBlockSmall(Block.Settings.copy(Blocks.RED_MUSHROOM).ticksRandomly().nonOpaque().luminance(s -> 6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.RARE)),
-    BLUE_SOULSPORE(new BlueSoulsporeBlockLarge(Block.Settings.copy(Blocks.CRIMSON_FUNGUS).ticksRandomly().nonOpaque().luminance(s -> 6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)), itemSettings().rarity(Rarity.RARE)),
-    FADED_CELESTIAL(new FadedSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).ticksRandomly().offsetType(OffsetType.NONE).nonOpaque()), itemSettings()),
-    SOUL_CELESTIAL(new RegSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).ticksRandomly().offsetType(OffsetType.NONE).nonOpaque().luminance(s -> 3)), itemSettings().rarity(Rarity.UNCOMMON)),
-    BLUE_SOUL_CELESTIAL(new BlueSoulRoseBlock(Block.Settings.copy(Blocks.WITHER_ROSE).ticksRandomly().offsetType(OffsetType.NONE).nonOpaque().luminance(s -> 6)), itemSettings().rarity(Rarity.RARE));
+    FADED_SOUL_ROSE(new FadedSoulRoseBlock(SoulPlantBlock.settings(0)), itemSettings()),
+    SOUL_ROSE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3)), itemSettings().rarity(Rarity.UNCOMMON)),
+    BLUE_SOUL_ROSE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6)), itemSettings().rarity(Rarity.RARE)),
+    SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).smallShape(), itemSettings().rarity(Rarity.UNCOMMON)),
+    SOULSPORE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).largeShape(), itemSettings().rarity(Rarity.UNCOMMON)),
+    BLUE_SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).smallShape(), itemSettings().rarity(Rarity.RARE)),
+    BLUE_SOULSPORE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).largeShape(), itemSettings().rarity(Rarity.RARE)),
+    FADED_CELESTIAL(new SoulPlantBlock(ParticleTypes.SMOKE, SoulPlantBlock.settings(0)), itemSettings()),
+    SOUL_CELESTIAL(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3)), itemSettings().rarity(Rarity.UNCOMMON)),
+    BLUE_SOUL_CELESTIAL(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6)), itemSettings().rarity(Rarity.RARE));
 
     //ROOTED_WATCHER(new ModPlantBlock()),
     //WARDING_SHROOM(new ModPlantBlock()),

@@ -5,6 +5,7 @@ import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.block.entity.WispLanternBlockEntity;
 import net.linkle.valleycraft.client.Sprites;
 import net.linkle.valleycraft.client.renderer.BillboardRenderer;
+import net.linkle.valleycraft.init.ModBlocks;
 import net.minecraft.block.LanternBlock;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumerProvider;
@@ -16,7 +17,8 @@ import net.minecraft.util.math.MathHelper;
 
 @Environment(EnvType.CLIENT)
 public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlockEntity> {
-    public static final SpriteIdentifier VEX_TEXTURE = Sprites.create("entity/sprites/vex_jar");
+    public static final SpriteIdentifier VEX_TEXTURE  = Sprites.create("entity/sprites/vex_jar");
+    public static final SpriteIdentifier ALLAY_TEXTURE = Sprites.create("entity/sprites/allay_jar");
     
     private final BillboardRenderer billboard = new BillboardRenderer();
 
@@ -33,6 +35,11 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
     @Override
     public void render(WispLanternBlockEntity entity, float delta, MatrixStack matrix, VertexConsumerProvider provider, int light, int overlay) {
         float val = entity.ticks + delta;
+        var texture = VEX_TEXTURE;
+        
+        if (entity.getCachedState().isOf(ModBlocks.ALLAY_LANTERN.block)) {
+            texture = ALLAY_TEXTURE;
+        }
         
         // Parameters
         double bobblingSpeed = 0.095;
@@ -50,7 +57,7 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
         float sin = val * shakeLength;
         roll = MathHelper.sin(val*shakeSpeed) * shakeStrength;
         roll = sin > MathHelper.PI ? 0 : roll*MathHelper.sin(sin);
-        var consumer = VEX_TEXTURE.getVertexConsumer(provider, RenderLayer::getEntityCutout);
+        var consumer = texture.getVertexConsumer(provider, RenderLayer::getEntityCutout);
         billboard.setRollDeg(roll);
         billboard.render(consumer, matrix.peek(), light, overlay);
         matrix.pop();

@@ -6,7 +6,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
-public class StarfishBlock extends SeagrassBlock {
+public class StarfishBlock extends BlockWithWater {
     protected static final VoxelShape SHAPE = Block.createCuboidShape(2, 0, 2, 14, 1, 14);
 
     public StarfishBlock(Settings settings) {

@@ -15,8 +15,9 @@ public class SoulFadingEffect extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
         entity.damage(DamageSource.MAGIC, 1.0F);
-        ((PlayerEntity)entity).addExhaustion(0.005F * (float)(amplifier + 1));
-
+        if (entity instanceof PlayerEntity player) {
+            player.addExhaustion(0.005F * (float)(amplifier + 1));
+        }
     }
 
     @Override

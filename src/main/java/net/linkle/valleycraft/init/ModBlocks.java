@@ -105,7 +105,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     GLOWSQUID_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 6)), itemSettings()),
     BRIMSTONE_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
-    ALLAY_LANTERN(new AllayLanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(s->3)), itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof()),
+    ALLAY_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(s->3)), itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof()),
     VEX_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(s->3)), itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof()),
     DEAD_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(s->0)), itemSettings().group(BOOKS)),
     DEFECTIVE_SPAWNER(new DefectiveBlock(Block.Settings.copy(Blocks.SPAWNER)), itemSettings().rarity(Rarity.RARE).maxCount(64).group(BOOKS).fireproof()),
