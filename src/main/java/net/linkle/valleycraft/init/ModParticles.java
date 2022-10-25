@@ -23,7 +23,6 @@ public class ModParticles {
 
     public static void initialize() {
         register("sprinkle", SPRINKLE);
-        //these should render & animate like the small smoke particles seen on withered roses
         register("green_exp_orb", GREEN_EXP_ORB);
         register("blue_exp_orb", BLUE_EXP_ORB);
 
