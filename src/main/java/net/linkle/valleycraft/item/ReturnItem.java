@@ -7,6 +7,7 @@ import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsage;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
@@ -51,8 +52,9 @@ public class ReturnItem extends ModItem {
             if (pos != null) {
                 
                 var block = world.getBlockState(pos);
-                if (block.isOf(ModBlocks.WAYPOINT.block)) {
-                    
+                if (!block.isOf(ModBlocks.WAYPOINT.block)) {
+                    user.sendMessage(Text.translatable(WAYPOINT_NOT_SET));
+                    return TypedActionResult.fail(stack);
                 }
                 
                 if (user.hasVehicle()) {
@@ -60,17 +62,17 @@ public class ReturnItem extends ModItem {
                 }
                 
                 pos = pos.up();
-                if (user.teleport(pos.getX(), pos.getY(), pos.getZ(), true)) {
-                    user.getItemCooldownManager().set(this, 20);
+                if (user.teleport(pos.getX()+0.5, pos.getY(), pos.getZ()+0.5, true)) {
+                    user.getItemCooldownManager().set(this, 30);
                     ServerNetwork.sendFloatingItem((ServerPlayerEntity)user, stack);
                     world.playSound(null, pos.getX()+0.5, user.getY()+0.5, user.getZ()+0.5, SoundEvents.BLOCK_PORTAL_TRAVEL, user.getSoundCategory(), 0.3f, 1f);
                     world.emitGameEvent(GameEvent.TELEPORT, pos, GameEvent.Emitter.of(user));
-                    return TypedActionResult.consume(stack);
+                    return ItemUsage.consumeHeldItem(world, user, hand);
                 } else {
-                    user.sendMessage(Text.translatable("text.valleycraft.waypoint.waypoint_failed"));
+                    user.sendMessage(Text.translatable(WAYPOINT_FAILED));
                 }
             } else {
-                user.sendMessage(Text.translatable("text.valleycraft.waypoint.waypoint_not_set"));
+                user.sendMessage(Text.translatable(WAYPOINT_NOT_SET));
             }
         }
         return TypedActionResult.fail(stack);

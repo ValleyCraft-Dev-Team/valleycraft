@@ -33,7 +33,7 @@ class RenderLayers {
         put(WATTLE_DOOR, cullout);
         put(WATTLE_TRAPDOOR, cullout);
         put(GLASS_DOOR, cullout);
-        put(TINTED_GLASS_DOOR, cullout);
+        put(TINTED_GLASS_DOOR, translucent);
 
         // Flowers and Potted Flowers
         put(BLACK_DAHLIA, cullout);

@@ -18,10 +18,12 @@ class ValleyModelGenerator extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
         
-        // doors
+        // Doors
         generator.registerDoor(ModBlocks.APPLE_DOOR.block);
         generator.registerDoor(ModBlocks.MAMON_DOOR.block);
         generator.registerDoor(ModBlocks.WATTLE_DOOR.block);
+        generator.registerDoor(ModBlocks.GLASS_DOOR.block);
+        generator.registerDoor(ModBlocks.TINTED_GLASS_DOOR.block);
         
         // Potted flowers
         generator.registerFlowerPotPlant(NaturalBlocks.BLACK_DAHLIA.block, ModBlocks.POTTED_BLACK_DAHLIA.block, TintType.NOT_TINTED);
