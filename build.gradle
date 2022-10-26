@@ -44,6 +44,14 @@ repositories {
 	// for more information about repositories.
 	maven { url 'https://maven.blamejared.com' }
 	maven { url = 'https://maven.minecraftforge.net/' }
+	maven {
+		name = "TerraformersMC"
+		url = "https://maven.terraformersmc.com/"
+	}
+	maven {
+		name = "Ladysnake Libs"
+		url = "https://ladysnake.jfrog.io/artifactory/mods"
+	}
 }
 
 dependencies {
@@ -60,6 +68,9 @@ dependencies {
 	
 	// TerraBlender Biome API
 	modImplementation "com.github.glitchfiend:TerraBlender-fabric:${minecraft_version}-${terrablender_version}"
+	
+	// Trinkets API
+	modImplementation "dev.emi:trinkets:${trinkets_version}"
 
 	// Uncomment the following line to enable the deprecated Fabric API modules. 
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
