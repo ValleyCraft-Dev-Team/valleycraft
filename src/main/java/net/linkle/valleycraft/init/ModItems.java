@@ -27,7 +27,7 @@ public enum ModItems implements ItemEnum {
 
     FIBER(new Item(itemSettings())),
     PLANK(new Item(itemSettings())),
-    SALT(new Item(itemSettings())),
+    SALT(new Item(itemSettings().group(INGREDIENTS))),
     MONSTER_CLAW(new Item(itemSettings())),
     BEAST_BONE(new Item(itemSettings())),
     SHEEP_HIDE(new Item(itemSettings())),
@@ -48,11 +48,12 @@ public enum ModItems implements ItemEnum {
     DAUB(new Item(itemSettings())),
     HANDLE(new Item(itemSettings())),
     CLOTH(new Item(itemSettings())),
+    LEATHER_STRAP(new Item(itemSettings())),
     RAW_CLAY_POT(new Item(itemSettings())),
     PLANT_FIBER_STRING(new Item(itemSettings())),
     BOOK_COVER(new Item(itemSettings())),
     BOW_STRING(new Item(itemSettings())),
-    FLOUR(new Item(itemSettings())),
+    FLOUR(new Item(itemSettings().group(INGREDIENTS))),
 
     PRIMSTEEL_INGOT(new Item(itemSettings())),
     GOLEMITE_INGOT(new Item(itemSettings())),
