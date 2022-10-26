@@ -70,6 +70,7 @@ public enum IngredientFoodItems implements ItemEnum {
     RAW_BAT_WING(new FoodItem(settings(), 2, 0.1f)),
     RAW_SILVERFISH(new FoodItem(settings(), 1, 0.1f)),
     RAW_PHANTOM_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.NAUSEA)),
+    RAW_ENDERMITE(new EndermiteFoodItem(settings(), 3, 0.4f, StatusEffects.POISON, StatusEffects.NAUSEA)),
     MONSTER_GUTS(new Tier1Normal(settings(), 6, 0.3f, StatusEffects.HUNGER)),
     INFECTED_MONSTER_LIVER(new Tier1Normal(settings(), 3, 0.4f, StatusEffects.POISON)),
     ZOD(new Tier1Normal(settings().group(ModGroups.INGREDIENTS), 5, 2, StatusEffects.HUNGER)),

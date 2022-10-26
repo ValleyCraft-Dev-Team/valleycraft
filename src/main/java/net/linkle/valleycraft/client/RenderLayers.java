@@ -50,6 +50,8 @@ class RenderLayers {
         put(FADED_CELESTIAL, cullout);
         put(POTTED_FADED_SOUL_ROSE, cullout);
         put(HONEYCLUSTER, cullout);
+        put(END_GRASS, cullout);
+        put(CELESTIAL_LEAVES, cullout);
         put(POTTED_HONEYCLUSTER, cullout);
         put(LAVENDER, cullout);
         put(POTTED_LAVENDER, cullout);
@@ -210,6 +212,7 @@ class RenderLayers {
         put(VEX_LANTERN, cullout);
         put(ALLAY_LANTERN, cullout);
         put(WATTLE_BARS, cullout);
+        put(BONFIRE, cullout);
 
         put(ANCIENT_WAGON_WHEEL, cullout);
         put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);

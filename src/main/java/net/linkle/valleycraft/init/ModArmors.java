@@ -25,9 +25,12 @@ public enum ModArmors implements ItemEnum {
     SNOW_CAP(new ArmorItem(ArmorMats.SNOW_CAP, EquipmentSlot.HEAD, settingsArtifacts())),
     STABLEHAND_HAT(new ArmorItem(ArmorMats.STABLEHAND_HAT, EquipmentSlot.HEAD, settingsArtifacts())),
     VILLAGER_TUNIC(new ArmorItem(ArmorMats.VILLAGER, EquipmentSlot.LEGS, settingsArtifacts())),
+    WITCH_CLOAK(new ArmorItem(ArmorMats.WITCH, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
+
     EMERALD_TALISMAN(new ArmorItem(ArmorMats.EMERALD_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.UNCOMMON))),
     AMETHYST_TALISMAN(new ArmorItem(ArmorMats.AMETHYST_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.UNCOMMON))),
     ECHO_SHARD_TALISMAN(new ArmorItem(ArmorMats.ECHO_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.EPIC))),
+    ENDER_DRAGON_TALISMAN(new ArmorItem(ArmorMats.ENDER_DRAGON_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.EPIC))),
     GOLDEN_GLASSES(new ArmorItem(ArmorMats.GOLDEN_GLASSES, EquipmentSlot.HEAD, settingsNormal(Rarity.UNCOMMON))),
     ROSEGOLD_GLASSES(new ArmorItem(ArmorMats.ROSEGOLD_GLASSES, EquipmentSlot.HEAD, settingsNormal(Rarity.RARE))),
 
@@ -52,11 +55,13 @@ public enum ModArmors implements ItemEnum {
     SCALE_MAIL(new ArmorItem(ArmorMats.SCALE, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
     SCALE_MAIL_SKIRT(new ArmorItem(ArmorMats.SCALE, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
     ZOMBIE_BOOTS(new ArmorItem(ArmorMats.ALEX, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
+    EFE_BOOTS(new ArmorItem(ArmorMats.EFE, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
 
     DROWNED_CLOTHES(new BrokenArmorItem(ArmorMats.DROWNED, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
     REPAIRED_DROWNED_CLOTHES(new ArmorItem(ArmorMats.REPAIRED_DROWNED, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
     HUSK_SHIRT(new BrokenArmorItem(ArmorMats.HUSK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
     HUSK_PANTS(new BrokenArmorItem(ArmorMats.HUSK, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
+    MUMMY_WRAPS(new ArmorItem(ArmorMats.MUMMY, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
     REPAIRED_HUSK_SHIRT(new ArmorItem(ArmorMats.REPAIRED_HUSK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
     REPAIRED_HUSK_PANTS(new ArmorItem(ArmorMats.REPAIRED_HUSK, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
     MINER_SHIRT(new BrokenArmorItem(ArmorMats.MINER, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
@@ -70,33 +75,58 @@ public enum ModArmors implements ItemEnum {
 
     RED_HOOD(new ArmorItem(ArmorMats.RED_CLOAK, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     RED_CLOAK(new ArmorItem(ArmorMats.RED_CLOAK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
+    GREEN_HOOD(new ArmorItem(ArmorMats.GREEN_CLOAK, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
+    GREEN_CLOAK(new ArmorItem(ArmorMats.GREEN_CLOAK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
+    PURPLE_HOOD(new ArmorItem(ArmorMats.PURPLE_CLOAK, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
+    PURPLE_CLOAK(new ArmorItem(ArmorMats.PURPLE_CLOAK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
+    CYAN_HOOD(new ArmorItem(ArmorMats.CYAN_CLOAK, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
+    CYAN_CLOAK(new ArmorItem(ArmorMats.CYAN_CLOAK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
 
     STRAW_HAT(new ArmorItem(ArmorMats.STRAW_HAT, EquipmentSlot.HEAD, settingsNormal())),
 
     FLOWER_CROWN(new ArmorItem(ArmorMats.FLOWERING_HAT, EquipmentSlot.HEAD, settingsNormal())),
-    
-    REINFORCED_IRON_HELMET(new ArmorItem(ArmorMats.SCALE, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
-    FUR_BOOTS(new ArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settingsNormal(Rarity.UNCOMMON))),
-    
+
+    REINFORCED_GOLDEN_HELMET(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_IRON_HELMET(new ArmorItem(ArmorMats.SCALE, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_ROSEGOLD_HELMET(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_GOLEMITE_HELMET(new ArmorItem(ArmorMats.RF_GOLEMITE, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_DIAMOND_HELMET(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_NETHERITE_HELMET(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.HEAD, settingsNormal())),
+
+    GOLDEN_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_GOLD, EquipmentSlot.HEAD, settingsNormal())),
+    EMERALD_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_EMERALD, EquipmentSlot.HEAD, settingsNormal())),
+    IRON_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_IRON, EquipmentSlot.HEAD, settingsNormal())),
+    AMBER_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_AMBER, EquipmentSlot.HEAD, settingsNormal())),
+    AMETHYST_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_AMETHYST, EquipmentSlot.HEAD, settingsNormal())),
+    DIAMOND_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
+    ROSEGOLD_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
+    PRISMARINE_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_PRISMARINE, EquipmentSlot.HEAD, settingsNormal())),
+    ECHO_SHARD_DIADEM(new ArmorItem(ArmorMats.ECHO_DIADEM, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
+
     CANVAS_HOOD(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.HEAD, settingsNormal())),
     CANVAS_TUNIC(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.CHEST, settingsNormal())),
     CANVAS_LEGGINGS(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.LEGS, settingsNormal())),
     CANVAS_BOOTS(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.FEET, settingsNormal())),
+
+    FUR_BOOTS(new ArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settingsNormal(Rarity.UNCOMMON))),
 
     BIKINI_MASC(new ArmorItem(ArmorMats.BIKINI_MASC, EquipmentSlot.LEGS, settingsArtifacts())),
     BIKINI(new ArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settingsArtifacts())),
     BIKINI_COAT(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settingsNormal())),
     BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
     BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    SWIMSUIT_MASC(new ArmorItem(ArmorMats.SWIMSUIT_BLACK_MASC, EquipmentSlot.LEGS, settingsNormal())),
+    SWIMSUIT_FEMME(new ArmorItem(ArmorMats.SWIMSUIT_BLACK_FEMME, EquipmentSlot.LEGS, settingsNormal())),
 
     TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
     TURTLE_LEGGINGS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, settingsNormal())),
     TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
-    DIVING_HELMET(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.HEAD, settingsNormal())),
-    DIVING_CHESTPLATE(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.CHEST, settingsNormal())),
-    DIVING_LEGGINGS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.LEGS, settingsNormal())),
-    DIVING_BOOTS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.FEET, settingsNormal())),
+    DIVING_HELMET(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
+    DIVING_CHESTPLATE(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
+    DIVING_LEGGINGS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
+    DIVING_BOOTS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.FEET, settingsArtifacts(Rarity.RARE))),
 
     //ALEX_SHIRT(new ArmorItem(AlexMaterial.INSTANCE, EquipmentSlot.CHEST, settingsNormal())),
     //ALEX_SHORTS(new ArmorItem(AlexMaterial.INSTANCE, EquipmentSlot.LEGS, settingsNormal())),

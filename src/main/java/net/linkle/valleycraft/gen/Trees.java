@@ -48,6 +48,16 @@ public class Trees {
         var builder = new TreeFeatureConfig.Builder(trunkProvider, trunkPlacer, foliageProvider, foliagePlacer, minimumSize);
         return builder.ignoreVines().build();
     }
+
+    public static TreeFeatureConfig celestialTree() {
+        var foliageProvider = BlockStateProvider.of(NaturalBlocks.CELESTIAL_LEAVES.getState());
+        var trunkProvider = BlockStateProvider.of(NaturalBlocks.CELESTIAL_LOG.getState());
+        var foliagePlacer = new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 4);
+        var trunkPlacer = new LargeOakTrunkPlacer(5, 15, 0);
+        var minimumSize = new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4));
+        var builder = new TreeFeatureConfig.Builder(trunkProvider, trunkPlacer, foliageProvider, foliagePlacer, minimumSize);
+        return builder.ignoreVines().build();
+    }
     
     /** AKA The Mamon. */
     public static TreeFeatureConfig amberTree() {

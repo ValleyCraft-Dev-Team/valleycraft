@@ -4,6 +4,7 @@ import net.linkle.valleycraft.util.FoodStatusEffect;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.ItemStack;
 
 public class EnchantedFoodItem extends FoodItem {

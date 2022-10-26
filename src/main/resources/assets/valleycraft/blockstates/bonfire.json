@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,lit=false": {
+      "model": "valleycraft:block/bonefire_dead",
+      "y": 270
+    },
+    "facing=east,lit=true": {
+      "model": "valleycraft:block/bonefire_lit",
+      "y": 270
+    },
+    "facing=north,lit=false": {
+      "model": "valleycraft:block/bonefire_dead",
+      "y": 180
+    },
+    "facing=north,lit=true": {
+      "model": "valleycraft:block/bonefire_lit",
+      "y": 180
+    },
+    "facing=south,lit=false": {
+      "model": "valleycraft:block/bonefire_dead"
+    },
+    "facing=south,lit=true": {
+      "model": "valleycraft:block/bonefire_lit"
+    },
+    "facing=west,lit=false": {
+      "model": "valleycraft:block/bonefire_dead",
+      "y": 90
+    },
+    "facing=west,lit=true": {
+      "model": "valleycraft:block/bonefire_lit",
+      "y": 90
+    }
+  }
+}

@@ -12,6 +12,7 @@ import net.linkle.valleycraft.tool.mace.MaceBase;
 import net.linkle.valleycraft.tool.pickaxes.RustyPickaxeItem;
 import net.linkle.valleycraft.tool.pickaxes.RustyPickaxeMaterial;
 import net.linkle.valleycraft.tool.scythe.ScytheBase;
+import net.linkle.valleycraft.tool.shovel.special.LadleItem;
 import net.linkle.valleycraft.tool.shovel.special.OarItem;
 import net.linkle.valleycraft.tool.shovel.special.OarToolMaterial;
 import net.linkle.valleycraft.tool.spear.SpearBase;
@@ -38,7 +39,7 @@ public class ModTools {
     public static final Item RUSTY_SWORD = new RustySwordItem(new RustySwordMaterial(),4, -2.4f);
     public static final Item RUSTY_PICKAXE = new RustyPickaxeItem(new RustyPickaxeMaterial(),3, -2.8f);
     public static final Item OAR = new OarItem(new OarToolMaterial(),3, -2.8f);
-    public static final Item LADLE = new OarItem(new OarToolMaterial(),2, -2.5f);
+    public static final Item LADLE = new LadleItem(new OarToolMaterial(),2, -2.5f);
     public static final Item BONE_DART_ITEM = new BoneDartItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
     public static final Item CORAL_KNIFE = new CoralDaggerItem(new CoralDaggerToolMaterial(), 3, -1.4f);
     public static final Item CAVE_FISHERS_RAPIER = new CaveFisherSwordItem(new CaveFisherToolMaterial(), 4, -2.4f);

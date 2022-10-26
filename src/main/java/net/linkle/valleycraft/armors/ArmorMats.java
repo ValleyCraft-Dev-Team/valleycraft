@@ -15,10 +15,13 @@ import net.minecraft.sound.SoundEvents;
 public enum ArmorMats implements ArmorMaterial {
     
     ALEX("ruined_alex_zombie", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    EFE("ruined_efe_zombie", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI("bikini", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI_REPAIRED("bikini_repaired", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI_COAT("wretch", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI_MASC("bikini_masc", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    SWIMSUIT_BLACK_FEMME("bikini_swimsuit", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    SWIMSUIT_BLACK_MASC("bikini_swimsuit_masc", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI_MASC_REPAIRED("bikini_masc_repaired", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BRUTE("brute", ints(3), 10, 15, equipLeather(), items(Items.LEATHER)),
     CANVAS("canvas", ints(1,1,2,1), 10, 15, equipLeather(), items(ModItems.BOOK_COVER)),
@@ -37,11 +40,23 @@ public enum ArmorMats implements ArmorMaterial {
     LEGGINGS("leggings", ints(1,2,2,2), 30, 15, equipLeather(), items(Items.LEATHER)),
     LIBRARIAN("librarian", ints(1), 10, 15, equipLeather(), items(Items.BOOK)),
     MOBLIN_TALISMAN("moblin_talisman", ints(2,2,3,2), 10, 15, equipChain(), items()),
+    ENDER_DRAGON_TALISMAN("ender_dragon_talisman", ints(2,2,3,2), 10, 32, equipChain(), items()),
     EMERALD_TALISMAN("emerald_talisman", ints(2,2,2,2), 10, 22, equipChain(), items()),
     ECHO_TALISMAN("echo_shard", ints(2,2,2,2), 10, 25, equipChain(), items()),
     AMETHYST_TALISMAN("amethyst_talisman", ints(2,2,2,2), 10, 22, equipChain(), items()),
     GOLDEN_GLASSES("golden_glasses", ints(2,2,2,2), 10, 22, equipChain(), items()),
     ROSEGOLD_GLASSES("rosegold_glasses", ints(2,2,2,3), 10, 22, equipChain(), items()),
+
+    CIRCLET_GOLD("golden_circlet", ints(0,0,0,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    CIRCLET_EMERALD("emerald_circlet", ints(0,0,0,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    CIRCLET_IRON("iron_circlet", ints(0,0,0,2), 15, 9, equipChain(), items(Items.IRON_INGOT)),
+    CIRCLET_AMBER("amber_circlet", ints(0,0,0,2), 15, 9, equipChain(), items(Items.IRON_INGOT)),
+    CIRCLET_AMETHYST("amethyst_circlet", ints(0,0,0,2), 15, 9, equipChain(), items(Items.IRON_INGOT)),
+    CIRCLET_DIAMOND("diamond_circlet", ints(0,0,0,2), 15, 9, equipChain(), items(Items.IRON_INGOT)),
+    CIRCLET_ROSEGOLD("rosegold_circlet", ints(0,0,0,2), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT)),
+    CIRCLET_PRISMARINE("prismarine_circlet", ints(0,0,0,2), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT)),
+
+    ECHO_DIADEM("echo_shard_diadem", ints(2,2,2,2), 10, 25, equipChain(), items()),
 
     MOGARS_BROKEN("mogars_broken_golemite_goggles", ints(1,5,6,2), 10, 15, equipChain(), items()),
     MOGARS_FIXED("mogars_fixed_golemite_goggles", ints(2,5,6,2), 10, 15, equipChain(), items()),
@@ -53,17 +68,31 @@ public enum ArmorMats implements ArmorMaterial {
     STRAY("ruined_stray", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     TRADER("trader", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER)),
     VILLAGER("villager", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER)),
+    WITCH("witch", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER)),
     VISOR("visor", ints(3), 10, 15, equipChain(), items(Items.COPPER_INGOT)),
-    SCALE("scale", ints(0,6,7,3), 10, 15, equipChain(), items(Items.IRON_INGOT)),
     BUTTON("button", ints(0,0,7,2), 10, 15, equipChain(), items(Items.STRING)),
-    RED_CLOAK("red_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
     CHEF("chef", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
 
     PRIMSTEEL("golemite", ints(1,4,5,2), 15, 18, equipIron(), items(ModItems.PRIMSTEEL_INGOT)),
     ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ModItems.ROSEGOLD_INGOT)),
     GOLEMITE("primsteel", ints(2,5,7,2), 15, 5, equipIron(), items(ModItems.GOLEMITE_INGOT)),
 
-    DIVING("diving", ints(2,5,7,2), 15, 5, equipLeather(), items(ModItems.GOLEMITE_INGOT));
+    RF_GOLD("reinforced_gold", ints(0,0,0,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    SCALE("scale", ints(0,6,7,3), 15, 9, equipChain(), items(Items.IRON_INGOT)),
+    RF_PRIMSTEEL("reinforced_primsteel", ints(0,0,0,3), 15, 18, equipChain(), items(ModItems.PRIMSTEEL_INGOT)),
+    RF_ROSEGOLD("reinforced_rosegold", ints(0,0,0,3), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT)),
+    RF_GOLEMITE("reinforced_golemite", ints(0,0,0,3), 15, 5, equipChain(), items(ModItems.GOLEMITE_INGOT)),
+    RF_DIAMOND("reinforced_diamond", ints(0,0,0,4), 15, 10, equipChain(), items(Items.DIAMOND)),
+    RF_NETHERITE("reinforced_netherite", ints(0,0,0,4), 15, 15, equipChain(), items(Items.NETHERITE_INGOT)),
+
+    MUMMY("mummy_wraps", ints(1,1,1,1), 15, 18, equipLeather(), items(ModItems.CLOTH)),
+
+    RED_CLOAK("red_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
+    GREEN_CLOAK("green_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
+    PURPLE_CLOAK("purple_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
+    CYAN_CLOAK("cyan_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
+
+    DIVING("diving", ints(2,5,7,2), 15, 5, equipLeather(), items(ModItems.PRIMSTEEL_INGOT));
 
     // ### Other Utility Methods ###
     

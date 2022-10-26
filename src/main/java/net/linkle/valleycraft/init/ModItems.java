@@ -62,7 +62,8 @@ public enum ModItems implements ItemEnum {
     THERMAL_BLAZE_CORE(new Item(itemSettings().rarity(Rarity.RARE))),
     STRANGE_CATALYST(new Item(itemSettings().rarity(RARE))),
     SHATTERED_EYE_OF_ENDER(new Item(itemSettings().rarity(EPIC))),
-    EYE_OF_RETURN(new ReturnItem(itemSettings().rarity(UNCOMMON))),
+    ENDER_DRAGON_EYE(new Item(itemSettings().rarity(EPIC).fireproof())),
+    EYE_OF_RETURN(new ReturnItem(itemSettings().rarity(UNCOMMON).maxCount(16))),
 
     BIG_BOTTLE(new Item(itemSettings())),
     BB_SNAIL(new Item(itemSettings().maxCount(16))),

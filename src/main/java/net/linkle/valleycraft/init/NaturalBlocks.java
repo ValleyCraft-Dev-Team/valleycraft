@@ -7,6 +7,7 @@ import static net.linkle.valleycraft.util.BlockPres.*;
 import java.util.function.BiFunction;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.linkle.valleycraft.block.sapling.CelestialSaplingGen;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -176,9 +177,17 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     APPLE_LEAVES_EMPTY(new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES)), itemSettings()),
     APPLE_LEAVES(new AppleLeavesBlock(), itemSettings()),
     APPLE_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
-    
-    WARM_BIRCH_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES)), itemSettings()),
+
     WARM_BIRCH_SAPLING(new SaplingBlock(new WarmBirchSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
+    WARM_BIRCH_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES)), itemSettings()),
+
+    CELESTIAL_SAPLING(new SaplingBlock(new CelestialSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
+    CELESTIAL_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES).nonOpaque()), itemSettings()),
+    CELESTIAL_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
+
+    //end blocks
+    END_GRASS(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE)), itemSettings()),
 
     ARID_VINES(new VineHeadBlock(), itemSettings()),
     ARID_VINES_PLANT(new VineBodyBlock()),
@@ -265,7 +274,6 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     FADED_CELESTIAL(new SoulPlantBlock(ParticleTypes.SMOKE, SoulPlantBlock.settings(0)), itemSettings()),
     SOUL_CELESTIAL(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3)), itemSettings().rarity(Rarity.UNCOMMON)),
     BLUE_SOUL_CELESTIAL(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6)), itemSettings().rarity(Rarity.RARE));
-
     //ROOTED_WATCHER(new ModPlantBlock()),
     //WARDING_SHROOM(new ModPlantBlock()),
     //STICKY_SHROOM(new ModLargerMushroomBlock()),
