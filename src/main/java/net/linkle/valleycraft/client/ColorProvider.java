@@ -16,9 +16,9 @@ import net.minecraft.item.ItemConvertible;
 
 @Environment(EnvType.CLIENT)
 @SuppressWarnings("unused")
-public class ColorProvider {
+class ColorProvider {
 
-    public static void intialize() {
+    static void intialize() {
         BlockColorProvider blockProvider;
         ItemColorProvider itemProvider;
         

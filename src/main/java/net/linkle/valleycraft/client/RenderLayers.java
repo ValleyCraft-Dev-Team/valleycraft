@@ -201,8 +201,6 @@ class RenderLayers {
         put(GOLEMITE_CHAIN, cullout);
         put(GOLEMITE_GRATE, cullout);
         put(GOLEMITE_LADDER, cullout);
-        put(PRIMSTEEL_BARS, cullout);
-        put(PRIMSTEEL_LADDER, cullout);
         put(PRIMSTEEL_GRATE, cullout);
         put(PRIMSTEEL_CHAIN, cullout);
         put(IRON_GRATE, cullout);
@@ -303,7 +301,6 @@ class RenderLayers {
         put(GLOW_SEAGRASS, cullout);
         put(IRON_LADDER, cullout);
         put(PRIMSTEEL_LADDER, cullout);
-        put(GOLEMITE_LADDER, cullout);
         put(BAMBOO_LADDER, cullout);
         put(BRIMSTONE_CRYSTAL, cullout);
         put(BRIMSTONE_GLASS, translucent);

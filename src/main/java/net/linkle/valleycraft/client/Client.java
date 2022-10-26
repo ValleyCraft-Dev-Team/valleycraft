@@ -23,6 +23,7 @@ public class Client implements ClientModInitializer {
         FluidRenders.intialize();
         ModBlockEntityType.initializeClient();
         Armors.intialize();
+        ModelLayers.intialize();
         ClientNetwork.initialize();
     }
 }

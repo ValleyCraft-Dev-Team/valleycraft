@@ -5,6 +5,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -26,11 +27,10 @@ public class SoulPlantBlock extends ModPlantBlock {
     
     @Override
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-        for(int i = 0; i < 3; ++i) {
-            if (random.nextBoolean()) {
-                world.addParticle(particleEffect, 0.5, (double)pos.getY() + (0.5D - random.nextDouble()), 0.5, 0.0D, 0.0D, 0.0D);
-            }
-        }
+        double offset = 0.3;
+        double x = pos.getX() + 0.5 + MathHelper.nextDouble(random, -offset, offset);
+        double z = pos.getZ() + 0.5 + MathHelper.nextDouble(random, -offset, offset);
+        world.addParticle(particleEffect, x, (double)pos.getY() + (0.7D - (random.nextDouble()*0.7)), z, 0, 0, 0);
     }
     
     public SoulPlantBlock smallShape() {

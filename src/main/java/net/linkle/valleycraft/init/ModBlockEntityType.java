@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityT
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder.Factory;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.block.entity.*;
+import net.linkle.valleycraft.client.block.entity.WaypointRenderer;
 import net.linkle.valleycraft.client.block.entity.WispLanternRenderer;
 import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.block.Block;
@@ -33,6 +34,7 @@ public class ModBlockEntityType {
     @Environment(EnvType.CLIENT)
     public static void initializeClient() {
         BlockEntityRendererRegistry.register(WISP_LANTERN, WispLanternRenderer::new);
+        BlockEntityRendererRegistry.register(WAYPOINT_ENTITY, WaypointRenderer::new);
     }
     
     /** Create block entity */

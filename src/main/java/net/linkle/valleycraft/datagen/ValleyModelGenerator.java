@@ -11,6 +11,7 @@ import net.minecraft.data.client.BlockStateModelGenerator.TintType;
 import net.minecraft.util.Identifier;
 
 class ValleyModelGenerator extends FabricModelProvider {
+    
     ValleyModelGenerator(FabricDataGenerator generator) {
         super(generator);
     }

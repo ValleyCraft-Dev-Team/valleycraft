@@ -15,11 +15,11 @@ import net.minecraft.fluid.Fluid;
 import net.minecraft.util.Identifier;
 
 @Environment(EnvType.CLIENT)
-public class FluidRenders {
+class FluidRenders {
     
     private static final ArrayList<Identifier> TEXS = new ArrayList<>();
     
-    public static void intialize() {
+    static void intialize() {
         // Register the textures.
         ClientSpriteRegistryCallback.event(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE).register((atlas, registry) -> TEXS.forEach(registry::register));
         

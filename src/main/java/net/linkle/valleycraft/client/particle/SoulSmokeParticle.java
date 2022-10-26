@@ -17,10 +17,6 @@ public class SoulSmokeParticle extends SpriteBillboardParticle {
         this.velocityX = velocityX + (Math.random() * 2.0D - 1.0D) * 0.05000000074505806D;
         this.velocityY = velocityY + (Math.random() * 2.0D - 1.0D) * 0.05000000074505806D;
         this.velocityZ = velocityZ + (Math.random() * 2.0D - 1.0D) * 0.05000000074505806D;
-        float f = this.random.nextFloat() * 0.3F + 0.7F;
-        this.red = f;
-        this.green = f;
-        this.blue = f;
         this.scale = 0.075F;
         this.maxAge = (int)(16.0D / ((double)this.random.nextFloat() * 0.8D + 0.2D)) + 2;
         this.setSpriteForAge(spriteProvider);

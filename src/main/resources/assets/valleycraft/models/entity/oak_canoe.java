@@ -1,6 +1,8 @@
 // Made with Blockbench 4.2.2
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
+
+/*
 public class custom_model extends EntityModel<Entity> {
 	private final ModelPart canoe;
 	private final ModelPart bb_main;
@@ -35,4 +37,4 @@ public class custom_model extends EntityModel<Entity> {
 		canoe.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
 		bb_main.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
 	}
-}
+} */
