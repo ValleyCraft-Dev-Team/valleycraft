@@ -12,7 +12,9 @@ import net.minecraft.world.World;
 
 public class WaypointBlockEntity extends BlockEntity {
     
-    private static final float SCALE = 10;
+    // Use the dubug mode with code hotswap so you can change variables without restarting the game.
+    private static final int TICK_INTERVAL = 25;
+    private static final float ROTATION_DURATION = 15;
     
     private short ticks = (short) (Short.MIN_VALUE + Util.RANDOM.nextInt(2000));
     private short offset = ticks;
@@ -41,7 +43,7 @@ public class WaypointBlockEntity extends BlockEntity {
             }
         }
         
-        if ((ticks%15) == 0) {
+        if ((ticks%TICK_INTERVAL) == 0) {
             var pi = MathHelper.HALF_PI;
             offset = ticks;
             
@@ -58,8 +60,6 @@ public class WaypointBlockEntity extends BlockEntity {
             } else {
                 targetYaw += random.nextBoolean() ? pi : -pi;
             }
-            
-            
         }
     }
     
@@ -69,13 +69,13 @@ public class WaypointBlockEntity extends BlockEntity {
     
     public float getPitch(float tickDelta) {
         float value = getTick(tickDelta) - (float)offset;
-        float delta = MathHelper.clamp(value / SCALE, 0f, 1f);
+        float delta = MathHelper.clamp(value / ROTATION_DURATION, 0f, 1f);
         return lerp(delta, thePitch, targetPitch);
     }
     
     public float getYaw(float tickDelta) {
         float value = getTick(tickDelta) - (float)offset;
-        float delta = MathHelper.clamp(value / SCALE, 0f, 1f);
+        float delta = MathHelper.clamp(value / ROTATION_DURATION, 0f, 1f);
         return lerp(delta, theYaw, targetYaw);
     }
     
