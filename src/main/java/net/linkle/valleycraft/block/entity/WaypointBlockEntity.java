@@ -13,8 +13,8 @@ import net.minecraft.world.World;
 public class WaypointBlockEntity extends BlockEntity {
     
     // Use the dubug mode with code hotswap so you can change variables without restarting the game.
-    private static final float ROTATION_DURATION = 25;
-    private static final int TICK_INTERVAL = 17;
+    private static final int TICK_INTERVAL = 25;
+    private static final float ROTATION_DURATION = 15;
     
     private short ticks = (short) (Short.MIN_VALUE + Util.RANDOM.nextInt(2000));
     private short offset = ticks;
