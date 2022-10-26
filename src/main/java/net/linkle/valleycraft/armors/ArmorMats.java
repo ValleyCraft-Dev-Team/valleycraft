@@ -74,16 +74,19 @@ public enum ArmorMats implements ArmorMaterial {
     CHEF("chef", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
 
     PRIMSTEEL("golemite", ints(1,4,5,2), 15, 18, equipIron(), items(ModItems.PRIMSTEEL_INGOT)),
-    ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ModItems.ROSEGOLD_INGOT)),
-    GOLEMITE("primsteel", ints(2,5,7,2), 15, 5, equipIron(), items(ModItems.GOLEMITE_INGOT)),
-
-    RF_GOLD("reinforced_gold", ints(0,0,0,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ModItems.ROSEGOLD_INGOT), 0.75f, 0.0f),
+    GOLEMITE("primsteel", ints(2,5,7,2), 15, 5, equipIron(), items(ModItems.GOLEMITE_INGOT),1.0f,0.0f),
     SCALE("scale", ints(0,6,7,3), 15, 9, equipChain(), items(Items.IRON_INGOT)),
-    RF_PRIMSTEEL("reinforced_primsteel", ints(0,0,0,3), 15, 18, equipChain(), items(ModItems.PRIMSTEEL_INGOT)),
-    RF_ROSEGOLD("reinforced_rosegold", ints(0,0,0,3), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT)),
-    RF_GOLEMITE("reinforced_golemite", ints(0,0,0,3), 15, 5, equipChain(), items(ModItems.GOLEMITE_INGOT)),
-    RF_DIAMOND("reinforced_diamond", ints(0,0,0,4), 15, 10, equipChain(), items(Items.DIAMOND)),
-    RF_NETHERITE("reinforced_netherite", ints(0,0,0,4), 15, 15, equipChain(), items(Items.NETHERITE_INGOT)),
+
+    RF_GOLD("reinforced_gold", ints(0,0,2,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    RF_IRON("reinforced_iron", ints(0,0,3,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    RF_PRIMSTEEL("reinforced_primsteel", ints(0,0,2,3), 15, 18, equipChain(), items(ModItems.PRIMSTEEL_INGOT)),
+    RF_ROSEGOLD("reinforced_rosegold", ints(0,0,3,3), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT),0.75f, 0.0f),
+    RF_GOLEMITE("reinforced_golemite", ints(0,0,3,3), 15, 5, equipChain(), items(ModItems.GOLEMITE_INGOT), 1.0f, 0.0f),
+    RF_DIAMOND("reinforced_diamond", ints(0,0,4,4), 15, 10, equipChain(), items(Items.DIAMOND), 2.0f, 0.0f),
+    RF_NETHERITE("reinforced_netherite", ints(0,0,4,4), 15, 15, equipChain(), items(Items.NETHERITE_INGOT), 3.0f, 0.0f),
+
+    SHULKER("shulker", ints(0,0,6,4), 15, 20, equipLeather(), items(Items.NETHERITE_INGOT), 3.0f, 0.0f),
 
     MUMMY("mummy_wraps", ints(1,1,1,1), 15, 18, equipLeather(), items(ModItems.CLOTH)),
 
