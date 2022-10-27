@@ -8,6 +8,8 @@ import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.linkle.valleycraft.init.NaturalBlocks;
 import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.StemBlock;
 import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.item.ItemColorProvider;
 import net.minecraft.client.color.world.BiomeColors;
@@ -29,6 +31,14 @@ class ColorProvider {
         itemColor((stack, tintIndex) -> {
             return GrassColors.getColor(0.5, 1.0);
         }, NaturalBlocks.BIG_FERN, NaturalBlocks.SHORT_GRASS);
+        
+        blockColor((state, world, pos, tintIndex) -> {
+            int i = state.get(StemBlock.AGE);
+            int j = i * 32;
+            int k = 255 - i * 8;
+            int l = i * 4;
+            return j << 16 | k << 8 | l;
+        }, NaturalBlocks.GHOST_PUMPKIN_STEM);
         
         blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, NaturalBlocks.APPLE_LEAVES);
         itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, NaturalBlocks.APPLE_LEAVES);

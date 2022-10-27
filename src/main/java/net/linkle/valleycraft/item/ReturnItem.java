@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.item;
 
+import org.jetbrains.annotations.Nullable;
+
 import net.linkle.valleycraft.extension.ServerPlayerEntityExt;
 import net.linkle.valleycraft.init.ModBlocks;
 import net.linkle.valleycraft.network.ServerNetwork;
@@ -15,6 +17,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 
@@ -51,9 +54,9 @@ public class ReturnItem extends ModItem {
             BlockPos pos = ((ServerPlayerEntityExt)user).getWaypointPos();
             if (pos != null) {
                 
-                var block = world.getBlockState(pos);
-                if (!block.isOf(ModBlocks.WAYPOINT.block)) {
-                    user.sendMessage(Text.translatable(WAYPOINT_NOT_SET));
+                pos = getTeleportPos(world, pos);
+                if (pos == null) {
+                    user.sendMessage(Text.translatable(WAYPOINT_FAILED));
                     return TypedActionResult.fail(stack);
                 }
                 
@@ -61,7 +64,6 @@ public class ReturnItem extends ModItem {
                     user.stopRiding();
                 }
                 
-                pos = pos.up();
                 if (user.teleport(pos.getX()+0.5, pos.getY(), pos.getZ()+0.5, true)) {
                     user.getItemCooldownManager().set(this, 30);
                     ServerNetwork.sendFloatingItem((ServerPlayerEntity)user, stack);
@@ -76,5 +78,20 @@ public class ReturnItem extends ModItem {
             }
         }
         return TypedActionResult.fail(stack);
+    }
+    
+    @Nullable
+    private static BlockPos getTeleportPos(World world, BlockPos pos) {
+        if (world.getBlockState(pos).isOf(ModBlocks.WAYPOINT.block)) {
+            for (var face : Direction.values()) {
+                if (face == Direction.DOWN) continue;
+                BlockPos offset = pos.offset(face);
+                var state = world.getBlockState(offset);
+                if (!state.getMaterial().blocksMovement()) {
+                    return offset;
+                }
+            }
+        }
+        return null;
     }
 }

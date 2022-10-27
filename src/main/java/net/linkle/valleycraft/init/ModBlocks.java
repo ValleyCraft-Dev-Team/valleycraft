@@ -118,8 +118,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     ERD_STONE_GRAVESTONE_PET(new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque()), itemSettings()),
     
     // clay pots go here (not the baking item one)
-    BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
-    BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
+    BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
+    BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque().breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     
     // redstonery
     STAKE(new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly()), itemSettings()),
@@ -132,8 +132,10 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SCARECROW_TARGET(new ScarecrowBlock(false), itemSettings()),
 
     // glass blocks & windows
-    OPTIC_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()),
-    BRIMSTONE_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().luminance(s -> 8).resistance(30).hardness(2)), itemSettings()),
+    TERRARIUM_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()),
+    BRIMSTONE_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS).luminance(s -> 8).resistance(30).hardness(2)), itemSettings()),
+    TERRARIUM_GLASS_PANE(new PaneBlock(Block.Settings.copy(Blocks.GLASS_PANE)), itemSettings()),
+    BRIMSTONE_GLASS_PANE(new PaneBlock(Block.Settings.copy(Blocks.GLASS_PANE).luminance(s -> 8).resistance(30).hardness(2)), itemSettings()),
 
     // Potted flowers
     POTTED_BLACK_DAHLIA(new FlowerPotBlock(NaturalBlocks.BLACK_DAHLIA.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
