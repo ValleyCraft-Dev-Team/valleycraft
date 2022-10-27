@@ -35,15 +35,7 @@ public class FoodItem extends ModItem {
     
     /** @param satMod = saturationModifier */
     public FoodItem(Settings settings, int hunger, float satMod, boolean isMeat, @Nullable FoodStatusEffect effects) {
-        super(defaultGroup(settings).food(newFoodComponent(hunger, satMod, isMeat, effects)));
-    }
-
-    /** Sets default item group if there's no item group. */
-    protected static Settings defaultGroup(Settings settings) {
-        //if (((ItemSettingsAccessor)settings).getGroup() == null) {
-            //settings.group(ItemGroups.COOKING_GROUP);
-        //}
-        return settings;
+        super(settings.food(newFoodComponent(hunger, satMod, isMeat, effects)));
     }
 
     protected static FoodComponent newFoodComponent(int hunger, float saturationModifier, boolean isMeat, @Nullable FoodStatusEffect statusEffects) {

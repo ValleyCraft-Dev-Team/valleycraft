@@ -6,6 +6,7 @@ import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.init.ModBlocks;
 import net.linkle.valleycraft.init.NaturalBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.data.client.BlockStateModelGenerator.TintType;
 import net.minecraft.util.Identifier;
@@ -25,6 +26,10 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerDoor(ModBlocks.WATTLE_DOOR.block);
         generator.registerDoor(ModBlocks.GLASS_DOOR.block);
         generator.registerDoor(ModBlocks.TINTED_GLASS_DOOR.block);
+        
+        // Glass pane
+        generator.registerGlassPane(ModBlocks.TERRARIUM_GLASS.block, ModBlocks.TERRARIUM_GLASS_PANE.block);
+        generator.registerGlassPane(ModBlocks.BRIMSTONE_GLASS.block, ModBlocks.BRIMSTONE_GLASS_PANE.block);
         
         // Potted flowers
         generator.registerFlowerPotPlant(NaturalBlocks.BLACK_DAHLIA.block, ModBlocks.POTTED_BLACK_DAHLIA.block, TintType.NOT_TINTED);

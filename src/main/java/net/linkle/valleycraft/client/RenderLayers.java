@@ -125,6 +125,7 @@ class RenderLayers {
         put(POTTED_DESERT_SHRUB, cullout);
         put(LUSH_BUSH, cullout);
         put(POTTED_LUSH_BUSH, cullout);
+        put(GHOST_PUMPKIN_STEM, cullout);
 
         put(FLOWERING_CACTUS, cullout);
         put(POTTED_FLOWERING_CACTUS, cullout);
@@ -208,7 +209,8 @@ class RenderLayers {
         put(IRON_GRATE, cullout);
         put(GOLDEN_GRATE, cullout);
         put(GOLDEN_BARS, cullout);
-        put(OPTIC_GLASS, cullout);
+        put(TERRARIUM_GLASS, cullout);
+        put(TERRARIUM_GLASS_PANE, cullout);
         put(VEX_LANTERN, cullout);
         put(ALLAY_LANTERN, cullout);
         put(WATTLE_BARS, cullout);
@@ -307,6 +309,7 @@ class RenderLayers {
         put(BAMBOO_LADDER, cullout);
         put(BRIMSTONE_CRYSTAL, cullout);
         put(BRIMSTONE_GLASS, translucent);
+        put(BRIMSTONE_GLASS_PANE, translucent);
 
         put(ICE_ORE, translucent);
         put(DEEPSLATE_ICE_ORE, translucent);

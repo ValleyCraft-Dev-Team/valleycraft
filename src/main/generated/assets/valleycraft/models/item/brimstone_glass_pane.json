@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "valleycraft:item/celestial_door"
+    "layer0": "valleycraft:block/brimstone_glass"
   }
 }

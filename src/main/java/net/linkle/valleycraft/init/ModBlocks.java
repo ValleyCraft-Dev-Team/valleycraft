@@ -60,7 +60,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     NET(new NetBlock(), itemSettings()),
     ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().noCollision()), itemSettings()),
     ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    BAMBOO_LADDER(new LadderBlock(Block.Settings.copy(Blocks.BAMBOO).strength(1.0f).sounds(BlockSoundGroup.BAMBOO).nonOpaque()), itemSettings()),
+    BAMBOO_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(1).sounds(BlockSoundGroup.BAMBOO)), itemSettings()),
 
     // guidestones
     GUIDESTONE(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
@@ -118,8 +118,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     ERD_STONE_GRAVESTONE_PET(new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque()), itemSettings()),
     
     // clay pots go here (not the baking item one)
-    BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
-    BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.copy(Blocks.GLASS).breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
+    BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
+    BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque().breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     
     // redstonery
     STAKE(new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly()), itemSettings()),
@@ -132,8 +132,10 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SCARECROW_TARGET(new ScarecrowBlock(false), itemSettings()),
 
     // glass blocks & windows
-    OPTIC_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()),
-    BRIMSTONE_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS).nonOpaque().luminance(s -> 8).resistance(30).hardness(2)), itemSettings()),
+    TERRARIUM_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()),
+    BRIMSTONE_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS).luminance(s -> 8).resistance(30).hardness(2)), itemSettings()),
+    TERRARIUM_GLASS_PANE(new PaneBlock(Block.Settings.copy(Blocks.GLASS_PANE)), itemSettings()),
+    BRIMSTONE_GLASS_PANE(new PaneBlock(Block.Settings.copy(Blocks.GLASS_PANE).luminance(s -> 8).resistance(30).hardness(2)), itemSettings()),
 
     // Potted flowers
     POTTED_BLACK_DAHLIA(new FlowerPotBlock(NaturalBlocks.BLACK_DAHLIA.asBlock(), Block.Settings.copy(Blocks.POTTED_POPPY))),
@@ -258,10 +260,10 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     PRIMSTEEL_TILED_PLATE(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     PRIMSTEEL_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     PRIMSTEEL_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
-    PRIMSTEEL_LADDER(new LadderBlock(Block.Settings.of(Material.DECORATION).strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
+    PRIMSTEEL_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     PRIMSTEEL_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
 
-    IRON_LADDER(new LadderBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
+    IRON_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     IRON_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
 
     GOLDEN_GRATE(new GrateBlock(Block.Settings.copy(Blocks.GOLD_BLOCK).nonOpaque()), itemSettings()),
@@ -272,7 +274,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     GOLEMITE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     GOLEMITE_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     GOLEMITE_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
-    GOLEMITE_LADDER(new LadderBlock(Block.Settings.of(Material.DECORATION).strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
+    GOLEMITE_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     GOLEMITE_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
     
     // erdstone
