@@ -7,4 +7,5 @@ import net.minecraft.block.Material;
 /** block materials */
 public class BlockMats {
     public static final Material POT = new FabricMaterialBuilder(MapColor.TERRACOTTA_BROWN).notSolid().build();
+    public static final Material LADDER = new FabricMaterialBuilder(MapColor.OAK_TAN).notSolid().lightPassesThrough().build();
 }

@@ -60,7 +60,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     NET(new NetBlock(), itemSettings()),
     ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().noCollision()), itemSettings()),
     ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    BAMBOO_LADDER(new LadderBlock(Block.Settings.copy(Blocks.BAMBOO).strength(1.0f).sounds(BlockSoundGroup.BAMBOO).nonOpaque()), itemSettings()),
+    BAMBOO_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(1).sounds(BlockSoundGroup.BAMBOO)), itemSettings()),
 
     // guidestones
     GUIDESTONE(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
@@ -260,10 +260,10 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     PRIMSTEEL_TILED_PLATE(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     PRIMSTEEL_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     PRIMSTEEL_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
-    PRIMSTEEL_LADDER(new LadderBlock(Block.Settings.of(Material.DECORATION).strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
+    PRIMSTEEL_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     PRIMSTEEL_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
 
-    IRON_LADDER(new LadderBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
+    IRON_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     IRON_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
 
     GOLDEN_GRATE(new GrateBlock(Block.Settings.copy(Blocks.GOLD_BLOCK).nonOpaque()), itemSettings()),
@@ -274,7 +274,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     GOLEMITE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     GOLEMITE_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     GOLEMITE_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
-    GOLEMITE_LADDER(new LadderBlock(Block.Settings.of(Material.DECORATION).strength(3.0f).sounds(BlockSoundGroup.METAL).nonOpaque()), itemSettings()),
+    GOLEMITE_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     GOLEMITE_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
     
     // erdstone

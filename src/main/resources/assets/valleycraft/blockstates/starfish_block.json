@@ -1,7 +1,21 @@
 {
   "variants": {
-    "": {
-      "model": "valleycraft:block/starfish"
-    }
+    "": [
+      {
+        "model": "valleycraft:block/starfish"
+      },
+      {
+        "model": "valleycraft:block/starfish",
+        "y": 90
+      },
+      {
+        "model": "valleycraft:block/starfish",
+        "y": 180
+      },
+      {
+        "model": "valleycraft:block/starfish",
+        "y": 270
+      }
+    ]
   }
 }
