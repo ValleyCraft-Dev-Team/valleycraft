@@ -44,6 +44,7 @@ public enum ModItems implements ItemEnum {
     ADVENTURINE_SHARDS(new Item(itemSettings())),
     ANTHRACITE(new Item(itemSettings())),
     BRIMSTONE_SHARD(new Item(itemSettings())),
+    OBSIDIAN_CHUNK(new Item(itemSettings())),
 
     MULCH(new Item(itemSettings())),
     DAUB(new Item(itemSettings())),

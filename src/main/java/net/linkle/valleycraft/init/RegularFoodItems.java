@@ -47,6 +47,8 @@ public enum RegularFoodItems implements ItemEnum {
     COOKED_CLAM(new FoodItem(settings(), 4, 0.3f)),
     COOKED_SEA_URCHIN(new FoodItem(settings(), 6, 0.6f)),
     COOKED_SQUID(new FoodItem(settings(), 4, 0.6f)),
+    COOKED_LOBSTER(new FoodItem(settings(), 7, 0.7f)),
+    COOKED_MOSSY_CRAB(new FoodItem(settings(), 7, 0.7f)),
 
     COOKED_SILVERFISH(new FoodItem(settings(), 3, 0.6f)),
     COOKED_PHANTOM(new FoodItem(settings(), 6, 0.6f)),

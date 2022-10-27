@@ -17,6 +17,11 @@ public enum ModToolMaterials implements ToolMaterial {
     ROSEGOLD(1, 440, 7.0F, 2.0F, 15, () -> {
         return Ingredient.ofItems(ModItems.ROSEGOLD_INGOT);
     }),
+
+    COPPER(1, 250, 6.0F, 2.0F, 15, () -> {
+        return Ingredient.ofItems(Items.COPPER_INGOT);
+    }),
+
     GOLEMITE(2, 705, 8.0F, 2.5F, 5, () -> {
         return Ingredient.ofItems(ModItems.GOLEMITE_INGOT);
     }),
@@ -36,6 +41,14 @@ public enum ModToolMaterials implements ToolMaterial {
     //unique - only used once
     NATURES_BLESSING(2, 440, 7.0F, 2.0F, 22, () -> {
         return Ingredient.ofItems(Items.VINE);
+    }),
+
+    OBSIDIAN(2, 440, 7.0F, 2.0F, 18, () -> {
+        return Ingredient.ofItems(ModItems.OBSIDIAN_CHUNK);
+    }),
+
+    AMETHYST(2, 190, 5.0F, 1.5F, 18, () -> {
+        return Ingredient.ofItems(Items.AMETHYST_SHARD);
     });
 
     private final int miningLevel;

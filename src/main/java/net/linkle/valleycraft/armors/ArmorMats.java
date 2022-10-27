@@ -57,6 +57,7 @@ public enum ArmorMats implements ArmorMaterial {
     CIRCLET_PRISMARINE("prismarine_circlet", ints(0,0,0,2), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT)),
 
     ECHO_DIADEM("echo_shard_diadem", ints(2,2,2,2), 10, 25, equipChain(), items()),
+    TREE_GOD("tree_god_mask", ints(2,2,2,2), 10, 25, equipLeather(), items()),
 
     MOGARS_BROKEN("mogars_broken_golemite_goggles", ints(1,5,6,2), 10, 15, equipChain(), items()),
     MOGARS_FIXED("mogars_fixed_golemite_goggles", ints(2,5,6,2), 10, 15, equipChain(), items()),
@@ -72,13 +73,15 @@ public enum ArmorMats implements ArmorMaterial {
     VISOR("visor", ints(3), 10, 15, equipChain(), items(Items.COPPER_INGOT)),
     BUTTON("button", ints(0,0,7,2), 10, 15, equipChain(), items(Items.STRING)),
     CHEF("chef", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    EVOKER("evoker", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
 
     PRIMSTEEL("golemite", ints(1,4,5,2), 15, 18, equipIron(), items(ModItems.PRIMSTEEL_INGOT)),
     ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ModItems.ROSEGOLD_INGOT), 0.75f, 0.0f),
     GOLEMITE("primsteel", ints(2,5,7,2), 15, 5, equipIron(), items(ModItems.GOLEMITE_INGOT),1.0f,0.0f),
     SCALE("scale", ints(0,6,7,3), 15, 9, equipChain(), items(Items.IRON_INGOT)),
-    LEATHER_NO_OVERLAY("leather_no_overlay", ints(1,2,3,1), 7, 9, equipLeather(), items(ModItems.TREATED_LEATHER)),
-    CLOTH("cloth", ints(1,2,3,1), 7, 9, equipLeather(), items(ModItems.CLOTH)),
+    LEATHER_NO_OVERLAY("leather_no_overlay", ints(1,2,3,2), 7, 9, equipLeather(), items(ModItems.TREATED_LEATHER)),
+    CLOTH("cloth", ints(1,2,3,2), 7, 9, equipLeather(), items(ModItems.CLOTH)),
+    WATTLE("wattle", ints(1,2,2,1), 3, 15, equipLeather(), items(ModItems.PLANK)),
 
     RF_GOLD("reinforced_gold", ints(0,0,2,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     RF_IRON("reinforced_iron", ints(0,0,3,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
@@ -90,7 +93,8 @@ public enum ArmorMats implements ArmorMaterial {
 
     SHULKER("shulker", ints(0,0,6,4), 15, 20, equipLeather(), items(Items.NETHERITE_INGOT), 3.0f, 0.0f),
 
-    MUMMY("mummy_wraps", ints(1,1,1,1), 15, 18, equipLeather(), items(ModItems.CLOTH)),
+    MUMMY("mummy_wraps", ints(1,1,1,1), 7, 18, equipLeather(), items(ModItems.CLOTH)),
+    ANCIENT_ROBE("ancient_robe", ints(2,3), 7, 18, equipLeather(), items(ModItems.CLOTH)),
 
     RED_CLOAK("red_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
     GREEN_CLOAK("green_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),

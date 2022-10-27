@@ -1,7 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/armor_items/leather_leggings_no_overlay",
-    "layer1": "item/null_overlay"
+    "layer0": "valleycraft:item/armor_items/leather_leggings_no_overlay"
   }
 }

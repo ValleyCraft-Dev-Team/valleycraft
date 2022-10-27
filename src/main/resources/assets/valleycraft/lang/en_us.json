@@ -13,8 +13,8 @@
   "subtitle.valleycraft:curtain_open": "Curtain opens",
   "subtitle.valleycraft:sprinkler": "Sprinkler ticks and hisses",
 
-  "item.valley.ancient_record_music_disc": "Audio Log 3",
-  "item.valley.ancient_record_music_disc.desc": "Linkle - Audio Log 3",
+  "item.valleycraft.ancient_record_music_disc": "Audio Log 3",
+  "item.valleycraft.ancient_record_music_disc.desc": "Linkle - Audio Log 3",
 
   "text.valleycraft.waypoint.waypoint_set": "Recall waypoint set",
   "text.valleycraft.waypoint.waypoint_not_set": "No recall waypoint has been set to travel to",
@@ -187,6 +187,8 @@
   "item.valleycraft.plank": "Wood Plank",
   "item.valleycraft.sheep_hide": "Sheepskin",
   "item.valleycraft.pig_hide": "Pig Hide",
+
+  "item.valleycraft.tree_god_mask": "Divine Tree Mask",
 
   "block.valleycraft.mamon_wood": "Amberblossom Wood",
   "block.valleycraft.mamon_log": "Amberblossom Log",

@@ -62,6 +62,9 @@ public enum IngredientFoodItems implements ItemEnum {
     RAW_GLOWSQUID_TENTACLE(new FoodItem(settings(), 2, 0.2f)
             .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_4")),
 
+    RAW_LOBSTER(new Tier1Normal(settings(), 3, 0.2f, StatusEffects.POISON)),
+    RAW_MOSSY_CRAB(new Tier1Normal(settings(), 3, 0.2f, StatusEffects.POISON)),
+
     RAW_BACON(new FoodItem(settings(), 2, 0.2f)),
     
     RAW_BIRD_THIGH(new FoodItem(settings(), 2, 0.2f)),
