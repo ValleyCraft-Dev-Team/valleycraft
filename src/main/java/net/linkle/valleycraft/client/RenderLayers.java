@@ -334,6 +334,8 @@ class RenderLayers {
         put(NETHER_BRICK_CHIMNEY, cullout);
         put(RED_NETHER_BRICK_CHIMNEY, cullout);
 
+        put(ARID_VINES_PLANT, cullout);
+        put(ARID_VINES, cullout);
     }
 
     /**
@@ -352,7 +354,7 @@ class RenderLayers {
         // To developers, please remove the block that has registered twice or more.
         if (!BLOCKS.add(block)) {
             var id = Registry.BLOCK.getId(block);
-            LOGGER.warn("{} has registerd again for block render layer", id);
+            LOGGER.warn("{} has registered again for block render layer", id);
         }
 
         BlockRenderLayerMap.INSTANCE.putBlock(block, layer);
