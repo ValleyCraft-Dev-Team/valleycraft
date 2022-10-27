@@ -32,6 +32,7 @@ public enum ModItems implements ItemEnum {
     BEAST_BONE(new Item(itemSettings())),
     SHEEP_HIDE(new Item(itemSettings())),
     PIG_HIDE(new Item(itemSettings())),
+    TREATED_LEATHER(new Item(itemSettings())),
     SEAGULLS_FEATHER(new Item(itemSettings())),
     DUCKS_FEATHER(new Item(itemSettings())),
     CROWS_FEATHER(new Item(itemSettings())),

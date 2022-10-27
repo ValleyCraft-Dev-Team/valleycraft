@@ -5,6 +5,7 @@ import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterials;
+import net.minecraft.item.DyeableArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -116,6 +117,16 @@ public enum ModArmors implements ItemEnum {
     CANVAS_TUNIC(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.CHEST, settingsNormal())),
     CANVAS_LEGGINGS(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.LEGS, settingsNormal())),
     CANVAS_BOOTS(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.FEET, settingsNormal())),
+
+    LEATHER_HELMET(new DyeableArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.HEAD, settingsNormal())),
+    LEATHER_CHESTPLATE(new DyeableArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.CHEST, settingsNormal())),
+    LEATHER_LEGGINGS(new DyeableArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.LEGS, settingsNormal())),
+    LEATHER_BOOTS(new DyeableArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.FEET, settingsNormal())),
+
+    CLOTH_HELMET(new ModDyeableArmorItem(ArmorMats.CLOTH, EquipmentSlot.HEAD, settingsNormal())),
+    CLOTH_CHESTPLATE(new ModDyeableArmorItem(ArmorMats.CLOTH, EquipmentSlot.CHEST, settingsNormal())),
+    CLOTH_LEGGINGS(new ModDyeableArmorItem(ArmorMats.CLOTH, EquipmentSlot.LEGS, settingsNormal())),
+    CLOTH_BOOTS(new ModDyeableArmorItem(ArmorMats.CLOTH, EquipmentSlot.FEET, settingsNormal())),
 
     FUR_BOOTS(new ArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settingsNormal(Rarity.UNCOMMON))),
 

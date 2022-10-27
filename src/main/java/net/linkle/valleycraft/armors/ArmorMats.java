@@ -77,6 +77,8 @@ public enum ArmorMats implements ArmorMaterial {
     ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ModItems.ROSEGOLD_INGOT), 0.75f, 0.0f),
     GOLEMITE("primsteel", ints(2,5,7,2), 15, 5, equipIron(), items(ModItems.GOLEMITE_INGOT),1.0f,0.0f),
     SCALE("scale", ints(0,6,7,3), 15, 9, equipChain(), items(Items.IRON_INGOT)),
+    LEATHER_NO_OVERLAY("leather_no_overlay", ints(1,2,3,1), 7, 9, equipLeather(), items(ModItems.TREATED_LEATHER)),
+    CLOTH("cloth", ints(1,2,3,1), 7, 9, equipLeather(), items(ModItems.CLOTH)),
 
     RF_GOLD("reinforced_gold", ints(0,0,2,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     RF_IRON("reinforced_iron", ints(0,0,3,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),

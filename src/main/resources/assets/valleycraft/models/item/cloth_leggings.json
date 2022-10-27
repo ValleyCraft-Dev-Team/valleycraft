@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/armor_items/cloth_leggings",
+    "layer1": "item/null_overlay"
+  }
+}
