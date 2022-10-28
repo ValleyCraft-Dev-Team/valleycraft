@@ -33,7 +33,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     FLOWERING_CACTUS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT), itemSettings()),
     SMALL_CACTUS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER).ground(ARID_DESERT), itemSettings()),
     TUMBLEWEED(new ModPlantBlock(TUMBLEWEED_SHAPE, FLOWER).ground(ARID_DESERT), itemSettings()),
-    THORNY_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT), itemSettings()),
+    THORNY_BUSH(new ThornyBushBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT), itemSettings()),
     FLUFFY_DANDELION(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     FOXTAIL_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     JUNGLE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),

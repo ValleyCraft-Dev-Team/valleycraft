@@ -36,12 +36,9 @@ public abstract class UndeadFishEntity extends FishEntity implements Monster {
     protected void initGoals() {
         goalSelector.add(1, new MeleeAttackGoal(this, 1, false));
         goalSelector.add(2, new SwimToRandomPlaceGoal());
-        targetSelector.add(1, new RevengeGoal(this, new Class[0]));
-        targetSelector.add(2, new ActiveTargetGoal<PlayerEntity>(this, PlayerEntity.class, 10, true, false, this::canZodTarget));
-        targetSelector.add(3, new ActiveTargetGoal<FishEntity>(this, FishEntity.class, false, this::canZodTarget));
     }
     
-    public boolean canZodTarget(@Nullable LivingEntity target) {
+    public boolean canTarget0(@Nullable LivingEntity target) {
         if (target != null) {
             return target.isTouchingWater() && !(target instanceof UndeadFishEntity);
         }
