@@ -7,7 +7,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.tag.BlockTags;
 
 /** Block Predicates */
-public enum BlockPres implements Predicate<BlockState> {
+public enum PlantGroundPredicates implements Predicate<BlockState> {
     DIRT(state -> state.isIn(BlockTags.DIRT) || state.isOf(Blocks.FARMLAND)),
     SAND(state -> state.isIn(BlockTags.SAND)),
     TERRACOTTA(state -> state.isIn(BlockTags.TERRACOTTA)),
@@ -16,7 +16,7 @@ public enum BlockPres implements Predicate<BlockState> {
     SOUL_PLANTS(state -> state.isIn(BlockTags.BASE_STONE_OVERWORLD) || state.isIn(BlockTags.BASE_STONE_NETHER) || state.isIn(BlockTags.DEAD_BUSH_MAY_PLACE_ON) || state.isIn(BlockTags.TERRACOTTA) || state.isIn(BlockTags.DIRT) || state.isIn(BlockTags.SAND));
     private final Predicate<BlockState> predicate;
     
-    BlockPres(Predicate<BlockState> predicate) {
+    PlantGroundPredicates(Predicate<BlockState> predicate) {
         this.predicate = predicate;
     }
 

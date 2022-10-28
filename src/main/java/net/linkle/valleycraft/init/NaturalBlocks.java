@@ -1,8 +1,9 @@
 package net.linkle.valleycraft.init;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
-import static net.linkle.valleycraft.util.Shapes.*;
-import static net.linkle.valleycraft.util.BlockPres.*;
+import static net.linkle.valleycraft.util.PlantVoxelShapes.*;
+import static net.linkle.valleycraft.util.PlantGroundPredicates.*;
+import static net.linkle.valleycraft.util.PlantBlockSettings.*;
 
 import java.util.function.BiFunction;
 
@@ -18,56 +19,51 @@ import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.block.sapling.WarmBirchSaplingGen;
 import net.linkle.valleycraft.util.*;
 import net.minecraft.block.*;
-import net.minecraft.block.AbstractBlock.OffsetType;
-import net.minecraft.client.particle.Particle;
 import net.minecraft.item.*;
-import net.minecraft.particle.ParticleType;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.util.shape.VoxelShape;
 
 public enum NaturalBlocks implements ItemEnum, BlockEnum {
 
-    BLACK_DAHLIA(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    FLOWERING_CACTUS(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE).ground(ARID_DESERT_PLANTS), itemSettings()),
-    SMALL_CACTUS(new ModPlantBlock(DEFAULT_PLANT_SHAPE).ground(ARID_DESERT_PLANTS), itemSettings()),
-    TUMBLEWEED(new ModPlantBlock(TUMBLEWEED_SHAPE).ground(ARID_DESERT_PLANTS), itemSettings()),
-    THORNY_BUSH(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE).ground(ARID_DESERT_PLANTS), itemSettings()),
-    FLUFFY_DANDELION(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    FOXTAIL_FERN(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    JUNGLE_BUSH(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    PANFLOWERS(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    BLACK_DAHLIA(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    FLOWERING_CACTUS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT_PLANTS), itemSettings()),
+    SMALL_CACTUS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER).ground(ARID_DESERT_PLANTS), itemSettings()),
+    TUMBLEWEED(new ModPlantBlock(TUMBLEWEED_SHAPE, FLOWER).ground(ARID_DESERT_PLANTS), itemSettings()),
+    THORNY_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT_PLANTS), itemSettings()),
+    FLUFFY_DANDELION(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    FOXTAIL_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    JUNGLE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    PANFLOWERS(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     
-    DRIED_SAPLING(new ModPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    DRIED_SAPLING(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
 
-    HONEYCLUSTER(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    LAVENDER(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    LEATHERLEAF_FERN(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    MOSS_SPROUTLET(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    ORANGE_BEAUTY(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    ORANGE_FERN(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    POISON_BLOSSOM(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    PURPLE_TULIP(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    YELLOW_TULIP(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    LIGHT_BLUE_TULIP(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    BLACK_TULIP(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    FROSTFERN(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    CLARET_LEAF(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    GODDESS_LILY(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    HONEYCLUSTER(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    LAVENDER(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    LEATHERLEAF_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    MOSS_SPROUTLET(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    ORANGE_BEAUTY(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    ORANGE_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    POISON_BLOSSOM(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    PURPLE_TULIP(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    YELLOW_TULIP(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    LIGHT_BLUE_TULIP(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    BLACK_TULIP(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    FROSTFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    CLARET_LEAF(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    GODDESS_LILY(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     
-    KNAPWEED(new OffsetPlantBlock(FLOWER_SHAPE).ground(ARID_DESERT_PLANTS), itemSettings()),
+    KNAPWEED(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT_PLANTS), itemSettings()),
     
-    RED_LUPINE(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    YELLOW_LUPINE(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    PINK_LUPINE(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    RED_LUPINE(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    YELLOW_LUPINE(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    PINK_LUPINE(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     
-    ORANGE_POPPY(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    YELLOW_POPPY(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    WHITE_POPPY(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
+    ORANGE_POPPY(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    YELLOW_POPPY(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WHITE_POPPY(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
 
     TALL_LIVING_BUSH(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
     TALL_DEAD_BUSH(new ModTallPlantBlock().ground(SAND), itemSettings(), TallBlockItem::new),
@@ -94,25 +90,25 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     IRONSHROOM(new ModMushroomBlock().large(), itemSettings()),
     WARDING_SHROOM(new ModMushroomBlock().large(), itemSettings()),
 
-    SHORT_GRASS(new OffsetPlantBlock(SHORT_GRASS_SHAPE), itemSettings()),
-    SNOWFLOWER(new OffsetPlantBlock(FLOWER_SHAPE), itemSettings()),
-    SPROUT(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    WEEPING_GHOST_WILLOW(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    MEADOW_FLOWERS(new OffsetPlantBlock(SHORT_FLOWER_SHAPE), itemSettings()),
+    SHORT_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
+    SNOWFLOWER(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    SPROUT(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WEEPING_GHOST_WILLOW(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    MEADOW_FLOWERS(new ModPlantBlock(SHORT_FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
 
-    WILD_WHEAT(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    WILD_POTATO(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    WILD_CARROT(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    WILD_BEET(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_WHEAT(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WILD_POTATO(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WILD_CARROT(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WILD_BEET(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
 
-    WILD_MINERS_LETTUCE(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    WILD_FIRE_PEPPER(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    WILD_RICE(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    WILD_AMETHYSTLE(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    WILD_CAVE_ROOT(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    WILD_ONION(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    WILD_HERBS(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    WILD_PUFF_BALL(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    WILD_MINERS_LETTUCE(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WILD_FIRE_PEPPER(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WILD_RICE(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WILD_AMETHYSTLE(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WILD_CAVE_ROOT(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WILD_ONION(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WILD_HERBS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WILD_PUFF_BALL(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
 
     MAIZE(new MaizeBlock()),
     MAIZE_BOX(new MaizeBoxBlock()),
@@ -128,16 +124,16 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     GLOOM_BERRY(new GloomBerryHeadBlock()),
     GLOOM_BERRY_PLANT(new GloomBerryBodyBlock()),
 
-    CAVE_ROOTS(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    BONE_WEED(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    DESERT_SHRUB(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    BUSH(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    LARGE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
-    LUSH_BUSH(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    CAVE_ROOTS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    BONE_WEED(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    DESERT_SHRUB(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    LARGE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
+    LUSH_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
 
     RUSHES(new RushBlock(Block.Settings.copy(Blocks.SUGAR_CANE).nonOpaque().breakInstantly().noCollision()), itemSettings()),
 
-    BIG_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    BIG_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
     SMALLEST_LILYPADS(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),
     SMALL_LILYPADS(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),
     SMALL_LILYPAD(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),
@@ -186,7 +182,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     CELESTIAL_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
 
     //end blocks
-    END_GRASS(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE), itemSettings()),
+    END_GRASS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE)), itemSettings()),
 
     ARID_VINES(new VineHeadBlock(), itemSettings()),

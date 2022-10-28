@@ -2,7 +2,8 @@ package net.linkle.valleycraft.block;
 
 import java.util.function.Predicate;
 
-import net.linkle.valleycraft.util.BlockPres;
+import net.linkle.valleycraft.util.PlantGroundPredicates;
+import net.linkle.valleycraft.util.PlantVoxelShapes;
 import net.minecraft.block.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
@@ -19,15 +20,16 @@ public class ModPlantBlock extends PlantBlock {
     protected VoxelShape shape;
 
     /** The ground whitelist for placing plant. */
-    protected Predicate<BlockState> groundList = BlockPres.DIRT;
+    protected Predicate<BlockState> groundList = PlantGroundPredicates.DIRT;
 
-    public ModPlantBlock(VoxelShape shape) {
-        this(Settings.copy(Blocks.POPPY).offsetType(OffsetType.NONE));
+    public ModPlantBlock(VoxelShape shape, Settings settings) {
+        super(settings);
         this.shape = shape;
     }
-    
+
     public ModPlantBlock(Settings settings) {
         super(settings);
+        this.shape = PlantVoxelShapes.DEFAULT_PLANT_SHAPE;
     }
     
     /** Set ground whitelist for placing plant. */
