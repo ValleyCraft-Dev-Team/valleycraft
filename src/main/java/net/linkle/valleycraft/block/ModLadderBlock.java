@@ -3,6 +3,7 @@ package net.linkle.valleycraft.block;
 import net.linkle.valleycraft.init.BlockMats;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.LadderBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.item.ItemPlacementContext;
@@ -39,7 +40,7 @@ public class ModLadderBlock extends HorizontalWithWaterBlock {
         BlockState state;
 
         if (side.getAxis().isVertical()) {
-            state = world.getBlockState(pos.offset(side.getOpposite()));
+            state = world.getBlockState(pos.offset(side));
             if (state.getBlock() instanceof ModLadderBlock) {
                 return state.get(FACING);
             }
@@ -65,10 +66,10 @@ public class ModLadderBlock extends HorizontalWithWaterBlock {
     }
 
     static {
-        EAST_SHAPE = Block.createCuboidShape(13,0,0,16,16,16);
-        NORTH_SHAPE = Block.createCuboidShape(0,0,0,16,16,3);
-        WEST_SHAPE = Block.createCuboidShape(0,0,0,3,16,16);
-        SOUTH_SHAPE = Block.createCuboidShape(0,0,13,16,16,16);
+        EAST_SHAPE = Block.createCuboidShape(0, 0, 0, 3, 16, 16);
+        NORTH_SHAPE = Block.createCuboidShape(0,0,13,16,16,16);
+        WEST_SHAPE = Block.createCuboidShape(13, 0, 0, 16, 16, 16);;
+        SOUTH_SHAPE = Block.createCuboidShape(0,0,0,16,16,3);
     }
 }
 

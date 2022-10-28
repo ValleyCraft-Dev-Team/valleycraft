@@ -262,8 +262,8 @@ class RenderLayers {
         put(WARDING_SHROOM, cullout);
         put(MEADOW_FLOWERS, cullout);
         put(BARNACLE_BLOCK, translucent);
-        put(CLAM_BLOCK_ITEM, cullout);
-        put(URCHIN_BLOCK_ITEM, cullout);
+        put(CLAM_BLOCK, cullout);
+        put(URCHIN_BLOCK, cullout);
         put(STARFISH_BLOCK, cullout);
         put(TUBE_WORMS_BLOCK, cullout);
         put(RUSHES, cullout);

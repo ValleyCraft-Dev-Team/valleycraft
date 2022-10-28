@@ -11,10 +11,9 @@ import net.minecraft.world.BlockView;
 
 /**
  * Extension of the vanilla PlantBlock class with a few QOL utilities:
- * - It uses the vanilla poppy's block settings by default, saving us from extra effort and clutter in NaturalBlocks.
- * - It can use different VoxelShapes (hitbox shapes) depending on what we give it for each block.
+ * <p>It uses the vanilla poppy's block settings by default, saving us from extra effort and clutter in NaturalBlocks.</p>
+ * <p>It can use different VoxelShapes (hitbox shapes) depending on what we give it for each block.</p>
  */
-
 public class ModPlantBlock extends PlantBlock {
 
     protected VoxelShape shape;
@@ -28,8 +27,7 @@ public class ModPlantBlock extends PlantBlock {
     }
 
     public ModPlantBlock(Settings settings) {
-        super(settings);
-        this.shape = PlantVoxelShapes.DEFAULT_PLANT_SHAPE;
+        this(PlantVoxelShapes.DEFAULT_PLANT_SHAPE, settings);
     }
     
     /** Set ground whitelist for placing plant. */
@@ -40,7 +38,8 @@ public class ModPlantBlock extends PlantBlock {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return shape;
+        var vec = state.getModelOffset(world, pos);
+        return shape.offset(vec.x, vec.y, vec.z);
     }
 
     @Override

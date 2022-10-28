@@ -5,7 +5,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPos;
@@ -28,8 +27,7 @@ public class BarnacleBlock extends DirectionBlockWithWater {
                 .nonOpaque()
                 .sounds(BlockSoundGroup.CORAL)
                 .strength(0.3f, 0.5f)
-                .ticksRandomly()
-                .noCollision());
+                .ticksRandomly());
         setDefaultState();
         int height = 15;
         int xzOffset = 2;
@@ -43,50 +41,14 @@ public class BarnacleBlock extends DirectionBlockWithWater {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        switch (state.get(FACING)) {
-            case NORTH: {
-                return northShape;
-            }
-            case SOUTH: {
-                return southShape;
-            }
-            case EAST: {
-                return eastShape;
-            }
-            case WEST: {
-                return westShape;
-            }
-            case DOWN: {
-                return downShape;
-            }
-            default: {
-                return upShape;
-            }
-        }
-    }
-
-    @Override
-    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        switch (state.get(FACING)) {
-            case NORTH: {
-                return northShape;
-            }
-            case SOUTH: {
-                return southShape;
-            }
-            case EAST: {
-                return eastShape;
-            }
-            case WEST: {
-                return westShape;
-            }
-            case DOWN: {
-                return downShape;
-            }
-            default: {
-                return upShape;
-            }
-        }
+        return switch (state.get(FACING)) {
+            case NORTH -> northShape;
+            case SOUTH -> southShape;
+            case EAST -> eastShape;
+            case WEST -> westShape;
+            case DOWN -> downShape;
+            default -> upShape;
+        };
     }
 
     @Override
@@ -106,9 +68,7 @@ public class BarnacleBlock extends DirectionBlockWithWater {
     }
 
     @Override
-    public BlockState getPlacementState(ItemPlacementContext ctx) {
-        var world = ctx.getWorld();
-        var pos = ctx.getBlockPos();
-        return getDefaultState().with(WATERLOGGED, world.getFluidState(pos).getFluid() == Fluids.WATER).with(FACING, ctx.getSide());
+    protected Direction getFacing(ItemPlacementContext ctx) {
+        return ctx.getSide();
     }
 }

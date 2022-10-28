@@ -22,6 +22,7 @@ import net.minecraft.block.*;
 import net.minecraft.item.*;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
@@ -29,10 +30,10 @@ import net.minecraft.util.registry.Registry;
 public enum NaturalBlocks implements ItemEnum, BlockEnum {
 
     BLACK_DAHLIA(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
-    FLOWERING_CACTUS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT_PLANTS), itemSettings()),
-    SMALL_CACTUS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER).ground(ARID_DESERT_PLANTS), itemSettings()),
-    TUMBLEWEED(new ModPlantBlock(TUMBLEWEED_SHAPE, FLOWER).ground(ARID_DESERT_PLANTS), itemSettings()),
-    THORNY_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT_PLANTS), itemSettings()),
+    FLOWERING_CACTUS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT), itemSettings()),
+    SMALL_CACTUS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER).ground(ARID_DESERT), itemSettings()),
+    TUMBLEWEED(new ModPlantBlock(TUMBLEWEED_SHAPE, FLOWER).ground(ARID_DESERT), itemSettings()),
+    THORNY_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT), itemSettings()),
     FLUFFY_DANDELION(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     FOXTAIL_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     JUNGLE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
@@ -46,7 +47,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     MOSS_SPROUTLET(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     ORANGE_BEAUTY(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     ORANGE_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
-    POISON_BLOSSOM(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    POISON_BLOSSOM(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     PURPLE_TULIP(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     YELLOW_TULIP(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     LIGHT_BLUE_TULIP(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
@@ -55,7 +56,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     CLARET_LEAF(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     GODDESS_LILY(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     
-    KNAPWEED(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT_PLANTS), itemSettings()),
+    KNAPWEED(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT), itemSettings()),
     
     RED_LUPINE(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     YELLOW_LUPINE(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
@@ -66,7 +67,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     WHITE_POPPY(new ModPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
 
     TALL_LIVING_BUSH(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
-    TALL_DEAD_BUSH(new ModTallPlantBlock().ground(SAND), itemSettings(), TallBlockItem::new),
+    TALL_DEAD_BUSH(new ModTallPlantBlock().ground(floor -> floor.isIn(BlockTags.DEAD_BUSH_MAY_PLACE_ON)), itemSettings(), TallBlockItem::new),
     TALL_CORNFLOWER(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
     TALL_OXEYE_DAISY(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
     TALL_ALLIUM(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
@@ -120,7 +121,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     CAVE_ROOT_CROP(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 10/16f)),
     ANCIENT_FLOWERS(new MultiCropBlock(MultiCropBlock.settings()).genSize(2, 12/16f)),
     AMETHYSTLES(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 12/16f)),
-    ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(ARID_DESERT_PLANTS).AloeShape()),
+    ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(ARID_DESERT).AloeShape()),
     GLOOM_BERRY(new GloomBerryHeadBlock()),
     GLOOM_BERRY_PLANT(new GloomBerryBodyBlock()),
 
@@ -155,8 +156,8 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     BARNACLE_BLOCK(new BarnacleBlock(), itemSettings()),
     TUBE_WORMS_BLOCK(new SeagrassBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque()), itemSettings()),
     STARFISH_BLOCK(new StarfishBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque().noCollision().breakInstantly()), itemSettings()),
-    CLAM_BLOCK_ITEM(new ClamBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque().ticksRandomly().breakInstantly()), itemSettings()),
-    URCHIN_BLOCK_ITEM(new UrchinBlock(Block.Settings.copy(Blocks.SANDSTONE).nonOpaque().sounds(BlockSoundGroup.CORAL)), itemSettings()),
+    CLAM_BLOCK(new ClamBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque().ticksRandomly().breakInstantly()), itemSettings()),
+    URCHIN_BLOCK(new UrchinBlock(Block.Settings.copy(Blocks.SANDSTONE).nonOpaque().sounds(BlockSoundGroup.CORAL)), itemSettings()),
 
     DEEP_SEA_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
     ABYSSAL_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
@@ -174,7 +175,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     APPLE_LEAVES(new AppleLeavesBlock(), itemSettings()),
     APPLE_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
 
-    WARM_BIRCH_SAPLING(new SaplingBlock(new WarmBirchSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
+    WARM_BIRCH_SAPLING(new SaplingBlock(new WarmBirchSaplingGen(), Block.Settings.copy(Blocks.BIRCH_SAPLING)), itemSettings()),
     WARM_BIRCH_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES)), itemSettings()),
 
     CELESTIAL_SAPLING(new SaplingBlock(new CelestialSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
@@ -182,7 +183,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     CELESTIAL_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
 
     //end blocks
-    END_GRASS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    END_GRASS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, Block.Settings.copy(Blocks.GRASS).sounds(BlockSoundGroup.NETHERRACK)).ground(ENDSTONE), itemSettings()),
     END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE)), itemSettings()),
 
     ARID_VINES(new VineHeadBlock(), itemSettings()),
@@ -209,7 +210,7 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     SHIVERSTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     VERDANTINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     PUMICE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
+    MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
 
     METEORITE(new Block(Block.Settings.copy(Blocks.DEEPSLATE)), itemSettings()),
 
