@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowerBlock;
 import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.util.Util;
 import net.minecraft.util.registry.Registry;
 
@@ -30,7 +31,7 @@ public class ModFlowerBlock extends FlowerBlock {
     
     /** Create the block with random effect in stew. */
     public ModFlowerBlock(Settings settings) {
-        this(null, -1, settings);
+        this(StatusEffects.LUCK, -1, settings);
     }
     
     /** @param flower copy the effect from that flower block. */
@@ -47,7 +48,7 @@ public class ModFlowerBlock extends FlowerBlock {
     
     @Override
     public StatusEffect getEffectInStew() {
-        if (effectInStew != null) {
+        if (effectInStew != StatusEffects.LUCK) {
             return effectInStew;
         }
         init();
