@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "valleycraft:block/net_block",
-		"particle": "valleycraft:block/beveled_glass"
+		"particle": "valleycraft:block/net_block"
 	},
 	"elements": [
 		{

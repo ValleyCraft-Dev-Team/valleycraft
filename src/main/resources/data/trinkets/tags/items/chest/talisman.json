@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:moblin_talisman",
+    "valleycraft:emerald_talisman",
+    "valleycraft:amethyst_talisman",
+    "valleycraft:ender_dragon_talisman",
+    "valleycraft:echo_shard_talisman",
+    "valleycraft:moblin_talisman",
+    "valleycraft:love_potion_talisman"
+  ]
+}

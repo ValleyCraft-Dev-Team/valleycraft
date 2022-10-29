@@ -36,6 +36,9 @@ public enum ModItems implements ItemEnum {
     SEAGULLS_FEATHER(new Item(itemSettings())),
     DUCKS_FEATHER(new Item(itemSettings())),
     CROWS_FEATHER(new Item(itemSettings())),
+    INK_BOTTLE(new Tier0Bottle(itemSettings().maxCount(16), 0, 0.0f, StatusEffects.NAUSEA).hideTooltip()),
+    QUILL(new Item(itemSettings())),
+    RUNE_ETCHING_BLADE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
     PRIMSTEEL_NUGGET(new Item(itemSettings())),
     PRIMSTEEL_RAW(new Item(itemSettings())),
     GOLEMITE_RAW(new Item(itemSettings())),
@@ -65,7 +68,6 @@ public enum ModItems implements ItemEnum {
     THERMAL_BLAZE_CORE(new Item(itemSettings().rarity(Rarity.RARE))),
     STRANGE_CATALYST(new Item(itemSettings().rarity(RARE))),
     SHATTERED_EYE_OF_ENDER(new Item(itemSettings().rarity(EPIC))),
-    ENDER_DRAGON_EYE(new Item(itemSettings().rarity(EPIC).fireproof())),
     EYE_OF_RETURN(new ReturnItem(itemSettings().rarity(UNCOMMON).maxCount(16))),
 
     BIG_BOTTLE(new Item(itemSettings())),
@@ -78,11 +80,17 @@ public enum ModItems implements ItemEnum {
     
     DOG_BISCUIT(new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true)),
     SALVE(new SalveItem(itemSettings().group(VC_TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION)),
-    
     SEAOLOGER_TOKEN(new Item(itemSettings().group(BOOKS).rarity(Rarity.COMMON).maxCount(64))),
     TOTEM_OF_TRADE(new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1))),
     TOTEM_OF_APPRECIATION(new Item(itemSettings().group(BOOKS).rarity(Rarity.RARE).maxCount(1))),
-    TOTEM_OF_VISITORS(new Item(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1))),
+    TOTEM_OF_VISITORS(new BaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1))),
+    TOTEM_OF_FRIENDSHIP(new BaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1))),
+    POLISHED_GEAR(new BaubleItem(itemSettings().group(BOOKS).rarity(RARE).maxCount(1))),
+    SHARD_OF_THE_FIRST_GOLEM(new BaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1))),
+    STRANGE_DOLL(new BaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1))),
+    PIGLIN_CHILDS_TOY(new BaubleItem(itemSettings().group(BOOKS).rarity(UNCOMMON).maxCount(1))),
+    LUCKY_FISHING_HOOK(new BaubleItem(itemSettings().group(BOOKS).rarity(RARE).maxCount(1))),
+    MONSTER_TOOTH(new BaubleItem(itemSettings().group(BOOKS).rarity(RARE).maxCount(1))),
 
     BOMB_BAG(new BombBagItem(itemSettings().group(BOOKS))),
     ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_TOOLS))),
@@ -95,12 +103,13 @@ public enum ModItems implements ItemEnum {
     SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
     SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
     SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    ENDER_DRAGON_EYE(new Item(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
 
     //record items
+    ANCIENT_RECORD_FRAGMENT(new Item(itemSettings().group(BOOKS).rarity(RARE))),
     ANCIENT_RECORD_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.ANCIENT, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),110));
 
     public static void initialize() {
-        ModBookItems.initialize();
         TieredFoodItems.initialize();
         IngredientFoodItems.initialize();
         RegularFoodItems.initialize();

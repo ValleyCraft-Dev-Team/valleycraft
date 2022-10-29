@@ -1,6 +1,7 @@
 package net.linkle.valleycraft.tool.shovel.special;
 
 import net.linkle.valleycraft.api.EnchantmentHandler;
+import net.linkle.valleycraft.init.ModGroups;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.ShovelItem;

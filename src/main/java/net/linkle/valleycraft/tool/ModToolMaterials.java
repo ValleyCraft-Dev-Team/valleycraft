@@ -40,7 +40,15 @@ public enum ModToolMaterials implements ToolMaterial {
 
     //unique - only used once
     NATURES_BLESSING(2, 440, 7.0F, 2.0F, 22, () -> {
-        return Ingredient.ofItems(Items.VINE);
+        return Ingredient.ofItems(Items.BAMBOO);
+    }),
+
+    BAMBOO(2, 220, 7.0F, 1.0F, 15, () -> {
+        return Ingredient.ofItems(Items.BAMBOO);
+    }),
+
+    PLANK(2, 220, 7.0F, 1.0F, 15, () -> {
+        return Ingredient.ofItems(ModItems.PLANK);
     }),
 
     OBSIDIAN(2, 440, 7.0F, 2.0F, 18, () -> {

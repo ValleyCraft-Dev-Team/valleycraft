@@ -18,6 +18,6 @@ implements EnchantmentHandler {
 
     @Override
     public boolean isExplicitlyValid(Enchantment enchantment) {
-        return enchantment.equals(Enchantments.IMPALING);
+        return enchantment.equals(Enchantments.FIRE_ASPECT);
     }
 }

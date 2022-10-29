@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "valleycraft:block/golden_ladder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "valleycraft:block/golden_ladder"
+    },
+    "facing=south": {
+      "model": "valleycraft:block/golden_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "valleycraft:block/golden_ladder",
+      "y": 270
+    }
+  }
+}

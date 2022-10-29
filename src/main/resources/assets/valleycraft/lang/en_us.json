@@ -9,6 +9,12 @@
   "itemGroup.valleycraft.tools": "VC: Equipment",
   "itemGroup.valleycraft.clothing": "VC: Clothing",
 
+  "trinkets.slot.legs.stockings": "Legs & Ankles",
+  "trinkets.slot.chest.back": "Back",
+  "trinkets.slot.chest.bauble": "Bauble",
+  "trinkets.slot.chest.necklace": "Talisman",
+  "trinkets.slot.head.face": "Masks & Glasses",
+
   "subtitle.valleycraft:curtain_close": "Curtain closes",
   "subtitle.valleycraft:curtain_open": "Curtain opens",
   "subtitle.valleycraft:sprinkler": "Sprinkler ticks and hisses",
@@ -20,6 +26,8 @@
   "text.valleycraft.waypoint.waypoint_not_set": "No recall waypoint has been set to travel to",
 
   "item.valley.broken.tooltip": "Broken",
+  "item.valley.bauble.tooltip": "Bauble",
+
   "block.valleycraft.defective_spawner.tooltip": "Broken beyond repair. It's only",
   "block.valleycraft.defective_spawner.tooltip_2": "use now is purely decorative.",
   "block.valleycraft.keg.tooltip": "Refills buckets, clay pots,",
@@ -70,10 +78,12 @@
   "item.valleycraft.monster_guts": "§aStrange Guts",
   "item.valleycraft.raw_beast_liver": "§aRaw Liver",
   "item.valleycraft.raw_beast_heart": "§aRaw Heart",
-  "item.valleycraft.zod": "Raw Zod",
+  "item.valleycraft.zod": "§aRaw Zod",
   "item.valleycraft.zod_bucket": "Bucket of Zod",
   "item.valleycraft.infected_monster_liver": "§aBlighted Liver",
   "item.valleycraft.seaologer_broken": "§aGolemite Cutlass",
+  "item.valleycraft.moblin_sword_broken": "§aRusty Moblin Shortsword",
+  "item.valleycraft.moblin_sword_fixed": "Fixed Moblin Shortsword",
   "item.valleycraft.rusted_sword": "§aRusty Iron Sword",
   "item.valleycraft.rusted_pickaxe": "§aRusty Iron Pickaxe",
   "item.valleycraft.arrow_bundle": "§aArrow Bundle",
@@ -442,6 +452,8 @@
 
   "item.valleycraft.salt": "Salt",
   "item.valleycraft.gloom_berry": "Gloom Berry",
+
+  "item.valleycraft.polished_gear": "Lucky Copper Gear",
 
   "item.valleycraft.amethystle_salad": "§6Amethystle Salad",
   "item.valleycraft.carrot_salad": "§6Staminella Carrot Salad",

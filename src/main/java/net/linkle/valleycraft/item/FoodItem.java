@@ -13,6 +13,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 
 public class FoodItem extends ModItem {
+    protected boolean hideTooltip;
 
     public FoodItem(Settings settings) {
         super(settings);
@@ -38,6 +39,11 @@ public class FoodItem extends ModItem {
         super(settings.food(newFoodComponent(hunger, satMod, isMeat, effects)));
     }
 
+    public FoodItem hideTooltip() {
+        hideTooltip = true;
+        return this;
+    }
+
     protected static FoodComponent newFoodComponent(int hunger, float saturationModifier, boolean isMeat, @Nullable FoodStatusEffect statusEffects) {
         var builder = new FoodComponent.Builder();
         builder.hunger(hunger);
@@ -56,7 +62,7 @@ public class FoodItem extends ModItem {
 
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-        if (getFoodComponent() == null) return;
+        if (getFoodComponent() == null || hideTooltip) return;
         var list = getFoodComponent().getStatusEffects();
 
         for (var pair : list) {

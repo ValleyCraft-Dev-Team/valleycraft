@@ -27,17 +27,17 @@
       "model": "valleycraft:block/net_vertical"
     },
     "facing=down,waterlogged=true": {
-      "model": ":block/net_horizontal_bottom"
+      "model": "valleycraft:block/net_horizontal_bottom"
     },
     "facing=down,waterlogged=false": {
-      "model": ":block/net_horizontal_bottom"
+      "model": "valleycraft:block/net_horizontal_bottom"
     },
     "facing=west,waterlogged=false": {
-      "model": ":block/net_vertical",
+      "model": "valleycraft:block/net_vertical",
       "y": 270
     },
     "facing=west,waterlogged=true": {
-      "model": ":block/net_vertical",
+      "model": "valleycraft:block/net_vertical",
       "y": 270
     }
   }

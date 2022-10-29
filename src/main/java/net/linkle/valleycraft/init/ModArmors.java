@@ -18,6 +18,11 @@ import net.linkle.valleycraft.Main;
 public enum ModArmors implements ItemEnum {
     
     MOBLIN_TALISMAN(new ArmorItem(ArmorMats.MOBLIN_TALISMAN, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
+    EMERALD_TALISMAN(new ArmorItem(ArmorMats.EMERALD_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.UNCOMMON))),
+    AMETHYST_TALISMAN(new ArmorItem(ArmorMats.AMETHYST_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.UNCOMMON))),
+    ECHO_SHARD_TALISMAN(new ArmorItem(ArmorMats.ECHO_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.RARE))),
+    LOVE_POTION_TALISMAN(new ArmorItem(ArmorMats.LOVE_TALISMAN, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
+    ENDER_DRAGON_TALISMAN(new ArmorItem(ArmorMats.ENDER_DRAGON_TALISMAN, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
     MOGARS_BROKEN_GOLEMITE_GOGGLES(new BrokenArmorItem(ArmorMats.MOGARS_BROKEN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     MOGARS_FIXED_GOLEMITE_GOGGLES(new ArmorItem(ArmorMats.MOGARS_FIXED, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     STRAYAS_CARTOGRAPHY_BAG(new ArmorItem(ArmorMats.STRAYA, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
@@ -27,16 +32,12 @@ public enum ModArmors implements ItemEnum {
     STABLEHAND_HAT(new ArmorItem(ArmorMats.STABLEHAND_HAT, EquipmentSlot.HEAD, settingsArtifacts())),
     VILLAGER_TUNIC(new ArmorItem(ArmorMats.VILLAGER, EquipmentSlot.LEGS, settingsArtifacts())),
 
-    EMERALD_TALISMAN(new ArmorItem(ArmorMats.EMERALD_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.UNCOMMON))),
-    AMETHYST_TALISMAN(new ArmorItem(ArmorMats.AMETHYST_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.UNCOMMON))),
-    ECHO_SHARD_TALISMAN(new ArmorItem(ArmorMats.ECHO_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.EPIC))),
-    ENDER_DRAGON_TALISMAN(new ArmorItem(ArmorMats.ENDER_DRAGON_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.EPIC))),
     GOLDEN_GLASSES(new ArmorItem(ArmorMats.GOLDEN_GLASSES, EquipmentSlot.HEAD, settingsNormal(Rarity.UNCOMMON))),
     ROSEGOLD_GLASSES(new ArmorItem(ArmorMats.ROSEGOLD_GLASSES, EquipmentSlot.HEAD, settingsNormal(Rarity.RARE))),
+    GOLEMITE_READING_GLASSES(new ArmorItem(ArmorMats.GOLEMITE_READING_GLASSES, EquipmentSlot.HEAD, settingsNormal(Rarity.RARE))),
 
-    BUTTON(new ArmorItem(ArmorMats.BUTTON, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
-    CHEF_HAT(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsNormal())),
-    CHEF_APRON(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.LEGS, settingsNormal())),
+    CHEF_HAT(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsArtifacts())),
+    CHEF_APRON(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.LEGS, settingsArtifacts())),
 
     TRADER_HEAD_SCARF(new ArmorItem(ArmorMats.TRADER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
     TRADER_COAT(new ArmorItem(ArmorMats.TRADER, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
@@ -64,6 +65,7 @@ public enum ModArmors implements ItemEnum {
     HUSK_SHIRT(new BrokenArmorItem(ArmorMats.HUSK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
     HUSK_PANTS(new BrokenArmorItem(ArmorMats.HUSK, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
     MUMMY_WRAPS(new ArmorItem(ArmorMats.MUMMY, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
+    ANCIENT_AGLETS(new ArmorItem(ArmorMats.ANCIENT_AGLETS, EquipmentSlot.LEGS, settingsArtifacts(Rarity.EPIC))),
     ANCIENT_ROBE(new ArmorItem(ArmorMats.ANCIENT_ROBE, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
     REPAIRED_HUSK_SHIRT(new ArmorItem(ArmorMats.REPAIRED_HUSK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
     REPAIRED_HUSK_PANTS(new ArmorItem(ArmorMats.REPAIRED_HUSK, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
@@ -127,7 +129,7 @@ public enum ModArmors implements ItemEnum {
 
     BIKINI_MASC(new ArmorItem(ArmorMats.BIKINI_MASC, EquipmentSlot.LEGS, settingsArtifacts())),
     BIKINI(new ArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settingsArtifacts())),
-    BIKINI_COAT(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settingsNormal())),
+    BIKINI_COAT(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settingsArtifacts())),
     BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
     BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
     SWIMSUIT_MASC(new ArmorItem(ArmorMats.SWIMSUIT_BLACK_MASC, EquipmentSlot.LEGS, settingsNormal())),
@@ -136,6 +138,8 @@ public enum ModArmors implements ItemEnum {
     TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
     TURTLE_LEGGINGS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, settingsNormal())),
     TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
+
+    COPPER_AVIATORS(new ArmorItem(ArmorMats.COPPER_AVIATORS, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
 
     DIVING_HELMET(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
     DIVING_CHESTPLATE(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),

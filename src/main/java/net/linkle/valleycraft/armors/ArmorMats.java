@@ -44,8 +44,10 @@ public enum ArmorMats implements ArmorMaterial {
     EMERALD_TALISMAN("emerald_talisman", ints(2,2,2,2), 10, 22, equipChain(), items()),
     ECHO_TALISMAN("echo_shard", ints(2,2,2,2), 10, 25, equipChain(), items()),
     AMETHYST_TALISMAN("amethyst_talisman", ints(2,2,2,2), 10, 22, equipChain(), items()),
-    GOLDEN_GLASSES("golden_glasses", ints(2,2,2,2), 10, 22, equipChain(), items()),
-    ROSEGOLD_GLASSES("rosegold_glasses", ints(2,2,2,3), 10, 22, equipChain(), items()),
+    GOLDEN_GLASSES("golden_glasses", ints(2,2,2,1), 10, 22, equipChain(), items()),
+    ROSEGOLD_GLASSES("rosegold_glasses", ints(2,2,2,2), 10, 15, equipChain(), items()),
+    GOLEMITE_READING_GLASSES("golemite_glasses", ints(2,2,2,2), 10, 5, equipChain(), items()),
+    LOVE_TALISMAN("love_potion_talisman", ints(2,2,2,2), 10, 32, equipChain(), items()),
 
     CIRCLET_GOLD("golden_circlet", ints(0,0,0,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     CIRCLET_EMERALD("emerald_circlet", ints(0,0,0,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
@@ -61,6 +63,7 @@ public enum ArmorMats implements ArmorMaterial {
 
     MOGARS_BROKEN("mogars_broken_golemite_goggles", ints(1,5,6,2), 10, 15, equipChain(), items()),
     MOGARS_FIXED("mogars_fixed_golemite_goggles", ints(2,5,6,2), 10, 15, equipChain(), items()),
+    COPPER_AVIATORS("copper_aviators", ints(2,2,2,2), 10, 15, equipChain(), items()),
     PIGLIN("piglin", ints(2), 10, 15, equipLeather(), items(Items.LEATHER)),
     PILLAGER("pillager", ints(3), 10, 15, equipLeather(), items(Items.LEATHER)),
     STEVE("ruined_steve_zombie", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
@@ -82,6 +85,8 @@ public enum ArmorMats implements ArmorMaterial {
     LEATHER_NO_OVERLAY("leather_no_overlay", ints(1,2,3,2), 7, 9, equipLeather(), items(ModItems.TREATED_LEATHER)),
     CLOTH("cloth", ints(1,2,3,2), 7, 9, equipLeather(), items(ModItems.CLOTH)),
     WATTLE("wattle", ints(1,2,2,1), 3, 15, equipLeather(), items(ModItems.PLANK)),
+
+    ANCIENT_AGLETS("ancient_aglets", ints(1,4,5,2), 15, 18, equipIron(), items(Items.COPPER_INGOT)),
 
     RF_GOLD("reinforced_gold", ints(0,0,2,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     RF_IRON("reinforced_iron", ints(0,0,3,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),

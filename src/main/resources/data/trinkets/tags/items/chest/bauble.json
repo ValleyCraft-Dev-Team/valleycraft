@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:polished_gear",
+    "valleycraft:totem_of_visitors",
+    "valleycraft:totem_of_friendship",
+    "valleycraft:translation_canvas",
+    "valleycraft:shard_of_the_first_golem",
+    "valleycraft:runekeepers_tome",
+    "valleycraft:strange_doll",
+    "valleycraft:piglin_childs_toy",
+    "valleycraft:lucky_fishing_hook",
+    "valleycraft:monster_tooth",
+    "minecraft:totem_of_undying"
+  ]
+}

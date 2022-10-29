@@ -74,12 +74,14 @@ public enum RegularFoodItems implements ItemEnum {
 
     // no tier bottles
     CHOCOLATE_MILK(new BottleItem(settings().maxCount(16), 3, 0.3f).setMilk()),
+    ATOLE_MILK(new BottleItem(settings().maxCount(16), 4, 0.2f).setMilk()),
     APPLE_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     SWEET_BERRY_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     CHORUS_FRUIT_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     WARM_PUMPKIN_SOUP_BOTTLE(new BottleItem(settings().maxCount(16), 9, 0.8f)),
     GLOOM_BERRY_JUICE(new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.NIGHT_VISION)),
     ALOE_VERA_JUICE(new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.HEALTH_BOOST)),
+    STAR_CHERRY_JUICE(new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.LEVITATION)),
 
     // no tier items
     CAVE_ROOT_STIR_FRY(new BowlItem(settings(), 10, 0.6f)),
@@ -110,29 +112,30 @@ public enum RegularFoodItems implements ItemEnum {
     SANDWICH_PORK(new FoodItem(settings(), 10, 0.8f)),
 
     // golden
-    GOLDEN_WATERMELON_JUICE(new BottleItem(settings(), 2, 1.2f)),
-    GOLDEN_POTATO(new FoodItem(settings(), 4, 1.2f)),
-    GOLDEN_ALOE_VERA(new FoodItem(settings(), 4, 1.2f)),
-    GOLDEN_CAVE_ROOT(new FoodItem(settings(), 4, 1.2f)),
-    GOLDEN_CHORUS_FRUIT(new FoodItem(settings().rarity(Rarity.RARE), 4, 1.2f)),
-    GOLDEN_ENDURA_CARROT(new FoodItem(settings().rarity(Rarity.RARE), 4, 1.2f)),
-    GOLDEN_BEETROOT(new FoodItem(settings(), 4, 1.2f)),
-    GOLDEN_HEARTY_BEETROOT(new FoodItem(settings().rarity(Rarity.RARE), 4, 1.2f)),
-    GOLDEN_FIRE_PEPPER(new FoodItem(settings(), 4, 1.2f)),
-    GOLDEN_SWEET_BERRIES(new FoodItem(settings(), 4, 1.2f)),
-    GOLDEN_GLOW_BERRIES(new FoodItem(settings(), 4, 1.2f)),
-    GOLDEN_GLOOM_BERRY(new FoodItem(settings(), 4, 1.2f)),
-    GOLDEN_ANCIENT_MAIZE(new FoodItem(settings().rarity(Rarity.RARE), 4, 1.2f)),
-    GOLDEN_ONION(new FoodItem(settings(), 4, 1.2f)),
-    GOLDEN_PUMPKIN_SLICE(new FoodItem(settings(), 4, 1.2f)),
+    GOLDEN_WATERMELON_JUICE(new BottleItem(settings(), 2, 2.4f)),
+    GOLDEN_POTATO(new FoodItem(settings(), 4, 2.4f)),
+    GOLDEN_ALOE_VERA(new FoodItem(settings(), 4, 2.4f)),
+    GOLDEN_CAVE_ROOT(new FoodItem(settings(), 4, 2.4f)),
+    GOLDEN_CHORUS_FRUIT(new FoodItem(settings().rarity(Rarity.RARE), 4, 2.4f)),
+    GOLDEN_ENDURA_CARROT(new FoodItem(settings().rarity(Rarity.RARE), 4, 2.4f)),
+    GOLDEN_BEETROOT(new FoodItem(settings(), 4, 2.4f)),
+    GOLDEN_HEARTY_BEETROOT(new FoodItem(settings().rarity(Rarity.RARE), 4, 2.4f)),
+    GOLDEN_FIRE_PEPPER(new FoodItem(settings(), 4, 2.4f)),
+    GOLDEN_SWEET_BERRIES(new FoodItem(settings(), 4, 2.4f)),
+    GOLDEN_GLOW_BERRIES(new FoodItem(settings(), 4, 2.4f)),
+    GOLDEN_STAR_CHERRIES(new FoodItem(settings(), 4, 2.4f)),
+    GOLDEN_GLOOM_BERRY(new FoodItem(settings(), 4, 2.4f)),
+    GOLDEN_ANCIENT_MAIZE(new FoodItem(settings().rarity(Rarity.RARE), 4, 2.4f)),
+    GOLDEN_ONION(new FoodItem(settings(), 4, 2.4f)),
+    GOLDEN_PUMPKIN_SLICE(new FoodItem(settings(), 4, 2.4f)),
 
     //special items
     VILLAGER_ELIXER(new ElixerBottleItemVillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.REGENERATION, StatusEffects.NAUSEA, StatusEffects.SLOWNESS)),
     MOBLIN_ELIXER(new ElixerBottleItemMoblin(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.NIGHT_VISION, StatusEffects.NAUSEA, StatusEffects.POISON)),
     PILLAGER_TONIC(new ElixerBottleItemPillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.STRENGTH, StatusEffects.NAUSEA, StatusEffects.POISON)),
     //ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC)4, 1.2f)),
-    ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC), 4, 1.2f, StatusEffects.SLOW_FALLING)),
-    ENCHANTED_APPLE_PIE(new EnchantedFoodItem(settings().rarity(EPIC), 6, 1.6f, StatusEffects.FIRE_RESISTANCE));
+    ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC), 4, 1.2f, StatusEffects.SLOW_FALLING).hideTooltip()),
+    ENCHANTED_APPLE_PIE(new EnchantedFoodItem(settings().rarity(EPIC), 6, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip());
 
     //1.1 planned - dw its not sea turtles!
     //COOKED_TURTLE(new FoodItem(settings(), 8, 0.6f)),

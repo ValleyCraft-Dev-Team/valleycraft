@@ -178,13 +178,20 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     WARM_BIRCH_SAPLING(new SaplingBlock(new WarmBirchSaplingGen(), Block.Settings.copy(Blocks.BIRCH_SAPLING)), itemSettings()),
     WARM_BIRCH_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES)), itemSettings()),
 
+    LESSER_DIVINE_OAK_LOG(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+
     CELESTIAL_SAPLING(new SaplingBlock(new CelestialSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
-    CELESTIAL_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES).nonOpaque()), itemSettings()),
-    CELESTIAL_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
+    CELESTIAL_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES).sounds(BlockSoundGroup.NETHER_WART).nonOpaque()), itemSettings()),
+    CELESTIAL_LOG(new PillarBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
 
     //end blocks
+<<<<<<< Updated upstream
     END_GRASS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, Block.Settings.copy(Blocks.GRASS).sounds(BlockSoundGroup.NETHERRACK)).ground(ENDSTONE), itemSettings()),
     END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE)), itemSettings()),
+=======
+    END_GRASS(new OffsetPlantBlock(DEFAULT_PLANT_SHAPE).ground(END_PLANTS), itemSettings()),
+    END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE).sounds(BlockSoundGroup.NETHERRACK)), itemSettings()),
+>>>>>>> Stashed changes
 
     ARID_VINES(new VineHeadBlock(), itemSettings()),
     ARID_VINES_PLANT(new VineBodyBlock()),

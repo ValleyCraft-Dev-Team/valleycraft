@@ -204,6 +204,9 @@ class RenderLayers {
         put(GOLEMITE_CHAIN, cullout);
         put(GOLEMITE_GRATE, cullout);
         put(GOLEMITE_LADDER, cullout);
+        put(GOLDEN_LADDER, cullout);
+        put(ROPE_LADDER, cullout);
+        put(NET_BLOCK, cullout);
         put(PRIMSTEEL_GRATE, cullout);
         put(PRIMSTEEL_CHAIN, cullout);
         put(IRON_GRATE, cullout);
@@ -214,7 +217,9 @@ class RenderLayers {
         put(VEX_LANTERN, cullout);
         put(ALLAY_LANTERN, cullout);
         put(WATTLE_BARS, cullout);
-        put(BONFIRE, cullout);
+        put(BONFIRE, translucent);
+        put(ARID_VINES, cullout);
+        put(ARID_VINES_PLANT, cullout);
 
         put(ANCIENT_WAGON_WHEEL, cullout);
         put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);
@@ -267,6 +272,8 @@ class RenderLayers {
         put(STARFISH_BLOCK, cullout);
         put(TUBE_WORMS_BLOCK, cullout);
         put(RUSHES, cullout);
+        put(CELESTIAL_SAPLING, cullout);
+        put(OCELOT_STATUE, cullout);
 
         put(TRANSLATION_CANVAS, cullout);
         put(GLOW_CAP_CLUSTER, cullout);

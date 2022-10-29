@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/misc/monster_tooth"
+    "layer0": "valleycraft:item/baubles/monster_tooth"
   }
 }

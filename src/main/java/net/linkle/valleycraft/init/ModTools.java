@@ -18,6 +18,7 @@ import net.linkle.valleycraft.tool.shovel.special.LadleItem;
 import net.linkle.valleycraft.tool.shovel.special.OarItem;
 import net.linkle.valleycraft.tool.shovel.special.OarToolMaterial;
 import net.linkle.valleycraft.tool.spear.SpearBase;
+import net.linkle.valleycraft.tool.staff.StaffBase;
 import net.linkle.valleycraft.tool.sword.special.*;
 import net.linkle.valleycraft.tool.throwing.BoneDartItem;
 import net.linkle.valleycraft.tool.travelers_sword.TravelerBase;
@@ -50,6 +51,7 @@ public class ModTools {
     public static final Item CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.IRON, new Item.Settings().group(VC_TOOLS));
     public static final Item ANTHROPOLOGISTS_ROCK_PICK = new AnthroPickaxeItem(new AnthroPickaxeMaterial());
     public static final Item ANCIENT_CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.DIAMOND, new Item.Settings().group(BOOKS).rarity(Rarity.EPIC));
+    public static final Item MOBLIN_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
 
     //The base attack damage of each tool type.
     //These values are added to the attack stats of their materials when they're registered.
@@ -62,6 +64,7 @@ public class ModTools {
     public static final Integer SPEAR_BASE_DAMAGE = 3;
     public static final Integer TRAVELER_BASE_DAMAGE = 3;
     public static final Integer MACE_BASE_DAMAGE = 3;
+    public static final Integer STAFF_BASE_DAMAGE = 3;
 
     public static final Integer AXE_BASE_DAMAGE = 6;
     public static final Float AXE_BASE_SPEED = -3.2f;
@@ -85,6 +88,7 @@ public class ModTools {
     public static final Float SPEAR_BASE_SPEED = -2.6f;
     public static final Float TRAVELER_BASE_SPEED = -2.2f;
     public static final Float MACE_BASE_SPEED = -2.2f;
+    public static final Float STAFF_BASE_SPEED = -2.2f;
 
     //The item settings for knives made of 'basic' materials- wood, gold, stone, iron, rose gold, diamond, netherite
     public static final Item.Settings BASIC_SETTINGS = new Item.Settings().group(VC_TOOLS);
@@ -101,11 +105,13 @@ public class ModTools {
         Reg.register("throwing_rock", BONE_DART_ITEM);
         //Material technically
         Reg.register("wooden_oar", OAR);
-        //Ladle
-        Reg.register("ladle", LADLE);
         //Climbing Axes
         Reg.register("climbing_axe", CLIMBING_AXE);
+        //Rock Picks
         Reg.register("anthropologists_rock_pick", ANTHROPOLOGISTS_ROCK_PICK);
+        //Staffs
+        Reg.register("wooden_staff", new StaffBase(ModToolMaterials.PLANK, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("bamboo_staff", new StaffBase(ModToolMaterials.BAMBOO, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
 
         //Knives
         Reg.register("knife_wooden", new KnifeBase(ToolMaterials.WOOD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
@@ -173,7 +179,7 @@ public class ModTools {
         Reg.register("dagger_diamond", new DaggerBase(ToolMaterials.DIAMOND, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("dagger_netherite", new DaggerBase(ToolMaterials.NETHERITE, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
 
-        //Spear
+        //Traveler
         Reg.register("traveler_wooden", new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("traveler_stone", new TravelerBase(ToolMaterials.STONE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("traveler_golden", new TravelerBase(ToolMaterials.GOLD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
@@ -209,48 +215,32 @@ public class ModTools {
         Reg.register("rosegold_hoe", new ShovelItem(ModToolMaterials.ROSEGOLD, HOE_BASE_DAMAGE, HOE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("golemite_hoe", new ShovelItem(ModToolMaterials.GOLEMITE, HOE_BASE_DAMAGE, HOE_BASE_SPEED, BASIC_SETTINGS));
 
-        //Meteorite Artifacts
+        //Meteorite Artifacts/Tools
         Reg.register("meteorite_sword", new SwordItem(ModToolMaterials.METEORITE, SWORD_BASE_DAMAGE, SWORD_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("meteorite_short_sword", new TravelerBase(ModToolMaterials.METEORITE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("meteorite_war_axe", new WoodcutterAxeBase(ModToolMaterials.METEORITE, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("meteorite_mace", new MaceBase(ModToolMaterials.METEORITE, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("meteorite_misericorde", new DaggerBase(ModToolMaterials.METEORITE, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
 
-        //Jungles Blessing
+        //Artifacts
+        Reg.register("ladle", LADLE);
+        Reg.register("ancient_bamboo_staff", new StaffBase(ModToolMaterials.NATURES_BLESSING, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
         Reg.register("jungles_blessing", new ScytheBase(ModToolMaterials.NATURES_BLESSING, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_EPIC));
-
-        //Field Surgeon
         Reg.register("field_surgeons_misericorde", new DaggerBase(ModToolMaterials.OBSIDIAN, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_EPIC));
-
-        //Witch Blade
         Reg.register("witch_blade", new DaggerBase(ModToolMaterials.AMETHYST, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
-
-        //Ancient Gear Mace
         Reg.register("ancient_gear_mace", new MaceBase(ModToolMaterials.COPPER, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS));
-
-        //Undead Artifacts
-        //Drowned
         Reg.register("knife_coral_encrusted", CORAL_KNIFE);
         Reg.register("rapier_cave_fishers", CAVE_FISHERS_RAPIER);
         Reg.register("prismace", new MaceBase(ModToolMaterials.PRISMARINE, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
-
-        //Mermaid's Sword
-        //Arid & Husk
-        //Mossy
-        //Frozen
-        //Zombified
-
-        //Sea-O-Logers
+        Reg.register("toy_sword", new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
+        Reg.register("moblin_sword_broken", MOBLIN_BROKEN);
+        Reg.register("moblin_sword_fixed", new TravelerBase(ToolMaterials.IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
+        Reg.register("dierdra_spear", new SpearBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("seaologer_broken", SEAOLOGER_BROKEN);
         Reg.register("seaologer_fixed", SEAOLOGER_FIXED);
-
-        //rusty iron tools
+        Reg.register("ancient_climbing_axe", ANCIENT_CLIMBING_AXE);
+        //rusty
         Reg.register("rusted_sword", RUSTY_SWORD);
         Reg.register("rusted_pickaxe", RUSTY_PICKAXE);
-
-        //1.1 planned
-        //Reg.register("axe_timber_red", new TimberAxeItem(new TimberAxeToolMaterial()));
-        
-        Reg.register("ancient_climbing_axe", ANCIENT_CLIMBING_AXE);
     }
 }

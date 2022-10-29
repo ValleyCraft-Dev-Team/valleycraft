@@ -2,6 +2,7 @@ package net.linkle.valleycraft.fluid;
 
 import java.util.Optional;
 
+import net.minecraft.sound.SoundCategory;
 import org.jetbrains.annotations.Nullable;
 
 import net.linkle.valleycraft.init.NaturalBlocks;
@@ -48,7 +49,14 @@ public abstract class SludgeFluid extends FlowableFluid {
 
     @Override
     public void randomDisplayTick(World world, BlockPos pos, FluidState state, Random random) {
-        
+        if (!state.isStill() && !(Boolean)state.get(FALLING)) {
+            if (random.nextInt(64) == 0) {
+                world.playSound((double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, SoundEvents.BLOCK_WATER_AMBIENT, SoundCategory.BLOCKS, random.nextFloat() * 0.25F + 0.75F, random.nextFloat() + 0.5F, false);
+            }
+        } else if (random.nextInt(10) == 0) {
+            world.addParticle(ParticleTypes.UNDERWATER, (double)pos.getX() + random.nextDouble(), (double)pos.getY() + random.nextDouble(), (double)pos.getZ() + random.nextDouble(), 0.0D, 0.0D, 0.0D);
+        }
+
     }
 
     @Override
