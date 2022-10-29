@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.block;
 
-import static net.linkle.valleycraft.block.ModFlowerBlock.StrewEffect.*;
+import static net.linkle.valleycraft.block.ModFlowerBlock.StewEffect.*;
 
 import com.google.common.collect.ImmutableList;
 
@@ -18,8 +18,8 @@ public class ModFlowerBlock extends FlowerBlock {
     
     //  If you want weights, tell me so I can rewrite it - AndEditor7
     /** List of unique effects. Most effects are copied from vanilla flowers */
-    private static final ImmutableList<StrewEffect> EFFECTS = Util.make(() -> {
-        var builder = new ImmutableList.Builder<StrewEffect>();
+    private static final ImmutableList<StewEffect> EFFECTS = Util.make(() -> {
+        var builder = new ImmutableList.Builder<StewEffect>();
         builder.add(copy(Blocks.DANDELION)); // saturation
         builder.add(copy(Blocks.POPPY)); // night vision
         builder.add(copy(Blocks.ALLIUM)); // fire resistance
@@ -92,7 +92,7 @@ public class ModFlowerBlock extends FlowerBlock {
         setEffect(EFFECTS.get(index));
     }
     
-    private void setEffect(StrewEffect effect) {
+    private void setEffect(StewEffect effect) {
         effectInStew = effect.getEffect();
         effectDuration = effect.getDuration();
     }
@@ -102,15 +102,15 @@ public class ModFlowerBlock extends FlowerBlock {
         effectDuration = flower.getEffectInStewDuration();
     }
     
-    public static interface StrewEffect {
+    public static interface StewEffect {
         StatusEffect getEffect();
         int getDuration();
-        static StrewEffect copy(Block flowerBlock) {
+        static StewEffect copy(Block flowerBlock) {
             var flower = (FlowerBlock)flowerBlock;
             return create(flower.getEffectInStew(), flower.getEffectInStewDuration());
         }
-        static StrewEffect create(StatusEffect effectInStew, int effectDuration) {
-            return new StrewEffect() {
+        static StewEffect create(StatusEffect effectInStew, int effectDuration) {
+            return new StewEffect() {
                 @Override
                 public StatusEffect getEffect() {
                     return effectInStew;
