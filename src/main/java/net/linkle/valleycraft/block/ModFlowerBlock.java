@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.block;
 
+import static net.linkle.valleycraft.block.ModFlowerBlock.StrewEffect.*;
+
 import com.google.common.collect.ImmutableList;
 
 import net.minecraft.block.Block;
@@ -10,19 +12,23 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.util.Util;
 import net.minecraft.util.registry.Registry;
 
+/** Extension of the vanilla {@link FlowerBlock} class with randomized effect in stew. 
+ *  @author AndEditor7 */
 public class ModFlowerBlock extends FlowerBlock {
     
-    // List of flowers with unique effects.
-    private static final ImmutableList<FlowerBlock> FLOWERS = Util.make(() -> {
-        var builder = new ImmutableList.Builder<FlowerBlock>();
-        builder.add((FlowerBlock)Blocks.DANDELION); // saturation
-        builder.add((FlowerBlock)Blocks.POPPY); // night vision
-        builder.add((FlowerBlock)Blocks.ALLIUM); // fire resistance
-        builder.add((FlowerBlock)Blocks.AZURE_BLUET); // blindness
-        builder.add((FlowerBlock)Blocks.RED_TULIP); // weakness
-        builder.add((FlowerBlock)Blocks.OXEYE_DAISY); // regeneration
-        builder.add((FlowerBlock)Blocks.CORNFLOWER); // jump boost
-        builder.add((FlowerBlock)Blocks.LILY_OF_THE_VALLEY); // poison
+    //  If you want weights, tell me so I can rewrite it - AndEditor7
+    /** List of unique effects. Most effects are copied from vanilla flowers */
+    private static final ImmutableList<StrewEffect> EFFECTS = Util.make(() -> {
+        var builder = new ImmutableList.Builder<StrewEffect>();
+        builder.add(copy(Blocks.DANDELION)); // saturation
+        builder.add(copy(Blocks.POPPY)); // night vision
+        builder.add(copy(Blocks.ALLIUM)); // fire resistance
+        builder.add(copy(Blocks.AZURE_BLUET)); // blindness
+        builder.add(copy(Blocks.RED_TULIP)); // weakness
+        builder.add(copy(Blocks.OXEYE_DAISY)); // regeneration
+        builder.add(copy(Blocks.CORNFLOWER)); // jump boost
+        builder.add(copy(Blocks.LILY_OF_THE_VALLEY)); // poison
+        //builder.add(create(StatusEffects.ABSORPTION, 5)); // custom effect!
         return builder.build();
     });
     
@@ -40,6 +46,7 @@ public class ModFlowerBlock extends FlowerBlock {
         setEffect((FlowerBlock)flower);
     }
 
+    /** Create the block with a custom effect in stew. */
     public ModFlowerBlock(StatusEffect effectInStew, int effectDuration, Settings settings) {
         super(effectInStew, effectDuration, settings);
         this.effectInStew = effectInStew;
@@ -80,13 +87,39 @@ public class ModFlowerBlock extends FlowerBlock {
             return;
         }
         
-        // Use the random effect listed from flowers.
-        var index = Math.abs(id.hashCode() % FLOWERS.size());
-        setEffect(FLOWERS.get(index));
+        // Use the random effect from the effects list.
+        var index = Math.abs(id.hashCode() % EFFECTS.size());
+        setEffect(EFFECTS.get(index));
+    }
+    
+    private void setEffect(StrewEffect effect) {
+        effectInStew = effect.getEffect();
+        effectDuration = effect.getDuration();
     }
     
     private void setEffect(FlowerBlock flower) {
         effectInStew = flower.getEffectInStew();
         effectDuration = flower.getEffectInStewDuration();
+    }
+    
+    public static interface StrewEffect {
+        StatusEffect getEffect();
+        int getDuration();
+        static StrewEffect copy(Block flowerBlock) {
+            var flower = (FlowerBlock)flowerBlock;
+            return create(flower.getEffectInStew(), flower.getEffectInStewDuration());
+        }
+        static StrewEffect create(StatusEffect effectInStew, int effectDuration) {
+            return new StrewEffect() {
+                @Override
+                public StatusEffect getEffect() {
+                    return effectInStew;
+                }
+                @Override
+                public int getDuration() {
+                    return effectDuration;
+                }
+            };
+        }
     }
 }
