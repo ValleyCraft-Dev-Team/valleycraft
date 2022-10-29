@@ -24,6 +24,8 @@ class ValleyModelGenerator extends FabricModelProvider {
         // Doors
         generator.registerDoor(ModBlocks.APPLE_DOOR.block);
         generator.registerDoor(ModBlocks.MAMON_DOOR.block);
+        generator.registerDoor(ModBlocks.CELESTIAL_DOOR.block);
+        generator.registerDoor(ModBlocks.MAMON_DOOR.block);
         generator.registerDoor(ModBlocks.WATTLE_DOOR.block);
         generator.registerDoor(ModBlocks.GLASS_DOOR.block);
         generator.registerDoor(ModBlocks.TINTED_GLASS_DOOR.block);
@@ -31,7 +33,9 @@ class ValleyModelGenerator extends FabricModelProvider {
         // Glass pane
         generator.registerGlassPane(ModBlocks.TERRARIUM_GLASS.block, ModBlocks.TERRARIUM_GLASS_PANE.block);
         generator.registerGlassPane(ModBlocks.BRIMSTONE_GLASS.block, ModBlocks.BRIMSTONE_GLASS_PANE.block);
-        
+        generator.registerGlassPane(ModBlocks.BEVELED_GLASS.block, ModBlocks.BEVELED_GLASS_PANE.block);
+        generator.registerGlassPane(Blocks.TINTED_GLASS, ModBlocks.TINTED_GLASS_PANE.block);
+
         // Potted flowers
         generator.registerFlowerPotPlant(NaturalBlocks.BLACK_DAHLIA.block, ModBlocks.POTTED_BLACK_DAHLIA.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(NaturalBlocks.FLUFFY_DANDELION.block, ModBlocks.POTTED_FLUFFY_DANDELION.block, TintType.NOT_TINTED);

@@ -30,10 +30,11 @@ class RenderLayers {
         // put(Blocks.GLASS, cullout);
         put(MAMON_DOOR, cullout);
         put(MAMON_TRAPDOOR, cullout);
-        put(WATTLE_DOOR, cullout);
-        put(WATTLE_TRAPDOOR, cullout);
+        put(WATTLE_DOOR, translucent);
+        put(WATTLE_TRAPDOOR, translucent);
         put(GLASS_DOOR, cullout);
         put(TINTED_GLASS_DOOR, translucent);
+        put(CELESTIAL_DOOR, cullout);
 
         // Flowers and Potted Flowers
         put(BLACK_DAHLIA, cullout);
@@ -214,6 +215,8 @@ class RenderLayers {
         put(GOLDEN_BARS, cullout);
         put(TERRARIUM_GLASS, cullout);
         put(TERRARIUM_GLASS_PANE, cullout);
+        put(BEVELED_GLASS, cullout);
+        put(BEVELED_GLASS_PANE, cullout);
         put(VEX_LANTERN, cullout);
         put(ALLAY_LANTERN, cullout);
         put(WATTLE_BARS, cullout);
@@ -340,6 +343,7 @@ class RenderLayers {
         put(DEEPSLATE_BRICK_CHIMNEY, cullout);
         put(NETHER_BRICK_CHIMNEY, cullout);
         put(RED_NETHER_BRICK_CHIMNEY, cullout);
+        put(COUNTER, cullout);
 
         put(ARID_VINES_PLANT, cullout);
         put(ARID_VINES, cullout);
