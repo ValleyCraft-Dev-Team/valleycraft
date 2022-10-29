@@ -19,6 +19,7 @@ class ValleyModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
+        TextureMap map;
         
         // Doors
         generator.registerDoor(ModBlocks.APPLE_DOOR.block);
@@ -77,10 +78,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerFlowerPotPlant(NaturalBlocks.LUSH_BUSH.block, ModBlocks.POTTED_LUSH_BUSH.block, TintType.NOT_TINTED);
 
         // Smooth Carmine
-        TextureMap carmineTextureMap = new TextureMap()
-                .put(TextureKey.SIDE, Main.makeId("block/carmine_smooth"))
-                .put(TextureKey.END,  Main.makeId("block/carmine_smooth"))
-                .put(TextureKey.WALL, Main.makeId("block/carmine_smooth"));
+        TextureMap carmineTextureMap = textureMap("carmine_smooth");
 
         stairs(ModBlocks.CARMINE_SMOOTH_STAIRS.block, carmineTextureMap, generator);
         slab(ModBlocks.CARMINE_SMOOTH_SLAB.block, ModBlocks.CARMINE_SMOOTH.block, carmineTextureMap, generator);
@@ -90,6 +88,11 @@ class ValleyModelGenerator extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // ...
+    }
+    
+    TextureMap textureMap(String textureName) {
+        var id = Main.makeId("block/"+textureName);
+        return new TextureMap().put(TextureKey.SIDE, id).put(TextureKey.END, id).put(TextureKey.WALL, id);
     }
 
     /**

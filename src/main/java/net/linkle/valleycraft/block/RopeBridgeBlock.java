@@ -32,7 +32,6 @@ public class RopeBridgeBlock extends HorizontalWithWaterBlock {
 
     public RopeBridgeBlock(Settings settings) {
         super(settings);
-        setDefaultState();
     }
 
     @Override

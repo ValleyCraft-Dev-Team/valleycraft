@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "valleycraft:apple_button",
-    "valleycraft:mamon_button"
+    "valleycraft:mamon_button",
+    "valleycraft:ancient_button"
   ]
 }
