@@ -1,7 +1,8 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.item.*;
+import net.linkle.valleycraft.baubles.BaubleItem;
+import net.linkle.valleycraft.baubles.LovePotionBauble;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -24,7 +25,7 @@ public enum ModBaubles implements ItemEnum {
     PIGLIN_CHILDS_TOY(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     LUCKY_FISHING_HOOK(new BaubleItem(itemSettings().rarity(RARE))),
     MONSTER_TOOTH(new BaubleItem(itemSettings().rarity(UNCOMMON))),
-    LOVE_POTION(new BaubleItem(itemSettings().rarity(RARE)));
+    LOVE_POTION(new LovePotionBauble(itemSettings().rarity(RARE)));
 
     public static void initialize() {
     }

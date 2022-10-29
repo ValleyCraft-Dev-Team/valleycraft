@@ -1,11 +1,10 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.item.BaubleItem;
+import net.linkle.valleycraft.baubles.BaubleItem;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 import static net.linkle.valleycraft.init.ModGroups.BOOKS;

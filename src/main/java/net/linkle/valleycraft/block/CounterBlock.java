@@ -51,15 +51,6 @@ public class CounterBlock extends BlockWithEntity implements Waterloggable{
 
     public CounterBlock(Settings settings) {
         super(settings);
-        setDefaultState();
-    }
-
-    protected BlockState newDefaultState() {
-        return newDefaultState().with(WATERLOGGED, false);
-    }
-
-    protected final void setDefaultState() {
-        setDefaultState(newDefaultState());
     }
 
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
