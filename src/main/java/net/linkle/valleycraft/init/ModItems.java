@@ -83,15 +83,6 @@ public enum ModItems implements ItemEnum {
     SEAOLOGER_TOKEN(new Item(itemSettings().group(BOOKS).rarity(Rarity.COMMON).maxCount(64))),
     TOTEM_OF_TRADE(new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1))),
     TOTEM_OF_APPRECIATION(new Item(itemSettings().group(BOOKS).rarity(Rarity.RARE).maxCount(1))),
-    TOTEM_OF_VISITORS(new BaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1))),
-    TOTEM_OF_FRIENDSHIP(new BaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1))),
-    POLISHED_GEAR(new BaubleItem(itemSettings().group(BOOKS).rarity(RARE).maxCount(1))),
-    SHARD_OF_THE_FIRST_GOLEM(new BaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1))),
-    STRANGE_DOLL(new BaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1))),
-    PIGLIN_CHILDS_TOY(new BaubleItem(itemSettings().group(BOOKS).rarity(UNCOMMON).maxCount(1))),
-    LUCKY_FISHING_HOOK(new BaubleItem(itemSettings().group(BOOKS).rarity(RARE).maxCount(1))),
-    MONSTER_TOOTH(new BaubleItem(itemSettings().group(BOOKS).rarity(RARE).maxCount(1))),
-
     BOMB_BAG(new BombBagItem(itemSettings().group(BOOKS))),
     ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_TOOLS))),
 
@@ -110,6 +101,7 @@ public enum ModItems implements ItemEnum {
     ANCIENT_RECORD_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.ANCIENT, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),110));
 
     public static void initialize() {
+        ModBaubles.initialize();
         TieredFoodItems.initialize();
         IngredientFoodItems.initialize();
         RegularFoodItems.initialize();

@@ -185,8 +185,8 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     CELESTIAL_LOG(new PillarBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
 
     //end blocks
-    END_GRASS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, Block.Settings.copy(Blocks.GRASS).sounds(BlockSoundGroup.NETHERRACK)).ground(ENDSTONE), itemSettings()),
-    END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE)), itemSettings()),
+    END_GRASS(new ModPlantBlock(OFFSET_REPLACEABLE).ground(END_PLANTS), itemSettings()),
+    END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE).sounds(BlockSoundGroup.NETHERRACK)), itemSettings()),
 
     ARID_VINES(new VineHeadBlock(), itemSettings()),
     ARID_VINES_PLANT(new VineBodyBlock()),
