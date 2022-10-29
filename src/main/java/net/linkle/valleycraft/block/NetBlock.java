@@ -1,6 +1,5 @@
 package net.linkle.valleycraft.block;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
@@ -17,37 +16,28 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 public class NetBlock extends DirectionBlockWithWater {
-    protected static final VoxelShape EAST_SHAPE;
-    protected static final VoxelShape WEST_SHAPE;
-    protected static final VoxelShape SOUTH_SHAPE;
-    protected static final VoxelShape NORTH_SHAPE;
+    protected static final VoxelShape X_SHAPE;
+    protected static final VoxelShape Z_SHAPE;
     protected static final VoxelShape UP_SHAPE;
     protected static final VoxelShape DOWN_SHAPE;
 
     public NetBlock() {
-        super(FabricBlockSettings.of(Material.CARPET)
-                //.breakByTool(FabricToolTags.SWORDS)
-                .sounds(BlockSoundGroup.BAMBOO_SAPLING).nonOpaque()
-                .strength(0.5f, 0.5f));
+        super(Settings.of(Material.CARPET)
+                .sounds(BlockSoundGroup.BAMBOO_SAPLING)
+                .nonOpaque().strength(0.5f, 1f));
         setDefaultState();
     }
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         switch (state.get(FACING)) {
-            case NORTH:
-                return NORTH_SHAPE;
-            case SOUTH:
-                return SOUTH_SHAPE;
-            case WEST:
-                return WEST_SHAPE;
-            case EAST:
-                return EAST_SHAPE;
-            case UP:
-                return UP_SHAPE;
-            case DOWN:
-            default:
-                return DOWN_SHAPE;
+        case NORTH:
+        case SOUTH: return Z_SHAPE;
+        case WEST:
+        case EAST: return X_SHAPE;
+        case UP: return UP_SHAPE;
+        case DOWN:
+        default: return DOWN_SHAPE;
         }
     }
 
@@ -92,11 +82,9 @@ public class NetBlock extends DirectionBlockWithWater {
     }
 
     static {
-        UP_SHAPE = Block.createCuboidShape(0.0D, 15.0D, 0.0D, 16.0D, 16.0D, 16.0D);
-        DOWN_SHAPE = Block.createCuboidShape(0.0D, 4.0D, 0.0D, 16.0D, 6.0D, 16.0D);
-        EAST_SHAPE = Block.createCuboidShape(7.0D, 0.0D, 0.0D, 9.0D, 16.0D, 16.0D);
-        WEST_SHAPE = Block.createCuboidShape(7.0D, 0.0D, 0.0D, 9.0D, 16.0D, 16.0D);
-        NORTH_SHAPE = Block.createCuboidShape(0.0D, 0.0D, 7.0D, 16.0D, 16.0D, 9.0D);
-        SOUTH_SHAPE = Block.createCuboidShape(0.0D, 0.0D, 7.0D, 16.0D, 16.0D, 9.0D);
+        UP_SHAPE = Block.createCuboidShape(0, 15, 0, 16, 16, 16);
+        DOWN_SHAPE = Block.createCuboidShape(0, 4, 0, 16, 6, 16);
+        X_SHAPE = Block.createCuboidShape(7, 0, 0, 9, 16, 16);
+        Z_SHAPE = Block.createCuboidShape(0, 0, 7, 16, 16, 9);
     }
 }

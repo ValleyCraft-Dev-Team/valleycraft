@@ -8,6 +8,7 @@ import java.util.function.BiFunction;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.block.*;
 import net.linkle.valleycraft.util.BlockEnum;
@@ -66,8 +67,9 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     NET(new NetBlock(), itemSettings()),
     NET_BLOCK(new BlockWithWater(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
 
-    ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque().noCollision()), itemSettings()),
-    ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.of(Material.CARPET).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1).noCollision()), itemSettings()),
+    ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.of(Material.CARPET).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1)), itemSettings()),
+    SPIKE_TRAP(new SpikeTrapBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).nonOpaque().strength(0.5f, 1.0f)), itemSettings()),
 
     // guidestones
     GUIDESTONE(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
@@ -230,11 +232,17 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     APPLE_FENCE_GATE(new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE)), itemSettings()),
     APPLE_PRESSURE_PLATE(new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)), itemSettings()),
 
-    //ancient
+    // ancient
     ANCIENT_WOOD(new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings()),
     STRIPPED_ANCIENT_WOOD(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD)), itemSettings()),
     STRIPPED_ANCIENT_LOG(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
     ANCIENT_PLANKS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    ANCIENT_SLAB(new SlabBlock(Block.Settings.copy(Blocks.OAK_SLAB)), itemSettings()),
+    ANCIENT_STAIRS(new StairsBlock(ANCIENT_PLANKS.getState(), Block.Settings.copy(Blocks.OAK_STAIRS)), itemSettings()),
+    ANCIENT_BUTTON(new WoodenButtonBlock(Block.Settings.copy(Blocks.OAK_BUTTON)), itemSettings()),
+    ANCIENT_FENCE(new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE)), itemSettings()),
+    ANCIENT_FENCE_GATE(new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE)), itemSettings()),
+    ANCIENT_PRESSURE_PLATE(new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)), itemSettings()),
 
     //celestial
     CELESTIAL_WOOD(new PillarBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
