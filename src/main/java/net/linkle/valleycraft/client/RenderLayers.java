@@ -40,8 +40,17 @@ class RenderLayers {
         put(POTTED_BLACK_DAHLIA, cullout);
         put(FLUFFY_DANDELION, cullout);
         put(POTTED_FLUFFY_DANDELION, cullout);
+        put(FADED_SOUL_ROSE, cullout);
+        put(SOUL_ROSE, cullout);
+        put(BLUE_SOUL_ROSE, cullout);
+        put(BLUE_SOULSPORE, cullout);
+        put(BLUE_SOULSPORE_SINGLE, cullout);
+        put(BLUE_SOUL_CELESTIAL, cullout);
+        put(SOUL_CELESTIAL, cullout);
+        put(FADED_CELESTIAL, cullout);
         put(POTTED_FADED_SOUL_ROSE, cullout);
         put(HONEYCLUSTER, cullout);
+        put(END_GRASS, cullout);
         put(CELESTIAL_LEAVES, cullout);
         put(POTTED_HONEYCLUSTER, cullout);
         put(LAVENDER, cullout);
@@ -80,6 +89,7 @@ class RenderLayers {
         put(POTTED_GLOW_CAP, cullout);
         put(JUNGLE_CAP, cullout);
         put(POTTED_JUNGLE_CAP, cullout);
+        put(SOULSPORE_SINGLE, cullout);
         put(POTTED_SOULSPORE, cullout);
         put(MOREL, cullout);
         put(POTTED_MOREL, cullout);
@@ -115,6 +125,7 @@ class RenderLayers {
         put(POTTED_DESERT_SHRUB, cullout);
         put(LUSH_BUSH, cullout);
         put(POTTED_LUSH_BUSH, cullout);
+        put(GHOST_PUMPKIN_STEM, cullout);
 
         put(FLOWERING_CACTUS, cullout);
         put(POTTED_FLOWERING_CACTUS, cullout);
@@ -160,6 +171,7 @@ class RenderLayers {
         put(PINK_FLOWERING_LILYPAD, cullout);
         put(BLUE_FLOWERING_LILYPAD, cullout);
         // put(STICKY_SHROOM, cullout);
+        put(ROCKS, cullout);
         put(APPLE_LEAVES, cullout);
         put(APPLE_LEAVES_EMPTY, cullout);
         put(ALGAE, cullout);
@@ -184,6 +196,8 @@ class RenderLayers {
         put(ANCIENT_FLOWERS, cullout);
         put(AMETHYSTLES, cullout);
         put(ALOE_VERAS, cullout);
+        put(CAVE_MOSS, cullout);
+        put(CRYSTAL_CAVE_MOSS, cullout);
         put(ORANGE_SEAGRASS, cullout);
         put(GLOWSQUID_LANTERN, cullout);
         put(GOLEMITE_BARS, cullout);
@@ -204,6 +218,8 @@ class RenderLayers {
         put(ALLAY_LANTERN, cullout);
         put(WATTLE_BARS, cullout);
         put(BONFIRE, translucent);
+        put(ARID_VINES, cullout);
+        put(ARID_VINES_PLANT, cullout);
 
         put(ANCIENT_WAGON_WHEEL, cullout);
         put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);
@@ -234,12 +250,15 @@ class RenderLayers {
         put(ERD_STONE_GRAVESTONE_PET, cullout);
         put(DEFECTIVE_SPAWNER, cullout);
         put(SWORD_BLOCK, cullout);
+        put(SOULSPORE, cullout);
 
         put(BROWN_CLAY_POT, cullout);
         put(BLUE_CLAY_POT, cullout);
 
         put(ERDSTONE_WINDOW, cullout);
         put(ERDSTONE_WINDOW_POWERED, cullout);
+
+        put(SLUDGE_FLUID, translucent);
 
         // put(BIG_RED, cullout);
         // put(BIG_BROWN, cullout);
@@ -295,8 +314,14 @@ class RenderLayers {
         put(IRON_LADDER, cullout);
         put(PRIMSTEEL_LADDER, cullout);
         put(BAMBOO_LADDER, cullout);
+        put(BRIMSTONE_CRYSTAL, cullout);
         put(BRIMSTONE_GLASS, translucent);
         put(BRIMSTONE_GLASS_PANE, translucent);
+
+        put(ICE_ORE, translucent);
+        put(DEEPSLATE_ICE_ORE, translucent);
+        put(ICICLE, cullout);
+        put(ICICLE_PACKED_ICE, translucent);
 
         put(COBBLESTONE_BRICK_CHIMNEY, cullout);
         put(COBBLESTONE_CHIMNEY, cullout);
@@ -315,6 +340,9 @@ class RenderLayers {
         put(DEEPSLATE_BRICK_CHIMNEY, cullout);
         put(NETHER_BRICK_CHIMNEY, cullout);
         put(RED_NETHER_BRICK_CHIMNEY, cullout);
+
+        put(ARID_VINES_PLANT, cullout);
+        put(ARID_VINES, cullout);
     }
 
     /**
