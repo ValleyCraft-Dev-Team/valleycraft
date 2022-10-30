@@ -332,4 +332,9 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     public Block asBlock() {
         return block;
     }
+    
+    @Override
+    public Identifier getId() {
+        return id;
+    }
 }

@@ -270,6 +270,12 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     CELESTIAL_PLANKS(new Block(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
     CELESTIAL_DOOR(new DoorBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
     CELESTIAL_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
+    CELESTIAL_SLAB(new SlabBlock(Block.Settings.copy(Blocks.OAK_SLAB)), itemSettings()),
+    CELESTIAL_STAIRS(new StairsBlock(CELESTIAL_WOOD.getState(), Block.Settings.copy(Blocks.OAK_STAIRS)), itemSettings()),
+    CELESTIAL_BUTTON(new WoodenButtonBlock(Block.Settings.copy(Blocks.OAK_BUTTON)), itemSettings()),
+    CELESTIAL_FENCE(new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE)), itemSettings()),
+    CELESTIAL_FENCE_GATE(new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE)), itemSettings()),
+    CELESTIAL_PRESSURE_PLATE(new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)), itemSettings()),
 
     // carved
     GHOST_PUMPKIN_CARVED(new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always)), itemSettings().equipmentSlot(i-> EquipmentSlot.HEAD)),
@@ -528,5 +534,10 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     @Override
     public Block asBlock() {
         return block;
+    }
+    
+    @Override
+    public Identifier getId() {
+        return id;
     }
 }

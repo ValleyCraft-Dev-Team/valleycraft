@@ -1,19 +1,29 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.util.IdProvider;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class ModMusic {
+public enum ModMusic implements IdProvider {
 
-    public static SoundEvent ANCIENT = registerSoundEvent("ancient");
-
-    private static SoundEvent registerSoundEvent(String name) {
-        Identifier id = new Identifier(Main.ID, name);
-        return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));
-    }
+    ANCIENT;
 
     public static void initialize() {
+    }
+    
+    // ### The Enum Class Itself ###
+    
+    public final SoundEvent sound, music;
+    
+    ModMusic() {
+        sound = music = new SoundEvent(Main.makeId(name().toLowerCase()));
+        Registry.register(Registry.SOUND_EVENT, sound.getId(), sound);
+    }
+
+    @Override
+    public Identifier getId() {
+        return sound.getId();
     }
 }

@@ -8,8 +8,6 @@ import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.client.particle.SoulSmokeParticle;
 import net.linkle.valleycraft.client.particle.WaterSprinkleParticle.SprinkleFactory;
-import net.minecraft.client.particle.ExplosionSmokeParticle;
-import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleType;

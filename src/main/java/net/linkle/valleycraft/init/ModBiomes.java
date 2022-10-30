@@ -2,6 +2,7 @@ package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.gen.OverworldBiomes;
+import net.linkle.valleycraft.util.IdProvider;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
@@ -9,7 +10,7 @@ import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.biome.Biome;
 
-public enum ModBiomes {
+public enum ModBiomes implements IdProvider {
     
     // Biome List
     AMBER_FOREST(OverworldBiomes.amberForest());
@@ -27,5 +28,10 @@ public enum ModBiomes {
         key = RegistryKey.of(Registry.BIOME_KEY, id = Main.makeId(name().toLowerCase()));
         entry = BuiltinRegistries.add(BuiltinRegistries.BIOME, key, biome);
         this.biome = biome;
+    }
+
+    @Override
+    public Identifier getId() {
+        return id;
     }
 }

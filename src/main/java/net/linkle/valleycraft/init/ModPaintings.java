@@ -6,7 +6,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModPaintings {
-    /** do not alter this code please!**/
+    // do not alter this code please!
 
     public static final PaintingVariant MOGAR = registerPainting("mogar", new PaintingVariant(32,32));
     public static final PaintingVariant BELAENU = registerPainting("belaenu", new PaintingVariant(16, 32));

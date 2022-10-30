@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "valleycraft:block/apple_planks",
-    "top": "valleycraft:block/apple_planks",
-    "side": "valleycraft:block/apple_planks"
-  }
-}

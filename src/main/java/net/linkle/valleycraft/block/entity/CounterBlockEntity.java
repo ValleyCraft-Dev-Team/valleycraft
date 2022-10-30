@@ -8,6 +8,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 
 public class CounterBlockEntity extends BarrelBlockEntity {
+    
     public CounterBlockEntity(BlockPos pos, BlockState state) {
         super(pos, state);
     }
@@ -19,6 +20,6 @@ public class CounterBlockEntity extends BarrelBlockEntity {
     
     @Override
     public BlockEntityType<?> getType() {
-        return ModBlockEntityType.CRATE;
+        return ModBlockEntityType.COUNTER;
     }
 }

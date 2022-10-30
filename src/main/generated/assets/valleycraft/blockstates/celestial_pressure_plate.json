@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "valleycraft:block/celestial_pressure_plate"
+    },
+    "powered=true": {
+      "model": "valleycraft:block/celestial_pressure_plate_down"
+    }
+  }
+}

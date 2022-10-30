@@ -1,10 +1,12 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.util.IdProvider;
 import net.minecraft.sound.SoundEvent;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public enum ModSounds {
+public enum ModSounds implements IdProvider {
     
     SPRINKLER,
     
@@ -22,5 +24,10 @@ public enum ModSounds {
     ModSounds() {
         sound = new SoundEvent(Main.makeId(name().toLowerCase()));
         Registry.register(Registry.SOUND_EVENT, sound.getId(), sound);
+    }
+
+    @Override
+    public Identifier getId() {
+        return sound.getId();
     }
 }

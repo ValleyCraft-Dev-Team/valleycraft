@@ -203,4 +203,9 @@ public enum ModArmors implements ItemEnum {
     public Item asItem() {
         return item;
     }
+    
+    @Override
+    public Identifier getId() {
+        return id;
+    }
 }

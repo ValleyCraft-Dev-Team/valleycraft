@@ -98,7 +98,7 @@ public enum ModItems implements ItemEnum {
 
     //record items
     ANCIENT_RECORD_FRAGMENT(new Item(itemSettings().group(BOOKS).rarity(RARE))),
-    ANCIENT_RECORD_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.ANCIENT, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),110));
+    ANCIENT_RECORD_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.ANCIENT.sound, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),110));
 
     public static void initialize() {
         ModBaubles.initialize();
@@ -124,5 +124,10 @@ public enum ModItems implements ItemEnum {
     @Override
     public Item asItem() {
         return item;
+    }
+    
+    @Override
+    public Identifier getId() {
+        return id;
     }
 }
