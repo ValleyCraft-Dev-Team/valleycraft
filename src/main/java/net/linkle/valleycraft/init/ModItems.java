@@ -3,7 +3,6 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.ItemEnum;
-import net.linkle.valleycraft.util.Reg;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -15,30 +14,40 @@ import static net.minecraft.util.Rarity.*;
 
 public enum ModItems implements ItemEnum {
 
+    //tree seeds
+    OAK_SEED(new Item(itemSettings())),
+    DARK_OAK_SEED(new Item(itemSettings())),
+    SPRUCE_SEED(new Item(itemSettings())),
+    BIRCH_SEED(new Item(itemSettings())),
+    JUNGLE_SEED(new Item(itemSettings())),
+    ACACIA_SEED(new Item(itemSettings())),
+    APPLE_SEED(new Item(itemSettings())),
+    AMBERBLOSSOM_SEED(new Item(itemSettings())),
+    WARM_BIRCH_SEED(new Item(itemSettings())),
+    CELESTIAL_SEED(new Item(itemSettings())),
+
     // crops
-    RICE_SEEDS(new AliasedBlockItem(NaturalBlocks.RICES.block, itemSettings())),
-    PUFF_BALL_SEEDS(new AliasedBlockItem(NaturalBlocks.PUFF_BALL.block, itemSettings())),
-    ONION_SEEDS(new AliasedBlockItem(NaturalBlocks.ONIONS.block, itemSettings())),
-    FIRE_PEPPER_SEEDS(new AliasedBlockItem(NaturalBlocks.FIRE_PEPPERS.block, itemSettings())),
-    CAVE_ROOT_SEEDS(new AliasedBlockItem(NaturalBlocks.CAVE_ROOT_CROP.block, itemSettings())),
-    ANCIENT_FLOWER_SEEDS(new AliasedBlockItem(NaturalBlocks.ANCIENT_FLOWERS.block, itemSettings().rarity(Rarity.RARE))),
-    AMETHYSTLE_SEEDS(new AliasedBlockItem(NaturalBlocks.AMETHYSTLES.block, itemSettings())),
-    GHOST_PUMPKIN_SEEDS(new AliasedBlockItem(NaturalBlocks.GHOST_PUMPKIN_STEM.block, itemSettings())),
+    RICE_SEEDS(new AliasedBlockItem(ModNaturalBlocks.RICES.block, itemSettings())),
+    PUFF_BALL_SEEDS(new AliasedBlockItem(ModNaturalBlocks.PUFF_BALL.block, itemSettings())),
+    ONION_SEEDS(new AliasedBlockItem(ModNaturalBlocks.ONIONS.block, itemSettings())),
+    FIRE_PEPPER_SEEDS(new AliasedBlockItem(ModNaturalBlocks.FIRE_PEPPERS.block, itemSettings())),
+    CAVE_ROOT_SEEDS(new AliasedBlockItem(ModNaturalBlocks.CAVE_ROOT_CROP.block, itemSettings())),
+    ANCIENT_FLOWER_SEEDS(new AliasedBlockItem(ModNaturalBlocks.ANCIENT_FLOWERS.block, itemSettings().rarity(Rarity.RARE))),
+    AMETHYSTLE_SEEDS(new AliasedBlockItem(ModNaturalBlocks.AMETHYSTLES.block, itemSettings())),
+    GHOST_PUMPKIN_SEEDS(new AliasedBlockItem(ModNaturalBlocks.GHOST_PUMPKIN_STEM.block, itemSettings())),
 
     FIBER(new Item(itemSettings())),
     PLANK(new Item(itemSettings())),
     SALT(new Item(itemSettings().group(INGREDIENTS))),
     MONSTER_CLAW(new Item(itemSettings())),
+    SPIDER_SILK(new Item(itemSettings().rarity(UNCOMMON))),
+    ENDERMAN_EYE(new Item(itemSettings())),
     BEAST_BONE(new Item(itemSettings())),
     SHEEP_HIDE(new Item(itemSettings())),
     PIG_HIDE(new Item(itemSettings())),
     TREATED_LEATHER(new Item(itemSettings())),
-    SEAGULLS_FEATHER(new Item(itemSettings())),
-    DUCKS_FEATHER(new Item(itemSettings())),
-    CROWS_FEATHER(new Item(itemSettings())),
-    INK_BOTTLE(new Tier0Bottle(itemSettings().maxCount(16), 0, 0.0f, StatusEffects.NAUSEA).hideTooltip()),
-    QUILL(new Item(itemSettings())),
-    RUNE_ETCHING_BLADE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
+    LEATHER_STRAP(new Item(itemSettings())),
+
     PRIMSTEEL_NUGGET(new Item(itemSettings())),
     PRIMSTEEL_RAW(new Item(itemSettings())),
     GOLEMITE_RAW(new Item(itemSettings())),
@@ -51,18 +60,28 @@ public enum ModItems implements ItemEnum {
 
     MULCH(new Item(itemSettings())),
     DAUB(new Item(itemSettings())),
-    HANDLE(new Item(itemSettings())),
-    CLOTH(new Item(itemSettings())),
-    LEATHER_STRAP(new Item(itemSettings())),
     RAW_CLAY_POT(new Item(itemSettings())),
+    HANDLE(new Item(itemSettings())),
+    REINFORCED_HANDLE(new Item(itemSettings())),
+    CLOTH(new Item(itemSettings())),
     PLANT_FIBER_STRING(new Item(itemSettings())),
+    PLANT_FIBER_CANVAS(new Item(itemSettings())),
     BOOK_COVER(new Item(itemSettings())),
+    SEAGULLS_FEATHER(new Item(itemSettings())),
+    DUCKS_FEATHER(new Item(itemSettings())),
+    CROWS_FEATHER(new Item(itemSettings())),
+    INK_BOTTLE(new Tier0Bottle(itemSettings().maxCount(16), 0, 0.0f, StatusEffects.NAUSEA).hideTooltip()),
+    QUILL(new Item(itemSettings())),
+    RUNE_ETCHING_BLADE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
+
     BOW_STRING(new Item(itemSettings())),
     FLOUR(new Item(itemSettings().group(INGREDIENTS))),
 
     PRIMSTEEL_INGOT(new Item(itemSettings())),
     GOLEMITE_INGOT(new Item(itemSettings())),
+    BRASIUM_INGOT(new Item(itemSettings())),
     ROSEGOLD_INGOT(new Item(itemSettings())),
+    SPYGLASS_LENSE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
     HOT_PLATE(new Item(itemSettings().rarity(Rarity.RARE))),
     AGITATOR(new Item(itemSettings().rarity(Rarity.RARE))),
     THERMAL_BLAZE_CORE(new Item(itemSettings().rarity(Rarity.RARE))),

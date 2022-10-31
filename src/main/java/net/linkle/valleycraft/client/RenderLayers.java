@@ -9,7 +9,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.registry.Registry;
 
 import static net.linkle.valleycraft.init.ModBlocks.*;
-import static net.linkle.valleycraft.init.NaturalBlocks.*;
+import static net.linkle.valleycraft.init.ModNaturalBlocks.*;
 
 import java.util.HashSet;
 
@@ -320,6 +320,7 @@ class RenderLayers {
         put(BRIMSTONE_CRYSTAL, cullout);
         put(BRIMSTONE_GLASS, translucent);
         put(BRIMSTONE_GLASS_PANE, translucent);
+        put(TARGET_DUMMY, cullout);
 
         put(ICE_ORE, translucent);
         put(DEEPSLATE_ICE_ORE, translucent);

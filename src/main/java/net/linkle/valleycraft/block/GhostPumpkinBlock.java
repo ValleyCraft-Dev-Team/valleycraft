@@ -2,7 +2,7 @@ package net.linkle.valleycraft.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.linkle.valleycraft.init.ModBlocks;
-import net.linkle.valleycraft.init.NaturalBlocks;
+import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.minecraft.block.*;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -53,11 +53,11 @@ public class GhostPumpkinBlock extends GourdBlock {
 
     @Override
     public StemBlock getStem() {
-        return (StemBlock)NaturalBlocks.GHOST_PUMPKIN_STEM.block;
+        return (StemBlock) ModNaturalBlocks.GHOST_PUMPKIN_STEM.block;
     }
 
     @Override
     public AttachedStemBlock getAttachedStem() {
-        return (AttachedStemBlock)NaturalBlocks.ATTACHED_GHOST_PUMPKIN_STEM.block;
+        return (AttachedStemBlock) ModNaturalBlocks.ATTACHED_GHOST_PUMPKIN_STEM.block;
     }
 }

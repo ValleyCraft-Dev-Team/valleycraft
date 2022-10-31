@@ -2,10 +2,10 @@ package net.linkle.valleycraft.fluid;
 
 import java.util.Optional;
 
+import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.minecraft.sound.SoundCategory;
 import org.jetbrains.annotations.Nullable;
 
-import net.linkle.valleycraft.init.NaturalBlocks;
 import net.linkle.valleycraft.init.ModFluids;
 import net.linkle.valleycraft.init.ModItems;
 import net.minecraft.block.Block;
@@ -88,7 +88,7 @@ public abstract class SludgeFluid extends FlowableFluid {
 
     @Override
     public BlockState toBlockState(FluidState state) {
-        return NaturalBlocks.SLUDGE_FLUID.getState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
+        return ModNaturalBlocks.SLUDGE_FLUID.getState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
     }
 
     @Override

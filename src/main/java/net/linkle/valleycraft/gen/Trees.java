@@ -5,7 +5,7 @@ import java.util.OptionalInt;
 import com.google.common.collect.ImmutableList;
 
 import net.linkle.valleycraft.gen.feature.TreeConfigs;
-import net.linkle.valleycraft.init.NaturalBlocks;
+import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.collection.DataPool;
@@ -28,10 +28,10 @@ public class Trees {
     
     public static TreeFeatureConfig appleTree() {
         var dataPool = new DataPool.Builder<BlockState>();
-        dataPool.add(NaturalBlocks.APPLE_LEAVES_EMPTY.getState(), 4);
-        dataPool.add(NaturalBlocks.APPLE_LEAVES.getState(), 1);
+        dataPool.add(ModNaturalBlocks.APPLE_LEAVES_EMPTY.getState(), 4);
+        dataPool.add(ModNaturalBlocks.APPLE_LEAVES.getState(), 1);
         var foliageProvider = new WeightedBlockStateProvider(dataPool);
-        var trunkProvider = BlockStateProvider.of(NaturalBlocks.APPLE_LOG.getState());
+        var trunkProvider = BlockStateProvider.of(ModNaturalBlocks.APPLE_LOG.getState());
         var foliagePlacer = new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 4);
         var trunkPlacer = new LargeOakTrunkPlacer(5, 9, 0);
         var minimumSize = new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4));
@@ -40,7 +40,7 @@ public class Trees {
     }
 
     public static TreeFeatureConfig warmBirchTree() {
-        var foliageProvider = BlockStateProvider.of(NaturalBlocks.WARM_BIRCH_LEAVES.getState());
+        var foliageProvider = BlockStateProvider.of(ModNaturalBlocks.WARM_BIRCH_LEAVES.getState());
         var trunkProvider = BlockStateProvider.of(Blocks.BIRCH_LOG.getDefaultState());
         var foliagePlacer = new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 4);
         var trunkPlacer = new LargeOakTrunkPlacer(5, 9, 0);
@@ -50,8 +50,8 @@ public class Trees {
     }
 
     public static TreeFeatureConfig celestialTree() {
-        var foliageProvider = BlockStateProvider.of(NaturalBlocks.CELESTIAL_LEAVES.getState());
-        var trunkProvider = BlockStateProvider.of(NaturalBlocks.CELESTIAL_LOG.getState());
+        var foliageProvider = BlockStateProvider.of(ModNaturalBlocks.CELESTIAL_LEAVES.getState());
+        var trunkProvider = BlockStateProvider.of(ModNaturalBlocks.CELESTIAL_LOG.getState());
         var foliagePlacer = new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 4);
         var trunkPlacer = new LargeOakTrunkPlacer(5, 15, 0);
         var minimumSize = new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4));
@@ -61,8 +61,8 @@ public class Trees {
     
     /** AKA The Mamon. */
     public static TreeFeatureConfig amberTree() {
-        var foliageProvider = BlockStateProvider.of(NaturalBlocks.MAMON_LEAVES.getState());
-        var trunkProvider = BlockStateProvider.of(NaturalBlocks.MAMON_LOG.getState());
+        var foliageProvider = BlockStateProvider.of(ModNaturalBlocks.MAMON_LEAVES.getState());
+        var trunkProvider = BlockStateProvider.of(ModNaturalBlocks.MAMON_LOG.getState());
         var foliagePlacer = new DarkOakFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0));
         var trunkPlacer = new DarkOakTrunkPlacer(9, 3, 1);
         var minimumSize = new ThreeLayersFeatureSize(1, 1, 0, 1, 2, OptionalInt.empty());

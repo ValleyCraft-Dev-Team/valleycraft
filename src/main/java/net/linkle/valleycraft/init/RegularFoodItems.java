@@ -36,6 +36,7 @@ public enum RegularFoodItems implements ItemEnum {
     BAKED_SWEET_BERRIES(new FoodItem(settings(), 4, 0.6f)),
     BAKED_GLOW_BERRIES(new FoodItem(settings(), 4, 0.6f)),
     BAKED_GLOOM_BERRIES(new FoodItem(settings(), 4, 0.6f)),
+    BAKED_STAR_CHERRIES(new FoodItem(settings(), 4, 0.6f)),
     COOKED_RICE(new FoodItem(settings(), 4, 0.6f)),
     COOKED_CAVE_ROOT(new FoodItem(settings(), 5, 0.6f)),
 

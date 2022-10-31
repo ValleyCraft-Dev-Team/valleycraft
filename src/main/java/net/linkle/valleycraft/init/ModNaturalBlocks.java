@@ -27,7 +27,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
-public enum NaturalBlocks implements ItemEnum, BlockEnum {
+public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
 
     BLACK_DAHLIA(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     FLOWERING_CACTUS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT), itemSettings()),
@@ -180,13 +180,16 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
 
     LESSER_DIVINE_OAK_LOG(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
 
+    //end blocks
+    END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE).sounds(BlockSoundGroup.NETHERRACK)), itemSettings()),
+    END_GRASS(new ModPlantBlock(OFFSET_REPLACEABLE).ground(END_PLANTS), itemSettings()),
     CELESTIAL_SAPLING(new SaplingBlock(new CelestialSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
     CELESTIAL_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES).sounds(BlockSoundGroup.NETHER_WART).nonOpaque()), itemSettings()),
     CELESTIAL_LOG(new PillarBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
-
-    //end blocks
-    END_GRASS(new ModPlantBlock(OFFSET_REPLACEABLE).ground(END_PLANTS), itemSettings()),
-    END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE).sounds(BlockSoundGroup.NETHERRACK)), itemSettings()),
+    PURPLE_GLARE(new ModPlantBlock(OFFSET_REPLACEABLE).ground(END_PLANTS), itemSettings()),
+    BLUE_GLARE(new ModPlantBlock(OFFSET_REPLACEABLE).ground(END_PLANTS), itemSettings()),
+    GREEN_GLARE(new ModPlantBlock(OFFSET_REPLACEABLE).ground(END_PLANTS), itemSettings()),
+    RED_GLARE(new ModPlantBlock(OFFSET_REPLACEABLE).ground(END_PLANTS), itemSettings()),
 
     ARID_VINES(new VineHeadBlock(), itemSettings()),
     ARID_VINES_PLANT(new VineBodyBlock()),
@@ -198,6 +201,8 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     ATTACHED_GHOST_PUMPKIN_STEM(new AttachedStemBlock((GourdBlock)GHOST_PUMPKIN.asBlock(), ()->ModItems.GHOST_PUMPKIN_SEEDS.item, Block.Settings.copy(Blocks.ATTACHED_PUMPKIN_STEM))),
 
     SLUDGE_FLUID(new SludgeFluidBlock(ModFluids.SLUDGE_STILL.flowable())),
+
+    SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
 
     DRY_DIRT(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
     SANDY_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),
@@ -298,20 +303,20 @@ public enum NaturalBlocks implements ItemEnum, BlockEnum {
     public final Identifier id;
     
     /** Register the block without the item. */
-    NaturalBlocks(Block block) {
+    ModNaturalBlocks(Block block) {
         this.block = block;
         this.item = null;
         Registry.register(Registry.BLOCK, id = id(), block);
     }
     
     /** Register the block without the item. */
-    NaturalBlocks(Block block, Item.Settings settings) {
+    ModNaturalBlocks(Block block, Item.Settings settings) {
         this(block, settings, BlockItem::new);
     }
 
     /** Register the block with the item.
      * @param function create and register the block item. Example: BlockItem::new  */
-    NaturalBlocks(Block block, Item.Settings settings, BiFunction<Block, Item.Settings, Item> function) {
+    ModNaturalBlocks(Block block, Item.Settings settings, BiFunction<Block, Item.Settings, Item> function) {
         this.block = block;
         this.id = id();
         Registry.register(Registry.BLOCK, id, block);

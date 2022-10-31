@@ -24,9 +24,9 @@ public enum IngredientFoodItems implements ItemEnum {
     GLOW_BERRY_JUICE(new BottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 15 * 20)))
     .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_8", Formatting.GRAY)),
 
-    GLOOM_BERRY(new AliasedBlockItem(NaturalBlocks.GLOOM_BERRY.block, settings().food(FoodComponents.GLOW_BERRIES))),
+    GLOOM_BERRY(new AliasedBlockItem(ModNaturalBlocks.GLOOM_BERRY.block, settings().food(FoodComponents.GLOW_BERRIES))),
     STAR_CHERRIES(new FoodItem(settings(), 3, 0.6f)),
-    ALOE_VERA(new AliasedBlockItem(NaturalBlocks.ALOE_VERAS.block, settings().food(Foods.create(3, 0.3f)))),
+    ALOE_VERA(new AliasedBlockItem(ModNaturalBlocks.ALOE_VERAS.block, settings().food(Foods.create(3, 0.3f)))),
     
     AMETHYSTLE(new FoodItem(settings(), 2, 0.3f)
     .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_10")),
@@ -44,8 +44,8 @@ public enum IngredientFoodItems implements ItemEnum {
     HEARTY_BEETROOT(new FoodItem(settings(), 4, 0.6f)
     .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_6")),
     
-    MAIZE(new AliasedBlockItem(NaturalBlocks.MAIZE.block, settings().rarity(Rarity.RARE).food(Foods.create(3, 0.3f)))),
-    MINERS_LETTUCE(new AliasedBlockItem(NaturalBlocks.MINERS_LETTUCES.block, settings().food(Foods.create(3, 0.3f)))),
+    MAIZE(new AliasedBlockItem(ModNaturalBlocks.MAIZE.block, settings().rarity(Rarity.RARE).food(Foods.create(3, 0.3f)))),
+    MINERS_LETTUCE(new AliasedBlockItem(ModNaturalBlocks.MINERS_LETTUCES.block, settings().food(Foods.create(3, 0.3f)))),
     ONION(new FoodItem(settings(), 3, 0.3f)),
     RAW_RICE(new FoodItem(settings(), 2, 0.3f)),
     
@@ -67,7 +67,7 @@ public enum IngredientFoodItems implements ItemEnum {
     RAW_LOBSTER(new NegativeFoodItem(settings(), 3, 0.2f, StatusEffects.HUNGER, StatusEffects.POISON, StatusEffects.NAUSEA).hideTooltip()),
     RAW_MOSSY_CRAB(new NegativeFoodItem(settings(), 3, 0.2f, StatusEffects.HUNGER, StatusEffects.POISON, StatusEffects.NAUSEA).hideTooltip()),
 
-    RAW_BACON(new FoodItem(settings(), 2, 0.2f)),
+    RAW_BACON(new FoodItem(settings(), 2, 0.2f, true)),
     
     RAW_BIRD_THIGH(new FoodItem(settings(), 2, 0.2f)),
     RAW_BEAST_LIVER(new FoodItem(settings(), 4, 0.4f, true)),
@@ -75,6 +75,7 @@ public enum IngredientFoodItems implements ItemEnum {
     RAW_BAT_WING(new FoodItem(settings(), 2, 0.1f)),
     RAW_SILVERFISH(new FoodItem(settings(), 1, 0.1f)),
     RAW_PHANTOM_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.NAUSEA).hideTooltip()),
+    RAW_ENDERMAN_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.WEAKNESS).hideTooltip()),
     RAW_ENDERMITE(new EndermiteFoodItem(settings(), 3, 0.4f, StatusEffects.POISON, StatusEffects.BLINDNESS, StatusEffects.NAUSEA).hideTooltip()),
     MONSTER_GUTS(new NegativeFoodItem(settings(), 6, 0.3f, StatusEffects.BLINDNESS, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
     INFECTED_MONSTER_LIVER(new NegativeFoodItem(settings(), 3, 0.4f, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),

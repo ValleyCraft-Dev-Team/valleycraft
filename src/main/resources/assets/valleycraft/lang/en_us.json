@@ -71,6 +71,21 @@
   "item.valleycraft.eye_of_return": "Eye of the Astrayed",
   "block.valleycraft.waypoint": "Recall Waystone",
 
+  "item.valleycraft.oak_seed": "Oak Acorn",
+  "item.valleycraft.dark_oak_seed": "Dark Oak Acorn",
+  "item.valleycraft.spruce_seed": "Spruce Pine Cone",
+  "item.valleycraft.birch_seed": "Birch Seed",
+  "item.valleycraft.jungle_seed": "Jungle Tree Seeds",
+  "item.valleycraft.acacia_seed": "Acacia Seed",
+  "item.valleycraft.apple_seed": "Apple Seeds",
+  "item.valleycraft.amberblossom_seed": "Amberblossom Acorn",
+  "item.valleycraft.celestial_seed": "Celestial Samara",
+  "item.valleycraft.warm_birch_seed": "Warm Birch Seed",
+
+  "item.valleycraft.anthropologists_rock_pick": "Rock Hammer",
+  "item.valleycraft.climbing_axe": "Climbing Axe",
+  "item.valleycraft.ice_tongs": "Ice Tongs",
+
   "seldom_items": "§a",
   "item.valleycraft.stablehand_hat": "§aStablehand Cap",
 
@@ -626,6 +641,7 @@
 
   "item.valleycraft.moblin_talisman": "Moblin Talisman",
   "item.valleycraft.flower_crown": "Flowering Azaelea Crown",
+  "item.valleycraft.dierdra_laurel": "Vine Laurel",
   "item.valleycraft.turtle_chestplate": "Turtle Chestplate",
   "item.valleycraft.turtle_leggings": "Turtle Leggings",
   "item.valleycraft.turtle_boots": "Turtle Boots",

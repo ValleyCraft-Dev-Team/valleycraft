@@ -4,7 +4,7 @@ import com.google.common.base.Supplier;
 import com.google.common.base.Suppliers;
 
 import net.linkle.valleycraft.init.ModItems;
-import net.linkle.valleycraft.init.NaturalBlocks;
+import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -27,7 +27,7 @@ public enum ModToolMaterials implements ToolMaterial {
     }),
 
     METEORITE(2, 440, 7.0F, 2.0F, 18, () -> {
-        return Ingredient.ofItems(NaturalBlocks.METEORITE);
+        return Ingredient.ofItems(ModNaturalBlocks.METEORITE);
     }),
 
     PRISMARINE(2, 190, 5.0F, 2.0F, 14, () -> {
@@ -36,6 +36,10 @@ public enum ModToolMaterials implements ToolMaterial {
 
     BROKEN(2, 195, 5.0F, 2.0F, 10, () -> {
         return Ingredient.ofItems(Items.IRON_INGOT);
+    }),
+
+    BRASIUM(2, 250, 6.0F, 2.0F, 14, () -> {
+        return Ingredient.ofItems(ModItems.BRASIUM_INGOT);
     }),
 
     //unique - only used once

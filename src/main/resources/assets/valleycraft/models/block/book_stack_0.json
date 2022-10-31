@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "valleycraft:block/book_block_green",
-		"particle": "valleycraft:block/book_block_purple"
+		"particle": "valleycraft:block/book_block_particles"
 	},
 	"elements": [
 		{

@@ -17,15 +17,19 @@ public enum ModBaubles implements ItemEnum {
     //otherwise create an item class that extends BaubleItem
     //and use that for the individual bauble.
 
-    TOTEM_OF_VISITORS(new BaubleItem(itemSettings().rarity(EPIC))),
-    TOTEM_OF_FRIENDSHIP(new BaubleItem(itemSettings().rarity(RARE))),
+    TOTEM_OF_UNDYING_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
+    TOTEM_OF_VISITORS(new Item(itemSettings().rarity(EPIC))),
+    TOTEM_OF_VISITORS_BRACELET(new BaubleItem(itemSettings().rarity(EPIC))),
+    TOTEM_OF_FRIENDSHIP(new Item(itemSettings().rarity(RARE))),
+    TOTEM_OF_FRIENDSHIP_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
     POLISHED_GEAR(new BaubleItem(itemSettings().rarity(RARE))),
     SHARD_OF_THE_FIRST_GOLEM(new BaubleItem(itemSettings().rarity(EPIC))),
     STRANGE_DOLL(new BaubleItem(itemSettings().rarity(EPIC))),
     PIGLIN_CHILDS_TOY(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     LUCKY_FISHING_HOOK(new BaubleItem(itemSettings().rarity(RARE))),
     MONSTER_TOOTH(new BaubleItem(itemSettings().rarity(UNCOMMON))),
-    LOVE_POTION(new LovePotionBauble(itemSettings().rarity(RARE)));
+    LOVE_POTION(new LovePotionBauble(itemSettings().rarity(RARE))),
+    RAVAGER_GOLEM_TUSK(new BaubleItem(itemSettings().rarity(RARE)));
 
     public static void initialize() {
     }

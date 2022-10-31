@@ -8,7 +8,7 @@
 		"5": "valleycraft:block/book_block_pink",
 		"6": "valleycraft:block/book_block_cyan",
 		"7": "valleycraft:block/book_block_orange",
-		"particle": "valleycraft:block/book_block_purple"
+		"particle": "valleycraft:block/book_block_particles"
 	},
 	"elements": [
 		{

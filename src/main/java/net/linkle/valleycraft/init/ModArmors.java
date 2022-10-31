@@ -21,7 +21,6 @@ public enum ModArmors implements ItemEnum {
     EMERALD_TALISMAN(new ArmorItem(ArmorMats.EMERALD_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.UNCOMMON))),
     AMETHYST_TALISMAN(new ArmorItem(ArmorMats.AMETHYST_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.UNCOMMON))),
     ECHO_SHARD_TALISMAN(new ArmorItem(ArmorMats.ECHO_TALISMAN, EquipmentSlot.CHEST, settingsNormal(Rarity.RARE))),
-    LOVE_POTION_TALISMAN(new ArmorItem(ArmorMats.LOVE_TALISMAN, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
     ENDER_DRAGON_TALISMAN(new ArmorItem(ArmorMats.ENDER_DRAGON_TALISMAN, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
     MOGARS_BROKEN_GOLEMITE_GOGGLES(new BrokenArmorItem(ArmorMats.MOGARS_BROKEN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     MOGARS_FIXED_GOLEMITE_GOGGLES(new ArmorItem(ArmorMats.MOGARS_FIXED, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
@@ -55,6 +54,7 @@ public enum ModArmors implements ItemEnum {
     //PIGLIN_TUNIC(new ArmorItem(PiglinMaterial.INSTANCE, EquipmentSlot.CHEST, settingsNormal())),
     BRUTE_SKIRT(new ArmorItem(ArmorMats.BRUTE, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
 
+    SCALE_MAIL_HELMET(new ArmorItem(ArmorMats.SCALE, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
     SCALE_MAIL(new ArmorItem(ArmorMats.SCALE, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
     SCALE_MAIL_SKIRT(new ArmorItem(ArmorMats.SCALE, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
     ZOMBIE_BOOTS(new ArmorItem(ArmorMats.ALEX, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
@@ -90,7 +90,9 @@ public enum ModArmors implements ItemEnum {
     STRAW_HAT(new ArmorItem(ArmorMats.STRAW_HAT, EquipmentSlot.HEAD, settingsNormal())),
 
     FLOWER_CROWN(new ArmorItem(ArmorMats.FLOWERING_HAT, EquipmentSlot.HEAD, settingsNormal())),
+    DIERDRA_LAUREL(new ArmorItem(ArmorMats.DIERDRA_LAUREL, EquipmentSlot.HEAD, settingsNormal())),
 
+    REINFORCED_LEATHER_HELMET(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_GOLDEN_HELMET(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_IRON_HELMET(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.HEAD, settingsNormal())),
@@ -98,6 +100,15 @@ public enum ModArmors implements ItemEnum {
     REINFORCED_GOLEMITE_HELMET(new ArmorItem(ArmorMats.RF_GOLEMITE, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_DIAMOND_HELMET(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_NETHERITE_HELMET(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.HEAD, settingsNormal())),
+
+    LEATHER_BREASTPLATE(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.CHEST, settingsNormal())),
+    GOLDEN_BREASTPLATE(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.CHEST, settingsNormal())),
+    PRIMSTEEL_BREASTPLATE(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
+    IRON_BREASTPLATE(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.CHEST, settingsNormal())),
+    ROSEGOLD_BREASTPLATE(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),
+    GOLEMITE_BREASTPLATE(new ArmorItem(ArmorMats.RF_GOLEMITE, EquipmentSlot.CHEST, settingsNormal())),
+    DIAMOND_BREASTPLATE(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.CHEST, settingsNormal())),
+    NETHERITE_BREASTPLATE(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.CHEST, settingsNormal())),
 
     GOLDEN_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_GOLD, EquipmentSlot.HEAD, settingsNormal())),
     EMERALD_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_EMERALD, EquipmentSlot.HEAD, settingsNormal())),
@@ -121,9 +132,13 @@ public enum ModArmors implements ItemEnum {
     WATTLE_BOOTS(new ArmorItem(ArmorMats.WATTLE, EquipmentSlot.FEET, settingsNormal())),
 
     LEATHER_HELMET(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.HEAD, settingsNormal())),
+    LEATHER_HOOD(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.HEAD, settingsNormal())),
     LEATHER_CHESTPLATE(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.CHEST, settingsNormal())),
+    LEATHER_TUNIC(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.CHEST, settingsNormal())),
     LEATHER_LEGGINGS(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.LEGS, settingsNormal())),
+    LEATHER_SHORTS(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.LEGS, settingsNormal())),
     LEATHER_BOOTS(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.FEET, settingsNormal())),
+    LEATHER_SHOES(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.FEET, settingsNormal())),
 
     FUR_BOOTS(new ArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settingsNormal(Rarity.UNCOMMON))),
 

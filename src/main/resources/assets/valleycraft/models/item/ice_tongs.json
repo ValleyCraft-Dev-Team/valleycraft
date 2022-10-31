@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "valleycraft:item/tools/ice_tongs/ice_tongs"
+  }
+}

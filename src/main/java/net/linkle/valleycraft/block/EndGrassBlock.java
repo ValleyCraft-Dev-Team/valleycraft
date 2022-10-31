@@ -1,7 +1,6 @@
 package net.linkle.valleycraft.block;
 
-import net.linkle.valleycraft.init.ModBlocks;
-import net.linkle.valleycraft.init.NaturalBlocks;
+import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.minecraft.block.*;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
@@ -34,7 +33,7 @@ public class EndGrassBlock extends SpreadableBlock implements Fertilizable {
 
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
         BlockPos blockPos = pos.up();
-        BlockState blockState = NaturalBlocks.END_GRASS.getState();
+        BlockState blockState = ModNaturalBlocks.END_GRASS.getState();
 
         label46:
         for(int i = 0; i < 128; ++i) {

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "valleycraft:item/tools/climbing_axes/ancient_climbing_axe"
+    "layer0": "valleycraft:item/special/ancient_climbing_axe"
   }
 }

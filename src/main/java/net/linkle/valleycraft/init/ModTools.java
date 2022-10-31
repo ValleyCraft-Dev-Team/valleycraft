@@ -43,15 +43,16 @@ public class ModTools {
     public static final Item RUSTY_PICKAXE = new RustyPickaxeItem(new RustyPickaxeMaterial(),3, -2.8f);
     public static final Item OAR = new OarItem(new OarToolMaterial(),3, -2.8f);
     public static final Item LADLE = new LadleItem(new OarToolMaterial(),2, -2.5f);
-    public static final Item BONE_DART_ITEM = new BoneDartItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
+    public static final Item THROWING_ROCK = new BoneDartItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
+    public static final Item ANTHROPOLOGISTS_ROCK_PICK = new AnthroPickaxeItem(new AnthroPickaxeMaterial());
+
+    public static final Item ANCIENT_CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.DIAMOND, new Item.Settings().group(BOOKS).rarity(Rarity.EPIC));
+    public static final Item MOBLIN_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
     public static final Item CORAL_KNIFE = new CoralDaggerItem(new CoralDaggerToolMaterial(), 3, -1.4f);
     public static final Item CAVE_FISHERS_RAPIER = new CaveFisherSwordItem(new CaveFisherToolMaterial(), 4, -2.4f);
     public static final Item SEAOLOGER_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
     public static final Item SEAOLOGER_FIXED = new FixedSeagerCutlassItem(new FixedSeagerToolMaterial(), 5, -1.8f);
     public static final Item CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.IRON, new Item.Settings().group(VC_TOOLS));
-    public static final Item ANTHROPOLOGISTS_ROCK_PICK = new AnthroPickaxeItem(new AnthroPickaxeMaterial());
-    public static final Item ANCIENT_CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.DIAMOND, new Item.Settings().group(BOOKS).rarity(Rarity.EPIC));
-    public static final Item MOBLIN_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
 
     //The base attack damage of each tool type.
     //These values are added to the attack stats of their materials when they're registered.
@@ -102,16 +103,18 @@ public class ModTools {
         Reg.register("branch", BRANCH);
         Reg.register("sharp_flint", FLINT);
         Reg.register("hefty_rock", HEFTY_ROCK);
-        Reg.register("throwing_rock", BONE_DART_ITEM);
-        //Material technically
-        Reg.register("wooden_oar", OAR);
+        Reg.register("throwing_rock", THROWING_ROCK);
+
         //Climbing Axes
         Reg.register("climbing_axe", CLIMBING_AXE);
         //Rock Picks
         Reg.register("anthropologists_rock_pick", ANTHROPOLOGISTS_ROCK_PICK);
+        Reg.register("ice_tongs", new PickaxeItem(ModToolMaterials.BRASIUM, PICKAXE_BASE_DAMAGE, PICKAXE_BASE_SPEED, BASIC_SETTINGS));
         //Staffs
         Reg.register("wooden_staff", new StaffBase(ModToolMaterials.PLANK, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("bamboo_staff", new StaffBase(ModToolMaterials.BAMBOO, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
+        //Material technically
+        Reg.register("wooden_oar", new StaffBase(ModToolMaterials.PLANK, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
 
         //Knives
         Reg.register("knife_wooden", new KnifeBase(ToolMaterials.WOOD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));

@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.entity;
 
-import static net.linkle.valleycraft.init.ModTools.BONE_DART_ITEM;
+import static net.linkle.valleycraft.init.ModTools.THROWING_ROCK;
 
 import net.linkle.valleycraft.init.ModEntityType;
 import net.minecraft.entity.Entity;
@@ -29,7 +29,7 @@ public class ThrownRockEntity extends ThrownItemEntity {
 
     @Override
     protected Item getDefaultItem() {
-        return BONE_DART_ITEM;
+        return THROWING_ROCK;
     }
 
     @Override

@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "top": "valleycraft:block/crate_opened",
-    "bottom": "valleycraft:block/crate_closed",
-    "side": "valleycraft:block/crate_closed"
+    "top": "valleycraft:block/crate_opened_new",
+    "bottom": "valleycraft:block/crate_closed_new",
+    "side": "valleycraft:block/crate_closed_new"
   }
 }

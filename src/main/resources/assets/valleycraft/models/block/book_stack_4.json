@@ -6,7 +6,7 @@
 		"3": "valleycraft:block/book_block_brown",
 		"4": "valleycraft:block/book_block_blue",
 		"5": "valleycraft:block/book_block_pink",
-		"particle": "valleycraft:block/book_block_purple"
+		"particle": "valleycraft:block/book_block_particles"
 	},
 	"elements": [
 		{

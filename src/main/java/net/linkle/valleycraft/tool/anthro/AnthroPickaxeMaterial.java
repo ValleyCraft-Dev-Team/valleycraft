@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.tool.anthro;
 
+import net.linkle.valleycraft.init.ModItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -70,6 +71,6 @@ public class AnthroPickaxeMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(COPPER_INGOT);
+        return Ingredient.ofItems(ModItems.BRASIUM_INGOT);
     }
 }

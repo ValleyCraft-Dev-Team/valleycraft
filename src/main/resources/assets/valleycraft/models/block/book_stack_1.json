@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "valleycraft:block/book_block_green",
 		"1": "valleycraft:block/book_block_yellow",
-		"particle": "valleycraft:block/book_block_yellow"
+		"particle": "valleycraft:block/book_block_particles"
 	},
 	"elements": [
 		{
