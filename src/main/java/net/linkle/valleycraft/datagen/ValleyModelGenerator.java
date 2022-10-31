@@ -1,17 +1,12 @@
 package net.linkle.valleycraft.datagen;
 
 import static net.linkle.valleycraft.init.ModBlocks.*;
-import static net.linkle.valleycraft.init.NaturalBlocks.*;
+import static net.linkle.valleycraft.init.ModNaturalBlocks.*;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.linkle.valleycraft.Main;
-<<<<<<< Updated upstream
 import net.linkle.valleycraft.util.IdProvider;
-=======
-import net.linkle.valleycraft.init.ModBlocks;
-import net.linkle.valleycraft.init.ModNaturalBlocks;
->>>>>>> Stashed changes
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
@@ -103,7 +98,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerGlassPane(Blocks.TINTED_GLASS, TINTED_GLASS_PANE.block);
 
         // Potted flowers
-<<<<<<< Updated upstream
         generator.registerFlowerPotPlant(BLACK_DAHLIA.block, POTTED_BLACK_DAHLIA.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(FLUFFY_DANDELION.block, POTTED_FLUFFY_DANDELION.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(FADED_SOUL_ROSE.block, POTTED_FADED_SOUL_ROSE.block, TintType.NOT_TINTED);
@@ -147,51 +141,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerFlowerPotPlant(SPROUT.block, POTTED_SPROUT.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(DESERT_SHRUB.block, POTTED_DESERT_SHRUB.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(LUSH_BUSH.block, POTTED_LUSH_BUSH.block, TintType.NOT_TINTED);
-=======
-        generator.registerFlowerPotPlant(ModNaturalBlocks.BLACK_DAHLIA.block, ModBlocks.POTTED_BLACK_DAHLIA.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.FLUFFY_DANDELION.block, ModBlocks.POTTED_FLUFFY_DANDELION.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.FADED_SOUL_ROSE.block, ModBlocks.POTTED_FADED_SOUL_ROSE.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.HONEYCLUSTER.block, ModBlocks.POTTED_HONEYCLUSTER.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.LAVENDER.block, ModBlocks.POTTED_LAVENDER.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.ORANGE_BEAUTY.block, ModBlocks.POTTED_ORANGE_BEAUTY.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.POISON_BLOSSOM.block, ModBlocks.POTTED_POISON_BLOSSOM.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.PURPLE_TULIP.block, ModBlocks.POTTED_PURPLE_TULIP.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.YELLOW_TULIP.block, ModBlocks.POTTED_YELLOW_TULIP.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.LIGHT_BLUE_TULIP.block, ModBlocks.POTTED_LIGHT_BLUE_TULIP.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.BLACK_TULIP.block, ModBlocks.POTTED_BLACK_TULIP.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.GODDESS_LILY.block, ModBlocks.POTTED_GODDESS_LILY.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.RED_LUPINE.block, ModBlocks.POTTED_RED_LUPINE.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.YELLOW_LUPINE.block, ModBlocks.POTTED_YELLOW_LUPINE.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.PINK_LUPINE.block, ModBlocks.POTTED_PINK_LUPINE.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.ORANGE_POPPY.block, ModBlocks.POTTED_ORANGE_POPPY.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.YELLOW_POPPY.block, ModBlocks.POTTED_YELLOW_POPPY.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.WHITE_POPPY.block, ModBlocks.POTTED_WHITE_POPPY.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.SNOWFLOWER.block, ModBlocks.POTTED_SNOWFLOWER.block, TintType.NOT_TINTED);
-
-        // Potted fungi
-        generator.registerFlowerPotPlant(ModNaturalBlocks.GLOW_CAP.block, ModBlocks.POTTED_GLOW_CAP.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.JUNGLE_CAP.block, ModBlocks.POTTED_JUNGLE_CAP.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.SOULSPORE_SINGLE.block, ModBlocks.POTTED_SOULSPORE.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.MOREL.block, ModBlocks.POTTED_MOREL.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.GOOP_CAP.block, ModBlocks.POTTED_GOOP_CAP.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.GILDED_CAP.block, ModBlocks.POTTED_GILDED_CAP.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.IRONSHROOM.block, ModBlocks.POTTED_IRONSHROOM.block, TintType.NOT_TINTED);
-
-        // Potted saplings
-        generator.registerFlowerPotPlant(ModNaturalBlocks.DRIED_SAPLING.block, ModBlocks.POTTED_DRIED_SAPLING.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.MAMON_SAPLING.block, ModBlocks.POTTED_MAMON_SAPLING.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.APPLE_SAPLING.block, ModBlocks.POTTED_APPLE_SAPLING.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.WARM_BIRCH_SAPLING.block, ModBlocks.POTTED_WARM_BIRCH_SAPLING.block, TintType.NOT_TINTED);
-
-        // Other potted plants (that don't use custom models; see ModBlocks for which ones do)
-        generator.registerFlowerPotPlant(ModNaturalBlocks.FOXTAIL_FERN.block, ModBlocks.POTTED_FOXTAIL_FERN.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.LEATHERLEAF_FERN.block, ModBlocks.POTTED_LEATHERLEAF_FERN.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.MOSS_SPROUTLET.block, ModBlocks.POTTED_MOSS_SPROUTLET.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.ORANGE_FERN.block, ModBlocks.POTTED_ORANGE_FERN.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.SPROUT.block, ModBlocks.POTTED_SPROUT.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.DESERT_SHRUB.block, ModBlocks.POTTED_DESERT_SHRUB.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(ModNaturalBlocks.LUSH_BUSH.block, ModBlocks.POTTED_LUSH_BUSH.block, TintType.NOT_TINTED);
->>>>>>> Stashed changes
 
         // Smooth Carmine
         map = textureAll(CARMINE_SMOOTH);

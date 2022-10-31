@@ -41,7 +41,7 @@ public class ModTools {
     public static final Item HEFTY_ROCK = new RockToolItem(new RockToolMaterial());
     public static final Item RUSTY_SWORD = new RustySwordItem(new RustySwordMaterial(),4, -2.4f);
     public static final Item RUSTY_PICKAXE = new RustyPickaxeItem(new RustyPickaxeMaterial(),3, -2.8f);
-    public static final Item OAR = new OarItem(new OarToolMaterial(),3, -2.8f);
+    //public static final Item OAR = new OarItem(new OarToolMaterial(),3, -2.8f);
     public static final Item LADLE = new LadleItem(new OarToolMaterial(),2, -2.5f);
     public static final Item THROWING_ROCK = new BoneDartItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
     public static final Item ANTHROPOLOGISTS_ROCK_PICK = new AnthroPickaxeItem(new AnthroPickaxeMaterial());
