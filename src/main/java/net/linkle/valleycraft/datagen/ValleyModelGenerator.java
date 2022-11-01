@@ -58,8 +58,8 @@ class ValleyModelGenerator extends FabricModelProvider {
         slab(APPLE_SLAB.block, APPLE_PLANKS.block, map, generator);
         stairs(APPLE_STAIRS.block, map, generator);
         button(APPLE_BUTTON.block, map, generator);
-        fence(APPLE_FENCE.block, map, generator);
-        fenceGate(APPLE_FENCE_GATE.block, map, generator);
+        fence(APPLE_FENCE.block, textureAll("apple_fence_planks"), generator);
+        fenceGate(APPLE_FENCE_GATE.block, textureAll("apple_fence_planks"), generator);
         pressurePlate(APPLE_PRESSURE_PLATE.block, map, generator);
         
         // Ancient
@@ -170,6 +170,10 @@ class ValleyModelGenerator extends FabricModelProvider {
     TextureMap textureAll(IdProvider block) {
         var id = texture(block);
         return TextureMap.sideEnd(id, id).put(TextureKey.WALL, id).put(TextureKey.ALL, id).put(TextureKey.TEXTURE, id);
+    }
+    
+    TextureMap textureAll(String texture) {
+        return textureAll(()->Main.makeId(texture));
     }
 
     /**
