@@ -85,7 +85,6 @@ public enum ArmorMats implements ArmorMaterial {
     SCALE("scale", ints(0,6,7,3), 15, 9, equipChain(), items(Items.IRON_INGOT)),
     LEATHER_NO_OVERLAY("leather_no_overlay", ints(1,2,3,2), 7, 9, equipLeather(), items(ModItems.TREATED_LEATHER)),
     LEATHER_MODIFIED("leather_modified", ints(1,2,3,2), 7, 9, equipLeather(), items(ModItems.TREATED_LEATHER)),
-
     CLOTH("cloth", ints(1,2,3,2), 7, 9, equipLeather(), items(ModItems.CLOTH)),
     WATTLE("wattle", ints(1,2,2,1), 3, 15, equipLeather(), items(ModItems.PLANK)),
 

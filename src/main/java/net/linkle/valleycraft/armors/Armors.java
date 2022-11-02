@@ -1,4 +1,4 @@
-package net.linkle.valleycraft.client.armor;
+package net.linkle.valleycraft.armors;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

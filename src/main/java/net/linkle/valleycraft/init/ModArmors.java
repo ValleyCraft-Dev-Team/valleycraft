@@ -1,6 +1,7 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.armors.*;
+import net.linkle.valleycraft.item.ClothingArmorItem;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
@@ -183,7 +184,14 @@ public enum ModArmors implements ItemEnum {
     GOLEMITE_LEGGINGS(new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.LEGS, settingsNormal())),
     GOLEMITE_BOOTS(new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.FEET, settingsNormal())),
 
-    SHULKER_HELMET(new ArmorItem(ArmorMats.SHULKER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE)));
+    SHULKER_HELMET(new ArmorItem(ArmorMats.SHULKER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
+
+
+    //test to get the 3d armor models running
+    TEST_HELMET(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.HEAD, settingsNormal())),
+    TEST_CHESTPLATE(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.CHEST, settingsNormal())),
+    TEST_LEGGINGS(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.LEGS, settingsNormal())),
+    TEST_BOOTS(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.FEET, settingsNormal()));
 
     /** Called from {@link ModItems} */
     static void initialize() {

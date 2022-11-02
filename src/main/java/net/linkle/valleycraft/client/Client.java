@@ -3,12 +3,16 @@ package net.linkle.valleycraft.client;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
-import net.linkle.valleycraft.client.armor.Armors;
+import net.linkle.valleycraft.armors.Armors;
+import net.linkle.valleycraft.entity.client.armor.ClothArmorRenderer;
+import net.linkle.valleycraft.init.ModArmors;
 import net.linkle.valleycraft.init.ModBlockEntityType;
 import net.linkle.valleycraft.init.ModEntityType;
 import net.linkle.valleycraft.init.ModParticles;
 import net.linkle.valleycraft.network.ClientNetwork;
+import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
+
+import static net.linkle.valleycraft.init.ModArmors.*;
 
 @Environment(EnvType.CLIENT)
 public class Client implements ClientModInitializer {
@@ -25,5 +29,9 @@ public class Client implements ClientModInitializer {
         Armors.intialize();
         ModelLayers.intialize();
         ClientNetwork.initialize();
+
+        GeoArmorRenderer.registerArmorRenderer(new ClothArmorRenderer(),
+                TEST_BOOTS,TEST_LEGGINGS,
+                TEST_CHESTPLATE, TEST_HELMET);
     }
 }
