@@ -20,6 +20,8 @@ import net.minecraft.world.WorldAccess;
  * 'super.appendProperties()' is prone to break block's waterloggable.
  */
 public class BlockWithWater extends Block implements Waterloggable {
+    // DON'T COPY THIS CLASS! Just extend it lmao.
+    
     protected static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     public BlockWithWater(Settings settings) {

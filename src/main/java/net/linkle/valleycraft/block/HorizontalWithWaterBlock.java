@@ -20,7 +20,7 @@ import net.minecraft.world.WorldAccess;
  * is prone to break block's horizontal facing and waterlogged.
  */ 
 public class HorizontalWithWaterBlock extends HorizontalBlock implements Waterloggable {
-    // DON"T COPY THIS CLASS! Just extent it lmao.
+    // DON'T COPY THIS CLASS! Just extend it lmao.
    
     protected static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
