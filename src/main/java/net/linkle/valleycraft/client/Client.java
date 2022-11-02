@@ -31,7 +31,7 @@ public class Client implements ClientModInitializer {
         ClientNetwork.initialize();
 
         GeoArmorRenderer.registerArmorRenderer(new ClothArmorRenderer(),
-                TEST_BOOTS,TEST_LEGGINGS,
-                TEST_CHESTPLATE, TEST_HELMET);
+                TEST_BOOTS.item,TEST_LEGGINGS.item,
+                TEST_CHESTPLATE.item, TEST_HELMET.item);
     }
 }
