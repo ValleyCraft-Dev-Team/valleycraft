@@ -20,6 +20,8 @@ import net.minecraft.world.WorldAccess;
  * is prone to break block's facing and waterlogged.
  */
 public class DirectionBlockWithWater extends DirectionBlock implements Waterloggable {
+    // DON"T COPY THIS CLASS! Just extent it lmao.
+    
     protected static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     public DirectionBlockWithWater(Settings settings) {

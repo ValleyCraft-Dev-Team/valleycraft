@@ -18,8 +18,10 @@ import net.minecraft.world.WorldAccess;
  * Commonly used for blocks with horizontal facing and waterlogged. Overriding
  * some method without calling the subclass's method 'super.appendProperties()'
  * is prone to break block's horizontal facing and waterlogged.
- */
+ */ 
 public class HorizontalWithWaterBlock extends HorizontalBlock implements Waterloggable {
+    // DON"T COPY THIS CLASS! Just extent it lmao.
+   
     protected static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     public HorizontalWithWaterBlock(Settings settings) {

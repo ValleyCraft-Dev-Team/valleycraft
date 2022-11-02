@@ -13,6 +13,7 @@ import net.minecraft.util.math.Direction;
  * 'super.appendProperties()' is prone to break block's horizontal facing.
  */
 public class HorizontalBlock extends HorizontalFacingBlock {
+    // DON"T COPY THIS CLASS! Just extent it lmao.
 
     public HorizontalBlock(Settings settings) {
         super(settings);
