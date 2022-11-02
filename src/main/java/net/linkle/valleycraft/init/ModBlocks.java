@@ -103,6 +103,11 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     WATTLE_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR)), itemSettings()),
     WATTLE_BARS(new PaneBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
 
+    //thatch
+    THATCH_BLOCK(new PillarBlock(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
+    WEAVED_THATCH_BLOCK(new Block(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
+    TIGHTLY_WEAVED_THATCH_BLOCK(new Block(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
+
     GLASS_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).hardness(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque()), itemSettings()),
     TINTED_GLASS_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).hardness(0.3f).sounds(BlockSoundGroup.GLASS)), itemSettings()),
 
@@ -133,9 +138,18 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     GRAVE_MARKER(new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque()), itemSettings().rarity(Rarity.UNCOMMON)),
     GRAVE_MARKER_PET(new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque()), itemSettings()),
-    ERD_STONE_GRAVESTONE(new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque()), itemSettings().rarity(Rarity.UNCOMMON)),
-    ERD_STONE_GRAVESTONE_PET(new GraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).resistance(100).nonOpaque()), itemSettings()),
-    
+    SHALE_GRAVESTONE(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_GRAVESTONE_SPIRIT(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_GRAVESTONE_HEART(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_GRAVESTONE_ROSE(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_GRAVESTONE_TEXT(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+
+    SHALE_PET_GRAVESTONE(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_PET_GRAVESTONE_SPIRIT(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_PET_GRAVESTONE_HEART(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_PET_GRAVESTONE_ROSE(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_PET_GRAVESTONE_TEXT(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+
     // clay pots go here (not the baking item one)
     BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque().breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
@@ -356,6 +370,12 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     ERDSTONE_WINDOW_POWERED(new GlassBlock(Block.Settings.copy(Blocks.GLASS).sounds(BlockSoundGroup.DEEPSLATE).hardness(50).resistance(2500f).nonOpaque().luminance(s ->3)), itemSettings().rarity(Rarity.UNCOMMON)),
     PATTERNED_ERDSTONE_POWERED(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(50).resistance(2500f).luminance(s ->3)), itemSettings()),
 
+    //shale
+    COBBLED_SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    POLISHED_SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_RUNE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+
     //marble
     POLISHED_MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_BRICKS(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
@@ -369,13 +389,15 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SHIVERSTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     SHIVERSTONE_WATER(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
 
-    // polished stones
-    PUMICE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    VERDANTINE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
-    GRIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    //serpentinite
     SERPENTINITE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SERPENTINITE_BRICKS(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+
+    // polished stones
+    VERDANTINE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     DIABASE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     LIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    GRIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
 
     // Polished stone stairs & slabs
     CARMINE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),

@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=north": {
+      "y": 0,
+      "model": "valleycraft:block/shale_gravestone_pet_spirit"
+    },
+    "facing=south": {
+      "y": 180,
+      "model": "valleycraft:block/shale_gravestone_pet_spirit"
+    },
+    "facing=east": {
+      "y": 90,
+      "model": "valleycraft:block/shale_gravestone_pet_spirit"
+    },
+    "facing=west": {
+      "y": 270,
+      "model": "valleycraft:block/shale_gravestone_pet_spirit"
+    },
+    "facing=up": {
+      "model": "valleycraft:block/shale_gravestone_pet_spirit"
+    },
+    "facing=down": {
+      "model": "valleycraft:block/shale_gravestone_pet_spirit"
+    }
+  }
+}

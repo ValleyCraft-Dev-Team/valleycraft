@@ -249,8 +249,16 @@ class RenderLayers {
 
         put(GRAVE_MARKER, cullout);
         put(GRAVE_MARKER_PET, cullout);
-        put(ERD_STONE_GRAVESTONE, cullout);
-        put(ERD_STONE_GRAVESTONE_PET, cullout);
+        put(SHALE_GRAVESTONE, cullout);
+        put(SHALE_GRAVESTONE_SPIRIT, cullout);
+        put(SHALE_GRAVESTONE_HEART, cullout);
+        put(SHALE_GRAVESTONE_TEXT, cullout);
+        put(SHALE_GRAVESTONE_ROSE, cullout);
+        put(SHALE_PET_GRAVESTONE, cullout);
+        put(SHALE_PET_GRAVESTONE_SPIRIT, cullout);
+        put(SHALE_PET_GRAVESTONE_HEART, cullout);
+        put(SHALE_PET_GRAVESTONE_TEXT, cullout);
+        put(SHALE_PET_GRAVESTONE_ROSE, cullout);
         put(DEFECTIVE_SPAWNER, cullout);
         put(SWORD_BLOCK, cullout);
         put(SOULSPORE, cullout);
@@ -321,6 +329,8 @@ class RenderLayers {
         put(BRIMSTONE_GLASS, translucent);
         put(BRIMSTONE_GLASS_PANE, translucent);
         put(TARGET_DUMMY, cullout);
+        put(BEACH_GRASS, cullout);
+        put(ICEPLANT, cullout);
 
         put(ICE_ORE, translucent);
         put(DEEPSLATE_ICE_ORE, translucent);

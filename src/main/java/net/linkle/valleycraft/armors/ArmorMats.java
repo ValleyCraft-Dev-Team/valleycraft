@@ -30,6 +30,7 @@ public enum ArmorMats implements ArmorMaterial {
     DROWNED("ruined_drowned", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     REPAIRED_DROWNED("repaired_drowned", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     EYEPATCH("eyepatch", ints(1), 10, 15, equipLeather(), items(Items.LEATHER)),
+    HEADSCARF("seaologer_headscarf", ints(1), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     FUR("fur_boots", ints(2,3), 10, 15, equipLeather(), items()),
     FLOWERING_HAT("flower_crown", ints(1,5,6,1), 10, 15, equipLeather(), items(Blocks.FLOWERING_AZALEA)),
     DIERDRA_LAUREL("dierdra_laurel", ints(1,5,6,2), 10, 15, equipLeather(), items(Blocks.VINE)),

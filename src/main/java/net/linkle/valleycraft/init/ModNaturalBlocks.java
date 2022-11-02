@@ -124,6 +124,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(ARID_DESERT).AloeShape()),
     GLOOM_BERRY(new GloomBerryHeadBlock()),
     GLOOM_BERRY_PLANT(new GloomBerryBodyBlock()),
+    MIMIC_FLOWER(new MimicFlowerBlock(ParticleTypes.SPORE_BLOSSOM_AIR, MimicFlowerBlock.settings(0).ticksRandomly()), itemSettings()),
 
     CAVE_ROOTS(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     BONE_WEED(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
@@ -146,6 +147,10 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     BLUE_FLOWERING_LILYPAD(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),
 
     ALGAE(new AlgaeBlock(), itemSettings(), PlaceableOnWaterItem::new),
+
+    //beach plants
+    BEACH_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
+    ICEPLANT(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
 
     GLOW_KELP(new GlowKelpBlock(), itemSettings()),
     GLOW_KELP_PLANT(new GlowKelpPlantBlock()),
@@ -216,7 +221,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     LIMESTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     SHIVERSTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     VERDANTINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    PUMICE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
 
     METEORITE(new Block(Block.Settings.copy(Blocks.DEEPSLATE)), itemSettings()),
@@ -226,12 +230,16 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     FLINT_ROCKS(new RockBlock(), itemSettings().group(ModGroups.FLORA_GROUP)),
 
     ADVENTURINE(new Block(Block.Settings.copy(Blocks.STONE).hardness(25).luminance(s ->1)), itemSettings()),
-    ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2)), itemSettings()),
-    ERDCOBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLESTONE).hardness(2)), itemSettings()),
-    ERDSTONE_AMBER_ORE(new Block(Block.Settings.copy(Blocks.IRON_ORE).hardness(2)), itemSettings()),
-    ERDSTONE_COAL_ORE(new Block(Block.Settings.copy(Blocks.IRON_ORE).hardness(2)), itemSettings()),
-    GOLEMITE_ERDSTONE_ORE(new Block(Block.Settings.copy(Blocks.IRON_ORE).hardness(2)), itemSettings()),
-    ERDSTONE_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.IRON_ORE).hardness(2)), itemSettings()),
+    ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
+    ERDCOBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE).hardness(2)), itemSettings()),
+    ERDSTONE_AMBER_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
+    ERDSTONE_COAL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
+    GOLEMITE_ERDSTONE_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
+    ERDSTONE_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
+    ERDSTONE_CAVE_PAINTING_PORTRAIT(new CavePaintingPortrait(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2)), itemSettings()),
+    ERDSTONE_CAVE_PAINTING_ZOMBIES(new CavePaintingHome(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2)), itemSettings()),
+    ERDSTONE_CAVE_PAINTING_HOME(new CavePaintingZombie(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2)), itemSettings()),
+    ERDSTONE_CAVE_PAINTING_FAMILY(new CavePaintingFamily(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2)), itemSettings()),
 
     LOOSE_ROCKS(new FallingRockBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.NETHER_BRICKS)), itemSettings()),
     CRACKED_COBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLESTONE).hardness(2)), itemSettings()),
@@ -245,14 +253,14 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     PACKED_SNOW(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
     ICICLE_PACKED_ICE(new IcicleGrowingBlock(Block.Settings.copy(Blocks.PACKED_ICE).nonOpaque().slipperiness(0.98f)), itemSettings()),
     ICICLE(new IcicleBlock(Block.Settings.copy(Blocks.ICE).nonOpaque().slipperiness(0.98f)), itemSettings()),
-    STRATIFIED_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
-    SCORCHSTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-
-    SCALDING_SCORCHSTONE(new ScaldingBlock(Block.Settings.copy(Blocks.STONE).ticksRandomly().luminance(s ->3)), itemSettings().fireproof()),
     ROUGH_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
     SCALDING_SANDSTONE(new ScaldingBlock(Block.Settings.copy(Blocks.SANDSTONE).ticksRandomly().luminance(s ->3)), itemSettings()),
+    STRATIFIED_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
     ROUGH_RED_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
     SCALDING_RED_SANDSTONE(new ScaldingBlock(Block.Settings.copy(Blocks.RED_SANDSTONE).ticksRandomly().luminance(s ->3)), itemSettings()),
+    STRATIFIED_RED_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    SCORCHSTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCALDING_SCORCHSTONE(new ScaldingBlock(Block.Settings.copy(Blocks.STONE).ticksRandomly().luminance(s ->3)), itemSettings().fireproof()),
     SCALDING_DEEPSLATE(new ScaldingBlock(Block.Settings.copy(Blocks.DEEPSLATE).ticksRandomly().luminance(s ->3)), itemSettings()),
 
     DEEPSLATE_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)), itemSettings()),

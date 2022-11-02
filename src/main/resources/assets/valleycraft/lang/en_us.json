@@ -28,6 +28,15 @@
   "item.valley.broken.tooltip": "Broken",
   "item.valley.bauble.tooltip": "Bauble",
 
+  "item.valley.cave_painting.tooltip.zombie": "Death",
+  "item.valley.cave_painting.tooltip.portrait": "Portrait",
+  "item.valley.cave_painting.tooltip.home": "Shelter",
+  "item.valley.cave_painting.tooltip.family": "Family",
+  "block.valleycraft.erdstone_cave_painting_zombies": "§cPrehistoric Cave Painting",
+  "block.valleycraft.erdstone_cave_painting_portrait": "§cPrehistoric Cave Painting",
+  "block.valleycraft.erdstone_cave_painting_home": "§cPrehistoric Cave Painting",
+  "block.valleycraft.erdstone_cave_painting_family": "§cPrehistoric Cave Painting",
+
   "block.valleycraft.defective_spawner.tooltip": "Broken beyond repair. It's only",
   "block.valleycraft.defective_spawner.tooltip_2": "use now is purely decorative.",
   "block.valleycraft.keg.tooltip": "Refills buckets, clay pots,",
@@ -620,6 +629,7 @@
   "item.valleycraft.corn_bread": "Maize Bread",
 
   "item.valleycraft.fiber": "Plant Fiber",
+  "item.valleycraft.dried_fiber": "Dried Plant Fiber",
   "item.valleycraft.book_cover": "Fiber Canvas",
   "item.valleycraft.mulch": "Mulch",
   "item.valleycraft.crows_feather": "Crow Feather",
