@@ -64,6 +64,8 @@ public enum RegularFoodItems implements ItemEnum {
     // pastries
     CAKE_SLICE(new FoodItem(settings(), 2, 0.1f)),
     HARDTACK(new FoodItem(settings(), 3, 0.8f)),
+    TOAST(new FoodItem(settings(), 2, 1.0f)),
+    EGGS_ON_TOAST(new FoodItem(settings(), 6, 1.3f)),
     CORN_BREAD(new FoodItem(settings(), 3, 0.9f)),
     PUMPKIN_SPICE_COOKIE(new FoodItem(settings(), 3, 0.2f)),
     CHORUS_FRUIT_PIE(new FoodItem(settings(), 9, 0.5f)),

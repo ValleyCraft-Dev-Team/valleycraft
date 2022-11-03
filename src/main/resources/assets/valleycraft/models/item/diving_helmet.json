@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/armor_items/diving_gear/diving_helmet"
+    "layer0": "valleycraft:item/diving_gear/diving_helmet"
   }
 }

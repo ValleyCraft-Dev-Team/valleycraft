@@ -257,6 +257,8 @@ public class ModTools {
         Reg.register("seaologer_fixed", SEAOLOGER_FIXED);
         Reg.register("ancient_climbing_axe", ANCIENT_CLIMBING_AXE);
         Reg.register("twinblade", new SpearBase(ModToolMaterials.GOLEMITE, SPEAR_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("piglin_battle_hammer", new WoodcutterAxeBase(ModToolMaterials.GOLEMITE, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+
         //rusty
         Reg.register("rusted_sword", RUSTY_SWORD);
         Reg.register("rusted_pickaxe", RUSTY_PICKAXE);

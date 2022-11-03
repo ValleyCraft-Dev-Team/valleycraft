@@ -42,6 +42,7 @@ public enum ArmorMats implements ArmorMaterial {
     LEGGINGS("leggings", ints(1,2,2,2), 30, 15, equipLeather(), items(Items.LEATHER)),
     LIBRARIAN("librarian", ints(1), 10, 15, equipLeather(), items(Items.BOOK)),
     GOLDEN_GLASSES("golden_glasses", ints(2,2,2,1), 10, 22, equipChain(), items()),
+    IRON_GLASSES("iron_glasses", ints(2,2,2,1), 10, 15, equipChain(), items()),
     ROSEGOLD_GLASSES("rosegold_glasses", ints(2,2,2,2), 10, 15, equipChain(), items()),
     GOLEMITE_READING_GLASSES("golemite_glasses", ints(2,2,2,2), 10, 5, equipChain(), items()),
 

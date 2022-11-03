@@ -26,8 +26,9 @@ public enum ModArmors implements ItemEnum {
     STABLEHAND_HAT(new ArmorItem(ArmorMats.STABLEHAND_HAT, EquipmentSlot.HEAD, settingsArtifacts())),
     VILLAGER_TUNIC(new ArmorItem(ArmorMats.VILLAGER, EquipmentSlot.LEGS, settingsArtifacts())),
 
-    GOLDEN_GLASSES(new ArmorItem(ArmorMats.GOLDEN_GLASSES, EquipmentSlot.HEAD, settingsNormal(Rarity.UNCOMMON))),
-    ROSEGOLD_GLASSES(new ArmorItem(ArmorMats.ROSEGOLD_GLASSES, EquipmentSlot.HEAD, settingsNormal(Rarity.RARE))),
+    IRON_GLASSES(new ArmorItem(ArmorMats.GOLDEN_GLASSES, EquipmentSlot.HEAD, settingsNormal())),
+    GOLDEN_GLASSES(new ArmorItem(ArmorMats.GOLDEN_GLASSES, EquipmentSlot.HEAD, settingsNormal())),
+    ROSEGOLD_GLASSES(new ArmorItem(ArmorMats.ROSEGOLD_GLASSES, EquipmentSlot.HEAD, settingsNormal())),
     GOLEMITE_READING_GLASSES(new ArmorItem(ArmorMats.GOLEMITE_READING_GLASSES, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
 
     CHEF_HAT(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsArtifacts())),
