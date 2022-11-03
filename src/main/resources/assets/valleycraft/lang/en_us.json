@@ -21,6 +21,8 @@
 
   "item.valleycraft.ancient_record_music_disc": "Audio Log 3",
   "item.valleycraft.ancient_record_music_disc.desc": "Linkle - Audio Log 3",
+  "item.valleycraft.wild_mountain_time_music_disc": "Of the Wild'r Mountains",
+  "item.valleycraft.wild_mountain_time_music_disc.desc": "Linkle - Of the Wild'r Mountains",
 
   "text.valleycraft.waypoint.waypoint_set": "Recall waypoint set",
   "text.valleycraft.waypoint.waypoint_not_set": "No recall waypoint has been set to travel to",

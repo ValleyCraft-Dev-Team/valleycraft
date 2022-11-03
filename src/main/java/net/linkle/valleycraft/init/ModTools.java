@@ -66,17 +66,7 @@ public class ModTools {
     public static final Integer TRAVELER_BASE_DAMAGE = 3;
     public static final Integer MACE_BASE_DAMAGE = 3;
     public static final Integer STAFF_BASE_DAMAGE = 3;
-
-    public static final Integer AXE_BASE_DAMAGE = 6;
-    public static final Float AXE_BASE_SPEED = -3.2f;
-    public static final Integer PICKAXE_BASE_DAMAGE = 1;
-    public static final Float PICKAXE_BASE_SPEED = -2.8f;
-    public static final Integer SWORD_BASE_DAMAGE = 3;
-    public static final Float SWORD_BASE_SPEED = -2.4f;
-    public static final Float SHOVEL_BASE_DAMAGE = 1.5f;
-    public static final Float SHOVEL_BASE_SPEED = -3.0f;
-    public static final Integer HOE_BASE_DAMAGE = 0;
-    public static final Float HOE_BASE_SPEED = -3.0f;
+    public static final Integer GREATSWORD_BASE_DAMAGE = 8;
 
     //The base attack speed of each tool type.
     //These numbers are subtracted from four, so 4.0 will make the tool never charge, and higher will likely cause issues.
@@ -90,6 +80,19 @@ public class ModTools {
     public static final Float TRAVELER_BASE_SPEED = -2.2f;
     public static final Float MACE_BASE_SPEED = -2.2f;
     public static final Float STAFF_BASE_SPEED = -2.2f;
+    public static final Float GREATSWORD_BASE_SPEED = -3.4f;
+
+    //these are all vanilla, dont alter them Linkle! signed, Linkle
+    public static final Integer AXE_BASE_DAMAGE = 6;
+    public static final Float AXE_BASE_SPEED = -3.2f;
+    public static final Integer PICKAXE_BASE_DAMAGE = 1;
+    public static final Float PICKAXE_BASE_SPEED = -2.8f;
+    public static final Integer SWORD_BASE_DAMAGE = 3;
+    public static final Float SWORD_BASE_SPEED = -2.4f;
+    public static final Float SHOVEL_BASE_DAMAGE = 1.5f;
+    public static final Float SHOVEL_BASE_SPEED = -3.0f;
+    public static final Integer HOE_BASE_DAMAGE = 0;
+    public static final Float HOE_BASE_SPEED = -3.0f;
 
     //The item settings for knives made of 'basic' materials- wood, gold, stone, iron, rose gold, diamond, netherite
     public static final Item.Settings BASIC_SETTINGS = new Item.Settings().group(VC_TOOLS);
@@ -193,6 +196,17 @@ public class ModTools {
         Reg.register("traveler_diamond", new TravelerBase(ToolMaterials.DIAMOND, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("traveler_netherite", new TravelerBase(ToolMaterials.NETHERITE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
 
+        //Woodcutter's Axes
+        Reg.register("wooden_greatsword", new WoodcutterAxeBase(ModToolMaterialsExtended.WOOD_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("stone_greatsword", new WoodcutterAxeBase(ModToolMaterialsExtended.STONE_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("golden_greatsword", new WoodcutterAxeBase(ModToolMaterialsExtended.GOLD_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("primsteel_greatsword", new WoodcutterAxeBase(ModToolMaterialsExtended.PRIMSTEEL_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("iron_greatsword", new WoodcutterAxeBase(ModToolMaterialsExtended.IRON_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("rosegold_greatsword", new WoodcutterAxeBase(ModToolMaterialsExtended.ROSEGOLD_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("golemite_greatsword", new WoodcutterAxeBase(ModToolMaterialsExtended.GOLEMITE_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("diamond_greatsword", new WoodcutterAxeBase(ModToolMaterialsExtended.DIAMOND_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("netherite_greatsword", new WoodcutterAxeBase(ModToolMaterialsExtended.NETHERITE_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+
         //Swords
         Reg.register("primsteel_sword", new SwordItem(ModToolMaterials.PRIMSTEEL, SWORD_BASE_DAMAGE, SWORD_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("rosegold_sword", new SwordItem(ModToolMaterials.ROSEGOLD, SWORD_BASE_DAMAGE, SWORD_BASE_SPEED, BASIC_SETTINGS));
@@ -242,6 +256,7 @@ public class ModTools {
         Reg.register("seaologer_broken", SEAOLOGER_BROKEN);
         Reg.register("seaologer_fixed", SEAOLOGER_FIXED);
         Reg.register("ancient_climbing_axe", ANCIENT_CLIMBING_AXE);
+        Reg.register("twinblade", new SpearBase(ModToolMaterials.GOLEMITE, SPEAR_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
         //rusty
         Reg.register("rusted_sword", RUSTY_SWORD);
         Reg.register("rusted_pickaxe", RUSTY_PICKAXE);
