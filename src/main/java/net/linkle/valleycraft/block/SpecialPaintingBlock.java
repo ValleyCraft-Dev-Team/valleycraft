@@ -1,6 +1,7 @@
 package net.linkle.valleycraft.block;
 
 import net.minecraft.block.*;
+import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
@@ -46,5 +47,10 @@ public class SpecialPaintingBlock extends HorizontalWithWaterBlock {
             return Blocks.AIR.getDefaultState();
         }
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
+    }
+    
+    @Override
+    protected Direction getFacing(ItemPlacementContext ctx) {
+        return getSideElseUserFacing(ctx);
     }
 }

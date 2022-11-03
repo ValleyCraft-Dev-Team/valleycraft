@@ -217,10 +217,11 @@ class RenderLayers {
         put(TERRARIUM_GLASS_PANE, cullout);
         put(BEVELED_GLASS, cullout);
         put(BEVELED_GLASS_PANE, cullout);
+        put(TINTED_GLASS_PANE, translucent);
         put(VEX_LANTERN, cullout);
         put(ALLAY_LANTERN, cullout);
         put(WATTLE_BARS, cullout);
-        put(BONFIRE, translucent);
+        put(BONFIRE, cullout);
         put(ARID_VINES, cullout);
         put(ARID_VINES_PLANT, cullout);
 
@@ -285,6 +286,7 @@ class RenderLayers {
         put(RUSHES, cullout);
         put(CELESTIAL_SAPLING, cullout);
         put(OCELOT_STATUE, cullout);
+        put(SPIKE_TRAP, cullout);
 
         put(TRANSLATION_CANVAS, cullout);
         put(GLOW_CAP_CLUSTER, cullout);

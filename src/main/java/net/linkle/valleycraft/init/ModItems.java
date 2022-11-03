@@ -1,8 +1,10 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.armors.ArmorMats;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.ItemEnum;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -115,6 +117,12 @@ public enum ModItems implements ItemEnum {
     SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
     SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
     ENDER_DRAGON_EYE(new Item(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    
+    MOBLIN_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1))),
+    EMERALD_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1))),
+    AMETHYST_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1))),
+    ECHO_SHARD_TALISMAN(new Item(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
+    ENDER_DRAGON_TALISMAN(new Item(itemSettings().rarity(EPIC).group(BOOKS).maxCount(1))),
 
     //record items
     ANCIENT_RECORD_FRAGMENT(new Item(itemSettings().group(BOOKS).rarity(RARE))),

@@ -3,7 +3,8 @@ package net.linkle.valleycraft.client;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.linkle.valleycraft.armors.Armors;
+import net.linkle.valleycraft.client.armor.ArmorRenderers;
+import net.linkle.valleycraft.client.trinket.TrinketRenderers;
 import net.linkle.valleycraft.entity.client.armor.ClothArmorRenderer;
 import net.linkle.valleycraft.init.ModArmors;
 import net.linkle.valleycraft.init.ModBlockEntityType;
@@ -26,7 +27,8 @@ public class Client implements ClientModInitializer {
         ModEntityType.initializeClient();
         FluidRenders.intialize();
         ModBlockEntityType.initializeClient();
-        Armors.intialize();
+        ArmorRenderers.intialize();
+        TrinketRenderers.intialize();
         ModelLayers.intialize();
         ClientNetwork.initialize();
 

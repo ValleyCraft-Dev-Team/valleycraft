@@ -1,4 +1,4 @@
-package net.linkle.valleycraft.armors;
+package net.linkle.valleycraft.client.armor;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -9,7 +9,7 @@ import net.minecraft.item.ItemConvertible;
 
 /** Armor Renderers */
 @Environment(EnvType.CLIENT)
-public class Armors {
+public class ArmorRenderers {
     
     public static void intialize() {
         register(new StrawHatRenderer(), ModArmors.STRAW_HAT);

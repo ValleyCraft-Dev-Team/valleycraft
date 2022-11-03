@@ -5,6 +5,7 @@ import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
 import static net.linkle.valleycraft.util.BookStackVoxelShapes.*;
 
 import java.util.function.BiFunction;
+import java.util.function.ToIntFunction;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -19,6 +20,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
@@ -37,7 +39,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     LUMBERJACK_STATION(new LumberjackBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
-    BONFIRE(new ModCampfireBlock(true, 1, Block.Settings.of(Material.DECORATION).ticksRandomly().luminance(s -> 16).nonOpaque()), itemSettings().rarity(Rarity.RARE)),
+    BONFIRE(new ModCampfireBlock(true, 1, Block.Settings.copy(Blocks.CAMPFIRE)), itemSettings().rarity(Rarity.RARE)),
     CAMPFIRE_POT(new CampfirePotBlock(Block.Settings.copy(Blocks.CAULDRON).ticksRandomly().luminance(s -> 16).nonOpaque()), itemSettings()),
     LOG_PILE(new SlabBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
     CRATE(new CrateBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
@@ -76,7 +78,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BAMBOO_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(1).sounds(BlockSoundGroup.BAMBOO)), itemSettings()),
 
     NET(new NetBlock(), itemSettings()),
-    NET_BLOCK(new BlockWithWater(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
+    NET_BLOCK(new GrateBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
 
     ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.of(Material.CARPET).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1).noCollision()), itemSettings()),
     ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.of(Material.CARPET).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1)), itemSettings()),
@@ -510,6 +512,11 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     private static Boolean always(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {
         return true;
+    }
+    
+    /** create light level from lit blockstate */
+    private static ToIntFunction<BlockState> lightFromLit(int litLevel) {
+        return state -> state.get(Properties.LIT) != false ? litLevel : 0;
     }
     
     
