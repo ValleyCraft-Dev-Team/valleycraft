@@ -1,7 +1,21 @@
 {
   "variants": {
-    "": {
-      "model": "valleycraft:block/small_cactus"
-    }
+    "": [
+      {
+        "model": "valleycraft:block/small_cactus"
+      },
+      {
+        "model": "valleycraft:block/small_cactus",
+        "y": 90
+      },
+      {
+        "model": "valleycraft:block/small_cactus",
+        "y": 180
+      },
+      {
+        "model": "valleycraft:block/small_cactus",
+        "y": 270
+      }
+    ]
   }
 }

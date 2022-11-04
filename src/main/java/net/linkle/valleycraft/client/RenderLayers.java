@@ -217,6 +217,10 @@ class RenderLayers {
         put(TERRARIUM_GLASS_PANE, cullout);
         put(BEVELED_GLASS, cullout);
         put(BEVELED_GLASS_PANE, cullout);
+        put(BEVELED_BRIMSTONE_GLASS, translucent);
+        put(BEVELED_BRIMSTONE_GLASS_PANE, translucent);
+        put(BEVELED_TINTED_GLASS, translucent);
+        put(BEVELED_TINTED_GLASS_PANE, translucent);
         put(TINTED_GLASS_PANE, translucent);
         put(VEX_LANTERN, cullout);
         put(ALLAY_LANTERN, cullout);
@@ -224,6 +228,8 @@ class RenderLayers {
         put(BONFIRE, cullout);
         put(ARID_VINES, cullout);
         put(ARID_VINES_PLANT, cullout);
+        put(MIMIC_FLOWER, cullout);
+        put(BRIMSTONE_LANTERN, cullout);
 
         put(ANCIENT_WAGON_WHEEL, cullout);
         put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);

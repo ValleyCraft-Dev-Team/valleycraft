@@ -12,14 +12,14 @@ import net.minecraft.world.BlockView;
 
 public class ChairBlock extends HorizontalWithWaterBlock {
     protected static final VoxelShape SHAPE = Block.createCuboidShape(3, 0, 3, 13, 8, 13);
-    protected static final VoxelShape NORTH_BACK_SHAPE = Block.createCuboidShape(3,0, 13, 14, 19, 14);
-    protected static final VoxelShape WEST_BACK_SHAPE = Block.createCuboidShape(2, 0, 3, 3, 19, 14);
-    protected static final VoxelShape SOUTH_BACK_SHAPE = Block.createCuboidShape(3, 0, 2, 14, 19, 3);
-    protected static final VoxelShape EAST_BACK_SHAPE = Block.createCuboidShape(13, 0, 3, 14, 19, 13);
+    protected static final VoxelShape NORTH_BACK_SHAPE = Block.createCuboidShape(3, 0, 12, 13, 19, 14);
+    protected static final VoxelShape WEST_BACK_SHAPE = Block.createCuboidShape(12, 0, 3, 14, 19, 13);
+    protected static final VoxelShape SOUTH_BACK_SHAPE = Block.createCuboidShape(3, 0, 2, 13, 19, 4);
+    protected static final VoxelShape EAST_BACK_SHAPE = Block.createCuboidShape(2, 0, 3, 4, 19, 13);
     protected static final VoxelShape NORTH_SHAPE = VoxelShapes.union(SHAPE, NORTH_BACK_SHAPE);
     protected static final VoxelShape SOUTH_SHAPE = VoxelShapes.union(SHAPE, SOUTH_BACK_SHAPE);
-    protected static final VoxelShape WEST_SHAPE = VoxelShapes.union(SHAPE, EAST_BACK_SHAPE);
-    protected static final VoxelShape EAST_SHAPE = VoxelShapes.union(SHAPE, WEST_BACK_SHAPE);
+    protected static final VoxelShape WEST_SHAPE = VoxelShapes.union(SHAPE, WEST_BACK_SHAPE);
+    protected static final VoxelShape EAST_SHAPE = VoxelShapes.union(SHAPE, EAST_BACK_SHAPE);
 
     public ChairBlock(Settings settings) {
         super(settings);

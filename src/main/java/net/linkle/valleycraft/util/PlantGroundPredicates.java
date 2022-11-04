@@ -14,7 +14,7 @@ public enum PlantGroundPredicates implements Predicate<BlockState> {
     TERRACOTTA(state -> state.isIn(BlockTags.TERRACOTTA)),
     STONE(state -> state.isIn(BlockTags.BASE_STONE_OVERWORLD)),
     ENDSTONE(state -> state.isOf(Blocks.END_STONE)),
-    ARID_DESERT(state -> state.isIn(BlockTags.SAND) || state.isIn(BlockTags.DIRT) || state.isIn(BlockTags.TERRACOTTA) || state.isIn(BlockTags.DEAD_BUSH_MAY_PLACE_ON)),
+    ARID_DESERT(state -> state.isIn(BlockTags.DEAD_BUSH_MAY_PLACE_ON)),
     END_PLANTS(state -> state.isOf(Blocks.END_STONE) || state.isOf(ModNaturalBlocks.END_GRASS_BLOCK.block));
 
 
