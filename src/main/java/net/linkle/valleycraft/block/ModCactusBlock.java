@@ -1,19 +1,23 @@
 package net.linkle.valleycraft.block;
 
+import net.linkle.valleycraft.util.PlantGroundPredicates;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class ThornyBushBlock extends ModPlantBlock {
-
-    public ThornyBushBlock(VoxelShape shape, Settings settings) {
-        super(shape, settings);
+public class ModCactusBlock extends ModPlantBlock {
+    
+    public ModCactusBlock(VoxelShape shape) {
+        super(Settings.of(Material.PLANT).nonOpaque().strength(0.3f).sounds(BlockSoundGroup.WOOL));
+        ground(PlantGroundPredicates.ARID_DESERT);
+        this.shape = shape;
     }
     
     @Override
@@ -28,7 +32,6 @@ public class ThornyBushBlock extends ModPlantBlock {
     
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        entity.slowMovement(state, new Vec3d(0.85f, 0.8, 0.85f));
         entity.damage(DamageSource.CACTUS, 1.0f);
     }
 }

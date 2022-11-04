@@ -1,12 +1,10 @@
 package net.linkle.valleycraft.block;
 
-import net.linkle.valleycraft.util.PlantVoxelShapes;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.ai.pathing.NavigationType;
-import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -16,11 +14,9 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 public class MimicFlowerBlock extends ModFlowerBlock {
-    private final ParticleEffect particleEffect;
-
-    public MimicFlowerBlock(ParticleEffect effect, Settings settings) {
+    
+    public MimicFlowerBlock(Settings settings) {
         super(settings);
-        this.particleEffect = effect;
     }
 
     @Override
@@ -31,7 +27,7 @@ public class MimicFlowerBlock extends ModFlowerBlock {
     @Override
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
         if (random.nextInt(24) == 0) {
-            world.playSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, SoundEvents.ENTITY_CREEPER_PRIMED, SoundCategory.HOSTILE, 1.0F + random.nextFloat(), random.nextFloat() * 0.7F + 0.3F, false);
+            world.playSound(pos.getX()+0.5, pos.getY()+0.4, pos.getZ()+0.5, SoundEvents.ENTITY_CREEPER_PRIMED, SoundCategory.BLOCKS, 1.0F + random.nextFloat(), random.nextFloat() * 0.7F + 0.3F, false);
         }
         var shape = this.getOutlineShape(state, world, pos, ShapeContext.absent());
         var vec = shape.getBoundingBox().getCenter();
@@ -39,7 +35,7 @@ public class MimicFlowerBlock extends ModFlowerBlock {
         double z = (double)pos.getZ() + vec.z;
         for (int i = 0; i < 3; ++i) {
             if (!random.nextBoolean()) continue;
-            world.addParticle(particleEffect, x + random.nextDouble() / 5.0, (double)pos.getY() + (0.5 - random.nextDouble()), z + random.nextDouble() / 5.0, 0.0, 0.0, 0.0);
+            world.addParticle(ParticleTypes.SPORE_BLOSSOM_AIR, x + random.nextDouble() / 5.0, (double)pos.getY() + (0.5 - random.nextDouble()), z + random.nextDouble() / 5.0, 0.0, 0.0, 0.0);
         }
     }
 

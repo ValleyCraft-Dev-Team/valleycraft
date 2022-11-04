@@ -11,7 +11,7 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
 public class LumberjackBlock extends HorizontalWithWaterBlock {
-    protected static final VoxelShape AXE_SHAPE = Block.createCuboidShape(4, 8, 4, 14, 10, 12);
+    protected static final VoxelShape AXE_SHAPE = Block.createCuboidShape(4, 8, 4, 12, 10, 12);
     protected static final VoxelShape BLOCK_SHAPE = Block.createCuboidShape(0, 0, 0, 16, 8, 16);
     protected static final VoxelShape SHAPE = VoxelShapes.union(AXE_SHAPE, BLOCK_SHAPE);
 

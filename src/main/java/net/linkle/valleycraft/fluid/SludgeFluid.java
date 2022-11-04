@@ -3,6 +3,7 @@ package net.linkle.valleycraft.fluid;
 import java.util.Optional;
 
 import net.linkle.valleycraft.init.ModNaturalBlocks;
+import net.linkle.valleycraft.init.ModParticles;
 import net.minecraft.sound.SoundCategory;
 import org.jetbrains.annotations.Nullable;
 
@@ -62,7 +63,7 @@ public abstract class SludgeFluid extends FlowableFluid {
     @Override
     @Nullable
     public ParticleEffect getParticle() {
-        return ParticleTypes.DRIPPING_WATER;
+        return ModParticles.DRIPPING_SLUDGE;
     }
 
     @Override

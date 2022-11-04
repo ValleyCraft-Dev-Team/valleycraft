@@ -95,6 +95,8 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerGlassPane(TERRARIUM_GLASS.block, TERRARIUM_GLASS_PANE.block);
         generator.registerGlassPane(BRIMSTONE_GLASS.block, BRIMSTONE_GLASS_PANE.block);
         generator.registerGlassPane(BEVELED_GLASS.block, BEVELED_GLASS_PANE.block);
+        generator.registerGlassPane(BEVELED_BRIMSTONE_GLASS.block, BEVELED_BRIMSTONE_GLASS_PANE.block);
+        generator.registerGlassPane(BEVELED_TINTED_GLASS.block, BEVELED_TINTED_GLASS_PANE.block);
         generator.registerGlassPane(Blocks.TINTED_GLASS, TINTED_GLASS_PANE.block);
 
         // Potted flowers
@@ -141,6 +143,12 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerFlowerPotPlant(SPROUT.block, POTTED_SPROUT.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(DESERT_SHRUB.block, POTTED_DESERT_SHRUB.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(LUSH_BUSH.block, POTTED_LUSH_BUSH.block, TintType.NOT_TINTED);
+        
+        // Potted glare
+        generator.registerFlowerPotPlant(RED_GLARE.block, POTTED_RED_GLARE.block, TintType.NOT_TINTED);
+        generator.registerFlowerPotPlant(GREEN_GLARE.block, POTTED_GREEN_GLARE.block, TintType.NOT_TINTED);
+        generator.registerFlowerPotPlant(BLUE_GLARE.block, POTTED_BLUE_GLARE.block, TintType.NOT_TINTED);
+        generator.registerFlowerPotPlant(PURPLE_GLARE.block, POTTED_PURPLE_GLARE.block, TintType.NOT_TINTED);
 
         // Smooth Carmine
         map = textureAll(CARMINE_SMOOTH);
