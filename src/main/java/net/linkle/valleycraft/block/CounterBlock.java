@@ -3,10 +3,8 @@ package net.linkle.valleycraft.block;
 import org.jetbrains.annotations.Nullable;
 
 import net.linkle.valleycraft.block.entity.CounterBlockEntity;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockEntityProvider;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
+import net.minecraft.block.entity.BarrelBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.PiglinBrain;
@@ -34,8 +32,8 @@ public class CounterBlock extends HorizontalWithWaterBlock implements BlockEntit
 
     protected static final VoxelShape NORTH_BASE_SHAPE = Block.createCuboidShape(0, 0, 0, 16, 13, 12);
     protected static final VoxelShape SOUTH_BASE_SHAPE = Block.createCuboidShape(0, 0, 4, 16, 13, 16);
-    protected static final VoxelShape EAST_BASE_SHAPE = Block.createCuboidShape(4, 2, 0, 16, 13, 16);
-    protected static final VoxelShape WEST_BASE_SHAPE = Block.createCuboidShape(0, 2, 0, 12, 13, 12);
+    protected static final VoxelShape EAST_BASE_SHAPE = Block.createCuboidShape(4, 0, 0, 16, 13, 16);
+    protected static final VoxelShape WEST_BASE_SHAPE = Block.createCuboidShape(0, 0, 0, 12, 13, 16);
 
     protected static final VoxelShape NORTH_COUNTER_SHAPE = Block.createCuboidShape(0, 13, 0, 16, 16, 14);
     protected static final VoxelShape SOUTHE_COUNTER_SHAPE = Block.createCuboidShape(0, 13, 2, 16, 16, 16);
@@ -49,6 +47,11 @@ public class CounterBlock extends HorizontalWithWaterBlock implements BlockEntit
 
     public CounterBlock(Settings settings) {
         super(settings);
+    }
+    
+    @Override
+    protected BlockState newDefaultState() {
+        return super.newDefaultState().with(OPEN, false);
     }
 
     @Override
@@ -74,7 +77,6 @@ public class CounterBlock extends HorizontalWithWaterBlock implements BlockEntit
                 ItemScatterer.spawn(world, pos, (Inventory)blockEntity);
                 world.updateComparators(pos, this);
             }
-
             super.onStateReplaced(state, world, pos, newState, moved);
         }
     }
