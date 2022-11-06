@@ -26,7 +26,7 @@ public class ModBlockEntityType {
     public static BlockEntityType<WaypointBlockEntity> WAYPOINT_ENTITY;
 
     public static void initialize() {
-        WISP_LANTERN = create("wisp_lantern", WispLanternBlockEntity::new, ModBlocks.VEX_LANTERN, ModBlocks.ALLAY_LANTERN);
+        WISP_LANTERN = create("wisp_lantern", WispLanternBlockEntity::new, ModBlocks.VEX_LANTERN, ModBlocks.VEX_QUEEN_LANTERN, ModBlocks.ALLAY_LANTERN);
         CRATE = create("crate", CrateBlockEntity::new, ModBlocks.CRATE);
         COUNTER = create("counter", CounterBlockEntity::new, ModBlocks.COUNTER);
         STOVE = create("stove", StoveBlockEntity::new, ModBlocks.STOVE);

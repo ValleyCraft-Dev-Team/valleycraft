@@ -31,7 +31,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerDoor(GLASS_DOOR.block);
         generator.registerDoor(TINTED_GLASS_DOOR.block);
         
-        
         // Mamon
         map = textureAll(MAMON_PLANKS);
         generator.registerLog(MAMON_WOOD.block);
@@ -91,6 +90,9 @@ class ValleyModelGenerator extends FabricModelProvider {
         fenceGate(CELESTIAL_FENCE_GATE.block, map, generator);
         pressurePlate(CELESTIAL_PRESSURE_PLATE.block, map, generator);
         
+        // Tall plants
+        generator.registerDoubleBlock(CATTAILS.block, TintType.NOT_TINTED);
+        
         // Glass pane
         generator.registerGlassPane(TERRARIUM_GLASS.block, TERRARIUM_GLASS_PANE.block);
         generator.registerGlassPane(BRIMSTONE_GLASS.block, BRIMSTONE_GLASS_PANE.block);
@@ -98,6 +100,9 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerGlassPane(BEVELED_BRIMSTONE_GLASS.block, BEVELED_BRIMSTONE_GLASS_PANE.block);
         generator.registerGlassPane(BEVELED_TINTED_GLASS.block, BEVELED_TINTED_GLASS_PANE.block);
         generator.registerGlassPane(Blocks.TINTED_GLASS, TINTED_GLASS_PANE.block);
+        generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS.block, BLOCK_WATTLE_AND_GLASS_PANE.block);
+        generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS_CROSS.block, BLOCK_WATTLE_AND_GLASS_CROSS_PANE.block);
+        generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS_PLUS.block, BLOCK_WATTLE_AND_GLASS_PLUS_PANE.block);
 
         // Potted flowers
         generator.registerFlowerPotPlant(BLACK_DAHLIA.block, POTTED_BLACK_DAHLIA.block, TintType.NOT_TINTED);

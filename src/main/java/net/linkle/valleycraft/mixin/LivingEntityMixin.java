@@ -4,6 +4,7 @@ import java.util.function.Predicate;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -26,7 +27,10 @@ import net.minecraft.world.World;
 @Mixin(LivingEntity.class)
 abstract class LivingEntityMixin extends Entity implements LivingEntityExt {
     
+    @Unique
     private boolean isAxeClimbing;
+    
+    @Unique
     private double lastY;
 
     LivingEntityMixin(EntityType<?> type, World world) {

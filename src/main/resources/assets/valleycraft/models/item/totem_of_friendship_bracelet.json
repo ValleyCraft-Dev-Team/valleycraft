@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/baubles/totem_of_friendship_bracelet"
+    "layer0": "valleycraft:item/baubles/friendship_totem_bracelet"
   }
 }

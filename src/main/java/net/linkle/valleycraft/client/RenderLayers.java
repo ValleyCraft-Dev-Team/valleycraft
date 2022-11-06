@@ -247,6 +247,7 @@ class RenderLayers {
         put(TALL_LIVING_BUSH, cullout);
         put(TALL_OXEYE_DAISY, cullout);
         put(TALL_AZURE_BLUET, cullout);
+        put(CATTAILS, cullout);
 
         put(GUIDESTONE, cullout);
         put(GUIDESTONE_ARROW, cullout);
@@ -316,9 +317,12 @@ class RenderLayers {
         put(KEG, cullout);
         put(SMALL_CACTUS, cullout);
         put(PRIMSTEEL_BARS, cullout);
-        put(BLOCK_WATTLE_AND_GLASS, translucent);
-        put(BLOCK_WATTLE_AND_GLASS_PLUS, translucent);
-        put(BLOCK_WATTLE_AND_GLASS_CROSS, translucent);
+        put(BLOCK_WATTLE_AND_GLASS, cullout);
+        put(BLOCK_WATTLE_AND_GLASS_PLUS, cullout);
+        put(BLOCK_WATTLE_AND_GLASS_CROSS, cullout);
+        put(BLOCK_WATTLE_AND_GLASS_PANE, cullout);
+        put(BLOCK_WATTLE_AND_GLASS_PLUS_PANE, cullout);
+        put(BLOCK_WATTLE_AND_GLASS_CROSS_PANE, cullout);
         put(TUMBLEWEED, cullout);
         put(ROPE, cullout);
         put(NET, cullout);
