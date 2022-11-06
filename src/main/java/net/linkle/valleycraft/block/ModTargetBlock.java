@@ -1,6 +1,5 @@
 package net.linkle.valleycraft.block;
 
-import net.linkle.valleycraft.Main;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -69,10 +68,9 @@ public class ModTargetBlock extends HorizontalWithWaterBlock {
         var side = hitResult.getSide();
         if (side != face) return 0;
         var x = Math.abs(MathHelper.fractionalPart(pos.x) - (8/16d)) * (1+(2/16d));
-        var y = Math.abs(MathHelper.fractionalPart(pos.y) - (9/16d)) * (1+(2/16d));
+        var y = Math.abs(MathHelper.fractionalPart(pos.y) - (9/16d)) * (1+(2/16d)+OFFSET);
         var z = Math.abs(MathHelper.fractionalPart(pos.z) - (8/16d)) * (1+(2/16d));
         var value = side.getAxis() == Direction.Axis.Z ? Math.max(x, y) : Math.max(y, z);
-        Main.LOGGER.info("value of: " + value);
         return Math.max(1, MathHelper.ceil(15.0 * MathHelper.clamp((0.5 - value) / 0.5, 0.0, 1.0)));
     }
     

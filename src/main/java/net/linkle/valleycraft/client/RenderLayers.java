@@ -223,6 +223,7 @@ class RenderLayers {
         put(BEVELED_TINTED_GLASS_PANE, translucent);
         put(TINTED_GLASS_PANE, translucent);
         put(VEX_LANTERN, cullout);
+        put(VEX_QUEEN_LANTERN, cullout);
         put(ALLAY_LANTERN, cullout);
         put(WATTLE_BARS, cullout);
         put(BONFIRE, cullout);
