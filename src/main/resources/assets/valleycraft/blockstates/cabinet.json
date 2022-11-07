@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=north,open=true": {
+      "model": "valleycraft:block/cabinet_open"
+    },
+    "facing=south,open=true": {
+      "y": 180,
+      "model": "valleycraft:block/cabinet_open"
+    },
+    "facing=east,open=true": {
+      "y": 90,
+      "model": "valleycraft:block/cabinet_open"
+    },
+    "facing=west,open=true": {
+      "y": 270,
+      "model": "valleycraft:block/cabinet_open"
+    },
+    
+    "facing=north,open=false": {
+      "model": "valleycraft:block/cabinet"
+    },
+    "facing=south,open=false": {
+      "y": 180,
+      "model": "valleycraft:block/cabinet"
+    },
+    "facing=east,open=false": {
+      "y": 90,
+      "model": "valleycraft:block/cabinet"
+    },
+    "facing=west,open=false": {
+      "y": 270,
+      "model": "valleycraft:block/cabinet"
+    }
+  }
+}

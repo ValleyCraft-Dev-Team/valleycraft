@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.block.entity;
 
+import net.linkle.valleycraft.block.CabinetBlock;
 import net.linkle.valleycraft.block.CounterBlock;
 import net.linkle.valleycraft.init.ModBlockEntityType;
 import net.minecraft.block.Block;
@@ -7,37 +8,36 @@ import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.screen.GenericContainerScreenHandler;
 import net.minecraft.screen.ScreenHandler;
-import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 
-public class CounterBlockEntity extends ContainerBlockEntity {
+public class CabinetBlockEntity extends ContainerBlockEntity {
     
-    public CounterBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntityType.COUNTER, pos, state);
+    public CabinetBlockEntity(BlockPos pos, BlockState state) {
+        super(ModBlockEntityType.CABINET, pos, state);
     }
 
     @Override
     protected Text getContainerName() {
-        return Text.translatable("container.valleycraft.counter");
+        return Text.translatable("container.valleycraft.cabinet");
     }
 
     @Override
     public int size() {
-        return 18;
+        return 27;
     }
 
     @Override
     protected ScreenHandler createScreenHandler(int syncId, PlayerInventory playerInventory) {
-        return new GenericContainerScreenHandler(ScreenHandlerType.GENERIC_9X2, syncId, playerInventory, this, 2);
+        return GenericContainerScreenHandler.createGeneric9x3(syncId, playerInventory, this);
     }
     
     @Override
     protected void setOpen(BlockState state, boolean open) {
-        world.setBlockState(getPos(), state.with(CounterBlock.OPEN, open), Block.NOTIFY_ALL);
+        world.setBlockState(getPos(), state.with(CabinetBlock.OPEN, open), Block.NOTIFY_ALL);
         playSound(state, open ? SoundEvents.BLOCK_BARREL_OPEN : SoundEvents.BLOCK_BARREL_CLOSE);
     }
     

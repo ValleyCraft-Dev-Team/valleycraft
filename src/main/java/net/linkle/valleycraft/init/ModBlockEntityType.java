@@ -22,6 +22,7 @@ public class ModBlockEntityType {
     public static BlockEntityType<WispLanternBlockEntity> WISP_LANTERN;
     public static BlockEntityType<CrateBlockEntity> CRATE;
     public static BlockEntityType<CounterBlockEntity> COUNTER;
+    public static BlockEntityType<CabinetBlockEntity> CABINET;
     public static BlockEntityType<StoveBlockEntity> STOVE;
     public static BlockEntityType<WaypointBlockEntity> WAYPOINT_ENTITY;
 
@@ -29,6 +30,7 @@ public class ModBlockEntityType {
         WISP_LANTERN = create("wisp_lantern", WispLanternBlockEntity::new, ModBlocks.VEX_LANTERN, ModBlocks.VEX_QUEEN_LANTERN, ModBlocks.ALLAY_LANTERN);
         CRATE = create("crate", CrateBlockEntity::new, ModBlocks.CRATE);
         COUNTER = create("counter", CounterBlockEntity::new, ModBlocks.COUNTER);
+        CABINET = create("cabinet", CabinetBlockEntity::new, ModBlocks.CABINET);
         STOVE = create("stove", StoveBlockEntity::new, ModBlocks.STOVE);
         WAYPOINT_ENTITY = create("waypoint", WaypointBlockEntity::new, ModBlocks.WAYPOINT);
     }
