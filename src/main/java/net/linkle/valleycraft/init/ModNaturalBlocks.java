@@ -73,6 +73,8 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     TALL_ALLIUM(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
     TALL_LAVENDER(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
     TALL_AZURE_BLUET(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
+    
+    CATTAILS(new CattailsBlock(), itemSettings(), TallBlockItem::new),
 
     BEE_NEST_WALL(new Block(Block.Settings.copy(Blocks.BEE_NEST)), itemSettings()),
     
@@ -86,7 +88,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     MOREL(new ModMushroomBlock(), itemSettings()),
     SHIVERCAP(new ShivercapBlock(), itemSettings().group(INGREDIENTS)),
     STALWART_SHROOM(new StalwartBlock(), itemSettings().group(INGREDIENTS)),
-    GOOP_CAP(new ModMushroomBlock(AbstractBlock.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 2)), itemSettings()),
+    GOOP_CAP(new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 2)), itemSettings()),
     GILDED_CAP(new ModMushroomBlock(), itemSettings()),
     IRONSHROOM(new ModMushroomBlock(), itemSettings()),
     WARDING_SHROOM(new ModMushroomBlock().large(), itemSettings()),

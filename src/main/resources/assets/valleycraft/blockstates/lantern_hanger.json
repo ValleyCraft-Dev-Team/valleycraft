@@ -15,12 +15,6 @@
     "facing=west": {
       "y": 270,
       "model": "valleycraft:block/lantern_hanger"
-    },
-    "facing=up": {
-      "model": "valleycraft:block/lantern_hanger"
-    },
-    "facing=down": {
-      "model": "valleycraft:block/lantern_hanger"
     }
   }
 }

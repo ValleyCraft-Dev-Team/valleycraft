@@ -18,6 +18,7 @@ import net.minecraft.util.math.MathHelper;
 @Environment(EnvType.CLIENT)
 public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlockEntity> {
     public static final SpriteIdentifier VEX_TEXTURE  = Sprites.create("entity/sprites/vex_jar");
+    public static final SpriteIdentifier VEX_QUEEN_TEXTURE  = Sprites.create("entity/sprites/vex_queen_jar");
     public static final SpriteIdentifier ALLAY_TEXTURE = Sprites.create("entity/sprites/allay_jar");
     
     private final BillboardRenderer billboard = new BillboardRenderer();
@@ -39,6 +40,9 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
         
         if (entity.getCachedState().isOf(ModBlocks.ALLAY_LANTERN.block)) {
             texture = ALLAY_TEXTURE;
+        }
+        if (entity.getCachedState().isOf(ModBlocks.VEX_QUEEN_LANTERN.block)) {
+            texture = VEX_QUEEN_TEXTURE;
         }
         
         // Parameters

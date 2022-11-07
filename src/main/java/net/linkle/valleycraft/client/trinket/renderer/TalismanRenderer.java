@@ -1,7 +1,5 @@
 package net.linkle.valleycraft.client.trinket.renderer;
 
-import java.util.HashMap;
-
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.client.TrinketRenderer;
 import net.linkle.valleycraft.Main;
@@ -18,23 +16,14 @@ import net.minecraft.client.render.entity.model.EntityModelPartNames;
 import net.minecraft.client.render.entity.model.PlayerEntityModel;
 import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.data.client.TexturedModel;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Vec3f;
 
 public class TalismanRenderer implements TrinketRenderer {
     
-    //public static final HashMap<Item, Identifier> TEXTURES = new HashMap<>();
-    
     private static final ModelPart BODY = TexturedModelData.of(BipedEntityModel.getModelData(Dilation.NONE, 0), 64, 32).createModel().getChild(EntityModelPartNames.BODY);
-    static {
-        float scale = 0.3f;
-        BODY.scale(new Vec3f(scale, scale, scale));
-    }
     
     private final Identifier texture;
     
@@ -50,7 +39,6 @@ public class TalismanRenderer implements TrinketRenderer {
             float headPitch) {
         if (entity instanceof AbstractClientPlayerEntity player) {
             var model = (PlayerEntityModel<AbstractClientPlayerEntity>)contextModel;
-            //TrinketRenderer.translateToChest(matrices, model, player);
             var consumer = ItemRenderer.getArmorGlintConsumer(vertexConsumers, RenderLayer.getArmorCutoutNoCull(texture), false, stack.hasGlint());
             
             float scale = 0.3f;

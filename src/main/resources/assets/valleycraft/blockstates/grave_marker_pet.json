@@ -15,12 +15,6 @@
     "facing=west": {
       "y": 270,
       "model": "valleycraft:block/grave_marker_pet"
-    },
-    "facing=up": {
-      "model": "valleycraft:block/grave_marker_pet"
-    },
-    "facing=down": {
-      "model": "valleycraft:block/grave_marker_pet"
     }
   }
 }

@@ -25,5 +25,13 @@
         "stream": true
       }
     ]
+  },
+  "wilder_mountains": {
+    "sounds": [
+      {
+        "name": "valleycraft:ofthewildermountains",
+        "stream": true
+      }
+    ]
   }
 }

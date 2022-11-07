@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  */
 
 @Mixin(targets = "net/minecraft/client/particle/BlockLeakParticle$Dripping")
-public abstract class DrippingParticleMixin extends Particle implements BlockLeakParticleDuck {
+abstract class DrippingParticleMixin extends Particle implements BlockLeakParticleDuck {
     @Unique
     private ParticleEffect customNextParticle;
 
@@ -24,7 +24,7 @@ public abstract class DrippingParticleMixin extends Particle implements BlockLea
     public void sandwichable$spawnCustomNextParticle(CallbackInfo ci) {
         if(customNextParticle != null && this.maxAge - 1 <= 0) {
             this.markDead();
-            this.world.addParticle(this.customNextParticle, this.x, this.y, this.z, 0.0D, 0.0D, 0.0D);
+            this.world.addParticle(this.customNextParticle, this.x, this.y, this.z, 0, 0, 0);
             ci.cancel();
         }
     }
@@ -34,8 +34,7 @@ public abstract class DrippingParticleMixin extends Particle implements BlockLea
         customNextParticle = effect;
     }
 
-    protected DrippingParticleMixin(ClientWorld clientWorld, double d, double e, double f) {
+    private DrippingParticleMixin(ClientWorld clientWorld, double d, double e, double f) {
         super(clientWorld, d, e, f);
-        throw new AssertionError("dummy constructor called");
     }
 }

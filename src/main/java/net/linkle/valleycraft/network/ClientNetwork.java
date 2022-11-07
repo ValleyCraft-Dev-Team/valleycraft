@@ -34,7 +34,7 @@ public class ClientNetwork {
     private static void showFloatingItem(MinecraftClient client, ClientPlayNetworkHandler handler, PacketByteBuf buf, PacketSender responseSender) {
         var stack = buf.readItemStack();
         client.execute(()->{
-            if (stack == null) return;
+            if (stack.isEmpty()) return;
             client.gameRenderer.showFloatingItem(stack);
         });
     }

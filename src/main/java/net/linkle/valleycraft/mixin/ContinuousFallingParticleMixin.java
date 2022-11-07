@@ -14,9 +14,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * Part of the custom fluid dripping particle implementation made by FoundationGames.
  * The original can be found here: https://github.com/FoundationGames/Sandwichable/blob/1.18.2/src/main/java/io/github/foundationgames/sandwichable/mixin/ContinuousFallingParticleMixin.java
  */
-
 @Mixin(targets = "net/minecraft/client/particle/BlockLeakParticle$ContinuousFalling")
-public abstract class ContinuousFallingParticleMixin extends Particle implements BlockLeakParticleDuck {
+abstract class ContinuousFallingParticleMixin extends Particle implements BlockLeakParticleDuck {
     @Unique
     private ParticleEffect customNextParticle;
 
@@ -24,7 +23,7 @@ public abstract class ContinuousFallingParticleMixin extends Particle implements
     public void valleycraft$spawnCustomNextParticle(CallbackInfo ci) {
         if(customNextParticle != null && this.onGround) {
             this.markDead();
-            this.world.addParticle(this.customNextParticle, this.x, this.y, this.z, 0.0D, 0.0D, 0.0D);
+            this.world.addParticle(this.customNextParticle, this.x, this.y, this.z, 0, 0, 0);
             ci.cancel();
         }
     }
@@ -34,8 +33,7 @@ public abstract class ContinuousFallingParticleMixin extends Particle implements
         customNextParticle = effect;
     }
 
-    protected ContinuousFallingParticleMixin(ClientWorld clientWorld, double d, double e, double f) {
+    private ContinuousFallingParticleMixin(ClientWorld clientWorld, double d, double e, double f) {
         super(clientWorld, d, e, f);
-        throw new AssertionError("dummy constructor called");
     }
 }

@@ -15,12 +15,6 @@
     "facing=west": {
       "y": 270,
       "model": "valleycraft:block/shale_gravestone_pet_text"
-    },
-    "facing=up": {
-      "model": "valleycraft:block/shale_gravestone_pet_text"
-    },
-    "facing=down": {
-      "model": "valleycraft:block/shale_gravestone_pet_text"
     }
   }
 }

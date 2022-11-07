@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "valleycraft:block/cattails_bottom"
+    },
+    "half=upper": {
+      "model": "valleycraft:block/cattails_top"
+    }
+  }
+}

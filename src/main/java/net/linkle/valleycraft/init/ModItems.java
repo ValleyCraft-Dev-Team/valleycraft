@@ -16,7 +16,7 @@ import static net.minecraft.util.Rarity.*;
 
 public enum ModItems implements ItemEnum {
 
-    //tree seeds
+    // tree seeds
     OAK_SEED(new Item(itemSettings())),
     DARK_OAK_SEED(new Item(itemSettings())),
     SPRUCE_SEED(new Item(itemSettings())),
@@ -124,10 +124,19 @@ public enum ModItems implements ItemEnum {
     ECHO_SHARD_TALISMAN(new Item(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
     ENDER_DRAGON_TALISMAN(new Item(itemSettings().rarity(EPIC).group(BOOKS).maxCount(1))),
 
-    //record items
+    // record items
     ANCIENT_RECORD_FRAGMENT(new Item(itemSettings().group(BOOKS).rarity(RARE))),
     ANCIENT_RECORD_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.ANCIENT.sound, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),110)),
-    WILD_MOUNTAIN_TIME_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.OFTHEWILDRMOUNTAIN.sound, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),84));
+    WILD_MOUNTAIN_TIME_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.WILDER_MOUNTAINS.sound, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),84)),
+
+    // spawn eggs
+    ABYSSWATCHER_SPAWN_EGG(new SpawnEggItem(ModEntityType.ABYSSWATCHER, 0x09424C, 0x22DBE5, itemSettings())), // abysswatcher_spawn_egg
+    PERCH_SPAWN_EGG(new SpawnEggItem(ModEntityType.PERCH, 0x724E00, 0xCC9D26, itemSettings())), // perch_spawn_egg
+    RED_PORGY_SPAWN_EGG(new SpawnEggItem(ModEntityType.RED_PORGY, 0xF48DB0, 0xF9EDF1, itemSettings())), // red_porgy_spawn_egg
+    SARDINE_SPAWN_EGG(new SpawnEggItem(ModEntityType.SARDINE, 0x2E445B, 0xA1B1CC, itemSettings())), // sardine_spawn_egg
+    STONETOSSER_MINNOW_SPAWN_EGG(new SpawnEggItem(ModEntityType.STONETOSSER_MINNOW, 0x608C85, 0xCCCCCC, itemSettings())), // stonetosser_minnow_spawn_egg
+    BONEFIN_SPAWN_EGG(new SpawnEggItem(ModEntityType.BONEFIN, 0xE5E0CE, 0xBFB799, itemSettings())), // bonefin_spawn_egg
+    ZOD_SPAWN_EGG(new SpawnEggItem(ModEntityType.ZOD, 0x557571, 0xCCB599, itemSettings())); // zod_spawn_egg
 
     public static void initialize() {
         ModBaubles.initialize();
