@@ -1,0 +1,142 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "valleycraft:block/potion_bottle_block",
+		"particle": "valleycraft:block/potion_bottle_block"
+	},
+	"elements": [
+		{
+			"from": [7.5, 3, 8],
+			"to": [8.5, 4, 8],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 3, 8]},
+			"faces": {
+				"north": {"uv": [8, 2.5, 8.5, 3], "texture": "#0"},
+				"east": {"uv": [8.5, 2, 8.5, 2], "texture": "#0"},
+				"south": {"uv": [8, 2.5, 8.5, 3], "texture": "#0"},
+				"west": {"uv": [6, 1.5, 6, 1.5], "texture": "#0"},
+				"up": {"uv": [4.5, 0, 4.5, 0], "texture": "#0"},
+				"down": {"uv": [4.5, 0, 4.5, 0], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 1, 7],
+			"to": [9, 3, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -3, 0]},
+			"faces": {
+				"north": {"uv": [8, 4.5, 9, 5.5], "texture": "#0"},
+				"east": {"uv": [8, 4.5, 9, 5.5], "texture": "#0"},
+				"south": {"uv": [8, 4.5, 9, 5.5], "texture": "#0"},
+				"west": {"uv": [8, 4.5, 9, 5.5], "texture": "#0"},
+				"up": {"uv": [8, 3.5, 9, 4.5], "texture": "#0"},
+				"down": {"uv": [8, 5.5, 9, 6.5], "texture": "#0", "cullface": "down"}
+			}
+		},
+		{
+			"from": [7.5, 3, 8],
+			"to": [8.5, 4, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 3, 8]},
+			"faces": {
+				"north": {"uv": [8, 2.5, 8.5, 3], "texture": "#0"},
+				"east": {"uv": [8.5, 2, 8.5, 2], "texture": "#0"},
+				"south": {"uv": [8, 2.5, 8.5, 3], "texture": "#0"},
+				"west": {"uv": [6, 1.5, 6, 1.5], "texture": "#0"},
+				"up": {"uv": [4.5, 0, 4.5, 0], "texture": "#0"},
+				"down": {"uv": [4.5, 0, 4.5, 0], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 7, 6],
+			"to": [10, 8, 10],
+			"faces": {
+				"north": {"uv": [12, 0.5, 14, 1], "texture": "#0"},
+				"east": {"uv": [12, 0.5, 14, 1], "texture": "#0"},
+				"south": {"uv": [12, 0.5, 14, 1], "texture": "#0"},
+				"west": {"uv": [12, 0.5, 14, 1], "texture": "#0"},
+				"up": {"uv": [14, 7, 12, 5], "texture": "#0"},
+				"down": {"uv": [14, 7, 12, 9], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 0, 6],
+			"to": [10, 1, 10],
+			"faces": {
+				"north": {"uv": [0, 8.5, 2, 9], "texture": "#0"},
+				"east": {"uv": [0, 8.5, 2, 9], "texture": "#0"},
+				"south": {"uv": [0, 8.5, 2, 9], "texture": "#0"},
+				"west": {"uv": [0, 8.5, 2, 9], "texture": "#0"},
+				"up": {"uv": [2, 12.5, 0, 10.5], "texture": "#0"},
+				"down": {"uv": [2, 8.5, 0, 10.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6.5, 5, 6.5],
+			"to": [9.5, 7, 9.5],
+			"faces": {
+				"north": {"uv": [12.5, 1, 14, 2], "texture": "#0"},
+				"east": {"uv": [12.5, 1, 14, 2], "texture": "#0"},
+				"south": {"uv": [12.5, 1, 14, 2], "texture": "#0"},
+				"west": {"uv": [12.5, 1, 14, 2], "texture": "#0"},
+				"up": {"uv": [2, 4.5, 0.5, 3], "texture": "#0"},
+				"down": {"uv": [2, 5.5, 0.5, 7], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5.5, 1, 5.5],
+			"to": [10.5, 6, 10.5],
+			"faces": {
+				"north": {"uv": [0, 2.5, 2.5, 5], "texture": "#0"},
+				"east": {"uv": [0, 2.5, 2.5, 5], "texture": "#0"},
+				"south": {"uv": [0, 2.5, 2.5, 5], "texture": "#0"},
+				"west": {"uv": [0, 2.5, 2.5, 5], "texture": "#0"},
+				"up": {"uv": [2.5, 2.5, 0, 0], "texture": "#0"},
+				"down": {"uv": [2.5, 5, 0, 7.5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 225, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "candle",
+			"origin": [8, 15, 8],
+			"color": 0,
+			"children": [0, 1, 2]
+		},
+		{
+			"name": "bottle",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [3, 4, 5, 6]
+		}
+	]
+}
