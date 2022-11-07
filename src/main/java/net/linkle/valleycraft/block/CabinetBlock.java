@@ -2,9 +2,12 @@ package net.linkle.valleycraft.block;
 
 import org.jetbrains.annotations.Nullable;
 
+import net.linkle.valleycraft.block.entity.CabinetBlockEntity;
 import net.linkle.valleycraft.block.entity.CounterBlockEntity;
-import net.minecraft.block.*;
-import net.minecraft.block.entity.BarrelBlockEntity;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockEntityProvider;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.PiglinBrain;
@@ -23,29 +26,18 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class CounterBlock extends HorizontalWithWaterBlock implements BlockEntityProvider {
+public class CabinetBlock extends HorizontalWithWaterBlock implements BlockEntityProvider {
     public static final BooleanProperty OPEN = Properties.OPEN;
 
-    protected static final VoxelShape NORTH_BASE_SHAPE = Block.createCuboidShape(0, 0, 0, 16, 13, 12);
-    protected static final VoxelShape SOUTH_BASE_SHAPE = Block.createCuboidShape(0, 0, 4, 16, 13, 16);
-    protected static final VoxelShape EAST_BASE_SHAPE = Block.createCuboidShape(4, 0, 0, 16, 13, 16);
-    protected static final VoxelShape WEST_BASE_SHAPE = Block.createCuboidShape(0, 0, 0, 12, 13, 16);
+    protected static final VoxelShape NORTH_SHAPE = Block.createCuboidShape(0, 0, 0, 16, 16, 8);
+    protected static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(0, 0, 8, 16, 16, 16);
+    protected static final VoxelShape EAST_SHAPE = Block.createCuboidShape(8, 0, 0, 16, 16, 16);
+    protected static final VoxelShape WEST_SHAPE = Block.createCuboidShape(0, 0, 0, 8, 16, 16);
 
-    protected static final VoxelShape NORTH_COUNTER_SHAPE = Block.createCuboidShape(0, 13, 0, 16, 16, 14);
-    protected static final VoxelShape SOUTHE_COUNTER_SHAPE = Block.createCuboidShape(0, 13, 2, 16, 16, 16);
-    protected static final VoxelShape EAST_COUNTER_SHAPE = Block.createCuboidShape(2, 13, 0, 16, 16, 16);
-    protected static final VoxelShape WEST_COUNTER_SHAPE = Block.createCuboidShape(0, 13, 0, 14, 16, 16);
-
-    protected static final VoxelShape NORTH_SHAPE = VoxelShapes.union(NORTH_COUNTER_SHAPE, NORTH_BASE_SHAPE);
-    protected static final VoxelShape SOUTH_SHAPE = VoxelShapes.union(SOUTHE_COUNTER_SHAPE, SOUTH_BASE_SHAPE);
-    protected static final VoxelShape EAST_SHAPE = VoxelShapes.union(EAST_COUNTER_SHAPE, EAST_BASE_SHAPE);
-    protected static final VoxelShape WEST_SHAPE = VoxelShapes.union(WEST_COUNTER_SHAPE, WEST_BASE_SHAPE);
-
-    public CounterBlock(Settings settings) {
+    public CabinetBlock(Settings settings) {
         super(settings);
     }
     
@@ -60,8 +52,8 @@ public class CounterBlock extends HorizontalWithWaterBlock implements BlockEntit
             return ActionResult.SUCCESS;
         } else {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof CounterBlockEntity counter) {
-                player.openHandledScreen(counter);
+            if (blockEntity instanceof CabinetBlockEntity cabinet) {
+                player.openHandledScreen(cabinet);
                 //player.incrementStat(Stats.OPEN_BARREL); TODO: Use the custom stats.
                 PiglinBrain.onGuardedBlockInteracted(player, true);
             }
@@ -84,23 +76,23 @@ public class CounterBlock extends HorizontalWithWaterBlock implements BlockEntit
     @Override
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         BlockEntity blockEntity = world.getBlockEntity(pos);
-        if (blockEntity instanceof CounterBlockEntity counter) {
-            counter.tick();
+        if (blockEntity instanceof CounterBlockEntity cabinet) {
+            cabinet.tick();
         }
     }
 
     @Override
     @Nullable
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new CounterBlockEntity(pos, state);
+        return new CabinetBlockEntity(pos, state);
     }
 
     @Override
     public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
         if (itemStack.hasCustomName()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof CounterBlockEntity counter) {
-                counter.setCustomName(itemStack.getName());
+            if (blockEntity instanceof CabinetBlockEntity cabinet) {
+                cabinet.setCustomName(itemStack.getName());
             }
         }
     }
