@@ -1,9 +1,8 @@
 package net.linkle.valleycraft.init;
 
-import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
-import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import static net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry.*;
+
+import net.fabricmc.fabric.api.registry.*;
 import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
@@ -15,6 +14,27 @@ public class Contents {
         flammable();
         fuels();
         strips();
+        oxidizables();
+    }
+    
+    private static void oxidizables() {
+        registerOxidizableBlockPair(ModBlocks.SMALL_CANDELABRA.block, ModBlocks.SMALL_CANDELABRA_EXPOSED.block);
+        registerOxidizableBlockPair(ModBlocks.SMALL_CANDELABRA_EXPOSED.block, ModBlocks.SMALL_CANDELABRA_WEATHERED.block);
+        registerOxidizableBlockPair(ModBlocks.SMALL_CANDELABRA_WEATHERED.block, ModBlocks.SMALL_CANDELABRA_OXIDIZED.block);
+        
+        registerWaxableBlockPair(ModBlocks.SMALL_CANDELABRA.block, ModBlocks.WAXED_SMALL_CANDELABRA.block);
+        registerWaxableBlockPair(ModBlocks.SMALL_CANDELABRA_EXPOSED.block, ModBlocks.WAXED_SMALL_CANDELABRA_EXPOSED.block);
+        registerWaxableBlockPair(ModBlocks.SMALL_CANDELABRA_WEATHERED.block, ModBlocks.WAXED_SMALL_CANDELABRA_WEATHERED.block);
+        registerWaxableBlockPair(ModBlocks.SMALL_CANDELABRA_OXIDIZED.block, ModBlocks.WAXED_SMALL_CANDELABRA_OXIDIZED.block);
+        
+        registerOxidizableBlockPair(ModBlocks.MEDIUM_CANDELABRA.block, ModBlocks.MEDIUM_CANDELABRA_EXPOSED.block);
+        registerOxidizableBlockPair(ModBlocks.MEDIUM_CANDELABRA_EXPOSED.block, ModBlocks.MEDIUM_CANDELABRA_WEATHERED.block);
+        registerOxidizableBlockPair(ModBlocks.MEDIUM_CANDELABRA_WEATHERED.block, ModBlocks.MEDIUM_CANDELABRA_OXIDIZED.block);
+        
+        registerWaxableBlockPair(ModBlocks.MEDIUM_CANDELABRA.block, ModBlocks.WAXED_MEDIUM_CANDELABRA.block);
+        registerWaxableBlockPair(ModBlocks.MEDIUM_CANDELABRA_EXPOSED.block, ModBlocks.WAXED_MEDIUM_CANDELABRA_EXPOSED.block);
+        registerWaxableBlockPair(ModBlocks.MEDIUM_CANDELABRA_WEATHERED.block, ModBlocks.WAXED_MEDIUM_CANDELABRA_WEATHERED.block);
+        registerWaxableBlockPair(ModBlocks.MEDIUM_CANDELABRA_OXIDIZED.block, ModBlocks.WAXED_MEDIUM_CANDELABRA_OXIDIZED.block);
     }
     
     private static void strips() {

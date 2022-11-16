@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "valleycraft:block/medium_candelabra_exposed"
+    },
+    "lit=true": {
+      "model": "valleycraft:block/medium_candelabra_exposed_lit"
+    }
+  }
+}

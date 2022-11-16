@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:small_candelabra",
+    "valleycraft:small_candelabra_exposed",
+    "valleycraft:small_candelabra_oxidized",
+    "valleycraft:small_candelabra_weathered",
+    "valleycraft:medium_candelabra",
+    "valleycraft:medium_candelabra_exposed",
+    "valleycraft:medium_candelabra_oxidized",
+    "valleycraft:medium_candelabra_weathered",
+    "valleycraft:waxed_small_candelabra",
+    "valleycraft:waxed_small_candelabra_exposed",
+    "valleycraft:waxed_small_candelabra_oxidized",
+    "valleycraft:waxed_small_candelabra_weathered",
+    "valleycraft:waxed_medium_candelabra",
+    "valleycraft:waxed_medium_candelabra_exposed",
+    "valleycraft:waxed_medium_candelabra_oxidized",
+    "valleycraft:waxed_medium_candelabra_weathered"
+  ]
+}

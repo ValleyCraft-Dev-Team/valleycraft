@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "valleycraft:block/medium_candelabra_weathered"
+    },
+    "lit=true": {
+      "model": "valleycraft:block/medium_candelabra_weathered_lit"
+    }
+  }
+}

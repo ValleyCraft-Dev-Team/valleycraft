@@ -15,6 +15,7 @@ import net.linkle.valleycraft.block.*;
 import net.linkle.valleycraft.util.BlockEnum;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.block.*;
+import net.minecraft.block.Oxidizable.OxidationLevel;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.BlockItem;
@@ -157,7 +158,25 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SHALE_PET_GRAVESTONE_HEART(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
     SHALE_PET_GRAVESTONE_ROSE(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
     SHALE_PET_GRAVESTONE_TEXT(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
-
+    
+    // candelabra
+    SMALL_CANDELABRA(new OxidizableCandelabraBlock(OxidationLevel.UNAFFECTED, true), itemSettings()),
+    SMALL_CANDELABRA_EXPOSED(new OxidizableCandelabraBlock(OxidationLevel.EXPOSED, true), itemSettings()),
+    SMALL_CANDELABRA_OXIDIZED(new OxidizableCandelabraBlock(OxidationLevel.OXIDIZED, true), itemSettings()),
+    SMALL_CANDELABRA_WEATHERED(new OxidizableCandelabraBlock(OxidationLevel.WEATHERED, true), itemSettings()),
+    MEDIUM_CANDELABRA(new OxidizableCandelabraBlock(OxidationLevel.UNAFFECTED, false), itemSettings()),
+    MEDIUM_CANDELABRA_EXPOSED(new OxidizableCandelabraBlock(OxidationLevel.EXPOSED, false), itemSettings()),
+    MEDIUM_CANDELABRA_OXIDIZED(new OxidizableCandelabraBlock(OxidationLevel.OXIDIZED, false), itemSettings()),
+    MEDIUM_CANDELABRA_WEATHERED(new OxidizableCandelabraBlock(OxidationLevel.WEATHERED, false), itemSettings()),
+    WAXED_SMALL_CANDELABRA(new CandelabraBlock(true), itemSettings()),
+    WAXED_SMALL_CANDELABRA_EXPOSED(new CandelabraBlock(true), itemSettings()),
+    WAXED_SMALL_CANDELABRA_OXIDIZED(new CandelabraBlock(true), itemSettings()),
+    WAXED_SMALL_CANDELABRA_WEATHERED(new CandelabraBlock(true), itemSettings()),
+    WAXED_MEDIUM_CANDELABRA(new CandelabraBlock(false), itemSettings()),
+    WAXED_MEDIUM_CANDELABRA_EXPOSED(new CandelabraBlock(false), itemSettings()),
+    WAXED_MEDIUM_CANDELABRA_OXIDIZED(new CandelabraBlock(false), itemSettings()),
+    WAXED_MEDIUM_CANDELABRA_WEATHERED(new CandelabraBlock(false), itemSettings()),
+    
     // clay pots go here (not the baking item one)
     BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque().breakInstantly()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
