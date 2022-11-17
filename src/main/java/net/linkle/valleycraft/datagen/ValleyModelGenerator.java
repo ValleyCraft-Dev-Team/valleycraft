@@ -27,6 +27,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerDoor(APPLE_DOOR.block);
         generator.registerDoor(MAMON_DOOR.block);
         generator.registerDoor(CELESTIAL_DOOR.block);
+        generator.registerDoor(ANCIENT_DOOR.block);
         generator.registerDoor(WATTLE_DOOR.block);
         generator.registerDoor(GLASS_DOOR.block);
         generator.registerDoor(TINTED_GLASS_DOOR.block);
@@ -67,7 +68,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerLog(STRIPPED_ANCIENT_WOOD.block);
         generator.registerLog(STRIPPED_ANCIENT_LOG.block);
         generator.registerLog(ANCIENT_LOG.block);
-        //generator.registerOrientableTrapdoor(ANCIENT_TRAPDOOR);
+        generator.registerOrientableTrapdoor(ANCIENT_TRAPDOOR.block);
         slab(ANCIENT_SLAB.block, ANCIENT_PLANKS.block, map, generator);
         stairs(ANCIENT_STAIRS.block, map, generator);
         button(ANCIENT_BUTTON.block, map, generator);
