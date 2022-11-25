@@ -15,8 +15,7 @@ public enum TreeConfigs implements ConfigFeature {
 
     APPLE_TREE(Trees.appleTree()),
     AMBER_TREE(Trees.amberTree()),
-    WARM_BIRCH_TREE(Trees.warmBirchTree()),
-    CELESTIAL_TREE(Trees.celestialTree());
+    WARM_BIRCH_TREE(Trees.warmBirchTree());
 
     
     public static void initialize() {

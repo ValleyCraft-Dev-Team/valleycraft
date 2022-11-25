@@ -36,7 +36,7 @@ public enum RegularFoodItems implements ItemEnum {
     BAKED_SWEET_BERRIES(new FoodItem(settings(), 4, 0.6f)),
     BAKED_GLOW_BERRIES(new FoodItem(settings(), 4, 0.6f)),
     BAKED_GLOOM_BERRIES(new FoodItem(settings(), 4, 0.6f)),
-    BAKED_STAR_CHERRIES(new FoodItem(settings(), 4, 0.6f)),
+    //BAKED_STAR_CHERRIES(new FoodItem(settings(), 4, 0.6f)),
     COOKED_RICE(new FoodItem(settings(), 4, 0.6f)),
     COOKED_CAVE_ROOT(new FoodItem(settings(), 5, 0.6f)),
 
@@ -60,12 +60,14 @@ public enum RegularFoodItems implements ItemEnum {
     COOKED_BEAST_LIVER(new FoodItem(settings(), 8, 0.8f, true)),
     COOKED_BEAST_HEART(new FoodItem(settings(), 10, 1f, true)),
     COOKED_ROTTEN_FLESH(new FoodItem(settings(), 6, 0.4f,true)),
+    COOKED_TRIPE(new FoodItem(settings(), 8, 1f, true)),
 
     // pastries
     CAKE_SLICE(new FoodItem(settings(), 2, 0.1f)),
     HARDTACK(new FoodItem(settings(), 3, 0.8f)),
     TOAST(new FoodItem(settings(), 2, 1.0f)),
     EGGS_ON_TOAST(new FoodItem(settings(), 6, 1.3f)),
+    GRILLED_CHEESE(new FoodItem(settings(), 6, 1.3f)),
     CORN_BREAD(new FoodItem(settings(), 3, 0.9f)),
     PUMPKIN_SPICE_COOKIE(new FoodItem(settings(), 3, 0.2f)),
     CHORUS_FRUIT_PIE(new FoodItem(settings(), 9, 0.5f)),
@@ -82,9 +84,8 @@ public enum RegularFoodItems implements ItemEnum {
     SWEET_BERRY_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     CHORUS_FRUIT_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     WARM_PUMPKIN_SOUP_BOTTLE(new BottleItem(settings().maxCount(16), 9, 0.8f)),
-    GLOOM_BERRY_JUICE(new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.NIGHT_VISION)),
     ALOE_VERA_JUICE(new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.HEALTH_BOOST)),
-    STAR_CHERRY_JUICE(new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.LEVITATION)),
+    //STAR_CHERRY_JUICE(new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.LEVITATION)),
 
     // no tier items
     CAVE_ROOT_STIR_FRY(new BowlItem(settings(), 10, 0.6f)),
@@ -95,19 +96,23 @@ public enum RegularFoodItems implements ItemEnum {
     BROWN_MUSHROOM_SALAD(new BowlItem(settings(), 4, 0.5f)),
     ORANGE_MUSHROOM_SALAD(new BowlItem(settings(), 4, 0.5f)),
     RED_MUSHROOM_SALAD(new BowlItem(settings(), 4, 0.5f)),
+    BROWN_MUSHROOM_SKEWER(new FoodItem(settings(), 6, 0.8f)),
+    RED_MUSHROOM_SKEWER(new FoodItem(settings(), 6, 0.8f)),
+    ORANGE_MUSHROOM_SKEWER(new FoodItem(settings(), 6, 0.8f)),
 
     FRUIT_MIX(new BowlItem(settings(), 6, 0.6f)),
     VEGETABLE_MIX(new BowlItem(settings(), 6, 0.6f)),
     SAVORY_BREAKFAST(new BowlItem(settings(), 9, 0.6f)),
     HEARTY_BREAKFAST(new BowlItem(settings(), 10, 0.8f)),
     SAUTEED_EYES_AND_MUSHROOMS(new FoodItem(settings(), 8, 0.8f)),
-    SEA_URCHIN_CHOWDER(new FoodItem(settings(), 8, 0.8f)),
 
     MAGMA_CREME_SOUP(new BowlItem(settings(), 7, 0.6f)),
     SLIME_SOUP(new BowlItem(settings(), 5, 0.6f)),
     PUMPKIN_SOUP(new BowlItem(settings(), 8, 0.8f)),
     FUNGUS_STEW(new BowlItem(settings(), 8, 0.8f)),
-    MUSHROOM_SKEWER(new FoodItem(settings(), 8, 0.8f)),
+    SQUID_SOUP(new BowlItem(settings(), 6, 0.8f)),
+    SEA_URCHIN_CHOWDER(new FoodItem(settings(), 6, 0.8f)),
+    CLAM_CHOWDER(new FoodItem(settings(), 6, 0.8f)),
 
     SANDWICH_CHICKEN(new FoodItem(settings(), 10, 0.8f)),
     SANDWICH_MUTTON(new FoodItem(settings(), 10, 0.8f)),
@@ -126,7 +131,7 @@ public enum RegularFoodItems implements ItemEnum {
     GOLDEN_FIRE_PEPPER(new FoodItem(settings(), 4, 2.4f)),
     GOLDEN_SWEET_BERRIES(new FoodItem(settings(), 4, 2.4f)),
     GOLDEN_GLOW_BERRIES(new FoodItem(settings(), 4, 2.4f)),
-    GOLDEN_STAR_CHERRIES(new FoodItem(settings(), 4, 2.4f)),
+    //GOLDEN_STAR_CHERRIES(new FoodItem(settings(), 4, 2.4f)),
     GOLDEN_GLOOM_BERRY(new FoodItem(settings(), 4, 2.4f)),
     GOLDEN_ANCIENT_MAIZE(new FoodItem(settings().rarity(Rarity.RARE), 4, 2.4f)),
     GOLDEN_ONION(new FoodItem(settings(), 4, 2.4f)),
@@ -134,8 +139,11 @@ public enum RegularFoodItems implements ItemEnum {
 
     //special items
     VILLAGER_ELIXER(new ElixerBottleItemVillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.REGENERATION, StatusEffects.NAUSEA, StatusEffects.SLOWNESS)),
+    GEITLIN_ELIXER(new ElixerBottleItemVillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.WATER_BREATHING, StatusEffects.NAUSEA, StatusEffects.SLOWNESS)),
     MOBLIN_ELIXER(new ElixerBottleItemMoblin(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.NIGHT_VISION, StatusEffects.NAUSEA, StatusEffects.POISON)),
     PILLAGER_TONIC(new ElixerBottleItemPillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.STRENGTH, StatusEffects.NAUSEA, StatusEffects.POISON)),
+    DAERDRI_ELIXER(new ElixerBottleItemPillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.HASTE, StatusEffects.NAUSEA, StatusEffects.SLOWNESS)),
+    //VALKYRIE_ELIXER(new ElixerBottleItemVillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.REGENERATION, StatusEffects.NAUSEA, StatusEffects.LEVITATION)),
     //ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC)4, 1.2f)),
     ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC), 4, 1.2f, StatusEffects.SLOW_FALLING).hideTooltip()),
     ENCHANTED_APPLE_PIE(new EnchantedFoodItem(settings().rarity(EPIC), 6, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip());

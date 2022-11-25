@@ -2,7 +2,9 @@ package net.linkle.valleycraft.block;
 
 import java.util.List;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
@@ -21,5 +23,10 @@ public class CavePainting extends HorizontalBlock {
     @Override
     public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add( Text.translatable(transKey).formatted(Formatting.GRAY));
+    }
+
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        return super.getPlacementState(ctx).with(FACING, getFacing(ctx).getOpposite());
     }
 }

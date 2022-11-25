@@ -26,7 +26,7 @@ public enum ModItems implements ItemEnum {
     APPLE_SEED(new Item(itemSettings())),
     AMBERBLOSSOM_SEED(new Item(itemSettings())),
     WARM_BIRCH_SEED(new Item(itemSettings())),
-    CELESTIAL_SEED(new Item(itemSettings())),
+    //CELESTIAL_SEED(new Item(itemSettings())),
 
     // crops
     RICE_SEEDS(new AliasedBlockItem(ModNaturalBlocks.RICES.block, itemSettings())),
@@ -46,8 +46,7 @@ public enum ModItems implements ItemEnum {
     PLANK(new Item(itemSettings())),
     SALT(new Item(itemSettings().group(INGREDIENTS))),
     MONSTER_CLAW(new Item(itemSettings())),
-    SPIDER_SILK(new Item(itemSettings().rarity(UNCOMMON))),
-    ENDERMAN_EYE(new Item(itemSettings())),
+    //SPIDER_SILK(new Item(itemSettings().rarity(UNCOMMON))),
     BEAST_BONE(new Item(itemSettings())),
     SHEEP_HIDE(new Item(itemSettings())),
     PIG_HIDE(new Item(itemSettings())),
@@ -56,16 +55,16 @@ public enum ModItems implements ItemEnum {
 
     PRIMSTEEL_NUGGET(new Item(itemSettings())),
     PRIMSTEEL_RAW(new Item(itemSettings())),
-    GOLEMITE_RAW(new Item(itemSettings())),
-    GOLEMITE_NUGGET(new Item(itemSettings())),
+    //_RAW(new Item(itemSettings())),
+    //GOLEMITE_NUGGET(new Item(itemSettings())),
     AMBER(new Item(itemSettings())),
-    ADVENTURINE_SHARDS(new Item(itemSettings())),
+    //ADVENTURINE_SHARDS(new Item(itemSettings())),
     ANTHRACITE(new Item(itemSettings())),
     BRIMSTONE_SHARD(new Item(itemSettings())),
-    OBSIDIAN_CHUNK(new Item(itemSettings())),
+    //OBSIDIAN_CHUNK(new Item(itemSettings())),
 
     MULCH(new Item(itemSettings())),
-    RAW_CLAY_POT(new Item(itemSettings())),
+    //RAW_CLAY_POT(new Item(itemSettings())),
     HANDLE(new Item(itemSettings())),
     REINFORCED_HANDLE(new Item(itemSettings())),
     CLOTH(new Item(itemSettings())),
@@ -81,9 +80,10 @@ public enum ModItems implements ItemEnum {
     FLOUR(new Item(itemSettings().group(INGREDIENTS))),
 
     PRIMSTEEL_INGOT(new Item(itemSettings())),
-    GOLEMITE_INGOT(new Item(itemSettings())),
+    //GOLEMITE_INGOT(new Item(itemSettings())),
     BRASIUM_INGOT(new Item(itemSettings())),
     ROSEGOLD_INGOT(new Item(itemSettings())),
+    DIAMOND_PLATE(new Item(itemSettings())),
     SPYGLASS_LENSE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
     HOT_PLATE(new Item(itemSettings().rarity(Rarity.RARE))),
     AGITATOR(new Item(itemSettings().rarity(Rarity.RARE))),
@@ -101,7 +101,7 @@ public enum ModItems implements ItemEnum {
     SLUDGE_BUCKET(new BucketItem(ModFluids.SLUDGE_STILL.fluid, itemSettings().maxCount(1))),
     
     DOG_BISCUIT(new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true)),
-    SALVE(new SalveItem(itemSettings().group(VC_TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION)),
+    //SALVE(new SalveItem(itemSettings().group(VC_TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION)),
     SEAOLOGER_TOKEN(new Item(itemSettings().group(BOOKS).rarity(Rarity.COMMON).maxCount(64))),
     TOTEM_OF_TRADE(new Item(itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON).maxCount(1))),
     TOTEM_OF_APPRECIATION(new Item(itemSettings().group(BOOKS).rarity(Rarity.RARE).maxCount(1))),
@@ -116,8 +116,7 @@ public enum ModItems implements ItemEnum {
     SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
     SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
     SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
-    ENDER_DRAGON_EYE(new Item(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
-    
+
     MOBLIN_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1))),
     EMERALD_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1))),
     AMETHYST_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1))),
@@ -127,7 +126,6 @@ public enum ModItems implements ItemEnum {
     // record items
     ANCIENT_RECORD_FRAGMENT(new Item(itemSettings().group(BOOKS).rarity(RARE))),
     ANCIENT_RECORD_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.ANCIENT.sound, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),110)),
-    WILD_MOUNTAIN_TIME_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.WILDER_MOUNTAINS.sound, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),84)),
 
     // spawn eggs
     ABYSSWATCHER_SPAWN_EGG(new SpawnEggItem(ModEntityType.ABYSSWATCHER, 0x09424C, 0x22DBE5, itemSettings())), // abysswatcher_spawn_egg

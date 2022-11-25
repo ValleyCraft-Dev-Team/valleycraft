@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/raw_ingredients/enderman_eye"
+    "layer0": "valleycraft:item/food/raw_ingredients/enderman_eye"
   }
 }

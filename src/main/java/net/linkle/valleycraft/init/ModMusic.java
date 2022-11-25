@@ -8,8 +8,7 @@ import net.minecraft.util.registry.Registry;
 
 public enum ModMusic implements IdProvider {
 
-    ANCIENT,
-    WILDER_MOUNTAINS;
+    ANCIENT;
 
     public static void initialize() {
     }

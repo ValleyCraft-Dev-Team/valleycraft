@@ -16,37 +16,37 @@ import net.linkle.valleycraft.Main;
 public enum TieredFoodItems implements ItemEnum {
     
     // tier 1
-    AMETHYSTLE_SALAD(new Tier1Normal(settings(), 4, 2, StatusEffects.HASTE)),
-    CARROT_SALAD(new Tier1Normal(settings(), 4, 2, StatusEffects.SPEED)),
-    DRIED_SPICY_GLOW_BERRIES(new Tier1Normal(settings(), 4, 2, StatusEffects.NIGHT_VISION)),
-    FRUIT_AND_VEGGIE_MIX(new Tier1Normal(settings(), 4, 2, StatusEffects.HEALTH_BOOST)),
-    HEARTY_SKEWER(new Tier1Normal(settings(), 4, 2, StatusEffects.STRENGTH)),
-    HONEYED_APPLE(new Tier1Normal(settings(), 4, 2, StatusEffects.REGENERATION)),
-    SAVORY_SHROOM_SKEWER(new Tier1Normal(settings(), 4, 2, StatusEffects.RESISTANCE)),
-    SHIVERCAP_SKEWER(new Tier1Normal(settings(), 4, 2, StatusEffects.FIRE_RESISTANCE)),
-    SPICY_CALAMARI_SKEWER(new Tier1Normal(settings(), 4, 2, StatusEffects.WATER_BREATHING)),
+    AMETHYSTLE_SALAD(new Tier1Normal(settings(), 5, 2, StatusEffects.HASTE)),
+    CARROT_SALAD(new Tier1Normal(settings(), 5, 2, StatusEffects.SPEED)),
+    DRIED_SPICY_GLOW_BERRIES(new Tier1Normal(settings(), 5, 2, StatusEffects.NIGHT_VISION)),
+    FRUIT_AND_VEGGIE_MIX(new Tier1Normal(settings(), 5, 2, StatusEffects.HEALTH_BOOST)),
+    HEARTY_SKEWER(new Tier1Normal(settings(), 5, 2, StatusEffects.STRENGTH)),
+    HONEYED_APPLE(new Tier1Normal(settings(), 5, 2, StatusEffects.REGENERATION)),
+    SAVORY_SHROOM_SKEWER(new Tier1Normal(settings(), 5, 2, StatusEffects.RESISTANCE)),
+    SHIVERCAP_SKEWER(new Tier1Normal(settings(), 5, 2, StatusEffects.FIRE_RESISTANCE)),
+    SPICY_CALAMARI_SKEWER(new Tier1Normal(settings(), 5, 2, StatusEffects.WATER_BREATHING)),
     
     // tier 2
-    GLOW_BERRY_EGG_PUDDING(new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.NIGHT_VISION)),
-    GLOW_SQUID_SUSHI(new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.WATER_BREATHING)),
-    HONEY_GLAZED_CREPE(new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.REGENERATION)),
-    SPICY_GRILLED_LAMB(new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.HASTE)),
-    SPICY_SALMON_AND_CARROTS(new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.SPEED)),
-    STEAMED_VEGETABLES(new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.HEALTH_BOOST)),
-    STUFFED_BAKED_POTATO(new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.STRENGTH)),
-    STUFFED_ONION(new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.RESISTANCE)),
-    SWEET_RABBIT_STEAK(new Tier2Normal(settings().maxCount(32), 4, 2, StatusEffects.FIRE_RESISTANCE)),
+    GLOW_BERRY_EGG_PUDDING(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.NIGHT_VISION)),
+    GLOW_SQUID_SUSHI(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.WATER_BREATHING)),
+    HONEY_GLAZED_CREPE(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.REGENERATION)),
+    SPICY_GRILLED_LAMB(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.HASTE)),
+    SPICY_SALMON_AND_CARROTS(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.SPEED)),
+    STEAMED_VEGETABLES(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.HEALTH_BOOST)),
+    STUFFED_BAKED_POTATO(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.STRENGTH)),
+    STUFFED_ONION(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.RESISTANCE)),
+    SWEET_RABBIT_STEAK(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.FIRE_RESISTANCE)),
     
     // tier 3
-    ANCIENT_FLOWER_SOUP(new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.HEALTH_BOOST)),
-    CARROT_STEW(new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.SPEED)),
-    COD_CHOWDER(new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.RESISTANCE)),
-    CREAMY_HEART_STEW(new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.STRENGTH)),
-    GLOW_BERRY_STEW(new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.NIGHT_VISION)),
-    GLOW_SQUID_SOUP(new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.WATER_BREATHING)),
-    SHIVERCAP_STIR_FRY(new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.FIRE_RESISTANCE)),
-    SPICY_BEEF_RISOTTO(new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.HASTE)),
-    SWEET_CHICKEN_RISOTTO(new Tier3Bowl(settings().maxCount(16), 4, 2, StatusEffects.REGENERATION));
+    ANCIENT_FLOWER_SOUP(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.HEALTH_BOOST)),
+    CARROT_STEW(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.SPEED)),
+    COD_CHOWDER(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.RESISTANCE)),
+    CREAMY_HEART_STEW(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.STRENGTH)),
+    GLOW_BERRY_STEW(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.NIGHT_VISION)),
+    GLOW_SQUID_SOUP(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.WATER_BREATHING)),
+    SHIVERCAP_STIR_FRY(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.FIRE_RESISTANCE)),
+    SPICY_BEEF_RISOTTO(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.HASTE)),
+    SWEET_CHICKEN_RISOTTO(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.REGENERATION));
     
     /** Called from {@link ModItems} */
     static void initialize() {

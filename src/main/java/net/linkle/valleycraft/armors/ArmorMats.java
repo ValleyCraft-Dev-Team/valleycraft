@@ -77,7 +77,6 @@ public enum ArmorMats implements ArmorMaterial {
 
     PRIMSTEEL("golemite", ints(1,4,5,2), 15, 18, equipIron(), items(ModItems.PRIMSTEEL_INGOT)),
     ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ModItems.ROSEGOLD_INGOT), 0.75f, 0.0f),
-    GOLEMITE("primsteel", ints(2,5,7,2), 15, 5, equipIron(), items(ModItems.GOLEMITE_INGOT),1.0f,0.0f),
     SCALE("scale", ints(0,6,7,3), 15, 9, equipChain(), items(Items.IRON_INGOT)),
     LEATHER_NO_OVERLAY("leather_no_overlay", ints(1,2,3,2), 7, 9, equipLeather(), items(ModItems.TREATED_LEATHER)),
     LEATHER_MODIFIED("leather_modified", ints(1,2,3,2), 7, 9, equipLeather(), items(ModItems.TREATED_LEATHER)),
@@ -91,7 +90,6 @@ public enum ArmorMats implements ArmorMaterial {
     RF_IRON("reinforced_iron", ints(0,0,5,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     RF_PRIMSTEEL("reinforced_primsteel", ints(0,0,4,3), 15, 18, equipChain(), items(ModItems.PRIMSTEEL_INGOT)),
     RF_ROSEGOLD("reinforced_rosegold", ints(0,0,5,3), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT),0.75f, 0.0f),
-    RF_GOLEMITE("reinforced_golemite", ints(0,0,6,3), 15, 5, equipChain(), items(ModItems.GOLEMITE_INGOT), 1.0f, 0.0f),
     RF_DIAMOND("reinforced_diamond", ints(0,0,7,4), 15, 10, equipChain(), items(Items.DIAMOND), 2.0f, 0.0f),
     RF_NETHERITE("reinforced_netherite", ints(0,0,7,4), 15, 15, equipChain(), items(Items.NETHERITE_INGOT), 3.0f, 0.0f),
 

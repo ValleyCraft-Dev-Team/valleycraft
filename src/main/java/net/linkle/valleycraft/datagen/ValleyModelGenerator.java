@@ -26,7 +26,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         // Doors
         generator.registerDoor(APPLE_DOOR.block);
         generator.registerDoor(MAMON_DOOR.block);
-        generator.registerDoor(CELESTIAL_DOOR.block);
         generator.registerDoor(WATTLE_DOOR.block);
         generator.registerDoor(GLASS_DOOR.block);
         generator.registerDoor(TINTED_GLASS_DOOR.block);
@@ -62,33 +61,18 @@ class ValleyModelGenerator extends FabricModelProvider {
         pressurePlate(APPLE_PRESSURE_PLATE.block, map, generator);
         
         // Ancient
-        map = textureAll(ANCIENT_PLANKS);
-        generator.registerLog(ANCIENT_WOOD.block);
-        generator.registerLog(STRIPPED_ANCIENT_WOOD.block);
-        generator.registerLog(STRIPPED_ANCIENT_LOG.block);
-        generator.registerLog(ANCIENT_LOG.block);
-        //generator.registerOrientableTrapdoor(ANCIENT_TRAPDOOR);
-        slab(ANCIENT_SLAB.block, ANCIENT_PLANKS.block, map, generator);
-        stairs(ANCIENT_STAIRS.block, map, generator);
-        button(ANCIENT_BUTTON.block, map, generator);
-        fence(ANCIENT_FENCE.block, map, generator);
-        fenceGate(ANCIENT_FENCE_GATE.block, map, generator);
-        pressurePlate(ANCIENT_PRESSURE_PLATE.block, map, generator);
-        
-        // Celestial
-        map = textureAll(CELESTIAL_PLANKS);
-        generator.registerLog(CELESTIAL_WOOD.block);
-        generator.registerLog(STRIPPED_CELESTIAL_WOOD.block);
-        generator.registerLog(STRIPPED_CELESTIAL_LOG.block);
-        generator.registerLog(CELESTIAL_LOG.block);
-        generator.registerSimpleCubeAll(CELESTIAL_PLANKS.block);
-        generator.registerOrientableTrapdoor(CELESTIAL_TRAPDOOR.block);
-        slab(CELESTIAL_SLAB.block, CELESTIAL_PLANKS.block, map, generator);
-        stairs(CELESTIAL_STAIRS.block, map, generator);
-        button(CELESTIAL_BUTTON.block, map, generator);
-        fence(CELESTIAL_FENCE.block, map, generator);
-        fenceGate(CELESTIAL_FENCE_GATE.block, map, generator);
-        pressurePlate(CELESTIAL_PRESSURE_PLATE.block, map, generator);
+        //map = textureAll(ANCIENT_PLANKS);
+        //generator.registerLog(ANCIENT_WOOD.block);
+        //generator.registerLog(STRIPPED_ANCIENT_WOOD.block);
+        //generator.registerLog(STRIPPED_ANCIENT_LOG.block);
+        //generator.registerLog(ANCIENT_LOG.block);
+        ////generator.registerOrientableTrapdoor(ANCIENT_TRAPDOOR);
+        //slab(ANCIENT_SLAB.block, ANCIENT_PLANKS.block, map, generator);
+        //stairs(ANCIENT_STAIRS.block, map, generator);
+        //button(ANCIENT_BUTTON.block, map, generator);
+        //fence(ANCIENT_FENCE.block, map, generator);
+        //fenceGate(ANCIENT_FENCE_GATE.block, map, generator);
+        //pressurePlate(ANCIENT_PRESSURE_PLATE.block, map, generator);
         
         // Tall plants
         generator.registerDoubleBlock(CATTAILS.block, TintType.NOT_TINTED);
@@ -131,11 +115,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerFlowerPotPlant(SOULSPORE_SINGLE.block, POTTED_SOULSPORE.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(MOREL.block, POTTED_MOREL.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(GOOP_CAP.block, POTTED_GOOP_CAP.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(GILDED_CAP.block, POTTED_GILDED_CAP.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(IRONSHROOM.block, POTTED_IRONSHROOM.block, TintType.NOT_TINTED);
-
-        // Potted saplings
-        generator.registerFlowerPotPlant(DRIED_SAPLING.block, POTTED_DRIED_SAPLING.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(MAMON_SAPLING.block, POTTED_MAMON_SAPLING.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(APPLE_SAPLING.block, POTTED_APPLE_SAPLING.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(WARM_BIRCH_SAPLING.block, POTTED_WARM_BIRCH_SAPLING.block, TintType.NOT_TINTED);
@@ -148,12 +127,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerFlowerPotPlant(SPROUT.block, POTTED_SPROUT.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(DESERT_SHRUB.block, POTTED_DESERT_SHRUB.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(LUSH_BUSH.block, POTTED_LUSH_BUSH.block, TintType.NOT_TINTED);
-        
-        // Potted glare
-        generator.registerFlowerPotPlant(RED_GLARE.block, POTTED_RED_GLARE.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(GREEN_GLARE.block, POTTED_GREEN_GLARE.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(BLUE_GLARE.block, POTTED_BLUE_GLARE.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(PURPLE_GLARE.block, POTTED_PURPLE_GLARE.block, TintType.NOT_TINTED);
 
         // Smooth Carmine
         map = textureAll(CARMINE_SMOOTH);

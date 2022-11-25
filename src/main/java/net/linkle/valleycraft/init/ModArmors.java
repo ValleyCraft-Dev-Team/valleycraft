@@ -26,10 +26,10 @@ public enum ModArmors implements ItemEnum {
     STABLEHAND_HAT(new ArmorItem(ArmorMats.STABLEHAND_HAT, EquipmentSlot.HEAD, settingsArtifacts())),
     VILLAGER_TUNIC(new ArmorItem(ArmorMats.VILLAGER, EquipmentSlot.LEGS, settingsArtifacts())),
 
-    IRON_GLASSES(new ArmorItem(ArmorMats.GOLDEN_GLASSES, EquipmentSlot.HEAD, settingsNormal())),
-    GOLDEN_GLASSES(new ArmorItem(ArmorMats.GOLDEN_GLASSES, EquipmentSlot.HEAD, settingsNormal())),
-    ROSEGOLD_GLASSES(new ArmorItem(ArmorMats.ROSEGOLD_GLASSES, EquipmentSlot.HEAD, settingsNormal())),
-    GOLEMITE_READING_GLASSES(new ArmorItem(ArmorMats.GOLEMITE_READING_GLASSES, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
+    //IRON_GLASSES(new ArmorItem(ArmorMats.GOLDEN_GLASSES, EquipmentSlot.HEAD, settingsNormal())),
+    //GOLDEN_GLASSES(new ArmorItem(ArmorMats.GOLDEN_GLASSES, EquipmentSlot.HEAD, settingsNormal())),
+    //ROSEGOLD_GLASSES(new ArmorItem(ArmorMats.ROSEGOLD_GLASSES, EquipmentSlot.HEAD, settingsNormal())),
+    //GOLEMITE_READING_GLASSES(new ArmorItem(ArmorMats.GOLEMITE_READING_GLASSES, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
 
     CHEF_HAT(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsArtifacts())),
     CHEF_APRON(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.LEGS, settingsArtifacts())),
@@ -40,7 +40,7 @@ public enum ModArmors implements ItemEnum {
     TRADER_SANDALS(new ArmorItem(ArmorMats.TRADER, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
     VISOR(new ArmorItem(ArmorMats.VISOR, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
     PILLAGER_HEADSCARF(new ArmorItem(ArmorMats.HEADSCARF, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
-    PILLAGER_EYEPATCH(new ArmorItem(ArmorMats.EYEPATCH, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
+    //PILLAGER_EYEPATCH(new ArmorItem(ArmorMats.EYEPATCH, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
     PILLAGER_FLANNEL(new ArmorItem(ArmorMats.PILLAGER, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
     PILLAGER_BOOTS(new ArmorItem(ArmorMats.PILLAGER, EquipmentSlot.FEET, settingsArtifacts(Rarity.RARE))),
     EVOKER_ROBE(new ArmorItem(ArmorMats.EVOKER, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
@@ -94,7 +94,7 @@ public enum ModArmors implements ItemEnum {
     REINFORCED_PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_IRON_HELMET(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_ROSEGOLD_HELMET(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
-    REINFORCED_GOLEMITE_HELMET(new ArmorItem(ArmorMats.RF_GOLEMITE, EquipmentSlot.HEAD, settingsNormal())),
+    //REINFORCED_GOLEMITE_HELMET(new ArmorItem(ArmorMats.RF_GOLEMITE, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_DIAMOND_HELMET(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_NETHERITE_HELMET(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.HEAD, settingsNormal())),
 
@@ -103,7 +103,7 @@ public enum ModArmors implements ItemEnum {
     PRIMSTEEL_BREASTPLATE(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
     IRON_BREASTPLATE(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.CHEST, settingsNormal())),
     ROSEGOLD_BREASTPLATE(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),
-    GOLEMITE_BREASTPLATE(new ArmorItem(ArmorMats.RF_GOLEMITE, EquipmentSlot.CHEST, settingsNormal())),
+    //GOLEMITE_BREASTPLATE(new ArmorItem(ArmorMats.RF_GOLEMITE, EquipmentSlot.CHEST, settingsNormal())),
     DIAMOND_BREASTPLATE(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.CHEST, settingsNormal())),
     NETHERITE_BREASTPLATE(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.CHEST, settingsNormal())),
 
@@ -164,20 +164,20 @@ public enum ModArmors implements ItemEnum {
     //STEVE_PANTS(new ArmorItem(SteveMaterial.INSTANCE, EquipmentSlot.LEGS, settingsNormal())),
     //STEVE_SHOES(new ArmorItem(SteveMaterial.INSTANCE, EquipmentSlot.FEET, settingsNormal())),
 
-    PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
-    PRIMSTEEL_CHESTPLATE(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
-    PRIMSTEEL_LEGGINGS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
-    PRIMSTEEL_BOOTS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
+    //PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
+    //PRIMSTEEL_CHESTPLATE(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
+    //PRIMSTEEL_LEGGINGS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    //PRIMSTEEL_BOOTS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
 
     ROSEGOLD_HELMET(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
     ROSEGOLD_CHESTPLATE(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),
     ROSEGOLD_LEGGINGS(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
     ROSEGOLD_BOOTS(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.FEET, settingsNormal())),
 
-    GOLEMITE_HELMET(new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.HEAD, settingsNormal())),
-    GOLEMITE_CHESTPLATE(new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.CHEST, settingsNormal())),
-    GOLEMITE_LEGGINGS(new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.LEGS, settingsNormal())),
-    GOLEMITE_BOOTS(new ArmorItem(ArmorMats.GOLEMITE, EquipmentSlot.FEET, settingsNormal())),
+    GOLEMITE_HELMET(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
+    GOLEMITE_CHESTPLATE(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
+    GOLEMITE_LEGGINGS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    GOLEMITE_BOOTS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
 
     SHULKER_HELMET(new ArmorItem(ArmorMats.SHULKER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
 

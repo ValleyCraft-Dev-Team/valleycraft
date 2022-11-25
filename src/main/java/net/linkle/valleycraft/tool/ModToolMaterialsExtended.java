@@ -18,9 +18,9 @@ public enum ModToolMaterialsExtended implements ToolMaterial {
     ROSEGOLD_EXTENDED(1, 660, 7.0F, 2.0F, 15, () -> {
         return Ingredient.ofItems(ModItems.ROSEGOLD_INGOT);
     }),
-    GOLEMITE_EXTENDED (2, 1057, 8.0F, 2.5F, 5, () -> {
-        return Ingredient.ofItems(ModItems.GOLEMITE_INGOT);
-    }),
+    //GOLEMITE_EXTENDED (2, 1057, 8.0F, 2.5F, 5, () -> {
+    //    return Ingredient.ofItems(ModItems.GOLEMITE_INGOT);
+    //}),
     WOOD_EXTENDED(0, 89, 2.0F, 0.0F, 15, () -> {
         return Ingredient.fromTag(ItemTags.PLANKS);
     }),

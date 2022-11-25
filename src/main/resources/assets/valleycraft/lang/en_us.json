@@ -1,4 +1,4 @@
-{ 
+{
   "itemGroup.valleycraft.flora": "VC: Flora",
   "itemGroup.valleycraft.ingredients": "VC: Raw Ingredients",
   "itemGroup.valleycraft.regular_dishes": "VC: Cooked Dishes",
@@ -46,7 +46,7 @@
   "entity.minecraft.villager.stablehand": "Stablehand",
   "entity.minecraft.villager.lumberjack": "Lumberjack",
   "entity.minecraft.villager.innkeeper": "Innkeeper",
-  "entity.minecraft.villager.diaspora": "Diaspora",
+  "entity.minecraft.villager.diaspora": "Survivor",
   "entity.minecraft.villager.cook": "Cook",
   "entity.minecraft.villager.beekeeper": "Beekeeper",
   "entity.minecraft.villager.miner": "Miner",
@@ -74,9 +74,12 @@
   "item.valleycraft.ancient_flower": "§6Ancient Flower",
   "item.valleycraft.endura_carrot": "§6Staminella Carrot",
 
-  "item.valleycraft.moblin_elixer": "Moblin Mining Elixir",
-  "item.valleycraft.villager_elixer": "Villager Clerical Elixir",
-  "item.valleycraft.pillager_elixer": "Pillager War Elixir",
+  "item.valleycraft.moblin_elixer": "Moblin Expeditionary Brew",
+  "item.valleycraft.villager_elixer": "Villager Clerical Tonic",
+  "item.valleycraft.pillager_elixer": "Illager War Brew",
+  "item.valleycraft.geitlin_elixer": "Geitlin Diving Tonic",
+  "item.valleycraft.valkyrie_elixer": "Valkyrie Healing Elixer",
+  "item.valleycraft.daerdri_elixer": "Daerdri Mining Tonic",
 
   "item.valleycraft.shattered_eye_of_ender": "Shattered Eye of Ender",
   "item.valleycraft.eye_of_return": "Eye of the Astrayed",
@@ -161,15 +164,15 @@
   "block.valleycraft.lumberjack_station": "Lumberjack Resting Spot",
   "block.valleycraft.miner_station": "Ore Processing Table",
   "block.valleycraft.stove": "Stove",
-  "block.valleycraft.campfire_pot": "§aDiaspora's Campfire",
+  "block.valleycraft.campfire_pot": "§aSurvivor's Campfire",
   "block.valleycraft.lantern_hanger": "Lantern Hanging Stake",
 
   "item.valleycraft.red_hood": "Crimson Hood",
   "item.valleycraft.red_cloak": "Crimson Cloak",
 
-  "block.valleycraft.ancient_wagon_wheel": "§aAncient Wagon Wheel",
-  "block.valleycraft.ancient_wagon_wheel_platform": "§aAncient Wagon Wheel Connection Rod",
-  "block.valleycraft.ancient_wagon_wheel_table": "§aAncient Wagon Wheel Table",
+  "block.valleycraft.ancient_wagon_wheel": "§aWagon Wheel",
+  "block.valleycraft.ancient_wagon_wheel_platform": "§aWagon Wheel Connection Rod",
+  "block.valleycraft.ancient_wagon_wheel_table": "§aWagon Wheel Table",
 
   "item.valleycraft.daub": "Daub",
 
@@ -277,7 +280,7 @@
   "block.valleycraft.golemite_block": "Block of Golemite",
   "block.valleycraft.golemite_chain": "Golemite Chain",
   "block.valleycraft.primsteel_chain": "Primsteel Chain",
-  "block.valleycraft.primsteel_plate_block": "Primsteel Plate Block",
+  "block.valleycraft.primsteel_plate_block": "Cut Primsteel Block",
   "block.valleycraft.primsteel_tiled_plate": "Primsteel Tiled Plate Block",
   "block.valleycraft.deepslate_primsteel_ore": "Deepslate Primsteel Ore",
   "block.valleycraft.primsteel_ore": "Primsteel Ore",
@@ -385,8 +388,6 @@
   "block.valleycraft.snowflower": "Snowflower",
   "block.valleycraft.short_grass": "Short Grass",
   "block.valleycraft.rooted_watcher": "Rooted Abyss Watcher",
-  "block.valleycraft.ironshroom": "Patinacap",
-  "block.valleycraft.gilded_cap": "Gildedshroom",
   "block.valleycraft.jungle_cap": "Orange Mushroom",
   "block.valleycraft.jungle_cap_cluster": "Orange Mushroom Cluster",
   "block.valleycraft.glow_cap": "Glowcap",
@@ -400,7 +401,7 @@
   "block.valleycraft.skeletal_remains": "Skeletal Remains",
   "block.valleycraft.skeletal_mining_remains": "Skeletal Mining Remains",
   "block.valleycraft.rusted_chest": "Rusted Shut Chest",
-  "block.valleycraft.loose_rocks": "Loose Stone Debris",
+  "block.valleycraft.loose_rocks": "Loose Cobblestone Debris",
 
   "block.valleycraft.bee_nest_wall": "Bee Nest Wall",
   "block.valleycraft.white_poppy": "White Poppy",
@@ -411,7 +412,7 @@
   "block.valleycraft.yellow_lupine": "Yellow Lupine",
   "block.valleycraft.red_lupine": "Red Lupine",
   "block.valleycraft.goddess_lily": "Goddess Lily",
-  "block.valleycraft.claret_leaf": "Arterium Claret Leaf",
+  "block.valleycraft.claret_leaf": "Arterium Claret",
   "block.valleycraft.frostfern": "Frostfern",
 
   "block.valleycraft.black_tulip": "Black Tulip",
@@ -632,7 +633,7 @@
 
   "item.valleycraft.fiber": "Plant Fiber",
   "item.valleycraft.dried_fiber": "Dried Plant Fiber",
-  "item.valleycraft.book_cover": "Fiber Canvas",
+  "item.valleycraft.book_cover": "Book Cover",
   "item.valleycraft.mulch": "Mulch",
   "item.valleycraft.crows_feather": "Crow Feather",
   "item.valleycraft.seagulls_feather": "Seagull Feather",
@@ -669,7 +670,7 @@
   "item.valleycraft.throwing_rock": "Throwing Rock",
 
   "item.valleycraft.alchemists_leggings": "Ancient Alchemist Stockings",
-  "item.valleycraft.seaologer_token": "§aSeaologer Rune",
+  "item.valleycraft.seaologer_token": "§aSeaologer Coin",
   "item.valleycraft.strayas_cartography_bag": "Abandoned Archaeology Gear",
 
   "item.valleycraft.canvas_hood": "Canvas Hood",
@@ -814,7 +815,6 @@
   "block.valleycraft.potted_goddess_lily": "Potted Goddess Lily",
   "block.valleycraft.potted_goop_cap": "Potted Goopshroom",
   "block.valleycraft.potted_honeycluster": "Potted Honeycluster",
-  "block.valleycraft.potted_ironshroom": "Potted Patinacap",
   "block.valleycraft.potted_jungle_bush": "Potted Plumbago Bush",
   "block.valleycraft.potted_jungle_cap": "Potted Orange Mushroom",
   "block.valleycraft.potted_lavender": "Potted Lavender",

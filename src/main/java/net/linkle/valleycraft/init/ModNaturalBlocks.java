@@ -8,7 +8,6 @@ import static net.linkle.valleycraft.util.PlantBlockSettings.*;
 import java.util.function.BiFunction;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.linkle.valleycraft.block.sapling.CelestialSaplingGen;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -20,7 +19,6 @@ import net.linkle.valleycraft.block.sapling.WarmBirchSaplingGen;
 import net.linkle.valleycraft.util.*;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.Identifier;
@@ -38,8 +36,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     FOXTAIL_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     JUNGLE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
     PANFLOWERS(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
-    
-    DRIED_SAPLING(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
 
     HONEYCLUSTER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     LAVENDER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
@@ -80,6 +76,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     
     RED_CLUSTER(new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM)).large(), itemSettings()),
     BROWN_CLUSTER(new ModMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM)).large(), itemSettings()),
+    SPORE_SPREADER(new ModMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM)).large(), itemSettings()),
     GLOW_CAP(new ModMushroomBlock(), itemSettings()),
     GLOW_CAP_CLUSTER(new ModMushroomBlock().large(), itemSettings()),
     JUNGLE_CAP(new ModMushroomBlock(), itemSettings()),
@@ -89,9 +86,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     SHIVERCAP(new ShivercapBlock(), itemSettings().group(INGREDIENTS)),
     STALWART_SHROOM(new StalwartBlock(), itemSettings().group(INGREDIENTS)),
     GOOP_CAP(new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 2)), itemSettings()),
-    GILDED_CAP(new ModMushroomBlock(), itemSettings()),
-    IRONSHROOM(new ModMushroomBlock(), itemSettings()),
-    WARDING_SHROOM(new ModMushroomBlock().large(), itemSettings()),
 
     SHORT_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
     SNOWFLOWER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
@@ -173,7 +167,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     VOLCANIC_ASH(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
 
     MAMON_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
-    ANCIENT_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
+    //ANCIENT_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
     MAMON_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES)), itemSettings()),
     MAMON_SAPLING(new SaplingBlock(new AmberSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
 
@@ -186,17 +180,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     WARM_BIRCH_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES)), itemSettings()),
 
     LESSER_DIVINE_OAK_LOG(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
-
-    //end blocks
-    END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE).sounds(BlockSoundGroup.NETHERRACK)), itemSettings()),
-    END_GRASS(new ModPlantBlock(OFFSET_REPLACEABLE).ground(END_PLANTS), itemSettings()),
-    CELESTIAL_SAPLING(new SaplingBlock(new CelestialSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
-    CELESTIAL_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES).sounds(BlockSoundGroup.NETHER_WART).nonOpaque()), itemSettings()),
-    CELESTIAL_LOG(new PillarBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
-    PURPLE_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
-    BLUE_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
-    GREEN_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
-    RED_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
 
     ARID_VINES(new VineHeadBlock(), itemSettings()),
     ARID_VINES_PLANT(new VineBodyBlock()),
@@ -225,8 +208,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     VERDANTINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
 
-    METEORITE(new Block(Block.Settings.copy(Blocks.DEEPSLATE)), itemSettings()),
-
     BONE_JOINT(new Block(Block.Settings.copy(Blocks.BONE_BLOCK)), itemSettings()),
     ROCKS(new RockBlock(), itemSettings().group(ModGroups.VC_ITEMS)),
     FLINT_ROCKS(new RockBlock(), itemSettings().group(ModGroups.FLORA_GROUP)),
@@ -234,17 +215,13 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     ADVENTURINE(new Block(Block.Settings.copy(Blocks.STONE).hardness(25).luminance(s ->1)), itemSettings()),
     ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
     ERDCOBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE).hardness(2)), itemSettings()),
-    ERDSTONE_AMBER_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
-    ERDSTONE_COAL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
-    GOLEMITE_ERDSTONE_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
-    ERDSTONE_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
-    ERDSTONE_CAVE_PAINTING_PORTRAIT(new CavePainting(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2), "portrait"), itemSettings()),
-    ERDSTONE_CAVE_PAINTING_ZOMBIES(new CavePainting(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2), "zombie"), itemSettings()),
-    ERDSTONE_CAVE_PAINTING_HOME(new CavePainting(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2), "home"), itemSettings()),
-    ERDSTONE_CAVE_PAINTING_FAMILY(new CavePainting(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2), "family"), itemSettings()),
+    //ERDSTONE_AMBER_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
+    //ERDSTONE_COAL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
+    //GOLEMITE_ERDSTONE_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
+    //ERDSTONE_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
 
     LOOSE_ROCKS(new FallingRockBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.NETHER_BRICKS)), itemSettings()),
-    CRACKED_COBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLESTONE).hardness(2)), itemSettings()),
+    //CRACKED_COBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLESTONE).hardness(2)), itemSettings()),
     
     AMBER_ORE(new Block(Block.Settings.copy(Blocks.IRON_ORE)), itemSettings()),
     FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.IRON_ORE)), itemSettings()),
@@ -267,7 +244,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
 
     DEEPSLATE_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)), itemSettings()),
     DEEPSLATE_PRIMSTEEL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)), itemSettings()),
-    DEEPSLATE_ADVENTURINE_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)), itemSettings()),
+    //DEEPSLATE_ADVENTURINE_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)), itemSettings()),
     DEEPSLATE_ICE_ORE(new IceOreBlock(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).sounds(BlockSoundGroup.GLASS).nonOpaque().slipperiness(0.98f)), itemSettings()),
 
     //nether blocks
@@ -284,10 +261,22 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).smallShape(), itemSettings().rarity(Rarity.UNCOMMON)),
     SOULSPORE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).largeShape(), itemSettings().rarity(Rarity.UNCOMMON)),
     BLUE_SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).smallShape(), itemSettings().rarity(Rarity.RARE)),
-    BLUE_SOULSPORE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).largeShape(), itemSettings().rarity(Rarity.RARE)),
-    FADED_CELESTIAL(new SoulPlantBlock(ParticleTypes.SMOKE, SoulPlantBlock.settings(0)), itemSettings()),
-    SOUL_CELESTIAL(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3)), itemSettings().rarity(Rarity.UNCOMMON)),
-    BLUE_SOUL_CELESTIAL(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6)), itemSettings().rarity(Rarity.RARE));
+    BLUE_SOULSPORE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).largeShape(), itemSettings().rarity(Rarity.RARE));
+
+    //save for end update?
+    // FADED_CELESTIAL(new SoulPlantBlock(ParticleTypes.SMOKE, SoulPlantBlock.settings(0)), itemSettings()),
+    //SOUL_CELESTIAL(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3)), itemSettings().rarity(Rarity.UNCOMMON)),
+    //BLUE_SOUL_CELESTIAL(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6)), itemSettings().rarity(Rarity.RARE));
+    //END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE).sounds(BlockSoundGroup.NETHERRACK)), itemSettings()),
+    //END_GRASS(new ModPlantBlock(OFFSET_REPLACEABLE).ground(END_PLANTS), itemSettings()),
+    //CELESTIAL_SAPLING(new SaplingBlock(new CelestialSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
+    //CELESTIAL_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES).sounds(BlockSoundGroup.NETHER_WART).nonOpaque()), itemSettings()),
+    //CELESTIAL_LOG(new PillarBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
+    //PURPLE_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
+    //BLUE_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
+    //GREEN_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
+    //RED_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
+
     //ROOTED_WATCHER(new ModPlantBlock()),
     //WARDING_SHROOM(new ModPlantBlock()),
     //STICKY_SHROOM(new ModLargerMushroomBlock()),

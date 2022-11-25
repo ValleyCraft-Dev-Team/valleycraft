@@ -32,7 +32,7 @@ public class SludgeFluidBlock extends FluidBlock {
     private static final ImmutableMap<Block, Supplier<Block>> MAP;
     static {
         var builder = new ImmutableMap.Builder<Block, Supplier<Block>>();
-        builder.put(Blocks.COBBLESTONE, ()-> ModNaturalBlocks.CRACKED_COBBLESTONE.block);
+        builder.put(Blocks.COBBLESTONE, ()-> ModNaturalBlocks.LOOSE_ROCKS.block);
         builder.put(Blocks.DEEPSLATE_BRICKS, ()->Blocks.CRACKED_DEEPSLATE_BRICKS);
         builder.put(Blocks.DEEPSLATE_TILES, ()->Blocks.CRACKED_DEEPSLATE_TILES);
         builder.put(Blocks.NETHER_BRICKS, ()->Blocks.CRACKED_NETHER_BRICKS);

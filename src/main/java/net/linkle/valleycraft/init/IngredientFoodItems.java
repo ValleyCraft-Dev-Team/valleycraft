@@ -21,11 +21,12 @@ public enum IngredientFoodItems implements ItemEnum {
     MILK(new BottleItem(settings().maxCount(16), 0, 0.2f).setMilk()),
     MOREL_OIL(new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS).hideTooltip()),
     
-    GLOW_BERRY_JUICE(new BottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 15 * 20)))
+    GLOW_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 15 * 20)))
     .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_8", Formatting.GRAY)),
+    GLOOM_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 15 * 20)))),
 
     GLOOM_BERRY(new AliasedBlockItem(ModNaturalBlocks.GLOOM_BERRY.block, settings().food(FoodComponents.GLOW_BERRIES))),
-    STAR_CHERRIES(new FoodItem(settings(), 3, 0.6f)),
+    //STAR_CHERRIES(new FoodItem(settings(), 3, 0.6f)),
     ALOE_VERA(new AliasedBlockItem(ModNaturalBlocks.ALOE_VERAS.block, settings().food(Foods.create(3, 0.3f)))),
     
     AMETHYSTLE(new FoodItem(settings(), 2, 0.3f)
@@ -76,8 +77,11 @@ public enum IngredientFoodItems implements ItemEnum {
     RAW_SILVERFISH(new FoodItem(settings(), 1, 0.1f)),
     RAW_PHANTOM_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.NAUSEA).hideTooltip()),
     RAW_ENDERMAN_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.WEAKNESS).hideTooltip()),
-    RAW_ENDERMITE(new EndermiteFoodItem(settings(), 3, 0.4f, StatusEffects.POISON, StatusEffects.BLINDNESS, StatusEffects.NAUSEA).hideTooltip()),
+    ENDER_DRAGON_EYE(new EndermiteFoodItem(settings().rarity(Rarity.EPIC).fireproof(), 3, 0.4f, StatusEffects.POISON, StatusEffects.BLINDNESS, StatusEffects.NAUSEA).hideTooltip()),
+    ENDER_DRAGON_GLAND(new NegativeFoodItem(settings().rarity(Rarity.EPIC).fireproof(), 6, 0.3f, StatusEffects.BLINDNESS, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
     MONSTER_GUTS(new NegativeFoodItem(settings(), 6, 0.3f, StatusEffects.BLINDNESS, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
+    RAW_TRIPE(new NegativeFoodItem(settings(), 6, 0.3f, StatusEffects.POISON, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
+    RAW_ENDERMITE(new EndermiteFoodItem(settings(), 3, 0.4f, StatusEffects.POISON, StatusEffects.BLINDNESS, StatusEffects.NAUSEA).hideTooltip()),
     INFECTED_MONSTER_LIVER(new NegativeFoodItem(settings(), 3, 0.4f, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),
     ZOD(new NegativeFoodItem(settings().group(ModGroups.INGREDIENTS), 5, 2, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),
 
