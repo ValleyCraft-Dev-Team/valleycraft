@@ -27,7 +27,7 @@ public class AlgaeBlock extends PlantBlock {
     protected static final VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 1.5, 16);
 
     /** */
-    private static final float GROW_CHANCE = 0.1f;
+    private static final float GROW_CHANCE = 0.05f;
     /** */
     private static final int GROW_SIZE = 50;
     /** */

@@ -30,10 +30,12 @@ class RenderLayers {
         // put(Blocks.GLASS, cullout);
         put(MAMON_DOOR, cullout);
         put(MAMON_TRAPDOOR, cullout);
-        put(WATTLE_DOOR, translucent);
-        put(WATTLE_TRAPDOOR, translucent);
+        put(WATTLE_DOOR, cullout);
+        put(WATTLE_TRAPDOOR, cullout);
         put(GLASS_DOOR, cullout);
         put(TINTED_GLASS_DOOR, translucent);
+        put(CELESTIAL_DOOR, cullout);
+        put(ANCIENT_DOOR, cullout);
 
         // Flowers and Potted Flowers
         put(BLACK_DAHLIA, cullout);
@@ -45,8 +47,13 @@ class RenderLayers {
         put(BLUE_SOUL_ROSE, cullout);
         put(BLUE_SOULSPORE, cullout);
         put(BLUE_SOULSPORE_SINGLE, cullout);
+        put(BLUE_SOUL_CELESTIAL, cullout);
+        put(SOUL_CELESTIAL, cullout);
+        put(FADED_CELESTIAL, cullout);
         put(POTTED_FADED_SOUL_ROSE, cullout);
         put(HONEYCLUSTER, cullout);
+        put(END_GRASS, cullout);
+        put(CELESTIAL_LEAVES, cullout);
         put(POTTED_HONEYCLUSTER, cullout);
         put(LAVENDER, cullout);
         put(POTTED_LAVENDER, cullout);
@@ -90,8 +97,14 @@ class RenderLayers {
         put(POTTED_MOREL, cullout);
         put(GOOP_CAP, cullout);
         put(POTTED_GOOP_CAP, cullout);
+        put(GILDED_CAP, cullout);
+        put(POTTED_GILDED_CAP, cullout);
+        put(IRONSHROOM, cullout);
+        put(POTTED_IRONSHROOM, cullout);
 
         // Saplings and Potted Saplings
+        put(DRIED_SAPLING, cullout);
+        put(POTTED_DRIED_SAPLING, cullout);
         put(MAMON_SAPLING, cullout);
         put(POTTED_MAMON_SAPLING, cullout);
         put(APPLE_SAPLING, cullout);
@@ -130,9 +143,20 @@ class RenderLayers {
         put(POTTED_WEEPING_GHOST_WILLOW, cullout);
         put(BONE_WEED, cullout);
         put(POTTED_BONE_WEED, cullout);
+        
+        put(PURPLE_GLARE, cullout);
+        put(POTTED_PURPLE_GLARE, cullout);
+        put(BLUE_GLARE, cullout);
+        put(POTTED_BLUE_GLARE, cullout);
+        put(GREEN_GLARE, cullout);
+        put(POTTED_GREEN_GLARE, cullout);
+        put(RED_GLARE, cullout);
+        put(POTTED_RED_GLARE, cullout);
 
         //Other Plants without potted versions
         put(THORNY_BUSH, cullout);
+        // put(ROOTED_WATCHER, cullout);
+        // put(WARDING_SHROOM, cullout);
         put(STALWART_SHROOM, cullout);
         put(SHORT_GRASS, cullout);
         put(SHIVERCAP, cullout);
@@ -187,15 +211,18 @@ class RenderLayers {
         put(CRYSTAL_CAVE_MOSS, cullout);
         put(ORANGE_SEAGRASS, cullout);
         put(GLOWSQUID_LANTERN, cullout);
-        //put(GOLEMITE_BARS, cullout);
-        //put(GOLEMITE_CHAIN, cullout);
-        //put(GOLEMITE_GRATE, cullout);
-        //put(GOLEMITE_LADDER, cullout);
+        put(GOLEMITE_BARS, cullout);
+        put(GOLEMITE_CHAIN, cullout);
+        put(GOLEMITE_GRATE, cullout);
+        put(GOLEMITE_LADDER, cullout);
+        put(GOLDEN_LADDER, cullout);
         put(ROPE_LADDER, cullout);
         put(NET_BLOCK, cullout);
         put(PRIMSTEEL_GRATE, cullout);
         put(PRIMSTEEL_CHAIN, cullout);
         put(IRON_GRATE, cullout);
+        put(GOLDEN_GRATE, cullout);
+        put(GOLDEN_BARS, cullout);
         put(TERRARIUM_GLASS, cullout);
         put(TERRARIUM_GLASS_PANE, cullout);
         put(BEVELED_GLASS, cullout);
@@ -209,7 +236,7 @@ class RenderLayers {
         put(VEX_QUEEN_LANTERN, cullout);
         put(ALLAY_LANTERN, cullout);
         put(WATTLE_BARS, cullout);
-        //put(BONFIRE, cullout);
+        put(BONFIRE, cullout);
         put(ARID_VINES, cullout);
         put(ARID_VINES_PLANT, cullout);
         put(MIMIC_FLOWER, cullout);
@@ -259,7 +286,7 @@ class RenderLayers {
         put(BLUE_CLAY_POT, cullout);
 
         put(ERDSTONE_WINDOW, cullout);
-        //put(ERDSTONE_WINDOW_POWERED, cullout);
+        put(ERDSTONE_WINDOW_POWERED, cullout);
 
         put(SLUDGE_FLUID, translucent);
 
@@ -267,6 +294,7 @@ class RenderLayers {
         // put(BIG_BROWN, cullout);
         put(BROWN_CLUSTER, cullout);
         put(RED_CLUSTER, cullout);
+        put(WARDING_SHROOM, cullout);
         put(MEADOW_FLOWERS, cullout);
         put(BARNACLE_BLOCK, translucent);
         put(CLAM_BLOCK, cullout);
@@ -274,10 +302,9 @@ class RenderLayers {
         put(STARFISH_BLOCK, cullout);
         put(TUBE_WORMS_BLOCK, cullout);
         put(RUSHES, cullout);
-        //put(CELESTIAL_SAPLING, cullout);
+        put(CELESTIAL_SAPLING, cullout);
         put(OCELOT_STATUE, cullout);
         put(SPIKE_TRAP, cullout);
-        put(SPORE_SPREADER, cullout);
 
         put(TRANSLATION_CANVAS, cullout);
         put(GLOW_CAP_CLUSTER, cullout);
@@ -335,7 +362,7 @@ class RenderLayers {
 
         put(COBBLESTONE_BRICK_CHIMNEY, cullout);
         put(COBBLESTONE_CHIMNEY, cullout);
-        //put(INDUSTRIAL_CHIMNEY, cullout);
+        put(INDUSTRIAL_CHIMNEY, cullout);
         put(STONE_BRICK_CHIMNEY, cullout);
         put(BRICK_CHIMNEY, cullout);
         put(MUD_BRICK_CHIMNEY, cullout);

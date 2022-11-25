@@ -230,8 +230,8 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
 
     ICE_ORE(new IceOreBlock(Block.Settings.copy(Blocks.IRON_ORE).sounds(BlockSoundGroup.GLASS).nonOpaque().slipperiness(0.98f)), itemSettings()),
     PACKED_SNOW(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    ICICLE_PACKED_ICE(new IcicleGrowingBlock(Block.Settings.copy(Blocks.PACKED_ICE).nonOpaque().slipperiness(0.98f)), itemSettings()),
-    ICICLE(new IcicleBlock(Block.Settings.copy(Blocks.ICE).nonOpaque().slipperiness(0.98f)), itemSettings()),
+    ICICLE_PACKED_ICE(new IcicleGrowingBlock(), itemSettings()),
+    ICICLE(new IcicleBlock(Block.Settings.copy(Blocks.PACKED_ICE).nonOpaque().strength(0.4f)), itemSettings()),
     ROUGH_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
     SCALDING_SANDSTONE(new ScaldingBlock(Block.Settings.copy(Blocks.SANDSTONE).ticksRandomly().luminance(s ->3)), itemSettings()),
     STRATIFIED_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
