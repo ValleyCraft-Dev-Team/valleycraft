@@ -236,11 +236,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POTTED_SOULSPORE(new PotBlock(ModNaturalBlocks.SOULSPORE_SINGLE)),
     POTTED_MOREL(new PotBlock(ModNaturalBlocks.MOREL)),
     POTTED_GOOP_CAP(new PotBlock(ModNaturalBlocks.GOOP_CAP)),
-    POTTED_GILDED_CAP(new PotBlock(ModNaturalBlocks.GILDED_CAP)),
-    POTTED_IRONSHROOM(new PotBlock(ModNaturalBlocks.IRONSHROOM)),
 
     // Potted saplings
-    POTTED_DRIED_SAPLING(new PotBlock(ModNaturalBlocks.DRIED_SAPLING)),
     POTTED_MAMON_SAPLING(new PotBlock(ModNaturalBlocks.MAMON_SAPLING)),
     POTTED_APPLE_SAPLING(new PotBlock(ModNaturalBlocks.APPLE_SAPLING)),
     POTTED_WARM_BIRCH_SAPLING(new PotBlock(ModNaturalBlocks.WARM_BIRCH_SAPLING)),
@@ -253,11 +250,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POTTED_SPROUT(new PotBlock(ModNaturalBlocks.SPROUT)),
     POTTED_DESERT_SHRUB(new PotBlock(ModNaturalBlocks.DESERT_SHRUB)),
     POTTED_LUSH_BUSH(new PotBlock(ModNaturalBlocks.LUSH_BUSH)),
-    
-    POTTED_RED_GLARE(new PotBlock(ModNaturalBlocks.RED_GLARE)),
-    POTTED_GREEN_GLARE(new PotBlock(ModNaturalBlocks.GREEN_GLARE)),
-    POTTED_BLUE_GLARE(new PotBlock(ModNaturalBlocks.BLUE_GLARE)),
-    POTTED_PURPLE_GLARE(new PotBlock(ModNaturalBlocks.PURPLE_GLARE)),
 
     // Potted plants that need custom models (due to not using the cross shape, or their texture being too big for the pot)
     POTTED_FLOWERING_CACTUS(new PotBlock(ModNaturalBlocks.FLOWERING_CACTUS)),
@@ -296,34 +288,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     APPLE_FENCE(new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE)), itemSettings()),
     APPLE_FENCE_GATE(new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE)), itemSettings()),
     APPLE_PRESSURE_PLATE(new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)), itemSettings()),
-
-    // ancient
-    ANCIENT_WOOD(new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings()),
-    STRIPPED_ANCIENT_WOOD(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD)), itemSettings()),
-    STRIPPED_ANCIENT_LOG(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
-    ANCIENT_PLANKS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
-    ANCIENT_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR)), itemSettings()),
-    ANCIENT_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR)), itemSettings()),
-    ANCIENT_SLAB(new SlabBlock(Block.Settings.copy(Blocks.OAK_SLAB)), itemSettings()),
-    ANCIENT_STAIRS(new StairsBlock(ANCIENT_PLANKS.getState(), Block.Settings.copy(Blocks.OAK_STAIRS)), itemSettings()),
-    ANCIENT_BUTTON(new WoodenButtonBlock(Block.Settings.copy(Blocks.OAK_BUTTON)), itemSettings()),
-    ANCIENT_FENCE(new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE)), itemSettings()),
-    ANCIENT_FENCE_GATE(new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE)), itemSettings()),
-    ANCIENT_PRESSURE_PLATE(new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)), itemSettings()),
-
-    //celestial
-    CELESTIAL_WOOD(new PillarBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
-    STRIPPED_CELESTIAL_WOOD(new PillarBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
-    STRIPPED_CELESTIAL_LOG(new PillarBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
-    CELESTIAL_PLANKS(new Block(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
-    CELESTIAL_DOOR(new DoorBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
-    CELESTIAL_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
-    CELESTIAL_SLAB(new SlabBlock(Block.Settings.copy(Blocks.OAK_SLAB)), itemSettings()),
-    CELESTIAL_STAIRS(new StairsBlock(CELESTIAL_WOOD.getState(), Block.Settings.copy(Blocks.OAK_STAIRS)), itemSettings()),
-    CELESTIAL_BUTTON(new WoodenButtonBlock(Block.Settings.copy(Blocks.OAK_BUTTON)), itemSettings()),
-    CELESTIAL_FENCE(new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE)), itemSettings()),
-    CELESTIAL_FENCE_GATE(new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE)), itemSettings()),
-    CELESTIAL_PRESSURE_PLATE(new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)), itemSettings()),
 
     // carved
     GHOST_PUMPKIN_CARVED(new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always)), itemSettings().equipmentSlot(i-> EquipmentSlot.HEAD)),
