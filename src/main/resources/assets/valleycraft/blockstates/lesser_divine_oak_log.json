@@ -2,18 +2,18 @@
   "variants": {
     "facing=east": {
       "model": "valleycraft:block/lesser_divine_oak_log",
-      "y": 90
+      "y": 270
     },
     "facing=north": {
-      "model": "valleycraft:block/lesser_divine_oak_log"
-    },
-    "facing=south": {
       "model": "valleycraft:block/lesser_divine_oak_log",
       "y": 180
     },
+    "facing=south": {
+      "model": "valleycraft:block/lesser_divine_oak_log"
+    },
     "facing=west": {
       "model": "valleycraft:block/lesser_divine_oak_log",
-      "y": 270
+      "y": 90
     }
   }
 }

@@ -25,11 +25,11 @@ class ColorProvider {
         
         blockColor((state, world, pos, tintIndex) -> {
             return BiomeColors.getGrassColor(world, pos);
-        }, ModNaturalBlocks.BIG_FERN, ModNaturalBlocks.SHORT_GRASS);
+        }, ModNaturalBlocks.SHORT_GRASS);
         
         itemColor((stack, tintIndex) -> {
             return GrassColors.getColor(0.5, 1.0);
-        }, ModNaturalBlocks.BIG_FERN, ModNaturalBlocks.SHORT_GRASS);
+        }, ModNaturalBlocks.SHORT_GRASS);
         
         blockColor((state, world, pos, tintIndex) -> {
             int i = state.get(StemBlock.AGE);

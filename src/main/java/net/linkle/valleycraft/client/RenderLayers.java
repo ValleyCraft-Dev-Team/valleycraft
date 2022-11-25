@@ -30,8 +30,8 @@ class RenderLayers {
         // put(Blocks.GLASS, cullout);
         put(MAMON_DOOR, cullout);
         put(MAMON_TRAPDOOR, cullout);
-        put(WATTLE_DOOR, translucent);
-        put(WATTLE_TRAPDOOR, translucent);
+        put(WATTLE_DOOR, cullout);
+        put(WATTLE_TRAPDOOR, cullout);
         put(GLASS_DOOR, cullout);
         put(TINTED_GLASS_DOOR, translucent);
         put(CELESTIAL_DOOR, cullout);
@@ -143,6 +143,15 @@ class RenderLayers {
         put(POTTED_WEEPING_GHOST_WILLOW, cullout);
         put(BONE_WEED, cullout);
         put(POTTED_BONE_WEED, cullout);
+        
+        put(PURPLE_GLARE, cullout);
+        put(POTTED_PURPLE_GLARE, cullout);
+        put(BLUE_GLARE, cullout);
+        put(POTTED_BLUE_GLARE, cullout);
+        put(GREEN_GLARE, cullout);
+        put(POTTED_GREEN_GLARE, cullout);
+        put(RED_GLARE, cullout);
+        put(POTTED_RED_GLARE, cullout);
 
         //Other Plants without potted versions
         put(THORNY_BUSH, cullout);
