@@ -3,8 +3,15 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.baubles.BaubleItem;
 import net.linkle.valleycraft.baubles.LovePotionBauble;
+import net.linkle.valleycraft.baubles.TalismanItem;
+import net.linkle.valleycraft.baubles.UniqueTalismanItem;
+import net.linkle.valleycraft.block.TranslationCanvasBlock;
 import net.linkle.valleycraft.util.ItemEnum;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 import net.minecraft.item.Item;
@@ -17,10 +24,10 @@ public enum ModBaubles implements ItemEnum {
     //otherwise create an item class that extends BaubleItem
     //and use that for the individual bauble.
 
+    //baubles
     TOTEM_OF_UNDYING_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
     //TOTEM_OF_VISITORS(new Item(itemSettings().rarity(EPIC))),
     //TOTEM_OF_VISITORS_BRACELET(new BaubleItem(itemSettings().rarity(EPIC))),
-    TOTEM_OF_FRIENDSHIP(new Item(itemSettings().rarity(RARE))),
     TOTEM_OF_FRIENDSHIP_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
     //POLISHED_GEAR(new BaubleItem(itemSettings().rarity(RARE))),
     //SHARD_OF_THE_FIRST_GOLEM(new BaubleItem(itemSettings().rarity(EPIC))),
@@ -29,7 +36,14 @@ public enum ModBaubles implements ItemEnum {
     LUCKY_FISHING_HOOK(new BaubleItem(itemSettings().rarity(RARE))),
     MONSTER_TOOTH(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     //LOVE_POTION(new LovePotionBauble(itemSettings().rarity(RARE))),
-    RAVAGER_GOLEM_TUSK(new BaubleItem(itemSettings().rarity(RARE)));
+    RAVAGER_GOLEM_TUSK(new BaubleItem(itemSettings().rarity(RARE))),
+
+    //necklaces
+    EMERALD_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
+    AMETHYST_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
+    ECHO_SHARD_TALISMAN(new TalismanItem(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
+    ENDER_DRAGON_TALISMAN(new TalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
+    MOBLIN_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1)));
 
     public static void initialize() {
     }

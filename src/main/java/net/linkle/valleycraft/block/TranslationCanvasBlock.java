@@ -13,9 +13,4 @@ public class TranslationCanvasBlock extends SpecialPaintingBlock {
     public TranslationCanvasBlock(Settings settings) {
         super(settings);
     }
-
-    @Override
-    public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add( Text.translatable("item.valley.bauble.tooltip").formatted(Formatting.GRAY));
-    }
 }

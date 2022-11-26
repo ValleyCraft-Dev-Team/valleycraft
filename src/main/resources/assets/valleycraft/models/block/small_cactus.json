@@ -3,7 +3,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"1": "valleycraft:block/cactus_small_arm",
-		"particle": "valleycraft:block/small_flowering_cactus"
+		"particle": "valleycraft:block/cactus_particles"
 	},
 	"elements": [
 		{

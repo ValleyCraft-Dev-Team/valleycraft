@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:polished_gear",
-    "valleycraft:totem_of_visitors_bracelet",
     "valleycraft:totem_of_friendship_bracelet",
     "valleycraft:totem_of_undying_bracelet",
     "valleycraft:runekeepers_tome",
@@ -10,6 +8,6 @@
     "valleycraft:piglin_childs_toy",
     "valleycraft:lucky_fishing_hook",
     "valleycraft:monster_tooth",
-    "valleycraft:ravager_golem_tusk",
+    "valleycraft:ravager_golem_tusk"
   ]
 }

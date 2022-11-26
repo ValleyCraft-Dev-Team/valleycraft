@@ -18,5 +18,6 @@ public class BrokenArmorItem extends ArmorItem {
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add( Text.translatable("item.valley.broken.tooltip").formatted(Formatting.GRAY) );
+        tooltip.add( Text.translatable("item.valley.unique.tooltip").formatted(Formatting.GOLD) );
     }
 }

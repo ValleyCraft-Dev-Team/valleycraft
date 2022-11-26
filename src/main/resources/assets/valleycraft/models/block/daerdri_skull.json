@@ -3,7 +3,7 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "valleycraft:block/daerdri_skull",
-		"particle": "valleycraft:block/daerdri_skull"
+		"particle": "valleycraft:block/skeletal_remains_particles"
 	},
 	"elements": [
 		{

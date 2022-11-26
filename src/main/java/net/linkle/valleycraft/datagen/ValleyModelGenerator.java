@@ -26,8 +26,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         // Doors
         generator.registerDoor(APPLE_DOOR.block);
         generator.registerDoor(MAMON_DOOR.block);
-        generator.registerDoor(CELESTIAL_DOOR.block);
-        generator.registerDoor(ANCIENT_DOOR.block);
         generator.registerDoor(WATTLE_DOOR.block);
         generator.registerDoor(GLASS_DOOR.block);
         generator.registerDoor(TINTED_GLASS_DOOR.block);

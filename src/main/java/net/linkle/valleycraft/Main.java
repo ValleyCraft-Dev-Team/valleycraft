@@ -26,9 +26,11 @@ public class Main implements ModInitializer {
 
 		/** Keep these inits above the blocks so the creative inventory stays sorted properly. **/
 		BookItems.initialize();
+		ModBaubles.initialize();
 		ModItems.initialize();
 		ModFishing.initialize();
 		ModTools.initialize();
+		ModArmors.initialize();
 
 	    ModGroups.initialize();
 		ModNaturalBlocks.initialize();

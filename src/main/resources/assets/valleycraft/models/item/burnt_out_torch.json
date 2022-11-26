@@ -1,3 +1,6 @@
 {
-  "parent": "valleycraft:block/burnt_out_torch"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/block_items/burnt_out_torch"
+  }
 }
