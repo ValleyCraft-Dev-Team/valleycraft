@@ -6,12 +6,16 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 
-public class OxidizableCandelabraBlock extends CandelabraBlock implements Oxidizable {
-    
-    private final OxidationLevel level;
+public abstract class AbstractOxidizableCandelabraBlock extends AbstractCandelabraBlock implements Oxidizable {
 
-    public OxidizableCandelabraBlock(OxidationLevel level, boolean small) {
-        super(small);
+    protected final OxidationLevel level;
+    
+    public AbstractOxidizableCandelabraBlock(OxidationLevel level) {
+        this.level = level;
+    }
+    
+    public AbstractOxidizableCandelabraBlock(OxidationLevel level, int luminance) {
+        super(luminance);
         this.level = level;
     }
     

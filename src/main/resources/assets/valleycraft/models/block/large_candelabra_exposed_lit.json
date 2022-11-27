@@ -1,0 +1,7 @@
+{
+	"parent": "valleycraft:block/large_candelabra",
+	"textures": {
+		"candle": "block/candle_lit",
+		"base": "block/exposed_copper"
+	}
+}

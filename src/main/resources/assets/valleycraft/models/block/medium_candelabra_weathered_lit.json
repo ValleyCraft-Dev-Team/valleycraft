@@ -1,5 +1,5 @@
 {
-	"parent": "valleycraft:block/medium_candelabra_lit",
+	"parent": "valleycraft:block/medium_candelabra",
 	"textures": {
 		"candle": "block/candle_lit",
 		"base": "block/weathered_copper"
