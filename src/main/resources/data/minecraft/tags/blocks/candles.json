@@ -16,6 +16,22 @@
     "valleycraft:waxed_medium_candelabra",
     "valleycraft:waxed_medium_candelabra_exposed",
     "valleycraft:waxed_medium_candelabra_oxidized",
-    "valleycraft:waxed_medium_candelabra_weathered"
+    "valleycraft:waxed_medium_candelabra_weathered",
+    "valleycraft:wall_candelabra",
+    "valleycraft:wall_candelabra_exposed",
+    "valleycraft:wall_candelabra_oxidized",
+    "valleycraft:wall_candelabra_weathered",
+    "valleycraft:large_candelabra",
+    "valleycraft:large_candelabra_exposed",
+    "valleycraft:large_candelabra_oxidized",
+    "valleycraft:large_candelabra_weathered",
+    "valleycraft:waxed_wall_candelabra",
+    "valleycraft:waxed_wall_candelabra_exposed",
+    "valleycraft:waxed_wall_candelabra_oxidized",
+    "valleycraft:waxed_wall_candelabra_weathered",
+    "valleycraft:waxed_large_candelabra",
+    "valleycraft:waxed_large_candelabra_exposed",
+    "valleycraft:waxed_large_candelabra_oxidized",
+    "valleycraft:waxed_large_candelabra_weathered"
   ]
 }

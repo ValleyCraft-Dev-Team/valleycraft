@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "axis=x,lit=false": {
+      "model": "valleycraft:block/large_candelabra",
+      "y": 90
+    },
+    "axis=x,lit=true": {
+      "model": "valleycraft:block/large_candelabra_lit",
+      "y": 90
+    },
+    "axis=z,lit=false": {
+      "model": "valleycraft:block/large_candelabra"
+    },
+    "axis=z,lit=true": {
+      "model": "valleycraft:block/large_candelabra_lit"
+    }
+  }
+}

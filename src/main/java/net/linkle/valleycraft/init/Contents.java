@@ -35,6 +35,24 @@ public class Contents {
         registerWaxableBlockPair(ModBlocks.MEDIUM_CANDELABRA_EXPOSED.block, ModBlocks.WAXED_MEDIUM_CANDELABRA_EXPOSED.block);
         registerWaxableBlockPair(ModBlocks.MEDIUM_CANDELABRA_WEATHERED.block, ModBlocks.WAXED_MEDIUM_CANDELABRA_WEATHERED.block);
         registerWaxableBlockPair(ModBlocks.MEDIUM_CANDELABRA_OXIDIZED.block, ModBlocks.WAXED_MEDIUM_CANDELABRA_OXIDIZED.block);
+        
+        registerOxidizableBlockPair(ModBlocks.LARGE_CANDELABRA.block, ModBlocks.LARGE_CANDELABRA_EXPOSED.block);
+        registerOxidizableBlockPair(ModBlocks.LARGE_CANDELABRA_EXPOSED.block, ModBlocks.LARGE_CANDELABRA_WEATHERED.block);
+        registerOxidizableBlockPair(ModBlocks.LARGE_CANDELABRA_WEATHERED.block, ModBlocks.LARGE_CANDELABRA_OXIDIZED.block);
+        
+        registerWaxableBlockPair(ModBlocks.LARGE_CANDELABRA.block, ModBlocks.WAXED_LARGE_CANDELABRA.block);
+        registerWaxableBlockPair(ModBlocks.LARGE_CANDELABRA_EXPOSED.block, ModBlocks.WAXED_LARGE_CANDELABRA_EXPOSED.block);
+        registerWaxableBlockPair(ModBlocks.LARGE_CANDELABRA_WEATHERED.block, ModBlocks.WAXED_LARGE_CANDELABRA_WEATHERED.block);
+        registerWaxableBlockPair(ModBlocks.LARGE_CANDELABRA_OXIDIZED.block, ModBlocks.WAXED_LARGE_CANDELABRA_OXIDIZED.block);
+        
+        registerOxidizableBlockPair(ModBlocks.WALL_CANDELABRA.block, ModBlocks.WALL_CANDELABRA_EXPOSED.block);
+        registerOxidizableBlockPair(ModBlocks.WALL_CANDELABRA_EXPOSED.block, ModBlocks.WALL_CANDELABRA_WEATHERED.block);
+        registerOxidizableBlockPair(ModBlocks.WALL_CANDELABRA_WEATHERED.block, ModBlocks.WALL_CANDELABRA_OXIDIZED.block);
+        
+        registerWaxableBlockPair(ModBlocks.WALL_CANDELABRA.block, ModBlocks.WAXED_WALL_CANDELABRA.block);
+        registerWaxableBlockPair(ModBlocks.WALL_CANDELABRA_EXPOSED.block, ModBlocks.WAXED_WALL_CANDELABRA_EXPOSED.block);
+        registerWaxableBlockPair(ModBlocks.WALL_CANDELABRA_WEATHERED.block, ModBlocks.WAXED_WALL_CANDELABRA_WEATHERED.block);
+        registerWaxableBlockPair(ModBlocks.WALL_CANDELABRA_OXIDIZED.block, ModBlocks.WAXED_WALL_CANDELABRA_OXIDIZED.block);
     }
     
     private static void strips() {

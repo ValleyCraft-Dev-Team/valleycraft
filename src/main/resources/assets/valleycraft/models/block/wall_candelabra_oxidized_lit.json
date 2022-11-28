@@ -1,0 +1,7 @@
+{
+	"parent": "valleycraft:block/wall_candelabra",
+	"textures": {
+		"candle": "block/candle_lit",
+		"base": "block/oxidized_copper"
+	}
+}

@@ -1,7 +1,6 @@
 package net.linkle.valleycraft.block;
 
-import java.util.List;
-
+import net.linkle.valleycraft.util.Util;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
@@ -16,24 +15,22 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
-public class CandelabraBlock extends AbstractCandleBlock implements Waterloggable {
-    
-    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
-    
-    private final VoxelShape shape;
-    private final List<Vec3d> particleOffsets;
+public abstract class AbstractCandelabraBlock extends AbstractCandleBlock implements Waterloggable {
 
-    public CandelabraBlock(boolean small) {
-        super(Settings.of(Material.DECORATION, MapColor.TERRACOTTA_ORANGE).luminance(s->s.get(LIT)?3:0).nonOpaque().strength(0.6f).sounds(BlockSoundGroup.COPPER));
-        shape = small ? Block.createCuboidShape(5, 0, 5, 11, 7, 11) : Block.createCuboidShape(5, 0, 5, 11, 16, 11);
-        particleOffsets = small ? List.of(new Vec3d(0.5, 9/16d, 0.5)) : List.of(new Vec3d(0.5, 18/16d, 0.5));
+    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
+
+    public AbstractCandelabraBlock() {
+        this(5);
+    }
+    
+    public AbstractCandelabraBlock(int luminance) {
+        super(Settings.of(Material.DECORATION, MapColor.TERRACOTTA_ORANGE).luminance(s->s.get(LIT)?luminance:0).nonOpaque().strength(0.6f).sounds(BlockSoundGroup.COPPER));
         setDefaultState(stateManager.getDefaultState().with(LIT, false).with(WATERLOGGED, false));
     }
     
@@ -64,15 +61,11 @@ public class CandelabraBlock extends AbstractCandleBlock implements Waterloggabl
     
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        var fluid = ctx.getWorld().getFluidState(ctx.getBlockPos());
-        var bool = fluid.getFluid() == Fluids.WATER;
-        return super.getPlacementState(ctx).with(WATERLOGGED, bool);
+        return super.getPlacementState(ctx).with(WATERLOGGED, Util.inWater(ctx));
     }
 
     @Override
-    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return shape;
-    }
+    public abstract VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context);
     
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
@@ -102,10 +95,5 @@ public class CandelabraBlock extends AbstractCandleBlock implements Waterloggabl
         }
         world.createAndScheduleFluidTick(pos, fluidState.getFluid(), fluidState.getFluid().getTickRate(world));
         return true;
-    }
-
-    @Override
-    protected Iterable<Vec3d> getParticleOffsets(BlockState state) {
-        return particleOffsets;
     }
 }
