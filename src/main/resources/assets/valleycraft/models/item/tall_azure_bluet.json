@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:block/tall_azure_bluet_bottom"
+    "layer0": "valleycraft:item/tall_flowers/tall_azure_bluet"
   }
 }

@@ -17,6 +17,8 @@ public class TrinketRenderers {
         register(new TalismanRenderer("emerald_talisman"), ModBaubles.EMERALD_TALISMAN);
         register(new TalismanRenderer("ender_dragon_talisman"), ModBaubles.ENDER_DRAGON_TALISMAN);
         register(new TalismanRenderer("moblin_talisman"), ModBaubles.MOBLIN_TALISMAN);
+        register(new TalismanRenderer("stray_necklace"), ModBaubles.STRAY_TALISMAN);
+        register(new TalismanRenderer("fishing_hook_necklace"), ModBaubles.FISHING_HOOK_TALISMAN);
     }
     
     private static void register(TrinketRenderer renderer, ItemConvertible... items) {

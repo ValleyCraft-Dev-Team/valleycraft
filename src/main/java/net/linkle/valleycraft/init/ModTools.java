@@ -22,6 +22,7 @@ import net.linkle.valleycraft.tool.staff.StaffBase;
 import net.linkle.valleycraft.tool.sword.special.*;
 import net.linkle.valleycraft.tool.throwing.BoneDartItem;
 import net.linkle.valleycraft.tool.travelers_sword.TravelerBase;
+import net.linkle.valleycraft.tool.travelers_sword.TravelerBaseFixed;
 import net.linkle.valleycraft.tool.woodcutter_axe.WoodcutterAxeBase;
 import net.linkle.valleycraft.tool.woodcutter_axe.special.TimberAxeItem;
 import net.linkle.valleycraft.util.Reg;
@@ -240,11 +241,13 @@ public class ModTools {
         //Reg.register("prismace", new MaceBase(ModToolMaterials.PRISMARINE, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
         Reg.register("toy_sword", new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("moblin_sword_broken", MOBLIN_BROKEN);
-        Reg.register("moblin_sword_fixed", new TravelerBase(ToolMaterials.IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
+        Reg.register("moblin_sword_fixed", new TravelerBaseFixed(ToolMaterials.IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
         Reg.register("dierdra_spear", new SpearBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("seaologer_broken", SEAOLOGER_BROKEN);
         Reg.register("seaologer_fixed", SEAOLOGER_FIXED);
         Reg.register("ancient_climbing_axe", ANCIENT_CLIMBING_AXE);
+        Reg.register("ancient_shortsword", new TravelerBase(ModToolMaterials.WEAK_IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
+
         //Reg.register("twinblade", new SpearBase(ModToolMaterials.GOLEMITE, SPEAR_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
         //Reg.register("piglin_battle_hammer", new WoodcutterAxeBase(ModToolMaterials.GOLEMITE, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_EPIC));
 

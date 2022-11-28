@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "valleycraft:block/falling_rocks"
+    "all": "valleycraft:block/cracked_cobblestone"
   }
 }

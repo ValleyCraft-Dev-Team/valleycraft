@@ -6,6 +6,7 @@ import com.google.common.base.Suppliers;
 import net.linkle.valleycraft.init.ModItems;
 import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -54,6 +55,10 @@ public enum ModToolMaterials implements ToolMaterial {
 
     OBSIDIAN(2, 440, 7.0F, 2.0F, 18, () -> {
         return Ingredient.ofItems(Blocks.OBSIDIAN);
+    }),
+
+    WEAK_IRON(1, 131, 4.0F, 1.0F, 14, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Items.IRON_INGOT});
     }),
 
     AMETHYST(2, 190, 5.0F, 1.5F, 18, () -> {

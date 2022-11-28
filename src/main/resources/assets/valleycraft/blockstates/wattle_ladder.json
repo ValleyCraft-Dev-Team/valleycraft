@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "valleycraft:block/wattle_ladder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "valleycraft:block/wattle_ladder"
+    },
+    "facing=south": {
+      "model": "valleycraft:block/wattle_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "valleycraft:block/wattle_ladder",
+      "y": 270
+    }
+  }
+}

@@ -194,6 +194,7 @@ class RenderLayers {
         put(PRIMSTEEL_GRATE, cullout);
         put(PRIMSTEEL_CHAIN, cullout);
         put(IRON_GRATE, cullout);
+        put(WATTLE_GRATE, cullout);
         put(TERRARIUM_GLASS, cullout);
         put(TERRARIUM_GLASS_PANE, cullout);
         put(BEVELED_GLASS, cullout);
@@ -315,6 +316,7 @@ class RenderLayers {
         put(GLOW_SEAGRASS, cullout);
         put(IRON_LADDER, cullout);
         put(PRIMSTEEL_LADDER, cullout);
+        put(WATTLE_LADDER, cullout);
         put(BAMBOO_LADDER, cullout);
         put(BRIMSTONE_CRYSTAL, cullout);
         put(BRIMSTONE_GLASS, translucent);
@@ -345,6 +347,7 @@ class RenderLayers {
         put(NETHER_BRICK_CHIMNEY, cullout);
         put(RED_NETHER_BRICK_CHIMNEY, cullout);
         put(COUNTER, cullout);
+        put(SHALE_BRICK_CHIMNEY, cullout);
 
         put(ARID_VINES_PLANT, cullout);
         put(ARID_VINES, cullout);

@@ -26,9 +26,8 @@ public enum ModBaubles implements ItemEnum {
 
     //baubles
     TOTEM_OF_UNDYING_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
-    //TOTEM_OF_VISITORS(new Item(itemSettings().rarity(EPIC))),
-    //TOTEM_OF_VISITORS_BRACELET(new BaubleItem(itemSettings().rarity(EPIC))),
-    TOTEM_OF_FRIENDSHIP_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
+    TOTEM_OF_VISITORS_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
+    TOTEM_OF_FRIENDSHIP_BRACELET(new BaubleItem(itemSettings().rarity(EPIC))),
     //POLISHED_GEAR(new BaubleItem(itemSettings().rarity(RARE))),
     //SHARD_OF_THE_FIRST_GOLEM(new BaubleItem(itemSettings().rarity(EPIC))),
     STRANGE_DOLL(new BaubleItem(itemSettings().rarity(EPIC))),
@@ -37,13 +36,16 @@ public enum ModBaubles implements ItemEnum {
     MONSTER_TOOTH(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     //LOVE_POTION(new LovePotionBauble(itemSettings().rarity(RARE))),
     RAVAGER_GOLEM_TUSK(new BaubleItem(itemSettings().rarity(RARE))),
+    WARDEN_ANTLER(new BaubleItem(itemSettings().rarity(EPIC))),
 
     //necklaces
     EMERALD_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     AMETHYST_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     ECHO_SHARD_TALISMAN(new TalismanItem(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
     ENDER_DRAGON_TALISMAN(new TalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
-    MOBLIN_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1)));
+    MOBLIN_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
+    FISHING_HOOK_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
+    STRAY_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1)));
 
     public static void initialize() {
     }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:block/tall_living_bush_top"
+    "layer0": "valleycraft:item/tall_flowers/tall_living_bush"
   }
 }

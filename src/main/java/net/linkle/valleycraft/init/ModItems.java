@@ -50,6 +50,7 @@ public enum ModItems implements ItemEnum {
     MONSTER_CLAW(new Item(itemSettings())),
     //SPIDER_SILK(new Item(itemSettings().rarity(UNCOMMON))),
     BEAST_BONE(new Item(itemSettings())),
+    BONEFIN(new Item(itemSettings())),
     SHEEP_HIDE(new Item(itemSettings())),
     PIG_HIDE(new Item(itemSettings())),
     TREATED_LEATHER(new Item(itemSettings())),
@@ -71,6 +72,7 @@ public enum ModItems implements ItemEnum {
 
     BOW_STRING(new Item(itemSettings())),
     FLOUR(new Item(itemSettings().group(INGREDIENTS))),
+    MAIZE_FLOUR(new Item(itemSettings().group(INGREDIENTS))),
 
     //_RAW(new Item(itemSettings())),
     //GOLEMITE_NUGGET(new Item(itemSettings())),
@@ -110,7 +112,8 @@ public enum ModItems implements ItemEnum {
     SEAOLOGER_TOKEN(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
     TOTEM_OF_TRADE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),
     TOTEM_OF_APPRECIATION(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(1))),
-    TOTEM_OF_FRIENDSHIP(new Item(itemSettings().group(VC_ITEMS).rarity(RARE))),
+    TOTEM_OF_VISITORS(new Item(itemSettings().rarity(RARE))),
+    TOTEM_OF_FRIENDSHIP(new Item(itemSettings().group(VC_ITEMS).rarity(EPIC))),
     BOMB_BAG(new BombBagItem(itemSettings().group(VC_ITEMS))),
     ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_ITEMS))),
 
