@@ -310,7 +310,8 @@
   "block.valleycraft.stablehand_counter": "Stablehand Counter",
   "block.valleycraft.lumberjack_station": "Lumbercutter",
   "block.valleycraft.miner_station": "Ore Processing Table",
-  "block.valleycraft.stove": "Stove",
+  "block.valleycraft.stove": "Cobblestone Stove",
+  "block.valleycraft.brick_stove": "Brick Stove",
   "block.valleycraft.campfire_pot": "§aSurvivor's Campfire",
   "block.valleycraft.lantern_hanger": "Lantern Hanging Stake",
 

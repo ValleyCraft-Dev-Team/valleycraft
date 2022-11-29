@@ -10,10 +10,10 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
 public class ShaleGraveBlock extends HorizontalWithWaterBlock {
-    protected static final VoxelShape NORTH_SHAPE = Block.createCuboidShape(0,0, 1, 16, 16, 4);
-    protected static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(0, 0, 12, 16, 16, 15);
-    protected static final VoxelShape WEST_SHAPE = Block.createCuboidShape(1, 0, 0, 4, 16, 16);
-    protected static final VoxelShape EAST_SHAPE = Block.createCuboidShape(12, 0, 0, 15, 16, 16);
+    protected static final VoxelShape NORTH_SHAPE = Block.createCuboidShape(0,0, 1, 16, 16, 7);
+    protected static final VoxelShape SOUTH_SHAPE = Block.createCuboidShape(0, 0, 9, 16, 16, 15);
+    protected static final VoxelShape WEST_SHAPE = Block.createCuboidShape(1, 0, 0, 7, 16, 16);
+    protected static final VoxelShape EAST_SHAPE = Block.createCuboidShape(9, 0, 0, 15, 16, 16);
 
     public ShaleGraveBlock(Settings settings) {
         super(settings);

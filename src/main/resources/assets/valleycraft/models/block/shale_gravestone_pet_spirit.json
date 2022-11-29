@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "valleycraft:block/shale_gravestone",
 		"1": "valleycraft:block/pet_collar",
-		"particle": "valleycraft:block/shale_gravestone"
+		"particle": "valleycraft:block/polished_shale"
 	},
 	"elements": [
 		{

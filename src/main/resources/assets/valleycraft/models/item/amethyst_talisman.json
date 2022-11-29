@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/armor_items/amethyst_talisman"
+    "layer0": "valleycraft:item/necklaces/amethyst_talisman"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "top": "valleycraft:block/brick_stove_top",
+    "bottom": "valleycraft:block/brick_stove_side",
+    "side": "valleycraft:block/brick_stove_side",
+    "front": "valleycraft:block/brick_stove_front_off"
+  }
+}

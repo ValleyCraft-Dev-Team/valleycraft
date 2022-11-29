@@ -12,13 +12,21 @@ import net.minecraft.item.ItemConvertible;
 public class TrinketRenderers {
     public static void intialize() {
         // Check valleycraft/textures/models/trinket for textures
+        register(new TalismanRenderer("amber_talisman"), ModBaubles.AMBER_TALISMAN);
         register(new TalismanRenderer("amethyst_talisman"), ModBaubles.AMETHYST_TALISMAN);
+        register(new TalismanRenderer("arrowhead_necklace"), ModBaubles.ARROWHEAD_TALISMAN);
+        register(new TalismanRenderer("brimstone_talisman"), ModBaubles.BRIMSTONE_NECKLACE);
+        register(new TalismanRenderer("diamond_necklace"), ModBaubles.DIAMOND_TALISMAN);
         register(new TalismanRenderer("echo_shard"), ModBaubles.ECHO_SHARD_TALISMAN);
         register(new TalismanRenderer("emerald_talisman"), ModBaubles.EMERALD_TALISMAN);
         register(new TalismanRenderer("ender_dragon_talisman"), ModBaubles.ENDER_DRAGON_TALISMAN);
-        register(new TalismanRenderer("moblin_talisman"), ModBaubles.MOBLIN_TALISMAN);
-        register(new TalismanRenderer("stray_necklace"), ModBaubles.STRAY_TALISMAN);
         register(new TalismanRenderer("fishing_hook_necklace"), ModBaubles.FISHING_HOOK_TALISMAN);
+        register(new TalismanRenderer("iron_necklace"), ModBaubles.IRON_NECKLACE);
+        register(new TalismanRenderer("leather_necklace"), ModBaubles.LEATHER_NECKLACE);
+        register(new TalismanRenderer("moblin_talisman"), ModBaubles.MOBLIN_TALISMAN);
+        register(new TalismanRenderer("scute_necklace"), ModBaubles.SCUTE_NECKLACE);
+        register(new TalismanRenderer("seaologer_rune_necklace"), ModBaubles.SEAOLOGER_RUNE_NECKLACE);
+        register(new TalismanRenderer("stray_necklace"), ModBaubles.STRAY_TALISMAN);
     }
     
     private static void register(TrinketRenderer renderer, ItemConvertible... items) {

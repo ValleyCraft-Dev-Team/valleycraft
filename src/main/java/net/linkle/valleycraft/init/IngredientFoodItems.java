@@ -22,7 +22,8 @@ public enum IngredientFoodItems implements ItemEnum {
     CHEESE_WHEEL(new FoodItem(settings(), 8, 0.4f)),
     CHEESE_SLICE(new FoodItem(settings(), 2, 0.4f)),
     MOREL_OIL(new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS).hideTooltip()),
-    
+    CHOCOLATE(new FoodItem(settings(), 2, 0.5f)),
+
     GLOW_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 15 * 20)))
     .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_8", Formatting.GRAY)),
     GLOOM_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 15 * 20)))),

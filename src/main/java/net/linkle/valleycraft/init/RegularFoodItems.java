@@ -84,6 +84,7 @@ public enum RegularFoodItems implements ItemEnum {
     // no tier bottles
     CHOCOLATE_MILK(new BottleItem(settings().maxCount(16), 3, 0.3f).setMilk()),
     ATOLE_MILK(new BottleItem(settings().maxCount(16), 4, 0.2f).setMilk()),
+    EGGNOG(new BottleItem(settings().maxCount(16), 3, 0.3f).setMilk()),
     APPLE_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     SWEET_BERRY_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     CHORUS_FRUIT_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
@@ -156,7 +157,7 @@ public enum RegularFoodItems implements ItemEnum {
     //ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC)4, 1.2f)),
     ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC), 4, 1.2f, StatusEffects.SLOW_FALLING).hideTooltip()),
     ENCHANTED_APPLE_PIE(new EnchantedFoodItem(settings().rarity(EPIC), 10, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip()),
-    ENCHANTED_APPLE_SLICE(new EnchantedFoodItem(settings().rarity(EPIC), 3, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip());
+    ENCHANTED_APPLE_PIE_SLICE(new EnchantedFoodItem(settings().rarity(EPIC), 3, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip());
 
     //1.1 planned - dw its not sea turtles!
     //COOKED_TURTLE(new FoodItem(settings(), 8, 0.6f)),

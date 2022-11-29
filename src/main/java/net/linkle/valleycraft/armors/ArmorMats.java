@@ -10,6 +10,8 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
+import static net.minecraft.item.Items.COPPER_INGOT;
+
 /** Armor Materials */
 @SuppressWarnings("unused")
 public enum ArmorMats implements ArmorMaterial {
@@ -72,7 +74,7 @@ public enum ArmorMats implements ArmorMaterial {
     TRADER("trader", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER)),
     VILLAGER("villager", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER)),
     WITCH("witch", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER)),
-    VISOR("visor", ints(3), 10, 15, equipChain(), items(Items.COPPER_INGOT)),
+    VISOR("visor", ints(3), 10, 15, equipChain(), items(COPPER_INGOT)),
     BUTTON("button", ints(0,0,7,2), 10, 15, equipChain(), items(Items.STRING)),
     CHEF("chef", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     EVOKER("evoker", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
@@ -84,8 +86,9 @@ public enum ArmorMats implements ArmorMaterial {
     LEATHER_MODIFIED("leather_modified", ints(1,2,3,2), 7, 9, equipLeather(), items(ModItems.TREATED_LEATHER)),
     CLOTH("cloth", ints(1,2,3,2), 7, 9, equipLeather(), items(ModItems.CLOTH)),
     WATTLE("wattle", ints(1,2,2,1), 3, 15, equipLeather(), items(ModItems.PLANK)),
+    QUIVER("quiver", ints(1,2,2,2), 7, 9, equipLeather(), items(ModItems.TREATED_LEATHER)),
 
-    ANCIENT_AGLETS("ancient_aglets", ints(1,4,5,2), 15, 18, equipIron(), items(Items.COPPER_INGOT)),
+    ANCIENT_AGLETS("ancient_aglets", ints(1,4,5,2), 15, 18, equipIron(), items(COPPER_INGOT)),
 
     RF_LEATHER("reinforced_leather", ints(0,0,2,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     RF_GOLD("reinforced_gold", ints(0,0,4,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
@@ -105,7 +108,8 @@ public enum ArmorMats implements ArmorMaterial {
     PURPLE_CLOAK("purple_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
     CYAN_CLOAK("cyan_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
 
-    DIVING("diving", ints(2,5,7,2), 15, 5, equipLeather(), items(ModItems.PRIMSTEEL_INGOT));
+    DIVING("diving", ints(2,5,7,3), 15, 5, equipLeather(), items(ModItems.PRIMSTEEL_INGOT)),
+    COPPER_DIVING("copper_diving", ints(2,5,7,2), 15, 5, equipLeather(), items(COPPER_INGOT));
 
     // ### Other Utility Methods ###
     

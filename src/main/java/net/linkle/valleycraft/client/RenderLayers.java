@@ -232,11 +232,11 @@ class RenderLayers {
         put(TALL_AZURE_BLUET, cullout);
         put(CATTAILS, cullout);
 
-        put(GUIDESTONE, cullout);
-        put(GUIDESTONE_ARROW, cullout);
-        put(GUIDESTONE_DANGER, cullout);
-        put(GUIDESTONE_HOME, cullout);
-        put(GUIDESTONE_INTEREST, cullout);
+        //put(GUIDESTONE, cullout);
+        //put(GUIDESTONE_ARROW, cullout);
+        //put(GUIDESTONE_DANGER, cullout);
+        //put(GUIDESTONE_HOME, cullout);
+        //put(GUIDESTONE_INTEREST, cullout);
 
         put(GRAVE_MARKER, cullout);
         put(GRAVE_MARKER_PET, cullout);
@@ -326,7 +326,7 @@ class RenderLayers {
         put(BRIMSTONE_CRYSTAL, cullout);
         put(BRIMSTONE_GLASS, translucent);
         put(BRIMSTONE_GLASS_PANE, translucent);
-        put(TARGET_DUMMY, cullout);
+        //put(TARGET_DUMMY, cullout);
         put(BEACH_GRASS, cullout);
         put(ICEPLANT, cullout);
 

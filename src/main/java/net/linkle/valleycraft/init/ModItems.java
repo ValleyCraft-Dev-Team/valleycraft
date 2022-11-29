@@ -81,6 +81,7 @@ public enum ModItems implements ItemEnum {
     ANTHRACITE(new Item(itemSettings())),
     BRIMSTONE_SHARD(new Item(itemSettings())),
     //OBSIDIAN_CHUNK(new Item(itemSettings())),
+    COPPER_NUGGET(new Item(itemSettings())),
     PRIMSTEEL_NUGGET(new Item(itemSettings())),
     PRIMSTEEL_RAW(new Item(itemSettings())),
     PRIMSTEEL_INGOT(new Item(itemSettings())),
