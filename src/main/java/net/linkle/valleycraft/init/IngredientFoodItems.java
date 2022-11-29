@@ -19,6 +19,8 @@ public enum IngredientFoodItems implements ItemEnum {
     //AMETHYSTLE_SALAD(new Tier1Normal(settings(), 4, 2, StatusEffects.HASTE);
     
     MILK(new BottleItem(settings().maxCount(16), 0, 0.2f).setMilk()),
+    CHEESE_WHEEL(new FoodItem(settings(), 8, 0.4f)),
+    CHEESE_SLICE(new FoodItem(settings(), 2, 0.4f)),
     MOREL_OIL(new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS).hideTooltip()),
     
     GLOW_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 15 * 20)))

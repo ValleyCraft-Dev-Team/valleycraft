@@ -193,6 +193,7 @@ class RenderLayers {
         put(NET_BLOCK, cullout);
         put(PRIMSTEEL_GRATE, cullout);
         put(PRIMSTEEL_CHAIN, cullout);
+        put(IRON_CHAIN, cullout);
         put(IRON_GRATE, cullout);
         put(WATTLE_GRATE, cullout);
         put(TERRARIUM_GLASS, cullout);
@@ -285,6 +286,10 @@ class RenderLayers {
         put(PIGLIN_SKELETAL_REMAINS, cullout);
         put(DAERDRI_SKULL, cullout);
         put(GEITLIN_SKULL, cullout);
+        put(VILLAGER_SKULL, cullout);
+        put(SNIFFER_SKULL, cullout);
+        put(PIGLIN_SKULL, cullout);
+        put(MOBLIN_SKULL, cullout);
         put(MOBLIN_SKELETAL_REMAINS, cullout);
         put(SKELETAL_MINING_REMAINS, cullout);
         put(PICKAXE_BLOCK, cullout);
@@ -331,6 +336,10 @@ class RenderLayers {
         put(ICICLE_PACKED_ICE, translucent);
 
         put(COBBLESTONE_BRICK_CHIMNEY, cullout);
+        put(DIORITE_BRICK_CHIMNEY, cullout);
+        put(GRANITE_BRICK_CHIMNEY, cullout);
+        put(ANDESITE_BRICK_CHIMNEY, cullout);
+
         put(COBBLESTONE_CHIMNEY, cullout);
         put(STONE_BRICK_CHIMNEY, cullout);
         put(BRICK_CHIMNEY, cullout);

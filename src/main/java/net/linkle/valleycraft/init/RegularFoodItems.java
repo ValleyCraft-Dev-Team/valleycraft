@@ -63,19 +63,23 @@ public enum RegularFoodItems implements ItemEnum {
     COOKED_TRIPE(new FoodItem(settings(), 8, 1f, true)),
 
     // pastries
-    CAKE_SLICE(new FoodItem(settings(), 2, 0.1f)),
     HARDTACK(new FoodItem(settings(), 3, 0.8f)),
-    TOAST(new FoodItem(settings(), 1, 1.0f)),
-    EGGS_ON_TOAST(new FoodItem(settings(), 6, 1.3f)),
-    GRILLED_CHEESE(new FoodItem(settings(), 6, 1.3f)),
     CORN_BREAD(new FoodItem(settings(), 3, 0.9f)),
+    CAKE_SLICE(new FoodItem(settings(), 2, 0.3f)),
     PUMPKIN_SPICE_COOKIE(new FoodItem(settings(), 3, 0.2f)),
-    CHORUS_FRUIT_PIE(new FoodItem(settings(), 9, 0.5f)),
-    CHOCOLATE_PIE(new FoodItem(settings(), 7, 0.5f)),
-    APPLE_PIE(new FoodItem(settings(), 6, 0.3f)),
-    SWEET_BERRY_PIE(new FoodItem(settings(), 6, 0.3f)),
-    GLOW_BERRY_PIE(new FoodItem(settings(), 6, 0.3f)),
-    GLOOM_BERRY_PIE(new FoodItem(settings(), 6, 0.3f)),
+    PUMPKIN_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    APPLE_PIE(new FoodItem(settings(), 8, 0.4f)),
+    APPLE_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    SWEET_BERRY_PIE(new FoodItem(settings(), 8, 0.4f)),
+    SWEET_BERRY_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    GLOW_BERRY_PIE(new FoodItem(settings(), 8, 0.4f)),
+    GLOW_BERRY_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    GLOOM_BERRY_PIE(new FoodItem(settings(), 8, 0.4f)),
+    GLOOM_BERRY_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    CHOCOLATE_PIE(new FoodItem(settings(), 8, 0.6f)),
+    CHOCOLATE_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    CHORUS_FRUIT_PIE(new FoodItem(settings(), 10, 0.7f)),
+    CHORUS_FRUIT_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
 
     // no tier bottles
     CHOCOLATE_MILK(new BottleItem(settings().maxCount(16), 3, 0.3f).setMilk()),
@@ -114,6 +118,11 @@ public enum RegularFoodItems implements ItemEnum {
     SEA_URCHIN_CHOWDER(new FoodItem(settings().maxCount(1), 6, 0.8f)),
     CLAM_CHOWDER(new BowlItem(settings().maxCount(1), 6, 0.8f)),
 
+    //sandwich items
+    TOAST(new FoodItem(settings(), 1, 1.0f)),
+    EGGS_ON_TOAST(new FoodItem(settings(), 6, 1.3f)),
+    GRILLED_CHEESE(new FoodItem(settings(), 6, 1.3f)),
+    SANDWICH_FISH(new FoodItem(settings(), 10, 0.8f)),
     SANDWICH_CHICKEN(new FoodItem(settings(), 10, 0.8f)),
     SANDWICH_MUTTON(new FoodItem(settings(), 10, 0.8f)),
     SANDWICH_BEEF(new FoodItem(settings(), 10, 0.8f)),
@@ -146,7 +155,8 @@ public enum RegularFoodItems implements ItemEnum {
     VALKYRIE_ELIXER(new ElixerBottleItemVillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.REGENERATION, StatusEffects.NAUSEA, StatusEffects.LEVITATION)),
     //ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC)4, 1.2f)),
     ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC), 4, 1.2f, StatusEffects.SLOW_FALLING).hideTooltip()),
-    ENCHANTED_APPLE_PIE(new EnchantedFoodItem(settings().rarity(EPIC), 6, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip());
+    ENCHANTED_APPLE_PIE(new EnchantedFoodItem(settings().rarity(EPIC), 10, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip()),
+    ENCHANTED_APPLE_SLICE(new EnchantedFoodItem(settings().rarity(EPIC), 3, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip());
 
     //1.1 planned - dw its not sea turtles!
     //COOKED_TURTLE(new FoodItem(settings(), 8, 0.6f)),
