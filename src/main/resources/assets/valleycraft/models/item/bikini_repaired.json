@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/special/bikini_repaired"
+    "layer0": "valleycraft:item/armor_items/bikini_repaired"
   }
 }

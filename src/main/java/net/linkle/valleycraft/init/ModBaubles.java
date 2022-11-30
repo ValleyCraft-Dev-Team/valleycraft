@@ -57,7 +57,7 @@ public enum ModBaubles implements ItemEnum {
     LEATHER_NECKLACE(new TalismanItem(itemSettings().group(CLOTHING).maxCount(1))),
     ECHO_SHARD_TALISMAN(new TalismanItem(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
     FISHING_HOOK_TALISMAN(new TalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
-    GUARDIAN_SPIKE_NECKLACE(new TalismanItem(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
+    GUARDIAN_SPIKE_TALISMAN(new TalismanItem(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
     SCUTE_NECKLACE(new TalismanItem(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
     SEAOLOGER_RUNE_NECKLACE(new TalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
 

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/armor_items/swimsuit_masc"
+    "layer0": "valleycraft:item/diving_gear/swimsuit_masc"
   }
 }

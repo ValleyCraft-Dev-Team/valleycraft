@@ -94,7 +94,6 @@ public enum ModArmors implements ItemEnum {
     REINFORCED_PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_IRON_HELMET(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_ROSEGOLD_HELMET(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
-    //REINFORCED_GOLEMITE_HELMET(new ArmorItem(ArmorMats.RF_GOLEMITE, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_DIAMOND_HELMET(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_NETHERITE_HELMET(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.HEAD, settingsNormal())),
 
@@ -103,24 +102,29 @@ public enum ModArmors implements ItemEnum {
     PRIMSTEEL_BREASTPLATE(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
     IRON_BREASTPLATE(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.CHEST, settingsNormal())),
     ROSEGOLD_BREASTPLATE(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),
-    //GOLEMITE_BREASTPLATE(new ArmorItem(ArmorMats.RF_GOLEMITE, EquipmentSlot.CHEST, settingsNormal())),
     DIAMOND_BREASTPLATE(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.CHEST, settingsNormal())),
     NETHERITE_BREASTPLATE(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.CHEST, settingsNormal())),
 
+    LEATHER_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.LEGS, settingsNormal())),
+    GOLDEN_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.LEGS, settingsNormal())),
+    PRIMSTEEL_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    IRON_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.LEGS, settingsNormal())),
+    ROSEGOLD_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
+    DIAMOND_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.LEGS, settingsNormal())),
+    NETHERITE_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.LEGS, settingsNormal())),
+
     GOLDEN_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_GOLD, EquipmentSlot.HEAD, settingsNormal())),
-    //EMERALD_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_EMERALD, EquipmentSlot.HEAD, settingsNormal())),
     IRON_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_IRON, EquipmentSlot.HEAD, settingsNormal())),
-    //AMBER_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_AMBER, EquipmentSlot.HEAD, settingsNormal())),
-    //AMETHYST_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_AMETHYST, EquipmentSlot.HEAD, settingsNormal())),
-    //DIAMOND_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
     ROSEGOLD_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
-    //PRISMARINE_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_PRISMARINE, EquipmentSlot.HEAD, settingsNormal())),
-    //ECHO_SHARD_DIADEM(new ArmorItem(ArmorMats.ECHO_DIADEM, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
 
     CROWN(new UniqueArmorItem(ArmorMats.CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
 
-    BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    BIKINI_NEUTRAL_REPAIRED(new ArmorItem(ArmorMats.BIKINI_NEUTRAL_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
     BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+
+    BIKINI_COAT_HOOD(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.HEAD, settingsNormal())),
+    BIKINI_COAT(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settingsNormal())),
 
     TREE_GOD_MASK(new UniqueArmorItem(ArmorMats.TREE_GOD, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
 
@@ -134,7 +138,7 @@ public enum ModArmors implements ItemEnum {
     WATTLE_LEGGINGS(new ArmorItem(ArmorMats.WATTLE, EquipmentSlot.LEGS, settingsNormal())),
     WATTLE_BOOTS(new ArmorItem(ArmorMats.WATTLE, EquipmentSlot.FEET, settingsNormal())),
 
-    QUIVER(new ArmorItem(ArmorMats.QUIVER, EquipmentSlot.CHEST, settingsNormal())),
+    //QUIVER(new ArmorItem(ArmorMats.QUIVER, EquipmentSlot.CHEST, settingsNormal())),
     LEATHER_HELMET(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.HEAD, settingsNormal())),
     LEATHER_CHESTPLATE(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.CHEST, settingsNormal())),
     LEATHER_LEGGINGS(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.LEGS, settingsNormal())),
@@ -144,13 +148,14 @@ public enum ModArmors implements ItemEnum {
     LEATHER_SHORTS(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.LEGS, settingsNormal())),
     LEATHER_SHOES(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.FEET, settingsNormal())),
 
+    BIKINI_NEUTRAL(new BrokenArmorItem(ArmorMats.BIKINI_NEUTRAL, EquipmentSlot.LEGS, settingsArtifacts())),
+    BIKINI(new BrokenArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settingsArtifacts())),
+    BIKINI_MASC(new BrokenArmorItem(ArmorMats.BIKINI_MASC, EquipmentSlot.LEGS, settingsArtifacts())),
     FUR_BOOTS(new UniqueArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
 
-    BIKINI_MASC(new BrokenArmorItem(ArmorMats.BIKINI_MASC, EquipmentSlot.LEGS, settingsArtifacts())),
-    BIKINI(new BrokenArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settingsArtifacts())),
-    BIKINI_COAT(new UniqueArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settingsArtifacts())),
-    SWIMSUIT_MASC(new UniqueArmorItem(ArmorMats.SWIMSUIT_BLACK_MASC, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
+    SWIMSUIT_NEUTRAL(new UniqueArmorItem(ArmorMats.SWIMSUIT_BLACK_NEUTRAL, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
     SWIMSUIT_FEMME(new UniqueArmorItem(ArmorMats.SWIMSUIT_BLACK_FEMME, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
+    SWIMSUIT_MASC(new UniqueArmorItem(ArmorMats.SWIMSUIT_BLACK_MASC, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
     COPPER_DIVING_HELMET(new ArmorItem(ArmorMats.COPPER_DIVING, EquipmentSlot.HEAD, settingsNormal())),
 
     DIVING_HELMET(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
