@@ -47,7 +47,7 @@ public class ModTools {
     public static final Item THROWING_ROCK = new BoneDartItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
     public static final Item ANTHROPOLOGISTS_ROCK_PICK = new AnthroPickaxeItem(new AnthroPickaxeMaterial());
     public static final Item BRASIUM_FISHING_ROD = new FishingRodItem(new Item.Settings().maxDamage(128).group(VC_TOOLS));
-    public static final Item MAKESHIFT_SPEAR = new BranchToolItem(ToolMaterials.WOOD, 4, -2.0f);
+    public static final Item MAKESHIFT_SPEAR = new BranchToolItem(ToolMaterials.WOOD, 3, -2.0f);
 
     public static final Item ANCIENT_CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.DIAMOND, new Item.Settings().group(BOOKS).rarity(Rarity.EPIC));
     public static final Item MOBLIN_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
