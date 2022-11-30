@@ -1,14 +1,12 @@
 package net.linkle.valleycraft.block;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.EntityShapeContext;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ScaffoldingItem;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
@@ -17,7 +15,7 @@ import net.minecraft.world.BlockView;
 
 import java.util.function.Predicate;
 
-public class RopeBridgeBlock extends HorizontalWithWaterBlock {
+public class RopeBridgeBlock extends HorizontalWithWaterBlock implements BridgeBlockExt {
 
     protected static final VoxelShape BASEPLATE_SHAPE_X_AXIS;
     protected static final VoxelShape BASEPLATE_SHAPE_Z_AXIS;
@@ -32,6 +30,8 @@ public class RopeBridgeBlock extends HorizontalWithWaterBlock {
 
     public RopeBridgeBlock(Settings settings) {
         super(settings);
+        ScaffoldingBlock block;
+        ScaffoldingItem item;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class RopeBridgeBlock extends HorizontalWithWaterBlock {
 
         if (context instanceof EntityShapeContext entityContext && entityContext.getEntity() instanceof LivingEntity entity) {
             Predicate<ItemStack> predicate = stack -> {
-                return stack.getItem() instanceof BlockItem blockItem && blockItem.getBlock() instanceof RopeBridgeBlock;
+                return stack.getItem() instanceof BlockItem blockItem && blockItem.getBlock() instanceof BridgeBlockExt;
             };
             if (entity.isHolding(predicate)) {
                 return SHAPE;
@@ -59,7 +59,6 @@ public class RopeBridgeBlock extends HorizontalWithWaterBlock {
             final Direction direction = state.get(FACING);
             return direction.getAxis() == Direction.Axis.X ? X_AXIS_SHAPE : Z_AXIS_SHAPE;
         }
-
         return VoxelShapes.empty();
     }
 
@@ -75,7 +74,7 @@ public class RopeBridgeBlock extends HorizontalWithWaterBlock {
         for (int i = 0; i < 4; i++) {
             var face = Direction.fromHorizontal(i);
             var state = world.getBlockState(pos.offset(face));
-            if (state.getBlock() instanceof RopeBridgeBlock) {
+            if (state.getBlock() instanceof BridgeBlockExt) {
                 if (face.getAxis() == state.get(FACING).getAxis()) {
                     return face;
                 }
@@ -93,5 +92,10 @@ public class RopeBridgeBlock extends HorizontalWithWaterBlock {
         ROPE_RIGHT_Z_SHAPE = Block.createCuboidShape(0, 0, 14.5, 16, 12, 15.5);
         X_AXIS_SHAPE = VoxelShapes.union(BASEPLATE_SHAPE_X_AXIS, ROPE_LEFT_Z_SHAPE, ROPE_RIGHT_Z_SHAPE);
         Z_AXIS_SHAPE = VoxelShapes.union(BASEPLATE_SHAPE_Z_AXIS, ROPE_LEFT_X_SHAPE, ROPE_RIGHT_X_SHAPE);
+    }
+
+    @Override
+    public boolean isAnchor() {
+        return !collidable;
     }
 }

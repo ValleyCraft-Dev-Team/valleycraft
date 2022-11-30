@@ -11,6 +11,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.data.client.BlockStateModelGenerator.TintType;
+import net.minecraft.item.Item;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 
 class ValleyModelGenerator extends FabricModelProvider {
@@ -29,6 +31,16 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerDoor(WATTLE_DOOR.block);
         generator.registerDoor(GLASS_DOOR.block);
         generator.registerDoor(TINTED_GLASS_DOOR.block);
+        generator.registerDoor(PRIMSTEEL_DOOR.block);
+        
+        // Others
+        generator.registerTrapdoor(PRIMSTEEL_TRAPDOOR.block);
+        map = textureAll(PRIMSTEEL_PLATE_BLOCK);
+        pressurePlate(PRIMSTEEL_PRESSURE_PLATE.block, map, generator);
+        map = textureAll("shale_top");
+        pressurePlate(SHALE_PRESSURE_PLATE.block, map, generator);
+        map = textureAll(IdProvider.of(new Identifier("deepslate_top")));
+        pressurePlate(DEEPSLATE_PRESSURE_PLATE.block, map, generator);
         
         // Mamon
         map = textureAll(MAMON_PLANKS);
@@ -245,5 +257,23 @@ class ValleyModelGenerator extends FabricModelProvider {
         Identifier identifier = Models.PRESSURE_PLATE_UP.upload(pressurePlate, texture, generator.modelCollector);
         Identifier identifier2 = Models.PRESSURE_PLATE_DOWN.upload(pressurePlate, texture, generator.modelCollector);
         generator.blockStateCollector.accept(BlockStateModelGenerator.createPressurePlateBlockState(pressurePlate, identifier, identifier2));
+    }
+    
+    /** 
+     * Datagens the blockstate, block model and item model .jsons needed for a pane block. But without generating the glass block
+     * @param pressurePlate The normal pressure plate block. Find this in ModBlocks or a similar block-initializing class.
+     * @param texture The TextureMap for the given block type. Uses TEXTURE texture key.
+     * @param generator Just type `generator` for this.
+     */
+    public final void registerGlassPane(Identifier id, Block glassPane, BlockStateModelGenerator generator) {
+        TextureMap textureMap = new TextureMap().put(TextureKey.PANE, id).put(TextureKey.EDGE, new Identifier(id.getNamespace(), "block/" + id.getPath() + "_top"));;
+        Identifier identifier = Models.TEMPLATE_GLASS_PANE_POST.upload(glassPane, textureMap, generator.modelCollector);
+        Identifier identifier2 = Models.TEMPLATE_GLASS_PANE_SIDE.upload(glassPane, textureMap, generator.modelCollector);
+        Identifier identifier3 = Models.TEMPLATE_GLASS_PANE_SIDE_ALT.upload(glassPane, textureMap, generator.modelCollector);
+        Identifier identifier4 = Models.TEMPLATE_GLASS_PANE_NOSIDE.upload(glassPane, textureMap, generator.modelCollector);
+        Identifier identifier5 = Models.TEMPLATE_GLASS_PANE_NOSIDE_ALT.upload(glassPane, textureMap, generator.modelCollector);
+        Item item = glassPane.asItem();
+        Models.GENERATED.upload(ModelIds.getItemModelId(item), TextureMap.layer0(id), generator.modelCollector);
+        generator.blockStateCollector.accept(MultipartBlockStateSupplier.create(glassPane).with(BlockStateVariant.create().put(VariantSettings.MODEL, identifier)).with((When)When.create().set(Properties.NORTH, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier2)).with((When)When.create().set(Properties.EAST, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier2).put(VariantSettings.Y, VariantSettings.Rotation.R90)).with((When)When.create().set(Properties.SOUTH, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier3)).with((When)When.create().set(Properties.WEST, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier3).put(VariantSettings.Y, VariantSettings.Rotation.R90)).with((When)When.create().set(Properties.NORTH, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier4)).with((When)When.create().set(Properties.EAST, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier5)).with((When)When.create().set(Properties.SOUTH, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier5).put(VariantSettings.Y, VariantSettings.Rotation.R90)).with((When)When.create().set(Properties.WEST, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier4).put(VariantSettings.Y, VariantSettings.Rotation.R270)));
     }
 }
