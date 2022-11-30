@@ -94,8 +94,8 @@ public enum ModItems implements ItemEnum {
     AGITATOR(new Item(itemSettings().rarity(Rarity.RARE))),
     THERMAL_BLAZE_CORE(new Item(itemSettings().rarity(Rarity.RARE))),
     STRANGE_CATALYST(new Item(itemSettings().rarity(RARE))),
-    SHATTERED_EYE_OF_ENDER(new Item(itemSettings().rarity(EPIC))),
-    EYE_OF_RETURN(new ReturnItem(itemSettings().rarity(UNCOMMON).maxCount(16))),
+    //SHATTERED_EYE_OF_ENDER(new Item(itemSettings().rarity(EPIC))),
+    //EYE_OF_RETURN(new ReturnItem(itemSettings().rarity(UNCOMMON).maxCount(16))),
 
     DOG_BISCUIT(new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true)),
     //SALVE(new SalveItem(itemSettings().group(VC_TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION)),
