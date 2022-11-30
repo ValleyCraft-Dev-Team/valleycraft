@@ -1,13 +1,29 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:moblin_talisman",
-    "valleycraft:emerald_talisman",
+    "valleycraft:iron_necklace",
+    "valleycraft:amber_talisman",
     "valleycraft:amethyst_talisman",
-    "valleycraft:ender_dragon_talisman",
+    "valleycraft:diamond_talisman",
+    "valleycraft:emerald_talisman",
+    "valleycraft:ender_pearl_talisman",
+    "valleycraft:nether_quartz_talisman",
+    "valleycraft:prismarine_talisman",
+
+    "valleycraft:leather_necklace",
     "valleycraft:echo_shard_talisman",
-    "valleycraft:moblin_talisman",
     "valleycraft:fishing_hook_talisman",
-    "valleycraft:stray_talisman"
+    "valleycraft:guardian_spike_necklace",
+    "valleycraft:scute_necklace",
+    "valleycraft:seaologer_rune_necklace",
+
+    "valleycraft:elder_guardian_spike_necklace",
+    "valleycraft:ender_dragon_talisman",
+    "valleycraft:brimstone_necklace",
+
+    "valleycraft:moblin_talisman",
+    "valleycraft:stray_talisman",
+    "valleycraft:piglin_necklace",
+    "valleycraft:arrowhead_talisman"
   ]
 }

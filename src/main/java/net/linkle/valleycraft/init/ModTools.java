@@ -47,6 +47,7 @@ public class ModTools {
     public static final Item THROWING_ROCK = new BoneDartItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
     public static final Item ANTHROPOLOGISTS_ROCK_PICK = new AnthroPickaxeItem(new AnthroPickaxeMaterial());
     public static final Item BRASIUM_FISHING_ROD = new FishingRodItem(new Item.Settings().maxDamage(128).group(VC_TOOLS));
+    public static final Item MAKESHIFT_SPEAR = new BranchToolItem(ToolMaterials.WOOD, 4, -2.0f);
 
     public static final Item ANCIENT_CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.DIAMOND, new Item.Settings().group(BOOKS).rarity(Rarity.EPIC));
     public static final Item MOBLIN_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
@@ -109,6 +110,7 @@ public class ModTools {
         Reg.register("sharp_flint", FLINT);
         Reg.register("hefty_rock", HEFTY_ROCK);
         Reg.register("throwing_rock", THROWING_ROCK);
+        Reg.register("makeshift_spear", MAKESHIFT_SPEAR);
 
         //Brasium Tools
         Reg.register("climbing_axe", CLIMBING_AXE);
@@ -240,7 +242,8 @@ public class ModTools {
         //Reg.register("ancient_gear_mace", new MaceBase(ModToolMaterials.COPPER, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS));
         Reg.register("knife_coral_encrusted", CORAL_KNIFE);
         Reg.register("rapier_cave_fishers", CAVE_FISHERS_RAPIER);
-        //Reg.register("prismace", new MaceBase(ModToolMaterials.PRISMARINE, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
+        Reg.register("prismace", new MaceBase(ModToolMaterials.PRISMARINE, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
+        Reg.register("prismarine_hoe", new ShovelItem(ModToolMaterials.PRISMARINE, HOE_BASE_DAMAGE, HOE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("toy_sword", new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("moblin_sword_broken", MOBLIN_BROKEN);
         Reg.register("moblin_sword_fixed", new TravelerBaseFixed(ToolMaterials.IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));

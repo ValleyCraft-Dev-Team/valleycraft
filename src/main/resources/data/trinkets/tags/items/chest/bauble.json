@@ -3,6 +3,7 @@
   "values": [
     "valleycraft:totem_of_friendship_bracelet",
     "valleycraft:totem_of_undying_bracelet",
+    "valleycraft:totem_of_visitors_bracelet",
     "valleycraft:runekeepers_tome",
     "valleycraft:strange_doll",
     "valleycraft:piglin_childs_toy",
@@ -10,6 +11,8 @@
     "valleycraft:monster_tooth",
     "valleycraft:ravager_golem_tusk",
     "valleycraft:warden_antler",
-    "valleycraft:totem_of_visitors_bracelet"
+    "valleycraft:red_scale",
+    "valleycraft:green_scale",
+    "valleycraft:blue_scale"
   ]
 }
