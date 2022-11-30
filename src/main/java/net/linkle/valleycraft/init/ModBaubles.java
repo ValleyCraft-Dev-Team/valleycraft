@@ -1,10 +1,7 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.baubles.BaubleItem;
-import net.linkle.valleycraft.baubles.LovePotionBauble;
-import net.linkle.valleycraft.baubles.TalismanItem;
-import net.linkle.valleycraft.baubles.UniqueTalismanItem;
+import net.linkle.valleycraft.baubles.*;
 import net.linkle.valleycraft.block.TranslationCanvasBlock;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.block.Block;
@@ -25,21 +22,25 @@ public enum ModBaubles implements ItemEnum {
     //and use that for the individual bauble.
 
     //baubles
-    TOTEM_OF_UNDYING_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
-    TOTEM_OF_VISITORS_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
-    TOTEM_OF_FRIENDSHIP_BRACELET(new BaubleItem(itemSettings().rarity(EPIC))),
-    //POLISHED_GEAR(new BaubleItem(itemSettings().rarity(RARE))),
-    //SHARD_OF_THE_FIRST_GOLEM(new BaubleItem(itemSettings().rarity(EPIC))),
-    STRANGE_DOLL(new BaubleItem(itemSettings().rarity(EPIC))),
-    PIGLIN_CHILDS_TOY(new BaubleItem(itemSettings().rarity(UNCOMMON))),
-    LUCKY_FISHING_HOOK(new BaubleItem(itemSettings().rarity(RARE))),
-    MONSTER_TOOTH(new BaubleItem(itemSettings().rarity(UNCOMMON))),
-    //LOVE_POTION(new LovePotionBauble(itemSettings().rarity(RARE))),
+    PIGLIN_CHILDS_TOY(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
+    MONSTER_TOOTH(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
+    POLISHED_GLOWSTONE_CHUNK(new BaubleItem(itemSettings().rarity(UNCOMMON))),
+    ANCIENT_DUNGEON_KEY(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
+    STRANGE_RUNE(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
+    DIVINE_ACORN(new BaubleItem(itemSettings().rarity(UNCOMMON))),
+    GHAST_TEARS(new UniqueBaubleItem(itemSettings().rarity(RARE))),
+
+    LUCKY_FISHING_HOOK(new UniqueBaubleItem(itemSettings().rarity(RARE))),
     RAVAGER_GOLEM_TUSK(new BaubleItem(itemSettings().rarity(RARE))),
-    WARDEN_ANTLER(new BaubleItem(itemSettings().rarity(EPIC))),
     GREEN_SCALE(new BaubleItem(itemSettings().rarity(RARE))),
     RED_SCALE(new BaubleItem(itemSettings().rarity(RARE))),
-    BLUE_SCALE(new BaubleItem(itemSettings().rarity(EPIC))),
+    BLUE_SCALE(new BaubleItem(itemSettings().rarity(RARE))),
+    BLACK_SCALE(new BaubleItem(itemSettings().rarity(EPIC))),
+    TOTEM_OF_VISITORS_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
+    TOTEM_OF_UNDYING_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
+    TOTEM_OF_FRIENDSHIP_BRACELET(new BaubleItem(itemSettings().rarity(EPIC))),
+    WARDEN_ANTLER(new BaubleItem(itemSettings().rarity(EPIC))),
+    STRANGE_DOLL(new UniqueBaubleItem(itemSettings().rarity(EPIC))),
 
     //necklaces
     //prismarine/iron base

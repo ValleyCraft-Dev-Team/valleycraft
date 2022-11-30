@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "valleycraft:item/tools/mob_unique_weapons/prismarine_hoe"
+    "layer0": "valleycraft:item/tools/mob_unique_weapons/drowned/prismarine_hoe"
   }
 }

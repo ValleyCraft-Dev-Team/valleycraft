@@ -117,8 +117,9 @@ public enum ModItems implements ItemEnum {
     TOTEM_OF_FRIENDSHIP(new Item(itemSettings().group(VC_ITEMS).rarity(EPIC))),
     BOMB_BAG(new BombBagItem(itemSettings().group(VC_ITEMS))),
     ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_ITEMS))),
+    SEED_BAG(new SeedBagItem(itemSettings().group(VC_ITEMS))),
 
-    // record items
+    //record items
     ANCIENT_RECORD_FRAGMENT(new ModDiscFragmentItem(itemSettings().group(BOOKS))),
     ANCIENT_RECORD_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.ANCIENT.sound, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),110)),
 

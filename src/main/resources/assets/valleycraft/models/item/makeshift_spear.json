@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "valleycraft:item/tools/environmental_unique_weapons/makeshift_spear"
+    "layer0": "valleycraft:item/tools/environment_unique_weapons/makeshift_spear"
   }
 }

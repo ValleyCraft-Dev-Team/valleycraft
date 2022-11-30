@@ -52,6 +52,7 @@ public enum ModArmors implements ItemEnum {
     //PIGLIN_TUNIC(new ArmorItem(PiglinMaterial.INSTANCE, EquipmentSlot.CHEST, settingsNormal())),
     BRUTE_SKIRT(new UniqueArmorItem(ArmorMats.BRUTE, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
 
+    BLACK_FEATHERED_HAT(new UniqueArmorItem(ArmorMats.BLACK_FEATHERED_HAT, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
     SCALE_MAIL_HELMET(new UniqueArmorItem(ArmorMats.SCALE, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
     SCALE_MAIL(new UniqueArmorItem(ArmorMats.SCALE, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
     SCALE_MAIL_SKIRT(new UniqueArmorItem(ArmorMats.SCALE, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),

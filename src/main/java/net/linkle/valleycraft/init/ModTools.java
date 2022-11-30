@@ -252,6 +252,7 @@ public class ModTools {
         Reg.register("seaologer_fixed", SEAOLOGER_FIXED);
         Reg.register("ancient_climbing_axe", ANCIENT_CLIMBING_AXE);
         Reg.register("ancient_shortsword", new TravelerBase(ModToolMaterials.WEAK_IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
+        Reg.register("bone_cudgel", new WoodcutterAxeBase(ModToolMaterials.BONE, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
 
         //Reg.register("twinblade", new SpearBase(ModToolMaterials.GOLEMITE, SPEAR_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
         //Reg.register("piglin_battle_hammer", new WoodcutterAxeBase(ModToolMaterials.GOLEMITE, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_EPIC));

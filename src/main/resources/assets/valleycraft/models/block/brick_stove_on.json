@@ -4,6 +4,6 @@
     "top": "valleycraft:block/brick_stove_top_on",
     "bottom": "valleycraft:block/brick_stove_side",
     "side": "valleycraft:block/brick_stove_side",
-    "front": "valleycraft:block/brick_stove_front"
+    "front": "valleycraft:block/brick_stove_front_on"
   }
 }

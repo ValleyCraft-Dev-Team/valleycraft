@@ -61,6 +61,10 @@ public enum ModToolMaterials implements ToolMaterial {
         return Ingredient.ofItems(new ItemConvertible[]{Items.IRON_INGOT});
     }),
 
+    BONE(2, 250, 6.0F, 2.0F, 18, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Items.BONE});
+    }),
+
     AMETHYST(2, 190, 5.0F, 1.5F, 18, () -> {
         return Ingredient.ofItems(Items.AMETHYST_SHARD);
     });
