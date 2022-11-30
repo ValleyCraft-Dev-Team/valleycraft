@@ -31,7 +31,7 @@ public class ModBlockEntityType {
         CRATE = create("crate", CrateBlockEntity::new, ModBlocks.CRATE);
         COUNTER = create("counter", CounterBlockEntity::new, ModBlocks.COUNTER);
         CABINET = create("cabinet", CabinetBlockEntity::new, ModBlocks.CABINET);
-        STOVE = create("stove", StoveBlockEntity::new, ModBlocks.STOVE);
+        STOVE = create("stove", StoveBlockEntity::new, ModBlocks.STOVE, ModBlocks.BRICK_STOVE);
         WAYPOINT_ENTITY = create("waypoint", WaypointBlockEntity::new, ModBlocks.WAYPOINT);
     }
     

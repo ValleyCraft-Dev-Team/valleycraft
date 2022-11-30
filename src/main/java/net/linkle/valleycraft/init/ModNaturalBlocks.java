@@ -311,7 +311,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
         Registry.register(Registry.BLOCK, id = id(), block);
     }
     
-    /** Register the block without the item. */
+    /** Register the block with the item. */
     ModNaturalBlocks(Block block, Item.Settings settings) {
         this(block, settings, BlockItem::new);
     }

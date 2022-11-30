@@ -12,10 +12,12 @@ import org.jetbrains.annotations.Nullable;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.block.*;
+import net.linkle.valleycraft.item.BridgeItem;
 import net.linkle.valleycraft.util.BlockEnum;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.block.*;
 import net.minecraft.block.Oxidizable.OxidationLevel;
+import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.BlockItem;
@@ -78,8 +80,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     NET(new NetBlock(), itemSettings()),
     NET_BLOCK(new GrateBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
 
-    ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1).noCollision()), itemSettings()),
-    ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1)), itemSettings()),
+    ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1).noCollision()), itemSettings(), BridgeItem::new),
+    ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1)), itemSettings(), BridgeItem::new),
     SPIKE_TRAP(new SpikeTrapBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).nonOpaque().strength(0.5f, 1.0f)), itemSettings()),
 
     // guidestones
@@ -153,7 +155,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SHALE_PET_GRAVESTONE_ROSE(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
     SHALE_PET_GRAVESTONE_TEXT(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
     
-    // candelabra
+    // candelabras
     SMALL_CANDELABRA(new OxidizableSmallCandelabraBlock(OxidationLevel.UNAFFECTED), itemSettings()),
     SMALL_CANDELABRA_EXPOSED(new OxidizableSmallCandelabraBlock(OxidationLevel.EXPOSED), itemSettings()),
     SMALL_CANDELABRA_WEATHERED(new OxidizableSmallCandelabraBlock(OxidationLevel.WEATHERED), itemSettings()),
@@ -338,12 +340,18 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     PRIMSTEEL_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
     PRIMSTEEL_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     PRIMSTEEL_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
+    PRIMSTEEL_DOOR(new DoorBlock(Block.Settings.copy(Blocks.IRON_DOOR)), itemSettings()),
+    PRIMSTEEL_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.IRON_TRAPDOOR)), itemSettings()),
+    PRIMSTEEL_PRESSURE_PLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)), itemSettings()),
 
     IRON_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     IRON_CUT_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     IRON_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     IRON_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     IRON_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
+    
+    DEEPSLATE_PRESSURE_PLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(Blocks.STONE_PRESSURE_PLATE)), itemSettings()),
+    SHALE_PRESSURE_PLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(Blocks.STONE_PRESSURE_PLATE).strength(0.2f)), itemSettings()),
 
     //GOLDEN_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     //GOLDEN_GRATE(new GrateBlock(Block.Settings.copy(Blocks.GOLD_BLOCK).nonOpaque()), itemSettings()),
@@ -389,6 +397,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POLISHED_SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
     SHALE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
     SHALE_RUNE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_PERSUREPLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE))),
 
     //marble
     POLISHED_MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
@@ -624,7 +633,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
         Registry.register(Registry.BLOCK, id = id(), block);
     }
     
-    /** Register the block without the item. */
+    /** Register the block with the item. */
     ModBlocks(Block block, Item.Settings settings) {
         this(block, settings, BlockItem::new);
     }
