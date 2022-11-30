@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/food/raw_ingredients/corn_flour"
+    "layer0": "valleycraft:item/food/raw_ingredients/maize_flour"
   }
 }

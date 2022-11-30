@@ -62,7 +62,7 @@ public enum ModBaubles implements ItemEnum {
     SEAOLOGER_RUNE_NECKLACE(new TalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
 
     //boss
-    ELDER_GUARDIAN_SPIKE_NECKLACE(new TalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
+    ELDER_GUARDIAN_SPIKE_KEEPSAKE(new TalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
     ENDER_DRAGON_TALISMAN(new TalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
     BRIMSTONE_NECKLACE(new UniqueTalismanItem(itemSettings().rarity(EPIC).group(BOOKS).maxCount(1))),
 

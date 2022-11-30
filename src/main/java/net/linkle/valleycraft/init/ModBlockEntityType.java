@@ -32,13 +32,13 @@ public class ModBlockEntityType {
         COUNTER = create("counter", CounterBlockEntity::new, ModBlocks.COUNTER);
         CABINET = create("cabinet", CabinetBlockEntity::new, ModBlocks.CABINET);
         STOVE = create("stove", StoveBlockEntity::new, ModBlocks.STOVE, ModBlocks.BRICK_STOVE);
-        WAYPOINT_ENTITY = create("waypoint", WaypointBlockEntity::new, ModBlocks.WAYPOINT);
+        //WAYPOINT_ENTITY = create("waypoint", WaypointBlockEntity::new, ModBlocks.WAYPOINT);
     }
     
     @Environment(EnvType.CLIENT)
     public static void initializeClient() {
         BlockEntityRendererRegistry.register(WISP_LANTERN, WispLanternRenderer::new);
-        BlockEntityRendererRegistry.register(WAYPOINT_ENTITY, WaypointRenderer::new);
+        //BlockEntityRendererRegistry.register(WAYPOINT_ENTITY, WaypointRenderer::new);
     }
     
     /** Create block entity */

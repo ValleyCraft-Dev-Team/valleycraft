@@ -24,7 +24,7 @@ public enum ArmorMats implements ArmorMaterial {
     BIKINI_NEUTRAL_REPAIRED("neutral_bikini_repaired", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI_COAT("wretch", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI_MASC("bikini_masc", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
-    SWIMSUIT_BLACK_NEUTRAL("bikini_swimsuit_neutral", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    SWIMSUIT_BLACK_NEUTRAL("neutral_bikini_swimsuit", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     SWIMSUIT_BLACK_FEMME("bikini_swimsuit", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     SWIMSUIT_BLACK_MASC("bikini_swimsuit_masc", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI_MASC_REPAIRED("bikini_masc_repaired", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
