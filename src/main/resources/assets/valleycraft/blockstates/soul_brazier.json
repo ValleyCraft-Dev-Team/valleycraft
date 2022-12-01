@@ -1,0 +1,10 @@
+{
+  "variants": {
+	"lit=true": {
+	  "model": "valleycraft:block/brazier_soul"
+	},
+	"lit=false": {
+	  "model": "valleycraft:block/brazier_soul_off"
+	}
+  }
+}

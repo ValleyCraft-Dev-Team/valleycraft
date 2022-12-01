@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_post",
+  "textures": {
+    "edge": "valleycraft:block/acacia_lattice_top",
+    "pane": "valleycraft:block/acacia_lattice"
+  }
+}
