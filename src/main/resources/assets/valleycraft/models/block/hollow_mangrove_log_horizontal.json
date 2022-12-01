@@ -1,0 +1,8 @@
+{
+  "parent": "valleycraft:block/hollow_log_horizontal",
+  "textures": {
+    "#texture_log_top": "minecraft:block/mangrove_log_top",
+    "#texture_log": "minecraft:block/mangrove_log",
+    "#texture_stripped_log": "minecraft:block/stripped_mangrove_log"
+  }
+}

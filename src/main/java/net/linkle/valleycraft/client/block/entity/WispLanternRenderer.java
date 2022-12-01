@@ -20,7 +20,8 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
     public static final SpriteIdentifier VEX_TEXTURE  = Sprites.create("entity/sprites/vex_jar");
     public static final SpriteIdentifier VEX_QUEEN_TEXTURE  = Sprites.create("entity/sprites/vex_queen_jar");
     public static final SpriteIdentifier ALLAY_TEXTURE = Sprites.create("entity/sprites/allay_jar");
-    
+    public static final SpriteIdentifier WISP_TEXTURE  = Sprites.create("entity/sprites/wisp_jar");
+
     private final BillboardRenderer billboard = new BillboardRenderer();
 
     public WispLanternRenderer(Context context) {
@@ -44,7 +45,9 @@ public class WispLanternRenderer implements BlockEntityRenderer<WispLanternBlock
         if (entity.getCachedState().isOf(ModBlocks.VEX_QUEEN_LANTERN.block)) {
             texture = VEX_QUEEN_TEXTURE;
         }
-        
+        if (entity.getCachedState().isOf(ModBlocks.WISP_LANTERN.block)) {
+            texture = WISP_TEXTURE;
+        }
         // Parameters
         double bobblingSpeed = 0.095;
         float bobblingStrength = 0.025f;

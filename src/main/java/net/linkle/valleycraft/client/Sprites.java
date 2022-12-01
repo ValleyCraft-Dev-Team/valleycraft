@@ -26,7 +26,7 @@ public class Sprites {
 
     static void intialize() {
         ClientSpriteRegistryCallback.event(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE).register((atlas, registry) -> TEXS.forEach(registry::register));
-
+        register(WispLanternRenderer.WISP_TEXTURE);
         register(WispLanternRenderer.VEX_TEXTURE);
         register(WispLanternRenderer.VEX_QUEEN_TEXTURE);
         register(WispLanternRenderer.ALLAY_TEXTURE);

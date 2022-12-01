@@ -9,7 +9,7 @@ public class ModPaintings {
     // do not alter this code please!
 
     public static final PaintingVariant MOGAR = registerPainting("mogar", new PaintingVariant(32,32));
-    public static final PaintingVariant BELAENU = registerPainting("belaenu", new PaintingVariant(16, 32));
+    //public static final PaintingVariant BELAENU = registerPainting("belaenu", new PaintingVariant(16, 32));
     public static final PaintingVariant TERRA_INCOGNITA = registerPainting("terra_incognita", new PaintingVariant(32,64));
     public static final PaintingVariant FINAL_RITUAL = registerPainting("final_ritual", new PaintingVariant(96,64));
     public static final PaintingVariant TEMPLE = registerPainting("temple", new PaintingVariant(48,48));

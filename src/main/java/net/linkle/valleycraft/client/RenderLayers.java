@@ -215,6 +215,7 @@ class RenderLayers {
         put(ARID_VINES_PLANT, cullout);
         put(MIMIC_FLOWER, cullout);
         put(BRIMSTONE_LANTERN, cullout);
+        put(WISP_LANTERN, cullout);
 
         put(ANCIENT_WAGON_WHEEL, cullout);
         put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);
@@ -278,12 +279,23 @@ class RenderLayers {
         put(OCELOT_STATUE, cullout);
         put(SPIKE_TRAP, cullout);
 
+        put(HOLLOW_ACACIA_LOG, cullout);
+        put(HOLLOW_APPLE_LOG, cullout);
+        put(HOLLOW_BIRCH_LOG, cullout);
+        put(HOLLOW_DARK_OAK_LOG, cullout);
+        put(HOLLOW_JUNGLE_LOG, cullout);
+        put(HOLLOW_MAMON_LOG, cullout);
+        put(HOLLOW_MANGROVE_LOG, cullout);
+        put(HOLLOW_OAK_LOG, cullout);
+        put(HOLLOW_SPRUCE_LOG, cullout);
+
         put(TRANSLATION_CANVAS, cullout);
         put(GLOW_CAP_CLUSTER, cullout);
         put(JUNGLE_CAP_CLUSTER, cullout);
         put(BURNT_OUT_TORCH, cullout);
         put(BURNT_OUT_CANDLE, cullout);
         put(SKELETAL_REMAINS, cullout);
+        put(SKELETAL_BEST_FRIEND_REMAINS, cullout);
         put(VILLAGER_SKELETAL_REMAINS, cullout);
         put(PIGLIN_SKELETAL_REMAINS, cullout);
         put(DAERDRI_SKULL, cullout);

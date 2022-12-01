@@ -43,11 +43,9 @@ public class ModTools {
     public static final Item HEFTY_ROCK = new RockToolItem(new RockToolMaterial());
     public static final Item RUSTY_SWORD = new RustySwordItem(new RustySwordMaterial(),4, -2.4f);
     public static final Item RUSTY_PICKAXE = new RustyPickaxeItem(new RustyPickaxeMaterial(),3, -2.8f);
-    //public static final Item OAR = new OarItem(new OarToolMaterial(),3, -2.8f);
     public static final Item LADLE = new LadleItem(new OarToolMaterial(),2, -2.5f);
     public static final Item THROWING_ROCK = new BoneDartItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
     public static final Item ANTHROPOLOGISTS_ROCK_PICK = new AnthroPickaxeItem(new AnthroPickaxeMaterial());
-    public static final Item BRASIUM_FISHING_ROD = new FishingRodItem(new Item.Settings().maxDamage(128).group(VC_TOOLS));
     public static final Item MAKESHIFT_SPEAR = new BranchToolItem(ToolMaterials.WOOD, 3, -2.0f);
 
     public static final Item ANCIENT_CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.DIAMOND, new Item.Settings().group(BOOKS).rarity(Rarity.EPIC));
@@ -117,7 +115,6 @@ public class ModTools {
         Reg.register("climbing_axe", CLIMBING_AXE);
         Reg.register("anthropologists_rock_pick", ANTHROPOLOGISTS_ROCK_PICK);
         Reg.register("ice_tongs", new PickaxeItem(ModToolMaterials.BRASIUM, PICKAXE_BASE_DAMAGE, PICKAXE_BASE_SPEED, BASIC_SETTINGS));
-        Reg.register("brasium_fishing_rod", BRASIUM_FISHING_ROD);
 
         //Staffs
         Reg.register("wooden_staff", new StaffBase(ModToolMaterials.PLANK, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
