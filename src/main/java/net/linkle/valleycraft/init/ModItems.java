@@ -38,7 +38,7 @@ public enum ModItems implements ItemEnum {
     CAVE_ROOT_SEEDS(new AliasedBlockItem(ModNaturalBlocks.CAVE_ROOT_CROP.block, itemSettings())),
     ANCIENT_FLOWER_SEEDS(new AliasedBlockItem(ModNaturalBlocks.ANCIENT_FLOWERS.block, itemSettings().rarity(Rarity.RARE))),
     AMETHYSTLE_SEEDS(new AliasedBlockItem(ModNaturalBlocks.AMETHYSTLES.block, itemSettings())),
-    GHOST_PUMPKIN_SEEDS(new AliasedBlockItem(ModNaturalBlocks.GHOST_PUMPKIN_STEM.block, itemSettings())),
+    //GHOST_PUMPKIN_SEEDS(new AliasedBlockItem(ModNaturalBlocks.GHOST_PUMPKIN_STEM.block, itemSettings())),
 
     FIBER(new Item(itemSettings())),
     DRIED_FIBER(new Item(itemSettings())),
@@ -47,25 +47,27 @@ public enum ModItems implements ItemEnum {
     DAUB(new Item(itemSettings())),
     PLANK(new Item(itemSettings())),
     SALT(new Item(itemSettings().group(INGREDIENTS))),
+
+    FUR_CLUMP(new Item(itemSettings())),
+    SHEEP_HIDE(new Item(itemSettings())),
+    PIG_HIDE(new Item(itemSettings())),
     MONSTER_CLAW(new Item(itemSettings())),
     //SPIDER_SILK(new Item(itemSettings().rarity(UNCOMMON))),
     BEAST_BONE(new Item(itemSettings())),
     BONEFIN(new Item(itemSettings())),
-    SHEEP_HIDE(new Item(itemSettings())),
-    PIG_HIDE(new Item(itemSettings())),
-    TREATED_LEATHER(new Item(itemSettings())),
-    LEATHER_STRAP(new Item(itemSettings())),
+    SEAGULLS_FEATHER(new Item(itemSettings())),
+    DUCKS_FEATHER(new Item(itemSettings())),
+    CROWS_FEATHER(new Item(itemSettings())),
 
     MULCH(new Item(itemSettings())),
     //RAW_CLAY_POT(new Item(itemSettings())),
     HANDLE(new Item(itemSettings())),
     STURDY_HANDLE(new Item(itemSettings())),
     REINFORCED_HANDLE(new Item(itemSettings())),
+    TREATED_LEATHER(new Item(itemSettings())),
+    LEATHER_STRAP(new Item(itemSettings())),
     CLOTH(new Item(itemSettings())),
     BOOK_COVER(new Item(itemSettings())),
-    SEAGULLS_FEATHER(new Item(itemSettings())),
-    DUCKS_FEATHER(new Item(itemSettings())),
-    CROWS_FEATHER(new Item(itemSettings())),
     INK_BOTTLE(new Tier0Bottle(itemSettings().maxCount(16), 0, 0.0f, StatusEffects.NAUSEA).hideTooltip()),
     QUILL(new Item(itemSettings())),
     RUNE_ETCHING_BLADE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
@@ -105,10 +107,10 @@ public enum ModItems implements ItemEnum {
     SOUL_ITEM_FADING(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof())),
     SOUL_ITEM(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof())),
     SOUL_ITEM_ENRAGED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof())),
-    SOUL_ITEM_PET(new SoulPetItem(itemSettings().group(BOOKS).fireproof())),
-    SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
-    SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
-    SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    SOUL_ITEM_PET(new SoulPetItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    SOUL_ITEM_WARDEN(new SoulItem(itemSettings().group(BOOKS).fireproof())),
+    SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().group(BOOKS).fireproof())),
+    SOUL_ITEM_DRAGON(new SoulItem(itemSettings().group(BOOKS).fireproof())),
 
     SEAOLOGER_TOKEN(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
     TOTEM_OF_TRADE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),
@@ -151,7 +153,11 @@ public enum ModItems implements ItemEnum {
     private static Item.Settings itemSettings() {
         return new Item.Settings().group(VC_ITEMS);
     }
-    
+
+    private static Item.Settings unlistedWIPItemSettings() {
+        return new Item.Settings();
+    }
+
     // ### The Enum Class Itself ###
     
     public final Item item;

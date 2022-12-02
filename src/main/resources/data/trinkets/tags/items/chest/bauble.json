@@ -19,6 +19,9 @@
     "valleycraft:divine_acorn",
     "valleycraft:polished_glowstone_chunk",
     "valleycraft:black_scale",
-    "valleycraft:strange_rune"
+    "valleycraft:strange_rune",
+    "minecraft:clock",
+    "minecraft:compass",
+    "minecraft:recovery_compass"
   ]
 }
