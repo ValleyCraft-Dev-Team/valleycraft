@@ -6,9 +6,9 @@ import static net.linkle.valleycraft.init.ModNaturalBlocks.*;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.util.BlockEnum;
 import net.linkle.valleycraft.util.IdProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.data.client.BlockStateModelGenerator.TintType;
 import net.minecraft.item.Item;
@@ -72,16 +72,30 @@ class ValleyModelGenerator extends FabricModelProvider {
         fenceGate(APPLE_FENCE_GATE.block, textureAll("apple_fence_planks"), generator);
         pressurePlate(APPLE_PRESSURE_PLATE.block, map, generator);
         
+        // Lattices
+        lattice(OAK_LATTICE, generator);
+        lattice(APPLE_LATTICE, generator);
+        lattice(ACACIA_LATTICE, generator);
+        lattice(BIRCH_LATTICE, generator);
+        lattice(DARK_OAK_LATTICE, generator);
+        lattice(CRIMSON_LATTICE, generator);
+        lattice(JUNGLE_LATTICE, generator);
+        lattice(MANGROVE_LATTICE, generator);
+        lattice(SPRUCE_LATTICE, generator);
+        lattice(WARPED_LATTICE, generator);
+        lattice(WATTLE_LATTICE, generator);
+        lattice(AMBERBLOSSOM_LATTICE, generator);
+        
         // Tall plants
         generator.registerDoubleBlock(CATTAILS.block, TintType.NOT_TINTED);
         
         // Glass pane
+        registerGlassPane(new Identifier("block/tinted_glass"), TINTED_GLASS_PANE.block, generator);
         generator.registerGlassPane(TERRARIUM_GLASS.block, TERRARIUM_GLASS_PANE.block);
         generator.registerGlassPane(BRIMSTONE_GLASS.block, BRIMSTONE_GLASS_PANE.block);
         generator.registerGlassPane(BEVELED_GLASS.block, BEVELED_GLASS_PANE.block);
         generator.registerGlassPane(BEVELED_BRIMSTONE_GLASS.block, BEVELED_BRIMSTONE_GLASS_PANE.block);
         generator.registerGlassPane(BEVELED_TINTED_GLASS.block, BEVELED_TINTED_GLASS_PANE.block);
-        generator.registerGlassPane(Blocks.TINTED_GLASS, TINTED_GLASS_PANE.block);
         generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS.block, BLOCK_WATTLE_AND_GLASS_PANE.block);
         generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS_CROSS.block, BLOCK_WATTLE_AND_GLASS_CROSS_PANE.block);
         generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS_PLUS.block, BLOCK_WATTLE_AND_GLASS_PLUS_PANE.block);
@@ -159,7 +173,7 @@ class ValleyModelGenerator extends FabricModelProvider {
     }
     
     TextureMap textureAll(String texture) {
-        return textureAll(()->Main.makeId(texture));
+        return textureAll(IdProvider.of(Main.makeId(texture)));
     }
 
     /**
@@ -265,7 +279,7 @@ class ValleyModelGenerator extends FabricModelProvider {
      * @param texture The TextureMap for the given block type. Uses TEXTURE texture key.
      * @param generator Just type `generator` for this.
      */
-    public final void registerGlassPane(Identifier id, Block glassPane, BlockStateModelGenerator generator) {
+    void registerGlassPane(Identifier id, Block glassPane, BlockStateModelGenerator generator) {
         TextureMap textureMap = new TextureMap().put(TextureKey.PANE, id).put(TextureKey.EDGE, new Identifier(id.getNamespace(), "block/" + id.getPath() + "_top"));;
         Identifier identifier = Models.TEMPLATE_GLASS_PANE_POST.upload(glassPane, textureMap, generator.modelCollector);
         Identifier identifier2 = Models.TEMPLATE_GLASS_PANE_SIDE.upload(glassPane, textureMap, generator.modelCollector);
@@ -275,5 +289,18 @@ class ValleyModelGenerator extends FabricModelProvider {
         Item item = glassPane.asItem();
         Models.GENERATED.upload(ModelIds.getItemModelId(item), TextureMap.layer0(id), generator.modelCollector);
         generator.blockStateCollector.accept(MultipartBlockStateSupplier.create(glassPane).with(BlockStateVariant.create().put(VariantSettings.MODEL, identifier)).with((When)When.create().set(Properties.NORTH, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier2)).with((When)When.create().set(Properties.EAST, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier2).put(VariantSettings.Y, VariantSettings.Rotation.R90)).with((When)When.create().set(Properties.SOUTH, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier3)).with((When)When.create().set(Properties.WEST, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier3).put(VariantSettings.Y, VariantSettings.Rotation.R90)).with((When)When.create().set(Properties.NORTH, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier4)).with((When)When.create().set(Properties.EAST, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier5)).with((When)When.create().set(Properties.SOUTH, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier5).put(VariantSettings.Y, VariantSettings.Rotation.R90)).with((When)When.create().set(Properties.WEST, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier4).put(VariantSettings.Y, VariantSettings.Rotation.R270)));
+    }
+    
+    void lattice(BlockEnum lattice, BlockStateModelGenerator generator) {
+        Identifier id = texture(lattice.getId().getPath());
+        TextureMap textureMap = new TextureMap().put(TextureKey.PANE, id).put(TextureKey.EDGE, TextureMap.getSubId(lattice.asBlock(), "_top"));
+        Identifier identifier = Models.TEMPLATE_GLASS_PANE_POST.upload(lattice.asBlock(), textureMap, generator.modelCollector);
+        Identifier identifier2 = Models.TEMPLATE_GLASS_PANE_SIDE.upload(lattice.asBlock(), textureMap, generator.modelCollector);
+        Identifier identifier3 = Models.TEMPLATE_GLASS_PANE_SIDE_ALT.upload(lattice.asBlock(), textureMap, generator.modelCollector);
+        Identifier identifier4 = Models.TEMPLATE_GLASS_PANE_NOSIDE.upload(lattice.asBlock(), textureMap, generator.modelCollector);
+        Identifier identifier5 = Models.TEMPLATE_GLASS_PANE_NOSIDE_ALT.upload(lattice.asBlock(), textureMap, generator.modelCollector);
+        Item item = lattice.asBlock().asItem();
+        Models.GENERATED.upload(ModelIds.getItemModelId(item), TextureMap.layer0(id), generator.modelCollector);
+        generator.blockStateCollector.accept(MultipartBlockStateSupplier.create(lattice.asBlock()).with(BlockStateVariant.create().put(VariantSettings.MODEL, identifier)).with((When)When.create().set(Properties.NORTH, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier2)).with((When)When.create().set(Properties.EAST, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier2).put(VariantSettings.Y, VariantSettings.Rotation.R90)).with((When)When.create().set(Properties.SOUTH, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier3)).with((When)When.create().set(Properties.WEST, true), BlockStateVariant.create().put(VariantSettings.MODEL, identifier3).put(VariantSettings.Y, VariantSettings.Rotation.R90)).with((When)When.create().set(Properties.NORTH, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier4)).with((When)When.create().set(Properties.EAST, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier5)).with((When)When.create().set(Properties.SOUTH, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier5).put(VariantSettings.Y, VariantSettings.Rotation.R90)).with((When)When.create().set(Properties.WEST, false), BlockStateVariant.create().put(VariantSettings.MODEL, identifier4).put(VariantSettings.Y, VariantSettings.Rotation.R270)));
     }
 }

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/template_glass_pane_side_alt",
   "textures": {
-    "edge": "valleycraft:block/tinted_glass_pane_top",
+    "edge": "minecraft:block/block/tinted_glass_top",
     "pane": "minecraft:block/tinted_glass"
   }
 }

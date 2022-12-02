@@ -68,6 +68,9 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     CANVAS_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
     CANVAS_CARPET(new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
     CURTAIN(new CurtainBlock(), itemSettings()),
+    
+    BRAZIER(new BrazierBlock(15, 1), itemSettings()),
+    SOUL_BRAZIER(new BrazierBlock(10, 2), itemSettings()),
 
     //rope and net blocks
     ROPE(new ChainBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
@@ -121,7 +124,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SPRUCE_LATTICE(new PaneBlock(Block.Settings.copy(Blocks.SPRUCE_PLANKS).nonOpaque()), itemSettings()),
 
     CRIMSON_LATTICE(new PaneBlock(Block.Settings.copy(Blocks.CRIMSON_PLANKS).nonOpaque()), itemSettings()),
-    WARPED_LATTICE(new PaneBlock(Block.Settings.copy(Blocks.WARPED_NYLIUM).nonOpaque()), itemSettings()),
+    WARPED_LATTICE(new PaneBlock(Block.Settings.copy(Blocks.WARPED_PLANKS).nonOpaque()), itemSettings()),
 
     //thatch
     THATCH_BLOCK(new PillarBlock(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),

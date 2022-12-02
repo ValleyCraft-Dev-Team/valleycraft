@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"fire":  "botg:blocks/campfire_pot_fire",
-		"pot":   "botg:blocks/polished_stone_bricks",
-		"stick": "botg:blocks/sticks",
-		"bend":  "botg:blocks/orange_kelp_side",
-		"particle": "minecraft:blocks/oak_planks"
+		"fire":  "valleycraft:block/campfire_pot_fire",
+		"pot":   "minecraft:block/polished_andesite",
+		"stick": "valleycraft:block/sticks",
+		"bend":  "valleycraft:block/orange_kelp_side",
+		"particle": "minecraft:block/oak_planks"
 	},
 	"elements": [
 		{

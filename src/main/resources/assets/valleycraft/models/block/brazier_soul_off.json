@@ -1,0 +1,6 @@
+{
+	"parent": "valleycraft:block/brazier_off",
+	"textures": {
+		"pot": "minecraft:block/polished_andesite"
+	}
+}

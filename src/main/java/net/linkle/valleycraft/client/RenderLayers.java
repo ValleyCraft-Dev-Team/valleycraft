@@ -216,6 +216,24 @@ class RenderLayers {
         put(MIMIC_FLOWER, cullout);
         put(BRIMSTONE_LANTERN, cullout);
         put(WISP_LANTERN, cullout);
+        
+        // lattices
+        put(ACACIA_LATTICE, cullout);
+        put(AMBERBLOSSOM_LATTICE, cullout);
+        put(APPLE_LATTICE, cullout);
+        put(BIRCH_LATTICE, cullout);
+        put(CRIMSON_LATTICE, cullout);
+        put(CRIMSON_LATTICE, cullout);
+        put(DARK_OAK_LATTICE, cullout);
+        put(JUNGLE_LATTICE, cullout);
+        put(MANGROVE_LATTICE, cullout);
+        put(OAK_LATTICE, cullout);
+        put(SPRUCE_LATTICE, cullout);
+        put(WARPED_LATTICE, cullout);
+        put(WATTLE_LATTICE, cullout);
+        
+        put(BRAZIER, cullout);
+        put(SOUL_BRAZIER, cullout);
 
         put(ANCIENT_WAGON_WHEEL, cullout);
         put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);

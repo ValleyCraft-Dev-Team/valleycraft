@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side_alt",
+  "textures": {
+    "edge": "valleycraft:block/amberblossom_lattice_top",
+    "pane": "valleycraft:block/amberblossom_lattice"
+  }
+}

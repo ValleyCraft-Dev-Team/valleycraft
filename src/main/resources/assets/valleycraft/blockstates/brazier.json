@@ -1,0 +1,10 @@
+{
+  "variants": {
+	"lit=true": {
+	  "model": "valleycraft:block/brazier_fire"
+	},
+	"lit=false": {
+	  "model": "valleycraft:block/brazier_fire_off"
+	}
+  }
+}
