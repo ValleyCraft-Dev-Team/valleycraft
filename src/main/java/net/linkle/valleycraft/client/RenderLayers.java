@@ -229,7 +229,9 @@ class RenderLayers {
         
         put(BRAZIER, cullout);
         put(SOUL_BRAZIER, cullout);
-
+        put(CANDLE_BOTTLE, cullout);
+        put(CANDLE_BOTTLE_LIT, cullout);
+        
         put(ANCIENT_WAGON_WHEEL, cullout);
         put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);
         put(ANCIENT_WAGON_WHEEL_TABLE, cullout);

@@ -71,6 +71,9 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     
     BRAZIER(new BrazierBlock(15, 1), itemSettings()),
     SOUL_BRAZIER(new BrazierBlock(10, 2), itemSettings()),
+    
+    CANDLE_BOTTLE(new CandleBottleBlock(), itemSettings()),
+    CANDLE_BOTTLE_LIT(new CandleBottleLitBlock(), itemSettings()),
 
     //rope and net blocks
     ROPE(new ChainBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),

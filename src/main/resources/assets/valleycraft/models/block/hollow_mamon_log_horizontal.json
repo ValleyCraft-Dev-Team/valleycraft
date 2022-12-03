@@ -1,8 +1,8 @@
 {
   "parent": "valleycraft:block/hollow_log_horizontal",
   "textures": {
-    "#texture_log_top": "minecraft:block/mamon_log_top",
-    "#texture_log": "minecraft:block/mamon_log",
-    "#texture_stripped_log": "minecraft:block/stripped_mamon_log"
+    "log_top": "valleycraft:block/mamon_log_top",
+    "log": "valleycraft:block/mamon_log_side",
+    "stripped_log": "valleycraft:block/mamon_stripped_log_side"
   }
 }

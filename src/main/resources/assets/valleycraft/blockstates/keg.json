@@ -1,24 +1,50 @@
 {
   "variants": {
-    "facing=north": {
+    "attachment=vertical,facing=north": {
+      "model": "valleycraft:block/keg_down"
+    },
+    "attachment=vertical,facing=south": {
+      "y": 180,
+      "model": "valleycraft:block/keg_down"
+    },
+    "attachment=vertical,facing=east": {
+      "y": 90,
+      "model": "valleycraft:block/keg_down"
+    },
+    "attachment=vertical,facing=west": {
+      "y": 270,
+      "model": "valleycraft:block/keg_down"
+    },
+    
+    "attachment=floor,facing=north": {
       "model": "valleycraft:block/keg_horizontal"
     },
-    "facing=south": {
+    "attachment=floor,facing=south": {
       "y": 180,
       "model": "valleycraft:block/keg_horizontal"
     },
-    "facing=east": {
+    "attachment=floor,facing=east": {
       "y": 90,
       "model": "valleycraft:block/keg_horizontal"
     },
-    "facing=west": {
+    "attachment=floor,facing=west": {
       "y": 270,
       "model": "valleycraft:block/keg_horizontal"
     },
-    "facing=up": {
-      "model": "valleycraft:block/keg_down"
+    
+    "attachment=ceiling,facing=north": {
+      "model": "valleycraft:block/keg_up"
     },
-    "facing=down": {
+    "attachment=ceiling,facing=south": {
+      "y": 180,
+      "model": "valleycraft:block/keg_up"
+    },
+    "attachment=ceiling,facing=east": {
+      "y": 90,
+      "model": "valleycraft:block/keg_up"
+    },
+    "attachment=ceiling,facing=west": {
+      "y": 270,
       "model": "valleycraft:block/keg_up"
     }
   }
