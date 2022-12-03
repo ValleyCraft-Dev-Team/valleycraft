@@ -243,7 +243,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POTTED_JUNGLE_CAP(new PotBlock(ModNaturalBlocks.JUNGLE_CAP)),
     POTTED_SOULSPORE(new PotBlock(ModNaturalBlocks.SOULSPORE_SINGLE)),
     POTTED_MOREL(new PotBlock(ModNaturalBlocks.MOREL)),
-    POTTED_GOOP_CAP(new PotBlock(ModNaturalBlocks.GOOP_CAP)),
+    //POTTED_GOOP_CAP(new PotBlock(ModNaturalBlocks.GOOP_CAP)),
 
     // Potted saplings
     POTTED_MAMON_SAPLING(new PotBlock(ModNaturalBlocks.MAMON_SAPLING)),

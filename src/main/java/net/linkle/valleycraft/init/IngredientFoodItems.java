@@ -28,7 +28,6 @@ public enum IngredientFoodItems implements ItemEnum {
     .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_8", Formatting.GRAY)),
     GLOOM_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 15 * 20)))),
 
-    GLOOM_BERRY(new AliasedBlockItem(ModNaturalBlocks.GLOOM_BERRY.block, settings().food(FoodComponents.GLOW_BERRIES))),
     //STAR_CHERRIES(new FoodItem(settings(), 3, 0.6f)),
     ALOE_VERA(new AliasedBlockItem(ModNaturalBlocks.ALOE_VERAS.block, settings().food(Foods.create(3, 0.3f)))),
     

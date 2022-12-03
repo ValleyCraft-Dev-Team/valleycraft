@@ -38,7 +38,6 @@ public class SeedBagItem extends Item {
             inventory.insertStack(new ItemStack(Items.MELON_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
             inventory.insertStack(new ItemStack(Items.BEETROOT_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
             inventory.insertStack(new ItemStack(Items.PUMPKIN_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
-            inventory.insertStack(new ItemStack(ModItems.GHOST_PUMPKIN_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
             inventory.insertStack(new ItemStack(ModItems.CAVE_ROOT_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
             inventory.insertStack(new ItemStack(ModItems.PUFF_BALL_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
             inventory.insertStack(new ItemStack(ModItems.FIRE_PEPPER_SEEDS, MathHelper.nextInt(world.random, 0, 1)));

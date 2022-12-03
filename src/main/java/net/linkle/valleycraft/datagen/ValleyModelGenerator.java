@@ -126,7 +126,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerFlowerPotPlant(JUNGLE_CAP.block, POTTED_JUNGLE_CAP.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(SOULSPORE_SINGLE.block, POTTED_SOULSPORE.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(MOREL.block, POTTED_MOREL.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(GOOP_CAP.block, POTTED_GOOP_CAP.block, TintType.NOT_TINTED);
+        //generator.registerFlowerPotPlant(GOOP_CAP.block, POTTED_GOOP_CAP.block, TintType.NOT_TINTED);
 
         // Potted saplings
         generator.registerFlowerPotPlant(MAMON_SAPLING.block, POTTED_MAMON_SAPLING.block, TintType.NOT_TINTED);

@@ -31,13 +31,14 @@ class ColorProvider {
             return GrassColors.getColor(0.5, 1.0);
         }, ModNaturalBlocks.SHORT_GRASS);
         
+        /*
         blockColor((state, world, pos, tintIndex) -> {
             int i = state.get(StemBlock.AGE);
             int j = i * 32;
             int k = 255 - i * 8;
             int l = i * 4;
             return j << 16 | k << 8 | l;
-        }, ModNaturalBlocks.GHOST_PUMPKIN_STEM);
+        }, ModNaturalBlocks.GHOST_PUMPKIN_STEM); */
         
         blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, ModNaturalBlocks.APPLE_LEAVES);
         itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, ModNaturalBlocks.APPLE_LEAVES);

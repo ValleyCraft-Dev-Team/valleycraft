@@ -90,8 +90,6 @@ class RenderLayers {
         put(POTTED_SOULSPORE, cullout);
         put(MOREL, cullout);
         put(POTTED_MOREL, cullout);
-        put(GOOP_CAP, cullout);
-        put(POTTED_GOOP_CAP, cullout);
 
         // Saplings and Potted Saplings
         put(MAMON_SAPLING, cullout);
@@ -116,7 +114,6 @@ class RenderLayers {
         put(POTTED_DESERT_SHRUB, cullout);
         put(LUSH_BUSH, cullout);
         put(POTTED_LUSH_BUSH, cullout);
-        put(GHOST_PUMPKIN_STEM, cullout);
 
         put(FLOWERING_CACTUS, cullout);
         put(POTTED_FLOWERING_CACTUS, cullout);
@@ -150,8 +147,6 @@ class RenderLayers {
         put(LARGE_BUSH, cullout);
         put(BIG_FERN, cullout);
         put(WILD_MINERS_LETTUCE, cullout);
-        put(GLOOM_BERRY, cullout);
-        put(GLOOM_BERRY_PLANT, cullout);
         put(SMALLEST_LILYPADS, cullout);
         put(SMALL_LILYPADS, cullout);
         put(SMALL_LILYPAD, cullout);
@@ -319,7 +314,6 @@ class RenderLayers {
         put(DAERDRI_SKULL, cullout);
         put(GEITLIN_SKULL, cullout);
         put(VILLAGER_SKULL, cullout);
-        put(SNIFFER_SKULL, cullout);
         put(PIGLIN_SKULL, cullout);
         put(MOBLIN_SKULL, cullout);
         put(MOBLIN_SKELETAL_REMAINS, cullout);
