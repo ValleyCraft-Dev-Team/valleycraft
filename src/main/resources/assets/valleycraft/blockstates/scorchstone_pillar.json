@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "valleycraft:block/scorchstone_pillar_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "valleycraft:block/scorchstone_pillar"
+    },
+    "axis=z": {
+      "model": "valleycraft:block/scorchstone_pillar_horizontal",
+      "x": 90
+    }
+  }
+}

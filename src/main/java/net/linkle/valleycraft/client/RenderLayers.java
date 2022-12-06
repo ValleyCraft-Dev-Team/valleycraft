@@ -277,6 +277,8 @@ class RenderLayers {
         put(BLUE_CLAY_POT, cullout);
 
         put(ERDSTONE_WINDOW, cullout);
+        put(SCORCHSTONE_WINDOW, cullout);
+        put(SERPENTINITE_WINDOW, cullout);
 
         put(SLUDGE_FLUID, translucent);
 
