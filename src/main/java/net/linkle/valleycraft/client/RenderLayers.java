@@ -123,7 +123,7 @@ class RenderLayers {
         put(POTTED_PANFLOWERS, cullout);
         put(FROSTFERN, cullout);
         put(POTTED_FROSTFERN, cullout);
-        put(CLARET_LEAF, cullout);
+        //put(CLARET_LEAF, cullout);
         //put(POTTED_CLARET_LEAF, cullout);
         put(WEEPING_GHOST_WILLOW, cullout);
         put(POTTED_WEEPING_GHOST_WILLOW, cullout);
