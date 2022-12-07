@@ -49,9 +49,10 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     LIGHT_BLUE_TULIP(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     BLACK_TULIP(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     FROSTFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
-    CLARET_LEAF(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    //CLARET_LEAF(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     GODDESS_LILY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
-    
+    FIDDLEHEAD_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+
     KNAPWEED(new ModFlowerBlock(Blocks.OXEYE_DAISY, OFFSET_FLOWER), itemSettings()),
     
     RED_LUPINE(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),

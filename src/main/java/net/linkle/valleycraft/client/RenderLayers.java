@@ -124,11 +124,13 @@ class RenderLayers {
         put(FROSTFERN, cullout);
         put(POTTED_FROSTFERN, cullout);
         put(CLARET_LEAF, cullout);
-        put(POTTED_CLARET_LEAF, cullout);
+        //put(POTTED_CLARET_LEAF, cullout);
         put(WEEPING_GHOST_WILLOW, cullout);
         put(POTTED_WEEPING_GHOST_WILLOW, cullout);
         put(BONE_WEED, cullout);
         put(POTTED_BONE_WEED, cullout);
+        put(FIDDLEHEAD_FERN, cullout);
+        put(POTTED_FIDDLEHEAD_FERN, cullout);
 
         //Other Plants without potted versions
         put(THORNY_BUSH, cullout);
