@@ -283,7 +283,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     //POTTED_CLARET_LEAF(new PotBlock(ModNaturalBlocks.CLARET_LEAF)),
     POTTED_WEEPING_GHOST_WILLOW(new PotBlock(ModNaturalBlocks.WEEPING_GHOST_WILLOW)),
     POTTED_BONE_WEED(new PotBlock(ModNaturalBlocks.BONE_WEED)),
-    //POTTED_FIDDLEHEAD_FERN(new PotBlock(ModNaturalBlocks.FROSTFERN)),
+    POTTED_FIDDLEHEAD_FERN(new PotBlock(ModNaturalBlocks.FIDDLEHEAD_FERN)),
 
     // wood types
     // mamon
