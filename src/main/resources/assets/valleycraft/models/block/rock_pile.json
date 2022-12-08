@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "valleycraft:block/rock",
-		"particle": "valleycraft:block/rock"
+		"particle": "minecraft:block/cobblestone"
 	},
 	"elements": [
 		{
