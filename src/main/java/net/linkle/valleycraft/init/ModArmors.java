@@ -18,8 +18,9 @@ import net.linkle.valleycraft.Main;
 public enum ModArmors implements ItemEnum {
     STRAW_HAT(new ArmorItem(ArmorMats.STRAW_HAT, EquipmentSlot.HEAD, settingsNormal())),
 
-    FLOWER_CROWN(new ArmorItem(ArmorMats.FLOWERING_HAT, EquipmentSlot.HEAD, settingsNormal())),
     DIERDRA_LAUREL(new ArmorItem(ArmorMats.DIERDRA_LAUREL, EquipmentSlot.HEAD, settingsNormal())),
+    FLOWER_CROWN(new ArmorItem(ArmorMats.FLOWERING_HAT, EquipmentSlot.HEAD, settingsNormal())),
+    DRIPLEAF_HAT(new ArmorItem(ArmorMats.DRIPLEAF, EquipmentSlot.HEAD, settingsNormal())),
 
     REINFORCED_LEATHER_HELMET(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_GOLDEN_HELMET(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.HEAD, settingsNormal())),

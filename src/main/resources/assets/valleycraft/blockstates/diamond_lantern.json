@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "valleycraft:block/diamond_lantern"
+    },
+    "hanging=true": {
+      "model": "valleycraft:block/diamond_lantern_hanging"
+    }
+  }
+}

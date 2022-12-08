@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "valleycraft:item/armor_items/dripleaf_hat"
+  }
+}

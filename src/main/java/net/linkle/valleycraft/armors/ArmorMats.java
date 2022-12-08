@@ -51,6 +51,7 @@ public enum ArmorMats implements ArmorMaterial {
     ROSEGOLD_GLASSES("rosegold_glasses", ints(2,2,2,2), 10, 15, equipChain(), items()),
     GOLEMITE_READING_GLASSES("golemite_glasses", ints(2,2,2,2), 10, 5, equipChain(), items()),
     BLACK_FEATHERED_HAT("black_feathered_hat", ints(2,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    DRIPLEAF("dripleaf", ints(1,5,6,1), 10, 15, equipLeather(), items(Blocks.BIG_DRIPLEAF)),
 
     CIRCLET_GOLD("golden_circlet", ints(0,0,0,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     CIRCLET_EMERALD("emerald_circlet", ints(0,0,0,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),

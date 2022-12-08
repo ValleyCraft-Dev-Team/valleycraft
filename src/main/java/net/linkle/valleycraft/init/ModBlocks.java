@@ -46,8 +46,15 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     COUNTER(new CounterBlock(Block.Settings.copy(Blocks.BARREL).nonOpaque()), itemSettings()),
     CABINET(new CabinetBlock(Block.Settings.copy(Blocks.BARREL).nonOpaque()), itemSettings()),
     EMPTY_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
-    POTION_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
     ANTHRO_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
+    BEEKEEPING_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
+    CARTOGRAPHY_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
+    POTION_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
+    SCROLL_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
+    TOOL_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
+    ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
+    CLOTHED_ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
+
     BOOK_STACK_0(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
     BOOK_STACK_1(new BookStackBlock(BLOCK_SHAPE_1, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
     BOOK_STACK_2(new BookStackBlock(BLOCK_SHAPE_2, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
@@ -139,6 +146,12 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     GLOWSQUID_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 6)), itemSettings()),
     BRIMSTONE_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
+    AMBER_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
+    DIAMOND_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
+    AMETHYST_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
+    GARNET_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
+    EMERALD_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
+
     DEAD_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(s->0)), itemSettings()),
     BURNT_OUT_TORCH(new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.WOOD)), itemSettings()),
     BURNT_OUT_CANDLE(new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CANDLE)).shape(4, 12), itemSettings()),
@@ -271,7 +284,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     //POTTED_CLARET_LEAF(new PotBlock(ModNaturalBlocks.CLARET_LEAF)),
     POTTED_WEEPING_GHOST_WILLOW(new PotBlock(ModNaturalBlocks.WEEPING_GHOST_WILLOW)),
     POTTED_BONE_WEED(new PotBlock(ModNaturalBlocks.BONE_WEED)),
-    POTTED_FIDDLEHEAD_FERN(new PotBlock(ModNaturalBlocks.FROSTFERN)),
+    //POTTED_FIDDLEHEAD_FERN(new PotBlock(ModNaturalBlocks.FROSTFERN)),
 
     // wood types
     // mamon
@@ -336,7 +349,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     // not strictly either
     ANTHRACITE_BLOCK(new Block(Block.Settings.copy(Blocks.COAL_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
     AMBER_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
-    
+    NETHER_GARNET_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
+
     // refined blocks of "___"
 
     PRIMSTEEL_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),

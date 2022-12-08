@@ -158,9 +158,11 @@
   "item.valleycraft.ender_pearl_talisman": "Ender Pearl Necklace",
   "item.valleycraft.scute_necklace": "Carved Scute Talisman",
   "item.valleycraft.prismarine_talisman": "Prismarine Crystal Necklace",
-  "item.valleycraft.nether_quartz_talisman": "Quartz Crystal Necklace",
+  "item.valleycraft.nether_quartz_talisman": "Nether Quartz Crystal Necklace",
   "item.valleycraft.piglin_necklace": "Gold Necklace",
   "item.valleycraft.arrowhead_talisman": "Arrowhead Talisman",
+  "item.valleycraft.nether_garnet_talisman": "Nether Garnet Necklace",
+  "item.valleycraft.nether_garnet": "Nether Garnet",
 
   "item.valleycraft.snow_cap": "§aSnow Cap",
   "item.valleycraft.pillager_flannel": "Pillager Flannel",
@@ -178,6 +180,16 @@
   "item.valleycraft.stray_coat": "Ragged Cloak",
   "item.valleycraft.stray_skirt": "Ragged Skirt",
   "item.valleycraft.runekeepers_tome": "Illegible Witch's Tome",
+
+  "block.valleycraft.nether_garnet_ore": "Nether Garnet Ore",
+  "block.valleycraft.nether_garnet_block": "Block of Nether Garnet",
+
+  "block.valleycraft.garnet_lantern": "Red Lantern",
+  "block.valleycraft.amber_lantern": "Orange Lantern",
+  "block.valleycraft.brimstone_lantern": "Yellow Lantern",
+  "block.valleycraft.diamond_lantern": "Blue Lantern",
+  "block.valleycraft.emerald_lantern": "Green Lantern",
+  "block.valleycraft.amethyst_lantern": "Purple Lantern",
 
   "item.valleycraft.branch": "§aTree Branch",
   "item.valleycraft.sharp_flint": "§aSharp Flint",
@@ -373,6 +385,7 @@
 
   "rare_items": "aqua",
   "block.valleycraft.ornate_obsidian_table": "Ornate Obsidian Table",
+  "block.valleycraft.cloth_ornate_obsidian_table": "Ornate Obsidian Table and Tablecloth",
   "item.valleycraft.thermal_blaze_core": "Thermal Blaze Core",
   "item.valleycraft.visor": "§cGolemancer Smithing Mask",
   "item.valleycraft.strange_catalyst": "Radiating Catalyst",
@@ -1271,7 +1284,6 @@
   "block.valleycraft.thatch_block": "Thatch Block",
   "block.valleycraft.weaved_thatch_block": "Weaved Thatch Block",
   "block.valleycraft.tightly_weaved_thatch_block": "Tightly Weaved Thatch Block",
-  "block.valleycraft.brimstone_lantern": "Brimstone Lantern",
   "block.valleycraft.shale_gravestone": "Gravestone",
   "block.valleycraft.shale_gravestone_spirit": "Spirit Gravestone",
   "block.valleycraft.shale_gravestone_heart": "Heart Gravestone",

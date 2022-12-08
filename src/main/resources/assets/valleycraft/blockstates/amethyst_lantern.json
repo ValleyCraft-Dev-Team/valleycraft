@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "valleycraft:block/amethyst_lantern"
+    },
+    "hanging=true": {
+      "model": "valleycraft:block/amethyst_lantern_hanging"
+    }
+  }
+}

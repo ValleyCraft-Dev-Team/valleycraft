@@ -51,6 +51,7 @@ public enum ModBaubles implements ItemEnum {
     DIAMOND_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     EMERALD_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     ENDER_PEARL_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
+    NETHER_GARNET_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     NETHER_QUARTZ_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     PRISMARINE_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
 

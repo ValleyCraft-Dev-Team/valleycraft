@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "valleycraft:block/garnet_lantern"
+    },
+    "hanging=true": {
+      "model": "valleycraft:block/garnet_lantern_hanging"
+    }
+  }
+}

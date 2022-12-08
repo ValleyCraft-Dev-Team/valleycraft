@@ -123,7 +123,7 @@ class RenderLayers {
         put(POTTED_PANFLOWERS, cullout);
         put(FROSTFERN, cullout);
         put(POTTED_FROSTFERN, cullout);
-        put(CLARET_LEAF, cullout);
+        //put(CLARET_LEAF, cullout);
         //put(POTTED_CLARET_LEAF, cullout);
         put(WEEPING_GHOST_WILLOW, cullout);
         put(POTTED_WEEPING_GHOST_WILLOW, cullout);
@@ -188,6 +188,12 @@ class RenderLayers {
         put(CRYSTAL_CAVE_MOSS, cullout);
         put(ORANGE_SEAGRASS, cullout);
         put(GLOWSQUID_LANTERN, cullout);
+        put(EMERALD_LANTERN, cullout);
+        put(AMETHYST_LANTERN, cullout);
+        put(AMBER_LANTERN, cullout);
+        put(DIAMOND_LANTERN, cullout);
+        put(GARNET_LANTERN, cullout);
+
         put(ROPE_LADDER, cullout);
         put(NET_BLOCK, cullout);
         put(PRIMSTEEL_GRATE, cullout);
@@ -242,6 +248,8 @@ class RenderLayers {
         put(WATTLE_TABLE_CLOTHE, cullout);
         put(WATTLE_CHAIR, cullout);
         put(ARROW_BLOCK, cullout);
+        put(ORNATE_OBSIDIAN_TABLE, cullout);
+        put(CLOTHED_ORNATE_OBSIDIAN_TABLE, cullout);
 
         put(TALL_ALLIUM, cullout);
         put(TALL_CORNFLOWER, cullout);
