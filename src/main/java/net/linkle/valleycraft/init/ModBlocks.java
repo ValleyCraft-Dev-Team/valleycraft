@@ -253,7 +253,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POTTED_YELLOW_POPPY(new PotBlock(ModNaturalBlocks.YELLOW_POPPY)),
     POTTED_WHITE_POPPY(new PotBlock(ModNaturalBlocks.WHITE_POPPY)),
     POTTED_SNOWFLOWER(new PotBlock(ModNaturalBlocks.SNOWFLOWER)),
-    POTTED_FIDDLEHEAD_FERN(new PotBlock(ModNaturalBlocks.FIDDLEHEAD_FERN)),
 
     // Potted mushrooms
     POTTED_GLOW_CAP(new PotBlock(ModNaturalBlocks.GLOW_CAP)),
