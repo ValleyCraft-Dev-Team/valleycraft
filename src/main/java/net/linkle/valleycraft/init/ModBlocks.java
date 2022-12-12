@@ -88,7 +88,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BAMBOO_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(1).sounds(BlockSoundGroup.BAMBOO)), itemSettings()),
 
     NET(new NetBlock(), itemSettings()),
-    NET_BLOCK(new GrateBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
+    //NET_BLOCK(new GrateBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
 
     ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1).noCollision()), itemSettings(), BridgeItem::new),
     ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1)), itemSettings(), BridgeItem::new),
@@ -481,6 +481,10 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POLISHED_STONE(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
     SMOOTH_STONE_TILES(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
 
+    //mud bricks
+    POLISHED_PACKED_MUD(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
+    CORNER_CAPPED_PACKED_MUD(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
+
     //sandstone
     CHISELED_SANDSTONE_BLANK(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
 
@@ -542,13 +546,13 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     //villager and illager blocks go here
     CAMPFIRE_POT(new CampfirePotBlock(Block.Settings.copy(Blocks.CAULDRON).ticksRandomly().luminance(s -> 16).nonOpaque()), itemSettings().group(BOOKS)),
-    ANCIENT_WAGON_WHEEL(new WagonWheelBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS)),
-    ANCIENT_WAGON_WHEEL_PLATFORM(new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS)),
-    ANCIENT_WAGON_WHEEL_TABLE(new WagonWheelTableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
-    ALLAY_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.UNCOMMON).maxCount(1).group(BOOKS).fireproof()),
-    VEX_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof()),
-    WISP_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof()),
-    VEX_QUEEN_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.EPIC).maxCount(1).group(BOOKS).fireproof()),
+    //ANCIENT_WAGON_WHEEL(new WagonWheelBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS)),
+    //ANCIENT_WAGON_WHEEL_PLATFORM(new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS)),
+    //ANCIENT_WAGON_WHEEL_TABLE(new WagonWheelTableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
+    //ALLAY_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.UNCOMMON).maxCount(1).group(BOOKS).fireproof()),
+    //VEX_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof()),
+    //WISP_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof()),
+    //VEX_QUEEN_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.EPIC).maxCount(1).group(BOOKS).fireproof()),
 
     //lodged and rusty blocks go here
     SWORD_BLOCK(new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
@@ -567,7 +571,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SKELETAL_MINING_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     SKELETAL_BEST_FRIEND_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.EPIC)),
     DAERDRI_SKULL(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.EPIC)),
-    GEITLIN_SKULL(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.EPIC)),
+    //GEITLIN_SKULL(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.EPIC)),
     //SNIFFER_SKULL(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.EPIC)),
 
     //cave paintings
