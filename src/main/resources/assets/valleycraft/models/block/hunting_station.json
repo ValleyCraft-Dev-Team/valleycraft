@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"2": "valleycraft:block/beekeeper_station_side",
-		"3": "valleycraft:block/beekeeper_station_top",
+		"2": "valleycraft:block/hunting_station_side",
+		"3": "valleycraft:block/hunting_station_top",
 		"6": "valleycraft:block/crate_closed_new",
-		"7": "valleycraft:block/beekeeper_station_front",
-		"particle": "valleycraft:block/beekeeper_station_front"
+		"7": "valleycraft:block/hunting_station_front",
+		"particle": "valleycraft:block/hunting_station_front"
 	},
 	"elements": [
 		{
