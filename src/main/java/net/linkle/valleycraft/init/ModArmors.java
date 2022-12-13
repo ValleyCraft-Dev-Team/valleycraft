@@ -38,6 +38,22 @@ public enum ModArmors implements ItemEnum {
     DIAMOND_BREASTPLATE(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.CHEST, settingsNormal())),
     NETHERITE_BREASTPLATE(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.CHEST, settingsNormal())),
 
+    LEATHER_SANDALS(new ArmorItem(ArmorMats.HAUBERK_LEATHER, EquipmentSlot.FEET, settingsNormal())),
+    GOLDEN_SANDALS(new ArmorItem(ArmorMats.HAUBERK_GOLD, EquipmentSlot.FEET, settingsNormal())),
+    PRIMSTEEL_SANDALS(new ArmorItem(ArmorMats.HAUBERK_PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
+    IRON_SANDALS(new ArmorItem(ArmorMats.HAUBERK_IRON, EquipmentSlot.FEET, settingsNormal())),
+    ROSEGOLD_SANDALS(new ArmorItem(ArmorMats.HAUBERK_ROSEGOLD, EquipmentSlot.FEET, settingsNormal())),
+    DIAMOND_SANDALS(new ArmorItem(ArmorMats.HAUBERK_DIAMOND, EquipmentSlot.FEET, settingsNormal())),
+    NETHERITE_SANDALS(new ArmorItem(ArmorMats.HAUBERK_NETHERITE, EquipmentSlot.FEET, settingsNormal())),
+
+    LEATHER_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_LEATHER, EquipmentSlot.LEGS, settingsNormal())),
+    GOLDEN_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_GOLD, EquipmentSlot.LEGS, settingsNormal())),
+    PRIMSTEEL_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    IRON_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_IRON, EquipmentSlot.LEGS, settingsNormal())),
+    ROSEGOLD_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
+    DIAMOND_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_DIAMOND, EquipmentSlot.LEGS, settingsNormal())),
+    NETHERITE_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_NETHERITE, EquipmentSlot.LEGS, settingsNormal())),
+
     LEATHER_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.LEGS, settingsNormal())),
     GOLDEN_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.LEGS, settingsNormal())),
     PRIMSTEEL_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
@@ -46,9 +62,13 @@ public enum ModArmors implements ItemEnum {
     DIAMOND_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.LEGS, settingsNormal())),
     NETHERITE_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.LEGS, settingsNormal())),
 
+    LEATHER_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_LEATHER, EquipmentSlot.HEAD, settingsNormal())),
     GOLDEN_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_GOLD, EquipmentSlot.HEAD, settingsNormal())),
+    PRIMSTEEL_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
     IRON_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_IRON, EquipmentSlot.HEAD, settingsNormal())),
     ROSEGOLD_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
+    DIAMOND_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
+    NETHERITE_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_NETHERITE, EquipmentSlot.HEAD, settingsNormal())),
 
     BIKINI_NEUTRAL_REPAIRED(new ArmorItem(ArmorMats.BIKINI_NEUTRAL_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
     BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
@@ -65,14 +85,14 @@ public enum ModArmors implements ItemEnum {
     WATTLE_BOOTS(new ArmorItem(ArmorMats.WATTLE, EquipmentSlot.FEET, settingsNormal())),
 
     //QUIVER(new ArmorItem(ArmorMats.QUIVER, EquipmentSlot.CHEST, settingsNormal())),
-    LEATHER_HELMET(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.HEAD, settingsNormal())),
+    LEATHER_HELMET(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.HEAD, settingsNormal())),
     LEATHER_CHESTPLATE(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.CHEST, settingsNormal())),
     LEATHER_LEGGINGS(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.LEGS, settingsNormal())),
     LEATHER_BOOTS(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.FEET, settingsNormal())),
-    LEATHER_HOOD(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.HEAD, settingsNormal())),
-    LEATHER_TUNIC(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.CHEST, settingsNormal())),
-    LEATHER_SHORTS(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.LEGS, settingsNormal())),
-    LEATHER_SHOES(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.FEET, settingsNormal())),
+    //LEATHER_HOOD(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.HEAD, settingsNormal())),
+    //LEATHER_TUNIC(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.CHEST, settingsNormal())),
+    //LEATHER_SHORTS(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.LEGS, settingsNormal())),
+    //LEATHER_SHOES(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.FEET, settingsNormal())),
 
     ROSEGOLD_HELMET(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
     ROSEGOLD_CHESTPLATE(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),
@@ -87,7 +107,7 @@ public enum ModArmors implements ItemEnum {
     TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
     TURTLE_LEGGINGS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, settingsNormal())),
     TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
-    COPPER_DIVING_HELMET(new ArmorItem(ArmorMats.COPPER_DIVING, EquipmentSlot.HEAD, settingsNormal())),
+    //COPPER_DIVING_HELMET(new ArmorItem(ArmorMats.COPPER_DIVING, EquipmentSlot.HEAD, settingsNormal())),
 
     
     /**special armors**/
@@ -97,9 +117,10 @@ public enum ModArmors implements ItemEnum {
     CHEF_HAT(new UniqueArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsArtifacts())),
     CHEF_APRON(new UniqueArmorItem(ArmorMats.CHEF, EquipmentSlot.LEGS, settingsArtifacts())),
     STABLEHAND_HAT(new UniqueArmorItem(ArmorMats.STABLEHAND_HAT, EquipmentSlot.HEAD, settingsArtifacts())),
+    BLACK_FEATHERED_HAT(new UniqueArmorItem(ArmorMats.BLACK_FEATHERED_HAT, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
     VISOR(new UniqueArmorItem(ArmorMats.VISOR, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
     SNOW_CAP(new UniqueArmorItem(ArmorMats.SNOW_CAP, EquipmentSlot.HEAD, settingsArtifacts())),
-    LIBRARIANS_HAT(new UniqueArmorItem(ArmorMats.LIBRARIAN, EquipmentSlot.HEAD, settingsArtifacts())),
+    //LIBRARIANS_HAT(new UniqueArmorItem(ArmorMats.LIBRARIAN, EquipmentSlot.HEAD, settingsArtifacts())),
     TRADER_HEAD_SCARF(new UniqueArmorItem(ArmorMats.TRADER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
     TRADER_COAT(new UniqueArmorItem(ArmorMats.TRADER, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
     TRADER_SKIRT(new UniqueArmorItem(ArmorMats.TRADER, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
@@ -126,7 +147,6 @@ public enum ModArmors implements ItemEnum {
 
     //living ppls junk
     STRAYAS_CARTOGRAPHY_BAG(new UniqueArmorItem(ArmorMats.STRAYA, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
-    BLACK_FEATHERED_HAT(new UniqueArmorItem(ArmorMats.BLACK_FEATHERED_HAT, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
     FUR_BOOTS(new UniqueArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
     COPPER_AVIATORS(new UniqueArmorItem(ArmorMats.COPPER_AVIATORS, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
 

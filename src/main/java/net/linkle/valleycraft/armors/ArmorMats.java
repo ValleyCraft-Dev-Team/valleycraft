@@ -55,12 +55,15 @@ public enum ArmorMats implements ArmorMaterial {
 
     CIRCLET_GOLD("golden_circlet", ints(0,0,0,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     CIRCLET_EMERALD("emerald_circlet", ints(0,0,0,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
-    CIRCLET_IRON("iron_circlet", ints(0,0,0,2), 15, 9, equipChain(), items(Items.IRON_INGOT)),
+    CIRCLET_IRON("iron_circlet", ints(0,0,0,1), 15, 9, equipChain(), items(Items.IRON_INGOT)),
     CIRCLET_AMBER("amber_circlet", ints(0,0,0,2), 15, 9, equipChain(), items(Items.IRON_INGOT)),
     CIRCLET_AMETHYST("amethyst_circlet", ints(0,0,0,2), 15, 9, equipChain(), items(Items.IRON_INGOT)),
     CIRCLET_DIAMOND("diamond_circlet", ints(0,0,0,2), 15, 9, equipChain(), items(Items.IRON_INGOT)),
     CIRCLET_ROSEGOLD("rosegold_circlet", ints(0,0,0,2), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT)),
     CIRCLET_PRISMARINE("prismarine_circlet", ints(0,0,0,2), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT)),
+    CIRCLET_NETHERITE("netherite_circlet", ints(0,0,0,3), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT)),
+    CIRCLET_PRIMSTEEL("primsteel_circlet", ints(0,0,0,1), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT)),
+    CIRCLET_LEATHER("leather_circlet", ints(0,0,0,1), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT)),
 
     CROWN("golden_crown", ints(0,0,0,3), 15, 25, equipGold(), items(Items.GOLD_INGOT)),
 
@@ -102,6 +105,14 @@ public enum ArmorMats implements ArmorMaterial {
     RF_ROSEGOLD("reinforced_rosegold", ints(0,3,5,3), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT),0.75f, 0.0f),
     RF_DIAMOND("reinforced_diamond", ints(0,4,7,4), 15, 10, equipChain(), items(Items.DIAMOND), 2.0f, 0.0f),
     RF_NETHERITE("reinforced_netherite", ints(0,4,7,4), 15, 15, equipChain(), items(Items.NETHERITE_INGOT), 3.0f, 0.0f),
+
+    HAUBERK_LEATHER("leather_hauberk", ints(1,2,2,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    HAUBERK_GOLD("gold_hauberk", ints(1,3,4,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    HAUBERK_IRON("iron_hauberk", ints(2,5,5,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    HAUBERK_PRIMSTEEL("primsteel_hauberk", ints(1,4,4,3), 15, 18, equipChain(), items(ModItems.PRIMSTEEL_INGOT)),
+    HAUBERK_ROSEGOLD("rosegold_hauberk", ints(2,5,5,3), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT),0.75f, 0.0f),
+    HAUBERK_DIAMOND("diamond_hauberk", ints(3,6,7,4), 15, 10, equipChain(), items(Items.DIAMOND), 2.0f, 0.0f),
+    HAUBERK_NETHERITE("netherite_hauberk", ints(3,6,7,4), 15, 15, equipChain(), items(Items.NETHERITE_INGOT), 3.0f, 0.0f),
 
     SHULKER("shulker", ints(0,0,6,4), 15, 20, equipLeather(), items(Items.NETHERITE_INGOT), 3.0f, 0.0f),
 

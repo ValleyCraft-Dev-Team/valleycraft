@@ -39,6 +39,8 @@ public enum RegularFoodItems implements ItemEnum {
     //BAKED_STAR_CHERRIES(new FoodItem(settings(), 4, 0.6f)),
     COOKED_RICE(new FoodItem(settings(), 4, 0.6f)),
     COOKED_CAVE_ROOT(new FoodItem(settings(), 5, 0.6f)),
+    DRIED_ORANGE_KELP(new FoodItem(settings(), 1, 0.6f)),
+    DRIED_GLOW_KELP(new FoodItem(settings(), 1, 0.6f)),
 
     COOKED_TROPICAL_FISH(new FoodItem(settings(), 4, 0.6f)),
     COOKED_ABYSSWATCHER(new FoodItem(settings(), 6, 0.7f)),
@@ -96,6 +98,7 @@ public enum RegularFoodItems implements ItemEnum {
     STIR_FRIED_MONSTER_GUTS(new BowlItem(settings().maxCount(1), 8, 0.4f)),
     MONSTER_STEW(new BowlItem(settings().maxCount(1), 6, 0.4f)),
 
+    BROTH(new BowlItem(settings().maxCount(1), 4, 0.5f)),
     KELP_SALAD(new BowlItem(settings().maxCount(1), 4, 0.5f)),
     BROWN_MUSHROOM_SALAD(new BowlItem(settings().maxCount(1), 4, 0.5f)),
     ORANGE_MUSHROOM_SALAD(new BowlItem(settings().maxCount(1), 4, 0.5f)),

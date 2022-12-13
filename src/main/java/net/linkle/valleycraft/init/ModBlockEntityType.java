@@ -9,8 +9,6 @@ import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityT
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder.Factory;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.block.entity.*;
-import net.linkle.valleycraft.client.block.entity.WaypointRenderer;
-import net.linkle.valleycraft.client.block.entity.WispLanternRenderer;
 import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
@@ -27,7 +25,6 @@ public class ModBlockEntityType {
     public static BlockEntityType<WaypointBlockEntity> WAYPOINT_ENTITY;
 
     public static void initialize() {
-        WISP_LANTERN = create("wisp_lantern", WispLanternBlockEntity::new, ModBlocks.VEX_LANTERN, ModBlocks.VEX_QUEEN_LANTERN, ModBlocks.ALLAY_LANTERN, ModBlocks.WISP_LANTERN);
         CRATE = create("crate", CrateBlockEntity::new, ModBlocks.CRATE);
         COUNTER = create("counter", CounterBlockEntity::new, ModBlocks.COUNTER);
         CABINET = create("cabinet", CabinetBlockEntity::new, ModBlocks.CABINET);
@@ -37,8 +34,6 @@ public class ModBlockEntityType {
     
     @Environment(EnvType.CLIENT)
     public static void initializeClient() {
-        BlockEntityRendererRegistry.register(WISP_LANTERN, WispLanternRenderer::new);
-        //BlockEntityRendererRegistry.register(WAYPOINT_ENTITY, WaypointRenderer::new);
     }
     
     /** Create block entity */

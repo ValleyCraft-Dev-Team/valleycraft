@@ -23,6 +23,7 @@
     "minecraft:clock",
     "minecraft:compass",
     "minecraft:recovery_compass",
-    "valleycraft:stuck_slime"
+    "valleycraft:stuck_slime",
+    "valleycraft:ring"
   ]
 }

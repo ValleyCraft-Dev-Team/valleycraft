@@ -549,10 +549,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     //ANCIENT_WAGON_WHEEL(new WagonWheelBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS)),
     //ANCIENT_WAGON_WHEEL_PLATFORM(new WagonWheelPlatformBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS)),
     //ANCIENT_WAGON_WHEEL_TABLE(new WagonWheelTableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
-    //ALLAY_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.UNCOMMON).maxCount(1).group(BOOKS).fireproof()),
-    //VEX_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof()),
-    //WISP_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.RARE).maxCount(1).group(BOOKS).fireproof()),
-    //VEX_QUEEN_LANTERN(new WispLanternBlock(Block.Settings.copy(Blocks.LANTERN)), itemSettings().rarity(Rarity.EPIC).maxCount(1).group(BOOKS).fireproof()),
 
     //lodged and rusty blocks go here
     SWORD_BLOCK(new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),

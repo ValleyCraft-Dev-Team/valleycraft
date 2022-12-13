@@ -195,7 +195,7 @@ class RenderLayers {
         put(GARNET_LANTERN, cullout);
 
         put(ROPE_LADDER, cullout);
-        put(NET_BLOCK, cullout);
+        //put(NET_BLOCK, cullout);
         put(PRIMSTEEL_GRATE, cullout);
         put(PRIMSTEEL_CHAIN, cullout);
         put(IRON_CHAIN, cullout);
@@ -210,16 +210,13 @@ class RenderLayers {
         put(BEVELED_TINTED_GLASS, translucent);
         put(BEVELED_TINTED_GLASS_PANE, translucent);
         put(TINTED_GLASS_PANE, translucent);
-        put(VEX_LANTERN, cullout);
-        put(VEX_QUEEN_LANTERN, cullout);
-        put(ALLAY_LANTERN, cullout);
+
         put(WATTLE_BARS, cullout);
         put(ARID_VINES, cullout);
         put(ARID_VINES_PLANT, cullout);
         put(MIMIC_FLOWER, cullout);
         put(BRIMSTONE_LANTERN, cullout);
-        put(WISP_LANTERN, cullout);
-        
+
         // lattices
         put(ACACIA_LATTICE, cullout);
         put(AMBERBLOSSOM_LATTICE, cullout);
@@ -240,9 +237,9 @@ class RenderLayers {
         put(CANDLE_BOTTLE, cullout);
         put(CANDLE_BOTTLE_LIT, cullout);
         
-        put(ANCIENT_WAGON_WHEEL, cullout);
-        put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);
-        put(ANCIENT_WAGON_WHEEL_TABLE, cullout);
+        //put(ANCIENT_WAGON_WHEEL, cullout);
+        //put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);
+        //put(ANCIENT_WAGON_WHEEL_TABLE, cullout);
         put(WATTLE_STOOL, cullout);
         put(WATTLE_TABLE, cullout);
         put(WATTLE_TABLE_CLOTHE, cullout);
@@ -326,7 +323,7 @@ class RenderLayers {
         put(VILLAGER_SKELETAL_REMAINS, cullout);
         put(PIGLIN_SKELETAL_REMAINS, cullout);
         put(DAERDRI_SKULL, cullout);
-        put(GEITLIN_SKULL, cullout);
+        //put(GEITLIN_SKULL, cullout);
         put(VILLAGER_SKULL, cullout);
         put(PIGLIN_SKULL, cullout);
         put(MOBLIN_SKULL, cullout);

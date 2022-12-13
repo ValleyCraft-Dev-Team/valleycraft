@@ -30,6 +30,7 @@ public enum ModBaubles implements ItemEnum {
     DIVINE_ACORN(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     GHAST_TEARS(new UniqueBaubleItem(itemSettings().rarity(RARE))),
     STUCK_SLIME(new UniqueBaubleItem(itemSettings().rarity(RARE))),
+    RING(new BaubleItem(itemSettings().rarity(RARE))),
 
     LUCKY_FISHING_HOOK(new UniqueBaubleItem(itemSettings().rarity(RARE))),
     RAVAGER_GOLEM_TUSK(new BaubleItem(itemSettings().rarity(RARE))),
