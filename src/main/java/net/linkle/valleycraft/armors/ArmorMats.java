@@ -98,13 +98,13 @@ public enum ArmorMats implements ArmorMaterial {
 
     //ANCIENT_AGLETS("ancient_aglets", ints(1,4,5,2), 15, 18, equipIron(), items(COPPER_INGOT)),
 
-    RF_LEATHER("reinforced_leather", ints(0,1,2,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
-    RF_GOLD("reinforced_gold", ints(0,1,4,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
-    RF_IRON("reinforced_iron", ints(0,3,5,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
-    RF_PRIMSTEEL("reinforced_primsteel", ints(0,2,4,3), 15, 18, equipChain(), items(ModItems.PRIMSTEEL_INGOT)),
-    RF_ROSEGOLD("reinforced_rosegold", ints(0,3,5,3), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT),0.75f, 0.0f),
-    RF_DIAMOND("reinforced_diamond", ints(0,4,7,4), 15, 10, equipChain(), items(Items.DIAMOND), 2.0f, 0.0f),
-    RF_NETHERITE("reinforced_netherite", ints(0,4,7,4), 15, 15, equipChain(), items(Items.NETHERITE_INGOT), 3.0f, 0.0f),
+    RF_LEATHER("reinforced_leather", ints(1,1,2,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    RF_GOLD("reinforced_gold", ints(1,1,4,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    RF_IRON("reinforced_iron", ints(2,3,5,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
+    RF_PRIMSTEEL("reinforced_primsteel", ints(1,2,4,3), 15, 18, equipChain(), items(ModItems.PRIMSTEEL_INGOT)),
+    RF_ROSEGOLD("reinforced_rosegold", ints(2,3,5,3), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT),0.75f, 0.0f),
+    RF_DIAMOND("reinforced_diamond", ints(3,4,7,4), 15, 10, equipChain(), items(Items.DIAMOND), 2.0f, 0.0f),
+    RF_NETHERITE("reinforced_netherite", ints(3,4,7,4), 15, 15, equipChain(), items(Items.NETHERITE_INGOT), 3.0f, 0.0f),
 
     HAUBERK_LEATHER("leather_hauberk", ints(1,2,2,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     HAUBERK_GOLD("gold_hauberk", ints(1,3,4,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),

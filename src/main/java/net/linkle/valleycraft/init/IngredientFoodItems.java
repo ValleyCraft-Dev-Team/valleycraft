@@ -22,11 +22,10 @@ public enum IngredientFoodItems implements ItemEnum {
     CHEESE_WHEEL(new FoodItem(settings(), 8, 0.4f)),
     CHEESE_SLICE(new FoodItem(settings(), 2, 0.4f)),
     MOREL_OIL(new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS).hideTooltip()),
-    CHOCOLATE(new FoodItem(settings(), 2, 0.5f)),
 
     GLOW_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 15 * 20)))
     .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_8", Formatting.GRAY)),
-    GLOOM_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 15 * 20)))),
+    //GLOOM_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 15 * 20)))),
 
     //STAR_CHERRIES(new FoodItem(settings(), 3, 0.6f)),
     ALOE_VERA(new AliasedBlockItem(ModNaturalBlocks.ALOE_VERAS.block, settings().food(Foods.create(3, 0.3f)))),
@@ -97,7 +96,7 @@ public enum IngredientFoodItems implements ItemEnum {
     APPLE_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     SWEET_BERRY_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     GLOW_BERRY_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
-    GLOOM_BERRY_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
+    //GLOOM_BERRY_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     CHORUS_FRUIT_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     CAKE_DOUGH(new FoodItem(settings(), 3, 0.2f));
 

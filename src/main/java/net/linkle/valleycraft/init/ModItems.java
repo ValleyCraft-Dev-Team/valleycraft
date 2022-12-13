@@ -96,7 +96,6 @@ public enum ModItems implements ItemEnum {
     BRASIUM_INGOT(new Item(itemSettings())),
     ROSEGOLD_INGOT(new Item(itemSettings())),
     DIAMOND_PLATE(new Item(itemSettings())),
-    NETHERITE_SCRAP(new Item(itemSettings())),
     NETHERITE_NUGGET(new Item(itemSettings())),
     SPYGLASS_LENSE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
     HOT_PLATE(new Item(itemSettings().rarity(Rarity.RARE))),
@@ -110,14 +109,14 @@ public enum ModItems implements ItemEnum {
     //SALVE(new SalveItem(itemSettings().group(VC_TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION)),
 
     //souls
-    SOUL_ITEM_WITHERED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof())),
-    SOUL_ITEM_FADING(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof())),
+    SOUL_ITEM_FADING(new SoulItem(itemSettings().group(BOOKS).fireproof())),
     SOUL_ITEM(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof())),
     SOUL_ITEM_ENRAGED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof())),
     SOUL_ITEM_PET(new SoulPetItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
-    SOUL_ITEM_WARDEN(new SoulItem(itemSettings().group(BOOKS).fireproof())),
-    SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().group(BOOKS).fireproof())),
-    SOUL_ITEM_DRAGON(new SoulItem(itemSettings().group(BOOKS).fireproof())),
+    SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    SOUL_ITEM_WITHERED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof())),
+    SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
 
     SEAOLOGER_TOKEN(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
     TOTEM_OF_TRADE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),

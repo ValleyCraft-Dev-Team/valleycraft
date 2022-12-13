@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/baubles/ghast_tears"
+    "layer0": "valleycraft:item/baubles/stuck_slime"
   }
 }
