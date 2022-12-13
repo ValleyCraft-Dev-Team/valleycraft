@@ -50,7 +50,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     LIGHT_BLUE_TULIP(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     BLACK_TULIP(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     FROSTFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
-    //CLARET_LEAF(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     GODDESS_LILY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     FIDDLEHEAD_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
 
@@ -87,7 +86,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     MOREL(new ModMushroomBlock(), itemSettings()),
     SHIVERCAP(new ShivercapBlock(), itemSettings().group(INGREDIENTS)),
     STALWART_SHROOM(new StalwartBlock(), itemSettings().group(INGREDIENTS)),
-    //GOOP_CAP(new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM).nonOpaque().luminance(s -> 2)), itemSettings()),
 
     SHORT_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
     SNOWFLOWER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
@@ -120,8 +118,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     ANCIENT_FLOWERS(new MultiCropBlock(MultiCropBlock.settings()).genSize(2, 12/16f)),
     AMETHYSTLES(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 12/16f)),
     ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(ARID_DESERT).AloeShape()),
-    //GLOOM_BERRY(new GloomBerryHeadBlock()),
-    //GLOOM_BERRY_PLANT(new GloomBerryBodyBlock()),
     MIMIC_FLOWER(new MimicFlowerBlock(MimicFlowerBlock.settings(0).ticksRandomly()), itemSettings()),
 
     CAVE_ROOTS(new HangingPlant(Block.Settings.copy(Blocks.HANGING_ROOTS)), itemSettings()),
@@ -176,7 +172,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     VOLCANIC_ASH(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
 
     MAMON_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
-    //ANCIENT_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
     MAMON_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES)), itemSettings()),
     MAMON_SAPLING(new SaplingBlock(new AmberSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
 
@@ -201,14 +196,14 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     HOLLOW_OAK_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
     HOLLOW_SPRUCE_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.SPRUCE_LOG)), itemSettings()),
 
+    STONE_CAVE_GRASS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.MOSS_BLOCK)), itemSettings()),
+    SHALE_CAVE_GRASS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    DEEPSLATE_CAVE_GRASS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.MOSS_BLOCK)), itemSettings()),
+
     ARID_VINES(new VineHeadBlock(), itemSettings()),
     ARID_VINES_PLANT(new VineBodyBlock()),
-    CAVE_MOSS(new CaveMossBlock(), itemSettings()),
-    CRYSTAL_CAVE_MOSS(new CaveMossBlock(), itemSettings()),
-
-    //GHOST_PUMPKIN(new GhostPumpkinBlock(), itemSettings()),
-    //GHOST_PUMPKIN_STEM(new StemBlock((GourdBlock)GHOST_PUMPKIN.asBlock(), ()->ModItems.GHOST_PUMPKIN_SEEDS.item, Block.Settings.copy(Blocks.PUMPKIN_STEM))),
-    //ATTACHED_GHOST_PUMPKIN_STEM(new AttachedStemBlock((GourdBlock)GHOST_PUMPKIN.asBlock(), ()->ModItems.GHOST_PUMPKIN_SEEDS.item, Block.Settings.copy(Blocks.ATTACHED_PUMPKIN_STEM))),
+    //CAVE_MOSS(new CaveMossBlock(), itemSettings()),
+    //CRYSTAL_CAVE_MOSS(new CaveMossBlock(), itemSettings()),
 
     SLUDGE_FLUID(new SludgeFluidBlock(ModFluids.SLUDGE_STILL.flowable())),
 
@@ -216,7 +211,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
 
     DRY_DIRT(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
     SANDY_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),
-    //ARID_MOSSY_STONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     MOSSY_STONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     CARMINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     CARMINE_COBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
@@ -235,14 +229,9 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     ADVENTURINE(new Block(Block.Settings.copy(Blocks.STONE).hardness(25).luminance(s ->1)), itemSettings()),
     ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
     ERDCOBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE).hardness(2)), itemSettings()),
-    //ERDSTONE_AMBER_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
-    //ERDSTONE_COAL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
-    //GOLEMITE_ERDSTONE_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
-    //ERDSTONE_FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
 
     LOOSE_ROCKS(new FallingRockBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.NETHER_BRICKS)), itemSettings()),
-    //CRACKED_COBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLESTONE).hardness(2)), itemSettings()),
-    
+
     AMBER_ORE(new Block(Block.Settings.copy(Blocks.IRON_ORE)), itemSettings()),
     FOSSIL_ORE(new Block(Block.Settings.copy(Blocks.IRON_ORE)), itemSettings()),
     PRIMSTEEL_ORE(new Block(Block.Settings.copy(Blocks.IRON_ORE)), itemSettings()),
@@ -288,26 +277,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     BLUE_SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).smallShape(), itemSettings().rarity(Rarity.RARE)),
     BLUE_SOULSPORE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).largeShape(), itemSettings().rarity(Rarity.RARE));
 
-    //save for end update?
-    //FADED_CELESTIAL(new SoulPlantBlock(ParticleTypes.SMOKE, SoulPlantBlock.settings(0)), itemSettings()),
-    //SOUL_CELESTIAL(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3)), itemSettings().rarity(Rarity.UNCOMMON)),
-    //BLUE_SOUL_CELESTIAL(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6)), itemSettings().rarity(Rarity.RARE));
-    //END_GRASS_BLOCK(new EndGrassBlock(Block.Settings.copy(Blocks.END_STONE).sounds(BlockSoundGroup.NETHERRACK)), itemSettings()),
-    //END_GRASS(new ModPlantBlock(OFFSET_REPLACEABLE).ground(END_PLANTS), itemSettings()),
-    //CELESTIAL_SAPLING(new SaplingBlock(new CelestialSaplingGen(), Block.Settings.copy(Blocks.OAK_SAPLING)), itemSettings()),
-    //CELESTIAL_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES).sounds(BlockSoundGroup.NETHER_WART).nonOpaque()), itemSettings()),
-    //CELESTIAL_LOG(new PillarBlock(Block.Settings.copy(Blocks.CRIMSON_HYPHAE)), itemSettings()),
-    //PURPLE_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
-    //BLUE_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
-    //GREEN_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
-    //RED_GLARE(new ModPlantBlock(OFFSET_FLOWER).ground(END_PLANTS), itemSettings()),
-
-    //ROOTED_WATCHER(new ModPlantBlock()),
-    //WARDING_SHROOM(new ModPlantBlock()),
-    //STICKY_SHROOM(new ModLargerMushroomBlock()),
-    //BIG_RED(new ModPlantBlock(Block.Settings.copy(Blocks.RED_MUSHROOM))),
-    //BIG_BROWN(new ModPlantBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM))),
-    
     public static void initialize() {
         ((VineHeadBlock)ARID_VINES.block).setPlant(ARID_VINES_PLANT.block);
         ((VineBodyBlock)ARID_VINES_PLANT.block).setStem(ARID_VINES.block);

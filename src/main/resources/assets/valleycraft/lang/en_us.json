@@ -199,12 +199,12 @@
   "block.valleycraft.nether_garnet_ore": "Nether Garnet Ore",
   "block.valleycraft.nether_garnet_block": "Block of Nether Garnet",
 
-  "block.valleycraft.garnet_lantern": "Nether Garnet Red Lantern",
-  "block.valleycraft.amber_lantern": "Amber Orange Lantern",
-  "block.valleycraft.brimstone_lantern": "Brimstone Yellow Lantern",
-  "block.valleycraft.diamond_lantern": "Diamond Blue Lantern",
-  "block.valleycraft.emerald_lantern": "Emerald Green Lantern",
-  "block.valleycraft.amethyst_lantern": "Amethyst Purple Lantern",
+  "block.valleycraft.garnet_lantern": "Nether Garnet Lantern",
+  "block.valleycraft.amber_lantern": "Amber Lantern",
+  "block.valleycraft.brimstone_lantern": "Brimstone Lantern",
+  "block.valleycraft.diamond_lantern": "Diamond Lantern",
+  "block.valleycraft.emerald_lantern": "Emerald Lantern",
+  "block.valleycraft.amethyst_lantern": "Amethyst Lantern",
 
   "item.valleycraft.branch": "§aTree Branch",
   "item.valleycraft.sharp_flint": "§aSharp Flint",
@@ -465,10 +465,7 @@
   "block.valleycraft.stake": "Stake",
   "block.valleycraft.sprinkler": "Sprinkler",
 
-  "block.valleycraft.vex_lantern": "Lantern Caged Vex",
   "block.valleycraft.glowsquid_lantern": "Glow Squid Lantern",
-  "block.valleycraft.allay_lantern": "Lantern Caged Allay",
-  "block.valleycraft.vex_queen_lantern": "Lantern Caged Wisp-kin Queen",
 
   "block.valleycraft.arid_mossy_erdstone_bricks": "Arid Mossy Erdstone Bricks",
   "block.valleycraft.mossy_erdstone_bricks": "Mossy Erdstone Bricks",
@@ -564,8 +561,8 @@
   "block.valleycraft.orange_kelp": "Maroon Kelp",
   "block.valleycraft.orange_kelp_block": "Maroon Kelp Block",
 
-  "block.valleycraft.glow_kelp": "Glow Kelp",
-  "block.valleycraft.glow_kelp_block": "Glow Kelp Block",
+  "block.valleycraft.glow_kelp": "Glimmer Kelp",
+  "block.valleycraft.glow_kelp_block": "Glimmer Kelp Block",
 
   "block.valleycraft.big_fern": "Bracken Fern",
   "block.valleycraft.lush_bush": "Lush Creosote Bush",
@@ -1123,7 +1120,7 @@
   "item.valleycraft.cheese_slice": "Slice of Cheese",
   "item.valleycraft.chocolate": "Chocolate",
   "item.valleycraft.dried_orange_kelp": "Dried Titian Kelp",
-  "item.valleycraft.dried_glow_kelp": "Dried Glow Kelp",
+  "item.valleycraft.dried_glow_kelp": "Dried Glimmer Kelp",
   "item.valleycraft.pumpkin_pie_slice": "Slice of Pumpkin Pie",
   "item.valleycraft.apple_pie_slice": "Slice of Apple Pie",
   "item.valleycraft.sweet_berry_pie_slice": "Slice of Sweet Berry Pie",
