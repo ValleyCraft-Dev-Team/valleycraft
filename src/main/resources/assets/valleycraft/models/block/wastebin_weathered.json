@@ -1,0 +1,8 @@
+{
+	"parent": "valleycraft:block/wastebin",
+	"textures": {
+		"top": "valleycraft:block/wastebin_top_weathered",
+		"bottom": "valleycraft:block/wastebin_bottom_weathered",
+		"side": "valleycraft:block/wastebin_side_weathered"
+	}
+}

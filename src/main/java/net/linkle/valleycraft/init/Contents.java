@@ -53,6 +53,15 @@ public class Contents {
         registerWaxableBlockPair(ModBlocks.WALL_CANDELABRA_EXPOSED.block, ModBlocks.WAXED_WALL_CANDELABRA_EXPOSED.block);
         registerWaxableBlockPair(ModBlocks.WALL_CANDELABRA_WEATHERED.block, ModBlocks.WAXED_WALL_CANDELABRA_WEATHERED.block);
         registerWaxableBlockPair(ModBlocks.WALL_CANDELABRA_OXIDIZED.block, ModBlocks.WAXED_WALL_CANDELABRA_OXIDIZED.block);
+        
+        registerOxidizableBlockPair(ModBlocks.WASTEBIN.block, ModBlocks.WASTEBIN_EXPOSED.block);
+        registerOxidizableBlockPair(ModBlocks.WASTEBIN_EXPOSED.block, ModBlocks.WASTEBIN_WEATHERED.block);
+        registerOxidizableBlockPair(ModBlocks.WASTEBIN_WEATHERED.block, ModBlocks.WASTEBIN_OXIDIZED.block);
+        
+        registerWaxableBlockPair(ModBlocks.WASTEBIN.block, ModBlocks.WAXED_WASTEBIN.block);
+        registerWaxableBlockPair(ModBlocks.WASTEBIN_EXPOSED.block, ModBlocks.WAXED_WASTEBIN_EXPOSED.block);
+        registerWaxableBlockPair(ModBlocks.WASTEBIN_WEATHERED.block, ModBlocks.WAXED_WASTEBIN_WEATHERED.block);
+        registerWaxableBlockPair(ModBlocks.WASTEBIN_OXIDIZED.block, ModBlocks.WAXED_WASTEBIN_OXIDIZED.block);
     }
     
     private static void strips() {
