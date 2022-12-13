@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"3": "valleycraft:block/sludge_still",
+		"liquid": "valleycraft:block/sludge_still",
 		"top": "valleycraft:block/wastebin_top",
 		"bottom": "valleycraft:block/wastebin_bottom",
-		"particle": "valleycraft:block/wastebin_side",
-		"side": "valleycraft:block/wastebin_side"
+		"side": "valleycraft:block/wastebin_side",
+		"particle": "#side"
 	},
 	"elements": [
 		{
@@ -61,12 +61,12 @@
 			"from": [2, 12, 2],
 			"to": [14, 13, 14],
 			"faces": {
-				"north": {"uv": [14, 2, 15, 14], "rotation": 90, "texture": "#3"},
-				"east": {"uv": [1, 2, 2, 14], "rotation": 90, "texture": "#3"},
-				"south": {"uv": [2, 14, 14, 15], "texture": "#3"},
-				"west": {"uv": [2, 1, 14, 2], "texture": "#3"},
-				"up": {"uv": [2, 2, 14, 14], "texture": "#3"},
-				"down": {"uv": [2, 2, 14, 14], "texture": "#3"}
+				"north": {"uv": [14, 2, 15, 14], "rotation": 90, "texture": "#liquid"},
+				"east": {"uv": [1, 2, 2, 14], "rotation": 90, "texture": "#liquid"},
+				"south": {"uv": [2, 14, 14, 15], "texture": "#liquid"},
+				"west": {"uv": [2, 1, 14, 2], "texture": "#liquid"},
+				"up": {"uv": [2, 2, 14, 14], "texture": "#liquid"},
+				"down": {"uv": [2, 2, 14, 14], "texture": "#liquid"}
 			}
 		}
 	],

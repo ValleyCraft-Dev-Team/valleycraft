@@ -19,7 +19,6 @@ import net.minecraft.block.*;
 import net.minecraft.block.Oxidizable.OxidationLevel;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
@@ -204,6 +203,16 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     WAXED_WALL_CANDELABRA_EXPOSED(new WallCandelabraBlock(), itemSettings()),
     WAXED_WALL_CANDELABRA_WEATHERED(new WallCandelabraBlock(), itemSettings()),
     WAXED_WALL_CANDELABRA_OXIDIZED(new WallCandelabraBlock(), itemSettings()),
+    
+    WASTEBIN(new OxidizableWastebinBlock(OxidationLevel.UNAFFECTED), itemSettings()),
+    WASTEBIN_EXPOSED(new OxidizableWastebinBlock(OxidationLevel.EXPOSED), itemSettings()),
+    WASTEBIN_WEATHERED(new OxidizableWastebinBlock(OxidationLevel.WEATHERED), itemSettings()),
+    WASTEBIN_OXIDIZED(new OxidizableWastebinBlock(OxidationLevel.OXIDIZED), itemSettings()),
+    
+    WAXED_WASTEBIN(new WastebinBlock(), itemSettings()),
+    WAXED_WASTEBIN_EXPOSED(new WastebinBlock(), itemSettings()),
+    WAXED_WASTEBIN_WEATHERED(new WastebinBlock(), itemSettings()),
+    WAXED_WASTEBIN_OXIDIZED(new WastebinBlock(), itemSettings()),
 
     SPRINKLER(new SprinklerBlock(), itemSettings()),
 
