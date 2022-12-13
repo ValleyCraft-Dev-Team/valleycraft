@@ -39,11 +39,15 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     MINER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     LUMBERJACK_STATION(new LumberjackBlock(Block.Settings.copy(Blocks.SPRUCE_PLANKS).nonOpaque()), itemSettings()),
+    HUNTING_STATION(new LumberjackBlock(Block.Settings.copy(Blocks.SPRUCE_PLANKS).nonOpaque()), itemSettings()),
     STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
     BRICK_STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
     LOG_PILE(new LogPile(Block.Settings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
     CRATE(new CrateBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
-    COUNTER(new CounterBlock(Block.Settings.copy(Blocks.BARREL).nonOpaque()), itemSettings()),
+    COUNTER_DRAWER(new CounterBlock(Block.Settings.copy(Blocks.BARREL).nonOpaque()), itemSettings()),
+    COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    COUNTER_CORNER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+
     CABINET(new CabinetBlock(Block.Settings.copy(Blocks.BARREL).nonOpaque()), itemSettings()),
     EMPTY_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
     ANTHRO_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
@@ -64,6 +68,14 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BOOK_STACK_6(new BookStackBlock(BLOCK_SHAPE_6, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
     BOOK_STACK_7(new BookStackBlock(BLOCK_SHAPE_7, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
     BOOK_STACK_8(new BookStackBlock(BLOCK_SHAPE_8, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
+    INK_WELL(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
+    INK_BOTTLE(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
+    WATER_BOTTLE(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
+    EMPTY_BOTTLE(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
+    GLOW_BERRY_BOTTLE(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
+    MILK_BOTTLE(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
+    HONEY_BOTTLE(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
+    EXP_BOTTLE(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
 
     WATTLE_STOOL(new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     WATTLE_CHAIR(new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
@@ -218,6 +230,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     // redstonery
     TARGET_BLOCK(new ModTargetBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     STAKE(new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly()), itemSettings()),
+    STAKE_BASE(new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly()), itemSettings()),
     LANTERN_HANGER(new LanternHangerBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).breakInstantly().sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
 
     // glass blocks & windows
@@ -384,10 +397,13 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     ERDSTONE_TILES(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     CHISELED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     CHISELED_ERDSTONE_FACE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    CHISELED_ERDSTONE_CRAFTABLE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     PATTERNED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_CAPPED(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     ERDSTONE_SPIRIT(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     // adventurine
     POLISHED_ADVENTURINE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(25).resistance(2500f).luminance(s ->5)), itemSettings()),
+    ADVENTURINE_BRICKS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(25).resistance(2500f).luminance(s ->5)), itemSettings()),
 
     //shale
     COBBLED_SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
@@ -405,9 +421,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     MARBLE_PATTERNED(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_AIR(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
 
-    //special tiles
-    KITCHEN_TILES(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
-
     //shiverstone
     SHIVERSTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     SHIVERSTONE_TILES(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
@@ -416,7 +429,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SERPENTINITE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     SERPENTINITE_BRICKS(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     SERPENTINITE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
-    SERPENTINITE_WINDOW(new GrateBlock(Block.Settings.copy(Blocks.SMOOTH_STONE).nonOpaque()), itemSettings()),
+    //SERPENTINITE_WINDOW(new GrateBlock(Block.Settings.copy(Blocks.SMOOTH_STONE).nonOpaque()), itemSettings()),
     CHISELED_SERPENTINITE(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     CHISELED_SERPENTINITE_CRAFTABLE(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     SHIVERSTONE_WATER(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
@@ -432,15 +445,22 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     CARMINE_SMOOTH_STAIRS(new StairsBlock(CARMINE_SMOOTH.getState(), Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
     CARMINE_SMOOTH_SLAB(new SlabBlock(Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
     CARMINE_SMOOTH_WALL(new WallBlock(Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
+    CARMINE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
 
     //ice and snow blocks
+    PACKED_SNOW_POLISHED(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
     PACKED_SNOW_BRICKS_LARGE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
     PACKED_SNOW_BRICKS_SMALL(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_BRICKS_CHISELED(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
 
     //andesite/diorite/granite
     ANDESITE_BRICKS(new Block(Block.Settings.copy(Blocks.ANDESITE)), itemSettings()),
     DIORITE_BRICKS(new Block(Block.Settings.copy(Blocks.DIORITE)), itemSettings()),
     GRANITE_BRICKS(new Block(Block.Settings.copy(Blocks.GRANITE)), itemSettings()),
+
+    //prismarine
+    POLISHED_PRISMARINE(new Block(Block.Settings.copy(Blocks.PRISMARINE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    CHISELED_PRISMARINE(new Block(Block.Settings.copy(Blocks.PRISMARINE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
 
     //dripstone bricks
     POLISHED_DRIPSTONE(new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
@@ -456,18 +476,49 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     //INDUSTRIAL_BRICKS(new Block(Block.Settings.copy(Blocks.SMOOTH_BASALT)), itemSettings()),
     //INDUSTRIAL_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.SMOOTH_BASALT)), itemSettings()),
 
+    //salt
+    POLISHED_SALT_BLOCK(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    SALT_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CHISELED_SALT_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    SALT_BRICKS_CAPPED(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     //basalt bricks
     POLISHED_BASALT(new Block(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
     POLISHED_BASALT_BRICKS(new Block(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+    POLISHED_BASALT_PATTERNED(new Block(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+    //special tiles
+    KITCHEN_TILES(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
+
+    //sandstone
+    SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CRACKED_SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    MOSSY_SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CHISELED_SANDSTONE_BLANK(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
+    //red sandstone
+    RED_SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CRACKED_RED_SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    MOSSY_RED_SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CHISELED_RED_SANDSTONE_BLANK(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE))),
 
     //scorchstone
+    SCORCHSTONE_POLISHED(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     SCORCHSTONE_TILES(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     MOSSY_SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_CHISELED(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     //CHISELED_SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     SCORCHSTONE_FIRE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     SCORCHSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_WINDOW(new GrateBlock(Block.Settings.copy(Blocks.STONE).nonOpaque()), itemSettings().fireproof()),
+    //SCORCHSTONE_WINDOW(new GrateBlock(Block.Settings.copy(Blocks.STONE).nonOpaque()), itemSettings().fireproof()),
+
+    //mud bricks
+    POLISHED_PACKED_MUD(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
+    PACKED_MUD_CAPPED(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
+
+    //red bricks
+    SMOOTH_BRICK(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
+    MOSAIC_BRICK(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
 
     //cobblestone bricks
     POLISHED_COBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
@@ -476,20 +527,17 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     //ARID_MOSSY_COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
     CHISELED_COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
 
-    //??? other misc stone blocks ig
+    //stone bricks
     STONE_TILES(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    STONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    STONE_CCAPPED(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+
+    //deepslate blocks
+    DEEPSLATE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.DEEPSLATE)), itemSettings()),
+
+    //??? other misc stone blocks ig
     POLISHED_STONE(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
     SMOOTH_STONE_TILES(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
-
-    //mud bricks
-    POLISHED_PACKED_MUD(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
-    CORNER_CAPPED_PACKED_MUD(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
-
-    //sandstone
-    CHISELED_SANDSTONE_BLANK(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
-
-    //red sandstone
-    CHISELED_RED_SANDSTONE_BLANK(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE))),
 
     //chimneys aka hell
     //INDUSTRIAL_CHIMNEY(new ChimneyBlock(Block.Settings.copy(Blocks.SMOOTH_BASALT).nonOpaque()), itemSettings()),
@@ -564,6 +612,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     PIGLIN_SKELETAL_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
     PIGLIN_SKULL(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
     SKELETAL_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    SKELETAL_REMAINS_SLUMPED(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    SKELETAL_REMAINS_TIRED(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
     SKELETAL_MINING_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     SKELETAL_BEST_FRIEND_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.EPIC)),
     DAERDRI_SKULL(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.EPIC)),
@@ -587,9 +637,11 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     CHISELED_RED_SANDSTONE_PORTAL_COMING(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
     CHISELED_RED_SANDSTONE_PORTAL_LEAVING(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
     //misc ancient blocks go here
+    SCORCHSTONE_CHISELED_FACE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof().rarity(Rarity.UNCOMMON).group(BOOKS)),
+
     CHISELED_ERDSTONE_BRICK_FACE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS)),
     MOSSY_PATTERNED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
-    ERDSTONE_WINDOW(new GrateBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).nonOpaque()), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
+    //PRIMSTEEL_WINDOW(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).nonOpaque()), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
     ERDSTONE_TARGET_BLOCK(new TargetBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1).luminance(s ->10)), itemSettings().group(BOOKS)),
     ERDSTONE_DISPENSER(new DispenserBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS)),
     ERDSTONE_SPIRIT_LIT(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).luminance(s ->16)), itemSettings().group(BOOKS)),

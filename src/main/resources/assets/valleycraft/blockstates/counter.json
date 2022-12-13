@@ -1,35 +1,19 @@
 {
   "variants": {
-    "facing=north,open=true": {
-      "model": "valleycraft:block/counter_open"
+    "facing=east": {
+      "model": "valleycraft:block/counter_spacer",
+      "y": 90
     },
-    "facing=south,open=true": {
-      "y": 180,
-      "model": "valleycraft:block/counter_open"
+    "facing=north": {
+      "model": "valleycraft:block/counter_spacer"
     },
-    "facing=east,open=true": {
-      "y": 90,
-      "model": "valleycraft:block/counter_open"
+    "facing=south": {
+      "model": "valleycraft:block/counter_spacer",
+      "y": 180
     },
-    "facing=west,open=true": {
-      "y": 270,
-      "model": "valleycraft:block/counter_open"
-    },
-    
-    "facing=north,open=false": {
-      "model": "valleycraft:block/counter"
-    },
-    "facing=south,open=false": {
-      "y": 180,
-      "model": "valleycraft:block/counter"
-    },
-    "facing=east,open=false": {
-      "y": 90,
-      "model": "valleycraft:block/counter"
-    },
-    "facing=west,open=false": {
-      "y": 270,
-      "model": "valleycraft:block/counter"
+    "facing=west": {
+      "model": "valleycraft:block/counter_spacer",
+      "y": 270
     }
   }
 }

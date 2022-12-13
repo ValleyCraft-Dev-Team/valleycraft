@@ -36,6 +36,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     FOXTAIL_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     JUNGLE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
     PANFLOWERS(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
+    CLOVER(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
 
     HONEYCLUSTER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     LAVENDER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
@@ -160,6 +161,12 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     STARFISH_BLOCK(new StarfishBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque().noCollision().breakInstantly()), itemSettings()),
     CLAM_BLOCK(new ClamBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque().ticksRandomly().breakInstantly()), itemSettings()),
     URCHIN_BLOCK(new UrchinBlock(Block.Settings.copy(Blocks.SANDSTONE).sounds(BlockSoundGroup.CORAL).nonOpaque()), itemSettings()),
+    BLUE_ANEMONE(new SeagrassBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque()), itemSettings()),
+    GREEN_ANEMONE(new SeagrassBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque()), itemSettings()),
+    PINK_ANEMONE(new SeagrassBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque()), itemSettings()),
+    PURPLE_ANEMONE(new SeagrassBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque()), itemSettings()),
+    RED_ANEMONE(new SeagrassBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque()), itemSettings()),
+    YELLOW_ANEMONE(new SeagrassBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque()), itemSettings()),
 
     SHELL_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),
     DEEP_SEA_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),

@@ -283,9 +283,9 @@ class RenderLayers {
         put(BROWN_CLAY_POT, cullout);
         put(BLUE_CLAY_POT, cullout);
 
-        put(ERDSTONE_WINDOW, cullout);
-        put(SCORCHSTONE_WINDOW, cullout);
-        put(SERPENTINITE_WINDOW, cullout);
+        //put(ERDSTONE_WINDOW, cullout);
+        //put(SCORCHSTONE_WINDOW, cullout);
+        //put(SERPENTINITE_WINDOW, cullout);
 
         put(SLUDGE_FLUID, translucent);
 
@@ -332,6 +332,7 @@ class RenderLayers {
         put(PICKAXE_BLOCK, cullout);
         put(DEAD_LANTERN, cullout);
         put(STAKE, cullout);
+        put(STAKE_BASE, cullout);
         put(LUMBERJACK_STATION, cullout);
         put(CAMPFIRE_POT, cullout);
         put(LANTERN_HANGER, cullout);
@@ -392,8 +393,12 @@ class RenderLayers {
         put(DEEPSLATE_BRICK_CHIMNEY, cullout);
         put(NETHER_BRICK_CHIMNEY, cullout);
         put(RED_NETHER_BRICK_CHIMNEY, cullout);
-        put(COUNTER, cullout);
         put(SHALE_BRICK_CHIMNEY, cullout);
+        put(CLOVER, cullout);
+
+        put(COUNTER, cullout);
+        put(COUNTER_CORNER, cullout);
+        put(COUNTER_DRAWER, cullout);
 
         put(ARID_VINES_PLANT, cullout);
         put(ARID_VINES, cullout);
