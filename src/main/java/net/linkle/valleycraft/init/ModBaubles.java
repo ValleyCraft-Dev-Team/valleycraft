@@ -67,13 +67,14 @@ public enum ModBaubles implements ItemEnum {
     //boss
     ELDER_GUARDIAN_SPIKE_KEEPSAKE(new TalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
     ENDER_DRAGON_TALISMAN(new TalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
-    BRIMSTONE_NECKLACE(new UniqueTalismanItem(itemSettings().rarity(EPIC).group(BOOKS).maxCount(1))),
 
     //unique
     PIGLIN_NECKLACE(new UniqueTalismanItem(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1))),
     STRAY_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1))),
     ARROWHEAD_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
-    MOBLIN_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1)));
+    MOBLIN_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
+    BRIMSTONE_NECKLACE(new UniqueTalismanItem(itemSettings().rarity(EPIC).group(BOOKS).maxCount(1))),
+    EVIL_CRYSTAL_KEEPSAKE(new UniqueTalismanItem(itemSettings().rarity(EPIC).group(BOOKS).maxCount(1)));
 
     public static void initialize() {
     }

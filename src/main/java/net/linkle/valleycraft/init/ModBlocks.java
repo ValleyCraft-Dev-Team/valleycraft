@@ -598,6 +598,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     // clay pots go here (not the baking item one)
     BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).breakInstantly()), itemSettings().group(BOOKS)),
     BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque().breakInstantly()), itemSettings().group(BOOKS)),
+    GREEN_CLAY_POT(new ExplosiveClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque().breakInstantly()), itemSettings().group(BOOKS)),
 
     //cobblestone statues
     OCELOT_STATUE(new AnimalStatueBlock(Block.Settings.copy(Blocks.COBBLESTONE).nonOpaque().resistance(2500)), itemSettings().maxCount(1).group(BOOKS)),

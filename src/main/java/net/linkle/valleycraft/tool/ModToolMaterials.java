@@ -40,6 +40,10 @@ public enum ModToolMaterials implements ToolMaterial {
         return Ingredient.ofItems(ModItems.BRASIUM_INGOT);
     }),
 
+    ELDER_GUARDIAN(2, 250, 6.0F, 2.0F, 14, () -> {
+        return Ingredient.ofItems(ModItems.ELDER_GUARDIAN_SPIKE);
+    }),
+
     //unique - only used once
     NATURES_BLESSING(2, 440, 7.0F, 2.0F, 22, () -> {
         return Ingredient.ofItems(Items.BAMBOO);

@@ -2,6 +2,7 @@ package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.tool.ModToolMaterials;
 import net.linkle.valleycraft.tool.ModToolMaterialsExtended;
+import net.linkle.valleycraft.tool.Scalpel;
 import net.linkle.valleycraft.tool.anthro.AnthroPickaxeItem;
 import net.linkle.valleycraft.tool.anthro.AnthroPickaxeMaterial;
 import net.linkle.valleycraft.tool.environmental.*;
@@ -115,6 +116,7 @@ public class ModTools {
         Reg.register("climbing_axe", CLIMBING_AXE);
         Reg.register("anthropologists_rock_pick", ANTHROPOLOGISTS_ROCK_PICK);
         Reg.register("ice_tongs", new PickaxeItem(ModToolMaterials.BRASIUM, PICKAXE_BASE_DAMAGE, PICKAXE_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("coral_knife", new Scalpel(ModToolMaterials.ELDER_GUARDIAN, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
 
         //Staffs
         Reg.register("wooden_staff", new StaffBase(ModToolMaterials.PLANK, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));

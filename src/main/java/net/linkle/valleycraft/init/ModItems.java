@@ -58,8 +58,10 @@ public enum ModItems implements ItemEnum {
     SEAGULLS_FEATHER(new Item(itemSettings())),
     DUCKS_FEATHER(new Item(itemSettings())),
     CROWS_FEATHER(new Item(itemSettings())),
+    SLIME_BLOB(new Item(itemSettings())),
+    EVIL_CRYSTAL(new Item(itemSettings().rarity(RARE).fireproof())),
 
-    MULCH(new Item(itemSettings())),
+    //MULCH(new Item(itemSettings())),
     //RAW_CLAY_POT(new Item(itemSettings())),
     HANDLE(new Item(itemSettings())),
     STURDY_HANDLE(new Item(itemSettings())),
@@ -117,6 +119,9 @@ public enum ModItems implements ItemEnum {
     SOUL_ITEM_WITHERED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof())),
     SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
     SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+
+    GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
+    ELDER_GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
 
     SEAOLOGER_TOKEN(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
     TOTEM_OF_TRADE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),
