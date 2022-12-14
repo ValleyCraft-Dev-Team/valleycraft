@@ -236,6 +236,15 @@ class RenderLayers {
         
         put(BRAZIER, cullout);
         put(SOUL_BRAZIER, cullout);
+        
+        put(INK_WELL, cullout);
+        put(EMPTY_BOTTLE_BLOCK, cullout);
+        put(EXP_BOTTLE_BLOCK, cullout);
+        put(GLOW_BERRY_BOTTLE_BLOCK, cullout);
+        put(HONEY_BOTTLE_BLOCK, cullout);
+        put(INK_BOTTLE_BLOCK, cullout);
+        put(MILK_BOTTLE_BLOCK, cullout);
+        put(WATER_BOTTLE_BLOCK, cullout);
         put(CANDLE_BOTTLE, cullout);
         put(CANDLE_BOTTLE_LIT, cullout);
         

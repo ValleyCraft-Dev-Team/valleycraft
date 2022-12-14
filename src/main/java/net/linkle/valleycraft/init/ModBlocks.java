@@ -68,14 +68,14 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BOOK_STACK_6(new BookStackBlock(BLOCK_SHAPE_6, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
     BOOK_STACK_7(new BookStackBlock(BLOCK_SHAPE_7, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
     BOOK_STACK_8(new BookStackBlock(BLOCK_SHAPE_8, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
-    INK_WELL(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
-    INK_BOTTLE_BLOCK(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
-    WATER_BOTTLE_BLOCK(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
-    EMPTY_BOTTLE_BLOCK(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
-    GLOW_BERRY_BOTTLE_BLOCK(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
-    MILK_BOTTLE_BLOCK(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
-    HONEY_BOTTLE_BLOCK(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
-    EXP_BOTTLE_BLOCK(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.GLASS).breakInstantly().nonOpaque()), itemSettings()),
+    INK_WELL(new BottleBlock(), itemSettings()),
+    INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    WATER_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    EMPTY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    GLOW_BERRY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    MILK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    HONEY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    EXP_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
 
     WATTLE_STOOL(new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     WATTLE_CHAIR(new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
@@ -91,7 +91,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BRAZIER(new BrazierBlock(15, 1), itemSettings()),
     SOUL_BRAZIER(new BrazierBlock(10, 2), itemSettings()),
     
-    CANDLE_BOTTLE(new CandleBottleBlock(), itemSettings()),
+    CANDLE_BOTTLE(new BottleBlock(), itemSettings()),
     CANDLE_BOTTLE_LIT(new CandleBottleLitBlock(), itemSettings()),
 
     //rope and net blocks
