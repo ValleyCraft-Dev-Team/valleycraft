@@ -186,8 +186,8 @@ class RenderLayers {
         put(ANCIENT_FLOWERS, cullout);
         put(AMETHYSTLES, cullout);
         put(ALOE_VERAS, cullout);
-        put(CAVE_MOSS, cullout);
-        put(CRYSTAL_CAVE_MOSS, cullout);
+        //put(CAVE_MOSS, cullout);
+        //put(CRYSTAL_CAVE_MOSS, cullout);
         put(ORANGE_SEAGRASS, cullout);
         put(GLOWSQUID_LANTERN, cullout);
         put(EMERALD_LANTERN, cullout);
