@@ -3,7 +3,7 @@
 	"textures": {
 		"2": "valleycraft:block/stake_ends",
 		"texture": "valleycraft:block/stake",
-		"particle": ""
+		"particle": "valleycraft:block/stake"
 	},
 	"elements": [
 		{
