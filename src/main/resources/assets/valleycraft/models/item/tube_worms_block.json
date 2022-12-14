@@ -1,3 +1,6 @@
 {
-  "parent": "valleycraft:block/tube_worms"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/block_items/tubeworms"
+  }
 }

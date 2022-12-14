@@ -23,7 +23,7 @@ public enum ModBaubles implements ItemEnum {
 
     //baubles
     PIGLIN_CHILDS_TOY(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
-    MONSTER_TOOTH(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
+    MONSTER_TOOTH(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     POLISHED_GLOWSTONE_CHUNK(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     ANCIENT_DUNGEON_KEY(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
     STRANGE_RUNE(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
@@ -31,6 +31,7 @@ public enum ModBaubles implements ItemEnum {
     GHAST_TEARS(new UniqueBaubleItem(itemSettings().rarity(RARE))),
     STUCK_SLIME(new UniqueBaubleItem(itemSettings().rarity(RARE))),
     RING(new BaubleItem(itemSettings().rarity(RARE))),
+    HEART_MEDALLION(new BaubleItem(itemSettings().rarity(EPIC))),
 
     LUCKY_FISHING_HOOK(new UniqueBaubleItem(itemSettings().rarity(RARE))),
     RAVAGER_GOLEM_TUSK(new BaubleItem(itemSettings().rarity(RARE))),

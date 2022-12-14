@@ -925,7 +925,7 @@
   "item.valleycraft.netherite_circlet": "Netherite Circlet",
   "item.valleycraft.primsteel_circlet": "Primsteel Circlet",
   "item.valleycraft.leather_circlet": "Treated Leather Circlet",
-  "item.valleycraft.black_feathered_hat": "Hunting Hat",
+  "item.valleycraft.black_feathered_hat": "Hunter Hat",
 
   "item.valleycraft.rosegold_helmet": "Rose Gold Helmet",
   "item.valleycraft.rosegold_chestplate": "Rose Gold Chestplate",
@@ -1106,6 +1106,7 @@
   "item.valleycraft.red_scale": "Red Scale",
   "item.valleycraft.blue_scale": "Blue Scale",
   "item.valleycraft.black_scale": "Black Scale",
+  "item.valleycraft.heart_medallion": "Lover's Amulet",
 
   "item.valleycraft.fur_clump": "Tuft of Fur",
   "item.valleycraft.copper_nugget": "Copper Nugget",
