@@ -27,7 +27,6 @@ public class WastebinBlock extends Block {
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         super.onEntityCollision(state, world, pos, entity);
         if (entity.getY()-pos.getY() < 0.2 && entity instanceof ItemEntity) {
-            System.out.println(entity.getY()-pos.getY());
             entity.discard();
         }
     }

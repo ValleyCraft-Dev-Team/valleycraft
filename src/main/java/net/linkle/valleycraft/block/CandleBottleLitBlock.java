@@ -8,7 +8,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
-public class CandleBottleLitBlock extends CandleBottleBlock {
+public class CandleBottleLitBlock extends BottleBlock {
     
     public CandleBottleLitBlock() {
         super(settings().luminance(s->3));
