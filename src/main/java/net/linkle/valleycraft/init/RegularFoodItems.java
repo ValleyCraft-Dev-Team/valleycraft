@@ -89,6 +89,7 @@ public enum RegularFoodItems implements ItemEnum {
     ATOLE_MILK(new BottleItem(settings().maxCount(16), 4, 0.2f).setMilk()),
     EGGNOG(new BottleItem(settings().maxCount(16), 3, 0.3f).setMilk()),
     APPLE_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
+    CARROT_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     SWEET_BERRY_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     CHORUS_FRUIT_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     ALOE_VERA_JUICE(new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.HEALTH_BOOST)),
@@ -96,10 +97,15 @@ public enum RegularFoodItems implements ItemEnum {
 
     // no tier items
     CAVE_ROOT_STIR_FRY(new BowlItem(settings().maxCount(1), 10, 0.6f)),
+    COD_GEFILTE(new BowlItem(settings().maxCount(1), 10, 0.6f)),
+
     STIR_FRIED_MONSTER_GUTS(new BowlItem(settings().maxCount(1), 8, 0.4f)),
     MONSTER_STEW(new BowlItem(settings().maxCount(1), 6, 0.4f)),
+    SPICY_POTATOES_AND_BAT(new FoodItem(settings().maxCount(1), 8, 0.4f)),
+    SPICY_POTATOES_AND_CARROTS(new FoodItem(settings().maxCount(1), 8, 0.4f)),
 
     BROTH(new BowlItem(settings().maxCount(1), 4, 0.5f)),
+    BEEF_STEW(new BowlItem(settings().maxCount(1), 4, 0.5f)),
     KELP_SALAD(new BowlItem(settings().maxCount(1), 4, 0.5f)),
     BROWN_MUSHROOM_SALAD(new BowlItem(settings().maxCount(1), 4, 0.5f)),
     ORANGE_MUSHROOM_SALAD(new BowlItem(settings().maxCount(1), 4, 0.5f)),
@@ -112,6 +118,7 @@ public enum RegularFoodItems implements ItemEnum {
     VEGETABLE_MIX(new BowlItem(settings().maxCount(1), 6, 0.6f)),
     SAVORY_BREAKFAST(new BowlItem(settings().maxCount(1), 9, 0.6f)),
     HEARTY_BREAKFAST(new BowlItem(settings().maxCount(1), 10, 0.8f)),
+    FRIED_RICE_AND_EGGS(new FoodItem(settings().maxCount(1), 8, 0.7f)),
     SAUTEED_EYES_AND_MUSHROOMS(new FoodItem(settings(), 8, 0.8f)),
 
     MAGMA_CREME_SOUP(new BowlItem(settings().maxCount(1), 7, 0.6f)),
@@ -122,6 +129,7 @@ public enum RegularFoodItems implements ItemEnum {
     SQUID_SOUP(new BowlItem(settings().maxCount(1), 6, 0.8f)),
     SEA_URCHIN_CHOWDER(new FoodItem(settings().maxCount(1), 6, 0.8f)),
     CLAM_CHOWDER(new BowlItem(settings().maxCount(1), 6, 0.8f)),
+    FISH_PLATTER(new BowlItem(settings().maxCount(1), 6, 0.8f)),
 
     //sandwich items
     TOAST(new FoodItem(settings(), 1, 1.0f)),

@@ -108,16 +108,16 @@
   "item.valleycraft.warm_birch_seed": "Warm Birch Seed",
 
   "item.valleycraft.anthropologists_rock_pick": "Rock Hammer",
-  "item.valleycraft.climbing_axe": "Climbing Axe",
   "item.valleycraft.ice_tongs": "Ice Tongs",
 
   "seldom_items": "§a",
   "item.valleycraft.stablehand_hat": "§aStablehand Cap",
 
-  "item.valleycraft.ender_dragon_eye": "Infected Ender Dragon Eye",
+  "item.valleycraft.ender_dragon_eye": "Blighted Ender Dragon Eye",
   "item.valleycraft.ender_dragon_gland": "Ender Dragon Gland",
   "item.valleycraft.raw_enderman_eye": "Enderman Eye",
   "item.valleycraft.monster_guts": "§aStrange Guts",
+  "item.valleycraft.monster_liver": "§aStrange Liver",
   "item.valleycraft.raw_beast_liver": "§aRaw Liver",
   "item.valleycraft.raw_beast_heart": "§aRaw Heart",
   "item.valleycraft.zod": "§aRaw Zombified Cod",
@@ -130,6 +130,7 @@
   "item.valleycraft.bonefin_bucket": "Bucket of Bonefin",
   "item.valleycraft.bonefin": "Bonefin Skeleton",
 
+  "item.valleycraft.infected_monster_guts": "§aBlighted Guts",
   "item.valleycraft.infected_monster_liver": "§aBlighted Liver",
   "item.valleycraft.seaologer_broken": "§aRusty Iron Seaologer's Cutlass",
   "item.valleycraft.moblin_sword_broken": "§aRusty Iron Moblin Shortsword",
@@ -711,6 +712,10 @@
   "item.valleycraft.stuffed_baked_potato": "§6Stuffed Baked Potato",
   "item.valleycraft.stuffed_onion": "§6Stuffed Onion",
   "item.valleycraft.sweet_rabbit_steak": "§6Sweet Rabbit Steak",
+  "item.valleycraft.cod_gefilte": "Cod Gefilte",
+  "item.valleycraft.spicy_potatoes_and_bat": "Spicy Potatoes and Bat",
+  "item.valleycraft.spicy_potatoes_and_carrots": "Spicy Potatoes and Carrots",
+  "item.valleycraft.fried_rice_and_eggs": "Fried Rice and Eggs",
 
   "item.valleycraft.ancient_flower_soup": "§6Vibrant Flower Soup",
   "item.valleycraft.carrot_stew": "§6Staminella Carrot Stew",
@@ -792,10 +797,12 @@
   "item.valleycraft.glow_berry_pie": "Glow Berry Pie",
   "item.valleycraft.sweet_berry_pie": "Sweet Berry Pie",
   "item.valleycraft.gloom_berry_pie": "Gloom Berry Pie",
+  "item.valleycraft.fish_platter": "Steamed Fish Platter",
 
   "item.valleycraft.chocolate_milk": "Chocolate Milk Bottle",
   "item.valleycraft.aloe_vera_juice": "Aloe Vera Juice Bottle",
   "item.valleycraft.apple_juice": "Apple Juice Bottle",
+  "item.valleycraft.carrot_juice": "Carrot Juice Bottle",
   "item.valleycraft.sweet_berry_juice": "Sweet Berry Juice Bottle",
   "item.valleycraft.gloom_berry_juice": "Gloom Berry Juice Bottle",
   "item.valleycraft.chorus_fruit_juice": "Chorus Fruit Juice Bottle",

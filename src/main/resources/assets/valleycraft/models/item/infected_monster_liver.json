@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/food/raw_ingredients/monster_liver"
+    "layer0": "valleycraft:item/food/raw_ingredients/infected_monster_liver"
   }
 }

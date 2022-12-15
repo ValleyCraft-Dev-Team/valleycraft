@@ -5,7 +5,6 @@ import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.*;
 import net.minecraft.entity.effect.*;
 import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.util.*;
 import net.minecraft.util.registry.Registry;
@@ -66,8 +65,8 @@ public enum IngredientFoodItems implements ItemEnum {
     RAW_GLOWSQUID_TENTACLE(new FoodItem(settings(), 2, 0.2f)
             .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_4")),
 
-    RAW_LOBSTER(new NegativeFoodItem(settings(), 3, 0.2f, StatusEffects.HUNGER, StatusEffects.POISON, StatusEffects.NAUSEA).hideTooltip()),
-    RAW_MOSSY_CRAB(new NegativeFoodItem(settings(), 3, 0.2f, StatusEffects.HUNGER, StatusEffects.POISON, StatusEffects.NAUSEA).hideTooltip()),
+    RAW_LOBSTER(new NegativeFoodItem_3_Effects(settings(), 3, 0.2f, StatusEffects.HUNGER, StatusEffects.POISON, StatusEffects.NAUSEA).hideTooltip()),
+    RAW_MOSSY_CRAB(new NegativeFoodItem_3_Effects(settings(), 3, 0.2f, StatusEffects.HUNGER, StatusEffects.POISON, StatusEffects.NAUSEA).hideTooltip()),
 
     RAW_BACON(new FoodItem(settings(), 2, 0.2f, true)),
     
@@ -77,13 +76,15 @@ public enum IngredientFoodItems implements ItemEnum {
     RAW_BAT_WING(new FoodItem(settings(), 2, 0.1f)),
     RAW_SILVERFISH(new FoodItem(settings(), 1, 0.1f)),
     RAW_PHANTOM_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.NAUSEA).hideTooltip()),
-    MONSTER_GUTS(new NegativeFoodItem(settings(), 6, 0.3f, StatusEffects.BLINDNESS, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
-    RAW_TRIPE(new NegativeFoodItem(settings(), 6, 0.3f, StatusEffects.POISON, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
-    INFECTED_MONSTER_LIVER(new NegativeFoodItem(settings(), 3, 0.4f, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),
-    ZOD(new NegativeFoodItem(settings().group(ModGroups.INGREDIENTS), 5, 2, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),
+    RAW_TRIPE(new NegativeFoodItem_3_Effects(settings(), 6, 0.3f, StatusEffects.POISON, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
+    MONSTER_GUTS(new NegativeFoodItem_2_Effects(settings(), 6, 0.3f, StatusEffects.BLINDNESS, StatusEffects.HUNGER).hideTooltip()),
+    INFECTED_MONSTER_GUTS(new NegativeFoodItem_3_Effects(settings(), 6, 0.3f, StatusEffects.BLINDNESS, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT).hideTooltip()),
+    MONSTER_LIVER(new NegativeFoodItem_2_Effects(settings(), 3, 0.4f, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
+    INFECTED_MONSTER_LIVER(new NegativeFoodItem_3_Effects(settings(), 3, 0.4f, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),
+    ZOD(new NegativeFoodItem_3_Effects(settings().group(ModGroups.INGREDIENTS), 5, 2, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),
     RAW_ENDERMAN_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.WEAKNESS).hideTooltip()),
     ENDER_DRAGON_EYE(new EndermiteFoodItem(settings().rarity(Rarity.EPIC).fireproof(), 3, 0.4f, StatusEffects.POISON, StatusEffects.BLINDNESS, StatusEffects.NAUSEA).hideTooltip()),
-    ENDER_DRAGON_GLAND(new NegativeFoodItem(settings().rarity(Rarity.EPIC).fireproof(), 6, 0.3f, StatusEffects.BLINDNESS, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
+    ENDER_DRAGON_GLAND(new NegativeFoodItem_3_Effects(settings().rarity(Rarity.EPIC).fireproof(), 6, 0.3f, StatusEffects.BLINDNESS, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
     RAW_ENDERMITE(new EndermiteFoodItem(settings(), 3, 0.4f, StatusEffects.POISON, StatusEffects.BLINDNESS, StatusEffects.NAUSEA).hideTooltip()),
 
     HARDTACK_DOUGH(new FoodItem(settings(), 1, 0.2f)),

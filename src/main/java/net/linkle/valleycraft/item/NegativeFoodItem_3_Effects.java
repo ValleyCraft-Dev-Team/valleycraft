@@ -4,8 +4,8 @@ import net.linkle.valleycraft.util.FoodStatusEffect;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 
-public class NegativeFoodItem extends FoodItem {
-    public NegativeFoodItem(Settings settings, int hunger, float satMod, StatusEffect effect, StatusEffect effect_2, StatusEffect effect_3) {
+public class NegativeFoodItem_3_Effects extends FoodItem {
+    public NegativeFoodItem_3_Effects(Settings settings, int hunger, float satMod, StatusEffect effect, StatusEffect effect_2, StatusEffect effect_3) {
         super(settings, hunger, satMod, new FoodStatusEffect(
                 //hunger
                 new StatusEffectInstance(effect, 15 * 20, 3),
