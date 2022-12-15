@@ -30,8 +30,7 @@ public enum ModBaubles implements ItemEnum {
     DIVINE_ACORN(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     GHAST_TEARS(new UniqueBaubleItem(itemSettings().rarity(RARE))),
     STUCK_SLIME(new UniqueBaubleItem(itemSettings().rarity(RARE))),
-    RING(new BaubleItem(itemSettings().rarity(RARE))),
-    HEART_MEDALLION(new BaubleItem(itemSettings().rarity(EPIC))),
+    RING(new UniqueBaubleItem(itemSettings().rarity(RARE))),
 
     LUCKY_FISHING_HOOK(new UniqueBaubleItem(itemSettings().rarity(RARE))),
     RAVAGER_GOLEM_TUSK(new BaubleItem(itemSettings().rarity(RARE))),
@@ -43,6 +42,8 @@ public enum ModBaubles implements ItemEnum {
     TOTEM_OF_UNDYING_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
     TOTEM_OF_FRIENDSHIP_BRACELET(new BaubleItem(itemSettings().rarity(EPIC))),
     WARDEN_ANTLER(new BaubleItem(itemSettings().rarity(EPIC))),
+    HEART_MEDALLION(new UniqueBaubleItem(itemSettings().rarity(EPIC))),
+    ILLAGER_TRINKET(new UniqueBaubleItem(itemSettings().rarity(EPIC))),
     STRANGE_DOLL(new UniqueBaubleItem(itemSettings().rarity(EPIC))),
 
     //necklaces
