@@ -78,6 +78,7 @@ public enum ModArmors implements ItemEnum {
     BIKINI_NEUTRAL_REPAIRED(new ArmorItem(ArmorMats.BIKINI_NEUTRAL_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
     BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
     BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    BIKINI_COAT_GAITERS(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.FEET, settingsNormal())),
 
     CANVAS_HOOD(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.HEAD, settingsNormal())),
     CANVAS_TUNIC(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.CHEST, settingsNormal())),
@@ -110,7 +111,7 @@ public enum ModArmors implements ItemEnum {
     GOLEMITE_BOOTS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
 
     TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
-    TURTLE_LEGGINGS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, settingsNormal())),
+    //TURTLE_LEGGINGS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.LEGS, settingsNormal())),
     TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
     //COPPER_DIVING_HELMET(new ArmorItem(ArmorMats.COPPER_DIVING, EquipmentSlot.HEAD, settingsNormal())),
 
