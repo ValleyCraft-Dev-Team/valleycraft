@@ -45,15 +45,14 @@ public class ModVillagers {
     public static final VillagerProfession BEEKEEPER = registerPro("beekeeper",RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "beekeeper_poi")));
 
     public static final PointOfInterestType HUNTER_POI = registerPOI("hunter_wh_poi", ModBlocks.HUNTING_STATION.block);
-    public static final VillagerProfession HUNTER = registerPro("hunter_wh", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "hunter_poi")));
+    public static final VillagerProfession HUNTER = registerPro("hunter_wh", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "hunter_wh_poi")));
 
     //can generate in mining camps
     public static final PointOfInterestType MINER_POI = registerPOI("miner_poi", ModBlocks.MINER_STATION.block);
     public static final VillagerProfession MINER = registerPro("miner", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "miner_poi")));
 
     public static final VillagerProfession registerPro(String name, RegistryKey<PointOfInterestType> type) {
-        return Registry.register(Registry.VILLAGER_PROFESSION, new Identifier(Main.ID, name),
-                VillagerProfessionBuilder.create().id(new Identifier(Main.ID, name)).workstation(type).workSound(SoundEvents.ENTITY_VILLAGER_WORK_LEATHERWORKER).build());
+        return Registry.register(Registry.VILLAGER_PROFESSION, new Identifier(Main.ID, name), VillagerProfessionBuilder.create().id(new Identifier(Main.ID, name)).workstation(type).workSound(SoundEvents.ENTITY_VILLAGER_WORK_LEATHERWORKER).build());
     }
 
     public static final PointOfInterestType registerPOI(String name, Block block) {

@@ -11,7 +11,9 @@ public enum ModSounds implements IdProvider {
     SPRINKLER,
     
     CURTAIN_OPEN,
-    CURTAIN_CLOSE;
+    CURTAIN_CLOSE,
+    
+    POT_BREAK;
 
     public static void initialize() {
     }

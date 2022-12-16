@@ -15,6 +15,7 @@ import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.block.*;
 import net.linkle.valleycraft.item.BridgeItem;
 import net.linkle.valleycraft.util.BlockEnum;
+import net.linkle.valleycraft.util.BlockSettings;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.block.*;
 import net.minecraft.block.Oxidizable.OxidationLevel;
@@ -68,7 +69,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BOOK_STACK_6(new BookStackBlock(BLOCK_SHAPE_6, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
     BOOK_STACK_7(new BookStackBlock(BLOCK_SHAPE_7, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
     BOOK_STACK_8(new BookStackBlock(BLOCK_SHAPE_8, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
-    INK_WELL(new BottleBlock(), itemSettings()),
+    INK_WELL(new InkWellBlock(), itemSettings()),
     INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     WATER_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     EMPTY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
@@ -604,6 +605,11 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque().breakInstantly()), itemSettings().group(BOOKS)),
     GREEN_CLAY_POT(new ExplosiveClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque().breakInstantly()), itemSettings().group(BOOKS)),
 
+    DEEPSLATE_URN_ANGRY(new UrnBlock(BlockSettings.urn()), itemSettings()),
+    DEEPSLATE_URN_CREEPER(new UrnBlock(BlockSettings.urn()), itemSettings()),
+    DEEPSLATE_URN_PLAIN(new UrnBlock(BlockSettings.urn()), itemSettings()),
+    DEEPSLATE_URN_SYMBOL(new UrnBlock(BlockSettings.urn()), itemSettings()),
+    
     //cobblestone statues
     OCELOT_STATUE(new AnimalStatueBlock(Block.Settings.copy(Blocks.COBBLESTONE).nonOpaque().resistance(2500)), itemSettings().maxCount(1).group(BOOKS)),
 

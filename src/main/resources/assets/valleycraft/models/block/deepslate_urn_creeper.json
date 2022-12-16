@@ -3,7 +3,8 @@
 	"textures": {
 		"0": "valleycraft:block/deepslate_plain_urn",
 		"1": "valleycraft:block/charcoal_block",
-		"2": "valleycraft:block/deepslate_creeper_urn"
+		"2": "valleycraft:block/deepslate_creeper_urn",
+		"particle": "valleycraft:block/deepslate_urn_ear"
 	},
 	"elements": [
 		{

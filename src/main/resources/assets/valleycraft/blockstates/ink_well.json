@@ -1,6 +1,18 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
+      "model": "valleycraft:block/ink_well"
+    },
+    "facing=south": {
+      "y": 180,
+      "model": "valleycraft:block/ink_well"
+    },
+    "facing=east": {
+      "y": 90,
+      "model": "valleycraft:block/ink_well"
+    },
+    "facing=west": {
+      "y": 270,
       "model": "valleycraft:block/ink_well"
     }
   }
