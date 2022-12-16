@@ -7,6 +7,7 @@ import static net.linkle.valleycraft.util.BookStackVoxelShapes.*;
 import java.util.function.BiFunction;
 import java.util.function.ToIntFunction;
 
+import net.linkle.valleycraft.baubles.CraftingMatBauble;
 import net.linkle.valleycraft.block.SkullBlock;
 import org.jetbrains.annotations.Nullable;
 
@@ -31,7 +32,8 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 
 public enum ModBlocks implements ItemEnum, BlockEnum {
-    
+
+    CRAFTING_MAT(new CraftingMatBauble(Block.Settings.copy(Blocks.CRAFTING_TABLE).breakInstantly().nonOpaque()), itemSettings()),
     //WAYPOINT(new WaypointBlock(Block.Settings.copy(Blocks.POLISHED_DEEPSLATE).nonOpaque()), itemSettings()),
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
@@ -617,6 +619,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SWORD_BLOCK(new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
     PICKAXE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
     RUSTED_CHEST(new RustedChestBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
+    CHAINED_RUSTED_CHEST(new RustedChestBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     //BONFIRE(new ModCampfireBlock(true, 1, Block.Settings.copy(Blocks.CAMPFIRE)), itemSettings().rarity(Rarity.RARE)),
 
     //skulls and skeletons go here

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/armor/wretch_gaiters"
+    "layer0": "valleycraft:item/armor_items/wretch_gaiters"
   }
 }

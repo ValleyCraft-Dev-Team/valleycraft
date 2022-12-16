@@ -6,10 +6,10 @@ import net.linkle.valleycraft.api.EnchantmentHandler;
 import net.minecraft.enchantment.*;
 import net.minecraft.item.*;
 
-public class BranchToolItem
+public class BranchWeaponItem
 extends SwordItem
 implements EnchantmentHandler {
-    public BranchToolItem(ToolMaterial material, int attackDamage, float attackSpeed) {
+    public BranchWeaponItem(ToolMaterial material, int attackDamage, float attackSpeed) {
         super(material, attackDamage, attackSpeed, new Settings().group(VC_TOOLS));
     }
 

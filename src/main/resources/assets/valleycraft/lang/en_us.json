@@ -113,7 +113,7 @@
   "seldom_items": "§a",
   "item.valleycraft.stablehand_hat": "§aStablehand Cap",
 
-  "item.valleycraft.sculk_blossom": "Sculk Pollen Blossom",
+  "block.valleycraft.sculk_blossom": "Sculk Pollen Blossom",
   "item.valleycraft.ender_dragon_eye": "Blighted Ender Dragon Eye",
   "item.valleycraft.ender_dragon_gland": "Ender Dragon Gland",
   "item.valleycraft.raw_enderman_eye": "Enderman Eye",
@@ -130,6 +130,8 @@
   "item.valleycraft.perch_bucket": "Bucket of Perch",
   "item.valleycraft.bonefin_bucket": "Bucket of Bonefin",
   "item.valleycraft.bonefin": "Bonefin Skeleton",
+  "item.valleycraft.skull_shard": "Skull Shard",
+  "item.valleycraft.withered_skull_shard": "Withered Skull Shard",
 
   "item.valleycraft.infected_monster_guts": "§aBlighted Guts",
   "item.valleycraft.infected_monster_liver": "§aBlighted Liver",
@@ -200,6 +202,8 @@
 
   "block.valleycraft.nether_garnet_ore": "Nether Garnet Ore",
   "block.valleycraft.nether_garnet_block": "Block of Nether Garnet",
+
+  "block.valleycraft.crafting_mat": "Crafting Mat and Tools",
 
   "block.valleycraft.garnet_lantern": "Nether Garnet Lantern",
   "block.valleycraft.amber_lantern": "Amber Lantern",
@@ -610,7 +614,8 @@
   "block.valleycraft.dead_lantern": "Burnt Out Lantern",
   "block.valleycraft.skeletal_remains": "§cAncient Skeletal Remains",
   "block.valleycraft.skeletal_mining_remains": "§cAncient Skeletal Mining Remains",
-  "block.valleycraft.rusted_chest": "§cAncient Rusted Shut Chest",
+  "block.valleycraft.rusted_chest": "§cAncient Rusty Chest",
+  "block.valleycraft.chained_rusted_chest": "§cAncient Rusty Chained Chest",
   "block.valleycraft.loose_rocks": "Loose Cobblestone Debris",
 
   "block.valleycraft.bee_nest_wall": "Bee Nest Wall",
@@ -735,6 +740,7 @@
   "item.valleycraft.aloe_vera": "Aloe Vera",
   "item.valleycraft.cave_root": "Cave Root",
   "item.valleycraft.fire_pepper": "Spicy Pepper",
+  "item.valleycraft.beef_stew": "Beef Stew",
 
   "item.valleycraft.maize": "Maize",
   "item.valleycraft.miners_lettuce": "Miner's Lettuce",
@@ -1155,6 +1161,7 @@
   "item.valleycraft.spear_golemite": "Golemite Spear",
   "item.valleycraft.spear_rosegold": "Rose Gold Spear",
   "item.valleycraft.makeshift_spear": "Makeshift Spear",
+  "item.valleycraft.makeshift_pickaxe": "Makeshift Pickaxe",
   "item.valleycraft.prismace": "Prismarine Mace",
   "item.valleycraft.prismarine_hoe": "Prismarine Hoe",
 

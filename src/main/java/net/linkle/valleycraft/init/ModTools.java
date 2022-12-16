@@ -16,7 +16,6 @@ import net.linkle.valleycraft.tool.pickaxes.RustyPickaxeItem;
 import net.linkle.valleycraft.tool.pickaxes.RustyPickaxeMaterial;
 import net.linkle.valleycraft.tool.scythe.ScytheBase;
 import net.linkle.valleycraft.tool.shovel.special.LadleItem;
-import net.linkle.valleycraft.tool.shovel.special.OarItem;
 import net.linkle.valleycraft.tool.shovel.special.OarToolMaterial;
 import net.linkle.valleycraft.tool.spear.SpearBase;
 import net.linkle.valleycraft.tool.staff.StaffBase;
@@ -25,7 +24,6 @@ import net.linkle.valleycraft.tool.throwing.BoneDartItem;
 import net.linkle.valleycraft.tool.travelers_sword.TravelerBase;
 import net.linkle.valleycraft.tool.travelers_sword.TravelerBaseFixed;
 import net.linkle.valleycraft.tool.woodcutter_axe.WoodcutterAxeBase;
-import net.linkle.valleycraft.tool.woodcutter_axe.special.TimberAxeItem;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.item.*;
 import net.minecraft.util.Rarity;
@@ -39,7 +37,7 @@ import net.linkle.valleycraft.item.ModHoeItem;
 public class ModTools {
     //When we need to access a tool or weapon elsewhere in the codebase, such as to inject them into loot tables, we need them stored in variables.
     //environmental tools
-    public static final Item BRANCH = new BranchToolItem(new BranchToolMaterial(), 3, -2.0f);
+    public static final Item BRANCH = new BranchWeaponItem(new BranchToolMaterial(), 3, -2.0f);
     public static final Item FLINT = new FlintToolItem(new FlintToolMaterial());
     public static final Item HEFTY_ROCK = new RockToolItem(new RockToolMaterial());
     public static final Item RUSTY_SWORD = new RustySwordItem(new RustySwordMaterial(),4, -2.4f);
@@ -47,7 +45,8 @@ public class ModTools {
     public static final Item LADLE = new LadleItem(new OarToolMaterial(),2, -2.5f);
     public static final Item THROWING_ROCK = new BoneDartItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
     public static final Item ANTHROPOLOGISTS_ROCK_PICK = new AnthroPickaxeItem(new AnthroPickaxeMaterial());
-    public static final Item MAKESHIFT_SPEAR = new BranchToolItem(ToolMaterials.WOOD, 3, -2.0f);
+    public static final Item MAKESHIFT_SPEAR = new BranchWeaponItem(ToolMaterials.WOOD, 3, -2.0f);
+    public static final Item MAKESHIFT_PICKAXE = new BranchPickaxeItem(ToolMaterials.WOOD, 3, -2.0f);
 
     public static final Item ANCIENT_CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.DIAMOND, new Item.Settings().group(BOOKS).rarity(Rarity.EPIC));
     public static final Item MOBLIN_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
@@ -111,6 +110,7 @@ public class ModTools {
         Reg.register("hefty_rock", HEFTY_ROCK);
         Reg.register("throwing_rock", THROWING_ROCK);
         Reg.register("makeshift_spear", MAKESHIFT_SPEAR);
+        Reg.register("makeshift_pickaxe", MAKESHIFT_PICKAXE);
 
         //Brasium Tools
         Reg.register("climbing_axe", CLIMBING_AXE);

@@ -36,6 +36,9 @@ class RenderLayers {
         put(TINTED_GLASS_DOOR, translucent);
         put(PRIMSTEEL_DOOR, cullout);
         put(PRIMSTEEL_TRAPDOOR, cullout);
+        put(SCULK_BLOSSOM, cullout);
+        put(CHAINED_RUSTED_CHEST, cullout);
+        put(CRAFTING_MAT, cullout);
 
         // Flowers and Potted Flowers
         put(BLACK_DAHLIA, cullout);

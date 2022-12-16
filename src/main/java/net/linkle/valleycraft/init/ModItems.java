@@ -54,6 +54,8 @@ public enum ModItems implements ItemEnum {
     MONSTER_CLAW(new Item(itemSettings())),
     //SPIDER_SILK(new Item(itemSettings().rarity(UNCOMMON))),
     BEAST_BONE(new Item(itemSettings())),
+    SKULL_SHARD(new Item(itemSettings())),
+    WITHERED_SKULL_SHARD(new Item(itemSettings())),
     BONEFIN(new Item(itemSettings())),
     SEAGULLS_FEATHER(new Item(itemSettings())),
     DUCKS_FEATHER(new Item(itemSettings())),
