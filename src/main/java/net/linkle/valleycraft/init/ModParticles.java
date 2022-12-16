@@ -26,7 +26,7 @@ public class ModParticles {
     public static final DefaultParticleType DRIPPING_SLUDGE = FabricParticleTypes.simple();
     public static final DefaultParticleType FALLING_SLUDGE = FabricParticleTypes.simple();
     public static final DefaultParticleType SLUDGE_SPLASH = FabricParticleTypes.simple();
-    public static final DefaultParticleType SCULK_POLLEN = FabricParticleTypes.simple();
+   //public static final DefaultParticleType SCULK_POLLEN = FabricParticleTypes.simple();
 
     public static void initialize() {
         register("sprinkle", SPRINKLE);
@@ -35,13 +35,13 @@ public class ModParticles {
         register("dripping_sludge", DRIPPING_SLUDGE);
         register("falling_sludge", FALLING_SLUDGE);
         register("sludge_splash", SLUDGE_SPLASH);
-        register("sculk_pollen", SCULK_POLLEN);
+        //register("sculk_pollen", SCULK_POLLEN);
     }
     
     @Environment(EnvType.CLIENT)
     public static void initializeClient() {
         register(SPRINKLE, SprinkleFactory::new);
-        register(SCULK_POLLEN, BlockLeakParticle.FallingSporeBlossomFactory::new);
+        //register(SCULK_POLLEN, BlockLeakParticle.FallingSporeBlossomFactory::new);
         register(GREEN_EXP_ORB, SoulSmokeParticle.Factory::new);
         register(BLUE_EXP_ORB, SoulSmokeParticle.Factory::new);
         register(SLUDGE_SPLASH, WaterSplashParticle.SplashFactory::new);

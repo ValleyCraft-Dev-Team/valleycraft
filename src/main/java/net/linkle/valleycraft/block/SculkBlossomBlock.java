@@ -22,14 +22,14 @@ public class SculkBlossomBlock extends SporeBlossomBlock {
         double d = (double)i + random.nextDouble();
         double e = (double)j + 0.7D;
         double f = (double)k + random.nextDouble();
-        world.addParticle(ModParticles.SCULK_POLLEN, d, e, f, 0.0D, 0.0D, 0.0D);
+        //world.addParticle(ModParticles.SCULK_POLLEN, d, e, f, 0.0D, 0.0D, 0.0D);
         BlockPos.Mutable mutable = new BlockPos.Mutable();
 
         for(int l = 0; l < 14; ++l) {
             mutable.set(i + MathHelper.nextInt(random, -10, 10), j - random.nextInt(10), k + MathHelper.nextInt(random, -10, 10));
             BlockState blockState = world.getBlockState(mutable);
             if (!blockState.isFullCube(world, mutable)) {
-                world.addParticle(ModParticles.SCULK_POLLEN, (double)mutable.getX() + random.nextDouble(), (double)mutable.getY() + random.nextDouble(), (double)mutable.getZ() + random.nextDouble(), 0.0D, 0.0D, 0.0D);
+                //world.addParticle(ModParticles.SCULK_POLLEN, (double)mutable.getX() + random.nextDouble(), (double)mutable.getY() + random.nextDouble(), (double)mutable.getZ() + random.nextDouble(), 0.0D, 0.0D, 0.0D);
             }
         }
 
