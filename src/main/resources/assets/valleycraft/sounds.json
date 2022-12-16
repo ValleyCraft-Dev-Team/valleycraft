@@ -2,19 +2,29 @@
   "sprinkler": {
     "subtitle": "subtitle.valleycraft:sprinkler",
     "sounds": [
-      "valleycraft:sprinkler"
+      "valleycraft:block/sprinkler"
     ]
   },
+  
   "curtain_open": {
     "subtitle": "subtitle.valleycraft:curtain_open",
     "sounds": [
-      "valleycraft:curtain_open"
+      "valleycraft:block/curtain_open"
     ]
   },
+  
   "curtain_close": {
     "subtitle": "subtitle.valleycraft:curtain_close",
     "sounds": [
-      "valleycraft:curtain_close"
+      "valleycraft:block/curtain_close"
+    ]
+  },
+  
+  "pot_break": {
+    "sounds": [
+      "valleycraft:block/claypot1",
+      "valleycraft:block/claypot2",
+      "valleycraft:block/claypot3"
     ]
   },
 
