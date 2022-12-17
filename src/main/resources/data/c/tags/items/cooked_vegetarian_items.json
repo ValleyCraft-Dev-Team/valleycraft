@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:baked_apple",
+    "valleycraft:baked_beetroot",
+    "valleycraft:baked_hearty_beetroot",
+    "valleycraft:baked_carrot",
+    "valleycraft:baked_endura_carrot",
+    "valleycraft:baked_fire_pepper",
+    "valleycraft:baked_pumpkin_slice",
+    "valleycraft:baked_melon_slice",
+    "valleycraft:baked_onion",
+    "valleycraft:baked_seeds",
+    "valleycraft:baked_sweet_berries",
+    "valleycraft:baked_glow_berries",
+    "valleycraft:cooked_rice",
+    "valleycraft:cooked_cave_root"
+  ]
+}

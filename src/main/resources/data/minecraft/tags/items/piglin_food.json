@@ -1,0 +1,48 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:beetroot",
+    "minecraft:beetroot_seeds",
+    "minecraft:potato",
+    "minecraft:carrot",
+    "valleycraft:endura_carrot",
+    "valleycraft:hearty_beetroot",
+
+    "minecraft:golden_carrot",
+    "valleycraft:golden_potato",
+    "valleycraft:golden_beetroot",
+    "valleycraft:golden_endura_carrot",
+    "valleycraft:golden_beetroot",
+    "valleycraft:golden_hearty_beetroot",
+
+    "valleycraft:cake_slice",
+    "minecraft:cake",
+
+    "valleycraft:red_scale",
+    "valleycraft:green_scale",
+    "valleycraft:black_scale",
+    "valleycraft:blue_scale",
+
+    "minecraft:glistering_melon_slice",
+    "minecraft:golden_apple",
+    "minecraft:enchanted_golden_apple",
+    "valleycraft:golden_watermelon_juice",
+    "valleycraft:golden_fire_pepper",
+    "valleycraft:golden_ancient_maize",
+    "valleycraft:golden_onion",
+    "valleycraft:golden_pumpkin_slice",
+    "valleycraft:golden_cave_root",
+    "valleycraft:golden_aloe_vera",
+    "valleycraft:golden_sweet_berries",
+    "valleycraft:golden_glow_berries",
+    "valleycraft:golden_chorus_fruit",
+    "valleycraft:enchanted_chorus_fruit",
+    "valleycraft:enchanted_apple_pie",
+    "valleycraft:enchanted_apple_pie_slice",
+
+    "valleycraft:cooked_bacon",
+    "valleycraft:cooked_beast_liver",
+    "valleycraft:cooked_beast_heart"
+
+  ]
+}

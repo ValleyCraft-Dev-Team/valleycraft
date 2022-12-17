@@ -62,6 +62,7 @@ public enum ModItems implements ItemEnum {
     BONEFIN(new Item(itemSettings())),
     SEAGULLS_FEATHER(new Item(itemSettings())),
     DUCKS_FEATHER(new Item(itemSettings())),
+    DUCKS_EGG(new Item(itemSettings())),
     CROWS_FEATHER(new Item(itemSettings())),
     SLIME_BLOB(new Item(itemSettings())),
     EVIL_CRYSTAL(new Item(itemSettings().rarity(RARE).fireproof())),

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:fossil_ore",
+    "valleycraft:deepslate_fossil_ore",
+    "valleycraft:nether_fossil_ore"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:scarecrow",
+    "valleycraft:scarecrow_target",
+    "valleycraft:scarecrow_glowing",
+    "valleycraft:scarecrow_hat",
+    "valleycraft:scarecrow_hat_glowing",
+
+    "valleycraft:stake",
+    "valleycraft:stake_base",
+
+    "valleycraft:glowsquid_lantern",
+    "valleycraft:dead_lantern",
+    "valleycraft:garnet_lantern",
+    "valleycraft:amber_lantern",
+    "valleycraft:brimstone_lantern",
+    "valleycraft:diamond_lantern",
+    "valleycraft:emerald_lantern",
+    "valleycraft:amethyst_lantern"
+  ]
+}

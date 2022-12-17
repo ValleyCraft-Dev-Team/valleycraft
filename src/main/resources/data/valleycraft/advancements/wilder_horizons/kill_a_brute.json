@@ -1,0 +1,70 @@
+{
+  "parent": "valleycraft:wilder_horizons/root",
+  "criteria": {
+    "valleycraft:zombie_brute_steve": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "valleycraft:zombie_brute_steve"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "valleycraft:zombie_brute_efe": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "valleycraft:zombie_brute_steve"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "valleycraft:zombie_brute_alex": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "valleycraft:zombie_brute_steve"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "Kill a Zombie Brute"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "valleycraft:traveler_iron",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "Brutality!"
+    }
+  },
+  "requirements": [
+    [
+      "valleycraft:zombie_brute_steve",
+      "valleycraft:zombie_brute_efe",
+      "valleycraft:zombie_brute_alex"
+    ]
+  ]
+}

@@ -143,9 +143,6 @@
   "item.valleycraft.arrow_bundle": "§aArrow Bundle",
   "item.valleycraft.bomb_bag": "§aBomb Bag",
   "item.valleycraft.hot_plate": "Hot Plate",
-  "item.valleycraft.golemite_raw": "Raw Golemite",
-  "item.valleycraft.golemite_nugget": "Golemite Nugget",
-  "item.valleycraft.golemite_ingot": "Golemite Ingot",
   "item.valleycraft.primsteel_raw": "Raw Primsteel",
   "item.valleycraft.primsteel_nugget": "Primsteel Nugget",
   "item.valleycraft.primsteel_ingot": "Primsteel Ingot",
@@ -182,6 +179,7 @@
   "item.valleycraft.duck_feather": "Duck Feather Hairpin",
   "item.valleycraft.guardian_spike": "Guardian Spine",
   "item.valleycraft.elder_guardian_spike": "Elder Guardian Spine",
+  "item.valleycraft.ducks_egg": "Duck Egg",
 
   "item.valleycraft.snow_cap": "§aSnow Cap",
   "item.valleycraft.pillager_flannel": "Illager Flannel Coat",
@@ -202,6 +200,8 @@
 
   "block.valleycraft.nether_garnet_ore": "Nether Garnet Ore",
   "block.valleycraft.nether_garnet_block": "Block of Nether Garnet",
+  "block.valleycraft.mixed_ore": "Mixed Ore",
+  "block.valleycraft.deepslate_mixed_ore": "Deepslate Mixed Ore",
 
   "block.valleycraft.crafting_mat": "Portable Crafting Mat and Tools",
 
@@ -474,7 +474,6 @@
 
   "block.valleycraft.glowsquid_lantern": "Glow Squid Lantern",
 
-  "block.valleycraft.arid_mossy_erdstone_bricks": "Arid Mossy Erdstone Bricks",
   "block.valleycraft.mossy_erdstone_bricks": "Mossy Erdstone Bricks",
   "block.valleycraft.arid_vines": "Cave Vines",
   "block.valleycraft.cave_moss": "Cave Grass Carpet",
@@ -535,11 +534,9 @@
   "block.valleycraft.deepslate_amber_ore": "Deepslate Amber Ore",
   "block.valleycraft.amber_block": "Amber Block",
   "block.valleycraft.fossil_ore": "Fossil Ore",
-  "block.valleycraft.erdstone_fossil_ore": "Erdstone Fossil Ore",
   "block.valleycraft.deepslate_fossil_ore": "Deepslate Fossil Ore",
   "block.valleycraft.nether_fossil_ore": "Nether Fossil Ore",
   "block.valleycraft.anthracite_block": "Block of Anthracite",
-  "block.valleycraft.raw_golemite_block": "Block of Raw Golemite",
   "block.valleycraft.raw_primsteel_block": "Block of Raw Primsteel",
   "block.valleycraft.rosegold_block": "Block of Rose Gold",
   "block.valleycraft.erdstone_coal_ore": "Erdstone Coal Ore",
@@ -653,9 +650,6 @@
   "block.valleycraft.rotten_flesh_block": "Block of Rotten Flesh",
   "block.valleycraft.sugarcane_bale": "Sugar Cane Bale",
 
-  "block.valleycraft.ghost_jack_o_lantern": "Ghost Jack o'Lantern",
-  "block.valleycraft.ghost_pumpkin_carved": "Carved Ghost Pumpkin",
-  "block.valleycraft.ghost_pumpkin": "Ghost Pumpkin",
   "block.valleycraft.bone_joint": "Bone Joint Block",
   "block.valleycraft.rocks": "Rock",
   "block.valleycraft.flint_rocks": "Flint Rock Pile",
@@ -666,7 +660,6 @@
 
   "block.valleycraft.pumice_smooth": "Polished Pumice",
   "block.valleycraft.pumice": "Pumice",
-  "block.valleycraft.optic_glass": "Terrarium Glass",
   "block.valleycraft.volcanic_ash": "Volcanic Ash",
   "block.valleycraft.volcanic_stone": "Volcanic Rock",
   "block.valleycraft.verdantine": "Verdantine",
@@ -685,7 +678,6 @@
   "block.valleycraft.carmine_smooth": "Polished Carmine",
   "block.valleycraft.carmine_cobblestone": "Carmine Cobblestone",
   "block.valleycraft.mossy_stone": "Mossy Stone",
-  "block.valleycraft.arid_mossy_stone": "Arid Mossy Stone",
   "block.valleycraft.sandy_gravel": "Sandy Gravel",
   "block.valleycraft.dry_dirt": "Arid Dirt",
   "block.valleycraft.charcoal_block": "Charcoal Block",
@@ -696,9 +688,6 @@
   "block.valleycraft.brimstone_crystal": "Brimstone Cluster",
 
   "item.valleycraft.salt": "Salt",
-  "item.valleycraft.gloom_berry": "Gloom Berry",
-
-  "item.valleycraft.polished_gear": "Lucky Copper Gear",
 
   "item.valleycraft.amethystle_salad": "§6Amethystle Salad",
   "item.valleycraft.carrot_salad": "§6Staminella Carrot Salad",
@@ -740,6 +729,7 @@
   "item.valleycraft.aloe_vera": "Aloe Vera",
   "item.valleycraft.cave_root": "Cave Root",
   "item.valleycraft.fire_pepper": "Spicy Pepper",
+
   "item.valleycraft.beef_stew": "Beef Stew",
 
   "item.valleycraft.maize": "Maize",
@@ -747,7 +737,6 @@
   "item.valleycraft.onion": "Onion",
   "item.valleycraft.raw_rice": "Raw Rice",
   "item.valleycraft.pumpkin_slice": "Pumpkin Slice",
-  "item.valleycraft.ghost_pumpkin_slice": "Ghost Pumpkin Slice",
 
   "item.valleycraft.raw_bat_wing": "Raw Bat Wing",
   "item.valleycraft.raw_silverfish": "Raw Silverfish",
@@ -766,7 +755,6 @@
   "item.valleycraft.apple_pie_dough": "Apple Pie Dough",
   "item.valleycraft.sweet_berry_pie_dough": "Sweet Berry Pie Dough",
   "item.valleycraft.glow_berry_pie_dough": "Glow Berry Pie Dough",
-  "item.valleycraft.gloom_berry_pie_dough": "Gloom Berry Pie Dough",
   "item.valleycraft.chorus_fruit_pie_dough": "Chorus Fruit Pie Dough",
   "item.valleycraft.cake_dough": "Cake Dough",
 
@@ -776,25 +764,21 @@
   "item.valleycraft.baked_carrot": "Cooked Carrot",
   "item.valleycraft.baked_endura_carrot": "Cooked Staminella Carrot",
   "item.valleycraft.baked_fire_pepper": "Cooked Spicy Pepper",
-  "item.valleycraft.baked_ghost_pumpkin_slice": "Cooked Ghost Pumpkin Slice",
   "item.valleycraft.baked_pumpkin_slice": "Cooked Pumpkin Slice",
   "item.valleycraft.baked_melon_slice": "Cooked Melon Slice",
   "item.valleycraft.baked_onion": "Cooked Onion",
   "item.valleycraft.baked_seeds": "Baked Seeds",
   "item.valleycraft.baked_sweet_berries": "Cooked Sweet Berries",
   "item.valleycraft.baked_glow_berries": "Cooked Glow Berries",
-  "item.valleycraft.baked_gloom_berries": "Cooked Gloom Berry",
   "item.valleycraft.cooked_rice": "Cooked Rice",
   "item.valleycraft.cooked_cave_root": "Cooked Cave Root",
   "item.valleycraft.cooked_squid": "Cooked Squid",
   "item.valleycraft.cooked_silverfish": "Cooked Silverfish",
   "item.valleycraft.cooked_phantom": "Cooked Phantom Eye",
-  "item.valleycraft.cooked_turtle": "Cooked Turtle Neck",
   "item.valleycraft.cooked_bird": "Cooked Bird Thigh",
   "item.valleycraft.cooked_bat": "Cooked Bat Wing",
   "item.valleycraft.cooked_bacon": "Bacon",
   "item.valleycraft.fried_egg": "Fried Egg",
-  "item.valleycraft.cooked_rotten_flesh": "Cooked Rotten Flesh",
   "item.valleycraft.cooked_tropical_fish": "Cooked Tropical Fish",
   "item.valleycraft.cake_slice": "Slice of Cake",
   "item.valleycraft.hardtack": "Hardtack",
@@ -804,7 +788,6 @@
   "item.valleycraft.apple_pie": "Apple Pie",
   "item.valleycraft.glow_berry_pie": "Glow Berry Pie",
   "item.valleycraft.sweet_berry_pie": "Sweet Berry Pie",
-  "item.valleycraft.gloom_berry_pie": "Gloom Berry Pie",
   "item.valleycraft.fish_platter": "Steamed Fish Platter",
 
   "item.valleycraft.chocolate_milk": "Chocolate Milk Bottle",
@@ -812,7 +795,6 @@
   "item.valleycraft.apple_juice": "Apple Juice Bottle",
   "item.valleycraft.carrot_juice": "Carrot Juice Bottle",
   "item.valleycraft.sweet_berry_juice": "Sweet Berry Juice Bottle",
-  "item.valleycraft.gloom_berry_juice": "Gloom Berry Juice Bottle",
   "item.valleycraft.chorus_fruit_juice": "Chorus Fruit Juice Bottle",
   "item.valleycraft.warm_pumpkin_soup_bottle": "Jar of Warm Pumpkin Soup",
   "item.valleycraft.pumpkin_soup": " Warm Pumpkin Soup",
@@ -846,7 +828,6 @@
   "item.valleycraft.golden_aloe_vera": "Golden Aloe Vera",
   "item.valleycraft.golden_sweet_berries": "Golden Sweet Berries",
   "item.valleycraft.golden_glow_berries": "Golden Glow Berries",
-  "item.valleycraft.golden_gloom_berry": "Golden Gloom Berry",
   "item.valleycraft.golden_chorus_fruit": "Golden Chorus Fruit",
   "item.valleycraft.enchanted_chorus_fruit": "Enchanted Golden Chorus Fruit",
   "item.valleycraft.enchanted_apple_pie": "Enchanted Golden Apple Pie",
@@ -869,7 +850,7 @@
 
   "item.valleycraft.monster_claw": "§aSharp Claw",
   "item.valleycraft.plant_fiber_string": "§aFiber String",
-  "item.valleycraft.diamond_plate": "Diametal Ingot",
+  "item.valleycraft.diamond_plate": "Diametal Alloy Ingot",
   "item.valleycraft.brasium_ingot": "Brasium Ingot",
 
   "item.valleycraft.totem_of_trade": "Totem of Trade",
@@ -978,7 +959,6 @@
   "item.valleycraft.golemite_leggings": "Primsteel Leggings",
   "item.valleycraft.golemite_chestplate": "Primsteel Chestplate",
 
-  "item.valleycraft.alchemists_leggings": "Ancient Alchemist Stockings",
   "item.valleycraft.seaologer_token": "§aSeaologer Rune",
   "item.valleycraft.strayas_cartography_bag": "Abandoned Archaeology Gear",
   "item.valleycraft.shulker_helmet": "Shulker Shell Helmet",
@@ -1014,7 +994,6 @@
   "item.valleycraft.knife_diamond": "Diamond Knife",
   "item.valleycraft.knife_netherite": "Netherite Knife",
   "item.valleycraft.knife_primsteel": "Primsteel Knife",
-  "item.valleycraft.knife_golemite": "Golemite Knife",
   "item.valleycraft.knife_rosegold": "Rose Gold Knife",
 
   "item.valleycraft.hatchet_wooden": "Wooden Hatchet",
@@ -1185,7 +1164,6 @@
 
   "item.valleycraft.wooden_oar": "Wooden Oar",
 
-  "item.valleycraft.adventurine_shards": "Adventurine Shards",
   "block.valleycraft.adventurine": "Adventurine",
 
   "block.valleycraft.smallest_lilypads": "Tiny Lilypads",
@@ -1224,9 +1202,7 @@
 
   "item.valleycraft.climbing_axe": "Mountain Climbing Axe",
   "item.valleycraft.ancient_climbing_axe": "Ancient Ice Climbing Axe",
-  "item.valleycraft.button": "Peculiar Buttons",
   "item.valleycraft.dierdra_spear": "Prehistoric Wooden Spear",
-  "block.valleycraft.geitlin_skull": "Geitlin Skull",
   "block.valleycraft.moblin_skeletal_remains": "Moblin Skeletal Remains",
   "block.valleycraft.piglin_skeletal_remains": "Piglin Skeletal Remains",
   "block.valleycraft.villager_skeletal_remains": "Villager Skeletal Remains",
@@ -1236,7 +1212,6 @@
   "block.valleycraft.faded_soul_rose": "§aFaded Soul Rose",
   "block.valleycraft.soul_rose": "Soul Rose",
   "block.valleycraft.blue_soul_rose": "Strong Soul Rose",
-  "block.valleycraft.dried_sapling": "Dried Sapling",
   "item.valleycraft.ladle": "Ladle",
   "item.valleycraft.bone_cudgel": "Bone Cudgel",
 
@@ -1293,7 +1268,6 @@
   "item.valleycraft.soul_item_amalgamated": "Lost Amalgamated Soul",
   "item.valleycraft.soul_item_dragon": "Lost Dragon Soul",
 
-  "item.valleycraft.ghost_pumpkin_seeds": "Ghost Pumpkin Seeds",
   "item.valleycraft.plant_fiber_canvas": "Plant Fiber Canvas",
   "item.valleycraft.treated_leather": "Treated Leather",
   "item.valleycraft.ink_bottle": "Ink Bottle",
@@ -1432,8 +1406,6 @@
   "block.valleycraft.tinted_glass_pane": "Tinted Glass Pane",
   "block.valleycraft.terrarium_glass": "Frameless Glass",
   "block.valleycraft.terrarium_glass_pane": "Frameless Glass Pane",
-  "block.valleycraft.brimestone_glass": "Brimstone Glass",
-  "block.valleycraft.brimestone_glass_pane": "Brimstone Glass Pane",
   "block.valleycraft.beveled_glass": "Beveled Glass",
   "block.valleycraft.beveled_glass_pane": "Beveled Glass Pane",
   "block.valleycraft.beveled_brimstone_glass": "Beveled Brimstone Glass",
@@ -1446,7 +1418,6 @@
   "block.valleycraft.scarecrow_glowing": "Jack o'Lantern Scarecrow",
   "block.valleycraft.scarecrow_hat": "Scarecrow with Hat",
   "block.valleycraft.scarecrow_hat_glowing": "Jack o'Lantern Scarecrow with Hat",
-  "block.valleycraft.target_dummy": "Target Dummy",
   "block.valleycraft.target_block": "Archery Target",
 
   "block.valleycraft.warm_birch_sapling": "Warm Birch Sapling",

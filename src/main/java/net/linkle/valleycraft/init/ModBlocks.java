@@ -426,7 +426,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POLISHED_SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
     SHALE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
     SHALE_RUNE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    SHALE_PERSUREPLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(Blocks.POLISHED_BLACKSTONE_PRESSURE_PLATE))),
 
     //marble
     POLISHED_MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),

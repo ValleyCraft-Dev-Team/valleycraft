@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:volcanic_magma_stone",
+    "valleycraft:scalding_sandstone",
+    "valleycraft:scalding_red_sandstone",
+    "valleycraft:scalding_scorchstone",
+    "valleycraft:scalding_deepslate"
+  ]
+}

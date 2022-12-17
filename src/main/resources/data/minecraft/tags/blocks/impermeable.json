@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:terrarium_glass",
+    "valleycraft:brimstone_glass",
+    "valleycraft:block_wattle_and_glass",
+    "valleycraft:block_wattle_and_glass_cross",
+    "valleycraft:block_wattle_and_glass_plus",
+    "valleycraft:beveled_glass",
+    "valleycraft:beveled_brimstone_glass",
+    "valleycraft:beveled_tinted_glass"
+  ]
+}

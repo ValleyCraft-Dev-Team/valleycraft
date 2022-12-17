@@ -1,0 +1,169 @@
+{
+  "parent": "valleycraft:wilder_horizons/lumber_axe",
+  "display": {
+    "title": {
+      "text": "Lumberjack"
+    },
+    "icon": {
+      "item": "valleycraft:divine_acorn"
+    },
+    "description": {
+      "text": "Cut down every tree type and gather their seeds."
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "apple": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:apple_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "amberblossom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:amberblossom_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "warm_birch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:warm_birch_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "oak": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:oak_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "divine_oak": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:divine_acorn"
+            ]
+          }
+        ]
+      }
+    },
+    "birch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:birch_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "spruce": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:spruce_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "jungle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:jungle_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:acacia_seed"
+            ]
+          }
+        ]
+      }
+    },
+    "dark": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:dark_oak_seed"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "apple"
+    ],
+    [
+      "oak"
+    ],
+    [
+      "divine_oak"
+    ],
+    [
+      "birch"
+    ],
+    [
+      "warm_birch"
+    ],
+    [
+      "spruce"
+    ],
+    [
+      "jungle"
+    ],
+    [
+      "acacia"
+    ],
+    [
+      "dark"
+    ],
+    [
+      "amberblossom"
+    ]
+  ]
+}

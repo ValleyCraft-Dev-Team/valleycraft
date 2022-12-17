@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:nether_coal_ore",
+    "valleycraft:anthracite_block",
+    "valleycraft:rotten_flesh_block"
+  ]
+}

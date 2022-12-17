@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:smallest_lilypads",
+    "valleycraft:small_lilypads",
+    "valleycraft:small_lilypad",
+    "valleycraft:yellow_flowering_lilypad",
+    "valleycraft:white_flowering_lilypad",
+    "valleycraft:red_flowering_lilypad",
+    "valleycraft:purple_flowering_lilypad",
+    "valleycraft:pink_flowering_lilypad",
+    "valleycraft:blue_flowering_lilypad"
+  ]
+}

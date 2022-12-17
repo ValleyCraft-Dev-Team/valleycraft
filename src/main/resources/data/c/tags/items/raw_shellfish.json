@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:raw_lobster",
+    "valleycraft:raw_mossy_crab",
+    "valleycraft:urchin_block",
+    "valleycraft:clam_block"
+  ]
+}

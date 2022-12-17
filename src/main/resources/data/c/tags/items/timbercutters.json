@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:woodcutter_axe_wooden",
+    "valleycraft:woodcutter_axe_golden",
+    "valleycraft:woodcutter_axe_stone",
+    "valleycraft:woodcutter_axe_primsteel",
+    "valleycraft:woodcutter_axe_iron",
+    "valleycraft:woodcutter_axe_rosegold",
+    "valleycraft:woodcutter_axe_diamond",
+    "valleycraft:woodcutter_axe_netherite"
+  ]
+}

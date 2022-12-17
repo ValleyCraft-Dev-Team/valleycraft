@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:salt_block",
+    "valleycraft:polished_salt_block",
+    "valleycraft:salt_bricks",
+    "valleycraft:chiseled_salt_bricks",
+    "valleycraft:salt_bricks_capped"
+  ]
+}

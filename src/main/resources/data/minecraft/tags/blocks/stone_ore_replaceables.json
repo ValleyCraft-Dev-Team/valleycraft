@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:volcanic_magma_stone",
+    "valleycraft:scalding_sandstone",
+    "valleycraft:scalding_red_sandstone",
+    "valleycraft:scalding_scorchstone",
+    "valleycraft:scalding_deepslate",
+    "valleycraft:stone_cave_grass",
+    "valleycraft:deepslate_cave_grass",
+    "valleycraft:shale_cave_grass",
+    "valleycraft:loose_rocks",
+    "valleycraft:erdstone",
+    "valleycraft:carmine",
+    "valleycraft:volcanic_stone",
+    "valleycraft:shale",
+    "valleycraft:mossy_stone",
+    "valleycraft:diabase",
+    "valleycraft:serpentinite",
+    "valleycraft:grimestone",
+    "valleycraft:limestone",
+    "valleycraft:shiverstone",
+    "valleycraft:verdantine",
+    "valleycraft:marble",
+    "valleycraft:rough_sandstone",
+    "valleycraft:rough_red_sandstone",
+    "valleycraft:stratified_sandstone",
+    "valleycraft:stratified_red_sandstone",
+    "valleycraft:scorchstone"
+  ]
+}

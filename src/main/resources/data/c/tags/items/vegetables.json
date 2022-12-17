@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:maize",
+    "valleycraft:onion",
+    "valleycraft:cave_root",
+    "valleycraft:pumpkin_slice",
+    "valleycraft:miners_lettuce",
+    "valleycraft:ancient_flower",
+    "valleycraft:endura_carrot",
+    "valleycraft:amethystle",
+    "valleycraft:shivercap",
+    "valleycraft:stalwart_shroom",
+    "valleycraft:hearty_beetroot"
+  ]
+}

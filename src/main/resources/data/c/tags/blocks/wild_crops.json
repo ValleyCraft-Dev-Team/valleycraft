@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:wild_rice",
+    "valleycraft:wild_wheat",
+    "valleycraft:wild_potato",
+    "valleycraft:wild_carrot",
+    "valleycraft:wild_beet",
+    "valleycraft:wild_miners_lettuce",
+    "valleycraft:wild_fire_pepper",
+    "valleycraft:wild_amethystle",
+    "valleycraft:wild_cave_root",
+    "valleycraft:wild_onion",
+    "valleycraft:wild_herbs",
+    "valleycraft:wild_puff_ball"
+  ]
+}

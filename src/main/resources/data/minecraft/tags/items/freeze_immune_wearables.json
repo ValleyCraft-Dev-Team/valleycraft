@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:leather_boots",
+    "valleycraft:leather_leggings",
+    "valleycraft:leather_chestplate",
+    "valleycraft:leather_helmet",
+    "valleycraft:reinforced_leather_helmet",
+    "valleycraft:leather_hauberk"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+  	"valleycraft:leather_block",
+  	"valleycraft:tanned_leather_block",
+    "valleycraft:black_leather_block",
+    "valleycraft:blue_leather_block",
+    "valleycraft:brown_leather_block",
+    "valleycraft:cyan_leather_block",
+    "valleycraft:green_leather_block",
+    "valleycraft:grey_leather_block",
+    "valleycraft:light_blue_leather_block",
+    "valleycraft:light_grey_leather_block",
+    "valleycraft:lime_leather_block",
+    "valleycraft:magenta_leather_block",
+    "valleycraft:orange_leather_block",
+    "valleycraft:pink_leather_block",
+    "valleycraft:purple_leather_block",
+    "valleycraft:red_leather_block",
+    "valleycraft:white_leather_block",
+    "valleycraft:yellow_leather_block",
+    "valleycraft:canvas_block",
+    "valleycraft:canvas_carpet",
+    "valleycraft:crafting_mat"
+  ]
+}

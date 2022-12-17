@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+  	"valleycraft:maize",
+  	"valleycraft:rices",
+    "valleycraft:puff_ball",
+    "valleycraft:onions",
+    "valleycraft:miners_lettuces",
+    "valleycraft:fire_peppers",
+    "valleycraft:cave_root_crop",
+    "valleycraft:ancient_flowers",
+    "valleycraft:amethystles",
+    "valleycraft:aloe_veras"
+  ]
+}

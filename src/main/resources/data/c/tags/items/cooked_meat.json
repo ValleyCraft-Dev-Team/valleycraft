@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#c:cooked_fish",
+    "#c:cooked_bugs",
+    "#c:cooked_shellfish",
+    "valleycraft:cooked_bat",
+    "valleycraft:cooked_bacon",
+    "valleycraft:cooked_phantom",
+    "valleycraft:cooked_bird",
+    "valleycraft:cooked_beast_liver",
+    "valleycraft:cooked_beast_heart"
+  ]
+}

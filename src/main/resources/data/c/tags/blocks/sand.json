@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:nether_sand",
+    "valleycraft:volcanic_ash",
+    "valleycraft:abyssal_sand",
+    "valleycraft:deep_sea_sand"
+  ]
+}

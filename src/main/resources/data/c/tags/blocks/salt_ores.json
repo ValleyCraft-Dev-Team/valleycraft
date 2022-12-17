@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:salt_ore",
+    "valleycraft:nether_salt_ore",
+    "valleycraft:salt_ore"
+  ]
+}

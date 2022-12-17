@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:jungle_bush",
+    "valleycraft:thorny_bush",
+    "valleycraft:large_bush",
+    "valleycraft:bush",
+    "valleycraft:lush_bush",
+    "valleycraft:big_fern",
+    "valleycraft:tall_living_bush",
+    "valleycraft:tall_dead_bush",
+    "valleycraft:desert_shrub"
+  ]
+}

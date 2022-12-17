@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:wooden_greatsword",
+    "valleycraft:golden_greatsword",
+    "valleycraft:stone_greatsword",
+    "valleycraft:primsteel_greatsword",
+    "valleycraft:iron_greatsword",
+    "valleycraft:rosegold_greatsword",
+    "valleycraft:diamond_greatsword",
+    "valleycraft:netherite_greatsword"
+  ]
+}

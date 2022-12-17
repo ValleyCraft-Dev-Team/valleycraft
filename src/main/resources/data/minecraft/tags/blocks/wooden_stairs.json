@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "valleycraft:apple_stairs",
-    "valleycraft:mamon_stairs",
-    "valleycraft:ancient_stairs"
+    "valleycraft:mamon_stairs"
   ]
 }
