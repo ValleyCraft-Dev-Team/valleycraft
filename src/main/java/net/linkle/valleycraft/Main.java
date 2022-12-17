@@ -50,6 +50,7 @@ public class Main implements ModInitializer {
 		ModEntityType.initialize();
 		ModPaintings.initialize();
 		ModFluidTags.initialize();
+		ModLootTables.initialize();
 
 		ModEffects.initialize();
 		ModPotions.initialize();

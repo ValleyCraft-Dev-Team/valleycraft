@@ -1,14 +1,15 @@
 package net.linkle.valleycraft.mixin;
 
-import net.linkle.valleycraft.util.BlockLeakParticleDuck;
-import net.minecraft.client.particle.Particle;
-import net.minecraft.client.world.ClientWorld;
-import net.minecraft.particle.ParticleEffect;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import net.linkle.valleycraft.util.BlockLeakParticleDuck;
+import net.minecraft.client.particle.Particle;
+import net.minecraft.client.world.ClientWorld;
+import net.minecraft.particle.ParticleEffect;
 
 /**
  * Part of the custom fluid dripping particle implementation made by FoundationGames.
