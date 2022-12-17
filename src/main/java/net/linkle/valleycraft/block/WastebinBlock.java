@@ -15,7 +15,7 @@ public class WastebinBlock extends Block {
     protected static final VoxelShape SHAPE;
 
     public WastebinBlock() {
-        super(Settings.of(Material.METAL, MapColor.ORANGE).requiresTool().strength(2.5f, 5.0f).sounds(BlockSoundGroup.COPPER));
+        super(Settings.of(Material.METAL, MapColor.ORANGE).requiresTool().strength(2.5f, 5.0f).sounds(BlockSoundGroup.COPPER).nonOpaque());
     }
     
     @Override

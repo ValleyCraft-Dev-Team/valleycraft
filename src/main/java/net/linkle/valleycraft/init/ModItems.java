@@ -17,6 +17,9 @@ import static net.linkle.valleycraft.init.ModGroups.*;
 import static net.minecraft.util.Rarity.*;
 
 public enum ModItems implements ItemEnum {
+    //cups
+    WOODEN_CUP(new CupItem(itemSettings().group(INGREDIENTS))),
+    WATER_FILLED_WOODEN_CUP(new WaterCupItem(itemSettings().maxCount(16).group(INGREDIENTS).recipeRemainder(ModItems.WOODEN_CUP.item), 0, 0.0f)),
 
     // tree seeds
     OAK_SEED(new Item(itemSettings())),

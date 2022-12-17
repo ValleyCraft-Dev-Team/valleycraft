@@ -13,6 +13,16 @@ import net.minecraft.recipe.Ingredient;
 
 public enum ModToolMaterials implements ToolMaterial {
 
+    MAKESHIFT_WOOD(0, 32, 1.0F, 0F, 15, () -> {
+        return Ingredient.ofItems(ModItems.PLANK);
+    }),
+    MAKESHIFT_STONE(1, 32, 1.0F, 0F, 5, () -> {
+        return Ingredient.ofItems(ModNaturalBlocks.ROCKS);
+    }),
+    MAKESHIFT_FLINT(1, 32, 1.0F, 0F, 5, () -> {
+        return Ingredient.ofItems(Items.FLINT);
+    }),
+
     PRIMSTEEL(2, 190, 5.0F, 1.5F, 18, () -> {
         return Ingredient.ofItems(ModItems.PRIMSTEEL_INGOT);
     }),

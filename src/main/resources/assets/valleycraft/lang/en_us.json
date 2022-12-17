@@ -203,7 +203,7 @@
   "block.valleycraft.nether_garnet_ore": "Nether Garnet Ore",
   "block.valleycraft.nether_garnet_block": "Block of Nether Garnet",
 
-  "block.valleycraft.crafting_mat": "Crafting Mat and Tools",
+  "block.valleycraft.crafting_mat": "Portable Crafting Mat and Tools",
 
   "block.valleycraft.garnet_lantern": "Nether Garnet Lantern",
   "block.valleycraft.amber_lantern": "Amber Lantern",
@@ -1160,8 +1160,13 @@
   "item.valleycraft.spear_primsteel": "Primsteel Spear",
   "item.valleycraft.spear_golemite": "Golemite Spear",
   "item.valleycraft.spear_rosegold": "Rose Gold Spear",
+
   "item.valleycraft.makeshift_spear": "Makeshift Spear",
   "item.valleycraft.makeshift_pickaxe": "Makeshift Pickaxe",
+  "item.valleycraft.makeshift_axe": "Makeshift Axe",
+  "item.valleycraft.makeshift_hoe": "Makeshift Hoe",
+  "item.valleycraft.makeshift_shovel": "Makeshift Shovel",
+
   "item.valleycraft.prismace": "Prismarine Mace",
   "item.valleycraft.prismarine_hoe": "Prismarine Hoe",
 

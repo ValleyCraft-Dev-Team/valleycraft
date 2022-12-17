@@ -40,13 +40,18 @@ public class ModTools {
     public static final Item BRANCH = new BranchWeaponItem(new BranchToolMaterial(), 3, -2.0f);
     public static final Item FLINT = new FlintToolItem(new FlintToolMaterial());
     public static final Item HEFTY_ROCK = new RockToolItem(new RockToolMaterial());
+
+    public static final Item MAKESHIFT_SPEAR = new BranchSpearItem(ModToolMaterials.MAKESHIFT_WOOD, 3, -2.0f);
+    public static final Item MAKESHIFT_PICKAXE = new BranchPickaxeItem(ModToolMaterials.MAKESHIFT_STONE, 3, -2.0f);
+    public static final Item MAKESHIFT_AXE = new BranchAxeItem(ModToolMaterials.MAKESHIFT_FLINT, 3, -2.0f);
+    public static final Item MAKESHIFT_SHOVEL = new BranchShovelItem(ModToolMaterials.MAKESHIFT_WOOD, 3, -2.0f);
+    public static final Item MAKESHIFT_HOE = new BranchHoeItem(ModToolMaterials.MAKESHIFT_WOOD, 3, -2.0f);
+
     public static final Item RUSTY_SWORD = new RustySwordItem(new RustySwordMaterial(),4, -2.4f);
     public static final Item RUSTY_PICKAXE = new RustyPickaxeItem(new RustyPickaxeMaterial(),3, -2.8f);
     public static final Item LADLE = new LadleItem(new OarToolMaterial(),2, -2.5f);
     public static final Item THROWING_ROCK = new BoneDartItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
     public static final Item ANTHROPOLOGISTS_ROCK_PICK = new AnthroPickaxeItem(new AnthroPickaxeMaterial());
-    public static final Item MAKESHIFT_SPEAR = new BranchWeaponItem(ToolMaterials.WOOD, 3, -2.0f);
-    public static final Item MAKESHIFT_PICKAXE = new BranchPickaxeItem(ToolMaterials.WOOD, 3, -2.0f);
 
     public static final Item ANCIENT_CLIMBING_AXE = new ClimbingAxeItem(ToolMaterials.DIAMOND, new Item.Settings().group(BOOKS).rarity(Rarity.EPIC));
     public static final Item MOBLIN_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
@@ -106,23 +111,26 @@ public class ModTools {
     public static void initialize() {
         //Environmental
         Reg.register("branch", BRANCH);
-        Reg.register("sharp_flint", FLINT);
-        Reg.register("hefty_rock", HEFTY_ROCK);
+        //Reg.register("sharp_flint", FLINT);
+        //Reg.register("hefty_rock", HEFTY_ROCK);
         Reg.register("throwing_rock", THROWING_ROCK);
         Reg.register("makeshift_spear", MAKESHIFT_SPEAR);
+        Reg.register("makeshift_shovel", MAKESHIFT_SHOVEL);
         Reg.register("makeshift_pickaxe", MAKESHIFT_PICKAXE);
-
-        //Brasium Tools
-        Reg.register("climbing_axe", CLIMBING_AXE);
-        Reg.register("anthropologists_rock_pick", ANTHROPOLOGISTS_ROCK_PICK);
-        Reg.register("ice_tongs", new PickaxeItem(ModToolMaterials.BRASIUM, PICKAXE_BASE_DAMAGE, PICKAXE_BASE_SPEED, BASIC_SETTINGS));
-        Reg.register("coral_knife", new Scalpel(ModToolMaterials.ELDER_GUARDIAN, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("makeshift_axe", MAKESHIFT_AXE);
+        Reg.register("makeshift_hoe", MAKESHIFT_HOE);
 
         //Staffs
         Reg.register("wooden_staff", new StaffBase(ModToolMaterials.PLANK, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("bamboo_staff", new StaffBase(ModToolMaterials.BAMBOO, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
         //Material technically
         Reg.register("wooden_oar", new StaffBase(ModToolMaterials.PLANK, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
+
+        //Brasium Tools
+        Reg.register("climbing_axe", CLIMBING_AXE);
+        Reg.register("anthropologists_rock_pick", ANTHROPOLOGISTS_ROCK_PICK);
+        Reg.register("ice_tongs", new PickaxeItem(ModToolMaterials.BRASIUM, PICKAXE_BASE_DAMAGE, PICKAXE_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("coral_knife", new Scalpel(ModToolMaterials.ELDER_GUARDIAN, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
 
         //Knives
         Reg.register("knife_wooden", new KnifeBase(ToolMaterials.WOOD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
