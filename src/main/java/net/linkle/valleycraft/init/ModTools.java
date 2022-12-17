@@ -38,8 +38,8 @@ public class ModTools {
     //When we need to access a tool or weapon elsewhere in the codebase, such as to inject them into loot tables, we need them stored in variables.
     //environmental tools
     public static final Item BRANCH = new BranchWeaponItem(new BranchToolMaterial(), 3, -2.0f);
-    public static final Item FLINT = new FlintToolItem(new FlintToolMaterial());
-    public static final Item HEFTY_ROCK = new RockToolItem(new RockToolMaterial());
+    //public static final Item FLINT = new FlintToolItem(new FlintToolMaterial());
+    //public static final Item HEFTY_ROCK = new RockToolItem(new RockToolMaterial());
 
     public static final Item MAKESHIFT_SPEAR = new BranchSpearItem(ModToolMaterials.MAKESHIFT_WOOD, 3, -2.0f);
     public static final Item MAKESHIFT_PICKAXE = new BranchPickaxeItem(ModToolMaterials.MAKESHIFT_STONE, 3, -2.0f);

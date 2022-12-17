@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "full=true": {
+      "model": "valleycraft:block/water_strainer_full"
+    },
+    "full=false": {
+      "model": "valleycraft:block/water_strainer_empty"
+    }
+  }
+}

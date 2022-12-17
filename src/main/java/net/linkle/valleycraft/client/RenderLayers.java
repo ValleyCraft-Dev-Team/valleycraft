@@ -215,6 +215,7 @@ class RenderLayers {
         put(BEVELED_TINTED_GLASS, translucent);
         put(BEVELED_TINTED_GLASS_PANE, translucent);
         put(TINTED_GLASS_PANE, translucent);
+        put(WATER_STRAINER, cullout);
 
         put(WATTLE_BARS, cullout);
         put(ARID_VINES, cullout);

@@ -4,7 +4,8 @@
 		"0": "valleycraft:block/water_strainer_bottom",
 		"1": "valleycraft:block/water_strainer_side",
 		"2": "valleycraft:block/water_strainer_top",
-		"3": "valleycraft:block/water_strainer_filled"
+		"3": "valleycraft:block/water_strainer_filled",
+		"particle": "valleycraft:block/water_strainer_bottom"
 	},
 	"elements": [
 		{

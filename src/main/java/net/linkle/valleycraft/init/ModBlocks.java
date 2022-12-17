@@ -231,6 +231,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     WAXED_WASTEBIN_OXIDIZED(new WastebinBlock(), itemSettings()),
 
     SPRINKLER(new SprinklerBlock(), itemSettings()),
+    
+    WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
 
     //scarecrows
     SCARECROW(new ScarecrowBlock(false), itemSettings()),
