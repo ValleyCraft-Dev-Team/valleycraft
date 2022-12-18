@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "item": "valleycraft:salt"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:treated_leather",
+    "count": 1
+  }
+}

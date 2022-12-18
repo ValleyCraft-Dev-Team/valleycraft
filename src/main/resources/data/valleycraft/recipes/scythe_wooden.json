@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:wooden_hoe"
+  },
+  "addition": {
+    "item": "valleycraft:plank"
+  },
+  "result": {
+    "item": "valleycraft:scythe_wooden"
+  }
+}

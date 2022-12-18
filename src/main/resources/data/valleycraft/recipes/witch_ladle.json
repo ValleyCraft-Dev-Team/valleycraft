@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "V  "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:handle"
+    },
+    "V": {
+      "item": "minecraft:wooden_shovel"
+    }
+  },
+  "result": {
+    "item": "valleycraft:witch_ladle",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " V ",
+    " V "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "V": {
+      "tag": "c:handles"
+    }
+  },
+  "result": {
+    "item": "minecraft:wooden_pickaxe",
+    "count": 1
+  }
+}

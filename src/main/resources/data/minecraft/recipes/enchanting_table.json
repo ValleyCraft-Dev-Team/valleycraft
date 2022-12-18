@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:runecalling_book"
+    },
+    {
+      "item": "valleycraft:rune_etching_blade"
+    },
+    {
+      "item": "valleycraft:clothed_ornate_obsidian_table"
+    }
+  ],
+  "result": {
+    "item": "minecraft:enchanting_table",
+    "count": 1
+  }
+}

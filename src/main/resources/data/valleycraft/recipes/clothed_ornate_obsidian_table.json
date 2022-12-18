@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "E"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:red_carpet"
+    },
+    "E": {
+      "item": "valleycraft:ornate_obsidian_table"
+    }
+  },
+  "result": {
+    "item": "valleycraft:clothed_ornate_obsidian_table",
+    "count": 1
+  }
+}

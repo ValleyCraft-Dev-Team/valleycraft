@@ -39,6 +39,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     KEG(new KegBlock(), itemSettings()),
+    WITCH_LADLE(new LadleBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().noCollision().nonOpaque()), itemSettings()),
     MINER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(Blocks.SPRUCE_PLANKS).nonOpaque()), itemSettings()),
@@ -93,12 +94,12 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     
     BRAZIER(new BrazierBlock(15, 1), itemSettings()),
     SOUL_BRAZIER(new BrazierBlock(10, 2), itemSettings()),
-    
-    CANDLE_BOTTLE(new BottleBlock(), itemSettings()),
-    CANDLE_BOTTLE_LIT(new CandleBottleLitBlock(), itemSettings()),
+
+    //CANDLE_BOTTLE(new BottleBlock(), itemSettings()),
+    //CANDLE_BOTTLE_LIT(new CandleBottleLitBlock(), itemSettings()),
 
     //rope and net blocks
-    ROPE(new ChainBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
+    ROPE(new ChainBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque().noCollision()), itemSettings()),
     ROPE_LADDER(new ModLadderBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
     BAMBOO_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(1).sounds(BlockSoundGroup.BAMBOO)), itemSettings()),
 
@@ -109,7 +110,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1)), itemSettings(), BridgeItem::new),
     SPIKE_TRAP(new SpikeTrapBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).nonOpaque().strength(0.5f, 1.0f)), itemSettings()),
 
-    // guidestones
+    //guidestones
     //GUIDESTONE(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
     //GUIDESTONE_ARROW(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
     //GUIDESTONE_HOME(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),

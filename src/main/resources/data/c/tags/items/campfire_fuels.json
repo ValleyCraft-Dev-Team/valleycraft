@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:coal",
+    "minecraft:charcoal",
+    "minecraft:torch",
+    "valleycraft:plant_fiber",
+    "valleycraft:dried_fiber"
+  ]
+}

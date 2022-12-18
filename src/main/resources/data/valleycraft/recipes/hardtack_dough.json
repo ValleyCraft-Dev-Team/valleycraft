@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:flour"
+    },
+    {
+      "item": "valleycraft:water_filled_wooden_cup"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:hardtack_dough",
+    "count": 1
+  }
+}

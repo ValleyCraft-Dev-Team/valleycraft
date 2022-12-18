@@ -78,7 +78,6 @@ public enum ModArmors implements ItemEnum {
     BIKINI_NEUTRAL_REPAIRED(new ArmorItem(ArmorMats.BIKINI_NEUTRAL_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
     BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
     BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
-    BIKINI_COAT_GAITERS(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.FEET, settingsNormal())),
 
     CANVAS_HOOD(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.HEAD, settingsNormal())),
     CANVAS_TUNIC(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.CHEST, settingsNormal())),
@@ -185,6 +184,7 @@ public enum ModArmors implements ItemEnum {
     ANCIENT_ROBE(new UniqueArmorItem(ArmorMats.ANCIENT_ROBE, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
     SHULKER_HELMET(new UniqueArmorItem(ArmorMats.SHULKER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
     MUMMY_WRAPS(new UniqueArmorItem(ArmorMats.MUMMY, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
+    BIKINI_COAT_GAITERS(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
 
     BIKINI_NEUTRAL(new BrokenArmorItem(ArmorMats.BIKINI_NEUTRAL, EquipmentSlot.LEGS, settingsArtifacts())),
     BIKINI(new BrokenArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settingsArtifacts())),
@@ -193,6 +193,7 @@ public enum ModArmors implements ItemEnum {
     BIKINI_COAT(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settingsArtifacts())),
 
     CROWN(new UniqueArmorItem(ArmorMats.CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
+    BLIGHT_CROWN(new UniqueArmorItem(ArmorMats.BLIGHT_CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     RED_HOOD(new UniqueArmorItem(ArmorMats.RED_CLOAK, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     RED_CLOAK(new UniqueArmorItem(ArmorMats.RED_CLOAK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
     GREEN_HOOD(new UniqueArmorItem(ArmorMats.GREEN_CLOAK, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#i#",
+    "VDV",
+    "#i#"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "V": {
+      "item": "valleycraft:plant_fiber_canvas"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "minecraft:jukebox",
+    "count": 1
+  }
+}

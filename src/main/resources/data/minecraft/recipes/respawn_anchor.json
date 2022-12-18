@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "X": {
+      "item": "minecraft:ender_eye"
+    },
+    "O": {
+      "item": "minecraft:crying_obsidian"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "GXG",
+    "OOO"
+  ],
+  "result": {
+    "item": "minecraft:respawn_anchor"
+  }
+}

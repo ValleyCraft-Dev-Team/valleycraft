@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "valleycraft:bow_string"
+    },
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "G": {
+      "tag": "c:handles"
+    }
+  },
+  "pattern": [
+    " #X",
+    "G X",
+    " #X"
+  ],
+  "result": {
+    "item": "minecraft:bow"
+  }
+}

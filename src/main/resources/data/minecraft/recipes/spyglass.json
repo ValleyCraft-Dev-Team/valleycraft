@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #V",
+    "#J#",
+    "J# "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:leather_strap"
+    },
+    "V": {
+      "item": "valleycraft:spyglass_lense"
+    },
+    "J": {
+      "item": "valleycraft:brasium_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft:spyglass",
+    "count": 1
+  }
+}

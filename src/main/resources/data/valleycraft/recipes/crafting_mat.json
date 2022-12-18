@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#L",
+    "LV"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:rope"
+    },
+    "L": {
+      "tag": "c:leather_alternatives"
+    },
+    "V": {
+      "item": "valleycraft:plank"
+    }
+  },
+  "result": {
+    "item": "valleycraft:crafting_mat",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#_#",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "_": {
+      "item": "minecraft:stone_slab"
+    }
+  },
+  "result": {
+    "item": "minecraft:grindstone",
+    "count": 1
+  }
+}

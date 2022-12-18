@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:flour"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "item": "valleycraft:water_filled_wooden_cup"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:bread_dough",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " V ",
+    "UUU"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:agitator"
+    },
+    "V": {
+      "item": "valleycraft:thermal_blaze_core"
+    },
+    "U": {
+      "item": "valleycraft:hot_plate"
+    }
+  },
+  "result": {
+    "item": "minecraft:brewing_stand",
+    "count": 1
+  }
+}

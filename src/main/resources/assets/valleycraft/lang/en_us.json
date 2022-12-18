@@ -113,6 +113,7 @@
   "seldom_items": "§a",
   "item.valleycraft.stablehand_hat": "§aStablehand Cap",
 
+  "item.valleycraft.dragon_tooth": "Large Ancient Tooth",
   "block.valleycraft.sculk_blossom": "Sculk Pollen Blossom",
   "item.valleycraft.ender_dragon_eye": "Blighted Ender Dragon Eye",
   "item.valleycraft.ender_dragon_gland": "Ender Dragon Gland",
@@ -162,7 +163,7 @@
   "item.valleycraft.scute_necklace": "Carved Scute Charm",
   "item.valleycraft.prismarine_talisman": "Prismarine Talisman",
   "item.valleycraft.nether_quartz_talisman": "Nether Quartz Talisman",
-  "item.valleycraft.piglin_necklace": "Gold Necklace",
+  "item.valleycraft.piglin_necklace": "Golden Necklace",
   "item.valleycraft.arrowhead_talisman": "Arrowhead Charm",
   "item.valleycraft.nether_garnet_talisman": "Nether Garnet Talisman",
   "item.valleycraft.nether_garnet": "Nether Garnet",
@@ -343,7 +344,6 @@
   "block.valleycraft.stratified_red_sandstone": "Stratified Red Sandstone",
 
   "item.valleycraft.agitator": "Redstone Agitator",
-  "item.valleycraft.nether_coal": "Anthracite",
   "item.valleycraft.beast_bone": "Small Bone",
   "item.valleycraft.bow_string": "§aBow Drawstring",
   "item.valleycraft.bb_snail": "Jar of Snail",
@@ -420,7 +420,7 @@
   "item.valleycraft.bikini_coat": "§aTattered Coat",
   "item.valleycraft.bikini_coat_hood": "§aTattered Hood",
   "item.valleycraft.bikini_neutral": "§aTattered Undergarments",
-  "item.valleycraft.bikini_coat_gaiters": "Leather Gaiters",
+  "item.valleycraft.bikini_coat_gaiters": "Champion's Gaiters",
 
   "item.valleycraft.bikini_repaired": "Femme Undergarments",
   "item.valleycraft.bikini_masc_repaired": "Masc Undergarments",
@@ -1090,6 +1090,7 @@
   "item.valleycraft.ancient_robe": "Ancient Robe",
   "item.valleycraft.efe_boots": "Old Boots",
   "item.valleycraft.crown": "Golden Crown",
+  "item.valleycraft.blight_crown": "Malice Crown",
   "block.valleycraft.translation_canvas": "§cTranslation Canvas",
   "item.valleycraft.ancient_dungeon_key": "Ancient Primsteel Key",
   "item.valleycraft.polished_glowstone_chunk": "Smooth Glowstone Chunk",
@@ -1129,17 +1130,6 @@
   "item.valleycraft.broth": "Broth",
   "item.valleycraft.sandwich_fish": "Fish Sandwich",
   "item.valleycraft.ghast_tears": "Bottle o' Ghast Tears",
-
-
-  "item.valleycraft.spear_wooden": "Wooden Spear",
-  "item.valleycraft.spear_stone": "Stone Spear",
-  "item.valleycraft.spear_golden": "Golden Spear",
-  "item.valleycraft.spear_iron": "Iron Spear",
-  "item.valleycraft.spear_diamond": "Diamond Spear",
-  "item.valleycraft.spear_netherite": "Netherite Spear",
-  "item.valleycraft.spear_primsteel": "Primsteel Spear",
-  "item.valleycraft.spear_golemite": "Golemite Spear",
-  "item.valleycraft.spear_rosegold": "Rose Gold Spear",
 
   "item.valleycraft.makeshift_spear": "Makeshift Spear",
   "item.valleycraft.makeshift_pickaxe": "Makeshift Pickaxe",
@@ -1259,6 +1249,8 @@
   "block.valleycraft.potted_yellow_lupine": "Potted Yellow Lupine",
   "block.valleycraft.potted_yellow_poppy": "Potted Yellow Poppy",
   "block.valleycraft.potted_yellow_tulip": "Potted Yellow Tulip",
+
+  "block.valleycraft.witch_ladle": "Cauldron Ladle",
 
   "item.valleycraft.soul_item_withered": "Withered Lost Soul",
   "item.valleycraft.soul_item_fading": "§aFading Lost Soul",

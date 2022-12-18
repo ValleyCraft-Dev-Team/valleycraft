@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "#V"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "V": {
+      "item": "valleycraft:handle"
+    }
+  },
+  "result": {
+    "item": "valleycraft:hatchet_wooden",
+    "count": 1
+  }
+}

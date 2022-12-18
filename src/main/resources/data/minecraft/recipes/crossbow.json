@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "$": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "&": {
+      "item": "minecraft:iron_ingot"
+    },
+    "~": {
+      "item": "valleycraft:bow_string"
+    },
+    "G": {
+      "tag": "c:handles"
+    }
+  },
+  "pattern": [
+    "#&#",
+    "~$~",
+    " G "
+  ],
+  "result": {
+    "item": "minecraft:crossbow"
+  }
+}

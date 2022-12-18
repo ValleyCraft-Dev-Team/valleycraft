@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " I ",
+    "A  "
+  ],
+  "key": {
+    "#": {
+      "tag": "c:feathers"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "valleycraft:quill",
+    "count": 1
+  }
+}

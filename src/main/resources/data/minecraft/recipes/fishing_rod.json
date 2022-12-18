@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:handles"
+    },
+    "X": {
+      "tag": "c:strings"
+    },
+    "G": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "  #",
+    " #X",
+    "#GX"
+  ],
+  "result": {
+    "item": "minecraft:fishing_rod"
+  }
+}

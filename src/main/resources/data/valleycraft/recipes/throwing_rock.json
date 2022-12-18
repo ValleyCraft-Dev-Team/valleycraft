@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sticks",
+  "key": {
+    "#": {
+      "tag": "c:rocks"
+    }
+  },
+  "pattern": [
+    "#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "valleycraft:throwing_rock"
+  }
+}

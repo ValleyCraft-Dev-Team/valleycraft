@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:knife_wooden"
+  },
+  "addition": {
+    "item": "valleycraft:plank"
+  },
+  "result": {
+    "item": "valleycraft:dagger_wooden"
+  }
+}

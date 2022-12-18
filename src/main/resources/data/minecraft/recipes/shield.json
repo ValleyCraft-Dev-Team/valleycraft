@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "tag": "minecraft:planks"
+    },
+    "o": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "oWo",
+    "oWo",
+    "oWo"
+  ],
+  "result": {
+    "item": "minecraft:shield"
+  }
+}

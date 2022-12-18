@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:wooden_axe"
+  },
+  "addition": {
+    "item": "valleycraft:plank"
+  },
+  "result": {
+    "item": "valleycraft:woodcutter_axe_wooden"
+  }
+}

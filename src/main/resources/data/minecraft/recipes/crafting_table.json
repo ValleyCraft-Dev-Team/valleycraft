@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "VOV",
+    "VOV"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:crafting_mat"
+    },
+    "V": {
+      "item": "valleycraft:plank"
+    },
+    "O": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "minecraft:crafting_table",
+    "count": 1
+  }
+}

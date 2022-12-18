@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": {
+      "tag": "c:campfire_fuels_soul"
+    },
+    "L": {
+      "tag": "minecraft:logs"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "minecraft:plank"
+    }
+  },
+  "pattern": [
+    "XSX",
+    "SCS",
+    "LLL"
+  ],
+  "result": {
+    "item": "minecraft:soul_campfire"
+  }
+}

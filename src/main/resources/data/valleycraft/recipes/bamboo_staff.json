@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "V",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "V": {
+      "item": "valleycraft:handle"
+    }
+  },
+  "result": {
+    "item": "valleycraft:bamboo_staff",
+    "count": 1
+  }
+}

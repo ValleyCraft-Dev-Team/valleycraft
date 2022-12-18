@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #",
+    "A "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:reinforced_handle"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "valleycraft:rune_etching_blade",
+    "count": 1
+  }
+}

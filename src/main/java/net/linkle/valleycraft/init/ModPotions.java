@@ -5,6 +5,8 @@ import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.widener.BrewingRecipeRegistryWidener;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.item.LingeringPotionItem;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
 import net.minecraft.util.registry.Registry;
@@ -15,6 +17,7 @@ public class ModPotions {
 
     public static void initialize() {
         registerRecipe(Potions.AWKWARD, IngredientFoodItems.INFECTED_MONSTER_LIVER.item, ModPotions.ROT_BLIGHT_POTION);
+        registerRecipe(Potions.AWKWARD, Items.SCUTE, Potions.TURTLE_MASTER);
     }
     
     private static Potion registerPotion(String name, Potion potion) {
@@ -23,5 +26,7 @@ public class ModPotions {
     
     private static void registerRecipe(Potion input, Item item, Potion output) {
         BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.AWKWARD, IngredientFoodItems.INFECTED_MONSTER_LIVER.item, ModPotions.ROT_BLIGHT_POTION);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.SCUTE, Potions.TURTLE_MASTER);
+
     }
 }

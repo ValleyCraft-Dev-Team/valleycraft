@@ -2,7 +2,9 @@
   "replace": false,
   "values": [
     "minecraft:honey_bottle",
+    "minecraft:honeycomb",
+    "minecraft:slime_ball",
     "valleycraft:slime_blob",
-    "minecraft:slime_ball"
+    "valleycraft:syrupy_honeycomb"
   ]
 }

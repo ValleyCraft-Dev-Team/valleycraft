@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:oak_seed",
+    "valleycraft:dark_oak_seed",
+    "valleycraft:spruce_seed",
+    "valleycraft:birch_seed",
+    "valleycraft:jungle_seed",
+    "valleycraft:acacia_seed",
+    "valleycraft:apple_seed",
+    "valleycraft:amberblossom_seed",
+    "valleycraft:warm_birch_seed"
+  ]
+}

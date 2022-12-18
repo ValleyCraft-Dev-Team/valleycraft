@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:writable_book"
+    },
+    {
+      "item": "minecraft:enchanted_book"
+    },
+    {
+      "item": "minecraft:enchanted_book"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:book_runecalling",
+    "count": 1
+  }
+}

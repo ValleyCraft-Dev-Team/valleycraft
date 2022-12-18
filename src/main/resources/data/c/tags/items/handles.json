@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:handle",
+    "valleycraft:sturdy_handle",
+    "valleycraft:reinforced_handle"
+  ]
+}

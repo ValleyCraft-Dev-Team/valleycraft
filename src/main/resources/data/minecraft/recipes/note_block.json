@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "X": {
+      "item": "minecraft:redstone"
+    },
+    "V": {
+      "item": "valleycraft:plant_fiber_canvas"
+    }
+  },
+  "pattern": [
+    "#V#",
+    "VXV",
+    "#V#"
+  ],
+  "result": {
+    "item": "minecraft:note_block"
+  }
+}

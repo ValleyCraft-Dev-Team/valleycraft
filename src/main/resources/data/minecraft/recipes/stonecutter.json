@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#i#",
+    "SCS"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "C": {
+      "item": "minecraft:chain"
+    }
+  },
+  "result": {
+    "item": "minecraft:stonecutter",
+    "count": 1
+  }
+}

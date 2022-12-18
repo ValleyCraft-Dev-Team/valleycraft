@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:leather",
+    "valleycraft:sheep_hide",
+    "valleycraft:pig_hide",
+    "valleycraft:plant_fiber_canvas",
+    "valleycraft:treated_leather"
+  ]
+}
