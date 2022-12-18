@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "valleycraft:block/quartz_lantern"
+    },
+    "hanging=true": {
+      "model": "valleycraft:block/quartz_lantern_hanging"
+    }
+  }
+}

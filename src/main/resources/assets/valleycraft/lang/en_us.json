@@ -208,9 +208,10 @@
   "block.valleycraft.garnet_lantern": "Nether Garnet Lantern",
   "block.valleycraft.amber_lantern": "Amber Lantern",
   "block.valleycraft.brimstone_lantern": "Brimstone Lantern",
-  "block.valleycraft.diamond_lantern": "Diamond Lantern",
+  "block.valleycraft.diamond_lantern": "Prismarine Lantern",
   "block.valleycraft.emerald_lantern": "Emerald Lantern",
   "block.valleycraft.amethyst_lantern": "Amethyst Lantern",
+  "block.valleycraft.quartz_lantern": "Nether Quartz Lantern",
 
   "item.valleycraft.branch": "§aTree Branch",
   "item.valleycraft.sharp_flint": "§aSharp Flint",
@@ -960,7 +961,7 @@
   "item.valleycraft.golemite_chestplate": "Primsteel Chestplate",
 
   "item.valleycraft.seaologer_token": "§aSeaologer Rune",
-  "item.valleycraft.strayas_cartography_bag": "Abandoned Archaeology Gear",
+  "item.valleycraft.strayas_cartography_bag": "Abandoned Archaeologist's Gear",
   "item.valleycraft.shulker_helmet": "Shulker Shell Helmet",
 
   "item.valleycraft.canvas_hood": "Canvas Hood",
