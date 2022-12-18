@@ -2,7 +2,7 @@
 // Exported for Minecraft version 1.17 with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
-
+/*
 public class panda<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "panda"), "main");
@@ -58,4 +58,4 @@ public class panda<T extends Entity> extends EntityModel<T> {
 		leg2.render(poseStack, buffer, packedLight, packedOverlay);
 		leg3.render(poseStack, buffer, packedLight, packedOverlay);
 	}
-}
+} */

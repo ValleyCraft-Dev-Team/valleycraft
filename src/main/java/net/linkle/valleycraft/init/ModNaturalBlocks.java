@@ -1,24 +1,30 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.init.ModGroups.*;
+import static net.linkle.valleycraft.init.ModGroups.INGREDIENTS;
+import static net.linkle.valleycraft.util.PlantBlockSettings.FLOWER;
+import static net.linkle.valleycraft.util.PlantBlockSettings.OFFSET_FLOWER;
+import static net.linkle.valleycraft.util.PlantBlockSettings.OFFSET_REPLACEABLE;
+import static net.linkle.valleycraft.util.PlantGroundPredicates.ARID_DESERT;
 import static net.linkle.valleycraft.util.PlantVoxelShapes.*;
-import static net.linkle.valleycraft.util.PlantGroundPredicates.*;
-import static net.linkle.valleycraft.util.PlantBlockSettings.*;
 
 import java.util.function.BiFunction;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.block.*;
 import net.linkle.valleycraft.block.sapling.AmberSaplingGen;
 import net.linkle.valleycraft.block.sapling.AppleSaplingGen;
 import net.linkle.valleycraft.block.sapling.WarmBirchSaplingGen;
-import net.linkle.valleycraft.util.*;
+import net.linkle.valleycraft.util.BlockEnum;
+import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.block.*;
-import net.minecraft.item.*;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.PlaceableOnWaterItem;
+import net.minecraft.item.TallBlockItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.Identifier;
@@ -26,6 +32,7 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
+    
 
     BLACK_DAHLIA(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     FLOWERING_CACTUS(new ModCactusBlock(FLOWERING_CACTUS_SHAPE), itemSettings()),
@@ -276,8 +283,20 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).smallShape(), itemSettings().rarity(Rarity.UNCOMMON)),
     SOULSPORE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).largeShape(), itemSettings().rarity(Rarity.UNCOMMON)),
     BLUE_SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).smallShape(), itemSettings().rarity(Rarity.RARE)),
-    BLUE_SOULSPORE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).largeShape(), itemSettings().rarity(Rarity.RARE));
+    BLUE_SOULSPORE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).largeShape(), itemSettings().rarity(Rarity.RARE)),
 
+    // Tree Seeds
+    OAK_SEED(new SeedBlock(Blocks.OAK_SAPLING)),
+    BIRCH_SEED(new SeedBlock(Blocks.BIRCH_SAPLING)),
+    SPRUCE_SEED(new SeedBlock(Blocks.SPRUCE_SAPLING)),
+    ACACIA_SEED(new SeedBlock(Blocks.ACACIA_SAPLING)),
+    DARK_OAK_SEED(new SeedBlock(Blocks.DARK_OAK_SAPLING)),
+    JUNGLE_SEED(new SeedBlock(Blocks.JUNGLE_SAPLING)),
+    APPLE_SEED(new SeedBlock(APPLE_SAPLING.block)),
+    AMBERBLOSSOM_SEED(new SeedBlock(MAMON_SAPLING.block)),
+    WARM_BIRCH_SEED(new SeedBlock(WARM_BIRCH_SAPLING.block));
+    
+    
     public static void initialize() {
         ((VineHeadBlock)ARID_VINES.block).setPlant(ARID_VINES_PLANT.block);
         ((VineBodyBlock)ARID_VINES_PLANT.block).setStem(ARID_VINES.block);

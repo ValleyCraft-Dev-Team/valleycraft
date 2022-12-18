@@ -417,6 +417,16 @@ class RenderLayers {
 
         put(ARID_VINES_PLANT, cullout);
         put(ARID_VINES, cullout);
+        
+        put(ACACIA_SEED, cullout);
+        put(AMBERBLOSSOM_SEED, cullout);
+        put(APPLE_SEED, cullout);
+        put(BIRCH_SEED, cullout);
+        put(DARK_OAK_SEED, cullout);
+        put(JUNGLE_SEED, cullout);
+        put(OAK_SEED, cullout);
+        put(SPRUCE_SEED, cullout);
+        put(WARM_BIRCH_SEED, cullout);
     }
 
     /**

@@ -22,15 +22,15 @@ public enum ModItems implements ItemEnum {
     WATER_FILLED_WOODEN_CUP(new WaterCupItem(itemSettings().maxCount(16).group(INGREDIENTS).recipeRemainder(ModItems.WOODEN_CUP.item), 0, 0.0f)),
 
     // tree seeds
-    OAK_SEED(new Item(itemSettings())),
-    DARK_OAK_SEED(new Item(itemSettings())),
-    SPRUCE_SEED(new Item(itemSettings())),
-    BIRCH_SEED(new Item(itemSettings())),
-    JUNGLE_SEED(new Item(itemSettings())),
-    ACACIA_SEED(new Item(itemSettings())),
-    APPLE_SEED(new Item(itemSettings())),
-    AMBERBLOSSOM_SEED(new Item(itemSettings())),
-    WARM_BIRCH_SEED(new Item(itemSettings())),
+    OAK_SEED(new AliasedBlockItem(ModNaturalBlocks.OAK_SEED.block, itemSettings())),
+    DARK_OAK_SEED(new AliasedBlockItem(ModNaturalBlocks.DARK_OAK_SEED.block, itemSettings())),
+    SPRUCE_SEED(new AliasedBlockItem(ModNaturalBlocks.SPRUCE_SEED.block, itemSettings())),
+    BIRCH_SEED(new AliasedBlockItem(ModNaturalBlocks.BIRCH_SEED.block, itemSettings())),
+    JUNGLE_SEED(new AliasedBlockItem(ModNaturalBlocks.JUNGLE_SEED.block, itemSettings())),
+    ACACIA_SEED(new AliasedBlockItem(ModNaturalBlocks.ACACIA_SEED.block, itemSettings())),
+    APPLE_SEED(new AliasedBlockItem(ModNaturalBlocks.APPLE_SEED.block, itemSettings())),
+    AMBERBLOSSOM_SEED(new AliasedBlockItem(ModNaturalBlocks.AMBERBLOSSOM_SEED.block, itemSettings())),
+    WARM_BIRCH_SEED(new AliasedBlockItem(ModNaturalBlocks.WARM_BIRCH_SEED.block, itemSettings())),
     //CELESTIAL_SEED(new Item(itemSettings())),
 
     // crops
