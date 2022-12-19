@@ -1,5 +1,11 @@
 {
   "replace": false,
   "values": [
+    "valleycraft:syrupy_honeycomb",
+    "valleycraft:baked_sweet_berries",
+    "valleycraft:baked_glow_berries",
+    "valleycraft:fried_egg",
+    "valleycraft:golden_sweet_berries",
+    "valleycraft:golden_glow_berries"
   ]
 }

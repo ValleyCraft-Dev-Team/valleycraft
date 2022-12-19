@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "valleycraft:apple_fence",
-    "valleycraft:mamon_fence",
-    "valleycraft:ancient_fence"
+    "valleycraft:mamon_fence"
   ]
 }
