@@ -11,6 +11,7 @@ import net.linkle.valleycraft.init.ModBlockEntityType;
 import net.linkle.valleycraft.init.ModEntityType;
 import net.linkle.valleycraft.init.ModParticles;
 import net.linkle.valleycraft.network.ClientNetwork;
+import net.linkle.valleycraft.util.ModModelPredicateProvider;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 import static net.linkle.valleycraft.init.ModArmors.*;
@@ -34,5 +35,7 @@ public class Client implements ClientModInitializer {
         GeoArmorRenderer.registerArmorRenderer(new ClothArmorRenderer(),
                 TEST_BOOTS.item,TEST_LEGGINGS.item,
                 TEST_CHESTPLATE.item, TEST_HELMET.item);
+
+        ModModelPredicateProvider.registerModModels();
     }
 }

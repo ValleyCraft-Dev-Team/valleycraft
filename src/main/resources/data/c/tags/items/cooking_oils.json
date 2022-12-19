@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:morel_oil",
-    "croptopia:olive_oil"
+    "valleycraft:morel_oil"
   ]
 }
