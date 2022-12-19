@@ -9,7 +9,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
 import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
@@ -48,6 +50,19 @@ public class WaterCupItem extends FoodItem {
         }
         return stack;
     }
+
+    //@Override
+    //public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
+    //    ItemStack itemStack = user.getStackInHand(hand);
+    //    if (itemStack.isOf(Items.BUCKET) && !this.isBaby()) {
+    //        user.playSound(SoundEvents.ENTITY_COW_MILK, 1.0F, 1.0F);
+    //        ItemStack itemStack2 = ItemUsage.exchangeStack(itemStack, user, ModItems.MILK_FILLED_WOODEN_CUP.getStack());
+    //        user.setStackInHand(hand, itemStack2);
+    //        return ActionResult.success();
+    //    } else {
+    //        return super.useOnEntity(user, hand);
+    //    }
+    //}
     
     /** Make this item clear effects when consumed like bucket of milk. */
     public WaterCupItem setMilk() {

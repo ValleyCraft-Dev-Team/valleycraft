@@ -40,24 +40,18 @@ public class BrokenMythicTravelerBase
         attributeModifiers = builder.build();
     }
 
-    public static boolean isUsable(ItemStack stack) {
-        return stack.getDamage() < stack.getMaxDamage() - 1;
-    }
-
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
         tooltip.add( Text.translatable("item.valley.broken.tooltip").formatted(Formatting.GRAY));
         tooltip.add( Text.translatable("item.valley.mythic.tooltip").formatted(Formatting.RED));
     }
 
-    //Damage the knife when it's used to hit mobs
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         stack.damage(1, attacker, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
         return true;
     }
 
-    //Damage the knife when it's used to mine blocks
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if (state.getHardness(world, pos) != 0.0f) {
@@ -66,13 +60,6 @@ public class BrokenMythicTravelerBase
         return true;
     }
 
-    //Add the explanatory tooltip
-    //@Override
-    //public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-    //    tooltip.add( new TranslatableText("item.valley.knife.tooltip").formatted(Formatting.YELLOW) );
-    //}
-
-    //This is needed to show the damage and attack speed tooltip shown by all tools
     @Override
     public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot slot) {
         if (slot == EquipmentSlot.MAINHAND) {
@@ -81,20 +68,16 @@ public class BrokenMythicTravelerBase
         return super.getAttributeModifiers(slot);
     }
 
-    //These two methods use our special mixin to force specific enchantments to work on the sickle
-    //despite enchantment compatibility being hardcoded in vanilla.
-
-    //Make the knife accept any weapon enchantments
     @Override
     public List<EnchantmentTarget> getEnchantmentTypes() {
         return Collections.singletonList(EnchantmentTarget.WEAPON);
     }
-    
+
     @Override
     public boolean isExplicitlyValid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.IMPALING);
     }
-    
+
     @Override
     public boolean isInvalid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.SWEEPING);

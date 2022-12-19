@@ -1,7 +1,6 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.init.ModGroups.BOOKS;
-import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
+import static net.linkle.valleycraft.init.ModGroups.*;
 import static net.linkle.valleycraft.util.BookStackVoxelShapes.*;
 
 import java.util.function.BiFunction;
@@ -34,7 +33,7 @@ import net.minecraft.world.BlockView;
 
 public enum ModBlocks implements ItemEnum, BlockEnum {
 
-    CRAFTING_MAT(new CraftingMatBauble(Block.Settings.of(Material.DECORATION).sounds(BlockSoundGroup.WOOL).breakInstantly().noCollision().nonOpaque()), itemSettings()),
+    CRAFTING_MAT(new CraftingMatBauble(Block.Settings.of(Material.DECORATION).sounds(BlockSoundGroup.WOOL).breakInstantly().noCollision().nonOpaque()), toolItemSettings()),
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     KEG(new KegBlock(), itemSettings()),
@@ -685,6 +684,10 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     private static FabricItemSettings itemSettings() {
         return new FabricItemSettings().group(NON_NATURAL_BLOCKS);
+    }
+
+    private static FabricItemSettings toolItemSettings() {
+        return new FabricItemSettings().group(VC_TOOLS);
     }
 
     private static Boolean always(BlockState state, BlockView world, BlockPos pos, EntityType<?> type) {

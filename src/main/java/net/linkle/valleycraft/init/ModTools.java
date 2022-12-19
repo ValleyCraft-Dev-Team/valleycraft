@@ -1,10 +1,12 @@
 package net.linkle.valleycraft.init;
 
+import net.linkle.valleycraft.item.ModPrismarineHoeItem;
 import net.linkle.valleycraft.tool.ModToolMaterials;
 import net.linkle.valleycraft.tool.ModToolMaterialsExtended;
 import net.linkle.valleycraft.tool.Scalpel;
 import net.linkle.valleycraft.tool.anthro.AnthroPickaxeItem;
 import net.linkle.valleycraft.tool.anthro.AnthroPickaxeMaterial;
+import net.linkle.valleycraft.tool.bows.ModBowItem;
 import net.linkle.valleycraft.tool.environmental.*;
 import net.linkle.valleycraft.tool.greatsword.GreatswordBase;
 import net.linkle.valleycraft.tool.hatchet.HatchetAxeBase;
@@ -29,7 +31,9 @@ import net.linkle.valleycraft.tool.unbreakable.UnbreakableMythicScytheBase;
 import net.linkle.valleycraft.tool.unbreakable.UnbreakableMythicTravelerBase;
 import net.linkle.valleycraft.tool.woodcutter_axe.WoodcutterAxeBase;
 import net.linkle.valleycraft.util.Reg;
+import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.item.*;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 import static net.linkle.valleycraft.init.ModGroups.BOOKS;
@@ -40,6 +44,7 @@ import net.linkle.valleycraft.item.ModHoeItem;
 
 public class ModTools {
     //When we need to access a tool or weapon elsewhere in the codebase, such as to inject them into loot tables, we need them stored in variables.
+
     //environmental tools
     public static final Item BRANCH = new BranchWeaponItem(new BranchToolMaterial(), 3, -2.0f);
     //public static final Item FLINT = new FlintToolItem(new FlintToolMaterial());
@@ -93,6 +98,8 @@ public class ModTools {
     public static final Float STAFF_BASE_SPEED = -2.2f;
     public static final Float GREATSWORD_BASE_SPEED = -3.4f;
 
+    //public static final Item EXAMPLE_BOW = new ModBowItem(new Item.Settings().group(VC_TOOLS).maxDamage(666));
+
     //these are all vanilla, dont alter them Linkle! signed, Linkle
     public static final Integer AXE_BASE_DAMAGE = 6;
     public static final Float AXE_BASE_SPEED = -3.2f;
@@ -111,8 +118,8 @@ public class ModTools {
     public static final Item.Settings BASIC_ARTIFACT_SETTINGS_EPIC = new Item.Settings().group(BOOKS).rarity(Rarity.EPIC);
     public static final Item.Settings BASIC_ARTIFACT_SETTINGS_UNCOMMON = new Item.Settings().group(BOOKS).rarity(Rarity.UNCOMMON);
     public static final Item.Settings BASIC_ARTIFACT_SETTINGS = new Item.Settings().group(BOOKS);
-    public static final Item.Settings UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_1561 = new Item.Settings().maxDamage(1560).group(BOOKS).rarity(Rarity.EPIC);
-    public static final Item.Settings UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_780 = new Item.Settings().maxDamage(779).group(BOOKS).rarity(Rarity.EPIC);
+    public static final Item.Settings UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_1561 = new Item.Settings().maxDamage(1561).fireproof().group(BOOKS).rarity(Rarity.EPIC);
+    public static final Item.Settings UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_780 = new Item.Settings().maxDamage(780).fireproof().group(BOOKS).rarity(Rarity.EPIC);
 
     public static void initialize() {
         //Environmental
@@ -235,12 +242,15 @@ public class ModTools {
         //Artifacts
         Reg.register("ancient_bamboo_staff", new StaffBase(ModToolMaterials.NATURES_BLESSING, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
         Reg.register("goddess_blade_found", new BrokenMythicTravelerBase(ModToolMaterials.BROKEN_GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_EPIC));
-        Reg.register("goddess_blade", new UnbreakableMythicTravelerBase(ModToolMaterials.GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_1561));
-        Reg.register("jungles_blessing", new UnbreakableMythicScytheBase(ModToolMaterials.NATURES_BLESSING, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_780));
+        Item goddessBlade = Reg.register("goddess_blade", new UnbreakableMythicTravelerBase(ModToolMaterials.GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_1561));
+        ModelPredicateProviderRegistry.register(goddessBlade, new Identifier("broken"), (stack, world, entity, seed) -> ElytraItem.isUsable(stack) ? 0.0f : 1.0f);
+        Item junglesBlessing = Reg.register("jungles_blessing", new UnbreakableMythicScytheBase(ModToolMaterials.NATURES_BLESSING, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_780));
+        ModelPredicateProviderRegistry.register(junglesBlessing, new Identifier("broken"), (stack, world, entity, seed) -> ElytraItem.isUsable(stack) ? 0.0f : 1.0f);
+
         Reg.register("knife_coral_encrusted", CORAL_KNIFE);
         Reg.register("rapier_cave_fishers", CAVE_FISHERS_RAPIER);
         Reg.register("prismace", new MaceBase(ModToolMaterials.PRISMARINE, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
-        Reg.register("prismarine_hoe", new ModHoeItem(ModToolMaterials.PRISMARINE, HOE_BASE_DAMAGE, HOE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
+        Reg.register("prismarine_hoe", new ModPrismarineHoeItem(ModToolMaterials.PRISMARINE, HOE_BASE_DAMAGE, HOE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("ladle", LADLE);
         Reg.register("toy_sword", new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("moblin_sword_broken", MOBLIN_BROKEN);

@@ -20,6 +20,7 @@ public enum ModItems implements ItemEnum {
     //cups
     WOODEN_CUP(new CupItem(itemSettings().group(INGREDIENTS))),
     WATER_FILLED_WOODEN_CUP(new WaterCupItem(itemSettings().maxCount(16).group(INGREDIENTS).recipeRemainder(ModItems.WOODEN_CUP.item), 0, 0.0f)),
+    //MILK_FILLED_WOODEN_CUP(new WaterCupItem(itemSettings().maxCount(16).group(INGREDIENTS).recipeRemainder(ModItems.WOODEN_CUP.item), 0, 0.0f)),
 
     // tree seeds
     OAK_SEED(new AliasedBlockItem(ModNaturalBlocks.OAK_SEED.block, itemSettings())),

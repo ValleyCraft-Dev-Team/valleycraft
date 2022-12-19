@@ -4,6 +4,8 @@ import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.linkle.valleycraft.api.EnchantmentHandler;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Material;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -17,6 +19,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.Vanishable;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
@@ -40,14 +43,12 @@ public class TravelerBaseFixed
         attributeModifiers = builder.build();
     }
 
-    //Damage the knife when it's used to hit mobs
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         stack.damage(1, attacker, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
         return true;
     }
 
-    //Damage the knife when it's used to mine blocks
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if (state.getHardness(world, pos) != 0.0f) {
@@ -56,13 +57,19 @@ public class TravelerBaseFixed
         return true;
     }
 
-    //Add the explanatory tooltip
-    //@Override
-    //public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-    //    tooltip.add( new TranslatableText("item.valley.knife.tooltip").formatted(Formatting.YELLOW) );
-    //}
+    public float getMiningSpeedMultiplier(ItemStack stack, BlockState state) {
+        if (state.isOf(Blocks.COBWEB)) {
+            return 15.0F;
+        } else {
+            Material material = state.getMaterial();
+            return material != Material.PLANT && material != Material.REPLACEABLE_PLANT && !state.isIn(BlockTags.LEAVES) && material != Material.GOURD ? 1.0F : 1.5F;
+        }
+    }
 
-    //This is needed to show the damage and attack speed tooltip shown by all tools
+    public boolean isSuitableFor(BlockState state) {
+        return state.isOf(Blocks.COBWEB);
+    }
+
     @Override
     public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot slot) {
         if (slot == EquipmentSlot.MAINHAND) {
@@ -71,10 +78,6 @@ public class TravelerBaseFixed
         return super.getAttributeModifiers(slot);
     }
 
-    //These two methods use our special mixin to force specific enchantments to work on the sickle
-    //despite enchantment compatibility being hardcoded in vanilla.
-
-    //Make the knife accept any weapon enchantments
     @Override
     public List<EnchantmentTarget> getEnchantmentTypes() {
         return Collections.singletonList(EnchantmentTarget.WEAPON);
@@ -82,12 +85,12 @@ public class TravelerBaseFixed
     
     @Override
     public boolean isExplicitlyValid(Enchantment enchantment) {
-        return enchantment.equals(Enchantments.IMPALING);
+        return enchantment.equals(Enchantments.SWEEPING);
     }
     
     @Override
     public boolean isInvalid(Enchantment enchantment) {
-        return enchantment.equals(Enchantments.SWEEPING);
+        return enchantment.equals(Enchantments.FIRE_ASPECT);
     }
 
     @Override

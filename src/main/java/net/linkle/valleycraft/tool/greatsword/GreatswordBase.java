@@ -4,6 +4,8 @@ import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.linkle.valleycraft.api.EnchantmentHandler;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Material;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.enchantment.Enchantments;
@@ -16,6 +18,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.Vanishable;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -51,6 +54,14 @@ public class GreatswordBase
             stack.damage(2, miner, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
         }
         return true;
+    }
+
+    public float getMiningSpeedMultiplier(ItemStack stack, BlockState state) {
+        if (state.isOf(Blocks.COBWEB)) {
+            return 60.0F;
+        } else {
+            return 0.0f;
+        }
     }
 
     //Add the explanatory tooltip

@@ -4,6 +4,8 @@ import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.linkle.valleycraft.api.EnchantmentHandler;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.Material;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -13,10 +15,12 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.Vanishable;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
@@ -40,8 +44,22 @@ public class UnbreakableMythicScytheBase
         attributeModifiers = builder.build();
     }
 
-    public static boolean isUsable(ItemStack stack) {
-        return stack.getDamage() < stack.getMaxDamage() - 1;
+    @Override
+    public boolean canMine(BlockState state, World world, BlockPos pos, PlayerEntity miner) {
+        return miner.getMainHandStack().getDamage() < miner.getMainHandStack().getMaxDamage() - 1;
+    }
+
+    public float getMiningSpeedMultiplier(ItemStack stack, BlockState state) {
+        if (state.isOf(Blocks.COBWEB)) {
+            return 30.0F;
+        } else {
+            Material material = state.getMaterial();
+            return material != Material.PLANT && material != Material.REPLACEABLE_PLANT && !state.isIn(BlockTags.LEAVES) && material != Material.GOURD ? 1.0F : 1.5F;
+        }
+    }
+
+    public boolean isSuitableFor(BlockState state) {
+        return state.isOf(Blocks.COBWEB);
     }
 
     @Override
@@ -50,14 +68,12 @@ public class UnbreakableMythicScytheBase
         tooltip.add( Text.translatable("item.valley.mythic.tooltip").formatted(Formatting.RED));
     }
 
-    //Damage the knife when it's used to hit mobs
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         stack.damage(1, attacker, e -> e.sendEquipmentBreakStatus(EquipmentSlot.MAINHAND));
         return true;
     }
 
-    //Damage the knife when it's used to mine blocks
     @Override
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if (state.getHardness(world, pos) != 0.0f) {
@@ -66,13 +82,6 @@ public class UnbreakableMythicScytheBase
         return true;
     }
 
-    //Add the explanatory tooltip
-    //@Override
-    //public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-    //    tooltip.add( new TranslatableText("item.valley.knife.tooltip").formatted(Formatting.YELLOW) );
-    //}
-
-    //This is needed to show the damage and attack speed tooltip shown by all tools
     @Override
     public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot slot) {
         if (slot == EquipmentSlot.MAINHAND) {
@@ -81,10 +90,6 @@ public class UnbreakableMythicScytheBase
         return super.getAttributeModifiers(slot);
     }
 
-    //These two methods use our special mixin to force specific enchantments to work on the sickle
-    //despite enchantment compatibility being hardcoded in vanilla.
-
-    //Make the scythe accept any weapon enchantments
     @Override
     public List<EnchantmentTarget> getEnchantmentTypes() {
         return Collections.singletonList(EnchantmentTarget.WEAPON);
@@ -95,5 +100,4 @@ public class UnbreakableMythicScytheBase
     public boolean isInvalid(Enchantment enchantment) {
         return enchantment.equals(Enchantments.IMPALING);
     }
-
 }
