@@ -1,8 +1,6 @@
 package net.linkle.valleycraft.block;
 
 import net.linkle.valleycraft.util.BookStackVoxelShapes;
-import net.linkle.valleycraft.util.PlantVoxelShapes;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.util.math.BlockPos;

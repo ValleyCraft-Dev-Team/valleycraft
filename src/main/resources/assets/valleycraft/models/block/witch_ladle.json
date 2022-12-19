@@ -3,7 +3,7 @@
 	"ambientocclusion": false,
 	"textures": {
 		"5": "valleycraft:block/ladle_block",
-		"particle": "valleycraft:block/cauldron_side"
+		"particle": "valleycraft:item/block_items/witch_ladle"
 	},
 	"elements": [
 		{
