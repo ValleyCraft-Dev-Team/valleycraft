@@ -42,7 +42,7 @@ public enum ModToolMaterials implements ToolMaterial {
         return Ingredient.ofItems(Items.PRISMARINE_SHARD);
     }),
 
-    BROKEN(2, 195, 5.0F, 2.0F, 10, () -> {
+    BROKEN(2, 195, 5.0F, 02.0F, 10, () -> {
         return Ingredient.ofItems(Items.IRON_INGOT);
     }),
 
@@ -55,11 +55,15 @@ public enum ModToolMaterials implements ToolMaterial {
     }),
 
     //unique - only used once
-    NATURES_BLESSING(2, 1561, 7.0F, 2.0F, 22, () -> {
+    NATURES_BLESSING(2, 780, 7.0F, 2.0F, 22, () -> {
         return Ingredient.ofItems(Items.BAMBOO);
     }),
 
     GODDESS_BLADE(2, 1561, 7.0F, 2.0F, 22, () -> {
+        return Ingredient.ofItems(Items.IRON_INGOT);
+    }),
+
+    BROKEN_GODDESS_BLADE(2, 780, 7.0F, 0.0F, 22, () -> {
         return Ingredient.ofItems(Items.IRON_INGOT);
     }),
 

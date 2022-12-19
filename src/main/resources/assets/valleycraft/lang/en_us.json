@@ -221,6 +221,7 @@
   "item.valleycraft.amber": "Amber",
   "block.valleycraft.sword_block": "Lodged Rusty Sword",
   "block.valleycraft.pickaxe_block": "Lodged Rusty Pickaxe",
+  "block.valleycraft.goddess_blade_block": "Lodged Broken Sword Of The Goddess",
 
   "block.valleycraft.tumbleweed": "Tumbleweed",
   "block.valleycraft.knapweed": "Knapweed",
@@ -512,6 +513,7 @@
   "block.valleycraft.chiseled_erdstone": "Chiseled Erdstone",
   "block.valleycraft.chiseled_erdstone_face": "Chiseled Erdstone Face",
   "block.valleycraft.chiseled_erdstone_brick_face": "§cAncient Chiseled Erdstone Brick Face",
+  "block.valleycraft.chiseled_erdstone_brick_face_happy": "§cAncient Chiseled Erdstone Brick Face",
   "block.valleycraft.patterned_erdstone": "Large Erdstone Tiles",
   "block.valleycraft.mossy_patterned_erdstone": "Rooted Large Erdstone Tiles",
   "block.valleycraft.erdstone_spirit": "Erdstone Soul Symbol",
@@ -628,7 +630,8 @@
   "block.valleycraft.goddess_lily": "§cGoddess Lily",
   "block.valleycraft.claret_leaf": "§cArterium Fern",
   "block.valleycraft.frostfern": "Frostfern",
-  "block.valleycraft.goddess_blade": "The Goddess Blade",
+  "block.valleycraft.goddess_blade": "The Sword Of The Goddess",
+  "block.valleycraft.goddess_blade_found": "Broken Sword Of The Goddess",
 
   "block.valleycraft.black_tulip": "Black Tulip",
   "block.valleycraft.light_blue_tulip": "Light Blue Tulip",

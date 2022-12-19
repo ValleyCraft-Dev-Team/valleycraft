@@ -1,0 +1,134 @@
+{
+  "parent": "valleycraft:wilder_horizons/root",
+  "display": {
+    "title": {
+      "text": "A Relic Of The Past"
+    },
+    "icon": {
+      "item": "valleycraft:strange_rune"
+    },
+    "description": {
+      "text": "Find an artifact or bauble."
+    },
+    "frame": "goal"
+  },
+  "criteria": {
+    "relic": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:strange_rune",
+              "valleycraft:piglin_childs_toy",
+              "valleycraft:ancient_dungeon_key",
+              "valleycraft:ghast_tears",
+              "valleycraft:stuck_slime",
+              "valleycraft:ring",
+              "valleycraft:lucky_fishing_hook",
+              "valleycraft:green_scale",
+              "valleycraft:red_scale",
+              "valleycraft:black_scale",
+              "valleycraft:blue_scale",
+              "valleycraft:totem_of_visitors_bracelet",
+              "valleycraft:totem_of_visitors",
+              "valleycraft:totem_of_friendship",
+              "valleycraft:totem_of_friendship_bracelet",
+              "valleycraft:heart_medallion",
+              "valleycraft:illager_trinket",
+              "valleycraft:strange_doll",
+              "valleycraft:piglin_necklace",
+              "valleycraft:stray_talisman",
+              "valleycraft:arrowhead_talisman",
+              "valleycraft:moblin_talisman",
+              "valleycraft:brimstone_necklace",
+              "valleycraft:evil_crystal_keepsake",
+              "valleycraft:runekeepers_tome",
+              "valleycraft:dragon_tooth",
+              "valleycraft:elder_guardian_spike",
+              "valleycraft:ancient_record_fragment",
+              "minecraft:disk_fragment_5",
+              "valleycraft:moblin_broken",
+              "valleycraft:ancient_climbing_axe",
+              "valleycraft:knife_coral_encrusted",
+              "valleycraft:rapier_cave_fishers",
+              "valleycraft:seaologer_broken",
+              "valleycraft:seaologer_fixed",
+              "valleycraft:ancient_bamboo_staff",
+              "valleycraft:goddess_blade_found",
+              "valleycraft:goddess_blade",
+              "valleycraft:jungles_blessing",
+              "minecraft:trident",
+              "valleycraft:prismace",
+              "valleycraft:prismarine_hoe",
+              "valleycraft:moblin_sword_broken",
+              "valleycraft:moblin_sword_fixed",
+              "valleycraft:dierdra_spear",
+              "valleycraft:ancient_shortsword",
+              "valleycraft:bone_cudgel",
+              "valleycraft:mogars_broken_golemite_goggles",
+              "valleycraft:mogars_fixed_golemite_goggles",
+              "valleycraft:copper_aviators",
+              "valleycraft:zombie_boots",
+              "valleycraft:efe_boots",
+              "valleycraft:husk_shirt",
+              "valleycraft:husk_pants",
+              "valleycraft:repaired_husk_shirt",
+              "valleycraft:repaired_husk_pants",
+              "valleycraft:drowned_clothes",
+              "valleycraft:repaired_drowned_clothes",
+              "valleycraft:stray_hood",
+              "valleycraft:stray_coat",
+              "valleycraft:stray_skirt",
+              "valleycraft:scale_mail_helmet",
+              "valleycraft:scale_mail",
+              "valleycraft:scale_mail_skirt",
+              "valleycraft:tree_god_mask",
+              "valleycraft:ancient_robe",
+              "valleycraft:mummy_wraps",
+              "valleycraft:bikini_coat_gaiters",
+              "valleycraft:crown",
+              "valleycraft:blight_crown",
+              "valleycraft:red_hood",
+              "valleycraft:red_cloak",
+              "valleycraft:green_hood",
+              "valleycraft:green_cloak",
+              "valleycraft:purple_hood",
+              "valleycraft:purple_cloak",
+              "valleycraft:cyan_hood",
+              "valleycraft:cyan_cloak",
+              "valleycraft:swimsuit_femme",
+              "valleycraft:swimsuit_neutral",
+              "valleycraft:swimsuit_masc",
+              "valleycraft:diving_helmet",
+              "valleycraft:diving_chestplate",
+              "valleycraft:diving_leggings",
+              "valleycraft:diving_boots",
+              "valleycraft:blue_clay_pot",
+              "valleycraft:brown_clay_pot",
+              "valleycraft:green_clay_pot",
+              "valleycraft:deepslate_urn_angry",
+              "valleycraft:deepslate_urn_creeper",
+              "valleycraft:deepslate_urn_plain",
+              "valleycraft:deepslate_urn_symbol",
+              "valleycraft:ocelot_statue",
+              "valleycraft:campfire_pot",
+              "valleycraft:goddess_blade_block",
+              "valleycraft:daerdri_skull",
+              "valleycraft:erdstone_cave_painting_portait",
+              "valleycraft:erdstone_cave_painting_zombies",
+              "valleycraft:erdstone_cave_painting_home",
+              "valleycraft:erdstone_cave_painting_family",
+              "valleycraft:defective_spawner"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "relic"
+    ]
+  ]
+}

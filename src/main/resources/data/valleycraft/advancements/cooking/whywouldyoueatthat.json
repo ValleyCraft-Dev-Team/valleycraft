@@ -1,0 +1,42 @@
+{
+  "parent": "valleycraft:cooking/root",
+  "display": {
+    "title": {
+      "text": "Why Would You Even Eat That?"
+    },
+    "icon": {
+      "item": "valleycraft:stir_fried_monster_guts"
+    },
+    "description": {
+      "text": "Eat food made of monster parts. Yuck!"
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "rewards": {
+    "experience": 2
+  },
+  "criteria": {
+    "monster_food": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:stir_fried_monster_guts",
+              "valleycraft:monster_stew",
+              "valleycraft:slime_soup",
+              "valleycraft:magma_creme_soup",
+              "valleycraft:sauteed_eyes_and_mushrooms"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "monster_food"
+    ]
+  ]
+}

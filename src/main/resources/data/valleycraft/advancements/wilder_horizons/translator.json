@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:wilder_horizons/root",
+  "display": {
+    "title": {
+      "text": "The Enchanted Translator"
+    },
+    "icon": {
+      "item": "valleycraft:book_runecalling"
+    },
+    "description": {
+      "text": "Acquire a Book of Runecalling"
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "criteria": {
+    "book_runecalling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:book_runecalling"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "book_runecalling"
+    ]
+  ]
+}

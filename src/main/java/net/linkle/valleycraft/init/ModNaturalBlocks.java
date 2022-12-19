@@ -1,9 +1,7 @@
 package net.linkle.valleycraft.init;
 
 import static net.linkle.valleycraft.init.ModGroups.INGREDIENTS;
-import static net.linkle.valleycraft.util.PlantBlockSettings.FLOWER;
-import static net.linkle.valleycraft.util.PlantBlockSettings.OFFSET_FLOWER;
-import static net.linkle.valleycraft.util.PlantBlockSettings.OFFSET_REPLACEABLE;
+import static net.linkle.valleycraft.util.PlantBlockSettings.*;
 import static net.linkle.valleycraft.util.PlantGroundPredicates.ARID_DESERT;
 import static net.linkle.valleycraft.util.PlantVoxelShapes.*;
 
@@ -87,8 +85,8 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     RED_CLUSTER(new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM)).large(), itemSettings()),
     BROWN_CLUSTER(new ModMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM)).large(), itemSettings()),
     SPORE_SPREADER(new ModMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM)).large(), itemSettings()),
-    GLOW_CAP(new ModMushroomBlock(), itemSettings()),
-    GLOW_CAP_CLUSTER(new ModMushroomBlock().large(), itemSettings()),
+    GLOW_CAP(new ModGlowingMushroomBlock(), itemSettings()),
+    GLOW_CAP_CLUSTER(new ModGlowingMushroomBlock().large(), itemSettings()),
     JUNGLE_CAP(new ModMushroomBlock(), itemSettings()),
     JUNGLE_CAP_CLUSTER(new ModMushroomBlock().large(), itemSettings()),
 
@@ -99,7 +97,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     SHORT_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
     SNOWFLOWER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     SPROUT(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
-    WEEPING_GHOST_WILLOW(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    WEEPING_GHOST_WILLOW(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_GLOW_FLOWER), itemSettings()),
     MEADOW_FLOWERS(new ModPlantBlock(SHORT_FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
 
     WILD_WHEAT(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),

@@ -295,6 +295,7 @@ class RenderLayers {
         put(SWORD_BLOCK, cullout);
         put(SOULSPORE, cullout);
         put(SPORE_SPREADER, cullout);
+        put(GODDESS_BLADE_BLOCK, cullout);
 
         put(BROWN_CLAY_POT, cullout);
         put(BLUE_CLAY_POT, cullout);

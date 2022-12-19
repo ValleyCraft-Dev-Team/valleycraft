@@ -1,0 +1,41 @@
+{
+  "parent": "valleycraft:wilder_horizons/relicofthepast",
+  "display": {
+    "title": {
+      "text": "\"...Ye Bearer Of Fate...\""
+    },
+    "icon": {
+      "item": "valleycraft:goddess_blade_found"
+    },
+    "description": {
+      "text": "Find a Sword of the Goddess"
+    },
+    "frame": "goal",
+    "hidden": "true"
+  },
+  "rewards": {
+    "recipes": [
+      "valleycraft:recipes/repairing_the_goddess_blade"
+    ],
+    "experience": 10
+  },
+  "criteria": {
+    "goddess_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:goddess_blade_found"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "goddess_blade"
+    ]
+  ]
+}

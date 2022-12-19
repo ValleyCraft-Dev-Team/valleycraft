@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:wilder_horizons/lumber_axe",
+  "parent": "valleycraft:wilder_horizons/root",
   "display": {
     "title": {
       "text": "Lumberjack"
@@ -8,9 +8,12 @@
       "item": "valleycraft:divine_acorn"
     },
     "description": {
-      "text": "Cut down every tree type and gather their seeds."
+      "text": "Cut down every tree type and gather their seeds"
     },
-    "frame": "challenge"
+    "frame": "goal"
+  },
+  "rewards": {
+    "experience": 5
   },
   "criteria": {
     "apple": {

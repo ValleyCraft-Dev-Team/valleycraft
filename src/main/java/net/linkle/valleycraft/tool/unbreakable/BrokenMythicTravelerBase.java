@@ -25,13 +25,13 @@ import net.minecraft.world.World;
 import java.util.Collections;
 import java.util.List;
 
-public class UnbreakableTravelerBase
+public class BrokenMythicTravelerBase
         extends ToolItem
         implements Vanishable, EnchantmentHandler {
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
-    public UnbreakableTravelerBase(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+    public BrokenMythicTravelerBase(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
         super(material, settings);
         this.attackDamage = attackDamage + material.getAttackDamage();
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
@@ -46,7 +46,8 @@ public class UnbreakableTravelerBase
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add( Text.translatable("item.valley.permanently_repairable.tooltip").formatted(Formatting.GOLD));
+        tooltip.add( Text.translatable("item.valley.broken.tooltip").formatted(Formatting.GRAY));
+        tooltip.add( Text.translatable("item.valley.mythic.tooltip").formatted(Formatting.RED));
     }
 
     //Damage the knife when it's used to hit mobs

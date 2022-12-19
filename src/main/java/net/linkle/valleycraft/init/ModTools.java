@@ -24,9 +24,9 @@ import net.linkle.valleycraft.tool.sword.special.*;
 import net.linkle.valleycraft.tool.throwing.BoneDartItem;
 import net.linkle.valleycraft.tool.travelers_sword.TravelerBase;
 import net.linkle.valleycraft.tool.travelers_sword.TravelerBaseFixed;
+import net.linkle.valleycraft.tool.unbreakable.BrokenMythicTravelerBase;
 import net.linkle.valleycraft.tool.unbreakable.UnbreakableMythicScytheBase;
 import net.linkle.valleycraft.tool.unbreakable.UnbreakableMythicTravelerBase;
-import net.linkle.valleycraft.tool.unbreakable.UnbreakableScytheBase;
 import net.linkle.valleycraft.tool.woodcutter_axe.WoodcutterAxeBase;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.item.*;
@@ -248,6 +248,7 @@ public class ModTools {
 
         //Artifacts
         Reg.register("ancient_bamboo_staff", new StaffBase(ModToolMaterials.NATURES_BLESSING, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
+        Reg.register("goddess_blade_found", new BrokenMythicTravelerBase(ModToolMaterials.BROKEN_GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC));
         Reg.register("goddess_blade", new UnbreakableMythicTravelerBase(ModToolMaterials.GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC));
         Reg.register("jungles_blessing", new UnbreakableMythicScytheBase(ModToolMaterials.NATURES_BLESSING, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC));
         //Reg.register("field_surgeons_misericorde", new DaggerBase(ModToolMaterials.OBSIDIAN, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_EPIC));

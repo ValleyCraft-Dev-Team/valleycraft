@@ -91,12 +91,15 @@ public enum RegularFoodItems implements ItemEnum {
 
     // no tier items
     CAVE_ROOT_STIR_FRY(new BowlItem(settings().maxCount(1), 10, 0.6f)),
-    COD_GEFILTE(new BowlItem(settings().maxCount(1), 10, 0.6f)),
+    COD_GEFILTE(new FoodItem(settings(), 10, 0.6f)),
 
     STIR_FRIED_MONSTER_GUTS(new BowlItem(settings().maxCount(1), 8, 0.4f)),
+    SAUTEED_EYES_AND_MUSHROOMS(new FoodItem(settings(), 8, 0.8f)),
     MONSTER_STEW(new BowlItem(settings().maxCount(1), 6, 0.4f)),
-    SPICY_POTATOES_AND_BAT(new FoodItem(settings().maxCount(1), 8, 0.4f)),
-    SPICY_POTATOES_AND_CARROTS(new FoodItem(settings().maxCount(1), 8, 0.4f)),
+    SLIME_SOUP(new BowlItem(settings().maxCount(1), 5, 0.6f)),
+    MAGMA_CREME_SOUP(new BowlItem(settings().maxCount(1), 7, 0.6f)),
+    SPICY_POTATOES_AND_BAT(new FoodItem(settings(), 8, 0.4f)),
+    SPICY_POTATOES_AND_CARROTS(new FoodItem(settings(), 8, 0.4f)),
 
     BROTH(new BowlItem(settings().maxCount(1), 4, 0.5f)),
     BEEF_STEW(new BowlItem(settings().maxCount(1), 4, 0.5f)),
@@ -113,10 +116,7 @@ public enum RegularFoodItems implements ItemEnum {
     SAVORY_BREAKFAST(new BowlItem(settings().maxCount(1), 9, 0.6f)),
     HEARTY_BREAKFAST(new BowlItem(settings().maxCount(1), 10, 0.8f)),
     FRIED_RICE_AND_EGGS(new FoodItem(settings().maxCount(1), 8, 0.7f)),
-    SAUTEED_EYES_AND_MUSHROOMS(new FoodItem(settings(), 8, 0.8f)),
 
-    MAGMA_CREME_SOUP(new BowlItem(settings().maxCount(1), 7, 0.6f)),
-    SLIME_SOUP(new BowlItem(settings().maxCount(1), 5, 0.6f)),
     PUMPKIN_SOUP(new BowlItem(settings().maxCount(1), 8, 0.8f)),
     //WARM_PUMPKIN_SOUP_BOTTLE(new GlassJarItem(settings().maxCount(1), 9, 0.8f)),
     FUNGUS_STEW(new BowlItem(settings().maxCount(1), 8, 0.8f)),

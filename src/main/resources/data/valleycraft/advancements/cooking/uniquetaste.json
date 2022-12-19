@@ -1,0 +1,95 @@
+{
+  "parent": "valleycraft:cooking/whywouldyoueatthat",
+  "display": {
+    "title": {
+      "text": "A Unique Sense Of Taste"
+    },
+    "icon": {
+      "item": "valleycraft:sauteed_eyes_and_mushrooms"
+    },
+    "description": {
+      "text": "Eat every dish made of monster parts."
+    },
+    "frame": "challenge",
+    "hidden": "false"
+  },
+  "criteria": {
+    "stir_fried_monster_guts": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:stir_fried_monster_guts"
+            ]
+          }
+        ]
+      }
+    },
+    "monster_stew": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:monster_stew"
+            ]
+          }
+        ]
+      }
+    },
+    "slime_soup": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:slime_soup"
+            ]
+          }
+        ]
+      }
+    },
+    "magma_creme_soup": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:magma_creme_soup"
+            ]
+          }
+        ]
+      }
+    },
+    "sauteed_eyes_and_mushrooms": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:sauteed_eyes_and_mushrooms"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "stir_fried_monster_guts"
+    ],
+    [
+      "monster_stew"
+    ],
+    [
+      "slime_soup"
+    ],
+    [
+      "magma_creme_soup"
+    ],
+    [
+      "sauteed_eyes_and_mushrooms"
+    ]
+  ]
+}
