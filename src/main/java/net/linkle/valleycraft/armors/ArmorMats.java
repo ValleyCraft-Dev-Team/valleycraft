@@ -71,6 +71,9 @@ public enum ArmorMats implements ArmorMaterial {
     ECHO_DIADEM("echo_shard_diadem", ints(2,2,2,2), 10, 25, equipChain(), items()),
     TREE_GOD("tree_god_mask", ints(2,2,2,2), 10, 25, equipLeather(), items()),
 
+    RIBCAGE("ribcage", ints(6), 10, 22, equipLeather(), items(Items.BONE), 1.0f, 0.0f),
+    WITHER_RIBCAGE("wither_ribcage", ints(7), 10, 22, equipLeather(), items(Items.BONE), 1.0f, 0.0f),
+
     MOGARS_BROKEN("mogars_broken_golemite_goggles", ints(1,5,6,2), 10, 15, equipChain(), items()),
     MOGARS_FIXED("mogars_fixed_golemite_goggles", ints(2,5,6,2), 10, 15, equipChain(), items()),
     COPPER_AVIATORS("copper_aviators", ints(2,2,2,2), 10, 15, equipChain(), items()),

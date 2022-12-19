@@ -55,12 +55,20 @@ public enum ModToolMaterials implements ToolMaterial {
     }),
 
     //unique - only used once
-    NATURES_BLESSING(2, 440, 7.0F, 2.0F, 22, () -> {
+    NATURES_BLESSING(2, 1561, 7.0F, 2.0F, 22, () -> {
         return Ingredient.ofItems(Items.BAMBOO);
+    }),
+
+    GODDESS_BLADE(2, 1561, 7.0F, 2.0F, 22, () -> {
+        return Ingredient.ofItems(Items.IRON_INGOT);
     }),
 
     BAMBOO(2, 220, 7.0F, 1.0F, 15, () -> {
         return Ingredient.ofItems(Items.BAMBOO);
+    }),
+
+    STRONG_IRON(2, 1561, 6.0F, 2.0F, 14, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Items.IRON_INGOT});
     }),
 
     PLANK(2, 220, 7.0F, 1.0F, 15, () -> {

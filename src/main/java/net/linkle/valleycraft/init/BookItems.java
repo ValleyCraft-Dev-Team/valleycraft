@@ -1,7 +1,8 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.baubles.BaubleItem;
+import net.linkle.valleycraft.baubles.UniqueMythicBaubleItem;
+import net.linkle.valleycraft.item.MythicItem;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -11,8 +12,8 @@ import static net.linkle.valleycraft.init.ModGroups.BOOKS;
 import static net.minecraft.util.Rarity.EPIC;
 
 public enum BookItems implements ItemEnum {
-    BOOK_RUNECALLING(new Item(itemSettings().group(BOOKS).maxCount(1))),
-    RUNEKEEPERS_TOME(new BaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1)));
+    BOOK_RUNECALLING(new MythicItem(itemSettings().group(BOOKS).maxCount(1))),
+    RUNEKEEPERS_TOME(new UniqueMythicBaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1)));
 
     public static void initialize() {
         

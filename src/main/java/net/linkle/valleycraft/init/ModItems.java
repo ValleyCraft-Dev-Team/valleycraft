@@ -112,11 +112,9 @@ public enum ModItems implements ItemEnum {
     AGITATOR(new Item(itemSettings().rarity(Rarity.RARE))),
     THERMAL_BLAZE_CORE(new Item(itemSettings().rarity(Rarity.RARE))),
     STRANGE_CATALYST(new Item(itemSettings().rarity(RARE))),
-    //SHATTERED_EYE_OF_ENDER(new Item(itemSettings().rarity(EPIC))),
-    //EYE_OF_RETURN(new ReturnItem(itemSettings().rarity(UNCOMMON).maxCount(16))),
 
+    //pet food? maybe we should move it to the food category lmao /shrug
     DOG_BISCUIT(new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true)),
-    //SALVE(new SalveItem(itemSettings().group(VC_TOOLS).maxCount(16), 0, 0.0f, StatusEffects.REGENERATION)),
 
     //souls
     SOUL_ITEM_FADING(new SoulItem(itemSettings().group(BOOKS).fireproof())),
@@ -129,13 +127,13 @@ public enum ModItems implements ItemEnum {
     SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
 
     GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
-    ELDER_GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
+    ELDER_GUARDIAN_SPIKE(new MythicItem(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
 
     SEAOLOGER_TOKEN(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
     TOTEM_OF_TRADE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),
     TOTEM_OF_APPRECIATION(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(1))),
-    TOTEM_OF_VISITORS(new Item(itemSettings().rarity(RARE))),
-    TOTEM_OF_FRIENDSHIP(new Item(itemSettings().group(VC_ITEMS).rarity(EPIC))),
+    TOTEM_OF_VISITORS(new UniqueMythicItem(itemSettings().rarity(RARE))),
+    TOTEM_OF_FRIENDSHIP(new MythicItem(itemSettings().group(VC_ITEMS).rarity(EPIC))),
     BOMB_BAG(new BombBagItem(itemSettings().group(VC_ITEMS))),
     ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_ITEMS))),
     SEED_BAG(new SeedBagItem(itemSettings().group(VC_ITEMS))),

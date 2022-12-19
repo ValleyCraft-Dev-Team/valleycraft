@@ -32,8 +32,9 @@
 
   "item.valley.broken.tooltip": "[Broken]",
   "item.valley.repaired.tooltip": "[Repaired]",
-  "item.valley.unique.tooltip": "[Unique Clothing]",
-  "item.valley.unique_tool.tooltip": "[Unique Item]",
+  "item.valley.permanently_repairable.tooltip": "[Endlessly Repairable]",
+  "item.valley.unique.tooltip": "[Unique]",
+  "item.valley.mythic.tooltip": "[Mythic]",
 
   "item.valley.bauble.tooltip": "Bauble",
   "item.valley.necklace.tooltip": "Necklace",
@@ -113,7 +114,7 @@
   "seldom_items": "§a",
   "item.valleycraft.stablehand_hat": "§aStablehand Cap",
 
-  "item.valleycraft.dragon_tooth": "Large Ancient Tooth",
+  "item.valleycraft.dragon_tooth": "Ancient Dragon Tooth",
   "block.valleycraft.sculk_blossom": "Sculk Pollen Blossom",
   "item.valleycraft.ender_dragon_eye": "Blighted Ender Dragon Eye",
   "item.valleycraft.ender_dragon_gland": "Ender Dragon Gland",
@@ -410,7 +411,7 @@
   "block.valleycraft.ornate_obsidian_table": "Ornate Obsidian Table",
   "block.valleycraft.clothed_ornate_obsidian_table": "Ornate Obsidian Table and Tablecloth",
   "item.valleycraft.thermal_blaze_core": "Thermal Blaze Core",
-  "item.valleycraft.visor": "§cGolemancer Smithing Mask",
+  "item.valleycraft.visor": "Golemancer Smithing Mask",
   "item.valleycraft.strange_catalyst": "Radiating Catalyst",
 
   "block.valleycraft.log_pile": "Log Pile",
@@ -627,6 +628,7 @@
   "block.valleycraft.goddess_lily": "§cGoddess Lily",
   "block.valleycraft.claret_leaf": "§cArterium Fern",
   "block.valleycraft.frostfern": "Frostfern",
+  "block.valleycraft.goddess_blade": "The Goddess Blade",
 
   "block.valleycraft.black_tulip": "Black Tulip",
   "block.valleycraft.light_blue_tulip": "Light Blue Tulip",
@@ -809,7 +811,7 @@
   "item.valleycraft.sandwich_mutton": "Mutton Sandwich",
   "item.valleycraft.sandwich_beef": "Steak Sandwich",
   "item.valleycraft.sandwich_pork": "Pork Sandwich",
-  "item.valleycraft.monster_stew": "Strange Gut Stew",
+  "item.valleycraft.monster_stew": "Monster Guts Stew",
   "item.valleycraft.stir_fried_monster_guts": "Monster Parts Stir Fry",
   "item.valleycraft.slime_soup": "Slime Soup",
   "item.valleycraft.magma_creme_soup": "Magma Creme Soup",
@@ -1090,7 +1092,7 @@
   "item.valleycraft.ancient_robe": "Ancient Robe",
   "item.valleycraft.efe_boots": "Old Boots",
   "item.valleycraft.crown": "Golden Crown",
-  "item.valleycraft.blight_crown": "Malice Crown",
+  "item.valleycraft.blight_crown": "Crown of Malice",
   "block.valleycraft.translation_canvas": "§cTranslation Canvas",
   "item.valleycraft.ancient_dungeon_key": "Ancient Primsteel Key",
   "item.valleycraft.polished_glowstone_chunk": "Smooth Glowstone Chunk",

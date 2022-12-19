@@ -12,6 +12,7 @@ import net.linkle.valleycraft.util.BlockLeakParticleDuck;
 import net.minecraft.client.particle.BlockLeakParticle;
 import net.minecraft.client.particle.Particle;
 import net.minecraft.client.particle.WaterSplashParticle;
+import net.minecraft.client.particle.WaterSuspendParticle;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.particle.ParticleEffect;
@@ -41,7 +42,7 @@ public class ModParticles {
     @Environment(EnvType.CLIENT)
     public static void initializeClient() {
         register(SPRINKLE, SprinkleFactory::new);
-        register(SCULK_POLLEN, BlockLeakParticle.FallingSporeBlossomFactory::new);
+        register(SCULK_POLLEN, WaterSuspendParticle.SporeBlossomAirFactory::new);
         register(GREEN_EXP_ORB, SoulSmokeParticle.Factory::new);
         register(BLUE_EXP_ORB, SoulSmokeParticle.Factory::new);
         register(SLUDGE_SPLASH, WaterSplashParticle.SplashFactory::new);

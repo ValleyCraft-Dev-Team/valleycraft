@@ -2,13 +2,8 @@ package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.baubles.*;
-import net.linkle.valleycraft.block.TranslationCanvasBlock;
 import net.linkle.valleycraft.util.ItemEnum;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 import net.minecraft.item.Item;
@@ -34,17 +29,17 @@ public enum ModBaubles implements ItemEnum {
 
     LUCKY_FISHING_HOOK(new UniqueBaubleItem(itemSettings().rarity(RARE))),
     RAVAGER_GOLEM_TUSK(new BaubleItem(itemSettings().rarity(RARE))),
-    GREEN_SCALE(new BaubleItem(itemSettings().rarity(RARE))),
-    RED_SCALE(new BaubleItem(itemSettings().rarity(RARE))),
-    BLUE_SCALE(new BaubleItem(itemSettings().rarity(RARE))),
-    BLACK_SCALE(new BaubleItem(itemSettings().rarity(EPIC))),
-    TOTEM_OF_VISITORS_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
+    GREEN_SCALE(new UniqueMythicBaubleItem(itemSettings().rarity(RARE))),
+    RED_SCALE(new UniqueMythicBaubleItem(itemSettings().rarity(RARE))),
+    BLUE_SCALE(new UniqueMythicBaubleItem(itemSettings().rarity(RARE))),
+    BLACK_SCALE(new UniqueMythicBaubleItem(itemSettings().rarity(EPIC))),
+    TOTEM_OF_VISITORS_BRACELET(new UniqueMythicBaubleItem(itemSettings().rarity(RARE))),
     TOTEM_OF_UNDYING_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
-    TOTEM_OF_FRIENDSHIP_BRACELET(new BaubleItem(itemSettings().rarity(EPIC))),
+    TOTEM_OF_FRIENDSHIP_BRACELET(new UniqueMythicBaubleItem(itemSettings().rarity(EPIC))),
     WARDEN_ANTLER(new BaubleItem(itemSettings().rarity(EPIC))),
     HEART_MEDALLION(new UniqueBaubleItem(itemSettings().rarity(EPIC))),
     ILLAGER_TRINKET(new UniqueBaubleItem(itemSettings().rarity(EPIC))),
-    STRANGE_DOLL(new UniqueBaubleItem(itemSettings().rarity(EPIC))),
+    STRANGE_DOLL(new UniqueMythicBaubleItem(itemSettings().rarity(EPIC))),
 
     //necklaces
     //prismarine/iron base
@@ -67,14 +62,14 @@ public enum ModBaubles implements ItemEnum {
     SEAOLOGER_RUNE_NECKLACE(new TalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
 
     //boss
-    ELDER_GUARDIAN_SPIKE_KEEPSAKE(new TalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
-    ENDER_DRAGON_TALISMAN(new TalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
+    ELDER_GUARDIAN_SPIKE_KEEPSAKE(new MythicTalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
+    ENDER_DRAGON_TALISMAN(new MythicTalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
 
     //unique
     PIGLIN_NECKLACE(new UniqueTalismanItem(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1))),
     STRAY_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1))),
     ARROWHEAD_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
-    MOBLIN_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
+    MOBLIN_TALISMAN(new UniqueMythicTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
     BRIMSTONE_NECKLACE(new UniqueTalismanItem(itemSettings().rarity(EPIC).group(BOOKS).maxCount(1))),
     EVIL_CRYSTAL_KEEPSAKE(new UniqueTalismanItem(itemSettings().rarity(EPIC).group(BOOKS).maxCount(1)));
 

@@ -170,6 +170,8 @@ public enum ModArmors implements ItemEnum {
     REPAIRED_DROWNED_CLOTHES(new FixedUniqueArmorItem(ArmorMats.REPAIRED_DROWNED, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
 
     //skeleton armors
+    RIBCAGE(new ArmorItem(ArmorMats.RIBCAGE, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
+    WITHER_RIBCAGE(new ArmorItem(ArmorMats.WITHER_RIBCAGE, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
     STRAY_HOOD(new UniqueArmorItem(ArmorMats.STRAY, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
     STRAY_COAT(new UniqueArmorItem(ArmorMats.STRAY, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
     STRAY_SKIRT(new UniqueArmorItem(ArmorMats.STRAY, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
@@ -180,7 +182,7 @@ public enum ModArmors implements ItemEnum {
     SCALE_MAIL_SKIRT(new UniqueArmorItem(ArmorMats.SCALE, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
 
     //ancient dead ppl
-    TREE_GOD_MASK(new UniqueArmorItem(ArmorMats.TREE_GOD, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
+    TREE_GOD_MASK(new MythicArmorItem(ArmorMats.TREE_GOD, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     ANCIENT_ROBE(new UniqueArmorItem(ArmorMats.ANCIENT_ROBE, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
     SHULKER_HELMET(new UniqueArmorItem(ArmorMats.SHULKER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
     MUMMY_WRAPS(new UniqueArmorItem(ArmorMats.MUMMY, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
@@ -192,8 +194,8 @@ public enum ModArmors implements ItemEnum {
     BIKINI_COAT_HOOD(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.HEAD, settingsArtifacts())),
     BIKINI_COAT(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settingsArtifacts())),
 
-    CROWN(new UniqueArmorItem(ArmorMats.CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
-    BLIGHT_CROWN(new UniqueArmorItem(ArmorMats.BLIGHT_CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
+    CROWN(new MythicArmorItem(ArmorMats.CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
+    BLIGHT_CROWN(new MythicArmorItem(ArmorMats.BLIGHT_CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     RED_HOOD(new UniqueArmorItem(ArmorMats.RED_CLOAK, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     RED_CLOAK(new UniqueArmorItem(ArmorMats.RED_CLOAK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
     GREEN_HOOD(new UniqueArmorItem(ArmorMats.GREEN_CLOAK, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),

@@ -77,8 +77,6 @@ public enum RegularFoodItems implements ItemEnum {
     SWEET_BERRY_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
     GLOW_BERRY_PIE(new FoodItem(settings(), 8, 0.4f)),
     GLOW_BERRY_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
-    //GLOOM_BERRY_PIE(new FoodItem(settings(), 8, 0.4f)),
-    //GLOOM_BERRY_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
     CHOCOLATE_PIE(new FoodItem(settings(), 8, 0.6f)),
     CHOCOLATE_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
     CHORUS_FRUIT_PIE(new FoodItem(settings(), 10, 0.7f)),
@@ -93,7 +91,6 @@ public enum RegularFoodItems implements ItemEnum {
     SWEET_BERRY_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     CHORUS_FRUIT_JUICE(new BottleItem(settings().maxCount(16), 4, 0.3f)),
     ALOE_VERA_JUICE(new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.HEALTH_BOOST)),
-    //STAR_CHERRY_JUICE(new Tier0Bottle(settings().maxCount(16), 4, 0.3f, StatusEffects.LEVITATION)),
 
     // no tier items
     CAVE_ROOT_STIR_FRY(new BowlItem(settings().maxCount(1), 10, 0.6f)),
@@ -153,20 +150,10 @@ public enum RegularFoodItems implements ItemEnum {
     GOLDEN_FIRE_PEPPER(new FoodItem(settings(), 4, 2.4f)),
     GOLDEN_SWEET_BERRIES(new FoodItem(settings(), 4, 2.4f)),
     GOLDEN_GLOW_BERRIES(new FoodItem(settings(), 4, 2.4f)),
-    //GOLDEN_STAR_CHERRIES(new FoodItem(settings(), 4, 2.4f)),
-    //GOLDEN_GLOOM_BERRY(new FoodItem(settings(), 4, 2.4f)),
     GOLDEN_ANCIENT_MAIZE(new FoodItem(settings().rarity(Rarity.RARE), 4, 2.4f)),
     GOLDEN_ONION(new FoodItem(settings(), 4, 2.4f)),
     GOLDEN_PUMPKIN_SLICE(new FoodItem(settings(), 4, 2.4f)),
 
-    //special items
-    //VILLAGER_ELIXER(new ElixerBottleItemVillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.REGENERATION, StatusEffects.NAUSEA, StatusEffects.SLOWNESS)),
-    //GEITLIN_ELIXER(new ElixerBottleItemVillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.WATER_BREATHING, StatusEffects.NAUSEA, StatusEffects.SLOWNESS)),
-    //MOBLIN_ELIXER(new ElixerBottleItemMoblin(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.NIGHT_VISION, StatusEffects.NAUSEA, StatusEffects.POISON)),
-    //PILLAGER_TONIC(new ElixerBottleItemPillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.STRENGTH, StatusEffects.NAUSEA, StatusEffects.POISON)),
-    //DAERDRI_ELIXER(new ElixerBottleItemPillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.HASTE, StatusEffects.NAUSEA, StatusEffects.SLOWNESS)),
-    //VALKYRIE_ELIXER(new ElixerBottleItemVillager(settings().maxCount(1).rarity(UNCOMMON).group(BOOKS), 0, 0, StatusEffects.REGENERATION, StatusEffects.NAUSEA, StatusEffects.LEVITATION)),
-    //ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC)4, 1.2f)),
     ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC), 4, 1.2f, StatusEffects.SLOW_FALLING).hideTooltip()),
     ENCHANTED_APPLE_PIE(new EnchantedFoodItem(settings().rarity(EPIC), 10, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip()),
     ENCHANTED_APPLE_PIE_SLICE(new EnchantedFoodItem(settings().rarity(EPIC), 3, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip());

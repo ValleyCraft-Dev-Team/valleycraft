@@ -82,7 +82,8 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     CATTAILS(new CattailsBlock(), itemSettings(), TallBlockItem::new),
 
     BEE_NEST_WALL(new Block(Block.Settings.copy(Blocks.BEE_NEST)), itemSettings()),
-    
+
+    //mushrooms
     RED_CLUSTER(new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM)).large(), itemSettings()),
     BROWN_CLUSTER(new ModMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM)).large(), itemSettings()),
     SPORE_SPREADER(new ModMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM)).large(), itemSettings()),

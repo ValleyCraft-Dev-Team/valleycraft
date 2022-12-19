@@ -1,14 +1,14 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "valleycraft:item/special/jungles_blessing"
+    "layer0": "valleycraft:item/special/goddess_blade"
   },
   "overrides": [
     {
       "predicate": {
         "broken": 1
       },
-      "model": "valleycraft:item/jungles_blessing_broken"
+      "model": "valleycraft:item/goddess_blade_broken"
     }
   ]
 }

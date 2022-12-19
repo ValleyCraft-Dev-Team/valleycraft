@@ -15,8 +15,6 @@ import net.linkle.valleycraft.Main;
 
 public enum IngredientFoodItems implements ItemEnum {
 
-    //AMETHYSTLE_SALAD(new Tier1Normal(settings(), 4, 2, StatusEffects.HASTE);
-    
     MILK(new BottleItem(settings().maxCount(16), 0, 0.2f).setMilk()),
     CHEESE_WHEEL(new FoodItem(settings(), 8, 0.4f)),
     CHEESE_SLICE(new FoodItem(settings(), 2, 0.4f)),
@@ -24,9 +22,7 @@ public enum IngredientFoodItems implements ItemEnum {
 
     GLOW_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 15 * 20)))
     .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_8", Formatting.GRAY)),
-    //GLOOM_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 15 * 20)))),
 
-    //STAR_CHERRIES(new FoodItem(settings(), 3, 0.6f)),
     ALOE_VERA(new AliasedBlockItem(ModNaturalBlocks.ALOE_VERAS.block, settings().food(Foods.create(3, 0.3f)))),
     
     AMETHYSTLE(new FoodItem(settings(), 2, 0.3f)
@@ -83,7 +79,7 @@ public enum IngredientFoodItems implements ItemEnum {
     INFECTED_MONSTER_LIVER(new NegativeFoodItem_3_Effects(settings(), 3, 0.4f, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),
     ZOD(new NegativeFoodItem_3_Effects(settings().group(ModGroups.INGREDIENTS), 5, 2, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),
     RAW_ENDERMAN_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.WEAKNESS).hideTooltip()),
-    ENDER_DRAGON_EYE(new EndermiteFoodItem(settings().rarity(Rarity.EPIC).fireproof(), 3, 0.4f, StatusEffects.POISON, StatusEffects.BLINDNESS, StatusEffects.NAUSEA).hideTooltip()),
+    ENDER_DRAGON_EYE(new EnderDragonEyeFoodItem(settings().rarity(Rarity.EPIC).fireproof(), 3, 0.4f, StatusEffects.POISON, StatusEffects.BLINDNESS, StatusEffects.NAUSEA).hideTooltip()),
     ENDER_DRAGON_GLAND(new NegativeFoodItem_3_Effects(settings().rarity(Rarity.EPIC).fireproof(), 6, 0.3f, StatusEffects.BLINDNESS, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
     RAW_ENDERMITE(new EndermiteFoodItem(settings(), 3, 0.4f, StatusEffects.POISON, StatusEffects.BLINDNESS, StatusEffects.NAUSEA).hideTooltip()),
 
@@ -97,14 +93,8 @@ public enum IngredientFoodItems implements ItemEnum {
     APPLE_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     SWEET_BERRY_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     GLOW_BERRY_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
-    //GLOOM_BERRY_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     CHORUS_FRUIT_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     CAKE_DOUGH(new FoodItem(settings(), 3, 0.2f));
-
-    //1.1 planned
-    //MONSTER_FLESH(new Tier2Normal(settings(), 8, 2, StatusEffects.HUNGER)),
-    //dw its not sea turtles!
-    //RAW_TURTLE(new FoodItem(settings(), 4, 0.8f)),
 
     /** Called from {@link ModItems} */
     static void initialize() {
