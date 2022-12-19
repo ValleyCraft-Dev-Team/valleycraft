@@ -66,12 +66,6 @@ public class UnbreakableMythicTravelerBase
         return true;
     }
 
-    //Add the explanatory tooltip
-    //@Override
-    //public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-    //    tooltip.add( new TranslatableText("item.valley.knife.tooltip").formatted(Formatting.YELLOW) );
-    //}
-
     //This is needed to show the damage and attack speed tooltip shown by all tools
     @Override
     public Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(EquipmentSlot slot) {
