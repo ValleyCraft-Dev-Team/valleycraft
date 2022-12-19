@@ -1,5 +1,5 @@
 {
-  "parent": "item/handheld",
+  "parent": "valleycraft:item/jungles_blessing",
   "textures": {
     "layer0": "valleycraft:item/special/jungles_blessing_broken"
   }
