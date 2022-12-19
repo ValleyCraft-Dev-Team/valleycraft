@@ -111,7 +111,7 @@ public class ModTools {
     public static final Item.Settings BASIC_ARTIFACT_SETTINGS_EPIC = new Item.Settings().group(BOOKS).rarity(Rarity.EPIC);
     public static final Item.Settings BASIC_ARTIFACT_SETTINGS_UNCOMMON = new Item.Settings().group(BOOKS).rarity(Rarity.UNCOMMON);
     public static final Item.Settings BASIC_ARTIFACT_SETTINGS = new Item.Settings().group(BOOKS);
-    public static final Item.Settings UNBREAKABLE_ARTIFACT_SETTINGS_EPIC = new Item.Settings().maxDamage(1561).group(BOOKS).rarity(Rarity.EPIC);
+    public static final Item.Settings UNBREAKABLE_ARTIFACT_SETTINGS_EPIC = new Item.Settings().group(BOOKS).rarity(Rarity.EPIC);
 
     public static void initialize() {
         //Environmental

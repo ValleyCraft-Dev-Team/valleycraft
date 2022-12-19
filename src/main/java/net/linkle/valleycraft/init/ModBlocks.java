@@ -431,7 +431,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     //marble
     POLISHED_MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_BRICKS(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
-    MARBLE_PILLAR(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
+    MARBLE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_CHISELED(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_CHISELED_FACE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_PATTERNED(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
@@ -488,6 +488,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     DRIPSTONE_EARTH(new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
     DRIPSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
     DRIPSTONE_MOSAIC(new PillarBlock(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
+    DRIPSTONE_CAPPED(new PillarBlock(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
 
     //industrial basalt blocks
     //INDUSTRIAL_BRICKS(new Block(Block.Settings.copy(Blocks.SMOOTH_BASALT)), itemSettings()),
@@ -523,7 +524,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SCORCHSTONE_TILES(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     MOSSY_SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_CHISELED(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_CHISELED_FACE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     //CHISELED_SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     SCORCHSTONE_FIRE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     SCORCHSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
@@ -663,8 +664,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     CHISELED_RED_SANDSTONE_PIGLIN(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
     CHISELED_RED_SANDSTONE_PORTAL_COMING(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
     CHISELED_RED_SANDSTONE_PORTAL_LEAVING(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
-    //misc ancient blocks go here
-    SCORCHSTONE_CHISELED_FACE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof().rarity(Rarity.UNCOMMON).group(BOOKS)),
+
+    SCORCHSTONE_CHISELED_FACE_PIGLIN(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof().rarity(Rarity.UNCOMMON).group(BOOKS)),
 
     CHISELED_ERDSTONE_BRICK_FACE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS)),
     CHISELED_ERDSTONE_BRICK_FACE_HAPPY(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS)),

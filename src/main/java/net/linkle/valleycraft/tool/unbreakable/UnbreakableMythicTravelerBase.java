@@ -92,11 +92,11 @@ public class UnbreakableMythicTravelerBase
     
     @Override
     public boolean isExplicitlyValid(Enchantment enchantment) {
-        return enchantment.equals(Enchantments.IMPALING);
+        return enchantment.equals(Enchantments.SWEEPING);
     }
     
     @Override
     public boolean isInvalid(Enchantment enchantment) {
-        return enchantment.equals(Enchantments.SWEEPING);
+        return enchantment.equals(Enchantments.IMPALING);
     }
 }

@@ -29,7 +29,6 @@ public class Client implements ClientModInitializer {
         ModBlockEntityType.initializeClient();
         ArmorRenderers.intialize();
         TrinketRenderers.intialize();
-        ModelLayers.intialize();
         ClientNetwork.initialize();
 
         GeoArmorRenderer.registerArmorRenderer(new ClothArmorRenderer(),

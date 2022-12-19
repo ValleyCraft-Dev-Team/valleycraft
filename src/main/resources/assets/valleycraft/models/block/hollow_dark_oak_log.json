@@ -2,7 +2,7 @@
   "parent": "valleycraft:block/hollow_log",
   "textures": {
     "log_top": "minecraft:block/dark_oak_log_top",
-    "og": "minecraft:block/dark_oak_log",
+    "log": "minecraft:block/dark_oak_log",
     "stripped_log": "minecraft:block/stripped_dark_oak_log"
   }
 }

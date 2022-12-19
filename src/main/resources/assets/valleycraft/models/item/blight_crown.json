@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/special/malice_crown"
+    "layer0": "valleycraft:item/special/blight_crown"
   }
 }
