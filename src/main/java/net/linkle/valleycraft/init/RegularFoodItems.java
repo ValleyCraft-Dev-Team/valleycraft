@@ -35,8 +35,6 @@ public enum RegularFoodItems implements ItemEnum {
     BAKED_SEEDS(new FoodItem(settings(), 2, 0.6f)),
     BAKED_SWEET_BERRIES(new FoodItem(settings(), 4, 0.6f)),
     BAKED_GLOW_BERRIES(new FoodItem(settings(), 4, 0.6f)),
-    //BAKED_GLOOM_BERRIES(new FoodItem(settings(), 4, 0.6f)),
-    //BAKED_STAR_CHERRIES(new FoodItem(settings(), 4, 0.6f)),
     COOKED_RICE(new FoodItem(settings(), 4, 0.6f)),
     COOKED_CAVE_ROOT(new FoodItem(settings(), 5, 0.6f)),
     DRIED_ORANGE_KELP(new FoodItem(settings(), 1, 0.6f)),
@@ -61,7 +59,6 @@ public enum RegularFoodItems implements ItemEnum {
     FRIED_EGG(new FoodItem(settings(), 4, 0.6f)),
     COOKED_BEAST_LIVER(new FoodItem(settings(), 8, 0.8f, true)),
     COOKED_BEAST_HEART(new FoodItem(settings(), 10, 1f, true)),
-    //COOKED_ROTTEN_FLESH(new FoodItem(settings(), 6, 0.4f,true)),
     COOKED_TRIPE(new FoodItem(settings(), 8, 1f, true)),
 
     // pastries
