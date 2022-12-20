@@ -1,6 +1,7 @@
 package net.linkle.valleycraft.init;
 
 import static net.linkle.valleycraft.init.ModGroups.*;
+import static net.linkle.valleycraft.init.ModNaturalBlocks.VOLCANIC_STONE;
 import static net.linkle.valleycraft.util.BookStackVoxelShapes.*;
 
 import java.util.function.BiFunction;
@@ -87,6 +88,9 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     DIRT_ROAD(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
 
     CANVAS_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
+    CANVAS_STAIRS(new StairsBlock(CANVAS_BLOCK.getState(), Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
+    CANVAS_SLAB(new SlabBlock(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_BLOCK)), itemSettings()),
+
     CANVAS_CARPET(new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
     CURTAIN(new CurtainBlock(), itemSettings()),
     
@@ -116,10 +120,14 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     //GUIDESTONE_DANGER(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
 
     //wattle and daub
-    BLOCK_DAUB(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.TUFF)), itemSettings()),
-    BLOCK_WATTLE_AND_DAUB(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.TUFF)), itemSettings()),
-    BLOCK_WATTLE_AND_DAUB_CROSS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.TUFF)), itemSettings()),
-    BLOCK_WATTLE_AND_DAUB_PLUS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.TUFF)), itemSettings()),
+    BLOCK_DAUB(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    DAUB_STAIRS(new StairsBlock(BLOCK_DAUB.getState(), Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    DAUB_SLAB(new SlabBlock(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    DAUB_WALL(new WallBlock(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+
+    BLOCK_WATTLE_AND_DAUB(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    BLOCK_WATTLE_AND_DAUB_CROSS(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    BLOCK_WATTLE_AND_DAUB_PLUS(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
 
     BLOCK_WATTLE_AND_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()), // block_wattle_and_glass
     BLOCK_WATTLE_AND_GLASS_CROSS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()), // block_wattle_and_glass_cross
@@ -152,8 +160,16 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     //thatch
     THATCH_BLOCK(new PillarBlock(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
+    THATCH_STAIRS(new StairsBlock(THATCH_BLOCK.getState(), Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
+    THATCH_SLAB(new SlabBlock(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
+
     WEAVED_THATCH_BLOCK(new Block(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
+    WEAVED_THATCH_STAIRS(new StairsBlock(WEAVED_THATCH_BLOCK.getState(), Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
+    WEAVED_THATCH_SLAB(new SlabBlock(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
+
     TIGHTLY_WEAVED_THATCH_BLOCK(new Block(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
+    TIGHTLY_WEAVED_THATCH_STAIRS(new StairsBlock(TIGHTLY_WEAVED_THATCH_BLOCK.getState(), Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
+    TIGHTLY_WEAVED_THATCH_SLAB(new SlabBlock(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
 
     GLASS_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).hardness(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque()), itemSettings()),
     TINTED_GLASS_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).hardness(0.3f).sounds(BlockSoundGroup.GLASS)), itemSettings()),
@@ -340,23 +356,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     APPLE_FENCE(new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE)), itemSettings()),
     APPLE_FENCE_GATE(new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE)), itemSettings()),
     APPLE_PRESSURE_PLATE(new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)), itemSettings()),
-    
-    //ancient wood
-    //ANCIENT_WOOD(new PillarBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings()),
-    //STRIPPED_ANCIENT_WOOD(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_WOOD)), itemSettings()),
-    //STRIPPED_ANCIENT_LOG(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
-    //ANCIENT_PLANKS(new Block(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
-    //ANCIENT_SLAB(new SlabBlock(Block.Settings.copy(Blocks.OAK_SLAB)), itemSettings()),
-    //ANCIENT_STAIRS(new StairsBlock(ANCIENT_PLANKS.getState(), Block.Settings.copy(Blocks.OAK_STAIRS)), itemSettings()),
-    //ANCIENT_BUTTON(new WoodenButtonBlock(Block.Settings.copy(Blocks.OAK_BUTTON)), itemSettings()),
-    //ANCIENT_FENCE(new FenceBlock(Block.Settings.copy(Blocks.OAK_FENCE)), itemSettings()),
-    //ANCIENT_FENCE_GATE(new FenceGateBlock(Block.Settings.copy(Blocks.OAK_FENCE_GATE)), itemSettings()),
-    //ANCIENT_PRESSURE_PLATE(new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, Block.Settings.copy(Blocks.OAK_PRESSURE_PLATE)), itemSettings()),
 
-    // carved
-    //GHOST_PUMPKIN_CARVED(new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().allowsSpawning(ModBlocks::always)), itemSettings().equipmentSlot(i-> EquipmentSlot.HEAD)),
-    //GHOST_JACK_O_LANTERN(new ModCarvedPumpkinBlock(GhostPumpkinBlock.settings().luminance(15).allowsSpawning(ModBlocks::always)), itemSettings()),
-    
     // bales
     GLOW_KELP_BLOCK(new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TEAL).luminance(s->10)), itemSettings()),
     ORANGE_KELP_BLOCK(new Block(Block.Settings.copy(Blocks.DRIED_KELP_BLOCK).mapColor(MapColor.TERRACOTTA_GRAY)), itemSettings()),
@@ -380,7 +380,12 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     // refined blocks of "___"
 
     PRIMSTEEL_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    PRIMSTEEL_PLATE_STAIRS(new StairsBlock(PRIMSTEEL_PLATE_BLOCK.getState(), Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    PRIMSTEEL_PLATE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     PRIMSTEEL_TILED_PLATE(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    PRIMSTEEL_TILED_STAIRS(new StairsBlock(PRIMSTEEL_TILED_PLATE.getState(), Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    PRIMSTEEL_TILED_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+
     PRIMSTEEL_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     PRIMSTEEL_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
     PRIMSTEEL_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
@@ -390,7 +395,12 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     PRIMSTEEL_PRESSURE_PLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)), itemSettings()),
 
     IRON_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    IRON_PLATE_STAIRS(new StairsBlock(IRON_PLATE_BLOCK.getState(), Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    IRON_PLATE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     IRON_CUT_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    IRON_CUT_STAIRS(new StairsBlock(IRON_CUT_BLOCK.getState(), Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    IRON_CUT_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+
     IRON_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     IRON_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     IRON_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
@@ -401,35 +411,101 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     ROSEGOLD_BLOCK(new Block(Block.Settings.copy(Blocks.GOLD_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
 
     // erdstone
+    ERDSTONE_STAIRS(new StairsBlock(ModNaturalBlocks.ERDSTONE.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+
+    ERDCOBBLESTONE_STAIRS(new StairsBlock(ModNaturalBlocks.ERDCOBBLESTONE.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDCOBBLESTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDCOBBLESTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+
     POLISHED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    POLISHED_ERDSTONE_STAIRS(new StairsBlock(POLISHED_ERDSTONE.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    POLISHED_ERDSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    POLISHED_ERDSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+
     MOSSY_ERDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    MOSSY_ERDSTONE_BRICK_STAIRS(new StairsBlock(MOSSY_ERDSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    MOSSY_ERDSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    MOSSY_ERDSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+
     ERDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
-    //ARID_MOSSY_ERDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_BRICK_STAIRS(new StairsBlock(ERDSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
 
     ERDSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.QUARTZ_PILLAR).sounds(BlockSoundGroup.DEEPSLATE).hardness(1)), itemSettings()),
     
     ERDSTONE_TILES(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_TILE_STAIRS(new StairsBlock(ERDSTONE_TILES.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_TILE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+
     CHISELED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     CHISELED_ERDSTONE_FACE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     CHISELED_ERDSTONE_CRAFTABLE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     PATTERNED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    PATTERNED_ERDSTONE_STAIRS(new StairsBlock(PATTERNED_ERDSTONE.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    PATTERNED_ERDSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+
     ERDSTONE_CAPPED(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     ERDSTONE_SPIRIT(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     ERDSTONE_MOSAIC(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_MOSAIC_STAIRS(new StairsBlock(ERDSTONE_MOSAIC.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_MOSAIC_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
 
     // adventurine
-    POLISHED_ADVENTURINE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(25).resistance(2500f).luminance(s ->5)), itemSettings()),
-    ADVENTURINE_BRICKS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(25).resistance(2500f).luminance(s ->5)), itemSettings()),
+    ADVENTURINE_STAIRS(new StairsBlock(ModNaturalBlocks.ADVENTURINE.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    ADVENTURINE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    ADVENTURINE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+
+    POLISHED_ADVENTURINE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    POLISHED_ADVENTURINE_STAIRS(new StairsBlock(POLISHED_ADVENTURINE.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    POLISHED_ADVENTURINE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    POLISHED_ADVENTURINE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+
+    ADVENTURINE_BRICKS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    ADVENTURINE_BRICK_STAIRS(new StairsBlock(ADVENTURINE_BRICKS.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    ADVENTURINE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    ADVENTURINE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
 
     //shale
+    SHALE_STAIRS(new StairsBlock(ModNaturalBlocks.SHALE.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+
     COBBLED_SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    COBBLED_SHALE_STAIRS(new StairsBlock(COBBLED_SHALE.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    COBBLED_SHALE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    COBBLED_SHALE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+
     POLISHED_SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    POLISHED_SHALE_STAIRS(new StairsBlock(POLISHED_SHALE.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    POLISHED_SHALE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    POLISHED_SHALE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+
     SHALE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_BRICK_STAIRS(new StairsBlock(SHALE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+
     SHALE_RUNE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
 
     //marble
+    MARBLE_STAIRS(new StairsBlock(ModNaturalBlocks.MARBLE.getState(), Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+    MARBLE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+    MARBLE_WALL(new WallBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+
     POLISHED_MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
+    POLISHED_MARBLE_STAIRS(new StairsBlock(POLISHED_MARBLE.getState(), Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+    POLISHED_MARBLE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+    POLISHED_MARBLE_WALL(new WallBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+
     MARBLE_BRICKS(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
+    MARBLE_BRICK_STAIRS(new StairsBlock(POLISHED_MARBLE.getState(), Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+    MARBLE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+    MARBLE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+
     MARBLE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_CHISELED(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_CHISELED_FACE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
@@ -437,12 +513,35 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     MARBLE_AIR(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
 
     //shiverstone
+    SHIVERSTONE_STAIRS(new StairsBlock(ModNaturalBlocks.SHIVERSTONE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    SHIVERSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    SHIVERSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+
     SHIVERSTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SHIVERSTONE_SMOOTH_STAIRS(new StairsBlock(SHIVERSTONE_SMOOTH.getState(), Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SHIVERSTONE_SMOOTH_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SHIVERSTONE_SMOOTH_WALL(new WallBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+
     SHIVERSTONE_TILES(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SHIVERSTONE_TILE_STAIRS(new StairsBlock(SHIVERSTONE_TILES.getState(), Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SHIVERSTONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SHIVERSTONE_TILE_WALL(new WallBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
 
     //serpentinite
+    SERPENTINITE_STAIRS(new StairsBlock(ModNaturalBlocks.SERPENTINITE.getState(), Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SERPENTINITE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SERPENTINITE_WALL(new WallBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+
     SERPENTINITE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SERPENTINITE_SMOOTH_STAIRS(new StairsBlock(SERPENTINITE_SMOOTH.getState(), Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SERPENTINITE_SMOOTH_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SERPENTINITE_SMOOTH_WALL(new WallBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+
     SERPENTINITE_BRICKS(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SERPENTINITE_BRICK_STAIRS(new StairsBlock(SERPENTINITE_BRICKS.getState(), Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SERPENTINITE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SERPENTINITE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+
     SERPENTINITE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     //SERPENTINITE_WINDOW(new GrateBlock(Block.Settings.copy(Blocks.SMOOTH_STONE).nonOpaque()), itemSettings()),
     //CHISELED_SERPENTINITE(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
@@ -452,41 +551,107 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     // polished stones
     VERDANTINE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     DIABASE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    LIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    //LIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     GRIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
 
-    // Polished stone stairs & slabs
+    // carmine
+    CARMINE_STAIRS(new StairsBlock(ModNaturalBlocks.CARMINE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    CARMINE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    CARMINE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+
+    CARMINE_COBBLESTONE_STAIRS(new StairsBlock(ModNaturalBlocks.CARMINE_COBBLESTONE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    CARMINE_COBBLESTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
+    CARMINE_COBBLESTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
+
     CARMINE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     CARMINE_SMOOTH_STAIRS(new StairsBlock(CARMINE_SMOOTH.getState(), Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
     CARMINE_SMOOTH_SLAB(new SlabBlock(Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
     CARMINE_SMOOTH_WALL(new WallBlock(Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
+
     CARMINE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    CARMINE_BRICK_STAIRS(new StairsBlock(CARMINE_BRICKS.getState(), Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
+    CARMINE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
+    CARMINE_BRICK_WALL(new WallBlock(Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
 
     //ice and snow blocks
+    PACKED_SNOW_STAIRS(new StairsBlock(ModNaturalBlocks.PACKED_SNOW.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+
     PACKED_SNOW_POLISHED(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_POLISHED_STAIRS(new StairsBlock(PACKED_SNOW_POLISHED.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_POLISHED_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_POLISHED_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+
     PACKED_SNOW_BRICKS_LARGE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_BRICKS_LARGE_STAIRS(new StairsBlock(PACKED_SNOW_BRICKS_LARGE.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_BRICKS_LARGE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_BRICKS_LARGE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+
     PACKED_SNOW_BRICKS_SMALL(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_BRICKS_SMALL_STAIRS(new StairsBlock(PACKED_SNOW_BRICKS_SMALL.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_BRICKS_SMALL_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_BRICKS_SMALL_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+
     PACKED_SNOW_BRICKS_CHISELED(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
 
     //andesite/diorite/granite
     ANDESITE_BRICKS(new Block(Block.Settings.copy(Blocks.ANDESITE)), itemSettings()),
+    ANDESITE_BRICK_STAIRS(new StairsBlock(ANDESITE_BRICKS.getState(), Block.Settings.copy(Blocks.ANDESITE)), itemSettings()),
+    ANDESITE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.ANDESITE)), itemSettings()),
+    ANDESITE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.ANDESITE)), itemSettings()),
+
     DIORITE_BRICKS(new Block(Block.Settings.copy(Blocks.DIORITE)), itemSettings()),
+    DIORITE_BRICK_STAIRS(new StairsBlock(DIORITE_BRICKS.getState(), Block.Settings.copy(Blocks.DIORITE)), itemSettings()),
+    DIORITE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DIORITE)), itemSettings()),
+    DIORITE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.DIORITE)), itemSettings()),
+
     GRANITE_BRICKS(new Block(Block.Settings.copy(Blocks.GRANITE)), itemSettings()),
+    GRANITE_BRICK_STAIRS(new StairsBlock(GRANITE_BRICKS.getState(), Block.Settings.copy(Blocks.GRANITE)), itemSettings()),
+    GRANITE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.GRANITE)), itemSettings()),
+    GRANITE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.GRANITE)), itemSettings()),
 
     //prismarine
-    POLISHED_PRISMARINE(new Block(Block.Settings.copy(Blocks.PRISMARINE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    CHISELED_PRISMARINE(new Block(Block.Settings.copy(Blocks.PRISMARINE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    POLISHED_PRISMARINE(new Block(Block.Settings.copy(Blocks.PRISMARINE)), itemSettings()),
+    POLISHED_PRISMARINE_STAIRS(new StairsBlock(POLISHED_PRISMARINE.getState(), Block.Settings.copy(POLISHED_PRISMARINE.block)), itemSettings()),
+    POLISHED_PRISMARINE_SLAB(new SlabBlock(Block.Settings.copy(POLISHED_PRISMARINE.block)), itemSettings()),
+    POLISHED_PRISMARINE_WALL(new WallBlock(Block.Settings.copy(POLISHED_PRISMARINE.block)), itemSettings()),
+
+    CHISELED_PRISMARINE(new Block(Block.Settings.copy(Blocks.PRISMARINE)), itemSettings()),
 
     //dripstone bricks
     POLISHED_DRIPSTONE(new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
+    POLISHED_DRIPSTONE_STAIRS(new StairsBlock(POLISHED_DRIPSTONE.getState(), Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+    POLISHED_DRIPSTONE_SLAB(new SlabBlock(Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+    POLISHED_DRIPSTONE_WALL(new WallBlock(Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+
     DRIPSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
+    DRIPSTONE_BRICK_STAIRS(new StairsBlock(DRIPSTONE_BRICKS.getState(), Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+    DRIPSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+    DRIPSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+
     MOSSY_DRIPSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
+    MOSSY_DRIPSTONE_BRICK_STAIRS(new StairsBlock(MOSSY_DRIPSTONE_BRICKS.getState(), Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+    MOSSY_DRIPSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+    MOSSY_DRIPSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+
     DRIPSTONE_TILES(new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
+    DRIPSTONE_TILE_STAIRS(new StairsBlock(DRIPSTONE_TILES.getState(), Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+    DRIPSTONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+    DRIPSTONE_TILE_WALL(new WallBlock(Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+
     PATTERNED_DRIPSTONE(new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
+    PATTERNED_DRIPSTONE_STAIRS(new StairsBlock(PATTERNED_DRIPSTONE.getState(), Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+    PATTERNED_DRIPSTONE_SLAB(new SlabBlock(Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+
     CHISELED_DRIPSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
     DRIPSTONE_EARTH(new Block(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
     DRIPSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
+
     DRIPSTONE_MOSAIC(new PillarBlock(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
+    DRIPSTONE_MOSAIC_STAIRS(new StairsBlock(DRIPSTONE_MOSAIC.getState(), Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+    DRIPSTONE_MOSAIC_SLAB(new SlabBlock(Block.Settings.copy(POLISHED_DRIPSTONE.block)), itemSettings()),
+
     DRIPSTONE_CAPPED(new PillarBlock(Block.Settings.copy(Blocks.DRIPSTONE_BLOCK)), itemSettings()),
 
     //industrial basalt blocks
@@ -495,58 +660,175 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     //salt
     POLISHED_SALT_BLOCK(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    POLISHED_SALT_BLOCK_STAIRS(new StairsBlock(POLISHED_SALT_BLOCK.getState(), Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    POLISHED_SALT_BLOCK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    POLISHED_SALT_BLOCK_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     SALT_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    SALT_BRICK_STAIRS(new StairsBlock(SALT_BRICKS.getState(), Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    SALT_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    SALT_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     CHISELED_SALT_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
     SALT_BRICKS_CAPPED(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
 
     //basalt bricks
     POLISHED_BASALT(new Block(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+    POLISHED_BASALT_STAIRS(new StairsBlock(POLISHED_BASALT.getState(), Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+    POLISHED_BASALT_SLAB(new SlabBlock(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+    POLISHED_BASALT_WALL(new WallBlock(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+
     POLISHED_BASALT_BRICKS(new Block(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+    POLISHED_BASALT_BRICK_STAIRS(new StairsBlock(POLISHED_BASALT_BRICKS.getState(), Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+    POLISHED_BASALT_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+    POLISHED_BASALT_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+
     POLISHED_BASALT_PATTERNED(new Block(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+    POLISHED_BASALT_PATTERNED_STAIRS(new StairsBlock(POLISHED_BASALT_PATTERNED.getState(), Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+    POLISHED_BASALT_PATTERNED_SLAB(new SlabBlock(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
+
     //special tiles
-    KITCHEN_TILES(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
+    KITCHEN_TILES(new Block(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+    KITCHEN_TILES_STAIRS(new StairsBlock(KITCHEN_TILES.getState(), Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+    KITCHEN_TILES_SLAB(new SlabBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
 
     //sandstone
+    ROUGH_SANDSTONE_STAIRS(new StairsBlock(ModNaturalBlocks.ROUGH_SANDSTONE.getState(), Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings()),
+    ROUGH_SANDSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings()),
+    ROUGH_SANDSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings()),
+
+    ROUGH_RED_SANDSTONE_STAIRS(new StairsBlock(ModNaturalBlocks.ROUGH_RED_SANDSTONE.getState(), Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    ROUGH_RED_SANDSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    ROUGH_RED_SANDSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
+    STRATIFIED_SANDSTONE_STAIRS(new StairsBlock(ModNaturalBlocks.STRATIFIED_SANDSTONE.getState(), Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings()),
+    STRATIFIED_SANDSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings()),
+    STRATIFIED_SANDSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings()),
+
+    STRATIFIED_RED_SANDSTONE_STAIRS(new StairsBlock(ModNaturalBlocks.STRATIFIED_RED_SANDSTONE.getState(), Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    STRATIFIED_RED_SANDSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    STRATIFIED_RED_SANDSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    SANDSTONE_BRICK_STAIRS(new StairsBlock(SANDSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    SANDSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    SANDSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     CRACKED_SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CRACKED_SANDSTONE_BRICK_STAIRS(new StairsBlock(CRACKED_SANDSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CRACKED_SANDSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CRACKED_SANDSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     MOSSY_SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    MOSSY_SANDSTONE_BRICK_STAIRS(new StairsBlock(MOSSY_SANDSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    MOSSY_SANDSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    MOSSY_SANDSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     CHISELED_SANDSTONE_BLANK(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
 
     //red sandstone
     RED_SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    RED_SANDSTONE_BRICK_STAIRS(new StairsBlock(RED_SANDSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    RED_SANDSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    RED_SANDSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     CRACKED_RED_SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CRACKED_RED_SANDSTONE_BRICK_STAIRS(new StairsBlock(CRACKED_RED_SANDSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CRACKED_RED_SANDSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CRACKED_RED_SANDSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     MOSSY_RED_SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    MOSSY_RED_SANDSTONE_BRICK_STAIRS(new StairsBlock(MOSSY_RED_SANDSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    MOSSY_RED_SANDSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    MOSSY_RED_SANDSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     CHISELED_RED_SANDSTONE_BLANK(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE))),
 
     //scorchstone
+    SCORCHSTONE_STAIRS(new StairsBlock(ModNaturalBlocks.SCORCHSTONE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+
     SCORCHSTONE_POLISHED(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_POLISHED_STAIRS(new StairsBlock(SCORCHSTONE_POLISHED.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_POLISHED_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_POLISHED_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+
     SCORCHSTONE_TILES(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_TILE_STAIRS(new StairsBlock(SCORCHSTONE_TILES.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_TILE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+
     SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_BRICK_STAIRS(new StairsBlock(SCORCHSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+
     MOSSY_SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    MOSSY_SCORCHSTONE_BRICK_STAIRS(new StairsBlock(MOSSY_SCORCHSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    MOSSY_SCORCHSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    MOSSY_SCORCHSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+
     SCORCHSTONE_CHISELED_FACE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     //CHISELED_SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     SCORCHSTONE_FIRE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     SCORCHSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     //SCORCHSTONE_WINDOW(new GrateBlock(Block.Settings.copy(Blocks.STONE).nonOpaque()), itemSettings().fireproof()),
     SCORCHSTONE_MOSAIC(new PillarBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_MOSAIC_STAIRS(new StairsBlock(SCORCHSTONE_MOSAIC.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    SCORCHSTONE_MOSAIC_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+
+    //volc
+    VOLCANIC_STONE_STAIRS(new StairsBlock(VOLCANIC_STONE.getState(), Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    VOLCANIC_STONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    VOLCANIC_STONE_WALL(new WallBlock(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
 
     //mud bricks
+    PACKED_MUD_STAIRS(new StairsBlock(Blocks.PACKED_MUD.getDefaultState(), Block.Settings.copy(Blocks.PACKED_MUD)), itemSettings()),
+    PACKED_MUD_SLAB(new SlabBlock(Block.Settings.copy(Blocks.PACKED_MUD)), itemSettings()),
+    PACKED_MUD_WALL(new WallBlock(Block.Settings.copy(Blocks.PACKED_MUD)), itemSettings()),
+
     POLISHED_PACKED_MUD(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
+    POLISHED_PACKED_MUD_STAIRS(new StairsBlock(POLISHED_PACKED_MUD.getState(), Block.Settings.copy(Blocks.PACKED_MUD)), itemSettings()),
+    POLISHED_PACKED_MUD_SLAB(new SlabBlock(Block.Settings.copy(Blocks.PACKED_MUD)), itemSettings()),
+    POLISHED_PACKED_MUD_WALL(new WallBlock(Block.Settings.copy(Blocks.PACKED_MUD)), itemSettings()),
+
     PACKED_MUD_CAPPED(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
 
     //red bricks
-    SMOOTH_BRICK(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
-    MOSAIC_BRICK(new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), itemSettings()),
+    SMOOTH_BRICK(new Block(Block.Settings.copy(Blocks.BRICKS)), itemSettings()),
+    SMOOTH_BRICK_STAIRS(new StairsBlock(SMOOTH_BRICK.getState(), Block.Settings.copy(Blocks.BRICKS)), itemSettings()),
+    SMOOTH_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.BRICKS)), itemSettings()),
+    SMOOTH_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.BRICKS)), itemSettings()),
+
+    MOSAIC_BRICK(new Block(Block.Settings.copy(Blocks.BRICKS)), itemSettings()),
+    MOSAIC_BRICK_STAIRS(new StairsBlock(MOSAIC_BRICK.getState(), Block.Settings.copy(Blocks.BRICKS)), itemSettings()),
+    MOSAIC_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.BRICKS)), itemSettings()),
+
+    MOSSY_STONE_STAIRS(new StairsBlock(ModNaturalBlocks.MOSSY_STONE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    MOSSY_STONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    MOSSY_STONE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings()),
 
     //cobblestone bricks
-    POLISHED_COBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
+    //POLISHED_COBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
     COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    COBBLESTONE_BRICK_STAIRS(new StairsBlock(COBBLESTONE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    COBBLESTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    COBBLESTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+
     MOSSY_COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    MOSSY_COBBLESTONE_BRICK_STAIRS(new StairsBlock(MOSSY_COBBLESTONE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    MOSSY_COBBLESTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    MOSSY_COBBLESTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+
     //ARID_MOSSY_COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
     CHISELED_COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
 
     //stone bricks
     STONE_TILES(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    STONE_TILE_STAIRS(new StairsBlock(STONE_TILES.getState(), Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    STONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+
     STONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
     STONE_CAPPED(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
 
@@ -555,7 +837,15 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     //??? other misc stone blocks ig
     POLISHED_STONE(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    POLISHED_STONE_STAIRS(new StairsBlock(POLISHED_STONE.getState(), Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    POLISHED_STONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    POLISHED_STONE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+
     SMOOTH_STONE_TILES(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    SMOOTH_STONE_TILE_STAIRS(new StairsBlock(SMOOTH_STONE_TILES.getState(), Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    SMOOTH_STONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    SMOOTH_STONE_TILE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+
     SMOOTH_STONE_CAPPED(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
 
     //chimneys aka hell

@@ -1,7 +1,9 @@
 package net.linkle.valleycraft.datagen;
 
 import static net.linkle.valleycraft.init.ModBlocks.*;
+import static net.linkle.valleycraft.init.ModBlocks.GRANITE_BRICK_SLAB;
 import static net.linkle.valleycraft.init.ModNaturalBlocks.*;
+import static net.minecraft.block.Blocks.PACKED_MUD;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -43,227 +45,480 @@ class ValleyModelGenerator extends FabricModelProvider {
         map = textureAll(IdProvider.of(new Identifier("deepslate_top")));
         pressurePlate(DEEPSLATE_PRESSURE_PLATE.block, map, generator);
 
-        // Daub
-        map = textureAll(BLOCK_DAUB);
-        slab(BLOCK_DAUB.block, BLOCK_DAUB.block, map, generator);
-        stairs(BLOCK_DAUB.block, map, generator);
-        wall(BLOCK_DAUB.block, map, generator);
+        // CANVAS
+        map = textureAll(CANVAS_BLOCK);
+        slab(CANVAS_SLAB.block, CANVAS_BLOCK.block, map, generator);
+        stairs(CANVAS_STAIRS.block, map, generator);
 
-        // Thatch
+        // THATCH
         map = textureAll(THATCH_BLOCK);
-        slab(THATCH_BLOCK.block, THATCH_BLOCK.block, map, generator);
-        stairs(THATCH_BLOCK.block, map, generator);
-        wall(THATCH_BLOCK.block, map, generator);
+        slab(THATCH_SLAB.block, THATCH_BLOCK.block, map, generator);
+        stairs(THATCH_STAIRS.block, map, generator);
 
+        // WEAVED_THATCH
         map = textureAll(WEAVED_THATCH_BLOCK);
-        slab(WEAVED_THATCH_BLOCK.block, WEAVED_THATCH_BLOCK.block, map, generator);
-        stairs(WEAVED_THATCH_BLOCK.block, map, generator);
-        wall(WEAVED_THATCH_BLOCK.block, map, generator);
+        slab(WEAVED_THATCH_SLAB.block, WEAVED_THATCH_BLOCK.block, map, generator);
+        stairs(WEAVED_THATCH_STAIRS.block, map, generator);
 
+        // TIGHTLY_WEAVED_THATCH
         map = textureAll(TIGHTLY_WEAVED_THATCH_BLOCK);
-        slab(TIGHTLY_WEAVED_THATCH_BLOCK.block, TIGHTLY_WEAVED_THATCH_BLOCK.block, map, generator);
-        stairs(TIGHTLY_WEAVED_THATCH_BLOCK.block, map, generator);
-        wall(TIGHTLY_WEAVED_THATCH_BLOCK.block, map, generator);
+        slab(TIGHTLY_WEAVED_THATCH_SLAB.block, TIGHTLY_WEAVED_THATCH_BLOCK.block, map, generator);
+        stairs(TIGHTLY_WEAVED_THATCH_STAIRS.block, map, generator);
 
-        // Erdstone
+        //Daub
+        map = textureAll(BLOCK_DAUB);
+        slab(DAUB_SLAB.block, BLOCK_DAUB.block, map, generator);
+        stairs(DAUB_STAIRS.block, map, generator);
+        wall(DAUB_WALL.block, map, generator);
+
+        // PRIMSTEEL_PLATE
+        map = textureAll(PRIMSTEEL_PLATE_BLOCK);
+        slab(PRIMSTEEL_PLATE_SLAB.block, PRIMSTEEL_PLATE_BLOCK.block, map, generator);
+        stairs(PRIMSTEEL_PLATE_STAIRS.block, map, generator);
+
+        // PRIMSTEEL_TILED
+        map = textureAll(PRIMSTEEL_TILED_PLATE);
+        slab(PRIMSTEEL_TILED_SLAB.block, PRIMSTEEL_TILED_PLATE.block, map, generator);
+        stairs(PRIMSTEEL_TILED_STAIRS.block, map, generator);
+
+        // IRON_PLATE
+        map = textureAll(IRON_PLATE_BLOCK);
+        slab(IRON_PLATE_SLAB.block, IRON_PLATE_BLOCK.block, map, generator);
+        stairs(IRON_PLATE_STAIRS.block, map, generator);
+
+        // IRON_CUT
+        map = textureAll(IRON_CUT_BLOCK);
+        slab(IRON_CUT_SLAB.block, IRON_CUT_BLOCK.block, map, generator);
+        stairs(IRON_CUT_STAIRS.block, map, generator);
+
+        // ERDSTONE
         map = textureAll(ERDSTONE);
-        slab(ERDSTONE.block, ERDSTONE.block, map, generator);
-        stairs(ERDSTONE.block, map, generator);
-        wall(ERDSTONE.block, map, generator);
+        slab(ERDSTONE_SLAB.block, ERDSTONE.block, map, generator);
+        stairs(ERDSTONE_STAIRS.block, map, generator);
+        wall(ERDSTONE_WALL.block, map, generator);
 
+        // ERDCOBBLESTONE
         map = textureAll(ERDCOBBLESTONE);
-        slab(ERDCOBBLESTONE.block, ERDCOBBLESTONE.block, map, generator);
-        stairs(ERDCOBBLESTONE.block, map, generator);
-        wall(ERDCOBBLESTONE.block, map, generator);
+        slab(ERDCOBBLESTONE_SLAB.block, ERDCOBBLESTONE.block, map, generator);
+        stairs(ERDCOBBLESTONE_STAIRS.block, map, generator);
+        wall(ERDCOBBLESTONE_WALL.block, map, generator);
 
+        // POLISHED_ERDSTONE_BRICKS
+        map = textureAll(POLISHED_ERDSTONE);
+        slab(POLISHED_ERDSTONE_SLAB.block, POLISHED_ERDSTONE.block, map, generator);
+        stairs(POLISHED_ERDSTONE_STAIRS.block, map, generator);
+        wall(POLISHED_ERDSTONE_WALL.block, map, generator);
+
+        // ERDSTONE_BRICKS
         map = textureAll(ERDSTONE_BRICKS);
-        slab(ERDSTONE_BRICKS.block, ERDSTONE_BRICKS.block, map, generator);
-        stairs(ERDSTONE_BRICKS.block, map, generator);
-        wall(ERDSTONE_BRICKS.block, map, generator);
+        slab(ERDSTONE_BRICK_SLAB.block, ERDSTONE_BRICKS.block, map, generator);
+        stairs(ERDSTONE_BRICK_STAIRS.block, map, generator);
+        wall(ERDSTONE_BRICK_WALL.block, map, generator);
 
+        // MOSSY_ERDSTONE_BRICK_BRICKS
+        map = textureAll(MOSSY_ERDSTONE_BRICKS);
+        slab(MOSSY_ERDSTONE_BRICK_SLAB.block, MOSSY_ERDSTONE_BRICKS.block, map, generator);
+        stairs(MOSSY_ERDSTONE_BRICK_STAIRS.block, map, generator);
+        wall(MOSSY_ERDSTONE_BRICK_WALL.block, map, generator);
+
+        // ERDSTONE_TILES
         map = textureAll(ERDSTONE_TILES);
-        slab(ERDSTONE_TILES.block, ERDSTONE_TILES.block, map, generator);
-        stairs(ERDSTONE_TILES.block, map, generator);
-        wall(ERDSTONE_TILES.block, map, generator);
+        slab(ERDSTONE_TILE_SLAB.block, ERDSTONE_TILES.block, map, generator);
+        stairs(ERDSTONE_TILE_STAIRS.block, map, generator);
+        wall(ERDSTONE_TILE_WALL.block, map, generator);
 
-        //Adventurine
+        // ERDSTONE_MOSAIC
+        map = textureAll(ERDSTONE_MOSAIC);
+        slab(ERDSTONE_MOSAIC_SLAB.block, ERDSTONE_MOSAIC.block, map, generator);
+        stairs(ERDSTONE_MOSAIC_STAIRS.block, map, generator);
+
+        // PATTERNED_ERDSTONE
+        map = textureAll(PATTERNED_ERDSTONE);
+        slab(PATTERNED_ERDSTONE_SLAB.block, PATTERNED_ERDSTONE.block, map, generator);
+        stairs(PATTERNED_ERDSTONE_STAIRS.block, map, generator);
+
+        // POLISHED_ADVENTURINE
+        map = textureAll(POLISHED_ADVENTURINE);
+        slab(POLISHED_ADVENTURINE_SLAB.block, POLISHED_ADVENTURINE.block, map, generator);
+        stairs(POLISHED_ADVENTURINE_STAIRS.block, map, generator);
+        wall(POLISHED_ADVENTURINE_WALL.block, map, generator);
+
+        // ADVENTURINE
         map = textureAll(ADVENTURINE);
-        slab(ADVENTURINE.block, ADVENTURINE.block, map, generator);
-        stairs(ADVENTURINE.block, map, generator);
-        wall(ADVENTURINE.block, map, generator);
+        slab(ADVENTURINE_SLAB.block, ADVENTURINE.block, map, generator);
+        stairs(ADVENTURINE_STAIRS.block, map, generator);
+        wall(ADVENTURINE_WALL.block, map, generator);
 
+        // ADVENTURINE_BRICKS
         map = textureAll(ADVENTURINE_BRICKS);
-        slab(ADVENTURINE_BRICKS.block, ADVENTURINE_BRICKS.block, map, generator);
-        stairs(ADVENTURINE_BRICKS.block, map, generator);
-        wall(ADVENTURINE_BRICKS.block, map, generator);
+        slab(ADVENTURINE_BRICK_SLAB.block, ADVENTURINE_BRICKS.block, map, generator);
+        stairs(ADVENTURINE_BRICK_STAIRS.block, map, generator);
+        wall(ADVENTURINE_BRICK_WALL.block, map, generator);
 
-        //shale
+        // SHALE
         map = textureAll(SHALE);
-        slab(SHALE.block, SHALE.block, map, generator);
-        stairs(SHALE.block, map, generator);
-        wall(SHALE.block, map, generator);
+        slab(SHALE_SLAB.block, SHALE.block, map, generator);
+        stairs(SHALE_STAIRS.block, map, generator);
+        wall(SHALE_WALL.block, map, generator);
 
+        // COBBLED_SHALE
         map = textureAll(COBBLED_SHALE);
-        slab(COBBLED_SHALE.block, COBBLED_SHALE.block, map, generator);
-        stairs(COBBLED_SHALE.block, map, generator);
-        wall(COBBLED_SHALE.block, map, generator);
+        slab(COBBLED_SHALE_SLAB.block, COBBLED_SHALE.block, map, generator);
+        stairs(COBBLED_SHALE_STAIRS.block, map, generator);
+        wall(COBBLED_SHALE_WALL.block, map, generator);
 
+        // POLISHED_SHALES
+        map = textureAll(POLISHED_SHALE);
+        slab(POLISHED_SHALE_SLAB.block, POLISHED_SHALE.block, map, generator);
+        stairs(POLISHED_SHALE_STAIRS.block, map, generator);
+        wall(POLISHED_SHALE_WALL.block, map, generator);
+
+        // SHALE_BRICKS
         map = textureAll(SHALE_BRICKS);
-        slab(SHALE_BRICKS.block, SHALE_BRICKS.block, map, generator);
-        stairs(SHALE_BRICKS.block, map, generator);
-        wall(SHALE_BRICKS.block, map, generator);
+        slab(SHALE_BRICK_SLAB.block, SHALE_BRICKS.block, map, generator);
+        stairs(SHALE_BRICK_STAIRS.block, map, generator);
+        wall(SHALE_BRICK_WALL.block, map, generator);
 
-        //Marble
+        // MARBLE
         map = textureAll(MARBLE);
-        slab(MARBLE.block, MARBLE.block, map, generator);
-        stairs(MARBLE.block, map, generator);
-        wall(MARBLE.block, map, generator);
+        slab(MARBLE_SLAB.block, MARBLE.block, map, generator);
+        stairs(MARBLE_STAIRS.block, map, generator);
+        wall(MARBLE_WALL.block, map, generator);
 
+        // POLISHED_MARBLE
         map = textureAll(POLISHED_MARBLE);
-        slab(POLISHED_MARBLE.block, POLISHED_MARBLE.block, map, generator);
-        stairs(POLISHED_MARBLE.block, map, generator);
-        wall(POLISHED_MARBLE.block, map, generator);
+        slab(POLISHED_MARBLE_SLAB.block, POLISHED_MARBLE.block, map, generator);
+        stairs(POLISHED_MARBLE_STAIRS.block, map, generator);
+        wall(POLISHED_MARBLE_WALL.block, map, generator);
 
-        //Shiverstone
+        // MARBLE_BRICKS
+        map = textureAll(MARBLE_BRICKS);
+        slab(MARBLE_BRICK_SLAB.block, MARBLE_BRICKS.block, map, generator);
+        stairs(MARBLE_BRICK_STAIRS.block, map, generator);
+        wall(MARBLE_BRICK_WALL.block, map, generator);
+
+        // SHIVERSTONE
         map = textureAll(SHIVERSTONE);
-        slab(SHIVERSTONE.block, SHIVERSTONE.block, map, generator);
-        stairs(SHIVERSTONE.block, map, generator);
-        wall(SHIVERSTONE.block, map, generator);
+        slab(SHIVERSTONE_SLAB.block, SHIVERSTONE.block, map, generator);
+        stairs(SHIVERSTONE_STAIRS.block, map, generator);
+        wall(SHIVERSTONE_WALL.block, map, generator);
 
+        // SHIVERSTONE_SMOOTH
         map = textureAll(SHIVERSTONE_SMOOTH);
-        slab(SHIVERSTONE_SMOOTH.block, SHIVERSTONE_SMOOTH.block, map, generator);
-        stairs(SHIVERSTONE_SMOOTH.block, map, generator);
-        wall(SHIVERSTONE_SMOOTH.block, map, generator);
+        slab(SHIVERSTONE_SMOOTH_SLAB.block, SHIVERSTONE_SMOOTH.block, map, generator);
+        stairs(SHIVERSTONE_SMOOTH_STAIRS.block, map, generator);
+        wall(SHIVERSTONE_SMOOTH_WALL.block, map, generator);
 
-        map = textureAll(SHIVERSTONE_TILES);
-        slab(SHIVERSTONE_TILES.block, SHIVERSTONE_TILES.block, map, generator);
-        stairs(SHIVERSTONE_TILES.block, map, generator);
-        wall(SHIVERSTONE_TILES.block, map, generator);
-
-        //Serpentinite
+        // SERPENTINITE
         map = textureAll(SERPENTINITE);
-        slab(SERPENTINITE.block, SERPENTINITE.block, map, generator);
-        stairs(SERPENTINITE.block, map, generator);
-        wall(SERPENTINITE.block, map, generator);
+        slab(SERPENTINITE_SLAB.block, SERPENTINITE.block, map, generator);
+        stairs(SERPENTINITE_STAIRS.block, map, generator);
+        wall(SERPENTINITE_WALL.block, map, generator);
 
+        // SHIVERSTONE_TILES
+        map = textureAll(SHIVERSTONE_TILES);
+        slab(SHIVERSTONE_TILE_SLAB.block, SHIVERSTONE_TILES.block, map, generator);
+        stairs(SHIVERSTONE_TILE_STAIRS.block, map, generator);
+        wall(SHIVERSTONE_TILE_WALL.block, map, generator);
+
+        // SERPENTINITE_SMOOTH
         map = textureAll(SERPENTINITE_SMOOTH);
-        slab(SERPENTINITE_SMOOTH.block, SERPENTINITE_SMOOTH.block, map, generator);
-        stairs(SERPENTINITE_SMOOTH.block, map, generator);
-        wall(SERPENTINITE_SMOOTH.block, map, generator);
+        slab(SERPENTINITE_SMOOTH_SLAB.block, SERPENTINITE_SMOOTH.block, map, generator);
+        stairs(SERPENTINITE_SMOOTH_STAIRS.block, map, generator);
+        wall(SERPENTINITE_SMOOTH_WALL.block, map, generator);
 
+        // SERPENTINITE_BRICKS
         map = textureAll(SERPENTINITE_BRICKS);
-        slab(SERPENTINITE_BRICKS.block, SERPENTINITE_BRICKS.block, map, generator);
-        stairs(SERPENTINITE_BRICKS.block, map, generator);
-        wall(SERPENTINITE_BRICKS.block, map, generator);
+        slab(SERPENTINITE_BRICK_SLAB.block, SERPENTINITE_BRICKS.block, map, generator);
+        stairs(SERPENTINITE_BRICK_STAIRS.block, map, generator);
+        wall(SERPENTINITE_BRICK_WALL.block, map, generator);
 
-        //Carmine
+        // CARMINE
         map = textureAll(CARMINE);
-        slab(CARMINE.block, CARMINE.block, map, generator);
-        stairs(CARMINE.block, map, generator);
-        wall(CARMINE.block, map, generator);
+        slab(CARMINE_SLAB.block, CARMINE.block, map, generator);
+        stairs(CARMINE_STAIRS.block, map, generator);
+        wall(CARMINE_WALL.block, map, generator);
 
+        // CARMINE_COBBLESTONE
         map = textureAll(CARMINE_COBBLESTONE);
-        slab(CARMINE_COBBLESTONE.block, CARMINE_COBBLESTONE.block, map, generator);
-        stairs(CARMINE_COBBLESTONE.block, map, generator);
-        wall(CARMINE_COBBLESTONE.block, map, generator);
+        slab(CARMINE_COBBLESTONE_SLAB.block, CARMINE_COBBLESTONE.block, map, generator);
+        stairs(CARMINE_COBBLESTONE_STAIRS.block, map, generator);
+        wall(CARMINE_COBBLESTONE_WALL.block, map, generator);
 
-        map = textureAll(CARMINE_BRICKS);
-        slab(CARMINE_BRICKS.block, CARMINE_BRICKS.block, map, generator);
-        stairs(CARMINE_BRICKS.block, map, generator);
-        wall(CARMINE_BRICKS.block, map, generator);
-
+        // CARMINE_SMOOTH
         map = textureAll(CARMINE_SMOOTH);
-        slab(CARMINE_SMOOTH.block, CARMINE_SMOOTH.block, map, generator);
-        stairs(CARMINE_SMOOTH.block, map, generator);
-        wall(CARMINE_SMOOTH.block, map, generator);
+        slab(CARMINE_SMOOTH_SLAB.block, CARMINE_SMOOTH.block, map, generator);
+        stairs(CARMINE_SMOOTH_STAIRS.block, map, generator);
+        wall(CARMINE_SMOOTH_WALL.block, map, generator);
 
-        //Packed Snow
+        // CARMINE_BRICKS
+        map = textureAll(CARMINE_BRICKS);
+        slab(CARMINE_BRICK_SLAB.block, CARMINE_BRICKS.block, map, generator);
+        stairs(CARMINE_BRICK_STAIRS.block, map, generator);
+        wall(CARMINE_BRICK_WALL.block, map, generator);
+
+        // PACKED_SNOW
+        map = textureAll(PACKED_SNOW);
+        slab(PACKED_SNOW_SLAB.block, PACKED_SNOW.block, map, generator);
+        stairs(PACKED_SNOW_STAIRS.block, map, generator);
+        wall(PACKED_SNOW_WALL.block, map, generator);
+
+        // PACKED_SNOW_POLISHED
         map = textureAll(PACKED_SNOW_POLISHED);
-        slab(PACKED_SNOW_POLISHED.block, PACKED_SNOW_POLISHED.block, map, generator);
-        stairs(PACKED_SNOW_POLISHED.block, map, generator);
-        wall(PACKED_SNOW_POLISHED.block, map, generator);
+        slab(PACKED_SNOW_POLISHED_SLAB.block, PACKED_SNOW_POLISHED.block, map, generator);
+        stairs(PACKED_SNOW_POLISHED_STAIRS.block, map, generator);
+        wall(PACKED_SNOW_POLISHED_WALL.block, map, generator);
 
+        // PACKED_SNOW_BRICKS_LARGE
         map = textureAll(PACKED_SNOW_BRICKS_LARGE);
-        slab(PACKED_SNOW_BRICKS_LARGE.block, PACKED_SNOW_BRICKS_LARGE.block, map, generator);
-        stairs(PACKED_SNOW_BRICKS_LARGE.block, map, generator);
-        wall(PACKED_SNOW_BRICKS_LARGE.block, map, generator);
+        slab(PACKED_SNOW_BRICKS_LARGE_SLAB.block, PACKED_SNOW_BRICKS_LARGE.block, map, generator);
+        stairs(PACKED_SNOW_BRICKS_LARGE_STAIRS.block, map, generator);
+        wall(PACKED_SNOW_BRICKS_LARGE_WALL.block, map, generator);
 
+        // PACKED_SNOW_BRICKS_SMALL
         map = textureAll(PACKED_SNOW_BRICKS_SMALL);
-        slab(PACKED_SNOW_BRICKS_SMALL.block, PACKED_SNOW_BRICKS_SMALL.block, map, generator);
-        stairs(PACKED_SNOW_BRICKS_SMALL.block, map, generator);
-        wall(PACKED_SNOW_BRICKS_SMALL.block, map, generator);
+        slab(PACKED_SNOW_BRICKS_SMALL_SLAB.block, PACKED_SNOW_BRICKS_SMALL.block, map, generator);
+        stairs(PACKED_SNOW_BRICKS_SMALL_STAIRS.block, map, generator);
+        wall(PACKED_SNOW_BRICKS_SMALL_WALL.block, map, generator);
 
-        //Andesite Diorite and Granite
+        // ANDESITE_BRICKS
         map = textureAll(ANDESITE_BRICKS);
-        slab(ANDESITE_BRICKS.block, ANDESITE_BRICKS.block, map, generator);
-        stairs(ANDESITE_BRICKS.block, map, generator);
-        wall(ANDESITE_BRICKS.block, map, generator);
+        slab(ANDESITE_BRICK_SLAB.block, ANDESITE_BRICKS.block, map, generator);
+        stairs(ANDESITE_BRICK_STAIRS.block, map, generator);
+        wall(ANDESITE_BRICK_WALL.block, map, generator);
 
+        // DIORITE_BRICKS
         map = textureAll(DIORITE_BRICKS);
-        slab(DIORITE_BRICKS.block, DIORITE_BRICKS.block, map, generator);
-        stairs(DIORITE_BRICKS.block, map, generator);
-        wall(DIORITE_BRICKS.block, map, generator);
+        slab(DIORITE_BRICK_SLAB.block, DIORITE_BRICKS.block, map, generator);
+        stairs(DIORITE_BRICK_STAIRS.block, map, generator);
+        wall(DIORITE_BRICK_WALL.block, map, generator);
 
+        // GRANITE_BRICKS
         map = textureAll(GRANITE_BRICKS);
-        slab(GRANITE_BRICKS.block, GRANITE_BRICKS.block, map, generator);
-        stairs(GRANITE_BRICKS.block, map, generator);
-        wall(GRANITE_BRICKS.block, map, generator);
+        slab(GRANITE_BRICK_SLAB.block, GRANITE_BRICKS.block, map, generator);
+        stairs(GRANITE_BRICK_STAIRS.block, map, generator);
+        wall(GRANITE_BRICK_WALL.block, map, generator);
 
-        //Dripstone
-        map = textureAll(DRIPSTONE_TILES);
-        slab(DRIPSTONE_TILES.block, DRIPSTONE_TILES.block, map, generator);
-        stairs(DRIPSTONE_TILES.block, map, generator);
-        wall(DRIPSTONE_TILES.block, map, generator);
+        // POLISHED_PRISMARINE
+        map = textureAll(POLISHED_PRISMARINE);
+        slab(POLISHED_PRISMARINE_SLAB.block, POLISHED_PRISMARINE.block, map, generator);
+        stairs(POLISHED_PRISMARINE_STAIRS.block, map, generator);
+        wall(POLISHED_PRISMARINE_WALL.block, map, generator);
 
-        map = textureAll(DRIPSTONE_BRICKS);
-        slab(DRIPSTONE_BRICKS.block, DRIPSTONE_BRICKS.block, map, generator);
-        stairs(DRIPSTONE_BRICKS.block, map, generator);
-        wall(DRIPSTONE_BRICKS.block, map, generator);
-
+        // POLISHED_DRIPSTONE
         map = textureAll(POLISHED_DRIPSTONE);
-        slab(POLISHED_DRIPSTONE.block, POLISHED_DRIPSTONE.block, map, generator);
-        stairs(POLISHED_DRIPSTONE.block, map, generator);
-        wall(POLISHED_DRIPSTONE.block, map, generator);
+        slab(POLISHED_DRIPSTONE_SLAB.block, POLISHED_DRIPSTONE.block, map, generator);
+        stairs(POLISHED_DRIPSTONE_STAIRS.block, map, generator);
+        wall(POLISHED_DRIPSTONE_WALL.block, map, generator);
 
-        //Salt
+        // DRIPSTONE_BRICKS
+        map = textureAll(DRIPSTONE_BRICKS);
+        slab(DRIPSTONE_BRICK_SLAB.block, DRIPSTONE_BRICKS.block, map, generator);
+        stairs(DRIPSTONE_BRICK_STAIRS.block, map, generator);
+        wall(DRIPSTONE_BRICK_WALL.block, map, generator);
+
+        // MOSSY_DRIPSTONE_BRICKS
+        map = textureAll(MOSSY_DRIPSTONE_BRICKS);
+        slab(MOSSY_DRIPSTONE_BRICK_SLAB.block, MOSSY_DRIPSTONE_BRICKS.block, map, generator);
+        stairs(MOSSY_DRIPSTONE_BRICK_STAIRS.block, map, generator);
+        wall(MOSSY_DRIPSTONE_BRICK_WALL.block, map, generator);
+
+        // DRIPSTONE_TILES
+        map = textureAll(DRIPSTONE_TILES);
+        slab(DRIPSTONE_TILE_SLAB.block, DRIPSTONE_TILES.block, map, generator);
+        stairs(DRIPSTONE_TILE_STAIRS.block, map, generator);
+        wall(DRIPSTONE_TILE_WALL.block, map, generator);
+
+        // PATTERNED_DRIPSTONES
+        map = textureAll(PATTERNED_DRIPSTONE);
+        slab(PATTERNED_DRIPSTONE_SLAB.block, PATTERNED_DRIPSTONE.block, map, generator);
+        stairs(PATTERNED_DRIPSTONE_STAIRS.block, map, generator);
+
+        // DRIPSTONE_MOSAICS
+        map = textureAll(DRIPSTONE_MOSAIC);
+        slab(DRIPSTONE_MOSAIC_SLAB.block, DRIPSTONE_MOSAIC.block, map, generator);
+        stairs(DRIPSTONE_MOSAIC_STAIRS.block, map, generator);
+
+        // POLISHED_SALT_BLOCKS
         map = textureAll(POLISHED_SALT_BLOCK);
-        slab(POLISHED_SALT_BLOCK.block, POLISHED_SALT_BLOCK.block, map, generator);
-        stairs(POLISHED_SALT_BLOCK.block, map, generator);
-        wall(POLISHED_SALT_BLOCK.block, map, generator);
+        slab(POLISHED_SALT_BLOCK_SLAB.block, POLISHED_SALT_BLOCK.block, map, generator);
+        stairs(POLISHED_SALT_BLOCK_STAIRS.block, map, generator);
+        wall(POLISHED_SALT_BLOCK_WALL.block, map, generator);
 
+        // SALT_BRICKS
         map = textureAll(SALT_BRICKS);
-        slab(SALT_BRICKS.block, SALT_BRICKS.block, map, generator);
-        stairs(SALT_BRICKS.block, map, generator);
-        wall(SALT_BRICKS.block, map, generator);
+        slab(SALT_BRICK_SLAB.block, SALT_BRICKS.block, map, generator);
+        stairs(SALT_BRICK_STAIRS.block, map, generator);
+        wall(SALT_BRICK_WALL.block, map, generator);
 
-        //Basalt
-
+        // POLISHED_BASALTS
         map = textureAll(POLISHED_BASALT);
-        slab(POLISHED_BASALT.block, POLISHED_BASALT.block, map, generator);
-        stairs(POLISHED_BASALT.block, map, generator);
-        wall(POLISHED_BASALT.block, map, generator);
+        slab(POLISHED_BASALT_SLAB.block, POLISHED_BASALT.block, map, generator);
+        stairs(POLISHED_BASALT_STAIRS.block, map, generator);
+        wall(POLISHED_BASALT_WALL.block, map, generator);
 
+        // POLISHED_BASALT_BRICKS
         map = textureAll(POLISHED_BASALT_BRICKS);
-        slab(POLISHED_BASALT_BRICKS.block, POLISHED_BASALT_BRICKS.block, map, generator);
-        stairs(POLISHED_BASALT_BRICKS.block, map, generator);
-        wall(POLISHED_BASALT_BRICKS.block, map, generator);
+        slab(POLISHED_BASALT_BRICK_SLAB.block, POLISHED_BASALT_BRICKS.block, map, generator);
+        stairs(POLISHED_BASALT_BRICK_STAIRS.block, map, generator);
+        wall(POLISHED_BASALT_BRICK_WALL.block, map, generator);
 
-        //Scorchstone
+        // POLISHED_BASALT_PATTERNED
+        map = textureAll(POLISHED_BASALT_PATTERNED);
+        slab(POLISHED_BASALT_PATTERNED_SLAB.block, POLISHED_BASALT_PATTERNED.block, map, generator);
+        stairs(POLISHED_BASALT_PATTERNED_STAIRS.block, map, generator);
+
+        // KITCHEN_TILES
+        map = textureAll(KITCHEN_TILES);
+        slab(KITCHEN_TILES_SLAB.block, KITCHEN_TILES.block, map, generator);
+        stairs(KITCHEN_TILES_STAIRS.block, map, generator);
+
+        // ROUGH_SANDSTONE
+        map = textureAll(ROUGH_SANDSTONE);
+        slab(ROUGH_SANDSTONE_SLAB.block, ROUGH_SANDSTONE.block, map, generator);
+        stairs(ROUGH_SANDSTONE_STAIRS.block, map, generator);
+        wall(ROUGH_SANDSTONE_WALL.block, map, generator);
+
+        // ROUGH_RED_SANDSTONE
+        map = textureAll(ROUGH_RED_SANDSTONE);
+        slab(ROUGH_RED_SANDSTONE_SLAB.block, ROUGH_RED_SANDSTONE.block, map, generator);
+        stairs(ROUGH_RED_SANDSTONE_STAIRS.block, map, generator);
+        wall(ROUGH_RED_SANDSTONE_WALL.block, map, generator);
+
+        // STRATIFIED_SANDSTONE
+        map = textureAll(STRATIFIED_SANDSTONE);
+        slab(STRATIFIED_SANDSTONE_SLAB.block, STRATIFIED_SANDSTONE.block, map, generator);
+        stairs(STRATIFIED_SANDSTONE_STAIRS.block, map, generator);
+        wall(STRATIFIED_SANDSTONE_WALL.block, map, generator);
+
+        // STRATIFIED_RED_SANDSTONE
+        map = textureAll(STRATIFIED_RED_SANDSTONE);
+        slab(STRATIFIED_RED_SANDSTONE_SLAB.block, STRATIFIED_RED_SANDSTONE.block, map, generator);
+        stairs(STRATIFIED_RED_SANDSTONE_STAIRS.block, map, generator);
+        wall(STRATIFIED_RED_SANDSTONE_WALL.block, map, generator);
+
+        // SANDSTONE_BRICKS
+        map = textureAll(SANDSTONE_BRICKS);
+        slab(SANDSTONE_BRICK_SLAB.block, SANDSTONE_BRICKS.block, map, generator);
+        stairs(SANDSTONE_BRICK_STAIRS.block, map, generator);
+        wall(SANDSTONE_BRICK_WALL.block, map, generator);
+
+        // CRACKED_SANDSTONE_BRICKS
+        map = textureAll(CRACKED_SANDSTONE_BRICKS);
+        slab(CRACKED_SANDSTONE_BRICK_SLAB.block, CRACKED_SANDSTONE_BRICKS.block, map, generator);
+        stairs(CRACKED_SANDSTONE_BRICK_STAIRS.block, map, generator);
+        wall(CRACKED_SANDSTONE_BRICK_WALL.block, map, generator);
+
+        // MOSSY_SANDSTONE_BRICKS
+        map = textureAll(MOSSY_SANDSTONE_BRICKS);
+        slab(MOSSY_SANDSTONE_BRICK_SLAB.block, MOSSY_SANDSTONE_BRICKS.block, map, generator);
+        stairs(MOSSY_SANDSTONE_BRICK_STAIRS.block, map, generator);
+        wall(MOSSY_SANDSTONE_BRICK_WALL.block, map, generator);
+
+        // RED_SANDSTONE_BRICKS
+        map = textureAll(RED_SANDSTONE_BRICKS);
+        slab(RED_SANDSTONE_BRICK_SLAB.block, RED_SANDSTONE_BRICKS.block, map, generator);
+        stairs(RED_SANDSTONE_BRICK_STAIRS.block, map, generator);
+        wall(RED_SANDSTONE_BRICK_WALL.block, map, generator);
+
+        // CRACKED_RED_SANDSTONE_BRICKS
+        map = textureAll(CRACKED_RED_SANDSTONE_BRICKS);
+        slab(CRACKED_RED_SANDSTONE_BRICK_SLAB.block, CRACKED_RED_SANDSTONE_BRICKS.block, map, generator);
+        stairs(CRACKED_RED_SANDSTONE_BRICK_STAIRS.block, map, generator);
+        wall(CRACKED_RED_SANDSTONE_BRICK_WALL.block, map, generator);
+
+        // MOSSY_RED_SANDSTONE_BRICKS
+        map = textureAll(MOSSY_RED_SANDSTONE_BRICKS);
+        slab(MOSSY_RED_SANDSTONE_BRICK_SLAB.block, MOSSY_RED_SANDSTONE_BRICKS.block, map, generator);
+        stairs(MOSSY_RED_SANDSTONE_BRICK_STAIRS.block, map, generator);
+        wall(MOSSY_RED_SANDSTONE_BRICK_WALL.block, map, generator);
+
+        // SCORCHSTONE_POLISHED
+        map = textureAll(SCORCHSTONE_POLISHED);
+        slab(SCORCHSTONE_POLISHED_SLAB.block, SCORCHSTONE_POLISHED.block, map, generator);
+        stairs(SCORCHSTONE_POLISHED_STAIRS.block, map, generator);
+        wall(SCORCHSTONE_POLISHED_WALL.block, map, generator);
+
+        // SCORCHSTONE
+        map = textureAll(SCORCHSTONE);
+        slab(SCORCHSTONE_SLAB.block, SCORCHSTONE.block, map, generator);
+        stairs(SCORCHSTONE_STAIRS.block, map, generator);
+        wall(SCORCHSTONE_WALL.block, map, generator);
+
+        // SCORCHSTONE_BRICKS
         map = textureAll(SCORCHSTONE_BRICKS);
-        slab(SCORCHSTONE_BRICKS.block, SCORCHSTONE_BRICKS.block, map, generator);
-        stairs(SCORCHSTONE_BRICKS.block, map, generator);
-        wall(SCORCHSTONE_BRICKS.block, map, generator);
+        slab(SCORCHSTONE_BRICK_SLAB.block, SCORCHSTONE_BRICKS.block, map, generator);
+        stairs(SCORCHSTONE_BRICK_STAIRS.block, map, generator);
+        wall(SCORCHSTONE_BRICK_WALL.block, map, generator);
 
-        map = textureAll(SCORCHSTONE_TILES);
-        slab(SCORCHSTONE_TILES.block, SCORCHSTONE_TILES.block, map, generator);
-        stairs(SCORCHSTONE_TILES.block, map, generator);
-        wall(SCORCHSTONE_TILES.block, map, generator);
+        // MOSSY_SCORCHSTONE_BRICKS
+        map = textureAll(MOSSY_SCORCHSTONE_BRICKS);
+        slab(MOSSY_SCORCHSTONE_BRICK_SLAB.block, MOSSY_SCORCHSTONE_BRICKS.block, map, generator);
+        stairs(MOSSY_SCORCHSTONE_BRICK_STAIRS.block, map, generator);
+        wall(MOSSY_SCORCHSTONE_BRICK_WALL.block, map, generator);
 
-        //Cobblestone Bricks
+        // SCORCHSTONE_MOSAICS
+        map = textureAll(SCORCHSTONE_MOSAIC);
+        slab(SCORCHSTONE_MOSAIC_SLAB.block, SCORCHSTONE_MOSAIC.block, map, generator);
+        stairs(SCORCHSTONE_MOSAIC_STAIRS.block, map, generator);
+
+        // VOLCANIC_STONE
+        map = textureAll(VOLCANIC_STONE);
+        slab(VOLCANIC_STONE_SLAB.block, VOLCANIC_STONE.block, map, generator);
+        stairs(VOLCANIC_STONE_STAIRS.block, map, generator);
+        wall(VOLCANIC_STONE_WALL.block, map, generator);
+
+        // POLISHED_PACKED_MUD
+        map = textureAll(POLISHED_PACKED_MUD);
+        slab(POLISHED_PACKED_MUD_SLAB.block, POLISHED_PACKED_MUD.block, map, generator);
+        stairs(POLISHED_PACKED_MUD_STAIRS.block, map, generator);
+        wall(POLISHED_PACKED_MUD_WALL.block, map, generator);
+
+        // SMOOTH_BRICK
+        map = textureAll(SMOOTH_BRICK);
+        slab(SMOOTH_BRICK_SLAB.block, SMOOTH_BRICK.block, map, generator);
+        stairs(SMOOTH_BRICK_STAIRS.block, map, generator);
+        wall(SMOOTH_BRICK_WALL.block, map, generator);
+
+        // MOSAIC_BRICKS
+        map = textureAll(MOSAIC_BRICK);
+        slab(MOSAIC_BRICK_SLAB.block, MOSAIC_BRICK.block, map, generator);
+        stairs(MOSAIC_BRICK_STAIRS.block, map, generator);
+
+        // MOSSY_STONE
+        map = textureAll(MOSSY_STONE);
+        slab(MOSSY_STONE_SLAB.block, MOSSY_STONE.block, map, generator);
+        stairs(MOSSY_STONE_STAIRS.block, map, generator);
+        wall(MOSSY_STONE_WALL.block, map, generator);
+
+        // COBBLESTONE_BRICKS
         map = textureAll(COBBLESTONE_BRICKS);
-        slab(COBBLESTONE_BRICKS.block, COBBLESTONE_BRICKS.block, map, generator);
-        stairs(COBBLESTONE_BRICKS.block, map, generator);
-        wall(COBBLESTONE_BRICKS.block, map, generator);
+        slab(COBBLESTONE_BRICK_SLAB.block, COBBLESTONE_BRICKS.block, map, generator);
+        stairs(COBBLESTONE_BRICK_STAIRS.block, map, generator);
+        wall(COBBLESTONE_BRICK_WALL.block, map, generator);
+
+        // MOSSY_COBBLESTONE_BRICKS
+        map = textureAll(MOSSY_COBBLESTONE_BRICKS);
+        slab(MOSSY_COBBLESTONE_BRICK_SLAB.block, MOSSY_COBBLESTONE_BRICKS.block, map, generator);
+        stairs(MOSSY_COBBLESTONE_BRICK_STAIRS.block, map, generator);
+        wall(MOSSY_COBBLESTONE_BRICK_WALL.block, map, generator);
+
+        // STONE_TILES
+        map = textureAll(STONE_TILES);
+        slab(STONE_TILE_SLAB.block, STONE_TILES.block, map, generator);
+        stairs(STONE_TILE_STAIRS.block, map, generator);
+
+        // POLISHED_STONE
+        map = textureAll(POLISHED_STONE);
+        slab(POLISHED_STONE_SLAB.block, POLISHED_STONE.block, map, generator);
+        stairs(POLISHED_STONE_STAIRS.block, map, generator);
+        wall(POLISHED_STONE_WALL.block, map, generator);
+
+        // SMOOTH_STONE_TILES
+        map = textureAll(SMOOTH_STONE_TILES);
+        slab(SMOOTH_STONE_TILE_SLAB.block, SMOOTH_STONE_TILES.block, map, generator);
+        stairs(SMOOTH_STONE_TILE_STAIRS.block, map, generator);
+        wall(SMOOTH_STONE_TILE_WALL.block, map, generator);
 
         //Mamon
         map = textureAll(MAMON_PLANKS);

@@ -31,7 +31,6 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
-    
 
     BLACK_DAHLIA(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     FLOWERING_CACTUS(new ModCactusBlock(FLOWERING_CACTUS_SHAPE), itemSettings()),
@@ -174,8 +173,8 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     SHELL_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),
     DEEP_SEA_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
     ABYSSAL_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
-    VOLCANIC_STONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    VOLCANIC_MAGMA_STONE(new Block(Block.Settings.copy(Blocks.MAGMA_BLOCK)), itemSettings()),
+    VOLCANIC_STONE(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    VOLCANIC_MAGMA_STONE(new Block(Block.Settings.copy(Blocks.MAGMA_BLOCK).sounds(BlockSoundGroup.TUFF)), itemSettings()),
     VOLCANIC_ASH(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
 
     MAMON_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
@@ -224,7 +223,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     DIABASE(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     SERPENTINITE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     GRIMESTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    LIMESTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    //LIMESTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     SHIVERSTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     VERDANTINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
@@ -233,7 +232,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     ROCKS(new RockBlock(), itemSettings().group(ModGroups.VC_ITEMS)),
     FLINT_ROCKS(new RockBlock(), itemSettings().group(ModGroups.FLORA_GROUP)),
 
-    ADVENTURINE(new Block(Block.Settings.copy(Blocks.STONE).hardness(25).luminance(s ->1)), itemSettings()),
+    ADVENTURINE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
     ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
     ERDCOBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE).hardness(2)), itemSettings()),
 
@@ -249,12 +248,15 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     PACKED_SNOW(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
     ICICLE_PACKED_ICE(new IcicleGrowingBlock(), itemSettings()),
     ICICLE(new IcicleBlock(Block.Settings.copy(Blocks.PACKED_ICE).nonOpaque().strength(0.4f)), itemSettings()),
+
     ROUGH_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
     SCALDING_SANDSTONE(new ScaldingBlock(Block.Settings.copy(Blocks.SANDSTONE).ticksRandomly().luminance(s ->3)), itemSettings()),
     STRATIFIED_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     ROUGH_RED_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
     SCALDING_RED_SANDSTONE(new ScaldingBlock(Block.Settings.copy(Blocks.RED_SANDSTONE).ticksRandomly().luminance(s ->3)), itemSettings()),
     STRATIFIED_RED_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+
     SCORCHSTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     SCALDING_SCORCHSTONE(new ScaldingBlock(Block.Settings.copy(Blocks.STONE).ticksRandomly().luminance(s ->3)), itemSettings().fireproof()),
     SCALDING_DEEPSLATE(new ScaldingBlock(Block.Settings.copy(Blocks.DEEPSLATE).ticksRandomly().luminance(s ->3)), itemSettings()),
@@ -295,7 +297,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     APPLE_SEED(new SeedBlock(APPLE_SAPLING.block)),
     AMBERBLOSSOM_SEED(new SeedBlock(MAMON_SAPLING.block)),
     WARM_BIRCH_SEED(new SeedBlock(WARM_BIRCH_SAPLING.block));
-    
     
     public static void initialize() {
         ((VineHeadBlock)ARID_VINES.block).setPlant(ARID_VINES_PLANT.block);
