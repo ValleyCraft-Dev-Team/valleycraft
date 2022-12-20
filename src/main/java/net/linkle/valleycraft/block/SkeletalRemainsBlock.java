@@ -23,6 +23,6 @@ public class SkeletalRemainsBlock extends HorizontalWithWaterBlock {
     
     @Override
     protected Direction getFacing(ItemPlacementContext ctx) {
-        return super.getFacing(ctx);
+        return super.getFacing(ctx).getOpposite();
     }
 }

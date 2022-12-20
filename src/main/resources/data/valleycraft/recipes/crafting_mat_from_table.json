@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "c:rocks"
+      "item": "minecraft:crafting_table"
     }
   ],
   "result": {
-    "item": "valleycraft:throwing_rock",
-    "count": 3
+    "item": "valleycraft:crafting_mat",
+    "count": 1
   }
 }
