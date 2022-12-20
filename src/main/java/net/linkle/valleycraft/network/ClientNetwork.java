@@ -28,7 +28,7 @@ public class ClientNetwork {
     // List of packet handlers
     
     /**
-     * Show the item on player's screen like the Totem Of Undying. See
+     * Show the item on the player's screen like the Totem Of Undying. See
      * {@link ServerNetwork#sendFloatingItem} where it sent from.
      */
     private static void showFloatingItem(MinecraftClient client, ClientPlayNetworkHandler handler, PacketByteBuf buf, PacketSender responseSender) {

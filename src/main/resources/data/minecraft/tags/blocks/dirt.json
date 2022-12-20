@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:dry_dirt",
+    "valleycraft:stone_cave_grass",
+    "valleycraft:shale_cave_grass",
+    "valleycraft:deepslate_cave_grass"
+  ]
+}

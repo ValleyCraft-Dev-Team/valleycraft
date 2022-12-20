@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.block.entity;
 
-import net.linkle.valleycraft.block.CounterBlock;
+import net.linkle.valleycraft.block.CounterDrawerBlock;
 import net.linkle.valleycraft.init.ModBlockEntityType;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -37,12 +37,12 @@ public class CounterBlockEntity extends ContainerBlockEntity {
     
     @Override
     protected void setOpen(BlockState state, boolean open) {
-        world.setBlockState(getPos(), state.with(CounterBlock.OPEN, open), Block.NOTIFY_ALL);
+        world.setBlockState(getPos(), state.with(CounterDrawerBlock.OPEN, open), Block.NOTIFY_ALL);
         playSound(state, open ? SoundEvents.BLOCK_BARREL_OPEN : SoundEvents.BLOCK_BARREL_CLOSE);
     }
     
     private void playSound(BlockState state, SoundEvent soundEvent) {
-        var vec = state.get(CounterBlock.FACING).getVector();
+        var vec = state.get(CounterDrawerBlock.FACING).getVector();
         double x = (double)pos.getX() + 0.5 + (double)vec.getX() / 2.0;
         double y = (double)pos.getY() + 0.5 + (double)vec.getY() / 2.0;
         double z = (double)pos.getZ() + 0.5 + (double)vec.getZ() / 2.0;

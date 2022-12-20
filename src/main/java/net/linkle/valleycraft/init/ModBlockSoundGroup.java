@@ -5,7 +5,10 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 public enum ModBlockSoundGroup {
-    POT(ModSounds.POT_BREAK.sound, SoundEvents.BLOCK_GLASS_STEP, SoundEvents.BLOCK_GLASS_PLACE, SoundEvents.BLOCK_GLASS_HIT, SoundEvents.BLOCK_GLASS_FALL);
+    POT(ModSounds.POT_BREAK.sound, SoundEvents.BLOCK_GLASS_STEP, SoundEvents.BLOCK_GLASS_PLACE, SoundEvents.BLOCK_GLASS_HIT, SoundEvents.BLOCK_GLASS_FALL),
+    MOSS_STONE(SoundEvents.BLOCK_STONE_BREAK, SoundEvents.BLOCK_MOSS_STEP, SoundEvents.BLOCK_STONE_PLACE, SoundEvents.BLOCK_STONE_HIT, SoundEvents.BLOCK_MOSS_FALL),
+    MOSS_SHALE(SoundEvents.BLOCK_BASALT_BREAK, SoundEvents.BLOCK_MOSS_STEP, SoundEvents.BLOCK_BASALT_PLACE, SoundEvents.BLOCK_BASALT_HIT, SoundEvents.BLOCK_MOSS_FALL),
+    MOSS_DEEPSLATE(SoundEvents.BLOCK_DEEPSLATE_BREAK, SoundEvents.BLOCK_MOSS_STEP, SoundEvents.BLOCK_DEEPSLATE_PLACE, SoundEvents.BLOCK_DEEPSLATE_HIT, SoundEvents.BLOCK_MOSS_FALL);
     
     // ### The Enum Class Itself ###
     

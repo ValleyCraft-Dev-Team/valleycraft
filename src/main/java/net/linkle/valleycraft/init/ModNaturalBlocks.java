@@ -203,10 +203,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     HOLLOW_OAK_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
     HOLLOW_SPRUCE_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.SPRUCE_LOG)), itemSettings()),
 
-    STONE_CAVE_GRASS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.MOSS_BLOCK)), itemSettings()),
-    SHALE_CAVE_GRASS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    DEEPSLATE_CAVE_GRASS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.MOSS_BLOCK)), itemSettings()),
-
     ARID_VINES(new VineHeadBlock(), itemSettings()),
     ARID_VINES_PLANT(new VineBodyBlock()),
     //CAVE_MOSS(new CaveMossBlock(), itemSettings()),
@@ -215,6 +211,10 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     SLUDGE_FLUID(new SludgeFluidBlock(ModFluids.SLUDGE_STILL.flowable())),
 
     SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    
+    STONE_CAVE_GRASS(new CaveGrassStoneBlock(Blocks.STONE, ModBlockSoundGroup.MOSS_STONE.sound), itemSettings()),
+    SHALE_CAVE_GRASS(new CaveGrassStoneBlock(SHALE.block, ModBlockSoundGroup.MOSS_SHALE.sound), itemSettings()),
+    DEEPSLATE_CAVE_GRASS(new CaveGrassStoneBlock(Blocks.DEEPSLATE, ModBlockSoundGroup.MOSS_DEEPSLATE.sound), itemSettings()),
 
     DRY_DIRT(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
     SANDY_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),

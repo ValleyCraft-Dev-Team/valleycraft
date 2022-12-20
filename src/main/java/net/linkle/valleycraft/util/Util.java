@@ -1,6 +1,7 @@
 package net.linkle.valleycraft.util;
 
 import java.util.Random;
+import java.util.random.RandomGenerator;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -9,7 +10,6 @@ import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.util.math.MathHelper;
 
 public class Util extends net.minecraft.util.Util {
     public static final Random RANDOM = new Random();
@@ -25,8 +25,26 @@ public class Util extends net.minecraft.util.Util {
         return expectedType == givenType ? (BlockEntityTicker<A>) ticker : null;
     }
     
-    public static int nextInt(Random random, int min, int max) {
+    public static int nextInt(RandomGenerator random, int min, int max) {
         return random.nextInt(max - min + 1) + min;
+    }
+    
+    /** Return true if the first object equals *any* of the second objects.
+     *  You can append more objects into this method. */
+    public static boolean equalsAny(Object first, Object... objects) {
+        for (var object : objects) {
+            if (first.equals(object)) return true;
+        }
+        return false;
+    }
+    
+    /** Return true if the first object equals *all* of the second objects.
+     *  You can append more objects into this method. */
+    public static boolean equals(Object first, Object... objects) {
+        for (var object : objects) {
+            if (!first.equals(object)) return false;
+        }
+        return true;
     }
     
     public static float pow(float val, int num) {

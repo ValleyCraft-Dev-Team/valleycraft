@@ -46,9 +46,9 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BRICK_STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
     LOG_PILE(new LogPile(Block.Settings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
     CRATE(new CrateBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
-    COUNTER_DRAWER(new CounterBlock(Block.Settings.copy(Blocks.BARREL).nonOpaque()), itemSettings()),
-    COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    COUNTER_CORNER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    COUNTER_DRAWER(new CounterDrawerBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    COUNTER(new CounterBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    COUNTER_CORNER(new CounterCornerBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
 
     CABINET(new CabinetBlock(Block.Settings.copy(Blocks.BARREL).nonOpaque()), itemSettings()),
     EMPTY_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),

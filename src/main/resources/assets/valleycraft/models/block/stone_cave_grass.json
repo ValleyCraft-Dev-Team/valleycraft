@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "valleycraft:block/cave_moss_rooted_stone",
+    "side": "valleycraft:block/cave_grass_side_alt",
+    "top": "valleycraft:block/cave_grass_top"
+  }
+}

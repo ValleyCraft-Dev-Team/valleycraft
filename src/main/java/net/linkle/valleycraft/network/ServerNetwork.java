@@ -30,7 +30,7 @@ public class ServerNetwork {
     // List of packet sender
 
     /**
-     * Show the item on player's screen like the Totem Of Undying. See
+     * Show the item on the player's screen like the Totem Of Undying. See
      * {@link ClientNetwork#showFloatingItem} where it sent to.
      */
     public static void sendFloatingItem(ServerPlayerEntity player, ItemStack stack) {

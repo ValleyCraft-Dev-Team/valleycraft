@@ -28,7 +28,7 @@ import net.linkle.valleycraft.tool.travelers_sword.TravelerBase;
 import net.linkle.valleycraft.tool.travelers_sword.TravelerBaseFixed;
 import net.linkle.valleycraft.tool.unbreakable.BrokenMythicTravelerBase;
 import net.linkle.valleycraft.tool.unbreakable.UnbreakableMythicScytheBase;
-import net.linkle.valleycraft.tool.unbreakable.UnbreakableMythicTravelerBase;
+import net.linkle.valleycraft.tool.unbreakable.UnbreakableMythicSwordBase;
 import net.linkle.valleycraft.tool.woodcutter_axe.WoodcutterAxeBase;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
@@ -39,6 +39,7 @@ import net.minecraft.util.Rarity;
 import static net.linkle.valleycraft.init.ModGroups.BOOKS;
 import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
 
+import net.linkle.valleycraft.interfaces.PreventDestroy;
 import net.linkle.valleycraft.item.ClimbingAxeItem;
 import net.linkle.valleycraft.item.ModHoeItem;
 
@@ -242,10 +243,10 @@ public class ModTools {
         //Artifacts
         Reg.register("ancient_bamboo_staff", new StaffBase(ModToolMaterials.NATURES_BLESSING, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
         Reg.register("goddess_blade_found", new BrokenMythicTravelerBase(ModToolMaterials.BROKEN_GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_EPIC));
-        Item goddessBlade = Reg.register("goddess_blade", new UnbreakableMythicTravelerBase(ModToolMaterials.GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_1561));
-        ModelPredicateProviderRegistry.register(goddessBlade, new Identifier("broken"), (stack, world, entity, seed) -> ElytraItem.isUsable(stack) ? 0.0f : 1.0f);
+        Item goddessBlade = Reg.register("goddess_blade", new UnbreakableMythicSwordBase(ModToolMaterials.GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_1561));
+        ModelPredicateProviderRegistry.register(goddessBlade, new Identifier("broken"), (stack, world, entity, seed) -> PreventDestroy.isUsable(stack) ? 0.0f : 1.0f);
         Item junglesBlessing = Reg.register("jungles_blessing", new UnbreakableMythicScytheBase(ModToolMaterials.NATURES_BLESSING, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_780));
-        ModelPredicateProviderRegistry.register(junglesBlessing, new Identifier("broken"), (stack, world, entity, seed) -> ElytraItem.isUsable(stack) ? 0.0f : 1.0f);
+        ModelPredicateProviderRegistry.register(junglesBlessing, new Identifier("broken"), (stack, world, entity, seed) -> PreventDestroy.isUsable(stack) ? 0.0f : 1.0f);
 
         Reg.register("knife_coral_encrusted", CORAL_KNIFE);
         Reg.register("rapier_cave_fishers", CAVE_FISHERS_RAPIER);

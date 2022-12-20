@@ -30,7 +30,7 @@ public interface EnchantmentHandler {
     //CROSSBOW      Quick Charge, Multishot, Piercing
     //VANISHABLE    Curse of Vanishing
     default List<EnchantmentTarget> getEnchantmentTypes() {
-        return Collections.emptyList();
+        return List.of();
     }
 
     /** Use this method to list specific enchantments the item should *not* accept that it would otherwise. */
