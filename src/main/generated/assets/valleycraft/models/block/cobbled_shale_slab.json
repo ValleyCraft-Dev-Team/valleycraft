@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "valleycraft:block/cobbled_shale",
+    "side": "valleycraft:block/cobbled_shale",
+    "top": "valleycraft:block/cobbled_shale"
+  }
+}

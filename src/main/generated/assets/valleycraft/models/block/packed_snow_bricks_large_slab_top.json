@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "valleycraft:block/packed_snow_bricks_large",
+    "side": "valleycraft:block/packed_snow_bricks_large",
+    "top": "valleycraft:block/packed_snow_bricks_large"
+  }
+}

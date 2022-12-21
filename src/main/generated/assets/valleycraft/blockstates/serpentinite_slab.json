@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/serpentinite_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/serpentinite"
+    },
+    "type=top": {
+      "model": "valleycraft:block/serpentinite_slab_top"
+    }
+  }
+}

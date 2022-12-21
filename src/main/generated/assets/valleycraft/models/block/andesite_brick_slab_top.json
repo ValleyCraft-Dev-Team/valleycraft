@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "valleycraft:block/andesite_bricks",
+    "side": "valleycraft:block/andesite_bricks",
+    "top": "valleycraft:block/andesite_bricks"
+  }
+}

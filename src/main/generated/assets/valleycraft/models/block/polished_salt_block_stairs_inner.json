@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "valleycraft:block/polished_salt_block",
+    "side": "valleycraft:block/polished_salt_block",
+    "top": "valleycraft:block/polished_salt_block"
+  }
+}

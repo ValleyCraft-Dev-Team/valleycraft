@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/canvas_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/canvas_block"
+    },
+    "type=top": {
+      "model": "valleycraft:block/canvas_slab_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/kitchen_tiles_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/kitchen_tiles"
+    },
+    "type=top": {
+      "model": "valleycraft:block/kitchen_tiles_slab_top"
+    }
+  }
+}

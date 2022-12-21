@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "valleycraft:block/red_sandstone_bricks",
+    "side": "valleycraft:block/red_sandstone_bricks",
+    "top": "valleycraft:block/red_sandstone_bricks"
+  }
+}

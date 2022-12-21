@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/primsteel_tiled_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/primsteel_tiled_plate"
+    },
+    "type=top": {
+      "model": "valleycraft:block/primsteel_tiled_slab_top"
+    }
+  }
+}

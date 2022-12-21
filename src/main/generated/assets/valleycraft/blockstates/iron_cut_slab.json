@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/iron_cut_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/iron_cut_block"
+    },
+    "type=top": {
+      "model": "valleycraft:block/iron_cut_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "valleycraft:block/stone_tiles",
+    "side": "valleycraft:block/stone_tiles",
+    "top": "valleycraft:block/stone_tiles"
+  }
+}

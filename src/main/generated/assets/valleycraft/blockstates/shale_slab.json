@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/shale_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/shale"
+    },
+    "type=top": {
+      "model": "valleycraft:block/shale_slab_top"
+    }
+  }
+}

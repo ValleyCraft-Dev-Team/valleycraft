@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/shiverstone_tile_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/shiverstone_tiles"
+    },
+    "type=top": {
+      "model": "valleycraft:block/shiverstone_tile_slab_top"
+    }
+  }
+}

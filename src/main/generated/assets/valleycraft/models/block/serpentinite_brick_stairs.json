@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "valleycraft:block/serpentinite_bricks",
+    "side": "valleycraft:block/serpentinite_bricks",
+    "top": "valleycraft:block/serpentinite_bricks"
+  }
+}

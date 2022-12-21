@@ -58,7 +58,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         stairs(TIGHTLY_WEAVED_THATCH_STAIRS.block, map, generator);
 
         //Daub
-        map = textureAll("block_daub");
+        map = textureAll(BLOCK_DAUB);
         slab(DAUB_SLAB.block, BLOCK_DAUB.block, map, generator);
         stairs(DAUB_STAIRS.block, map, generator);
         wall(DAUB_WALL.block, map, generator);
@@ -617,12 +617,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerFlowerPotPlant(SPROUT.block, POTTED_SPROUT.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(DESERT_SHRUB.block, POTTED_DESERT_SHRUB.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(LUSH_BUSH.block, POTTED_LUSH_BUSH.block, TintType.NOT_TINTED);
-
-        // Smooth Carmine
-        map = textureAll(CARMINE_SMOOTH);
-        stairs(CARMINE_SMOOTH_STAIRS.block, map, generator);
-        slab(CARMINE_SMOOTH_SLAB.block, CARMINE_SMOOTH.block, map, generator);
-        wall(CARMINE_SMOOTH_WALL.block, map, generator);
     }
 
     @Override

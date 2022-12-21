@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "valleycraft:block/polished_packed_mud",
+    "side": "valleycraft:block/polished_packed_mud",
+    "top": "valleycraft:block/polished_packed_mud"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/marble_brick_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/marble_bricks"
+    },
+    "type=top": {
+      "model": "valleycraft:block/marble_brick_slab_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/thatch_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/thatch_block"
+    },
+    "type=top": {
+      "model": "valleycraft:block/thatch_slab_top"
+    }
+  }
+}

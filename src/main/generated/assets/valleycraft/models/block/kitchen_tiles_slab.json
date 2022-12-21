@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "valleycraft:block/kitchen_tiles",
+    "side": "valleycraft:block/kitchen_tiles",
+    "top": "valleycraft:block/kitchen_tiles"
+  }
+}

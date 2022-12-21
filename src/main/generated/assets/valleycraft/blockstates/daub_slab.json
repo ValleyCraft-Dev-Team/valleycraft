@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/daub_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/block_daub"
+    },
+    "type=top": {
+      "model": "valleycraft:block/daub_slab_top"
+    }
+  }
+}

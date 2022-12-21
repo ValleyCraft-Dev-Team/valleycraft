@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/polished_erdstone_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/polished_erdstone"
+    },
+    "type=top": {
+      "model": "valleycraft:block/polished_erdstone_slab_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/erdstone_mosaic_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/erdstone_mosaic"
+    },
+    "type=top": {
+      "model": "valleycraft:block/erdstone_mosaic_slab_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/packed_snow_polished_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/packed_snow_polished"
+    },
+    "type=top": {
+      "model": "valleycraft:block/packed_snow_polished_slab_top"
+    }
+  }
+}

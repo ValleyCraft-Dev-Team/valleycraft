@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/packed_snow_bricks_large_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/packed_snow_bricks_large"
+    },
+    "type=top": {
+      "model": "valleycraft:block/packed_snow_bricks_large_slab_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/mosaic_brick_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/mosaic_brick"
+    },
+    "type=top": {
+      "model": "valleycraft:block/mosaic_brick_slab_top"
+    }
+  }
+}

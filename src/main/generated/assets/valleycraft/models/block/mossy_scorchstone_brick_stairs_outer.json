@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "valleycraft:block/mossy_scorchstone_bricks",
+    "side": "valleycraft:block/mossy_scorchstone_bricks",
+    "top": "valleycraft:block/mossy_scorchstone_bricks"
+  }
+}

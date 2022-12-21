@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/polished_salt_block_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/polished_salt_block"
+    },
+    "type=top": {
+      "model": "valleycraft:block/polished_salt_block_slab_top"
+    }
+  }
+}

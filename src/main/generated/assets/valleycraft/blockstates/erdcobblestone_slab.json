@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/erdcobblestone_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/erdcobblestone"
+    },
+    "type=top": {
+      "model": "valleycraft:block/erdcobblestone_slab_top"
+    }
+  }
+}

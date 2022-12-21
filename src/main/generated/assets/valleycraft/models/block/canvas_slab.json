@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "valleycraft:block/canvas_block",
+    "side": "valleycraft:block/canvas_block",
+    "top": "valleycraft:block/canvas_block"
+  }
+}

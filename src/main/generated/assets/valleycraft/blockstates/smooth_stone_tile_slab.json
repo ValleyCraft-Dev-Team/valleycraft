@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/smooth_stone_tile_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/smooth_stone_tiles"
+    },
+    "type=top": {
+      "model": "valleycraft:block/smooth_stone_tile_slab_top"
+    }
+  }
+}

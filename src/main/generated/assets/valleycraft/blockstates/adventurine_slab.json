@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/adventurine_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/adventurine"
+    },
+    "type=top": {
+      "model": "valleycraft:block/adventurine_slab_top"
+    }
+  }
+}

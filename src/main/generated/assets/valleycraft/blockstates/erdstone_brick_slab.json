@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/erdstone_brick_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/erdstone_bricks"
+    },
+    "type=top": {
+      "model": "valleycraft:block/erdstone_brick_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "valleycraft:block/polished_erdstone",
+    "side": "valleycraft:block/polished_erdstone",
+    "top": "valleycraft:block/polished_erdstone"
+  }
+}
