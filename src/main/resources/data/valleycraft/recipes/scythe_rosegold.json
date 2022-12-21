@@ -1,12 +1,12 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "valleycraft:knife_wooden"
+    "item": "valleycraft:rosegold_hoe"
   },
   "addition": {
     "item": "valleycraft:plank"
   },
   "result": {
-    "item": "valleycraft:traveler_wooden"
+    "item": "valleycraft:scythe_rosegold"
   }
 }

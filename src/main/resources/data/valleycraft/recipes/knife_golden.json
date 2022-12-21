@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "valleycraft:plank"
+      "item": "minecraft:gold_ingot"
     },
     "V": {
       "tag": "c:handles"
     }
   },
   "result": {
-    "item": "valleycraft:knife_wooden",
+    "item": "valleycraft:knife_golden",
     "count": 1
   }
 }

@@ -1,20 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "knives",
   "pattern": [
-    "#",
-    "V"
+    "##",
+    "#V"
   ],
   "key": {
     "#": {
-      "item": "valleycraft:plank"
+      "tag": "c:stone_crafting_materials"
     },
     "V": {
       "tag": "c:handles"
     }
   },
   "result": {
-    "item": "valleycraft:knife_wooden",
+    "item": "valleycraft:hatchet_wooden",
     "count": 1
   }
 }

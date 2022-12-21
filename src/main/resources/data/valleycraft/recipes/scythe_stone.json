@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:stone_hoe"
+  },
+  "addition": {
+    "tag": "minecraft:stone_crafting_materials"
+  },
+  "result": {
+    "item": "valleycraft:scythe_stone"
+  }
+}

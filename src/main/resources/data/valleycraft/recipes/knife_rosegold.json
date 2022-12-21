@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "valleycraft:plank"
+      "item": "valleycraft:rosegold_ingot"
     },
     "V": {
-      "tag": "c:handles"
+      "item": "valleycraft:sturdy_handle"
     }
   },
   "result": {
-    "item": "valleycraft:knife_wooden",
+    "item": "valleycraft:knife_rosegold",
     "count": 1
   }
 }

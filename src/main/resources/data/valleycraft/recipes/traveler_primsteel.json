@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:knife_primsteel"
+  },
+  "addition": {
+    "item": "valleycraft:primsteel_ingot"
+  },
+  "result": {
+    "item": "valleycraft:traveler_primsteel"
+  }
+}

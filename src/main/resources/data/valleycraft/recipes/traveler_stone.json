@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:knife_stone"
+  },
+  "addition": {
+    "tag": "minecraft:stone_crafting_materials"
+  },
+  "result": {
+    "item": "valleycraft:traveler_stone"
+  }
+}

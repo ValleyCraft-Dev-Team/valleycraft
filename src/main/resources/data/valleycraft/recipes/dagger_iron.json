@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:knife_iron"
+  },
+  "addition": {
+    "item": "valleycraft:monster_claw"
+  },
+  "result": {
+    "item": "valleycraft:dagger_iron"
+  }
+}

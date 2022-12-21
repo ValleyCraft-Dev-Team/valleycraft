@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing",
+  "group": "bows",
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "addition": {
+    "tag": "c:stone_crafting_materials"
+  },
+  "result": {
+    "item": "valleycraft:bow_stone"
+  }
+}

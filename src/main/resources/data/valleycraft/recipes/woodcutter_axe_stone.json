@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:stone_axe"
+  },
+  "addition": {
+    "tag": "minecraft:stone_crafting_materials"
+  },
+  "result": {
+    "item": "valleycraft:woodcutter_axe_stone"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:primsteel_sword"
+  },
+  "addition": {
+    "item": "valleycraft:primsteel_ingot"
+  },
+  "result": {
+    "item": "valleycraft:primsteel_greatsword"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smithing",
+  "group": "bows",
+
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "addition": {
+    "item": "minecraft:gold_ingot"
+  },
+  "result": {
+    "item": "valleycraft:bow_golden"
+  }
+}

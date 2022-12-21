@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:knife_diamond"
+  },
+  "addition": {
+    "tag": "c:diamond_plate_ingots"
+  },
+  "result": {
+    "item": "valleycraft:traveler_diamond"
+  }
+}

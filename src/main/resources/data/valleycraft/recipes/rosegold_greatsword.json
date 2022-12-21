@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:rosegold_sword"
+  },
+  "addition": {
+    "item": "valleycraft:rosegold_ingot"
+  },
+  "result": {
+    "item": "valleycraft:rosegold_greatsword"
+  }
+}

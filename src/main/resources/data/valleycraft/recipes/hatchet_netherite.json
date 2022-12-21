@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "#V"
+  ],
+  "key": {
+    "#": {
+      "item": "minecaft:netherite_ingot"
+    },
+    "V": {
+      "item": "valleycraft:reinforced_handle"
+    }
+  },
+  "result": {
+    "item": "valleycraft:hatchet_netherite",
+    "count": 1
+  }
+}

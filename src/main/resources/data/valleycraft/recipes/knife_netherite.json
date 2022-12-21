@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "valleycraft:plank"
+      "item": "minecraft:netherite_ingot"
     },
     "V": {
-      "tag": "c:handles"
+      "item": "valleycraft:reinforced_handle"
     }
   },
   "result": {
-    "item": "valleycraft:knife_wooden",
+    "item": "valleycraft:knife_netherite",
     "count": 1
   }
 }

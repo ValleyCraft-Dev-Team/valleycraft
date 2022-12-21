@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "valleycraft:runecalling_book"
+      "item": "valleycraft:book_runecalling"
     },
     {
       "item": "valleycraft:rune_etching_blade"

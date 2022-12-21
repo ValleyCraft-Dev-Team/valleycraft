@@ -28,14 +28,6 @@ class ValleyModelGenerator extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator generator) {
         TextureMap map;
         
-        // Doors
-        generator.registerDoor(APPLE_DOOR.block);
-        generator.registerDoor(MAMON_DOOR.block);
-        generator.registerDoor(WATTLE_DOOR.block);
-        generator.registerDoor(GLASS_DOOR.block);
-        generator.registerDoor(TINTED_GLASS_DOOR.block);
-        generator.registerDoor(PRIMSTEEL_DOOR.block);
-        
         // Others
         generator.registerTrapdoor(PRIMSTEEL_TRAPDOOR.block);
         map = textureAll(PRIMSTEEL_PLATE_BLOCK);
@@ -46,27 +38,27 @@ class ValleyModelGenerator extends FabricModelProvider {
         pressurePlate(DEEPSLATE_PRESSURE_PLATE.block, map, generator);
 
         // CANVAS
-        map = textureAll(CANVAS_BLOCK);
+        map = textureAll("canvas_block");
         slab(CANVAS_SLAB.block, CANVAS_BLOCK.block, map, generator);
         stairs(CANVAS_STAIRS.block, map, generator);
 
         // THATCH
-        map = textureAll(THATCH_BLOCK);
+        map = textureAll("thatch_side");
         slab(THATCH_SLAB.block, THATCH_BLOCK.block, map, generator);
         stairs(THATCH_STAIRS.block, map, generator);
 
         // WEAVED_THATCH
-        map = textureAll(WEAVED_THATCH_BLOCK);
+        map = textureAll("patterned_thatch");
         slab(WEAVED_THATCH_SLAB.block, WEAVED_THATCH_BLOCK.block, map, generator);
         stairs(WEAVED_THATCH_STAIRS.block, map, generator);
 
         // TIGHTLY_WEAVED_THATCH
-        map = textureAll(TIGHTLY_WEAVED_THATCH_BLOCK);
+        map = textureAll("patterned_thatch_small");
         slab(TIGHTLY_WEAVED_THATCH_SLAB.block, TIGHTLY_WEAVED_THATCH_BLOCK.block, map, generator);
         stairs(TIGHTLY_WEAVED_THATCH_STAIRS.block, map, generator);
 
         //Daub
-        map = textureAll(BLOCK_DAUB);
+        map = textureAll("block_daub");
         slab(DAUB_SLAB.block, BLOCK_DAUB.block, map, generator);
         stairs(DAUB_STAIRS.block, map, generator);
         wall(DAUB_WALL.block, map, generator);
@@ -527,6 +519,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerLog(STRIPPED_MAMON_LOG.block);
         generator.registerLog(MAMON_LOG.block);
         generator.registerSimpleCubeAll(MAMON_PLANKS.block);
+        generator.registerDoor(MAMON_DOOR.block);
         generator.registerOrientableTrapdoor(MAMON_TRAPDOOR.block);
         slab(MAMON_SLAB.block, MAMON_PLANKS.block, map, generator);
         stairs(MAMON_STAIRS.block, map, generator);
@@ -542,6 +535,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerLog(STRIPPED_APPLE_LOG.block);
         generator.registerLog(APPLE_LOG.block);
         generator.registerSimpleCubeAll(APPLE_PLANKS.block);
+        generator.registerDoor(APPLE_DOOR.block);
         generator.registerOrientableTrapdoor(APPLE_TRAPDOOR.block);
         slab(APPLE_SLAB.block, APPLE_PLANKS.block, map, generator);
         stairs(APPLE_STAIRS.block, map, generator);
@@ -549,7 +543,11 @@ class ValleyModelGenerator extends FabricModelProvider {
         fence(APPLE_FENCE.block, textureAll("apple_fence_planks"), generator);
         fenceGate(APPLE_FENCE_GATE.block, textureAll("apple_fence_planks"), generator);
         pressurePlate(APPLE_PRESSURE_PLATE.block, map, generator);
-        
+
+        // Doors
+        map = textureAll("wattle_door");
+        generator.registerDoor(WATTLE_DOOR.block);
+
         // Lattices
         lattice(OAK_LATTICE, generator);
         lattice(APPLE_LATTICE, generator);

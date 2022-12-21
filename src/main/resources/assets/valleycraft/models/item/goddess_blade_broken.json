@@ -1,5 +1,5 @@
 {
-  "parent": "item/goddess_blade",
+  "parent": "valleycraft:item/goddess_blade",
   "textures": {
     "layer0": "valleycraft:item/special/goddess_blade_broken"
   }

@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "valleycraft:plank"
+      "tag": "minecraft:stone_crafting_materials"
     },
     "V": {
       "tag": "c:handles"
     }
   },
   "result": {
-    "item": "valleycraft:knife_wooden",
+    "item": "valleycraft:knife_stone",
     "count": 1
   }
 }

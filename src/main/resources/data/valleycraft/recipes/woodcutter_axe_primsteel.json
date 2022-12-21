@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:primsteel_axe"
+  },
+  "addition": {
+    "item": "valleycraft:rosegold_ingot"
+  },
+  "result": {
+    "item": "valleycraft:woodcutter_axe_primsteel"
+  }
+}

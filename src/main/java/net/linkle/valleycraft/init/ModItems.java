@@ -77,9 +77,7 @@ public enum ModItems implements ItemEnum {
     TREATED_LEATHER(new Item(itemSettings())),
     LEATHER_STRAP(new Item(itemSettings())),
     CLOTH(new Item(itemSettings())),
-    //BOOK_COVER(new Item(itemSettings())),
     INK_BOTTLE(new Tier0Bottle(itemSettings().maxCount(16), 0, 0.0f, StatusEffects.BLINDNESS).hideTooltip()),
-    //GLOW_INK_BOTTLE(new Tier0Bottle(itemSettings().maxCount(16), 0, 0.0f, StatusEffects.BLINDNESS).hideTooltip()),
     QUILL(new Item(itemSettings())),
     RUNE_ETCHING_BLADE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
 

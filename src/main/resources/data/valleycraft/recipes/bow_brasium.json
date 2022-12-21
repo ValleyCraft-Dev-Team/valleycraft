@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "addition": {
+    "item": "valleycraft:brasium_ingot"
+  },
+  "result": {
+    "item": "valleycraft:bow_brasium"
+  }
+}
