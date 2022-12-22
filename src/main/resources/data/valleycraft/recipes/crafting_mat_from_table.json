@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "crafting_mats",
   "ingredients": [
     {
       "item": "minecraft:crafting_table"

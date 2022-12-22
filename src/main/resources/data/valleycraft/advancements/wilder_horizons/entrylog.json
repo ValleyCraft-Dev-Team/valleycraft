@@ -1,0 +1,68 @@
+{
+  "parent": "valleycraft:wilder_horizons/scrapingby",
+  "display": {
+    "title": {
+      "text": "\"Entry Log: Date Unknown\""
+    },
+    "icon": {
+      "item": "minecraft:writable_book"
+    },
+    "description": {
+      "text": "Acquire the supplies necessary to write."
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "criteria": {
+    "book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:writable_book",
+              "minecraft:book"
+            ]
+          }
+        ]
+      }
+    },
+    "ink_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:writable_book",
+              "valleycraft:ink_bottle"
+            ]
+          }
+        ]
+      }
+    },
+    "quill": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:writable_book",
+              "valleycraft:quill"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "book"
+    ],
+    [
+      "ink_bottle"
+    ],
+    [
+      "quill"
+    ]
+  ]
+}

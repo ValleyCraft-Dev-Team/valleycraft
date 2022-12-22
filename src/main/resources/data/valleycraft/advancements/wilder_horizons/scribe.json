@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:wilder_horizons/translator",
+  "display": {
+    "title": {
+      "text": "The Enchanted Scribe"
+    },
+    "icon": {
+      "item": "valleycraft:rune_etching_blade"
+    },
+    "description": {
+      "text": "Acquire a Rune Etching Blade"
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "criteria": {
+    "rune_etching_blade": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:rune_etching_blade"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "rune_etching_blade"
+    ]
+  ]
+}

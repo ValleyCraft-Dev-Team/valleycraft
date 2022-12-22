@@ -50,8 +50,7 @@ public enum IngredientFoodItems implements ItemEnum {
     .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_5")),
     
     PUMPKIN_SLICE(new FoodItem(settings(), 2, 0.4f)),
-    GHOST_PUMPKIN_SLICE(new FoodItem(settings(), 2, 0.4f)),
-    
+
     RAW_ABYSSWATCHER(new FoodItem(settings(), 3, 0.5f)),
     RAW_STONETOSSER_MINNOW(new FoodItem(settings(), 1, 0.2f)),
     RAW_RED_PORGY(new FoodItem(settings(), 2, 0.5f)),

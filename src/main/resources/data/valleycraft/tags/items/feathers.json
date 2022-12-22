@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:feather",
+    "valleycraft:crows_feather",
+    "valleycraft:seagulls_feather",
+    "valleycraft:ducks_feather"
+  ]
+}

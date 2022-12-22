@@ -2,13 +2,14 @@
   "parent": "valleycraft:wilder_horizons/goddessblade",
   "display": {
     "title": {
-      "text": "\"...A New Era...\""
+      "text": "\"...Has Begun...\"",
+      "color": "green"
     },
     "icon": {
       "item": "valleycraft:goddess_blade"
     },
     "description": {
-      "text": "Repair a Sword of the Goddess"
+      "text": "Repair a Sword of the Unknown Goddess"
     },
     "frame": "challenge",
     "hidden": "false"
@@ -17,7 +18,7 @@
     "recipes": [
       "valleycraft:recipes/re_repairing_the_goddess_blade"
     ],
-    "experience": 10
+    "experience": 20
   },
   "criteria": {
     "goddess_blade": {

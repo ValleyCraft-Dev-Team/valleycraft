@@ -1,0 +1,30 @@
+{
+  "display": {
+    "title": {
+      "text": "Don't Starve (Yet.)",
+      "bold": false
+    },
+    "description": {
+      "text": "Find or prepare some food.",
+      "color": "green"
+    },
+    "icon": {
+      "item": "valleycraft:cave_root"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "valleycraft:textures/advancements/background/patterned_thatch.png"
+  },
+  "criteria": {
+    "dontstarveyet": {
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "requirements": [
+    [
+      "dontstarveyet"
+    ]
+  ]
+}

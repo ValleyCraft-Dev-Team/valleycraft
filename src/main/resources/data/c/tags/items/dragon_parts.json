@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "#c:dragon_scales",
+    "#c:dragon_bones",
     "valleycraft:ender_dragon_gland",
-    "valleycraft:ender_dragon_eye",
-    "valleycraft:dragon_tooth"
+    "valleycraft:ender_dragon_eye"
   ]
 }

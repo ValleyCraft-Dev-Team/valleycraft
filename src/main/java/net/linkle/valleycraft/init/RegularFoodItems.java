@@ -21,7 +21,6 @@ public enum RegularFoodItems implements ItemEnum {
     BAKED_CARROT(new FoodItem(settings(), 5, 0.6f)),
     BAKED_ENDURA_CARROT(new FoodItem(settings(), 6, 0.6f)),
     BAKED_FIRE_PEPPER(new FoodItem(settings(), 5, 0.6f)),
-    BAKED_GHOST_PUMPKIN_SLICE(new FoodItem(settings(), 4, 0.6f)),
     BAKED_PUMPKIN_SLICE(new FoodItem(settings(), 4, 0.6f)),
     BAKED_MELON_SLICE(new FoodItem(settings(), 3, 0.6f)),
     BAKED_ONION(new FoodItem(settings(), 4, 0.6f)),

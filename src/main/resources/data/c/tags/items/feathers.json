@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:crow_feather",
-    "valleycraft:seagull_feather",
-    "valleycraft:duck_feather"
+    "#valleycraft:feathers"
   ]
 }

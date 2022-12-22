@@ -1,0 +1,28 @@
+{
+  "parent": "valleycraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:ink_bottle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "valleycraft:ink_bottle_block",
+      "valleycraft:ink_well"
+    ]
+  }
+}

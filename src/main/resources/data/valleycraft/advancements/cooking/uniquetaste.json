@@ -13,9 +13,12 @@
     "frame": "challenge",
     "hidden": "false"
   },
+  "rewards": {
+    "experience": 16
+  },
   "criteria": {
     "stir_fried_monster_guts": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "items": [
           {
@@ -27,7 +30,7 @@
       }
     },
     "monster_stew": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "items": [
           {
@@ -39,7 +42,7 @@
       }
     },
     "slime_soup": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "items": [
           {
@@ -51,7 +54,7 @@
       }
     },
     "magma_creme_soup": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "items": [
           {
@@ -63,7 +66,7 @@
       }
     },
     "sauteed_eyes_and_mushrooms": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "items": [
           {

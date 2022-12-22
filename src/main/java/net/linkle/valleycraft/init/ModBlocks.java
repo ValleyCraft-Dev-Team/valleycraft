@@ -323,7 +323,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POTTED_JUNGLE_BUSH(new PotBlock(ModNaturalBlocks.JUNGLE_BUSH)),
     POTTED_PANFLOWERS(new PotBlock(ModNaturalBlocks.PANFLOWERS)),
     POTTED_FROSTFERN(new PotBlock(ModNaturalBlocks.FROSTFERN)),
-    //POTTED_CLARET_LEAF(new PotBlock(ModNaturalBlocks.CLARET_LEAF)),
     POTTED_WEEPING_GHOST_WILLOW(new PotBlock(ModNaturalBlocks.WEEPING_GHOST_WILLOW)),
     POTTED_BONE_WEED(new PotBlock(ModNaturalBlocks.BONE_WEED)),
     POTTED_FIDDLEHEAD_FERN(new PotBlock(ModNaturalBlocks.FIDDLEHEAD_FERN)),
@@ -444,9 +443,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     CHISELED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     CHISELED_ERDSTONE_FACE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     CHISELED_ERDSTONE_CRAFTABLE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+
     PATTERNED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
-    PATTERNED_ERDSTONE_STAIRS(new StairsBlock(PATTERNED_ERDSTONE.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
-    PATTERNED_ERDSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
 
     ERDSTONE_CAPPED(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     ERDSTONE_SPIRIT(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),

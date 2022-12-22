@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#valleycraft:water_holding_items",
+    "minecraft:water_bucket"
+  ]
+}

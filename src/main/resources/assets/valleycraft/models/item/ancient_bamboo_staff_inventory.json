@@ -1,0 +1,6 @@
+{
+  "parent": "valleycraft:item/ancient_bamboo_staff",
+  "textures": {
+    "layer0": "valleycraft:item/tools/overrides/ancient_bamboo_staff"
+  }
+}

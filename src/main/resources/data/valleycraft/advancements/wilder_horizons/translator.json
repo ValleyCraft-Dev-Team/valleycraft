@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:wilder_horizons/root",
+  "parent": "valleycraft:wilder_horizons/entrylog",
   "display": {
     "title": {
       "text": "The Enchanted Translator"

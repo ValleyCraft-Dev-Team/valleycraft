@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:wilder_horizons/root",
+  "display": {
+    "title": {
+      "text": "\"...Ye Bearer Of Fate...\"",
+      "color": "green"
+    },
+    "icon": {
+      "item": "valleycraft:birch_seed"
+    },
+    "description": {
+      "text": "Find the Temple of the Unknown Goddess"
+    },
+    "frame": "goal",
+    "hidden": "true"
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "criteria": {
+    "in_temple": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "feature": "valleycraft:ancient_ruins/erdis_temple"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_temple"
+    ]
+  ]
+}

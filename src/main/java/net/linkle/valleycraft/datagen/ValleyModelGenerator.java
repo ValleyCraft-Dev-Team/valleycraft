@@ -124,11 +124,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         slab(ERDSTONE_MOSAIC_SLAB.block, ERDSTONE_MOSAIC.block, map, generator);
         stairs(ERDSTONE_MOSAIC_STAIRS.block, map, generator);
 
-        // PATTERNED_ERDSTONE
-        map = textureAll(PATTERNED_ERDSTONE);
-        slab(PATTERNED_ERDSTONE_SLAB.block, PATTERNED_ERDSTONE.block, map, generator);
-        stairs(PATTERNED_ERDSTONE_STAIRS.block, map, generator);
-
         // POLISHED_ADVENTURINE
         map = textureAll(POLISHED_ADVENTURINE);
         slab(POLISHED_ADVENTURINE_SLAB.block, POLISHED_ADVENTURINE.block, map, generator);
@@ -321,11 +316,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         stairs(DRIPSTONE_TILE_STAIRS.block, map, generator);
         wall(DRIPSTONE_TILE_WALL.block, map, generator);
 
-        // PATTERNED_DRIPSTONES
-        map = textureAll(PATTERNED_DRIPSTONE);
-        slab(PATTERNED_DRIPSTONE_SLAB.block, PATTERNED_DRIPSTONE.block, map, generator);
-        stairs(PATTERNED_DRIPSTONE_STAIRS.block, map, generator);
-
         // DRIPSTONE_MOSAICS
         map = textureAll(DRIPSTONE_MOSAIC);
         slab(DRIPSTONE_MOSAIC_SLAB.block, DRIPSTONE_MOSAIC.block, map, generator);
@@ -354,11 +344,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         slab(POLISHED_BASALT_BRICK_SLAB.block, POLISHED_BASALT_BRICKS.block, map, generator);
         stairs(POLISHED_BASALT_BRICK_STAIRS.block, map, generator);
         wall(POLISHED_BASALT_BRICK_WALL.block, map, generator);
-
-        // POLISHED_BASALT_PATTERNED
-        map = textureAll(POLISHED_BASALT_PATTERNED);
-        slab(POLISHED_BASALT_PATTERNED_SLAB.block, POLISHED_BASALT_PATTERNED.block, map, generator);
-        stairs(POLISHED_BASALT_PATTERNED_STAIRS.block, map, generator);
 
         // KITCHEN_TILES
         map = textureAll(KITCHEN_TILES);

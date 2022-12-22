@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:cooking/root",
+  "parent": "valleycraft:cooking/betterthannothing",
   "display": {
     "title": {
       "text": "Why Would You Even Eat That?"
@@ -10,15 +10,15 @@
     "description": {
       "text": "Eat food made of monster parts. Yuck!"
     },
-    "frame": "goal",
+    "frame": "task",
     "hidden": "false"
   },
   "rewards": {
-    "experience": 2
+    "experience": 8
   },
   "criteria": {
     "monster_food": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "items": [
           {

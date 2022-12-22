@@ -127,7 +127,7 @@
 			"predicate": {
 				"gui": 1
 			},
-			"model": "valleycraft:item/ancient_aglets"
+			"model": "valleycraft:item/ancient_bamboo_staff_inventory"
 		}
 	],
 	"display": {

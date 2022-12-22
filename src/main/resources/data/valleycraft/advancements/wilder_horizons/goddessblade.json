@@ -1,14 +1,15 @@
 {
-  "parent": "valleycraft:wilder_horizons/relicofthepast",
+  "parent": "valleycraft:wilder_horizons/templelocated",
   "display": {
     "title": {
-      "text": "\"...Ye Bearer Of Fate...\""
+      "text": "\"...A New Era...\"",
+      "color": "green"
     },
     "icon": {
       "item": "valleycraft:goddess_blade_found"
     },
     "description": {
-      "text": "Find a Sword of the Goddess"
+      "text": "Find a Sword of the Unknown Goddess"
     },
     "frame": "goal",
     "hidden": "true"

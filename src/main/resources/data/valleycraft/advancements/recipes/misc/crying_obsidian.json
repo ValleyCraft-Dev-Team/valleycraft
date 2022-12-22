@@ -1,0 +1,28 @@
+{
+  "parent": "valleycraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crying_obsidian"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:respawn_anchor",
+      "minecraft:beacon"
+    ]
+  }
+}

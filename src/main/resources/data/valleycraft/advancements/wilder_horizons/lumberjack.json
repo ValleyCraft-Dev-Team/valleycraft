@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:wilder_horizons/root",
+  "parent": "valleycraft:wilder_horizons/scrapingby",
   "display": {
     "title": {
       "text": "Lumberjack"
@@ -58,18 +58,7 @@
         "items": [
           {
             "items": [
-              "valleycraft:oak_seed"
-            ]
-          }
-        ]
-      }
-    },
-    "divine_oak": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
+              "valleycraft:oak_seed",
               "valleycraft:divine_acorn"
             ]
           }
@@ -143,9 +132,6 @@
     ],
     [
       "oak"
-    ],
-    [
-      "divine_oak"
     ],
     [
       "birch"

@@ -1,0 +1,22 @@
+{
+  "name": "\"How did this appear?\"",
+  "icon": "valleycraft:crafting_mat",
+  "category": "valleycraft:test_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "How did this appear?",
+      "text": "Well, to put it quite simply, I stuck it in your pocket! You aren't the first odd looking fellow I've found passed out in the Overworld and certainly not the last. You didn't have any gear so I conjured up a copy of my book to assist you on your journeys. I regret I didn't have more to give you, but due to my small stature, carrying extra gear for others or even gear I can readily"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "part with is a challenge. My book though is easy enough to conjure up with the right ingredients. Should you lose this one, simply prepare as follows:"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:crafting_mat",
+      "text": ""
+    }
+  ]
+}

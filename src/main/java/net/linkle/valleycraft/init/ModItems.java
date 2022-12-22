@@ -108,7 +108,7 @@ public enum ModItems implements ItemEnum {
     THERMAL_BLAZE_CORE(new Item(itemSettings().rarity(Rarity.RARE))),
     STRANGE_CATALYST(new Item(itemSettings().rarity(RARE))),
 
-    //pet food? maybe we should move it to the food category lmao /shrug
+    //pets
     DOG_BISCUIT(new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true)),
 
     //souls
