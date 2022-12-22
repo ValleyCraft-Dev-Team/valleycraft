@@ -197,6 +197,13 @@ class RenderLayers {
         put(AMBER_LANTERN, cullout);
         put(DIAMOND_LANTERN, cullout);
         put(GARNET_LANTERN, cullout);
+        
+        put(BLUE_ANEMONE, cullout);
+        put(GREEN_ANEMONE, cullout);
+        put(PINK_ANEMONE, cullout);
+        put(PURPLE_ANEMONE, cullout);
+        put(RED_ANEMONE, cullout);
+        put(YELLOW_ANEMONE, cullout);
 
         put(ROPE_LADDER, cullout);
         //put(NET_BLOCK, cullout);

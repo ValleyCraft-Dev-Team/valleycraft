@@ -10,7 +10,7 @@
       "item": "valleycraft:plank"
     },
     "W": {
-      "tag": "#c:water_holding_items"
+      "tag": "c:water_holding_items"
     },
     "/": {
       "item": "minecraft:stick"
