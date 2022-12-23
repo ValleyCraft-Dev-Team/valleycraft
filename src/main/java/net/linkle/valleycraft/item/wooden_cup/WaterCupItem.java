@@ -1,17 +1,15 @@
-package net.linkle.valleycraft.item;
+package net.linkle.valleycraft.item.wooden_cup;
 
 import net.linkle.valleycraft.init.ModItems;
+import net.linkle.valleycraft.item.FoodItem;
 import net.linkle.valleycraft.util.FoodStatusEffect;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
-import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
@@ -23,10 +21,6 @@ public class WaterCupItem extends FoodItem {
 
     public WaterCupItem(Settings settings, int hunger, float satMod) {
         super(settings, hunger, satMod);
-    }
-
-    public WaterCupItem(Settings settings, int hunger, float satMod, FoodStatusEffect effects) {
-        super(settings, hunger, satMod, effects);
     }
 
     @Override

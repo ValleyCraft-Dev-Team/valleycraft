@@ -33,7 +33,7 @@ public class BigFlowerPotBlock extends HorizontalConnectingBlock {
 
     public BigFlowerPotBlock(Settings settings) {
         super(2.0F, 2.0F, 16.0F, 16.0F, 16.0F, settings);
-        this.setDefaultState((BlockState) ((BlockState) ((BlockState) ((BlockState) ((BlockState) ((BlockState) this.stateManager.getDefaultState()).with(NORTH, false)).with(EAST, false)).with(SOUTH, false)).with(WEST, false).with(MOISTURE, 4)));
+        this.setDefaultState((BlockState) ((BlockState) ((BlockState) ((BlockState) ((BlockState) ((BlockState) this.stateManager.getDefaultState()).with(NORTH, true)).with(EAST, true)).with(SOUTH, true)).with(WEST, true).with(MOISTURE, 4)));
     }
 
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
@@ -86,12 +86,12 @@ public class BigFlowerPotBlock extends HorizontalConnectingBlock {
     }
 
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(new Property[]{NORTH, EAST, WEST, SOUTH, WATERLOGGED});
+        builder.add(new Property[]{NORTH, EAST, WEST, SOUTH});
         builder.add(new Property[]{MOISTURE});
     }
 
     static {
         MOISTURE = Properties.MOISTURE;
-        SHAPE = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 15.0D, 16.0D);
+        SHAPE = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
     }
 }

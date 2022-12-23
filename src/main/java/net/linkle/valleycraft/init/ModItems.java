@@ -1,12 +1,12 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.armors.ArmorMats;
-import net.linkle.valleycraft.baubles.BaubleItem;
-import net.linkle.valleycraft.baubles.TalismanItem;
 import net.linkle.valleycraft.item.*;
+import net.linkle.valleycraft.item.clay_pot.ClayPotItem;
+import net.linkle.valleycraft.item.clay_pot.WaterClayPotItem;
+import net.linkle.valleycraft.item.wooden_cup.CupItem;
+import net.linkle.valleycraft.item.wooden_cup.WaterCupItem;
 import net.linkle.valleycraft.util.ItemEnum;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -18,9 +18,14 @@ import static net.minecraft.util.Rarity.*;
 
 public enum ModItems implements ItemEnum {
     //cups
-    WOODEN_CUP(new CupItem(itemSettings().group(INGREDIENTS))),
-    WATER_FILLED_WOODEN_CUP(new WaterCupItem(itemSettings().maxCount(16).group(INGREDIENTS).recipeRemainder(ModItems.WOODEN_CUP.item), 0, 0.0f)),
+    //WOODEN_CUP(new CupItem(itemSettings().group(INGREDIENTS))),
+    //WATER_FILLED_WOODEN_CUP(new WaterCupItem(itemSettings().maxCount(1).group(INGREDIENTS).recipeRemainder(ModItems.WOODEN_CUP.item), 0, 0.0f)),
     //MILK_FILLED_WOODEN_CUP(new WaterCupItem(itemSettings().maxCount(16).group(INGREDIENTS).recipeRemainder(ModItems.WOODEN_CUP.item), 0, 0.0f)),
+
+    RAW_CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(INGREDIENTS))),
+    CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(INGREDIENTS))),
+    WATER_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(1).group(INGREDIENTS).recipeRemainder(ModItems.CLAY_POT.item), 0, 0.0f)),
+    //MILK_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(1).group(INGREDIENTS).recipeRemainder(ModItems.CLAY_POT.item), 0, 0.0f).setMilk()),
 
     // tree seeds
     OAK_SEED(new AliasedBlockItem(ModNaturalBlocks.OAK_SEED.block, itemSettings())),

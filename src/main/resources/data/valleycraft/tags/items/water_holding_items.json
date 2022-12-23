@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:water_filled_wooden_cup",
+    "valleycraft:water_filled_clay_pot",
     "minecraft:potion"
   ]
 }

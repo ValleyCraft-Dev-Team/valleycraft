@@ -1,4 +1,4 @@
-package net.linkle.valleycraft.item;
+package net.linkle.valleycraft.item.wooden_cup;
 
 import net.linkle.valleycraft.init.ModItems;
 import net.minecraft.entity.AreaEffectCloudEntity;

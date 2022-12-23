@@ -84,9 +84,9 @@
   "item.valleycraft.ancient_flower": "§6Prehistoric Vibrant Flower",
   "item.valleycraft.endura_carrot": "§6Staminella Carrot",
 
-  "item.valleycraft.shattered_eye_of_ender": "Shattered Eye of Ender",
-  "item.valleycraft.eye_of_return": "Eye of the Astrayed",
-  "block.valleycraft.waypoint": "Recall Waystone",
+  "item.valleycraft.raw_clay_pot": "Un-Fired Clay Pot",
+  "item.valleycraft.clay_pot": "Clay Pot",
+  "item.valleycraft.water_filled_clay_pot": "Water Clay Pot",
 
   "item.valleycraft.copper_aviators": "Airship Pilot's Goggles",
 
@@ -416,7 +416,7 @@
   "item.valleycraft.bikini_coat": "§aRagged Coat",
   "item.valleycraft.bikini_coat_hood": "§aRagged Hood",
   "item.valleycraft.bikini_neutral": "§aTattered Undergarments",
-  "item.valleycraft.bikini_coat_gaiters": "Champion's Gaiters",
+  "item.valleycraft.bikini_coat_gaiters": "Barbarian's Gaiters",
 
   "item.valleycraft.bikini_repaired": "Femme Undergarments",
   "item.valleycraft.bikini_masc_repaired": "Masc Undergarments",
