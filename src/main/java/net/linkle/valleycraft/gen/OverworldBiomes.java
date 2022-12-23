@@ -41,30 +41,25 @@ public class OverworldBiomes {
     public static Biome amberDarkForest() {
         var gens = new GenerationSettings.Builder();
         addBasicFeatures(gens);
-        addLandCarvers(gens);
-        addDungeons(gens);
-        addAmethystGeodes(gens);
+        addMossyRocks(gens);
         addDefaultOres(gens);
         addDefaultDisks(gens);
-        addSprings(gens);
-        addSeagrassOnStone(gens);
-        gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.PATCH_WATERLILY);
-        addGiantTaigaGrass(gens);
+        //gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.MUSHROOM_ISLAND_VEGETATION);
+        //gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.PATCH_WATERLILY);
         addJungleGrass(gens);
         addLargeFerns(gens);
-        addSweetBerryBushesSnowy(gens);
-        gens.feature(VEGETAL_DECORATION, VegetationPlaced.PATCH_PUMPKIN.entry);
-        addMossyRocks(gens);
-        gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.MUSHROOM_ISLAND_VEGETATION);
+        addGiantTaigaGrass(gens);
+        addSweetBerryBushes(gens);
         gens.feature(VEGETAL_DECORATION, VegetationPlaced.AMBERBLOSSOM_VEGETATION.entry);
+        gens.feature(VEGETAL_DECORATION, VegetationPlaced.PATCH_PUMPKIN.entry);
 
         var spawns = new SpawnSettings.Builder();
 
-        /** surface mobs */
+        // surface mobs
         addWilderForestMobs(spawns);
         addWilderAutumnalMobs(spawns);
 
-        /** cave mobs */
+        // cave mobs
         addBatsAndMonsters(spawns);
         addWilderCaveMobs(spawns);
 

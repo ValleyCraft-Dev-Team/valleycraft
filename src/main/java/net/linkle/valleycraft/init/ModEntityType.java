@@ -8,10 +8,14 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.client.entity.model.pupkins.PupkinEntityModel;
+import net.linkle.valleycraft.client.entity.model.snails.CaveSnailEntityModel;
+import net.linkle.valleycraft.client.entity.model.snails.SculkSnailEntityModel;
 import net.linkle.valleycraft.client.entity.model.snails.SnailEntityModel;
 import net.linkle.valleycraft.client.entity.renderer.fish.CodEntityRenderer;
 import net.linkle.valleycraft.client.entity.renderer.fish.SalmonEntityRenderer;
 import net.linkle.valleycraft.client.entity.renderer.pupkins.PupkinEntityRenderer;
+import net.linkle.valleycraft.client.entity.renderer.snails.CaveSnailEntityRenderer;
+import net.linkle.valleycraft.client.entity.renderer.snails.SculkSnailEntityRenderer;
 import net.linkle.valleycraft.client.entity.renderer.snails.SnailEntityRenderer;
 import net.linkle.valleycraft.client.entity.renderer.unused.SoulPetEntityRenderer;
 import net.linkle.valleycraft.entity.fish.*;
@@ -104,6 +108,8 @@ public class ModEntityType {
     
     public static void initialize() {
         FabricDefaultAttributeRegistry.register(SNAIL, SnailEntity.createSnailAttributes());
+        FabricDefaultAttributeRegistry.register(CAVE_SNAIL, CaveSnailEntity.createSnailAttributes());
+        FabricDefaultAttributeRegistry.register(SCULK_SNAIL, SculkSnailEntity.createSnailAttributes());
         FabricDefaultAttributeRegistry.register(PUPKIN, PupkinEntity.createPupkinAttributes());
         
         FabricDefaultAttributeRegistry.register(ZOD, UndeadFishEntity.createUndeadFishAttributes());
@@ -120,6 +126,10 @@ public class ModEntityType {
     public static void initializeClient() {
         EntityModelLayerRegistry.registerModelLayer(SnailEntityModel.LAYER, SnailEntityModel::getTexturedModelData);
         EntityRendererRegistry.register(SNAIL, SnailEntityRenderer.create("snail"));
+        EntityModelLayerRegistry.registerModelLayer(CaveSnailEntityModel.LAYER, CaveSnailEntityModel::getTexturedModelData);
+        EntityRendererRegistry.register(CAVE_SNAIL, CaveSnailEntityRenderer.create("cave_snail"));
+        EntityModelLayerRegistry.registerModelLayer(SculkSnailEntityModel.LAYER, SculkSnailEntityModel::getTexturedModelData);
+        EntityRendererRegistry.register(SCULK_SNAIL, SculkSnailEntityRenderer.create("sculk_snail"));
         
         EntityModelLayerRegistry.registerModelLayer(PupkinEntityModel.LAYER, PupkinEntityModel::getTexturedModelData);
         EntityRendererRegistry.register(PUPKIN, PupkinEntityRenderer::new);
