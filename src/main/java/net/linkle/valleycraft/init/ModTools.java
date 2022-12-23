@@ -256,13 +256,15 @@ public class ModTools {
         Reg.register("toy_sword", new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("moblin_sword_broken", MOBLIN_BROKEN);
         Reg.register("moblin_sword_fixed", new TravelerBaseFixed(ToolMaterials.IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
+        Reg.register("primsteel_ikakalaka", new TravelerBaseFixed(ModToolMaterials.PRIMSTEEL, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("dierdra_spear", new SpearBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("seaologer_broken", SEAOLOGER_BROKEN);
         Reg.register("seaologer_fixed", SEAOLOGER_FIXED);
         Reg.register("ancient_climbing_axe", ANCIENT_CLIMBING_AXE);
         Reg.register("ancient_shortsword", new TravelerBase(ModToolMaterials.WEAK_IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
-        Reg.register("bone_cudgel", new WoodcutterAxeBase(ModToolMaterials.BONE, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
-
+        Reg.register("wooden_club", new MaceBase(ToolMaterials.WOOD, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS));
+        Reg.register("bone_cudgel", new MaceBase(ModToolMaterials.BONE, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
+        Reg.register("obsidian_macuahuitl", new MaceBase(ModToolMaterials.OBSIDIAN, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         //Reg.register("twinblade", new SpearBase(ModToolMaterials.GOLEMITE, SPEAR_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
         //Reg.register("piglin_battle_hammer", new WoodcutterAxeBase(ModToolMaterials.GOLEMITE, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_EPIC));
 
