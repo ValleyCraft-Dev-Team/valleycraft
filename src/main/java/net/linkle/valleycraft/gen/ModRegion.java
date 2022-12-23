@@ -23,6 +23,7 @@ public class ModRegion extends Region {
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<NoiseHypercube, RegistryKey<Biome>>> mapper) {
         addBiomeSimilar(mapper, BiomeKeys.DARK_FOREST, ModBiomes.AMBER_DARK_FOREST.key);
+
         //addBiomeSimilar(mapper, BiomeKeys.OLD_GROWTH_BIRCH_FOREST, ModBiomes.OLD_GROWTH_AMBER_BIRCH_FOREST.key);
     }
 }

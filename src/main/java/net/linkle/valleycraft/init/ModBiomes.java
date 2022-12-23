@@ -15,7 +15,7 @@ public enum ModBiomes implements IdProvider {
     // Biome List
     AMBER_DARK_FOREST(OverworldBiomes.amberDarkForest());
     //OLD_GROWTH_AMBER_BIRCH_FOREST(OverworldBiomes.amberBirchForestTall());
-    
+
     // Enum class
     public static void initialize() {} 
     

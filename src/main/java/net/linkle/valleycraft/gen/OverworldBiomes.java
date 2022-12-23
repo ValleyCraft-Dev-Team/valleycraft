@@ -1,15 +1,21 @@
 package net.linkle.valleycraft.gen;
 
 import static net.linkle.valleycraft.gen.feature.ModBiomeFeatures.*;
+import static net.minecraft.world.biome.OverworldBiomeCreator.createColdOcean;
 import static net.minecraft.world.gen.GenerationStep.Feature.VEGETAL_DECORATION;
 import net.linkle.valleycraft.gen.feature.VegetationPlaced;
 import net.linkle.valleycraft.init.ModBiomes;
 import net.linkle.valleycraft.widener.OverworldBiomeWidener;
 import net.minecraft.client.sound.MusicType;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnGroup;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.biome.*;
 import net.minecraft.world.biome.Biome.Precipitation;
+import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
+import net.minecraft.world.gen.feature.OceanPlacedFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
 /** Register the biome at {@link ModBiomes} */
@@ -27,8 +33,6 @@ public class OverworldBiomes {
         builder.moodSound(BiomeMoodSound.CAVE);
     }
 
-    //public static Biome jaggedRocksOcean() {}
-
     //public static Biome snowyOldGrowthTaiga() {}
 
     //public static Biome amberBirchOldGrowth() {}
@@ -37,6 +41,7 @@ public class OverworldBiomes {
     public static Biome amberDarkForest() {
         var gens = new GenerationSettings.Builder();
         addBasicFeatures(gens);
+        addLandCarvers(gens);
         addDungeons(gens);
         addAmethystGeodes(gens);
         addDefaultOres(gens);
