@@ -55,10 +55,10 @@ public class ModEntityType {
                     .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, UndeadFishEntity::canSpawn).build()
     );
 
-    public static final EntityType<StonetosserMinnowEntity> STONETOSSER_MINNOW = register("stonetosser_minnow",
-            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.WATER_CREATURE).entityFactory(StonetosserMinnowEntity::new)
+    public static final EntityType<StonerollerMinnowEntity> STONEROLLER_MINNOW = register("STONEROLLER_MINNOW",
+            FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.WATER_CREATURE).entityFactory(StonerollerMinnowEntity::new)
                     .trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
-                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, StonetosserMinnowEntity::canSpawn).build()
+                    .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, StonerollerMinnowEntity::canSpawn).build()
     );
 
     public static final EntityType<AbysswatcherEntity> ABYSSWATCHER = register("abysswatcher",
@@ -109,7 +109,7 @@ public class ModEntityType {
         FabricDefaultAttributeRegistry.register(ZOD, UndeadFishEntity.createUndeadFishAttributes());
         FabricDefaultAttributeRegistry.register(BONEFIN, UndeadFishEntity.createUndeadFishAttributes());
 
-        FabricDefaultAttributeRegistry.register(STONETOSSER_MINNOW, FishEntity.createFishAttributes());
+        FabricDefaultAttributeRegistry.register(STONEROLLER_MINNOW, FishEntity.createFishAttributes());
         FabricDefaultAttributeRegistry.register(ABYSSWATCHER, FishEntity.createFishAttributes());
         FabricDefaultAttributeRegistry.register(SARDINE, FishEntity.createFishAttributes());
         FabricDefaultAttributeRegistry.register(RED_PORGY, FishEntity.createFishAttributes());
@@ -127,7 +127,7 @@ public class ModEntityType {
         EntityRendererRegistry.register(ZOD, CodEntityRenderer.create("zod"));
         EntityRendererRegistry.register(ABYSSWATCHER, CodEntityRenderer.create("abysswatcher"));
         EntityRendererRegistry.register(BONEFIN, SalmonEntityRenderer.create("bonefin"));
-        EntityRendererRegistry.register(STONETOSSER_MINNOW, CodEntityRenderer.create("minnow"));
+        EntityRendererRegistry.register(STONEROLLER_MINNOW, CodEntityRenderer.create("minnow"));
         EntityRendererRegistry.register(PERCH, CodEntityRenderer.create("perch"));
         EntityRendererRegistry.register(RED_PORGY, CodEntityRenderer.create("red_porgy"));
         EntityRendererRegistry.register(SARDINE, CodEntityRenderer.create("sardine"));

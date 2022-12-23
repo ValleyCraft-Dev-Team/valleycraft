@@ -13,7 +13,7 @@ import net.minecraft.util.registry.Registry;
 import static net.minecraft.entity.EntityType.SLIME;
 
 public enum ModFishing implements ItemEnum {
-    STONETOSSER_MINNOW_BUCKET(new EntityBucketItem(ModEntityType.STONETOSSER_MINNOW, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1))),
+    STONEROLLER_MINNOW_BUCKET(new EntityBucketItem(ModEntityType.STONEROLLER_MINNOW, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1))),
     ABYSSWATCHER_BUCKET(new EntityBucketItem(ModEntityType.ABYSSWATCHER, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1))),
     RED_PORGY_BUCKET(new EntityBucketItem(ModEntityType.RED_PORGY, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1))),
     SARDINE_BUCKET(new EntityBucketItem(ModEntityType.SARDINE, Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(ModGroups.VC_ITEMS).maxCount(1))),

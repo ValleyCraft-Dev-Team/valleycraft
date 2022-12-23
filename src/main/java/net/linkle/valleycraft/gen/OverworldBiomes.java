@@ -26,35 +26,48 @@ public class OverworldBiomes {
         builder.fogColor(12638463);
         builder.moodSound(BiomeMoodSound.CAVE);
     }
-    
+
+    //public static Biome jaggedRocksOcean() {}
+
+    //public static Biome snowyOldGrowthTaiga() {}
+
+    //public static Biome amberBirchOldGrowth() {}
+
     /** Amberblossom Forest */
-    public static Biome amberForest() {
+    public static Biome amberDarkForest() {
         var gens = new GenerationSettings.Builder();
         addBasicFeatures(gens);
         addDungeons(gens);
+        addAmethystGeodes(gens);
         addDefaultOres(gens);
         addDefaultDisks(gens);
-        gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_PLAINS);
-        gens.feature(VEGETAL_DECORATION, VegetationPlaced.AMBER_PLACED.entry);
-        addDefaultFlowers(gens);
-        addForestGrass(gens);
-        addDefaultMushrooms(gens);
-        addDefaultVegetation(gens);
+        addSprings(gens);
+        addSeagrassOnStone(gens);
+        gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.PATCH_WATERLILY);
+        addGiantTaigaGrass(gens);
+        addJungleGrass(gens);
+        addLargeFerns(gens);
+        addSweetBerryBushesSnowy(gens);
         gens.feature(VEGETAL_DECORATION, VegetationPlaced.PATCH_PUMPKIN.entry);
-        var spawns = new SpawnSettings.Builder();
-        addFarmAnimals(spawns);
-        addCaveMobs(spawns);
-        addBatsAndMonsters(spawns);
+        addMossyRocks(gens);
+        gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.MUSHROOM_ISLAND_VEGETATION);
+        gens.feature(VEGETAL_DECORATION, VegetationPlaced.AMBERBLOSSOM_VEGETATION.entry);
 
-        addWilderCaveMobs(spawns);
-        addWilderAutumnalMobs(spawns);
+        var spawns = new SpawnSettings.Builder();
+
+        /** surface mobs */
         addWilderForestMobs(spawns);
+        addWilderAutumnalMobs(spawns);
+
+        /** cave mobs */
+        addBatsAndMonsters(spawns);
+        addWilderCaveMobs(spawns);
 
         float temps = 0.8f;
         var effects = new BiomeEffects.Builder();
         addBasicEffects(effects);
         effects.skyColor(OverworldBiomeWidener.getSkyColor(temps));
-        effects.music(MusicType.createIngameMusic(SoundEvents.MUSIC_OVERWORLD_JUNGLE_AND_FOREST));
+        effects.music(MusicType.createIngameMusic(SoundEvents.MUSIC_OVERWORLD_OLD_GROWTH_TAIGA));
         effects.grassColor(0xE58639);
         effects.foliageColor(0xFF8B26);
         

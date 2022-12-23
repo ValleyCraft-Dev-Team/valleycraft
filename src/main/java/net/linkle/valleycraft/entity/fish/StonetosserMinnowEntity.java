@@ -9,15 +9,15 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
 
-public class StonetosserMinnowEntity extends FishEntity {
+public class StonerollerMinnowEntity extends FishEntity {
 
-    public StonetosserMinnowEntity(EntityType<? extends FishEntity> type, World world) {
+    public StonerollerMinnowEntity(EntityType<? extends FishEntity> type, World world) {
         super(type, world);
     }
 
     @Override
     public ItemStack getBucketItem() {
-        return new ItemStack(ModFishing.STONETOSSER_MINNOW_BUCKET);
+        return new ItemStack(ModFishing.STONEROLLER_MINNOW_BUCKET);
     }
 
     @Override

@@ -152,7 +152,7 @@ public enum ModItems implements ItemEnum {
     PERCH_SPAWN_EGG(new SpawnEggItem(ModEntityType.PERCH, 0x724E00, 0xCC9D26, itemSettings())), // perch_spawn_egg
     RED_PORGY_SPAWN_EGG(new SpawnEggItem(ModEntityType.RED_PORGY, 0xF48DB0, 0xF9EDF1, itemSettings())), // red_porgy_spawn_egg
     SARDINE_SPAWN_EGG(new SpawnEggItem(ModEntityType.SARDINE, 0x2E445B, 0xA1B1CC, itemSettings())), // sardine_spawn_egg
-    STONETOSSER_MINNOW_SPAWN_EGG(new SpawnEggItem(ModEntityType.STONETOSSER_MINNOW, 0x608C85, 0xCCCCCC, itemSettings())), // stonetosser_minnow_spawn_egg
+    STONEROLLER_MINNOW_SPAWN_EGG(new SpawnEggItem(ModEntityType.STONEROLLER_MINNOW, 0x608C85, 0xCCCCCC, itemSettings())), // STONEROLLER_MINNOW_spawn_egg
     BONEFIN_SPAWN_EGG(new SpawnEggItem(ModEntityType.BONEFIN, 0xE5E0CE, 0xBFB799, itemSettings())), // bonefin_spawn_egg
     ZOD_SPAWN_EGG(new SpawnEggItem(ModEntityType.ZOD, 0x557571, 0xCCB599, itemSettings())); // zod_spawn_egg
 

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/food/cooked_items/cooked_stonetosser_minnow"
+    "layer0": "valleycraft:item/food/cooked_items/cooked_STONEROLLER_MINNOW"
   }
 }
