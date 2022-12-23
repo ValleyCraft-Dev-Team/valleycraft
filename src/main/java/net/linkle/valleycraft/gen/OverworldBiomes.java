@@ -1,14 +1,11 @@
 package net.linkle.valleycraft.gen;
 
+import static net.linkle.valleycraft.gen.feature.ModBiomeFeatures.*;
 import static net.minecraft.world.gen.GenerationStep.Feature.VEGETAL_DECORATION;
-import static net.minecraft.world.gen.feature.DefaultBiomeFeatures.*;
-
 import net.linkle.valleycraft.gen.feature.VegetationPlaced;
 import net.linkle.valleycraft.init.ModBiomes;
-import net.linkle.valleycraft.init.ModEntityType;
 import net.linkle.valleycraft.widener.OverworldBiomeWidener;
 import net.minecraft.client.sound.MusicType;
-import net.minecraft.entity.SpawnGroup;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.biome.*;
@@ -34,22 +31,25 @@ public class OverworldBiomes {
     public static Biome amberForest() {
         var gens = new GenerationSettings.Builder();
         addBasicFeatures(gens);
+        addDungeons(gens);
         addDefaultOres(gens);
         addDefaultDisks(gens);
         gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_PLAINS);
-        gens.feature(VEGETAL_DECORATION, VegetationPlaced.WARM_BIRCH_PLACED.entry);
         gens.feature(VEGETAL_DECORATION, VegetationPlaced.AMBER_PLACED.entry);
         addDefaultFlowers(gens);
         addForestGrass(gens);
         addDefaultMushrooms(gens);
         addDefaultVegetation(gens);
         gens.feature(VEGETAL_DECORATION, VegetationPlaced.PATCH_PUMPKIN.entry);
-        
         var spawns = new SpawnSettings.Builder();
         addFarmAnimals(spawns);
+        addCaveMobs(spawns);
         addBatsAndMonsters(spawns);
-        spawns.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntityType.PUPKIN, 5, 1, 3));
-        
+
+        addWilderCaveMobs(spawns);
+        addWilderAutumnalMobs(spawns);
+        addWilderForestMobs(spawns);
+
         float temps = 0.8f;
         var effects = new BiomeEffects.Builder();
         addBasicEffects(effects);

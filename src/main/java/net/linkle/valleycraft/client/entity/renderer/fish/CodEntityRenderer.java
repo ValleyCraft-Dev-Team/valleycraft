@@ -1,22 +1,22 @@
-package net.linkle.valleycraft.client.entity.renderer;
+package net.linkle.valleycraft.client.entity.renderer.fish;
 
 import net.linkle.valleycraft.Main;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
+import net.minecraft.client.render.entity.model.CodEntityModel;
 import net.minecraft.client.render.entity.model.EntityModelLayers;
-import net.minecraft.client.render.entity.model.SalmonEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.passive.FishEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3f;
 
-public class SalmonEntityRenderer extends MobEntityRenderer<FishEntity, SalmonEntityModel<FishEntity>> {
+public class CodEntityRenderer extends MobEntityRenderer<FishEntity, CodEntityModel<FishEntity>> {
     
     private final Identifier texture;
 
-    public SalmonEntityRenderer(EntityRendererFactory.Context context, Identifier texture) {
-        super(context, new SalmonEntityModel<>(context.getPart(EntityModelLayers.SALMON)), 0.3f);
+    public CodEntityRenderer(EntityRendererFactory.Context context, Identifier texture) {
+        super(context, new CodEntityModel<>(context.getPart(EntityModelLayers.COD)), 0.3f);
         this.texture = texture;
     }
 
@@ -39,6 +39,6 @@ public class SalmonEntityRenderer extends MobEntityRenderer<FishEntity, SalmonEn
     /** @param texture file name of the snail texture. */
     public static EntityRendererFactory<FishEntity> create(String texture) {
         var id = Main.makeId("textures/entity/fish/" + texture + ".png");
-        return context -> new SalmonEntityRenderer(context, id);
+        return context -> new CodEntityRenderer(context, id);
     }
 }

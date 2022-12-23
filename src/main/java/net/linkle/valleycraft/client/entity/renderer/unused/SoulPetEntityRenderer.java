@@ -1,4 +1,4 @@
-package net.linkle.valleycraft.client.entity.renderer;
+package net.linkle.valleycraft.client.entity.renderer.unused;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.client.renderer.BillboardRenderer;
@@ -6,7 +6,6 @@ import net.linkle.valleycraft.util.Util;
 import net.minecraft.client.render.LightmapTextureManager;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory.Context;

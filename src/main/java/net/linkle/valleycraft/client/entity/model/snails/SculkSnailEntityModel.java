@@ -1,15 +1,9 @@
-package net.linkle.valleycraft.client.entity.model;
+package net.linkle.valleycraft.client.entity.model.snails;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.Main;
-import net.minecraft.client.model.Dilation;
-import net.minecraft.client.model.ModelData;
-import net.minecraft.client.model.ModelPart;
-import net.minecraft.client.model.ModelPartBuilder;
-import net.minecraft.client.model.ModelPartData;
-import net.minecraft.client.model.ModelTransform;
-import net.minecraft.client.model.TexturedModelData;
+import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
@@ -18,13 +12,13 @@ import net.minecraft.entity.mob.MobEntity;
 
 //Made with Blockbench 4.2.2
 @Environment(EnvType.CLIENT)
-public class SnailEntityModel<T extends MobEntity> extends SinglePartEntityModel<T> {
-    
-    public static final EntityModelLayer LAYER = new EntityModelLayer(Main.makeId("snail"), "main");
-    
+public class SculkSnailEntityModel<T extends MobEntity> extends SinglePartEntityModel<T> {
+
+    public static final EntityModelLayer LAYER = new EntityModelLayer(Main.makeId("sculk_snail"), "main");
+
 	private final ModelPart main;
 
-	public SnailEntityModel(ModelPart root) {
+	public SculkSnailEntityModel(ModelPart root) {
 		this.main = root.getChild("main");
 	}
 

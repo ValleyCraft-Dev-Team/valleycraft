@@ -1,9 +1,9 @@
-package net.linkle.valleycraft.client.entity.renderer;
+package net.linkle.valleycraft.client.entity.renderer.snails;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.client.entity.model.SnailEntityModel;
+import net.linkle.valleycraft.client.entity.model.snails.CaveSnailEntityModel;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.EntityRendererFactory.Context;
 import net.minecraft.client.render.entity.MobEntityRenderer;
@@ -11,12 +11,12 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.util.Identifier;
 
 @Environment(value=EnvType.CLIENT)
-public class SnailEntityRenderer extends MobEntityRenderer<MobEntity, SnailEntityModel<MobEntity>> {
-    
+public class CaveSnailEntityRenderer extends MobEntityRenderer<MobEntity, CaveSnailEntityModel<MobEntity>> {
+
     private final Identifier texture;
-    
-    private SnailEntityRenderer(Context context, Identifier texture) {
-        super(context, new SnailEntityModel<MobEntity>(context.getPart(SnailEntityModel.LAYER)), 0.3f);
+
+    private CaveSnailEntityRenderer(Context context, Identifier texture) {
+        super(context, new CaveSnailEntityModel<MobEntity>(context.getPart(CaveSnailEntityModel.LAYER)), 0.3f);
         this.texture = texture;
     }
 
@@ -28,6 +28,6 @@ public class SnailEntityRenderer extends MobEntityRenderer<MobEntity, SnailEntit
     /** @param texture file name of the snail texture. */
     public static EntityRendererFactory<MobEntity> create(String texture) {
         var id = Main.makeId("textures/entity/bugs/snail/" + texture + ".png");
-        return context -> new SnailEntityRenderer(context, id);
+        return context -> new CaveSnailEntityRenderer(context, id);
     }
 }

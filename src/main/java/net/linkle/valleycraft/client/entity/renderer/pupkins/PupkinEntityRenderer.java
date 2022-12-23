@@ -1,7 +1,7 @@
-package net.linkle.valleycraft.client.entity.renderer;
+package net.linkle.valleycraft.client.entity.renderer.pupkins;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.client.entity.model.PupkinEntityModel;
+import net.linkle.valleycraft.client.entity.model.pupkins.PupkinEntityModel;
 import net.minecraft.client.render.entity.EntityRendererFactory.Context;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.client.render.entity.MobEntityRenderer;

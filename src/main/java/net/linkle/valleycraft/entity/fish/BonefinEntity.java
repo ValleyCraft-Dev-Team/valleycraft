@@ -1,4 +1,4 @@
-package net.linkle.valleycraft.entity;
+package net.linkle.valleycraft.entity.fish;
 
 import net.linkle.valleycraft.init.ModFishing;
 import net.minecraft.entity.EntityType;

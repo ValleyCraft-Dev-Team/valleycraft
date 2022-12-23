@@ -1,4 +1,4 @@
-package net.linkle.valleycraft.client.entity.model;
+package net.linkle.valleycraft.client.entity.model.pupkins;
 
 import static net.minecraft.client.render.entity.model.EntityModelPartNames.*;
 

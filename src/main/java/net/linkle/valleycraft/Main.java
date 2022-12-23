@@ -1,5 +1,6 @@
 package net.linkle.valleycraft;
 
+import net.linkle.valleycraft.gen.feature.ModBiomeFeatures;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

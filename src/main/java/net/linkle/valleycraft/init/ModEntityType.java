@@ -7,10 +7,20 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.client.entity.model.PupkinEntityModel;
-import net.linkle.valleycraft.client.entity.model.SnailEntityModel;
-import net.linkle.valleycraft.client.entity.renderer.*;
-import net.linkle.valleycraft.entity.*;
+import net.linkle.valleycraft.client.entity.model.pupkins.PupkinEntityModel;
+import net.linkle.valleycraft.client.entity.model.snails.SnailEntityModel;
+import net.linkle.valleycraft.client.entity.renderer.fish.CodEntityRenderer;
+import net.linkle.valleycraft.client.entity.renderer.fish.SalmonEntityRenderer;
+import net.linkle.valleycraft.client.entity.renderer.pupkins.PupkinEntityRenderer;
+import net.linkle.valleycraft.client.entity.renderer.snails.SnailEntityRenderer;
+import net.linkle.valleycraft.client.entity.renderer.unused.SoulPetEntityRenderer;
+import net.linkle.valleycraft.entity.fish.*;
+import net.linkle.valleycraft.entity.pupkins.PupkinEntity;
+import net.linkle.valleycraft.entity.snails.CaveSnailEntity;
+import net.linkle.valleycraft.entity.snails.SculkSnailEntity;
+import net.linkle.valleycraft.entity.snails.SnailEntity;
+import net.linkle.valleycraft.entity.thrown_items.ThrownRockEntity;
+import net.linkle.valleycraft.entity.unused.SoulPetEntity;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.entity.*;
 import net.minecraft.entity.SpawnRestriction.Location;
@@ -21,9 +31,17 @@ import net.minecraft.world.Heightmap;
 
 public class ModEntityType {
 
-    public static final EntityType<SnailEntity> SNAIL = register("snail", 
-            FabricEntityTypeBuilder.createMob().entityFactory(SnailEntity::new).spawnGroup(SpawnGroup.CREATURE)
+    public static final EntityType<SnailEntity> SNAIL = register("snail",
+            FabricEntityTypeBuilder.createMob().entityFactory(SnailEntity::new).spawnGroup(SpawnGroup.AMBIENT)
             .dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(5).build());
+
+    public static final EntityType<CaveSnailEntity> CAVE_SNAIL = register("cave_snail",
+            FabricEntityTypeBuilder.createMob().entityFactory(CaveSnailEntity::new).spawnGroup(SpawnGroup.AMBIENT)
+                    .dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(5).build());
+
+    public static final EntityType<SculkSnailEntity> SCULK_SNAIL = register("sculk_snail",
+            FabricEntityTypeBuilder.createMob().entityFactory(SculkSnailEntity::new).spawnGroup(SpawnGroup.AMBIENT)
+                    .dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(5).build());
 
     public static final EntityType<ZodEntity> ZOD = register("zod",
             FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.MONSTER).entityFactory(ZodEntity::new)
@@ -74,12 +92,12 @@ public class ModEntityType {
                     .build()
     );
     
-    public static final EntityType<PupkinEntity> PUPKIN = register("pupkin", 
+    public static final EntityType<PupkinEntity> PUPKIN = register("pupkin",
             FabricEntityTypeBuilder.createMob().entityFactory(PupkinEntity::new).spawnGroup(SpawnGroup.CREATURE)
             .dimensions(new EntityDimensions(0.6F, 0.8F, true)).trackRangeChunks(6)
             .spawnRestriction(Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn).build());
     
-    public static final EntityType<SoulPetEntity> SOUL_PET = register("soul_pet", 
+    public static final EntityType<SoulPetEntity> SOUL_PET = register("soul_pet",
             FabricEntityTypeBuilder.create(SpawnGroup.MISC, SoulPetEntity::new)
             .trackRangeChunks(8).dimensions(EntityDimensions.fixed(0.25F, 0.25F)).build());
 
@@ -90,6 +108,7 @@ public class ModEntityType {
         
         FabricDefaultAttributeRegistry.register(ZOD, UndeadFishEntity.createUndeadFishAttributes());
         FabricDefaultAttributeRegistry.register(BONEFIN, UndeadFishEntity.createUndeadFishAttributes());
+
         FabricDefaultAttributeRegistry.register(STONETOSSER_MINNOW, FishEntity.createFishAttributes());
         FabricDefaultAttributeRegistry.register(ABYSSWATCHER, FishEntity.createFishAttributes());
         FabricDefaultAttributeRegistry.register(SARDINE, FishEntity.createFishAttributes());
