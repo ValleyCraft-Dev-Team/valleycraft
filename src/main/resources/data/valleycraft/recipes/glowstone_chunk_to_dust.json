@@ -1,16 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "group": "artifact_breakdowns",
-  "key": {
-    "#": {
-      "item": "valleycraft:glowstone_chunk"
+  "ingredients": [
+    {
+      "item": "valleycraft:polished_glowstone_chunk"
     }
-  },
-  "pattern": [
-    "#"
   ],
   "result": {
-    "count": 6,
-    "item": "minecraft:glowstone_dust"
+    "item": "minecraft:glowstone_dust",
+    "count": 6
   }
 }

@@ -55,7 +55,7 @@ public class ModEntityType {
                     .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, UndeadFishEntity::canSpawn).build()
     );
 
-    public static final EntityType<StonerollerMinnowEntity> STONEROLLER_MINNOW = register("STONEROLLER_MINNOW",
+    public static final EntityType<StonerollerMinnowEntity> STONEROLLER_MINNOW = register("stoneroller_minnow",
             FabricEntityTypeBuilder.createMob().spawnGroup(SpawnGroup.WATER_CREATURE).entityFactory(StonerollerMinnowEntity::new)
                     .trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
                     .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, StonerollerMinnowEntity::canSpawn).build()

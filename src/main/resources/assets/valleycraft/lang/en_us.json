@@ -118,7 +118,7 @@
   "item.valleycraft.raw_beast_heart": "§aRaw Heart",
   "item.valleycraft.zod": "§aRaw Zombified Cod",
   "item.valleycraft.zod_bucket": "Bucket of Zombified Cod",
-  "item.valleycraft.STONEROLLER_MINNOW_bucket": "Bucket of Stoneroller Minnow",
+  "item.valleycraft.stoneroller_minnow_bucket": "Bucket of Stoneroller Minnow",
   "item.valleycraft.abysswatcher_bucket": "Bucket of Abysswatcher",
   "item.valleycraft.red_porgy_bucket": "Bucket of Pink Porgy",
   "item.valleycraft.sardine_bucket": "Bucket of Sardine",
@@ -412,8 +412,8 @@
 
   "item.valleycraft.bikini": "§aTattered Femme Undergarments",
   "item.valleycraft.bikini_masc": "§aTattered Masc Undergarments",
-  "item.valleycraft.bikini_coat": "§aTattered Coat",
-  "item.valleycraft.bikini_coat_hood": "§aTattered Hood",
+  "item.valleycraft.bikini_coat": "§aRagged Coat",
+  "item.valleycraft.bikini_coat_hood": "§aRagged Hood",
   "item.valleycraft.bikini_neutral": "§aTattered Undergarments",
   "item.valleycraft.bikini_coat_gaiters": "Champion's Gaiters",
 
@@ -1192,10 +1192,11 @@
 
   "item.valleycraft.climbing_axe": "Mountain Climbing Axe",
   "item.valleycraft.ancient_climbing_axe": "Ancient Ice Climbing Axe",
-  "item.valleycraft.dierdra_spear": "Prehistoric Wooden Spear",
+  "item.valleycraft.dierdra_spear": "Wooden Daerdrin Sword",
   "block.valleycraft.moblin_skeletal_remains": "Moblin Skeletal Remains",
   "block.valleycraft.piglin_skeletal_remains": "Piglin Skeletal Remains",
   "block.valleycraft.villager_skeletal_remains": "Villager Skeletal Remains",
+  "block.valleycraft.daerdri_skull": "Daerdri Skull",
 
   "block.valleycraft.block_daub": "Block of Daub",
   "block.valleycraft.small_cactus": "Cave Cactus",
@@ -1275,12 +1276,12 @@
   "item.valleycraft.perch_spawn_egg": "Perch Spawn Egg",
   "item.valleycraft.red_porgy_spawn_egg": "Pink Porgy Spawn Egg",
   "item.valleycraft.sardine_spawn_egg": "Sardine Spawn Egg",
-  "item.valleycraft.STONEROLLER_MINNOW_spawn_egg": "Stoneroller Minnow Spawn Egg",
+  "item.valleycraft.stoneroller_minnow_spawn_egg": "Stoneroller Minnow Spawn Egg",
   "item.valleycraft.bonefin_spawn_egg": "Bonefin Spawn Egg",
   "item.valleycraft.zod_spawn_egg": "Zombified Cod Spawn Egg",
 
   "item.valleycraft.raw_abysswatcher": "Raw Abysswatcher",
-  "item.valleycraft.raw_STONEROLLER_MINNOW": "Raw Stoneroller Minnow",
+  "item.valleycraft.raw_stoneroller_minnow": "Raw Stoneroller Minnow",
   "item.valleycraft.raw_red_porgy": "Raw Pink Porgy",
   "item.valleycraft.raw_perch": "Raw Perch",
   "item.valleycraft.raw_lobster": "Raw Lobster",
@@ -1289,7 +1290,7 @@
   "item.valleycraft.raw_tripe": "Raw Spider Tripe",
 
   "item.valleycraft.cooked_abysswatcher": "Cooked Abysswatcher",
-  "item.valleycraft.cooked_STONEROLLER_MINNOW": "Cooked Stoneroller Minnow",
+  "item.valleycraft.cooked_stoneroller_minnow": "Cooked Stoneroller Minnow",
   "item.valleycraft.cooked_red_porgy": "Cooked Pink Porgy",
   "item.valleycraft.cooked_perch": "Cooked Perch",
   "item.valleycraft.cooked_lobster": "Cooked Lobster",
