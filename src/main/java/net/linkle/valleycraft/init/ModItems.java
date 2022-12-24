@@ -1,20 +1,26 @@
 package net.linkle.valleycraft.init;
 
+import static net.linkle.valleycraft.init.ModGroups.BOOKS;
+import static net.linkle.valleycraft.init.ModGroups.INGREDIENTS;
+import static net.linkle.valleycraft.init.ModGroups.REGULAR_DISHES;
+import static net.linkle.valleycraft.init.ModGroups.VC_ITEMS;
+import static net.minecraft.util.Rarity.EPIC;
+import static net.minecraft.util.Rarity.RARE;
+import static net.minecraft.util.Rarity.UNCOMMON;
+
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.item.clay_pot.ClayPotItem;
 import net.linkle.valleycraft.item.clay_pot.WaterClayPotItem;
-import net.linkle.valleycraft.item.wooden_cup.CupItem;
-import net.linkle.valleycraft.item.wooden_cup.WaterCupItem;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.*;
+import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.BucketItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
-
-import static net.linkle.valleycraft.init.ModGroups.*;
-import static net.minecraft.util.Rarity.*;
 
 public enum ModItems implements ItemEnum {
     //cups

@@ -33,7 +33,7 @@ public class BigFlowerPotBlock extends HorizontalConnectingBlock {
 
     public BigFlowerPotBlock(Settings settings) {
         super(2.0F, 2.0F, 16.0F, 16.0F, 16.0F, settings);
-        this.setDefaultState((BlockState) ((BlockState) ((BlockState) ((BlockState) ((BlockState) ((BlockState) this.stateManager.getDefaultState()).with(NORTH, true)).with(EAST, true)).with(SOUTH, true)).with(WEST, true).with(MOISTURE, 4)));
+        setDefaultState(stateManager.getDefaultState().with(NORTH, true).with(EAST, true).with(SOUTH, true).with(WEST, true).with(MOISTURE, 4));
     }
 
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
@@ -70,7 +70,7 @@ public class BigFlowerPotBlock extends HorizontalConnectingBlock {
         BlockState blockState2 = blockView.getBlockState(blockPos3);
         BlockState blockState3 = blockView.getBlockState(blockPos4);
         BlockState blockState4 = blockView.getBlockState(blockPos5);
-        return (BlockState) ((BlockState) ((BlockState) ((BlockState) ((BlockState) super.getPlacementState(ctx).with(NORTH, this.canConnect(blockState, blockState.isSideSolidFullSquare(blockView, blockPos2, Direction.SOUTH), Direction.SOUTH))).with(EAST, this.canConnect(blockState2, blockState2.isSideSolidFullSquare(blockView, blockPos3, Direction.WEST), Direction.WEST))).with(SOUTH, this.canConnect(blockState3, blockState3.isSideSolidFullSquare(blockView, blockPos4, Direction.NORTH), Direction.NORTH))).with(WEST, this.canConnect(blockState4, blockState4.isSideSolidFullSquare(blockView, blockPos5, Direction.EAST), Direction.EAST)));
+        return super.getPlacementState(ctx).with(NORTH, this.canConnect(blockState, blockState.isSideSolidFullSquare(blockView, blockPos2, Direction.SOUTH), Direction.SOUTH)).with(EAST, this.canConnect(blockState2, blockState2.isSideSolidFullSquare(blockView, blockPos3, Direction.WEST), Direction.WEST)).with(SOUTH, this.canConnect(blockState3, blockState3.isSideSolidFullSquare(blockView, blockPos4, Direction.NORTH), Direction.NORTH)).with(WEST, this.canConnect(blockState4, blockState4.isSideSolidFullSquare(blockView, blockPos5, Direction.EAST), Direction.EAST));
     }
 
     public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
@@ -86,8 +86,8 @@ public class BigFlowerPotBlock extends HorizontalConnectingBlock {
     }
 
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(new Property[]{NORTH, EAST, WEST, SOUTH});
-        builder.add(new Property[]{MOISTURE});
+        builder.add(NORTH, EAST, WEST, SOUTH);
+        builder.add(MOISTURE, WATERLOGGED);
     }
 
     static {

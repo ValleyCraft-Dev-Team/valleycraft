@@ -38,7 +38,7 @@ public class ClayPotItem extends GlassBottleItem {
                 if (world.getFluidState(blockPos).isIn(FluidTags.WATER)) {
                     world.playSound(user, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.NEUTRAL, 1.0F, 1.0F);
                     world.emitGameEvent(user, GameEvent.FLUID_PICKUP, blockPos);
-                    return TypedActionResult.success(this.fill(itemStack, user, new ItemStack(ModItems.WATER_FILLED_WOODEN_CUP)), world.isClient());
+                    return TypedActionResult.success(this.fill(itemStack, user, new ItemStack(ModItems.WATER_FILLED_CLAY_POT)), world.isClient());
                 }
             }
 

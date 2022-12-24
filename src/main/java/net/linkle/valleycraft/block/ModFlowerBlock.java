@@ -37,7 +37,7 @@ public class ModFlowerBlock extends FlowerBlock {
     
     /** Create the block with random effect in stew. */
     public ModFlowerBlock(Settings settings) {
-        this(StatusEffects.LUCK, +1, settings);
+        this(StatusEffects.LUCK, -1, settings);
     }
     
     /** @param flower copy the effect from that flower block. */
