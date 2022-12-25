@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "valleycraft:breaks_down_into_cloth"
+      "item": "minecraft:white_wool"
     }
   ],
   "result": {
