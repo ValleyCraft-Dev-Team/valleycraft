@@ -102,7 +102,7 @@ public enum ModItems implements ItemEnum {
     NETHER_GARNET(new Item(itemSettings())),
     //OBSIDIAN_CHUNK(new Item(itemSettings())),
     COPPER_NUGGET(new Item(itemSettings())),
-    COPPER_SCRAP(new Item(itemSettings())),
+    //COPPER_SCRAP(new Item(itemSettings())),
     GOLD_SCRAP(new Item(itemSettings())),
     PRIMSTEEL_NUGGET(new Item(itemSettings())),
     PRIMSTEEL_SCRAP(new Item(itemSettings())),

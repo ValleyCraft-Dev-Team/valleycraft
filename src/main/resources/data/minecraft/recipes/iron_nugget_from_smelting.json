@@ -1,0 +1,110 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "minecraft:iron_pickaxe"
+    },
+    {
+      "item": "minecraft:iron_shovel"
+    },
+    {
+      "item": "minecraft:iron_axe"
+    },
+    {
+      "item": "minecraft:iron_hoe"
+    },
+    {
+      "item": "minecraft:iron_sword"
+    },
+    {
+      "item": "minecraft:iron_helmet"
+    },
+    {
+      "item": "minecraft:iron_chestplate"
+    },
+    {
+      "item": "minecraft:iron_leggings"
+    },
+    {
+      "item": "minecraft:iron_boots"
+    },
+    {
+      "item": "minecraft:iron_horse_armor"
+    },
+    {
+      "item": "minecraft:chainmail_helmet"
+    },
+    {
+      "item": "minecraft:chainmail_chestplate"
+    },
+    {
+      "item": "minecraft:chainmail_leggings"
+    },
+    {
+      "item": "minecraft:chainmail_boots"
+    },
+    {
+      "item": "valleycraft:knife_iron"
+    },
+    {
+      "item": "valleycraft:woodcutter_axe_iron"
+    },
+    {
+      "item": "valleycraft:hatchet_iron"
+    },
+    {
+      "item": "valleycraft:scythe_iron"
+    },
+    {
+      "item": "valleycraft:dagger_iron"
+    },
+    {
+      "item": "valleycraft:traveler_iron"
+    },
+    {
+      "item": "valleycraft:iron_greatsword"
+    },
+    {
+      "item": "valleycraft:reinforced_iron_helmet"
+    },
+    {
+      "item": "valleycraft:iron_breastplate"
+    },
+    {
+      "item": "valleycraft:iron_sandals"
+    },
+    {
+      "item": "valleycraft:iron_hauberk"
+    },
+    {
+      "item": "valleycraft:iron_thigh_guards"
+    },
+    {
+      "item": "valleycraft:iron_circlet"
+    },
+    {
+      "item": "valleycraft:ancient_shortsword"
+    },
+    {
+      "item": "valleycraft:ancient_climbing_axe"
+    },
+    {
+      "item": "valleycraft:seaologer_fixed"
+    },
+    {
+      "item": "valleycraft:moblin_sword_fixed"
+    },
+    {
+      "item": "valleycraft:scale_mail_helmet"
+    },
+    {
+      "item": "valleycraft:scale_mail"
+    },
+    {
+      "item": "valleycraft:scale_mail_skirt"
+    }
+  ],
+  "result": "valleycraft:iron_scrap"
+}

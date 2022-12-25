@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:ancient_dungeon_key"
+    },
+    {
+      "item": "valleycraft:knife_primsteel"
+    },
+    {
+      "item": "valleycraft:woodcutter_axe_primsteel"
+    },
+    {
+      "item": "valleycraft:hatchet_primsteel"
+    },
+    {
+      "item": "valleycraft:scythe_primsteel"
+    },
+    {
+      "item": "valleycraft:dagger_primsteel"
+    },
+    {
+      "item": "valleycraft:traveler_primsteel"
+    },
+    {
+      "item": "valleycraft:primsteel_greatsword"
+    },
+    {
+      "item": "valleycraft:reinforced_primsteel_helmet"
+    },
+    {
+      "item": "valleycraft:primsteel_breastplate"
+    },
+    {
+      "item": "valleycraft:primsteel_sandals"
+    },
+    {
+      "item": "valleycraft:primsteel_hauberk"
+    },
+    {
+      "item": "valleycraft:primsteel_thigh_guards"
+    },
+    {
+      "item": "valleycraft:primsteel_circlet"
+    },
+    {
+      "item": "valleycraft:primsteel_sword"
+    },
+    {
+      "item": "valleycraft:primsteel_shovel"
+    },
+    {
+      "item": "valleycraft:primsteel_pickaxe"
+    },
+    {
+      "item": "valleycraft:primsteel_axe"
+    },
+    {
+      "item": "valleycraft:primsteel_hoe"
+    },
+    {
+      "item": "valleycraft:primsteel_ikakalaka"
+    },
+    {
+      "item": "valleycraft:golemite_helmet"
+    },
+    {
+      "item": "valleycraft:golemite_chestplate"
+    },
+    {
+      "item": "valleycraft:golemite_leggings"
+    },
+    {
+      "item": "valleycraft:golemite_boots"
+    }
+  ],
+  "result": "valleycraft:primsteel_scrap"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:stalwart_shroom"
+    }
+  ],
+  "result": "minecraft:iron_nugget"
+}

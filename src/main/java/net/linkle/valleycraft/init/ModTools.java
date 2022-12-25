@@ -51,11 +51,11 @@ public class ModTools {
     //public static final Item FLINT = new FlintToolItem(new FlintToolMaterial());
     //public static final Item HEFTY_ROCK = new RockToolItem(new RockToolMaterial());
 
-    public static final Item MAKESHIFT_SPEAR = new BranchSpearItem(ModToolMaterials.MAKESHIFT_WOOD, 3, -2.0f);
-    public static final Item MAKESHIFT_PICKAXE = new BranchPickaxeItem(ModToolMaterials.MAKESHIFT_STONE, 3, -2.0f);
-    public static final Item MAKESHIFT_AXE = new BranchAxeItem(ModToolMaterials.MAKESHIFT_FLINT, 3, -2.0f);
-    public static final Item MAKESHIFT_SHOVEL = new BranchShovelItem(ModToolMaterials.MAKESHIFT_WOOD, 3, -2.0f);
-    public static final Item MAKESHIFT_HOE = new BranchHoeItem(ModToolMaterials.MAKESHIFT_WOOD, 3, -2.0f);
+    public static final Item MAKESHIFT_SPEAR = new BranchSpearItem(ModToolMaterials.MAKESHIFT_WOOD, 4, -2.8f);
+    public static final Item MAKESHIFT_PICKAXE = new BranchPickaxeItem(ModToolMaterials.MAKESHIFT_STONE, 3, -3.0f);
+    public static final Item MAKESHIFT_AXE = new BranchAxeItem(ModToolMaterials.MAKESHIFT_FLINT, 3, -3.0f);
+    public static final Item MAKESHIFT_SHOVEL = new BranchShovelItem(ModToolMaterials.MAKESHIFT_WOOD, 1, -3.0f);
+    public static final Item MAKESHIFT_HOE = new BranchHoeItem(ModToolMaterials.MAKESHIFT_WOOD, 0, -3.0f);
 
     public static final Item RUSTY_SWORD = new RustySwordItem(new RustySwordMaterial(),4, -2.4f);
     public static final Item RUSTY_PICKAXE = new RustyPickaxeItem(new RustyPickaxeMaterial(),3, -2.8f);
@@ -84,6 +84,8 @@ public class ModTools {
     public static final Integer MACE_BASE_DAMAGE = 3;
     public static final Integer STAFF_BASE_DAMAGE = 3;
     public static final Integer GREATSWORD_BASE_DAMAGE = 8;
+
+    public static final Integer MAKESHIFT_BASED_DAMAGE = 1;
 
     //The base attack speed of each tool type.
     //These numbers are subtracted from four, so 4.0 will make the tool never charge, and higher will likely cause issues.
@@ -129,6 +131,7 @@ public class ModTools {
         //Reg.register("hefty_rock", HEFTY_ROCK);
         Reg.register("throwing_rock", THROWING_ROCK);
         Reg.register("makeshift_spear", MAKESHIFT_SPEAR);
+        Reg.register("makeshift_knife", new KnifeBase(ModToolMaterials.MAKESHIFT_WOOD, MAKESHIFT_BASED_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("makeshift_shovel", MAKESHIFT_SHOVEL);
         Reg.register("makeshift_pickaxe", MAKESHIFT_PICKAXE);
         Reg.register("makeshift_axe", MAKESHIFT_AXE);
@@ -240,19 +243,16 @@ public class ModTools {
         Reg.register("rosegold_axe", new AxeItem(ModToolMaterials.ROSEGOLD, AXE_BASE_DAMAGE, AXE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("rosegold_hoe", new ModHoeItem(ModToolMaterials.ROSEGOLD, HOE_BASE_DAMAGE, HOE_BASE_SPEED, BASIC_SETTINGS));
 
-        //Artifacts
-        Reg.register("ancient_bamboo_staff", new StaffBase(ModToolMaterials.NATURES_BLESSING, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
-        Reg.register("goddess_blade_found", new BrokenMythicTravelerBase(ModToolMaterials.BROKEN_GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_EPIC));
-        Item goddessBlade = Reg.register("goddess_blade", new UnbreakableMythicSwordBase(ModToolMaterials.GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_1561));
-        ModelPredicateProviderRegistry.register(goddessBlade, new Identifier("broken"), (stack, world, entity, seed) -> PreventDestroy.isUsable(stack) ? 0.0f : 1.0f);
-        Item junglesBlessing = Reg.register("jungles_blessing", new UnbreakableMythicScytheBase(ModToolMaterials.NATURES_BLESSING, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_780));
-        ModelPredicateProviderRegistry.register(junglesBlessing, new Identifier("broken"), (stack, world, entity, seed) -> PreventDestroy.isUsable(stack) ? 0.0f : 1.0f);
-
+        Reg.register("ladle", LADLE);
+        //rusty
+        Reg.register("rusted_sword", RUSTY_SWORD);
+        Reg.register("rusted_pickaxe", RUSTY_PICKAXE);
+        //tools
+        Reg.register("prismarine_hoe", new ModPrismarineHoeItem(ModToolMaterials.PRISMARINE, HOE_BASE_DAMAGE, HOE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
+        //weapons
         Reg.register("knife_coral_encrusted", CORAL_KNIFE);
         Reg.register("rapier_cave_fishers", CAVE_FISHERS_RAPIER);
         Reg.register("prismace", new MaceBase(ModToolMaterials.PRISMARINE, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
-        Reg.register("prismarine_hoe", new ModPrismarineHoeItem(ModToolMaterials.PRISMARINE, HOE_BASE_DAMAGE, HOE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
-        Reg.register("ladle", LADLE);
         Reg.register("toy_sword", new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("moblin_sword_broken", MOBLIN_BROKEN);
         Reg.register("moblin_sword_fixed", new TravelerBaseFixed(ToolMaterials.IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
@@ -260,16 +260,19 @@ public class ModTools {
         Reg.register("dierdra_spear", new SpearBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("seaologer_broken", SEAOLOGER_BROKEN);
         Reg.register("seaologer_fixed", SEAOLOGER_FIXED);
-        Reg.register("ancient_climbing_axe", ANCIENT_CLIMBING_AXE);
         Reg.register("ancient_shortsword", new TravelerBase(ModToolMaterials.WEAK_IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
         Reg.register("wooden_club", new MaceBase(ToolMaterials.WOOD, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS));
         Reg.register("bone_cudgel", new MaceBase(ModToolMaterials.BONE, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("obsidian_macuahuitl", new MaceBase(ModToolMaterials.OBSIDIAN, MACE_BASE_DAMAGE, MACE_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         //Reg.register("twinblade", new SpearBase(ModToolMaterials.GOLEMITE, SPEAR_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
         //Reg.register("piglin_battle_hammer", new WoodcutterAxeBase(ModToolMaterials.GOLEMITE, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_EPIC));
-
-        //rusty
-        Reg.register("rusted_sword", RUSTY_SWORD);
-        Reg.register("rusted_pickaxe", RUSTY_PICKAXE);
+        Reg.register("ancient_climbing_axe", ANCIENT_CLIMBING_AXE);
+        //Artifacts
+        Reg.register("ancient_bamboo_staff", new StaffBase(ModToolMaterials.NATURES_BLESSING, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
+        Reg.register("goddess_blade_found", new BrokenMythicTravelerBase(ModToolMaterials.BROKEN_GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_EPIC));
+        Item goddessBlade = Reg.register("goddess_blade", new UnbreakableMythicSwordBase(ModToolMaterials.GODDESS_BLADE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_1561));
+        ModelPredicateProviderRegistry.register(goddessBlade, new Identifier("broken"), (stack, world, entity, seed) -> PreventDestroy.isUsable(stack) ? 0.0f : 1.0f);
+        Item junglesBlessing = Reg.register("jungles_blessing", new UnbreakableMythicScytheBase(ModToolMaterials.NATURES_BLESSING, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, UNBREAKABLE_ARTIFACT_SETTINGS_EPIC_780));
+        ModelPredicateProviderRegistry.register(junglesBlessing, new Identifier("broken"), (stack, world, entity, seed) -> PreventDestroy.isUsable(stack) ? 0.0f : 1.0f);
     }
 }

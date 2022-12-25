@@ -1,0 +1,39 @@
+{
+  "parent": "valleycraft:wilder_horizons/root",
+  "display": {
+    "title": {
+      "text": "Scraping By"
+    },
+    "icon": {
+      "item": "valleycraft:makeshift_axe"
+    },
+    "description": {
+      "text": "Craft a Makeshift tool."
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "makeshift": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:makeshift_spear",
+              "valleycraft:makeshift_knife",
+              "valleycraft:makeshift_axe",
+              "valleycraft:makeshift_pickaxe",
+              "valleycraft:makeshift_shovel",
+              "valleycraft:makeshift_hoe"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "makeshift"
+    ]
+  ]
+}

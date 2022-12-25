@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:small_cactus"
+    },
+    {
+      "item": "valleycraft:flowering_cactus"
+    },
+    {
+      "item": "valleycraft:knapweed"
+    },
+    {
+      "item": "valleycraft:rushes"
+    }
+  ],
+  "result": "minecraft:green_dye"
+}

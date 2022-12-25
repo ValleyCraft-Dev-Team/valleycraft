@@ -1,0 +1,77 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "minecraft:golden_pickaxe"
+    },
+    {
+      "item": "minecraft:golden_shovel"
+    },
+    {
+      "item": "minecraft:golden_axe"
+    },
+    {
+      "item": "minecraft:golden_hoe"
+    },
+    {
+      "item": "minecraft:golden_sword"
+    },
+    {
+      "item": "minecraft:golden_helmet"
+    },
+    {
+      "item": "minecraft:golden_chestplate"
+    },
+    {
+      "item": "minecraft:golden_leggings"
+    },
+    {
+      "item": "minecraft:golden_boots"
+    },
+    {
+      "item": "minecraft:golden_horse_armor"
+    },
+    {
+      "item": "valleycraft:knife_golden"
+    },
+    {
+      "item": "valleycraft:woodcutter_axe_golden"
+    },
+    {
+      "item": "valleycraft:hatchet_golden"
+    },
+    {
+      "item": "valleycraft:scythe_golden"
+    },
+    {
+      "item": "valleycraft:dagger_golden"
+    },
+    {
+      "item": "valleycraft:traveler_golden"
+    },
+    {
+      "item": "valleycraft:golden_greatsword"
+    },
+    {
+      "item": "valleycraft:reinforced_golden_helmet"
+    },
+    {
+      "item": "valleycraft:golden_breastplate"
+    },
+    {
+      "item": "valleycraft:golden_sandals"
+    },
+    {
+      "item": "valleycraft:golden_hauberk"
+    },
+    {
+      "item": "valleycraft:golden_thigh_guards"
+    },
+    {
+      "item": "valleycraft:golden_circlet"
+    }
+  ],
+  "result": "valleycraft:gold_scrap"
+}

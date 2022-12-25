@@ -3,6 +3,8 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.baubles.*;
 import net.linkle.valleycraft.util.ItemEnum;
+import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -22,8 +24,9 @@ public enum ModBaubles implements ItemEnum {
     POLISHED_GLOWSTONE_CHUNK(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     ANCIENT_DUNGEON_KEY(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
     STRANGE_RUNE(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
-    DIVINE_ACORN(new BaubleItem(itemSettings().rarity(UNCOMMON))),
-    GHAST_TEARS(new UniqueBaubleItem(itemSettings().rarity(RARE))),
+    DIVINE_ACORN(new BaubleAliasedBlockItem(ModNaturalBlocks.OAK_SEED.block, itemSettings().rarity(UNCOMMON))),
+
+    GHAST_TEARS(new UniqueBaubleItem(itemSettings().rarity(RARE).recipeRemainder(Items.GLASS_BOTTLE))),
     STUCK_SLIME(new UniqueBaubleItem(itemSettings().rarity(RARE))),
     RING(new UniqueBaubleItem(itemSettings().rarity(RARE))),
     HEART_MEDALLION(new UniqueBaubleItem(itemSettings().rarity(RARE))),
