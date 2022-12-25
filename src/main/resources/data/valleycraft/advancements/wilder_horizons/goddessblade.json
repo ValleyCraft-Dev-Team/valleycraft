@@ -11,7 +11,7 @@
     "description": {
       "text": "Find a Sword of the Unknown Goddess"
     },
-    "frame": "goal",
+    "frame": "task",
     "hidden": "true"
   },
   "rewards": {

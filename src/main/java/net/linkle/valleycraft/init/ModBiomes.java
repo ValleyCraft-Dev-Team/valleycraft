@@ -13,7 +13,9 @@ import net.minecraft.world.biome.Biome;
 public enum ModBiomes implements IdProvider {
     
     // Biome List
-    AMBER_DARK_FOREST(OverworldBiomes.amberDarkForest());
+    AMBER_DARK_FOREST(OverworldBiomes.amberDarkForest()),
+    FROZEN_OLD_GROWTH_FOREST(OverworldBiomes.snowyOldGrowthTaiga());
+    //AMBER_BIRCH_FOREST(OverworldBiomes.amberBirchForest());
     //OLD_GROWTH_AMBER_BIRCH_FOREST(OverworldBiomes.amberBirchForestTall());
 
     // Enum class

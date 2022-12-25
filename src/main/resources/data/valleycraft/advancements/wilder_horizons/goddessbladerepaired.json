@@ -12,7 +12,7 @@
       "text": "Repair a Sword of the Unknown Goddess"
     },
     "frame": "challenge",
-    "hidden": "false"
+    "hidden": "task"
   },
   "rewards": {
     "recipes": [

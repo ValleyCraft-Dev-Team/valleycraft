@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:wilder_horizons/scrapingby",
+  "parent": "valleycraft:survival/scrapingby",
   "display": {
     "title": {
       "text": "\"Entry Log: Date Unknown\""
@@ -8,7 +8,7 @@
       "item": "minecraft:writable_book"
     },
     "description": {
-      "text": "Acquire the supplies necessary to write."
+      "text": "Acquire the supplies necessary to write"
     },
     "frame": "goal",
     "hidden": "false"

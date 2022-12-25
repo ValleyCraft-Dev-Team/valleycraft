@@ -11,7 +11,7 @@
     "description": {
       "text": "Find the Temple of the Unknown Goddess"
     },
-    "frame": "goal",
+    "frame": "task",
     "hidden": "true"
   },
   "rewards": {
@@ -20,10 +20,17 @@
   "criteria": {
     "in_temple": {
       "conditions": {
-        "entity": "this",
-        "location": {
-          "feature": "valleycraft:ancient_ruins/erdis_temple"
-        }
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "valleycraft:ancient_ruins/erdis_temple"
+              }
+            }
+          }
+        ]
       },
       "trigger": "minecraft:location"
     }

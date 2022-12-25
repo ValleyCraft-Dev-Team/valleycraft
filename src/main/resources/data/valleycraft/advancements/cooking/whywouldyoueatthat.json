@@ -20,7 +20,7 @@
     "monster_food": {
       "trigger": "minecraft:consume_item",
       "conditions": {
-        "items": [
+        "item": [
           {
             "items": [
               "valleycraft:stir_fried_monster_guts",

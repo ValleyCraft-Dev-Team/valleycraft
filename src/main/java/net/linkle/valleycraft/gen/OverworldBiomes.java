@@ -10,6 +10,7 @@ import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.biome.*;
 import net.minecraft.world.biome.Biome.Precipitation;
+import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
 /** Register the biome at {@link ModBiomes} */
 public class OverworldBiomes {
@@ -18,7 +19,7 @@ public class OverworldBiomes {
     static void addBasicFeatures(GenerationSettings.Builder builder) {
         OverworldBiomeWidener.addBasicFeatures(builder);
     }
-    
+
     static void addBasicEffects(BiomeEffects.Builder builder) {
         builder.waterColor(4159204);
         builder.waterFogColor(329011);
@@ -26,7 +27,21 @@ public class OverworldBiomes {
         builder.moodSound(BiomeMoodSound.CAVE);
     }
 
-    //public static Biome snowyOldGrowthTaiga() {}
+    static void addSnowyBiomeEffects(BiomeEffects.Builder builder) {
+        builder.waterColor(4020182);
+        builder.waterFogColor(329011);
+        builder.fogColor(12638463);
+        builder.moodSound(BiomeMoodSound.CAVE);
+        builder.skyColor(8625919);
+    }
+
+    static void addDefaultVegetation(GenerationSettings.Builder gens) {
+        addDefaultMushrooms(gens);
+        addDefaultFlowers(gens);
+        addDefaultGrass(gens);
+        gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.PATCH_SUGAR_CANE);
+        gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.PATCH_PUMPKIN);
+    }
 
     //public static Biome amberBirchOldGrowth() {}
 
@@ -34,11 +49,11 @@ public class OverworldBiomes {
     public static Biome amberDarkForest() {
         var gens = new GenerationSettings.Builder();
         addBasicFeatures(gens);
+
+        addInfestedStone(gens);
+
         addMossyRocks(gens);
-        addDefaultOres(gens);
-        addDefaultDisks(gens);
-        //gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.MUSHROOM_ISLAND_VEGETATION);
-        //gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.PATCH_WATERLILY);
+        addDefaultMushrooms(gens);
         addJungleGrass(gens);
         addLargeFerns(gens);
         addGiantTaigaGrass(gens);
@@ -61,9 +76,46 @@ public class OverworldBiomes {
         addBasicEffects(effects);
         effects.skyColor(OverworldBiomeWidener.getSkyColor(temps));
         effects.music(MusicType.createIngameMusic(SoundEvents.MUSIC_OVERWORLD_OLD_GROWTH_TAIGA));
-        effects.grassColor(0xE58639);
-        effects.foliageColor(0xFF8B26);
+        effects.grassColor(5274162);
+        effects.foliageColor(5877296);
         
         return BiomeUtils.create(Precipitation.RAIN, temps, 0.8f, effects, spawns, gens);
+    }
+
+    public static Biome snowyOldGrowthTaiga() {
+        var gens = new GenerationSettings.Builder();
+        addBasicFeatures(gens);
+
+        addFrozenLavaSpring(gens);
+        addInfestedStone(gens);
+
+        addFrozenTopLayer(gens);
+        addDefaultVegetation(gens);
+
+        addMossyRocks(gens);
+        addLargeFerns(gens);
+        addGiantTaigaGrass(gens);
+        addSweetBerryBushesSnowy(gens);
+        gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_OLD_GROWTH_SPRUCE_TAIGA);
+
+        var spawns = new SpawnSettings.Builder();
+
+        // surface mobs
+        addWilderForestMobs(spawns);
+        addWilderHarshFrozenMobs(spawns);
+        addFarmAnimals(spawns);
+        // cave mobs
+        addBatsAndMonsters(spawns);
+        addWilderCaveMobs(spawns);
+
+        float temps = -0.5f;
+        var effects = new BiomeEffects.Builder();
+        addSnowyBiomeEffects(effects);
+        effects.skyColor(OverworldBiomeWidener.getSkyColor(temps));
+        effects.music(MusicType.createIngameMusic(SoundEvents.MUSIC_OVERWORLD_OLD_GROWTH_TAIGA));
+        effects.grassColor(8434839);
+        effects.foliageColor(6332795);
+
+        return BiomeUtils.create(Precipitation.SNOW, temps, 0.4f, effects, spawns, gens);
     }
 }

@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "text": "Don't Starve (Yet.)",
+      "text": "Don't Starve- Yet.",
       "bold": false
     },
     "description": {
-      "text": "Find or prepare some food.",
+      "text": "Find or prepare some food",
       "color": "green"
     },
     "icon": {
@@ -15,7 +15,7 @@
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": true,
-    "background": "valleycraft:textures/advancements/background/patterned_thatch.png"
+    "background": "valleycraft:textures/advancements/background/dripstone_tiles.png"
   },
   "criteria": {
     "dontstarveyet": {

@@ -62,6 +62,13 @@ public class ModBiomeFeatures extends DefaultBiomeFeatures {
         addPerchRiver(builder);
     }
 
+    public static void addWilderHarshFrozenMobs(net.minecraft.world.biome.SpawnSettings.Builder builder) {
+        addVanillaStrays(builder);
+        addVanillaRabbits(builder);
+        addVanillaFoxes(builder);
+        addVanillaWolves(builder);
+    }
+
     public static void addWilderAutumnalMobs(net.minecraft.world.biome.SpawnSettings.Builder builder) {
         addPupkins(builder);
         addVanillaRabbits(builder);
@@ -111,8 +118,20 @@ public class ModBiomeFeatures extends DefaultBiomeFeatures {
         builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.RABBIT, 10, 2, 3));
     }
 
+    public static void addVanillaFoxes(net.minecraft.world.biome.SpawnSettings.Builder builder) {
+        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.FOX, 8, 2, 4));
+    }
+
+    public static void addVanillaWolves(net.minecraft.world.biome.SpawnSettings.Builder builder) {
+        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.WOLF, 8, 4, 4));
+    }
+
     public static void addVanillaChickens(net.minecraft.world.biome.SpawnSettings.Builder builder) {
         builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.CHICKEN, 10, 4, 4));
+    }
+
+    public static void addVanillaStrays(net.minecraft.world.biome.SpawnSettings.Builder builder) {
+        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.STRAY, 80, 4, 4));
     }
 
     /** snails **/

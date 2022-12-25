@@ -1,0 +1,30 @@
+{
+  "display": {
+    "title": {
+      "text": "Scraping By",
+      "bold": false
+    },
+    "description": {
+      "text": "Gathering anything is better than nothing, I suppose",
+      "color": "green"
+    },
+    "icon": {
+      "item": "valleycraft:rocks"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "valleycraft:textures/advancements/background/patterned_thatch.png"
+  },
+  "criteria": {
+    "scraping_by": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "scraping_by"
+    ]
+  ]
+}

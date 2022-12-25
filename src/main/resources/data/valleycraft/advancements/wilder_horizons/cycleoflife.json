@@ -11,11 +11,11 @@
       "text": "Find and consume a soul."
     },
     "frame": "task",
-    "hidden": "false"
+    "hidden": "true"
   },
   "criteria": {
     "souleater": {
-      "trigger": "minecraft:inventory_changed",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "items": [
           {
