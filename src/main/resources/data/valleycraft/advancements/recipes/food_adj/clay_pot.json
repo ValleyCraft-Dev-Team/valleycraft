@@ -1,0 +1,36 @@
+{
+  "parent": "valleycraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:clay",
+              "minecraft:clay_ball"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "in_water": {
+      "conditions": {
+        "block": "minecraft:water"
+      },
+      "trigger": "minecraft:enter_block"
+    }
+  },
+  "requirements": [
+    [
+      "has_item",
+      "in_water"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "valleycraft:raw_clay_pot",
+      "valleycraft:clay_pot"
+    ]
+  }
+}

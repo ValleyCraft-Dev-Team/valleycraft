@@ -1,36 +1,20 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:iron_ingot"
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "tag": "c:plank_items"
     },
-    {
-      "item": "valleycraft:plank"
-    },
-    {
-      "item": "minecraft:iron_ingot"
-    },
-    {
-      "item": "minecraft:iron_ingot"
-    },
-    {
-      "item": "valleycraft:plank"
-    },
-    {
-      "item": "minecraft:iron_ingot"
-    },
-    {
-      "item": "minecraft:iron_ingot"
-    },
-    {
-      "item": "valleycraft:plank"
-    },
-    {
+    "X": {
       "item": "minecraft:iron_ingot"
     }
+  },
+  "pattern": [
+    "X#X",
+    "X#X",
+    "X#X"
   ],
   "result": {
-    "item": "minecraft:rail",
-    "count": 16
+    "count": 16,
+    "item": "minecraft:rail"
   }
 }

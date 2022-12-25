@@ -8,7 +8,7 @@
       "tag": "minecraft:wooden_slabs"
     },
     "X": {
-      "item": "valleycraft:plank"
+      "tag": "c:plank_items"
     }
   },
   "pattern": [

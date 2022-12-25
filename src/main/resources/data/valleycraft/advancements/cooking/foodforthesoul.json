@@ -17,7 +17,7 @@
     "experience": 4
   },
   "criteria": {
-    "questionable": {
+    "foodsforthesoul": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "items": [
@@ -114,7 +114,7 @@
   },
   "requirements": [
     [
-      "questionable"
+      "foodsforthesoul"
     ]
   ]
 }

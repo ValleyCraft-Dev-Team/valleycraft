@@ -5,26 +5,22 @@
       "text": "Scraping By"
     },
     "icon": {
-      "item": "valleycraft:makeshift_axe"
+      "item": "valleycraft:crafting_mat"
     },
     "description": {
-      "text": "Craft a Makeshift tool."
+      "text": "Make a Crafting Mat for advanced crafting."
     },
     "frame": "task"
   },
   "criteria": {
-    "makeshift": {
+    "craftingtools": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "valleycraft:makeshift_spear",
-              "valleycraft:makeshift_knife",
-              "valleycraft:makeshift_axe",
-              "valleycraft:makeshift_pickaxe",
-              "valleycraft:makeshift_shovel",
-              "valleycraft:makeshift_hoe"
+              "valleycraft:crafting_mat",
+              "minecraft:crafting_table"
             ]
           }
         ]
@@ -33,7 +29,7 @@
   },
   "requirements": [
     [
-      "makeshift"
+      "craftingtools"
     ]
   ]
 }

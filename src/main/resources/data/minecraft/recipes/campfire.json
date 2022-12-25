@@ -11,7 +11,7 @@
       "item": "minecraft:stick"
     },
     "S": {
-      "item": "minecraft:plank"
+      "tag": "c:plank_items"
     }
   },
   "pattern": [

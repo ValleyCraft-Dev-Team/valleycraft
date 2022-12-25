@@ -1279,7 +1279,7 @@
         {
           "type": "minecraft:item",
           "weight": 10,
-          "name": "vallecraft:handle",
+          "name": "valleycraft:handle",
           "functions": [
             {
               "add": false,

@@ -4,7 +4,7 @@
     "item": "minecraft:wooden_hoe"
   },
   "addition": {
-    "item": "valleycraft:plank"
+    "tag": "c:plank_items"
   },
   "result": {
     "item": "valleycraft:scythe_wooden"

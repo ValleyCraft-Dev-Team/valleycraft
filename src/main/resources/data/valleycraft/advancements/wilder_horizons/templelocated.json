@@ -19,12 +19,13 @@
   },
   "criteria": {
     "in_temple": {
-      "trigger": "minecraft:location",
       "conditions": {
+        "entity": "this",
         "location": {
           "feature": "valleycraft:ancient_ruins/erdis_temple"
         }
-      }
+      },
+      "trigger": "minecraft:location"
     }
   },
   "requirements": [

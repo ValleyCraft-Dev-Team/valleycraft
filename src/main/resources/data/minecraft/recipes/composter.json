@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "valleycraft:plank"
+      "tag": "c:plank_items"
     }
   },
   "pattern": [

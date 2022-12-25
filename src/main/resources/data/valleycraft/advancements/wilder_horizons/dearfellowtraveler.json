@@ -1,0 +1,42 @@
+{
+  "parent": "valleycraft:wilder_horizons/relicofthepast",
+  "display": {
+    "title": {
+      "text": "Dear Fellow Traveler"
+    },
+    "icon": {
+      "item": "valleycraft:totem_of_appreciation"
+    },
+    "description": {
+      "text": "Find a fellow Midlander or recover their remains."
+    },
+    "frame": "challenge",
+    "hidden": "true"
+  },
+  "criteria": {
+    "midlander": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:skeletal_remains",
+              "valleycraft:skeletal_remains_slumped",
+              "valleycraft:skeletal_best_friend_remains",
+              "valleycraft:skeletal_mining_remains",
+              "minecraft:skeleton_skull",
+              "minecraft:wither_skeleton_skull",
+              "valleycraft:ribcage",
+              "valleycraft:wither_ribcage"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "midlander"
+    ]
+  ]
+}

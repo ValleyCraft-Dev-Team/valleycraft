@@ -8,7 +8,7 @@
       "item": "valleycraft:salt"
     },
     {
-      "item": "valleycraft:water_filled_wooden_cup"
+      "tag": "c:water_holding_items"
     }
   ],
   "result": {

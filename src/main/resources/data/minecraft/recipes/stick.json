@@ -1,17 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "group": "sticks",
-  "key": {
-    "#": {
-      "item": "valleycraft:plank"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:plank_items"
     }
-  },
-  "pattern": [
-    "#",
-    "#"
   ],
   "result": {
-    "count": 2,
-    "item": "minecraft:stick"
+    "item": "minecraft:stick",
+    "count": 2
   }
 }

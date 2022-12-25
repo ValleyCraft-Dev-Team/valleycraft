@@ -1,8 +1,8 @@
 {
   "name": "Warm Letter",
-  "landing_text": "Hello there friend, I hope this letter reaches you in your native tongue, I wasn't sure if it was Common, Allager, Moblin, Daer, or something else- so I assumed Common. You may be asking yourself how it arrived to you- fret not about it, dear friend. You may simply assume this all a dream, if it makes that easier, just get out there and explore.",
+  "landing_text": "Hello, I hope this letter reaches you in your native tongue, I wasn't sure if it was Common, Allager, Moblin, Daer, or something else- so I assumed Common. You may be asking yourself how it arrived to you- fret not about it, dear friend. You may simply assume this all a dream, if it makes that easier, just get out there and explore.",
   "version": "0",
-  "subtitle": "From: A Friend Passing By.",
+  "subtitle": "    ",
   "pamphlet": "true",
   "show_progress": "false",
   "creative_tab": "valleycraft:books",

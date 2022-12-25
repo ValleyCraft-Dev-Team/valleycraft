@@ -1,36 +1,26 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:iron_ingot"
-    },
-    {
-      "item": "valleycraft:plank"
-    },
-    {
-      "item": "minecraft:iron_ingot"
-    },
-    {
-      "item": "minecraft:redstone"
-    },
-    {
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
       "item": "minecraft:redstone_torch"
     },
-    {
+    "S": {
+      "tag": "c:plank_items"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "V": {
       "item": "minecraft:redstone"
-    },
-    {
-      "item": "minecraft:iron_ingot"
-    },
-    {
-      "item": "valleycraft:plank"
-    },
-    {
-      "item": "minecraft:iron_ingot"
     }
+  },
+  "pattern": [
+    "XSX",
+    "V#V",
+    "XSX"
   ],
   "result": {
-    "item": "minecraft:activator_rail",
-    "count": 6
+    "count": 6,
+    "item": "minecraft:activator_rail"
   }
 }

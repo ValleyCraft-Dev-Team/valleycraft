@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "hatchets",
   "pattern": [
     "##",
     "#V"
@@ -9,7 +10,7 @@
       "item": "valleycraft:plank"
     },
     "V": {
-      "item": "valleycraft:handle"
+      "tag": "c:plank_items"
     }
   },
   "result": {

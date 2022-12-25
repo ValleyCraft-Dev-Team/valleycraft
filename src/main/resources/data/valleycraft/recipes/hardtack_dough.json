@@ -5,7 +5,7 @@
       "item": "valleycraft:flour"
     },
     {
-      "item": "valleycraft:water_filled_wooden_cup"
+      "tag": "c:salt"
     }
   ],
   "result": {

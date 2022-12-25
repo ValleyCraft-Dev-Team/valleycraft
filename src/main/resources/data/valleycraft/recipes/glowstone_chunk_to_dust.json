@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "artifact_breakdowns",
   "ingredients": [
     {
       "item": "valleycraft:polished_glowstone_chunk"

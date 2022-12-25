@@ -1,0 +1,41 @@
+{
+  "parent": "valleycraft:wilder_horizons/root",
+  "display": {
+    "title": {
+      "text": "The Eternal Cycle"
+    },
+    "icon": {
+      "item": "valleycraft:soul_rose"
+    },
+    "description": {
+      "text": "Find and consume a soul."
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "souleater": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:soul_item_fading",
+              "valleycraft:soul_item_enraged",
+              "valleycraft:soul_item",
+              "valleycraft:soul_item_warden",
+              "valleycraft:soul_item_withered",
+              "valleycraft:soul_item_amalgamated",
+              "valleycraft:soul_item_dragon"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "souleater"
+    ]
+  ]
+}

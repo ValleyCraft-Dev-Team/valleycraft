@@ -899,10 +899,10 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(ModBlockSoundGroup.POT.sound).nonOpaque().breakInstantly()), itemSettings().group(BOOKS)),
     GREEN_CLAY_POT(new ExplosiveClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(ModBlockSoundGroup.POT.sound).nonOpaque().breakInstantly()), itemSettings().group(BOOKS)),
 
-    DEEPSLATE_URN_ANGRY(new UrnBlock(BlockSettings.urn()), itemSettings()),
-    DEEPSLATE_URN_CREEPER(new UrnBlock(BlockSettings.urn()), itemSettings()),
-    DEEPSLATE_URN_PLAIN(new UrnBlock(BlockSettings.urn()), itemSettings()),
-    DEEPSLATE_URN_SYMBOL(new UrnBlock(BlockSettings.urn()), itemSettings()),
+    DEEPSLATE_URN_PLAIN(new UrnBlock(BlockSettings.urn()), itemSettings().group(BOOKS)),
+    DEEPSLATE_URN_ANGRY(new UrnBlock(BlockSettings.urn()), itemSettings().group(BOOKS)),
+    DEEPSLATE_URN_CREEPER(new ExplosiveUrnBlock(BlockSettings.urn()), itemSettings().group(BOOKS)),
+    DEEPSLATE_URN_SYMBOL(new UrnBlock(BlockSettings.urn()), itemSettings().group(BOOKS)),
     
     //cobblestone statues
     OCELOT_STATUE(new AnimalStatueBlock(Block.Settings.copy(Blocks.COBBLESTONE).nonOpaque().resistance(2500)), itemSettings().maxCount(1).group(BOOKS)),

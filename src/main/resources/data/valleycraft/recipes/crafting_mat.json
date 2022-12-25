@@ -13,7 +13,7 @@
       "tag": "c:leather_alternatives"
     },
     "V": {
-      "item": "valleycraft:plank"
+      "tag": "c:plank_items"
     }
   },
   "result": {
