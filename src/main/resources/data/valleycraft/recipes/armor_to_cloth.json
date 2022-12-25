@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "artifact_breakdowns",
+  "ingredients": [
+    {
+      "tag": "valleycraft:breaks_down_into_cloth"
+    }
+  ],
+  "result": {
+    "item": "minecraft:cloth",
+    "count": 2
+  }
+}
