@@ -4,7 +4,7 @@
 	"textures": {
 		"3": "valleycraft:block/rain_collector_inside",
 		"4": "block/water_still",
-		"particle": "block/water_still",
+		"particle": "valleycraft:block/rain_collector_outside",
 		"bottom": "valleycraft:block/rain_collector_bottom",
 		"side": "valleycraft:block/rain_collector_outside"
 	},
@@ -59,7 +59,7 @@
 		},
 		{
 			"from": [2, 4, 2],
-			"to": [14, 9, 14],
+			"to": [14, 12, 14],
 			"faces": {
 				"up": {"uv": [2, 2, 14, 14], "texture": "#4", "tintindex": 0}
 			}
