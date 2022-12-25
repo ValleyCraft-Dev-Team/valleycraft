@@ -64,15 +64,15 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
     CLOTHED_ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
 
-    BOOK_STACK_0(new BookStackBlock(BLOCK_SHAPE_0, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
-    BOOK_STACK_1(new BookStackBlock(BLOCK_SHAPE_1, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
-    BOOK_STACK_2(new BookStackBlock(BLOCK_SHAPE_2, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
-    BOOK_STACK_3(new BookStackBlock(BLOCK_SHAPE_3, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
-    BOOK_STACK_4(new BookStackBlock(BLOCK_SHAPE_4, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
-    BOOK_STACK_5(new BookStackBlock(BLOCK_SHAPE_5, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
-    BOOK_STACK_6(new BookStackBlock(BLOCK_SHAPE_6, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
-    BOOK_STACK_7(new BookStackBlock(BLOCK_SHAPE_7, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
-    BOOK_STACK_8(new BookStackBlock(BLOCK_SHAPE_8, Block.Settings.copy(Blocks.BOOKSHELF).breakInstantly().nonOpaque()), itemSettings()),
+    BOOK_STACK_0(new BookStackBlock(BLOCK_SHAPE_0), itemSettings()),
+    BOOK_STACK_1(new BookStackBlock(BLOCK_SHAPE_1), itemSettings()),
+    BOOK_STACK_2(new BookStackBlock(BLOCK_SHAPE_2), itemSettings()),
+    BOOK_STACK_3(new BookStackBlock(BLOCK_SHAPE_3), itemSettings()),
+    BOOK_STACK_4(new BookStackBlock(BLOCK_SHAPE_4), itemSettings()),
+    BOOK_STACK_5(new BookStackBlock(BLOCK_SHAPE_5), itemSettings()),
+    BOOK_STACK_6(new BookStackBlock(BLOCK_SHAPE_6), itemSettings()),
+    BOOK_STACK_7(new BookStackBlock(BLOCK_SHAPE_7), itemSettings()),
+    BOOK_STACK_8(new BookStackBlock(BLOCK_SHAPE_8), itemSettings()),
     INK_WELL(new InkWellBlock(), itemSettings()),
     INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     WATER_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
@@ -250,6 +250,9 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SPRINKLER(new SprinklerBlock(), itemSettings()),
     
     WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
+    
+    RAIN_COLLECTOR(new RainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque()), itemSettings()),
+    LEVELED_RAIN_COLLECTOR(new LeveledRainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque())),
 
     //scarecrows
     SCARECROW(new ScarecrowBlock(false), itemSettings()),

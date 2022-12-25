@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "level=1": {
+      "model": "valleycraft:block/rain_collector_1"
+    },
+    "level=2": {
+      "model": "valleycraft:block/rain_collector_2"
+    },
+    "level=3": {
+      "model": "valleycraft:block/rain_collector_full"
+    }
+  }
+}

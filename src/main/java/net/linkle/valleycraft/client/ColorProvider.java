@@ -5,9 +5,11 @@ import java.util.stream.Stream;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.linkle.valleycraft.init.ModBlocks;
 import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.StemBlock;
 import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.item.ItemColorProvider;
@@ -24,12 +26,18 @@ class ColorProvider {
         ItemColorProvider itemProvider;
         
         blockColor((state, world, pos, tintIndex) -> {
+            if (world == null || pos == null) return -1;
             return BiomeColors.getGrassColor(world, pos);
         }, ModNaturalBlocks.SHORT_GRASS);
         
         itemColor((stack, tintIndex) -> {
             return GrassColors.getColor(0.5, 1.0);
         }, ModNaturalBlocks.SHORT_GRASS);
+        
+        blockColor((state, world, pos, tintIndex) -> {
+            if (world == null || pos == null) return -1;
+            return BiomeColors.getWaterColor(world, pos);
+        }, ModBlocks.LEVELED_RAIN_COLLECTOR);
         
         /*
         blockColor((state, world, pos, tintIndex) -> {
