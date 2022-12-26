@@ -49,12 +49,7 @@ public class OverworldBiomes {
     public static Biome amberDarkForest() {
         var gens = new GenerationSettings.Builder();
         addBasicFeatures(gens);
-
-        addInfestedStone(gens);
-
         addMossyRocks(gens);
-        addDefaultMushrooms(gens);
-        addJungleGrass(gens);
         addLargeFerns(gens);
         addGiantTaigaGrass(gens);
         addSweetBerryBushes(gens);
