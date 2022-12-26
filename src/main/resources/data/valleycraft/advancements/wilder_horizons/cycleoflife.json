@@ -15,22 +15,20 @@
   },
   "criteria": {
     "souleater": {
-      "trigger": "minecraft:consume_item",
       "conditions": {
-        "item": [
-          {
-            "items": [
-              "valleycraft:soul_item_fading",
-              "valleycraft:soul_item_enraged",
-              "valleycraft:soul_item",
-              "valleycraft:soul_item_warden",
-              "valleycraft:soul_item_withered",
-              "valleycraft:soul_item_amalgamated",
-              "valleycraft:soul_item_dragon"
-            ]
-          }
-        ]
-      }
+        "item": {
+          "items": [
+            "valleycraft:soul_item_fading",
+            "valleycraft:soul_item_enraged",
+            "valleycraft:soul_item",
+            "valleycraft:soul_item_warden",
+            "valleycraft:soul_item_withered",
+            "valleycraft:soul_item_amalgamated",
+            "valleycraft:soul_item_dragon"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
     }
   },
   "requirements": [

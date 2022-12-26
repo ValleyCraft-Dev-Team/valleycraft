@@ -18,10 +18,8 @@
   },
   "criteria": {
     "monster_food": {
-      "trigger": "minecraft:consume_item",
       "conditions": {
-        "item": [
-          {
+        "item": {
             "items": [
               "valleycraft:stir_fried_monster_guts",
               "valleycraft:monster_stew",
@@ -30,8 +28,8 @@
               "valleycraft:sauteed_eyes_and_mushrooms"
             ]
           }
-        ]
-      }
+        },
+      "trigger": "minecraft:consume_item"
     }
   },
   "requirements": [

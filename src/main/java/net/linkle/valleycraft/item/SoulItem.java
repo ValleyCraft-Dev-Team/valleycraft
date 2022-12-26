@@ -1,12 +1,17 @@
 package net.linkle.valleycraft.item;
 
+import net.linkle.valleycraft.baubles.AbstractTotemBase;
+import net.linkle.valleycraft.init.ModItems;
+import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.ExperienceOrbEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.thrown.ExperienceBottleEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionUtil;
 import net.minecraft.potion.Potions;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -16,7 +21,7 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class SoulItem extends ModItem {
+public class SoulItem extends AbstractTotemBase {
     private final int exp;
 
     public SoulItem(Settings settings, int exp) {
@@ -30,27 +35,28 @@ public class SoulItem extends ModItem {
     }
 
     @Override
-    public UseAction getUseAction(ItemStack stack) {
-        return UseAction.TOOT_HORN;
-    }
-
-    @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
 
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand, int exp) {
-        ItemStack itemStack = user.getStackInHand(hand);
-        world.playSound((user), user.getX(), user.getY(), user.getZ(), SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
-        if (!world.isClient) {
-            ExperienceOrbEntity.spawn((ServerWorld) world, user.getPos(), exp);
+    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user, int exp) {
+        PlayerEntity playerEntity = user instanceof PlayerEntity ? (PlayerEntity)user : null;
+        if (playerEntity instanceof ServerPlayerEntity) {
+            Criteria.CONSUME_ITEM.trigger((ServerPlayerEntity)playerEntity, stack);
         }
 
-        user.incrementStat(Stats.USED.getOrCreateStat(this));
-        if (!user.getAbilities().creativeMode) {
-            itemStack.decrement(1);
+        if (playerEntity != null) {
+            playerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
+            if (!playerEntity.getAbilities().creativeMode) {
+                stack.decrement(1);
+            }
+            if (!world.isClient) {
+                ExperienceOrbEntity.spawn((ServerWorld) world, user.getPos(), exp);
+            }
         }
 
-        return TypedActionResult.success(itemStack, world.isClient());
+        showFloatingItem(world, user);
+
+        return stack.isEmpty() ? new ItemStack(this) : stack;
     }
 }

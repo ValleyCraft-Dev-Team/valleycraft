@@ -19,61 +19,51 @@
   "criteria": {
     "stir_fried_monster_guts": {
       "conditions": {
-        "items": [
-          {
+        "item": {
             "items": [
               "valleycraft:stir_fried_monster_guts"
             ]
           }
-        ]
       },
       "trigger": "minecraft:consume_item"
     },
     "monster_stew": {
       "conditions": {
-        "items": [
-          {
+        "item": {
             "items": [
               "valleycraft:monster_stew"
             ]
           }
-        ]
       },
       "trigger": "minecraft:consume_item"
     },
     "slime_soup": {
       "conditions": {
-        "items": [
-          {
+        "item": {
             "items": [
               "valleycraft:slime_soup"
             ]
           }
-        ]
       },
       "trigger": "minecraft:consume_item"
     },
     "magma_creme_soup": {
       "conditions": {
-        "items": [
-          {
+        "item": {
             "items": [
               "valleycraft:magma_creme_soup"
             ]
           }
-        ]
       },
       "trigger": "minecraft:consume_item"
     },
     "sauteed_eyes_and_mushrooms": {
       "conditions": {
-        "items": [
-          {
+        "item": {
             "items": [
               "valleycraft:sauteed_eyes_and_mushrooms"
             ]
           }
-        ]
       },
       "trigger": "minecraft:consume_item"
     }
