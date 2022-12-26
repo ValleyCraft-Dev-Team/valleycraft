@@ -1,4 +1,4 @@
-package net.linkle.valleycraft.entity.thrown_items;
+package net.linkle.valleycraft.entity.projectiles.thrown_items;
 
 import static net.linkle.valleycraft.init.ModTools.THROWING_ROCK;
 

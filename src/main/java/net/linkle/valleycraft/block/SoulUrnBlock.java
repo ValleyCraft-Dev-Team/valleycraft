@@ -31,6 +31,5 @@ public class SoulUrnBlock extends ClayPotBlock {
         if (dropExperience) {
             this.dropExperienceWhenMined(world, pos, stack, this.experienceDropped);
         }
-
     }
 }

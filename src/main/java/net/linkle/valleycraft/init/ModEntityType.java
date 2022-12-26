@@ -23,7 +23,7 @@ import net.linkle.valleycraft.entity.pupkins.PupkinEntity;
 import net.linkle.valleycraft.entity.snails.CaveSnailEntity;
 import net.linkle.valleycraft.entity.snails.SculkSnailEntity;
 import net.linkle.valleycraft.entity.snails.SnailEntity;
-import net.linkle.valleycraft.entity.thrown_items.ThrownRockEntity;
+import net.linkle.valleycraft.entity.projectiles.thrown_items.ThrownRockEntity;
 import net.linkle.valleycraft.entity.unused.SoulPetEntity;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.entity.*;
@@ -95,7 +95,6 @@ public class ModEntityType {
                     .trackRangeBlocks(4).trackedUpdateRate(10)
                     .build()
     );
-    
     public static final EntityType<PupkinEntity> PUPKIN = register("pupkin",
             FabricEntityTypeBuilder.createMob().entityFactory(PupkinEntity::new).spawnGroup(SpawnGroup.CREATURE)
             .dimensions(new EntityDimensions(0.6F, 0.8F, true)).trackRangeChunks(6)

@@ -48,6 +48,8 @@
   "block.valleycraft.erdstone_cave_painting_home": "§cPrehistoric Cave Painting",
   "block.valleycraft.erdstone_cave_painting_family": "§cPrehistoric Cave Painting",
 
+  "block.valleycraft.fireguard.tooltip": "Prevents animals getting in",
+  "block.valleycraft.fireguard.tooltip_2": "and sparks getting out.",
   "block.valleycraft.defective_spawner.tooltip": "Broken beyond repair. It's only",
   "block.valleycraft.defective_spawner.tooltip_2": "use now is purely decorative.",
   "block.valleycraft.keg.tooltip": "Refills buckets, clay pots,",
@@ -1136,9 +1138,11 @@
   "item.valleycraft.makeshift_axe": "Makeshift Axe",
   "item.valleycraft.makeshift_hoe": "Makeshift Hoe",
   "item.valleycraft.makeshift_shovel": "Makeshift Shovel",
+  "item.valleycraft.makeshift_knife": "Makeshift Knife",
 
   "item.valleycraft.prismace": "Prismarine Mace",
   "item.valleycraft.prismarine_hoe": "Prismarine Hoe",
+  "item.valleycraft.obsidian_macuahuitl": "Macuahuitl",
 
   "item.valleycraft.woodcutter_axe_wooden": "Wooden Timbercutter Axe",
   "item.valleycraft.woodcutter_axe_stone": "Stone Timbercutter Axe",
@@ -1198,6 +1202,8 @@
   "block.valleycraft.piglin_skeletal_remains": "Piglin Skeletal Remains",
   "block.valleycraft.villager_skeletal_remains": "Villager Skeletal Remains",
   "block.valleycraft.daerdri_skull": "Daerdri Skull",
+
+  "block.valleycraft.fireguard": "Fireguard",
 
   "block.valleycraft.block_daub": "Block of Daub",
   "block.valleycraft.small_cactus": "Cave Cactus",

@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.tool.throwing;
 
-import net.linkle.valleycraft.entity.thrown_items.ThrownRockEntity;
+import net.linkle.valleycraft.entity.projectiles.thrown_items.ThrownRockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

@@ -1,9 +1,6 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.init.ModGroups.BOOKS;
-import static net.linkle.valleycraft.init.ModGroups.INGREDIENTS;
-import static net.linkle.valleycraft.init.ModGroups.REGULAR_DISHES;
-import static net.linkle.valleycraft.init.ModGroups.VC_ITEMS;
+import static net.linkle.valleycraft.init.ModGroups.*;
 import static net.minecraft.util.Rarity.EPIC;
 import static net.minecraft.util.Rarity.RARE;
 import static net.minecraft.util.Rarity.UNCOMMON;
@@ -14,20 +11,12 @@ import net.linkle.valleycraft.item.clay_pot.ClayPotItem;
 import net.linkle.valleycraft.item.clay_pot.WaterClayPotItem;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.BucketItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public enum ModItems implements ItemEnum {
-    //cups
-    //WOODEN_CUP(new CupItem(itemSettings().group(INGREDIENTS))),
-    //WATER_FILLED_WOODEN_CUP(new WaterCupItem(itemSettings().maxCount(1).group(INGREDIENTS).recipeRemainder(ModItems.WOODEN_CUP.item), 0, 0.0f)),
-    //MILK_FILLED_WOODEN_CUP(new WaterCupItem(itemSettings().maxCount(16).group(INGREDIENTS).recipeRemainder(ModItems.WOODEN_CUP.item), 0, 0.0f)),
-
     RAW_CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(INGREDIENTS))),
     CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(INGREDIENTS))),
     WATER_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(1).group(INGREDIENTS).recipeRemainder(ModItems.CLAY_POT.item), 0, 0.0f)),
@@ -43,7 +32,6 @@ public enum ModItems implements ItemEnum {
     APPLE_SEED(new AliasedBlockItem(ModNaturalBlocks.APPLE_SEED.block, itemSettings())),
     AMBERBLOSSOM_SEED(new AliasedBlockItem(ModNaturalBlocks.AMBERBLOSSOM_SEED.block, itemSettings())),
     WARM_BIRCH_SEED(new AliasedBlockItem(ModNaturalBlocks.WARM_BIRCH_SEED.block, itemSettings())),
-    //CELESTIAL_SEED(new Item(itemSettings())),
 
     // crops
     RICE_SEEDS(new AliasedBlockItem(ModNaturalBlocks.RICES.block, itemSettings())),
@@ -53,7 +41,6 @@ public enum ModItems implements ItemEnum {
     CAVE_ROOT_SEEDS(new AliasedBlockItem(ModNaturalBlocks.CAVE_ROOT_CROP.block, itemSettings())),
     ANCIENT_FLOWER_SEEDS(new AliasedBlockItem(ModNaturalBlocks.ANCIENT_FLOWERS.block, itemSettings().rarity(Rarity.RARE))),
     AMETHYSTLE_SEEDS(new AliasedBlockItem(ModNaturalBlocks.AMETHYSTLES.block, itemSettings())),
-    //GHOST_PUMPKIN_SEEDS(new AliasedBlockItem(ModNaturalBlocks.GHOST_PUMPKIN_STEM.block, itemSettings())),
 
     FIBER(new Item(itemSettings())),
     DRIED_FIBER(new Item(itemSettings())),
@@ -67,7 +54,6 @@ public enum ModItems implements ItemEnum {
     SHEEP_HIDE(new Item(itemSettings())),
     PIG_HIDE(new Item(itemSettings())),
     MONSTER_CLAW(new Item(itemSettings())),
-    //SPIDER_SILK(new Item(itemSettings().rarity(UNCOMMON))),
     BEAST_BONE(new Item(itemSettings())),
     SKULL_SHARD(new Item(itemSettings())),
     WITHERED_SKULL_SHARD(new Item(itemSettings())),
@@ -80,8 +66,6 @@ public enum ModItems implements ItemEnum {
     SLIME_BLOB(new Item(itemSettings())),
     EVIL_CRYSTAL(new Item(itemSettings().rarity(UNCOMMON).fireproof())),
 
-    //MULCH(new Item(itemSettings())),
-    //RAW_CLAY_POT(new Item(itemSettings())),
     HANDLE(new Item(itemSettings())),
     STURDY_HANDLE(new Item(itemSettings())),
     REINFORCED_HANDLE(new Item(itemSettings())),
@@ -100,9 +84,7 @@ public enum ModItems implements ItemEnum {
     ANTHRACITE(new Item(itemSettings())),
     BRIMSTONE_SHARD(new Item(itemSettings())),
     NETHER_GARNET(new Item(itemSettings())),
-    //OBSIDIAN_CHUNK(new Item(itemSettings())),
     COPPER_NUGGET(new Item(itemSettings())),
-    //COPPER_SCRAP(new Item(itemSettings())),
     GOLD_SCRAP(new Item(itemSettings())),
     PRIMSTEEL_NUGGET(new Item(itemSettings())),
     PRIMSTEEL_SCRAP(new Item(itemSettings())),
@@ -123,14 +105,14 @@ public enum ModItems implements ItemEnum {
     DOG_BISCUIT(new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true)),
 
     //souls
-    SOUL_ITEM_FADING(new SoulItem(itemSettings().group(BOOKS).fireproof())),
-    SOUL_ITEM(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof())),
-    SOUL_ITEM_ENRAGED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof())),
-    SOUL_ITEM_PET(new SoulPetItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
-    SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
-    SOUL_ITEM_WITHERED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof())),
-    SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
-    SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    SOUL_ITEM_FADING(new SoulItem(itemSettings().group(BOOKS).fireproof(), 30)),
+    SOUL_ITEM(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof(), 60)),
+    SOUL_ITEM_ENRAGED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof(), 120)),
+    SOUL_ITEM_PET(new Item(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 3750)),
+    SOUL_ITEM_WITHERED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof(), 15)),
+    SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 3750)),
+    SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 7000)),
 
     GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
     ELDER_GUARDIAN_SPIKE(new MythicItem(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),

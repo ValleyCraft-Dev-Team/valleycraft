@@ -37,7 +37,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     CRAFTING_MAT(new CraftingMatBauble(Block.Settings.of(Material.DECORATION).sounds(BlockSoundGroup.WOOL).breakInstantly().noCollision().nonOpaque()), toolItemSettings()),
     //BIG_FLOWER_POT_BLOCK(new BigFlowerPotBlock(Block.Settings.copy(Blocks.FARMLAND).ticksRandomly().requiresTool().strength(1.5F, 3.0F).sounds(ModBlockSoundGroup.POT.sound)), itemSettings()),
-
+    FIREGUARD(new FireGuardBlock(AbstractBlock.Settings.of(Material.METAL).sounds(BlockSoundGroup.CHAIN).nonOpaque()), itemSettings()),
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     KEG(new KegBlock(), itemSettings()),
@@ -184,6 +184,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     AMETHYST_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
     GARNET_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
     EMERALD_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
+    QUARTZ_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
 
     DEAD_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(s->0)), itemSettings()),
     BURNT_OUT_TORCH(new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.WOOD)), itemSettings()),

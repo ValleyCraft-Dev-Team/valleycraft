@@ -71,7 +71,7 @@ public enum ModToolMaterials implements ToolMaterial {
         return Ingredient.ofItems(Items.BAMBOO);
     }),
 
-    STRONG_IRON(2, 1561, 6.0F, 2.0F, 14, () -> {
+    STRONG_IRON(2, 1561, 6.0F, 5.0F, 14, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.IRON_INGOT});
     }),
 

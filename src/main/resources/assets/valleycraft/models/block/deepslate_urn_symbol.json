@@ -13,9 +13,9 @@
 			"to": [14, 12, 14],
 			"faces": {
 				"north": {"uv": [2, 2, 14, 14], "texture": "#4"},
-				"east": {"uv": [2, 2, 14, 14], "texture": "#4"},
+				"east": {"uv": [2, 2, 14, 14], "texture": "#0"},
 				"south": {"uv": [2, 2, 14, 14], "texture": "#4"},
-				"west": {"uv": [2, 2, 14, 14], "texture": "#4"},
+				"west": {"uv": [2, 2, 14, 14], "texture": "#0"},
 				"up": {"uv": [0, 0, 0, 0], "texture": "#4"},
 				"down": {"uv": [2, 2, 14, 14], "texture": "#0"}
 			}
@@ -25,9 +25,9 @@
 			"to": [14, 24, 14],
 			"faces": {
 				"north": {"uv": [2, 2, 14, 14], "texture": "#2"},
-				"east": {"uv": [2, 2, 14, 14], "texture": "#2"},
+				"east": {"uv": [2, 2, 14, 14], "texture": "#0"},
 				"south": {"uv": [2, 2, 14, 14], "texture": "#2"},
-				"west": {"uv": [2, 2, 14, 14], "texture": "#2"},
+				"west": {"uv": [2, 2, 14, 14], "texture": "#0"},
 				"up": {"uv": [2, 2, 14, 14], "texture": "#0"},
 				"down": {"uv": [0, 0, 0, 0], "texture": "#0"}
 			}
@@ -90,6 +90,31 @@
 				"west": {"uv": [2, 2, 12, 4], "texture": "#0"},
 				"up": {"uv": [2, 2, 3, 12], "texture": "#0"},
 				"down": {"uv": [2, 2, 3, 12], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 17, 6],
+			"to": [2, 22, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"faces": {
+				"north": {"uv": [4, 2, 2, 7], "texture": "#particle"},
+				"east": {"uv": [5, 2, 2, 7], "texture": "#particle"},
+				"south": {"uv": [2, 2, 4, 7], "texture": "#particle"},
+				"west": {"uv": [5, 2, 2, 7], "texture": "#particle"},
+				"up": {"uv": [4, 2, 2, 5], "texture": "#particle"},
+				"down": {"uv": [4, 2, 2, 5], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [14, 17, 6],
+			"to": [16, 22, 9],
+			"faces": {
+				"north": {"uv": [2, 2, 4, 7], "texture": "#particle"},
+				"east": {"uv": [2, 2, 5, 7], "texture": "#particle"},
+				"south": {"uv": [4, 2, 2, 7], "texture": "#particle"},
+				"west": {"uv": [2, 2, 5, 7], "texture": "#particle"},
+				"up": {"uv": [2, 2, 4, 5], "texture": "#particle"},
+				"down": {"uv": [2, 2, 4, 5], "texture": "#particle"}
 			}
 		}
 	],

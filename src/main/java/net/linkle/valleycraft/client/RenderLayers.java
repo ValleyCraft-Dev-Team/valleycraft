@@ -40,6 +40,7 @@ class RenderLayers {
         put(CHAINED_RUSTED_CHEST, cullout);
         put(CRAFTING_MAT, cullout);
         put(WITCH_LADLE, cullout);
+        put(FIREGUARD, cullout);
 
         // Flowers and Potted Flowers
         put(BLACK_DAHLIA, cullout);
