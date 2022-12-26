@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:wilder_horizons/translator",
+  "parent": "valleycraft:survival/translator",
   "display": {
     "title": {
       "text": "The Enchanted Scribe"

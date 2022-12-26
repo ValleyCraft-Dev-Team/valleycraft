@@ -18,6 +18,7 @@
   },
   "criteria": {
     "questionable": {
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "items": [

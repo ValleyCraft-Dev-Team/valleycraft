@@ -41,7 +41,10 @@
   },
   "requirements": [
     [
-      "craftingtools"
+      "stove"
+    ],
+    [
+      "keg"
     ]
   ]
 }
