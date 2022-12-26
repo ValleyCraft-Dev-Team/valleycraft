@@ -12,7 +12,6 @@ public interface OverworldBiomeWidener {
     /** {@link OverworldBiomeCreator#addBasicFeatures} */
     @Invoker("addBasicFeatures")
     static void addBasicFeatures(GenerationSettings.Builder builder) {
-
         throw new AssertionError();
     }
     

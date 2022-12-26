@@ -87,12 +87,11 @@ public class OverworldBiomes {
         addBasicFeatures(gens);
 
         addFrozenLavaSpring(gens);
+        addMossyRocks(gens);
         addInfestedStone(gens);
 
-        addFrozenTopLayer(gens);
         addDefaultVegetation(gens);
 
-        addMossyRocks(gens);
         addLargeFerns(gens);
         addGiantTaigaGrass(gens);
         addSweetBerryBushesSnowy(gens);
