@@ -1,3 +1,6 @@
 {
-  "parent": "valleycraft:block/clover"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:block/heart_clover_top"
+  }
 }
