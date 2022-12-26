@@ -256,7 +256,7 @@ class RenderLayers {
         put(INK_BOTTLE_BLOCK, cullout);
         put(MILK_BOTTLE_BLOCK, cullout);
         put(WATER_BOTTLE_BLOCK, cullout);
-        //put(CANDLE_BOTTLE, cullout);
+        put(CANDLE_BOTTLE, cullout);
         //put(CANDLE_BOTTLE_LIT, cullout);
         
         //put(ANCIENT_WAGON_WHEEL, cullout);
