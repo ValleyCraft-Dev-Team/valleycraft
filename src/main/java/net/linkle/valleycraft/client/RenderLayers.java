@@ -304,6 +304,8 @@ class RenderLayers {
 
         put(BROWN_CLAY_POT, cullout);
         put(BLUE_CLAY_POT, cullout);
+        put(GREEN_CLAY_POT, cullout);
+        put(PURPLE_CLAY_POT, cullout);
 
         //put(ERDSTONE_WINDOW, cullout);
         //put(SCORCHSTONE_WINDOW, cullout);
@@ -341,6 +343,7 @@ class RenderLayers {
         put(BURNT_OUT_TORCH, cullout);
         put(BURNT_OUT_CANDLE, cullout);
         put(SKELETAL_REMAINS, cullout);
+        put(SKELETAL_REMAINS_SLUMPED, cullout);
         put(SKELETAL_BEST_FRIEND_REMAINS, cullout);
         put(VILLAGER_SKELETAL_REMAINS, cullout);
         put(PIGLIN_SKELETAL_REMAINS, cullout);

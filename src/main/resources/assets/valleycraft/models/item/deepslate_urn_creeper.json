@@ -1,3 +1,6 @@
 {
-  "parent": "valleycraft:block/deepslate_urn_creeper"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/block_items/deepslate_urn_creeper"
+  }
 }

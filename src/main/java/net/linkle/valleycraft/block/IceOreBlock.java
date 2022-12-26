@@ -45,6 +45,5 @@ public class IceOreBlock extends TransparentBlock {
         if (dropExperience) {
             this.dropExperienceWhenMined(world, pos, stack, this.experienceDropped);
         }
-
     }
 }
