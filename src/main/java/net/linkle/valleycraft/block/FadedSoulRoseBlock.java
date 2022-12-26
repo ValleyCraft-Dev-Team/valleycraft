@@ -8,13 +8,14 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.World;
 
 public class FadedSoulRoseBlock extends SoulPlantBlock {
     
     public FadedSoulRoseBlock(Settings settings) {
-        super(ParticleTypes.SMOKE, settings);
+        super(ParticleTypes.SMOKE, settings, UniformIntProvider.create(2, 6));
     }
 
     @Override

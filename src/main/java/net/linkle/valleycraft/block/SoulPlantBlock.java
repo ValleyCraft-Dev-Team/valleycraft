@@ -2,22 +2,35 @@ package net.linkle.valleycraft.block;
 
 import net.linkle.valleycraft.util.PlantVoxelShapes;
 import net.minecraft.block.*;
+import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleEffect;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.intprovider.IntProvider;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 public class SoulPlantBlock extends ModPlantBlock {
-    
+    private final IntProvider experienceDropped;
+
     private final ParticleEffect particleEffect;
     
-    public SoulPlantBlock(ParticleEffect effect, Settings settings) {
+    public SoulPlantBlock(ParticleEffect effect, Settings settings, IntProvider experience) {
         super(settings);
         this.particleEffect = effect;
         shape = PlantVoxelShapes.FLOWER_SHAPE;
+        this.experienceDropped = experience;
     }
-    
+
+    public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack stack, boolean dropExperience) {
+        super.onStacksDropped(state, world, pos, stack, dropExperience);
+        if (dropExperience) {
+            this.dropExperienceWhenMined(world, pos, stack, this.experienceDropped);
+        }
+
+    }
+
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
         return floor.isOpaqueFullCube(world, pos);
