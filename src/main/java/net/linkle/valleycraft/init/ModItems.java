@@ -108,7 +108,7 @@ public enum ModItems implements ItemEnum {
     SOUL_ITEM_FADING(new SoulItem(itemSettings().group(BOOKS).fireproof(), 30)),
     SOUL_ITEM(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof(), 60)),
     SOUL_ITEM_ENRAGED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof(), 120)),
-    SOUL_ITEM_PET(new Item(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    SOUL_ITEM_PET(new SoulPetItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
     SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 3750)),
     SOUL_ITEM_WITHERED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof(), 15)),
     SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 3750)),

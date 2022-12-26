@@ -5,11 +5,12 @@ import java.util.List;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.passive.TameableEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
 
-public class SoulPetItem extends SoulItem {
+public class SoulPetItem extends ModItem {
     
     public static final String SOUL_PET_KEY = "SoulPet";
     public static final String PET_OWNER_KEY = "PetOwner";
