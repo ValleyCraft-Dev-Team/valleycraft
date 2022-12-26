@@ -396,8 +396,6 @@ class RenderLayers {
 
         put(ICE_ORE, translucent);
         put(DEEPSLATE_ICE_ORE, translucent);
-        put(ICICLE, cullout);
-        put(ICICLE_PACKED_ICE, translucent);
 
         put(COBBLESTONE_BRICK_CHIMNEY, cullout);
         put(DIORITE_BRICK_CHIMNEY, cullout);

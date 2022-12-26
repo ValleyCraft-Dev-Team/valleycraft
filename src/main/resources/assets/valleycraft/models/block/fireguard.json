@@ -2,7 +2,9 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "valleycraft:block/fireguard_front",
-		"1": "valleycraft:block/fireguard_side"
+		"1": "valleycraft:block/fireguard_side",
+		"particle": "valleycraft:block/fireguard_front"
+
 	},
 	"elements": [
 		{

@@ -56,6 +56,8 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     BLACK_TULIP(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     FROSTFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     GODDESS_LILY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
+    NIGHT_LILY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
+    LILY_OF_THE_MOUNTAINS(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     FIDDLEHEAD_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
 
     KNAPWEED(new ModFlowerBlock(Blocks.OXEYE_DAISY, OFFSET_FLOWER), itemSettings()),
@@ -246,8 +248,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
 
     ICE_ORE(new IceOreBlock(Block.Settings.copy(Blocks.IRON_ORE).sounds(BlockSoundGroup.GLASS).nonOpaque().slipperiness(0.98f), UniformIntProvider.create(2, 6)), itemSettings()),
     PACKED_SNOW(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    ICICLE_PACKED_ICE(new IcicleGrowingBlock(), itemSettings()),
-    ICICLE(new IcicleBlock(Block.Settings.copy(Blocks.PACKED_ICE).nonOpaque().strength(0.4f)), itemSettings()),
 
     ROUGH_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
     SCALDING_SANDSTONE(new ScaldingBlock(Block.Settings.copy(Blocks.SANDSTONE).ticksRandomly().luminance(s ->3)), itemSettings()),
@@ -288,6 +288,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     BLUE_SOULSPORE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(24, 36)).largeShape(), itemSettings().rarity(Rarity.RARE)),
 
     // Tree Seeds
+    DIVINE_ACORN(new SeedBlock(Blocks.OAK_SAPLING)),
     OAK_SEED(new SeedBlock(Blocks.OAK_SAPLING)),
     BIRCH_SEED(new SeedBlock(Blocks.BIRCH_SAPLING)),
     SPRUCE_SEED(new SeedBlock(Blocks.SPRUCE_SAPLING)),

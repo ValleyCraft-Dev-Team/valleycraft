@@ -33,7 +33,8 @@ public class UnbreakableMythicScytheBase
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add( Text.translatable("item.valley.permanently_repairable.tooltip").formatted(Formatting.GOLD));
+        tooltip.add( Text.translatable("item.valley.permanently_repairable.tooltip").formatted(Formatting.GRAY));
+        tooltip.add( Text.translatable("item.valley.unique.tooltip").formatted(Formatting.GOLD));
         tooltip.add( Text.translatable("item.valley.mythic.tooltip").formatted(Formatting.RED));
     }
 

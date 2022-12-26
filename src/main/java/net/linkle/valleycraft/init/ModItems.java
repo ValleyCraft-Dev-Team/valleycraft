@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
-public enum ModItems implements ItemEnum {
+public enum     ModItems implements ItemEnum {
     RAW_CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(INGREDIENTS))),
     CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(INGREDIENTS))),
     WATER_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(1).group(INGREDIENTS).recipeRemainder(ModItems.CLAY_POT.item), 0, 0.0f)),

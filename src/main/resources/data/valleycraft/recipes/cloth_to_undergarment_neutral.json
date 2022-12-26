@@ -7,9 +7,10 @@
   },
   "pattern": [
     "###",
+    "###",
     "###"
   ],
   "result": {
-    "item": "minecraft:white_wool"
+    "item": "valleycraft:bikini_neutral_repaired"
   }
 }

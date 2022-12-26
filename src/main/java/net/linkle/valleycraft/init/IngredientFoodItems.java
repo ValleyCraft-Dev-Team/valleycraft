@@ -20,25 +20,25 @@ public enum IngredientFoodItems implements ItemEnum {
     CHEESE_SLICE(new FoodItem(settings(), 2, 0.4f)),
     MOREL_OIL(new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS).hideTooltip()),
 
-    GLOW_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 15 * 20)))
+    GLOW_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 5 * 20)))
     .addText("item.valleycraft.dishes.tooltip", Formatting.GRAY).addText("item.valleycraft.dishes.tooltip_8", Formatting.GRAY)),
 
     ALOE_VERA(new AliasedBlockItem(ModNaturalBlocks.ALOE_VERAS.block, settings().food(Foods.create(3, 0.3f)))),
     
-    AMETHYSTLE(new FoodItem(settings(), 2, 0.3f)
+    AMETHYSTLE(new FoodItem(settings(), 2, 0.3f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.HASTE, 5 * 20)))
     .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_10")),
     
-    ANCIENT_FLOWER(new FoodItem(settings(), 6, 0.7f)
+    ANCIENT_FLOWER(new FoodItem(settings(), 6, 0.7f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 5 * 20)))
     .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_7")),
     
     CAVE_ROOT(new FoodItem(settings(), 4, 0.3f)),
     
-    ENDURA_CARROT(new FoodItem(settings(), 5, 0.3f)
+    ENDURA_CARROT(new FoodItem(settings(), 5, 0.3f,  new FoodStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 5 * 20)))
     .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_9")),
     
     FIRE_PEPPER(new FoodItem(settings(), 3, 0.3f)),
     
-    HEARTY_BEETROOT(new FoodItem(settings(), 4, 0.6f)
+    HEARTY_BEETROOT(new FoodItem(settings(), 4, 0.6f,  new FoodStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 5 * 20)))
     .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_6")),
     
     MAIZE(new AliasedBlockItem(ModNaturalBlocks.MAIZE.block, settings().rarity(Rarity.RARE).food(Foods.create(3, 0.3f)))),
@@ -57,7 +57,7 @@ public enum IngredientFoodItems implements ItemEnum {
     RAW_PERCH(new FoodItem(settings(), 2, 0.4f)),
 
     RAW_SQUID_TENTACLE(new FoodItem(settings(), 2, 0.3f)),
-    RAW_GLOWSQUID_TENTACLE(new FoodItem(settings(), 2, 0.2f)
+    RAW_GLOWSQUID_TENTACLE(new FoodItem(settings(), 2, 0.2f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 5 * 20)))
             .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_4")),
 
     RAW_LOBSTER(new NegativeFoodItem_3_Effects(settings(), 3, 0.2f, StatusEffects.HUNGER, StatusEffects.POISON, StatusEffects.NAUSEA).hideTooltip()),

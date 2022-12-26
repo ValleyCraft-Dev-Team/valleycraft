@@ -256,7 +256,7 @@ public class ModTools {
         Reg.register("toy_sword", new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("moblin_sword_broken", MOBLIN_BROKEN);
         Reg.register("moblin_sword_fixed", new TravelerBaseFixed(ToolMaterials.IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_UNCOMMON));
-        Reg.register("primsteel_ikakalaka", new TravelerBaseFixed(ModToolMaterials.PRIMSTEEL, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
+        Reg.register("primsteel_ikakalaka", new TravelerBase(ModToolMaterials.PRIMSTEEL, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("dierdra_spear", new SpearBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_ARTIFACT_SETTINGS_RARE));
         Reg.register("seaologer_broken", SEAOLOGER_BROKEN);
         Reg.register("seaologer_fixed", SEAOLOGER_FIXED);

@@ -37,7 +37,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     CRAFTING_MAT(new CraftingMatBauble(Block.Settings.of(Material.DECORATION).sounds(BlockSoundGroup.WOOL).breakInstantly().noCollision().nonOpaque()), toolItemSettings()),
     //BIG_FLOWER_POT_BLOCK(new BigFlowerPotBlock(Block.Settings.copy(Blocks.FARMLAND).ticksRandomly().requiresTool().strength(1.5F, 3.0F).sounds(ModBlockSoundGroup.POT.sound)), itemSettings()),
-    FIREGUARD(new FireGuardBlock(AbstractBlock.Settings.of(Material.METAL).sounds(BlockSoundGroup.CHAIN).nonOpaque()), itemSettings()),
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     KEG(new KegBlock(), itemSettings()),
@@ -96,7 +95,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     CANVAS_CARPET(new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
     CURTAIN(new CurtainBlock(), itemSettings()),
-    
+    FIREGUARD(new FireGuardBlock(AbstractBlock.Settings.of(Material.METAL).sounds(BlockSoundGroup.CHAIN).nonOpaque()), itemSettings()),
+
     BRAZIER(new BrazierBlock(15, 1), itemSettings()),
     SOUL_BRAZIER(new BrazierBlock(10, 2), itemSettings()),
 
