@@ -20,7 +20,7 @@
     "foodsforthesoul": {
       "trigger": "minecraft:consume_item",
       "conditions": {
-        "item": [
+        "items": [
           {
             "items": [
               "valleycraft:aloe_vera",

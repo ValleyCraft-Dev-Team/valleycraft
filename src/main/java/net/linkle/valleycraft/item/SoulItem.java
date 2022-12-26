@@ -13,6 +13,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 public class SoulItem extends ModItem {
@@ -22,6 +23,17 @@ public class SoulItem extends ModItem {
         super(settings);
         this.exp = exp;
     }
+
+    @Override
+    public int getMaxUseTime(ItemStack stack) {
+        return 4;
+    }
+
+    @Override
+    public UseAction getUseAction(ItemStack stack) {
+        return UseAction.TOOT_HORN;
+    }
+
     @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
