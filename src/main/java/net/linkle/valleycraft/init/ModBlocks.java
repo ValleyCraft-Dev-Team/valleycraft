@@ -36,19 +36,23 @@ import net.minecraft.world.BlockView;
 public enum ModBlocks implements ItemEnum, BlockEnum {
 
     CRAFTING_MAT(new CraftingMatBauble(Block.Settings.of(Material.DECORATION).sounds(BlockSoundGroup.WOOL).breakInstantly().noCollision().nonOpaque()), toolItemSettings()),
+    KEG(new KegBlock(), itemSettings()),
+    STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
+    BRICK_STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
+    CRATE(new CrateBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
+    RAIN_COLLECTOR(new RainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque()), itemSettings()),
+    LEVELED_RAIN_COLLECTOR(new LeveledRainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque())),
+    WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
+    SPRINKLER(new SprinklerBlock(), itemSettings()),
+
     //BIG_FLOWER_POT_BLOCK(new BigFlowerPotBlock(Block.Settings.copy(Blocks.FARMLAND).ticksRandomly().requiresTool().strength(1.5F, 3.0F).sounds(ModBlockSoundGroup.POT.sound)), itemSettings()),
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
-    KEG(new KegBlock(), itemSettings()),
     WITCH_LADLE(new LadleBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().noCollision().nonOpaque()), itemSettings()),
     MINER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(Blocks.SPRUCE_PLANKS).nonOpaque()), itemSettings()),
     HUNTING_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
-    STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
-    BRICK_STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
-    LOG_PILE(new LogPile(Block.Settings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
-    CRATE(new CrateBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     COUNTER_DRAWER(new CounterDrawerBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     COUNTER(new CounterBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     COUNTER_CORNER(new CounterCornerBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
@@ -63,6 +67,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     TOOL_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
     ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
     CLOTHED_ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
+    LOG_PILE(new LogPile(Block.Settings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
 
     BOOK_STACK_0(new BookStackBlock(BLOCK_SHAPE_0), itemSettings()),
     BOOK_STACK_1(new BookStackBlock(BLOCK_SHAPE_1), itemSettings()),
@@ -248,13 +253,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     WAXED_WASTEBIN_WEATHERED(new WastebinBlock(), itemSettings()),
     WAXED_WASTEBIN_OXIDIZED(new WastebinBlock(), itemSettings()),
 
-    SPRINKLER(new SprinklerBlock(), itemSettings()),
-    
-    WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
-    
-    RAIN_COLLECTOR(new RainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque()), itemSettings()),
-    LEVELED_RAIN_COLLECTOR(new LeveledRainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque())),
-
     //scarecrows
     SCARECROW(new ScarecrowBlock(false), itemSettings()),
     SCARECROW_GLOWING(new ScarecrowBlock(true), itemSettings()),
@@ -329,6 +327,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POTTED_JUNGLE_BUSH(new PotBlock(ModNaturalBlocks.JUNGLE_BUSH)),
     POTTED_PANFLOWERS(new PotBlock(ModNaturalBlocks.PANFLOWERS)),
     POTTED_FROSTFERN(new PotBlock(ModNaturalBlocks.FROSTFERN)),
+    POTTED_FIREFERN(new PotBlock(ModNaturalBlocks.FIREFERN)),
     POTTED_WEEPING_GHOST_WILLOW(new PotBlock(ModNaturalBlocks.WEEPING_GHOST_WILLOW)),
     POTTED_BONE_WEED(new PotBlock(ModNaturalBlocks.BONE_WEED)),
     POTTED_FIDDLEHEAD_FERN(new PotBlock(ModNaturalBlocks.FIDDLEHEAD_FERN)),

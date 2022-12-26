@@ -8,7 +8,7 @@
       "item": "valleycraft:totem_of_appreciation"
     },
     "description": {
-      "text": "Find a fellow Midlander or recover their remains."
+      "text": "Find another Midlander or recover their remains."
     },
     "frame": "challenge",
     "hidden": "true"

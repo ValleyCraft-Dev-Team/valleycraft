@@ -129,7 +129,9 @@ class RenderLayers {
         put(PANFLOWERS, cullout);
         put(POTTED_PANFLOWERS, cullout);
         put(FROSTFERN, cullout);
+        put(FIREFERN, cullout);
         put(POTTED_FROSTFERN, cullout);
+        put(POTTED_FIREFERN, cullout);
         put(WEEPING_GHOST_WILLOW, cullout);
         put(POTTED_WEEPING_GHOST_WILLOW, cullout);
         put(BONE_WEED, cullout);

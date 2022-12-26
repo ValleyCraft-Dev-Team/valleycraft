@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.init;
 
+import com.terraformersmc.modmenu.util.mod.Mod;
 import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.*;
@@ -67,15 +68,17 @@ public enum IngredientFoodItems implements ItemEnum {
     
     RAW_BIRD_THIGH(new FoodItem(settings(), 2, 0.2f)),
     RAW_BEAST_LIVER(new FoodItem(settings(), 4, 0.4f, true)),
-    RAW_BEAST_HEART(new FoodItem(settings(), 6, 0.4f, true)),
     RAW_BAT_WING(new FoodItem(settings(), 2, 0.1f)),
     RAW_SILVERFISH(new FoodItem(settings(), 1, 0.1f)),
     RAW_PHANTOM_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.NAUSEA).hideTooltip()),
     RAW_TRIPE(new NegativeFoodItem_3_Effects(settings(), 6, 0.3f, StatusEffects.POISON, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
+    RAW_BEAST_HEART(new FoodItem(settings(), 6, 0.4f, true)),
+    MONSTER_HEART(new NegativeFoodItem_2_Effects(settings(), 8, 0.3f, StatusEffects.MINING_FATIGUE, StatusEffects.HUNGER).hideTooltip()),
+    INFECTED_MONSTER_HEART(new NegativeFoodItem_3_Effects(settings(), 6, 0.3f, StatusEffects.MINING_FATIGUE, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT).hideTooltip()),
     MONSTER_GUTS(new NegativeFoodItem_2_Effects(settings(), 6, 0.3f, StatusEffects.BLINDNESS, StatusEffects.HUNGER).hideTooltip()),
     INFECTED_MONSTER_GUTS(new NegativeFoodItem_3_Effects(settings(), 6, 0.3f, StatusEffects.BLINDNESS, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT).hideTooltip()),
-    MONSTER_LIVER(new NegativeFoodItem_2_Effects(settings(), 3, 0.4f, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
-    INFECTED_MONSTER_LIVER(new NegativeFoodItem_3_Effects(settings(), 3, 0.4f, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),
+    MONSTER_LIVER(new NegativeFoodItem_2_Effects(settings(), 3, 0.4f, StatusEffects.NAUSEA, StatusEffects.HUNGER).hideTooltip()),
+    INFECTED_MONSTER_LIVER(new NegativeFoodItem_3_Effects(settings(), 3, 0.4f, StatusEffects.NAUSEA, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT).hideTooltip()),
     ZOD(new NegativeFoodItem_3_Effects(settings().group(ModGroups.INGREDIENTS), 5, 2, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),
     RAW_ENDERMAN_EYE(new Tier1Normal(settings(), 3, 0.3f, StatusEffects.WEAKNESS).hideTooltip()),
     ENDER_DRAGON_EYE(new EnderDragonEyeFoodItem(settings().rarity(Rarity.EPIC).fireproof(), 3, 0.4f, StatusEffects.POISON, StatusEffects.BLINDNESS, StatusEffects.NAUSEA).hideTooltip()),

@@ -16,7 +16,7 @@ public class ModPotions {
     public static Potion ROT_BLIGHT_POTION = registerPotion("rot_blight_potion", new Potion(new StatusEffectInstance(ModEffects.ROT_BLIGHT, 45 * 20)));
 
     public static void initialize() {
-        registerRecipe(Potions.AWKWARD, IngredientFoodItems.INFECTED_MONSTER_LIVER.item, ModPotions.ROT_BLIGHT_POTION);
+        registerRecipe(Potions.WATER, IngredientFoodItems.INFECTED_MONSTER_HEART.item, ModPotions.ROT_BLIGHT_POTION);
         registerRecipe(Potions.AWKWARD, Items.SCUTE, Potions.TURTLE_MASTER);
     }
     
@@ -25,8 +25,7 @@ public class ModPotions {
     }
     
     private static void registerRecipe(Potion input, Item item, Potion output) {
-        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.AWKWARD, IngredientFoodItems.INFECTED_MONSTER_LIVER.item, ModPotions.ROT_BLIGHT_POTION);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.AWKWARD, IngredientFoodItems.INFECTED_MONSTER_HEART.item, ModPotions.ROT_BLIGHT_POTION);
         BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.SCUTE, Potions.TURTLE_MASTER);
-
     }
 }

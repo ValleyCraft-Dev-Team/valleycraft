@@ -16,14 +16,14 @@ import net.minecraft.world.BlockView;
 import java.util.List;
 
 public class FireGuardBlock extends HorizontalWithWaterBlock {
-    protected static final VoxelShape NORTH_SHAPE_OUTLINE = Block.createCuboidShape(0,0, 0, 16, 13, 4);
-    protected static final VoxelShape SOUTH_SHAPE_OUTLINE = Block.createCuboidShape(0, 0, 12, 16, 13, 16);
-    protected static final VoxelShape WEST_SHAPE_OUTLINE = Block.createCuboidShape(0, 0, 0, 4, 13, 16);
-    protected static final VoxelShape EAST_SHAPE_OUTLINE = Block.createCuboidShape(12, 0, 0, 16, 13, 16);
-    protected static final VoxelShape NORTH_SHAPE_COLLISION = Block.createCuboidShape(0,0, 0, 16, 24, 4);
-    protected static final VoxelShape SOUTH_SHAPE_COLLISION = Block.createCuboidShape(0, 0, 12, 16, 24, 16);
-    protected static final VoxelShape WEST_SHAPE_COLLISION = Block.createCuboidShape(0, 0, 0, 4, 24, 16);
-    protected static final VoxelShape EAST_SHAPE_COLLISION = Block.createCuboidShape(12, 0, 0, 16, 24, 16);
+    protected static final VoxelShape NORTH_SHAPE_OUTLINE = Block.createCuboidShape(0,0, 0, 16, 13, 1);
+    protected static final VoxelShape SOUTH_SHAPE_OUTLINE = Block.createCuboidShape(0, 0, 15, 16, 13, 16);
+    protected static final VoxelShape WEST_SHAPE_OUTLINE = Block.createCuboidShape(0, 0, 0, 1, 13, 16);
+    protected static final VoxelShape EAST_SHAPE_OUTLINE = Block.createCuboidShape(15, 0, 0, 16, 13, 16);
+    protected static final VoxelShape NORTH_SHAPE_COLLISION = Block.createCuboidShape(0,0, 0, 16, 24, 1);
+    protected static final VoxelShape SOUTH_SHAPE_COLLISION = Block.createCuboidShape(0, 0, 15, 16, 24, 16);
+    protected static final VoxelShape WEST_SHAPE_COLLISION = Block.createCuboidShape(0, 0, 0, 1, 24, 16);
+    protected static final VoxelShape EAST_SHAPE_COLLISION = Block.createCuboidShape(15, 0, 0, 16, 24, 16);
 
     public FireGuardBlock(Settings settings) {
         super(settings);

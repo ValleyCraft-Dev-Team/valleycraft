@@ -3,6 +3,8 @@ package net.linkle.valleycraft.block;
 import java.util.List;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.init.ModItems;
+import net.linkle.valleycraft.item.ModItem;
 import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.ai.pathing.NavigationType;
@@ -91,9 +93,12 @@ public class KegBlock extends BlockWithWater {
             if (stack.isOf(Items.BUCKET)) {
                 hasFill = true;
                 player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, new ItemStack(Items.WATER_BUCKET)));
-            } else if (stack.isOf(Items.GLASS_BOTTLE)) {
+            }
+            if (stack.isOf(Items.GLASS_BOTTLE)) {
                 hasFill = true;
                 player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, PotionUtil.setPotion(new ItemStack(Items.POTION), Potions.WATER)));
+            } else if (stack.isOf(ModItems.CLAY_POT.item)) {
+                player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, (new ItemStack(ModItems.WATER_FILLED_CLAY_POT.item))));
             }
 
             if (hasFill) {

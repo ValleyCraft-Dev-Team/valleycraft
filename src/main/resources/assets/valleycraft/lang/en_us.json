@@ -115,6 +115,7 @@
   "item.valleycraft.raw_enderman_eye": "Enderman Eye",
   "item.valleycraft.monster_guts": "Rotten Guts",
   "item.valleycraft.monster_liver": "Rotten Liver",
+  "item.valleycraft.monster_heart": "Rotten Heart",
   "item.valleycraft.raw_beast_liver": "Raw Liver",
   "item.valleycraft.raw_beast_heart": "Raw Heart",
   "item.valleycraft.zod": "Raw Rotten Cod",
@@ -131,6 +132,7 @@
 
   "item.valleycraft.infected_monster_guts": "Blighted Guts",
   "item.valleycraft.infected_monster_liver": "Blighted Liver",
+  "item.valleycraft.infected_monster_heart": "Blighted Heart",
   "item.valleycraft.seaologer_broken": "Rusty Iron Cutlass",
   "item.valleycraft.moblin_sword_broken": "Rusty Iron Moblin Shortsword",
   "item.valleycraft.moblin_sword_fixed": "Iron Moblin Shortsword",
@@ -366,10 +368,6 @@
   "item.valleycraft.cyan_hood": "Teal Hood",
   "item.valleycraft.cyan_cloak": "Teal Cloak",
 
-  "block.valleycraft.ancient_wagon_wheel": "§cWagon Wheel",
-  "block.valleycraft.ancient_wagon_wheel_platform": "§cWagon Wheel Connection Rod",
-  "block.valleycraft.ancient_wagon_wheel_table": "Wagon Wheel Table",
-
   "item.valleycraft.daub": "Daub",
 
   "mythic_items": "§c",
@@ -386,7 +384,7 @@
   "item.valleycraft.book_straya_vol_five": "§cStraya's History of the Overworld: Vol 5",
   "item.valleycraft.book_hex": "§cHex's Logbook",
   "item.valleycraft.book_aether": "§cEdison Wrenk's Recipe Book",
-  "block.valleycraft.defective_spawner": "§cDefective Spawner",
+  "block.valleycraft.defective_spawner": "Defective Spawner",
 
   "uncommon_items": "yellow",
   "item.valleycraft.rune_etching_blade": "Rune Etching Blade",
@@ -457,7 +455,7 @@
   "item.valleycraft.sheep_hide": "Sheepskin",
   "item.valleycraft.pig_hide": "Pig Hide",
 
-  "item.valleycraft.tree_god_mask": "§cDivine Tree Mask",
+  "item.valleycraft.tree_god_mask": "Divine Tree Mask",
 
   "block.valleycraft.mamon_wood": "Amberblossom Wood",
   "block.valleycraft.mamon_log": "Amberblossom Log",
@@ -538,16 +536,16 @@
   "block.valleycraft.erdstone_tiles": "Erdstone Tiles",
   "block.valleycraft.chiseled_erdstone": "Chiseled Erdstone",
   "block.valleycraft.chiseled_erdstone_face": "Chiseled Erdstone Face",
-  "block.valleycraft.chiseled_erdstone_brick_face": "§cAncient Chiseled Erdstone Brick Face",
-  "block.valleycraft.chiseled_erdstone_brick_face_happy": "§cAncient Chiseled Erdstone Brick Face",
+  "block.valleycraft.chiseled_erdstone_brick_face": "Ancient Chiseled Erdstone Brick Face",
+  "block.valleycraft.chiseled_erdstone_brick_face_happy": "Ancient Chiseled Erdstone Brick Face",
   "block.valleycraft.patterned_erdstone": "Large Erdstone Tiles",
   "block.valleycraft.mossy_patterned_erdstone": "Rooted Large Erdstone Tiles",
   "block.valleycraft.erdstone_spirit": "Erdstone Soul Symbol",
-  "block.valleycraft.erdstone_spirit_lit": "§cAncient Erdstone Soul Symbol Lantern",
-  "block.valleycraft.erdstone_lantern": "§cAncient Erdstone Soul Lantern",
+  "block.valleycraft.erdstone_spirit_lit": "Ancient Erdstone Soul Symbol Lantern",
+  "block.valleycraft.erdstone_lantern": "Ancient Erdstone Soul Lantern",
 
-  "block.valleycraft.erdstone_target_block": "§cAncient Erdstone Eye Sensor",
-  "block.valleycraft.erdstone_dispenser": "§cAncient Erdstone Dispenser",
+  "block.valleycraft.erdstone_target_block": "Ancient Erdstone Eye Sensor",
+  "block.valleycraft.erdstone_dispenser": "Ancient Erdstone Dispenser",
 
   "block.valleycraft.polished_adventurine": "Polished Adventurine",
 
@@ -649,8 +647,8 @@
   "block.valleycraft.dead_lantern": "Burnt Out Lantern",
   "block.valleycraft.skeletal_remains": "Ancient Skeletal Remains",
   "block.valleycraft.skeletal_mining_remains": "Ancient Skeletal Mining Remains",
-  "block.valleycraft.rusted_chest": "§cAncient Rusty Chest",
-  "block.valleycraft.chained_rusted_chest": "§cAncient Rusty Chained Chest",
+  "block.valleycraft.rusted_chest": "Ancient Rusty Chest",
+  "block.valleycraft.chained_rusted_chest": "Ancient Rusty Chained Chest",
   "block.valleycraft.loose_rocks": "Loose Cobblestone Debris",
   "block.valleycraft.skeletal_remains_slumped": "Ancient Slumped-Over Skeletal Remains",
   "block.valleycraft.skeletal_best_friend_remains": "Ancient Friends' Skeletal Remains",
@@ -666,11 +664,12 @@
   "block.valleycraft.pink_lupine": "Pink Lupine",
   "block.valleycraft.yellow_lupine": "Yellow Lupine",
   "block.valleycraft.red_lupine": "Red Lupine",
-  "block.valleycraft.goddess_lily": "§cLily of the Outer Gods",
+  "block.valleycraft.goddess_lily": "Lily of the Outer Gods",
   "block.valleycraft.poison_blossom": "Lily of the Blight",
   "block.valleycraft.night_lily": "Lily of the Stars",
   "block.valleycraft.lily_of_the_mountains": "Lily of the Mountains",
   "block.valleycraft.frostfern": "Frostfern",
+  "block.valleycraft.firefern": "Firefern",
   "item.valleycraft.goddess_blade": "The Goddess Blade",
   "item.valleycraft.goddess_blade_found": "Broken Goddess Blade",
   "item.valleycraft.ribcage": "Skeleton Ribcage",
@@ -1027,15 +1026,15 @@
   "item.valleycraft.canvas_boots": "Canvas Boots",
 
   "item.valleycraft.sludge_bucket": "Bucket of Rotten Sludge",
-  "effect.valleycraft.rot_blight": "Rot-Blight",
+  "effect.valleycraft.rot_blight": "Blighted",
 
   "item.valleycraft.slime_blob": "Blob of Jelly",
   "item.valleycraft.evil_crystal": "Blight Crystal",
 
-  "item.minecraft.potion.effect.rot_blight_potion": "Rot-Blight Potion",
-  "item.minecraft.splash_potion.effect.rot_blight_potion": "Splash Potion of Rot-Blight",
-  "item.minecraft.lingering_potion.effect.rot_blight_potion": "Lingering Potion of Rot-Blight",
-  "item.minecraft.tipped_arrow.effect.rot_blight_potion": "Arrow of Rot Blight",
+  "item.minecraft.potion.effect.rot_blight_potion": "Blight Essence Potion",
+  "item.minecraft.splash_potion.effect.rot_blight_potion": "Splash Potion of Blight Essence",
+  "item.minecraft.lingering_potion.effect.rot_blight_potion": "Lingering Potion of Blight Essence",
+  "item.minecraft.tipped_arrow.effect.rot_blight_potion": "Arrow of Blight Essence",
 
   "item.valleycraft.rice_seeds": "Rice Seedlings",
   "item.valleycraft.puff_ball_seeds": "Puff Ball Seeds",

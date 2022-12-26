@@ -1,0 +1,36 @@
+{
+  "parent": "valleycraft:wilder_horizons/root",
+  "display": {
+    "title": {
+      "text": "An Ancient Hatred"
+    },
+    "icon": {
+      "item": "valleycraft:infected_monster_heart"
+    },
+    "description": {
+      "text": "Extract Blight Essence"
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "blight": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:potion"
+            ],
+            "potion": "valleycraft:rot_blight"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blight"
+    ]
+  ]
+}

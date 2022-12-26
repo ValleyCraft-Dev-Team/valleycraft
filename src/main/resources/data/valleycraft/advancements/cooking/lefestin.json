@@ -1,0 +1,47 @@
+{
+  "parent": "valleycraft:survival/primitivetechnology",
+  "display": {
+    "title": {
+      "text": "Le Festin"
+    },
+    "icon": {
+      "item": "valleycraft:crafting_mat"
+    },
+    "description": {
+      "text": "Craft a Stove and Keg for cooking."
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "stove": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:stove",
+              "valleycraft:brick_stove"
+            ]
+          }
+        ]
+      }
+    },
+    "keg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:keg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "craftingtools"
+    ]
+  ]
+}
