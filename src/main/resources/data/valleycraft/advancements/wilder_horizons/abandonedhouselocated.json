@@ -1,15 +1,15 @@
 {
-  "parent": "valleycraft:wilder_horizons/root",
+  "parent": "valleycraft:wilder_horizons/relicofthepast",
   "display": {
     "title": {
-      "text": "\"...Ye Bearer Of Fate...\"",
+      "text": "...Hello?",
       "color": "green"
     },
     "icon": {
-      "item": "valleycraft:birch_seed"
+      "item": "valleycraft:dead_lantern"
     },
     "description": {
-      "text": "Find the Temple of the Unknown Goddess"
+      "text": "Find an abandoned ruin"
     },
     "frame": "task",
     "hidden": "true"
@@ -18,7 +18,7 @@
     "experience": 5
   },
   "criteria": {
-    "in_temple": {
+    "ruins": {
       "conditions": {
         "player": {
             "location": {
@@ -28,7 +28,9 @@
               }
             },
             "structure": [
-              "valleycraft:ancient_ruins/erdis_temple"
+              "valleycraft:ancient_ruins/PUTAREALSTRUCTUREHERE",
+              "valleycraft:ancient_ruins/PUTAREALSTRUCTUREHEREANDHERE",
+              "valleycraft:ancient_ruins/PUTAREALSTRUCTUREHERETOO"
             ]
           }
         },
@@ -37,7 +39,7 @@
   },
   "requirements": [
     [
-      "in_temple"
+      "ruins"
     ]
   ]
 }

@@ -1,28 +1,27 @@
 {
-  "parent": "valleycraft:wilder_horizons/anancienthatred",
+  "parent": "valleycraft:wilder_horizons/allisblight",
   "display": {
     "title": {
-      "text": "Ouroboric"
+      "text": "An Ancient Hatred"
     },
     "icon": {
-      "item": "valleycraft:infected_monster_heart"
+      "item": "valleycraft:evil_crystal"
     },
     "description": {
-      "text": "Extract Blight Essence"
+      "text": "Find Crystallized Blight"
     },
     "frame": "task",
-    "hidden": "false"
+    "hidden": "true"
   },
   "criteria": {
-    "blight": {
+    "evil": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:potion"
-            ],
-            "potion": "valleycraft:rot_blight_potion"
+              "valleycraft:evil_crystal"
+            ]
           }
         ]
       }
@@ -30,7 +29,7 @@
   },
   "requirements": [
     [
-      "blight"
+      "evil"
     ]
   ]
 }

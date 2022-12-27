@@ -1,0 +1,65 @@
+{
+  "parent": "valleycraft:wilder_horizons/root",
+  "display": {
+    "title": {
+      "text": "\"All That Was Rot-\""
+    },
+    "icon": {
+      "item": "valleycraft:monster_guts"
+    },
+    "description": {
+      "text": "I'm pretty sure this is inedible."
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "heart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:monster_heart"
+            ]
+          }
+        ]
+      }
+    },
+    "liver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:monster_liver"
+            ]
+          }
+        ]
+      }
+    },
+    "guts": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:monster_guts"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "heart"
+    ],
+    [
+      "liver"
+    ],
+    [
+      "guts"
+    ]
+  ]
+}

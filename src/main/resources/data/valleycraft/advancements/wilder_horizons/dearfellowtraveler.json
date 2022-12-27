@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:wilder_horizons/relicofthepast",
+  "parent": "valleycraft:wilder_horizons/abandonedhouselocated",
   "display": {
     "title": {
       "text": "Dear Fellow Traveler"
@@ -8,7 +8,7 @@
       "item": "valleycraft:totem_of_appreciation"
     },
     "description": {
-      "text": "Find another Midlander or recover their remains."
+      "text": "Find another Midlander"
     },
     "frame": "challenge",
     "hidden": "true"

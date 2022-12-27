@@ -17,6 +17,11 @@ public enum ModBiomes implements IdProvider {
     FROZEN_OLD_GROWTH_FOREST(OverworldBiomes.snowyOldGrowthTaiga());
     //AMBER_BIRCH_FOREST(OverworldBiomes.amberBirchForest());
     //OLD_GROWTH_AMBER_BIRCH_FOREST(OverworldBiomes.amberBirchForestTall());
+    //WINDSWEPT_DESERT
+    //EXTREME_WINDSWEPT_DARK_FOREST
+    //DESERT_CAVE
+    //ICE_CAVE
+    //VOLCANIC_CAVE?
 
     // Enum class
     public static void initialize() {} 

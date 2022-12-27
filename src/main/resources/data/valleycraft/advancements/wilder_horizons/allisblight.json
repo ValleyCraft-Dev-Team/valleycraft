@@ -1,0 +1,65 @@
+{
+  "parent": "valleycraft:wilder_horizons/root",
+  "display": {
+    "title": {
+      "text": "\"-Has Merely Festered.\""
+    },
+    "icon": {
+      "item": "valleycraft:monster_guts"
+    },
+    "description": {
+      "text": "Entropy in action?"
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "heart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:infected_monster_heart"
+            ]
+          }
+        ]
+      }
+    },
+    "liver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:infected_monster_liver"
+            ]
+          }
+        ]
+      }
+    },
+    "guts": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:infected_monster_guts"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "heart"
+    ],
+    [
+      "liver"
+    ],
+    [
+      "guts"
+    ]
+  ]
+}
