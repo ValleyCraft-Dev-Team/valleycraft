@@ -89,6 +89,7 @@ public enum IngredientFoodItems implements ItemEnum {
     BREAD_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     CORN_BREAD_DOUGH(new FoodItem(settings(), 2, 0.2f)),
     COOKIE_DOUGH(new FoodItem(settings(), 1, 0.2f)),
+    CHOCOLATE_CHUNK_COOKIE_DOUGH(new FoodItem(settings(), 1, 0.2f)),
     PUMPKIN_SPICE_COOKIE_DOUGH(new FoodItem(settings(), 1, 0.2f)),
     PUMPKIN_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     CHOCOLATE_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),

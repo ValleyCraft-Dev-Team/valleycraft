@@ -1,0 +1,286 @@
+{
+  "parent": "valleycraft:survival/nowthatsanaxe",
+  "display": {
+    "title": {
+      "text": "Jack-Of-All-Tools"
+    },
+    "icon": {
+      "item": "valleycraft:scythe_golden"
+    },
+    "description": {
+      "text": "Create one of every basic tool type"
+    },
+    "frame": "goal"
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "criteria": {
+    "knife": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:knife_wooden",
+              "valleycraft:knife_stone",
+              "valleycraft:knife_golden",
+              "valleycraft:knife_primsteel",
+              "valleycraft:knife_iron",
+              "valleycraft:knife_rosegold",
+              "valleycraft:knife_diamond",
+              "valleycraft:knife_netherite"
+            ]
+          }
+        ]
+      }
+    },
+    "hatchet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:hatchet_wooden",
+              "valleycraft:hatchet_stone",
+              "valleycraft:hatchet_golden",
+              "valleycraft:hatchet_primsteel",
+              "valleycraft:hatchet_iron",
+              "valleycraft:hatchet_rosegold",
+              "valleycraft:hatchet_diamond",
+              "valleycraft:hatchet_netherite"
+            ]
+          }
+        ]
+      }
+    },
+    "axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:rosegold_axe",
+              "valleycraft:primsteel_axe",
+              "minecraft:wooden_axe",
+              "minecraft:stone_axe",
+              "minecraft:golden_axe",
+              "minecraft:iron_axe",
+              "minecraft:diamond_axe",
+              "minecraft:netherite_axe"
+            ]
+          }
+        ]
+      }
+    },
+    "woodcutter_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:woodcutter_axe_wooden",
+              "valleycraft:woodcutter_axe_stone",
+              "valleycraft:woodcutter_axe_golden",
+              "valleycraft:woodcutter_axe_primsteel",
+              "valleycraft:woodcutter_axe_iron",
+              "valleycraft:woodcutter_axe_rosegold",
+              "valleycraft:woodcutter_axe_diamond",
+              "valleycraft:woodcutter_axe_netherite"
+            ]
+          }
+        ]
+      }
+    },
+    "hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:rosegold_hoe",
+              "valleycraft:primsteel_hoe",
+              "minecraft:wooden_hoe",
+              "minecraft:stone_hoe",
+              "minecraft:golden_hoe",
+              "minecraft:iron_hoe",
+              "minecraft:diamond_hoe",
+              "minecraft:netherite_hoe"
+            ]
+          }
+        ]
+      }
+    },
+    "scythe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:scythe_wooden",
+              "valleycraft:scythe_stone",
+              "valleycraft:scythe_golden",
+              "valleycraft:scythe_primsteel",
+              "valleycraft:scythe_iron",
+              "valleycraft:scythe_rosegold",
+              "valleycraft:scythe_diamond",
+              "valleycraft:scythe_netherite"
+            ]
+          }
+        ]
+      }
+    },
+    "sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:rosegold_sword",
+              "valleycraft:primsteel_sword",
+              "minecraft:wooden_sword",
+              "minecraft:stone_sword",
+              "minecraft:golden_sword",
+              "minecraft:iron_sword",
+              "minecraft:diamond_sword",
+              "minecraft:netherite_sword"
+            ]
+          }
+        ]
+      }
+    },
+    "travelers_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:traveler_wooden",
+              "valleycraft:traveler_stone",
+              "valleycraft:traveler_golden",
+              "valleycraft:traveler_primsteel",
+              "valleycraft:traveler_iron",
+              "valleycraft:traveler_rosegold",
+              "valleycraft:traveler_diamond",
+              "valleycraft:traveler_netherite"
+            ]
+          }
+        ]
+      }
+    },
+    "dagger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:dagger_wooden",
+              "valleycraft:dagger_stone",
+              "valleycraft:dagger_golden",
+              "valleycraft:dagger_primsteel",
+              "valleycraft:dagger_iron",
+              "valleycraft:dagger_rosegold",
+              "valleycraft:dagger_diamond",
+              "valleycraft:dagger_netherite"
+            ]
+          }
+        ]
+      }
+    },
+    "greatsword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:wooden_greatsword",
+              "valleycraft:stone_greatsword",
+              "valleycraft:golden_greatsword",
+              "valleycraft:primsteel_greatsword",
+              "valleycraft:iron_greatsword",
+              "valleycraft:rosegold_greatsword",
+              "valleycraft:diamond_greatsword",
+              "valleycraft:netherite_greatsword"
+            ]
+          }
+        ]
+      }
+    },
+    "pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:rosegold_pickaxe",
+              "valleycraft:primsteel_pickaxe",
+              "minecraft:wooden_pickaxe",
+              "minecraft:stone_pickaxe",
+              "minecraft:golden_pickaxe",
+              "minecraft:iron_pickaxe",
+              "minecraft:diamond_pickaxe",
+              "minecraft:netherite_pickaxe"
+            ]
+          }
+        ]
+      }
+    },
+    "shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:rosegold_shovel",
+              "valleycraft:primsteel_shovel",
+              "minecraft:wooden_shovel",
+              "minecraft:stone_shovel",
+              "minecraft:golden_shovel",
+              "minecraft:iron_shovel",
+              "minecraft:diamond_shovel",
+              "minecraft:netherite_shovel"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shovel"
+    ],
+    [
+      "pickaxe"
+    ],
+    [
+      "hoe"
+    ],
+    [
+      "sword"
+    ],
+    [
+      "axe"
+    ],
+    [
+      "hatchet"
+    ],
+    [
+      "greatsword"
+    ],
+    [
+      "travelers_sword"
+    ],
+    [
+      "dagger"
+    ],
+    [
+      "scythe"
+    ],
+    [
+      "knife"
+    ],
+    [
+      "woodcutter_axe"
+    ]
+  ]
+}

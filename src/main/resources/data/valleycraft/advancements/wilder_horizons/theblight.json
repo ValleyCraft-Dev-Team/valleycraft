@@ -22,7 +22,7 @@
             "items": [
               "minecraft:potion"
             ],
-            "potion": "valleycraft:rot_blight"
+            "potion": "valleycraft:rot_blight_potion"
           }
         ]
       }

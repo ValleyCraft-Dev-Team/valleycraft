@@ -19,7 +19,7 @@
   "criteria": {
     "stir_fried_monster_guts": {
       "conditions": {
-        "item": {
+        "items": {
             "items": [
               "valleycraft:stir_fried_monster_guts"
             ]
@@ -29,7 +29,7 @@
     },
     "monster_stew": {
       "conditions": {
-        "item": {
+        "items": {
             "items": [
               "valleycraft:monster_stew"
             ]
@@ -39,7 +39,7 @@
     },
     "slime_soup": {
       "conditions": {
-        "item": {
+        "items": {
             "items": [
               "valleycraft:slime_soup"
             ]
@@ -49,7 +49,7 @@
     },
     "magma_creme_soup": {
       "conditions": {
-        "item": {
+        "items": {
             "items": [
               "valleycraft:magma_creme_soup"
             ]
@@ -59,7 +59,7 @@
     },
     "sauteed_eyes_and_mushrooms": {
       "conditions": {
-        "item": {
+        "items": {
             "items": [
               "valleycraft:sauteed_eyes_and_mushrooms"
             ]

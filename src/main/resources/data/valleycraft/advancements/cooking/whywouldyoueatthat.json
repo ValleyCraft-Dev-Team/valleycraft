@@ -19,7 +19,7 @@
   "criteria": {
     "monster_food": {
       "conditions": {
-        "item": {
+        "items": {
             "items": [
               "valleycraft:stir_fried_monster_guts",
               "valleycraft:monster_stew",

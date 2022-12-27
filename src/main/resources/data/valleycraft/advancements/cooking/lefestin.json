@@ -1,11 +1,11 @@
 {
-  "parent": "valleycraft:survival/primitivetechnology",
+  "parent": "valleycraft:cooking/foodforthesoul",
   "display": {
     "title": {
       "text": "Le Festin"
     },
     "icon": {
-      "item": "valleycraft:crafting_mat"
+      "item": "valleycraft:brick_stove"
     },
     "description": {
       "text": "Craft a Stove and Keg for cooking."

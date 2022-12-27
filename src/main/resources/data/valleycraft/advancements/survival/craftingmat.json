@@ -2,13 +2,13 @@
   "parent": "valleycraft:survival/primitivetechnology",
   "display": {
     "title": {
-      "text": "PUT A TITLE HERE"
+      "text": "A Crafty Survivalist"
     },
     "icon": {
       "item": "valleycraft:crafting_mat"
     },
     "description": {
-      "text": "Make a Crafting Mat for advanced crafting"
+      "text": "Make a Crafting Mat or Table for advanced crafting"
     },
     "frame": "task"
   },

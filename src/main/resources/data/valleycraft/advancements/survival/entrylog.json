@@ -8,9 +8,9 @@
       "item": "minecraft:writable_book"
     },
     "description": {
-      "text": "Acquire the supplies necessary to write"
+      "text": "Acquire a Book and Quill for writing"
     },
-    "frame": "goal",
+    "frame": "task",
     "hidden": "false"
   },
   "criteria": {

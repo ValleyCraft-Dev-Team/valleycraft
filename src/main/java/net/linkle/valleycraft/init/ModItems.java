@@ -71,7 +71,6 @@ public enum     ModItems implements ItemEnum {
     REINFORCED_HANDLE(new Item(itemSettings())),
     TREATED_LEATHER(new Item(itemSettings())),
     LEATHER_STRAP(new Item(itemSettings())),
-    CLOTH(new Item(itemSettings())),
     INK_BOTTLE(new Tier0Bottle(itemSettings().maxCount(16), 0, 0.0f, StatusEffects.BLINDNESS).hideTooltip()),
     QUILL(new Item(itemSettings())),
     RUNE_ETCHING_BLADE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
@@ -136,6 +135,24 @@ public enum     ModItems implements ItemEnum {
     BB_CAVE_SNAIL(new Item(itemSettings().maxCount(16))),
     BB_SCULK_SNAIL(new Item(itemSettings().maxCount(16))),
     BB_RHINO_BEETLE(new Item(itemSettings().maxCount(16))),
+
+    //cloth items
+    BLACK_CLOTH(new Item(itemSettings())),
+    BLUE_CLOTH(new Item(itemSettings())),
+    BROWN_CLOTH(new Item(itemSettings())),
+    CYAN_CLOTH(new Item(itemSettings())),
+    GRAY_CLOTH(new Item(itemSettings())),
+    GREEN_CLOTH(new Item(itemSettings())),
+    LIGHT_BLUE_CLOTH(new Item(itemSettings())),
+    LIGHT_GRAY_CLOTH(new Item(itemSettings())),
+    LIME_CLOTH(new Item(itemSettings())),
+    MAGENTA_CLOTH(new Item(itemSettings())),
+    ORANGE_CLOTH(new Item(itemSettings())),
+    PINK_CLOTH(new Item(itemSettings())),
+    PURPLE_CLOTH(new Item(itemSettings())),
+    RED_CLOTH(new Item(itemSettings())),
+    CLOTH(new Item(itemSettings())),
+    YELLOW_CLOTH(new Item(itemSettings())),
 
     //bucket items
     SLUDGE_BUCKET(new BucketItem(ModFluids.SLUDGE_STILL.fluid, itemSettings().maxCount(1))),

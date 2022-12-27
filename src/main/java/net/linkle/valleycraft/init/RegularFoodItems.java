@@ -39,37 +39,38 @@ public enum RegularFoodItems implements ItemEnum {
     COOKED_PERCH(new FoodItem(settings(), 4, 0.6f)),
     COOKED_CLAM(new FoodItem(settings(), 4, 0.3f)),
     COOKED_SEA_URCHIN(new FoodItem(settings(), 6, 0.6f)),
-    COOKED_SQUID(new FoodItem(settings(), 4, 0.6f)),
+    COOKED_SQUID(new FastFoodItem(settings(), 3, 0.6f)),
     COOKED_LOBSTER(new FoodItem(settings(), 7, 0.7f)),
     COOKED_MOSSY_CRAB(new FoodItem(settings(), 7, 0.7f)),
 
     COOKED_SILVERFISH(new FoodItem(settings(), 3, 0.6f)),
     COOKED_PHANTOM(new FoodItem(settings(), 6, 0.6f)),
-    COOKED_BIRD(new FoodItem(settings(), 4, 0.6f)),
-    COOKED_BACON(new FoodItem(settings(), 4, 0.6f)),
-    COOKED_BAT(new FoodItem(settings(), 5, 0.6f, true)),
+    COOKED_BIRD(new FastFoodItem(settings(), 3, 0.6f)),
+    COOKED_BACON(new FastFoodItem(settings(), 3, 0.6f)),
+    COOKED_BAT(new FastFoodItem(settings(), 3, 0.6f, true)),
     FRIED_EGG(new FoodItem(settings(), 4, 0.6f)),
     COOKED_BEAST_LIVER(new FoodItem(settings(), 8, 0.8f, true)),
     COOKED_BEAST_HEART(new FoodItem(settings(), 10, 1f, true)),
     COOKED_TRIPE(new FoodItem(settings(), 8, 1f, true)),
 
     // pastries
-    HARDTACK(new FoodItem(settings(), 3, 0.8f)),
+    HARDTACK(new FastFoodItem(settings(), 3, 0.8f)),
     CORN_BREAD(new FoodItem(settings(), 3, 0.9f)),
-    CHOCOLATE(new FoodItem(settings(), 2, 0.5f)),
-    CAKE_SLICE(new FoodItem(settings(), 2, 0.3f)),
-    PUMPKIN_SPICE_COOKIE(new FoodItem(settings(), 3, 0.2f)),
-    PUMPKIN_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    CHOCOLATE(new FastFoodItem(settings(), 2, 0.5f)),
+    CAKE_SLICE(new FastFoodItem(settings(), 2, 0.3f)),
+    CHOCOLATE_CHUNK_COOKIE(new FastFoodItem(settings(), 1, 0.2f)),
+    PUMPKIN_SPICE_COOKIE(new FastFoodItem(settings(), 1, 0.2f)),
+    PUMPKIN_PIE_SLICE(new FastFoodItem(settings(), 2, 0.5f)),
     APPLE_PIE(new FoodItem(settings(), 8, 0.4f)),
-    APPLE_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    APPLE_PIE_SLICE(new FastFoodItem(settings(), 2, 0.5f)),
     SWEET_BERRY_PIE(new FoodItem(settings(), 8, 0.4f)),
-    SWEET_BERRY_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    SWEET_BERRY_PIE_SLICE(new FastFoodItem(settings(), 2, 0.5f)),
     GLOW_BERRY_PIE(new FoodItem(settings(), 8, 0.4f)),
-    GLOW_BERRY_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    GLOW_BERRY_PIE_SLICE(new FastFoodItem(settings(), 2, 0.5f)),
     CHOCOLATE_PIE(new FoodItem(settings(), 8, 0.6f)),
-    CHOCOLATE_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    CHOCOLATE_PIE_SLICE(new FastFoodItem(settings(), 2, 0.5f)),
     CHORUS_FRUIT_PIE(new FoodItem(settings(), 10, 0.7f)),
-    CHORUS_FRUIT_PIE_SLICE(new FoodItem(settings(), 2, 0.5f)),
+    CHORUS_FRUIT_PIE_SLICE(new FastFoodItem(settings(), 2, 0.5f)),
 
     // no tier bottles
     CHOCOLATE_MILK(new BottleItem(settings().maxCount(16), 3, 0.3f).setMilk()),
@@ -99,9 +100,9 @@ public enum RegularFoodItems implements ItemEnum {
     BROWN_MUSHROOM_SALAD(new BowlItem(settings().maxCount(1), 4, 0.5f)),
     ORANGE_MUSHROOM_SALAD(new BowlItem(settings().maxCount(1), 4, 0.5f)),
     RED_MUSHROOM_SALAD(new BowlItem(settings().maxCount(1), 4, 0.5f)),
-    BROWN_MUSHROOM_SKEWER(new FoodItem(settings(), 6, 0.8f)),
-    ORANGE_MUSHROOM_SKEWER(new FoodItem(settings(), 6, 0.8f)),
-    RED_MUSHROOM_SKEWER(new FoodItem(settings(), 6, 0.8f)),
+    BROWN_MUSHROOM_SKEWER(new FastFoodItem(settings(), 6, 0.8f)),
+    ORANGE_MUSHROOM_SKEWER(new FastFoodItem(settings(), 6, 0.8f)),
+    RED_MUSHROOM_SKEWER(new FastFoodItem(settings(), 6, 0.8f)),
 
     FRUIT_MIX(new BowlItem(settings().maxCount(1), 6, 0.6f)),
     VEGETABLE_MIX(new BowlItem(settings().maxCount(1), 6, 0.6f)),
@@ -118,9 +119,9 @@ public enum RegularFoodItems implements ItemEnum {
     FISH_PLATTER(new BowlItem(settings().maxCount(1), 6, 0.8f)),
 
     //sandwich items
-    TOAST(new FoodItem(settings(), 1, 1.0f)),
-    EGGS_ON_TOAST(new FoodItem(settings(), 6, 1.3f)),
-    GRILLED_CHEESE(new FoodItem(settings(), 6, 1.3f)),
+    TOAST(new FastFoodItem(settings(), 1, 1.0f)),
+    EGGS_ON_TOAST(new FoodItem(settings(), 4, 1.3f)),
+    GRILLED_CHEESE(new FoodItem(settings(), 7, 1.3f)),
     SANDWICH_FISH(new FoodItem(settings(), 10, 0.8f)),
     SANDWICH_CHICKEN(new FoodItem(settings(), 10, 0.8f)),
     SANDWICH_MUTTON(new FoodItem(settings(), 10, 0.8f)),
@@ -128,7 +129,7 @@ public enum RegularFoodItems implements ItemEnum {
     SANDWICH_PORK(new FoodItem(settings(), 10, 0.8f)),
 
     // golden
-    GOLDEN_WATERMELON_JUICE(new BottleItem(settings(), 2, 2.4f)),
+    GOLDEN_WATERMELON_JUICE(new BottleItem(settings(), 4, 2.4f)),
     GOLDEN_POTATO(new FoodItem(settings(), 4, 2.4f)),
     GOLDEN_ALOE_VERA(new FoodItem(settings(), 4, 2.4f)),
     GOLDEN_CAVE_ROOT(new FoodItem(settings(), 4, 2.4f)),
@@ -145,7 +146,7 @@ public enum RegularFoodItems implements ItemEnum {
 
     ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC), 4, 1.2f, StatusEffects.SLOW_FALLING).hideTooltip()),
     ENCHANTED_APPLE_PIE(new EnchantedFoodItem(settings().rarity(EPIC), 10, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip()),
-    ENCHANTED_APPLE_PIE_SLICE(new EnchantedFoodItem(settings().rarity(EPIC), 3, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip());
+    ENCHANTED_APPLE_PIE_SLICE(new EnchantedFastFoodItem(settings().rarity(EPIC), 3, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip());
 
     //1.1 planned - dw its not sea turtles!
     //COOKED_TURTLE(new FoodItem(settings(), 8, 0.6f)),
