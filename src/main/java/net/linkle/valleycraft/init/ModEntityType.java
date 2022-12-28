@@ -19,11 +19,11 @@ import net.linkle.valleycraft.client.entity.renderer.snails.SculkSnailEntityRend
 import net.linkle.valleycraft.client.entity.renderer.snails.SnailEntityRenderer;
 import net.linkle.valleycraft.client.entity.renderer.unused.SoulPetEntityRenderer;
 import net.linkle.valleycraft.entity.fish.*;
+import net.linkle.valleycraft.entity.projectiles.thrown_items.ThrownRockEntity;
 import net.linkle.valleycraft.entity.pupkins.PupkinEntity;
 import net.linkle.valleycraft.entity.snails.CaveSnailEntity;
 import net.linkle.valleycraft.entity.snails.SculkSnailEntity;
 import net.linkle.valleycraft.entity.snails.SnailEntity;
-import net.linkle.valleycraft.entity.projectiles.thrown_items.ThrownRockEntity;
 import net.linkle.valleycraft.entity.unused.SoulPetEntity;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.entity.*;
@@ -105,12 +105,7 @@ public class ModEntityType {
                     .trackRangeBlocks(4).trackedUpdateRate(10)
                     .build()
     );
-
-    //blocks
-    //public static final EntityType<StrongerTnTEntity> STRONGER_TNT = register("stronger_tnt",
-    //        FabricEntityTypeBuilder.createMob().entityFactory(StrongerTnTEntity::new).spawnGroup(SpawnGroup.MISC).makeFireImmune()
-    //                .trackRangeChunks(10).trackedUpdateRate(10).trackingTickInterval(10).dimensions(EntityDimensions.fixed(0.98F, 0.98F)).build());
-
+    
     public static void initialize() {
         FabricDefaultAttributeRegistry.register(SNAIL, SnailEntity.createSnailAttributes());
         FabricDefaultAttributeRegistry.register(CAVE_SNAIL, CaveSnailEntity.createSnailAttributes());
@@ -149,7 +144,6 @@ public class ModEntityType {
         
         EntityRendererRegistry.register(SOUL_PET, SoulPetEntityRenderer::new);
         EntityRendererRegistry.register(THROWN_ROCK, FlyingItemEntityRenderer::new);
-        //EntityRendererRegistry.register(STRONGER_TNT, StrongerTnTEntityRenderer::new);
     }
     
     

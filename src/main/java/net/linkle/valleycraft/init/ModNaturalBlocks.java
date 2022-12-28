@@ -303,8 +303,8 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     WARM_BIRCH_SEED(new SeedBlock(WARM_BIRCH_SAPLING.block));
     
     public static void initialize() {
-        ((VineHeadBlock)ARID_VINES.block).setPlant(ARID_VINES_PLANT.block);
-        ((VineBodyBlock)ARID_VINES_PLANT.block).setStem(ARID_VINES.block);
+        ARID_VINES.to(VineHeadBlock.class).setPlant(ARID_VINES_PLANT);
+        ARID_VINES_PLANT.to(VineBodyBlock.class).setStem(ARID_VINES);
     }
 
     private static FabricItemSettings itemSettings() {

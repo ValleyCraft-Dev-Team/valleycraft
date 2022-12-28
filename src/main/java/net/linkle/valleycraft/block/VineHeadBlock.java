@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.block;
 
+import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.block.AbstractPlantBlock;
 import net.minecraft.block.AbstractPlantStemBlock;
 import net.minecraft.block.Block;
@@ -26,8 +27,8 @@ public class VineHeadBlock extends AbstractPlantStemBlock implements Fertilizabl
         super(settings, Direction.DOWN, SHAPE, false, 0.1);
     }
     
-    public void setPlant(Block plant) {
-        this.plant = (AbstractPlantBlock)plant;
+    public void setPlant(BlockConvertible plant) {
+        this.plant = (AbstractPlantBlock)plant.asBlock();
     }
 
     @Override

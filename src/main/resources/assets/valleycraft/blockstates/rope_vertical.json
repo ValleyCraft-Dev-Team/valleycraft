@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "knot=true": {
+      "model": "valleycraft:block/climbable_rope_knot"
+    },
+    "knot=false": {
+      "model": "valleycraft:block/climbable_rope"
+    }
+  }
+}

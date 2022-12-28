@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.block;
 
+import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.block.AbstractPlantBlock;
 import net.minecraft.block.AbstractPlantStemBlock;
 import net.minecraft.block.Block;
@@ -21,8 +22,8 @@ public class VineBodyBlock extends AbstractPlantBlock {
         super(settings, Direction.DOWN, SHAPE, false);
     }
     
-    public void setStem(Block stem) {
-        this.stem = (AbstractPlantStemBlock)stem;
+    public void setStem(BlockConvertible stem) {
+        this.stem = (AbstractPlantStemBlock)stem.asBlock();
     }
 
     @Override
