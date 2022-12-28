@@ -397,6 +397,7 @@ class RenderLayers {
         //put(TARGET_DUMMY, cullout);
         put(BEACH_GRASS, cullout);
         put(ICEPLANT, cullout);
+        put(NAUTILUS_SHELL_BLOCK, cullout);
 
         put(ICE_ORE, translucent);
         put(DEEPSLATE_ICE_ORE, translucent);

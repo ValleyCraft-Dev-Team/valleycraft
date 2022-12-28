@@ -30,7 +30,7 @@ public class CandleBottleBlock extends AbstractCandleBlock implements Waterlogga
     private static final List<Vec3d> PARTICLE_OFFSETS = List.of(new Vec3d(0.5, 5/16d, 0.5));
     
     public CandleBottleBlock() {
-        super(BottleBlock.settings().luminance(s->3));
+        super(BottleBlock.settings().luminance(s->5));
         setDefaultState(stateManager.getDefaultState().with(LIT, false).with(WATERLOGGED, false));
     }
     

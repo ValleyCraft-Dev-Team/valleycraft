@@ -900,6 +900,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     /**artifact blocks go here**/
     TRANSLATION_CANVAS(new TranslationCanvasBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().sounds(BlockSoundGroup.CANDLE).nonOpaque()), itemSettings().group(BOOKS)),
+    NAUTILUS_SHELL_BLOCK(new NautilusShellBlock(), itemSettings()),
 
     // clay pots go here (not the baking item one)
     BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(ModBlockSoundGroup.POT.sound).breakInstantly()), itemSettings().group(BOOKS)),
