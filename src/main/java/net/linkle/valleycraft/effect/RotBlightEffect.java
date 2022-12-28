@@ -8,7 +8,7 @@ import net.minecraft.entity.effect.StatusEffectCategory;
 public class RotBlightEffect extends StatusEffect {
     
     public RotBlightEffect() {
-        super(StatusEffectCategory.HARMFUL, 2109722);
+        super(StatusEffectCategory.HARMFUL, 7012463);
     }
 
     @Override

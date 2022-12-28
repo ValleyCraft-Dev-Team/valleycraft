@@ -195,7 +195,7 @@ public enum ModArmors implements ItemEnum {
     BIKINI_COAT(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settingsArtifacts())),
 
     CROWN(new MythicArmorItem(ArmorMats.CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
-    BLIGHT_CROWN(new MythicArmorItem(ArmorMats.BLIGHT_CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
+    //BLIGHT_CROWN(new MythicArmorItem(ArmorMats.BLIGHT_CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     RED_HOOD(new UniqueArmorItem(ArmorMats.RED_CLOAK, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     RED_CLOAK(new UniqueArmorItem(ArmorMats.RED_CLOAK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
     GREEN_HOOD(new UniqueArmorItem(ArmorMats.GREEN_CLOAK, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),

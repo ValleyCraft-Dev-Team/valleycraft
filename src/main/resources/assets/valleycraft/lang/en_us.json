@@ -62,6 +62,7 @@
   "entity.minecraft.villager.beekeeper": "Beekeeper",
   "entity.minecraft.villager.miner": "Miner",
   "entity.minecraft.villager.hunter": "Hunter",
+  "entity.minecraft.villager.storekeep": "Storekeeper",
 
   "block.valleycraft.dishes.tooltip": "Used in special dishes to",
   "item.valleycraft.dishes.tooltip": "Used in special dishes to",
@@ -360,6 +361,7 @@
   "block.valleycraft.brick_stove": "Brick Stove",
   "block.valleycraft.campfire_pot": "Survivor's Campfire",
   "block.valleycraft.lantern_hanger": "Lantern Hanging Stake",
+  "block.valleycraft.storekeeps_counter": "Storekeeper's Counter",
 
   "item.valleycraft.red_hood": "Crimson Hood",
   "item.valleycraft.red_cloak": "Crimson Cloak",

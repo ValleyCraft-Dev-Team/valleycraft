@@ -47,6 +47,9 @@ public class ModVillagers {
     public static final PointOfInterestType HUNTER_POI = registerPOI("hunter_wh_poi", ModBlocks.HUNTING_STATION.block);
     public static final VillagerProfession HUNTER = registerPro("hunter_wh", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "hunter_wh_poi")));
 
+    public static final PointOfInterestType STOREKEEP_POI = registerPOI("storekeep_poi", ModBlocks.STOREKEEPS_COUNTER.block);
+    public static final VillagerProfession STOREKEEP = registerPro("storekeep", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "storekeep_poi")));
+
     //can generate in mining camps
     public static final PointOfInterestType MINER_POI = registerPOI("miner_poi", ModBlocks.MINER_STATION.block);
     public static final VillagerProfession MINER = registerPro("miner", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "miner_poi")));

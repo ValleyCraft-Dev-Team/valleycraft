@@ -1,38 +1,37 @@
 {
-  "parent": "valleycraft:cooking/cavecooking",
+  "parent": "valleycraft:cooking/lefestin",
   "display": {
     "title": {
-      "text": "Le Festin"
+      "text": "We're Gonna Need A Bigger Bowl"
     },
     "icon": {
-      "item": "valleycraft:brick_stove"
+      "item": "valleycraft:witch_ladle"
     },
     "description": {
-      "text": "Craft a Stove and Keg for cooking"
+      "text": "Craft a Cauldron and Ladle"
     },
     "frame": "task"
   },
   "criteria": {
-    "stove": {
+    "cauldron": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "valleycraft:stove",
-              "valleycraft:brick_stove"
+              "minecraft:cauldron"
             ]
           }
         ]
       }
     },
-    "keg": {
+    "ladle": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "valleycraft:keg"
+              "valleycraft:witch_ladle"
             ]
           }
         ]
@@ -41,10 +40,10 @@
   },
   "requirements": [
     [
-      "stove"
+      "cauldron"
     ],
     [
-      "keg"
+      "ladle"
     ]
   ]
 }

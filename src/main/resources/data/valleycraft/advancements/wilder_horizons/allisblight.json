@@ -1,17 +1,17 @@
 {
-  "parent": "valleycraft:wilder_horizons/root",
+  "parent": "valleycraft:wilder_horizons/allisrot",
   "display": {
     "title": {
       "text": "\"-Has Merely Festered.\""
     },
     "icon": {
-      "item": "valleycraft:monster_guts"
+      "item": "valleycraft:infected_monster_guts"
     },
     "description": {
       "text": "Entropy in action?"
     },
     "frame": "task",
-    "hidden": "false"
+    "hidden": "true"
   },
   "criteria": {
     "heart": {

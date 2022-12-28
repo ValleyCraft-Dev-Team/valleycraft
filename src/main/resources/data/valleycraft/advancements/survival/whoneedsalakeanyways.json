@@ -1,0 +1,34 @@
+{
+  "parent": "valleycraft:survival/craftingmat",
+  "display": {
+    "title": {
+      "text": "Who Needs A Lake Anyways"
+    },
+    "icon": {
+      "item": "valleycraft:rain_collector"
+    },
+    "description": {
+      "text": "Craft a Rain Collector"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "rain_collector": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:rain_collector"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "rain_collector"
+    ]
+  ]
+}

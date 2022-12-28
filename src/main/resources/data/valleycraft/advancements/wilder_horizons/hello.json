@@ -9,7 +9,7 @@
       "item": "valleycraft:dead_lantern"
     },
     "description": {
-      "text": "Find an abandoned ruin"
+      "text": "Find abandoned ruins"
     },
     "frame": "task",
     "hidden": "true"

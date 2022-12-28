@@ -97,6 +97,9 @@ class RenderLayers {
         put(POTTED_SOULSPORE, cullout);
         put(MOREL, cullout);
         put(POTTED_MOREL, cullout);
+        put(BLIGHTCAP, cullout);
+        //put(BLIGHTED_SOUL_ROSE, cullout);
+        put(LILY_OF_THE_MOUNTAINS, cullout);
 
         // Saplings and Potted Saplings
         put(MAMON_SAPLING, cullout);

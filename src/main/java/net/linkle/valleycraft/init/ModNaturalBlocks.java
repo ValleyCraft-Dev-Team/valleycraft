@@ -59,7 +59,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     FIREFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     LILY_OF_THE_MOUNTAINS(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     POISON_BLOSSOM(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings().rarity(Rarity.UNCOMMON)),
-    NIGHT_LILY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings().rarity(Rarity.RARE)),
+    //NIGHT_LILY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings().rarity(Rarity.RARE)),
     GODDESS_LILY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings().rarity(Rarity.EPIC)),
 
     KNAPWEED(new ModFlowerBlock(Blocks.OXEYE_DAISY, OFFSET_FLOWER), itemSettings()),
@@ -96,6 +96,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     MOREL(new ModMushroomBlock(), itemSettings()),
     SHIVERCAP(new ShivercapBlock(), itemSettings().group(INGREDIENTS)),
     STALWART_SHROOM(new StalwartBlock(), itemSettings().group(INGREDIENTS)),
+    BLIGHTCAP(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings().group(INGREDIENTS)),
 
     SHORT_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
     SNOWFLOWER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
@@ -278,6 +279,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     NETHER_GARNET_ORE(new OreBlock(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
 
     //soul blocks
+    //BLIGHTED_SOUL_ROSE(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     FADED_SOUL_ROSE(new FadedSoulRoseBlock(SoulPlantBlock.settings(0)), itemSettings()),
     SOUL_ROSE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3), UniformIntProvider.create(6, 12)), itemSettings().rarity(Rarity.UNCOMMON)),
     BLUE_SOUL_ROSE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6), UniformIntProvider.create(12, 24)), itemSettings().rarity(Rarity.RARE)),

@@ -34,6 +34,6 @@ public class PoisonPlantBlock extends ModPlantBlock {
         double b = (double)(color >> 0 & 0xFF) / 255.0;
         var shape = getOutlineShape(state, world, pos, ShapeContext.absent());
         Vec3d center = shape.getBoundingBox().getCenter();
-        world.addParticle(ParticleTypes.FALLING_NECTAR, pos.getX()+center.getX(), pos.getY()+center.getY(), pos.getZ()+center.getZ(), r, g, b);
+        world.addParticle(ParticleTypes.EFFECT, pos.getX()+center.getX(), pos.getY()+center.getY(), pos.getZ()+center.getZ(), r, g, b);
     }
 }

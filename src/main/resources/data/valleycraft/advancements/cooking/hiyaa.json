@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:cooking/cavecooking",
+  "display": {
+    "title": {
+      "text": "\"Hiyyyya!\""
+    },
+    "icon": {
+      "item": "valleycraft:water_filled_clay_pot"
+    },
+    "description": {
+      "text": "Make a Clay Pot"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "pot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:clay_pot",
+              "valleycraft:water_filled_clay_pot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "pot"
+    ]
+  ]
+}
