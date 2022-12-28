@@ -1,20 +1,21 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.init.ModGroups.*;
+import static net.linkle.valleycraft.init.ModGroups.BOOKS;
+import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
+import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
 import static net.linkle.valleycraft.init.ModNaturalBlocks.VOLCANIC_STONE;
 import static net.linkle.valleycraft.util.BookStackVoxelShapes.*;
 
 import java.util.function.BiFunction;
 import java.util.function.ToIntFunction;
 
-import net.linkle.valleycraft.baubles.CraftingMatBauble;
-import net.linkle.valleycraft.block.SkullBlock;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.baubles.CraftingMatBauble;
 import net.linkle.valleycraft.block.*;
+import net.linkle.valleycraft.block.SkullBlock;
 import net.linkle.valleycraft.item.BridgeItem;
 import net.linkle.valleycraft.util.BlockEnum;
 import net.linkle.valleycraft.util.BlockSettings;
@@ -30,6 +31,7 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.BlockView;
 
@@ -108,7 +110,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     CANDLE_BOTTLE(new CandleBottleBlock(), itemSettings()),
 
     //rope and net blocks
-    ROPE(new RopeBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque().noCollision()), itemSettings()),
+    ROPE_VERTICAL(new RopeVerticalBlock(Block.Settings.of(BlockMats.ROPE).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL))),
+    ROPE_HORIZONTAL(new RopeHorizontalBlock(Block.Settings.of(BlockMats.ROPE).nonOpaque().sounds(BlockSoundGroup.WOOL))),
     ROPE_LADDER(new ModLadderBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
     BAMBOO_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(1).sounds(BlockSoundGroup.BAMBOO)), itemSettings()),
 

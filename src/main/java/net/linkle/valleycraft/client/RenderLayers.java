@@ -20,7 +20,7 @@ class RenderLayers {
 
     @SuppressWarnings("unused")
     static void intialize() {
-        // Only use cullout if the block's texture contains empty pixels.
+        // Only use cullout if the block's texture contains empty pixels (fully transparent).
         var cullout = RenderLayer.getCutout();
 
         // Only use translucent if the block's texture contains translucent pixels.
@@ -375,7 +375,6 @@ class RenderLayers {
         put(BLOCK_WATTLE_AND_GLASS_PLUS_PANE, cullout);
         put(BLOCK_WATTLE_AND_GLASS_CROSS_PANE, cullout);
         put(TUMBLEWEED, cullout);
-        put(ROPE, cullout);
         put(NET, cullout);
         put(ROPE_BRIDGE, cullout);
         put(ROPE_BRIDGE_ANCHOR, cullout);

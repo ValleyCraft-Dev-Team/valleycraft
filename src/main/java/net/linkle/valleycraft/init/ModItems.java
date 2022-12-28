@@ -11,17 +11,22 @@ import net.linkle.valleycraft.item.clay_pot.ClayPotItem;
 import net.linkle.valleycraft.item.clay_pot.WaterClayPotItem;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.*;
+import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.BucketItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
-public enum     ModItems implements ItemEnum {
+public enum ModItems implements ItemEnum {
     RAW_CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(INGREDIENTS))),
     CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(INGREDIENTS))),
     WATER_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(1).group(INGREDIENTS).recipeRemainder(ModItems.CLAY_POT.item), 0, 0.0f)),
     //MILK_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(1).group(INGREDIENTS).recipeRemainder(ModItems.CLAY_POT.item), 0, 0.0f).setMilk()),
 
+    ROPE(new RopeItem(itemSettings().group(NON_NATURAL_BLOCKS))),
+    
     // tree seeds
     OAK_SEED(new AliasedBlockItem(ModNaturalBlocks.OAK_SEED.block, itemSettings())),
     DARK_OAK_SEED(new AliasedBlockItem(ModNaturalBlocks.DARK_OAK_SEED.block, itemSettings())),
