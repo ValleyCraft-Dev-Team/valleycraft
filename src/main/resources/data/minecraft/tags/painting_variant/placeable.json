@@ -3,7 +3,6 @@
   "values": [
     "valleycraft:mogar",
     "valleycraft:terra_incognita",
-    "valleycraft:final_ritual",
     "valleycraft:fate",
     "valleycraft:temple",
     "valleycraft:strange_dream",
@@ -12,7 +11,6 @@
     "valleycraft:home",
     "valleycraft:hex_airship",
     "valleycraft:cycles",
-    "valleycraft:wings_to_the_sky",
-    "valleycraft:monster_days"
+    "valleycraft:wings_to_the_sky"
   ]
 }

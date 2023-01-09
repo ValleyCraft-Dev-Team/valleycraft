@@ -53,7 +53,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     BLACK_TULIP(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     BIG_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
     LEATHERLEAF_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
-    FIDDLEHEAD_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    //FIDDLEHEAD_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     ORANGE_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     FROSTFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     FIREFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
@@ -92,11 +92,11 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     GLOW_CAP_CLUSTER(new ModGlowingMushroomBlock().large(), itemSettings()),
     JUNGLE_CAP(new ModMushroomBlock(), itemSettings()),
     JUNGLE_CAP_CLUSTER(new ModMushroomBlock().large(), itemSettings()),
+    BLIGHTCAP(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
 
     MOREL(new ModMushroomBlock(), itemSettings()),
     SHIVERCAP(new ShivercapBlock(), itemSettings().group(INGREDIENTS)),
     STALWART_SHROOM(new StalwartBlock(), itemSettings().group(INGREDIENTS)),
-    BLIGHTCAP(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings().group(INGREDIENTS)),
 
     SHORT_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
     SNOWFLOWER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
@@ -131,7 +131,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(ARID_DESERT).AloeShape()),
 
     MIMIC_FLOWER(new MimicFlowerBlock(MimicFlowerBlock.settings(0).ticksRandomly()), itemSettings()),
-    CAVE_ROOTS(new HangingPlant(Block.Settings.copy(Blocks.HANGING_ROOTS)), itemSettings()),
+    //CAVE_ROOTS(new HangingPlant(Block.Settings.copy(Blocks.HANGING_ROOTS)), itemSettings()),
     BONE_WEED(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     DESERT_SHRUB(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
@@ -215,9 +215,9 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
 
     SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
     
-    STONE_CAVE_GRASS(new CaveGrassStoneBlock(Blocks.STONE, ModBlockSoundGroup.MOSS_STONE.sound), itemSettings()),
-    SHALE_CAVE_GRASS(new CaveGrassStoneBlock(SHALE.block, ModBlockSoundGroup.MOSS_SHALE.sound), itemSettings()),
-    DEEPSLATE_CAVE_GRASS(new CaveGrassStoneBlock(Blocks.DEEPSLATE, ModBlockSoundGroup.MOSS_DEEPSLATE.sound), itemSettings()),
+    //STONE_CAVE_GRASS(new CaveGrassStoneBlock(Blocks.STONE, ModBlockSoundGroup.MOSS_STONE.sound), itemSettings()),
+    //SHALE_CAVE_GRASS(new CaveGrassStoneBlock(SHALE.block, ModBlockSoundGroup.MOSS_SHALE.sound), itemSettings()),
+    //DEEPSLATE_CAVE_GRASS(new CaveGrassStoneBlock(Blocks.DEEPSLATE, ModBlockSoundGroup.MOSS_DEEPSLATE.sound), itemSettings()),
 
     DRY_DIRT(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
     SANDY_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),

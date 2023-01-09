@@ -139,8 +139,8 @@ class RenderLayers {
         put(POTTED_WEEPING_GHOST_WILLOW, cullout);
         put(BONE_WEED, cullout);
         put(POTTED_BONE_WEED, cullout);
-        put(FIDDLEHEAD_FERN, cullout);
-        put(POTTED_FIDDLEHEAD_FERN, cullout);
+        //put(FIDDLEHEAD_FERN, cullout);
+        //put(POTTED_FIDDLEHEAD_FERN, cullout);
 
         //Other Plants without potted versions
         put(THORNY_BUSH, cullout);
@@ -306,7 +306,7 @@ class RenderLayers {
         put(SWORD_BLOCK, cullout);
         put(SOULSPORE, cullout);
         put(SPORE_SPREADER, cullout);
-        put(GODDESS_BLADE_BLOCK, cullout);
+        //put(GODDESS_BLADE_BLOCK, cullout);
 
         put(BROWN_CLAY_POT, cullout);
         put(BLUE_CLAY_POT, cullout);
