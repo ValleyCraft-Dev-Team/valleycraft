@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.util;
 
+import net.linkle.valleycraft.init.ModTools;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -7,7 +8,7 @@ import net.minecraft.util.Identifier;
 public class ModModelPredicateProvider {
 
     public static void registerModModels() {
-        //registerBow(ModTools.EXAMPLE_BOW);
+        registerBow(ModTools.BRASIUM_COMPOUND);
     }
 
     private static void registerBow(Item bow) {

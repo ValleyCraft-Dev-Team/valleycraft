@@ -154,7 +154,7 @@ class RenderLayers {
         put(WILD_POTATO, cullout);
         put(WILD_WHEAT, cullout);
         put(WILD_PUFF_BALL, cullout);
-        put(CAVE_ROOTS, cullout);
+        //put(CAVE_ROOTS, cullout);
         put(BUSH, cullout);
         put(LARGE_BUSH, cullout);
         put(BIG_FERN, cullout);
@@ -363,7 +363,7 @@ class RenderLayers {
         put(PICKAXE_BLOCK, cullout);
         put(DEAD_LANTERN, cullout);
         put(STAKE, cullout);
-        put(STAKE_BASE, cullout);
+        //put(STAKE_BASE, cullout);
         put(LUMBERJACK_STATION, cullout);
         put(CAMPFIRE_POT, cullout);
         put(LANTERN_HANGER, cullout);

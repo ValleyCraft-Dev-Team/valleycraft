@@ -24,7 +24,9 @@ public class ModBowItem extends BowItem {
     public int getRange() {
         //default bow range is 15
         //default crossbow range is 8
-        return 15;
+        //23 ~= 1.5x default bow range
+        //12 = 1.5 default crossbow range
+        return 23;
     }
 
     @Override
@@ -84,7 +86,7 @@ public class ModBowItem extends BowItem {
     //default bow speed is 20
     //default crossbow speed is 25 - (5 * i) where i is the level of the quick_charge enchantment
     public static float getPullProgress(int useTicks) {
-        float f = (float)useTicks / 20.0F;
+        float f = (float)useTicks / 25.0F;
         f = (f * f + f * 2.0F) / 3.0F;
         if (f > 1.0F) {
             f = 1.0F;

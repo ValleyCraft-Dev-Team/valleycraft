@@ -46,11 +46,11 @@ public enum ModToolMaterials implements ToolMaterial {
         return Ingredient.ofItems(Items.IRON_INGOT);
     }),
 
-    BRASIUM(2, 250, 6.0F, 2.0F, 14, () -> {
+    BRASIUM(2, 770, 6.0F, 2.0F, 14, () -> {
         return Ingredient.ofItems(ModItems.BRASIUM_INGOT);
     }),
 
-    ELDER_GUARDIAN(2, 250, 6.0F, 2.0F, 14, () -> {
+    ELDER_GUARDIAN(2, 500, 6.0F, 2.0F, 14, () -> {
         return Ingredient.ofItems(ModItems.ELDER_GUARDIAN_SPIKE);
     }),
 

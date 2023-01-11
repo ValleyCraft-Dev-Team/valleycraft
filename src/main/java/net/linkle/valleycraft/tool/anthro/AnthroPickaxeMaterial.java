@@ -17,7 +17,7 @@ public class AnthroPickaxeMaterial implements ToolMaterial {
         //Golden: 32
         //Diamond: 1561
         //Netherite: 2031
-        return 250;
+        return 770;
     }
 
     @Override
