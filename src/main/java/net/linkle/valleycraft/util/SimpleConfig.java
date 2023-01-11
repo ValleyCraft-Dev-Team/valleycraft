@@ -36,7 +36,7 @@ import net.fabricmc.loader.api.FabricLoader;
 public class SimpleConfig {
     /** An error message for the log output.  */
     private static final String ERROR = "Error from reading the file config: ";
-    /** A default value to use the latest property value from java */
+    /** A default value to use the latest property value from java code */
     private static final String DEFAULT = "default";
     
     private final LinkedHashSet<String> set = new LinkedHashSet<>();
