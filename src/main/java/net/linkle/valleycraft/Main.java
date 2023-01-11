@@ -1,6 +1,5 @@
 package net.linkle.valleycraft;
 
-import net.linkle.valleycraft.gen.feature.ModBiomeFeatures;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,7 +24,7 @@ public class Main implements ModInitializer {
 	public void onInitialize() {
 	    Config.initialize();
 
-		/** Keep these inits above the blocks so the creative inventory stays sorted properly. **/
+		// Keep these inits above the blocks so the creative inventory stays sorted properly.
 		BookItems.initialize();
 		ModBaubles.initialize();
 		ModItems.initialize();

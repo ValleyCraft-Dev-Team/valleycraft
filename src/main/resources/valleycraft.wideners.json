@@ -6,7 +6,8 @@
   "mixins": [
     "BrewingRecipeRegistryWidener",
     "OverworldBiomeWidener",
-    "FoliagePlacerTypeWidener"
+    "FoliagePlacerTypeWidener",
+    "ItemUsageContextWidener"
   ],
   "client": [
     

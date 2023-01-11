@@ -7,7 +7,7 @@
     "FallingBlockEntityMixin",
     "FarmlandBlockMixin",
     "LivingEntityMixin",
-    "ServerPlayerEntityMixin",
+    "PlayerEntityMixin",
     "ItemEntityMixin",
     "CraftingScreenHandlerMixin"
   ],

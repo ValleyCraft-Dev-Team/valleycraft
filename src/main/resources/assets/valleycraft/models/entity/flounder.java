@@ -1,6 +1,8 @@
 // Made with Blockbench 4.2.2
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
+
+/*
 public class custom_model extends EntityModel<Entity> {
 	private final ModelPart body;
 	private final ModelPart bottomFin;
@@ -39,4 +41,4 @@ public class custom_model extends EntityModel<Entity> {
 	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
 		body.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
 	}
-}
+} */

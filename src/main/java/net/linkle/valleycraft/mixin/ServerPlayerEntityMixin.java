@@ -18,6 +18,8 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+/** This mixin class is currently DISABLED!
+ *  Add it in the mixin json file if you are using it. */
 @Mixin(ServerPlayerEntity.class)
 abstract class ServerPlayerEntityMixin extends PlayerEntity implements ServerPlayerEntityExt {
 
