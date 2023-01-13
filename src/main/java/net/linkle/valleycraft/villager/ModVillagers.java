@@ -26,7 +26,7 @@ public class ModVillagers {
     public static final PointOfInterestType STABLEHAND_POI = registerPOI("stablehand_poi", ModBlocks.STABLEHAND_STATION.block);
     public static final VillagerProfession STABLEHAND = registerPro("stablehand", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "stablehand_poi")));
 
-    public static final PointOfInterestType INNKEEPER_POI = registerPOI("innkeeper_poi", ModBlocks.STOVE.block);
+    public static final PointOfInterestType INNKEEPER_POI = registerPOI("innkeeper_poi", ModBlocks.KEG.block);
     public static final VillagerProfession INNKEEPER = registerPro("innkeeper", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "innkeeper_poi")));
 
     //can generate alone
@@ -38,17 +38,17 @@ public class ModVillagers {
     public static final VillagerProfession DIASPORA = registerPro("diaspora", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "diaspora_poi")));
 
     //can generate in villages
-    public static final PointOfInterestType COOK_POI = registerPOI("cook_poi", ModBlocks.KEG.block);
+    public static final PointOfInterestType COOK_POI = registerPOI("cook_poi", ModBlocks.BRICK_STOVE.block);
     public static final VillagerProfession COOK = registerPro("cook", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "cook_poi")));
 
     public static final PointOfInterestType BEEKEEPER_POI = registerPOI("beekeeper_poi", ModBlocks.BEEKEEPER_STATION.block);
     public static final VillagerProfession BEEKEEPER = registerPro("beekeeper",RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "beekeeper_poi")));
 
-    public static final PointOfInterestType HUNTER_POI = registerPOI("hunter_wh_poi", ModBlocks.HUNTING_STATION.block);
-    public static final VillagerProfession HUNTER = registerPro("hunter_wh", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "hunter_wh_poi")));
+    public static final PointOfInterestType HUNTER_POI = registerPOI("hunter_poi", ModBlocks.HUNTING_STATION.block);
+    public static final VillagerProfession HUNTER = registerPro("hunter", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "hunter_poi")));
 
-    public static final PointOfInterestType STOREKEEP_POI = registerPOI("storekeep_poi", ModBlocks.STOREKEEPS_COUNTER.block);
-    public static final VillagerProfession STOREKEEP = registerPro("storekeep", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "storekeep_poi")));
+    public static final PointOfInterestType STOREKEEP_POI = registerPOI("storekeeper_poi", ModBlocks.STOREKEEPS_COUNTER.block);
+    public static final VillagerProfession STOREKEEP = registerPro("storekeeper", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "storekeeper_poi")));
 
     //can generate in mining camps
     public static final PointOfInterestType MINER_POI = registerPOI("miner_poi", ModBlocks.MINER_STATION.block);

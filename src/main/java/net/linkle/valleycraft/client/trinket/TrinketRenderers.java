@@ -36,10 +36,10 @@ public class TrinketRenderers {
         register(new TalismanRenderer("ender_dragon_talisman"), ModBaubles.ENDER_DRAGON_TALISMAN);
 
         //unique
-        register(new TalismanRenderer("arrowhead_necklace"), ModBaubles.ARROWHEAD_TALISMAN);
+        //register(new TalismanRenderer("arrowhead_necklace"), ModBaubles.ARROWHEAD_TALISMAN);
         register(new TalismanRenderer("brimstone_talisman"), ModBaubles.BRIMSTONE_NECKLACE);
-        register(new TalismanRenderer("evil_crystal_keepsake"), ModBaubles.EVIL_CRYSTAL_KEEPSAKE);
-        register(new TalismanRenderer("moblin_talisman"), ModBaubles.MOBLIN_TALISMAN);
+        //register(new TalismanRenderer("evil_crystal_keepsake"), ModBaubles.EVIL_CRYSTAL_KEEPSAKE);
+        //register(new TalismanRenderer("moblin_talisman"), ModBaubles.MOBLIN_TALISMAN);
         register(new TalismanRenderer("stray_necklace"), ModBaubles.STRAY_TALISMAN);
     }
     

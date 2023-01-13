@@ -27,27 +27,27 @@ public class GlassJarItem extends FoodItem {
         super(settings, hunger, satMod, effects);
     }
 
-    @Override
-    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        super.finishUsing(stack, world, user);
-        if (user instanceof ServerPlayerEntity player) {
-            Criteria.CONSUME_ITEM.trigger(player, stack);
-            player.incrementStat(Stats.USED.getOrCreateStat(this));
-        }
-        if (!world.isClient && isMilk) {
-            user.clearStatusEffects();
-        }
-        if (stack.isEmpty()) {
-            return new ItemStack(ModItems.BIG_BOTTLE);
-        }
-        if (user instanceof PlayerEntity player && !player.getAbilities().creativeMode) {
-            var bowl = new ItemStack(ModItems.BIG_BOTTLE);
-            if (!player.getInventory().insertStack(bowl)) {
-                player.dropItem(bowl, false);
-            }
-        }
-        return stack;
-    }
+    //@Override
+    //public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+    //    super.finishUsing(stack, world, user);
+    //    if (user instanceof ServerPlayerEntity player) {
+    //        Criteria.CONSUME_ITEM.trigger(player, stack);
+    //        player.incrementStat(Stats.USED.getOrCreateStat(this));
+    //    }
+    //    if (!world.isClient && isMilk) {
+    //        user.clearStatusEffects();
+    //    }
+    //    if (stack.isEmpty()) {
+    //        return new ItemStack(ModItems.BIG_BOTTLE);
+    //    }
+    //    if (user instanceof PlayerEntity player && !player.getAbilities().creativeMode) {
+    //        var bowl = new ItemStack(ModItems.BIG_BOTTLE);
+    //        if (!player.getInventory().insertStack(bowl)) {
+    //            player.dropItem(bowl, false);
+    //        }
+    //    }
+    //    return stack;
+    //}
     
     /** Make this item clear effects when consumed like bucket of milk. */
     public GlassJarItem setMilk() {

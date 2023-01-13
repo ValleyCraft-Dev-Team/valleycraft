@@ -15,7 +15,7 @@ import static net.minecraft.item.Items.*;
 /** Armor Materials */
 @SuppressWarnings("unused")
 public enum ArmorMats implements ArmorMaterial {
-    
+
     ALEX("ruined_alex_zombie", ints(2), 10, 15, equipLeather(), items(Items.LEATHER)),
     EFE("ruined_efe_zombie", ints(2), 10, 15, equipLeather(), items(Items.LEATHER)),
     BIKINI("bikini", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
@@ -24,28 +24,28 @@ public enum ArmorMats implements ArmorMaterial {
     BIKINI_NEUTRAL_REPAIRED("neutral_bikini_repaired", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BIKINI_COAT("wretch", ints(1,2), 10, 15, equipLeather(), items(Items.LEATHER)),
     BIKINI_MASC("bikini_masc", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
-    SWIMSUIT_BLACK_NEUTRAL("neutral_bikini_swimsuit", ints(1,2), 10, 15, equipLeather(), items(ModItems.BLACK_CLOTH)),
-    SWIMSUIT_BLACK_FEMME("bikini_swimsuit", ints(1,2), 10, 15, equipLeather(), items(ModItems.BLACK_CLOTH)),
-    SWIMSUIT_BLACK_MASC("bikini_swimsuit_masc", ints(1,2), 10, 15, equipLeather(), items(ModItems.BLACK_CLOTH)),
-    BIKINI_MASC_REPAIRED("bikini_masc_repaired", ints(1,2), 10, 15, equipLeather(), items(ModItems.BLACK_CLOTH)),
+    SWIMSUIT_BLACK_NEUTRAL("neutral_bikini_swimsuit", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    SWIMSUIT_BLACK_FEMME("bikini_swimsuit", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    SWIMSUIT_BLACK_MASC("bikini_swimsuit_masc", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    BIKINI_MASC_REPAIRED("bikini_masc_repaired", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     BRUTE("brute", ints(3), 10, 15, equipLeather(), items(Items.LEATHER)),
     CANVAS("canvas", ints(1,1,2,1), 10, 15, equipLeather(), items(ModItems.PLANT_FIBER_CANVAS)),
-    SNOW_CAP("snow_cap", ints(2), 10, 15, equipLeather(), items(ModItems.LIGHT_GRAY_CLOTH)),
-    STABLEHAND_HAT("stablehand", ints(2), 10, 15, equipLeather(), items(ModItems.BROWN_CLOTH)),
-    DROWNED("ruined_drowned", ints(1,2), 10, 15, equipLeather(), items(ModItems.BROWN_CLOTH)),
-    REPAIRED_DROWNED("repaired_drowned", ints(2,3), 10, 15, equipLeather(), items(ModItems.BROWN_CLOTH)),
+    SNOW_CAP("snow_cap", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    STABLEHAND_HAT("stablehand", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    DROWNED("ruined_drowned", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    REPAIRED_DROWNED("repaired_drowned", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     EYEPATCH("eyepatch", ints(1), 10, 15, equipLeather(), items(Items.LEATHER)),
-    HEADSCARF("seaologer_headscarf", ints(1), 10, 15, equipLeather(), items(ModItems.RED_CLOTH)),
+    HEADSCARF("seaologer_headscarf", ints(1), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     FUR("fur_boots", ints(2,3), 10, 15, equipLeather(), items(Items.LEATHER)),
     FLOWERING_HAT("flower_crown", ints(1,5,6,1), 10, 15, equipLeather(), items(Blocks.FLOWERING_AZALEA)),
     DIERDRA_LAUREL("dierdra_laurel", ints(1,5,6,2), 10, 15, equipLeather(), items(Blocks.VINE)),
     MOBLIN("moblin", ints(1,3,5,2), 15, 0, equipLeather(), items(ModItems.BEAST_BONE)),
-    HUSK("ruined_husk", ints(1,2), 10, 15, equipLeather(), items(ModItems.BROWN_CLOTH)),
-    REPAIRED_HUSK("repaired_husk", ints(2,3), 10, 15, equipLeather(), items(ModItems.BROWN_CLOTH)),
-    MINER("ruined_miner", ints(1,2), 10, 15, equipLeather(), items(ModItems.BROWN_CLOTH, ModItems.YELLOW_CLOTH)),
-    REPAIRED_MINER("repaired_miner", ints(2,3), 10, 15, equipLeather(), items(ModItems.BROWN_CLOTH, ModItems.YELLOW_CLOTH)),
+    HUSK("ruined_husk", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    REPAIRED_HUSK("repaired_husk", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    MINER("ruined_miner", ints(1,2), 10, 15, equipLeather(), items(ModItems.CLOTH, ModItems.CLOTH)),
+    REPAIRED_MINER("repaired_miner", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH, ModItems.CLOTH)),
     LEGGINGS("leggings", ints(1,2,2,2), 30, 15, equipLeather(), items(Items.LEATHER)),
-    BLACK_FEATHERED_HAT("black_feathered_hat", ints(2,2), 10, 15, equipLeather(), items(ModItems.BLACK_CLOTH)),
+    BLACK_FEATHERED_HAT("black_feathered_hat", ints(2,2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     DRIPLEAF("dripleaf", ints(1,5,6,1), 10, 15, equipLeather(), items(Blocks.BIG_DRIPLEAF)),
     WHITE_FEATHER("white_feather", ints(1,5,6,1), 10, 15, equipLeather(), items(Items.FEATHER)),
     CROW_FEATHER("crow_feather", ints(1,5,6,1), 10, 15, equipLeather(), items(ModItems.CROWS_FEATHER)),
@@ -77,14 +77,14 @@ public enum ArmorMats implements ArmorMaterial {
     STEVE("ruined_steve_zombie", ints(2), 10, 15, equipLeather(), items(Items.LEATHER)),
     STRAW_HAT("straw_hat", ints(2,5,6,2), 10, 15, equipLeather(), items(Items.WHEAT)),
     STRAYA("cartographers_bag", ints(1,5,6,2), 15, 15, equipChain(), items(ModItems.LEATHER_STRAP)),
-    STRAY("ruined_stray", ints(2), 10, 15, equipLeather(), items(ModItems.LIGHT_GRAY_CLOTH)),
-    TRADER("trader", ints(2,3), 10, 15, equipLeather(), items(ModItems.BLUE_CLOTH)),
-    VILLAGER("villager", ints(2,3), 10, 15, equipLeather(), items(ModItems.BROWN_CLOTH)),
-    WITCH("witch", ints(2,3), 10, 15, equipLeather(), items(ModItems.PURPLE_CLOTH)),
+    STRAY("ruined_stray", ints(2), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    TRADER("trader", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    VILLAGER("villager", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
+    WITCH("witch", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
     VISOR("visor", ints(3), 10, 15, equipChain(), items(COPPER_INGOT)),
     BUTTON("button", ints(0,0,7,2), 10, 15, equipChain(), items(Items.STRING)),
     CHEF("chef", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
-    EVOKER("evoker", ints(2,3), 10, 15, equipLeather(), items(ModItems.BLACK_CLOTH)),
+    EVOKER("evoker", ints(2,3), 10, 15, equipLeather(), items(ModItems.CLOTH)),
 
     PRIMSTEEL("golemite", ints(1,4,5,2), 15, 18, equipIron(), items(ModItems.PRIMSTEEL_INGOT)),
     ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ModItems.ROSEGOLD_INGOT), 0.75f, 0.0f),
@@ -118,73 +118,73 @@ public enum ArmorMats implements ArmorMaterial {
     MUMMY("mummy_wraps", ints(1,1,1,1), 7, 18, equipLeather(), items(ModItems.CLOTH)),
     ANCIENT_ROBE("ancient_robe", ints(2,3), 7, 18, equipLeather(), items(ModItems.CLOTH)),
 
-    RED_CLOAK("red_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.RED_CLOTH)),
-    GREEN_CLOAK("green_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.GREEN_CLOTH)),
-    PURPLE_CLOAK("purple_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.PURPLE_CLOTH)),
-    CYAN_CLOAK("cyan_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CYAN_CLOTH)),
+    RED_CLOAK("red_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
+    GREEN_CLOAK("green_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
+    PURPLE_CLOAK("purple_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
+    CYAN_CLOAK("cyan_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ModItems.CLOTH)),
 
     DIVING("diving", ints(2,5,7,3), 15, 5, equipLeather(), items(ModItems.PRIMSTEEL_INGOT)),
     COPPER_DIVING("copper_diving", ints(2,5,7,2), 15, 5, equipLeather(), items(COPPER_INGOT));
 
     // ### Other Utility Methods ###
-    
+
     private static Ingredient items(ItemConvertible... items) {
         return Ingredient.ofItems(items);
     }
-    
+
     // ### Protection Utility Methods ###
-    
+
     /** Create integer array of protection amounts. */
     private static int[] ints(int feet, int leg, int body, int head) {
         return new int[] {feet, leg, body, head};
     }
-    
+
     /** Create integer array of protection amounts. */
     private static int[] ints(int headNfeet, int bodyNleg) {
         return ints(headNfeet, bodyNleg, bodyNleg, headNfeet);
     }
-    
+
     /** Create integer array of protection amounts. */
     private static int[] ints(int all) {
         return ints(all, all, all, all);
     }
-    
+
     // ### Equipping Sounds ###
-    
+
     private static SoundEvent equipChain() {
         return SoundEvents.ITEM_ARMOR_EQUIP_CHAIN;
     }
-    
+
     private static SoundEvent equipElytra() {
         return SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA;
     }
-    
+
     private static SoundEvent equipGeneric() {
         return SoundEvents.ITEM_ARMOR_EQUIP_GENERIC;
     }
-    
+
     private static SoundEvent equipGold() {
         return SoundEvents.ITEM_ARMOR_EQUIP_GOLD;
     }
-    
+
     private static SoundEvent equipIron() {
         return SoundEvents.ITEM_ARMOR_EQUIP_IRON;
     }
-    
+
     private static SoundEvent equipLeather() {
         return SoundEvents.ITEM_ARMOR_EQUIP_LEATHER;
     }
-    
+
     private static SoundEvent equipNetherite() {
         return SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE;
     }
-    
+
     private static SoundEvent equipTurtle() {
         return SoundEvents.ITEM_ARMOR_EQUIP_TURTLE;
     }
-    
+
     // ### The Enum Class Itself ###
-    
+
     static final int[] BASE_DURABILITY = {13, 15, 16, 11};
 
     private final String name;
@@ -195,11 +195,11 @@ public enum ArmorMats implements ArmorMaterial {
     private final Ingredient repairIngredient;
     private final float toughness;
     private final float knockbackResistance;
-    
+
     ArmorMats(String name, int[] prtAmts, int durMul, int ench, SoundEvent sound, Ingredient repair) {
         this(name, prtAmts, durMul, ench, sound, repair, 0, 0);
     }
-    
+
     ArmorMats(String name, int[] prtAmts, int durMul, int ench, SoundEvent sound, Ingredient repair, float tough, float knockback) {
         this.name = name;
         this.protectionAmounts = prtAmts;
@@ -210,7 +210,7 @@ public enum ArmorMats implements ArmorMaterial {
         this.toughness = tough;
         this.knockbackResistance = knockback;
     }
-    
+
     @Override
     public int getDurability(EquipmentSlot slot) {
         return BASE_DURABILITY[slot.getEntitySlotId()] * durabilityMultiplier;
