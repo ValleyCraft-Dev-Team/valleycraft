@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "valleycraft:block/kitchen_tiles",
-    "side": "valleycraft:block/kitchen_tiles",
-    "top": "valleycraft:block/kitchen_tiles"
-  }
-}

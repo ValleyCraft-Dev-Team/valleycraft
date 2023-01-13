@@ -344,11 +344,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         stairs(POLISHED_BASALT_BRICK_STAIRS.block, map, generator);
         wall(POLISHED_BASALT_BRICK_WALL.block, map, generator);
 
-        // KITCHEN_TILES
-        map = textureAll(KITCHEN_TILES);
-        slab(KITCHEN_TILES_SLAB.block, KITCHEN_TILES.block, map, generator);
-        stairs(KITCHEN_TILES_STAIRS.block, map, generator);
-
         // ROUGH_SANDSTONE
         map = textureAll(ROUGH_SANDSTONE);
         slab(ROUGH_SANDSTONE_SLAB.block, ROUGH_SANDSTONE.block, map, generator);
@@ -494,7 +489,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         map = textureAll(SMOOTH_STONE_TILES);
         slab(SMOOTH_STONE_TILE_SLAB.block, SMOOTH_STONE_TILES.block, map, generator);
         stairs(SMOOTH_STONE_TILE_STAIRS.block, map, generator);
-        wall(SMOOTH_STONE_TILE_WALL.block, map, generator);
 
         //Mamon
         map = textureAll(MAMON_PLANKS);

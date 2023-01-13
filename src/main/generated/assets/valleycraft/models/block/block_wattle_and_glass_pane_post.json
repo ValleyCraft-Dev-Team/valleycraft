@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/template_glass_pane_post",
-  "textures": {
-    "edge": "valleycraft:block/block_wattle_and_glass_pane_top",
-    "pane": "valleycraft:block/block_wattle_and_glass"
-  }
-}

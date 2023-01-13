@@ -697,11 +697,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POLISHED_BASALT_PATTERNED_STAIRS(new StairsBlock(POLISHED_BASALT_PATTERNED.getState(), Block.Settings.copy(Blocks.BASALT)), itemSettings()),
     POLISHED_BASALT_PATTERNED_SLAB(new SlabBlock(Block.Settings.copy(Blocks.BASALT)), itemSettings()),
 
-    //special tiles
-    KITCHEN_TILES(new Block(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
-    KITCHEN_TILES_STAIRS(new StairsBlock(KITCHEN_TILES.getState(), Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
-    KITCHEN_TILES_SLAB(new SlabBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
-
     //sandstone
     ROUGH_SANDSTONE_STAIRS(new StairsBlock(ModNaturalBlocks.ROUGH_SANDSTONE.getState(), Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings()),
     ROUGH_SANDSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.RED_SANDSTONE)), itemSettings()),
@@ -854,7 +849,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SMOOTH_STONE_TILES(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     SMOOTH_STONE_TILE_STAIRS(new StairsBlock(SMOOTH_STONE_TILES.getState(), Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
     SMOOTH_STONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
-    SMOOTH_STONE_TILE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
 
     SMOOTH_STONE_CAPPED(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
 

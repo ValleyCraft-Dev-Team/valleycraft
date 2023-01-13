@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "valleycraft:block/polished_basalt_patterned",
-    "side": "valleycraft:block/polished_basalt_patterned",
-    "top": "valleycraft:block/polished_basalt_patterned"
-  }
-}

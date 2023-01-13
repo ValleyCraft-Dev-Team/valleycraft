@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "valleycraft:block/patterned_dripstone",
-    "side": "valleycraft:block/patterned_dripstone",
-    "top": "valleycraft:block/patterned_dripstone"
-  }
-}
