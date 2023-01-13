@@ -21,7 +21,7 @@ public enum ModBaubles implements ItemEnum {
     //baubles
     //PIGLIN_CHILDS_TOY(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
     MONSTER_TOOTH(new BaubleItem(itemSettings().rarity(UNCOMMON))),
-    POLISHED_GLOWSTONE_CHUNK(new BaubleItem(itemSettings().rarity(UNCOMMON))),
+    //POLISHED_GLOWSTONE_CHUNK(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     //ANCIENT_DUNGEON_KEY(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
     STRANGE_RUNE(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     //DIVINE_ACORN(new BaubleAliasedBlockItem(ModNaturalBlocks.DIVINE_ACORN.block, itemSettings().rarity(UNCOMMON))),
@@ -49,7 +49,7 @@ public enum ModBaubles implements ItemEnum {
     IRON_NECKLACE(new TalismanItem(itemSettings().group(CLOTHING).maxCount(1))),
     AMBER_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     AMETHYST_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
-    BRIMSTONE_NECKLACE(new UniqueTalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
+    BRIMSTONE_NECKLACE(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     DIAMOND_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     ECHO_SHARD_TALISMAN(new TalismanItem(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
     EMERALD_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
@@ -63,15 +63,15 @@ public enum ModBaubles implements ItemEnum {
     FISHING_HOOK_TALISMAN(new TalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
     GUARDIAN_SPIKE_TALISMAN(new TalismanItem(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
     SCUTE_NECKLACE(new TalismanItem(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
-    SEAOLOGER_RUNE_NECKLACE(new TalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
+    //SEAOLOGER_RUNE_NECKLACE(new TalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
 
     //boss
-    ELDER_GUARDIAN_SPIKE_KEEPSAKE(new MythicTalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
-    ENDER_DRAGON_TALISMAN(new MythicTalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
+    ELDER_GUARDIAN_SPIKE_KEEPSAKE(new TalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
+    ENDER_DRAGON_TALISMAN(new TalismanItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
 
     //unique
     //PIGLIN_NECKLACE(new UniqueTalismanItem(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1))),
-    STRAY_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1)));
+    STRAY_TALISMAN(new TalismanItem(itemSettings().rarity(UNCOMMON).group(BOOKS).maxCount(1)));
     //ARROWHEAD_TALISMAN(new UniqueTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
     //MOBLIN_TALISMAN(new UniqueMythicTalismanItem(itemSettings().rarity(RARE).group(BOOKS).maxCount(1))),
     //EVIL_CRYSTAL_KEEPSAKE(new UniqueTalismanItem(itemSettings().rarity(EPIC).group(BOOKS).maxCount(1)));
