@@ -91,10 +91,6 @@ public class CustomTradeRegistry {
                             new ItemStack(Items.EMERALD, 5),
                             new ItemStack(ModTools.CLIMBING_AXE, 1),
                             5, 20, 0.05f)));
-                    factories.add(((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 10),
-                            new ItemStack(ModArmors.FUR_BOOTS, 1),
-                            5, 20, 0.05f)));
                 });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.STABLEHAND, 4,
