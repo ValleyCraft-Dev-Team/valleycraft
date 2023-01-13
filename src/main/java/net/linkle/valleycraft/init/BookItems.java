@@ -14,8 +14,8 @@ import static net.minecraft.util.Rarity.EPIC;
 import static net.minecraft.util.Rarity.RARE;
 
 public enum BookItems implements ItemEnum {
-    BOOK_RUNECALLING(new MythicItem(itemSettings().group(BOOKS).rarity(EPIC))),
-    RUNEKEEPERS_TOME(new UniqueBaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1)));
+    BOOK_RUNECALLING(new Item(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1)));
+    //RUNEKEEPERS_TOME(new UniqueBaubleItem(itemSettings().group(BOOKS).rarity(EPIC).maxCount(1)));
 
     public static void initialize() {
         

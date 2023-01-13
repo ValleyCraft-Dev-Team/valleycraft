@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#c:dragon_parts",
-    "#c:malice_items",
-    "minecraft:nether_star"
+    "#c:dragon_parts"
   ]
 }

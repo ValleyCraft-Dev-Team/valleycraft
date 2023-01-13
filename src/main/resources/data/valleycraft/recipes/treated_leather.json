@@ -1,19 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:leather"
-    },
-    {
-      "item": "valleycraft:salt"
-    },
-    {
-      "item": "valleycraft:salt"
-    },
-    {
-      "item": "valleycraft:salt"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "AGA",
+    " A "
   ],
+  "key": {
+    "A": {
+      "item": "valleycraft:salt"
+    },
+    "G": {
+      "tag": "c:leathers"
+    }
+  },
   "result": {
     "item": "valleycraft:treated_leather",
     "count": 1

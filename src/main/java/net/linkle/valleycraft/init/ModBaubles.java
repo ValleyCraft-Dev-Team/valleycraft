@@ -19,31 +19,30 @@ public enum ModBaubles implements ItemEnum {
     //and use that for the individual bauble.
 
     //baubles
-    PIGLIN_CHILDS_TOY(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
+    //PIGLIN_CHILDS_TOY(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
     MONSTER_TOOTH(new BaubleItem(itemSettings().rarity(UNCOMMON))),
     POLISHED_GLOWSTONE_CHUNK(new BaubleItem(itemSettings().rarity(UNCOMMON))),
-    ANCIENT_DUNGEON_KEY(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
-    STRANGE_RUNE(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
-    DIVINE_ACORN(new BaubleAliasedBlockItem(ModNaturalBlocks.DIVINE_ACORN.block, itemSettings().rarity(UNCOMMON))),
+    //ANCIENT_DUNGEON_KEY(new UniqueBaubleItem(itemSettings().rarity(UNCOMMON))),
+    STRANGE_RUNE(new BaubleItem(itemSettings().rarity(UNCOMMON))),
+    //DIVINE_ACORN(new BaubleAliasedBlockItem(ModNaturalBlocks.DIVINE_ACORN.block, itemSettings().rarity(UNCOMMON))),
 
-    GHAST_TEARS(new UniqueBaubleItem(itemSettings().rarity(RARE).recipeRemainder(Items.GLASS_BOTTLE))),
-    STUCK_SLIME(new UniqueBaubleItem(itemSettings().rarity(RARE))),
-    RING(new UniqueBaubleItem(itemSettings().rarity(RARE))),
-    HEART_MEDALLION(new UniqueBaubleItem(itemSettings().rarity(RARE))),
-    TOTUM_LUNA_MEDALLION(new UniqueBaubleItem(itemSettings().rarity(RARE))),
+    //STUCK_SLIME(new UniqueBaubleItem(itemSettings().rarity(RARE))),
+    RING(new BaubleItem(itemSettings().rarity(RARE))),
+    //HEART_MEDALLION(new UniqueBaubleItem(itemSettings().rarity(RARE))),
+    //TOTUM_LUNA_MEDALLION(new UniqueBaubleItem(itemSettings().rarity(RARE))),
 
-    LUCKY_FISHING_HOOK(new UniqueBaubleItem(itemSettings().rarity(RARE))),
+    LUCKY_FISHING_HOOK(new BaubleItem(itemSettings().rarity(RARE))),
     RAVAGER_GOLEM_TUSK(new BaubleItem(itemSettings().rarity(RARE))),
-    GREEN_SCALE(new UniqueMythicBaubleItem(itemSettings().rarity(RARE))),
-    RED_SCALE(new UniqueMythicBaubleItem(itemSettings().rarity(RARE))),
-    BLUE_SCALE(new UniqueMythicBaubleItem(itemSettings().rarity(RARE))),
-    BLACK_SCALE(new UniqueMythicBaubleItem(itemSettings().rarity(EPIC))),
-    TOTEM_OF_VISITORS_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
+    GREEN_SCALE(new BaubleItem(itemSettings().rarity(RARE))),
+    RED_SCALE(new BaubleItem(itemSettings().rarity(RARE))),
+    //BLUE_SCALE(new UniqueMythicBaubleItem(itemSettings().rarity(RARE))),
+    BLACK_SCALE(new BaubleItem(itemSettings().rarity(EPIC))),
+    //TOTEM_OF_VISITORS_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
     TOTEM_OF_UNDYING_BRACELET(new BaubleItem(itemSettings().rarity(RARE))),
     TOTEM_OF_FRIENDSHIP_BRACELET(new BaubleItem(itemSettings().rarity(EPIC))),
     WARDEN_ANTLER(new BaubleItem(itemSettings().rarity(EPIC))),
-    ILLAGER_TRINKET(new UniqueBaubleItem(itemSettings().rarity(EPIC))),
-    STRANGE_DOLL(new UniqueMythicBaubleItem(itemSettings().rarity(EPIC))),
+    //ILLAGER_TRINKET(new UniqueBaubleItem(itemSettings().rarity(EPIC))),
+    //STRANGE_DOLL(new UniqueMythicBaubleItem(itemSettings().rarity(EPIC))),
 
     //necklaces
     //prismarine/iron base

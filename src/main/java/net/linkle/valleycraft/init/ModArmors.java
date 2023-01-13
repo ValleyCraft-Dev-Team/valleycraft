@@ -118,29 +118,29 @@ public enum ModArmors implements ItemEnum {
     /**special armors**/
 
     //villager armors
-    VILLAGER_TUNIC(new UniqueArmorItem(ArmorMats.VILLAGER, EquipmentSlot.LEGS, settingsArtifacts())),
+    //VILLAGER_TUNIC(new UniqueArmorItem(ArmorMats.VILLAGER, EquipmentSlot.LEGS, settingsArtifacts())),
     CHEF_HAT(new UniqueArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsArtifacts())),
     CHEF_APRON(new UniqueArmorItem(ArmorMats.CHEF, EquipmentSlot.LEGS, settingsArtifacts())),
     STABLEHAND_HAT(new UniqueArmorItem(ArmorMats.STABLEHAND_HAT, EquipmentSlot.HEAD, settingsArtifacts())),
-    BLACK_FEATHERED_HAT(new UniqueArmorItem(ArmorMats.BLACK_FEATHERED_HAT, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
-    VISOR(new UniqueArmorItem(ArmorMats.VISOR, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
+    //BLACK_FEATHERED_HAT(new UniqueArmorItem(ArmorMats.BLACK_FEATHERED_HAT, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
+    //VISOR(new UniqueArmorItem(ArmorMats.VISOR, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
     SNOW_CAP(new UniqueArmorItem(ArmorMats.SNOW_CAP, EquipmentSlot.HEAD, settingsArtifacts())),
     //LIBRARIANS_HAT(new UniqueArmorItem(ArmorMats.LIBRARIAN, EquipmentSlot.HEAD, settingsArtifacts())),
-    TRADER_HEAD_SCARF(new UniqueArmorItem(ArmorMats.TRADER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
-    TRADER_COAT(new UniqueArmorItem(ArmorMats.TRADER, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
-    TRADER_SKIRT(new UniqueArmorItem(ArmorMats.TRADER, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
-    TRADER_SANDALS(new UniqueArmorItem(ArmorMats.TRADER, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
+    //TRADER_HEAD_SCARF(new UniqueArmorItem(ArmorMats.TRADER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
+    //TRADER_COAT(new UniqueArmorItem(ArmorMats.TRADER, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
+    //TRADER_SKIRT(new UniqueArmorItem(ArmorMats.TRADER, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
+    //TRADER_SANDALS(new UniqueArmorItem(ArmorMats.TRADER, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
 
     //seaologer stuff
     PILLAGER_HEADSCARF(new UniqueArmorItem(ArmorMats.HEADSCARF, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
 
     //pillager armors
-    EVOKER_ROBE(new UniqueArmorItem(ArmorMats.EVOKER, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
-    PILLAGER_FLANNEL(new UniqueArmorItem(ArmorMats.PILLAGER, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
+    //EVOKER_ROBE(new UniqueArmorItem(ArmorMats.EVOKER, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
+    //PILLAGER_FLANNEL(new UniqueArmorItem(ArmorMats.PILLAGER, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
     PILLAGER_BOOTS(new UniqueArmorItem(ArmorMats.PILLAGER, EquipmentSlot.FEET, settingsArtifacts(Rarity.RARE))),
 
     //witch armors
-    WITCH_CLOAK(new UniqueArmorItem(ArmorMats.WITCH, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
+    //WITCH_CLOAK(new UniqueArmorItem(ArmorMats.WITCH, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
 
     //piglin armors
     PIGLIN_SKIRT(new UniqueArmorItem(ArmorMats.PIGLIN, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
@@ -151,9 +151,9 @@ public enum ModArmors implements ItemEnum {
     MOGARS_FIXED_GOLEMITE_GOGGLES(new FixedUniqueArmorItem(ArmorMats.MOGARS_FIXED, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
 
     //living ppls junk
-    STRAYAS_CARTOGRAPHY_BAG(new UniqueArmorItem(ArmorMats.STRAYA, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
-    FUR_BOOTS(new UniqueArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
-    COPPER_AVIATORS(new UniqueArmorItem(ArmorMats.COPPER_AVIATORS, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
+    //STRAYAS_CARTOGRAPHY_BAG(new UniqueArmorItem(ArmorMats.STRAYA, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
+    //FUR_BOOTS(new UniqueArmorItem(ArmorMats.FUR, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
+    //COPPER_AVIATORS(new UniqueArmorItem(ArmorMats.COPPER_AVIATORS, EquipmentSlot.HEAD, settingsArtifacts(Rarity.UNCOMMON))),
 
     //zombie armors
     ZOMBIE_BOOTS(new UniqueArmorItem(ArmorMats.ALEX, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
@@ -162,12 +162,12 @@ public enum ModArmors implements ItemEnum {
     //MINER_PANTS(new BrokenArmorItem(ArmorMats.MINER, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
     //REPAIRED_MINER_SHIRT(new FixedUniqueArmorItem(ArmorMats.REPAIRED_MINER, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
     //REPAIRED_MINER_PANTS(new FixedUniqueArmorItem(ArmorMats.REPAIRED_MINER, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
-    HUSK_SHIRT(new BrokenArmorItem(ArmorMats.HUSK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
-    HUSK_PANTS(new BrokenArmorItem(ArmorMats.HUSK, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
-    REPAIRED_HUSK_SHIRT(new FixedUniqueArmorItem(ArmorMats.REPAIRED_HUSK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
-    REPAIRED_HUSK_PANTS(new FixedUniqueArmorItem(ArmorMats.REPAIRED_HUSK, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
-    DROWNED_CLOTHES(new BrokenArmorItem(ArmorMats.DROWNED, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
-    REPAIRED_DROWNED_CLOTHES(new FixedUniqueArmorItem(ArmorMats.REPAIRED_DROWNED, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
+    //HUSK_SHIRT(new BrokenArmorItem(ArmorMats.HUSK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
+    //HUSK_PANTS(new BrokenArmorItem(ArmorMats.HUSK, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
+    //REPAIRED_HUSK_SHIRT(new FixedUniqueArmorItem(ArmorMats.REPAIRED_HUSK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
+    //REPAIRED_HUSK_PANTS(new FixedUniqueArmorItem(ArmorMats.REPAIRED_HUSK, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
+    //DROWNED_CLOTHES(new BrokenArmorItem(ArmorMats.DROWNED, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
+    //REPAIRED_DROWNED_CLOTHES(new FixedUniqueArmorItem(ArmorMats.REPAIRED_DROWNED, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
 
     //skeleton armors
     RIBCAGE(new ArmorItem(ArmorMats.RIBCAGE, EquipmentSlot.CHEST, settingsArtifacts(Rarity.UNCOMMON))),
@@ -184,15 +184,15 @@ public enum ModArmors implements ItemEnum {
     //ancient dead ppl
     TREE_GOD_MASK(new MythicArmorItem(ArmorMats.TREE_GOD, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     ANCIENT_ROBE(new UniqueArmorItem(ArmorMats.ANCIENT_ROBE, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
-    SHULKER_HELMET(new UniqueArmorItem(ArmorMats.SHULKER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
+    //SHULKER_HELMET(new UniqueArmorItem(ArmorMats.SHULKER, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
     MUMMY_WRAPS(new UniqueArmorItem(ArmorMats.MUMMY, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
-    BIKINI_COAT_GAITERS(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
+    //BIKINI_COAT_GAITERS(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.FEET, settingsArtifacts(Rarity.UNCOMMON))),
 
-    BIKINI_NEUTRAL(new BrokenArmorItem(ArmorMats.BIKINI_NEUTRAL, EquipmentSlot.LEGS, settingsArtifacts())),
-    BIKINI(new BrokenArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settingsArtifacts())),
-    BIKINI_MASC(new BrokenArmorItem(ArmorMats.BIKINI_MASC, EquipmentSlot.LEGS, settingsArtifacts())),
-    BIKINI_COAT_HOOD(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.HEAD, settingsArtifacts())),
-    BIKINI_COAT(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settingsArtifacts())),
+    //BIKINI_NEUTRAL(new BrokenArmorItem(ArmorMats.BIKINI_NEUTRAL, EquipmentSlot.LEGS, settingsArtifacts())),
+    //BIKINI(new BrokenArmorItem(ArmorMats.BIKINI, EquipmentSlot.LEGS, settingsArtifacts())),
+    //BIKINI_MASC(new BrokenArmorItem(ArmorMats.BIKINI_MASC, EquipmentSlot.LEGS, settingsArtifacts())),
+    //BIKINI_COAT_HOOD(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.HEAD, settingsArtifacts())),
+    //BIKINI_COAT(new ArmorItem(ArmorMats.BIKINI_COAT, EquipmentSlot.CHEST, settingsArtifacts())),
 
     CROWN(new MythicArmorItem(ArmorMats.CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     //BLIGHT_CROWN(new MythicArmorItem(ArmorMats.BLIGHT_CROWN, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
@@ -205,14 +205,14 @@ public enum ModArmors implements ItemEnum {
     CYAN_HOOD(new UniqueArmorItem(ArmorMats.CYAN_CLOAK, EquipmentSlot.HEAD, settingsArtifacts(Rarity.EPIC))),
     CYAN_CLOAK(new UniqueArmorItem(ArmorMats.CYAN_CLOAK, EquipmentSlot.CHEST, settingsArtifacts(Rarity.EPIC))),
 
-    SWIMSUIT_NEUTRAL(new UniqueArmorItem(ArmorMats.SWIMSUIT_BLACK_NEUTRAL, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
-    SWIMSUIT_FEMME(new UniqueArmorItem(ArmorMats.SWIMSUIT_BLACK_FEMME, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
-    SWIMSUIT_MASC(new UniqueArmorItem(ArmorMats.SWIMSUIT_BLACK_MASC, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
+    //SWIMSUIT_NEUTRAL(new UniqueArmorItem(ArmorMats.SWIMSUIT_BLACK_NEUTRAL, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
+    //SWIMSUIT_FEMME(new UniqueArmorItem(ArmorMats.SWIMSUIT_BLACK_FEMME, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
+    //SWIMSUIT_MASC(new UniqueArmorItem(ArmorMats.SWIMSUIT_BLACK_MASC, EquipmentSlot.LEGS, settingsArtifacts(Rarity.UNCOMMON))),
 
-    DIVING_HELMET(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
-    DIVING_CHESTPLATE(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
-    DIVING_LEGGINGS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
-    DIVING_BOOTS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.FEET, settingsArtifacts(Rarity.RARE))),
+    DIVING_HELMET(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.HEAD, settingDebug())),
+    DIVING_CHESTPLATE(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.CHEST, settingDebug())),
+    DIVING_LEGGINGS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.LEGS, settingDebug())),
+    DIVING_BOOTS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.FEET, settingDebug())),
 
     //test to get the 3d armor models running
     TEST_HELMET(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.HEAD, settingDebug())),

@@ -18,7 +18,7 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public abstract class AbstractTotemBase extends BaubleItem {
+public abstract class AbstractTotemBase extends Item {
 
     public static final int MAX_DURATION = 24000;
 

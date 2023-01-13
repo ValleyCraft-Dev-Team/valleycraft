@@ -6,8 +6,10 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.ai.pathing.NavigationType;
+import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
@@ -53,5 +55,11 @@ public class NautilusShellBlock extends DirectionBlockWithWater {
         WEST_SHAPE = side_z;
         NORTH_SHAPE = side_x;
         SOUTH_SHAPE = side_x;
+    }
+
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        var state = super.getPlacementState(ctx);
+        return state.with(FACING, ctx.getPlayerFacing().getOpposite());
     }
 }

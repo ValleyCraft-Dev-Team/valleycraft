@@ -26,7 +26,7 @@ public class ModBowItem extends BowItem {
         //default crossbow range is 8
         //23 ~= 1.5x default bow range
         //12 = 1.5 default crossbow range
-        return 23;
+        return 25;
     }
 
     @Override

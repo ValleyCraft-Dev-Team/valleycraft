@@ -6,15 +6,13 @@ import static net.minecraft.util.Rarity.RARE;
 import static net.minecraft.util.Rarity.UNCOMMON;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.baubles.UniqueBaubleItem;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.item.clay_pot.ClayPotItem;
 import net.linkle.valleycraft.item.clay_pot.WaterClayPotItem;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.BucketItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
@@ -47,7 +45,7 @@ public enum ModItems implements ItemEnum {
     ANCIENT_FLOWER_SEEDS(new AliasedBlockItem(ModNaturalBlocks.ANCIENT_FLOWERS.block, itemSettings().rarity(Rarity.RARE))),
     AMETHYSTLE_SEEDS(new AliasedBlockItem(ModNaturalBlocks.AMETHYSTLES.block, itemSettings())),
 
-    GLOW_BALL(new GlowBallItem(itemSettings())),
+    GLOW_BALL(new GlowBallItem(itemSettings().group(VC_TOOLS))),
     FIBER(new Item(itemSettings())),
     DRIED_FIBER(new Item(itemSettings())),
     PLANT_FIBER_STRING(new Item(itemSettings())),
@@ -77,6 +75,7 @@ public enum ModItems implements ItemEnum {
     REINFORCED_HANDLE(new Item(itemSettings())),
     TREATED_LEATHER(new Item(itemSettings())),
     LEATHER_STRAP(new Item(itemSettings())),
+    GHAST_TEARS(new Tier0Bottle(itemSettings().maxCount(16).rarity(RARE).recipeRemainder(Items.GLASS_BOTTLE), 0, 0.0f, StatusEffects.REGENERATION).hideTooltip()),
     INK_BOTTLE(new Tier0Bottle(itemSettings().maxCount(16), 0, 0.0f, StatusEffects.BLINDNESS).hideTooltip()),
     QUILL(new Item(itemSettings())),
     RUNE_ETCHING_BLADE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
