@@ -19,6 +19,7 @@ import net.linkle.valleycraft.client.entity.renderer.snails.SculkSnailEntityRend
 import net.linkle.valleycraft.client.entity.renderer.snails.SnailEntityRenderer;
 import net.linkle.valleycraft.client.entity.renderer.unused.SoulPetEntityRenderer;
 import net.linkle.valleycraft.entity.fish.*;
+import net.linkle.valleycraft.entity.projectiles.thrown_items.GlowBallEntity;
 import net.linkle.valleycraft.entity.projectiles.thrown_items.ThrownRockEntity;
 import net.linkle.valleycraft.entity.pupkins.PupkinEntity;
 import net.linkle.valleycraft.entity.snails.CaveSnailEntity;
@@ -103,8 +104,13 @@ public class ModEntityType {
             FabricEntityTypeBuilder.<ThrownRockEntity>create(SpawnGroup.MISC, ThrownRockEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25F, 0.25F))
                     .trackRangeBlocks(4).trackedUpdateRate(10)
-                    .build()
-    );
+                    .build());
+    
+    public static final EntityType<GlowBallEntity> GLOW_BALL = register("glow_ball",
+            FabricEntityTypeBuilder.<GlowBallEntity>create(SpawnGroup.MISC, GlowBallEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.25F, 0.25F))
+                    .trackRangeBlocks(4).trackedUpdateRate(10)
+                    .build());
     
     public static void initialize() {
         FabricDefaultAttributeRegistry.register(SNAIL, SnailEntity.createSnailAttributes());
@@ -144,6 +150,7 @@ public class ModEntityType {
         
         EntityRendererRegistry.register(SOUL_PET, SoulPetEntityRenderer::new);
         EntityRendererRegistry.register(THROWN_ROCK, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(GLOW_BALL, FlyingItemEntityRenderer::new);
     }
     
     

@@ -9,7 +9,6 @@ import static net.linkle.valleycraft.util.BookStackVoxelShapes.*;
 import java.util.function.BiFunction;
 import java.util.function.ToIntFunction;
 
-import net.linkle.valleycraft.item.RopeItem;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -27,6 +26,7 @@ import net.minecraft.block.PressurePlateBlock.ActivationRule;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
@@ -110,6 +110,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     SOUL_BRAZIER(new BrazierBlock(10, 2), itemSettings()),
 
     CANDLE_BOTTLE(new CandleBottleBlock(), itemSettings()),
+    
+    GLOW_SPLATTER(new GlowSplatterBlock()),
 
     //rope and net blocks
     ROPE_VERTICAL(new RopeVerticalBlock(Block.Settings.of(BlockMats.ROPE).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL))),
@@ -1036,9 +1038,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     }
     
     @Override
-    @Nullable
     public Item asItem() {
-        return item;
+        return item == null ? Items.AIR : item;
     }
 
     @Override

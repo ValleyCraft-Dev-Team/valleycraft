@@ -20,10 +20,7 @@ import net.linkle.valleycraft.block.sapling.WarmBirchSaplingGen;
 import net.linkle.valleycraft.util.BlockEnum;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.PlaceableOnWaterItem;
-import net.minecraft.item.TallBlockItem;
+import net.minecraft.item.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.Identifier;
@@ -346,9 +343,8 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     }
 
     @Override
-    @Nullable
     public Item asItem() {
-        return item;
+        return item == null ? Items.AIR : item;
     }
 
     @Override

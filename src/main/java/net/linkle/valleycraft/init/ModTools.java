@@ -24,7 +24,7 @@ import net.linkle.valleycraft.tool.shovel.special.OarToolMaterial;
 import net.linkle.valleycraft.tool.spear.SpearBase;
 import net.linkle.valleycraft.tool.staff.StaffBase;
 import net.linkle.valleycraft.tool.sword.special.*;
-import net.linkle.valleycraft.tool.throwing.BoneDartItem;
+import net.linkle.valleycraft.tool.throwing.RockItem;
 import net.linkle.valleycraft.tool.travelers_sword.TravelerBase;
 import net.linkle.valleycraft.tool.travelers_sword.TravelerBaseFixed;
 import net.linkle.valleycraft.tool.unbreakable.BrokenMythicTravelerBase;
@@ -61,11 +61,11 @@ public class ModTools {
     public static final Item RUSTY_SWORD = new RustySwordItem(new RustySwordMaterial(),4, -2.4f);
     public static final Item RUSTY_PICKAXE = new RustyPickaxeItem(new RustyPickaxeMaterial(),3, -2.8f);
     public static final Item LADLE = new LadleItem(new OarToolMaterial(),2, -2.5f);
-    public static final Item THROWING_ROCK = new BoneDartItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
+    public static final Item THROWING_ROCK = new RockItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
     public static final Item ANTHROPOLOGISTS_ROCK_PICK = new AnthroPickaxeItem(new AnthroPickaxeMaterial());
 
     public static final Item ANCIENT_CLIMBING_AXE = new ClimbingAxeItem(ModToolMaterials.STRONG_IRON, new Item.Settings().group(BOOKS).rarity(Rarity.EPIC));
-    public static final Item MOBLIN_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
+    //public static final Item MOBLIN_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);
     public static final Item CORAL_KNIFE = new CoralDaggerItem(new CoralDaggerToolMaterial(), 3, -1.4f);
     public static final Item CAVE_FISHERS_RAPIER = new CaveFisherSwordItem(new CaveFisherToolMaterial(), 4, -2.4f);
     public static final Item SEAOLOGER_BROKEN = new BrokenSeagerCutlassItem(new BrokenSeagerToolMaterial(), 2, -1.8f);

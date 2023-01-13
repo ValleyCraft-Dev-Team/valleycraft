@@ -47,6 +47,7 @@ public enum ModItems implements ItemEnum {
     ANCIENT_FLOWER_SEEDS(new AliasedBlockItem(ModNaturalBlocks.ANCIENT_FLOWERS.block, itemSettings().rarity(Rarity.RARE))),
     AMETHYSTLE_SEEDS(new AliasedBlockItem(ModNaturalBlocks.AMETHYSTLES.block, itemSettings())),
 
+    GLOW_BALL(new GlowBallItem(itemSettings())),
     FIBER(new Item(itemSettings())),
     DRIED_FIBER(new Item(itemSettings())),
     PLANT_FIBER_STRING(new Item(itemSettings())),
