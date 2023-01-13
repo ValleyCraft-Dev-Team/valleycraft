@@ -23,7 +23,7 @@ public enum ModItems implements ItemEnum {
     WATER_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(1).group(VC_ITEMS).recipeRemainder(ModItems.CLAY_POT.item), 0, 0.0f)),
     //MILK_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(1).group(INGREDIENTS).recipeRemainder(ModItems.CLAY_POT.item), 0, 0.0f).setMilk()),
 
-    ROPE(new RopeItem(itemSettings().group(NON_NATURAL_BLOCKS))),
+    ROPE(new RopeItem(itemSettings().group(VC_ITEMS))),
     
     // tree seeds
     OAK_SEED(new AliasedBlockItem(ModNaturalBlocks.OAK_SEED.block, itemSettings())),
