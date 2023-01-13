@@ -82,7 +82,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BOOK_STACK_6(new BookStackBlock(BLOCK_SHAPE_6), itemSettings()),
     BOOK_STACK_7(new BookStackBlock(BLOCK_SHAPE_7), itemSettings()),
     BOOK_STACK_8(new BookStackBlock(BLOCK_SHAPE_8), itemSettings()),
-    INK_WELL(new InkWellBlock(), itemSettings()),
+    //INK_WELL(new InkWellBlock(), itemSettings()),
     INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     WATER_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     EMPTY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
@@ -137,15 +137,15 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     DAUB_SLAB(new SlabBlock(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
     DAUB_WALL(new WallBlock(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
 
-    BLOCK_WATTLE_AND_DAUB(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    //BLOCK_WATTLE_AND_DAUB(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
     BLOCK_WATTLE_AND_DAUB_CROSS(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
     BLOCK_WATTLE_AND_DAUB_PLUS(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
 
-    BLOCK_WATTLE_AND_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()), // block_wattle_and_glass
+    //BLOCK_WATTLE_AND_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()), // block_wattle_and_glass
     BLOCK_WATTLE_AND_GLASS_CROSS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()), // block_wattle_and_glass_cross
     BLOCK_WATTLE_AND_GLASS_PLUS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()), // block_wattle_and_glass_plus
     
-    BLOCK_WATTLE_AND_GLASS_PANE(new PaneBlock(Block.Settings.copy(Blocks.GLASS_PANE)), itemSettings()),
+    //BLOCK_WATTLE_AND_GLASS_PANE(new PaneBlock(Block.Settings.copy(Blocks.GLASS_PANE)), itemSettings()),
     BLOCK_WATTLE_AND_GLASS_CROSS_PANE(new PaneBlock(Block.Settings.copy(Blocks.GLASS_PANE)), itemSettings()),
     BLOCK_WATTLE_AND_GLASS_PLUS_PANE(new PaneBlock(Block.Settings.copy(Blocks.GLASS_PANE)), itemSettings()),
 
@@ -309,7 +309,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     // Potted mushrooms
     POTTED_GLOW_CAP(new PotBlock(ModNaturalBlocks.GLOW_CAP)),
     POTTED_JUNGLE_CAP(new PotBlock(ModNaturalBlocks.JUNGLE_CAP)),
-    POTTED_SOULSPORE(new PotBlock(ModNaturalBlocks.SOULSPORE_SINGLE)),
+    //POTTED_SOULSPORE(new PotBlock(ModNaturalBlocks.SOULSPORE_SINGLE)),
     POTTED_MOREL(new PotBlock(ModNaturalBlocks.MOREL)),
     //POTTED_GOOP_CAP(new PotBlock(ModNaturalBlocks.GOOP_CAP)),
 
@@ -448,7 +448,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     ERDSTONE_TILES(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     ERDSTONE_TILE_STAIRS(new StairsBlock(ERDSTONE_TILES.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     ERDSTONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
-    ERDSTONE_TILE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
+    //ERDSTONE_TILE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
 
     CHISELED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     CHISELED_ERDSTONE_FACE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
@@ -881,7 +881,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     // leathers are last
     LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
-    TANNED_LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
+    //TANNED_LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
     BLACK_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLACK).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
     BLUE_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLUE).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
     BROWN_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BROWN).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
@@ -901,7 +901,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     /**artifact blocks go here**/
     TRANSLATION_CANVAS(new TranslationCanvasBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().sounds(BlockSoundGroup.CANDLE).nonOpaque()), itemSettings().group(BOOKS)),
-    NAUTILUS_SHELL_BLOCK(new NautilusShellBlock(), itemSettings()),
+    NAUTILUS_SHELL_BLOCK(new NautilusShellBlock(), itemSettings().group(BOOKS)),
 
     // clay pots go here (not the baking item one)
     BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(ModBlockSoundGroup.POT.sound).breakInstantly()), itemSettings().group(BOOKS)),
@@ -937,8 +937,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     //skulls and skeletons go here
     VILLAGER_SKELETAL_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
     VILLAGER_SKULL(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
-    MOBLIN_SKELETAL_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
-    MOBLIN_SKULL(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    //MOBLIN_SKELETAL_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
+    //MOBLIN_SKULL(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
     PIGLIN_SKELETAL_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
     PIGLIN_SKULL(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
     SKELETAL_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BONE)), itemSettings().group(BOOKS).rarity(Rarity.UNCOMMON)),
@@ -967,14 +967,14 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     SCORCHSTONE_CHISELED_FACE_PIGLIN(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof().rarity(Rarity.UNCOMMON).group(BOOKS)),
 
-    CHISELED_ERDSTONE_BRICK_FACE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS)),
-    CHISELED_ERDSTONE_BRICK_FACE_HAPPY(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS)),
+    //CHISELED_ERDSTONE_BRICK_FACE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS)),
+    //CHISELED_ERDSTONE_BRICK_FACE_HAPPY(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS)),
     //MOSSY_PATTERNED_ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
     //PRIMSTEEL_WINDOW(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).nonOpaque()), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),
-    ERDSTONE_TARGET_BLOCK(new TargetBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1).luminance(s ->10)), itemSettings().group(BOOKS)),
-    ERDSTONE_DISPENSER(new DispenserBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS)),
-    ERDSTONE_SPIRIT_LIT(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).luminance(s ->16)), itemSettings().group(BOOKS)),
-    ERDSTONE_LANTERN(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).luminance(s ->10)), itemSettings().group(BOOKS)),
+    //ERDSTONE_TARGET_BLOCK(new TargetBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1).luminance(s ->10)), itemSettings().group(BOOKS)),
+    //ERDSTONE_DISPENSER(new DispenserBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.DEEPSLATE).hardness(1)), itemSettings().group(BOOKS)),
+    //ERDSTONE_SPIRIT_LIT(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).luminance(s ->16)), itemSettings().group(BOOKS)),
+    //ERDSTONE_LANTERN(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1).luminance(s ->10)), itemSettings().group(BOOKS)),
 
     //last block on the artifacts tab
     DEFECTIVE_SPAWNER(new DefectiveBlock(Block.Settings.copy(Blocks.SPAWNER)), itemSettings().group(BOOKS).maxCount(64).fireproof());

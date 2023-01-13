@@ -19,7 +19,12 @@ public class SoulPetItem extends ModItem {
     public SoulPetItem(Settings settings) {
         super(settings);
     }
-    
+
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        return true;
+    }
+
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         var nbt = stack.getSubNbt(SOUL_PET_KEY);

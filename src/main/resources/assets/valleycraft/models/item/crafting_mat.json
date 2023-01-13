@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "valleycraft:item/block_items/crafting_mat_bag_alt_2"
+    "layer0": "valleycraft:item/block_items/crafting_mat_bag_alt"
   }
 }

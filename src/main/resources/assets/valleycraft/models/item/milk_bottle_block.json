@@ -1,3 +1,6 @@
 {
-  "parent": "valleycraft:block/milk_bottle"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/block_items/milk_bottle_block"
+  }
 }

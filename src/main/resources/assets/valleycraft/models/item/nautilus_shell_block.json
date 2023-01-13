@@ -1,3 +1,6 @@
 {
-  "parent": "valleycraft:block/nautilus_shell_block_horizontal"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/block_items/nautilus_shell_block"
+  }
 }

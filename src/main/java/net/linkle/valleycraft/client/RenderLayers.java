@@ -50,10 +50,10 @@ class RenderLayers {
         put(FADED_SOUL_ROSE, cullout);
         put(SOUL_ROSE, cullout);
         put(BLUE_SOUL_ROSE, cullout);
-        put(BLUE_SOULSPORE, cullout);
-        put(BLUE_SOULSPORE_SINGLE, cullout);
-        put(FADED_SOULSPORE, cullout);
-        put(FADED_SOULSPORE_SINGLE, cullout);
+        //put(BLUE_SOULSPORE, cullout);
+        //put(BLUE_SOULSPORE_SINGLE, cullout);
+        //put(FADED_SOULSPORE, cullout);
+        //put(FADED_SOULSPORE_SINGLE, cullout);
         put(POTTED_FADED_SOUL_ROSE, cullout);
         put(HONEYCLUSTER, cullout);
         put(POTTED_HONEYCLUSTER, cullout);
@@ -93,11 +93,11 @@ class RenderLayers {
         put(POTTED_GLOW_CAP, cullout);
         put(JUNGLE_CAP, cullout);
         put(POTTED_JUNGLE_CAP, cullout);
-        put(SOULSPORE_SINGLE, cullout);
-        put(POTTED_SOULSPORE, cullout);
+        //put(SOULSPORE_SINGLE, cullout);
+        //put(POTTED_SOULSPORE, cullout);
         put(MOREL, cullout);
         put(POTTED_MOREL, cullout);
-        put(BLIGHTCAP, cullout);
+        //put(BLIGHTCAP, cullout);
         //put(BLIGHTED_SOUL_ROSE, cullout);
         put(LILY_OF_THE_MOUNTAINS, cullout);
 
@@ -253,7 +253,7 @@ class RenderLayers {
         put(BRAZIER, cullout);
         put(SOUL_BRAZIER, cullout);
         
-        put(INK_WELL, cullout);
+        //put(INK_WELL, cullout);
         put(EMPTY_BOTTLE_BLOCK, cullout);
         put(EXP_BOTTLE_BLOCK, cullout);
         put(GLOW_BERRY_BOTTLE_BLOCK, cullout);
@@ -304,7 +304,7 @@ class RenderLayers {
         put(SHALE_PET_GRAVESTONE_ROSE, cullout);
         put(DEFECTIVE_SPAWNER, cullout);
         put(SWORD_BLOCK, cullout);
-        put(SOULSPORE, cullout);
+        //put(SOULSPORE, cullout);
         put(SPORE_SPREADER, cullout);
         //put(GODDESS_BLADE_BLOCK, cullout);
 
@@ -357,8 +357,8 @@ class RenderLayers {
         //put(GEITLIN_SKULL, cullout);
         put(VILLAGER_SKULL, cullout);
         put(PIGLIN_SKULL, cullout);
-        put(MOBLIN_SKULL, cullout);
-        put(MOBLIN_SKELETAL_REMAINS, cullout);
+        //put(MOBLIN_SKULL, cullout);
+        //put(MOBLIN_SKELETAL_REMAINS, cullout);
         put(SKELETAL_MINING_REMAINS, cullout);
         put(PICKAXE_BLOCK, cullout);
         put(DEAD_LANTERN, cullout);
@@ -371,10 +371,10 @@ class RenderLayers {
         put(KEG, cullout);
         put(SMALL_CACTUS, cullout);
         put(PRIMSTEEL_BARS, cullout);
-        put(BLOCK_WATTLE_AND_GLASS, cullout);
+        //put(BLOCK_WATTLE_AND_GLASS, cullout);
         put(BLOCK_WATTLE_AND_GLASS_PLUS, cullout);
         put(BLOCK_WATTLE_AND_GLASS_CROSS, cullout);
-        put(BLOCK_WATTLE_AND_GLASS_PANE, cullout);
+        //put(BLOCK_WATTLE_AND_GLASS_PANE, cullout);
         put(BLOCK_WATTLE_AND_GLASS_PLUS_PANE, cullout);
         put(BLOCK_WATTLE_AND_GLASS_CROSS_PANE, cullout);
         put(TUMBLEWEED, cullout);

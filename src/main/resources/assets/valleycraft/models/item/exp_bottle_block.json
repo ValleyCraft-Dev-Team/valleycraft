@@ -1,3 +1,6 @@
 {
-  "parent": "valleycraft:block/exp_bottle_lesser"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/block_items/experience_bottle_block"
+  }
 }

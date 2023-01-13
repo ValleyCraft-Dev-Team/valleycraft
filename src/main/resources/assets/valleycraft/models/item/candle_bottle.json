@@ -1,3 +1,6 @@
 {
-  "parent": "valleycraft:block/candle_bottle"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/block_items/candle_bottle_block"
+  }
 }

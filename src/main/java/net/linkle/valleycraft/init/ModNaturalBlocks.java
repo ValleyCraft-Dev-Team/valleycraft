@@ -92,7 +92,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     GLOW_CAP_CLUSTER(new ModGlowingMushroomBlock().large(), itemSettings()),
     JUNGLE_CAP(new ModMushroomBlock(), itemSettings()),
     JUNGLE_CAP_CLUSTER(new ModMushroomBlock().large(), itemSettings()),
-    BLIGHTCAP(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
+    //BLIGHTCAP(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
 
     MOREL(new ModMushroomBlock(), itemSettings()),
     SHIVERCAP(new ShivercapBlock(), itemSettings().group(INGREDIENTS)),
@@ -175,8 +175,8 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     YELLOW_ANEMONE(new SeagrassBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque()), itemSettings()),
 
     SHELL_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),
-    DEEP_SEA_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
-    ABYSSAL_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
+    //DEEP_SEA_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
+    //ABYSSAL_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
     VOLCANIC_STONE(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
     VOLCANIC_MAGMA_STONE(new Block(Block.Settings.copy(Blocks.MAGMA_BLOCK).sounds(BlockSoundGroup.TUFF)), itemSettings()),
     VOLCANIC_ASH(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
@@ -283,12 +283,12 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     FADED_SOUL_ROSE(new FadedSoulRoseBlock(SoulPlantBlock.settings(0)), itemSettings()),
     SOUL_ROSE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3), UniformIntProvider.create(6, 12)), itemSettings().rarity(Rarity.UNCOMMON)),
     BLUE_SOUL_ROSE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6), UniformIntProvider.create(12, 24)), itemSettings().rarity(Rarity.RARE)),
-    FADED_SOULSPORE_SINGLE(new FadedSoulRoseBlock(SoulPlantBlock.settings(0).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).smallShape(), itemSettings()),
-    FADED_SOULSPORE(new FadedSoulRoseBlock(SoulPlantBlock.settings(0).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).largeShape(), itemSettings()),
-    SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(6, 12)).smallShape(), itemSettings().rarity(Rarity.UNCOMMON)),
-    SOULSPORE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(12, 24)).largeShape(), itemSettings().rarity(Rarity.UNCOMMON)),
-    BLUE_SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(12, 24)).smallShape(), itemSettings().rarity(Rarity.RARE)),
-    BLUE_SOULSPORE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(24, 36)).largeShape(), itemSettings().rarity(Rarity.RARE)),
+    //FADED_SOULSPORE_SINGLE(new FadedSoulRoseBlock(SoulPlantBlock.settings(0).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).smallShape(), itemSettings()),
+    //FADED_SOULSPORE(new FadedSoulRoseBlock(SoulPlantBlock.settings(0).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND)).largeShape(), itemSettings()),
+    //SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(6, 12)).smallShape(), itemSettings().rarity(Rarity.UNCOMMON)),
+    //SOULSPORE(new SoulPlantBlock(ModParticles.GREEN_EXP_ORB, SoulPlantBlock.settings(3).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(12, 24)).largeShape(), itemSettings().rarity(Rarity.UNCOMMON)),
+    //BLUE_SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(12, 24)).smallShape(), itemSettings().rarity(Rarity.RARE)),
+    //BLUE_SOULSPORE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(24, 36)).largeShape(), itemSettings().rarity(Rarity.RARE)),
 
     // Tree Seeds
     DIVINE_ACORN(new SeedBlock(Blocks.OAK_SAPLING)),

@@ -1,3 +1,6 @@
 {
-  "parent": "valleycraft:block/ink_bottle"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/block_items/ink_bottle_block"
+  }
 }

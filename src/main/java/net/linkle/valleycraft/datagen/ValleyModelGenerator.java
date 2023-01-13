@@ -117,7 +117,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         map = textureAll(ERDSTONE_TILES);
         slab(ERDSTONE_TILE_SLAB.block, ERDSTONE_TILES.block, map, generator);
         stairs(ERDSTONE_TILE_STAIRS.block, map, generator);
-        wall(ERDSTONE_TILE_WALL.block, map, generator);
 
         // ERDSTONE_MOSAIC
         map = textureAll(ERDSTONE_MOSAIC);
@@ -557,7 +556,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerGlassPane(BEVELED_GLASS.block, BEVELED_GLASS_PANE.block);
         generator.registerGlassPane(BEVELED_BRIMSTONE_GLASS.block, BEVELED_BRIMSTONE_GLASS_PANE.block);
         generator.registerGlassPane(BEVELED_TINTED_GLASS.block, BEVELED_TINTED_GLASS_PANE.block);
-        generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS.block, BLOCK_WATTLE_AND_GLASS_PANE.block);
+        //generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS.block, BLOCK_WATTLE_AND_GLASS_PANE.block);
         generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS_CROSS.block, BLOCK_WATTLE_AND_GLASS_CROSS_PANE.block);
         generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS_PLUS.block, BLOCK_WATTLE_AND_GLASS_PLUS_PANE.block);
 
@@ -585,7 +584,6 @@ class ValleyModelGenerator extends FabricModelProvider {
         // Potted fungi
         generator.registerFlowerPotPlant(GLOW_CAP.block, POTTED_GLOW_CAP.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(JUNGLE_CAP.block, POTTED_JUNGLE_CAP.block, TintType.NOT_TINTED);
-        generator.registerFlowerPotPlant(SOULSPORE_SINGLE.block, POTTED_SOULSPORE.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(MOREL.block, POTTED_MOREL.block, TintType.NOT_TINTED);
         //generator.registerFlowerPotPlant(GOOP_CAP.block, POTTED_GOOP_CAP.block, TintType.NOT_TINTED);
 
