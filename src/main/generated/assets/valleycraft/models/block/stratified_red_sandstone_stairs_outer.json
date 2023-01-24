@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/outer_stairs",
   "textures": {
-    "bottom": "valleycraft:block/stratified_red_sandstone",
-    "side": "valleycraft:block/stratified_red_sandstone",
-    "top": "valleycraft:block/stratified_red_sandstone"
+    "bottom": "valleycraft:block/stratified_red_sandstone_top",
+    "side": "valleycraft:block/stratified_red_sandstone_side",
+    "top": "valleycraft:block/stratified_red_sandstone_top"
   }
 }

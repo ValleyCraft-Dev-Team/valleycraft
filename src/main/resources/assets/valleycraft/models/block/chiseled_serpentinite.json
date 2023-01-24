@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "valleycraft:block/chiseled_green_granite"
+    "all": "valleycraft:block/chiseled_serpentinite"
   }
 }

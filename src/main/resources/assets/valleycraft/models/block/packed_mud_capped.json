@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "valleycraft:block/chiseled_mud_funky"
+    "all": "valleycraft:block/chiseled_mud_capped"
   }
 }

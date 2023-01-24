@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_side_tall",
   "textures": {
-    "wall": "valleycraft:block/cobbled_shale"
+    "wall": "valleycraft:block/shale_top"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "valleycraft:block/brick_smooth"
+    "all": "valleycraft:block/smooth_brick"
   }
 }

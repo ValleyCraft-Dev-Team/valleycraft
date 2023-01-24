@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "valleycraft:block/polished_stone_bricks"
+    "all": "valleycraft:block/polished_stone"
   }
 }
