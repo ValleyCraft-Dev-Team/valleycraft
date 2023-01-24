@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/scorchstone_tile_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/scorchstone_tiles"
+    },
+    "type=top": {
+      "model": "valleycraft:block/scorchstone_tile_slab_top"
+    }
+  }
+}

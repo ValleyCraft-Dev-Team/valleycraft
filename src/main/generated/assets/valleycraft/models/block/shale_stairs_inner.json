@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/inner_stairs",
   "textures": {
-    "bottom": "valleycraft:block/shale",
-    "side": "valleycraft:block/shale",
-    "top": "valleycraft:block/shale"
+    "bottom": "valleycraft:block/shale_top",
+    "side": "valleycraft:block/shale_side",
+    "top": "valleycraft:block/shale_top"
   }
 }

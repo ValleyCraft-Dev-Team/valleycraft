@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "valleycraft:block/chimney_ash_overlay",
-		"1": "valleycraft:block/cobblestone_brick",
-		"particle": "valleycraft:block/cobblestone_brick"
+		"1": "valleycraft:block/cobblestone_bricks",
+		"particle": "valleycraft:block/cobblestone_bricks"
 	},
 	"elements": [
 		{

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "valleycraft:block/green_granite_pillar_top",
-    "side": "valleycraft:block/green_granite_pillar_side"
+    "end": "valleycraft:block/serpentinite_pillar_top",
+    "side": "valleycraft:block/serpentinite_pillar_side"
   }
 }

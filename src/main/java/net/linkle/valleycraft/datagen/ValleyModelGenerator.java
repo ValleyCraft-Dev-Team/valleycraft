@@ -43,7 +43,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         stairs(CANVAS_STAIRS.block, map, generator);
 
         // THATCH
-        map = textureAll("thatch_side");
+        map = TextureMap.sideEnd(Main.makeId("block/thatch_side"), Main.makeId("block/thatch_top"));
         slab(THATCH_SLAB.block, THATCH_BLOCK.block, map, generator);
         stairs(THATCH_STAIRS.block, map, generator);
 
@@ -142,13 +142,13 @@ class ValleyModelGenerator extends FabricModelProvider {
         wall(ADVENTURINE_BRICK_WALL.block, map, generator);
 
         // SHALE
-        map = textureAll(SHALE);
+        map = TextureMap.sideEnd(Main.makeId("block/shale_side"), Main.makeId("block/shale_top")).put(TextureKey.WALL, Main.makeId("block/stratified_sandstone_top"));
         slab(SHALE_SLAB.block, SHALE.block, map, generator);
         stairs(SHALE_STAIRS.block, map, generator);
         wall(SHALE_WALL.block, map, generator);
 
         // COBBLED_SHALE
-        map = textureAll(COBBLED_SHALE);
+        map = textureAll("shale_top");
         slab(COBBLED_SHALE_SLAB.block, COBBLED_SHALE.block, map, generator);
         stairs(COBBLED_SHALE_STAIRS.block, map, generator);
         wall(COBBLED_SHALE_WALL.block, map, generator);
@@ -243,6 +243,12 @@ class ValleyModelGenerator extends FabricModelProvider {
         stairs(CARMINE_BRICK_STAIRS.block, map, generator);
         wall(CARMINE_BRICK_WALL.block, map, generator);
 
+        // PACKED_MUD
+        map = textureAllMC(Blocks.PACKED_MUD);
+        slab(PACKED_MUD_SLAB.block, PACKED_MUD, map, generator);
+        stairs(PACKED_MUD_STAIRS.block, map, generator);
+        wall(PACKED_MUD_WALL.block, map, generator);
+        
         // PACKED_SNOW
         map = textureAll(PACKED_SNOW);
         slab(PACKED_SNOW_SLAB.block, PACKED_SNOW.block, map, generator);
@@ -296,6 +302,11 @@ class ValleyModelGenerator extends FabricModelProvider {
         slab(POLISHED_DRIPSTONE_SLAB.block, POLISHED_DRIPSTONE.block, map, generator);
         stairs(POLISHED_DRIPSTONE_STAIRS.block, map, generator);
         wall(POLISHED_DRIPSTONE_WALL.block, map, generator);
+        
+        // PATTERNED_DRIPSTONE
+        map = textureAll(PATTERNED_DRIPSTONE);
+        slab(PATTERNED_DRIPSTONE_SLAB.block, PATTERNED_DRIPSTONE.block, map, generator);
+        stairs(PATTERNED_DRIPSTONE_STAIRS.block, map, generator);
 
         // DRIPSTONE_BRICKS
         map = textureAll(DRIPSTONE_BRICKS);
@@ -343,6 +354,11 @@ class ValleyModelGenerator extends FabricModelProvider {
         slab(POLISHED_BASALT_BRICK_SLAB.block, POLISHED_BASALT_BRICKS.block, map, generator);
         stairs(POLISHED_BASALT_BRICK_STAIRS.block, map, generator);
         wall(POLISHED_BASALT_BRICK_WALL.block, map, generator);
+        
+        // POLISHED_BASALT_BRICKS
+        map = textureAll(POLISHED_BASALT_PATTERNED);
+        slab(POLISHED_BASALT_PATTERNED_SLAB.block, POLISHED_BASALT_PATTERNED.block, map, generator);
+        stairs(POLISHED_BASALT_PATTERNED_STAIRS.block, map, generator);
 
         // ROUGH_SANDSTONE
         map = textureAll(ROUGH_SANDSTONE);
@@ -357,13 +373,13 @@ class ValleyModelGenerator extends FabricModelProvider {
         wall(ROUGH_RED_SANDSTONE_WALL.block, map, generator);
 
         // STRATIFIED_SANDSTONE
-        map = textureAll(STRATIFIED_SANDSTONE);
+        map = TextureMap.sideEnd(Main.makeId("block/stratified_sandstone_side"), Main.makeId("block/stratified_sandstone_top")).put(TextureKey.WALL, Main.makeId("block/stratified_sandstone_top"));
         slab(STRATIFIED_SANDSTONE_SLAB.block, STRATIFIED_SANDSTONE.block, map, generator);
         stairs(STRATIFIED_SANDSTONE_STAIRS.block, map, generator);
         wall(STRATIFIED_SANDSTONE_WALL.block, map, generator);
 
         // STRATIFIED_RED_SANDSTONE
-        map = textureAll(STRATIFIED_RED_SANDSTONE);
+        map = TextureMap.sideEnd(Main.makeId("block/stratified_red_sandstone_side"), Main.makeId("block/stratified_red_sandstone_top")).put(TextureKey.WALL, Main.makeId("block/stratified_sandstone_top"));
         slab(STRATIFIED_RED_SANDSTONE_SLAB.block, STRATIFIED_RED_SANDSTONE.block, map, generator);
         stairs(STRATIFIED_RED_SANDSTONE_STAIRS.block, map, generator);
         wall(STRATIFIED_RED_SANDSTONE_WALL.block, map, generator);
@@ -416,6 +432,12 @@ class ValleyModelGenerator extends FabricModelProvider {
         stairs(SCORCHSTONE_STAIRS.block, map, generator);
         wall(SCORCHSTONE_WALL.block, map, generator);
 
+        // SCORCHSTONE_BRICKS
+        map = textureAll(SCORCHSTONE_TILES);
+        slab(SCORCHSTONE_TILE_SLAB.block, SCORCHSTONE_TILES.block, map, generator);
+        stairs(SCORCHSTONE_TILE_STAIRS.block, map, generator);
+        wall(SCORCHSTONE_TILE_WALL.block, map, generator);
+        
         // SCORCHSTONE_BRICKS
         map = textureAll(SCORCHSTONE_BRICKS);
         slab(SCORCHSTONE_BRICK_SLAB.block, SCORCHSTONE_BRICKS.block, map, generator);
@@ -593,6 +615,11 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerFlowerPotPlant(SPROUT.block, POTTED_SPROUT.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(DESERT_SHRUB.block, POTTED_DESERT_SHRUB.block, TintType.NOT_TINTED);
         generator.registerFlowerPotPlant(LUSH_BUSH.block, POTTED_LUSH_BUSH.block, TintType.NOT_TINTED);
+        
+        // doors
+        generator.registerDoor(GLASS_DOOR.block);
+        generator.registerDoor(PRIMSTEEL_DOOR.block);
+        generator.registerDoor(TINTED_GLASS_DOOR.block);
     }
 
     @Override
@@ -615,6 +642,11 @@ class ValleyModelGenerator extends FabricModelProvider {
     
     TextureMap textureAll(IdProvider block) {
         var id = texture(block);
+        return TextureMap.sideEnd(id, id).put(TextureKey.WALL, id).put(TextureKey.ALL, id).put(TextureKey.TEXTURE, id);
+    }
+    
+    TextureMap textureAllMC(Block block) {
+        var id =  TextureMap.getId(block);
         return TextureMap.sideEnd(id, id).put(TextureKey.WALL, id).put(TextureKey.ALL, id).put(TextureKey.TEXTURE, id);
     }
     
