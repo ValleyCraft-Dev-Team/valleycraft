@@ -29,7 +29,7 @@ public class TrinketRenderers {
         register(new TalismanRenderer("fishing_hook_necklace"), ModBaubles.FISHING_HOOK_TALISMAN);
         register(new TalismanRenderer("guardian_spike_talisman"), ModBaubles.GUARDIAN_SPIKE_TALISMAN);
         register(new TalismanRenderer("scute_necklace"), ModBaubles.SCUTE_NECKLACE);
-        register(new TalismanRenderer("seaologer_rune_necklace"), ModBaubles.SEAOLOGER_RUNE_NECKLACE);
+        //register(new TalismanRenderer("seaologer_rune_necklace"), ModBaubles.SEAOLOGER_RUNE_NECKLACE);
 
         //strange base
         register(new TalismanRenderer("elder_guardian_spike_talisman"), ModBaubles.ELDER_GUARDIAN_SPIKE_KEEPSAKE);

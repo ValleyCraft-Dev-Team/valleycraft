@@ -1,0 +1,6 @@
+{
+  "parent": "valleycraft:item/coral_knife_guardian",
+  "textures": {
+    "layer0": "valleycraft:item/diving_gear/coral_knife_broken"
+  }
+}

@@ -2,11 +2,10 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"3": "valleycraft:block/rain_collector_inside",
-		"4": "block/water_still",
-		"particle": "valleycraft:block/rain_collector_outside",
-		"bottom": "valleycraft:block/rain_collector_bottom",
-		"side": "valleycraft:block/rain_collector_outside"
+		"3": "valleycraft:block/barrel_inside",
+		"4": "valleycraft:block/water_still",
+		"bottom": "valleycraft:block/barrel_bottom_counter",
+		"side": "block/barrel_side"
 	},
 	"elements": [
 		{

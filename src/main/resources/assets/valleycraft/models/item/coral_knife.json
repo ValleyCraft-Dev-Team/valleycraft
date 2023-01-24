@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "valleycraft:item/diving_gear/coral_knife"
+    "layer0": "valleycraft:item/diving_gear/coral_knife_alt"
   }
 }
