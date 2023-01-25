@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/block_items/glow_berry_bottle_block"
+    "layer0": "valleycraft:item/block_items/glow_berry_juice_bottle_block"
   }
 }
