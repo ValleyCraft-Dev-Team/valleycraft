@@ -21,10 +21,4 @@ public class EnderDragonEyeFoodItem extends FoodItem {
                 //nausea
                 new StatusEffectInstance(effect_3, 60 * 20, 30)));
     }
-
-    @Override
-    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-
-        tooltip.add( Text.translatable("item.valley.mythic.tooltip").formatted(Formatting.RED));
-    }
 }
