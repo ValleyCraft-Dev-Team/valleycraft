@@ -45,6 +45,7 @@ public enum ModItems implements ItemEnum {
     ANCIENT_FLOWER_SEEDS(new AliasedBlockItem(ModNaturalBlocks.ANCIENT_FLOWERS.block, itemSettings().rarity(Rarity.RARE))),
     AMETHYSTLE_SEEDS(new AliasedBlockItem(ModNaturalBlocks.AMETHYSTLES.block, itemSettings())),
 
+    //TODO retexture glow ball splat
     GLOW_BALL(new GlowBallItem(itemSettings().group(VC_TOOLS))),
     FIBER(new Item(itemSettings())),
     DRIED_FIBER(new Item(itemSettings())),
@@ -54,7 +55,6 @@ public enum ModItems implements ItemEnum {
     PLANK(new Item(itemSettings())),
     SALT(new Item(itemSettings().group(INGREDIENTS))),
 
-    //FUR_CLUMP(new Item(itemSettings())),
     SHEEP_HIDE(new Item(itemSettings())),
     PIG_HIDE(new Item(itemSettings())),
     MONSTER_CLAW(new Item(itemSettings())),
@@ -65,10 +65,10 @@ public enum ModItems implements ItemEnum {
     DRAGON_TOOTH(new Item(itemSettings().rarity(RARE).fireproof())),
     SEAGULLS_FEATHER(new Item(itemSettings())),
     DUCKS_FEATHER(new Item(itemSettings())),
-    DUCKS_EGG(new Item(itemSettings())),
+    //DUCKS_EGG(new Item(itemSettings())),
     CROWS_FEATHER(new Item(itemSettings())),
     SLIME_BLOB(new Item(itemSettings())),
-    EVIL_CRYSTAL(new Item(itemSettings().rarity(UNCOMMON).fireproof())),
+    //EVIL_CRYSTAL(new Item(itemSettings().rarity(UNCOMMON).fireproof())),
 
     HANDLE(new Item(itemSettings())),
     STURDY_HANDLE(new Item(itemSettings())),
@@ -79,15 +79,15 @@ public enum ModItems implements ItemEnum {
     INK_BOTTLE(new Tier0Bottle(itemSettings().maxCount(16), 0, 0.0f, StatusEffects.BLINDNESS).hideTooltip()),
     QUILL(new Item(itemSettings())),
     RUNE_ETCHING_BLADE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
+    BOOK_RUNECALLING(new Item(itemSettings().rarity(EPIC))),
 
     BOW_STRING(new Item(itemSettings())),
     FLOUR(new Item(itemSettings().group(INGREDIENTS))),
     MAIZE_FLOUR(new Item(itemSettings().group(INGREDIENTS))),
 
-    AMBER(new Item(itemSettings())),
     ANTHRACITE(new Item(itemSettings())),
     BRIMSTONE_SHARD(new Item(itemSettings())),
-    NETHER_GARNET(new Item(itemSettings())),
+    //NETHER_GARNET(new Item(itemSettings())),
     COPPER_NUGGET(new Item(itemSettings())),
     GOLD_SCRAP(new Item(itemSettings())),
     PRIMSTEEL_NUGGET(new Item(itemSettings())),
@@ -109,14 +109,14 @@ public enum ModItems implements ItemEnum {
     DOG_BISCUIT(new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true)),
 
     //souls
-    SOUL_ITEM_FADING(new SoulItem(itemSettings().group(BOOKS).fireproof(), 30)),
-    SOUL_ITEM(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof(), 60)),
-    SOUL_ITEM_ENRAGED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof(), 120)),
-    SOUL_ITEM_PET(new SoulPetItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
-    SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 3750)),
-    SOUL_ITEM_WITHERED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof(), 15)),
-    SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 3750)),
-    SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 7000)),
+    //SOUL_ITEM_FADING(new SoulItem(itemSettings().group(BOOKS).fireproof(), 30)),
+    //SOUL_ITEM(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof(), 60)),
+    //SOUL_ITEM_ENRAGED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof(), 120)),
+    //SOUL_ITEM_PET(new SoulPetItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
+    //SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 3750)),
+    //SOUL_ITEM_WITHERED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof(), 15)),
+    //SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 3750)),
+    //SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 7000)),
 
     GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(64))),
     ELDER_GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(64))),

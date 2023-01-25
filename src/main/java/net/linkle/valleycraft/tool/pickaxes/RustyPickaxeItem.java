@@ -20,9 +20,4 @@ implements EnchantmentHandler {
     public RustyPickaxeItem(ToolMaterial material, int attackDamage, float attackSpeed) {
         super(material, attackDamage, attackSpeed, new Settings().group(BOOKS));
     }
-
-    @Override
-    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add( Text.translatable("item.valley.broken.tooltip").formatted(Formatting.GRAY));
-    }
 }

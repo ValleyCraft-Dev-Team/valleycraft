@@ -78,15 +78,15 @@ abstract class LivingEntityMixin extends Entity implements LivingEntityExt {
     void updatePostDeath(CallbackInfo info) {
         if (world.isClient) return; 
         Object obj = this;
-        if (getRemovalReason() == RemovalReason.KILLED && obj instanceof TameableEntity pet && pet.isTamed()) {
-            Entity owner = pet.getOwner();
-            if (owner != null) {
-                var stack = new ItemStack(ModItems.SOUL_ITEM_PET);
-                SoulPetItem.setTag(stack, pet);
-                var soul = ModEntityType.SOUL_PET.create(world).setStack(stack);
-                soul.setPosition(getPos().add(0, 1.5, 0));
-                world.spawnEntity(soul);
-            }
-        }
+        //if (getRemovalReason() == RemovalReason.KILLED && obj instanceof TameableEntity pet && pet.isTamed()) {
+        //    Entity owner = pet.getOwner();
+        //    if (owner != null) {
+        //        var stack = new ItemStack(ModItems.SOUL_ITEM_PET);
+        //        SoulPetItem.setTag(stack, pet);
+        //        var soul = ModEntityType.SOUL_PET.create(world).setStack(stack);
+        //        soul.setPosition(getPos().add(0, 1.5, 0));
+        //        world.spawnEntity(soul);
+        //    }
+        //}
     }
 }

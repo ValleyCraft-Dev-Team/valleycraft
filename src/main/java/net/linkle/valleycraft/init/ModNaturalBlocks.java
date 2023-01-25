@@ -89,7 +89,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     GLOW_CAP_CLUSTER(new ModGlowingMushroomBlock().large(), itemSettings()),
     JUNGLE_CAP(new ModMushroomBlock(), itemSettings()),
     JUNGLE_CAP_CLUSTER(new ModMushroomBlock().large(), itemSettings()),
-    //BLIGHTCAP(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
 
     MOREL(new ModMushroomBlock(), itemSettings()),
     SHIVERCAP(new ShivercapBlock(), itemSettings().group(INGREDIENTS)),
@@ -129,7 +128,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
 
     MIMIC_FLOWER(new MimicFlowerBlock(MimicFlowerBlock.settings(0).ticksRandomly()), itemSettings()),
     //CAVE_ROOTS(new HangingPlant(Block.Settings.copy(Blocks.HANGING_ROOTS)), itemSettings()),
-    BONE_WEED(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     DESERT_SHRUB(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     LARGE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
@@ -224,7 +222,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     DIABASE(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
     SERPENTINITE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     GRIMESTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    //LIMESTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     SHIVERSTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     VERDANTINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
@@ -233,13 +230,14 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     ROCKS(new RockBlock(), itemSettings().group(ModGroups.VC_ITEMS)),
     FLINT_ROCKS(new RockBlock(), itemSettings().group(ModGroups.FLORA_GROUP)),
 
+    //TODO rename adventurine to adventurite
     ADVENTURINE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
     ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
     ERDCOBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE).hardness(2)), itemSettings()),
 
     LOOSE_ROCKS(new FallingRockBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.NETHER_BRICKS)), itemSettings()),
 
-    AMBER_ORE(new OreBlock(Block.Settings.copy(Blocks.IRON_ORE).requiresTool(), UniformIntProvider.create(2, 6)), itemSettings()),
+    //AMBER_ORE(new OreBlock(Block.Settings.copy(Blocks.IRON_ORE).requiresTool(), UniformIntProvider.create(2, 6)), itemSettings()),
     FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.IRON_ORE).requiresTool(), UniformIntProvider.create(2, 6)), itemSettings()),
     PRIMSTEEL_ORE(new OreBlock(Block.Settings.copy(Blocks.IRON_ORE).requiresTool(), UniformIntProvider.create(2, 6)), itemSettings()),
     SALT_ORE(new OreBlock(Block.Settings.copy(Blocks.COAL_ORE).requiresTool(), UniformIntProvider.create(2, 6)), itemSettings()),
@@ -262,7 +260,6 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
 
     DEEPSLATE_FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
     DEEPSLATE_PRIMSTEEL_ORE(new OreBlock(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
-    //DEEPSLATE_ADVENTURINE_ORE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)), itemSettings()),
     DEEPSLATE_ICE_ORE(new IceOreBlock(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).sounds(BlockSoundGroup.GLASS).nonOpaque().slipperiness(0.98f), UniformIntProvider.create(2, 6)), itemSettings()),
     DEEPSLATE_MIXED_ORE(new OreBlock(Block.Settings.copy(Blocks.DEEPSLATE_COAL_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
     SCULK_BLOSSOM(new SculkBlossomBlock(AbstractBlock.Settings.of(Material.PLANT).breakInstantly().noCollision().sounds(BlockSoundGroup.SPORE_BLOSSOM)), itemSettings()),

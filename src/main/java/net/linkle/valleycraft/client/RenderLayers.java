@@ -50,10 +50,6 @@ class RenderLayers {
         put(FADED_SOUL_ROSE, cullout);
         put(SOUL_ROSE, cullout);
         put(BLUE_SOUL_ROSE, cullout);
-        //put(BLUE_SOULSPORE, cullout);
-        //put(BLUE_SOULSPORE_SINGLE, cullout);
-        //put(FADED_SOULSPORE, cullout);
-        //put(FADED_SOULSPORE_SINGLE, cullout);
         put(POTTED_FADED_SOUL_ROSE, cullout);
         put(HONEYCLUSTER, cullout);
         put(POTTED_HONEYCLUSTER, cullout);
@@ -93,12 +89,8 @@ class RenderLayers {
         put(POTTED_GLOW_CAP, cullout);
         put(JUNGLE_CAP, cullout);
         put(POTTED_JUNGLE_CAP, cullout);
-        //put(SOULSPORE_SINGLE, cullout);
-        //put(POTTED_SOULSPORE, cullout);
         put(MOREL, cullout);
         put(POTTED_MOREL, cullout);
-        //put(BLIGHTCAP, cullout);
-        //put(BLIGHTED_SOUL_ROSE, cullout);
         put(LILY_OF_THE_MOUNTAINS, cullout);
 
         // Saplings and Potted Saplings
@@ -137,15 +129,11 @@ class RenderLayers {
         put(POTTED_FIREFERN, cullout);
         put(WEEPING_GHOST_WILLOW, cullout);
         put(POTTED_WEEPING_GHOST_WILLOW, cullout);
-        put(BONE_WEED, cullout);
-        put(POTTED_BONE_WEED, cullout);
         //put(FIDDLEHEAD_FERN, cullout);
         //put(POTTED_FIDDLEHEAD_FERN, cullout);
 
         //Other Plants without potted versions
         put(THORNY_BUSH, cullout);
-        // put(ROOTED_WATCHER, cullout);
-        // put(WARDING_SHROOM, cullout);
         put(STALWART_SHROOM, cullout);
         put(SHORT_GRASS, cullout);
         put(SHIVERCAP, cullout);
@@ -154,7 +142,6 @@ class RenderLayers {
         put(WILD_POTATO, cullout);
         put(WILD_WHEAT, cullout);
         put(WILD_PUFF_BALL, cullout);
-        //put(CAVE_ROOTS, cullout);
         put(BUSH, cullout);
         put(LARGE_BUSH, cullout);
         put(BIG_FERN, cullout);
@@ -168,7 +155,6 @@ class RenderLayers {
         put(PURPLE_FLOWERING_LILYPAD, cullout);
         put(PINK_FLOWERING_LILYPAD, cullout);
         put(BLUE_FLOWERING_LILYPAD, cullout);
-        // put(STICKY_SHROOM, cullout);
         put(ROCKS, cullout);
         put(APPLE_LEAVES, cullout);
         put(APPLE_LEAVES_EMPTY, cullout);
@@ -194,16 +180,9 @@ class RenderLayers {
         put(ANCIENT_FLOWERS, cullout);
         put(AMETHYSTLES, cullout);
         put(ALOE_VERAS, cullout);
-        //put(CAVE_MOSS, cullout);
-        //put(CRYSTAL_CAVE_MOSS, cullout);
         put(ORANGE_SEAGRASS, cullout);
         put(GLOWSQUID_LANTERN, cullout);
-        put(EMERALD_LANTERN, cullout);
-        put(AMETHYST_LANTERN, cullout);
-        put(AMBER_LANTERN, cullout);
-        put(DIAMOND_LANTERN, cullout);
-        put(GARNET_LANTERN, cullout);
-        
+
         put(BLUE_ANEMONE, cullout);
         put(GREEN_ANEMONE, cullout);
         put(PINK_ANEMONE, cullout);
@@ -234,7 +213,6 @@ class RenderLayers {
         put(ARID_VINES, cullout);
         put(ARID_VINES_PLANT, cullout);
         put(MIMIC_FLOWER, cullout);
-        put(BRIMSTONE_LANTERN, cullout);
 
         // lattices
         put(ACACIA_LATTICE, cullout);
@@ -254,7 +232,6 @@ class RenderLayers {
         put(BRAZIER, cullout);
         put(SOUL_BRAZIER, cullout);
         
-        //put(INK_WELL, cullout);
         put(EMPTY_BOTTLE_BLOCK, cullout);
         put(EXP_BOTTLE_BLOCK, cullout);
         put(GLOW_BERRY_BOTTLE_BLOCK, cullout);
@@ -263,16 +240,11 @@ class RenderLayers {
         put(MILK_BOTTLE_BLOCK, cullout);
         put(WATER_BOTTLE_BLOCK, cullout);
         put(CANDLE_BOTTLE, cullout);
-        //put(CANDLE_BOTTLE_LIT, cullout);
-        
-        //put(ANCIENT_WAGON_WHEEL, cullout);
-        //put(ANCIENT_WAGON_WHEEL_PLATFORM, cullout);
-        //put(ANCIENT_WAGON_WHEEL_TABLE, cullout);
+
         put(WATTLE_STOOL, cullout);
         put(WATTLE_TABLE, cullout);
         put(WATTLE_TABLE_CLOTHE, cullout);
         put(WATTLE_CHAIR, cullout);
-        put(ARROW_BLOCK, cullout);
         put(ORNATE_OBSIDIAN_TABLE, cullout);
         put(CLOTHED_ORNATE_OBSIDIAN_TABLE, cullout);
 
@@ -285,43 +257,22 @@ class RenderLayers {
         put(TALL_AZURE_BLUET, cullout);
         put(CATTAILS, cullout);
 
-        //put(GUIDESTONE, cullout);
-        //put(GUIDESTONE_ARROW, cullout);
-        //put(GUIDESTONE_DANGER, cullout);
-        //put(GUIDESTONE_HOME, cullout);
-        //put(GUIDESTONE_INTEREST, cullout);
-
         put(GRAVE_MARKER, cullout);
-        put(GRAVE_MARKER_PET, cullout);
         put(SHALE_GRAVESTONE, cullout);
         put(SHALE_GRAVESTONE_SPIRIT, cullout);
         put(SHALE_GRAVESTONE_HEART, cullout);
         put(SHALE_GRAVESTONE_TEXT, cullout);
         put(SHALE_GRAVESTONE_ROSE, cullout);
-        put(SHALE_PET_GRAVESTONE, cullout);
-        put(SHALE_PET_GRAVESTONE_SPIRIT, cullout);
-        put(SHALE_PET_GRAVESTONE_HEART, cullout);
-        put(SHALE_PET_GRAVESTONE_TEXT, cullout);
-        put(SHALE_PET_GRAVESTONE_ROSE, cullout);
         put(DEFECTIVE_SPAWNER, cullout);
         put(SWORD_BLOCK, cullout);
-        //put(SOULSPORE, cullout);
         put(SPORE_SPREADER, cullout);
-        //put(GODDESS_BLADE_BLOCK, cullout);
 
         put(BROWN_CLAY_POT, cullout);
         put(BLUE_CLAY_POT, cullout);
         put(GREEN_CLAY_POT, cullout);
-        //put(PURPLE_CLAY_POT, cullout);
-
-        //put(ERDSTONE_WINDOW, cullout);
-        //put(SCORCHSTONE_WINDOW, cullout);
-        //put(SERPENTINITE_WINDOW, cullout);
 
         put(SLUDGE_FLUID, translucent);
 
-        // put(BIG_RED, cullout);
-        // put(BIG_BROWN, cullout);
         put(BROWN_CLUSTER, cullout);
         put(RED_CLUSTER, cullout);
         put(MEADOW_FLOWERS, cullout);
@@ -350,32 +301,22 @@ class RenderLayers {
         put(BURNT_OUT_TORCH, cullout);
         put(BURNT_OUT_CANDLE, cullout);
         put(SKELETAL_REMAINS, cullout);
-        put(SKELETAL_REMAINS_SLUMPED, cullout);
-        //put(SKELETAL_BEST_FRIEND_REMAINS, cullout);
         put(VILLAGER_SKELETAL_REMAINS, cullout);
         put(PIGLIN_SKELETAL_REMAINS, cullout);
         put(DAERDRI_SKULL, cullout);
-        //put(GEITLIN_SKULL, cullout);
         put(VILLAGER_SKULL, cullout);
         put(PIGLIN_SKULL, cullout);
-        //put(MOBLIN_SKULL, cullout);
-        //put(MOBLIN_SKELETAL_REMAINS, cullout);
-        //put(SKELETAL_MINING_REMAINS, cullout);
         put(PICKAXE_BLOCK, cullout);
         put(DEAD_LANTERN, cullout);
         put(STAKE, cullout);
-        //put(STAKE_BASE, cullout);
         put(LUMBERJACK_STATION, cullout);
-        put(CAMPFIRE_POT, cullout);
         put(LANTERN_HANGER, cullout);
         put(LOG_PILE, cullout);
         put(KEG, cullout);
         put(SMALL_CACTUS, cullout);
         put(PRIMSTEEL_BARS, cullout);
-        //put(BLOCK_WATTLE_AND_GLASS, cullout);
         put(BLOCK_WATTLE_AND_GLASS_PLUS, cullout);
         put(BLOCK_WATTLE_AND_GLASS_CROSS, cullout);
-        //put(BLOCK_WATTLE_AND_GLASS_PANE, cullout);
         put(BLOCK_WATTLE_AND_GLASS_PLUS_PANE, cullout);
         put(BLOCK_WATTLE_AND_GLASS_CROSS_PANE, cullout);
         put(TUMBLEWEED, cullout);
@@ -395,7 +336,6 @@ class RenderLayers {
         put(BRIMSTONE_CRYSTAL, cullout);
         put(BRIMSTONE_GLASS, translucent);
         put(BRIMSTONE_GLASS_PANE, translucent);
-        //put(TARGET_DUMMY, cullout);
         put(BEACH_GRASS, cullout);
         put(ICEPLANT, cullout);
         put(NAUTILUS_SHELL_BLOCK, cullout);

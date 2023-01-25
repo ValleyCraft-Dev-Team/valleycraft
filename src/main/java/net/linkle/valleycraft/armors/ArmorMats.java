@@ -61,7 +61,6 @@ public enum ArmorMats implements ArmorMaterial {
     CIRCLET_LEATHER("leather_circlet", ints(0,0,0,1), 15, 15, equipChain(), items(ModItems.TREATED_LEATHER)),
 
     CROWN("golden_crown", ints(0,0,0,3), 15, 25, equipGold(), items(Items.GOLD_INGOT)),
-    BLIGHT_CROWN("blight_crown", ints(0,0,0,4), 15, 0, equipNetherite(), items(ModItems.EVIL_CRYSTAL)),
 
     ECHO_DIADEM("echo_shard_diadem", ints(2,2,2,2), 10, 25, equipChain(), items()),
     TREE_GOD("tree_god_mask", ints(2,2,2,2), 10, 25, equipLeather(), items(Items.OAK_LOG)),

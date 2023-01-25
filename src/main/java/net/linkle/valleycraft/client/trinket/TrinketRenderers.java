@@ -15,12 +15,10 @@ public class TrinketRenderers {
 
         //iron base
         register(new TalismanRenderer("iron_necklace"), ModBaubles.IRON_NECKLACE);
-        register(new TalismanRenderer("amber_talisman"), ModBaubles.AMBER_TALISMAN);
         register(new TalismanRenderer("amethyst_talisman"), ModBaubles.AMETHYST_TALISMAN);
         register(new TalismanRenderer("diamond_talisman"), ModBaubles.DIAMOND_TALISMAN);
         register(new TalismanRenderer("emerald_talisman"), ModBaubles.EMERALD_TALISMAN);
         register(new TalismanRenderer("ender_pearl_talisman"), ModBaubles.ENDER_PEARL_TALISMAN);
-        register(new TalismanRenderer("nether_garnet_talisman"), ModBaubles.NETHER_GARNET_TALISMAN);
         register(new TalismanRenderer("nether_quartz_talisman"), ModBaubles.NETHER_QUARTZ_TALISMAN);
         register(new TalismanRenderer("prismarine_crystal_talisman"), ModBaubles.PRISMARINE_TALISMAN);
         //leather base
@@ -40,7 +38,7 @@ public class TrinketRenderers {
         register(new TalismanRenderer("brimstone_talisman"), ModBaubles.BRIMSTONE_NECKLACE);
         //register(new TalismanRenderer("evil_crystal_keepsake"), ModBaubles.EVIL_CRYSTAL_KEEPSAKE);
         //register(new TalismanRenderer("moblin_talisman"), ModBaubles.MOBLIN_TALISMAN);
-        register(new TalismanRenderer("stray_necklace"), ModBaubles.STRAY_TALISMAN);
+        //register(new TalismanRenderer("stray_necklace"), ModBaubles.STRAY_TALISMAN);
     }
     
     private static void register(TrinketRenderer renderer, ItemConvertible... items) {
