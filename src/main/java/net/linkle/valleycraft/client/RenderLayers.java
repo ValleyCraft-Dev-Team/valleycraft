@@ -37,7 +37,7 @@ class RenderLayers {
         put(PRIMSTEEL_DOOR, cullout);
         put(PRIMSTEEL_TRAPDOOR, cullout);
         put(SCULK_BLOSSOM, cullout);
-        put(CHAINED_RUSTED_CHEST, cullout);
+        //put(CHAINED_RUSTED_CHEST, cullout);
         put(CRAFTING_MAT, cullout);
         put(WITCH_LADLE, cullout);
         put(FIREGUARD, cullout);
@@ -282,7 +282,7 @@ class RenderLayers {
         put(STARFISH_BLOCK, cullout);
         put(TUBE_WORMS_BLOCK, cullout);
         put(RUSHES, cullout);
-        put(OCELOT_STATUE, cullout);
+        //put(OCELOT_STATUE, cullout);
         put(SPIKE_TRAP, cullout);
 
         put(HOLLOW_ACACIA_LOG, cullout);
@@ -295,7 +295,7 @@ class RenderLayers {
         put(HOLLOW_OAK_LOG, cullout);
         put(HOLLOW_SPRUCE_LOG, cullout);
 
-        put(TRANSLATION_CANVAS, cullout);
+        //put(TRANSLATION_CANVAS, cullout);
         put(GLOW_CAP_CLUSTER, cullout);
         put(JUNGLE_CAP_CLUSTER, cullout);
         put(BURNT_OUT_TORCH, cullout);

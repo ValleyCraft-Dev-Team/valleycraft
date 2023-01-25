@@ -131,8 +131,8 @@ public enum ModItems implements ItemEnum {
     SEED_BAG(new SeedBagItem(itemSettings().group(VC_ITEMS))),
 
     //record items
-    ANCIENT_RECORD_FRAGMENT(new ModDiscFragmentItem(itemSettings().group(BOOKS))),
-    ANCIENT_RECORD_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.ANCIENT.sound, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),110)),
+    //ANCIENT_RECORD_FRAGMENT(new ModDiscFragmentItem(itemSettings().group(BOOKS))),
+    //ANCIENT_RECORD_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.ANCIENT.sound, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),110)),
 
     //big bottle items
     //BIG_BOTTLE(new Item(itemSettings())),
