@@ -24,7 +24,7 @@ public class TrinketRenderers {
         //leather base
         register(new TalismanRenderer("leather_necklace"), ModBaubles.LEATHER_NECKLACE);
         register(new TalismanRenderer("echo_shard"), ModBaubles.ECHO_SHARD_TALISMAN);
-        register(new TalismanRenderer("fishing_hook_necklace"), ModBaubles.FISHING_HOOK_TALISMAN);
+        //register(new TalismanRenderer("fishing_hook_necklace"), ModBaubles.FISHING_HOOK_TALISMAN);
         register(new TalismanRenderer("guardian_spike_talisman"), ModBaubles.GUARDIAN_SPIKE_TALISMAN);
         register(new TalismanRenderer("scute_necklace"), ModBaubles.SCUTE_NECKLACE);
         //register(new TalismanRenderer("seaologer_rune_necklace"), ModBaubles.SEAOLOGER_RUNE_NECKLACE);
