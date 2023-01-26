@@ -14,7 +14,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
 public class ScarecrowBlock extends HorizontalWithWaterBlock {
-    private static final VoxelShape SHAPE = Block.createCuboidShape(4, 0, 4, 12, 32, 12);
+    private static final VoxelShape SHAPE = Block.createCuboidShape(4, 0, 4, 12, 30, 12);
 
     public ScarecrowBlock(boolean isGlowing) {
         super(FabricBlockSettings.of(Material.WOOD)

@@ -1,6 +1,10 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "valleycraft:block/deepslate_urn_angry",
+      "y": 90
+    },
+    "axis=z": {
       "model": "valleycraft:block/deepslate_urn_angry"
     }
   }

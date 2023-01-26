@@ -34,6 +34,7 @@ public class SeedBagItem extends Item {
                 inventory.insertStack(new ItemStack(Items.WHEAT_SEEDS, 1));
             }
 
+            // TODO: Use loot table
             inventory.insertStack(new ItemStack(Items.WHEAT_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
             inventory.insertStack(new ItemStack(Items.MELON_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
             inventory.insertStack(new ItemStack(Items.BEETROOT_SEEDS, MathHelper.nextInt(world.random, 0, 1)));

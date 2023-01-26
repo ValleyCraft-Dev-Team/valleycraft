@@ -16,7 +16,6 @@ public class MythicItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-
         tooltip.add( Text.translatable("item.valley.mythic.tooltip").formatted(Formatting.RED));
     }
 }

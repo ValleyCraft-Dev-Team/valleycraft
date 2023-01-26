@@ -18,6 +18,10 @@ public class BottleItem extends FoodItem {
     
     private boolean isMilk;
 
+    public BottleItem(Settings settings) {
+        super(settings);
+    }
+    
     public BottleItem(Settings settings, int hunger, float satMod) {
         super(settings, hunger, satMod);
     }
@@ -40,9 +44,9 @@ public class BottleItem extends FoodItem {
             return new ItemStack(Items.GLASS_BOTTLE);
         }
         if (user instanceof PlayerEntity player && !player.getAbilities().creativeMode) {
-            var bowl = new ItemStack(Items.GLASS_BOTTLE);
-            if (!player.getInventory().insertStack(bowl)) {
-                player.dropItem(bowl, false);
+            var bottle = new ItemStack(Items.GLASS_BOTTLE);
+            if (!player.getInventory().insertStack(bottle)) {
+                player.dropItem(bottle, false);
             }
         }
         return stack;

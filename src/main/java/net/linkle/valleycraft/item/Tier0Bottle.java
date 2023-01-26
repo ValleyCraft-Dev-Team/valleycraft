@@ -16,38 +16,9 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
-public class Tier0Bottle extends FoodItem {
+public class Tier0Bottle extends BottleItem {
 
     public Tier0Bottle(Settings settings, int hunger, float satMod, StatusEffect effect) {
         super(settings, hunger, satMod, new FoodStatusEffect(new StatusEffectInstance(effect, 15 * 20)));
-    }
-
-    @Override
-    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        super.finishUsing(stack, world, user);
-        if (user instanceof ServerPlayerEntity player) {
-            Criteria.CONSUME_ITEM.trigger(player, stack);
-            player.incrementStat(Stats.USED.getOrCreateStat(this));
-        }
-        if (stack.isEmpty()) {
-            return new ItemStack(Items.GLASS_BOTTLE);
-        }
-        if (user instanceof PlayerEntity player && !player.getAbilities().creativeMode) {
-            var bowl = new ItemStack(Items.GLASS_BOTTLE);
-            if (!player.getInventory().insertStack(bowl)) {
-                player.dropItem(bowl, false);
-            }
-        }
-        return stack;
-    }
-    
-    @Override
-    public UseAction getUseAction(ItemStack stack) {
-        return UseAction.DRINK;
-    }
-    
-    @Override
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        return ItemUsage.consumeHeldItem(world, user, hand);
     }
 }
