@@ -1,6 +1,6 @@
 {
   "parent": "valleycraft:item/brasium_compound_bow",
   "textures": {
-    "layer0": "valleycraft/item/bows/brasium_bow_pulling_2"
+    "layer0": "valleycraft:item/bows/brasium_bow_pulling_2"
   }
 }
