@@ -5,7 +5,7 @@
 		"3": "valleycraft:block/barrel_inside",
 		"4": "valleycraft:block/barrel_bottom_interior_daub",
 		"bottom": "valleycraft:block/barrel_bottom_counter",
-		"side": "valleycraft:block/barrel_side",
+		"side": "minecraft:block/barrel_side",
 		"particle": "valleycraft:block/barrel_bottom_interior_daub"
 	},
 	"elements": [

@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "valleycraft:block/barrel_bottom_counter",
 		"1": "valleycraft:block/barrel_top_podzol",
-		"2": "block/barrel_side",
+		"2": "minecraft:block/barrel_side",
 		"particle": "valleycraft:block/barrel_bottom_counter"
 	},
 	"elements": [
