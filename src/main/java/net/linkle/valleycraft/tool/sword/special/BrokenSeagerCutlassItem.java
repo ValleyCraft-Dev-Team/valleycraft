@@ -1,10 +1,9 @@
 package net.linkle.valleycraft.tool.sword.special;
 
-import static net.linkle.valleycraft.init.ModGroups.BOOKS;
-
 import java.util.List;
 
 import net.linkle.valleycraft.api.EnchantmentHandler;
+import net.linkle.valleycraft.init.ModGroups;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
@@ -19,7 +18,7 @@ public class BrokenSeagerCutlassItem
 extends SwordItem
 implements EnchantmentHandler {
     public BrokenSeagerCutlassItem(ToolMaterial material, int attackDamage, float attackSpeed) {
-        super(material, attackDamage, attackSpeed, new Settings().group(BOOKS));
+        super(material, attackDamage, attackSpeed, new Settings().group(ModGroups.VC_TOOLS));
     }
 
     @Override

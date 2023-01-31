@@ -1,6 +1,9 @@
 package net.linkle.valleycraft.init;
 
-import net.linkle.valleycraft.armors.*;
+import static net.linkle.valleycraft.init.ModGroups.CLOTHING;
+
+import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.armors.ArmorMats;
 import net.linkle.valleycraft.item.ClothingArmorItem;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.EquipmentSlot;
@@ -10,10 +13,6 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
-
-import static net.linkle.valleycraft.init.ModGroups.*;
-
-import net.linkle.valleycraft.Main;
 
 public enum ModArmors implements ItemEnum {
     STRAW_HAT(new ArmorItem(ArmorMats.STRAW_HAT, EquipmentSlot.HEAD, settingsNormal())),
@@ -226,7 +225,7 @@ public enum ModArmors implements ItemEnum {
     }
 
     private static final Item.Settings settingsArtifacts() {
-        return new Item.Settings().group(BOOKS);
+        return new Item.Settings().group(ModGroups.VC_TOOLS);
     }
 
     private static final Item.Settings settingsArtifacts(Rarity rarity) {

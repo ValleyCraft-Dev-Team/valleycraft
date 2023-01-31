@@ -1,6 +1,5 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.init.ModGroups.BOOKS;
 import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
 import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
 import static net.linkle.valleycraft.init.ModNaturalBlocks.VOLCANIC_STONE;
@@ -15,7 +14,6 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.baubles.CraftingMatBauble;
 import net.linkle.valleycraft.block.*;
-import net.linkle.valleycraft.block.SkullBlock;
 import net.linkle.valleycraft.item.BridgeItem;
 import net.linkle.valleycraft.util.BlockEnum;
 import net.linkle.valleycraft.util.BlockSettings;
@@ -43,7 +41,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BRICK_STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
     KEG(new KegBlock(), itemSettings()),
     //STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
-    BARREL_PLANTER(new Block(Block.Settings.copy(Blocks.PODZOL).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque()), itemSettings()),
+    BARREL_PLANTER(new Block(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     RAIN_COLLECTOR(new RainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque()), itemSettings()),
     LEVELED_RAIN_COLLECTOR(new LeveledRainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque())),
     WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
@@ -52,12 +50,12 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     //TODO add barrel planters/crate planters?
     //BIG_FLOWER_POT_BLOCK(new BigFlowerPotBlock(Block.Settings.copy(Blocks.FARMLAND).ticksRandomly().requiresTool().strength(1.5F, 3.0F).sounds(ModBlockSoundGroup.POT.sound)), itemSettings()),
-    STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
-    STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
+    STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     WITCH_LADLE(new LadleBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().noCollision().nonOpaque()), itemSettings()),
     MINER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
-    LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(Blocks.SPRUCE_PLANKS).nonOpaque()), itemSettings()),
+    LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(Blocks.STONECUTTER).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
     //HUNTING_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     //TODO redesign storekeepers counter symbol, its ugly
     STOREKEEPS_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
@@ -73,8 +71,8 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     POTION_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
     SCROLL_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
     TOOL_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
-    ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
-    CLOTHED_ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
+    ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.ENCHANTING_TABLE)), itemSettings()),
+    CLOTHED_ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.ENCHANTING_TABLE)), itemSettings()),
     LOG_PILE(new LogPile(Block.Settings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
 
     BOOK_STACK_0(new BookStackBlock(BLOCK_SHAPE_0), itemSettings()),
@@ -587,26 +585,26 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     CARMINE_BRICK_WALL(new WallBlock(Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
 
     //ice and snow blocks
-    PACKED_SNOW_STAIRS(new StairsBlock(ModNaturalBlocks.PACKED_SNOW.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    PACKED_SNOW_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    PACKED_SNOW_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_STAIRS(new StairsBlock(ModNaturalBlocks.PACKED_SNOW.getState(), Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
+    PACKED_SNOW_SLAB(new SlabBlock(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
+    PACKED_SNOW_WALL(new WallBlock(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
 
-    PACKED_SNOW_POLISHED(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    PACKED_SNOW_POLISHED_STAIRS(new StairsBlock(PACKED_SNOW_POLISHED.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    PACKED_SNOW_POLISHED_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    PACKED_SNOW_POLISHED_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_POLISHED(new Block(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
+    PACKED_SNOW_POLISHED_STAIRS(new StairsBlock(PACKED_SNOW_POLISHED.getState(), Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
+    PACKED_SNOW_POLISHED_SLAB(new SlabBlock(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
+    PACKED_SNOW_POLISHED_WALL(new WallBlock(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
 
-    PACKED_SNOW_BRICKS_LARGE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    PACKED_SNOW_BRICKS_LARGE_STAIRS(new StairsBlock(PACKED_SNOW_BRICKS_LARGE.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    PACKED_SNOW_BRICKS_LARGE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    PACKED_SNOW_BRICKS_LARGE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_BRICKS_LARGE(new Block(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
+    PACKED_SNOW_BRICKS_LARGE_STAIRS(new StairsBlock(PACKED_SNOW_BRICKS_LARGE.getState(), Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
+    PACKED_SNOW_BRICKS_LARGE_SLAB(new SlabBlock(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
+    PACKED_SNOW_BRICKS_LARGE_WALL(new WallBlock(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
 
-    PACKED_SNOW_BRICKS_SMALL(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    PACKED_SNOW_BRICKS_SMALL_STAIRS(new StairsBlock(PACKED_SNOW_BRICKS_SMALL.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    PACKED_SNOW_BRICKS_SMALL_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
-    PACKED_SNOW_BRICKS_SMALL_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_BRICKS_SMALL(new Block(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
+    PACKED_SNOW_BRICKS_SMALL_STAIRS(new StairsBlock(PACKED_SNOW_BRICKS_SMALL.getState(), Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
+    PACKED_SNOW_BRICKS_SMALL_SLAB(new SlabBlock(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
+    PACKED_SNOW_BRICKS_SMALL_WALL(new WallBlock(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
 
-    PACKED_SNOW_BRICKS_CHISELED(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+    PACKED_SNOW_BRICKS_CHISELED(new Block(Block.Settings.copy(ModNaturalBlocks.PACKED_SNOW.block)), itemSettings()),
 
     //andesite/diorite/granite
     ANDESITE_BRICKS(new Block(Block.Settings.copy(Blocks.ANDESITE)), itemSettings()),
@@ -819,15 +817,15 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
 
     //cobblestone bricks
     //POLISHED_COBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
-    COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
-    COBBLESTONE_BRICK_STAIRS(new StairsBlock(COBBLESTONE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
-    COBBLESTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
-    COBBLESTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
+    COBBLESTONE_BRICK_STAIRS(new StairsBlock(COBBLESTONE_BRICKS.getState(), Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
+    COBBLESTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.COBBLESTONE_SLAB)), itemSettings()),
+    COBBLESTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.COBBLESTONE_WALL)), itemSettings()),
 
-    MOSSY_COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
-    MOSSY_COBBLESTONE_BRICK_STAIRS(new StairsBlock(MOSSY_COBBLESTONE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
-    MOSSY_COBBLESTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
-    MOSSY_COBBLESTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
+    MOSSY_COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.MOSSY_COBBLESTONE)), itemSettings()),
+    MOSSY_COBBLESTONE_BRICK_STAIRS(new StairsBlock(MOSSY_COBBLESTONE_BRICKS.getState(), Block.Settings.copy(Blocks.MOSSY_COBBLESTONE_STAIRS)), itemSettings()),
+    MOSSY_COBBLESTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.MOSSY_COBBLESTONE_SLAB)), itemSettings()),
+    MOSSY_COBBLESTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.MOSSY_COBBLESTONE_WALL)), itemSettings()),
 
     //ARID_MOSSY_COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
     CHISELED_COBBLESTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
@@ -914,7 +912,7 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     //DEEPSLATE_URN_CREEPER(new ExplosiveUrnBlock(BlockSettings.urn()), itemSettings().group(BOOKS)),
     //DEEPSLATE_URN_EARTH(new UrnBlock(BlockSettings.urn()), itemSettings().group(BOOKS)),
     //DEEPSLATE_URN_ERDIS(new UrnBlock(BlockSettings.urn()), itemSettings().group(BOOKS)),
-    DEEPSLATE_URN_SOUL(new SoulUrnBlock(BlockSettings.urn(), UniformIntProvider.create(2, 6)), itemSettings().group(NON_NATURAL_BLOCKS)),
+    DEEPSLATE_URN_SOUL(new UrnBlock(BlockSettings.urn(), UniformIntProvider.create(2, 6)), itemSettings().group(NON_NATURAL_BLOCKS)),
     //DEEPSLATE_URN_SYMBOL(new UrnBlock(BlockSettings.urn()), itemSettings().group(BOOKS)),
     
     //cobblestone statues
