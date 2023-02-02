@@ -294,6 +294,7 @@ class RenderLayers {
         put(HOLLOW_MANGROVE_LOG, cullout);
         put(HOLLOW_OAK_LOG, cullout);
         put(HOLLOW_SPRUCE_LOG, cullout);
+        put(CHEESE, cullout);
 
         //put(TRANSLATION_CANVAS, cullout);
         put(GLOW_CAP_CLUSTER, cullout);

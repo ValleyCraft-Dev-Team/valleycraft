@@ -1,9 +1,13 @@
 package net.linkle.valleycraft.init;
 
 import com.terraformersmc.modmenu.util.mod.Mod;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.linkle.valleycraft.block.CheeseBlock;
 import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.effect.*;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
@@ -17,7 +21,6 @@ import net.linkle.valleycraft.Main;
 public enum IngredientFoodItems implements ItemEnum {
 
     MILK(new BottleItem(settings().maxCount(16), 0, 0.2f).setMilk()),
-    CHEESE_WHEEL(new FoodItem(settings(), 8, 0.4f)),
     CHEESE_SLICE(new FoodItem(settings(), 2, 0.4f)),
     MOREL_OIL(new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS).hideTooltip()),
 
@@ -107,9 +110,7 @@ public enum IngredientFoodItems implements ItemEnum {
     private static Item.Settings settings() {
         return new Item.Settings().group(INGREDIENTS);
     }
-    
-    
-    
+
     // ### The Enum Class Itself ###
     
     public final Item item;

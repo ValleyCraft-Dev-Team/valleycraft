@@ -1,6 +1,7 @@
 package net.linkle.valleycraft.init;
 
 import static net.linkle.valleycraft.init.ModGroups.INGREDIENTS;
+import static net.linkle.valleycraft.init.ModGroups.REGULAR_DISHES;
 import static net.linkle.valleycraft.util.PlantBlockSettings.*;
 import static net.linkle.valleycraft.util.PlantGroundPredicates.ARID_DESERT;
 import static net.linkle.valleycraft.util.PlantVoxelShapes.*;
@@ -29,6 +30,8 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
+
+    CHEESE(new CheeseBlock(Block.Settings.copy(Blocks.CAKE)), foodBlockSettings()),
 
     BLACK_DAHLIA(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     FLOWERING_CACTUS(new ModCactusBlock(FLOWERING_CACTUS_SHAPE), itemSettings()),
@@ -320,7 +323,11 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     private static FabricItemSettings itemSettings() {
         return new FabricItemSettings().group(ModGroups.FLORA_GROUP);
     }
-    
+
+    private static FabricItemSettings foodBlockSettings() {
+        return new FabricItemSettings().group(REGULAR_DISHES);
+    }
+
     // ### The Enum Class Itself ###
     
     public final Block block;
