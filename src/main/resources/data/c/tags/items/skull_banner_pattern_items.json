@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:skeleton_skull",
+    "minecraft:wither_skeleton_skull",
+    "valleycraft:piglin_skull",
+    "valleycraft:daerdri_skull",
+    "valleycraft:villager_skull"
+  ]
+}

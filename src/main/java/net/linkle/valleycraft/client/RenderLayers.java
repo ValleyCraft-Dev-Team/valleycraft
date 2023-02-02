@@ -41,6 +41,8 @@ class RenderLayers {
         put(CRAFTING_MAT, cullout);
         put(WITCH_LADLE, cullout);
         put(FIREGUARD, cullout);
+        put(WATER_SHOWERER, cullout);
+        put(IRON_BRAZIER, cullout);
 
         // Flowers and Potted Flowers
         put(BLACK_DAHLIA, cullout);

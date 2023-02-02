@@ -1,6 +1,5 @@
 {
   "type": "minecraft:smithing",
-  "group": "woodcutter_axes",
   "base": {
     "item": "minecraft:wooden_axe"
   },

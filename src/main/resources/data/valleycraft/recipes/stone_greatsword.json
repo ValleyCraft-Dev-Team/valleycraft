@@ -1,6 +1,5 @@
 {
   "type": "minecraft:smithing",
-  "group": "greatswords",
   "base": {
     "item": "minecraft:stone_sword"
   },

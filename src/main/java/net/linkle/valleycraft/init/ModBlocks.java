@@ -1,7 +1,6 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.init.ModGroups.NON_NATURAL_BLOCKS;
-import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
+import static net.linkle.valleycraft.init.ModGroups.*;
 import static net.linkle.valleycraft.init.ModNaturalBlocks.VOLCANIC_STONE;
 import static net.linkle.valleycraft.util.BookStackVoxelShapes.*;
 
@@ -44,20 +43,18 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     BARREL_PLANTER(new Block(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     RAIN_COLLECTOR(new RainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque()), itemSettings()),
     LEVELED_RAIN_COLLECTOR(new LeveledRainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque())),
-    WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
-    //TODO redesign sprinkler
+    WATER_SHOWERER(new ShowerBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque().ticksRandomly()), itemSettings()),
     SPRINKLER(new SprinklerBlock(), itemSettings()),
+    WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
 
-    //TODO add barrel planters/crate planters?
-    //BIG_FLOWER_POT_BLOCK(new BigFlowerPotBlock(Block.Settings.copy(Blocks.FARMLAND).ticksRandomly().requiresTool().strength(1.5F, 3.0F).sounds(ModBlockSoundGroup.POT.sound)), itemSettings()),
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     WITCH_LADLE(new LadleBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().noCollision().nonOpaque()), itemSettings()),
     MINER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(Blocks.STONECUTTER).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    //HUNTING_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     //TODO redesign storekeepers counter symbol, its ugly
+    //TODO redesign furniture textures, theyre ugly too lowkey
     STOREKEEPS_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     COUNTER_DRAWER(new CounterDrawerBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     COUNTER(new CounterBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
@@ -108,8 +105,9 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     CURTAIN(new CurtainBlock(), itemSettings()),
     FIREGUARD(new FireGuardBlock(AbstractBlock.Settings.of(Material.METAL).sounds(BlockSoundGroup.CHAIN).nonOpaque()), itemSettings()),
 
-    BRAZIER(new BrazierBlock(15, 1), itemSettings()),
+    BRAZIER(new BrazierBlock(15, 2), itemSettings()),
     SOUL_BRAZIER(new BrazierBlock(10, 2), itemSettings()),
+    IRON_BRAZIER(new IronBrazierBlock(true, 1, AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).luminance(s -> 15).nonOpaque().ticksRandomly()), itemSettings()),
 
     CANDLE_BOTTLE(new CandleBottleBlock(), itemSettings()),
     
@@ -931,12 +929,6 @@ public enum ModBlocks implements ItemEnum, BlockEnum {
     //RUSTED_CHEST(new RustedChestBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     //CHAINED_RUSTED_CHEST(new RustedChestBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     //BONFIRE(new ModCampfireBlock(true, 1, Block.Settings.copy(Blocks.CAMPFIRE)), itemSettings().rarity(Rarity.RARE)),
-
-    //cave paintings
-    //ERDSTONE_CAVE_PAINTING_PORTRAIT(new CavePainting(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2), "portrait"), itemSettings().group(BOOKS)),
-    //ERDSTONE_CAVE_PAINTING_ZOMBIES(new CavePainting(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2), "zombie"), itemSettings().group(BOOKS)),
-    //ERDSTONE_CAVE_PAINTING_HOME(new CavePainting(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2), "home"), itemSettings().group(BOOKS)),
-    //ERDSTONE_CAVE_PAINTING_FAMILY(new CavePainting(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2), "family"), itemSettings().group(BOOKS)),
 
     //rare sandstone temple blocks go here
     //CHISELED_SANDSTONE_PORTAL_COMING(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings().rarity(Rarity.UNCOMMON).group(BOOKS)),

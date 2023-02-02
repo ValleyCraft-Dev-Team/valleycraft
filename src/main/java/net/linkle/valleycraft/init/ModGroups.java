@@ -12,6 +12,7 @@ public class ModGroups {
     private static final Item INGREDIENTS_ICON = Reg.register("ingredients_icon", new Item(itemSettings()));
     private static final Item REGULAR_DISHES_ICON = Reg.register("regular_dishes_icon", new Item(itemSettings()));
     private static final Item ITEMS_ICON = Reg.register("items_icon", new Item(itemSettings()));
+    private static final Item GUIDEBOOK_ICON = Reg.register("guidebook_icon", new Item(itemSettings()));
 
     public static final ItemGroup FLORA_GROUP = create("flora", () -> ModNaturalBlocks.WILD_FIRE_PEPPER);
 

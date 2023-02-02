@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:leather_necklace"
+  },
+  "addition": {
+    "item": "valleycraft:guardian_spike"
+  },
+  "result": {
+    "item": "valleycraft:guardian_spike_talisman"
+  }
+}

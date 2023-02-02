@@ -34,7 +34,7 @@ public class SprinklerBlock extends Block {
     protected static final VoxelShape SHAPE;
 
     public SprinklerBlock() {
-        super(Settings.of(Material.METAL, MapColor.STONE_GRAY).strength(3.0f).sounds(BlockSoundGroup.STONE).nonOpaque());
+        super(Settings.of(Material.METAL, MapColor.STONE_GRAY).strength(3.0f).sounds(BlockSoundGroup.CHAIN).nonOpaque().breakInstantly());
         setDefaultState(stateManager.getDefaultState().with(POWERED, false).with(FILLED, false));
     }
     

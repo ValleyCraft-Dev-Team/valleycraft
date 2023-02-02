@@ -38,11 +38,6 @@ public class CraftingMatBauble extends CraftingTableBlock {
     }
 
     @Override
-    public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add( Text.translatable("item.valley.bauble.tooltip").formatted(Formatting.GRAY));
-    }
-
-    @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;
     }

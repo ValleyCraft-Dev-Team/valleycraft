@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing",
+  "group": "greatswords",
+  "base": {
+    "item": "valleycraft:iron_necklace"
+  },
+  "addition": {
+    "item": "minecraft:echo_shard"
+  },
+  "result": {
+    "item": "valleycraft:echo_shard_talisman"
+  }
+}

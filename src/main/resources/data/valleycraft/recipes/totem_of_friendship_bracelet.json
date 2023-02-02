@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:leather_bracelet"
+  },
+  "addition": {
+    "item": "valleycraft:totem_of_friendship"
+  },
+  "result": {
+    "item": "valleycraft:totem_of_friendship_bracelet"
+  }
+}

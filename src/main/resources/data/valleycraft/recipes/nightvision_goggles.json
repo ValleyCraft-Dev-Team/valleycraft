@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C# ",
+    "# V",
+    " V "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:leather_strap"
+    },
+    "C": {
+      "item": "valleycraft:thermal_blaze_core"
+    },
+    "V": {
+      "item": "valleycraft:echo_shard_lense"
+    }
+  },
+  "result": {
+    "item": "valleycraft:nightvision_goggles",
+    "count": 1
+  }
+}

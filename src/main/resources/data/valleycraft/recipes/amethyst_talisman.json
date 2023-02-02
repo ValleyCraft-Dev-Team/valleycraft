@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:iron_necklace"
+  },
+  "addition": {
+    "item": "minecraft:amethyst"
+  },
+  "result": {
+    "item": "valleycraft:amethyst_talisman"
+  }
+}

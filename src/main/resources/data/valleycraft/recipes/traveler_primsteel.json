@@ -1,6 +1,5 @@
 {
   "type": "minecraft:smithing",
-  "group": "travelers",
   "base": {
     "item": "valleycraft:knife_primsteel"
   },

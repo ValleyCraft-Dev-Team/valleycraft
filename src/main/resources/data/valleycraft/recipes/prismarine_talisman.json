@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:iron_necklace"
+  },
+  "addition": {
+    "item": "minecraft:prismarine_crystals"
+  },
+  "result": {
+    "item": "valleycraft:prismarine_talisman"
+  }
+}

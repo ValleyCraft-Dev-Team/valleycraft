@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:iron_necklace"
+  },
+  "addition": {
+    "item": "minecraft:brimstone"
+  },
+  "result": {
+    "item": "valleycraft:brimstone_necklace"
+  }
+}

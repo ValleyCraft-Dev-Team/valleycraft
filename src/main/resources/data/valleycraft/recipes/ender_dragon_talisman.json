@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:leather_necklace"
+  },
+  "addition": {
+    "item": "valleycraft:ender_dragon_eye"
+  },
+  "result": {
+    "item": "valleycraft:ender_dragon_talisman"
+  }
+}

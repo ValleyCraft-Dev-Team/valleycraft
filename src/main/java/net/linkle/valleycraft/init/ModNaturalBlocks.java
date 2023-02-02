@@ -1,7 +1,7 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.init.ModGroups.INGREDIENTS;
-import static net.linkle.valleycraft.init.ModGroups.REGULAR_DISHES;
+import static net.linkle.valleycraft.init.ModGroups.*;
+import static net.linkle.valleycraft.init.ModGroups.FLORA_GROUP;
 import static net.linkle.valleycraft.util.PlantBlockSettings.*;
 import static net.linkle.valleycraft.util.PlantGroundPredicates.ARID_DESERT;
 import static net.linkle.valleycraft.util.PlantVoxelShapes.*;
@@ -302,6 +302,12 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.IRON_ORE).requiresTool(), UniformIntProvider.create(2, 6)), itemSettings()),
     DEEPSLATE_FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
     NETHER_FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
+
+    //cave paintings
+    ERDSTONE_CAVE_PAINTING_PORTRAIT(new CavePainting(Block.Settings.copy(Blocks.STONE), "portrait"), itemSettings()),
+    ERDSTONE_CAVE_PAINTING_ZOMBIES(new CavePainting(Block.Settings.copy(Blocks.STONE), "zombie"), itemSettings()),
+    ERDSTONE_CAVE_PAINTING_HOME(new CavePainting(Block.Settings.copy(Blocks.STONE), "home"), itemSettings()),
+    ERDSTONE_CAVE_PAINTING_FAMILY(new CavePainting(Block.Settings.copy(Blocks.STONE), "family"), itemSettings()),
 
     // Tree Seeds
     DIVINE_ACORN(new SeedBlock(Blocks.OAK_SAPLING)),

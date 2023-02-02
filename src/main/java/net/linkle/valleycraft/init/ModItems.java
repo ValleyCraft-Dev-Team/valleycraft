@@ -99,6 +99,7 @@ public enum ModItems implements ItemEnum {
     DIAMOND_PLATE(new Item(itemSettings())),
     NETHERITE_NUGGET(new Item(itemSettings())),
     SPYGLASS_LENSE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
+    ECHO_SHARD_LENSE(new Item(itemSettings().rarity(Rarity.RARE))),
     HOT_PLATE(new Item(itemSettings().rarity(Rarity.RARE))),
     AGITATOR(new Item(itemSettings().rarity(Rarity.RARE))),
     THERMAL_BLAZE_CORE(new Item(itemSettings().rarity(Rarity.RARE))),
