@@ -1,11 +1,11 @@
 {
-  "name": "Warm Letter",
-  "landing_text": "Hello, I hope this note reaches you in your native tongue, I wasn't sure if it was Midlander, Allager, Moblin, Daera, or something else- so I assumed Midlander. You may be asking yourself how it arrived to you- fret not about it, dear friend; Just get out there and explore.",
+  "name": "Strange Letter",
+  "landing_text": "Hello, I hope this note reaches you in your native tongue, I wasn't sure if it was Midlander, Allager, Moblin, or something else- so I assumed Midlander. You may be asking yourself how it arrived to you- fret not about it right now, dear friend; Just get out there and explore.",
   "version": "0",
-  "subtitle": "    ",
   "pamphlet": "true",
   "show_progress": "false",
-  "creative_tab": "valleycraft:books",
+  "creative_tab": "Books",
+  "subtitle": "From, Hael",
   "use_blocky_font": "true",
   "model": "valleycraft:book_warm_letter",
   "book_texture": "patchouli:textures/gui/book_green.png"

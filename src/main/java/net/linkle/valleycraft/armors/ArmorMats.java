@@ -70,7 +70,8 @@ public enum ArmorMats implements ArmorMaterial {
 
     MOGARS_BROKEN("mogars_broken_golemite_goggles", ints(1,5,6,2), 10, 15, equipChain(), items(IRON_INGOT)),
     MOGARS_FIXED("mogars_fixed_golemite_goggles", ints(2,5,6,2), 10, 15, equipChain(), items(IRON_INGOT)),
-    COPPER_AVIATORS("copper_aviators", ints(2,2,2,2), 10, 15, equipChain(), items(COPPER_INGOT, AMETHYST_SHARD)),
+    AMETHYST_GOGGLES("amethyst_goggles", ints(2,2,2,2), 10, 15, equipChain(), items(COPPER_INGOT, AMETHYST_SHARD)),
+    NIGHTVISION_GOGGLES("nightvision_goggles", ints(2,2,2,2), 10, 15, equipChain(), items(COPPER_INGOT, AMETHYST_SHARD)),
     PIGLIN("piglin", ints(2), 10, 15, equipLeather(), items(Items.LEATHER)),
     PILLAGER("pillager", ints(3), 10, 15, equipLeather(), items(Items.LEATHER)),
     STEVE("ruined_steve_zombie", ints(2), 10, 15, equipLeather(), items(Items.LEATHER)),

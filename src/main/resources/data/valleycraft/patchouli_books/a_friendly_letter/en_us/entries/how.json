@@ -1,5 +1,5 @@
 {
-  "name": "\"How did this appear?\"",
+  "name": "A Vital Recipe",
   "icon": "valleycraft:crafting_mat",
   "category": "valleycraft:test_category",
   "pages": [
@@ -11,12 +11,17 @@
     {
       "type": "patchouli:text",
       "title": "",
-      "text": "part with is a challenge. My book though is easy enough to conjure up with the right ingredients. Should you lose this one, simply prepare as follows:"
+      "text": "part with is a challenge. In the envelope with this note you should have noticed a book. It's a simple guide that should help you survive out here, written by yours truly, Hael. If you decide you don't want it, I implore you at least take the recipes to heart with you that I've included on the following page for equipment that will allow you to do more advanced crafting:"
     },
     {
       "type": "patchouli:crafting",
       "recipe": "valleycraft:crafting_mat",
-      "text": ""
+      "text": "Bundled Crafting Mat and Tools"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:crafting_table",
+      "text": "Crafting Table"
     }
   ]
 }

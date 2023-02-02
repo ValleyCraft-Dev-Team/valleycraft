@@ -93,7 +93,8 @@
   "item.valleycraft.clay_pot": "Clay Pot",
   "item.valleycraft.water_filled_clay_pot": "Water Clay Pot",
 
-  "item.valleycraft.copper_aviators": "Airship Pilot Goggles",
+  "item.valleycraft.amethyst_goggles": "Amethyst Goggles",
+  "item.valleycraft.nightvision_goggles": "Night Vision Goggles",
 
   "item.valleycraft.oak_seed": "Oak Acorn",
   "item.valleycraft.dark_oak_seed": "Dark Oak Acorn",
@@ -204,7 +205,7 @@
   "block.valleycraft.mixed_ore": "Mixed Ore",
   "block.valleycraft.deepslate_mixed_ore": "Deepslate Mixed Ore",
 
-  "block.valleycraft.crafting_mat": "Portable Crafting Mat",
+  "block.valleycraft.crafting_mat": "Bundled Crafting Mat and Tools",
 
   "block.valleycraft.garnet_lantern": "Nether Garnet Lantern",
   "block.valleycraft.amber_lantern": "Amber Lantern",
@@ -567,7 +568,7 @@
   "block.valleycraft.erdstone_target_block": "Ancient Erdstone Eye Sensor",
   "block.valleycraft.erdstone_dispenser": "Ancient Erdstone Dispenser",
 
-  "block.valleycraft.polished_adventurine": "Polished Adventurine",
+  "block.valleycraft.polished_adventurine": "Polished Adventurite",
 
   "block.valleycraft.erdstone_tiles_powered": "Imbued Erdstone Tiles",
   "block.valleycraft.chiseled_erdstone_powered": "Imbued Chiseled Erdstone",
@@ -1238,7 +1239,7 @@
 
   "item.valleycraft.wooden_oar": "Wooden Oar",
 
-  "block.valleycraft.adventurine": "Adventurine",
+  "block.valleycraft.adventurine": "Adventurite",
 
   "block.valleycraft.smallest_lilypads": "Tiny Lilypads",
   "block.valleycraft.small_lilypads": "Small Lilypads",
