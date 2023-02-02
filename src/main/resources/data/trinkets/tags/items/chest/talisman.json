@@ -3,20 +3,19 @@
   "values": [
     "valleycraft:iron_necklace",
     "valleycraft:amethyst_talisman",
+    "valleycraft:brimstone_necklace",
     "valleycraft:diamond_talisman",
+    "valleycraft:echo_shard_talisman",
     "valleycraft:emerald_talisman",
     "valleycraft:ender_pearl_talisman",
     "valleycraft:nether_quartz_talisman",
     "valleycraft:prismarine_talisman",
-    "valleycraft:echo_shard_talisman",
 
     "valleycraft:leather_necklace",
     "valleycraft:guardian_spike_talisman",
     "valleycraft:scute_necklace",
 
     "valleycraft:elder_guardian_spike_keepsake",
-    "valleycraft:ender_dragon_talisman",
-
-    "valleycraft:brimstone_necklace"
+    "valleycraft:ender_dragon_talisman"
   ]
 }

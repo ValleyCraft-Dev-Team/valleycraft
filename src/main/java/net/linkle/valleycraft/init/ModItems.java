@@ -45,7 +45,6 @@ public enum ModItems implements ItemEnum {
     ANCIENT_FLOWER_SEEDS(new AliasedBlockItem(ModNaturalBlocks.ANCIENT_FLOWERS.block, itemSettings().rarity(Rarity.RARE))),
     AMETHYSTLE_SEEDS(new AliasedBlockItem(ModNaturalBlocks.AMETHYSTLES.block, itemSettings())),
 
-    //TODO retexture glow ball splat
     GLOW_BALL(new GlowBallItem(itemSettings().group(VC_TOOLS))),
     FIBER(new Item(itemSettings())),
     DRIED_FIBER(new Item(itemSettings())),
@@ -126,8 +125,8 @@ public enum ModItems implements ItemEnum {
     TOTEM_OF_APPRECIATION(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(1))),
     //TOTEM_OF_VISITORS(new UniqueMythicItem(itemSettings().rarity(RARE).maxCount(1))),
     TOTEM_OF_FRIENDSHIP(new Item(itemSettings().group(VC_ITEMS).rarity(EPIC).maxCount(1))),
-    BOMB_BAG(new BombBagItem(itemSettings().group(VC_ITEMS))),
-    ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_ITEMS))),
+    BOMB_BAG(new BombBagItem(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON))),
+    ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_TOOLS))),
     SEED_BAG(new SeedBagItem(itemSettings().group(VC_ITEMS))),
 
     //record items
