@@ -3,10 +3,6 @@
   "values": [
     "valleycraft:leather_bracelet",
     "valleycraft:totem_of_undying_bracelet",
-    "valleycraft:totem_of_friendship_bracelet",
-
-    "minecraft:clock",
-    "minecraft:compass",
-    "minecraft:recovery_compass",
+    "valleycraft:totem_of_friendship_bracelet"
   ]
 }
