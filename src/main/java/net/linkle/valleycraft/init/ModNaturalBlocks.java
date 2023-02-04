@@ -219,6 +219,7 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
     //DEEPSLATE_CAVE_GRASS(new CaveGrassStoneBlock(Blocks.DEEPSLATE, ModBlockSoundGroup.MOSS_DEEPSLATE.sound), itemSettings()),
 
     DRY_DIRT(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
+    IRON_RICH_DIRT(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
     SANDY_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),
     MOSSY_STONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     CARMINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
@@ -248,6 +249,8 @@ public enum ModNaturalBlocks implements ItemEnum, BlockEnum {
 
     ICE_ORE(new IceOreBlock(Block.Settings.copy(Blocks.IRON_ORE).sounds(BlockSoundGroup.GLASS).nonOpaque().slipperiness(0.98f), UniformIntProvider.create(2, 6)), itemSettings()),
     PACKED_SNOW(new Block(Block.Settings.copy(Blocks.SNOW_BLOCK).strength(0.3f).sounds(BlockSoundGroup.SNOW)), itemSettings()),
+
+    QUICKSAND(new QuicksandBlock(AbstractBlock.Settings.copy(Blocks.SAND).sounds(BlockSoundGroup.SAND).noCollision().strength(0.5F)), itemSettings()),
 
     ROUGH_SANDSTONE(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
     SCALDING_SANDSTONE(new ScaldingBlock(Block.Settings.copy(Blocks.SANDSTONE).ticksRandomly().luminance(s ->3)), itemSettings()),
