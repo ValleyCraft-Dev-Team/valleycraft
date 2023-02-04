@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:leather_bracelet",
     "valleycraft:totem_of_undying_bracelet",
     "valleycraft:totem_of_friendship_bracelet"
   ]

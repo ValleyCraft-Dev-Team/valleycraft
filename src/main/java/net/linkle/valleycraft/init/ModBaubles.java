@@ -18,7 +18,7 @@ public enum ModBaubles implements ItemEnum {
     //otherwise create an item class that extends BaubleItem
     //and use that for the individual bauble.
 
-    LEATHER_BRACELET(new Item(itemSettings().group(CLOTHING))),
+    //LEATHER_BRACELET(new Item(itemSettings().group(CLOTHING))),
     TOTEM_OF_UNDYING_BRACELET(new Item(itemSettings().group(CLOTHING).rarity(RARE))),
     TOTEM_OF_FRIENDSHIP_BRACELET(new Item(itemSettings().group(CLOTHING).rarity(EPIC))),
 
