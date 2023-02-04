@@ -96,7 +96,8 @@ public enum ModItems implements ItemEnum {
     IRON_SCRAP(new Item(itemSettings())),
     BRASIUM_INGOT(new Item(itemSettings())),
     ROSEGOLD_INGOT(new Item(itemSettings())),
-    DIAMOND_PLATE(new Item(itemSettings())),
+    DIAMOND_FRAGMENTS(new Item(itemSettings())),
+    //DIAMOND_PLATE(new Item(itemSettings())),
     NETHERITE_NUGGET(new Item(itemSettings())),
     SPYGLASS_LENSE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
     ECHO_SHARD_LENSE(new Item(itemSettings().rarity(Rarity.RARE))),
@@ -104,9 +105,6 @@ public enum ModItems implements ItemEnum {
     AGITATOR(new Item(itemSettings().rarity(Rarity.RARE))),
     THERMAL_BLAZE_CORE(new Item(itemSettings().rarity(Rarity.RARE))),
     STRANGE_CATALYST(new Item(itemSettings().rarity(RARE))),
-
-    //pets
-    DOG_BISCUIT(new FoodItem(itemSettings().group(REGULAR_DISHES), 2, 0.4f, true)),
 
     //souls
     //SOUL_ITEM_FADING(new SoulItem(itemSettings().group(BOOKS).fireproof(), 30)),

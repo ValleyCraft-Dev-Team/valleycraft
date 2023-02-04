@@ -15,6 +15,7 @@ import net.minecraft.util.registry.Registry;
 public enum RegularFoodItems implements ItemEnum {
 
     // cooked
+    CHEESE_SLICE(new FoodItem(settings(), 2, 0.4f)),
     BAKED_APPLE(new FoodItem(settings(), 6, 0.6f)),
     BAKED_BEETROOT(new FoodItem(settings(), 2, 0.6f)),
     BAKED_HEARTY_BEETROOT(new FoodItem(settings(), 7, 0.6f)),
@@ -54,6 +55,7 @@ public enum RegularFoodItems implements ItemEnum {
     COOKED_TRIPE(new FoodItem(settings(), 8, 1f, true)),
 
     // pastries
+    DOG_BISCUIT(new FoodItem(settings().group(REGULAR_DISHES), 2, 0.4f, true)),
     HARDTACK(new FastFoodItem(settings(), 3, 0.8f)),
     CORN_BREAD(new FoodItem(settings(), 3, 0.9f)),
     CHOCOLATE(new FastFoodItem(settings(), 2, 0.5f)),

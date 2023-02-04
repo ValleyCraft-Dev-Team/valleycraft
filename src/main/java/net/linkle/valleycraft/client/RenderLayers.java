@@ -346,6 +346,19 @@ class RenderLayers {
         put(ICE_ORE, translucent);
         put(DEEPSLATE_ICE_ORE, translucent);
 
+        put(DAUB_CHIMNEY, cullout);
+        put(SANDSTONE_BRICK_CHIMNEY, cullout);
+        put(RED_SANDSTONE_BRICK_CHIMNEY, cullout);
+        put(SCORCHSTONE_BRICK_CHIMNEY, cullout);
+        put(SALT_BRICK_CHIMNEY, cullout);
+        put(SERPENTINITE_BRICK_CHIMNEY, cullout);
+        put(BASALT_BRICK_CHIMNEY, cullout);
+        put(ADVENTURINE_BRICK_CHIMNEY, cullout);
+        put(PURPUR_BLOCK_CHIMNEY, cullout);
+        put(END_STONE_BRICK_CHIMNEY, cullout);
+        put(MARBLE_BRICK_CHIMNEY, cullout);
+        put(CARMINE_BRICK_CHIMNEY, cullout);
+
         put(COBBLESTONE_BRICK_CHIMNEY, cullout);
         put(DIORITE_BRICK_CHIMNEY, cullout);
         put(GRANITE_BRICK_CHIMNEY, cullout);

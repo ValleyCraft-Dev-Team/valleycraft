@@ -54,7 +54,7 @@ public enum ArmorMats implements ArmorMaterial {
 
     CIRCLET_GOLD("golden_circlet", ints(0,0,0,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     CIRCLET_IRON("iron_circlet", ints(0,0,0,1), 15, 9, equipChain(), items(Items.IRON_INGOT)),
-    CIRCLET_DIAMOND("diamond_circlet", ints(0,0,0,2), 15, 9, equipChain(), items(ModItems.DIAMOND_PLATE)),
+    CIRCLET_DIAMOND("diamond_circlet", ints(0,0,0,2), 15, 9, equipChain(), items(Items.DIAMOND)),
     CIRCLET_ROSEGOLD("rosegold_circlet", ints(0,0,0,2), 15, 15, equipChain(), items(ModItems.ROSEGOLD_INGOT)),
     CIRCLET_NETHERITE("netherite_circlet", ints(0,0,0,3), 15, 15, equipChain(), items(Items.NETHERITE_INGOT)),
     CIRCLET_PRIMSTEEL("primsteel_circlet", ints(0,0,0,1), 15, 15, equipChain(), items(ModItems.PRIMSTEEL_INGOT)),

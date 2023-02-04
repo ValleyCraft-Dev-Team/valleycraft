@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "valleycraft:block/erdstone",
+		"0": "minecraft:block/stone",
 		"2": "valleycraft:block/cave_home",
-		"particle": "valleycraft:block/erdstone"
+		"particle": "minecraft:block/stone"
 	},
 	"elements": [
 		{

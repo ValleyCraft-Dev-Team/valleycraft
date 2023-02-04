@@ -4,7 +4,7 @@
     "item": "valleycraft:knife_diamond"
   },
   "addition": {
-    "tag": "c:diamond_plate_ingots"
+    "tag": "c:diamonds"
   },
   "result": {
     "item": "valleycraft:traveler_diamond"

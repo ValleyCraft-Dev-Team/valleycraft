@@ -4,7 +4,7 @@
     "item": "minecraft:diamond_sword"
   },
   "addition": {
-    "tag": "c:diamond_plate_ingots"
+    "tag": "c:diamonds"
   },
   "result": {
     "item": "valleycraft:diamond_greatsword"

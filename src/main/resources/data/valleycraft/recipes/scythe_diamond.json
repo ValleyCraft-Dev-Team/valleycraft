@@ -4,7 +4,7 @@
     "item": "minecraft:diamond_hoe"
   },
   "addition": {
-    "tag": "c:diamond_plate_ingots"
+    "tag": "c:diamonds"
   },
   "result": {
     "item": "valleycraft:scythe_diamond"

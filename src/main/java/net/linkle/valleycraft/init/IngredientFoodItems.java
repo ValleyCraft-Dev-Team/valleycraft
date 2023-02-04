@@ -21,7 +21,6 @@ import net.linkle.valleycraft.Main;
 public enum IngredientFoodItems implements ItemEnum {
 
     MILK(new BottleItem(settings().maxCount(16), 0, 0.2f).setMilk()),
-    CHEESE_SLICE(new FoodItem(settings(), 2, 0.4f)),
     MOREL_OIL(new Tier1Bottle(settings().maxCount(16), 2, 5, StatusEffects.SLOWNESS).hideTooltip()),
 
     GLOW_BERRY_JUICE(new GlintBottleItem(settings().maxCount(16), 4, 0.5f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 5 * 20)))
