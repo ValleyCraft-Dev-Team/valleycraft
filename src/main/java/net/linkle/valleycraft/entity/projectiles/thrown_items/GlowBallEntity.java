@@ -11,6 +11,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -28,13 +29,13 @@ public class GlowBallEntity extends ThrownItemEntity {
     public GlowBallEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
     }
-
-    public GlowBallEntity(World world, LivingEntity owner) {
-        super(ModEntityType.GLOW_BALL, owner, world);
+    
+    private GlowBallEntity(World world, PlayerEntity user) {
+        super(ModEntityType.THROWN_ROCK.type(), user, world);
     }
-
-    public GlowBallEntity(World world, double x, double y, double z) {
-        super(ModEntityType.GLOW_BALL, x, y, z, world);
+    
+    public static GlowBallEntity create(World world, PlayerEntity user) {
+        return new GlowBallEntity(world, user);
     }
     
     @Override

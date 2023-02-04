@@ -13,11 +13,11 @@ public class GlowBallItem extends ThrowableItem {
     
     @Override
     protected ThrownItemEntity newThrownEntity(World world, PlayerEntity user) {
-        return new GlowBallEntity(world, user);
+        return GlowBallEntity.create(world, user);
     }
     
     @Override
     protected int getCooldownTick() {
-        return 1 * 10;
+        return 1 * 5;
     }
 }
