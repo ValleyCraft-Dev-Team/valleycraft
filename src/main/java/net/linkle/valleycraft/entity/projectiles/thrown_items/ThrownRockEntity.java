@@ -7,6 +7,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.util.hit.EntityHitResult;
@@ -19,12 +20,12 @@ public class ThrownRockEntity extends ThrownItemEntity {
         super(entityType, world);
     }
 
-    public ThrownRockEntity(World world, LivingEntity owner) {
-        super(ModEntityType.THROWN_ROCK, owner, world);
+    private ThrownRockEntity(World world, PlayerEntity user) {
+        super(ModEntityType.THROWN_ROCK.type(), user, world);
     }
-
-    public ThrownRockEntity(World world, double x, double y, double z) {
-        super(ModEntityType.THROWN_ROCK, x, y, z, world);
+    
+    public static ThrownRockEntity create(World world, PlayerEntity user) {
+        return new ThrownRockEntity(world, user);
     }
 
     @Override

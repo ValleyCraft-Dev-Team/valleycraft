@@ -30,10 +30,6 @@ class ColorProvider {
             return BiomeColors.getGrassColor(world, pos);
         }, ModNaturalBlocks.SHORT_GRASS);
         
-        itemColor((stack, tintIndex) -> {
-            return GrassColors.getColor(0.5, 1.0);
-        }, ModNaturalBlocks.SHORT_GRASS);
-        
         blockColor((state, world, pos, tintIndex) -> {
             if (world == null || pos == null) return -1;
             return BiomeColors.getWaterColor(world, pos);

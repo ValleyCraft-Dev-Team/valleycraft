@@ -14,7 +14,7 @@ public class RockItem extends ThrowableItem {
     
     @Override
     protected ThrownItemEntity newThrownEntity(World world, PlayerEntity user) {
-        return new ThrownRockEntity(world, user);
+        return ThrownRockEntity.create(world, user);
     }
     
     @Override
