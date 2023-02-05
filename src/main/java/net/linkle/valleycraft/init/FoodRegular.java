@@ -36,6 +36,7 @@ public enum FoodRegular implements ItemEnum {
     COOKED_TROPICAL_FISH(new FoodItem(settings(), 4, 0.6f)),
     COOKED_ABYSSWATCHER(new FoodItem(settings(), 6, 0.7f)),
     COOKED_STONEROLLER_MINNOW(new FoodItem(settings(), 3, 0.4f)),
+    COOKED_SARDINE(new FoodItem(settings(), 3, 0.4f)),
     COOKED_RED_PORGY(new FoodItem(settings(), 4, 0.6f)),
     COOKED_PERCH(new FoodItem(settings(), 4, 0.6f)),
     COOKED_CLAM(new FoodItem(settings(), 4, 0.3f)),
