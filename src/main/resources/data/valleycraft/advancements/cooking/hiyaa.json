@@ -2,13 +2,13 @@
   "parent": "valleycraft:cooking/cavecooking",
   "display": {
     "title": {
-      "text": "\"Hiyyyya!\""
+      "text": "Cook Up Me Hearties, Yo Ho!"
     },
     "icon": {
       "item": "valleycraft:water_filled_clay_pot"
     },
     "description": {
-      "text": "Make a Clay Pot"
+      "text": "Make a clay pot for drinking or cooking"
     },
     "frame": "task"
   },

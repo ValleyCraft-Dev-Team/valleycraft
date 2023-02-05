@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#C#",
+    "V_V",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "C": {
+      "tag": "c:campfire_fuels"
+    },
+    "V": {
+      "item": "valleycraft:rope"
+    },
+    "_": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "result": {
+    "item": "valleycraft:brazier",
+    "count": 1
+  }
+}

@@ -10,7 +10,7 @@
       "tag": "minecraft:stone_crafting_materials"
     },
     "_": {
-      "item": "valleycraft:rocks"
+      "tag": "c:stone_slab_crafting_materials"
     },
     "C": {
       "tag": "c:furnace_crafting_recipe_fuels"

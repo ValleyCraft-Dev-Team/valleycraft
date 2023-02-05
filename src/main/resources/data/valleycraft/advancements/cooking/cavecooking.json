@@ -1,11 +1,11 @@
 {
-  "parent": "valleycraft:cooking/foodforthesoul",
+  "parent": "valleycraft:cooking/root",
   "display": {
     "title": {
       "text": "Caveman Culinaire"
     },
     "icon": {
-      "item": "valleycraft:cooked_lobster"
+      "item": "valleycraft:cooked_tripe"
     },
     "description": {
       "text": "Cook food on a campfire."

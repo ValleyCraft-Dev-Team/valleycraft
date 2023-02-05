@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:wilder_horizons/hello",
+  "parent": "valleycraft:wilder_horizons/root",
   "display": {
     "title": {
       "text": "Dear Fellow Traveler"
@@ -21,13 +21,7 @@
           {
             "items": [
               "valleycraft:skeletal_remains",
-              "valleycraft:skeletal_remains_slumped",
-              "valleycraft:skeletal_best_friend_remains",
-              "valleycraft:skeletal_mining_remains",
-              "minecraft:skeleton_skull",
-              "minecraft:wither_skeleton_skull",
-              "valleycraft:ribcage",
-              "valleycraft:wither_ribcage"
+              "minecraft:skeleton_skull"
             ]
           }
         ]

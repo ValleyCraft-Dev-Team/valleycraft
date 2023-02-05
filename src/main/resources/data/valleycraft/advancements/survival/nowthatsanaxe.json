@@ -8,7 +8,7 @@
       "item": "valleycraft:hatchet_stone"
     },
     "description": {
-      "text": "Craft or Smith a proper tool or weapon"
+      "text": "Craft or smith a proper tool or weapon"
     },
     "frame": "task"
   },
@@ -25,6 +25,7 @@
               "valleycraft:anthropologists_rock_pick",
               "valleycraft:ice_tongs",
               "valleycraft:coral_knife",
+              "valleycraft:coral_knife_guardian",
               "valleycraft:knife_wooden",
               "valleycraft:knife_stone",
               "valleycraft:knife_golden",

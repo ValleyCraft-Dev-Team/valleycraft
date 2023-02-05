@@ -2,13 +2,13 @@
   "parent": "valleycraft:wilder_horizons/allisrot",
   "display": {
     "title": {
-      "text": "\"-Has Merely Festered.\""
+      "text": "A Primordial Hate"
     },
     "icon": {
       "item": "valleycraft:infected_monster_guts"
     },
     "description": {
-      "text": "Entropy in action?"
+      "text": "Smells like death, tastes even worse."
     },
     "frame": "task",
     "hidden": "true"

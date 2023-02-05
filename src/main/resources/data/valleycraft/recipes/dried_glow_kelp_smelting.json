@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "valleycraft:glow_kelp"
+  },
+  "result": "minecraft:dried_glow_kelp"
+}

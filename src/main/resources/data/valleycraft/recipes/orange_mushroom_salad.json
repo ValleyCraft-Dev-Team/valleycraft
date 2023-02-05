@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "valleycraft:orange_mushroom"
+      "item": "valleycraft:jungle_cap"
     },
     {
       "item": "valleycraft:miners_lettuce"

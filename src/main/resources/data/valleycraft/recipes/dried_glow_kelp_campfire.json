@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "valleycraft:glow_kelp"
+  },
+  "result": "minecraft:dried_glow_kelp"
+}

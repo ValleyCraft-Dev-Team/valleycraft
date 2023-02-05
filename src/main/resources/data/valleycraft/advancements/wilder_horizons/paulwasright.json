@@ -1,26 +1,26 @@
 {
-  "parent": "valleycraft:wilder_horizons/allisblight",
+  "parent": "valleycraft:wilder_horizons/root",
   "display": {
     "title": {
-      "text": "An Ancient Hatred"
+      "text": "We Have A Spy In Our Ranks"
     },
     "icon": {
-      "item": "valleycraft:evil_crystal"
+      "item": "minecraft:feather"
     },
     "description": {
-      "text": "Find Crystallized Blight"
+      "text": "Paul was right?"
     },
     "frame": "task",
-    "hidden": "true"
+    "hidden": "false"
   },
   "criteria": {
-    "evil": {
+    "feather": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "valleycraft:evil_crystal"
+              "valleycraft:metal_feather"
             ]
           }
         ]
@@ -29,7 +29,7 @@
   },
   "requirements": [
     [
-      "evil"
+      "feather"
     ]
   ]
 }

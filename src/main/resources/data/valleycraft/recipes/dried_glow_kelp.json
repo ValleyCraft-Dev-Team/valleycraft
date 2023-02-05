@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:glow_kelp_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "valleycraft:dried_glow_kelp"
+  }
+}

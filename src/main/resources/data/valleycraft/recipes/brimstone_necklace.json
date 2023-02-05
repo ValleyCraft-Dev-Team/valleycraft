@@ -4,7 +4,7 @@
     "item": "valleycraft:iron_necklace"
   },
   "addition": {
-    "item": "minecraft:brimstone"
+    "item": "valleycraft:brimstone_shard"
   },
   "result": {
     "item": "valleycraft:brimstone_necklace"

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "vallecraft:pumpkin_slice"
+    }
+  },
+  "result": {
+    "item": "minecraft:pumpkin",
+    "count": 1
+  }
+}

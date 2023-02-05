@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:weeping_ghost_willow"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:slime_blob",
+    "count": 2
+  }
+}

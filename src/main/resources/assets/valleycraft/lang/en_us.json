@@ -615,10 +615,10 @@
 
   "block.valleycraft.algae": "Algae",
   "block.valleycraft.orange_kelp": "Maroon Kelp",
-  "block.valleycraft.orange_kelp_block": "Maroon Kelp Block",
+  "block.valleycraft.orange_kelp_block": "Dried Maroon Kelp Block",
 
   "block.valleycraft.glow_kelp": "Glimmer Kelp",
-  "block.valleycraft.glow_kelp_block": "Glimmer Kelp Block",
+  "block.valleycraft.glow_kelp_block": "Dried Glimmer Kelp Block",
 
   "block.valleycraft.big_fern": "Bracken Fern",
   "block.valleycraft.lush_bush": "Lush Creosote Bush",
@@ -679,7 +679,7 @@
 
   "block.valleycraft.brazier": "Tall Brazier",
   "block.valleycraft.soul_brazier": "Tall Soul Brazier",
-  "block.valleycraft.iron_brazier": "Brazier",
+  "block.valleycraft.iron_brazier": "Iron Brazier",
 
   "block.valleycraft.bee_nest_wall": "Bee Nest Wall",
   "block.valleycraft.white_poppy": "White Poppy",
@@ -944,7 +944,7 @@
   "item.valleycraft.totem_of_protection": "Totem of Protection",
 
   "item.valleycraft.moblin_talisman": "Moblin Talisman",
-  "item.valleycraft.flower_crown": "Flowering Azaelea Crown",
+  "item.valleycraft.flower_crown": "Flowering Azalea Crown",
   "item.valleycraft.dierdra_laurel": "Vine Crown",
   "item.valleycraft.turtle_chestplate": "Turtle Shell Chestplate",
   "item.valleycraft.turtle_leggings": "Turtle Shell Leggings",
@@ -1204,7 +1204,7 @@
   "item.valleycraft.cheese": "Cheese",
   "item.valleycraft.cheese_slice": "Slice of Cheese",
   "item.valleycraft.chocolate": "Chocolate",
-  "item.valleycraft.dried_orange_kelp": "Dried Titian Kelp",
+  "item.valleycraft.dried_orange_kelp": "Dried Maroon Kelp",
   "item.valleycraft.dried_glow_kelp": "Dried Glimmer Kelp",
   "item.valleycraft.pumpkin_pie_slice": "Slice of Pumpkin Pie",
   "item.valleycraft.apple_pie_slice": "Slice of Apple Pie",

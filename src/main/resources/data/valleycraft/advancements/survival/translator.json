@@ -2,13 +2,13 @@
   "parent": "valleycraft:survival/entrylog",
   "display": {
     "title": {
-      "text": "The Enchanted Translator"
+      "text": "\"Can I copy off your notes?\""
     },
     "icon": {
       "item": "valleycraft:book_runecalling"
     },
     "description": {
-      "text": "Acquire a Grimoire of Runecalling"
+      "text": "Make a Grimoire of Runecalling"
     },
     "frame": "goal",
     "hidden": "false"

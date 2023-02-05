@@ -65,6 +65,7 @@ public enum ItemsModded implements ItemEnum {
     DUCKS_FEATHER(new Item(itemSettings())),
     //DUCKS_EGG(new Item(itemSettings())),
     CROWS_FEATHER(new Item(itemSettings())),
+    METAL_FEATHER(new Item(itemSettings().rarity(RARE))),
     SLIME_BLOB(new Item(itemSettings())),
     //EVIL_CRYSTAL(new Item(itemSettings().rarity(UNCOMMON).fireproof())),
 

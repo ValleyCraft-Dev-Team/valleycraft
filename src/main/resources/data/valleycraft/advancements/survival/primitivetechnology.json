@@ -5,10 +5,10 @@
       "text": "Primitive Technology"
     },
     "icon": {
-      "item": "valleycraft:makeshift_axe"
+      "item": "valleycraft:makeshift_pickaxe"
     },
     "description": {
-      "text": "Craft a Makeshift tool"
+      "text": "Craft a makeshift tool"
     },
     "frame": "task"
   },
@@ -19,7 +19,6 @@
         "items": [
           {
             "items": [
-              "valleycraft:makeshift_spear",
               "valleycraft:makeshift_knife",
               "valleycraft:makeshift_axe",
               "valleycraft:makeshift_pickaxe",

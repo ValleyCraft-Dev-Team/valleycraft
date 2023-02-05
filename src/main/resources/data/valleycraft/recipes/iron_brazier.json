@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "_I_",
+    "ICI",
+    "_I_"
+  ],
+  "key": {
+    "_": {
+      "item": "minecraft:polished_deepslate_slab"
+    },
+    "I": {
+      "item": "minecraft:iron_bars"
+    },
+    "C": {
+      "item": "minecraft:campfire"
+    }
+  },
+  "result": {
+    "item": "valleycraft:iron_brazier",
+    "count": 1
+  }
+}

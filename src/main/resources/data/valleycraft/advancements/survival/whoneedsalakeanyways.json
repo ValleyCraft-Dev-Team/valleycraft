@@ -2,7 +2,7 @@
   "parent": "valleycraft:survival/craftingmat",
   "display": {
     "title": {
-      "text": "Who Needs A Lake Anyways"
+      "text": "Wells Are Overrated"
     },
     "icon": {
       "item": "valleycraft:rain_collector"

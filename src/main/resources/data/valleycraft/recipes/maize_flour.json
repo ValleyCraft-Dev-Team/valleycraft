@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "valleycraft:maize"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "valleycraft:maize_flour"
+  }
+}

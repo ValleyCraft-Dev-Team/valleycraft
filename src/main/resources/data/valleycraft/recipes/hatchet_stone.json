@@ -6,14 +6,14 @@
   ],
   "key": {
     "#": {
-      "tag": "c:stone_crafting_materials"
+      "tag": "minecraft:stone_crafting_materials"
     },
     "V": {
       "tag": "c:handles"
     }
   },
   "result": {
-    "item": "valleycraft:hatchet_wooden",
+    "item": "valleycraft:hatchet_stone",
     "count": 1
   }
 }

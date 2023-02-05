@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "###",
-    "VPV",
+    "VTV",
     "i i"
   ],
   "key": {
@@ -12,8 +12,8 @@
     "V": {
       "item": "valleycraft:leather_strap"
     },
-    "P": {
-      "item": "valleycraft:fur_clump"
+    "T": {
+      "item": "valleycraft:cloth"
     },
     "i": {
       "item": "minecraft:iron_ingot"
