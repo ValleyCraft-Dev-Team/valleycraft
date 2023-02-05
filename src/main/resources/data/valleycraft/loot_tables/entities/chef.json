@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 9,
+          "weight": 19,
           "name": "valleycraft:carrot_stew",
           "functions": [
             {
@@ -21,7 +21,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 14,
           "name": "valleycraft:stuffed_baked_potato",
           "functions": [
             {
@@ -35,7 +35,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "weight": 18,
           "name": "minecraft:bread",
           "functions": [
             {
@@ -49,6 +49,7 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 10,
           "name": "minecraft:emerald",
           "functions": [
             {
@@ -59,6 +60,16 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:iron_shovel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 11,
+          "name": "valleycraft:knife_iron"
         }
       ]
     },
