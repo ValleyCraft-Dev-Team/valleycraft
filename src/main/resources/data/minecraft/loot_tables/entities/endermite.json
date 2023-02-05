@@ -7,23 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "valleycraft:raw_endermite",
-          "functions": [
-            {
-              "function": "minecraft:furnace_smelt",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                    "flags": {
-                      "is_on_fire": true
-                    }
-                  }
-                }
-              ]
-            }
-          ]
+          "name": "valleycraft:raw_endermite"
         }
       ]
     }
