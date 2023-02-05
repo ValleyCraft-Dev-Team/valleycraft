@@ -2,9 +2,8 @@
   "replace": false,
   "values": [
     "valleycraft:volcanic_ash",
-    "valleycraft:abyssal_sand",
-    "valleycraft:deep_sea_sand",
     "valleycraft:sandy_gravel",
-    "valleycraft:shell_gravel"
+    "valleycraft:shell_gravel",
+    "valleycraft:nether_sand"
   ]
 }

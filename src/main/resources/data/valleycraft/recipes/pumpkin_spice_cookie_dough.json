@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "vallecraft:pumpkin_slice"
+      "item": "valleycraft:pumpkin_slice"
     },
     {
       "item": "minecraft:sugar"

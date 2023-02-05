@@ -24,7 +24,6 @@
     "valleycraft:golden_hauberk",
     "valleycraft:golden_breastplate",
     "valleycraft:golden_thigh_guards",
-    "valleycraft:golden_circlet",
     "valleycraft:knife_golden",
     "valleycraft:hatchet_golden",
     "valleycraft:scythe_golden",
@@ -32,19 +31,9 @@
     "valleycraft:dagger_golden",
     "valleycraft:traveler_golden",
     "valleycraft:totem_of_undying_bracelet",
-    "valleycraft:crown",
     "valleycraft:gold_scrap",
     "valleycraft:woodcutter_axe_golden",
-    "valleycraft:seaologer_rune_necklace",
-    "valleycraft:seaologer_token",
-    "valleycraft:totem_of_visitors_bracelet",
-    "valleycraft:totem_of_visitors",
     "valleycraft:totem_of_appreciation",
-    "valleycraft:totem_of_trade",
-    "valleycraft:ring",
-    "valleycraft:heart_medallion",
-    "valleycraft:piglin_childs_toy",
-    "valleycraft:piglin_necklace",
-    "valleycraft:polished_glowstone_chunk"
+    "valleycraft:totem_of_trade"
   ]
 }

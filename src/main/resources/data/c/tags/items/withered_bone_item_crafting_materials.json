@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#c:withered_skull_shards",
-    "valleycraft:wither_ribcage"
+    "#c:withered_skull_shards"
   ]
 }

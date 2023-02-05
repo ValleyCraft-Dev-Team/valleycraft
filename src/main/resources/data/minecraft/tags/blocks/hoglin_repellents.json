@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:brimstone_crystal",
-    "valleycraft:brimstone_lantern"
+    "valleycraft:brimstone_crystal"
   ]
 }

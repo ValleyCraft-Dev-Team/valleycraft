@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "valleycraft:milk",
+      "item": "valleycraft:milk"
     },
     {
       "item": "minecraft:egg"

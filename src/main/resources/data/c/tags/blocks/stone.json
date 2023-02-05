@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "#c:magma_stones",
-    "#c:cave_grass_blocks",
     "#c:falling_rocks",
     "valleycraft:erdstone",
     "valleycraft:carmine",
@@ -12,7 +11,6 @@
     "valleycraft:diabase",
     "valleycraft:serpentinite",
     "valleycraft:grimestone",
-    "valleycraft:limestone",
     "valleycraft:shiverstone",
     "valleycraft:verdantine",
     "valleycraft:marble",

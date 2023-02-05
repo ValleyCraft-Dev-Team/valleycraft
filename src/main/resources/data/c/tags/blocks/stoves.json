@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:stove",
     "valleycraft:brick_stove"
   ]
 }

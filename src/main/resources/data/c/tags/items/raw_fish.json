@@ -1,11 +1,12 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:raw_tropical_fish",
+    "minecraft:tropical_fish",
     "valleycraft:raw_squid",
     "valleycraft:raw_abysswatcher",
     "valleycraft:raw_stoneroller_minnow",
     "valleycraft:raw_red_porgy",
+    "valleycraft:raw_sardine",
     "valleycraft:raw_perch",
     "valleycraft:raw_glowsquid_tentacle"
   ]

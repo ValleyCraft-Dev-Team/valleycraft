@@ -3,7 +3,7 @@
   "values": [
     "minecraft:glowstone_dust",
     "minecraft:glow_berries",
-    "minecraft:glow_ink_sack",
-    "valleycraft:raw_glow_squid_tentacle"
+    "minecraft:glow_ink_sac",
+    "valleycraft:raw_glowsquid_tentacle"
   ]
 }

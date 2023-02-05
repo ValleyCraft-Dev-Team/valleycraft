@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:campfire_pot",
-    "valleycraft:stove",
     "valleycraft:brick_stove",
     "valleycraft:spike_trap",
     "valleycraft:mimic_flower",

@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-
     "valleycraft:snowflower",
     "valleycraft:black_dahlia",
     "valleycraft:fluffy_dandelion",
@@ -33,12 +32,6 @@
     "valleycraft:faded_soul_rose",
     "valleycraft:soul_rose",
     "valleycraft:blue_soul_rose",
-    "valleycraft:faded_soulspore_single",
-    "valleycraft:faded_soulspore",
-    "valleycraft:soulspore_single",
-    "valleycraft:soulspore",
-    "valleycraft:blue_soulspore_single",
-    "valleycraft:blue_soulspore",
     "valleycraft:wild_rice",
     "valleycraft:wild_wheat",
     "valleycraft:wild_potato",
