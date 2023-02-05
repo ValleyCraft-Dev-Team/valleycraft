@@ -2,9 +2,8 @@ package net.linkle.valleycraft.block;
 
 import java.util.Map;
 
-import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.init.BlocksModded;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.LeveledCauldronBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.player.PlayerEntity;
@@ -40,7 +39,7 @@ public class LeveledRainCollectorBlock extends LeveledCauldronBlock {
     
     public static void decrementFluidLevel(BlockState state, World world, BlockPos pos) {
         int level = state.get(LEVEL) - 1;
-        var newState = level == 0 ? ModBlocks.RAIN_COLLECTOR.getState() : state.with(LEVEL, level);
+        var newState = level == 0 ? BlocksModded.RAIN_COLLECTOR.getState() : state.with(LEVEL, level);
         world.setBlockState(pos, newState);
         world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(newState));
     }
@@ -57,7 +56,7 @@ public class LeveledRainCollectorBlock extends LeveledCauldronBlock {
                 player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, new ItemStack(Items.WATER_BUCKET)));
                 //player.incrementStat(Stats.USE_CAULDRON);
                 player.incrementStat(Stats.USED.getOrCreateStat(item));
-                world.setBlockState(pos, ModBlocks.RAIN_COLLECTOR.getState());
+                world.setBlockState(pos, BlocksModded.RAIN_COLLECTOR.getState());
                 world.playSound(null, pos, SoundEvents.ITEM_BUCKET_FILL, SoundCategory.BLOCKS, 1.0f, 1.0f);
                 world.emitGameEvent(null, GameEvent.FLUID_PICKUP, pos);
             }

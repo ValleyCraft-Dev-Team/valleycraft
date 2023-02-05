@@ -8,8 +8,8 @@ import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.registry.Registry;
 
-import static net.linkle.valleycraft.init.ModBlocks.*;
-import static net.linkle.valleycraft.init.ModNaturalBlocks.*;
+import static net.linkle.valleycraft.init.BlocksModded.*;
+import static net.linkle.valleycraft.init.BlocksNatural.*;
 
 import java.util.HashSet;
 

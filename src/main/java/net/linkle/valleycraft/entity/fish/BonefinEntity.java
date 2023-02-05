@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.entity.fish;
 
-import net.linkle.valleycraft.init.ModFishing;
+import net.linkle.valleycraft.init.Fishing;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.ActiveTargetGoal;
 import net.minecraft.entity.ai.goal.RevengeGoal;
@@ -25,6 +25,6 @@ public class BonefinEntity extends UndeadFishEntity implements Monster {
     
     @Override
     public ItemStack getBucketItem() {
-        return new ItemStack(ModFishing.BONEFIN_BUCKET);
+        return new ItemStack(Fishing.BONEFIN_BUCKET);
     }
 }

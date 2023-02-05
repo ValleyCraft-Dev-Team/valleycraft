@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " Q",
+    "VQ"
+  ],
+  "key": {
+    "V": {
+      "item": "valleycraft:fiber"
+    },
+    "Q": {
+      "item": "valleycraft:plank"
+    }
+  },
+  "result": {
+    "item": "valleycraft:makeshift_shovel",
+    "count": 1
+  }
+}
+

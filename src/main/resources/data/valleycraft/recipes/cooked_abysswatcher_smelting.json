@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:raw_abysswatcher"
+    }
+  ],
+  "result": "valleycraft:cooked_abysswatcher"
+}

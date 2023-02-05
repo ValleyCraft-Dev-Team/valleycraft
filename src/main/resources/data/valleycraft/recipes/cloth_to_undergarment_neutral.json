@@ -6,9 +6,9 @@
     }
   },
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "##",
+    "##",
+    "##"
   ],
   "result": {
     "item": "valleycraft:bikini_neutral_repaired"

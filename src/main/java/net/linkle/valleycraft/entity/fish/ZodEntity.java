@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.entity.fish;
 
-import net.linkle.valleycraft.init.ModFishing;
+import net.linkle.valleycraft.init.Fishing;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.ActiveTargetGoal;
 import net.minecraft.entity.ai.goal.RevengeGoal;
@@ -26,6 +26,6 @@ public class ZodEntity extends UndeadFishEntity implements Monster {
     
     @Override
     public ItemStack getBucketItem() {
-        return new ItemStack(ModFishing.ZOD_BUCKET);
+        return new ItemStack(Fishing.ZOD_BUCKET);
     }
 }

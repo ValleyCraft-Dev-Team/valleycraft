@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:cooked_rice"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "item": "valleycraft:fried_egg"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:fried_rice_and_eggs",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " V",
+    " V"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:rosegold_ingot"
+    },
+    "V": {
+      "item": "valleycraft:sturdy_handle"
+    }
+  },
+  "result": {
+    "item": "valleycraft:rosegold_pickaxe",
+    "count": 1
+  }
+}

@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:fire_pepper"
+    "minecraft:apple",
+    "minecraft:chorus_fruit",
+    "minecraft:melon_slice",
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries"
   ]
 }

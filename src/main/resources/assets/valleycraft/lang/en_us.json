@@ -172,15 +172,16 @@
   "item.valleycraft.iron_necklace": "Iron Necklace",
   "item.valleycraft.diamond_talisman": "Diamond Talisman",
   "item.valleycraft.amber_talisman": "Amber Talisman",
-  "item.valleycraft.coral_knife": "Spine Scalpel",
+  "item.valleycraft.coral_knife": "Orange Spine Scalpel",
   "item.valley.scalpel.tooltip": "Cuts Coral without damaging it.",
+  "item.valleycraft.coral_knife_guardian": "Blue Spine Scalpel",
 
   "item.valleycraft.feather": "Feather Hairpin",
   "item.valleycraft.crow_feather": "Crow Feather Hairpin",
   "item.valleycraft.seagull_feather": "Seagull Feather Hairpin",
   "item.valleycraft.duck_feather": "Duck Feather Hairpin",
-  "item.valleycraft.guardian_spike": "Guardian Spine",
-  "item.valleycraft.elder_guardian_spike": "Elder Guardian Spine",
+  "item.valleycraft.guardian_spike": "Orange Guardian Spine",
+  "item.valleycraft.elder_guardian_spike": "Blue Elder Guardian Spine",
   "item.valleycraft.ducks_egg": "Duck Egg",
 
   "item.valleycraft.snow_cap": "Snow Cap",
@@ -470,7 +471,7 @@
   "item.valleycraft.yellow_cloth": "Yellow Cloth Scrap",
 
   "item.valleycraft.handle": "Tool Handle",
-  "item.valleycraft.sturdy_handle": "Reinforced Tool Handle",
+  "item.valleycraft.sturdy_handle": "Sturdy Tool Handle",
   "item.valleycraft.reinforced_handle": "Specialized Tool Handle",
 
   "item.valleycraft.rosegold_ingot": "Rose Gold Ingot",
@@ -718,7 +719,7 @@
   "block.valleycraft.flowering_cactus": "Flowering Cactus",
   "block.valleycraft.black_dahlia": "Black Dahlia",
 
-  "block.valleycraft.fiber_bale": "Fiber Bale",
+  "block.valleycraft.fiber_bale": "Plant Fiber Bale",
   "block.valleycraft.salt_block": "Block of Salt",
   "block.valleycraft.rotten_flesh_block": "Block of Rotten Flesh",
   "block.valleycraft.sugarcane_bale": "Sugar Cane Bale",
@@ -917,6 +918,7 @@
   "item.valleycraft.maize_flour": "Maize Flour",
   "item.valleycraft.corn_bread_dough": "Maize Bread Dough",
   "item.valleycraft.corn_bread": "Maize Bread",
+  "item.valleycraft.glow_ball": "Ball of Glowing Goo",
 
   "item.valleycraft.fiber": "Plant Fiber",
   "item.valleycraft.dried_fiber": "Dried Plant Fiber",
@@ -930,7 +932,7 @@
   "item.valleycraft.cooked_beast_liver": "Cooked Liver",
 
   "item.valleycraft.monster_claw": "Sharp Claw",
-  "item.valleycraft.plant_fiber_string": "Fiber String",
+  "item.valleycraft.plant_fiber_string": "Plant Fiber String",
   "item.valleycraft.diamond_plate": "Diametal Alloy Ingot",
   "item.valleycraft.brasium_ingot": "Brasium Ingot",
 

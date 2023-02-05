@@ -1,7 +1,7 @@
 package net.linkle.valleycraft.block;
 
-import net.linkle.valleycraft.init.ModParticles;
-import net.linkle.valleycraft.init.ModSounds;
+import net.linkle.valleycraft.init.Particles;
+import net.linkle.valleycraft.init.Sounds;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -104,14 +104,14 @@ public class SprinklerBlock extends Block {
             double y = pos.getY()+0.75;
             double z = pos.getZ()+0.5;
             if (random.nextFloat() < 0.1f) {
-                world.playSound(x, y, z, ModSounds.SPRINKLER.sound, SoundCategory.BLOCKS, 0.4f, 1.0f, false);
+                world.playSound(x, y, z, Sounds.SPRINKLER.sound, SoundCategory.BLOCKS, 0.4f, 1.0f, false);
             }
             for (int i = 0; i < 6; i++) {
                 double speed = MathHelper.nextDouble(random, 0.2, 0.5);
                 double angle = random.nextDouble() * Math.PI*2.0;
                 double sin = Math.sin(angle);
                 double cos = Math.cos(angle);
-                world.addParticle(ModParticles.SPRINKLE, x+(sin*0.2), y, z+(cos*0.2), sin*speed, 0.2, cos*speed);
+                world.addParticle(Particles.SPRINKLE, x+(sin*0.2), y, z+(cos*0.2), sin*speed, 0.2, cos*speed);
             }
         }
     }

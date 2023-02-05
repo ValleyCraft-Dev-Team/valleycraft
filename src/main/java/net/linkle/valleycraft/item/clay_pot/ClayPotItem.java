@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.item.clay_pot;
 
-import net.linkle.valleycraft.init.ModItems;
+import net.linkle.valleycraft.init.ItemsModded;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.GlassBottleItem;
 import net.minecraft.item.ItemStack;
@@ -38,7 +38,7 @@ public class ClayPotItem extends GlassBottleItem {
                 if (world.getFluidState(blockPos).isIn(FluidTags.WATER)) {
                     world.playSound(user, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_BOTTLE_FILL, SoundCategory.NEUTRAL, 1.0F, 1.0F);
                     world.emitGameEvent(user, GameEvent.FLUID_PICKUP, blockPos);
-                    return TypedActionResult.success(this.fill(itemStack, user, new ItemStack(ModItems.WATER_FILLED_CLAY_POT)), world.isClient());
+                    return TypedActionResult.success(this.fill(itemStack, user, new ItemStack(ItemsModded.WATER_FILLED_CLAY_POT)), world.isClient());
                 }
             }
 

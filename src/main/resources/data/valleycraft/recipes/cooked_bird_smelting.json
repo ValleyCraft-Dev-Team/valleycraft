@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:raw_bird_thigh"
+    }
+  ],
+  "result": "valleycraft:cooked_bird"
+}

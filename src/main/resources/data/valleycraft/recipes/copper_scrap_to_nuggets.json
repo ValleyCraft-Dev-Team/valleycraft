@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:copper_scrap"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:copper_nugget",
+    "count": 4
+  }
+}

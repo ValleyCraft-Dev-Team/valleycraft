@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "tag": "c:cookable_seeds"
+    }
+  ],
+  "result": "valleycraft:baked_seeds"
+}

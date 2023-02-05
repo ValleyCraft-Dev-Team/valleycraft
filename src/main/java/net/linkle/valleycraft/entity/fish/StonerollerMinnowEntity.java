@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.entity.fish;
 
-import net.linkle.valleycraft.init.ModFishing;
+import net.linkle.valleycraft.init.Fishing;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.passive.FishEntity;
@@ -17,7 +17,7 @@ public class StonerollerMinnowEntity extends FishEntity {
 
     @Override
     public ItemStack getBucketItem() {
-        return new ItemStack(ModFishing.STONEROLLER_MINNOW_BUCKET);
+        return new ItemStack(Fishing.STONEROLLER_MINNOW_BUCKET);
     }
 
     @Override

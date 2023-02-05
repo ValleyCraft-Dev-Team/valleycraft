@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:milk",
+    },
+    {
+      "item": "valleycraft:maize_flour"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:atole_milk",
+    "count": 1
+  }
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:morel_oil"
+    "valleycraft:morel_oil",
+    "valleycraft:butter"
   ]
 }

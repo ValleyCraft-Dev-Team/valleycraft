@@ -1,0 +1,40 @@
+{
+  "parent": "valleycraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:plank"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "valleycraft:block_wattle_and_glass_plus",
+      "valleycraft:block_wattle_and_glass_cross",
+      "valleycraft:block_wattle_and_glass_plus_pane",
+      "valleycraft:block_wattle_and_glass_cross_pane",
+      "valleycraft:wattle_door",
+      "valleycraft:wattle_trapdoor",
+      "valleycraft:wattle_grate",
+      "valleycraft:wattle_bars",
+      "valleycraft:wattle_ladder",
+      "valleycraft:wattle_lattice",
+      "valleycraft:wattle_stool",
+      "valleycraft:wattle_chair",
+      "valleycraft:table",
+      "valleycraft:table_cloth"
+    ]
+  }
+}

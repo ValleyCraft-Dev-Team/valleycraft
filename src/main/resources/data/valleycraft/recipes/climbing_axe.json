@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "VD ",
+    " D "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:brasium"
+    },
+    "V": {
+      "item": "valleycraft:claw"
+    },
+    "D": {
+      "item": "valleycraft:reinforced_handle"
+    }
+  },
+  "result": {
+    "item": "valleycraft:climbing_axe",
+    "count": 1
+  }
+}

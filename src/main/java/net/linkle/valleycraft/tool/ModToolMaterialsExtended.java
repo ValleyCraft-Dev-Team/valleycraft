@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.tool;
 
-import net.linkle.valleycraft.init.ModItems;
+import net.linkle.valleycraft.init.ItemsModded;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
@@ -13,10 +13,10 @@ import java.util.function.Supplier;
 public enum ModToolMaterialsExtended implements ToolMaterial {
 
     PRIMSTEEL_EXTENDED(2, 285, 5.0F, 1.5F, 18, () -> {
-        return Ingredient.ofItems(ModItems.PRIMSTEEL_INGOT);
+        return Ingredient.ofItems(ItemsModded.PRIMSTEEL_INGOT);
     }),
     ROSEGOLD_EXTENDED(1, 660, 7.0F, 2.0F, 15, () -> {
-        return Ingredient.ofItems(ModItems.ROSEGOLD_INGOT);
+        return Ingredient.ofItems(ItemsModded.ROSEGOLD_INGOT);
     }),
     //GOLEMITE_EXTENDED (2, 1057, 8.0F, 2.5F, 5, () -> {
     //    return Ingredient.ofItems(ModItems.GOLEMITE_INGOT);

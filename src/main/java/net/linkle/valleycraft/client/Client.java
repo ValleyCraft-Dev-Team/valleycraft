@@ -6,15 +6,14 @@ import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.client.armor.ArmorRenderers;
 import net.linkle.valleycraft.client.trinket.TrinketRenderers;
 import net.linkle.valleycraft.entity.client.armor.ClothArmorRenderer;
-import net.linkle.valleycraft.init.ModArmors;
 import net.linkle.valleycraft.init.ModBlockEntityType;
-import net.linkle.valleycraft.init.ModEntityType;
-import net.linkle.valleycraft.init.ModParticles;
+import net.linkle.valleycraft.init.EntityType;
+import net.linkle.valleycraft.init.Particles;
 import net.linkle.valleycraft.network.ClientNetwork;
 import net.linkle.valleycraft.util.ModModelPredicateProvider;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
-import static net.linkle.valleycraft.init.ModArmors.*;
+import static net.linkle.valleycraft.init.Armors.*;
 
 @Environment(EnvType.CLIENT)
 public class Client implements ClientModInitializer {
@@ -24,8 +23,8 @@ public class Client implements ClientModInitializer {
         Sprites.intialize();
         RenderLayers.intialize();
         ColorProvider.intialize();
-        ModParticles.initializeClient();
-        ModEntityType.initializeClient();
+        Particles.initializeClient();
+        EntityType.initializeClient();
         FluidRenders.intialize();
         ModBlockEntityType.initializeClient();
         ArmorRenderers.intialize();

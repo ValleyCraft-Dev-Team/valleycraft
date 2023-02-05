@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.tool.environmental;
 
-import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
+import static net.linkle.valleycraft.init.Groups.VC_TOOLS;
 
 import net.linkle.valleycraft.api.EnchantmentHandler;
 import net.minecraft.enchantment.*;

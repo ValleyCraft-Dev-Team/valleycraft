@@ -1,10 +1,9 @@
 package net.linkle.valleycraft.entity;
 
+import net.linkle.valleycraft.init.EntityType;
 import org.jetbrains.annotations.Nullable;
 
-import net.linkle.valleycraft.init.ModEntityType;
 import net.minecraft.entity.EntityData;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
@@ -24,13 +23,13 @@ public class ChickenVariant extends ChickenEntity {
     
     private static final TrackedData<Byte> CHICKEN_TYPE = DataTracker.registerData(RabbitEntity.class, TrackedDataHandlerRegistry.BYTE);
 
-    public ChickenVariant(EntityType<? extends ChickenVariant> type, World world) {
+    public ChickenVariant(net.minecraft.entity.EntityType type, World world) {
         super(type, world);
     }
 
     @Override
     public ChickenVariant createChild(ServerWorld serverWorld, PassiveEntity entity) {
-        ChickenVariant child = ModEntityType.CHICKEN.create(serverWorld);
+        ChickenVariant child = EntityType.CHICKEN.create(serverWorld);
         int type = getChickenType();
         if (random.nextBoolean() && entity instanceof ChickenVariant chicken) {
             type = chicken.getChickenType();

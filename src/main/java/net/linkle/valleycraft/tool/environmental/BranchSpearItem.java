@@ -6,7 +6,7 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 
-import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
+import static net.linkle.valleycraft.init.Groups.VC_TOOLS;
 
 public class BranchSpearItem
 extends SwordItem

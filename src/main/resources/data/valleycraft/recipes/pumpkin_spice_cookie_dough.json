@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vallecraft:pumpkin_slice"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "valleycraft:flour"
+    },
+    {
+      "tag": "c:water_holding_items"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:pumpkin_spice_cookie_dough",
+    "count": 8
+  }
+}

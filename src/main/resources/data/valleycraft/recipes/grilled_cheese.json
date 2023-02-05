@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:toast"
+    },
+    {
+      "item": "valleycraft:cheese_slice"
+    },
+    {
+      "item": "valleycraft:toast"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:grilled_cheese",
+    "count": 1
+  }
+}

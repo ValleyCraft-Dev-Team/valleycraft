@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:raw_red_porgy"
+    }
+  ],
+  "result": "valleycraft:cooked_red_porgy"
+}

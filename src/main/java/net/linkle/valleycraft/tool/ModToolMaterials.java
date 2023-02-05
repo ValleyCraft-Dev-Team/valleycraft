@@ -3,8 +3,8 @@ package net.linkle.valleycraft.tool;
 import com.google.common.base.Supplier;
 import com.google.common.base.Suppliers;
 
-import net.linkle.valleycraft.init.ModItems;
-import net.linkle.valleycraft.init.ModNaturalBlocks;
+import net.linkle.valleycraft.init.ItemsModded;
+import net.linkle.valleycraft.init.BlocksNatural;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
@@ -14,20 +14,20 @@ import net.minecraft.recipe.Ingredient;
 public enum ModToolMaterials implements ToolMaterial {
 
     MAKESHIFT_WOOD(0, 32, 1.0F, 0F, 15, () -> {
-        return Ingredient.ofItems(ModItems.PLANK);
+        return Ingredient.ofItems(ItemsModded.PLANK);
     }),
     MAKESHIFT_STONE(1, 32, 1.0F, 0F, 5, () -> {
-        return Ingredient.ofItems(ModNaturalBlocks.ROCKS);
+        return Ingredient.ofItems(BlocksNatural.ROCKS);
     }),
     MAKESHIFT_FLINT(1, 32, 1.0F, 0F, 5, () -> {
         return Ingredient.ofItems(Items.FLINT);
     }),
 
     PRIMSTEEL(2, 190, 5.0F, 1.5F, 18, () -> {
-        return Ingredient.ofItems(ModItems.PRIMSTEEL_INGOT);
+        return Ingredient.ofItems(ItemsModded.PRIMSTEEL_INGOT);
     }),
     ROSEGOLD(1, 440, 7.0F, 2.0F, 15, () -> {
-        return Ingredient.ofItems(ModItems.ROSEGOLD_INGOT);
+        return Ingredient.ofItems(ItemsModded.ROSEGOLD_INGOT);
     }),
 
     COPPER(1, 250, 6.0F, 2.0F, 15, () -> {
@@ -47,15 +47,15 @@ public enum ModToolMaterials implements ToolMaterial {
     }),
 
     BRASIUM(2, 770, 6.0F, 2.0F, 14, () -> {
-        return Ingredient.ofItems(ModItems.BRASIUM_INGOT);
+        return Ingredient.ofItems(ItemsModded.BRASIUM_INGOT);
     }),
 
     ELDER_GUARDIAN(2, 780, 6.0F, 2.0F, 14, () -> {
-        return Ingredient.ofItems(ModItems.GUARDIAN_SPIKE);
+        return Ingredient.ofItems(ItemsModded.GUARDIAN_SPIKE);
     }),
 
     GUARDIAN(2, 1561, 6.0F, 4.0F, 14, () -> {
-        return Ingredient.ofItems(ModItems.ELDER_GUARDIAN_SPIKE);
+        return Ingredient.ofItems(ItemsModded.ELDER_GUARDIAN_SPIKE);
     }),
 
     //unique - only used once
@@ -80,7 +80,7 @@ public enum ModToolMaterials implements ToolMaterial {
     }),
 
     PLANK(2, 220, 7.0F, 1.0F, 15, () -> {
-        return Ingredient.ofItems(ModItems.PLANK);
+        return Ingredient.ofItems(ItemsModded.PLANK);
     }),
 
     OBSIDIAN(2, 440, 7.0F, 2.0F, 18, () -> {

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:clay"
+    },
+    {
+      "item": "valleycraft:dried_fiber"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:daub",
+    "count": 4
+  }
+}

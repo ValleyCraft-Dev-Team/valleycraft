@@ -1,7 +1,7 @@
 package net.linkle.valleycraft.tool.sword.special;
 
 import net.linkle.valleycraft.api.EnchantmentHandler;
-import net.linkle.valleycraft.init.ModGroups;
+import net.linkle.valleycraft.init.Groups;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.SwordItem;
@@ -12,7 +12,7 @@ public class CaveFisherSwordItem
 extends SwordItem
 implements EnchantmentHandler {
     public CaveFisherSwordItem(ToolMaterial material, int attackDamage, float attackSpeed) {
-        super(material, attackDamage, attackSpeed, new Settings().group(ModGroups.VC_TOOLS).rarity(Rarity.UNCOMMON));
+        super(material, attackDamage, attackSpeed, new Settings().group(Groups.VC_TOOLS).rarity(Rarity.UNCOMMON));
     }
 
     //Make the sword accept Impaling

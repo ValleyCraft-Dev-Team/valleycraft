@@ -21,7 +21,37 @@
         },
         {
           "type": "minecraft:item",
+          "name": "valleycraft:raw_bird_thigh",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:raw_bat_wing",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:raw_phantom_eye",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:feather",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:seagulls_feather",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:crows_feather",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:ducks_feather",
           "weight": 10
         },
         {
@@ -33,6 +63,21 @@
           "type": "minecraft:item",
           "name": "minecraft:string",
           "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:bow_string",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:leather_strap",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:plant_fiber_string",
+          "weight": 4
         },
         {
           "type": "minecraft:item",

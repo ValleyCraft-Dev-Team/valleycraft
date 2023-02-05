@@ -1,6 +1,6 @@
 {
   "type": "minecraft:campfire_cooking",
-  "cookingtime": 200,
+  "cookingtime": 600,
   "experience": 0.1,
   "ingredient": [
     {

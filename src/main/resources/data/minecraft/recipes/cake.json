@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X#",
+    "BVB",
+    "ZEZ"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:vanilla_frosting"
+    },
+    "B": {
+      "item": "valleycraft:butter"
+    },
+    "V": {
+      "item": "valleycraft:milk"
+    },
+    "Z": {
+      "item": "valleycraft:flour"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    },
+    "X": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "result": {
+    "item": "valleycraft:cake_dough",
+    "count": 1
+  }
+}

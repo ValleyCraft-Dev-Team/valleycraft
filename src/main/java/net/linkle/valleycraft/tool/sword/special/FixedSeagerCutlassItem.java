@@ -3,7 +3,7 @@ package net.linkle.valleycraft.tool.sword.special;
 import java.util.List;
 
 import net.linkle.valleycraft.api.EnchantmentHandler;
-import net.linkle.valleycraft.init.ModGroups;
+import net.linkle.valleycraft.init.Groups;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
@@ -19,7 +19,7 @@ public class FixedSeagerCutlassItem
 extends SwordItem
 implements EnchantmentHandler {
     public FixedSeagerCutlassItem(ToolMaterial material, int attackDamage, float attackSpeed) {
-        super(material, attackDamage, attackSpeed, new Settings().group(ModGroups.VC_TOOLS).rarity(Rarity.UNCOMMON));
+        super(material, attackDamage, attackSpeed, new Settings().group(Groups.VC_TOOLS).rarity(Rarity.UNCOMMON));
     }
 
     @Override

@@ -1,13 +1,12 @@
 package net.linkle.valleycraft.item;
 
-import net.linkle.valleycraft.init.ModArmors;
+import net.linkle.valleycraft.init.Armors;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.decoration.ArmorStandEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
-import software.bernie.example.registry.ItemRegistry;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -56,8 +55,8 @@ public class ClothingArmorItem extends ArmorItem implements IAnimatable {
 
         // Make sure the player is wearing all the armor. If they are, continue playing
         // the animation, otherwise stop
-        boolean isWearingAll = armorList.containsAll(Arrays.asList(ModArmors.TEST_BOOTS,
-                ModArmors.TEST_LEGGINGS, ModArmors.TEST_CHESTPLATE, ModArmors.TEST_HELMET));
+        boolean isWearingAll = armorList.containsAll(Arrays.asList(Armors.TEST_BOOTS,
+                Armors.TEST_LEGGINGS, Armors.TEST_CHESTPLATE, Armors.TEST_HELMET));
         return isWearingAll ? PlayState.CONTINUE : PlayState.STOP;
     }
 

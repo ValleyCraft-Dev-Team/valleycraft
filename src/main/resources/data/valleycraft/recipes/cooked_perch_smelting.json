@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:raw_perch"
+    }
+  ],
+  "result": "valleycraft:cooked_perch"
+}

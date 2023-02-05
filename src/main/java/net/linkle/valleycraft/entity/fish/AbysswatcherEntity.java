@@ -1,13 +1,10 @@
 package net.linkle.valleycraft.entity.fish;
 
-import net.linkle.valleycraft.init.ModFishing;
+import net.linkle.valleycraft.init.Fishing;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.data.DataTracker;
-import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.passive.FishEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NbtCompound;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
@@ -20,7 +17,7 @@ public class AbysswatcherEntity extends FishEntity {
 
     @Override
     public ItemStack getBucketItem() {
-        return new ItemStack(ModFishing.ABYSSWATCHER_BUCKET);
+        return new ItemStack(Fishing.ABYSSWATCHER_BUCKET);
     }
 
     @Override

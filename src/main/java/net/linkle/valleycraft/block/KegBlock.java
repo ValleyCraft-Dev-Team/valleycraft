@@ -2,9 +2,7 @@ package net.linkle.valleycraft.block;
 
 import java.util.List;
 
-import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.init.ModItems;
-import net.linkle.valleycraft.item.ModItem;
+import net.linkle.valleycraft.init.ItemsModded;
 import net.minecraft.block.*;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.ai.pathing.NavigationType;
@@ -12,7 +10,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
-import net.minecraft.item.Items;
 import net.minecraft.potion.PotionUtil;
 import net.minecraft.potion.Potions;
 import net.minecraft.sound.BlockSoundGroup;
@@ -90,25 +87,25 @@ public class KegBlock extends BlockWithWater {
         var stack = player.getStackInHand(hand);
         if (!world.isClient) {
             boolean hasFill = false;
-            if (stack.isOf(Items.BUCKET)) {
+            if (stack.isOf(net.minecraft.item.Items.BUCKET)) {
                 hasFill = true;
-                player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, new ItemStack(Items.WATER_BUCKET)));
+                player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, new ItemStack(net.minecraft.item.Items.WATER_BUCKET)));
             }
-            if (stack.isOf(Items.GLASS_BOTTLE)) {
+            if (stack.isOf(net.minecraft.item.Items.GLASS_BOTTLE)) {
                 hasFill = true;
-                player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, PotionUtil.setPotion(new ItemStack(Items.POTION), Potions.WATER)));
-            } else if (stack.isOf(ModItems.CLAY_POT.item)) {
-                player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, (new ItemStack(ModItems.WATER_FILLED_CLAY_POT.item))));
+                player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, PotionUtil.setPotion(new ItemStack(net.minecraft.item.Items.POTION), Potions.WATER)));
+            } else if (stack.isOf(ItemsModded.CLAY_POT.item)) {
+                player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, (new ItemStack(ItemsModded.WATER_FILLED_CLAY_POT.item))));
             }
 
             if (hasFill) {
                 world.playSound((PlayerEntity)null, pos,
-                        stack.isOf(Items.BUCKET) ? SoundEvents.ITEM_BUCKET_FILL : SoundEvents.ITEM_BOTTLE_FILL,
+                        stack.isOf(net.minecraft.item.Items.BUCKET) ? SoundEvents.ITEM_BUCKET_FILL : SoundEvents.ITEM_BOTTLE_FILL,
                         SoundCategory.BLOCKS, 1.0F, 1.0F);
             }
         }
 
-        return stack.isOf(Items.BUCKET) || stack.isOf(Items.GLASS_BOTTLE) ? ActionResult.success(world.isClient) : ActionResult.PASS;
+        return stack.isOf(net.minecraft.item.Items.BUCKET) || stack.isOf(net.minecraft.item.Items.GLASS_BOTTLE) ? ActionResult.success(world.isClient) : ActionResult.PASS;
     }
 
     @Override

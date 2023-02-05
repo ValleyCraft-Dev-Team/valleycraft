@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:sweet_berry_pie"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:sweet_berry_pie_slice",
+    "count": 8
+  }
+}

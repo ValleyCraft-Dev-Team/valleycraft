@@ -1,8 +1,7 @@
 package net.linkle.valleycraft.item.clay_pot;
 
-import net.linkle.valleycraft.init.ModItems;
+import net.linkle.valleycraft.init.ItemsModded;
 import net.linkle.valleycraft.item.FoodItem;
-import net.linkle.valleycraft.util.FoodStatusEffect;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -34,10 +33,10 @@ public class WaterClayPotItem extends FoodItem {
             user.clearStatusEffects();
         }
         if (stack.isEmpty()) {
-            return new ItemStack(ModItems.CLAY_POT);
+            return new ItemStack(ItemsModded.CLAY_POT);
         }
         if (user instanceof PlayerEntity player && !player.getAbilities().creativeMode) {
-            var bowl = new ItemStack(ModItems.CLAY_POT);
+            var bowl = new ItemStack(ItemsModded.CLAY_POT);
             if (!player.getInventory().insertStack(bowl)) {
                 player.dropItem(bowl, false);
             }

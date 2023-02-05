@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:toast"
+    },
+    {
+      "item": "valleycraft:fried_egg"
+    },
+    {
+      "item": "valleycraft:salt"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:eggs_on_toast",
+    "count": 1
+  }
+}

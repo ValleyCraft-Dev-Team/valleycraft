@@ -22,7 +22,8 @@
   "rewards": {
     "recipes": [
       "valleycraft:echo_shard_lense",
-      "valleycraft:nightvision_goggles"
+      "valleycraft:nightvision_goggles",
+      "valleycraft:echo_shard_talisman"
     ]
   }
 }

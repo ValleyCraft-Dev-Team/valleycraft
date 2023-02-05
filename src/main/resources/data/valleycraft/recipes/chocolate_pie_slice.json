@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:chocolate_pie"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:chocolate_pie_slice",
+    "count": 8
+  }
+}

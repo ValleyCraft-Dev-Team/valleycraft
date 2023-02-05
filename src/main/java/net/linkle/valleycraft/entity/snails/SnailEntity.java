@@ -1,16 +1,13 @@
 package net.linkle.valleycraft.entity.snails;
 
-import net.linkle.valleycraft.init.IngredientFoodItems;
-import net.linkle.valleycraft.init.ModEntityType;
-import net.linkle.valleycraft.init.ModItems;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.LivingEntity;
+import net.linkle.valleycraft.init.EntityType;
+import net.linkle.valleycraft.init.FoodIngredients;
+import net.linkle.valleycraft.init.ItemsModded;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.ai.pathing.PathNodeType;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
@@ -27,7 +24,7 @@ import net.minecraft.world.World;
 public class SnailEntity extends AnimalEntity {
     private static final Ingredient BREEDING_INGREDIENT;
 
-    public SnailEntity(EntityType<? extends AnimalEntity> entityType, World world) {
+    public SnailEntity(net.minecraft.entity.EntityType entityType, World world) {
         super(entityType, world);
         this.setPathfindingPenalty(PathNodeType.WATER, 8.0F);
         this.setPathfindingPenalty(PathNodeType.WATER_BORDER, 16.0F);
@@ -55,7 +52,7 @@ public class SnailEntity extends AnimalEntity {
 
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return ModEntityType.SNAIL.create(world);
+        return EntityType.SNAIL.create(world);
     }
 
     public static DefaultAttributeContainer.Builder createSnailAttributes() {
@@ -87,9 +84,9 @@ public class SnailEntity extends AnimalEntity {
     static {
         BREEDING_INGREDIENT = Ingredient.ofItems(new ItemConvertible[]{
                 Items.BEETROOT,
-                IngredientFoodItems.HEARTY_BEETROOT,
-                IngredientFoodItems.CAVE_ROOT,
-                IngredientFoodItems.ONION
+                FoodIngredients.HEARTY_BEETROOT,
+                FoodIngredients.CAVE_ROOT,
+                FoodIngredients.ONION
         });
     }
 }

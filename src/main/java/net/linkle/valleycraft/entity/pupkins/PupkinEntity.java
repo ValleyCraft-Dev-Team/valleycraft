@@ -1,7 +1,6 @@
 package net.linkle.valleycraft.entity.pupkins;
 
-import net.linkle.valleycraft.init.ModEntityType;
-import net.minecraft.entity.EntityType;
+import net.linkle.valleycraft.init.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -19,7 +18,7 @@ public class PupkinEntity extends AnimalEntity {
     
     public static final Ingredient BREEDING_ITEMS = Ingredient.ofItems(Items.PUMPKIN_PIE);
 
-    public PupkinEntity(EntityType<? extends PupkinEntity> entityType, World world) {
+    public PupkinEntity(net.minecraft.entity.EntityType entityType, World world) {
         super(entityType, world);
     }
     
@@ -48,7 +47,7 @@ public class PupkinEntity extends AnimalEntity {
 
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return ModEntityType.PUPKIN.create(world);
+        return EntityType.PUPKIN.create(world);
     }
     
     public static DefaultAttributeContainer.Builder createPupkinAttributes() {

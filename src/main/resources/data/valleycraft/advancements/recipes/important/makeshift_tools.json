@@ -1,0 +1,38 @@
+{
+  "parent": "valleycraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:fiber",
+              "valleycraft:rocks",
+              "minecraft:stick",
+              "minecraft:flint",
+              "valleycraft:plank",
+              "valleycraft:plant_fiber_string"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "valleycraft:makeshift_axe",
+      "valleycraft:makeshift_pickaxe",
+      "valleycraft:makeshift_knife",
+      "valleycraft:makeshift_shovel",
+      "valleycraft:makeshift_hoe",
+      "valleycraft:throwing_rock",
+      "valleycraft:handle"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #",
+    "VQ"
+  ],
+  "key": {
+    "#": {
+      "tag": "valleycraft:rocks"
+    },
+    "V": {
+      "item": "valleycraft:fiber"
+    },
+    "Q": {
+      "item": "valleycraft:plank"
+    }
+  },
+  "result": {
+    "item": "valleycraft:makeshift_axe",
+    "count": 1
+  }
+}
+

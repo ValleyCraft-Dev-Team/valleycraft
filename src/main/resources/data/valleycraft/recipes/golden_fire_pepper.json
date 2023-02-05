@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_nugget"
+    },
+    "C": {
+      "item": "valleycraft:fire_pepper"
+    }
+  },
+  "result": {
+    "item": "valleycraft:golden_fire_pepper",
+    "count": 1
+  }
+}

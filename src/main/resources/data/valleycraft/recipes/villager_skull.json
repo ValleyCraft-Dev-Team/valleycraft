@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:skull_shard"
+    }
+  },
+  "result": {
+    "item": "valleycraft:villager_skull",
+    "count": 1
+  }
+}

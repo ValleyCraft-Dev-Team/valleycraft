@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_nugget"
+    },
+    "C": {
+      "item": "valleycraft:endura_carrot"
+    }
+  },
+  "result": {
+    "item": "valleycraft:golden_endura_carrot",
+    "count": 1
+  }
+}

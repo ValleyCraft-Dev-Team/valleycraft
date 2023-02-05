@@ -1,7 +1,6 @@
 package net.linkle.valleycraft.gen.feature;
 
-import net.linkle.valleycraft.init.ModEntityType;
-import net.minecraft.entity.EntityType;
+import net.linkle.valleycraft.init.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
@@ -111,77 +110,77 @@ public class ModBiomeFeatures extends DefaultBiomeFeatures {
     /**individual mob spawns**/
 
     public static void addPupkins(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntityType.PUPKIN.type(), 5, 1, 3));
+        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.PUPKIN.type(), 5, 1, 3));
     }
 
     public static void addVanillaRabbits(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.RABBIT, 10, 2, 3));
+        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(net.minecraft.entity.EntityType.RABBIT, 10, 2, 3));
     }
 
     public static void addVanillaFoxes(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.FOX, 8, 2, 4));
+        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(net.minecraft.entity.EntityType.FOX, 8, 2, 4));
     }
 
     public static void addVanillaWolves(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.WOLF, 8, 4, 4));
+        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(net.minecraft.entity.EntityType.WOLF, 8, 4, 4));
     }
 
     public static void addVanillaChickens(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(EntityType.CHICKEN, 10, 4, 4));
+        builder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(net.minecraft.entity.EntityType.CHICKEN, 10, 4, 4));
     }
 
     public static void addVanillaStrays(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.STRAY, 80, 4, 4));
+        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(net.minecraft.entity.EntityType.STRAY, 80, 4, 4));
     }
 
     /** snails **/
     public static void addSnails(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.AMBIENT, new SpawnSettings.SpawnEntry(ModEntityType.SNAIL.type(), 10, 8, 8));
+        builder.spawn(SpawnGroup.AMBIENT, new SpawnSettings.SpawnEntry(EntityType.SNAIL.type(), 10, 8, 8));
     }
 
     public static void addCaveSnails(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.AMBIENT, new SpawnSettings.SpawnEntry(ModEntityType.CAVE_SNAIL.type(), 10, 8, 8));
+        builder.spawn(SpawnGroup.AMBIENT, new SpawnSettings.SpawnEntry(EntityType.CAVE_SNAIL.type(), 10, 8, 8));
     }
 
     public static void addSculkSnails(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.AMBIENT, new SpawnSettings.SpawnEntry(ModEntityType.SCULK_SNAIL.type(), 10, 8, 8));
+        builder.spawn(SpawnGroup.AMBIENT, new SpawnSettings.SpawnEntry(EntityType.SCULK_SNAIL.type(), 10, 8, 8));
     }
 
     /** fish **/
     public static void addSardines(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(ModEntityType.SARDINE.type(), 25, 5, 10));
+        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(EntityType.SARDINE.type(), 25, 5, 10));
     }
 
     public static void addPorgyLukewarm(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(ModEntityType.RED_PORGY.type(), 15, 3, 6));
+        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(EntityType.RED_PORGY.type(), 15, 3, 6));
     }
 
     public static void addPorgyJungle(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(ModEntityType.PERCH.type(), 5, 3, 6));
+        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(EntityType.PERCH.type(), 5, 3, 6));
     }
 
     public static void addStonerollerRiver(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(ModEntityType.STONEROLLER_MINNOW.type(), 8, 3, 8));
+        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(EntityType.STONEROLLER_MINNOW.type(), 8, 3, 8));
     }
 
     public static void addPerchRiver(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(ModEntityType.PERCH.type(), 16, 3, 8));
+        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(EntityType.PERCH.type(), 16, 3, 8));
     }
 
     public static void addPerchForest(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(ModEntityType.PERCH.type(), 5, 3, 6));
+        builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(EntityType.PERCH.type(), 5, 3, 6));
     }
 
     public static void addAbyssWatchers(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.UNDERGROUND_WATER_CREATURE, new SpawnSettings.SpawnEntry(ModEntityType.ABYSSWATCHER.type(), 10, 1, 1));
+        builder.spawn(SpawnGroup.UNDERGROUND_WATER_CREATURE, new SpawnSettings.SpawnEntry(EntityType.ABYSSWATCHER.type(), 10, 1, 1));
     }
 
     /** hostile fish **/
     public static void addBoneFins(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntityType.BONEFIN.type(), 100, 4, 4));
+        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.BONEFIN.type(), 100, 4, 4));
     }
 
     public static void addZods(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntityType.ZOD.type(), 100, 4, 4));
+        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.ZOD.type(), 100, 4, 4));
     }
 }

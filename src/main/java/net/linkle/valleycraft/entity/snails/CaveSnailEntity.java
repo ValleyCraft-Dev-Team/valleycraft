@@ -1,8 +1,7 @@
 package net.linkle.valleycraft.entity.snails;
 
-import net.linkle.valleycraft.init.IngredientFoodItems;
-import net.linkle.valleycraft.init.ModEntityType;
-import net.minecraft.entity.EntityType;
+import net.linkle.valleycraft.init.FoodIngredients;
+import net.linkle.valleycraft.init.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.ai.pathing.PathNodeType;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
@@ -24,7 +23,7 @@ import net.minecraft.world.World;
 public class CaveSnailEntity extends AnimalEntity {
     private static final Ingredient BREEDING_INGREDIENT;
 
-    public CaveSnailEntity(EntityType<? extends AnimalEntity> entityType, World world) {
+    public CaveSnailEntity(net.minecraft.entity.EntityType entityType, World world) {
         super(entityType, world);
         this.setPathfindingPenalty(PathNodeType.WATER, 8.0F);
         this.setPathfindingPenalty(PathNodeType.WATER_BORDER, 16.0F);
@@ -52,7 +51,7 @@ public class CaveSnailEntity extends AnimalEntity {
 
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return ModEntityType.SNAIL.create(world);
+        return EntityType.SNAIL.create(world);
     }
 
     public static DefaultAttributeContainer.Builder createSnailAttributes() {
@@ -84,9 +83,9 @@ public class CaveSnailEntity extends AnimalEntity {
     static {
         BREEDING_INGREDIENT = Ingredient.ofItems(new ItemConvertible[]{
                 Items.BEETROOT,
-                IngredientFoodItems.HEARTY_BEETROOT,
-                IngredientFoodItems.CAVE_ROOT,
-                IngredientFoodItems.ONION
+                FoodIngredients.HEARTY_BEETROOT,
+                FoodIngredients.CAVE_ROOT,
+                FoodIngredients.ONION
         });
     }
 }

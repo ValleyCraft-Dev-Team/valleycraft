@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:cooked_fish"
+    },
+    {
+      "item": "valleycraft:kelp_salad"
+    },
+  ],
+  "result": {
+    "item": "valleycraft:fish_platter",
+    "count": 1
+  }
+}

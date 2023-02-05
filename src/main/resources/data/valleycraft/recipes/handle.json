@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#V#"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plant_fiber_string"
+    },
+    "V": {
+      "item": "valleycraft:plank"
+    }
+  },
+  "result": {
+    "item": "valleycraft:handle",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:toast"
+    },
+    {
+      "item": "valleycraft:miners_lettuce"
+    },
+    {
+      "tag": "c:cooked_fish"
+    },
+    {
+      "item": "valleycraft:toast"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:sandwich_fish",
+    "count": 1
+  }
+}

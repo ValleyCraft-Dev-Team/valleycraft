@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vallecraft:vanilla_icing"
+    },
+    {
+      "item": "valleycraft:pumpkin_spice_cookie"
+    },
+    {
+      "item": "valleycraft:pumpkin_spice_cookie"
+    },
+    {
+      "item": "valleycraft:pumpkin_spice_cookie"
+    },
+    {
+      "item": "valleycraft:pumpkin_spice_cookie"
+    },
+    {
+      "item": "valleycraft:pumpkin_spice_cookie"
+    },
+    {
+      "item": "valleycraft:pumpkin_spice_cookie"
+    },
+    {
+      "item": "valleycraft:pumpkin_spice_cookie"
+    },
+    {
+      "item": "valleycraft:pumpkin_spice_cookie"
+    }
+
+  ],
+  "result": {
+    "item": "valleycraft:vanilla_pumpkin_spice_cookie",
+    "count": 8
+  }
+}

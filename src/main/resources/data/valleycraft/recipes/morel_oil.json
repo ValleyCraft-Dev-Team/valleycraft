@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:morel"
+    },
+    {
+      "item": "valleycraft:morel"
+    },
+    {
+      "item": "valleycraft:morel"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:morel_oil",
+    "count": 1
+  }
+}

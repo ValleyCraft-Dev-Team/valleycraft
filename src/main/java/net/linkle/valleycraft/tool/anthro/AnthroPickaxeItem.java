@@ -3,7 +3,7 @@ package net.linkle.valleycraft.tool.anthro;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 
-import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
+import static net.linkle.valleycraft.init.Groups.VC_TOOLS;
 
 public class AnthroPickaxeItem extends PickaxeItem {
     public AnthroPickaxeItem(ToolMaterial AnthroPickaxeMaterial) {

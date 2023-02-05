@@ -1,10 +1,9 @@
 package net.linkle.valleycraft.entity.projectiles.thrown_items;
 
-import static net.linkle.valleycraft.init.ModTools.THROWING_ROCK;
+import static net.linkle.valleycraft.init.Tools.THROWING_ROCK;
 
-import net.linkle.valleycraft.init.ModEntityType;
+import net.linkle.valleycraft.init.EntityType;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,12 +15,12 @@ import net.minecraft.world.World;
 
 public class ThrownRockEntity extends ThrownItemEntity {
 
-    public ThrownRockEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
+    public ThrownRockEntity(net.minecraft.entity.EntityType entityType, World world) {
         super(entityType, world);
     }
 
     private ThrownRockEntity(World world, PlayerEntity user) {
-        super(ModEntityType.THROWN_ROCK.type(), user, world);
+        super(EntityType.THROWN_ROCK.type(), user, world);
     }
     
     public static ThrownRockEntity create(World world, PlayerEntity user) {

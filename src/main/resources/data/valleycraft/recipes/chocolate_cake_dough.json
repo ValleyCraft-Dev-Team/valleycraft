@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "BVB",
+    "ZEZ"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:chocolate"
+    },
+    "B": {
+      "item": "valleycraft:butter"
+    },
+    "V": {
+      "item": "valleycraft:milk"
+    },
+    "Z": {
+      "item": "valleycraft:flour"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    }
+  },
+  "result": {
+    "item": "valleycraft:chocolate_cake_dough",
+    "count": 1
+  }
+}

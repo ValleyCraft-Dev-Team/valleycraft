@@ -25,35 +25,35 @@ public class Main implements ModInitializer {
 	    Config.initialize();
 
 		// Keep these inits above the blocks so the creative inventory stays sorted properly.
-		ModBaubles.initialize();
-		ModItems.initialize();
-		ModFishing.initialize();
-		ModTools.initialize();
-		ModArmors.initialize();
+		Baubles.initialize();
+		ItemsModded.initialize();
+		Fishing.initialize();
+		Tools.initialize();
+		Armors.initialize();
 
-	    ModGroups.initialize();
-		ModNaturalBlocks.initialize();
+	    Groups.initialize();
+		BlocksNatural.initialize();
 		ModBlockEntityType.initialize();
-		ModFluids.initialize();
-		ModBlocks.initialize();
+		Fluids.initialize();
+		BlocksModded.initialize();
 
 		Contents.initialize();
 		ModFoliagePlacerType.initialize();
 		TreeConfigs.initialize();
 		VegetationPlaced.initialize();
-		ModBiomes.initialize();
+		Biomes.initialize();
 		
-		ModParticles.initialize();
-		ModSounds.initialize();
-		ModMusic.initialize();
-		ModEntityType.initialize();
-		ModPaintings.initialize();
+		Particles.initialize();
+		Sounds.initialize();
+		Music.initialize();
+		EntityType.initialize();
+		Paintings.initialize();
 		ModFluidTags.initialize();
 		ModLootTables.initialize();
-		ModEvents.initialize();
+		Events.initialize();
 
 		ModEffects.initialize();
-		ModPotions.initialize();
+		Potions.initialize();
 		ModVillagers.registerVillagers();
 		CustomTradeRegistry.setupTrades();
 		ServerNetwork.initialize();

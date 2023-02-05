@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "V"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:elder_guardian_spike"
+    },
+    "V": {
+      "tag": "c:handles"
+    }
+  },
+  "result": {
+    "item": "valleycraft:coral_knife_guardian",
+    "count": 1
+  }
+}

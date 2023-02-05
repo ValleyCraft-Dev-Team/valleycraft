@@ -5,6 +5,7 @@ import net.linkle.valleycraft.util.loot.LootBuilder;
 import net.linkle.valleycraft.util.loot.LootTableHelper;
 import net.linkle.valleycraft.util.loot.LootUtils;
 import net.minecraft.block.Blocks;
+import net.minecraft.data.server.BlockLootTableGenerator;
 import net.minecraft.data.server.ChestLootTableGenerator;
 import net.minecraft.data.server.EntityLootTableGenerator;
 import net.minecraft.loot.LootTables;

@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.block;
 
-import net.linkle.valleycraft.init.ModNaturalBlocks;
+import net.linkle.valleycraft.init.BlocksNatural;
 import net.minecraft.block.AbstractPlantStemBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.KelpPlantBlock;
@@ -13,7 +13,7 @@ public class GlowKelpPlantBlock extends KelpPlantBlock {
 
     @Override
     protected AbstractPlantStemBlock getStem() {
-        return (AbstractPlantStemBlock) ModNaturalBlocks.GLOW_KELP.block;
+        return (AbstractPlantStemBlock) BlocksNatural.GLOW_KELP.block;
     }
 
 }

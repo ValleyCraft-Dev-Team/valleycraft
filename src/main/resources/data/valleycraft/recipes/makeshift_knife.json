@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "V#"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "V": {
+      "item": "valleycraft:fiber"
+    }
+  },
+  "result": {
+    "item": "valleycraft:makeshift_knife",
+    "count": 1
+  }
+}

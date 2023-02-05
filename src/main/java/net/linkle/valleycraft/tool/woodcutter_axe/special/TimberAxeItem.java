@@ -3,7 +3,7 @@ package net.linkle.valleycraft.tool.woodcutter_axe.special;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ToolMaterial;
 
-import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
+import static net.linkle.valleycraft.init.Groups.VC_TOOLS;
 
 public class TimberAxeItem extends AxeItem {
     public TimberAxeItem(ToolMaterial TimberAxeToolMaterial) {

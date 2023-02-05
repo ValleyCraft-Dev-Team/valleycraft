@@ -4,9 +4,8 @@ import java.util.Map;
 
 import org.jetbrains.annotations.Nullable;
 
-import net.linkle.valleycraft.block.BridgeBlockExt;
 import net.linkle.valleycraft.block.RopeBlockExt;
-import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.init.BlocksModded;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.item.AliasedBlockItem;
@@ -21,9 +20,9 @@ public class RopeItem extends AliasedBlockItem {
     protected final Block horizontalBlock;
     
     public RopeItem(Settings settings) {
-        super(ModBlocks.ROPE_VERTICAL.block, settings);
-        this.verticalBlock = ModBlocks.ROPE_VERTICAL.block;
-        this.horizontalBlock = ModBlocks.ROPE_HORIZONTAL.block;
+        super(BlocksModded.ROPE_VERTICAL.block, settings);
+        this.verticalBlock = BlocksModded.ROPE_VERTICAL.block;
+        this.horizontalBlock = BlocksModded.ROPE_HORIZONTAL.block;
     }
     
     @Override

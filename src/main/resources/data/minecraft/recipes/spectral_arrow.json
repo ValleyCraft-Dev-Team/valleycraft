@@ -1,20 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#A#"
+  ],
   "key": {
-    "X": {
-      "item": "minecraft:glowstone_dust"
-    },
     "#": {
+      "tag": "c:spectral_arrow_ingredients"
+    },
+    "A": {
       "item": "minecraft:arrow"
     }
   },
-  "pattern": [
-    "X#X",
-    "#X#",
-    "X#X"
-  ],
   "result": {
-    "count": 2,
-    "item": "minecraft:spectral_arrow"
+    "item": "minecraft:spectral_arrow",
+    "count": 2
   }
 }

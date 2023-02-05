@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C#B"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:handle"
+    },
+    "B": {
+      "item": "minecraft:black_dye"
+    },
+    "B": {
+      "item": "valleycraft:cloth"
+    }
+  },
+  "result": {
+    "item": "valleycraft:reinforced_handle",
+    "count": 1
+  }
+}

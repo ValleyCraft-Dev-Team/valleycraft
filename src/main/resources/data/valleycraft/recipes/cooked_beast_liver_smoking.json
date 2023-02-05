@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:raw_beast_liver"
+    }
+  ],
+  "result": "valleycraft:cooked_beast_liver"
+}

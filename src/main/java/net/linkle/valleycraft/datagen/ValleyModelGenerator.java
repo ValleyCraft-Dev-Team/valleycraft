@@ -1,8 +1,8 @@
 package net.linkle.valleycraft.datagen;
 
-import static net.linkle.valleycraft.init.ModBlocks.*;
-import static net.linkle.valleycraft.init.ModBlocks.GRANITE_BRICK_SLAB;
-import static net.linkle.valleycraft.init.ModNaturalBlocks.*;
+import static net.linkle.valleycraft.init.BlocksModded.*;
+import static net.linkle.valleycraft.init.BlocksModded.GRANITE_BRICK_SLAB;
+import static net.linkle.valleycraft.init.BlocksNatural.*;
 import static net.minecraft.block.Blocks.PACKED_MUD;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

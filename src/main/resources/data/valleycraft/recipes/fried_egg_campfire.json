@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "tag": "c:eggs"
+    }
+  ],
+  "result": "valleycraft:fried_egg"
+}

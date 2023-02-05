@@ -3,7 +3,6 @@ package net.linkle.valleycraft.block.entity;
 import net.linkle.valleycraft.init.ModBlockEntityType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BarrelBlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 
@@ -18,7 +17,7 @@ public class CrateBlockEntity extends BarrelBlockEntity {
     }
     
     @Override
-    public BlockEntityType<?> getType() {
+    public net.minecraft.block.entity.BlockEntityType getType() {
         return ModBlockEntityType.CRATE;
     }
 }

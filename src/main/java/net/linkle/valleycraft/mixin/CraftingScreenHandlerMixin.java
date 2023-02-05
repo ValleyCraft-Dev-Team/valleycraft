@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.init.BlocksModded;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.CraftingInventory;
 import net.minecraft.screen.AbstractRecipeScreenHandler;
@@ -27,7 +27,7 @@ abstract class CraftingScreenHandlerMixin extends AbstractRecipeScreenHandler<Cr
     
     @Inject(method = "canUse", at = @At("HEAD"), cancellable = true)
     void canUse(PlayerEntity player, CallbackInfoReturnable<Boolean> info) {
-        if (CraftingScreenHandler.canUse(context, player, ModBlocks.CRAFTING_MAT.block)) {
+        if (CraftingScreenHandler.canUse(context, player, BlocksModded.CRAFTING_MAT.block)) {
             info.setReturnValue(true);
         }
     }

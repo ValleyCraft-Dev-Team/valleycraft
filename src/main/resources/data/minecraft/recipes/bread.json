@@ -1,14 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:wheat"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:flour"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "tag": "c:water_holding_items"
     }
-  },
-  "pattern": [
-    "##"
   ],
   "result": {
-    "item": "valleycraft:flour"
+    "item": "valleycraft:bread_dough",
+    "count": 1
   }
 }

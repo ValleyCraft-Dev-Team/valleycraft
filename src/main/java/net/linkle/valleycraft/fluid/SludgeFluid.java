@@ -2,13 +2,13 @@ package net.linkle.valleycraft.fluid;
 
 import java.util.Optional;
 
-import net.linkle.valleycraft.init.ModNaturalBlocks;
-import net.linkle.valleycraft.init.ModParticles;
+import net.linkle.valleycraft.init.BlocksNatural;
+import net.linkle.valleycraft.init.ItemsModded;
+import net.linkle.valleycraft.init.Particles;
 import net.minecraft.sound.SoundCategory;
 import org.jetbrains.annotations.Nullable;
 
-import net.linkle.valleycraft.init.ModFluids;
-import net.linkle.valleycraft.init.ModItems;
+import net.linkle.valleycraft.init.Fluids;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FluidBlock;
@@ -35,17 +35,17 @@ public abstract class SludgeFluid extends FlowableFluid {
 
     @Override
     public Fluid getFlowing() {
-        return ModFluids.SLUDGE_FLOWING.fluid;
+        return Fluids.SLUDGE_FLOWING.fluid;
     }
 
     @Override
     public Fluid getStill() {
-        return ModFluids.SLUDGE_STILL.fluid;
+        return Fluids.SLUDGE_STILL.fluid;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModItems.SLUDGE_BUCKET.item;
+        return ItemsModded.SLUDGE_BUCKET.item;
     }
 
     @Override
@@ -63,7 +63,7 @@ public abstract class SludgeFluid extends FlowableFluid {
     @Override
     @Nullable
     public ParticleEffect getParticle() {
-        return ModParticles.DRIPPING_SLUDGE;
+        return Particles.DRIPPING_SLUDGE;
     }
 
     @Override
@@ -89,12 +89,12 @@ public abstract class SludgeFluid extends FlowableFluid {
 
     @Override
     public BlockState toBlockState(FluidState state) {
-        return ModNaturalBlocks.SLUDGE_FLUID.getState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
+        return BlocksNatural.SLUDGE_FLUID.getState().with(FluidBlock.LEVEL, getBlockStateLevel(state));
     }
 
     @Override
     public boolean matchesType(Fluid fluid) {
-        return fluid == ModFluids.SLUDGE_STILL.fluid || fluid == ModFluids.SLUDGE_FLOWING.fluid;
+        return fluid == Fluids.SLUDGE_STILL.fluid || fluid == Fluids.SLUDGE_FLOWING.fluid;
     }
 
     @Override

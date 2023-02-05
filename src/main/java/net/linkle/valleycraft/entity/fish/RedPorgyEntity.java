@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.entity.fish;
 
-import net.linkle.valleycraft.init.ModFishing;
+import net.linkle.valleycraft.init.Fishing;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.passive.SchoolingFishEntity;
@@ -17,7 +17,7 @@ public class RedPorgyEntity extends SchoolingFishEntity {
 
     @Override
     public ItemStack getBucketItem() {
-        return new ItemStack(ModFishing.RED_PORGY_BUCKET);
+        return new ItemStack(Fishing.RED_PORGY_BUCKET);
     }
 
     @Override

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:maize_flour"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "tag": "c:water_holding_items"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:corn_bread_dough",
+    "count": 1
+  }
+}

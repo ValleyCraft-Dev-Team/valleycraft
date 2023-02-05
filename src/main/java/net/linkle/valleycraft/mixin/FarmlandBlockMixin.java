@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import net.linkle.valleycraft.block.SprinklerBlock;
-import net.linkle.valleycraft.init.ModBlocks;
+import net.linkle.valleycraft.init.BlocksModded;
 import net.minecraft.block.Block;
 import net.minecraft.block.FarmlandBlock;
 import net.minecraft.util.math.BlockPos;
@@ -23,7 +23,7 @@ abstract class FarmlandBlockMixin extends Block {
     private static void isSprinklerNearby(WorldView world, BlockPos pos, CallbackInfoReturnable<Boolean> info) {
         for (var p : BlockPos.iterate(pos.add(-8, -1, -8), pos.add(8, 1, 8))) {
             var state = world.getBlockState(p);
-            if (state.isOf(ModBlocks.SPRINKLER.block) && state.get(SprinklerBlock.POWERED) && state.get(SprinklerBlock.FILLED)) {
+            if (state.isOf(BlocksModded.SPRINKLER.block) && state.get(SprinklerBlock.POWERED) && state.get(SprinklerBlock.FILLED)) {
                 info.setReturnValue(true);
             }
         }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:iron_scrap"
+    }
+  ],
+  "result": {
+    "item": "minecraft:iron_nugget",
+    "count": 4
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:broth_bases"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "tag": "c:water_holding_items"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:broth",
+    "count": 1
+  }
+}

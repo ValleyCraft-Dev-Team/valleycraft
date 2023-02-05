@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:glow_berry_pie"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:glow_berry_pie_slice",
+    "count": 8
+  }
+}

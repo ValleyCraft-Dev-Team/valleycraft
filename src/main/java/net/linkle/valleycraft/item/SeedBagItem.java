@@ -1,13 +1,12 @@
 package net.linkle.valleycraft.item;
 
-import net.linkle.valleycraft.init.ModItems;
+import net.linkle.valleycraft.init.ItemsModded;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
-import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.stat.Stats;
 import net.minecraft.util.Hand;
@@ -31,18 +30,18 @@ public class SeedBagItem extends Item {
             var inventory = player.getInventory();
 
             if (stack.isEmpty()) {
-                inventory.insertStack(new ItemStack(Items.WHEAT_SEEDS, 1));
+                inventory.insertStack(new ItemStack(net.minecraft.item.Items.WHEAT_SEEDS, 1));
             }
 
             // TODO: Use loot table
-            inventory.insertStack(new ItemStack(Items.WHEAT_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
-            inventory.insertStack(new ItemStack(Items.MELON_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
-            inventory.insertStack(new ItemStack(Items.BEETROOT_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
-            inventory.insertStack(new ItemStack(Items.PUMPKIN_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
-            inventory.insertStack(new ItemStack(ModItems.CAVE_ROOT_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
-            inventory.insertStack(new ItemStack(ModItems.PUFF_BALL_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
-            inventory.insertStack(new ItemStack(ModItems.FIRE_PEPPER_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
-            inventory.insertStack(new ItemStack(ModItems.ONION_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
+            inventory.insertStack(new ItemStack(net.minecraft.item.Items.WHEAT_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
+            inventory.insertStack(new ItemStack(net.minecraft.item.Items.MELON_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
+            inventory.insertStack(new ItemStack(net.minecraft.item.Items.BEETROOT_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
+            inventory.insertStack(new ItemStack(net.minecraft.item.Items.PUMPKIN_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
+            inventory.insertStack(new ItemStack(ItemsModded.CAVE_ROOT_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
+            inventory.insertStack(new ItemStack(ItemsModded.PUFF_BALL_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
+            inventory.insertStack(new ItemStack(ItemsModded.FIRE_PEPPER_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
+            inventory.insertStack(new ItemStack(ItemsModded.ONION_SEEDS, MathHelper.nextInt(world.random, 0, 1)));
             return stack;
         }
 

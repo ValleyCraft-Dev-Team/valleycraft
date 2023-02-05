@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:gold_scrap"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gold_nugget",
+    "count": 4
+  }
+}

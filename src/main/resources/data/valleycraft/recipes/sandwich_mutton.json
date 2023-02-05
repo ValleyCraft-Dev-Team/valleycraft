@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:toast"
+    },
+    {
+      "item": "valleycraft:miners_lettuce"
+    },
+    {
+      "item": "minecraft:cooked_mutton"
+    },
+    {
+      "item": "valleycraft:toast"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:sandwich_mutton",
+    "count": 1
+  }
+}

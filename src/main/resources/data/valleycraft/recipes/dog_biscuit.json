@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "valleycraft:flour"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "item": "valleycraft:milk"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:dog_biscuit",
+    "count": 3
+  }
+}

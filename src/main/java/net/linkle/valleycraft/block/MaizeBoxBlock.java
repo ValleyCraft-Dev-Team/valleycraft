@@ -1,9 +1,9 @@
 package net.linkle.valleycraft.block;
 
-import net.linkle.valleycraft.init.ModNaturalBlocks;
+import net.linkle.valleycraft.init.BlocksNatural;
 import org.jetbrains.annotations.Nullable;
 
-import net.linkle.valleycraft.init.IngredientFoodItems;
+import net.linkle.valleycraft.init.FoodIngredients;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
@@ -48,7 +48,7 @@ public class MaizeBoxBlock extends Block implements Fertilizable {
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         var corn = world.getBlockState(pos.down());
-        if (!corn.isOf(ModNaturalBlocks.MAIZE.block)) {
+        if (!corn.isOf(BlocksNatural.MAIZE.block)) {
             return VoxelShapes.empty();
         }
         int level = corn.get(MaizeBlock.AGE)-5;
@@ -68,7 +68,7 @@ public class MaizeBoxBlock extends Block implements Fertilizable {
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         var corn = world.getBlockState(pos.down());
-        if (!corn.isOf(ModNaturalBlocks.MAIZE.block)) {
+        if (!corn.isOf(BlocksNatural.MAIZE.block)) {
             world.setBlockState(pos, Blocks.AIR.getDefaultState(), NOTIFY_LISTENERS);
             return ActionResult.FAIL;
         }
@@ -77,7 +77,7 @@ public class MaizeBoxBlock extends Block implements Fertilizable {
     
     @Override
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
-        return new ItemStack(IngredientFoodItems.MAIZE);
+        return new ItemStack(FoodIngredients.MAIZE);
     }
     
     @Override
@@ -87,7 +87,7 @@ public class MaizeBoxBlock extends Block implements Fertilizable {
     
     /** @return true if the current state is valid. */
     protected boolean check(BlockView world, BlockPos pos) {
-        return world.getBlockState(pos.down()).isOf(ModNaturalBlocks.MAIZE.block);
+        return world.getBlockState(pos.down()).isOf(BlocksNatural.MAIZE.block);
     }
 
     @Override
@@ -103,26 +103,26 @@ public class MaizeBoxBlock extends Block implements Fertilizable {
     @Override
     public boolean isFertilizable(BlockView world, BlockPos pos, BlockState state, boolean bool) {
         var corn = world.getBlockState(pos.down());
-        if (!corn.isOf(ModNaturalBlocks.MAIZE.block)) {
+        if (!corn.isOf(BlocksNatural.MAIZE.block)) {
             return false;
         }
-        return ((Fertilizable) ModNaturalBlocks.MAIZE.block).isFertilizable(world, pos.down(), corn, bool);
+        return ((Fertilizable) BlocksNatural.MAIZE.block).isFertilizable(world, pos.down(), corn, bool);
     }
 
     @Override
     public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
         var corn = world.getBlockState(pos.down());
-        if (!corn.isOf(ModNaturalBlocks.MAIZE.block)) {
+        if (!corn.isOf(BlocksNatural.MAIZE.block)) {
             return false;
         }
-        return ((Fertilizable) ModNaturalBlocks.MAIZE.block).canGrow(world, random, pos.down(), corn);
+        return ((Fertilizable) BlocksNatural.MAIZE.block).canGrow(world, random, pos.down(), corn);
     }
 
     @Override
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
         var corn = world.getBlockState(pos.down());
-        if (corn.isOf(ModNaturalBlocks.MAIZE.block)) {
-            ((Fertilizable) ModNaturalBlocks.MAIZE.block).grow(world, random, pos.down(), corn);
+        if (corn.isOf(BlocksNatural.MAIZE.block)) {
+            ((Fertilizable) BlocksNatural.MAIZE.block).grow(world, random, pos.down(), corn);
         }
     }
 }

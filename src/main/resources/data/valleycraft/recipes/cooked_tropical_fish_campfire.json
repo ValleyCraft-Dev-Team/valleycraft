@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "minecraft:tropical_fish"
+    }
+  ],
+  "result": "valleycraft:cooked_tropical_fish"
+}

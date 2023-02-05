@@ -18,50 +18,50 @@ public class Contents {
     }
     
     private static void oxidizables() {
-        registerOxidizableBlockPair(ModBlocks.SMALL_CANDELABRA.block, ModBlocks.SMALL_CANDELABRA_EXPOSED.block);
-        registerOxidizableBlockPair(ModBlocks.SMALL_CANDELABRA_EXPOSED.block, ModBlocks.SMALL_CANDELABRA_WEATHERED.block);
-        registerOxidizableBlockPair(ModBlocks.SMALL_CANDELABRA_WEATHERED.block, ModBlocks.SMALL_CANDELABRA_OXIDIZED.block);
+        registerOxidizableBlockPair(BlocksModded.SMALL_CANDELABRA.block, BlocksModded.SMALL_CANDELABRA_EXPOSED.block);
+        registerOxidizableBlockPair(BlocksModded.SMALL_CANDELABRA_EXPOSED.block, BlocksModded.SMALL_CANDELABRA_WEATHERED.block);
+        registerOxidizableBlockPair(BlocksModded.SMALL_CANDELABRA_WEATHERED.block, BlocksModded.SMALL_CANDELABRA_OXIDIZED.block);
         
-        registerWaxableBlockPair(ModBlocks.SMALL_CANDELABRA.block, ModBlocks.WAXED_SMALL_CANDELABRA.block);
-        registerWaxableBlockPair(ModBlocks.SMALL_CANDELABRA_EXPOSED.block, ModBlocks.WAXED_SMALL_CANDELABRA_EXPOSED.block);
-        registerWaxableBlockPair(ModBlocks.SMALL_CANDELABRA_WEATHERED.block, ModBlocks.WAXED_SMALL_CANDELABRA_WEATHERED.block);
-        registerWaxableBlockPair(ModBlocks.SMALL_CANDELABRA_OXIDIZED.block, ModBlocks.WAXED_SMALL_CANDELABRA_OXIDIZED.block);
+        registerWaxableBlockPair(BlocksModded.SMALL_CANDELABRA.block, BlocksModded.WAXED_SMALL_CANDELABRA.block);
+        registerWaxableBlockPair(BlocksModded.SMALL_CANDELABRA_EXPOSED.block, BlocksModded.WAXED_SMALL_CANDELABRA_EXPOSED.block);
+        registerWaxableBlockPair(BlocksModded.SMALL_CANDELABRA_WEATHERED.block, BlocksModded.WAXED_SMALL_CANDELABRA_WEATHERED.block);
+        registerWaxableBlockPair(BlocksModded.SMALL_CANDELABRA_OXIDIZED.block, BlocksModded.WAXED_SMALL_CANDELABRA_OXIDIZED.block);
         
-        registerOxidizableBlockPair(ModBlocks.MEDIUM_CANDELABRA.block, ModBlocks.MEDIUM_CANDELABRA_EXPOSED.block);
-        registerOxidizableBlockPair(ModBlocks.MEDIUM_CANDELABRA_EXPOSED.block, ModBlocks.MEDIUM_CANDELABRA_WEATHERED.block);
-        registerOxidizableBlockPair(ModBlocks.MEDIUM_CANDELABRA_WEATHERED.block, ModBlocks.MEDIUM_CANDELABRA_OXIDIZED.block);
+        registerOxidizableBlockPair(BlocksModded.MEDIUM_CANDELABRA.block, BlocksModded.MEDIUM_CANDELABRA_EXPOSED.block);
+        registerOxidizableBlockPair(BlocksModded.MEDIUM_CANDELABRA_EXPOSED.block, BlocksModded.MEDIUM_CANDELABRA_WEATHERED.block);
+        registerOxidizableBlockPair(BlocksModded.MEDIUM_CANDELABRA_WEATHERED.block, BlocksModded.MEDIUM_CANDELABRA_OXIDIZED.block);
         
-        registerWaxableBlockPair(ModBlocks.MEDIUM_CANDELABRA.block, ModBlocks.WAXED_MEDIUM_CANDELABRA.block);
-        registerWaxableBlockPair(ModBlocks.MEDIUM_CANDELABRA_EXPOSED.block, ModBlocks.WAXED_MEDIUM_CANDELABRA_EXPOSED.block);
-        registerWaxableBlockPair(ModBlocks.MEDIUM_CANDELABRA_WEATHERED.block, ModBlocks.WAXED_MEDIUM_CANDELABRA_WEATHERED.block);
-        registerWaxableBlockPair(ModBlocks.MEDIUM_CANDELABRA_OXIDIZED.block, ModBlocks.WAXED_MEDIUM_CANDELABRA_OXIDIZED.block);
+        registerWaxableBlockPair(BlocksModded.MEDIUM_CANDELABRA.block, BlocksModded.WAXED_MEDIUM_CANDELABRA.block);
+        registerWaxableBlockPair(BlocksModded.MEDIUM_CANDELABRA_EXPOSED.block, BlocksModded.WAXED_MEDIUM_CANDELABRA_EXPOSED.block);
+        registerWaxableBlockPair(BlocksModded.MEDIUM_CANDELABRA_WEATHERED.block, BlocksModded.WAXED_MEDIUM_CANDELABRA_WEATHERED.block);
+        registerWaxableBlockPair(BlocksModded.MEDIUM_CANDELABRA_OXIDIZED.block, BlocksModded.WAXED_MEDIUM_CANDELABRA_OXIDIZED.block);
         
-        registerOxidizableBlockPair(ModBlocks.LARGE_CANDELABRA.block, ModBlocks.LARGE_CANDELABRA_EXPOSED.block);
-        registerOxidizableBlockPair(ModBlocks.LARGE_CANDELABRA_EXPOSED.block, ModBlocks.LARGE_CANDELABRA_WEATHERED.block);
-        registerOxidizableBlockPair(ModBlocks.LARGE_CANDELABRA_WEATHERED.block, ModBlocks.LARGE_CANDELABRA_OXIDIZED.block);
+        registerOxidizableBlockPair(BlocksModded.LARGE_CANDELABRA.block, BlocksModded.LARGE_CANDELABRA_EXPOSED.block);
+        registerOxidizableBlockPair(BlocksModded.LARGE_CANDELABRA_EXPOSED.block, BlocksModded.LARGE_CANDELABRA_WEATHERED.block);
+        registerOxidizableBlockPair(BlocksModded.LARGE_CANDELABRA_WEATHERED.block, BlocksModded.LARGE_CANDELABRA_OXIDIZED.block);
         
-        registerWaxableBlockPair(ModBlocks.LARGE_CANDELABRA.block, ModBlocks.WAXED_LARGE_CANDELABRA.block);
-        registerWaxableBlockPair(ModBlocks.LARGE_CANDELABRA_EXPOSED.block, ModBlocks.WAXED_LARGE_CANDELABRA_EXPOSED.block);
-        registerWaxableBlockPair(ModBlocks.LARGE_CANDELABRA_WEATHERED.block, ModBlocks.WAXED_LARGE_CANDELABRA_WEATHERED.block);
-        registerWaxableBlockPair(ModBlocks.LARGE_CANDELABRA_OXIDIZED.block, ModBlocks.WAXED_LARGE_CANDELABRA_OXIDIZED.block);
+        registerWaxableBlockPair(BlocksModded.LARGE_CANDELABRA.block, BlocksModded.WAXED_LARGE_CANDELABRA.block);
+        registerWaxableBlockPair(BlocksModded.LARGE_CANDELABRA_EXPOSED.block, BlocksModded.WAXED_LARGE_CANDELABRA_EXPOSED.block);
+        registerWaxableBlockPair(BlocksModded.LARGE_CANDELABRA_WEATHERED.block, BlocksModded.WAXED_LARGE_CANDELABRA_WEATHERED.block);
+        registerWaxableBlockPair(BlocksModded.LARGE_CANDELABRA_OXIDIZED.block, BlocksModded.WAXED_LARGE_CANDELABRA_OXIDIZED.block);
         
-        registerOxidizableBlockPair(ModBlocks.WALL_CANDELABRA.block, ModBlocks.WALL_CANDELABRA_EXPOSED.block);
-        registerOxidizableBlockPair(ModBlocks.WALL_CANDELABRA_EXPOSED.block, ModBlocks.WALL_CANDELABRA_WEATHERED.block);
-        registerOxidizableBlockPair(ModBlocks.WALL_CANDELABRA_WEATHERED.block, ModBlocks.WALL_CANDELABRA_OXIDIZED.block);
+        registerOxidizableBlockPair(BlocksModded.WALL_CANDELABRA.block, BlocksModded.WALL_CANDELABRA_EXPOSED.block);
+        registerOxidizableBlockPair(BlocksModded.WALL_CANDELABRA_EXPOSED.block, BlocksModded.WALL_CANDELABRA_WEATHERED.block);
+        registerOxidizableBlockPair(BlocksModded.WALL_CANDELABRA_WEATHERED.block, BlocksModded.WALL_CANDELABRA_OXIDIZED.block);
         
-        registerWaxableBlockPair(ModBlocks.WALL_CANDELABRA.block, ModBlocks.WAXED_WALL_CANDELABRA.block);
-        registerWaxableBlockPair(ModBlocks.WALL_CANDELABRA_EXPOSED.block, ModBlocks.WAXED_WALL_CANDELABRA_EXPOSED.block);
-        registerWaxableBlockPair(ModBlocks.WALL_CANDELABRA_WEATHERED.block, ModBlocks.WAXED_WALL_CANDELABRA_WEATHERED.block);
-        registerWaxableBlockPair(ModBlocks.WALL_CANDELABRA_OXIDIZED.block, ModBlocks.WAXED_WALL_CANDELABRA_OXIDIZED.block);
+        registerWaxableBlockPair(BlocksModded.WALL_CANDELABRA.block, BlocksModded.WAXED_WALL_CANDELABRA.block);
+        registerWaxableBlockPair(BlocksModded.WALL_CANDELABRA_EXPOSED.block, BlocksModded.WAXED_WALL_CANDELABRA_EXPOSED.block);
+        registerWaxableBlockPair(BlocksModded.WALL_CANDELABRA_WEATHERED.block, BlocksModded.WAXED_WALL_CANDELABRA_WEATHERED.block);
+        registerWaxableBlockPair(BlocksModded.WALL_CANDELABRA_OXIDIZED.block, BlocksModded.WAXED_WALL_CANDELABRA_OXIDIZED.block);
         
-        registerOxidizableBlockPair(ModBlocks.WASTEBIN.block, ModBlocks.WASTEBIN_EXPOSED.block);
-        registerOxidizableBlockPair(ModBlocks.WASTEBIN_EXPOSED.block, ModBlocks.WASTEBIN_WEATHERED.block);
-        registerOxidizableBlockPair(ModBlocks.WASTEBIN_WEATHERED.block, ModBlocks.WASTEBIN_OXIDIZED.block);
+        registerOxidizableBlockPair(BlocksModded.WASTEBIN.block, BlocksModded.WASTEBIN_EXPOSED.block);
+        registerOxidizableBlockPair(BlocksModded.WASTEBIN_EXPOSED.block, BlocksModded.WASTEBIN_WEATHERED.block);
+        registerOxidizableBlockPair(BlocksModded.WASTEBIN_WEATHERED.block, BlocksModded.WASTEBIN_OXIDIZED.block);
         
-        registerWaxableBlockPair(ModBlocks.WASTEBIN.block, ModBlocks.WAXED_WASTEBIN.block);
-        registerWaxableBlockPair(ModBlocks.WASTEBIN_EXPOSED.block, ModBlocks.WAXED_WASTEBIN_EXPOSED.block);
-        registerWaxableBlockPair(ModBlocks.WASTEBIN_WEATHERED.block, ModBlocks.WAXED_WASTEBIN_WEATHERED.block);
-        registerWaxableBlockPair(ModBlocks.WASTEBIN_OXIDIZED.block, ModBlocks.WAXED_WASTEBIN_OXIDIZED.block);
+        registerWaxableBlockPair(BlocksModded.WASTEBIN.block, BlocksModded.WAXED_WASTEBIN.block);
+        registerWaxableBlockPair(BlocksModded.WASTEBIN_EXPOSED.block, BlocksModded.WAXED_WASTEBIN_EXPOSED.block);
+        registerWaxableBlockPair(BlocksModded.WASTEBIN_WEATHERED.block, BlocksModded.WAXED_WASTEBIN_WEATHERED.block);
+        registerWaxableBlockPair(BlocksModded.WASTEBIN_OXIDIZED.block, BlocksModded.WAXED_WASTEBIN_OXIDIZED.block);
     }
     
     private static void strips() {

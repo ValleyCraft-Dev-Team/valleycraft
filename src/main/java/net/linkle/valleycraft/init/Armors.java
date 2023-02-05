@@ -1,0 +1,170 @@
+package net.linkle.valleycraft.init;
+
+import static net.linkle.valleycraft.init.Groups.CLOTHING;
+
+import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.armors.ArmorMats;
+import net.linkle.valleycraft.item.ClothingArmorItem;
+import net.linkle.valleycraft.util.ItemEnum;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterials;
+import net.minecraft.item.Item;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
+import net.minecraft.util.registry.Registry;
+
+public enum Armors implements ItemEnum {
+    STRAW_HAT(new ArmorItem(ArmorMats.STRAW_HAT, EquipmentSlot.HEAD, settingsNormal())),
+    AMETHYST_GOGGLES(new ArmorItem(ArmorMats.AMETHYST_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
+    NIGHTVISION_GOGGLES(new ArmorItem(ArmorMats.NIGHTVISION_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
+
+    SEAGULL_FEATHER(new ArmorItem(ArmorMats.SEAGULL_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    DUCK_FEATHER(new ArmorItem(ArmorMats.DUCK_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    CROW_FEATHER(new ArmorItem(ArmorMats.CROW_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    FEATHER(new ArmorItem(ArmorMats.WHITE_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+
+    DIERDRA_LAUREL(new ArmorItem(ArmorMats.DIERDRA_LAUREL, EquipmentSlot.HEAD, settingsNormal())),
+    FLOWER_CROWN(new ArmorItem(ArmorMats.FLOWERING_HAT, EquipmentSlot.HEAD, settingsNormal())),
+    DRIPLEAF_HAT(new ArmorItem(ArmorMats.DRIPLEAF, EquipmentSlot.HEAD, settingsNormal())),
+
+    REINFORCED_LEATHER_HELMET(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_GOLDEN_HELMET(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_IRON_HELMET(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_ROSEGOLD_HELMET(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_DIAMOND_HELMET(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_NETHERITE_HELMET(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.HEAD, settingsNormal())),
+
+    LEATHER_BREASTPLATE(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.CHEST, settingsNormal())),
+    GOLDEN_BREASTPLATE(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.CHEST, settingsNormal())),
+    PRIMSTEEL_BREASTPLATE(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
+    IRON_BREASTPLATE(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.CHEST, settingsNormal())),
+    ROSEGOLD_BREASTPLATE(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),
+    DIAMOND_BREASTPLATE(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.CHEST, settingsNormal())),
+    NETHERITE_BREASTPLATE(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.CHEST, settingsNormal())),
+
+    LEATHER_SANDALS(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.FEET, settingsNormal())),
+    GOLDEN_SANDALS(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.FEET, settingsNormal())),
+    PRIMSTEEL_SANDALS(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
+    IRON_SANDALS(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.FEET, settingsNormal())),
+    ROSEGOLD_SANDALS(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.FEET, settingsNormal())),
+    DIAMOND_SANDALS(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.FEET, settingsNormal())),
+    NETHERITE_SANDALS(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.FEET, settingsNormal())),
+
+    LEATHER_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_LEATHER, EquipmentSlot.LEGS, settingsNormal())),
+    GOLDEN_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_GOLD, EquipmentSlot.LEGS, settingsNormal())),
+    PRIMSTEEL_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    IRON_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_IRON, EquipmentSlot.LEGS, settingsNormal())),
+    ROSEGOLD_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
+    DIAMOND_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_DIAMOND, EquipmentSlot.LEGS, settingsNormal())),
+    NETHERITE_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_NETHERITE, EquipmentSlot.LEGS, settingsNormal())),
+
+    LEATHER_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.LEGS, settingsNormal())),
+    GOLDEN_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.LEGS, settingsNormal())),
+    PRIMSTEEL_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    IRON_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.LEGS, settingsNormal())),
+    ROSEGOLD_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
+    DIAMOND_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.LEGS, settingsNormal())),
+    NETHERITE_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.LEGS, settingsNormal())),
+
+    //LEATHER_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_LEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    //GOLDEN_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_GOLD, EquipmentSlot.HEAD, settingsNormal())),
+    //PRIMSTEEL_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
+    //IRON_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_IRON, EquipmentSlot.HEAD, settingsNormal())),
+    //ROSEGOLD_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
+    //DIAMOND_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
+    //NETHERITE_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_NETHERITE, EquipmentSlot.HEAD, settingsNormal())),
+
+    BIKINI_NEUTRAL_REPAIRED(new ArmorItem(ArmorMats.BIKINI_NEUTRAL_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+
+    CANVAS_HOOD(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.HEAD, settingsNormal())),
+    CANVAS_TUNIC(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.CHEST, settingsNormal())),
+    CANVAS_LEGGINGS(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.LEGS, settingsNormal())),
+    CANVAS_BOOTS(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.FEET, settingsNormal())),
+
+    WATTLE_HELMET(new ArmorItem(ArmorMats.WATTLE, EquipmentSlot.HEAD, settingsNormal())),
+    WATTLE_CHESTPLATE(new ArmorItem(ArmorMats.WATTLE, EquipmentSlot.CHEST, settingsNormal())),
+    WATTLE_LEGGINGS(new ArmorItem(ArmorMats.WATTLE, EquipmentSlot.LEGS, settingsNormal())),
+    WATTLE_BOOTS(new ArmorItem(ArmorMats.WATTLE, EquipmentSlot.FEET, settingsNormal())),
+
+    LEATHER_HELMET(new ArmorItem(ArmorMats.LEATHER_MODIFIED, EquipmentSlot.HEAD, settingsNormal())),
+    LEATHER_CHESTPLATE(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.CHEST, settingsNormal())),
+    LEATHER_LEGGINGS(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.LEGS, settingsNormal())),
+    LEATHER_BOOTS(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.FEET, settingsNormal())),
+
+    ROSEGOLD_HELMET(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
+    ROSEGOLD_CHESTPLATE(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),
+    ROSEGOLD_LEGGINGS(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
+    ROSEGOLD_BOOTS(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.FEET, settingsNormal())),
+
+    GOLEMITE_HELMET(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
+    GOLEMITE_CHESTPLATE(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
+    GOLEMITE_LEGGINGS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    GOLEMITE_BOOTS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
+
+    TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
+    TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
+
+    /**special armors**/
+
+    CHEF_HAT(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsNormal())),
+    CHEF_APRON(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.LEGS, settingsNormal())),
+
+    //DIVING_HELMET(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
+    //DIVING_CHESTPLATE(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
+    //DIVING_LEGGINGS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
+    //DIVING_BOOTS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.FEET, settingsArtifacts(Rarity.RARE))),
+
+    //test to get the 3d armor models running
+    TEST_HELMET(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.HEAD, settingDebug())),
+    TEST_CHESTPLATE(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.CHEST, settingDebug())),
+    TEST_LEGGINGS(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.LEGS, settingDebug())),
+    TEST_BOOTS(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.FEET, settingDebug()));
+
+    /** Called from {@link ItemsModded} */
+    public static void initialize() {
+
+    }
+
+    private static final Item.Settings settingsArtifacts() {
+        return new Item.Settings().group(Groups.VC_TOOLS);
+    }
+
+    private static final Item.Settings settingsArtifacts(Rarity rarity) {
+        return settingsArtifacts().rarity(rarity);
+    }
+
+    private static Item.Settings settingsNormal() {
+        return new Item.Settings().group(CLOTHING);
+    }
+
+    private static Item.Settings settingDebug() {
+        return new Item.Settings();
+    }
+
+    private static Item.Settings settingsNormal(Rarity rarity) {
+        return settingsNormal().rarity(rarity);
+    }
+
+    // ### The Enum Class Itself ###
+
+    public final Item item;
+    public final Identifier id;
+
+    Armors(Item item) {
+        this.item = Registry.register(Registry.ITEM, id = Main.makeId(name().toLowerCase()), item);
+    }
+
+    @Override
+    public Item asItem() {
+        return item;
+    }
+
+    @Override
+    public Identifier getId() {
+        return id;
+    }
+}

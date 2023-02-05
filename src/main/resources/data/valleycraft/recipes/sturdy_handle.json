@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#V"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:handle"
+    },
+    "V": {
+      "item": "valleycraft:leather_straps"
+    }
+  },
+  "result": {
+    "item": "valleycraft:sturdy_handle",
+    "count": 1
+  }
+}

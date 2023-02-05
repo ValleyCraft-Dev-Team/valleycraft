@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    " V"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:brasium"
+    },
+    "V": {
+      "item": "valleycraft:reinforced_handle"
+    }
+  },
+  "result": {
+    "item": "valleycraft:anthropologists_rock_pick",
+    "count": 1
+  }
+}

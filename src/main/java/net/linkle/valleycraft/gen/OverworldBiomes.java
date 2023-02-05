@@ -3,7 +3,7 @@ package net.linkle.valleycraft.gen;
 import static net.linkle.valleycraft.gen.feature.ModBiomeFeatures.*;
 import static net.minecraft.world.gen.GenerationStep.Feature.VEGETAL_DECORATION;
 import net.linkle.valleycraft.gen.feature.VegetationPlaced;
-import net.linkle.valleycraft.init.ModBiomes;
+import net.linkle.valleycraft.init.Biomes;
 import net.linkle.valleycraft.widener.OverworldBiomeWidener;
 import net.minecraft.client.sound.MusicType;
 import net.minecraft.sound.BiomeMoodSound;
@@ -12,7 +12,7 @@ import net.minecraft.world.biome.*;
 import net.minecraft.world.biome.Biome.Precipitation;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 
-/** Register the biome at {@link ModBiomes} */
+/** Register the biome at {@link Biomes} */
 public class OverworldBiomes {
     
     /** {@link OverworldBiomeCreator#addBasicFeatures} */

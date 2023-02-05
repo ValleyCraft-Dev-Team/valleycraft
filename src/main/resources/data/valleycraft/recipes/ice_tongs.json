@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #",
+    "# "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:brasium"
+    }
+  },
+  "result": {
+    "item": "valleycraft:ice_tongs",
+    "count": 1
+  }
+}

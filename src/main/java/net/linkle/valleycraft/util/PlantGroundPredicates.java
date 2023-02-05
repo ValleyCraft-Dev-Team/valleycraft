@@ -2,7 +2,6 @@ package net.linkle.valleycraft.util;
 
 import java.util.function.Predicate;
 
-import net.linkle.valleycraft.init.ModNaturalBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.tag.BlockTags;

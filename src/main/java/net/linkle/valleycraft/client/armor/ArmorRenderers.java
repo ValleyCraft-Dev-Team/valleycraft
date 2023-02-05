@@ -4,7 +4,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.ArmorRenderer;
 import net.linkle.valleycraft.client.armor.renderer.StrawHatRenderer;
-import net.linkle.valleycraft.init.ModArmors;
+import net.linkle.valleycraft.init.Armors;
 import net.minecraft.item.ItemConvertible;
 
 /** Armor Renderers */
@@ -12,7 +12,7 @@ import net.minecraft.item.ItemConvertible;
 public class ArmorRenderers {
     
     public static void intialize() {
-        register(new StrawHatRenderer(), ModArmors.STRAW_HAT);
+        register(new StrawHatRenderer(), Armors.STRAW_HAT);
     }
     
     private static void register(ArmorRenderer renderer, ItemConvertible... items) {

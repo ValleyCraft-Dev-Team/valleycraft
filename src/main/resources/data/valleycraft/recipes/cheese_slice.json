@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:cheese"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:cheese_slice",
+    "count": 8
+  }
+}

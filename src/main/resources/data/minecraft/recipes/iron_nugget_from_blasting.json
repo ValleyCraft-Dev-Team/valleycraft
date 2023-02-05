@@ -80,30 +80,6 @@
     },
     {
       "item": "valleycraft:iron_thigh_guards"
-    },
-    {
-      "item": "valleycraft:iron_circlet"
-    },
-    {
-      "item": "valleycraft:ancient_shortsword"
-    },
-    {
-      "item": "valleycraft:ancient_climbing_axe"
-    },
-    {
-      "item": "valleycraft:seaologer_fixed"
-    },
-    {
-      "item": "valleycraft:moblin_sword_fixed"
-    },
-    {
-      "item": "valleycraft:scale_mail_helmet"
-    },
-    {
-      "item": "valleycraft:scale_mail"
-    },
-    {
-      "item": "valleycraft:scale_mail_skirt"
     }
   ],
   "result": "valleycraft:iron_scrap"

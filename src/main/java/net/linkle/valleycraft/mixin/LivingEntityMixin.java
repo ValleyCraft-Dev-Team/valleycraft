@@ -12,13 +12,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import net.linkle.valleycraft.Debugs;
 import net.linkle.valleycraft.extension.LivingEntityExt;
-import net.linkle.valleycraft.init.ModEntityType;
-import net.linkle.valleycraft.init.ModItems;
-import net.linkle.valleycraft.item.SoulPetItem;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.MathHelper;

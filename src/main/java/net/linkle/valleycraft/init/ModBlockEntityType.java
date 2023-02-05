@@ -23,10 +23,10 @@ public class ModBlockEntityType {
     public static BlockEntityType<StoveBlockEntity> STOVE;
 
     public static void initialize() {
-        CRATE = create("crate", CrateBlockEntity::new, ModBlocks.CRATE);
-        COUNTER = create("counter", CounterBlockEntity::new, ModBlocks.COUNTER);
-        CABINET = create("cabinet", CabinetBlockEntity::new, ModBlocks.CABINET);
-        STOVE = create("stove", StoveBlockEntity::new, ModBlocks.BRICK_STOVE);
+        CRATE = create("crate", CrateBlockEntity::new, BlocksModded.CRATE);
+        COUNTER = create("counter", CounterBlockEntity::new, BlocksModded.COUNTER);
+        CABINET = create("cabinet", CabinetBlockEntity::new, BlocksModded.CABINET);
+        STOVE = create("stove", StoveBlockEntity::new, BlocksModded.BRICK_STOVE);
     }
     
     @Environment(EnvType.CLIENT)

@@ -1,14 +1,12 @@
 package net.linkle.valleycraft.tool.shovel.special;
 
 import net.linkle.valleycraft.api.EnchantmentHandler;
-import net.linkle.valleycraft.init.ModGroups;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.ShovelItem;
-import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 
-import static net.linkle.valleycraft.init.ModGroups.VC_TOOLS;
+import static net.linkle.valleycraft.init.Groups.VC_TOOLS;
 
 public class OarItem
 extends ShovelItem

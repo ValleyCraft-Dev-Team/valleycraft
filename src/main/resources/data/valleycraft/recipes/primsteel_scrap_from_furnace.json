@@ -4,9 +4,6 @@
   "experience": 0.1,
   "ingredient": [
     {
-      "item": "valleycraft:ancient_dungeon_key"
-    },
-    {
       "item": "valleycraft:knife_primsteel"
     },
     {
@@ -43,9 +40,6 @@
       "item": "valleycraft:primsteel_thigh_guards"
     },
     {
-      "item": "valleycraft:primsteel_circlet"
-    },
-    {
       "item": "valleycraft:primsteel_sword"
     },
     {
@@ -59,9 +53,6 @@
     },
     {
       "item": "valleycraft:primsteel_hoe"
-    },
-    {
-      "item": "valleycraft:primsteel_ikakalaka"
     },
     {
       "item": "valleycraft:golemite_helmet"

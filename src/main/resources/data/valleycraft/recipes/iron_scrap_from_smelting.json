@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:rusted_pickaxe"
+    },
+    {
+      "item": "valleycraft:rusted_sword"
+    }
+  ],
+  "result": "valleycraft:iron_scrap"
+}

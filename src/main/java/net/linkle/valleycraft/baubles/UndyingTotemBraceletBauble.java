@@ -1,11 +1,10 @@
 package net.linkle.valleycraft.baubles;
 
-import net.linkle.valleycraft.init.ModBaubles;
+import net.linkle.valleycraft.init.Baubles;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.stat.Stats;
@@ -35,7 +34,7 @@ public class UndyingTotemBraceletBauble extends AbstractTotemBase {
         }
 
         showFloatingItem(world, user);
-        return stack.isEmpty() ? new ItemStack(ModBaubles.TOTEM_OF_UNDYING_BRACELET) : stack;
+        return stack.isEmpty() ? new ItemStack(Baubles.TOTEM_OF_UNDYING_BRACELET) : stack;
     }
 
     @Override

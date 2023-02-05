@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.block;
 
-import net.linkle.valleycraft.init.ModSounds;
+import net.linkle.valleycraft.init.Sounds;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
@@ -142,7 +142,7 @@ public class CurtainBlock extends HorizontalWithWaterBlock {
             fluidTick(world, pos);
         }
         boolean isOpen = state.get(OPEN);
-        var sound = isOpen ? ModSounds.CURTAIN_OPEN : ModSounds.CURTAIN_CLOSE;
+        var sound = isOpen ? Sounds.CURTAIN_OPEN : Sounds.CURTAIN_CLOSE;
         world.playSound(null, pos, sound.sound, SoundCategory.BLOCKS, 0.5f, isOpen ? 1.0f : 0.95f);
         world.emitGameEvent(player, state.get(OPEN) ? GameEvent.BLOCK_OPEN : GameEvent.BLOCK_CLOSE, pos);
         return ActionResult.success(world.isClient);
