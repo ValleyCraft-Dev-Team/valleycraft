@@ -17,10 +17,6 @@ public interface EntityTypeEnum extends IdProvider {
     
     <T extends Entity> EntityType<T> type();
     
-    default <T extends Entity> EntityType<T> type(Class<T> clazz) {
-        return type();
-    }
-    
     default <T extends Entity> T create(ServerWorld world) {
         return (T) type().create(world);
     }

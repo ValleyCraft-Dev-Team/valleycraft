@@ -9,13 +9,13 @@ import net.minecraft.client.render.entity.model.EntityModelLayers;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
-public class ChickenRenderer extends MobEntityRenderer<ChickenVariant, ChickenEntityModel<ChickenVariant>> {
+public class ChickenVariantRenderer extends MobEntityRenderer<ChickenVariant, ChickenEntityModel<ChickenVariant>> {
 
     private static final Identifier BROWN_TEXTURE = Main.makeId("textures/entity/chickens/brown.png");
     private static final Identifier BLACK_TEXTURE = Main.makeId("textures/entity/chickens/black.png");
     private static final Identifier TAN_TEXTURE = Main.makeId("textures/entity/chickens/tan.png");
     
-    public ChickenRenderer(Context context) {
+    public ChickenVariantRenderer(Context context) {
         super(context, new ChickenEntityModel<>(context.getPart(EntityModelLayers.CHICKEN)), 0.3f);
     }
 

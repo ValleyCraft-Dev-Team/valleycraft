@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.entity.pupkins;
 
-import net.linkle.valleycraft.init.EntityType;
+import net.linkle.valleycraft.init.Entities;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -47,7 +47,7 @@ public class PupkinEntity extends AnimalEntity {
 
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return EntityType.PUPKIN.create(world);
+        return Entities.PUPKIN.create(world);
     }
     
     public static DefaultAttributeContainer.Builder createPupkinAttributes() {

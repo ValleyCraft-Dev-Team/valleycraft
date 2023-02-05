@@ -9,7 +9,8 @@
     "LivingEntityMixin",
     "PlayerEntityMixin",
     "ItemEntityMixin",
-    "CraftingScreenHandlerMixin"
+    "CraftingScreenHandlerMixin",
+    "EnchantmentHelperMixin"
   ],
   "client": [
     "ContinuousFallingParticleMixin",

@@ -1,7 +1,7 @@
 package net.linkle.valleycraft.entity.snails;
 
 import net.linkle.valleycraft.init.FoodIngredients;
-import net.linkle.valleycraft.init.EntityType;
+import net.linkle.valleycraft.init.Entities;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.ai.pathing.PathNodeType;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
@@ -51,7 +51,7 @@ public class CaveSnailEntity extends AnimalEntity {
 
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return EntityType.SNAIL.create(world);
+        return Entities.SNAIL.create(world);
     }
 
     public static DefaultAttributeContainer.Builder createSnailAttributes() {

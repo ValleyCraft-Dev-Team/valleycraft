@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.entity;
 
-import net.linkle.valleycraft.init.EntityType;
+import net.linkle.valleycraft.init.Entities;
 import net.minecraft.entity.passive.CowEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -14,6 +14,6 @@ public class DairyCowEntity extends CowEntity {
 
     @Override
     public DairyCowEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return EntityType.DAIRY_COW.create(world);
+        return Entities.DAIRY_COW.create(world);
     }
 }

@@ -20,6 +20,13 @@
     ]
   },
   
+  "duck_quack": {
+    "subtitle": "subtitle.valleycraft:duck_quack",
+    "sounds": [
+      "valleycraft:duck_quack"
+    ]
+  },
+  
   "pot_break": {
     "sounds": [
       "valleycraft:block/claypot1",

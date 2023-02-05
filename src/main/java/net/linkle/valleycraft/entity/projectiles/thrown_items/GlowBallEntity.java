@@ -1,7 +1,7 @@
 package net.linkle.valleycraft.entity.projectiles.thrown_items;
 
 import net.linkle.valleycraft.init.BlocksModded;
-import net.linkle.valleycraft.init.EntityType;
+import net.linkle.valleycraft.init.Entities;
 import net.linkle.valleycraft.init.ItemsModded;
 import net.minecraft.block.MultifaceGrowthBlock;
 import net.minecraft.entity.EntityStatuses;
@@ -27,7 +27,7 @@ public class GlowBallEntity extends ThrownItemEntity {
     }
     
     private GlowBallEntity(World world, PlayerEntity user) {
-        super(EntityType.THROWN_ROCK.type(), user, world);
+        super(Entities.THROWN_ROCK.type(), user, world);
     }
     
     public static GlowBallEntity create(World world, PlayerEntity user) {

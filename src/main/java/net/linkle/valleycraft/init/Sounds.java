@@ -13,7 +13,8 @@ public enum Sounds implements IdProvider {
     CURTAIN_OPEN,
     CURTAIN_CLOSE,
     
-    POT_BREAK;
+    POT_BREAK, 
+    DUCK_QUACK;
 
     public static void initialize() {
     }
@@ -25,6 +26,11 @@ public enum Sounds implements IdProvider {
     
     Sounds() {
         sound = new SoundEvent(Main.makeId(name().toLowerCase()));
+        Registry.register(Registry.SOUND_EVENT, sound.getId(), sound);
+    }
+    
+    Sounds(String path) {
+        sound = new SoundEvent(Main.makeId(path));
         Registry.register(Registry.SOUND_EVENT, sound.getId(), sound);
     }
 

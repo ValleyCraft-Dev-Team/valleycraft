@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.entity.snails;
 
-import net.linkle.valleycraft.init.EntityType;
+import net.linkle.valleycraft.init.Entities;
 import net.linkle.valleycraft.init.FoodIngredients;
 import net.linkle.valleycraft.init.ItemsModded;
 import net.minecraft.entity.ai.goal.*;
@@ -32,7 +32,7 @@ public class SnailEntity extends AnimalEntity {
         this.setPathfindingPenalty(PathNodeType.DANGER_FIRE, 16.0F);
         this.setPathfindingPenalty(PathNodeType.DAMAGE_FIRE, 16.0F);
     }
-    
+
     @Override
     protected void initGoals() {
         goalSelector.add(0, new SwimGoal(this));
@@ -44,7 +44,7 @@ public class SnailEntity extends AnimalEntity {
         this.goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 2.0F));
         this.goalSelector.add(7, new LookAroundGoal(this));
     }
-    
+
     @Override
     public void tickMovement() {
         super.tickMovement();
@@ -52,12 +52,11 @@ public class SnailEntity extends AnimalEntity {
 
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        return EntityType.SNAIL.create(world);
+        return Entities.SNAIL.create(world);
     }
 
     public static DefaultAttributeContainer.Builder createSnailAttributes() {
-        return MobEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 3.0D)
+        return MobEntity.createMobAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 3.0D)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25D);
     }
 
@@ -82,11 +81,7 @@ public class SnailEntity extends AnimalEntity {
     }
 
     static {
-        BREEDING_INGREDIENT = Ingredient.ofItems(new ItemConvertible[]{
-                Items.BEETROOT,
-                FoodIngredients.HEARTY_BEETROOT,
-                FoodIngredients.CAVE_ROOT,
-                FoodIngredients.ONION
-        });
+        BREEDING_INGREDIENT = Ingredient.ofItems(new ItemConvertible[] { Items.BEETROOT,
+                FoodIngredients.HEARTY_BEETROOT, FoodIngredients.CAVE_ROOT, FoodIngredients.ONION });
     }
 }

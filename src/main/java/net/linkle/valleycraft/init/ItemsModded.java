@@ -165,13 +165,13 @@ public enum ItemsModded implements ItemEnum {
     SLUDGE_BUCKET(new BucketItem(Fluids.SLUDGE_STILL.fluid, itemSettings().maxCount(1))),
 
     // spawn eggs
-    ABYSSWATCHER_SPAWN_EGG(new SpawnEggItem(EntityType.ABYSSWATCHER.type(), 0x09424C, 0x22DBE5, itemSettings())), // abysswatcher_spawn_egg
-    PERCH_SPAWN_EGG(new SpawnEggItem(EntityType.PERCH.type(), 0x724E00, 0xCC9D26, itemSettings())), // perch_spawn_egg
-    RED_PORGY_SPAWN_EGG(new SpawnEggItem(EntityType.RED_PORGY.type(), 0xF48DB0, 0xF9EDF1, itemSettings())), // red_porgy_spawn_egg
-    SARDINE_SPAWN_EGG(new SpawnEggItem(EntityType.SARDINE.type(), 0x2E445B, 0xA1B1CC, itemSettings())), // sardine_spawn_egg
-    STONEROLLER_MINNOW_SPAWN_EGG(new SpawnEggItem(EntityType.STONEROLLER_MINNOW.type(), 0x608C85, 0xCCCCCC, itemSettings())), // STONEROLLER_MINNOW_spawn_egg
-    BONEFIN_SPAWN_EGG(new SpawnEggItem(EntityType.BONEFIN.type(), 0xE5E0CE, 0xBFB799, itemSettings())), // bonefin_spawn_egg
-    ZOD_SPAWN_EGG(new SpawnEggItem(EntityType.ZOD.type(), 0x557571, 0xCCB599, itemSettings())); // zod_spawn_egg
+    ABYSSWATCHER_SPAWN_EGG(new SpawnEggItem(Entities.ABYSSWATCHER.type(), 0x09424C, 0x22DBE5, itemSettings())), // abysswatcher_spawn_egg
+    PERCH_SPAWN_EGG(new SpawnEggItem(Entities.PERCH.type(), 0x724E00, 0xCC9D26, itemSettings())), // perch_spawn_egg
+    RED_PORGY_SPAWN_EGG(new SpawnEggItem(Entities.RED_PORGY.type(), 0xF48DB0, 0xF9EDF1, itemSettings())), // red_porgy_spawn_egg
+    SARDINE_SPAWN_EGG(new SpawnEggItem(Entities.SARDINE.type(), 0x2E445B, 0xA1B1CC, itemSettings())), // sardine_spawn_egg
+    STONEROLLER_MINNOW_SPAWN_EGG(new SpawnEggItem(Entities.STONEROLLER_MINNOW.type(), 0x608C85, 0xCCCCCC, itemSettings())), // STONEROLLER_MINNOW_spawn_egg
+    BONEFIN_SPAWN_EGG(new SpawnEggItem(Entities.BONEFIN.type(), 0xE5E0CE, 0xBFB799, itemSettings())), // bonefin_spawn_egg
+    ZOD_SPAWN_EGG(new SpawnEggItem(Entities.ZOD.type(), 0x557571, 0xCCB599, itemSettings())); // zod_spawn_egg
 
     public static void initialize() {
         FoodTiered.initialize();

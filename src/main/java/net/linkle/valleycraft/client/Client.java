@@ -7,7 +7,7 @@ import net.linkle.valleycraft.client.armor.ArmorRenderers;
 import net.linkle.valleycraft.client.trinket.TrinketRenderers;
 import net.linkle.valleycraft.entity.client.armor.ClothArmorRenderer;
 import net.linkle.valleycraft.init.ModBlockEntityType;
-import net.linkle.valleycraft.init.EntityType;
+import net.linkle.valleycraft.init.Entities;
 import net.linkle.valleycraft.init.Particles;
 import net.linkle.valleycraft.network.ClientNetwork;
 import net.linkle.valleycraft.util.ModModelPredicateProvider;
@@ -24,7 +24,7 @@ public class Client implements ClientModInitializer {
         RenderLayers.intialize();
         ColorProvider.intialize();
         Particles.initializeClient();
-        EntityType.initializeClient();
+        Entities.initializeClient();
         FluidRenders.intialize();
         ModBlockEntityType.initializeClient();
         ArmorRenderers.intialize();

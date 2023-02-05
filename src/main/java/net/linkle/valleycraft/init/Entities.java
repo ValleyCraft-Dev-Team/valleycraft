@@ -1,6 +1,9 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.util.EntityTypeEnum.*;
+import static net.linkle.valleycraft.util.EntityTypeEnum.createEntity;
+import static net.linkle.valleycraft.util.EntityTypeEnum.createMob;
+import static net.linkle.valleycraft.util.EntityTypeEnum.registerAttribute;
+import static net.linkle.valleycraft.util.EntityTypeEnum.registerRenderer;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -11,14 +14,12 @@ import net.linkle.valleycraft.client.entity.model.pupkins.PupkinEntityModel;
 import net.linkle.valleycraft.client.entity.model.snails.CaveSnailEntityModel;
 import net.linkle.valleycraft.client.entity.model.snails.SculkSnailEntityModel;
 import net.linkle.valleycraft.client.entity.model.snails.SnailEntityModel;
-import net.linkle.valleycraft.client.entity.renderer.ChickenRenderer;
-import net.linkle.valleycraft.client.entity.renderer.CowRenderer;
+import net.linkle.valleycraft.client.entity.renderer.*;
 import net.linkle.valleycraft.client.entity.renderer.fish.CodEntityRenderer;
 import net.linkle.valleycraft.client.entity.renderer.fish.SalmonEntityRenderer;
 import net.linkle.valleycraft.client.entity.renderer.pupkins.PupkinEntityRenderer;
 import net.linkle.valleycraft.client.entity.renderer.snails.SnailEntityRenderer;
-import net.linkle.valleycraft.entity.ChickenVariant;
-import net.linkle.valleycraft.entity.DairyCowEntity;
+import net.linkle.valleycraft.entity.*;
 import net.linkle.valleycraft.entity.fish.*;
 import net.linkle.valleycraft.entity.projectiles.thrown_items.GlowBallEntity;
 import net.linkle.valleycraft.entity.projectiles.thrown_items.ThrownRockEntity;
@@ -27,8 +28,12 @@ import net.linkle.valleycraft.entity.snails.CaveSnailEntity;
 import net.linkle.valleycraft.entity.snails.SculkSnailEntity;
 import net.linkle.valleycraft.entity.snails.SnailEntity;
 import net.linkle.valleycraft.util.EntityTypeEnum;
+import net.minecraft.block.Blocks;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
-import net.minecraft.entity.*;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityDimensions;
+import net.minecraft.entity.SpawnGroup;
+import net.minecraft.entity.SpawnRestriction;
 import net.minecraft.entity.SpawnRestriction.Location;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.FishEntity;
@@ -41,7 +46,7 @@ import net.minecraft.world.Heightmap;
  * entity builder for the modded one. Also see {@link SpawnRestriction} for
  * spawn restriction references.
  */
-public enum EntityType implements EntityTypeEnum {
+public enum Entities implements EntityTypeEnum {
     
     // Others
     PUPKIN(createMob(SpawnGroup.CREATURE, PupkinEntity::new).dimensions(new EntityDimensions(0.6F, 0.8F, false)).trackRangeChunks(6)
@@ -52,6 +57,14 @@ public enum EntityType implements EntityTypeEnum {
     
     CHICKEN(createMob(SpawnGroup.CREATURE, ChickenVariant::new).dimensions(new EntityDimensions(0.4f, 0.7f, false)).trackRangeChunks(10)
             .spawnRestriction(Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn)),
+    
+    DUCK(createMob(SpawnGroup.CREATURE, DuckEntity::new).dimensions(new EntityDimensions(0.4f, 0.7f, false)).trackRangeChunks(10).specificSpawnBlocks(Blocks.WATER)),
+
+    MOSSY_SHEEP(createMob(SpawnGroup.CREATURE, MossySheepEntity::new).dimensions(new EntityDimensions(0.9f, 1.4f, false)).trackRangeChunks(10)
+            .spawnRestriction(Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn)),
+    
+    DOG(createMob(SpawnGroup.CREATURE, DogEntity::new).dimensions(new EntityDimensions(0.6f, 0.85f, false)).trackRangeChunks(10)
+            .spawnRestriction(Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, DogEntity::isValidNaturalSpawn)),
 
     // Snails
     SNAIL(createMob(SpawnGroup.AMBIENT, SnailEntity::new).dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(5)),
@@ -92,6 +105,9 @@ public enum EntityType implements EntityTypeEnum {
         registerAttribute(PUPKIN, PupkinEntity.createPupkinAttributes());
         registerAttribute(DAIRY_COW, DairyCowEntity.createCowAttributes());
         registerAttribute(CHICKEN, ChickenVariant.createChickenAttributes());
+        registerAttribute(DUCK, DuckEntity.createDuckAttributes());
+        registerAttribute(MOSSY_SHEEP, MossySheepEntity.createSheepAttributes());
+        registerAttribute(DOG, DogEntity.createWolfAttributes());
         
         registerAttribute(ZOD, UndeadFishEntity.createUndeadFishAttributes());
         registerAttribute(BONEFIN, UndeadFishEntity.createUndeadFishAttributes());
@@ -116,7 +132,10 @@ public enum EntityType implements EntityTypeEnum {
         
         registerRenderer(PUPKIN, PupkinEntityRenderer::new);
         registerRenderer(DAIRY_COW, CowRenderer.create("dairy_cow"));
-        registerRenderer(CHICKEN, ChickenRenderer::new);
+        registerRenderer(CHICKEN, ChickenVariantRenderer::new);
+        registerRenderer(DUCK, DuckRenderer::new);
+        registerRenderer(MOSSY_SHEEP, MossySheepRenderer::new);
+        registerRenderer(DOG, DogRenderer::new);
         
         registerRenderer(ZOD, CodEntityRenderer.create("zod"));
         registerRenderer(ABYSSWATCHER, CodEntityRenderer.create("abysswatcher"));
@@ -134,11 +153,11 @@ public enum EntityType implements EntityTypeEnum {
     
     public final Identifier id;
     
-    private EntityType(FabricEntityTypeBuilder<?> builder) {
+    private Entities(FabricEntityTypeBuilder<?> builder) {
         this(builder.build());
     }
     
-    private EntityType(net.minecraft.entity.EntityType<?> type) {
+    private Entities(net.minecraft.entity.EntityType<?> type) {
         this.type = Registry.register(Registry.ENTITY_TYPE, id = Main.makeId(name().toLowerCase()), type);
     }
     
