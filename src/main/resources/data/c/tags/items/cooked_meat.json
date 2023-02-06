@@ -9,6 +9,11 @@
     "valleycraft:cooked_phantom",
     "valleycraft:cooked_bird",
     "valleycraft:cooked_beast_liver",
-    "valleycraft:cooked_beast_heart"
+    "valleycraft:cooked_beast_heart",
+    "minecraft:cooked_beef",
+    "minecraft:cooked_chicken",
+    "minecraft:cooked_rabbit",
+    "minecraft:cooked_porkchop",
+    "minecraft:cooked_mutton"
   ]
 }

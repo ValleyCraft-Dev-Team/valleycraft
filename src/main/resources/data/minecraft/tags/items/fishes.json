@@ -6,6 +6,8 @@
     "valleycraft:raw_stoneroller_minnow",
     "valleycraft:raw_red_porgy",
     "valleycraft:raw_perch",
+    "valleycraft:raw_sardine",
+    "valleycraft:cooked_sardine",
     "valleycraft:raw_glowsquid_tentacle",
     "valleycraft:cooked_tropical_fish",
     "valleycraft:cooked_squid",
@@ -13,13 +15,8 @@
     "valleycraft:cooked_stoneroller_minnow",
     "valleycraft:cooked_red_porgy",
     "valleycraft:cooked_perch",
-    "valleycraft:cooked_lobster",
-    "valleycraft:cooked_mossy_crab",
     "valleycraft:cooked_sea_urchin",
     "valleycraft:cooked_clam",
-    "valleycraft:raw_lobster",
-    "valleycraft:raw_mossy_crab",
-    "valleycraft:urchin_block",
     "valleycraft:clam_block"
   ]
 }

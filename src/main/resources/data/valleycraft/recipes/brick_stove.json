@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#c#",
+    "#F#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bricks"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "valleycraft:brick_stove",
+    "count": 1
+  }
+}

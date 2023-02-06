@@ -6,7 +6,7 @@
   ],
   "key": {
     "#": {
-      "tag": "minecraft:flint"
+      "item": "minecraft:flint"
     },
     "V": {
       "item": "valleycraft:fiber"

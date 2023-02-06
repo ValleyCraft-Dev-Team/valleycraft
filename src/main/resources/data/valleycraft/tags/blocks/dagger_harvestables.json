@@ -1,7 +1,6 @@
 {
     "replace": false,
     "values": [
-        "#valleycraft:knife_harvestables",
-        "c:knife_harvestables"
+        "#c:knife_harvestables"
     ]
 }

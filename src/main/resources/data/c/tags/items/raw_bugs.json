@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "valleycraft:raw_silverfish",
-    "valleycraft:raw_tripe"
+    "valleycraft:raw_tripe",
+    "minecraft:spider_eye"
   ]
 }

@@ -4,14 +4,6 @@
     "minecraft:wither_rose",
     "valleycraft:faded_soul_rose",
     "valleycraft:soul_rose",
-    "valleycraft:blue_soul_rose",
-    "valleycraft:faded_soulspore_single",
-    "valleycraft:faded_soulspore",
-    "valleycraft:soulspore_single",
-    "valleycraft:soulspore",
-    "valleycraft:blue_soulspore_single",
-    "valleycraft:blue_soulspore",
-    "valleycraft:erdstone_spirit_lit",
-    "valleycraft:erdstone_lantern"
+    "valleycraft:blue_soul_rose"
   ]
 }

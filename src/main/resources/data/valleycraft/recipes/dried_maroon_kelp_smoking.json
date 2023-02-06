@@ -5,5 +5,5 @@
   "ingredient": {
     "item": "valleycraft:orange_kelp"
   },
-  "result": "minecraft:dried_orange_kelp"
+  "result": "valleycraft:dried_orange_kelp"
 }
