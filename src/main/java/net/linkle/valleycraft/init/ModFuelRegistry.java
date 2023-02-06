@@ -26,14 +26,16 @@ public class ModFuelRegistry {
         registry.add(ItemsModded.STRANGE_CATALYST, 40000);
         registry.add(ItemsModded.THERMAL_BLAZE_CORE, 4000);
 
-        //registry.add(Tools.KNIFE_WOODEN, 200);
-        //registry.add(Tools.WOODEN_GREATSWORD, 200);
-        //registry.add(Tools.TRAVELER_WOODEN, 200);
-        //registry.add(Tools.DAGGER_WOODEN, 200);
-        //registry.add(Tools.SCYTHE_WOODEN, 200);
-        //registry.add(Tools.WOODCUTTER_AXE_WOODEN, 200);
-        //registry.add(Tools.HATCHET_WOODEN, 200);
-        //registry.add(Tools.WOODEN_OAR, 200);
-        //registry.add(Tools.BRANCH, 200);
+        registry.add(Tools.KNIFE_WOODEN, 200);
+        registry.add(Tools.GREATSWORD_WOODEN, 200);
+        registry.add(Tools.TRAVELER_WOODEN, 200);
+        registry.add(Tools.DAGGER_WOODEN, 200);
+        registry.add(Tools.SCYTHE_WOODEN, 200);
+        registry.add(Tools.WOODCUTTER_AXE_WOODEN, 200);
+        registry.add(Tools.HATCHET_WOODEN, 200);
+        registry.add(Tools.WOODEN_OAR, 200);
+        registry.add(Tools.BRANCH, 400);
+        registry.add(Tools.WOODEN_STAFF, 300);
+        registry.add(Tools.BAMBOO_STAFF, 300);
     }
 }

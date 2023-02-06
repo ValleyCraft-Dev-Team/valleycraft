@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:canvas_block",
+    "valleycraft:canvas_slab",
+    "valleycraft:canvas_stairs"
+  ]
+}

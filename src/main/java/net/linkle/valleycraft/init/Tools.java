@@ -109,6 +109,18 @@ public class Tools {
     //bow reg
     public static final Item BRASIUM_COMPOUND = new ModBowItem(new FabricItemSettings().group(VC_TOOLS).maxDamage(770));
 
+    //wooden tools
+    public static final Item KNIFE_WOODEN = new KnifeBase(ToolMaterials.WOOD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS);
+    public static final Item HATCHET_WOODEN = new HatchetAxeBase(ToolMaterials.WOOD, HATCHET_BASE_DAMAGE, HATCHET_BASE_SPEED, BASIC_SETTINGS);
+    public static final Item WOODCUTTER_AXE_WOODEN = new WoodcutterAxeBase(ModToolMaterialsExtended.WOOD_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS);
+    public static final Item SCYTHE_WOODEN = new ScytheBase(ToolMaterials.WOOD, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SETTINGS);
+    public static final Item DAGGER_WOODEN = new DaggerBase(ToolMaterials.WOOD, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS);
+    public static final Item TRAVELER_WOODEN = new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS);
+    public static final Item GREATSWORD_WOODEN = new GreatswordBase(ModToolMaterialsExtended.WOOD_EXTENDED, GREATSWORD_BASE_DAMAGE, GREATSWORD_BASE_SPEED, BASIC_SETTINGS);
+    public static final Item WOODEN_OAR = new StaffBase(ModToolMaterials.PLANK, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS);
+    public static final Item WOODEN_STAFF = new StaffBase(ModToolMaterials.PLANK, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS);
+    public static final Item BAMBOO_STAFF = new StaffBase(ModToolMaterials.BAMBOO, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS);
+
     public static void initialize() {
         //Environmental
         Reg.register("branch", BRANCH);
@@ -126,11 +138,11 @@ public class Tools {
         //Reg.register("makeshift_spear", MAKESHIFT_SPEAR);
 
         //Staffs
-        Reg.register("wooden_staff", new StaffBase(ModToolMaterials.PLANK, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
-        Reg.register("bamboo_staff", new StaffBase(ModToolMaterials.BAMBOO, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("wooden_staff", WOODEN_STAFF);
+        Reg.register("bamboo_staff", BAMBOO_STAFF);
 
         //Specialty Tools
-        Reg.register("wooden_oar", new StaffBase(ModToolMaterials.PLANK, STAFF_BASE_DAMAGE, STAFF_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("wooden_oar", WOODEN_OAR);
         Reg.register("climbing_axe", CLIMBING_AXE);
         Reg.register("anthropologists_rock_pick", ANTHROPOLOGISTS_ROCK_PICK);
         Reg.register("ice_tongs", new PickaxeItem(ModToolMaterials.BRASIUM, PICKAXE_BASE_DAMAGE, PICKAXE_BASE_SPEED, BASIC_SETTINGS));
@@ -140,7 +152,7 @@ public class Tools {
         ModelPredicateProviderRegistry.register(knifeElder, new Identifier("broken"), (stack, world, entity, seed) -> PreventDestroy.isUsable(stack) ? 0.0f : 1.0f);
 
         //Knives
-        Reg.register("knife_wooden", new KnifeBase(ToolMaterials.WOOD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("knife_wooden", KNIFE_WOODEN);
         Reg.register("knife_stone", new KnifeBase(ToolMaterials.STONE, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("knife_golden", new KnifeBase(ToolMaterials.GOLD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("knife_primsteel", new KnifeBase(ModToolMaterials.PRIMSTEEL, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
@@ -150,7 +162,7 @@ public class Tools {
         Reg.register("knife_netherite", new KnifeBase(ToolMaterials.NETHERITE, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
 
         //Hatchets
-        Reg.register("hatchet_wooden", new HatchetAxeBase(ToolMaterials.WOOD, HATCHET_BASE_DAMAGE, HATCHET_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("hatchet_wooden", HATCHET_WOODEN);
         Reg.register("hatchet_stone", new HatchetAxeBase(ToolMaterials.STONE, HATCHET_BASE_DAMAGE, HATCHET_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("hatchet_golden", new HatchetAxeBase(ToolMaterials.GOLD, HATCHET_BASE_DAMAGE, HATCHET_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("hatchet_primsteel", new HatchetAxeBase(ModToolMaterials.PRIMSTEEL, HATCHET_BASE_DAMAGE, HATCHET_BASE_SPEED, BASIC_SETTINGS));
@@ -160,7 +172,7 @@ public class Tools {
         Reg.register("hatchet_netherite", new HatchetAxeBase(ToolMaterials.NETHERITE, HATCHET_BASE_DAMAGE, HATCHET_BASE_SPEED, BASIC_SETTINGS));
 
         //Woodcutter's Axes (upgrade from axe)
-        Reg.register("woodcutter_axe_wooden", new WoodcutterAxeBase(ModToolMaterialsExtended.WOOD_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("woodcutter_axe_wooden", WOODCUTTER_AXE_WOODEN);
         Reg.register("woodcutter_axe_stone", new WoodcutterAxeBase(ModToolMaterialsExtended.STONE_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("woodcutter_axe_golden", new WoodcutterAxeBase(ModToolMaterialsExtended.GOLD_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("woodcutter_axe_primsteel", new WoodcutterAxeBase(ModToolMaterialsExtended.PRIMSTEEL_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
@@ -170,7 +182,7 @@ public class Tools {
         Reg.register("woodcutter_axe_netherite", new WoodcutterAxeBase(ModToolMaterialsExtended.NETHERITE_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
 
         //Scythes (upgrade from hoe)
-        Reg.register("scythe_wooden", new ScytheBase(ToolMaterials.WOOD, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("scythe_wooden", SCYTHE_WOODEN);
         Reg.register("scythe_stone", new ScytheBase(ToolMaterials.STONE, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("scythe_golden", new ScytheBase(ToolMaterials.GOLD, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("scythe_primsteel", new ScytheBase(ModToolMaterials.PRIMSTEEL, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SETTINGS));
@@ -190,7 +202,7 @@ public class Tools {
         //Reg.register("spear_netherite", new SpearBase(ToolMaterials.NETHERITE, SPEAR_BASE_DAMAGE, SPEAR_BASE_SPEED, BASIC_SETTINGS));
 
         //Dagger (upgrade from knife)
-        Reg.register("dagger_wooden", new DaggerBase(ToolMaterials.WOOD, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("dagger_wooden", DAGGER_WOODEN);
         Reg.register("dagger_stone", new DaggerBase(ToolMaterials.STONE, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("dagger_golden", new DaggerBase(ToolMaterials.GOLD, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("dagger_primsteel", new DaggerBase(ModToolMaterials.PRIMSTEEL, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
@@ -200,7 +212,7 @@ public class Tools {
         Reg.register("dagger_netherite", new DaggerBase(ToolMaterials.NETHERITE, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
 
         //Traveler (upgrade from knife)
-        Reg.register("traveler_wooden", new TravelerBase(ToolMaterials.WOOD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("traveler_wooden", TRAVELER_WOODEN);
         Reg.register("traveler_stone", new TravelerBase(ToolMaterials.STONE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("traveler_golden", new TravelerBase(ToolMaterials.GOLD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("traveler_primsteel", new TravelerBase(ModToolMaterials.PRIMSTEEL, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
@@ -210,7 +222,7 @@ public class Tools {
         Reg.register("traveler_netherite", new TravelerBase(ToolMaterials.NETHERITE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
 
         //Greatswords (upgrade from sword)
-        Reg.register("wooden_greatsword", new GreatswordBase(ModToolMaterialsExtended.WOOD_EXTENDED, GREATSWORD_BASE_DAMAGE, GREATSWORD_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("wooden_greatsword", GREATSWORD_WOODEN);
         Reg.register("stone_greatsword", new GreatswordBase(ModToolMaterialsExtended.STONE_EXTENDED, GREATSWORD_BASE_DAMAGE, GREATSWORD_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("golden_greatsword", new GreatswordBase(ModToolMaterialsExtended.GOLD_EXTENDED, GREATSWORD_BASE_DAMAGE, GREATSWORD_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("primsteel_greatsword", new GreatswordBase(ModToolMaterialsExtended.PRIMSTEEL_EXTENDED, GREATSWORD_BASE_DAMAGE, GREATSWORD_BASE_SPEED, BASIC_SETTINGS));
