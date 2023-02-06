@@ -12,15 +12,17 @@ import net.linkle.valleycraft.item.clay_pot.WaterClayPotItem;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
+import net.minecraft.recipe.RecipeType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
+
+import javax.annotation.Nullable;
 
 public enum ItemsModded implements ItemEnum {
     RAW_CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(VC_ITEMS))),
     CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(VC_ITEMS))),
     WATER_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(1).group(VC_ITEMS).recipeRemainder(ItemsModded.CLAY_POT.item), 0, 0.0f)),
-    //MILK_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(1).group(INGREDIENTS).recipeRemainder(ModItems.CLAY_POT.item), 0, 0.0f).setMilk()),
 
     ROPE(new RopeItem(itemSettings().group(VC_ITEMS))),
     
@@ -63,11 +65,9 @@ public enum ItemsModded implements ItemEnum {
     DRAGON_TOOTH(new Item(itemSettings().rarity(RARE).fireproof())),
     SEAGULLS_FEATHER(new Item(itemSettings())),
     DUCKS_FEATHER(new Item(itemSettings())),
-    //DUCKS_EGG(new Item(itemSettings())),
     CROWS_FEATHER(new Item(itemSettings())),
     METAL_FEATHER(new Item(itemSettings().rarity(RARE))),
     SLIME_BLOB(new Item(itemSettings())),
-    //EVIL_CRYSTAL(new Item(itemSettings().rarity(UNCOMMON).fireproof())),
 
     HANDLE(new Item(itemSettings())),
     STURDY_HANDLE(new Item(itemSettings())),
@@ -86,7 +86,6 @@ public enum ItemsModded implements ItemEnum {
 
     ANTHRACITE(new Item(itemSettings())),
     BRIMSTONE_SHARD(new Item(itemSettings())),
-    //NETHER_GARNET(new Item(itemSettings())),
     RAW_COPPER_NUGGET(new Item(itemSettings())),
     COPPER_NUGGET(new Item(itemSettings())),
     COPPER_SCRAP(new Item(itemSettings())),
@@ -102,7 +101,6 @@ public enum ItemsModded implements ItemEnum {
     BRASIUM_INGOT(new Item(itemSettings())),
     ROSEGOLD_INGOT(new Item(itemSettings())),
     DIAMOND_FRAGMENTS(new Item(itemSettings())),
-    //DIAMOND_PLATE(new Item(itemSettings())),
     NETHERITE_NUGGET(new Item(itemSettings())),
     SPYGLASS_LENSE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
     ECHO_SHARD_LENSE(new Item(itemSettings().rarity(Rarity.RARE))),
@@ -111,56 +109,17 @@ public enum ItemsModded implements ItemEnum {
     THERMAL_BLAZE_CORE(new Item(itemSettings().rarity(Rarity.RARE))),
     STRANGE_CATALYST(new Item(itemSettings().rarity(RARE))),
 
-    //souls
-    //SOUL_ITEM_FADING(new SoulItem(itemSettings().group(BOOKS).fireproof(), 30)),
-    //SOUL_ITEM(new SoulItem(itemSettings().rarity(UNCOMMON).group(BOOKS).fireproof(), 60)),
-    //SOUL_ITEM_ENRAGED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof(), 120)),
-    //SOUL_ITEM_PET(new SoulPetItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof())),
-    //SOUL_ITEM_WARDEN(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 3750)),
-    //SOUL_ITEM_WITHERED(new SoulItem(itemSettings().rarity(RARE).group(BOOKS).fireproof(), 15)),
-    //SOUL_ITEM_AMALGAMATED(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 3750)),
-    //SOUL_ITEM_DRAGON(new SoulItem(itemSettings().rarity(EPIC).group(BOOKS).fireproof(), 7000)),
-
     GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(64))),
     ELDER_GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(64))),
 
-    //SEAOLOGER_TOKEN(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.COMMON).maxCount(64))),
     TOTEM_OF_TRADE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),
     TOTEM_OF_APPRECIATION(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(1))),
-    //TOTEM_OF_VISITORS(new UniqueMythicItem(itemSettings().rarity(RARE).maxCount(1))),
     TOTEM_OF_FRIENDSHIP(new Item(itemSettings().group(VC_ITEMS).rarity(EPIC).maxCount(1))),
     BOMB_BAG(new BombBagItem(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON))),
     ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_TOOLS))),
     SEED_BAG(new SeedBagItem(itemSettings().group(VC_ITEMS))),
-
-    //record items
-    //ANCIENT_RECORD_FRAGMENT(new ModDiscFragmentItem(itemSettings().group(BOOKS))),
-    //ANCIENT_RECORD_MUSIC_DISC(new ModMusicDiscItem(7, ModMusic.ANCIENT.sound, itemSettings().group(BOOKS).rarity(RARE).maxCount(1),110)),
-
-    //big bottle items
-    //BIG_BOTTLE(new Item(itemSettings())),
-    //BB_SNAIL(new Item(itemSettings().maxCount(16))),
-    //BB_CAVE_SNAIL(new Item(itemSettings().maxCount(16))),
-    //BB_SCULK_SNAIL(new Item(itemSettings().maxCount(16))),
-    //BB_RHINO_BEETLE(new Item(itemSettings().maxCount(16))),
-
-    //cloth items
-    //BLACK_CLOTH(new Item(itemSettings())),
-    //BLUE_CLOTH(new Item(itemSettings())),
-    //BROWN_CLOTH(new Item(itemSettings())),
-    //CYAN_CLOTH(new Item(itemSettings())),
-    //GRAY_CLOTH(new Item(itemSettings())),
-    //GREEN_CLOTH(new Item(itemSettings())),
-    //LIGHT_BLUE_CLOTH(new Item(itemSettings())),
-    //LIGHT_GRAY_CLOTH(new Item(itemSettings())),
-    //LIME_CLOTH(new Item(itemSettings())),
-    //MAGENTA_CLOTH(new Item(itemSettings())),
-    //ORANGE_CLOTH(new Item(itemSettings())),
-    //PINK_CLOTH(new Item(itemSettings())),
-    //PURPLE_CLOTH(new Item(itemSettings())),
-    //RED_CLOTH(new Item(itemSettings())),
+    PUFF_BALL(new Item(itemSettings())),
     CLOTH(new Item(itemSettings())),
-    //YELLOW_CLOTH(new Item(itemSettings())),
 
     //bucket items
     SLUDGE_BUCKET(new BucketItem(Fluids.SLUDGE_STILL.fluid, itemSettings().maxCount(1))),
@@ -182,10 +141,6 @@ public enum ItemsModded implements ItemEnum {
     
     private static Item.Settings itemSettings() {
         return new Item.Settings().group(VC_ITEMS);
-    }
-
-    private static Item.Settings unlistedWIPItemSettings() {
-        return new Item.Settings();
     }
 
     // ### The Enum Class Itself ###
