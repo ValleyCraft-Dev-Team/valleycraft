@@ -151,6 +151,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     ALGAE(new AlgaeBlock(), itemSettings(), PlaceableOnWaterItem::new),
 
     //beach plants
+    NEST(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
     BEACH_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
     ICEPLANT(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
 
