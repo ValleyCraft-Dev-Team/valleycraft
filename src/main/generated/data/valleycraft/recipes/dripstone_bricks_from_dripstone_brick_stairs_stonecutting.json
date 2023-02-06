@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:dripstone_brick_stairs"
+  },
+  "result": "valleycraft:dripstone_bricks"
+}

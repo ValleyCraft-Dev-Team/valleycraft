@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "valleycraft:volcanic_stone_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_volcanic_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:volcanic_stone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_volcanic_stone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "valleycraft:volcanic_stone_wall"
+    ]
+  }
+}

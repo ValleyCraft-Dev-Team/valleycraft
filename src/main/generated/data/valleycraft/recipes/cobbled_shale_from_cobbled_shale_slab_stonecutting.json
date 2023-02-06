@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "valleycraft:cobbled_shale_slab"
+  },
+  "result": "valleycraft:cobbled_shale"
+}

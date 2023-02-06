@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_polished_basalt_patterned_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:polished_basalt_patterned_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:polished_basalt_patterned_from_polished_basalt_patterned_slab_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_polished_basalt_patterned_slab",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:polished_basalt_patterned_from_polished_basalt_patterned_slab_stonecutting"
+    ]
+  }
+}

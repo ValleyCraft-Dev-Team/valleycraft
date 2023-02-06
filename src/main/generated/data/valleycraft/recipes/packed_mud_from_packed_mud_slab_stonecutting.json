@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "valleycraft:packed_mud_slab"
+  },
+  "result": "minecraft:packed_mud"
+}

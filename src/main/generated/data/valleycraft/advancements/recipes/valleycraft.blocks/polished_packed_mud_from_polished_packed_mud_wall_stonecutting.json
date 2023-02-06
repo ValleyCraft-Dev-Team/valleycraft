@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_polished_packed_mud_wall": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:polished_packed_mud_wall"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:polished_packed_mud_from_polished_packed_mud_wall_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_polished_packed_mud_wall",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:polished_packed_mud_from_polished_packed_mud_wall_stonecutting"
+    ]
+  }
+}

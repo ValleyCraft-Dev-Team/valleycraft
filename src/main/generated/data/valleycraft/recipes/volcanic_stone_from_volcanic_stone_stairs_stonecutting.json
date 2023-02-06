@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:volcanic_stone_stairs"
+  },
+  "result": "valleycraft:volcanic_stone"
+}

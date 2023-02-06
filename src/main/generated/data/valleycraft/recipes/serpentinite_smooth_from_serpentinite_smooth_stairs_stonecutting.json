@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:serpentinite_smooth_stairs"
+  },
+  "result": "valleycraft:serpentinite_smooth"
+}

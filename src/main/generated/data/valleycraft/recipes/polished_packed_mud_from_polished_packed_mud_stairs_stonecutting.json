@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:polished_packed_mud_stairs"
+  },
+  "result": "valleycraft:polished_packed_mud"
+}

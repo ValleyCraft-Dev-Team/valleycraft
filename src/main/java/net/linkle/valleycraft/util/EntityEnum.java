@@ -13,7 +13,7 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.server.world.ServerWorld;
 
 /** For Enum classes that contains EntityType. This interface adds common methods. */
-public interface EntityTypeEnum extends IdProvider {
+public interface EntityEnum extends IdProvider {
     
     <T extends Entity> EntityType<T> type();
     
@@ -21,15 +21,15 @@ public interface EntityTypeEnum extends IdProvider {
         return (T) type().create(world);
     }
     
-    static void registerAttribute(EntityTypeEnum entityType, DefaultAttributeContainer.Builder builder) {
+    static void registerAttribute(EntityEnum entityType, DefaultAttributeContainer.Builder builder) {
         FabricDefaultAttributeRegistry.register(entityType.type(), builder);
     }
     
-    public static <E extends Entity> void registerRenderer(EntityTypeEnum entityType, EntityRendererFactory<E> entityRendererFactory) {
+    static <E extends Entity> void registerRenderer(EntityEnum entityType, EntityRendererFactory<E> entityRendererFactory) {
         EntityRendererRegistry.register(entityType.type(), entityRendererFactory);
     }
     
-    public static <T extends Entity> FabricEntityTypeBuilder<T> createEntity(SpawnGroup group, EntityType.EntityFactory<T> factory) {
+    static <T extends Entity> FabricEntityTypeBuilder<T> createEntity(SpawnGroup group, EntityType.EntityFactory<T> factory) {
         return FabricEntityTypeBuilder.<T>create(group, factory);
     }
     

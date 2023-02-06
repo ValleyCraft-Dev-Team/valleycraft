@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "valleycraft:cracked_sandstone_brick_slab"
+  },
+  "result": "valleycraft:cracked_sandstone_bricks"
+}

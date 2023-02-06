@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:scorchstone_mosaic_stairs"
+  },
+  "result": "valleycraft:scorchstone_mosaic"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:mossy_dripstone_brick_wall"
+  },
+  "result": "valleycraft:mossy_dripstone_bricks"
+}

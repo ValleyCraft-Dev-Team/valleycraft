@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:cobbled_shale_stairs"
+  },
+  "result": "valleycraft:cobbled_shale"
+}

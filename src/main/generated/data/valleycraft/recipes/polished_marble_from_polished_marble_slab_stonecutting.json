@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "valleycraft:polished_marble_slab"
+  },
+  "result": "valleycraft:polished_marble"
+}

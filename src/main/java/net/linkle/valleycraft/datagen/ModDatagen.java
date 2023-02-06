@@ -8,5 +8,7 @@ public class ModDatagen implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator generator) {
         generator.addProvider(ValleyModelGenerator::new);
+        generator.addProvider(ValleyRecipeGenerator::new);
+        generator.addProvider(ValleyLootGenerator::new);
     }
 }

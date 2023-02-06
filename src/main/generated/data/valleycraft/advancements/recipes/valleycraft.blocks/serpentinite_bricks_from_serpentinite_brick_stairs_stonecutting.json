@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_serpentinite_brick_stairs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:serpentinite_brick_stairs"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:serpentinite_bricks_from_serpentinite_brick_stairs_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_serpentinite_brick_stairs",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:serpentinite_bricks_from_serpentinite_brick_stairs_stonecutting"
+    ]
+  }
+}

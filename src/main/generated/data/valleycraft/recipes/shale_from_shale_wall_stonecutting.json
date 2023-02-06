@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:shale_wall"
+  },
+  "result": "valleycraft:shale"
+}

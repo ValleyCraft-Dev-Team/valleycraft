@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "valleycraft:serpentinite_brick_slab"
+  },
+  "result": "valleycraft:serpentinite_bricks"
+}

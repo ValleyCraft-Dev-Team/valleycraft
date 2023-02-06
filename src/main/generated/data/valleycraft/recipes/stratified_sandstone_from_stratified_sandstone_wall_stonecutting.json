@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:stratified_sandstone_wall"
+  },
+  "result": "valleycraft:stratified_sandstone"
+}

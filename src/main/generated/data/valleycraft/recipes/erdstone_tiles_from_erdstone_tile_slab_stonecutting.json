@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "valleycraft:erdstone_tile_slab"
+  },
+  "result": "valleycraft:erdstone_tiles"
+}

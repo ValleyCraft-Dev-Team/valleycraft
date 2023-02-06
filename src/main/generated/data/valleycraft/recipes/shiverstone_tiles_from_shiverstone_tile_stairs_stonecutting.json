@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:shiverstone_tile_stairs"
+  },
+  "result": "valleycraft:shiverstone_tiles"
+}

@@ -1,9 +1,9 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.util.EntityTypeEnum.createEntity;
-import static net.linkle.valleycraft.util.EntityTypeEnum.createMob;
-import static net.linkle.valleycraft.util.EntityTypeEnum.registerAttribute;
-import static net.linkle.valleycraft.util.EntityTypeEnum.registerRenderer;
+import static net.linkle.valleycraft.util.EntityEnum.createEntity;
+import static net.linkle.valleycraft.util.EntityEnum.createMob;
+import static net.linkle.valleycraft.util.EntityEnum.registerAttribute;
+import static net.linkle.valleycraft.util.EntityEnum.registerRenderer;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -27,13 +27,10 @@ import net.linkle.valleycraft.entity.pupkins.PupkinEntity;
 import net.linkle.valleycraft.entity.snails.CaveSnailEntity;
 import net.linkle.valleycraft.entity.snails.SculkSnailEntity;
 import net.linkle.valleycraft.entity.snails.SnailEntity;
-import net.linkle.valleycraft.util.EntityTypeEnum;
+import net.linkle.valleycraft.util.EntityEnum;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityDimensions;
-import net.minecraft.entity.SpawnGroup;
-import net.minecraft.entity.SpawnRestriction;
+import net.minecraft.entity.*;
 import net.minecraft.entity.SpawnRestriction.Location;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.FishEntity;
@@ -46,7 +43,7 @@ import net.minecraft.world.Heightmap;
  * entity builder for the modded one. Also see {@link SpawnRestriction} for
  * spawn restriction references.
  */
-public enum Entities implements EntityTypeEnum {
+public enum Entities implements EntityEnum {
     
     // Others
     PUPKIN(createMob(SpawnGroup.CREATURE, PupkinEntity::new).dimensions(new EntityDimensions(0.6F, 0.8F, false)).trackRangeChunks(6)
@@ -149,7 +146,7 @@ public enum Entities implements EntityTypeEnum {
         registerRenderer(GLOW_BALL, FlyingItemEntityRenderer::new);
     }
     
-    private final net.minecraft.entity.EntityType<?> type;
+    private final EntityType<?> type;
     
     public final Identifier id;
     
@@ -157,13 +154,13 @@ public enum Entities implements EntityTypeEnum {
         this(builder.build());
     }
     
-    private Entities(net.minecraft.entity.EntityType<?> type) {
+    private Entities(EntityType<?> type) {
         this.type = Registry.register(Registry.ENTITY_TYPE, id = Main.makeId(name().toLowerCase()), type);
     }
     
     @Override
-    public <T extends Entity> net.minecraft.entity.EntityType<T> type() {
-        return (net.minecraft.entity.EntityType<T>) type;
+    public <T extends Entity> EntityType<T> type() {
+        return (EntityType<T>) type;
     }
     
     @Override

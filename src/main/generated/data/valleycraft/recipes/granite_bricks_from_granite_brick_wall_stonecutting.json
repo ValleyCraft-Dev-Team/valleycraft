@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:granite_brick_wall"
+  },
+  "result": "valleycraft:granite_bricks"
+}

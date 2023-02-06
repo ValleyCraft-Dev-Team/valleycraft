@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "valleycraft:shiverstone_tile_slab"
+  },
+  "result": "valleycraft:shiverstone_tiles"
+}

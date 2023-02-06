@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:adventurine_stairs"
+  },
+  "result": "valleycraft:anthracite_block"
+}

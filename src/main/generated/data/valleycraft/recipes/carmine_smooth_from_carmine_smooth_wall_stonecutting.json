@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:carmine_smooth_wall"
+  },
+  "result": "valleycraft:carmine_smooth"
+}

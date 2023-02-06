@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "valleycraft:smooth_brick_slab"
+  },
+  "result": "valleycraft:smooth_brick"
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_erdstone_mosaic_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:erdstone_mosaic_slab"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:erdstone_mosaic_from_erdstone_mosaic_slab_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_erdstone_mosaic_slab",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:erdstone_mosaic_from_erdstone_mosaic_slab_stonecutting"
+    ]
+  }
+}

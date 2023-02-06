@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_erdstone_brick_stairs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:erdstone_brick_stairs"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:erdstone_bricks_from_erdstone_brick_stairs_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_erdstone_brick_stairs",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:erdstone_bricks_from_erdstone_brick_stairs_stonecutting"
+    ]
+  }
+}

@@ -83,7 +83,7 @@ public class Contents {
     }
     
     private static void fuels() {
-        
+        putFuels(BlocksModded.CHARCOAL_BLOCK, 16000);
     }
     
     private static void putStrip(BlockConvertible input, BlockConvertible stripped) {

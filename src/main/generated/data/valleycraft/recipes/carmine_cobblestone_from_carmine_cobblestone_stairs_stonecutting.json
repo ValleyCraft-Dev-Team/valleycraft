@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "valleycraft:carmine_cobblestone_stairs"
+  },
+  "result": "valleycraft:carmine_cobblestone"
+}

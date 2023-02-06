@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "valleycraft:rough_sandstone_slab"
+  },
+  "result": "valleycraft:rough_sandstone"
+}
