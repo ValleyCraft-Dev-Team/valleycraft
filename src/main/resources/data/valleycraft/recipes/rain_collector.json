@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    " # ",
+    " B "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:daub"
+    },
+    "B": {
+      "item": "minecraft:barrel"
+    }
+  },
+  "result": {
+    "item": "valleycraft:rain_collector",
+    "count": 1
+  }
+}

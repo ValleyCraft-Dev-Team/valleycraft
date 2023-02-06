@@ -42,7 +42,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     BARREL_PLANTER(new Block(Block.Settings.copy(net.minecraft.block.Blocks.BARREL)), itemSettings()),
     RAIN_COLLECTOR(new RainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque()), itemSettings()),
     LEVELED_RAIN_COLLECTOR(new LeveledRainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque())),
-    WATER_SHOWERER(new ShowerBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque().ticksRandomly()), itemSettings()),
+    //WATER_SHOWERER(new ShowerBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque().ticksRandomly()), itemSettings()),
     SPRINKLER(new SprinklerBlock(), itemSettings()),
     WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
 
@@ -53,7 +53,6 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(net.minecraft.block.Blocks.OAK_PLANKS)), itemSettings()),
     LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(net.minecraft.block.Blocks.STONECUTTER).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
     //TODO redesign storekeepers counter symbol, its ugly
-    //TODO redesign furniture textures, theyre ugly too lowkey
     STOREKEEPS_COUNTER(new HorizontalBlock(Block.Settings.copy(net.minecraft.block.Blocks.OAK_PLANKS)), itemSettings()),
     COUNTER_DRAWER(new CounterDrawerBlock(Block.Settings.copy(net.minecraft.block.Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     COUNTER(new CounterBlock(Block.Settings.copy(net.minecraft.block.Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#c#",
+    "cAc",
+    "#c#"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "valleycraft:sprinkler",
+    "count": 1
+  }
+}
