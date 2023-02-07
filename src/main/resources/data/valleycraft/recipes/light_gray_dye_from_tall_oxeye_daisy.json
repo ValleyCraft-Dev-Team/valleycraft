@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "black_dye",
+  "group": "light_gray_dye",
   "ingredients": [
     {
-      "item": "minecraft:charcoal"
+      "item": "valleycraft:tall_oxeye_daisy"
     }
   ],
   "result": {
-    "item": "minecraft:black_dye",
+    "item": "minecraft:light_gray_dye",
     "count": 1
   }
 }

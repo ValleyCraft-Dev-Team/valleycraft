@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "light_blue_dye",
+  "ingredients": [
+    {
+      "item": "valleycraft:plumbago_bush"
+    }
+  ],
+  "result": {
+    "item": "minecraft:light_blue_dye",
+    "count": 2
+  }
+}

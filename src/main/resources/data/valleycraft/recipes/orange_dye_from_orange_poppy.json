@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "black_dye",
+  "group": "orange_dye",
   "ingredients": [
     {
-      "item": "minecraft:charcoal"
+      "item": "valleycraft:orange_poppy"
     }
   ],
   "result": {
-    "item": "minecraft:black_dye",
+    "item": "minecraft:orange_dye",
     "count": 1
   }
 }

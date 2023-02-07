@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "black_dye",
+  "group": "magenta_dye",
   "ingredients": [
     {
-      "item": "minecraft:charcoal"
+      "item": "valleycraft:ancient_flower"
     }
   ],
   "result": {
-    "item": "minecraft:black_dye",
+    "item": "minecraft:magenta_dye",
     "count": 1
   }
 }

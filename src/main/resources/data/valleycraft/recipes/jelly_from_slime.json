@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "tag": "c:water_holding_items"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:slime_blob",
+    "count": 1
+  }
+}
+

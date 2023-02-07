@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "black_dye",
+  "group": "light_blue_dye",
   "ingredients": [
     {
-      "item": "minecraft:charcoal"
+      "item": "valleycraft:light_blue_tulip"
     }
   ],
   "result": {
-    "item": "minecraft:black_dye",
+    "item": "minecraft:light_blue_dye",
     "count": 1
   }
 }

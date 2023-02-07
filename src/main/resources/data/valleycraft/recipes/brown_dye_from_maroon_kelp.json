@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "black_dye",
+  "group": "brown_dye",
   "ingredients": [
     {
-      "item": "minecraft:charcoal"
+      "item": "valleycraft:dried_orange_kelp"
     }
   ],
   "result": {
-    "item": "minecraft:black_dye",
+    "item": "minecraft:brown_dye",
     "count": 1
   }
 }
