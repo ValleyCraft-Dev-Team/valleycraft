@@ -117,8 +117,8 @@ public class SprinklerBlock extends Block {
     }
     
     static {
-        var base = createCuboidShape(0, 0, 0, 16, 6, 16);
-        var head = createCuboidShape(4, 6, 4, 12, 12, 12);
+        var base = createCuboidShape(6, 0, 6, 10, 8, 10);
+        var head = createCuboidShape(2, 8, 2, 14, 12, 14);
         SHAPE = VoxelShapes.union(base, head);
     }
 }

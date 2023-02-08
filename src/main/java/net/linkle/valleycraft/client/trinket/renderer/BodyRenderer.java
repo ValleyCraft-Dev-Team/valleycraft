@@ -19,17 +19,16 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.Vec3f;
 
-public class TalismanRenderer implements TrinketRenderer {
+public class BodyRenderer implements TrinketRenderer {
     
-    private static final ModelPart BODY = TexturedModelData.of(BipedEntityModel.getModelData(Dilation.NONE, 0), 64, 32).createModel().getChild(EntityModelPartNames.BODY);
+    private static final ModelPart BODY;
     
     private final Identifier texture;
     
-    /** @param texture file name in valleycraft/textures/models/trinket */
-    public TalismanRenderer(String texture) {
-        this.texture = Main.makeId("textures/models/trinket/"+texture+".png");
+    /** @param texture file name in valleycraft/textures/models/trinket/talisman */
+    public BodyRenderer(String texture) {
+        this.texture = Main.makeId("textures/models/trinket/talisman/"+texture+".png");
     }
     
     @Override
@@ -40,11 +39,13 @@ public class TalismanRenderer implements TrinketRenderer {
         if (entity instanceof AbstractClientPlayerEntity player) {
             var model = (PlayerEntityModel<AbstractClientPlayerEntity>)contextModel;
             var consumer = ItemRenderer.getArmorGlintConsumer(vertexConsumers, RenderLayer.getArmorCutoutNoCull(texture), false, stack.hasGlint());
-            
-            float scale = 0.3f;
             BODY.copyTransform(model.body);
-            BODY.scale(new Vec3f(scale, scale, scale));
             BODY.render(matrices, consumer, light, OverlayTexture.DEFAULT_UV);
         }
+    }
+    
+    static {
+        var model = BipedEntityModel.getModelData(new Dilation(0.3f), 0);
+        BODY = TexturedModelData.of(model, 64, 32).createModel().getChild(EntityModelPartNames.BODY);
     }
 }
