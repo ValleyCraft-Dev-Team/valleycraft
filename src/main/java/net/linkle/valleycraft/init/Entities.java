@@ -10,6 +10,7 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.client.entity.model.BearEntityModel;
 import net.linkle.valleycraft.client.entity.model.pupkins.PupkinEntityModel;
 import net.linkle.valleycraft.client.entity.model.snails.CaveSnailEntityModel;
 import net.linkle.valleycraft.client.entity.model.snails.SculkSnailEntityModel;
@@ -39,7 +40,7 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.Heightmap;
 
 /**
- * See {@link net.minecraft.entity.EntityType} for vanilla entities as a reference to determine the
+ * See {@link EntityType} for vanilla entities as a reference to determine the
  * entity builder for the modded one. Also see {@link SpawnRestriction} for
  * spawn restriction references.
  */
@@ -62,6 +63,9 @@ public enum Entities implements EntityEnum {
     
     DOG(createMob(SpawnGroup.CREATURE, DogEntity::new).dimensions(new EntityDimensions(0.6f, 0.85f, false)).trackRangeChunks(10)
             .spawnRestriction(Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, DogEntity::isValidNaturalSpawn)),
+    
+    BROWN_BEAR(createMob(SpawnGroup.CREATURE, BearEntity::new).dimensions(new EntityDimensions(1.3f, 1.25f, false)).trackRangeChunks(10)
+            .spawnRestriction(Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn)),
 
     // Snails
     SNAIL(createMob(SpawnGroup.AMBIENT, SnailEntity::new).dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(5)),
@@ -105,6 +109,7 @@ public enum Entities implements EntityEnum {
         registerAttribute(DUCK, DuckEntity.createDuckAttributes());
         registerAttribute(MOSSY_SHEEP, MossySheepEntity.createSheepAttributes());
         registerAttribute(DOG, DogEntity.createWolfAttributes());
+        registerAttribute(BROWN_BEAR, BearEntity.createBearAttributes());
         
         registerAttribute(ZOD, UndeadFishEntity.createUndeadFishAttributes());
         registerAttribute(BONEFIN, UndeadFishEntity.createUndeadFishAttributes());
@@ -122,6 +127,7 @@ public enum Entities implements EntityEnum {
         EntityModelLayerRegistry.registerModelLayer(CaveSnailEntityModel.LAYER, CaveSnailEntityModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(SculkSnailEntityModel.LAYER, SculkSnailEntityModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(PupkinEntityModel.LAYER, PupkinEntityModel::getTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(BearEntityModel.LAYER, BearEntityModel::getTexturedModelData);
         
         registerRenderer(SNAIL, SnailEntityRenderer.create("snail"));
         registerRenderer(CAVE_SNAIL, SnailEntityRenderer.create("cave_snail"));
@@ -133,6 +139,7 @@ public enum Entities implements EntityEnum {
         registerRenderer(DUCK, DuckRenderer::new);
         registerRenderer(MOSSY_SHEEP, MossySheepRenderer::new);
         registerRenderer(DOG, DogRenderer::new);
+        registerRenderer(BROWN_BEAR, BrownBearRenderer::new);
         
         registerRenderer(ZOD, CodEntityRenderer.create("zod"));
         registerRenderer(ABYSSWATCHER, CodEntityRenderer.create("abysswatcher"));
