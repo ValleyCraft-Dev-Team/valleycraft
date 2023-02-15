@@ -125,9 +125,8 @@ class RenderLayers {
         put(POTTED_JUNGLE_BUSH, cullout);
         put(PANFLOWERS, cullout);
         put(POTTED_PANFLOWERS, cullout);
-        put(FROSTFERN, cullout);
+        //put(FROSTFERN, cullout);
         put(FIREFERN, cullout);
-        put(POTTED_FROSTFERN, cullout);
         put(POTTED_FIREFERN, cullout);
         put(WEEPING_GHOST_WILLOW, cullout);
         put(POTTED_WEEPING_GHOST_WILLOW, cullout);
@@ -272,6 +271,9 @@ class RenderLayers {
         put(BROWN_CLAY_POT, cullout);
         put(BLUE_CLAY_POT, cullout);
         put(GREEN_CLAY_POT, cullout);
+        //put(PURPLE_CLAY_POT, cullout);
+        put(ROUNDED_CLAY_POT, cullout);
+        put(ROUNDED_BLUE_CLAY_POT, cullout);
 
         put(SLUDGE_FLUID, translucent);
 

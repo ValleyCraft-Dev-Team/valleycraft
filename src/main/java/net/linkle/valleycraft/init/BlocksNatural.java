@@ -55,12 +55,12 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     LEATHERLEAF_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     //FIDDLEHEAD_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     //ORANGE_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
-    FROSTFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    //FROSTFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     FIREFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     LILY_OF_THE_MOUNTAINS(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
-    POISON_BLOSSOM(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings().rarity(Rarity.UNCOMMON)),
+    POISON_BLOSSOM(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     //NIGHT_LILY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings().rarity(Rarity.RARE)),
-    GODDESS_LILY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings().rarity(Rarity.EPIC)),
+    GODDESS_LILY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
 
     KNAPWEED(new ModFlowerBlock(Blocks.OXEYE_DAISY, OFFSET_FLOWER), itemSettings()),
     
@@ -82,7 +82,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     
     CATTAILS(new CattailsBlock(), itemSettings(), TallBlockItem::new),
 
-    BEE_NEST_WALL(new Block(Block.Settings.copy(Blocks.BEE_NEST)), itemSettings()),
+    //BEE_NEST_WALL(new Block(Block.Settings.copy(Blocks.BEE_NEST)), itemSettings()),
 
     //mushrooms
     RED_CLUSTER(new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM)).large(), itemSettings()),
@@ -151,7 +151,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     ALGAE(new AlgaeBlock(), itemSettings(), PlaceableOnWaterItem::new),
 
     //beach plants
-    NEST(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
+    NEST(new ModPlantBlock(SHORT_GRASS_SHAPE, FLOWER), itemSettings()),
     BEACH_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
     ICEPLANT(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
 

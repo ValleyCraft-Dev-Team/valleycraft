@@ -333,7 +333,6 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     POTTED_FLOWERING_CACTUS(new PotBlock(BlocksNatural.FLOWERING_CACTUS)),
     POTTED_JUNGLE_BUSH(new PotBlock(BlocksNatural.JUNGLE_BUSH)),
     POTTED_PANFLOWERS(new PotBlock(BlocksNatural.PANFLOWERS)),
-    POTTED_FROSTFERN(new PotBlock(BlocksNatural.FROSTFERN)),
     POTTED_FIREFERN(new PotBlock(BlocksNatural.FIREFERN)),
     POTTED_WEEPING_GHOST_WILLOW(new PotBlock(BlocksNatural.WEEPING_GHOST_WILLOW)),
     //POTTED_FIDDLEHEAD_FERN(new PotBlock(ModNaturalBlocks.FIDDLEHEAD_FERN)),
@@ -908,10 +907,13 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     //TRANSLATION_CANVAS(new TranslationCanvasBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().sounds(BlockSoundGroup.CANDLE).nonOpaque()), itemSettings().group(BOOKS)),
 
     // clay pots go here (not the baking item one)
+    ROUNDED_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
+    ROUNDED_BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
+
     BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
     BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).nonOpaque().breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
     GREEN_CLAY_POT(new ExplosiveClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).nonOpaque().breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
-    //PURPLE_CLAY_POT(new SoulClayPot(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(ModBlockSoundGroup.POT.sound).nonOpaque().breakInstantly(), UniformIntProvider.create(2, 6)), itemSettings().group(BOOKS)),
+    //PURPLE_CLAY_POT(new SoulClayPot(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).nonOpaque().breakInstantly(), UniformIntProvider.create(2, 6)), itemSettings().group(NON_NATURAL_BLOCKS)),
 
     DEEPSLATE_URN_PLAIN(new UrnBlock(BlockSettings.urn()), itemSettings().group(NON_NATURAL_BLOCKS)),
     DEEPSLATE_URN_ANGRY(new ExplosiveUrnBlock(BlockSettings.urn()), itemSettings().group(NON_NATURAL_BLOCKS)),

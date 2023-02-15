@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "valleycraft:block/campfire_fire",
-		"1": "valleycraft:block/polished_deepslate",
+		"0": "minecraft:block/campfire_fire",
+		"1": "minecraft:block/polished_deepslate",
 		"2": "valleycraft:block/brazier_side",
 		"3": "valleycraft:block/brazier_bottom",
-		"particle": "valleycraft:block/campfire_fire"
+		"particle": "valleycraft:block/brazier_side"
 	},
 	"elements": [
 		{
