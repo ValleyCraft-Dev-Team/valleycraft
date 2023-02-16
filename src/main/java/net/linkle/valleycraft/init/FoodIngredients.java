@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.init;
 
+import net.linkle.valleycraft.block.AncientFlowerAliasedBlock;
 import net.linkle.valleycraft.effect.ModEffects;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.*;
@@ -39,8 +40,9 @@ public enum FoodIngredients implements ItemEnum {
 
     //desert temple
     MAIZE(new AliasedBlockItem(BlocksNatural.MAIZE.block, settings().rarity(Rarity.RARE).food(Foods.create(3, 0.3f)))),
-    ANCIENT_FLOWER(new FoodItem(settings(), 6, 0.7f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 5 * 20)))
-            .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_7")),
+    ANCIENT_FLOWER(new AncientFlowerAliasedBlock(BlocksNatural.ANCIENT_FLOWER_BLOCK.block, settings().rarity(Rarity.RARE).food(Foods.create(4, 0.7f)))),
+    //ANCIENT_FLOWER(new FoodItem(settings(), 6, 0.7f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 5 * 20)))
+    //        .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_7")),
 
     //dropped by miner zombie
     CAVE_ROOT(new FoodItem(settings(), 4, 0.3f)),

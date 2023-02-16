@@ -126,6 +126,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     FIRE_PEPPERS(new MultiCropBlock(MultiCropBlock.settings())),
     CAVE_ROOT_CROP(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 10/16f)),
     ANCIENT_FLOWERS(new MultiCropBlock(MultiCropBlock.settings()).genSize(2, 12/16f)),
+    ANCIENT_FLOWER_BLOCK(new ModGlowingAncientFlowerBlock(OFFSET_FLOWER), alisasedItemSettings()),
     AMETHYSTLES(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 12/16f)),
     ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(ARID_DESERT).AloeShape()),
 
@@ -328,6 +329,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
         ARID_VINES.to(VineHeadBlock.class).setPlant(ARID_VINES_PLANT);
         ARID_VINES_PLANT.to(VineBodyBlock.class).setStem(ARID_VINES);
     }
+    private static FabricItemSettings alisasedItemSettings() { return new FabricItemSettings(); }
 
     private static FabricItemSettings itemSettings() {
         return new FabricItemSettings().group(Groups.FLORA_GROUP);
