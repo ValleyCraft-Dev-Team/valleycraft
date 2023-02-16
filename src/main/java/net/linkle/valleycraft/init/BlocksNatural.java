@@ -56,7 +56,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     //FIDDLEHEAD_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     //ORANGE_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     //FROSTFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
-    FIREFERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    FIREFERN(new SparkFernBlock(), itemSettings()),
     LILY_OF_THE_MOUNTAINS(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     POISON_BLOSSOM(new PoisonPlantBlock(FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
     //NIGHT_LILY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings().rarity(Rarity.RARE)),
@@ -100,7 +100,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     SHORT_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
     SNOWFLOWER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     SPROUT(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
-    WEEPING_GHOST_WILLOW(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_GLOW_FLOWER), itemSettings()),
+    WEEPING_GHOST_WILLOW(new WeepingGhostWillowBlock(), itemSettings()),
     MEADOW_FLOWERS(new ModPlantBlock(SHORT_FLOWER_SHAPE, OFFSET_FLOWER), itemSettings()),
 
     WILD_WHEAT(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
