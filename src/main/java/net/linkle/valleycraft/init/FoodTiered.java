@@ -27,27 +27,27 @@ public enum FoodTiered implements ItemEnum {
     SPICY_CALAMARI_SKEWER(new Tier1Normal(settings(), 5, 2, StatusEffects.WATER_BREATHING)),
     
     // tier 2
-    GLOW_BERRY_EGG_PUDDING(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.NIGHT_VISION)),
-    GLOW_SQUID_SUSHI(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.WATER_BREATHING)),
-    HONEY_GLAZED_CREPE(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.REGENERATION)),
     SPICY_GRILLED_LAMB(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.HASTE)),
     SPICY_SALMON_AND_CARROTS(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.SPEED)),
+    GLOW_BERRY_EGG_PUDDING(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.NIGHT_VISION)),
     STEAMED_VEGETABLES(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.HEALTH_BOOST)),
     STUFFED_BAKED_POTATO(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.STRENGTH)),
+    HONEY_GLAZED_CREPE(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.REGENERATION)),
     STUFFED_ONION(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.RESISTANCE)),
     SWEET_RABBIT_STEAK(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.FIRE_RESISTANCE)),
-    
+    GLOW_SQUID_SUSHI(new Tier2Normal(settings().maxCount(32), 6, 2, StatusEffects.WATER_BREATHING)),
+
     // tier 3
-    ANCIENT_FLOWER_SOUP(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.HEALTH_BOOST)),
-    CARROT_STEW(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.SPEED)),
-    COD_CHOWDER(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.RESISTANCE)),
-    CREAMY_HEART_STEW(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.STRENGTH)),
-    GLOW_BERRY_STEW(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.NIGHT_VISION)),
-    GLOW_SQUID_SOUP(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.WATER_BREATHING)),
-    SHIVERCAP_STIR_FRY(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.FIRE_RESISTANCE)),
     SPICY_BEEF_RISOTTO(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.HASTE)),
-    SWEET_CHICKEN_RISOTTO(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.REGENERATION));
-    
+    CARROT_STEW(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.SPEED)),
+    GLOW_BERRY_STEW(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.NIGHT_VISION)),
+    ANCIENT_FLOWER_SOUP(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.HEALTH_BOOST)),
+    CREAMY_HEART_STEW(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.STRENGTH)),
+    SWEET_CHICKEN_RISOTTO(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.REGENERATION)),
+    COD_CHOWDER(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.RESISTANCE)),
+    SHIVERCAP_STIR_FRY(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.FIRE_RESISTANCE)),
+    GLOW_SQUID_SOUP(new Tier3Bowl(settings().maxCount(16), 8, 2, StatusEffects.WATER_BREATHING));
+
     /** Called from {@link ItemsModded} */
     static void initialize() {
     }

@@ -132,6 +132,9 @@ class RenderLayers {
         put(POTTED_WEEPING_GHOST_WILLOW, cullout);
         //put(FIDDLEHEAD_FERN, cullout);
         //put(POTTED_FIDDLEHEAD_FERN, cullout);
+        put(POTTED_ANCIENT_FLOWER, cullout);
+        put(ANCIENT_FLOWER_BLOCK, cullout);
+        put(STAMINELLA_BERRY_PLANT, cullout);
 
         //Other Plants without potted versions
         put(THORNY_BUSH, cullout);

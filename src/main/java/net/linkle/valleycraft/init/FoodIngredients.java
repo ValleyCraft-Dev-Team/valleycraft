@@ -40,6 +40,7 @@ public enum FoodIngredients implements ItemEnum {
 
     //desert temple
     MAIZE(new AliasedBlockItem(BlocksNatural.MAIZE.block, settings().rarity(Rarity.RARE).food(Foods.create(3, 0.3f)))),
+    STAMINELLA_BERRY(new AliasedBlockItem(BlocksNatural.STAMINELLA_BERRY_PLANT.block, settings().food(Foods.create(4, 0.5f)))),
     ANCIENT_FLOWER(new AncientFlowerAliasedBlock(BlocksNatural.ANCIENT_FLOWER_BLOCK.block, settings().rarity(Rarity.RARE).food(Foods.create(4, 0.7f)))),
     //ANCIENT_FLOWER(new FoodItem(settings(), 6, 0.7f, new FoodStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 5 * 20)))
     //        .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_7")),

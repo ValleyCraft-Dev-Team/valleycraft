@@ -127,6 +127,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     CAVE_ROOT_CROP(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 10/16f)),
     ANCIENT_FLOWERS(new MultiCropBlock(MultiCropBlock.settings()).genSize(2, 12/16f)),
     ANCIENT_FLOWER_BLOCK(new ModGlowingAncientFlowerBlock(OFFSET_FLOWER), alisasedItemSettings()),
+    STAMINELLA_BERRY_PLANT(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 10/16f)),
     AMETHYSTLES(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 12/16f)),
     ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(ARID_DESERT).AloeShape()),
 

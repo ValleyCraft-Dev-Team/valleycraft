@@ -81,12 +81,13 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     BOOK_STACK_7(new BookStackBlock(BLOCK_SHAPE_7), itemSettings()),
     BOOK_STACK_8(new BookStackBlock(BLOCK_SHAPE_8), itemSettings()),
     //INK_WELL(new InkWellBlock(), itemSettings()),
-    INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
-    WATER_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    PET_WATER_BOWL(new PetWaterBowlBlock(Block.Settings.copy(Blocks.TERRACOTTA).nonOpaque().breakInstantly()), itemSettings()),
     EMPTY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    WATER_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     GLOW_BERRY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     MILK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     HONEY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     EXP_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
 
     WATTLE_STOOL(new StoolBlock(Block.Settings.copy(net.minecraft.block.Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
@@ -289,6 +290,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     BEVELED_TINTED_GLASS_PANE(new PaneBlock(Block.Settings.copy(net.minecraft.block.Blocks.TINTED_GLASS)), itemSettings()),
 
     // Potted flowers
+    POTTED_ANCIENT_FLOWER(new GlowingPotBlock(BlocksNatural.ANCIENT_FLOWER_BLOCK)),
     POTTED_BLACK_DAHLIA(new PotBlock(BlocksNatural.BLACK_DAHLIA)),
     POTTED_FLUFFY_DANDELION(new PotBlock(BlocksNatural.FLUFFY_DANDELION)),
     POTTED_FADED_SOUL_ROSE(new PotBlock(BlocksNatural.FADED_SOUL_ROSE)),
