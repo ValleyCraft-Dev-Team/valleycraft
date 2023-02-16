@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "valleycraft:block/stake",
-		"1": "valleycraft:block/wattle_table",
+		"0": "valleycraft:block/wattle_lattice_top",
+		"1": "valleycraft:block/wattle_table_top",
 		"4": "valleycraft:block/wattle_table_clothe",
 		"5": "valleycraft:block/wattle_table_sides_clothe",
-		"particle": "valleycraft:block/wattle_table"
+		"particle": "valleycraft:block/wattle_table_top"
 	},
 	"elements": [
 		{
