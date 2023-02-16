@@ -267,6 +267,7 @@ class RenderLayers {
         put(DEFECTIVE_SPAWNER, cullout);
         put(SWORD_BLOCK, cullout);
         put(SPORE_SPREADER, cullout);
+        put(MILLSTONE, cullout);
 
         put(BROWN_CLAY_POT, cullout);
         put(BLUE_CLAY_POT, cullout);

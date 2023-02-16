@@ -27,6 +27,9 @@ public enum ModToolMaterialsExtended implements ToolMaterial {
     STONE_EXTENDED(1, 197, 4.0F, 1.0F, 5, () -> {
         return Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS);
     }),
+    BONE_EXTENDED(1, 197, 4.0F, 1.0F, 5, () -> {
+        return Ingredient.ofItems(Items.BONE);
+    }),
     IRON_EXTENDED(2, 375, 6.0F, 2.0F, 14, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.IRON_INGOT});
     }),

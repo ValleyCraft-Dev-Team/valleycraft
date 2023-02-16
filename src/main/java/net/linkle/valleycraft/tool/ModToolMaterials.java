@@ -10,6 +10,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.tag.ItemTags;
 
 public enum ModToolMaterials implements ToolMaterial {
 
@@ -32,6 +33,10 @@ public enum ModToolMaterials implements ToolMaterial {
 
     COPPER(1, 250, 6.0F, 2.0F, 15, () -> {
         return Ingredient.ofItems(Items.COPPER_INGOT);
+    }),
+
+    BONE(1, 131, 4.0F, 1.0F, 5, () -> {
+        return Ingredient.ofItems(Items.BONE);
     }),
 
     //GOLEMITE(2, 705, 8.0F, 2.5F, 5, () -> {
@@ -89,10 +94,6 @@ public enum ModToolMaterials implements ToolMaterial {
 
     WEAK_IRON(1, 131, 4.0F, 1.0F, 14, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.IRON_INGOT});
-    }),
-
-    BONE(2, 250, 6.0F, 2.0F, 18, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{Items.BONE});
     }),
 
     AMETHYST(2, 190, 5.0F, 1.5F, 18, () -> {

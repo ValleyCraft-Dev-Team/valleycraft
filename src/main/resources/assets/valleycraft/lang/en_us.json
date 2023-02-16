@@ -825,7 +825,7 @@
 
   "item.valleycraft.raw_bat_wing": "Raw Bat Wing",
   "item.valleycraft.raw_silverfish": "Raw Silverfish",
-  "item.valleycraft.raw_phantom_eye": "Raw Phantom Eye",
+  "item.valleycraft.raw_phantom_eye": "Phantom Eye",
 
   "item.valleycraft.raw_squid_tentacle": "Raw Squid Tentacle",
   "item.valleycraft.raw_bacon": "Raw Bacon",
@@ -858,7 +858,7 @@
   "item.valleycraft.cooked_cave_root": "Cooked Cave Root",
   "item.valleycraft.cooked_squid": "Cooked Squid",
   "item.valleycraft.cooked_silverfish": "Cooked Silverfish",
-  "item.valleycraft.cooked_phantom": "Cooked Phantom Eye",
+  "item.valleycraft.cooked_phantom": "Fermented Phantom Eye",
   "item.valleycraft.cooked_bird": "Cooked Bird Thigh",
   "item.valleycraft.cooked_bat": "Cooked Bat Wing",
   "item.valleycraft.cooked_bacon": "Bacon",
@@ -921,6 +921,8 @@
   "item.valleycraft.corn_bread_dough": "Maize Bread Dough",
   "item.valleycraft.corn_bread": "Maize Bread",
   "item.valleycraft.glow_ball": "Ball of Glowing Goo",
+
+  "item.valleycraft.cured_flesh": "Brine-Cured Flesh",
 
   "item.valleycraft.fiber": "Plant Fiber",
   "item.valleycraft.dried_fiber": "Dried Plant Fiber",
@@ -1094,6 +1096,7 @@
 
   "item.valleycraft.scythe_wooden": "Wooden Scythe",
   "item.valleycraft.scythe_stone": "Stone Scythe",
+  "item.valleycraft.scythe_bone": "Bone Scythe",
   "item.valleycraft.scythe_golden": "Golden Scythe",
   "item.valleycraft.scythe_iron": "Iron Scythe",
   "item.valleycraft.scythe_diamond": "Diamond Scythe",
@@ -1104,6 +1107,7 @@
 
   "item.valleycraft.wooden_greatsword": "Wooden Greatsword",
   "item.valleycraft.stone_greatsword": "Stone Greatsword",
+  "item.valleycraft.bone_greatsword": "Bone Greatsword",
   "item.valleycraft.golden_greatsword": "Golden Greatsword",
   "item.valleycraft.iron_greatsword": "Iron Greatsword",
   "item.valleycraft.diamond_greatsword": "Diamond Greatsword",
@@ -1136,9 +1140,11 @@
   "item.valleycraft.dagger_primsteel": "Primsteel Dagger",
   "item.valleycraft.dagger_golemite": "Golemite Dagger",
   "item.valleycraft.dagger_rosegold": "Rose Gold Dagger",
+  "item.valleycraft.dagger_bone": "Bone Dagger",
 
   "item.valleycraft.traveler_wooden": "Wooden Traveler's Sword",
   "item.valleycraft.traveler_stone": "Stone Traveler's Sword",
+  "item.valleycraft.traveler_bone": "Bone Traveler's Sword",
   "item.valleycraft.traveler_golden": "Golden Traveler's Sword",
   "item.valleycraft.traveler_iron": "Iron Traveler's Sword",
   "item.valleycraft.traveler_diamond": "Diamond Traveler's Sword",
@@ -1195,6 +1201,8 @@
   "item.valleycraft.primsteel_ikakalaka": "Ancient Primsteel Ikakalaka",
   "item.valleycraft.wooden_club": "Wooden Club",
 
+  "block.valleycraft.millstone": "Millstone",
+
   "item.valleycraft.fur_clump": "Tuft of Fur",
   "item.valleycraft.copper_nugget": "Copper Nugget",
   "item.valleycraft.copper_scrap": "Copper Scrap",
@@ -1217,7 +1225,7 @@
   "item.valleycraft.chorus_fruit_pie_slice": "Slice of Chorus Fruit Pie",
   "item.valleycraft.enchanted_apple_pie_slice": "Slice of Enchanted Apple Pie",
   "item.valleycraft.eggnog": "Eggnog",
-  "item.valleycraft.broth": "Broth",
+  "item.valleycraft.broth": "Bone Broth",
   "item.valleycraft.sandwich_fish": "Fish Sandwich",
   "item.valleycraft.ghast_tears": "Bottle o' Ghast Tears",
 
@@ -1227,6 +1235,13 @@
   "item.valleycraft.makeshift_hoe": "Makeshift Hoe",
   "item.valleycraft.makeshift_shovel": "Makeshift Shovel",
   "item.valleycraft.makeshift_knife": "Makeshift Knife",
+
+  "item.valleycraft.bone_spear": "Bone Spear",
+  "item.valleycraft.bone_pickaxe": "Bone Pickaxe",
+  "item.valleycraft.bone_axe": "Bone Axe",
+  "item.valleycraft.bone_hoe": "Bone Hoe",
+  "item.valleycraft.bone_shovel": "Bone Shovel",
+  "item.valleycraft.bone_knife": "Bone Knife",
 
   "item.valleycraft.prismace": "Prismarine Mace",
   "item.valleycraft.prismarine_hoe": "Prismarine Hoe",
@@ -1241,6 +1256,7 @@
   "item.valleycraft.woodcutter_axe_primsteel": "Primsteel Timbercutter Axe",
   "item.valleycraft.woodcutter_axe_golemite": "Golemite Timbercutter Axe",
   "item.valleycraft.woodcutter_axe_rosegold": "Rose Gold Timbercutter Axe",
+  "item.valleycraft.woodcutter_axe_bone": "Bone Timbercutter Axe",
 
   "item.valleycraft.knife_coral_encrusted": "Coral Encrusted Knife",
   "item.valleycraft.rapier_cave_fishers": "Cave-Fisher's Rapier",

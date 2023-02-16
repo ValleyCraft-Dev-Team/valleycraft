@@ -51,6 +51,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     WITCH_LADLE(new LadleBlock(Block.Settings.copy(net.minecraft.block.Blocks.OAK_PLANKS).breakInstantly().noCollision().nonOpaque()), itemSettings()),
     MINER_STATION(new HorizontalBlock(Block.Settings.copy(net.minecraft.block.Blocks.OAK_PLANKS)), itemSettings()),
     BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(net.minecraft.block.Blocks.OAK_PLANKS)), itemSettings()),
+    MILLSTONE(new MillstoneBlock(Block.Settings.copy(net.minecraft.block.Blocks.STONECUTTER).resistance(6).hardness(2.25f)), itemSettings()),
     LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(net.minecraft.block.Blocks.STONECUTTER).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
     //TODO redesign storekeepers counter symbol, its ugly
     STOREKEEPS_COUNTER(new HorizontalBlock(Block.Settings.copy(net.minecraft.block.Blocks.OAK_PLANKS)), itemSettings()),
@@ -334,7 +335,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     POTTED_JUNGLE_BUSH(new PotBlock(BlocksNatural.JUNGLE_BUSH)),
     POTTED_PANFLOWERS(new PotBlock(BlocksNatural.PANFLOWERS)),
     POTTED_FIREFERN(new PotBlock(BlocksNatural.FIREFERN)),
-    POTTED_WEEPING_GHOST_WILLOW(new PotBlock(BlocksNatural.WEEPING_GHOST_WILLOW)),
+    POTTED_WEEPING_GHOST_WILLOW(new WillowPotBlock(BlocksNatural.WEEPING_GHOST_WILLOW)),
     //POTTED_FIDDLEHEAD_FERN(new PotBlock(ModNaturalBlocks.FIDDLEHEAD_FERN)),
 
     // wood types
@@ -579,7 +580,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     CARMINE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
     CARMINE_BRICK_WALL(new WallBlock(Block.Settings.copy(CARMINE_SMOOTH.block)), itemSettings()),
 
-    //ice and snow blocks
+    //ice and snows blocks
     PACKED_SNOW_STAIRS(new StairsBlock(BlocksNatural.PACKED_SNOW.getState(), Block.Settings.copy(BlocksNatural.PACKED_SNOW.block)), itemSettings()),
     PACKED_SNOW_SLAB(new SlabBlock(Block.Settings.copy(BlocksNatural.PACKED_SNOW.block)), itemSettings()),
     PACKED_SNOW_WALL(new WallBlock(Block.Settings.copy(BlocksNatural.PACKED_SNOW.block)), itemSettings()),

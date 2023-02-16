@@ -91,16 +91,18 @@ public enum FoodRegular implements ItemEnum {
     CAVE_ROOT_STIR_FRY(new BowlItem(settings().maxCount(1), 10, 0.6f)),
     NETHER_WART_STIR_FRY(new BowlItem(settings().maxCount(1), 10, 0.6f)),
     COD_GEFILTE(new FoodItem(settings(), 10, 0.6f)),
+    SPICY_POTATOES_AND_BAT(new FoodItem(settings(), 9, 0.4f)),
+    SPICY_POTATOES_AND_CARROTS(new FoodItem(settings(), 8, 0.4f)),
 
+    //monster stuff
+    CURED_FLESH(new FoodItem(settings(), 4, 0.6f, true)),
+    BROTH(new BowlItem(settings().maxCount(1), 6, 0.5f)),
     STIR_FRIED_MONSTER_GUTS(new BowlItem(settings().maxCount(1), 8, 0.4f)),
     SAUTEED_EYES_AND_MUSHROOMS(new FoodItem(settings(), 8, 0.8f)),
     MONSTER_STEW(new BowlItem(settings().maxCount(1), 7, 0.4f)),
     SLIME_SOUP(new BowlItem(settings().maxCount(1), 5, 0.6f)),
     MAGMA_CREME_SOUP(new BowlItem(settings().maxCount(1), 7, 0.6f)),
-    SPICY_POTATOES_AND_BAT(new FoodItem(settings(), 9, 0.4f)),
-    SPICY_POTATOES_AND_CARROTS(new FoodItem(settings(), 8, 0.4f)),
 
-    BROTH(new BowlItem(settings().maxCount(1), 6, 0.5f)),
     BEEF_STEW(new BowlItem(settings().maxCount(1), 10, 0.8f)),
     KELP_SALAD(new BowlItem(settings().maxCount(1), 5, 0.5f)),
     BROWN_MUSHROOM_SALAD(new BowlItem(settings().maxCount(1), 4, 0.5f)),
