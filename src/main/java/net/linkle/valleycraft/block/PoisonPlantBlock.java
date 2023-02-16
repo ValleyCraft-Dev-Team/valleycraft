@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.block;
 
+import net.linkle.valleycraft.effect.ModEffects;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
@@ -28,7 +29,7 @@ public class PoisonPlantBlock extends ModPlantBlock {
     
     @Override
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-        int color = StatusEffects.POISON.getColor();
+        int color = ModEffects.ROT_BLIGHT.getColor();
         double r = (double)(color >> 16 & 0xFF) / 255.0;
         double g = (double)(color >> 8 & 0xFF) / 255.0;
         double b = (double)(color >> 0 & 0xFF) / 255.0;
