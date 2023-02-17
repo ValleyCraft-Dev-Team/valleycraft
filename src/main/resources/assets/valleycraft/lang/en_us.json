@@ -78,9 +78,9 @@
   "item.valleycraft.fastfood.tooltip": "Can be eaten very",
   "item.valleycraft.fastfood.tooltip_2": "rapidly on the run.",
 
-  "item.valleycraft.tier_one.tooltip": "Effect Tier: §6★☆☆",
-  "item.valleycraft.tier_two.tooltip": "Effect Tier: §6★★☆",
-  "item.valleycraft.tier_three.tooltip": "Effect Tier: §6★★★",
+  "item.valleycraft.tier_one.tooltip": "§7Effect Tier: §6★☆☆",
+  "item.valleycraft.tier_two.tooltip": "§7Effect Tier: §6★★☆",
+  "item.valleycraft.tier_three.tooltip": "§7Effect Tier: §6★★★",
 
   "nourishing_items": "§6",
   "block.valleycraft.shivercap": "§6Shivercap",
@@ -458,7 +458,7 @@
   "item.valleycraft.bikini_coat_gaiters": "Barbarian Gaiters",
 
   "item.valleycraft.bikini_repaired": "Femme Garments",
-  "item.valleycraft.bikini_masc_repaired": "Masc S",
+  "item.valleycraft.bikini_masc_repaired": "Masc Garments",
   "item.valleycraft.bikini_neutral_repaired": "Garments",
 
   "item.valleycraft.cloth": "Piece of Cloth",
@@ -804,7 +804,7 @@
   "item.valleycraft.spicy_potatoes_and_carrots": "Spicy Potatoes and Carrots",
   "item.valleycraft.fried_rice_and_eggs": "Fried Rice and Eggs",
 
-  "item.valleycraft.ancient_flower_soup": "§66Vibranthia Soup",
+  "item.valleycraft.ancient_flower_soup": "§6Vibranthia Soup",
   "item.valleycraft.carrot_stew": "§6Enduria Carrot Stew",
   "item.valleycraft.cod_chowder": "§6Cod Chowder",
   "item.valleycraft.creamy_heart_stew": "§6Creamy Heart Stew",

@@ -4,6 +4,7 @@
   ],
   "slots": [
     "chest/talisman",
-    "chest/bauble"
+    "chest/bauble",
+    "chest/outfit"
   ]
 }
