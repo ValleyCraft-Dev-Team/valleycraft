@@ -3,39 +3,29 @@ package net.linkle.valleycraft.block;
 import net.linkle.valleycraft.init.Particles;
 import net.linkle.valleycraft.init.Sounds;
 import net.minecraft.block.*;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsage;
-import net.minecraft.item.Items;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.stat.Stats;
 import net.minecraft.state.StateManager.Builder;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.Hand;
-import net.minecraft.util.hit.BlockHitResult;
-import net.minecraft.util.math.*;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.minecraft.world.event.GameEvent;
 
 public class SprinklerBlock extends Block {
     
     public static final BooleanProperty POWERED = Properties.POWERED;
-    public static final BooleanProperty FILLED = BooleanProperty.of("filled");
     
     protected static final VoxelShape SHAPE;
 
     public SprinklerBlock() {
         super(Settings.of(Material.METAL, MapColor.STONE_GRAY).strength(3.0f).sounds(BlockSoundGroup.CHAIN).nonOpaque().breakInstantly());
-        setDefaultState(stateManager.getDefaultState().with(POWERED, false).with(FILLED, false));
+        setDefaultState(stateManager.getDefaultState().with(POWERED, false));
     }
     
     @Override
@@ -61,35 +51,8 @@ public class SprinklerBlock extends Block {
     }
     
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-        var stack = player.getStackInHand(hand);
-        var item = stack.getItem();
-        if (item == Items.WATER_BUCKET && !state.get(FILLED)) { // fill sprinkler
-            if (!world.isClient) {
-                player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, new ItemStack(Items.BUCKET)));
-                player.incrementStat(Stats.USED.getOrCreateStat(item));
-                world.setBlockState(pos, state.with(FILLED, true));
-                world.playSound(null, pos, SoundEvents.ITEM_BUCKET_EMPTY, SoundCategory.BLOCKS, 1.0f, 1.0f);
-                world.emitGameEvent(null, GameEvent.FLUID_PLACE, pos);
-            }
-            return ActionResult.success(world.isClient);
-        } if (item == Items.BUCKET && state.get(FILLED)) { // empty sprinkler
-            if (!world.isClient) {
-                player.setStackInHand(hand, ItemUsage.exchangeStack(stack, player, new ItemStack(Items.WATER_BUCKET)));
-                player.incrementStat(Stats.USED.getOrCreateStat(item));
-                world.setBlockState(pos, state.with(FILLED, false));
-                world.playSound(null, pos, SoundEvents.ITEM_BUCKET_FILL, SoundCategory.BLOCKS, 1.0f, 1.0f);
-                world.emitGameEvent(null, GameEvent.FLUID_PICKUP, pos);
-            }
-            return ActionResult.success(world.isClient);
-        }
-        return ActionResult.PASS;
-    }
-    
-    @Override
     protected void appendProperties(Builder<Block, BlockState> builder) {
-        super.appendProperties(builder);
-        builder.add(POWERED, FILLED);
+        super.appendProperties(builder.add(POWERED));
     }
     
     @Override
@@ -99,7 +62,7 @@ public class SprinklerBlock extends Block {
 
     @Override
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-        if (state.get(POWERED) && state.get(FILLED)) {
+        if (state.get(POWERED)) {
             double x = pos.getX()+0.5;
             double y = pos.getY()+0.75;
             double z = pos.getZ()+0.5;

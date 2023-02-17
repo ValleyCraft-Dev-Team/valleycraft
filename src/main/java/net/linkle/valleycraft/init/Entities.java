@@ -1,9 +1,6 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.util.EntityEnum.createEntity;
-import static net.linkle.valleycraft.util.EntityEnum.createMob;
-import static net.linkle.valleycraft.util.EntityEnum.registerAttribute;
-import static net.linkle.valleycraft.util.EntityEnum.registerRenderer;
+import static net.linkle.valleycraft.util.EntityEnum.*;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -12,8 +9,6 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.client.entity.model.BearEntityModel;
 import net.linkle.valleycraft.client.entity.model.pupkins.PupkinEntityModel;
-import net.linkle.valleycraft.client.entity.model.snails.CaveSnailEntityModel;
-import net.linkle.valleycraft.client.entity.model.snails.SculkSnailEntityModel;
 import net.linkle.valleycraft.client.entity.model.snails.SnailEntityModel;
 import net.linkle.valleycraft.client.entity.renderer.*;
 import net.linkle.valleycraft.client.entity.renderer.fish.CodEntityRenderer;
@@ -124,8 +119,6 @@ public enum Entities implements EntityEnum {
     @Environment(EnvType.CLIENT)
     public static void initializeClient() {
         EntityModelLayerRegistry.registerModelLayer(SnailEntityModel.LAYER, SnailEntityModel::getTexturedModelData);
-        EntityModelLayerRegistry.registerModelLayer(CaveSnailEntityModel.LAYER, CaveSnailEntityModel::getTexturedModelData);
-        EntityModelLayerRegistry.registerModelLayer(SculkSnailEntityModel.LAYER, SculkSnailEntityModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(PupkinEntityModel.LAYER, PupkinEntityModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(BearEntityModel.LAYER, BearEntityModel::getTexturedModelData);
         

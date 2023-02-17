@@ -40,7 +40,7 @@ public class SpikeTrapBlock extends DirectionBlockWithWater {
 
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        entity.slowMovement(state, new Vec3d(0.9, 0.85, 0.9));
+        entity.slowMovement(state, new Vec3d(0.3, 0.1f, 0.3));
         if (entity instanceof LivingEntity && entity.getType() != EntityType.BEE) {
             if (state.get(WATERLOGGED)) {
                 entity.damage(DamageSource.CACTUS, 2.0F);

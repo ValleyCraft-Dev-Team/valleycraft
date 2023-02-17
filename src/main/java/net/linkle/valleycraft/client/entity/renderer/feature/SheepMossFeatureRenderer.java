@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.client.entity.renderer.feature;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.client.entity.model.MossySheepEntityModel;
 import net.linkle.valleycraft.client.entity.model.SheepMossEntityModel;
@@ -16,6 +18,7 @@ import net.minecraft.client.render.entity.model.EntityModelLoader;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
+@Environment(EnvType.CLIENT)
 public class SheepMossFeatureRenderer extends FeatureRenderer<MossySheepEntity, MossySheepEntityModel<MossySheepEntity>> {
     private static final Identifier SKIN = Main.makeId("textures/entity/sheep/mossy_sheep_fur.png");
     private final SheepMossEntityModel<MossySheepEntity> model;

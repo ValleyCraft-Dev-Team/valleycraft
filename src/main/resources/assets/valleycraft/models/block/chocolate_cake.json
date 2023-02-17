@@ -1,0 +1,9 @@
+{
+	"parent": "valleycraft:block/slice0",
+	"textures": {
+		"bottom": "valleycraft:block/chocolate_cake_top",
+		"particle": "valleycraft:block/chocolate_cake_top",
+		"top": "valleycraft:block/chocolate_cake_top",
+		"side": "valleycraft:block/chocolate_cake_side"
+	}
+}

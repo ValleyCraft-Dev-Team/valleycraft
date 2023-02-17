@@ -18,6 +18,7 @@ public class Tier3Bowl extends BowlItem {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        super.appendTooltip(itemStack, world, tooltip, tooltipContext);
         tooltip.add(Text.translatable("item.valley.tier_three.tooltip"));
     }
 }

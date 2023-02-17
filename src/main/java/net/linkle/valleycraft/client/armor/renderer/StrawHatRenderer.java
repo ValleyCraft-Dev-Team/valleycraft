@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.client.armor.renderer;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.ArmorRenderer;
 import net.linkle.valleycraft.client.renderer.QuadRenderer;
 import net.linkle.valleycraft.client.renderer.Renderer;
@@ -20,6 +22,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 
+@Environment(EnvType.CLIENT)
 public class StrawHatRenderer implements ArmorRenderer {
     
     /** A texture which contains a straw hat texture. */

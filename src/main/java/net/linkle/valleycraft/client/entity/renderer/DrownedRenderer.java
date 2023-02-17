@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.client.entity.renderer;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.Main;
 import net.minecraft.client.render.entity.DrownedEntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
@@ -8,6 +10,7 @@ import net.minecraft.entity.mob.DrownedEntity;
 import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.util.Identifier;
 
+@Environment(EnvType.CLIENT)
 public class DrownedRenderer extends DrownedEntityRenderer {
 
     private final Identifier texture;

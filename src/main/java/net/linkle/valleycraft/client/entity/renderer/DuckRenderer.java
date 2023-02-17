@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.client.entity.renderer;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.entity.DuckEntity;
 import net.minecraft.client.render.entity.EntityRendererFactory;
@@ -9,6 +11,7 @@ import net.minecraft.client.render.entity.model.EntityModelLayers;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
+@Environment(EnvType.CLIENT)
 public class DuckRenderer extends MobEntityRenderer<DuckEntity, ChickenEntityModel<DuckEntity>> {
     private static final Identifier TEXTURE = Main.makeId("textures/entity/duck/duck.png");
 

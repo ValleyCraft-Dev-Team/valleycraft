@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.client.entity.renderer.fish;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.Main;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
@@ -11,6 +13,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3f;
 
+@Environment(EnvType.CLIENT)
 public class SalmonEntityRenderer extends MobEntityRenderer<FishEntity, SalmonEntityModel<FishEntity>> {
     
     private final Identifier texture;

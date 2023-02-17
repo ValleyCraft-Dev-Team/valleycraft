@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.client.entity.renderer;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.Main;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.EntityRendererFactory.Context;
@@ -7,6 +9,7 @@ import net.minecraft.client.render.entity.SheepEntityRenderer;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.util.Identifier;
 
+@Environment(EnvType.CLIENT)
 public class SheepRenderer extends SheepEntityRenderer {
 
     private final Identifier texture;

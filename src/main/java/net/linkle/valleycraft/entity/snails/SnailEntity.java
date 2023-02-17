@@ -2,7 +2,7 @@ package net.linkle.valleycraft.entity.snails;
 
 import net.linkle.valleycraft.init.Entities;
 import net.linkle.valleycraft.init.FoodIngredients;
-import net.linkle.valleycraft.init.ItemsModded;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.ai.pathing.PathNodeType;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
@@ -24,8 +24,8 @@ import net.minecraft.world.World;
 public class SnailEntity extends AnimalEntity {
     private static final Ingredient BREEDING_INGREDIENT;
 
-    public SnailEntity(net.minecraft.entity.EntityType entityType, World world) {
-        super(entityType, world);
+    public SnailEntity(EntityType<? extends SnailEntity> type, World world) {
+        super(type, world);
         this.setPathfindingPenalty(PathNodeType.WATER, 8.0F);
         this.setPathfindingPenalty(PathNodeType.WATER_BORDER, 16.0F);
         this.setPathfindingPenalty(PathNodeType.LAVA, 16.0F);
@@ -56,26 +56,31 @@ public class SnailEntity extends AnimalEntity {
     }
 
     public static DefaultAttributeContainer.Builder createSnailAttributes() {
-        return MobEntity.createMobAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 3.0D)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25D);
+        return MobEntity.createMobAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 3.0)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25);
     }
 
+    @Override
     public boolean canBeLeashedBy(PlayerEntity player) {
         return true;
     }
 
+    @Override
     public boolean hurtByWater() {
         return true;
     }
 
+    @Override
     protected SoundEvent getDeathSound() {
         return SoundEvents.ENTITY_SALMON_DEATH;
     }
 
+    @Override
     protected SoundEvent getHurtSound(DamageSource source) {
         return SoundEvents.ENTITY_SALMON_HURT;
     }
 
+    @Override
     public boolean isBreedingItem(ItemStack stack) {
         return BREEDING_INGREDIENT.test(stack);
     }

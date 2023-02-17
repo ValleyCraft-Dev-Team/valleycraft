@@ -23,7 +23,7 @@ abstract class FarmlandBlockMixin extends Block {
     private static void isSprinklerNearby(WorldView world, BlockPos pos, CallbackInfoReturnable<Boolean> info) {
         for (var p : BlockPos.iterate(pos.add(-8, -1, -8), pos.add(8, 1, 8))) {
             var state = world.getBlockState(p);
-            if (state.isOf(BlocksModded.SPRINKLER.block) && state.get(SprinklerBlock.POWERED) && state.get(SprinklerBlock.FILLED)) {
+            if (state.isOf(BlocksModded.SPRINKLER.block) && state.get(SprinklerBlock.POWERED)) {
                 info.setReturnValue(true);
             }
         }

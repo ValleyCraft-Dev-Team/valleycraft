@@ -13,7 +13,7 @@ public class GlowSplatterBlock extends MultifaceGrowthBlock {
     protected final LichenGrower grower = new LichenGrower(new GlowSplatterGrowChecker());
 
     public GlowSplatterBlock() {
-        super(Settings.of(Material.PLANT, MapColor.GREEN).noCollision().strength(0.2f).sounds(BlockSoundGroup.SLIME).luminance(GlowLichenBlock.getLuminanceSupplier(12)));
+        super(Settings.of(Material.PLANT, MapColor.GREEN).noCollision().strength(0.2f).sounds(BlockSoundGroup.SLIME).luminance(GlowLichenBlock.getLuminanceSupplier(10)));
     }
 
     @Override

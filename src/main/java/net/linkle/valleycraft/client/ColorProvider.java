@@ -12,6 +12,7 @@ import net.minecraft.block.Block;
 import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.client.color.item.ItemColorProvider;
 import net.minecraft.client.color.world.BiomeColors;
+import net.minecraft.client.color.world.GrassColors;
 import net.minecraft.item.ItemConvertible;
 
 @Environment(EnvType.CLIENT)
@@ -49,6 +50,8 @@ class ColorProvider {
         itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, BlocksNatural.BUSH);
         blockColor((state, view, pos, tintIndex) -> tintIndex == 0 ? BiomeColors.getFoliageColor(view, pos) : -1, BlocksNatural.LARGE_BUSH);
         itemColor((stack, tintIndex) -> tintIndex == 0 ? 4764952 : -1, BlocksNatural.LARGE_BUSH);
+        
+        itemColor((stack, tintIndex) -> tintIndex == 0 ? GrassColors.getColor(0.5, 1.0) : -1, BlocksNatural.SHORT_GRASS);
     }
     
     private static void blockColor(BlockColorProvider provider, BlockConvertible... blocks) {

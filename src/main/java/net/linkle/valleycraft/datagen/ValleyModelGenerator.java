@@ -563,7 +563,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         lattice(AMBERBLOSSOM_LATTICE, generator);
         
         // Tall plants
-        generator.registerDoubleBlock(CATTAILS.block, TintType.NOT_TINTED);
+        //generator.registerDoubleBlock(CATTAILS.block, TintType.NOT_TINTED);
         
         // Glass pane
         registerGlassPane(new Identifier("block/tinted_glass"), TINTED_GLASS_PANE.block, generator);

@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.client.entity.renderer.pupkins;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.client.entity.model.pupkins.PupkinEntityModel;
 import net.minecraft.client.render.entity.EntityRendererFactory.Context;
@@ -8,6 +10,7 @@ import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.util.Identifier;
 
+@Environment(EnvType.CLIENT)
 public class PupkinEntityRenderer extends MobEntityRenderer<MobEntity, PupkinEntityModel> {
     private static final Identifier TEXTURE = Main.makeId("textures/entity/pupkin/living_pumpkin.png");
 

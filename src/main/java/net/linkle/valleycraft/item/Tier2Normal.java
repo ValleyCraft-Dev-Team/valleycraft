@@ -17,6 +17,7 @@ public class Tier2Normal extends FoodItem {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        super.appendTooltip(itemStack, world, tooltip, tooltipContext);
         tooltip.add(Text.translatable("item.valley.tier_two.tooltip"));
     }
 }

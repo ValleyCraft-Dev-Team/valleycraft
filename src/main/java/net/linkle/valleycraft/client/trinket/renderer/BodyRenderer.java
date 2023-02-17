@@ -26,9 +26,9 @@ public class BodyRenderer implements TrinketRenderer {
     
     private final Identifier texture;
     
-    /** @param texture file name in valleycraft/textures/models/trinket/talisman */
+    /** @param texture file name in valleycraft/textures/models/trinket/body */
     public BodyRenderer(String texture) {
-        this.texture = Main.makeId("textures/models/trinket/talisman/"+texture+".png");
+        this.texture = Main.makeId("textures/models/trinket/body/"+texture+".png");
     }
     
     @Override

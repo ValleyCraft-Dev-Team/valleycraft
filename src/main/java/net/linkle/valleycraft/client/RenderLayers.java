@@ -43,6 +43,8 @@ class RenderLayers {
         put(FIREGUARD, cullout);
         put(NEST, cullout);
         put(IRON_BRAZIER, cullout);
+        put(SPIDER_EGG, cullout);
+        put(REDSTONE_LANTERN, cullout);
 
         // Flowers and Potted Flowers
         put(BLACK_DAHLIA, cullout);

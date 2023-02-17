@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.client.entity.model;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.entity.BearEntity;
 import net.minecraft.client.model.*;
@@ -9,6 +11,7 @@ import net.minecraft.client.render.entity.model.EntityModelPartNames;
 import net.minecraft.client.render.entity.model.QuadrupedEntityModel;
 import net.minecraft.util.math.MathHelper;
 
+@Environment(EnvType.CLIENT)
 public class BearEntityModel<T extends BearEntity> extends QuadrupedEntityModel<T> {
     
     public static final EntityModelLayer LAYER = new EntityModelLayer(Main.makeId("bear"), "main");
@@ -57,7 +60,7 @@ public class BearEntityModel<T extends BearEntity> extends QuadrupedEntityModel<
         leftFrontLeg.pitch -= l * MathHelper.PI * 0.5f;
         if (child) {
             head.pivotY = 10.0f * m - 9.0f * l;
-            head.pivotZ = -16.0f * m - 7.0f * l;
+            head.pivotZ = -16.0f * m - 7.0f * l; // TODO: Fix the child's head animation.
         } else {
             head.pivotY = 10.0f * m - 12.0f * l;
             head.pivotZ = -16.0f * m - 2.0f * l;

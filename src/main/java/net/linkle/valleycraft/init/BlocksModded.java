@@ -45,6 +45,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     //WATER_SHOWERER(new ShowerBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque().ticksRandomly()), itemSettings()),
     SPRINKLER(new SprinklerBlock(), itemSettings()),
     WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
+    REDSTONE_LANTERN(new RedstoneLanternBlock(), itemSettings()),
 
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(net.minecraft.block.Blocks.BARREL)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(net.minecraft.block.Blocks.BARREL)), itemSettings()),

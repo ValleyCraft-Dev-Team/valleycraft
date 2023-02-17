@@ -2,6 +2,8 @@ package net.linkle.valleycraft.client.entity.renderer;
 
 import java.util.List;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.client.entity.renderer.feature.DogCollarFeatureRenderer;
 import net.linkle.valleycraft.entity.DogEntity;
@@ -13,6 +15,7 @@ import net.minecraft.client.render.entity.model.WolfEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
+@Environment(EnvType.CLIENT)
 public class DogRenderer extends MobEntityRenderer<DogEntity, WolfEntityModel<DogEntity>> {
 
     private static final List<Textures> TEXTURES = List.of(new Textures("border_collie/collie"), new Textures("golden_retriever/retriever"));
