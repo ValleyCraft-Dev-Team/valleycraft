@@ -45,7 +45,6 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     //WATER_SHOWERER(new ShowerBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque().ticksRandomly()), itemSettings()),
     SPRINKLER(new SprinklerBlock(), itemSettings()),
     WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
-    REDSTONE_LANTERN(new RedstoneLanternBlock(), itemSettings()),
 
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(net.minecraft.block.Blocks.BARREL)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(net.minecraft.block.Blocks.BARREL)), itemSettings()),
@@ -126,6 +125,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1).noCollision()), itemSettings(), BridgeItem::new),
     ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1)), itemSettings(), BridgeItem::new),
     SPIKE_TRAP(new SpikeTrapBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).nonOpaque().strength(0.5f, 1.0f)), itemSettings()),
+    FIRE_TRAP(new FireTrapBlock(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
 
     NAUTILUS_SHELL_BLOCK(new NautilusShellBlock(), itemSettings()),
 
@@ -191,6 +191,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     GLASS_DOOR(new DoorBlock(Block.Settings.copy(net.minecraft.block.Blocks.OAK_DOOR).hardness(0.3f).sounds(net.minecraft.sound.BlockSoundGroup.GLASS).nonOpaque()), itemSettings()),
     TINTED_GLASS_DOOR(new DoorBlock(Block.Settings.copy(net.minecraft.block.Blocks.OAK_DOOR).hardness(0.3f).sounds(net.minecraft.sound.BlockSoundGroup.GLASS)), itemSettings()),
 
+    REDSTONE_LANTERN(new RedstoneLanternBlock(), itemSettings()),
     GLOWSQUID_LANTERN(new LanternBlock(Block.Settings.copy(net.minecraft.block.Blocks.LANTERN).luminance(state -> 6)), itemSettings()),
     //BRIMSTONE_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
     //AMBER_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
@@ -387,6 +388,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     
     // not strictly either
     ANTHRACITE_BLOCK(new Block(Block.Settings.copy(net.minecraft.block.Blocks.COAL_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
+    SALTPETER_BLOCK(new Block(Block.Settings.copy(Blocks.CALCITE).strength(4.1f, 5.0f)), itemSettings()),
 
     // refined blocks of "___"
 

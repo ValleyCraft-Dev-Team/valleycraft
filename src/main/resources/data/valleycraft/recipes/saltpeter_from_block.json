@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:saltpeter_block"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:saltpeter",
+    "count": 9
+  }
+}

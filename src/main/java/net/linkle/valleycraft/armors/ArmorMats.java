@@ -5,6 +5,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -93,6 +94,8 @@ public enum ArmorMats implements ArmorMaterial {
     CLOTH("cloth", ints(1,2,3,2), 7, 9, equipLeather(), items(ItemsModded.CLOTH)),
     WATTLE("wattle", ints(1,2,2,1), 3, 15, equipLeather(), items(ItemsModded.PLANK)),
     QUIVER("quiver", ints(1,2,2,2), 7, 9, equipLeather(), items(ItemsModded.TREATED_LEATHER)),
+
+    RABBIT("fur_boots", ints(1,2,3,2), 7, 9, equipLeather(), items(RABBIT_HIDE)),
 
     //ANCIENT_AGLETS("ancient_aglets", ints(1,4,5,2), 15, 18, equipIron(), items(COPPER_INGOT)),
 

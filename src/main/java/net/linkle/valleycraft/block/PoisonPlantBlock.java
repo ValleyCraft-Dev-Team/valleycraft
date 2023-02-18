@@ -23,7 +23,7 @@ public class PoisonPlantBlock extends ModPlantBlock {
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (entity instanceof LivingEntity living) {
-            living.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 3*20));
+            living.addStatusEffect(new StatusEffectInstance(ModEffects.ROT_BLIGHT, 3*20));
         }
     }
     

@@ -8,7 +8,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
 public class PetWaterBowlBlock extends BlockWithWater {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(4, 0, 4, 12, 4, 12);
+    protected static final VoxelShape SHAPE = Block.createCuboidShape(5, 0, 5, 11, 4, 11);
 
     public PetWaterBowlBlock(Settings settings) {
         super(settings);

@@ -779,6 +779,10 @@
   "block.valleycraft.brimstone_crystal": "Brimstone Cluster",
 
   "item.valleycraft.salt": "Salt",
+  "item.valleycraft.saltpeter": "Saltpeter",
+  "block.valleycraft.saltpeter_block": "Block of Saltpeter",
+  "block.valleycraft.saltpeter_ore": "Saltpeter Ore",
+  "block.valleycraft.deepslate_saltpeter_ore": "Deepslate Saltpeter Ore",
 
   "item.valleycraft.amethystle_salad": "§6Amethystle Salad",
   "item.valleycraft.carrot_salad": "§6Enduria Carrot Salad",
@@ -966,7 +970,7 @@
   "item.valleycraft.pillager_headscarf": "Seaologer Headscarf",
   "item.valleycraft.dripleaf_hat": "Dripleaf Hat",
 
-  "item.valleycraft.fur_boots": "Warm Fur Boots",
+  "item.valleycraft.fur_boots": "Warm Boots",
   "item.valleycraft.reinforced_iron_helmet": "Masked Iron Helmet",
   "item.valleycraft.reinforced_golden_helmet": "Masked Golden Helmet",
   "item.valleycraft.reinforced_primsteel_helmet": "Masked Primsteel Helmet",

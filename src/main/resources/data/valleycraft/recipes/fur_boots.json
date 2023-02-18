@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "VUV",
+    "VUV"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:rabbit_hide"
+    },
+    "V": {
+      "item": "valleycraft:treated_leather"
+    },
+    "U": {
+      "item": "valleycraft:plant_fiber_string"
+    }
+  },
+  "result": {
+    "item": "valleycraft:fur_boots",
+    "count": 1
+  }
+}

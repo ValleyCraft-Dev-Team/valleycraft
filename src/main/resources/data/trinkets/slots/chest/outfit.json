@@ -1,6 +1,6 @@
 {
   "icon": "valleycraft:gui/slots/outfit",
-  "order": 3,
+  "order": 1,
   "drop_rule": "default",
   "validator_predicates": ["trinkets:tag"],
   "tooltip_predicates": ["trinkets:none"],

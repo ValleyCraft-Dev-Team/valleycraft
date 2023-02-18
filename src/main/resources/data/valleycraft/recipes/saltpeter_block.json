@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:saltpeter"
+    }
+  },
+  "result": {
+    "item": "valleycraft:saltpeter_block",
+    "count": 1
+  }
+}

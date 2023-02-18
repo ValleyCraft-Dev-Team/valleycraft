@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "valleycraft:item/food/dough/gloom_berry_pie_dough"
-  }
-}

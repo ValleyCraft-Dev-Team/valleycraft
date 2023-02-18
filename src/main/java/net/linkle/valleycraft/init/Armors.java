@@ -108,6 +108,8 @@ public enum Armors implements ItemEnum {
     TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
     TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
+    FUR_BOOTS(new ArmorItem(ArmorMats.RABBIT, EquipmentSlot.FEET, settingsNormal())),
+
     /**special armors**/
 
     CHEF_HAT(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsNormal())),

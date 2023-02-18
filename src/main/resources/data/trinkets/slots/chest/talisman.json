@@ -1,6 +1,6 @@
 {
   "icon": "valleycraft:gui/slots/necklace",
-  "order": 1,
+  "order": 2,
   "drop_rule": "default",
   "validator_predicates": ["trinkets:tag"],
   "tooltip_predicates": ["trinkets:none"],

@@ -1,6 +1,6 @@
 {
   "icon": "valleycraft:gui/slots/bauble",
-  "order": 2,
+  "order": 3,
   "drop_rule": "default",
   "validator_predicates": ["trinkets:tag"],
   "tooltip_predicates": ["trinkets:none"],
