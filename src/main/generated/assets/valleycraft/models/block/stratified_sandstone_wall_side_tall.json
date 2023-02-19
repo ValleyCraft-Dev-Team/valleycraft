@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_wall_side_tall",
   "textures": {
-    "wall": "valleycraft:block/stratified_sandstone_top"
+    "wall": "valleycraft:block/block/stratified_sandstone_side"
   }
 }

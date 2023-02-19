@@ -31,6 +31,7 @@ public class TrinketRenderers {
         //strange base
         register(new BodyRenderer("elder_guardian_spike_talisman"), Baubles.ELDER_GUARDIAN_SPIKE_KEEPSAKE);
         register(new BodyRenderer("ender_dragon_talisman"), Baubles.ENDER_DRAGON_TALISMAN);
+        register(new BodyRenderer("undying_keepsake"), Baubles.UNDYING_KEEPSAKE);
 
         //unique
         //register(new TalismanRenderer("arrowhead_necklace"), ModBaubles.ARROWHEAD_TALISMAN);

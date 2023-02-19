@@ -142,7 +142,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         wall(ADVENTURINE_BRICK_WALL.block, map, generator);
 
         // SHALE
-        map = TextureMap.sideEnd(Main.makeId("block/shale_side"), Main.makeId("block/shale_top")).put(TextureKey.WALL, Main.makeId("block/stratified_sandstone_top"));
+        map = textureAll("block/shale_side");
         slab(SHALE_SLAB.block, SHALE.block, map, generator);
         stairs(SHALE_STAIRS.block, map, generator);
         wall(SHALE_WALL.block, map, generator);
@@ -373,15 +373,17 @@ class ValleyModelGenerator extends FabricModelProvider {
         wall(ROUGH_RED_SANDSTONE_WALL.block, map, generator);
 
         // STRATIFIED_SANDSTONE
-        map = TextureMap.sideEnd(Main.makeId("block/stratified_sandstone_side"), Main.makeId("block/stratified_sandstone_top")).put(TextureKey.WALL, Main.makeId("block/stratified_sandstone_top"));
+        map = TextureMap.sideEnd(Main.makeId("block/stratified_sandstone_side"), Main.makeId("block/stratified_sandstone_top"));
         slab(STRATIFIED_SANDSTONE_SLAB.block, STRATIFIED_SANDSTONE.block, map, generator);
         stairs(STRATIFIED_SANDSTONE_STAIRS.block, map, generator);
+        map = textureAll("block/stratified_sandstone_side");
         wall(STRATIFIED_SANDSTONE_WALL.block, map, generator);
 
         // STRATIFIED_RED_SANDSTONE
         map = TextureMap.sideEnd(Main.makeId("block/stratified_red_sandstone_side"), Main.makeId("block/stratified_red_sandstone_top")).put(TextureKey.WALL, Main.makeId("block/stratified_sandstone_top"));
         slab(STRATIFIED_RED_SANDSTONE_SLAB.block, STRATIFIED_RED_SANDSTONE.block, map, generator);
         stairs(STRATIFIED_RED_SANDSTONE_STAIRS.block, map, generator);
+        map = textureAll("block/stratified_red_sandstone_side");
         wall(STRATIFIED_RED_SANDSTONE_WALL.block, map, generator);
 
         // SANDSTONE_BRICKS
@@ -572,7 +574,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerGlassPane(BEVELED_GLASS.block, BEVELED_GLASS_PANE.block);
         generator.registerGlassPane(BEVELED_BRIMSTONE_GLASS.block, BEVELED_BRIMSTONE_GLASS_PANE.block);
         generator.registerGlassPane(BEVELED_TINTED_GLASS.block, BEVELED_TINTED_GLASS_PANE.block);
-        //generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS.block, BLOCK_WATTLE_AND_GLASS_PANE.block);
+        generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS.block, BLOCK_WATTLE_AND_GLASS_PANE.block);
         generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS_CROSS.block, BLOCK_WATTLE_AND_GLASS_CROSS_PANE.block);
         generator.registerGlassPane(BLOCK_WATTLE_AND_GLASS_PLUS.block, BLOCK_WATTLE_AND_GLASS_PLUS_PANE.block);
 

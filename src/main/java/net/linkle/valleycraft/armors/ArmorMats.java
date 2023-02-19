@@ -59,6 +59,7 @@ public enum ArmorMats implements ArmorMaterial {
     CIRCLET_NETHERITE("netherite_circlet", ints(0,0,0,3), 15, 15, equipChain(), items(net.minecraft.item.Items.NETHERITE_INGOT)),
     CIRCLET_PRIMSTEEL("primsteel_circlet", ints(0,0,0,1), 15, 15, equipChain(), items(ItemsModded.PRIMSTEEL_INGOT)),
     CIRCLET_LEATHER("leather_circlet", ints(0,0,0,1), 15, 15, equipChain(), items(ItemsModded.TREATED_LEATHER)),
+    CIRCLET_ECHOCHALCUM("sculkerite_circlet", ints(0,0,0,3), 15, 22, equipChain(), items(ItemsModded.ECHOCHALCUM_INGOT)),
 
     CROWN("golden_crown", ints(0,0,0,3), 15, 25, equipGold(), items(net.minecraft.item.Items.GOLD_INGOT)),
 
@@ -94,6 +95,7 @@ public enum ArmorMats implements ArmorMaterial {
     CLOTH("cloth", ints(1,2,3,2), 7, 9, equipLeather(), items(ItemsModded.CLOTH)),
     WATTLE("wattle", ints(1,2,2,1), 3, 15, equipLeather(), items(ItemsModded.PLANK)),
     QUIVER("quiver", ints(1,2,2,2), 7, 9, equipLeather(), items(ItemsModded.TREATED_LEATHER)),
+    ECHOCHALCUM("sculkerite", ints(3,6,8,3), 15, 22, equipIron(), items(ItemsModded.ECHOCHALCUM_INGOT), 0.0f, 3.0f),
 
     RABBIT("fur_boots", ints(1,2,3,2), 7, 9, equipLeather(), items(RABBIT_HIDE)),
 
@@ -106,6 +108,7 @@ public enum ArmorMats implements ArmorMaterial {
     RF_ROSEGOLD("reinforced_rosegold", ints(2,3,5,3), 15, 15, equipChain(), items(ItemsModded.ROSEGOLD_INGOT),0.75f, 0.0f),
     RF_DIAMOND("reinforced_diamond", ints(3,4,7,4), 15, 10, equipChain(), items(net.minecraft.item.Items.DIAMOND), 2.0f, 0.0f),
     RF_NETHERITE("reinforced_netherite", ints(3,4,7,4), 15, 15, equipChain(), items(net.minecraft.item.Items.NETHERITE_INGOT), 3.0f, 0.0f),
+    RF_ECHOCHALCUM("reinforced_sculkerite", ints(3,4,7,4), 15, 22, equipChain(), items(ItemsModded.ECHOCHALCUM_INGOT), 0.0f, 3.0f),
 
     HAUBERK_LEATHER("leather_hauberk", ints(1,2,2,2), 15, 25, equipChain(), items(net.minecraft.item.Items.GOLD_INGOT)),
     HAUBERK_GOLD("gold_hauberk", ints(1,3,4,3), 15, 25, equipChain(), items(net.minecraft.item.Items.GOLD_INGOT)),
@@ -114,6 +117,7 @@ public enum ArmorMats implements ArmorMaterial {
     HAUBERK_ROSEGOLD("rosegold_hauberk", ints(2,5,5,3), 15, 15, equipChain(), items(ItemsModded.ROSEGOLD_INGOT),0.75f, 0.0f),
     HAUBERK_DIAMOND("diamond_hauberk", ints(3,6,7,4), 15, 10, equipChain(), items(net.minecraft.item.Items.DIAMOND), 2.0f, 0.0f),
     HAUBERK_NETHERITE("netherite_hauberk", ints(3,6,7,4), 15, 15, equipChain(), items(net.minecraft.item.Items.NETHERITE_INGOT), 3.0f, 0.0f),
+    HAUBERK_ECHOCHALCUM("sculkerite_hauberk", ints(3,6,7,4), 15, 22, equipChain(), items(ItemsModded.ECHOCHALCUM_INGOT), 0.0f, 3.0f),
 
     SHULKER("shulker", ints(0,0,6,4), 15, 20, equipLeather(), items(SHULKER_SHELL), 3.0f, 0.0f),
 

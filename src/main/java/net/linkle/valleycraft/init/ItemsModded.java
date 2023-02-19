@@ -102,6 +102,7 @@ public enum ItemsModded implements ItemEnum {
     BRASIUM_INGOT(new Item(itemSettings())),
     ROSEGOLD_INGOT(new Item(itemSettings())),
     DIAMOND_FRAGMENTS(new Item(itemSettings())),
+    ECHOCHALCUM_INGOT(new Item(itemSettings())),
     NETHERITE_NUGGET(new Item(itemSettings())),
     SPYGLASS_LENSE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
     ECHO_SHARD_LENSE(new Item(itemSettings().rarity(Rarity.RARE))),
@@ -112,10 +113,11 @@ public enum ItemsModded implements ItemEnum {
 
     GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(64))),
     ELDER_GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(64))),
+    WARDEN_ANTLER(new Item(itemSettings().rarity(Rarity.EPIC))),
 
     TOTEM_OF_TRADE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),
-    TOTEM_OF_APPRECIATION(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(1))),
-    TOTEM_OF_FRIENDSHIP(new Item(itemSettings().group(VC_ITEMS).rarity(EPIC).maxCount(1))),
+    //TOTEM_OF_APPRECIATION(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(1))),
+    //TOTEM_OF_FRIENDSHIP(new Item(itemSettings().group(VC_ITEMS).rarity(EPIC).maxCount(1))),
     BOMB_BAG(new BombBagItem(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON))),
     ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_TOOLS))),
     SEED_BAG(new SeedBagItem(itemSettings().group(VC_ITEMS))),

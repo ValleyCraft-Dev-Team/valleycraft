@@ -96,6 +96,10 @@ public enum ModToolMaterials implements ToolMaterial {
         return Ingredient.ofItems(new ItemConvertible[]{Items.IRON_INGOT});
     }),
 
+    ECHOCHALCUM(4, 2031, 9.0F, 4.0F, 22, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ItemsModded.ECHOCHALCUM_INGOT});
+    }),
+
     AMETHYST(2, 190, 5.0F, 1.5F, 18, () -> {
         return Ingredient.ofItems(Items.AMETHYST_SHARD);
     });

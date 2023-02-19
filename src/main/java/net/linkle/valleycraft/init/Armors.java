@@ -34,6 +34,7 @@ public enum Armors implements ItemEnum {
     REINFORCED_IRON_HELMET(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_ROSEGOLD_HELMET(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_DIAMOND_HELMET(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
+    REINFORCED_ECHOCHALCUM_HELMET(new ArmorItem(ArmorMats.RF_ECHOCHALCUM, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_NETHERITE_HELMET(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.HEAD, settingsNormal())),
 
     LEATHER_BREASTPLATE(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.CHEST, settingsNormal())),
@@ -42,6 +43,7 @@ public enum Armors implements ItemEnum {
     IRON_BREASTPLATE(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.CHEST, settingsNormal())),
     ROSEGOLD_BREASTPLATE(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),
     DIAMOND_BREASTPLATE(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.CHEST, settingsNormal())),
+    ECHOCHALCUM_BREASTPLATE(new ArmorItem(ArmorMats.RF_ECHOCHALCUM, EquipmentSlot.CHEST, settingsNormal())),
     NETHERITE_BREASTPLATE(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.CHEST, settingsNormal())),
 
     LEATHER_SANDALS(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.FEET, settingsNormal())),
@@ -50,6 +52,7 @@ public enum Armors implements ItemEnum {
     IRON_SANDALS(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.FEET, settingsNormal())),
     ROSEGOLD_SANDALS(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.FEET, settingsNormal())),
     DIAMOND_SANDALS(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.FEET, settingsNormal())),
+    ECHOCHALCUM_SANDALS(new ArmorItem(ArmorMats.RF_ECHOCHALCUM, EquipmentSlot.FEET, settingsNormal())),
     NETHERITE_SANDALS(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.FEET, settingsNormal())),
 
     LEATHER_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_LEATHER, EquipmentSlot.LEGS, settingsNormal())),
@@ -58,6 +61,7 @@ public enum Armors implements ItemEnum {
     IRON_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_IRON, EquipmentSlot.LEGS, settingsNormal())),
     ROSEGOLD_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
     DIAMOND_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_DIAMOND, EquipmentSlot.LEGS, settingsNormal())),
+    ECHOCHALCUM_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_ECHOCHALCUM, EquipmentSlot.LEGS, settingsNormal())),
     NETHERITE_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_NETHERITE, EquipmentSlot.LEGS, settingsNormal())),
 
     LEATHER_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.LEGS, settingsNormal())),
@@ -66,6 +70,7 @@ public enum Armors implements ItemEnum {
     IRON_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.LEGS, settingsNormal())),
     ROSEGOLD_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
     DIAMOND_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.LEGS, settingsNormal())),
+    ECHOCHALCUM_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_ECHOCHALCUM, EquipmentSlot.LEGS, settingsNormal())),
     NETHERITE_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_NETHERITE, EquipmentSlot.LEGS, settingsNormal())),
 
     //LEATHER_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_LEATHER, EquipmentSlot.HEAD, settingsNormal())),
@@ -95,15 +100,20 @@ public enum Armors implements ItemEnum {
     LEATHER_LEGGINGS(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.LEGS, settingsNormal())),
     LEATHER_BOOTS(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.FEET, settingsNormal())),
 
+    GOLEMITE_HELMET(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
+    GOLEMITE_CHESTPLATE(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
+    GOLEMITE_LEGGINGS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    GOLEMITE_BOOTS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
+
     ROSEGOLD_HELMET(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
     ROSEGOLD_CHESTPLATE(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),
     ROSEGOLD_LEGGINGS(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
     ROSEGOLD_BOOTS(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.FEET, settingsNormal())),
 
-    GOLEMITE_HELMET(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
-    GOLEMITE_CHESTPLATE(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
-    GOLEMITE_LEGGINGS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
-    GOLEMITE_BOOTS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
+    ECHOCHALCUM_HELMET(new ArmorItem(ArmorMats.ECHOCHALCUM, EquipmentSlot.HEAD, settingsNormal())),
+    ECHOCHALCUM_CHESTPLATE(new ArmorItem(ArmorMats.ECHOCHALCUM, EquipmentSlot.CHEST, settingsNormal())),
+    ECHOCHALCUM_LEGGINGS(new ArmorItem(ArmorMats.ECHOCHALCUM, EquipmentSlot.LEGS, settingsNormal())),
+    ECHOCHALCUM_BOOTS(new ArmorItem(ArmorMats.ECHOCHALCUM, EquipmentSlot.FEET, settingsNormal())),
 
     TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
     TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),

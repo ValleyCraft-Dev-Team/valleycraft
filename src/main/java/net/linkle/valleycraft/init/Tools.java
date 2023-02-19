@@ -160,6 +160,7 @@ public class Tools {
         Reg.register("knife_iron", new KnifeBase(ToolMaterials.IRON, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("knife_rosegold", new KnifeBase(ModToolMaterials.ROSEGOLD, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("knife_diamond", new KnifeBase(ToolMaterials.DIAMOND, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("knife_echochalcum", new KnifeBase(ModToolMaterials.ECHOCHALCUM, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("knife_netherite", new KnifeBase(ToolMaterials.NETHERITE, KNIFE_BASE_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
 
         //Hatchets
@@ -171,6 +172,7 @@ public class Tools {
         Reg.register("hatchet_iron", new HatchetAxeBase(ToolMaterials.IRON, HATCHET_BASE_DAMAGE, HATCHET_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("hatchet_rosegold", new HatchetAxeBase(ModToolMaterials.ROSEGOLD, HATCHET_BASE_DAMAGE, HATCHET_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("hatchet_diamond", new HatchetAxeBase(ToolMaterials.DIAMOND, HATCHET_BASE_DAMAGE, HATCHET_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("hatchet_echochalcum", new HatchetAxeBase(ModToolMaterials.ECHOCHALCUM, HATCHET_BASE_DAMAGE, HATCHET_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("hatchet_netherite", new HatchetAxeBase(ToolMaterials.NETHERITE, HATCHET_BASE_DAMAGE, HATCHET_BASE_SPEED, BASIC_SETTINGS));
 
         //Woodcutter's Axes (upgrade from axe)
@@ -182,6 +184,7 @@ public class Tools {
         Reg.register("woodcutter_axe_iron", new WoodcutterAxeBase(ModToolMaterialsExtended.IRON_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("woodcutter_axe_rosegold", new WoodcutterAxeBase(ModToolMaterialsExtended.ROSEGOLD_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("woodcutter_axe_diamond", new WoodcutterAxeBase(ModToolMaterialsExtended.DIAMOND_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("woodcutter_axe_echochalcum", new WoodcutterAxeBase(ModToolMaterialsExtended.ECHOCHALCUM_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("woodcutter_axe_netherite", new WoodcutterAxeBase(ModToolMaterialsExtended.NETHERITE_EXTENDED, WOODCUTTER_BASE_DAMAGE, WOODCUTTER_BASE_SPEED, BASIC_SETTINGS));
 
         //Scythes (upgrade from hoe)
@@ -193,6 +196,7 @@ public class Tools {
         Reg.register("scythe_iron", new ScytheBase(ToolMaterials.IRON, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("scythe_rosegold", new ScytheBase(ModToolMaterials.ROSEGOLD, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("scythe_diamond", new ScytheBase(ToolMaterials.DIAMOND, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("scythe_echochalcum", new ScytheBase(ModToolMaterials.ECHOCHALCUM, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("scythe_netherite", new ScytheBase(ToolMaterials.NETHERITE, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SETTINGS));
 
         //Spear
@@ -214,6 +218,7 @@ public class Tools {
         Reg.register("dagger_iron", new DaggerBase(ToolMaterials.IRON, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("dagger_rosegold", new DaggerBase(ModToolMaterials.ROSEGOLD, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("dagger_diamond", new DaggerBase(ToolMaterials.DIAMOND, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("dagger_echochalcum", new DaggerBase(ModToolMaterials.ECHOCHALCUM, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("dagger_netherite", new DaggerBase(ToolMaterials.NETHERITE, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS));
 
         //Traveler (upgrade from knife)
@@ -225,6 +230,7 @@ public class Tools {
         Reg.register("traveler_iron", new TravelerBase(ToolMaterials.IRON, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("traveler_rosegold", new TravelerBase(ModToolMaterials.ROSEGOLD, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("traveler_diamond", new TravelerBase(ToolMaterials.DIAMOND, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("traveler_echochalcum", new TravelerBase(ModToolMaterials.ECHOCHALCUM, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("traveler_netherite", new TravelerBase(ToolMaterials.NETHERITE, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS));
 
         //Greatswords (upgrade from sword)
@@ -236,6 +242,7 @@ public class Tools {
         Reg.register("iron_greatsword", new GreatswordBase(ModToolMaterialsExtended.IRON_EXTENDED, GREATSWORD_BASE_DAMAGE, GREATSWORD_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("rosegold_greatsword", new GreatswordBase(ModToolMaterialsExtended.ROSEGOLD_EXTENDED, GREATSWORD_BASE_DAMAGE, GREATSWORD_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("diamond_greatsword", new GreatswordBase(ModToolMaterialsExtended.DIAMOND_EXTENDED, GREATSWORD_BASE_DAMAGE, GREATSWORD_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("echochalcum_greatsword", new GreatswordBase(ModToolMaterialsExtended.ECHOCHALCUM_EXTENDED, GREATSWORD_BASE_DAMAGE, GREATSWORD_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("netherite_greatsword", new GreatswordBase(ModToolMaterialsExtended.NETHERITE_EXTENDED, GREATSWORD_BASE_DAMAGE, GREATSWORD_BASE_SPEED, BASIC_SETTINGS));
 
         //Bone
@@ -258,6 +265,13 @@ public class Tools {
         Reg.register("rosegold_pickaxe", new PickaxeItem(ModToolMaterials.ROSEGOLD, PICKAXE_BASE_DAMAGE, PICKAXE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("rosegold_axe", new AxeItem(ModToolMaterials.ROSEGOLD, AXE_BASE_DAMAGE, AXE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("rosegold_hoe", new ModHoeItem(ModToolMaterials.ROSEGOLD, HOE_BASE_DAMAGE, HOE_BASE_SPEED, BASIC_SETTINGS));
+
+        //Echochalcum
+        Reg.register("echochalcum_sword", new SwordItem(ModToolMaterials.ECHOCHALCUM, SWORD_BASE_DAMAGE, SWORD_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("echochalcum_shovel", new ShovelItem(ModToolMaterials.ECHOCHALCUM, SHOVEL_BASE_DAMAGE, SHOVEL_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("echochalcum_pickaxe", new PickaxeItem(ModToolMaterials.ECHOCHALCUM, PICKAXE_BASE_DAMAGE, PICKAXE_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("echochalcum_axe", new AxeItem(ModToolMaterials.ECHOCHALCUM, AXE_BASE_DAMAGE, AXE_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("echochalcum_hoe", new ModHoeItem(ModToolMaterials.ECHOCHALCUM, HOE_BASE_DAMAGE, HOE_BASE_SPEED, BASIC_SETTINGS));
 
         //rusty
         Reg.register("rusted_sword", RUSTY_SWORD);

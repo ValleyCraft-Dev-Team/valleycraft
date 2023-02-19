@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "valleycraft:block/bone_eye_socket_vertical",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "valleycraft:block/bone_eye_socket",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "valleycraft:block/bone_eye_socket"
+    },
+    "facing=south": {
+      "model": "valleycraft:block/bone_eye_socket",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "valleycraft:block/bone_eye_socket_vertical"
+    },
+    "facing=west": {
+      "model": "valleycraft:block/bone_eye_socket",
+      "y": 270
+    }
+  }
+}

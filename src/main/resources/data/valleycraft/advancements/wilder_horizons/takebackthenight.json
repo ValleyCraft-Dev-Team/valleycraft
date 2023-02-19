@@ -1,0 +1,36 @@
+{
+  "parent": "valleycraft:wilder_horizons/root",
+  "display": {
+    "title": {
+      "text": "Take Back the Night"
+    },
+    "icon": {
+      "item": "valleycraft:infected_monster_heart"
+    },
+    "description": {
+      "text": "Brew a Potion of the Dragonhearted"
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "dragonhearted": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:potion"
+            ],
+            "potion": "valleycraft:dragonhearted_potion"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dragonhearted"
+    ]
+  ]
+}

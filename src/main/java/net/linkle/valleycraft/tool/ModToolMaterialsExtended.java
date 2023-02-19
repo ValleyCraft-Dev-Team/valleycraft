@@ -39,6 +39,9 @@ public enum ModToolMaterialsExtended implements ToolMaterial {
     GOLD_EXTENDED(0, 48, 12.0F, 0.0F, 22, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.GOLD_INGOT});
     }),
+    ECHOCHALCUM_EXTENDED(4, 3047, 9.0F, 4.0F, 22, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ItemsModded.ECHOCHALCUM_INGOT});
+    }),
     NETHERITE_EXTENDED(4, 3047, 9.0F, 4.0F, 15, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Items.NETHERITE_INGOT});
     });

@@ -142,15 +142,15 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     DAUB_SLAB(new SlabBlock(Block.Settings.copy(net.minecraft.block.Blocks.TUFF)), itemSettings()),
     DAUB_WALL(new WallBlock(Block.Settings.copy(net.minecraft.block.Blocks.TUFF)), itemSettings()),
 
-    //BLOCK_WATTLE_AND_DAUB(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    BLOCK_WATTLE_AND_DAUB(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
     BLOCK_WATTLE_AND_DAUB_CROSS(new Block(Block.Settings.copy(net.minecraft.block.Blocks.TUFF)), itemSettings()),
     BLOCK_WATTLE_AND_DAUB_PLUS(new Block(Block.Settings.copy(net.minecraft.block.Blocks.TUFF)), itemSettings()),
 
-    //BLOCK_WATTLE_AND_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()), // block_wattle_and_glass
+    BLOCK_WATTLE_AND_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()), // block_wattle_and_glass
     BLOCK_WATTLE_AND_GLASS_CROSS(new GlassBlock(Block.Settings.copy(net.minecraft.block.Blocks.GLASS)), itemSettings()), // block_wattle_and_glass_cross
     BLOCK_WATTLE_AND_GLASS_PLUS(new GlassBlock(Block.Settings.copy(net.minecraft.block.Blocks.GLASS)), itemSettings()), // block_wattle_and_glass_plus
     
-    //BLOCK_WATTLE_AND_GLASS_PANE(new PaneBlock(Block.Settings.copy(Blocks.GLASS_PANE)), itemSettings()),
+    BLOCK_WATTLE_AND_GLASS_PANE(new PaneBlock(Block.Settings.copy(Blocks.GLASS_PANE)), itemSettings()),
     BLOCK_WATTLE_AND_GLASS_CROSS_PANE(new PaneBlock(Block.Settings.copy(net.minecraft.block.Blocks.GLASS_PANE)), itemSettings()),
     BLOCK_WATTLE_AND_GLASS_PLUS_PANE(new PaneBlock(Block.Settings.copy(net.minecraft.block.Blocks.GLASS_PANE)), itemSettings()),
 

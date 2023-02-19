@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "P"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:honey_bottle"
+    },
+    "P": {
+      "item": "minecraft:powder_snow_bucket"
+    }
+  },
+  "result": {
+    "item": "valleycraft:crystallized_honeydrop",
+    "count": 1
+  }
+}

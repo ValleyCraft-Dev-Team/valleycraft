@@ -18,6 +18,7 @@
     "valleycraft:enchanted_chorus_fruit",
     "valleycraft:enchanted_apple_pie",
     "valleycraft:enchanted_apple_pie_slice",
+    "valleycraft:undying_keepsake",
     "minecraft:totem_of_undying",
     "valleycraft:reinforced_golden_helmet",
     "valleycraft:golden_sandals",
@@ -30,10 +31,8 @@
     "valleycraft:golden_greatsword",
     "valleycraft:dagger_golden",
     "valleycraft:traveler_golden",
-    "valleycraft:totem_of_undying_bracelet",
     "valleycraft:gold_scrap",
     "valleycraft:woodcutter_axe_golden",
-    "valleycraft:totem_of_appreciation",
     "valleycraft:totem_of_trade"
   ]
 }

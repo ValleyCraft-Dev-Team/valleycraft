@@ -58,6 +58,12 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:goat_horn"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
           "name": "minecraft:emerald",
           "functions": [
             {

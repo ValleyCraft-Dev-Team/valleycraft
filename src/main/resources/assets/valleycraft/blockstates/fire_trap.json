@@ -1,29 +1,25 @@
 {
   "variants": {
     "facing=down": {
-      "model": "valleycraft:block/fire_trap_block",
+      "model": "valleycraft:block/fire_trap_block_vertical",
       "x": 180
     },
     "facing=east": {
       "model": "valleycraft:block/fire_trap_block",
-      "x": 90,
       "y": 90
     },
     "facing=north": {
-      "model": "valleycraft:block/fire_trap_block",
-      "x": 90
+      "model": "valleycraft:block/fire_trap_block"
     },
     "facing=south": {
       "model": "valleycraft:block/fire_trap_block",
-      "x": 90,
       "y": 180
     },
     "facing=up": {
-      "model": "valleycraft:block/fire_trap_block"
+      "model": "valleycraft:block/fire_trap_block_vertical"
     },
     "facing=west": {
       "model": "valleycraft:block/fire_trap_block",
-      "x": 90,
       "y": 270
     }
   }
