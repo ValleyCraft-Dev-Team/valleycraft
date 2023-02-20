@@ -3,7 +3,7 @@
 	"parent": "block/block",
 	"textures": {
 		"north": "valleycraft:block/fire_trap_front",
-		"east": "valleycraft:block/furnace_top"
+		"east": "minecraft:block/furnace_top"
 	},
 	"elements": [
 		{

@@ -102,6 +102,9 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     CANVAS_SLAB(new SlabBlock(Block.Settings.copy(net.minecraft.block.Blocks.BROWN_WOOL).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_BLOCK)), itemSettings()),
 
     CANVAS_CARPET(new CarpetBlock(Block.Settings.copy(net.minecraft.block.Blocks.BROWN_CARPET).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_CARPET)), itemSettings()),
+    LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(net.minecraft.sound.BlockSoundGroup.WOOL)), itemSettings()),
+    LEATHER_CARPET(new CarpetBlock(Block.Settings.copy(net.minecraft.block.Blocks.BROWN_CARPET).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_CARPET)), itemSettings()),
+
     CURTAIN(new CurtainBlock(), itemSettings()),
     FIREGUARD(new FireGuardBlock(AbstractBlock.Settings.of(Material.METAL).sounds(net.minecraft.sound.BlockSoundGroup.CHAIN).nonOpaque()), itemSettings()),
 
@@ -889,8 +892,6 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     PURPUR_BLOCK_CHIMNEY(new ChimneyBlock(Block.Settings.copy(net.minecraft.block.Blocks.RED_NETHER_BRICKS).nonOpaque()), itemSettings()),
     // leathers are last
 
-    //TODO leather blocks should have a softer texture, and carpet fix and add in 1.1
-    //LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
     //TANNED_LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
     //BLACK_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLACK).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),
     //BLUE_LEATHER_BLOCK(new Block(Block.Settings.of(Material.SOLID_ORGANIC, MapColor.BLUE).strength(0.8f).sounds(BlockSoundGroup.WOOL)), itemSettings()),

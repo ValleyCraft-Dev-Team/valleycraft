@@ -74,16 +74,16 @@ public class Tools {
     //The base attack speed of each tool type.
     //These numbers are subtracted from four, so 4.0 will make the tool never charge, and higher will likely cause issues.
     //Larger number = slower, smaller number = faster.
-    public static final Float KNIFE_BASE_SPEED = -2.0f;
-    public static final Float WOODCUTTER_BASE_SPEED = -3.4f;
-    public static final Float SCYTHE_BASE_SPEED = -2.7f;
+    public static final Float KNIFE_BASE_SPEED = -2.2f;
+    public static final Float WOODCUTTER_BASE_SPEED = -3.3f;
+    public static final Float SCYTHE_BASE_SPEED = -3.0f;
     public static final Float DAGGER_BASE_SPEED = -2.4f;
-    public static final Float HATCHET_BASE_SPEED = -3.0f;
+    public static final Float HATCHET_BASE_SPEED = -2.4f;
     public static final Float SPEAR_BASE_SPEED = -2.6f;
     public static final Float TRAVELER_BASE_SPEED = -2.2f;
     public static final Float MACE_BASE_SPEED = -2.2f;
     public static final Float STAFF_BASE_SPEED = -2.2f;
-    public static final Float GREATSWORD_BASE_SPEED = -3.4f;
+    public static final Float GREATSWORD_BASE_SPEED = -3.2f;
 
     //these are all vanilla, dont alter them Linkle! signed, Linkle
     public static final Integer AXE_BASE_DAMAGE = 6;

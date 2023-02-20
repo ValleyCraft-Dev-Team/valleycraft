@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "vallecraft:chocolate"
+      "item": "valleycraft:chocolate"
     },
     {
       "item": "valleycraft:pumpkin_spice_cookie"

@@ -15,12 +15,6 @@
     "facing=west": {
       "y": 270,
       "model": "valleycraft:block/fireguard"
-    },
-    "facing=up": {
-      "model": "valleycraft:block/fireguard"
-    },
-    "facing=down": {
-      "model": "valleycraft:block/fireguard"
     }
   }
 }

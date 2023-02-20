@@ -31,7 +31,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "valleycraft:empty_shelf",
+          "name": "valleycraft:empty_bookshelf",
           "functions": [
             {
               "function": "minecraft:set_count",

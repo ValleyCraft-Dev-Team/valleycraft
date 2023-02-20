@@ -9,10 +9,9 @@
     }
   },
   "pattern": [
-    "oWo",
     "oWo"
   ],
   "result": {
-    "item": "minecraft:shield"
+    "item": "valleycraft:buckler"
   }
 }

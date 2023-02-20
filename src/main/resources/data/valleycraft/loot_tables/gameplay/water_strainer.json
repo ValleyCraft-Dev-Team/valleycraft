@@ -511,7 +511,7 @@
         {
           "type": "minecraft:item",
           "weight": 5,
-          "name": "valleycraft:drowned_clothes",
+          "name": "valleycraft:bikini_repaired",
           "functions": [
             {
               "function": "minecraft:set_damage",
@@ -527,7 +527,7 @@
         {
           "type": "minecraft:item",
           "weight": 5,
-          "name": "valleycraft:bikini_coat",
+          "name": "valleycraft:bikini_masc_repaired",
           "functions": [
             {
               "function": "minecraft:set_damage",
@@ -542,8 +542,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
-          "name": "valleycraft:pillager_headscarf",
+          "weight": 5,
+          "name": "valleycraft:bikini_neutral_repaired",
           "functions": [
             {
               "function": "minecraft:set_damage",
@@ -560,54 +560,6 @@
           "type": "minecraft:item",
           "weight": 1,
           "name": "valleycraft:straw_hat",
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 0.2
-              },
-              "add": false
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "valleycraft:bikini",
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 0.2
-              },
-              "add": false
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "valleycraft:bikini_masc",
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 0.2
-              },
-              "add": false
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "valleycraft:bikini_neutral",
           "functions": [
             {
               "function": "minecraft:set_damage",
@@ -782,22 +734,6 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "name": "valleycraft:fur_clump",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "weight": 5,
           "name": "valleycraft:seagulls_feather",
           "functions": [
@@ -880,22 +816,6 @@
           "type": "minecraft:item",
           "weight": 13,
           "name": "minecraft:glass_bottle",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 13,
-          "name": "valleycraft:big_bottle",
           "functions": [
             {
               "add": false,
@@ -1232,6 +1152,83 @@
           "type": "minecraft:item",
           "weight": 2,
           "name": "valleycraft:bamboo_staff",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:jungle"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:sparse_jungle"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:bamboo_jungle"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:frozen_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_frozen_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:cold_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_cold_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:lukewarm_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_lukewarm_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:warm_ocean"
+                  }
+                }
+              ],
           "functions": [
             {
               "function": "minecraft:set_damage",
@@ -1456,22 +1453,6 @@
           "type": "minecraft:item",
           "weight": 10,
           "name": "minecraft:bowl",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "valleycraft:wooden_cup",
           "functions": [
             {
               "add": false,

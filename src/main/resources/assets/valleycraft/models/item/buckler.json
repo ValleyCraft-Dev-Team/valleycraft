@@ -1,7 +1,7 @@
 {
-  "parent": "fabricshieldlib:item/fabric_shield",
+  "parent": "valleycraft:item/buckler_shield_model",
   "textures":{
-    "shield":"valleycraft:item/shields/buckler_base"
+    "shield":"valleycraft:item/shields/buckler_base_nopattern"
   },
   "overrides": [
     {
