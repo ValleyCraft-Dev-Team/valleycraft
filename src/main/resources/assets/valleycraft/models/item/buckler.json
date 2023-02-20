@@ -1,0 +1,14 @@
+{
+  "parent": "fabricshieldlib:item/fabric_shield",
+  "textures":{
+    "shield":"valleycraft:item/shields/buckler_base"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "valleycraft:item/buckler_blocking"
+    }
+  ]
+}

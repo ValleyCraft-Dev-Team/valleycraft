@@ -29,6 +29,7 @@ public class Main implements ModInitializer {
 		ItemsModded.initialize();
 		Fishing.initialize();
 		Tools.initialize();
+		ShieldsModded.initialize();
 		Armors.initialize();
 
 	    Groups.initialize();

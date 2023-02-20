@@ -7,13 +7,14 @@
   "itemGroup.valleycraft.items": "WH: Misc Items",
   "itemGroup.valleycraft.books": "WH: Artifacts",
   "itemGroup.valleycraft.tools": "WH: Equipment",
-  "itemGroup.valleycraft.clothing": "WH: Clothing",
+  "itemGroup.valleycraft.clothing": "WH: Attire",
 
   "trinkets.slot.legs.stockings": "Legs & Ankles",
   "trinkets.slot.chest.back": "Back",
   "trinkets.slot.chest.bauble": "Bauble",
   "trinkets.slot.chest.necklace": "Jewelery",
   "trinkets.slot.head.face": "Masks & Glasses",
+  "trinkets.slot.chest.outfit": "Attire",
 
   "subtitle.valleycraft:curtain_close": "Curtain closes",
   "subtitle.valleycraft:curtain_open": "Curtain opens",
@@ -38,6 +39,8 @@
 
   "item.valley.bauble.tooltip": "Bracelet",
   "item.valley.necklace.tooltip": "Necklace",
+
+  "item.valleycraft.buckler": "Buckler",
 
   "item.valley.cave_painting.tooltip.zombie": "Death",
   "item.valley.cave_painting.tooltip.portrait": "Portrait",
