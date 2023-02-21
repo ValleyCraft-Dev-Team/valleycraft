@@ -16,7 +16,7 @@ public class ModCactusBlock extends ModPlantBlock {
     
     public ModCactusBlock(VoxelShape shape) {
         super(Settings.of(Material.PLANT).nonOpaque().strength(0.3f).sounds(BlockSoundGroup.WOOL));
-        ground(PlantGroundPredicates.ARID_DESERT);
+        ground(PlantGroundPredicates.SAND);
         this.shape = shape;
     }
     

@@ -32,13 +32,13 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerTrapdoor(PRIMSTEEL_TRAPDOOR.block);
         map = textureAll(PRIMSTEEL_PLATE_BLOCK);
         pressurePlate(PRIMSTEEL_PRESSURE_PLATE.block, map, generator);
-        map = textureAll("shale_top");
+        map = textureAll("block/shale_top");
         pressurePlate(SHALE_PRESSURE_PLATE.block, map, generator);
         map = textureAll(IdProvider.of(new Identifier("deepslate_top")));
         pressurePlate(DEEPSLATE_PRESSURE_PLATE.block, map, generator);
 
         // CANVAS
-        map = textureAll("canvas_block");
+        map = textureAll("block/canvas_block");
         slab(CANVAS_SLAB.block, CANVAS_BLOCK.block, map, generator);
         stairs(CANVAS_STAIRS.block, map, generator);
 
@@ -48,12 +48,12 @@ class ValleyModelGenerator extends FabricModelProvider {
         stairs(THATCH_STAIRS.block, map, generator);
 
         // WEAVED_THATCH
-        map = textureAll("patterned_thatch");
+        map = textureAll("block/patterned_thatch");
         slab(WEAVED_THATCH_SLAB.block, WEAVED_THATCH_BLOCK.block, map, generator);
         stairs(WEAVED_THATCH_STAIRS.block, map, generator);
 
         // TIGHTLY_WEAVED_THATCH
-        map = textureAll("patterned_thatch_small");
+        map = textureAll("block/patterned_thatch_small");
         slab(TIGHTLY_WEAVED_THATCH_SLAB.block, TIGHTLY_WEAVED_THATCH_BLOCK.block, map, generator);
         stairs(TIGHTLY_WEAVED_THATCH_STAIRS.block, map, generator);
 
@@ -148,7 +148,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         wall(SHALE_WALL.block, map, generator);
 
         // COBBLED_SHALE
-        map = textureAll("shale_top");
+        map = textureAll("block/shale_top");
         slab(COBBLED_SHALE_SLAB.block, COBBLED_SHALE.block, map, generator);
         stairs(COBBLED_SHALE_STAIRS.block, map, generator);
         wall(COBBLED_SHALE_WALL.block, map, generator);
@@ -542,8 +542,8 @@ class ValleyModelGenerator extends FabricModelProvider {
         slab(APPLE_SLAB.block, APPLE_PLANKS.block, map, generator);
         stairs(APPLE_STAIRS.block, map, generator);
         button(APPLE_BUTTON.block, map, generator);
-        fence(APPLE_FENCE.block, textureAll("apple_fence_planks"), generator);
-        fenceGate(APPLE_FENCE_GATE.block, textureAll("apple_fence_planks"), generator);
+        fence(APPLE_FENCE.block, textureAll("block/apple_fence_planks"), generator);
+        fenceGate(APPLE_FENCE_GATE.block, textureAll("block/apple_fence_planks"), generator);
         pressurePlate(APPLE_PRESSURE_PLATE.block, map, generator);
 
         // Doors
@@ -639,7 +639,7 @@ class ValleyModelGenerator extends FabricModelProvider {
     }
     
     Identifier texture(String string) {
-        return Main.makeId("block/"+string);
+        return Main.makeId(string);
     }
     
     TextureMap textureAll(IdProvider block) {
@@ -653,7 +653,8 @@ class ValleyModelGenerator extends FabricModelProvider {
     }
     
     TextureMap textureAll(String texture) {
-        return textureAll(IdProvider.of(Main.makeId(texture)));
+        var id = Main.makeId(texture);
+        return TextureMap.sideEnd(id, id).put(TextureKey.WALL, id).put(TextureKey.ALL, id).put(TextureKey.TEXTURE, id);
     }
 
     /**
@@ -772,7 +773,7 @@ class ValleyModelGenerator extends FabricModelProvider {
     }
     
     void lattice(BlockEnum lattice, BlockStateModelGenerator generator) {
-        Identifier id = texture(lattice.getId().getPath());
+        Identifier id = texture("block/"+lattice.getId().getPath());
         TextureMap textureMap = new TextureMap().put(TextureKey.PANE, id).put(TextureKey.EDGE, TextureMap.getSubId(lattice.asBlock(), "_top"));
         Identifier identifier = Models.TEMPLATE_GLASS_PANE_POST.upload(lattice.asBlock(), textureMap, generator.modelCollector);
         Identifier identifier2 = Models.TEMPLATE_GLASS_PANE_SIDE.upload(lattice.asBlock(), textureMap, generator.modelCollector);

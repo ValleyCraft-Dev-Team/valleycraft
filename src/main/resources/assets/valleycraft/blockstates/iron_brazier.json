@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "lit=true": {
       "model": "valleycraft:block/iron_brazier"
+    },
+    "lit=false": {
+      "model": "valleycraft:block/iron_brazier_off"
     }
   }
 }

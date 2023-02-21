@@ -3,7 +3,8 @@
 	"textures": {
 		"0": "valleycraft:block/wattle_stool_sides",
 		"1": "valleycraft:block/wattle_stool_top",
-		"3": "valleycraft:block/wattle_lattice_top"
+		"3": "valleycraft:block/wattle_lattice_top",
+		"particle": "minecraft:block/spruce_planks"
 	},
 	"elements": [
 		{
