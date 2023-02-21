@@ -6,17 +6,21 @@ import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
+import java.util.Iterator;
+
 public class CattailsBlock extends TallPlantBlock implements FluidFillable {
     
     public CattailsBlock() {
-        this(Settings.of(Material.UNDERWATER_PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ));
+        this(Settings.of(Material.UNDERWATER_PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ).ticksRandomly());
     }
     
     public CattailsBlock(Settings settings) {
@@ -74,5 +78,37 @@ public class CattailsBlock extends TallPlantBlock implements FluidFillable {
     @Override
     public boolean tryFillWithFluid(WorldAccess world, BlockPos pos, BlockState state, FluidState fluid) {
         return false;
+    }
+
+    public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        if (random.nextInt(25) == 0) {
+            int i = 5;
+            Iterator var7 = BlockPos.iterate(pos.add(-4, -1, -4), pos.add(4, 1, 4)).iterator();
+
+            while(var7.hasNext()) {
+                BlockPos blockPos = (BlockPos)var7.next();
+                if (world.getBlockState(blockPos).isOf(this)) {
+                    --i;
+                    if (i <= 0) {
+                        return;
+                    }
+                }
+            }
+
+            BlockPos blockPos2 = pos.add(random.nextInt(3) - 1, random.nextInt(2) - random.nextInt(2), random.nextInt(3) - 1);
+
+            for(int k = 0; k < 4; ++k) {
+                if (world.isAir(blockPos2) && state.canPlaceAt(world, blockPos2)) {
+                    pos = blockPos2;
+                }
+
+                blockPos2 = pos.add(random.nextInt(3) - 1, random.nextInt(2) - random.nextInt(2), random.nextInt(3) - 1);
+            }
+
+            if (world.isAir(blockPos2) && state.canPlaceAt(world, blockPos2)) {
+                world.setBlockState(blockPos2, state, 2);
+            }
+        }
+
     }
 }

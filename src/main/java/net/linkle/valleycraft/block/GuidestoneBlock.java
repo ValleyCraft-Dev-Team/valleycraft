@@ -10,7 +10,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
 public class GuidestoneBlock extends HorizontalWithWaterBlock {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(4, 0, 4, 12, 16, 12);
+    protected static final VoxelShape SHAPE = Block.createCuboidShape(1, 0, 1, 15, 16, 15);
 
     public GuidestoneBlock(Settings settings) {
         super(settings);

@@ -19,7 +19,7 @@ import net.linkle.valleycraft.tool.staff.StaffBase;
 import net.linkle.valleycraft.tool.sword.special.*;
 import net.linkle.valleycraft.tool.throwing.RockItem;
 import net.linkle.valleycraft.tool.travelers_sword.TravelerBase;
-import net.linkle.valleycraft.tool.unbreakable.UnbreakableMythicScytheBase;
+import net.linkle.valleycraft.tool.unbreakable.UnbreakableScalpelBase;
 import net.linkle.valleycraft.tool.woodcutter_axe.WoodcutterAxeBase;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
@@ -148,7 +148,7 @@ public class Tools {
         Reg.register("ice_tongs", new PickaxeItem(ModToolMaterials.BRASIUM, PICKAXE_BASE_DAMAGE, PICKAXE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("brasium_compound_bow", BRASIUM_COMPOUND);
         Reg.register("coral_knife", new Scalpel(ModToolMaterials.GUARDIAN, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS_UNCOMMON));
-        Item knifeElder = Reg.register("coral_knife_guardian", new UnbreakableMythicScytheBase(ModToolMaterials.ELDER_GUARDIAN, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS_RARE));
+        Item knifeElder = Reg.register("coral_knife_guardian", new UnbreakableScalpelBase(ModToolMaterials.ELDER_GUARDIAN, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS_RARE));
         ModelPredicateProviderRegistry.register(knifeElder, new Identifier("broken"), (stack, world, entity, seed) -> PreventDestroy.isUsable(stack) ? 0.0f : 1.0f);
 
         //Knives

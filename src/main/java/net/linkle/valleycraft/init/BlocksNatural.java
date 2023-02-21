@@ -87,7 +87,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     //mushrooms
     RED_CLUSTER(new ModMushroomBlock(Block.Settings.copy(Blocks.RED_MUSHROOM)).large(), itemSettings()),
     BROWN_CLUSTER(new ModMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM)).large(), itemSettings()),
-    SPORE_SPREADER(new ModMushroomBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM)).large(), itemSettings()),
+    SPORE_SPREADER(new ModSporeSpreaderBlock().large(), itemSettings()),
     GLOW_CAP(new ModGlowingMushroomBlock(), itemSettings()),
     GLOW_CAP_CLUSTER(new ModGlowingMushroomBlock().large(), itemSettings()),
     JUNGLE_CAP(new ModMushroomBlock(), itemSettings()),

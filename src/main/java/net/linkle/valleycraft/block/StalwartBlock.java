@@ -10,9 +10,9 @@ import net.minecraft.world.BlockView;
 
 import java.util.List;
 
-public class StalwartBlock extends ModPlantBlock {
+public class StalwartBlock extends ModMushroomBlock {
     public StalwartBlock() {
-        this(Settings.copy(Blocks.RED_MUSHROOM));
+        this(Settings.copy(Blocks.RED_MUSHROOM).ticksRandomly());
     }
 
     public StalwartBlock(Settings settings) {

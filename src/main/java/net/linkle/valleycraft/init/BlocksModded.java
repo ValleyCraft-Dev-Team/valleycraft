@@ -102,8 +102,8 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     CANVAS_SLAB(new SlabBlock(Block.Settings.copy(net.minecraft.block.Blocks.BROWN_WOOL).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_BLOCK)), itemSettings()),
 
     CANVAS_CARPET(new CarpetBlock(Block.Settings.copy(net.minecraft.block.Blocks.BROWN_CARPET).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_CARPET)), itemSettings()),
-    LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f).sounds(net.minecraft.sound.BlockSoundGroup.WOOL)), itemSettings()),
-    LEATHER_CARPET(new CarpetBlock(Block.Settings.copy(net.minecraft.block.Blocks.BROWN_CARPET).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_CARPET)), itemSettings()),
+    LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f)), itemSettings()),
+    LEATHER_CARPET(new CarpetBlock(Block.Settings.copy(net.minecraft.block.Blocks.BROWN_CARPET).strength(0.8f)), itemSettings()),
 
     CURTAIN(new CurtainBlock(), itemSettings()),
     FIREGUARD(new FireGuardBlock(AbstractBlock.Settings.of(Material.METAL).sounds(net.minecraft.sound.BlockSoundGroup.CHAIN).nonOpaque()), itemSettings()),
@@ -128,7 +128,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1).noCollision()), itemSettings(), BridgeItem::new),
     ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1)), itemSettings(), BridgeItem::new),
     SPIKE_TRAP(new SpikeTrapBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).nonOpaque().strength(0.5f, 1.0f)), itemSettings()),
-    FIRE_TRAP(new FireTrapBlock(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
+    //FIRE_TRAP(new FireTrapBlock(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
 
     NAUTILUS_SHELL_BLOCK(new NautilusShellBlock(), itemSettings()),
 
@@ -394,6 +394,8 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     SALTPETER_BLOCK(new Block(Block.Settings.copy(Blocks.CALCITE).strength(4.1f, 5.0f)), itemSettings()),
 
     // refined blocks of "___"
+    ROSEGOLD_BLOCK(new Block(Block.Settings.copy(net.minecraft.block.Blocks.GOLD_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
+    SCULKERITE_BLOCK(new Block(Block.Settings.copy(Blocks.NETHERITE_BLOCK)), itemSettings()),
 
     PRIMSTEEL_PLATE_BLOCK(new Block(Block.Settings.copy(net.minecraft.block.Blocks.IRON_BLOCK)), itemSettings()),
     PRIMSTEEL_PLATE_STAIRS(new StairsBlock(PRIMSTEEL_PLATE_BLOCK.getState(), Block.Settings.copy(net.minecraft.block.Blocks.IRON_BLOCK)), itemSettings()),
@@ -423,8 +425,6 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     
     DEEPSLATE_PRESSURE_PLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(net.minecraft.block.Blocks.STONE_PRESSURE_PLATE)), itemSettings()),
     SHALE_PRESSURE_PLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(net.minecraft.block.Blocks.STONE_PRESSURE_PLATE).strength(0.2f)), itemSettings()),
-
-    ROSEGOLD_BLOCK(new Block(Block.Settings.copy(net.minecraft.block.Blocks.GOLD_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
 
     //erdstone
     ERDSTONE_STAIRS(new StairsBlock(BlocksNatural.ERDSTONE.getState(), Block.Settings.copy(net.minecraft.block.Blocks.DEEPSLATE).hardness(1)), itemSettings()),

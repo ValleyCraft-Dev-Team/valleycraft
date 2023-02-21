@@ -23,11 +23,11 @@ import net.minecraft.world.World;
 
 import static net.minecraft.item.Items.BONE_MEAL;
 
-public class UnbreakableMythicScytheBase
+public class UnbreakableScalpelBase
         extends WeaponItem
         implements EnchantmentHandler, PreventDestroy {
 
-    public UnbreakableMythicScytheBase(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+    public UnbreakableScalpelBase(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
         super(material, attackDamage, attackSpeed, settings);
     }
 
@@ -45,12 +45,10 @@ public class UnbreakableMythicScytheBase
         return result;
     }
 
-    //@Override
-    //public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-    //    tooltip.add( Text.translatable("item.valley.permanently_repairable.tooltip").formatted(Formatting.GRAY));
-    //    tooltip.add( Text.translatable("item.valley.unique.tooltip").formatted(Formatting.GOLD));
-    //    tooltip.add( Text.translatable("item.valley.mythic.tooltip").formatted(Formatting.RED));
-    //}
+    @Override
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add( Text.translatable("item.valley.scalpel.tooltip").formatted(Formatting.GRAY));
+    }
 
     @Override
     public List<EnchantmentTarget> getEnchantmentTypes() {

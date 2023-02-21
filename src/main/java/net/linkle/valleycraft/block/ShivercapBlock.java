@@ -10,9 +10,9 @@ import net.minecraft.world.BlockView;
 
 import java.util.List;
 
-public class ShivercapBlock extends ModPlantBlock {
+public class ShivercapBlock extends ModMushroomBlock {
     public ShivercapBlock() {
-        this(Settings.copy(Blocks.RED_MUSHROOM));
+        this(Settings.copy(Blocks.RED_MUSHROOM).ticksRandomly());
     }
 
     public ShivercapBlock(Settings settings) {
