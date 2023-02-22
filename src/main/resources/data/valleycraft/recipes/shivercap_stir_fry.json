@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:shivercap"
+    },
+    {
+      "item": "valleycraft:jungle_cap"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "tag": "c:olive_oils"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:shiver_cap_stir_fry",
+    "count": 1
+  }
+}

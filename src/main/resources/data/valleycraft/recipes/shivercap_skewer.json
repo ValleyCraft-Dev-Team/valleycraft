@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " O ",
+    "/  "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:baked_fire_pepper"
+    },
+    "O": {
+      "item": "valleycraft:shivercap"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "valleycraft:shivercap_skewer",
+    "count": 1
+  }
+}

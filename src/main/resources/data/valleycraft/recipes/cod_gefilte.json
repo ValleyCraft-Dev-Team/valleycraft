@@ -18,10 +18,16 @@
     },
     {
       "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:bowl"
     }
   ],
   "result": {
     "item": "valleycraft:cod_gefilte",
-    "count": 1
+    "count": 2
   }
 }

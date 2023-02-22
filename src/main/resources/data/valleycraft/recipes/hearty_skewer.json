@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " O ",
+    "/  "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:baked_hearty_beetroot"
+    },
+    "O": {
+      "item": "valleycraft:baked_onion"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "valleycraft:hearty_skewer",
+    "count": 1
+  }
+}

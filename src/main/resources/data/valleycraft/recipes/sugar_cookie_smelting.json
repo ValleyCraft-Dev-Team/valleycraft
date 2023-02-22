@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:sugar_cookie_dough"
+    }
+  ],
+  "result": "valleycraft:sugar_cookie",
+  "count": 8
+}

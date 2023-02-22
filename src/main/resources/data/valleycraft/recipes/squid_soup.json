@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:cooked_squid"
+    },
+    {
+      "tag": "c:broths"
+    },
+    {
+      "item": "valleycraft:salt"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:squid_soup",
+    "count": 1
+  }
+}

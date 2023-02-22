@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:syrupy_honeycomb"
+    },
+    {
+      "item": "valleycraft:fried_egg"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "valleycraft:fried_egg"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:honey_glazed_crepe",
+    "count": 1
+  }
+}

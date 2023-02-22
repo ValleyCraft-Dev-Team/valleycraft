@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:stalwart_shroom"
+    },
+    {
+      "item": "minecraft:cooked_cod"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "valleycraft:onion"
+    },
+    {
+      "item": "valleycraft:milk"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:clam_chowder",
+    "count": 1
+  }
+}

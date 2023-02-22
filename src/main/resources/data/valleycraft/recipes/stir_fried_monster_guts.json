@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:monster_guts"
+    },
+    {
+      "tag": "c:monster_eyes"
+    },
+    {
+      "item": "valleycraft:cured_flesh"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:stir_fried_monster_guts",
+    "count": 1
+  }
+}

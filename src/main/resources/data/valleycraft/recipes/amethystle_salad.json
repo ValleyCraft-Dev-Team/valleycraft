@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:amethystle"
+    },
+    {
+      "item": "valleycraft:miners_lettuce"
+    },
+    {
+      "item": "valleycraft:morel_oil"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:amethystle_salad",
+    "count": 1
+  }
+}

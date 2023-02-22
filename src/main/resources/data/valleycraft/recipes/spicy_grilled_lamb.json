@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:amethystle"
+    },
+    {
+      "item": "valleycraft:baked_fire_pepper"
+    },
+    {
+      "item": "minecraft:cooked_mutton"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:spicy_grilled_lamb",
+    "count": 1
+  }
+}

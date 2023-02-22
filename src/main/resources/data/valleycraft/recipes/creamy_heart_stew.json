@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:baked_hearty_beetroot"
+    },
+    {
+      "item": "valleycraft:baked_sweet_berries"
+    },
+    {
+      "item": "valleycraft:cooked_heart"
+    },
+    {
+      "item": "valleycraft:milk"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:broths"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:creamy_heart_stew",
+    "count": 1
+  }
+}

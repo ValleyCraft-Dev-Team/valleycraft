@@ -105,6 +105,8 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     CANVAS_CARPET(new CarpetBlock(Block.Settings.copy(net.minecraft.block.Blocks.BROWN_CARPET).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_CARPET)), itemSettings()),
     LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f)), itemSettings()),
     LEATHER_CARPET(new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).strength(0.8f)), itemSettings()),
+    TREATED_LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f)), itemSettings()),
+    TREATED_LEATHER_CARPET(new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).strength(0.8f)), itemSettings()),
     CURTAIN(new CurtainBlock(), itemSettings()),
     FIREGUARD(new FireGuardBlock(AbstractBlock.Settings.of(Material.METAL).sounds(net.minecraft.sound.BlockSoundGroup.CHAIN).nonOpaque()), itemSettings()),
 

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:cooked_clam"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "valleycraft:onion"
+    },
+    {
+      "item": "valleycraft:milk"
+    },
+    {
+      "item": "valleycraft:cooked_sea_urchin"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:sea_urchin_chowder",
+    "count": 1
+  }
+}

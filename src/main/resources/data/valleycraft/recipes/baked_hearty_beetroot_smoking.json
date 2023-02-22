@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:hearty_beetroot"
+    }
+  ],
+  "result": "valleycraft:baked_hearty_beetroot"
+}

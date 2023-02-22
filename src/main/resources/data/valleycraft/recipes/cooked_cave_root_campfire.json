@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:cave_root"
+    }
+  ],
+  "result": "valleycraft:cooked_cave_root"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:butter"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "valleycraft:flour"
+    },
+    {
+      "tag": "c:water_holding_items"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:sugar_cookie_dough",
+    "count": 1
+  }
+}

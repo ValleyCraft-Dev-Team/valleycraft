@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:glow_berry_juice"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "valleycraft:baked_glow_berries"
+    },
+    {
+      "item": "valleycraft:baked_fire_pepper"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:dried_spicy_glow_berries",
+    "count": 1
+  }
+}

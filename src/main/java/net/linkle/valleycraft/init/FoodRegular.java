@@ -14,7 +14,7 @@ import net.minecraft.util.registry.Registry;
 
 public enum FoodRegular implements ItemEnum {
 
-    // cooked
+    /**recipes done**/
     CHEESE_SLICE(new FoodItem(settings(), 2, 0.4f)),
     BAKED_APPLE(new FoodItem(settings(), 6, 0.6f)),
     BAKED_BEETROOT(new FoodItem(settings(), 2, 0.6f)),
@@ -25,14 +25,13 @@ public enum FoodRegular implements ItemEnum {
     BAKED_PUMPKIN_SLICE(new FoodItem(settings(), 4, 0.6f)),
     BAKED_MELON_SLICE(new FoodItem(settings(), 3, 0.6f)),
     BAKED_ONION(new FoodItem(settings(), 4, 0.6f)),
-    BAKED_SEEDS(new FoodItem(settings(), 2, 0.6f)),
     BAKED_SWEET_BERRIES(new FoodItem(settings(), 4, 0.6f)),
     BAKED_GLOW_BERRIES(new FoodItem(settings(), 4, 0.6f)),
+    BAKED_SEEDS(new FoodItem(settings(), 2, 0.6f)),
     COOKED_RICE(new FoodItem(settings(), 4, 0.6f)),
     COOKED_CAVE_ROOT(new FoodItem(settings(), 5, 0.6f)),
     DRIED_ORANGE_KELP(new FoodItem(settings(), 1, 0.6f)),
     DRIED_GLOW_KELP(new FoodItem(settings(), 1, 0.6f)),
-
     COOKED_TROPICAL_FISH(new FoodItem(settings(), 4, 0.6f)),
     COOKED_ABYSSWATCHER(new FoodItem(settings(), 6, 0.7f)),
     COOKED_STONEROLLER_MINNOW(new FoodItem(settings(), 3, 0.4f)),
@@ -42,8 +41,6 @@ public enum FoodRegular implements ItemEnum {
     COOKED_CLAM(new FoodItem(settings(), 4, 0.3f)),
     COOKED_SEA_URCHIN(new FoodItem(settings(), 6, 0.6f)),
     COOKED_SQUID(new FastFoodItem(settings(), 3, 0.6f)),
-    //COOKED_LOBSTER(new FoodItem(settings(), 7, 0.7f)),
-    //COOKED_MOSSY_CRAB(new FoodItem(settings(), 7, 0.7f)),
     COOKED_SILVERFISH(new FoodItem(settings(), 3, 0.6f)),
     COOKED_PHANTOM(new FoodItem(settings(), 6, 0.6f)),
     COOKED_BIRD(new FastFoodItem(settings(), 3, 0.6f)),
@@ -53,8 +50,6 @@ public enum FoodRegular implements ItemEnum {
     COOKED_BEAST_LIVER(new FoodItem(settings(), 8, 0.8f, true)),
     COOKED_BEAST_HEART(new FoodItem(settings(), 10, 1f, true)),
     COOKED_TRIPE(new FoodItem(settings(), 8, 1f, true)),
-
-    // pastries
     DOG_BISCUIT(new FoodItem(settings().group(REGULAR_DISHES), 2, 0.4f, true)),
     HARDTACK(new FastFoodItem(settings(), 3, 0.8f)),
     CORN_BREAD(new FoodItem(settings(), 3, 0.9f)),
@@ -62,6 +57,7 @@ public enum FoodRegular implements ItemEnum {
     CRYSTALLIZED_HONEYDROP(new FastFoodItem(settings(), 2, 0.2f)),
     CAKE_SLICE(new FastFoodItem(settings(), 2, 0.3f)),
     CHOCOLATE_CAKE_SLICE(new FastFoodItem(settings(), 2, 0.3f)),
+    SUGAR_COOKIE(new FastFoodItem(settings().maxCount(16), 1, 0.2f)),
     CHOCOLATE_CHUNK_COOKIE(new FastFoodItem(settings().maxCount(16), 1, 0.2f)),
     PUMPKIN_SPICE_COOKIE(new FastFoodItem(settings().maxCount(16), 1, 0.2f)),
     VANILLA_PUMPKIN_SPICE_COOKIE(new FastFoodItem(settings().maxCount(16), 2, 0.2f)),
@@ -77,8 +73,6 @@ public enum FoodRegular implements ItemEnum {
     CHOCOLATE_PIE_SLICE(new FastFoodItem(settings().maxCount(16), 2, 0.5f)),
     CHORUS_FRUIT_PIE(new FoodItem(settings(), 10, 0.7f)),
     CHORUS_FRUIT_PIE_SLICE(new FastFoodItem(settings().maxCount(16), 2, 0.5f)),
-
-    // no tier bottles
     CHOCOLATE_MILK(new BottleItem(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 3, 0.3f).setMilk()),
     ATOLE_MILK(new BottleItem(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 4, 0.2f).setMilk()),
     EGGNOG(new BottleItem(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 3, 0.3f).setMilk()),
@@ -86,24 +80,20 @@ public enum FoodRegular implements ItemEnum {
     CARROT_JUICE(new BottleItem(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 4, 0.3f)),
     SWEET_BERRY_JUICE(new BottleItem(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 4, 0.3f)),
     CHORUS_FRUIT_JUICE(new BottleItem(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 4, 0.3f)),
-    ALOE_VERA_JUICE(new Tier0Bottle(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 4, 0.3f, StatusEffects.HEALTH_BOOST)),
-
-    // no tier items
+    ALOE_VERA_JUICE(new Tier0Bottle(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 4, 0.3f, StatusEffects.REGENERATION)),
     CAVE_ROOT_STIR_FRY(new BowlItem(settings().maxCount(1), 10, 0.6f)),
     NETHER_WART_STIR_FRY(new BowlItem(settings().maxCount(1), 10, 0.6f)),
-    COD_GEFILTE(new FoodItem(settings(), 10, 0.6f)),
-    SPICY_POTATOES_AND_BAT(new FoodItem(settings(), 9, 0.4f)),
-    SPICY_POTATOES_AND_CARROTS(new FoodItem(settings(), 8, 0.4f)),
-
-    //monster stuff
+    COD_GEFILTE(new BowlItem(settings(), 10, 0.6f)),
+    SPICY_POTATOES_AND_BAT(new BowlItem(settings(), 9, 0.4f)),
+    SPICY_POTATOES_AND_CARROTS(new BowlItem(settings(), 8, 0.4f)),
     CURED_FLESH(new FoodItem(settings(), 4, 0.6f, true)),
     BROTH(new BowlItem(settings().maxCount(1), 6, 0.5f)),
+    BROTH_VEGETABLE(new BowlItem(settings().maxCount(1), 4, 0.3f)),
     STIR_FRIED_MONSTER_GUTS(new BowlItem(settings().maxCount(1), 8, 0.4f)),
-    SAUTEED_EYES_AND_MUSHROOMS(new FoodItem(settings(), 8, 0.8f)),
+    SAUTEED_EYES_AND_MUSHROOMS(new BowlItem(settings(), 8, 0.8f)),
     MONSTER_STEW(new BowlItem(settings().maxCount(1), 7, 0.4f)),
     SLIME_SOUP(new BowlItem(settings().maxCount(1), 5, 0.6f)),
     MAGMA_CREME_SOUP(new BowlItem(settings().maxCount(1), 7, 0.6f)),
-
     BEEF_STEW(new BowlItem(settings().maxCount(1), 10, 0.6f)),
     KELP_SALAD(new BowlItem(settings().maxCount(1), 5, 0.2f)),
     BROWN_MUSHROOM_SALAD(new BowlItem(settings().maxCount(1), 4, 0.5f)),
@@ -112,32 +102,26 @@ public enum FoodRegular implements ItemEnum {
     BROWN_MUSHROOM_SKEWER(new FastFoodItem(settings().maxCount(16), 8, 0.8f)),
     ORANGE_MUSHROOM_SKEWER(new FastFoodItem(settings().maxCount(16), 8, 0.8f)),
     RED_MUSHROOM_SKEWER(new FastFoodItem(settings().maxCount(16), 8, 0.8f)),
-
     FRUIT_MIX(new BowlItem(settings().maxCount(1), 7, 0.6f)),
     VEGETABLE_MIX(new BowlItem(settings().maxCount(1), 7, 0.6f)),
     SAVORY_BREAKFAST(new BowlItem(settings().maxCount(1), 10, 0.6f)),
     HEARTY_BREAKFAST(new BowlItem(settings().maxCount(1), 12, 0.8f)),
-    FRIED_RICE_AND_EGGS(new FoodItem(settings().maxCount(1), 8, 0.7f)),
-
+    FRIED_RICE_AND_EGGS(new BowlItem(settings().maxCount(1), 8, 0.7f)),
     PUMPKIN_SOUP(new BowlItem(settings().maxCount(1), 8, 0.8f)),
-    //WARM_PUMPKIN_SOUP_BOTTLE(new GlassJarItem(settings().maxCount(1), 9, 0.8f)),
     FUNGUS_STEW(new BowlItem(settings().maxCount(1), 8, 0.8f)),
     SQUID_SOUP(new BowlItem(settings().maxCount(1), 6, 0.8f)),
     SEA_URCHIN_CHOWDER(new FoodItem(settings().maxCount(1), 6, 0.8f)),
     CLAM_CHOWDER(new BowlItem(settings().maxCount(1), 6, 0.8f)),
     FISH_PLATTER(new BowlItem(settings().maxCount(1), 6, 0.8f)),
-
-    //sandwich items
     TOAST(new FastFoodItem(settings(), 1    , 1.0f)),
     EGGS_ON_TOAST(new FoodItem(settings(), 5, 1.3f)),
     GRILLED_CHEESE(new FoodItem(settings(), 9, 1.3f)),
     SANDWICH_FISH(new FoodItem(settings(), 12, 0.8f)),
     SANDWICH_CHICKEN(new FoodItem(settings(), 12, 0.8f)),
     SANDWICH_MUTTON(new FoodItem(settings(), 12, 0.8f)),
+    SANDWICH_RABBIT(new FoodItem(settings(), 9, 0.8f)),
     SANDWICH_BEEF(new FoodItem(settings(), 12, 0.8f)),
     SANDWICH_PORK(new FoodItem(settings(), 12, 0.8f)),
-
-    // golden
     GOLDEN_WATERMELON_JUICE(new BottleItem(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE), 6, 2.4f)),
     GOLDEN_POTATO(new FoodItem(settings(), 6, 2.4f)),
     GOLDEN_ALOE_VERA(new FoodItem(settings(), 6, 2.4f)),
@@ -152,14 +136,12 @@ public enum FoodRegular implements ItemEnum {
     GOLDEN_ANCIENT_MAIZE(new FoodItem(settings().rarity(Rarity.RARE), 4, 2.4f)),
     GOLDEN_ONION(new FoodItem(settings(), 6, 2.4f)),
     GOLDEN_PUMPKIN_SLICE(new FoodItem(settings(), 6, 2.4f)),
-
     ENCHANTED_CHORUS_FRUIT(new EnchantedFoodItem(settings().rarity(EPIC), 6, 1.2f, StatusEffects.SLOW_FALLING).hideTooltip()),
     ENCHANTED_APPLE_PIE(new EnchantedFoodItem(settings().rarity(EPIC), 10, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip()),
     ENCHANTED_APPLE_PIE_SLICE(new EnchantedFastFoodItem(settings().maxCount(16).rarity(EPIC), 3, 1.6f, StatusEffects.FIRE_RESISTANCE).hideTooltip());
 
-    //1.1 planned - dw its not sea turtles!
-    //COOKED_TURTLE(new FoodItem(settings(), 8, 0.6f)),
-    
+    /**list new items below here, move above after adding a recipe for them**/
+
     /** Called from {@link ItemsModded} */
     static void initialize() {
         

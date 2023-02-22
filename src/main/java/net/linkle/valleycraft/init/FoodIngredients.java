@@ -17,6 +17,7 @@ import net.linkle.valleycraft.Main;
 
 public enum FoodIngredients implements ItemEnum {
 
+    /**recipes done**/
     MILK(new BottleItem(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 0, 0.2f).setMilk()),
     MOREL_OIL(new Tier1Bottle(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 2, 5, StatusEffects.SLOWNESS).hideTooltip()),
     BUTTER(new FoodItem(settings(), 0, 0.2f)),
@@ -95,6 +96,7 @@ public enum FoodIngredients implements ItemEnum {
     BREAD_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     CORN_BREAD_DOUGH(new FoodItem(settings(), 2, 0.2f)),
     COOKIE_DOUGH(new FoodItem(settings(), 1, 0.2f)),
+    SUGAR_COOKIE_DOUGH(new FoodItem(settings(), 1, 0.2f)),
     CHOCOLATE_CHUNK_COOKIE_DOUGH(new FoodItem(settings(), 1, 0.2f)),
     PUMPKIN_SPICE_COOKIE_DOUGH(new FoodItem(settings(), 1, 0.2f)),
     PUMPKIN_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
@@ -104,10 +106,14 @@ public enum FoodIngredients implements ItemEnum {
     GLOW_BERRY_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     CHORUS_FRUIT_PIE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
     ENCHANTED_APPLE_PIE_DOUGH(new EnchantedFoodItemNoEffect(settings(), 3, 0.2f)),
+    VANILLA_FROSTING(new BowlItem(settings().maxCount(1).recipeRemainder(Items.BOWL), 4, 0.1f)),
     CAKE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
-    CHOCOLATE_CAKE_DOUGH(new FoodItem(settings(), 3, 0.2f)),
-    VANILLA_FROSTING(new BowlItem(settings().maxCount(1).recipeRemainder(Items.BOWL), 4, 0.1f));
+    CHOCOLATE_CAKE_DOUGH(new FoodItem(settings(), 3, 0.2f));
+
+    /**list new items below here, move above after adding a recipe for them**/
+
     /** Called from {@link ItemsModded} */
+
     static void initialize() {
         
     }

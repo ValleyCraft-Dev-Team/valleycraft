@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:echochalcum_block"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:echochalcum_ingot",
+    "count": 9
+  }
+}

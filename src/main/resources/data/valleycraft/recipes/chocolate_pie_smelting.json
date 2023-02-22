@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:chocolate_pie_dough"
+    }
+  ],
+  "result": "valleycraft:chocolate_pie"
+}

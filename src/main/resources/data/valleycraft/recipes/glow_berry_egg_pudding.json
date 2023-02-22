@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:glow_berry_juice"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "valleycraft:milk"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:glow_berry_egg_pudding",
+    "count": 1
+  }
+}

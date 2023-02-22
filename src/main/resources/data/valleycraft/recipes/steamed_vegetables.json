@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:ancient_flower"
+    },
+    {
+      "item": "valleycraft:baked_seeds"
+    },
+    {
+      "item": "minecraft:kelp"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:steamed_vegetables",
+    "count": 1
+  }
+}

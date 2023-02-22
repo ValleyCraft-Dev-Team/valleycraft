@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " O ",
+    "/  "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:raw_glowsquid_tentacle"
+    },
+    "O": {
+      "item": "valleycraft:baked_sweet_berries"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "valleycraft:spicy_calamari_skewer",
+    "count": 1
+  }
+}

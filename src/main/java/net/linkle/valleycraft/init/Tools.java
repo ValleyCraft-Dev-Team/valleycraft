@@ -128,7 +128,7 @@ public class Tools {
         //Reg.register("hefty_rock", HEFTY_ROCK);
         Reg.register("throwing_rock", THROWING_ROCK);
 
-        //TODO add makeshift sword, hatchet, staff
+        //TODO add makeshift sword, hatchet, staff, spear
         Reg.register("makeshift_knife", new KnifeBase(ModToolMaterials.MAKESHIFT_WOOD, MAKESHIFT_BASED_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));
         Reg.register("makeshift_shovel", MAKESHIFT_SHOVEL);
         Reg.register("makeshift_pickaxe", MAKESHIFT_PICKAXE);

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:endura_carrot"
+    }
+  ],
+  "result": "valleycraft:baked_endura_carrot"
+}

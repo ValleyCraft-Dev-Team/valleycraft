@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:stalwart_shroom"
+    },
+    {
+      "item": "valleycraft:baked_pumpkin_slice"
+    },
+    {
+      "item": "valleycraft:baked_onion"
+    },
+    {
+      "item": "valleycraft:butter"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:stuffed_onion",
+    "count": 1
+  }
+}

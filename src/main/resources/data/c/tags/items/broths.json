@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:broth"
+    "valleycraft:broth",
+    "valleycraft:broth_vegetable"
   ]
 }

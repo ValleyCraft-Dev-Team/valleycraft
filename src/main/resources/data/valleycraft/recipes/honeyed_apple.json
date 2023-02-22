@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "P"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:syrupy_honeycomb"
+    },
+    "P": {
+      "item": "minecraft:apple"
+    }
+  },
+  "result": {
+    "item": "valleycraft:honeyed_apple",
+    "count": 1
+  }
+}

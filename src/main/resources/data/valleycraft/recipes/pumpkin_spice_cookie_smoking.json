@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:pumpkin_spice_cookie_dough"
+    }
+  ],
+  "result": "valleycraft:pumpkin_spice_cookie",
+  "count": 8
+}

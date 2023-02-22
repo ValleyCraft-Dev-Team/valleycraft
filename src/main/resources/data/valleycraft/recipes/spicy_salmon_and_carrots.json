@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:baked_endura_carrot"
+    },
+    {
+      "item": "valleycraft:baked_carrot"
+    },
+    {
+      "item": "minecraft:cooked_salmon"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:spicy_salmon_and_carrots",
+    "count": 1
+  }
+}

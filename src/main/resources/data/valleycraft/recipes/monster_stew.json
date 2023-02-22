@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:broths"
+    },
+    {
+      "tag": "c:monster_guts"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:monster_stew",
+    "count": 1
+  }
+}

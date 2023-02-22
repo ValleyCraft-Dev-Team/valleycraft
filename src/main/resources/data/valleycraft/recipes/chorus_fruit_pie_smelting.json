@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:chorus_fruit_pie_dough"
+    }
+  ],
+  "result": "valleycraft:chorus_fruit_pie"
+}

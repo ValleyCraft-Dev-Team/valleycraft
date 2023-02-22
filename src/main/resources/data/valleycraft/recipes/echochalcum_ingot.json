@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+    "gcc",
+    "cc "
+  ],
+  "key": {
+    "g": {
+      "item": "minecraft:echo_shard"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "valleycraft:echochalcum_ingot",
+    "count": 1
+  }
+}

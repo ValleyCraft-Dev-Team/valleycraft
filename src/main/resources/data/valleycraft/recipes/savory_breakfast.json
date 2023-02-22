@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "item": "valleycraft:fried_egg"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "item": "vallecraft:cooked_bacon"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:hearty_breakfast",
+    "count": 1
+  }
+}

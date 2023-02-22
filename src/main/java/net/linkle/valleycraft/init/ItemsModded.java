@@ -12,17 +12,14 @@ import net.linkle.valleycraft.item.clay_pot.WaterClayPotItem;
 import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
-import net.minecraft.recipe.RecipeType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
-import javax.annotation.Nullable;
-
 public enum ItemsModded implements ItemEnum {
-    RAW_CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(VC_ITEMS))),
-    CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(VC_ITEMS))),
-    WATER_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(1).group(VC_ITEMS).recipeRemainder(ItemsModded.CLAY_POT.item), 0, 0.0f)),
+    //RAW_CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(VC_ITEMS))),
+    CLAY_POT(new ClayPotItem(itemSettings().maxCount(8).group(VC_ITEMS))),
+    WATER_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(4).group(VC_ITEMS).recipeRemainder(ItemsModded.CLAY_POT.item), 0, 0.0f)),
 
     ROPE(new RopeItem(itemSettings().group(VC_ITEMS))),
     
@@ -125,7 +122,7 @@ public enum ItemsModded implements ItemEnum {
     CLOTH(new Item(itemSettings())),
 
     //bucket items
-    SLUDGE_BUCKET(new BucketItem(Fluids.SLUDGE_STILL.fluid, itemSettings().maxCount(1))),
+    SLUDGE_BUCKET(new BucketItem(Fluids.SLUDGE_STILL.fluid, itemSettings().maxCount(1).recipeRemainder(Items.BUCKET))),
 
     // spawn eggs
     ABYSSWATCHER_SPAWN_EGG(new SpawnEggItem(Entities.ABYSSWATCHER.type(), 0x09424C, 0x22DBE5, itemSettings())), // abysswatcher_spawn_egg

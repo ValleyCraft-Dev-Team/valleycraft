@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "# #",
-    "# #",
-    " # "
+    "###",
+    "###",
+    "###"
   ],
   "key": {
     "#": {
-      "item": "minecraft:clay_ball"
+      "item": "valleycraft:netherite_nugget"
     }
   },
   "result": {
-    "item": "valleycraft:raw_clay_pot",
+    "item": "minecraft:netherite_scrap",
     "count": 1
   }
 }

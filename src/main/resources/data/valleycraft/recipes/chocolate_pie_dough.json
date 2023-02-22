@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:chocolate"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:water_holding_items"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "valleycraft:flour"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:chocolate_pie_dough",
+    "count": 1
+  }
+}

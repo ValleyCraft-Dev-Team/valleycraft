@@ -29,7 +29,7 @@
   ],
   "rewards": {
     "recipes": [
-      "valleycraft:raw_clay_pot",
+      "minecraft:brick",
       "valleycraft:clay_pot"
     ]
   }

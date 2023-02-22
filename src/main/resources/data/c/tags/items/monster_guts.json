@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:monster_guts",
+    "valleycraft:monster_liver",
+    "valleycraft:monster_heart",
+    "valleycraft:raw_tripe",
+    "valleycraft:ender_dragon_gland"
+  ]
+}

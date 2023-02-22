@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:cooked_clam"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "valleycraft:onion"
+    },
+    {
+      "item": "valleycraft:milk"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:clam_chowder",
+    "count": 1
+  }
+}

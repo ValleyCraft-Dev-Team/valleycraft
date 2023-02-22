@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:baked_enduria_carrot"
+    },
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "item": "valleycraft:baked_cave_root"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "tag": "c:broths"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:carrot_stew",
+    "count": 1
+  }
+}

@@ -36,6 +36,7 @@ public enum Baubles implements ItemEnum {
     SCUTE_NECKLACE(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     UNDYING_KEEPSAKE(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     GUARDIAN_SPIKE_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
+    DRAGON_TOOTH_KEEPSAKE(new Item(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
     //boss
     ELDER_GUARDIAN_SPIKE_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
     ENDER_DRAGON_TALISMAN(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)));

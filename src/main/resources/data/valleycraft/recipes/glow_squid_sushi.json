@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:raw_glowsquid_tentacle"
+    },
+    {
+      "item": "valleycraft:cooked_rice"
+    },
+    {
+      "item": "valleycraft:cooked_rice"
+    },
+    {
+      "item": "minecraft:kelp"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:glow_squid_sushi",
+    "count": 1
+  }
+}

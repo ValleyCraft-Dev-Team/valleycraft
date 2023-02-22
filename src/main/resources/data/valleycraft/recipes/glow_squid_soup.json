@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:raw_glowsquid_tentacle"
+    },
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "item": "valleycraft:baked_onion"
+    },
+    {
+      "item": "valleycraft:milk"
+    },
+    {
+      "item": "valleycraft:butter"
+    },
+    {
+      "tag": "c:broths"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:glow_squid_soup",
+    "count": 1
+  }
+}

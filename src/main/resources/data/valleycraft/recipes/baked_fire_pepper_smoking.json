@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:fire_pepper"
+    }
+  ],
+  "result": "valleycraft:baked_fire_pepper"
+}

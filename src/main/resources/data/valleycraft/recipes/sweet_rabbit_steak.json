@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:shivercap"
+    },
+    {
+      "item": "valleycraft:miners_lettuce"
+    },
+    {
+      "item": "minecraft:cooked_rabbit"
+    },
+    {
+      "tag": "c:olive_oils"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:sweet_rabbit_steak",
+    "count": 1
+  }
+}

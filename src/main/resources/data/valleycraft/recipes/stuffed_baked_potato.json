@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:hearty_beetroot"
+    },
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "item": "valleycraft:baked_onion"
+    },
+    {
+      "item": "valleycraft:butter"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:stuffed_baked_potato",
+    "count": 1
+  }
+}

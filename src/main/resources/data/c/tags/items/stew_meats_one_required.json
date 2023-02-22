@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cooked_beef",
+    "minecraft:cooked_chicken",
+    "minecraft:cooked_rabbit",
+    "minecraft:cooked_mutton",
+    "valleycraft:cooked_silverfish",
+    "valleycraft:cooked_tripe",
+    "valleycraft:cooked_beast_heart",
+    "valleycraft:cooked_beast_liver",
+    "valleycraft:cured_flesh"
+  ]
+}

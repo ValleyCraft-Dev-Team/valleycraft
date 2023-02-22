@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:chocolate_cake_dough"
+    }
+  ],
+  "result": "valleycraft:chocolate_cake",
+  "count": 1
+}

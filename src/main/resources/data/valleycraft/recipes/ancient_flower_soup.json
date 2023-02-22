@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:ancient_flower"
+    },
+    {
+      "item": "valleycraft:baked_apple"
+    },
+    {
+      "item": "valleycraft:milk"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "tag": "c:broths"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:ancient_flower_soup",
+    "count": 1
+  }
+}

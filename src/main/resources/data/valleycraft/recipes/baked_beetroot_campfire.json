@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "minecraft:beetroot"
+    }
+  ],
+  "result": "valleycraft:baked_beetroot"
+}

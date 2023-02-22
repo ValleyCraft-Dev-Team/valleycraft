@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:leather_necklace"
+  },
+  "addition": {
+    "item": "valleycraft:dragon_tooth"
+  },
+  "result": {
+    "item": "valleycraft:dragon_tooth_keepsake"
+  }
+}

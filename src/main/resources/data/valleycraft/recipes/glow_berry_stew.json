@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:glow_berry_juice"
+    },
+    {
+      "item": "minecraft:dandelion"
+    },
+    {
+      "item": "valleycraft:baked_cave_root"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "valleycraft:salt"
+    },
+    {
+      "tag": "c:broths"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:glow_berry_stew",
+    "count": 1
+  }
+}
