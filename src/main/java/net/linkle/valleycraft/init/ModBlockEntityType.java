@@ -18,12 +18,17 @@ import net.minecraft.util.registry.Registry;
 public class ModBlockEntityType {
 
     public static BlockEntityType<CrateBlockEntity> CRATE;
+    public static BlockEntityType<DeepslateChestBlockEntity> DEEPSLATE_CHEST;
+    public static BlockEntityType<CoffinBlockEntity> COFFIN;
+
     public static BlockEntityType<CounterBlockEntity> COUNTER;
     public static BlockEntityType<CabinetBlockEntity> CABINET;
     public static BlockEntityType<StoveBlockEntity> STOVE;
 
     public static void initialize() {
         CRATE = create("crate", CrateBlockEntity::new, BlocksModded.CRATE);
+        DEEPSLATE_CHEST = create("deepslate_chest", DeepslateChestBlockEntity::new, BlocksModded.DEEPSLATE_CHEST);
+        COFFIN = create("coffin", CoffinBlockEntity::new, BlocksModded.COFFIN);
         COUNTER = create("counter", CounterBlockEntity::new, BlocksModded.COUNTER);
         CABINET = create("cabinet", CabinetBlockEntity::new, BlocksModded.CABINET);
         STOVE = create("stove", StoveBlockEntity::new, BlocksModded.BRICK_STOVE);

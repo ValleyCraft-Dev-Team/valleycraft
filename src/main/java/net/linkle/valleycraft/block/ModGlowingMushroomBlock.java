@@ -6,20 +6,15 @@ import net.minecraft.block.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 
-public class ModGlowingMushroomBlock extends ModPlantBlock {
+public class ModGlowingMushroomBlock extends ModMushroomBlock {
 
     public ModGlowingMushroomBlock() {
-        this(Settings.copy(Blocks.POPPY).luminance(s -> 7));
+        this(Settings.copy(Blocks.POPPY).luminance(s -> 7).ticksRandomly());
         shape = Block.createCuboidShape(4, 0, 4, 12, 9, 12);
     }
 
     public ModGlowingMushroomBlock(Settings settings) {
         super(settings);
-    }
-    
-    @Override
-    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.isOpaqueFullCube(world, pos);
     }
     
     public ModGlowingMushroomBlock large() {

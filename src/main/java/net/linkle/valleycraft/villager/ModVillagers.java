@@ -36,6 +36,9 @@ public class ModVillagers {
     public static final PointOfInterestType BEEKEEPER_POI = registerPOI("beekeeper_poi", BlocksModded.BEEKEEPER_STATION.block);
     public static final VillagerProfession BEEKEEPER = registerPro("beekeeper",RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "beekeeper_poi")));
 
+    public static final PointOfInterestType GARDENER_POI = registerPOI("gardener_poi", BlocksModded.GARDENER_STATION.block);
+    public static final VillagerProfession GARDENER = registerPro("gardener",RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "gardener_poi")));
+
     public static final PointOfInterestType STOREKEEP_POI = registerPOI("storekeeper_poi", BlocksModded.STOREKEEPS_COUNTER.block);
     public static final VillagerProfession STOREKEEP = registerPro("storekeeper", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "storekeeper_poi")));
 

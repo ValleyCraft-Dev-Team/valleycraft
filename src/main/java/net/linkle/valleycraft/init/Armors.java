@@ -138,7 +138,7 @@ public enum Armors implements ItemEnum {
 
     /** Called from {@link ItemsModded} */
     public static void initialize() {
-
+        Baubles.initialize();
     }
 
     private static final Item.Settings settingsArtifacts() {
@@ -155,10 +155,6 @@ public enum Armors implements ItemEnum {
 
     private static Item.Settings settingDebug() {
         return new Item.Settings();
-    }
-
-    private static Item.Settings settingsNormal(Rarity rarity) {
-        return settingsNormal().rarity(rarity);
     }
 
     // ### The Enum Class Itself ###

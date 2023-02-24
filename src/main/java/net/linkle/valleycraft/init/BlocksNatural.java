@@ -90,10 +90,11 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     SPORE_SPREADER(new ModSporeSpreaderBlock().large(), itemSettings()),
     GLOW_CAP(new ModGlowingMushroomBlock(), itemSettings()),
     GLOW_CAP_CLUSTER(new ModGlowingMushroomBlock().large(), itemSettings()),
-    JUNGLE_CAP(new ModMushroomBlock(), itemSettings()),
-    JUNGLE_CAP_CLUSTER(new ModMushroomBlock().large(), itemSettings()),
+    FAN_MOLD(new FanMoldBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM).ticksRandomly().luminance(s -> 4)), itemSettings()),
+    JUNGLE_CAP(new ModMushroomBlockDaySafe(), itemSettings()),
+    JUNGLE_CAP_CLUSTER(new ModMushroomBlockDaySafe().large(), itemSettings()),
 
-    MOREL(new ModMushroomBlock(), itemSettings()),
+    MOREL(new ModMushroomBlockDaySafe(), itemSettings()),
     SHIVERCAP(new ShivercapBlock(), itemSettings().group(INGREDIENTS)),
     STALWART_SHROOM(new StalwartBlock(), itemSettings().group(INGREDIENTS)),
 
@@ -233,7 +234,6 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     VERDANTINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
 
-    BONE_JOINT(new Block(Block.Settings.copy(Blocks.BONE_BLOCK)), itemSettings()),
     ROCKS(new RockBlock(), itemSettings().group(Groups.VC_ITEMS)),
     FLINT_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
 
@@ -295,6 +295,11 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     //BLUE_SOULSPORE_SINGLE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(12, 24)).smallShape(), itemSettings().rarity(Rarity.RARE)),
     //BLUE_SOULSPORE(new SoulPlantBlock(ModParticles.BLUE_EXP_ORB, SoulPlantBlock.settings(6).emissiveLighting((blockState, pos, view) -> true).sounds(BlockSoundGroup.SOUL_SAND), UniformIntProvider.create(24, 36)).largeShape(), itemSettings().rarity(Rarity.RARE)),
 
+    FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.IRON_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
+    DEEPSLATE_FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
+    NETHER_FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
+    BONE_JOINT(new Block(Block.Settings.copy(Blocks.BONE_BLOCK)), itemSettings()),
+
     //skulls and skeletons go here
     VILLAGER_SKELETAL_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
     VILLAGER_SKULL(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
@@ -309,9 +314,17 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     DAERDRI_SKULL(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.RARE)),
     //SNIFFER_SKULL(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().group(BOOKS).rarity(Rarity.EPIC)),
 
-    FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.IRON_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
-    DEEPSLATE_FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
-    NETHER_FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
+    //heads
+    HEAD_ZOMBIE_ALEX(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
+    HEAD_ZOMBIE_EFE(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
+    HEAD_DROWNED_ALEX(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
+    HEAD_DROWNED_EFE(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
+    HEAD_DROWNED_STEVE(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
+    HEAD_HUSK_ALEX(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
+    HEAD_HUSK_EFE(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
+    HEAD_ROTTEN_ALEX(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
+    HEAD_ROTTEN_EFE(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
+    HEAD_ROTTEN_STEVE(new SkullBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),
 
     //cave paintings
     ERDSTONE_CAVE_PAINTING_PORTRAIT(new CavePainting(Block.Settings.copy(Blocks.STONE), "portrait"), itemSettings()),

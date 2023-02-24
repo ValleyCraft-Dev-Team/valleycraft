@@ -10,7 +10,7 @@ import net.minecraft.world.BlockView;
 
 import java.util.List;
 
-public class StalwartBlock extends ModMushroomBlock {
+public class StalwartBlock extends ModMushroomBlockDaySafe {
     public StalwartBlock() {
         this(Settings.copy(Blocks.RED_MUSHROOM).ticksRandomly());
     }

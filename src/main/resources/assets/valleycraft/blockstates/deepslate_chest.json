@@ -1,0 +1,42 @@
+{
+  "variants": {
+    "facing=east,open=false": {
+      "x": 90,
+      "y": 90,
+      "model": "valleycraft:block/deepslate_chest_closed"
+    },
+    "facing=east,open=true": {
+      "x": 90,
+      "y": 90,
+      "model": "valleycraft:block/deepslate_chest_open"
+    },
+    "facing=north,open=false": {
+      "x": 90,
+      "model": "valleycraft:block/deepslate_chest_closed"
+    },
+    "facing=north,open=true": {
+      "x": 90,
+      "model": "valleycraft:block/deepslate_chest_open"
+    },
+    "facing=south,open=false": {
+      "x": 90,
+      "y": 180,
+      "model": "valleycraft:block/deepslate_chest_closed"
+    },
+    "facing=south,open=true": {
+      "x": 90,
+      "y": 180,
+      "model": "valleycraft:block/deepslate_chest_open"
+    },
+    "facing=west,open=false": {
+      "x": 90,
+      "y": 270,
+      "model": "valleycraft:block/deepslate_chest_closed"
+    },
+    "facing=west,open=true": {
+      "x": 90,
+      "y": 270,
+      "model": "valleycraft:block/deepslate_chest_open"
+    }
+  }
+}

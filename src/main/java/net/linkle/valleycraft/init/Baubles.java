@@ -1,8 +1,12 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.armors.ArmorMats;
 import net.linkle.valleycraft.util.ItemEnum;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 import net.minecraft.item.Item;
@@ -14,6 +18,12 @@ public enum Baubles implements ItemEnum {
     //Use Bauble item if it has no functionality set,
     //otherwise create an item class that extends BaubleItem
     //and use that for the individual bauble.
+
+    //talismans are necklaces made with special items
+    //amulets are necklaces made with minerals
+    //keepsakes are boss specific items
+    //base material necklaces are just called necklaces
+    //ignore some of the coded names are wrong, theyre fixed in the lang file
 
     //LEATHER_BRACELET(new Item(itemSettings().group(CLOTHING))),
     //TOTEM_OF_UNDYING_BRACELET(new Item(itemSettings().group(CLOTHING).rarity(RARE))),
@@ -33,12 +43,19 @@ public enum Baubles implements ItemEnum {
 
     //leather base
     LEATHER_NECKLACE(new Item(itemSettings().group(CLOTHING).maxCount(1))),
+    CRYSTALLIZED_HONEY_NECKLACE(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     SCUTE_NECKLACE(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
-    UNDYING_KEEPSAKE(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
+    UNDYING_NECKLACE(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     GUARDIAN_SPIKE_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     DRAGON_TOOTH_KEEPSAKE(new Item(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
-    //boss
+
+    //miniboss keepsakes
+    LICH_HOOD_KEEPSAKE(new ArmorItem(ArmorMats.LICH_CLOAK, EquipmentSlot.HEAD, itemSettings().rarity(EPIC).maxCount(1))),
+    LICH_CLOAK_KEEPSAKE(new ArmorItem(ArmorMats.LICH_CLOAK, EquipmentSlot.CHEST, itemSettings().rarity(EPIC).maxCount(1))),
     ELDER_GUARDIAN_SPIKE_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
+    /**warden keepsake replaces this line**/
+    //boss keepsakes
+    NETHER_STAR_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
     ENDER_DRAGON_TALISMAN(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)));
 
     public static void initialize() {

@@ -7,6 +7,7 @@
     "valleycraft:cook_poi",
     "valleycraft:beekeeper_poi",
     "valleycraft:miner_poi",
-    "valleycraft:storekeeper_poi"
+    "valleycraft:storekeeper_poi",
+    "valleycraft:gardener_poi"
   ]
 }

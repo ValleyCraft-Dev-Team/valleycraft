@@ -315,6 +315,20 @@ class RenderLayers {
         put(VILLAGER_SKELETAL_REMAINS, cullout);
         put(PIGLIN_SKELETAL_REMAINS, cullout);
         put(DAERDRI_SKULL, cullout);
+        put(HEAD_ZOMBIE_ALEX, cullout);
+        put(HEAD_ZOMBIE_EFE, cullout);
+        put(HEAD_DROWNED_ALEX, cullout);
+        put(HEAD_DROWNED_EFE, cullout);
+        put(HEAD_DROWNED_STEVE, cullout);
+        put(HEAD_HUSK_ALEX, cullout);
+        put(HEAD_HUSK_EFE, cullout);
+        put(HEAD_ROTTEN_ALEX, cullout);
+        put(HEAD_ROTTEN_EFE, cullout);
+        put(HEAD_ROTTEN_STEVE, cullout);
+
+        put(COFFIN, cullout);
+        put(DEEPSLATE_CHEST, cullout);
+
         put(VILLAGER_SKULL, cullout);
         put(PIGLIN_SKULL, cullout);
         put(PICKAXE_BLOCK, cullout);

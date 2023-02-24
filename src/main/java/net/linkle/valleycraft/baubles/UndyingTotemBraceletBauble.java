@@ -34,7 +34,7 @@ public class UndyingTotemBraceletBauble extends AbstractTotemBase {
         }
 
         showFloatingItem(world, user);
-        return stack.isEmpty() ? new ItemStack(Baubles.UNDYING_KEEPSAKE) : stack;
+        return stack.isEmpty() ? new ItemStack(Baubles.UNDYING_NECKLACE) : stack;
     }
 
     @Override

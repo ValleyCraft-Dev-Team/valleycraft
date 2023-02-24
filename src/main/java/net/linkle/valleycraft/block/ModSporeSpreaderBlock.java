@@ -11,7 +11,7 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class ModSporeSpreaderBlock extends ModMushroomBlock {
+public class ModSporeSpreaderBlock extends ModMushroomBlockDaySafe {
 
     public ModSporeSpreaderBlock() {
         this(Settings.copy(Blocks.RED_MUSHROOM).ticksRandomly());

@@ -529,7 +529,7 @@
         {
           "type": "minecraft:item",
           "weight": 5,
-          "name": "valleycraft:steamed_fish_platter",
+          "name": "valleycraft:fish_platter",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -574,7 +574,7 @@
         {
           "type": "minecraft:item",
           "weight": 5,
-          "name": "valleycraft:mutton_sandwich",
+          "name": "valleycraft:sandwich_mutton",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -589,7 +589,7 @@
         {
           "type": "minecraft:item",
           "weight": 5,
-          "name": "valleycraft:cheese_sandwich",
+          "name": "valleycraft:grilled_cheese",
           "functions": [
             {
               "function": "minecraft:set_count",

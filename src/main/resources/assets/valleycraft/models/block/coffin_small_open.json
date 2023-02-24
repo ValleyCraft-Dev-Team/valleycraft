@@ -1,0 +1,61 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "valleycraft:block/polished_stone",
+		"1": "valleycraft:block/coffin_details",
+		"2": "valleycraft:block/coffin_small_top",
+		"3": "valleycraft:block/coffin_face",
+		"particle": "valleycraft:block/polished_stone"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 3, 16],
+			"faces": {
+				"north": {"uv": [0, 13, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 13, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 13, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 13, 16, 16], "texture": "#1"},
+				"up": {"uv": [16, 16, 0, 0], "texture": "#0"},
+				"down": {"uv": [16, 16, 0, 0], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 11, 0],
+			"to": [16, 14, 16],
+			"faces": {
+				"north": {"uv": [0, 13, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 13, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 13, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 13, 16, 16], "texture": "#1"},
+				"up": {"uv": [16, 16, 0, 0], "texture": "#2"},
+				"down": {"uv": [16, 16, 0, 0], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2, 3, 2],
+			"to": [14, 11, 14],
+			"faces": {
+				"north": {"uv": [0, 0, 12, 8], "texture": "#3"},
+				"east": {"uv": [0, 0, 12, 8], "texture": "#1"},
+				"south": {"uv": [0, 0, 12, 8], "texture": "#1"},
+				"west": {"uv": [0, 0, 12, 8], "texture": "#1"},
+				"up": {"uv": [12, 0, 0, 12], "texture": "#1"},
+				"down": {"uv": [0, 0, 12, 12], "texture": "#1"}
+			}
+		},
+		{
+			"from": [0, 14, 9],
+			"to": [12, 16, 21],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 12, 2], "texture": "#1"},
+				"east": {"uv": [0, 0, 12, 2], "texture": "#1"},
+				"south": {"uv": [0, 0, 12, 2], "texture": "#1"},
+				"west": {"uv": [0, 0, 12, 2], "texture": "#1"},
+				"up": {"uv": [12, 12, 0, 0], "texture": "#1"},
+				"down": {"uv": [12, 12, 0, 0], "texture": "#1"}
+			}
+		}
+	]
+}

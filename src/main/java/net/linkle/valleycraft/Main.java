@@ -25,9 +25,10 @@ public class Main implements ModInitializer {
 	    Config.initialize();
 
 		// Keep these inits above the blocks so the creative inventory stays sorted properly.
-		Baubles.initialize();
 		ItemsModded.initialize();
+			//initializes food items and misc items
 		Fishing.initialize();
+			//initializes fish bucket items
 		Tools.initialize();
 		ShieldsModded.initialize();
 		Armors.initialize();
@@ -48,6 +49,7 @@ public class Main implements ModInitializer {
 		Particles.initialize();
 		Sounds.initialize();
 		Music.initialize();
+			//currently unused, ancient disk is being added to Legendarium instead probably
 		Entities.initialize();
 		Paintings.initialize();
 		ModFluidTags.initialize();

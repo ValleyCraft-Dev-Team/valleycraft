@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "valleycraft:block/treated_leather_block"
+  }
+}

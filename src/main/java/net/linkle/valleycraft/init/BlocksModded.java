@@ -37,25 +37,36 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
 
     CRAFTING_MAT(new CraftingMatBauble(Block.Settings.of(Material.DECORATION).sounds(net.minecraft.sound.BlockSoundGroup.WOOL).breakInstantly().noCollision().nonOpaque()), toolItemSettings()),
     CRATE(new CrateBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
+    DEEPSLATE_CHEST(new DeepslateChestBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)), itemSettings()),
+    COFFIN(new DeepslateChestBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)), itemSettings()),
+    MILLSTONE(new MillstoneBlock(Block.Settings.copy(Blocks.STONECUTTER).resistance(6).hardness(2.25f)), itemSettings()),
+
+    /**cook_poi**/
     BRICK_STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
+    /**innkeeper_poi**/
     KEG(new KegBlock(), itemSettings()),
-    //STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
+    /**stablehand_poi**/
+    STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
+    STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
+    /**miner_poi**/
+    MINER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    /**beekeeper_poi**/
+    BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    /**lumberjack_poi**/
+    LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(Blocks.STONECUTTER).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    /**storekeeper_poi**/
+    STOREKEEPS_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    /**gardener_poi**/
+    GARDENER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+
     BARREL_PLANTER(new Block(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     RAIN_COLLECTOR(new RainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque()), itemSettings()),
     LEVELED_RAIN_COLLECTOR(new LeveledRainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque())),
     //WATER_SHOWERER(new ShowerBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque().ticksRandomly()), itemSettings()),
     SPRINKLER(new SprinklerBlock(), itemSettings()),
     WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
-
-    STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
-    STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     WITCH_LADLE(new LadleBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().noCollision().nonOpaque()), itemSettings()),
-    MINER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
-    BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
-    MILLSTONE(new MillstoneBlock(Block.Settings.copy(Blocks.STONECUTTER).resistance(6).hardness(2.25f)), itemSettings()),
-    LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(Blocks.STONECUTTER).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    //TODO redesign storekeepers counter symbol, its ugly
-    STOREKEEPS_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+
     COUNTER_DRAWER(new CounterDrawerBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     COUNTER(new CounterBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     COUNTER_CORNER(new CounterCornerBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
@@ -944,7 +955,11 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     //lodged and rusty blocks go here
     //GODDESS_BLADE_BLOCK(new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.EPIC).group(BOOKS)),
     SWORD_BLOCK(new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
+    SHOVEL_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
     PICKAXE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
+    AXE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
+    HOE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
+
     //RUSTED_CHEST(new RustedChestBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     //CHAINED_RUSTED_CHEST(new RustedChestBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     //BONFIRE(new ModCampfireBlock(true, 1, Block.Settings.copy(Blocks.CAMPFIRE)), itemSettings().rarity(Rarity.RARE)),

@@ -12,11 +12,9 @@ import net.linkle.valleycraft.tool.greatsword.GreatswordBase;
 import net.linkle.valleycraft.tool.hatchet.HatchetAxeBase;
 import net.linkle.valleycraft.tool.knife.DaggerBase;
 import net.linkle.valleycraft.tool.knife.KnifeBase;
-import net.linkle.valleycraft.tool.pickaxes.RustyPickaxeItem;
-import net.linkle.valleycraft.tool.pickaxes.RustyPickaxeMaterial;
+import net.linkle.valleycraft.tool.rusty.*;
 import net.linkle.valleycraft.tool.scythe.ScytheBase;
 import net.linkle.valleycraft.tool.staff.StaffBase;
-import net.linkle.valleycraft.tool.sword.special.*;
 import net.linkle.valleycraft.tool.throwing.RockItem;
 import net.linkle.valleycraft.tool.travelers_sword.TravelerBase;
 import net.linkle.valleycraft.tool.unbreakable.UnbreakableScalpelBase;
@@ -45,8 +43,12 @@ public class Tools {
     public static final Item MAKESHIFT_SHOVEL = new BranchShovelItem(ModToolMaterials.MAKESHIFT_WOOD, 1, -3.0f);
     public static final Item MAKESHIFT_HOE = new BranchHoeItem(ModToolMaterials.MAKESHIFT_WOOD, 0, -3.0f);
 
-    public static final Item RUSTY_SWORD = new RustySwordItem(new RustySwordMaterial(),4, -2.4f);
-    public static final Item RUSTY_PICKAXE = new RustyPickaxeItem(new RustyPickaxeMaterial(),3, -2.8f);
+    public static final Item RUSTY_SWORD = new RustySwordItem(new RustyMaterial(),4, -2.4f);
+    public static final Item RUSTY_PICKAXE = new RustyPickaxeItem(new RustyMaterial(),2, -2.8f);
+    public static final Item RUSTY_AXE = new RustyAxeItem(new RustyMaterial(),7, -3.0f);
+    public static final Item RUSTY_HOE = new RustyHoeItem(new RustyMaterial(),0, -1.0f);
+    public static final Item RUSTY_SHOVEL = new RustyShovelItem(new RustyMaterial(),2, -3.0f);
+
     public static final Item THROWING_ROCK = new RockItem(new Item.Settings().maxCount(64).group(VC_TOOLS));
     public static final Item ANTHROPOLOGISTS_ROCK_PICK = new AnthroPickaxeItem(new AnthroPickaxeMaterial());
 
@@ -275,7 +277,10 @@ public class Tools {
 
         //rusty
         Reg.register("rusted_sword", RUSTY_SWORD);
+        Reg.register("rusted_shovel", RUSTY_SHOVEL);
         Reg.register("rusted_pickaxe", RUSTY_PICKAXE);
+        Reg.register("rusted_axe", RUSTY_AXE);
+        Reg.register("rusted_hoe", RUSTY_HOE);
 
         //artifacts
         //tools
