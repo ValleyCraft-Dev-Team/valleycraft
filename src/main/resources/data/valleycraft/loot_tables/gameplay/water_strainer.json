@@ -1055,22 +1055,6 @@
         {
           "type": "minecraft:item",
           "weight": 6,
-          "name": "valleycraft:makeshift_spear",
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 0.9
-              },
-              "add": false
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 6,
           "name": "valleycraft:makeshift_shovel",
           "functions": [
             {

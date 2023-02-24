@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "valleycraft:item/special/flint_and_primsteel_single_use"
+  }
+}

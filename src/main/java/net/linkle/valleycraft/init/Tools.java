@@ -42,6 +42,7 @@ public class Tools {
     public static final Item MAKESHIFT_AXE = new BranchAxeItem(ModToolMaterials.MAKESHIFT_FLINT, 3, -3.0f);
     public static final Item MAKESHIFT_SHOVEL = new BranchShovelItem(ModToolMaterials.MAKESHIFT_WOOD, 1, -3.0f);
     public static final Item MAKESHIFT_HOE = new BranchHoeItem(ModToolMaterials.MAKESHIFT_WOOD, 0, -3.0f);
+    public static final Item FLINT_AND_PRIMSTEEL = new FlintAndSteelItem((new Item.Settings()).maxDamage(4).group(VC_TOOLS));
 
     public static final Item RUSTY_SWORD = new RustySwordItem(new RustyMaterial(),4, -2.4f);
     public static final Item RUSTY_PICKAXE = new RustyPickaxeItem(new RustyMaterial(),2, -2.8f);
@@ -129,6 +130,7 @@ public class Tools {
         //Reg.register("sharp_flint", FLINT);
         //Reg.register("hefty_rock", HEFTY_ROCK);
         Reg.register("throwing_rock", THROWING_ROCK);
+        Reg.register("flint_and_primsteel", FLINT_AND_PRIMSTEEL);
 
         //TODO add makeshift sword, hatchet, staff, spear
         Reg.register("makeshift_knife", new KnifeBase(ModToolMaterials.MAKESHIFT_WOOD, MAKESHIFT_BASED_DAMAGE, KNIFE_BASE_SPEED, BASIC_SETTINGS));

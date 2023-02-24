@@ -64,7 +64,7 @@
         {
           "type": "minecraft:item",
           "weight": 4,
-          "name": "sandwich:grilled_cheese",
+          "name": "valleycraft:grilled_cheese",
           "functions": [
             {
               "function": "minecraft:set_count",

@@ -101,7 +101,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "valleycraft:diamond_fragment",
+          "name": "valleycraft:diamond_fragments",
           "functions": [
             {
               "function": "minecraft:set_count",

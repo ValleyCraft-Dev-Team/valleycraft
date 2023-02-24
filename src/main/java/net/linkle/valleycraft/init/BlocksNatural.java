@@ -195,7 +195,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     WARM_BIRCH_SAPLING(new SaplingBlock(new WarmBirchSaplingGen(), Block.Settings.copy(Blocks.BIRCH_SAPLING)), itemSettings()),
     WARM_BIRCH_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.BIRCH_LEAVES)), itemSettings()),
 
-    LESSER_DIVINE_OAK_LOG(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    LESSER_DIVINE_OAK_LOG(new DivineOakLog(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
 
     //hollow logs
     HOLLOW_ACACIA_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.ACACIA_LOG)), itemSettings()),
