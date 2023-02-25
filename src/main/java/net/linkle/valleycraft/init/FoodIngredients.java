@@ -70,6 +70,7 @@ public enum FoodIngredients implements ItemEnum {
 
     //RAW_LOBSTER(new NegativeFoodItem_3_Effects(settings(), 3, 0.2f, StatusEffects.HUNGER, StatusEffects.POISON, StatusEffects.NAUSEA).hideTooltip()),
     //RAW_MOSSY_CRAB(new NegativeFoodItem_3_Effects(settings(), 3, 0.2f, StatusEffects.HUNGER, StatusEffects.POISON, StatusEffects.NAUSEA).hideTooltip()),
+    RAW_WORM(new FoodItem(settings(), 1, 0.3f)),
 
     RAW_BACON(new FoodItem(settings(), 2, 0.2f, true)),
     

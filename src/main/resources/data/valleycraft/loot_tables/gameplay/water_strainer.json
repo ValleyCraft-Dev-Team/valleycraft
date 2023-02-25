@@ -6,7 +6,7 @@
         "min": 2,
         "max": 4
       },
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
@@ -14,13 +14,13 @@
           "name": "minecraft:kelp",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 2,
                 "max": 4
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -30,13 +30,13 @@
           "name": "valleycraft:orange_kelp",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 2,
                 "max": 4
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -46,13 +46,13 @@
           "name": "minecraft:seagrass",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 2,
                 "max": 4
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -62,13 +62,13 @@
           "name": "valleycraft:orange_seagrass",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 2,
                 "max": 4
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -78,13 +78,13 @@
           "name": "valleycraft:algae",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 2,
                 "max": 4
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -94,13 +94,13 @@
           "name": "valleycraft:beach_grass",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 2,
                 "max": 4
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -110,13 +110,13 @@
           "name": "valleycraft:iceplant",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 2,
                 "max": 4
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -126,13 +126,13 @@
           "name": "minecraft:stick",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 3
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -142,13 +142,13 @@
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -158,13 +158,13 @@
           "name": "valleycraft:plank",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 2
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -174,13 +174,13 @@
           "name": "valleycraft:clam_block",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -190,13 +190,13 @@
           "name": "valleycraft:guardian_spike",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -206,13 +206,13 @@
           "name": "valleycraft:quill",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -222,13 +222,13 @@
           "name": "minecraft:nautilus_shell",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -238,13 +238,13 @@
           "name": "minecraft:scute",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -254,13 +254,13 @@
           "name": "minecraft:phantom_membrane",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -270,13 +270,13 @@
           "name": "minecraft:skull_banner_pattern",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -286,13 +286,13 @@
           "name": "minecraft:name_tag",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -302,13 +302,13 @@
           "name": "minecraft:saddle",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -318,13 +318,13 @@
           "name": "valleycraft:plant_fiber_string",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 3
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -418,13 +418,13 @@
           "name": "valleycraft:cattails",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 2
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -434,13 +434,13 @@
           "name": "minecraft:sugar_cane",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 2
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -450,13 +450,13 @@
           "name": "minecraft:lily_pad",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -466,13 +466,13 @@
           "name": "minecraft:vine",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 3
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -578,13 +578,13 @@
           "name": "valleycraft:leather_strap",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -594,13 +594,13 @@
           "name": "minecraft:leather",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -610,13 +610,13 @@
           "name": "valleycraft:leather_necklace",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -626,13 +626,13 @@
           "name": "minecraft:rabbit_hide",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -642,13 +642,13 @@
           "name": "valleycraft:sheep_hide",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -658,13 +658,13 @@
           "name": "valleycraft:pig_hide",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -674,13 +674,13 @@
           "name": "valleycraft:burnt_out_torch",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -690,13 +690,13 @@
           "name": "valleycraft:rope",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 2
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -706,13 +706,13 @@
           "name": "valleycraft:net",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -722,13 +722,13 @@
           "name": "valleycraft:fiber",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 4
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -738,13 +738,13 @@
           "name": "valleycraft:seagulls_feather",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 2
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -754,13 +754,13 @@
           "name": "valleycraft:ducks_feather",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 2
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -770,13 +770,13 @@
           "name": "valleycraft:beast_bone",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -786,13 +786,13 @@
           "name": "minecraft:bone",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -802,13 +802,13 @@
           "name": "valleycraft:bonefin",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -818,13 +818,13 @@
           "name": "minecraft:glass_bottle",
           "functions": [
             {
-              "add": false,
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
                 "max": 1
-              }
+              },
+              "add": false
             }
           ]
         },
@@ -1212,276 +1212,11 @@
                     "biome": "minecraft:warm_ocean"
                   }
                 }
-              ],
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "type": "minecraft:uniform",
-                "min": 0,
-                "max": 0.9
-              },
-              "add": false
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 7,
-          "name": "minecraft:string",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "valleycraft:bow_string",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "valleycraft:handle",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "valleycraft:cloth",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 9,
-          "name": "valleycraft:oak_seed",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "valleycraft:dark_oak_seed",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "valleycraft:acacia_seed",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "valleycraft:apple_seed",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "valleycraft:jungle_seed",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "valleycraft:birch_seed",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "valleycraft:spruce_seed",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "valleycraft:amberblossom_seed",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "valleycraft:warm_birch_seed",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:bowl",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:ink_sac",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:tripwire_hook",
-          "functions": [
-            {
-              "add": false,
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 1
-              }
+              ]
             }
           ]
         }
       ]
     }
   ]
-}]}
+}

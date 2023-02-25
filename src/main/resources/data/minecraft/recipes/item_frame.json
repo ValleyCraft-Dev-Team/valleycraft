@@ -1,34 +1,18 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "item": "minecraft:stick"
-    },
-    {
-      "item": "minecraft:stick"
-    },
-    {
-      "item": "minecraft:stick"
-    },
-    {
-      "item": "minecraft:stick"
-    },
-    {
-      "tag": "c:leather_alternatives"
-    },
-    {
-      "item": "minecraft:stick"
-    },
-    {
-      "item": "minecraft:stick"
-    },
-    {
-      "item": "minecraft:stick"
-    },
-    {
-      "item": "minecraft:stick"
-    }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "///",
+    "/A/",
+    "///"
   ],
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "A": {
+      "tag": "c:leather_alternatives"
+    }
+  },
   "result": {
     "item": "minecraft:item_frame",
     "count": 1

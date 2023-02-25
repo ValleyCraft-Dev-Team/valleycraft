@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "valleycraft:echochalcum_block"
+      "item": "valleycraft:sculkerite_block"
     }
   ],
   "result": {

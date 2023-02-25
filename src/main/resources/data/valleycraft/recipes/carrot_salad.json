@@ -8,7 +8,7 @@
       "item": "minecraft:kelp"
     },
     {
-      "item": "minecraft:morel_oil"
+      "tag": "c:cooking_oils"
     },
     {
       "item": "minecraft:bowl"

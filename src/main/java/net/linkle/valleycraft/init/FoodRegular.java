@@ -5,7 +5,9 @@ import static net.minecraft.util.Rarity.EPIC;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.item.*;
+import net.linkle.valleycraft.util.FoodStatusEffect;
 import net.linkle.valleycraft.util.ItemEnum;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -41,6 +43,7 @@ public enum FoodRegular implements ItemEnum {
     COOKED_CLAM(new FoodItem(settings(), 4, 0.3f)),
     COOKED_SEA_URCHIN(new FoodItem(settings(), 6, 0.6f)),
     COOKED_SQUID(new FastFoodItem(settings(), 3, 0.6f)),
+    COOKED_WORM(new FoodItem(settings(), 2, 2)),
     COOKED_SILVERFISH(new FoodItem(settings(), 3, 0.6f)),
     COOKED_PHANTOM(new FoodItem(settings(), 6, 0.6f)),
     COOKED_BIRD(new FastFoodItem(settings(), 3, 0.6f)),

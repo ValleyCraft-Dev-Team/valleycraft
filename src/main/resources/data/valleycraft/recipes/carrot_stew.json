@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "valleycraft:baked_enduria_carrot"
+      "item": "valleycraft:baked_endura_carrot"
     },
     {
       "item": "minecraft:baked_potato"
