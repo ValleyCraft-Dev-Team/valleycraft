@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"shield": "#shield",
+		"shield": "valleycraft:item/shields/buckler_base_nopattern",
 	},
 	"elements": [
 		{
@@ -33,7 +33,7 @@
 			"predicate": {
 				"blocking": 1
 			},
-			"model": "fabricshieldlib:item/fabric_shield_blocking"
+			"model": "valleycraft:item/buckler_shield_blocking_model"
 		}
 	],
 	"display": {

@@ -6,7 +6,6 @@ import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 import net.minecraft.item.Item;

@@ -15,7 +15,8 @@
           "name": "valleycraft:traveler_primsteel",
           "functions": [
             {
-              "function": "minecraft:enchant_randomly"
+              "function": "minecraft:set_count",
+              "count": 1
             }
           ]
         },

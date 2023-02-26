@@ -16,7 +16,7 @@ import net.minecraft.world.WorldView;
 import java.util.Iterator;
 
 public class FanMoldBlock extends HorizontalBlock {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(1, 0, 1, 15, 144, 15);
+    protected static final VoxelShape SHAPE = Block.createCuboidShape(1, 0, 1, 15, 14, 15);
 
     public FanMoldBlock(Settings settings) {
         super(settings);

@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"1": "Desktop/unused mod assets/plant_top_plain",
+		"1": "valleycraft:block/plant_top_plain",
 		"particle": "valleycraft:block/staminella_berry_stage_2",
 		"cross": "valleycraft:block/staminella_berry_stage_2"
 	},
