@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "block/polished_deepslate",
+		"1": "minecraft:block/polished_deepslate",
 		"2": "valleycraft:block/brazier_side",
-		"3": "valleycraft:block/brazier_bottom",
+		"3": "valleycraft:block/brazier_bottom_off",
 		"particle": "valleycraft:block/brazier_side"
 	},
 	"elements": [

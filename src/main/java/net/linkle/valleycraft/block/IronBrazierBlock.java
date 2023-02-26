@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.block;
 
+import net.minecraft.util.shape.VoxelShapes;
 import org.jetbrains.annotations.Nullable;
 
 import net.fabricmc.fabric.api.tag.convention.v1.ConventionalItemTags;
@@ -37,8 +38,12 @@ import net.minecraft.world.WorldAccess;
 import net.minecraft.world.event.GameEvent;
 
 public class IronBrazierBlock extends BlockWithWater {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 13, 16);
-    public static final BooleanProperty LIT = Properties.LIT;
+    protected static final VoxelShape LEFT_X_SHAPE;
+    protected static final VoxelShape RIGHT_X_SHAPE;
+    protected static final VoxelShape LEFT_Z_SHAPE;
+    protected static final VoxelShape RIGHT_Z_SHAPE;
+    protected static final VoxelShape BOTTOM_SHAPE;
+    protected static final VoxelShape FULL_SHAPE;    public static final BooleanProperty LIT = Properties.LIT;
     
     public IronBrazierBlock(Settings settings) {
         super(settings);
@@ -100,7 +105,7 @@ public class IronBrazierBlock extends BlockWithWater {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
+        return FULL_SHAPE;
     }
     
     @Override
@@ -137,5 +142,14 @@ public class IronBrazierBlock extends BlockWithWater {
     @Override
     public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
         return false;
+    }
+
+    static {
+        LEFT_X_SHAPE = Block.createCuboidShape(0,0,0,2,13,16);
+        RIGHT_X_SHAPE = Block.createCuboidShape(14,0,0,16,13,16);
+        LEFT_Z_SHAPE = Block.createCuboidShape(0,0,0,16,13,2);
+        RIGHT_Z_SHAPE = Block.createCuboidShape(0,0,14,16,13,16);
+        BOTTOM_SHAPE = Block.createCuboidShape(0,0,0,16,4,16);
+        FULL_SHAPE = VoxelShapes.union(LEFT_X_SHAPE, RIGHT_X_SHAPE,LEFT_Z_SHAPE, RIGHT_Z_SHAPE, BOTTOM_SHAPE);
     }
 }

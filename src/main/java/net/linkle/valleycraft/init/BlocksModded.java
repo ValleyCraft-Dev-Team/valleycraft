@@ -141,6 +141,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1).noCollision()), itemSettings(), BridgeItem::new),
     ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1)), itemSettings(), BridgeItem::new),
     SPIKE_TRAP(new SpikeTrapBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).nonOpaque().strength(0.5f, 1.0f)), itemSettings()),
+    SPIKE_TRAP_EXTENSION(new SpikeTrapExtensionBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).nonOpaque().strength(0.5f, 1.0f)), itemSettings()),
     //FIRE_TRAP(new FireTrapBlock(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
 
     NAUTILUS_SHELL_BLOCK(new NautilusShellBlock(), itemSettings()),

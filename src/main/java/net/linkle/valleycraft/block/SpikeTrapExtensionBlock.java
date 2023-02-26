@@ -15,10 +15,10 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class SpikeTrapBlock extends DirectionBlockWithWater {
+public class SpikeTrapExtensionBlock extends DirectionBlockWithWater {
     protected static final VoxelShape SHAPE = createCuboidShape(1, 1, 1, 15, 15, 15);
 
-    public SpikeTrapBlock(Settings settings) {
+    public SpikeTrapExtensionBlock(Settings settings) {
         super(settings.noCollision());
         newDefaultState(Direction.UP);
     }
@@ -43,9 +43,9 @@ public class SpikeTrapBlock extends DirectionBlockWithWater {
         entity.slowMovement(state, new Vec3d(0.3, 0.1f, 0.3));
         if (entity instanceof LivingEntity && entity.getType() != EntityType.BEE) {
             if (state.get(WATERLOGGED)) {
-                entity.damage(DamageSource.CACTUS, 3.0F);
+                entity.damage(DamageSource.CACTUS, 1.0F);
             }
-            entity.damage(DamageSource.CACTUS, 4.0F);
+            entity.damage(DamageSource.CACTUS, 2.0F);
         }
     }
 }

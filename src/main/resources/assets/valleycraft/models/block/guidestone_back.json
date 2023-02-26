@@ -3,6 +3,7 @@
 	"textures": {
 		"0": "valleycraft:block/erdcobblestone_guidestone",
 		"1": "valleycraft:block/erdcobblestone",
+		"2": "valleycraft:block/erdcobblestone_guidestone_back",
 		"particle": "valleycraft:block/erdcobblestone"
 	},
 	"elements": [
@@ -10,9 +11,9 @@
 			"from": [1, 0, 1],
 			"to": [15, 16, 15],
 			"faces": {
-				"north": {"uv": [1, 0, 15, 16], "texture": "#0"},
+				"north": {"uv": [1, 0, 15, 16], "texture": "#2"},
 				"east": {"uv": [1, 0, 15, 16], "texture": "#0"},
-				"south": {"uv": [1, 0, 15, 16], "texture": "#0"},
+				"south": {"uv": [15, 0, 1, 16], "texture": "#0"},
 				"west": {"uv": [1, 0, 15, 16], "texture": "#0"},
 				"up": {"uv": [1, 1, 15, 15], "texture": "#1"},
 				"down": {"uv": [1, 1, 15, 15], "texture": "#1"}
