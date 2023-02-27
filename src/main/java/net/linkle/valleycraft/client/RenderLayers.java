@@ -46,6 +46,33 @@ class RenderLayers {
         put(SPIDER_EGG, cullout);
         put(REDSTONE_LANTERN, cullout);
 
+        put(GUIDESTONE_BACK, cullout);
+        put(GUIDESTONE_BLANK, cullout);
+        put(GUIDESTONE_CAMPSITE, cullout);
+        put(GUIDESTONE_DUNGEON, cullout);
+        put(GUIDESTONE_FORWARD, cullout);
+        put(GUIDESTONE_HERE, cullout);
+        put(GUIDESTONE_HOMESTEAD, cullout);
+        put(GUIDESTONE_LEFT, cullout);
+        put(GUIDESTONE_PORT, cullout);
+        put(GUIDESTONE_PORTAL, cullout);
+        put(GUIDESTONE_RIGHT, cullout);
+        put(GUIDESTONE_SYMBOL_DEATH, cullout);
+        put(GUIDESTONE_STABLES, cullout);
+        put(GUIDESTONE_SYMBOL_HUNGER, cullout);
+        put(GUIDESTONE_SYMBOL_HEART, cullout);
+        put(GUIDESTONE_TOOL_AXE, cullout);
+        put(GUIDESTONE_TOOL_BOW, cullout);
+        put(GUIDESTONE_TOOL_FISHING_ROD, cullout);
+        put(GUIDESTONE_TOOL_HOE, cullout);
+        put(GUIDESTONE_TOOL_PICKAXE, cullout);
+        put(GUIDESTONE_TOOL_SWORD, cullout);
+        put(GUIDdESTONE_TOOL_SHOVEL, cullout);
+        put(GUIDESTONE_TOOL_POTION, cullout);
+        put(GUIDESTONE_TOWER, cullout);
+        put(GUIDESTONE_TRADE, cullout);
+        put(GUIDESTONE_VILLAGE, cullout);
+
         // Flowers and Potted Flowers
         put(BLACK_DAHLIA, cullout);
         put(POTTED_BLACK_DAHLIA, cullout);
@@ -294,6 +321,9 @@ class RenderLayers {
         put(RUSHES, cullout);
         //put(OCELOT_STATUE, cullout);
         put(SPIKE_TRAP, cullout);
+        put(SPIKE_TRAP_EXTENSION, cullout);
+        put(FAN_MOLD, cullout);
+        put(FAN_MOLD, translucent);
 
         put(HOLLOW_ACACIA_LOG, cullout);
         put(HOLLOW_APPLE_LOG, cullout);

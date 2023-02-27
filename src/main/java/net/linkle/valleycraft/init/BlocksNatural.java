@@ -90,7 +90,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     SPORE_SPREADER(new ModSporeSpreaderBlock().large(), itemSettings()),
     GLOW_CAP(new ModGlowingMushroomBlock(), itemSettings()),
     GLOW_CAP_CLUSTER(new ModGlowingMushroomBlock().large(), itemSettings()),
-    FAN_MOLD(new FanMoldBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM).ticksRandomly().luminance(s -> 4)), itemSettings()),
+    FAN_MOLD(new FanMoldBlock(Block.Settings.copy(Blocks.BROWN_MUSHROOM).ticksRandomly().luminance(s -> 4).nonOpaque().noCollision()), itemSettings()),
     JUNGLE_CAP(new ModMushroomBlockDaySafe(), itemSettings()),
     JUNGLE_CAP_CLUSTER(new ModMushroomBlockDaySafe().large(), itemSettings()),
 

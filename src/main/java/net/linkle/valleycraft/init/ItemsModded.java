@@ -89,7 +89,7 @@ public enum ItemsModded implements ItemEnum {
     COPPER_SCRAP(new Item(itemSettings())),
     //RAW_GOLD_NUGGET(new Item(itemSettings())),
     GOLD_SCRAP(new Item(itemSettings())),
-    RAW_PRIMSTEEL_NUGGET(new Item(itemSettings())),
+    //RAW_PRIMSTEEL_NUGGET(new Item(itemSettings())),
     PRIMSTEEL_RAW(new Item(itemSettings())),
     PRIMSTEEL_NUGGET(new Item(itemSettings())),
     PRIMSTEEL_SCRAP(new Item(itemSettings())),

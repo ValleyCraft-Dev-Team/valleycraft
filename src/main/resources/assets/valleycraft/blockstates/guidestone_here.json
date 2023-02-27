@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "valleycraft:block/guidestone_here",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "valleycraft:block/guidestone_here"
+    },
+    "facing=south": {
+      "model": "valleycraft:block/guidestone_here",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "valleycraft:block/guidestone_here",
+      "y": 270
+    }
+  }
+}

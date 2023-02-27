@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "valleycraft:block/guidestone_symbol_hunger",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "valleycraft:block/guidestone_symbol_hunger"
+    },
+    "facing=south": {
+      "model": "valleycraft:block/guidestone_symbol_hunger",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "valleycraft:block/guidestone_symbol_hunger",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "valleycraft:block/guidestone_symbol_death",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "valleycraft:block/guidestone_symbol_death"
+    },
+    "facing=south": {
+      "model": "valleycraft:block/guidestone_symbol_death",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "valleycraft:block/guidestone_symbol_death",
+      "y": 270
+    }
+  }
+}
