@@ -20,7 +20,8 @@ public class ModVillagers {
 
     //can generate in stables
     public static final PointOfInterestType STABLEHAND_POI = registerPOI("stablehand_poi", BlocksModded.STABLEHAND_STATION.block);
-    public static final VillagerProfession STABLEHAND = registerPro("stablehand", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "stablehand_poi")));
+    public static final VillagerProfession STABLEHAND = registerPro("stablehand", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY,
+            new Identifier(Main.ID, "stablehand_poi")));
 
     public static final PointOfInterestType INNKEEPER_POI = registerPOI("innkeeper_poi", BlocksModded.KEG.block);
     public static final VillagerProfession INNKEEPER = registerPro("innkeeper", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "innkeeper_poi")));

@@ -10,7 +10,7 @@
     "description": {
       "text": "Rescue a bottle trapped Allay"
     },
-    "frame": "challenge",
+    "frame": "task",
     "hidden": "true"
   },
   "criteria": {
