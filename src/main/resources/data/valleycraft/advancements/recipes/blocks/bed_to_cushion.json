@@ -1,0 +1,57 @@
+{
+  "parent": "valleycraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:white_bed",
+              "minecraft:orange_bed",
+              "minecraft:magenta_bed",
+              "minecraft:light_blue_bed",
+              "minecraft:yellow_bed",
+              "minecraft:lime_bed",
+              "minecraft:pink_bed",
+              "minecraft:gray_bed",
+              "minecraft:light_gray_bed",
+              "minecraft:cyan_bed",
+              "minecraft:purple_bed",
+              "minecraft:blue_bed",
+              "minecraft:brown_bed",
+              "minecraft:green_bed",
+              "minecraft:red_bed",
+              "minecraft:black_bed"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "valleycraft:black_cushion",
+      "valleycraft:blue_cushion",
+      "valleycraft:brown_cushion",
+      "valleycraft:cyan_cushion",
+      "valleycraft:gray_cushion",
+      "valleycraft:green_cushion",
+      "valleycraft:light_blue_cushion",
+      "valleycraft:light_gray_cushion",
+      "valleycraft:lime_cushion",
+      "valleycraft:magenta_cushion",
+      "valleycraft:orange_cushion",
+      "valleycraft:purple_cushion",
+      "valleycraft:pink_cushion",
+      "valleycraft:yellow_cushion",
+      "valleycraft:white_cushion",
+      "valleycraft:red_cushion"
+    ]
+  }
+}

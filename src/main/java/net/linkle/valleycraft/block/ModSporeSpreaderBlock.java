@@ -33,7 +33,7 @@ public class ModSporeSpreaderBlock extends ModMushroomBlockDaySafe {
         BlockPos.Mutable mutable = new BlockPos.Mutable();
 
         for(int l = 0; l < 14; ++l) {
-            mutable.set(i + MathHelper.nextInt(random, -10, 10), j - random.nextInt(10), k + MathHelper.nextInt(random, -10, 10));
+            mutable.set(i + MathHelper.nextInt(random, -10, 10), j + random.nextInt(10), k + MathHelper.nextInt(random, -10, 10));
             BlockState blockState = world.getBlockState(mutable);
             if (!blockState.isFullCube(world, mutable)) {
                 world.addParticle(ParticleTypes.MYCELIUM, (double)mutable.getX() + random.nextDouble(), (double)mutable.getY() + random.nextDouble(), (double)mutable.getZ() + random.nextDouble(), 0.0D, 0.0D, 0.0D);

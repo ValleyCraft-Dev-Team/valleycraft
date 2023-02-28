@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:clam_block"
+    },
+    {
+      "item": "valleycraft:urchin_block"
+    },
+    {
+      "item": "valleycraft:tube_worms_block"
+    },
+    {
+      "item": "valleycraft:barnacle_block"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:shell_gravel",
+    "count": 1
+  }
+}

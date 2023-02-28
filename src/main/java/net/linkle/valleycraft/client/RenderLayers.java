@@ -67,11 +67,28 @@ class RenderLayers {
         put(GUIDESTONE_TOOL_HOE, cullout);
         put(GUIDESTONE_TOOL_PICKAXE, cullout);
         put(GUIDESTONE_TOOL_SWORD, cullout);
-        put(GUIDdESTONE_TOOL_SHOVEL, cullout);
+        put(GUIDESTONE_TOOL_SHOVEL, cullout);
         put(GUIDESTONE_TOOL_POTION, cullout);
         put(GUIDESTONE_TOWER, cullout);
         put(GUIDESTONE_TRADE, cullout);
         put(GUIDESTONE_VILLAGE, cullout);
+
+        put(BLACK_CUSHION, cullout);
+        put(BLUE_CUSHION, cullout);
+        put(BROWN_CUSHION, cullout);
+        put(CYAN_CUSHION, cullout);
+        put(GRAY_CUSHION, cullout);
+        put(GREEN_CUSHION, cullout);
+        put(LIGHT_BLUE_CUSHION, cullout);
+        put(LIGHT_GRAY_CUSHION, cullout);
+        put(LIME_CUSHION, cullout);
+        put(MAGENTA_CUSHION, cullout);
+        put(ORANGE_CUSHION, cullout);
+        put(PURPLE_CUSHION, cullout);
+        put(PINK_CUSHION, cullout);
+        put(YELLOW_CUSHION, cullout);
+        put(WHITE_CUSHION, cullout);
+        put(RED_CUSHION, cullout);
 
         // Flowers and Potted Flowers
         put(BLACK_DAHLIA, cullout);

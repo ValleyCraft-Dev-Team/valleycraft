@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:pink_bed"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:pink_cushion",
+    "count": 2
+  }
+}

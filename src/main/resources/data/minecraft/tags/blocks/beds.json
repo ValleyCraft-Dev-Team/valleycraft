@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:black_cushion",
+    "valleycraft:blue_cushion",
+    "valleycraft:brown_cushion",
+    "valleycraft:cyan_cushion",
+    "valleycraft:gray_cushion",
+    "valleycraft:green_cushion",
+    "valleycraft:light_blue_cushion",
+    "valleycraft:light_gray_cushion",
+    "valleycraft:lime_cushion",
+    "valleycraft:magenta_cushion",
+    "valleycraft:orange_cushion",
+    "valleycraft:purple_cushion",
+    "valleycraft:pink_cushion",
+    "valleycraft:yellow_cushion",
+    "valleycraft:white_cushion",
+    "valleycraft:red_cushion"
+  ]
+}

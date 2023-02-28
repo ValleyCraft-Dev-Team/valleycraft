@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:light_gray_bed"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:light_gray_cushion",
+    "count": 2
+  }
+}

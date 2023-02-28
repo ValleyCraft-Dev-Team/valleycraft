@@ -1,0 +1,37 @@
+{
+  "parent": "valleycraft:wilder_horizons/root",
+  "display": {
+    "title": {
+      "text": "\"-and in a single day and night...\""
+    },
+    "icon": {
+      "item": "valleycraft:flower_crown"
+    },
+    "description": {
+      "text": "Where did they go?"
+    },
+    "frame": "challenge",
+    "hidden": "true"
+  },
+  "criteria": {
+    "daerdrin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:daerdri_skull",
+              "valleycraft:rounded_clay_pot",
+              "valleycraft:rounded_blue_clay_pot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "daerdrin"
+    ]
+  ]
+}

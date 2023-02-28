@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:lime_bed"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:lime_cushion",
+    "count": 2
+  }
+}

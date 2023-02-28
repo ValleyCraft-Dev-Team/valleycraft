@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.registry.*;
 import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.tag.TagKey;
 
 public class Contents {
@@ -87,7 +88,36 @@ public class Contents {
         putFuels(BlocksNatural.GLOW_CAP, 800);
         putFuels(BlocksNatural.GLOW_CAP_CLUSTER, 2400);
         putFuels(BlocksNatural.CATTAILS, 100);
+        putFuels(ItemsModded.PUFF_BALL, 100);
+        putFuels(ItemsModded.CLOTH, 100);
+        putFuels(ItemsModded.PLANT_FIBER_CANVAS, 100);
+        putFuels(ItemsModded.PLANT_FIBER_STRING, 100);
+        putFuels(ItemsModded.FIBER, 100);
+        putFuels(ItemsModded.DRIED_FIBER, 100);
+        putFuels(ItemsModded.PLANK, 150);
+        putFuels(FoodIngredients.FIRE_PEPPER, 50);
+        putFuels(ItemsModded.HANDLE, 250);
+        putFuels(ItemsModded.REINFORCED_HANDLE, 250);
+        putFuels(ItemsModded.STURDY_HANDLE, 250);
+        putFuels(ItemsModded.ANTHRACITE, 1600);
+        putFuels(BlocksModded.ANTHRACITE_BLOCK, 16000);
+        putFuels(ItemsModded.BRIMSTONE_SHARD, 800);
+        putFuels(Items.BLAZE_POWDER, 1200);
+        putFuels(Items.NETHER_STAR, 32000);
+        putFuels(ItemsModded.STRANGE_CATALYST, 32000);
+        putFuels(ItemsModded.THERMAL_BLAZE_CORE, 4000);
 
+        putFuels(Tools.KNIFE_WOODEN, 200);
+        putFuels(Tools.GREATSWORD_WOODEN, 200);
+        putFuels(Tools.TRAVELER_WOODEN, 200);
+        putFuels(Tools.DAGGER_WOODEN, 200);
+        putFuels(Tools.SCYTHE_WOODEN, 200);
+        putFuels(Tools.WOODCUTTER_AXE_WOODEN, 200);
+        putFuels(Tools.HATCHET_WOODEN, 200);
+        putFuels(Tools.WOODEN_OAR, 200);
+        putFuels(Tools.BRANCH, 400);
+        putFuels(Tools.WOODEN_STAFF, 300);
+        putFuels(Tools.BAMBOO_STAFF, 300);
     }
     
     private static void putStrip(BlockConvertible input, BlockConvertible stripped) {

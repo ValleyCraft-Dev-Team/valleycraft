@@ -38,7 +38,6 @@ public class Main implements ModInitializer {
 		ModBlockEntityType.initialize();
 		Fluids.initialize();
 		BlocksModded.initialize();
-		ModFuelRegistry.registerModFuels();
 
 		Contents.initialize();
 		ModFoliagePlacerType.initialize();

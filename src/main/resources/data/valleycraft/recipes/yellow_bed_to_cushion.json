@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:yellow_bed"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:yellow_cushion",
+    "count": 2
+  }
+}

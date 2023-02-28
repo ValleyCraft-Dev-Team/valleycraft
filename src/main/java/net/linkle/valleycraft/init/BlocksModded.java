@@ -107,6 +107,23 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     WATTLE_TABLE(new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     WATTLE_TABLE_CLOTHE(new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
 
+    BLACK_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    BLUE_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    BROWN_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    CYAN_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    GRAY_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    GREEN_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    LIGHT_BLUE_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    LIGHT_GRAY_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    LIME_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    MAGENTA_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    ORANGE_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    PURPLE_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    PINK_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    YELLOW_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    WHITE_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+    RED_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.BLACK_BED).nonOpaque()), itemSettings()),
+
     DIRT_ROAD(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
 
     CANVAS_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_CARPET)), itemSettings()),
