@@ -17,7 +17,6 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public enum ItemsModded implements ItemEnum {
-    //RAW_CLAY_POT(new ClayPotItem(itemSettings().maxCount(16).group(VC_ITEMS))),
     CLAY_POT(new ClayPotItem(itemSettings().maxCount(8).group(VC_ITEMS))),
     WATER_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(4).group(VC_ITEMS).recipeRemainder(ItemsModded.CLAY_POT.item), 0, 0.0f)),
 
@@ -84,17 +83,13 @@ public enum ItemsModded implements ItemEnum {
     SALTPETER(new Item(itemSettings())),
     ANTHRACITE(new Item(itemSettings())),
     BRIMSTONE_SHARD(new Item(itemSettings())),
-    //RAW_COPPER_NUGGET(new Item(itemSettings())),
     COPPER_NUGGET(new Item(itemSettings())),
     COPPER_SCRAP(new Item(itemSettings())),
-    //RAW_GOLD_NUGGET(new Item(itemSettings())),
     GOLD_SCRAP(new Item(itemSettings())),
-    //RAW_PRIMSTEEL_NUGGET(new Item(itemSettings())),
     PRIMSTEEL_RAW(new Item(itemSettings())),
     PRIMSTEEL_NUGGET(new Item(itemSettings())),
     PRIMSTEEL_SCRAP(new Item(itemSettings())),
     PRIMSTEEL_INGOT(new Item(itemSettings())),
-    //RAW_IRON_NUGGET(new Item(itemSettings())),
     IRON_SCRAP(new Item(itemSettings())),
     BRASIUM_INGOT(new Item(itemSettings())),
     ROSEGOLD_INGOT(new Item(itemSettings())),

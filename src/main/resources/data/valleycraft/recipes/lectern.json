@@ -12,9 +12,9 @@
     }
   },
   "pattern": [
-    "XSX",
+    " S ",
     "XBX",
-    "XSX"
+    " S "
   ],
   "result": {
     "item": "minecraft:lectern"

@@ -171,7 +171,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     GUIDESTONE_TOOL_HOE(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
     GUIDESTONE_TOOL_PICKAXE(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
     GUIDESTONE_TOOL_POTION(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
-    GUIDdESTONE_TOOL_SHOVEL(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
+    GUIDESTONE_TOOL_SHOVEL(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
     GUIDESTONE_TOOL_SWORD(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
 
     GUIDESTONE_SYMBOL_DEATH(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),

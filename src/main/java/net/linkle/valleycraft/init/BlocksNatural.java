@@ -45,7 +45,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
 
     HONEYCLUSTER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     LAVENDER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
-    MOSS_SPROUTLET(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    MOSS_SPROUTLET(new ModMushroomBlockDaySafe(), itemSettings()),
     ORANGE_BEAUTY(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     PURPLE_TULIP(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     YELLOW_TULIP(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
@@ -298,7 +298,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.IRON_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
     DEEPSLATE_FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
     NETHER_FOSSIL_ORE(new OreBlock(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
-    BONE_JOINT(new Block(Block.Settings.copy(Blocks.BONE_BLOCK)), itemSettings()),
+    //BONE_JOINT(new Block(Block.Settings.copy(Blocks.BONE_BLOCK)), itemSettings()),
 
     //skulls and skeletons go here
     VILLAGER_SKELETAL_REMAINS(new SkeletalRemainsBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.STONE)), itemSettings().rarity(Rarity.UNCOMMON)),

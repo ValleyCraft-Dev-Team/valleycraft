@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "minecraft:stone_crafting_materials"
+      "item": "valleycraft:fan_mold"
     }
   ],
   "result": {
-    "item": "valleycraft:rocks",
-    "count": 4
+    "item": "minecraft:sugar",
+    "count": 1
   }
 }

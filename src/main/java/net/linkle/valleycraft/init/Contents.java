@@ -84,6 +84,10 @@ public class Contents {
     
     private static void fuels() {
         putFuels(BlocksModded.CHARCOAL_BLOCK, 16000);
+        putFuels(BlocksNatural.GLOW_CAP, 800);
+        putFuels(BlocksNatural.GLOW_CAP_CLUSTER, 2400);
+        putFuels(BlocksNatural.CATTAILS, 100);
+
     }
     
     private static void putStrip(BlockConvertible input, BlockConvertible stripped) {
