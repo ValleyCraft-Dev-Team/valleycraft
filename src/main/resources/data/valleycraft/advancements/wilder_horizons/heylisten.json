@@ -2,27 +2,25 @@
   "parent": "valleycraft:wilder_horizons/root",
   "display": {
     "title": {
-      "text": "Dear Fellow Traveler"
+      "text": "Hey, Listen!"
     },
     "icon": {
-      "item": "valleycraft:totem_of_appreciation"
+      "item": "valleycraft:allay_bottle"
     },
     "description": {
-      "text": "Find another Midlander"
+      "text": "Rescue a bottle trapped Allay"
     },
     "frame": "challenge",
     "hidden": "true"
   },
   "criteria": {
-    "midlander": {
+    "allay": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "valleycraft:skeletal_remains",
-              "minecraft:skeleton_skull",
-              "minecraft:wither_skeleton_skull"
+              "valleycraft:allay_bottle"
             ]
           }
         ]
@@ -31,7 +29,7 @@
   },
   "requirements": [
     [
-      "midlander"
+      "allay"
     ]
   ]
 }

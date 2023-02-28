@@ -1,9 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "  #",
-    " I ",
-    "A  "
+    " #",
+    "I "
   ],
   "key": {
     "#": {
@@ -11,9 +10,6 @@
     },
     "I": {
       "item": "minecraft:iron_nugget"
-    },
-    "A": {
-      "item": "minecraft:amethyst_shard"
     }
   },
   "result": {

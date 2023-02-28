@@ -72,6 +72,7 @@ class RenderLayers {
         put(GUIDESTONE_TOWER, cullout);
         put(GUIDESTONE_TRADE, cullout);
         put(GUIDESTONE_VILLAGE, cullout);
+        put(MEMBRANE_BLOCK, translucent);
 
         put(BLACK_CUSHION, cullout);
         put(BLUE_CUSHION, cullout);

@@ -2,25 +2,21 @@ package net.linkle.valleycraft.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.ai.pathing.NavigationType;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class CushionBlock extends Block {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 9, 16);
-
-    public CushionBlock(Settings settings) {
+public class MembraneBlock extends Block {
+    public MembraneBlock(Settings settings) {
         super(settings);
     }
 
     public void onLandedUpon(World world, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
-        super.onLandedUpon(world, state, pos, entity, fallDistance * 0.5F);
+        super.onLandedUpon(world, state, pos, entity, fallDistance * 0.1f);
     }
 
     public void onEntityLand(BlockView world, Entity entity) {
@@ -39,17 +35,5 @@ public class CushionBlock extends Block {
             entity.setVelocity(vec3d.x, -vec3d.y * 0.6600000262260437D * d, vec3d.z);
         }
 
-    }
-
-    public boolean canPathfindThrough(BlockState state, BlockView world, BlockPos pos, NavigationType type) {
-        return false;
-    }
-
-    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
-    }
-
-    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return SHAPE;
     }
 }

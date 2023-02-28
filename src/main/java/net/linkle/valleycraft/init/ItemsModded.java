@@ -10,6 +10,7 @@ import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.item.clay_pot.ClayPotItem;
 import net.linkle.valleycraft.item.clay_pot.WaterClayPotItem;
 import net.linkle.valleycraft.util.ItemEnum;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -71,6 +72,9 @@ public enum ItemsModded implements ItemEnum {
     TREATED_LEATHER(new Item(itemSettings())),
     LEATHER_STRAP(new Item(itemSettings())),
     GHAST_TEARS(new Tier0Bottle(itemSettings().maxCount(16).rarity(UNCOMMON).recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE), 0, 0.0f, StatusEffects.REGENERATION).hideTooltip()),
+
+    ALLAY_BOTTLE(new SpawnEggItem(EntityType.ALLAY,16777215,16777215, (new Item.Settings().group(VC_ITEMS).rarity(UNCOMMON)))),
+
     INK_BOTTLE(new Tier0Bottle(itemSettings().maxCount(16), 0, 0.0f, StatusEffects.BLINDNESS).hideTooltip()),
     QUILL(new Item(itemSettings())),
     RUNE_ETCHING_BLADE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
