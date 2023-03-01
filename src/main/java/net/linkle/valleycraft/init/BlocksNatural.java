@@ -177,11 +177,13 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     YELLOW_ANEMONE(new SeagrassBlock(Block.Settings.copy(Blocks.FIRE_CORAL).sounds(BlockSoundGroup.CORAL).nonOpaque()), itemSettings()),
 
     SHELL_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),
+
+    /**saving for 1.1**/
     //DEEP_SEA_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
     //ABYSSAL_SAND(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
-    VOLCANIC_STONE(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
-    VOLCANIC_MAGMA_STONE(new Block(Block.Settings.copy(Blocks.MAGMA_BLOCK).sounds(BlockSoundGroup.TUFF)), itemSettings()),
-    VOLCANIC_ASH(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
+    //VOLCANIC_STONE(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    //VOLCANIC_MAGMA_STONE(new Block(Block.Settings.copy(Blocks.MAGMA_BLOCK).sounds(BlockSoundGroup.TUFF)), itemSettings()),
+    //VOLCANIC_ASH(new FallingBlock(Block.Settings.copy(Blocks.SAND)), itemSettings()),
 
     MAMON_LOG(new PillarBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
     MAMON_LEAVES(new LeavesBlock(Block.Settings.copy(Blocks.OAK_LEAVES)), itemSettings()),
