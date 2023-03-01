@@ -1,6 +1,5 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.init.BlocksNatural.VOLCANIC_STONE;
 import static net.linkle.valleycraft.init.Groups.NON_NATURAL_BLOCKS;
 import static net.linkle.valleycraft.init.Groups.VC_TOOLS;
 import static net.linkle.valleycraft.util.BookStackVoxelShapes.*;
@@ -848,9 +847,9 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     SCORCHSTONE_MOSAIC_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
 
     //volc
-    VOLCANIC_STONE_STAIRS(new StairsBlock(VOLCANIC_STONE.getState(), Block.Settings.copy(Blocks.TUFF)), itemSettings()),
-    VOLCANIC_STONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
-    VOLCANIC_STONE_WALL(new WallBlock(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    //VOLCANIC_STONE_STAIRS(new StairsBlock(VOLCANIC_STONE.getState(), Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    //VOLCANIC_STONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
+    //VOLCANIC_STONE_WALL(new WallBlock(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
 
     //mud bricks
     PACKED_MUD_STAIRS(new StairsBlock(Blocks.PACKED_MUD.getDefaultState(), Block.Settings.copy(Blocks.PACKED_MUD)), itemSettings()),

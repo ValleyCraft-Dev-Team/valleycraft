@@ -188,6 +188,7 @@ class RenderLayers {
         put(STALWART_SHROOM, cullout);
         put(SHORT_GRASS, cullout);
         put(SHIVERCAP, cullout);
+        put(SHIVERCAP, translucent);
         put(WILD_BEET, cullout);
         put(WILD_CARROT, cullout);
         put(WILD_POTATO, cullout);
