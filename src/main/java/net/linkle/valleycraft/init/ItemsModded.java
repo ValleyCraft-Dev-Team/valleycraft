@@ -124,13 +124,24 @@ public enum ItemsModded implements ItemEnum {
     SLUDGE_BUCKET(new BucketItem(Fluids.SLUDGE_STILL.fluid, itemSettings().maxCount(1).recipeRemainder(Items.BUCKET))),
 
     // spawn eggs
-    ABYSSWATCHER_SPAWN_EGG(new SpawnEggItem(Entities.ABYSSWATCHER.type(), 0x09424C, 0x22DBE5, itemSettings())), // abysswatcher_spawn_egg
-    PERCH_SPAWN_EGG(new SpawnEggItem(Entities.PERCH.type(), 0x724E00, 0xCC9D26, itemSettings())), // perch_spawn_egg
-    RED_PORGY_SPAWN_EGG(new SpawnEggItem(Entities.RED_PORGY.type(), 0xF48DB0, 0xF9EDF1, itemSettings())), // red_porgy_spawn_egg
-    SARDINE_SPAWN_EGG(new SpawnEggItem(Entities.SARDINE.type(), 0x2E445B, 0xA1B1CC, itemSettings())), // sardine_spawn_egg
-    STONEROLLER_MINNOW_SPAWN_EGG(new SpawnEggItem(Entities.STONEROLLER_MINNOW.type(), 0x608C85, 0xCCCCCC, itemSettings())), // STONEROLLER_MINNOW_spawn_egg
-    BONEFIN_SPAWN_EGG(new SpawnEggItem(Entities.BONEFIN.type(), 0xE5E0CE, 0xBFB799, itemSettings())), // bonefin_spawn_egg
-    ZOD_SPAWN_EGG(new SpawnEggItem(Entities.ZOD.type(), 0x557571, 0xCCB599, itemSettings())); // zod_spawn_egg
+    ABYSSWATCHER_SPAWN_EGG(new SpawnEggItem(Entities.ABYSSWATCHER.type(), 0x07313a, 0x00999c, itemSettings())),
+    PERCH_SPAWN_EGG(new SpawnEggItem(Entities.PERCH.type(), 0x724E00, 0xCC9D26, itemSettings())),
+    RED_PORGY_SPAWN_EGG(new SpawnEggItem(Entities.RED_PORGY.type(), 0xF48DB0, 0xF9EDF1, itemSettings())),
+    SARDINE_SPAWN_EGG(new SpawnEggItem(Entities.SARDINE.type(), 0x2E445B, 0xA1B1CC, itemSettings())),
+    STONEROLLER_MINNOW_SPAWN_EGG(new SpawnEggItem(Entities.STONEROLLER_MINNOW.type(), 0x608C85, 0xCCCCCC, itemSettings())),
+    BONEFIN_SPAWN_EGG(new SpawnEggItem(Entities.BONEFIN.type(), 0xE5E0CE, 0xBFB799, itemSettings())),
+    ZOD_SPAWN_EGG(new SpawnEggItem(Entities.ZOD.type(), 0x557571, 0xCCB599, itemSettings())),
+    PUPKIN_SPAWN_EGG(new SpawnEggItem(Entities.PUPKIN.type(), 0xe38a1d, 0x441300, itemSettings())),
+    DAIRY_COW_SPAWN_EGG(new SpawnEggItem(Entities.DAIRY_COW.type(), 0xf1f1f1, 0x282828, itemSettings())),
+    CHICKEN_SPAWN_EGG(new SpawnEggItem(Entities.CHICKEN.type(), 0xac5d31, 0xc19343, itemSettings())),
+    DUCK_SPAWN_EGG(new SpawnEggItem(Entities.DUCK.type(), 0x502e00, 0x1a3aad, itemSettings())),
+    MOSSY_SHEEP_SPAWN_EGG(new SpawnEggItem(Entities.MOSSY_SHEEP.type(), 0x647233, 0x6a5227, itemSettings())),
+    //GOLDEN_RETRIEVER_SPAWN_EGG(new SpawnEggItem(Entities.DOG.type(), 0xe38a1d, 0x441300, itemSettings())),
+    //BORDER_COLLIE_SPAWN_EGG(new SpawnEggItem(Entities.DOG.type(), 0xe38a1d, 0x441300, itemSettings())),
+    BROWN_BEAR_SPAWN_EGG(new SpawnEggItem(Entities.BROWN_BEAR.type(), 0x3e2912, 0x291a0c, itemSettings())),
+    SNAIL_SPAWN_EGG(new SpawnEggItem(Entities.SNAIL.type(), 0xf1da85, 0xb88d55, itemSettings())),
+    CAVE_SNAIL_SPAWN_EGG(new SpawnEggItem(Entities.CAVE_SNAIL.type(), 0xa08d71, 0x735450, itemSettings())),
+    SCULK_SNAIL_SPAWN_EGG(new SpawnEggItem(Entities.SCULK_SNAIL.type(), 0x009295, 0x0c232c, itemSettings()));
 
     public static void initialize() {
         FoodTiered.initialize();

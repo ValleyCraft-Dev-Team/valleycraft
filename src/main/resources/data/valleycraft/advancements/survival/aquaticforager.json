@@ -1,0 +1,94 @@
+{
+  "parent": "valleycraft:survival/scraping_by",
+  "display": {
+    "title": {
+      "text": "Aquatic Forager"
+    },
+    "icon": {
+      "item": "valleycraft:clam_block"
+    },
+    "description": {
+      "text": "Go diving for Clams, Kelp, Glow Kelp, Maroon Kelp, and Sea Urchins"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "clam_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:clam_block",
+            ]
+          }
+        ]
+      }
+    },
+    "urchin_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:urchin_block",
+            ]
+          }
+        ]
+      }
+    },
+    "kelp": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:kelp",
+            ]
+          }
+        ]
+      }
+    },
+    "glow_kelp": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:glow_kelp",
+            ]
+          }
+        ]
+      }
+    },
+    "orange_kelp": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:orange_kelp",
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "clam_block"
+    ],
+    [
+      "urchin_block"
+    ],
+    [
+      "kelp"
+    ],
+    [
+      "glow_kelp"
+    ],
+    [
+      "orange_kelp"
+    ]
+  ]
+}

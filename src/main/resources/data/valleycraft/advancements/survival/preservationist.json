@@ -1,0 +1,184 @@
+{
+  "parent": "valleycraft:survival/aquaticforager",
+  "display": {
+    "title": {
+      "text": "Marine Preservationist"
+    },
+    "icon": {
+      "item": "valleycraft:red_porgy_bucket"
+    },
+    "description": {
+      "text": "Catch every major Fish type with a Bucket of Water"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "red_porgy_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:red_porgy_bucket",
+            ]
+          }
+        ]
+      }
+    },
+    "stoneroller_minnow_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:stoneroller_minnow_bucket",
+            ]
+          }
+        ]
+      }
+    },
+    "abysswatcher_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:abysswatcher_bucket",
+            ]
+          }
+        ]
+      }
+    },
+    "sardine_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:sardine_bucket",
+            ]
+          }
+        ]
+      }
+    },
+    "perch_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:perch_bucket",
+            ]
+          }
+        ]
+      }
+    },
+    "zod_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:zod_bucket",
+            ]
+          }
+        ]
+      }
+    },
+    "bonefin_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:bonefin_bucket",
+            ]
+          }
+        ]
+      }
+    },
+    "cod_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cod_bucket",
+            ]
+          }
+        ]
+      }
+    },
+    "salmon_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:salmon_bucket",
+            ]
+          }
+        ]
+      }
+    },
+    "pufferfish_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pufferfish_bucket",
+            ]
+          }
+        ]
+      }
+    },
+    "tropical_fish_bucket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:tropical_fish_bucket",
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "red_porgy_bucket"
+    ],
+    [
+      "stoneroller_minnow_bucket"
+    ],
+    [
+      "abysswatcher_bucket"
+    ],
+    [
+      "sardine_bucket"
+    ],
+    [
+      "perch_bucket"
+    ],
+    [
+      "zod_bucket"
+    ],
+    [
+      "bonefin_bucket"
+    ],
+    [
+      "cod_bucket"
+    ],
+    [
+      "salmon_bucket"
+    ],
+    [
+      "pufferfish_bucket"
+    ],
+    [
+      "tropical_fish_bucket"
+    ]
+  ]
+}
