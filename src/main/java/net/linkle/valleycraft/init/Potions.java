@@ -58,7 +58,6 @@ public class Potions {
         registerRecipe(Potions.HASTE_POTION, Items.REDSTONE, Potions.HASTE_POTION_FAST);
 
         registerRecipe(net.minecraft.potion.Potions.AWKWARD, Items.GOAT_HORN, net.minecraft.potion.Potions.STRENGTH);
-        registerRecipe(net.minecraft.potion.Potions.AWKWARD, Items.ECHO_SHARD, net.minecraft.potion.Potions.STRENGTH);
 
         registerRecipe(net.minecraft.potion.Potions.AWKWARD, ItemsModded.MONSTER_CLAW.item, Potions.FERAL_STRENGTH);
         registerRecipe(Potions.FERAL_STRENGTH, Items.GLOWSTONE_DUST, Potions.FERAL_STRENGTH_LONG);
@@ -67,9 +66,6 @@ public class Potions {
         registerRecipe(net.minecraft.potion.Potions.AWKWARD, FoodRegular.CRYSTALLIZED_HONEYDROP.item, net.minecraft.potion.Potions.REGENERATION);
 
         registerRecipe(net.minecraft.potion.Potions.AWKWARD, ItemsModded.DRAGON_TOOTH.item, Potions.DRAGONHEARTED);
-
-        registerRecipe(net.minecraft.potion.Potions.AWKWARD, BlocksNatural.VILLAGER_SKULL.item, Potions.BAD_OMEN);
-
     }
     
     private static Potion registerPotion(String name, Potion potion) {
@@ -78,6 +74,33 @@ public class Potions {
     
     private static void registerRecipe(Potion input, Item item, Potion output) {
         BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, FoodIngredients.INFECTED_MONSTER_HEART.item, Potions.ROT_BLIGHT_POTION);
+
         BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, Items.SCUTE, net.minecraft.potion.Potions.TURTLE_MASTER);
+
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, FoodIngredients.RAW_BAT_WING.item, LEVITATION_POTION);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.LEVITATION_POTION, Items.GLOWSTONE_DUST, Potions.LEVITATION_POTION_LONG);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.LEVITATION_POTION, Items.REDSTONE, Potions.LEVITATION_POTION_FAST);
+
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, BlocksNatural.CLAM_BLOCK.item, ABSORPTION_POTION);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.ABSORPTION_POTION, Items.GLOWSTONE_DUST, Potions.ABSORPTION_POTION_LONG);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.ABSORPTION_POTION, Items.REDSTONE, Potions.ABSORPTION_POTION_FAST);
+
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, Items.NAUTILUS_SHELL, net.minecraft.potion.Potions.LUCK);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.LUCK, Items.GLOWSTONE_DUST, Potions.LUCK_LONG);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.LUCK, Items.REDSTONE, Potions.LUCK_FAST);
+
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, Items.AMETHYST_SHARD, Potions.HASTE_POTION);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.HASTE_POTION, Items.GLOWSTONE_DUST, Potions.HASTE_POTION_LONG);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.HASTE_POTION, Items.REDSTONE, Potions.HASTE_POTION_FAST);
+
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, Items.GOAT_HORN, net.minecraft.potion.Potions.STRENGTH);
+
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, ItemsModded.MONSTER_CLAW.item, Potions.FERAL_STRENGTH);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(Potions.FERAL_STRENGTH, Items.GLOWSTONE_DUST, Potions.FERAL_STRENGTH_LONG);
+
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, ItemsModded.SLIME_BLOB.item, net.minecraft.potion.Potions.LEAPING);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, FoodRegular.CRYSTALLIZED_HONEYDROP.item, net.minecraft.potion.Potions.REGENERATION);
+
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, ItemsModded.DRAGON_TOOTH.item, Potions.DRAGONHEARTED);
     }
 }

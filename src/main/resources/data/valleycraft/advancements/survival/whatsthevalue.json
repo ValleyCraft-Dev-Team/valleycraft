@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:survival/scribe",
+  "display": {
+    "title": {
+      "text": "The Value of a Soul"
+    },
+    "icon": {
+      "item": "minecraft:enchanting_table"
+    },
+    "description": {
+      "text": "Create an Enchanting Table to convert Souls to Enchantments"
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "criteria": {
+    "enchanting": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanting_table"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "enchanting"
+    ]
+  ]
+}

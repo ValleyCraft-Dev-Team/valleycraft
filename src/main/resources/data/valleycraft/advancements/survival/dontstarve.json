@@ -1,0 +1,26 @@
+{
+  "parent": "valleycraft:survival/scraping_by",
+  "display": {
+    "title": {
+      "text": "Don't Starve- Yet."
+    },
+    "icon": {
+      "item": "valleycraft:cave_root"
+    },
+    "description": {
+      "text": "Find or prepare some food",
+      "color": "green"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "dontstarveyet": {
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "requirements": [
+    [
+      "dontstarveyet"
+    ]
+  ]
+}

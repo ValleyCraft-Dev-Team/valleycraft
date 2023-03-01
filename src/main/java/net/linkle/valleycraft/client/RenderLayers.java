@@ -368,11 +368,13 @@ class RenderLayers {
         put(HEAD_DROWNED_ALEX, cullout);
         put(HEAD_DROWNED_EFE, cullout);
         put(HEAD_DROWNED_STEVE, cullout);
+        put(HEAD_HUSK_STEVE, cullout);
         put(HEAD_HUSK_ALEX, cullout);
         put(HEAD_HUSK_EFE, cullout);
         put(HEAD_ROTTEN_ALEX, cullout);
         put(HEAD_ROTTEN_EFE, cullout);
         put(HEAD_ROTTEN_STEVE, cullout);
+        put(ENDERMAN_SKULL, cullout);
 
         put(COFFIN, cullout);
         put(DEEPSLATE_CHEST, cullout);
@@ -388,8 +390,10 @@ class RenderLayers {
         put(KEG, cullout);
         put(SMALL_CACTUS, cullout);
         put(PRIMSTEEL_BARS, cullout);
+        put(BLOCK_WATTLE_AND_GLASS, cullout);
         put(BLOCK_WATTLE_AND_GLASS_PLUS, cullout);
         put(BLOCK_WATTLE_AND_GLASS_CROSS, cullout);
+        put(BLOCK_WATTLE_AND_GLASS_PANE, cullout);
         put(BLOCK_WATTLE_AND_GLASS_PLUS_PANE, cullout);
         put(BLOCK_WATTLE_AND_GLASS_CROSS_PANE, cullout);
         put(TUMBLEWEED, cullout);

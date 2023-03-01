@@ -1,0 +1,64 @@
+{
+  "parent": "valleycraft:survival/brasiumpunker",
+  "display": {
+    "title": {
+      "text": "Cold Hearted"
+    },
+    "icon": {
+      "item": "valleycraft:ice_tongs"
+    },
+    "description": {
+      "text": "Use Ice Tongs to gather every Ice type"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "blue_ice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:blue_ice"
+            ]
+          }
+        ]
+      }
+    },
+    "packed_ice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:packed_ice"
+            ]
+          }
+        ]
+      }
+    },
+    "ice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:ice"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blue_ice"
+    ],
+    [
+      "packed_ice"
+    ],
+    [
+      "ice"
+    ]
+  ]
+}

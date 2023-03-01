@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:wilder_horizons/root",
+  "parent": "valleycraft:survival/scraping_by",
   "display": {
     "title": {
       "text": "Hey, Listen!"
@@ -10,7 +10,7 @@
     "description": {
       "text": "Rescue a bottle trapped Allay"
     },
-    "frame": "task",
+    "frame": "challenge",
     "hidden": "true"
   },
   "criteria": {

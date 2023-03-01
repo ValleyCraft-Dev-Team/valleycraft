@@ -1,0 +1,34 @@
+{
+  "parent": "valleycraft:survival/craftingmat",
+  "display": {
+    "title": {
+      "text": "*Ts Ts Ts Ts*"
+    },
+    "icon": {
+      "item": "valleycraft:sprinkler"
+    },
+    "description": {
+      "text": "Craft a Sprinkler"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "sprinkler": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:sprinkler"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sprinkler"
+    ]
+  ]
+}

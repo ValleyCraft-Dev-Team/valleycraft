@@ -1,0 +1,41 @@
+{
+  "parent": "valleycraft:survival/entrylog",
+  "display": {
+    "title": {
+      "text": "Brasiumpunker"
+    },
+    "icon": {
+      "item": "valleycraft:brasium_compound_bow"
+    },
+    "description": {
+      "text": "Use Brasium to create or upgrade a specialized tool."
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "brasium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:brasium_compound_bow",
+              "valleycraft:ice_tongs",
+              "valleycraft:anthropologists_rock_pick",
+              "valleycraft:climbing_axe",
+              "minecraft:spyglass",
+              "valleycraft:amethyst_goggles",
+              "valleycraft:nightvision_goggles"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "brasium"
+    ]
+  ]
+}

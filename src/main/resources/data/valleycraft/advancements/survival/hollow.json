@@ -1,0 +1,38 @@
+{
+  "parent": "valleycraft:survival/entrylog",
+  "display": {
+    "title": {
+      "text": "Hollowed"
+    },
+    "icon": {
+      "item": "valleycraft:faded_soul_rose"
+    },
+    "description": {
+      "text": "Harvest a Soul Rose"
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "soulrose": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:faded_soul_rose",
+              "valleycraft:soul_rose",
+              "valleycraft:blue_soul_rose",
+              "minecraft:wither_rose"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "soulrose"
+    ]
+  ]
+}

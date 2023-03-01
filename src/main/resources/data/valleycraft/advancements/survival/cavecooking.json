@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:cooking/root",
+  "parent": "valleycraft:survival/dontstarve",
   "display": {
     "title": {
       "text": "Caveman Culinaire"

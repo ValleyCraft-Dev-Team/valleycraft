@@ -1,0 +1,58 @@
+{
+  "parent": "valleycraft:survival/entrylog",
+  "display": {
+    "title": {
+      "text": "Introductory Anthropology"
+    },
+    "icon": {
+      "item": "valleycraft:anthropologists_rock_pick"
+    },
+    "description": {
+      "text": "Discover your first artifact."
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "artifact": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:daerdri_skull",
+              "valleycraft:rounded_clay_pot",
+              "valleycraft:rounded_blue_clay_pot",
+              "valleycraft:erdstone_cave_painting_portrait",
+              "valleycraft:erdstone_cave_painting_zombies",
+              "valleycraft:erdstone_cave_painting_home",
+              "valleycraft:erdstone_cave_painting_family",
+              "valleycraft:deepslate_urn_soul",
+              "valleycraft:deepslate_urn_angry",
+              "valleycraft:deepslate_urn_plain",
+              "valleycraft:brown_clay_pot",
+              "valleycraft:blue_clay_pot",
+              "valleycraft:green_clay_pot",
+              "valleycraft:defective_spawner",
+              "valleycraft:deepslate_chest",
+              "valleycraft:coffin",
+              "minecraft:trident",
+              "valleycraft:lich_hood_keepsake",
+              "valleycraft:lich_cloak_keepsake",
+              "valleycraft:rusted_sword",
+              "valleycraft:rusted_axe",
+              "valleycraft:rusted_hoe",
+              "valleycraft:rusted_pickaxe",
+              "valleycraft:rusted_shovel"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "artifact"
+    ]
+  ]
+}

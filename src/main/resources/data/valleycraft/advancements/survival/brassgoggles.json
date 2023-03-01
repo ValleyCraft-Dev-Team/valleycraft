@@ -1,26 +1,26 @@
 {
-  "parent": "valleycraft:wilder_horizons/root",
+  "parent": "valleycraft:survival/brasiumpunker",
   "display": {
     "title": {
-      "text": "We Have A Spy In Our Ranks"
+      "text": "Brasium Goggles La-Da-Da-Da-Da"
     },
     "icon": {
-      "item": "minecraft:feather"
+      "item": "valleycraft:amethyst_goggles"
     },
     "description": {
-      "text": "Paul was right?"
+      "text": "Craft a pair of Brasium Goggles"
     },
     "frame": "task",
-    "hidden": "true"
+    "hidden": "false"
   },
   "criteria": {
-    "feather": {
+    "amethyst_goggles": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "valleycraft:metal_feather"
+              "valleycraft:amethyst_goggles"
             ]
           }
         ]
@@ -29,7 +29,7 @@
   },
   "requirements": [
     [
-      "feather"
+      "amethyst_goggles"
     ]
   ]
 }

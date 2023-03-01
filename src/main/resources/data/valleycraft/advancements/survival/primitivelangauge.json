@@ -1,0 +1,37 @@
+{
+  "parent": "valleycraft:survival/historylessons",
+  "display": {
+    "title": {
+      "text": "The Writings On The Wall"
+    },
+    "icon": {
+      "item": "valleycraft:erdstone_cave_painting_portrait"
+    },
+    "description": {
+      "text": "Find Prehistoric Cave Art"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "erdstone_cave_painting": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:erdstone_cave_painting_portrait",
+              "valleycraft:erdstone_cave_painting_zombies",
+              "valleycraft:erdstone_cave_painting_home",
+              "valleycraft:erdstone_cave_painting_family"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "erdstone_cave_painting"
+    ]
+  ]
+}

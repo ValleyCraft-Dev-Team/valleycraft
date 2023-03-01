@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "VVV",
+    "BBB"
+  ],
+  "key": {
+    "V": {
+      "item": "valleycraft:plant_fiber_string"
+    },
+    "B": {
+      "item": "minecraft:bamboo"
+    }
+  },
+  "result": {
+    "item": "valleycraft:spike_trap_extension",
+    "count": 3
+  }
+}

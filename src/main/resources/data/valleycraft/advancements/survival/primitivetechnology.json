@@ -1,11 +1,11 @@
 {
-  "parent": "valleycraft:survival/root",
+  "parent": "valleycraft:survival/scraping_by",
   "display": {
     "title": {
       "text": "Primitive Technology"
     },
     "icon": {
-      "item": "valleycraft:makeshift_pickaxe"
+      "item": "valleycraft:makeshift_axe"
     },
     "description": {
       "text": "Craft a makeshift tool"

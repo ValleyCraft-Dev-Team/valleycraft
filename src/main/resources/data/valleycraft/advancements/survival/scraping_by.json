@@ -1,0 +1,27 @@
+{
+  "parent": "valleycraft:survival/root",
+  "display": {
+    "title": {
+      "text": "Scraping By"
+    },
+    "icon": {
+      "item": "valleycraft:rocks"
+    },
+    "description": {
+      "text": "Anything is better than nothing, I suppose",
+      "color": "green"
+    },
+    "frame": "task",
+    "hidden": "true"
+  },
+  "criteria": {
+    "scraping_by": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "scraping_by"
+    ]
+  ]
+}

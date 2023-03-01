@@ -1,0 +1,49 @@
+{
+  "parent": "valleycraft:survival/craftingmat",
+  "display": {
+    "title": {
+      "text": "Magical Fashion Statement"
+    },
+    "icon": {
+      "item": "valleycraft:amethyst_talisman"
+    },
+    "description": {
+      "text": "Craft an Amulet, Talisman, or Keepsake"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "necklace": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:amethyst_talisman",
+              "valleycraft:brimstone_necklace",
+              "valleycraft:diamond_talisman",
+              "valleycraft:echo_shard_talisman",
+              "valleycraft:emerald_talisman",
+              "valleycraft:ender_pearl_talisman",
+              "valleycraft:nether_quartz_talisman",
+              "valleycraft:prismarine_talisman",
+              "valleycraft:crystallized_honey_necklace",
+              "valleycraft:scute_necklace",
+              "valleycraft:undying_necklace",
+              "valleycraft:guardian_spike_talisman",
+              "valleycraft:dragon_tooth_keepsake",
+              "valleycraft:elder_guardian_spike_keepsake",
+              "valleycraft:nether_star_keepsake",
+              "valleycraft:ender_dragon_talisman"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "necklace"
+    ]
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "parent": "valleycraft:survival/entrylog",
+  "display": {
+    "title": {
+      "text": "Metallurgic Maniac"
+    },
+    "icon": {
+      "item": "valleycraft:rosegold_ingot"
+    },
+    "description": {
+      "text": "Craft the four known alloys"
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "brasium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:brasium_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "rosegold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:rosegold_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "echochalcum": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:echochalcum_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "netherite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:netherite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "brasium"
+    ],
+    [
+      "rosegold"
+    ],
+    [
+      "echochalcum"
+    ],
+    [
+      "netherite"
+    ]
+  ]
+}

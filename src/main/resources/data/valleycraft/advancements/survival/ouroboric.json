@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:wilder_horizons/allisblight",
+  "parent": "valleycraft:survival/solveetcoagula",
   "display": {
     "title": {
       "text": "Ouroboric"
@@ -10,7 +10,7 @@
     "description": {
       "text": "Extract Blight Essence"
     },
-    "frame": "task",
+    "frame": "goal",
     "hidden": "false"
   },
   "criteria": {

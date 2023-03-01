@@ -3,7 +3,8 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "entity/bed/brown",
-		"1": "block/oak_planks"
+		"1": "block/oak_planks",
+		"particle": "block/oak_planks"
 	},
 	"elements": [
 		{

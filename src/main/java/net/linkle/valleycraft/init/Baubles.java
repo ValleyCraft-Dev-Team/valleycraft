@@ -49,13 +49,12 @@ public enum Baubles implements ItemEnum {
     DRAGON_TOOTH_KEEPSAKE(new Item(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
 
     //miniboss keepsakes
-    LICH_HOOD_KEEPSAKE(new ArmorItem(ArmorMats.LICH_CLOAK, EquipmentSlot.HEAD, itemSettings().rarity(EPIC).maxCount(1))),
-    LICH_CLOAK_KEEPSAKE(new ArmorItem(ArmorMats.LICH_CLOAK, EquipmentSlot.CHEST, itemSettings().rarity(EPIC).maxCount(1))),
     ELDER_GUARDIAN_SPIKE_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
     /**warden keepsake replaces this line**/
     //boss keepsakes
     NETHER_STAR_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
     ENDER_DRAGON_TALISMAN(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)));
+
 
     public static void initialize() {
     }

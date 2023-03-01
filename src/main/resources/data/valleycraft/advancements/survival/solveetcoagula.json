@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:survival/entrylog",
+  "display": {
+    "title": {
+      "text": "Solve et coagula"
+    },
+    "icon": {
+      "item": "minecraft:brewing_stand"
+    },
+    "description": {
+      "text": "Craft or acquire a Brewing Stand"
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "brewing_stand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:brewing_stand"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "brewing_stand"
+    ]
+  ]
+}

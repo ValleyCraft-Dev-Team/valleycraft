@@ -1,5 +1,7 @@
 package net.linkle.valleycraft.item;
 
+import net.linkle.valleycraft.init.ItemsModded;
+import net.linkle.valleycraft.init.Tools;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -35,7 +37,7 @@ public class BombBagItem extends Item {
             }
 
             inventory.insertStack(new ItemStack(Items.TNT, MathHelper.nextInt(world.random, 3, 6)));
-            inventory.insertStack(new ItemStack(Items.FLINT_AND_STEEL, 1));
+            inventory.insertStack(new ItemStack(Tools.FLINT_AND_PRIMSTEEL, 1));
             return stack;
         }
 

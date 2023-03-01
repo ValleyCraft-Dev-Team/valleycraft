@@ -1,0 +1,185 @@
+{
+  "parent": "valleycraft:survival/tstststs",
+  "display": {
+    "title": {
+      "text": "A Seedy Situation"
+    },
+    "icon": {
+      "item": "valleycraft:seed_bag"
+    },
+    "description": {
+      "text": "Buy or find every known seed type"
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "criteria": {
+    "wheat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:wheat_seeds"
+            ]
+          }
+        ]
+      }
+    },
+    "pumpkin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pumpkin_seeds"
+            ]
+          }
+        ]
+      }
+    },
+    "melon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:melon_seeds"
+            ]
+          }
+        ]
+      }
+    },
+    "beetroot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:beetroot_seeds"
+            ]
+          }
+        ]
+      }
+    },
+    "rice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:rice_seeds"
+            ]
+          }
+        ]
+      }
+    },
+    "onion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:onion_seeds"
+            ]
+          }
+        ]
+      }
+    },
+    "fire_pepper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:fire_pepper_seeds"
+            ]
+          }
+        ]
+      }
+    },
+    "cave_root": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:cave_root_seeds"
+            ]
+          }
+        ]
+      }
+    },
+    "ancient_flower": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:ancient_flower_seeds"
+            ]
+          }
+        ]
+      }
+    },
+    "amethystle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:amethystle_seeds"
+            ]
+          }
+        ]
+      }
+    },
+    "puff_ball": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:puff_ball_seeds"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wheat"
+    ],
+    [
+      "pumpkin"
+    ],
+    [
+      "melon"
+    ],
+    [
+      "beetroot"
+    ],
+    [
+      "rice"
+    ],
+    [
+      "onion"
+    ],
+    [
+      "fire_pepper"
+    ],
+    [
+      "cave_root"
+    ],
+    [
+      "ancient_flower"
+    ],
+    [
+      "amethystle"
+    ],
+    [
+      "puff_ball"
+    ]
+  ]
+}

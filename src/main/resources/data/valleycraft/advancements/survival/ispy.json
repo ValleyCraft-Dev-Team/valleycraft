@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:survival/brassgoggles",
+  "display": {
+    "title": {
+      "text": "Come with me I'll show you how to be a metal man"
+    },
+    "icon": {
+      "item": "valleycraft:night_vision_goggles"
+    },
+    "description": {
+      "text": "Craft a pair of Night Vision Goggles"
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "criteria": {
+    "brasium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:nightvision_goggles"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "brasium"
+    ]
+  ]
+}

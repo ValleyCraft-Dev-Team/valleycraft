@@ -1,0 +1,82 @@
+{
+  "parent": "valleycraft:survival/lefestin",
+  "display": {
+    "title": {
+      "text": "Dressed for the Occasion"
+    },
+    "icon": {
+      "item": "valleycraft:chef_apron"
+    },
+    "description": {
+      "text": "Craft a Chef's Toque and Apron, Straw Hat, and Cowpoke Hat"
+    },
+    "frame": "goal"
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "criteria": {
+    "toque": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:chef_hat"
+            ]
+          }
+        ]
+      }
+    },
+    "apron": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:chef_apron"
+            ]
+          }
+        ]
+      }
+    },
+    "straw_hat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:straw_hat"
+            ]
+          }
+        ]
+      }
+    },
+    "cowpoke_hat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:cowpoke_hat"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "toque"
+    ],
+    [
+      "apron"
+    ],
+    [
+      "straw_hat"
+    ],
+    [
+      "cowpoke_hat"
+    ]
+  ]
+}

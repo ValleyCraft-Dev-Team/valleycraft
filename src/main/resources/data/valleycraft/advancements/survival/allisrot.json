@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:wilder_horizons/root",
+  "parent": "valleycraft:survival/entrylog",
   "display": {
     "title": {
       "text": "Entropy In Action?"

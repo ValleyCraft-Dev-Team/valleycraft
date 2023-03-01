@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:cooking/cavecooking",
+  "parent": "valleycraft:survival/cavecooking",
   "display": {
     "title": {
       "text": "Le Festin"

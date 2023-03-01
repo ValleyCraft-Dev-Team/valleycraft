@@ -1,30 +1,30 @@
 {
   "display": {
     "title": {
-      "text": "Scraping By",
+      "text": "\"Wake Up...\"",
       "bold": false
     },
     "description": {
-      "text": "Anything is better than nothing, I suppose",
+      "text": "My adventure begins",
       "color": "green"
     },
     "icon": {
-      "item": "valleycraft:rocks"
+      "item": "valleycraft:goddess_lily"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": true,
-    "background": "valleycraft:textures/advancements/background/patterned_thatch.png"
+    "hidden": false,
+    "background": "valleycraft:textures/advancements/background/erdstone_bricks.png"
   },
   "criteria": {
-    "scraping_by": {
-      "trigger": "minecraft:inventory_changed"
+    "location": {
+      "trigger": "minecraft:location"
     }
   },
   "requirements": [
     [
-      "scraping_by"
+      "location"
     ]
   ]
 }

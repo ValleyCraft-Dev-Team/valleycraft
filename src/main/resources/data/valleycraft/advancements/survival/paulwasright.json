@@ -1,28 +1,26 @@
 {
-  "parent": "valleycraft:wilder_horizons/root",
+  "parent": "valleycraft:survival/scraping_by",
   "display": {
     "title": {
-      "text": "\"-and in a single day and night...\""
+      "text": "We Have A Spy In Our Ranks"
     },
     "icon": {
-      "item": "valleycraft:flower_crown"
+      "item": "minecraft:feather"
     },
     "description": {
-      "text": "Where did they go?"
+      "text": "Paul was right?"
     },
     "frame": "challenge",
     "hidden": "true"
   },
   "criteria": {
-    "daerdrin": {
+    "feather": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "valleycraft:daerdri_skull",
-              "valleycraft:rounded_clay_pot",
-              "valleycraft:rounded_blue_clay_pot"
+              "valleycraft:metal_feather"
             ]
           }
         ]
@@ -31,7 +29,7 @@
   },
   "requirements": [
     [
-      "daerdrin"
+      "feather"
     ]
   ]
 }

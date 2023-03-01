@@ -1,28 +1,28 @@
 {
-  "parent": "valleycraft:wilder_horizons/root",
+  "parent": "valleycraft:survival/hollow",
   "display": {
     "title": {
-      "text": "Take Back the Night"
+      "text": "Season of the Lich"
     },
     "icon": {
-      "item": "valleycraft:dragon_tooth"
+      "item": "valleycraft:scythe_iron"
     },
     "description": {
-      "text": "Brew a Potion of the Dragonhearted"
+      "text": "Kill a Lich"
     },
     "frame": "task",
     "hidden": "false"
   },
   "criteria": {
-    "dragonhearted": {
+    "lich": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:potion"
-            ],
-            "potion": "valleycraft:dragonhearted_potion"
+              "valleycraft:lich_hood_keepsake",
+              "valleycraft:lich_cloak_keepsake"
+            ]
           }
         ]
       }
@@ -30,7 +30,7 @@
   },
   "requirements": [
     [
-      "dragonhearted"
+      "lich"
     ]
   ]
 }

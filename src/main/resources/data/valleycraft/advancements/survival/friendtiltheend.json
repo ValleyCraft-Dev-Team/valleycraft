@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:survival/allisblight",
+  "display": {
+    "title": {
+      "text": "Friends Til The End"
+    },
+    "icon": {
+      "item": "valleycraft:ender_dragon_talisman"
+    },
+    "description": {
+      "text": "Craft a Dragon Eye Keepsake"
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "criteria": {
+    "ender_dragon_talisman": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:ender_dragon_talisman"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "ender_dragon_talisman"
+    ]
+  ]
+}

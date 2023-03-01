@@ -1,0 +1,38 @@
+{
+  "parent": "valleycraft:survival/tstststs",
+  "display": {
+    "title": {
+      "text": "Spooky Scary Scarecrows"
+    },
+    "icon": {
+      "item": "valleycraft:scarecrow_hat"
+    },
+    "description": {
+      "text": "Craft a Scarecrow to fend off Crows"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "scarecrow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:scarecrow",
+              "valleycraft:scarecrow_glowing",
+              "valleycraft:scarecrow_target",
+              "valleycraft:scarecrow_hat",
+              "valleycraft:scarecrow_hat_glowing"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "scarecrow"
+    ]
+  ]
+}

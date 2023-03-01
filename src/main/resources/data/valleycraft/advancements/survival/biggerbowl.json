@@ -1,11 +1,11 @@
 {
-  "parent": "valleycraft:cooking/lefestin",
+  "parent": "valleycraft:survival/lefestin",
   "display": {
     "title": {
       "text": "We're Gonna Need A Bigger Bowl"
     },
     "icon": {
-      "item": "valleycraft:witch_ladle"
+      "item": "minecraft:cauldron"
     },
     "description": {
       "text": "Craft a cauldron and ladle"

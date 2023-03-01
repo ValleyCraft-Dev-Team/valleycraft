@@ -1,6 +1,7 @@
 package net.linkle.valleycraft.init;
 
 import static net.linkle.valleycraft.init.Groups.CLOTHING;
+import static net.minecraft.util.Rarity.EPIC;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.armors.ArmorMats;
@@ -119,6 +120,9 @@ public enum Armors implements ItemEnum {
     TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
     FUR_BOOTS(new ArmorItem(ArmorMats.RABBIT, EquipmentSlot.FEET, settingsNormal())),
+
+    LICH_HOOD_KEEPSAKE(new ArmorItem(ArmorMats.LICH_CLOAK, EquipmentSlot.HEAD, settingsNormal().rarity(EPIC).maxCount(1))),
+    LICH_CLOAK_KEEPSAKE(new ArmorItem(ArmorMats.LICH_CLOAK, EquipmentSlot.CHEST, settingsNormal().rarity(EPIC).maxCount(1))),
 
     /**special armors**/
 

@@ -1,28 +1,28 @@
 {
-  "parent": "valleycraft:wilder_horizons/root",
+  "parent": "valleycraft:survival/historylessons",
   "display": {
     "title": {
-      "text": "Dear Fellow Traveler"
+      "text": "\"-and in a single day and night...\""
     },
     "icon": {
-      "item": "valleycraft:totem_of_appreciation"
+      "item": "valleycraft:flower_crown"
     },
     "description": {
-      "text": "Find another Midlander"
+      "text": "Where did they go?"
     },
     "frame": "challenge",
     "hidden": "true"
   },
   "criteria": {
-    "midlander": {
+    "daerdrin": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "valleycraft:skeletal_remains",
-              "minecraft:skeleton_skull",
-              "minecraft:wither_skeleton_skull"
+              "valleycraft:daerdri_skull",
+              "valleycraft:rounded_clay_pot",
+              "valleycraft:rounded_blue_clay_pot"
             ]
           }
         ]
@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "midlander"
+      "daerdrin"
     ]
   ]
 }

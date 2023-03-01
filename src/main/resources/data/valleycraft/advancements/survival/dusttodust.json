@@ -1,0 +1,96 @@
+{
+  "parent": "valleycraft:survival/historylessons",
+  "display": {
+    "title": {
+      "text": "Dust to Dust"
+    },
+    "icon": {
+      "item": "valleycraft:villager_skull"
+    },
+    "description": {
+      "text": "Find a Villager, Piglin, Midlander, Daerdrin, and Enderman Skull"
+    },
+    "frame": "challenge",
+    "hidden": "false"
+  },
+  "criteria": {
+    "villager": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:villager_skull"
+            ]
+          }
+        ]
+      }
+    },
+    "piglin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:piglin_skull"
+            ]
+          }
+        ]
+      }
+    },
+    "midlander": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:skeleton_skull",
+              "minecraft:wither_skeleton_skull"
+            ]
+          }
+        ]
+      }
+    },
+    "daerdrin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:daerdri_skull"
+            ]
+          }
+        ]
+      }
+    },
+    "enderman": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:enderman_skull"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "villager"
+    ],
+    [
+      "piglin"
+    ],
+    [
+      "midlander"
+    ],
+    [
+      "daerdrin"
+    ],
+    [
+      "enderman"
+    ]
+  ]
+}

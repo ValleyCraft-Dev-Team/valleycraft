@@ -1,0 +1,49 @@
+{
+  "parent": "valleycraft:survival/historylessons",
+  "display": {
+    "title": {
+      "text": "Dear Fellow Traveler"
+    },
+    "icon": {
+      "item": "valleycraft:totem_of_appreciation"
+    },
+    "description": {
+      "text": "Find another Midlander, or what's left of them."
+    },
+    "frame": "challenge",
+    "hidden": "true"
+  },
+  "criteria": {
+    "midlander": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:skeletal_remains",
+              "minecraft:skeleton_skull",
+              "minecraft:wither_skeleton_skull",
+              "minecraft:zombie_head",
+              "valleycraft:head_zombie_alex",
+              "valleycraft:head_zombie_efe",
+              "valleycraft:head_drowned_alex",
+              "valleycraft:head_drowned_efe",
+              "valleycraft:head_drowned_steve",
+              "valleycraft:head_husk_alex",
+              "valleycraft:head_husk_efe",
+              "valleycraft:head_husk_steve",
+              "valleycraft:head_rotten_alex",
+              "valleycraft:head_rotten_efe",
+              "valleycraft:head_rotten_steve"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "midlander"
+    ]
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "valleycraft:survival/solveetcoagula",
+  "display": {
+    "title": {
+      "text": "Take Back the Night"
+    },
+    "icon": {
+      "item": "valleycraft:dragon_tooth"
+    },
+    "description": {
+      "text": "Brew a Potion of the Dragonhearted"
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "criteria": {
+    "dragonhearted": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:potion"
+            ],
+            "potion": "valleycraft:dragonhearted_potion"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "dragonhearted"
+    ]
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:survival/craftingmat",
+  "display": {
+    "title": {
+      "text": "Illuminating A Sticky Situation"
+    },
+    "icon": {
+      "item": "valleycraft:glow_ball"
+    },
+    "description": {
+      "text": "Craft a Glowing Jelly Ball"
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "glow_ball": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:glow_ball"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "glow_ball"
+    ]
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "valleycraft:survival/jackofalltools",
+  "display": {
+    "title": {
+      "text": "Guard Our Coral Reefs!"
+    },
+    "icon": {
+      "item": "valleycraft:coral_knife"
+    },
+    "description": {
+      "text": "Craft a Scalpel to safely move and harvest Coral"
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "criteria": {
+    "coral_knife": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:coral_knife",
+              "valleycraft:coral_knife_guardian"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "coral_knife"
+    ]
+  ]
+}

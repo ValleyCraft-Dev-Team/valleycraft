@@ -1,0 +1,174 @@
+{
+  "parent": "valleycraft:survival/tstststs",
+  "display": {
+    "title": {
+      "text": "A Study in Mycology"
+    },
+    "icon": {
+      "item": "valleycraft:stalwart_shroom"
+    },
+    "description": {
+      "text": "Collect every known mushroom, fungus, and mold type"
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "criteria": {
+    "shivercap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:shivercap"
+            ]
+          }
+        ]
+      }
+    },
+    "stalwart_shroom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:stalwart_shroom"
+            ]
+          }
+        ]
+      }
+    },
+    "glow_cap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:glow_cap",
+              "valleycraft:glow_cap_cluster"
+            ]
+          }
+        ]
+      }
+    },
+    "jungle_cap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:jungle_cap",
+              "valleycraft:jungle_cap_cluster"
+            ]
+          }
+        ]
+      }
+    },
+    "brown_mushroom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:brown_mushroom",
+              "valleycraft:brown_cluster"
+            ]
+          }
+        ]
+      }
+    },
+    "red_mushroom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:red_mushroom",
+              "valleycraft:red_cluster"
+            ]
+          }
+        ]
+      }
+    },
+    "fan_mold": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:fan_mold"
+            ]
+          }
+        ]
+      }
+    },
+    "morel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:morel"
+            ]
+          }
+        ]
+      }
+    },
+    "crimson_fungus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crimson_fungus"
+            ]
+          }
+        ]
+      }
+    },
+    "warped_fungus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:warped_fungus"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "shivercap"
+    ],
+    [
+      "stalwart_shroom"
+    ],
+    [
+      "glow_cap"
+    ],
+    [
+      "jungle_cap"
+    ],
+    [
+      "brown_mushroom"
+    ],
+    [
+      "red_mushroom"
+    ],
+    [
+      "fan_mold"
+    ],
+    [
+      "morel"
+    ],
+    [
+      "crimson_fungus"
+    ],
+    [
+      "warped_fungus"
+    ]
+  ]
+}

@@ -2,6 +2,7 @@ package net.linkle.valleycraft.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.GlassBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
@@ -10,7 +11,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class MembraneBlock extends Block {
+public class MembraneBlock extends GlassBlock {
     public MembraneBlock(Settings settings) {
         super(settings);
     }

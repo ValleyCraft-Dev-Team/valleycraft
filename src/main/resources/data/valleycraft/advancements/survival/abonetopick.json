@@ -1,0 +1,45 @@
+{
+  "parent": "valleycraft:survival/primitivetechnology",
+  "display": {
+    "title": {
+      "text": "A Bone To Pick(axe)"
+    },
+    "icon": {
+      "item": "valleycraft:bone_pickaxe"
+    },
+    "description": {
+      "text": "Craft a tool from bones"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "bone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:bone_sword",
+              "valleycraft:bone_shovel",
+              "valleycraft:bone_pickaxe",
+              "valleycraft:bone_axe",
+              "valleycraft:bone_hoe",
+              "valleycraft:knife_bone",
+              "valleycraft:hatchet_bone",
+              "valleycraft:woodcutter_axe_bone",
+              "valleycraft:scythe_bone",
+              "valleycraft:dagger_bone",
+              "valleycraft:traveler_bone",
+              "valleycraft:bone_greatsword"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bone"
+    ]
+  ]
+}
