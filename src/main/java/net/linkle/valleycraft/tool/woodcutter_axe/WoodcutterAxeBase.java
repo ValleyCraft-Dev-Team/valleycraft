@@ -1,8 +1,10 @@
 package net.linkle.valleycraft.tool.woodcutter_axe;
 
 import java.util.List;
+import java.util.Optional;
 
 import net.linkle.valleycraft.api.EnchantmentHandler;
+import net.minecraft.block.BlockState;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.enchantment.Enchantments;
@@ -10,7 +12,9 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.util.ActionResult;
 
 public class WoodcutterAxeBase
         extends AxeItem
@@ -31,6 +35,11 @@ public class WoodcutterAxeBase
     //public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
     //    tooltip.add( new TranslatableText("item.valley.knife.tooltip").formatted(Formatting.YELLOW) );
     //}
+    
+    @Override
+    public ActionResult useOnBlock(ItemUsageContext context) {
+        return ActionResult.PASS;
+    }
     
     @Override
     public List<EnchantmentTarget> getEnchantmentTypes() {

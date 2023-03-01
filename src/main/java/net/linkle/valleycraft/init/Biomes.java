@@ -31,7 +31,7 @@ public enum Biomes implements IdProvider {
     public final Identifier id;
     public final Biome biome;
     
-    Biomes(Biome biome) {
+    private Biomes(Biome biome) {
         key = RegistryKey.of(Registry.BIOME_KEY, id = Main.makeId(name().toLowerCase()));
         entry = BuiltinRegistries.add(BuiltinRegistries.BIOME, key, biome);
         this.biome = biome;

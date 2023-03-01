@@ -2,7 +2,6 @@ package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.interfaces.Nourishment;
 import net.linkle.valleycraft.item.*;
-import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -11,6 +10,7 @@ import net.minecraft.util.registry.Registry;
 import static net.linkle.valleycraft.init.Groups.TIERED_DISHES;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.enums.ItemEnum;
 
 public enum FoodTiered implements ItemEnum {
 

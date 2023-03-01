@@ -66,7 +66,7 @@ public class IronBrazierBlock extends BlockWithWater {
         if (world.isClient()) {
             var random = world.getRandom();
             for (int i = 0; i < 10; i++) {
-                ((World)world).addParticle(ParticleTypes.SMOKE, 
+                world.addParticle(ParticleTypes.SMOKE, 
                 pos.getX() + 0.5 + random.nextDouble() / 4.0 * (random.nextBoolean() ? 1 : -1), pos.getY() + 1.2, 
                 pos.getZ() + 0.5 + random.nextDouble() / 4.0 * (random.nextBoolean() ? 1 : -1), 0.0, 0.005, 0.0);
             }
@@ -128,13 +128,15 @@ public class IronBrazierBlock extends BlockWithWater {
 
     @Override
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-        if (random.nextInt(10) == 0) {
-            world.playSound(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, SoundEvents.BLOCK_CAMPFIRE_CRACKLE, SoundCategory.BLOCKS, 0.5F + random.nextFloat(), random.nextFloat() * 0.7F + 0.6F, false);
-        }
+        if (state.get(LIT)) {
+            if (random.nextInt(10) == 0) {
+                world.playSound(pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, SoundEvents.BLOCK_CAMPFIRE_CRACKLE, SoundCategory.BLOCKS, 0.5F + random.nextFloat(), random.nextFloat() * 0.7F + 0.6F, false);
+            }
 
-        if (random.nextInt(5) == 0) {
-            for(int i = 0; i < random.nextInt(1) + 1; ++i) {
-                world.addParticle(ParticleTypes.LAVA, pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, random.nextFloat() / 2.0F, 5.0E-5D, random.nextFloat() / 2.0F);
+            if (random.nextInt(5) == 0) {
+                for(int i = 0; i < random.nextInt(1) + 1; ++i) {
+                    world.addParticle(ParticleTypes.LAVA, pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, random.nextFloat() / 2.0F, 5.0E-5D, random.nextFloat() / 2.0F);
+                }
             }
         }
     }

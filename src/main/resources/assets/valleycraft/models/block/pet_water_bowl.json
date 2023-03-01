@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
 	"textures": {
-		"2": "minecraft:block/water_still",
+		"water": "minecraft:block/water_still",
 		"flowerpot": "minecraft:block/flower_pot",
 		"particle": "minecraft:block/flower_pot"
 
@@ -64,7 +64,7 @@
 			"from": [6, -2, 6],
 			"to": [10, 3, 10],
 			"faces": {
-				"up": {"uv": [6, 6, 10, 10], "texture": "#2", "tintindex": 0}
+				"up": {"uv": [6, 6, 10, 10], "texture": "#water", "tintindex": 0}
 			}
 		}
 	]

@@ -2,7 +2,7 @@ package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.armors.ArmorMats;
-import net.linkle.valleycraft.util.ItemEnum;
+import net.linkle.valleycraft.enums.ItemEnum;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;

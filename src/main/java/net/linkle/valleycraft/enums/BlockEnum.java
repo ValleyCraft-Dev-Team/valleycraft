@@ -1,5 +1,7 @@
-package net.linkle.valleycraft.util;
+package net.linkle.valleycraft.enums;
 
+import net.linkle.valleycraft.util.BlockConvertible;
+import net.linkle.valleycraft.util.IdProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 

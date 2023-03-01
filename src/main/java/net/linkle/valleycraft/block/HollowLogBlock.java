@@ -66,20 +66,20 @@ public class HollowLogBlock extends PillarBlock implements Waterloggable {
     
     static {
         VoxelShape topBase, bottomBase, leftBase, rightBase;
-        topBase = createCuboidShape(0, 0, 14, 16, 16, 16);
-        bottomBase = createCuboidShape(0, 0, 0, 16, 16, 2);
-        leftBase = createCuboidShape(0, 0, 0, 2, 16, 16);
-        rightBase = createCuboidShape(14, 0, 0, 16, 16, 16);
+        topBase = createCuboidShape(0, 0, 15, 16, 16, 16);
+        bottomBase = createCuboidShape(0, 0, 0, 16, 16, 1);
+        leftBase = createCuboidShape(0, 0, 0, 1, 16, 16);
+        rightBase = createCuboidShape(15, 0, 0, 16, 16, 16);
         SHAPE_Y = VoxelShapes.union(topBase, bottomBase, leftBase, rightBase);
-        topBase = createCuboidShape(0, 14, 0, 16, 16, 16);
-        bottomBase = createCuboidShape(0, 0, 0, 16, 2, 16);
-        leftBase = createCuboidShape(0, 0, 0, 16, 16, 2);
-        rightBase = createCuboidShape(0, 0, 14, 16, 16, 16);
+        topBase = createCuboidShape(0, 15, 0, 16, 16, 16);
+        bottomBase = createCuboidShape(0, 0, 0, 16, 1, 16);
+        leftBase = createCuboidShape(0, 0, 0, 16, 16, 1);
+        rightBase = createCuboidShape(0, 0, 15, 16, 16, 16);
         SHAPE_X = VoxelShapes.union(topBase, bottomBase, leftBase, rightBase);
-        topBase = createCuboidShape(0, 14, 0, 16, 16, 16);
-        bottomBase = createCuboidShape(0, 0, 0, 16, 2, 16);
-        leftBase = createCuboidShape(0, 0, 0, 2, 16, 16);
-        rightBase = createCuboidShape(14, 0, 0, 16, 16, 16);
+        topBase = createCuboidShape(0, 15, 0, 16, 16, 16);
+        bottomBase = createCuboidShape(0, 0, 0, 16, 1, 16);
+        leftBase = createCuboidShape(0, 0, 0, 1, 16, 16);
+        rightBase = createCuboidShape(15, 0, 0, 16, 16, 16);
         SHAPE_Z = VoxelShapes.union(topBase, bottomBase, leftBase, rightBase);
     }
 }

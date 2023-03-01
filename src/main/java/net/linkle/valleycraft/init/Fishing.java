@@ -1,7 +1,7 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.util.ItemEnum;
+import net.linkle.valleycraft.enums.ItemEnum;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.EntityBucketItem;
 import net.minecraft.item.Item;

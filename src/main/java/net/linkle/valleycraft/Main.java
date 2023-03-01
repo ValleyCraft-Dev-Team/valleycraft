@@ -35,7 +35,7 @@ public class Main implements ModInitializer {
 
 	    Groups.initialize();
 		BlocksNatural.initialize();
-		ModBlockEntityType.initialize();
+		BlockEntities.initialize();
 		Fluids.initialize();
 		BlocksModded.initialize();
 

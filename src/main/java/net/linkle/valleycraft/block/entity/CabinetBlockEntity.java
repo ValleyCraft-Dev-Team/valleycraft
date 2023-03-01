@@ -2,7 +2,7 @@ package net.linkle.valleycraft.block.entity;
 
 import net.linkle.valleycraft.block.CabinetBlock;
 import net.linkle.valleycraft.block.CounterDrawerBlock;
-import net.linkle.valleycraft.init.ModBlockEntityType;
+import net.linkle.valleycraft.init.BlockEntities;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerInventory;
@@ -18,7 +18,7 @@ import net.minecraft.util.math.BlockPos;
 public class CabinetBlockEntity extends ContainerBlockEntity {
     
     public CabinetBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntityType.CABINET, pos, state);
+        super(BlockEntities.CABINET.type(), pos, state);
     }
 
     @Override
