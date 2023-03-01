@@ -41,13 +41,17 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:bone_meal"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.05
+          "name": "minecraft:bone_meal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
         }
       ]
     }

@@ -9,7 +9,6 @@
     },
     "description": {
       "text": "Find or prepare some food",
-      "color": "green"
     },
     "frame": "task"
   },
