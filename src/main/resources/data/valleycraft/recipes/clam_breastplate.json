@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#V#"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:clam_block"
+    },
+    "V": {
+      "item": "valleycraft:plant_fiber_string"
+    }
+  },
+  "result": {
+    "item": "valleycraft:clam_breastplate",
+    "count": 1
+  }
+}

@@ -20,15 +20,27 @@ public enum Armors implements ItemEnum {
     STRAW_HAT(new ArmorItem(ArmorMats.STRAW_HAT, EquipmentSlot.HEAD, settingsNormal())),
     AMETHYST_GOGGLES(new ArmorItem(ArmorMats.AMETHYST_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
     NIGHTVISION_GOGGLES(new NightGoggleItem(ArmorMats.NIGHTVISION_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
+    CHEF_HAT(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsNormal())),
+    CHEF_APRON(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.LEGS, settingsNormal())),
+
+    BIKINI_NEUTRAL_REPAIRED(new ArmorItem(ArmorMats.BIKINI_NEUTRAL_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+
+    FUR_BOOTS(new ArmorItem(ArmorMats.RABBIT, EquipmentSlot.FEET, settingsNormal())),
+
+    DIERDRA_LAUREL(new ArmorItem(ArmorMats.DIERDRA_LAUREL, EquipmentSlot.HEAD, settingsNormal())),
+    FLOWER_CROWN(new ArmorItem(ArmorMats.FLOWERING_HAT, EquipmentSlot.HEAD, settingsNormal())),
+    DRIPLEAF_HAT(new ArmorItem(ArmorMats.DRIPLEAF, EquipmentSlot.HEAD, settingsNormal())),
+
+    CLAM_BREASTPLATE(new ArmorItem(ArmorMats.CLAM_BREASTPLATE, EquipmentSlot.CHEST, settingsNormal())),
+    TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
+    TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
     SEAGULL_FEATHER(new ArmorItem(ArmorMats.SEAGULL_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
     DUCK_FEATHER(new ArmorItem(ArmorMats.DUCK_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
     CROW_FEATHER(new ArmorItem(ArmorMats.CROW_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
     FEATHER(new ArmorItem(ArmorMats.WHITE_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
-
-    DIERDRA_LAUREL(new ArmorItem(ArmorMats.DIERDRA_LAUREL, EquipmentSlot.HEAD, settingsNormal())),
-    FLOWER_CROWN(new ArmorItem(ArmorMats.FLOWERING_HAT, EquipmentSlot.HEAD, settingsNormal())),
-    DRIPLEAF_HAT(new ArmorItem(ArmorMats.DRIPLEAF, EquipmentSlot.HEAD, settingsNormal())),
 
     REINFORCED_LEATHER_HELMET(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_GOLDEN_HELMET(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.HEAD, settingsNormal())),
@@ -83,10 +95,6 @@ public enum Armors implements ItemEnum {
     //DIAMOND_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
     //NETHERITE_CIRCLET(new ArmorItem(ArmorMats.CIRCLET_NETHERITE, EquipmentSlot.HEAD, settingsNormal())),
 
-    BIKINI_NEUTRAL_REPAIRED(new ArmorItem(ArmorMats.BIKINI_NEUTRAL_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
-    BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
-    BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
-
     CANVAS_HOOD(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.HEAD, settingsNormal())),
     CANVAS_TUNIC(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.CHEST, settingsNormal())),
     CANVAS_LEGGINGS(new ArmorItem(ArmorMats.CANVAS, EquipmentSlot.LEGS, settingsNormal())),
@@ -117,18 +125,8 @@ public enum Armors implements ItemEnum {
     ECHOCHALCUM_LEGGINGS(new ArmorItem(ArmorMats.ECHOCHALCUM, EquipmentSlot.LEGS, settingsNormal())),
     ECHOCHALCUM_BOOTS(new ArmorItem(ArmorMats.ECHOCHALCUM, EquipmentSlot.FEET, settingsNormal())),
 
-    TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
-    TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
-
-    FUR_BOOTS(new ArmorItem(ArmorMats.RABBIT, EquipmentSlot.FEET, settingsNormal())),
-
     LICH_HOOD_KEEPSAKE(new ArmorItem(ArmorMats.LICH_CLOAK, EquipmentSlot.HEAD, settingsNormal().rarity(EPIC).maxCount(1))),
     LICH_CLOAK_KEEPSAKE(new ArmorItem(ArmorMats.LICH_CLOAK, EquipmentSlot.CHEST, settingsNormal().rarity(EPIC).maxCount(1))),
-
-    /**special armors**/
-
-    CHEF_HAT(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsNormal())),
-    CHEF_APRON(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.LEGS, settingsNormal())),
 
     //DIVING_HELMET(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
     //DIVING_CHESTPLATE(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),

@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.armors;
 
+import net.linkle.valleycraft.init.BlocksNatural;
 import net.linkle.valleycraft.init.ItemsModded;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
@@ -129,6 +130,7 @@ public enum ArmorMats implements ArmorMaterial {
     PURPLE_CLOAK("purple_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ItemsModded.CLOTH)),
     CYAN_CLOAK("cyan_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ItemsModded.CLOTH)),
     LICH_CLOAK("lich_cloak", ints(0,0,5,3), 15, 22, equipLeather(), items(ItemsModded.CLOTH)),
+    CLAM_BREASTPLATE("blue_breastplate", ints(1,2), 10, 15, equipTurtle(), items(BlocksNatural.CLAM_BLOCK)),
 
     DIVING("diving", ints(2,5,7,3), 15, 5, equipLeather(), items(ItemsModded.PRIMSTEEL_INGOT)),
     COPPER_DIVING("copper_diving", ints(2,5,7,2), 15, 5, equipLeather(), items(COPPER_INGOT));
