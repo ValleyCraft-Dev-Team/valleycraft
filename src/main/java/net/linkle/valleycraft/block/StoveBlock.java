@@ -3,7 +3,7 @@ package net.linkle.valleycraft.block;
 import org.jetbrains.annotations.Nullable;
 
 import net.linkle.valleycraft.block.entity.StoveBlockEntity;
-import net.linkle.valleycraft.init.ModBlockEntityType;
+import net.linkle.valleycraft.init.BlockEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SmokerBlock;
 import net.minecraft.block.entity.BlockEntity;
@@ -32,7 +32,7 @@ public class StoveBlock extends SmokerBlock {
     @Override
     @Nullable
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return SmokerBlock.checkType(world, type, ModBlockEntityType.STOVE);
+        return SmokerBlock.checkType(world, type, BlockEntities.STOVE.type());
     }
     
     @Override

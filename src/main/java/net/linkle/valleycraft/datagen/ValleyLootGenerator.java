@@ -11,6 +11,6 @@ public class ValleyLootGenerator extends FabricBlockLootTableProvider {
 
     @Override
     protected void generateBlockLootTables() {
-        addDrop(null);
+       //addDrop(null);
     }
 }

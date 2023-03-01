@@ -1,7 +1,8 @@
 package net.linkle.valleycraft.block.entity;
 
-import net.linkle.valleycraft.init.ModBlockEntityType;
+import net.linkle.valleycraft.init.BlockEntities;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.entity.SmokerBlockEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
@@ -17,7 +18,7 @@ public class StoveBlockEntity extends SmokerBlockEntity {
     }
 
     @Override
-    public net.minecraft.block.entity.BlockEntityType getType() {
-        return ModBlockEntityType.STOVE;
+    public BlockEntityType<?> getType() {
+        return BlockEntities.STOVE.type();
     }
 }

@@ -5,8 +5,9 @@ import static net.minecraft.util.Rarity.EPIC;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.armors.ArmorMats;
+import net.linkle.valleycraft.enums.ItemEnum;
 import net.linkle.valleycraft.item.ClothingArmorItem;
-import net.linkle.valleycraft.util.ItemEnum;
+import net.linkle.valleycraft.item.NightGoggleItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterials;
@@ -18,7 +19,7 @@ import net.minecraft.util.registry.Registry;
 public enum Armors implements ItemEnum {
     STRAW_HAT(new ArmorItem(ArmorMats.STRAW_HAT, EquipmentSlot.HEAD, settingsNormal())),
     AMETHYST_GOGGLES(new ArmorItem(ArmorMats.AMETHYST_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
-    NIGHTVISION_GOGGLES(new ArmorItem(ArmorMats.NIGHTVISION_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
+    NIGHTVISION_GOGGLES(new NightGoggleItem(ArmorMats.NIGHTVISION_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
 
     SEAGULL_FEATHER(new ArmorItem(ArmorMats.SEAGULL_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
     DUCK_FEATHER(new ArmorItem(ArmorMats.DUCK_FEATHER, EquipmentSlot.HEAD, settingsNormal())),

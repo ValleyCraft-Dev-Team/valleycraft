@@ -3,7 +3,7 @@ package net.linkle.valleycraft.init;
 import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.util.ItemEnum;
+import net.linkle.valleycraft.enums.ItemEnum;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;

@@ -24,12 +24,12 @@ public enum Sounds implements IdProvider {
     
     public final SoundEvent sound;
     
-    Sounds() {
+    private Sounds() {
         sound = new SoundEvent(Main.makeId(name().toLowerCase()));
         Registry.register(Registry.SOUND_EVENT, sound.getId(), sound);
     }
     
-    Sounds(String path) {
+    private Sounds(String path) {
         sound = new SoundEvent(Main.makeId(path));
         Registry.register(Registry.SOUND_EVENT, sound.getId(), sound);
     }

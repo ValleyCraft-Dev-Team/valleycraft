@@ -16,7 +16,7 @@ public class SnailEntityRenderer extends MobEntityRenderer<MobEntity, SnailEntit
     private final Identifier texture;
     
     private SnailEntityRenderer(Context context, Identifier texture) {
-        super(context, new SnailEntityModel<MobEntity>(context.getPart(SnailEntityModel.LAYER)), 0.3f);
+        super(context, new SnailEntityModel<MobEntity>(context.getPart(SnailEntityModel.LAYER)), 0.25f);
         this.texture = texture;
     }
 

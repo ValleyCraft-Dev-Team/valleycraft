@@ -4,10 +4,10 @@ import static net.linkle.valleycraft.init.Groups.REGULAR_DISHES;
 import static net.minecraft.util.Rarity.EPIC;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.enums.ItemEnum;
 import net.linkle.valleycraft.interfaces.Nourishment;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.util.FoodStatusEffect;
-import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;

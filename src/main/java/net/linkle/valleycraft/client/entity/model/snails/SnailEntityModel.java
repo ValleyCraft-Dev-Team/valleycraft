@@ -7,7 +7,6 @@ import net.minecraft.client.model.Dilation;
 import net.minecraft.client.model.ModelData;
 import net.minecraft.client.model.ModelPart;
 import net.minecraft.client.model.ModelPartBuilder;
-import net.minecraft.client.model.ModelPartData;
 import net.minecraft.client.model.ModelTransform;
 import net.minecraft.client.model.TexturedModelData;
 import net.minecraft.client.render.VertexConsumer;
@@ -29,15 +28,15 @@ public class SnailEntityModel<T extends MobEntity> extends SinglePartEntityModel
 	}
 
 	public static TexturedModelData getTexturedModelData() {
-	    ModelData modelData = new ModelData();
-        ModelPartData modelPartData = modelData.getRoot();
+	    var modelData = new ModelData();
+        var modelPartData = modelData.getRoot();
 
-        ModelPartData main = modelPartData.addChild("main", ModelPartBuilder.create().uv(0, 0).cuboid(-1.5F, -1.0F, -1.0F, 2.0F, 1.0F, 6.0F, new Dilation(0.0F))
-		.uv(0, 7).cuboid(-2.0F, -4.5F, -1.0F, 3.0F, 4.0F, 4.0F, new Dilation(0.0F))
-		.uv(10, 0).cuboid(-1.5F, -2.0F, -3.0F, 2.0F, 2.0F, 2.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
+        var main = modelPartData.addChild("main", ModelPartBuilder.create().uv(0, 0).cuboid(-1.0F, 23.0F, -1.5F, 2.0F, 1.0F, 6.0F, Dilation.NONE)
+		.uv(0, 7).cuboid(-1.5F, 19.5F, -1.5F, 3.0F, 4.0F, 4.0F, Dilation.NONE)
+		.uv(10, 0).cuboid(-1.0F, 22.0F, -3.5F, 2.0F, 2.0F, 2.0F, Dilation.NONE), ModelTransform.NONE);
 
-        main.addChild("cube", ModelPartBuilder.create().uv(0, 0).cuboid(0.0F, -4.5F, -2.25F, 1.0F, 2.0F, 0.0F, new Dilation(0.0F))
-		.uv(0, 2).cuboid(-2.0F, -4.5F, -2.25F, 1.0F, 2.0F, 0.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, 0.0F, 0.0F, 0.2618F, 0.0F, 0.0F));
+        main.addChild("cube", ModelPartBuilder.create().uv(0, 0).cuboid(0.5F, 18.5F, -8.75F, 1.0F, 2.0F, 0.0F, Dilation.NONE)
+		.uv(0, 2).cuboid(-1.5F, 18.5F, -8.75F, 1.0F, 2.0F, 0.0F, Dilation.NONE), ModelTransform.of(0.0F, 0.0F, 0.0F, 0.2618F, 0.0F, 0.0F));
 
 		return TexturedModelData.of(modelData, 32, 32);
 	}

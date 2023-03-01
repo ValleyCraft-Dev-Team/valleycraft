@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.util.EntityEnum.*;
+import static net.linkle.valleycraft.enums.EntityEnum.*;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -23,7 +23,7 @@ import net.linkle.valleycraft.entity.pupkins.PupkinEntity;
 import net.linkle.valleycraft.entity.snails.CaveSnailEntity;
 import net.linkle.valleycraft.entity.snails.SculkSnailEntity;
 import net.linkle.valleycraft.entity.snails.SnailEntity;
-import net.linkle.valleycraft.util.EntityEnum;
+import net.linkle.valleycraft.enums.EntityEnum;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.entity.*;

@@ -6,10 +6,10 @@ import static net.minecraft.util.Rarity.RARE;
 import static net.minecraft.util.Rarity.UNCOMMON;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.enums.ItemEnum;
 import net.linkle.valleycraft.item.*;
 import net.linkle.valleycraft.item.clay_pot.ClayPotItem;
 import net.linkle.valleycraft.item.clay_pot.WaterClayPotItem;
-import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;

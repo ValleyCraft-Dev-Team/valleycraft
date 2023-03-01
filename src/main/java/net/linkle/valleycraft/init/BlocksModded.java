@@ -14,10 +14,10 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.baubles.CraftingMatBauble;
 import net.linkle.valleycraft.block.*;
+import net.linkle.valleycraft.enums.BlockEnum;
+import net.linkle.valleycraft.enums.ItemEnum;
 import net.linkle.valleycraft.item.BridgeItem;
-import net.linkle.valleycraft.util.BlockEnum;
 import net.linkle.valleycraft.util.BlockSettings;
-import net.linkle.valleycraft.util.ItemEnum;
 import net.minecraft.block.*;
 import net.minecraft.block.Oxidizable.OxidationLevel;
 import net.minecraft.block.PressurePlateBlock.ActivationRule;
@@ -25,6 +25,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -35,7 +36,7 @@ import net.minecraft.world.BlockView;
 
 public enum BlocksModded implements ItemEnum, BlockEnum {
 
-    CRAFTING_MAT(new CraftingMatBauble(Block.Settings.of(Material.DECORATION).sounds(net.minecraft.sound.BlockSoundGroup.WOOL).breakInstantly().noCollision().nonOpaque()), toolItemSettings()),
+    CRAFTING_MAT(new CraftingMatBauble(Block.Settings.of(Material.DECORATION).sounds(BlockSoundGroup.WOOL).breakInstantly().noCollision().nonOpaque()), toolItemSettings()),
     CRATE(new CrateBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     DEEPSLATE_CHEST(new DeepslateChestBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)), itemSettings()),
     COFFIN(new DeepslateChestBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)), itemSettings()),
@@ -53,16 +54,16 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     /**beekeeper_poi**/
     BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     /**lumberjack_poi**/
-    LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(Blocks.STONECUTTER).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(Blocks.STONECUTTER).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
     /**storekeeper_poi**/
     STOREKEEPS_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     /**gardener_poi**/
     GARDENER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
 
     BARREL_PLANTER(new Block(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
-    RAIN_COLLECTOR(new RainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque()), itemSettings()),
-    LEVELED_RAIN_COLLECTOR(new LeveledRainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque())),
-    //WATER_SHOWERER(new ShowerBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1.8f).nonOpaque().ticksRandomly()), itemSettings()),
+    RAIN_COLLECTOR(new RainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque()), itemSettings()),
+    LEVELED_RAIN_COLLECTOR(new LeveledRainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque())),
+    //WATER_SHOWERER(new ShowerBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque().ticksRandomly()), itemSettings()),
     SPRINKLER(new SprinklerBlock(), itemSettings()),
     WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
     WITCH_LADLE(new LadleBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().noCollision().nonOpaque()), itemSettings()),
@@ -81,7 +82,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     TOOL_BOOKSHELF(new Block(Block.Settings.copy(Blocks.BOOKSHELF)), itemSettings()),
     ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.ENCHANTING_TABLE)), itemSettings()),
     CLOTHED_ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.ENCHANTING_TABLE)), itemSettings()),
-    LOG_PILE(new LogPile(Block.Settings.of(Material.WOOD).strength(2.0f).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
+    LOG_PILE(new LogPile(Block.Settings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
 
     BOOK_STACK_0(new BookStackBlock(BLOCK_SHAPE_0), itemSettings()),
     BOOK_STACK_1(new BookStackBlock(BLOCK_SHAPE_1), itemSettings()),
@@ -126,11 +127,11 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
 
     DIRT_ROAD(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
 
-    CANVAS_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_CARPET)), itemSettings()),
-    CANVAS_STAIRS(new StairsBlock(CANVAS_BLOCK.getState(), Block.Settings.copy(Blocks.BROWN_WOOL).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_CARPET)), itemSettings()),
-    CANVAS_SLAB(new SlabBlock(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_BLOCK)), itemSettings()),
+    CANVAS_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
+    CANVAS_STAIRS(new StairsBlock(CANVAS_BLOCK.getState(), Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
+    CANVAS_SLAB(new SlabBlock(Block.Settings.copy(Blocks.BROWN_WOOL).sounds(BlockSoundGroup.MOSS_BLOCK)), itemSettings()),
 
-    CANVAS_CARPET(new CarpetBlock(Block.Settings.copy(net.minecraft.block.Blocks.BROWN_CARPET).sounds(net.minecraft.sound.BlockSoundGroup.MOSS_CARPET)), itemSettings()),
+    CANVAS_CARPET(new CarpetBlock(Block.Settings.copy(net.minecraft.block.Blocks.BROWN_CARPET).sounds(BlockSoundGroup.MOSS_CARPET)), itemSettings()),
     LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f)), itemSettings()),
     LEATHER_CARPET(new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).strength(0.8f)), itemSettings()),
     TREATED_LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f)), itemSettings()),
@@ -138,7 +139,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     MEMBRANE_BLOCK(new MembraneBlock(Block.Settings.copy(Blocks.GLASS).sounds(net.minecraft.sound.BlockSoundGroup.WOOL).strength(0.8f).breakInstantly()), itemSettings()),
 
     CURTAIN(new CurtainBlock(), itemSettings()),
-    FIREGUARD(new FireGuardBlock(AbstractBlock.Settings.of(Material.METAL).sounds(net.minecraft.sound.BlockSoundGroup.CHAIN).nonOpaque()), itemSettings()),
+    FIREGUARD(new FireGuardBlock(AbstractBlock.Settings.of(Material.METAL).sounds(BlockSoundGroup.CHAIN).nonOpaque()), itemSettings()),
 
     BRAZIER(new BrazierBlock(15, 2), itemSettings()),
     SOUL_BRAZIER(new BrazierBlock(10, 2), itemSettings()),
@@ -149,18 +150,18 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     GLOW_SPLATTER(new GlowSplatterBlock()),
 
     //rope and net blocks
-    ROPE_VERTICAL(new RopeVerticalBlock(Block.Settings.of(BlockMats.ROPE).nonOpaque().noCollision().sounds(net.minecraft.sound.BlockSoundGroup.WOOL))),
-    ROPE_HORIZONTAL(new RopeHorizontalBlock(Block.Settings.of(BlockMats.ROPE).nonOpaque().sounds(net.minecraft.sound.BlockSoundGroup.WOOL))),
+    ROPE_VERTICAL(new RopeVerticalBlock(Block.Settings.of(BlockMats.ROPE).nonOpaque().noCollision().sounds(BlockSoundGroup.WOOL))),
+    ROPE_HORIZONTAL(new RopeHorizontalBlock(Block.Settings.of(BlockMats.ROPE).nonOpaque().sounds(BlockSoundGroup.WOOL))),
     ROPE_LADDER(new ModLadderBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
-    BAMBOO_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(1).sounds(net.minecraft.sound.BlockSoundGroup.BAMBOO)), itemSettings()),
+    BAMBOO_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(1).sounds(BlockSoundGroup.BAMBOO)), itemSettings()),
 
     NET(new NetBlock(), itemSettings()),
     //NET_BLOCK(new GrateBlock(Block.Settings.copy(Blocks.BROWN_WOOL).nonOpaque()), itemSettings()),
 
-    ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1).noCollision()), itemSettings(), BridgeItem::new),
-    ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(net.minecraft.sound.BlockSoundGroup.WOOD).strength(1)), itemSettings(), BridgeItem::new),
-    SPIKE_TRAP(new SpikeTrapBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).nonOpaque().strength(0.5f, 1.0f)), itemSettings()),
-    SPIKE_TRAP_EXTENSION(new SpikeTrapExtensionBlock(Block.Settings.of(Material.WOOD).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).nonOpaque().strength(0.5f, 1.0f)), itemSettings()),
+    ROPE_BRIDGE_ANCHOR(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1).noCollision()), itemSettings(), BridgeItem::new),
+    ROPE_BRIDGE(new RopeBridgeBlock(Block.Settings.of(Material.WOOD).nonOpaque().sounds(BlockSoundGroup.WOOD).strength(1)), itemSettings(), BridgeItem::new),
+    SPIKE_TRAP(new SpikeTrapBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).nonOpaque().strength(0.5f, 1.0f)), itemSettings()),
+    SPIKE_TRAP_EXTENSION(new SpikeTrapExtensionBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).nonOpaque().strength(0.5f, 1.0f)), itemSettings()),
     //FIRE_TRAP(new FireTrapBlock(Block.Settings.copy(Blocks.COBBLESTONE)), itemSettings()),
 
     NAUTILUS_SHELL_BLOCK(new NautilusShellBlock(), itemSettings()),
@@ -218,7 +219,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     WATTLE_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR)), itemSettings()),
     WATTLE_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR)), itemSettings()),
     WATTLE_BARS(new PaneBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    WATTLE_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(1).sounds(net.minecraft.sound.BlockSoundGroup.WOOD)), itemSettings()),
+    WATTLE_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(1).sounds(BlockSoundGroup.WOOD)), itemSettings()),
     WATTLE_GRATE(new GrateBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
 
     //lattice
@@ -249,8 +250,8 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     TIGHTLY_WEAVED_THATCH_STAIRS(new StairsBlock(TIGHTLY_WEAVED_THATCH_BLOCK.getState(), Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
     TIGHTLY_WEAVED_THATCH_SLAB(new SlabBlock(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
 
-    GLASS_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).hardness(0.3f).sounds(net.minecraft.sound.BlockSoundGroup.GLASS).nonOpaque()), itemSettings()),
-    TINTED_GLASS_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).hardness(0.3f).sounds(net.minecraft.sound.BlockSoundGroup.GLASS)), itemSettings()),
+    GLASS_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).hardness(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque()), itemSettings()),
+    TINTED_GLASS_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).hardness(0.3f).sounds(BlockSoundGroup.GLASS)), itemSettings()),
 
     REDSTONE_LANTERN(new RedstoneLanternBlock(), itemSettings()),
     GLOWSQUID_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 6)), itemSettings()),
@@ -263,16 +264,16 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     //QUARTZ_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(state -> 16)), itemSettings()),
 
     DEAD_LANTERN(new LanternBlock(Block.Settings.copy(Blocks.LANTERN).luminance(s->0)), itemSettings()),
-    BURNT_OUT_TORCH(new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.WOOD)), itemSettings()),
-    BURNT_OUT_CANDLE(new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.CANDLE)).shape(4, 12), itemSettings()),
+    BURNT_OUT_TORCH(new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.WOOD)), itemSettings()),
+    BURNT_OUT_CANDLE(new BurntTorchBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CANDLE)).shape(4, 12), itemSettings()),
     //ARROW_BLOCK(new ArrowBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.BAMBOO).noCollision()), itemSettings()),
 
     GRAVE_MARKER(new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque()), itemSettings().rarity(Rarity.UNCOMMON)),
-    SHALE_GRAVESTONE(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
-    SHALE_GRAVESTONE_SPIRIT(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
-    SHALE_GRAVESTONE_HEART(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
-    SHALE_GRAVESTONE_ROSE(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
-    SHALE_GRAVESTONE_TEXT(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_GRAVESTONE(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_GRAVESTONE_SPIRIT(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_GRAVESTONE_HEART(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_GRAVESTONE_ROSE(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
+    SHALE_GRAVESTONE_TEXT(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
 
     //GRAVE_MARKER_PET(new GraveBlock(Block.Settings.copy(Blocks.OAK_WOOD).hardness(1).resistance(100).nonOpaque()), itemSettings()),
     //SHALE_PET_GRAVESTONE(new ShaleGraveBlock(Block.Settings.copy(Blocks.DEEPSLATE).sounds(BlockSoundGroup.BASALT).resistance(666).hardness(2.25f).nonOpaque()), itemSettings()),
@@ -335,9 +336,9 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
 
     //redstonery
     //TARGET_BLOCK(new ModTargetBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    STAKE(new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(net.minecraft.sound.BlockSoundGroup.WOOD).breakInstantly()), itemSettings()),
+    STAKE(new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly()), itemSettings()),
     //STAKE_BASE(new StakeBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).breakInstantly()), itemSettings()),
-    LANTERN_HANGER(new LanternHangerBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
+    LANTERN_HANGER(new LanternHangerBlock(Block.Settings.of(Material.WOOD, MapColor.OAK_TAN).breakInstantly().sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
 
     // glass blocks & windows
     TINTED_GLASS_PANE(new PaneBlock(Block.Settings.copy(Blocks.TINTED_GLASS)), itemSettings()),
@@ -464,7 +465,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
 
     PRIMSTEEL_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     PRIMSTEEL_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
-    PRIMSTEEL_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(net.minecraft.sound.BlockSoundGroup.METAL)), itemSettings()),
+    PRIMSTEEL_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     PRIMSTEEL_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
     PRIMSTEEL_DOOR(new DoorBlock(Block.Settings.copy(Blocks.IRON_DOOR)), itemSettings()),
     PRIMSTEEL_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.IRON_TRAPDOOR)), itemSettings()),
@@ -478,7 +479,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     IRON_CUT_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
 
     IRON_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
-    IRON_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(net.minecraft.sound.BlockSoundGroup.METAL)), itemSettings()),
+    IRON_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     IRON_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
     
     DEEPSLATE_PRESSURE_PLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(Blocks.STONE_PRESSURE_PLATE)), itemSettings()),
@@ -508,7 +509,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     ERDSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     ERDSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
 
-    ERDSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.QUARTZ_PILLAR).sounds(net.minecraft.sound.BlockSoundGroup.DEEPSLATE).hardness(1)), itemSettings()),
+    ERDSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.QUARTZ_PILLAR).sounds(BlockSoundGroup.DEEPSLATE).hardness(1)), itemSettings()),
     
     ERDSTONE_TILES(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
     ERDSTONE_TILE_STAIRS(new StairsBlock(ERDSTONE_TILES.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
@@ -543,47 +544,47 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     ADVENTURINE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
 
     //shale
-    SHALE_STAIRS(new StairsBlock(BlocksNatural.SHALE.getState(), Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    SHALE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    SHALE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_STAIRS(new StairsBlock(BlocksNatural.SHALE.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
 
-    COBBLED_SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    COBBLED_SHALE_STAIRS(new StairsBlock(COBBLED_SHALE.getState(), Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    COBBLED_SHALE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    COBBLED_SHALE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    COBBLED_SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    COBBLED_SHALE_STAIRS(new StairsBlock(COBBLED_SHALE.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    COBBLED_SHALE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    COBBLED_SHALE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
 
-    POLISHED_SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    POLISHED_SHALE_STAIRS(new StairsBlock(POLISHED_SHALE.getState(), Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    POLISHED_SHALE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    POLISHED_SHALE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    POLISHED_SHALE(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    POLISHED_SHALE_STAIRS(new StairsBlock(POLISHED_SHALE.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    POLISHED_SHALE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    POLISHED_SHALE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
 
-    SHALE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    SHALE_BRICK_STAIRS(new StairsBlock(SHALE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    SHALE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
-    SHALE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_BRICK_STAIRS(new StairsBlock(SHALE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
 
-    SHALE_RUNE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(net.minecraft.sound.BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_RUNE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
 
     //marble
     MARBLE_STAIRS(new StairsBlock(BlocksNatural.MARBLE.getState(), Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
     MARBLE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
     MARBLE_WALL(new WallBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
 
-    POLISHED_MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(net.minecraft.sound.BlockSoundGroup.CALCITE)), itemSettings()),
+    POLISHED_MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     POLISHED_MARBLE_STAIRS(new StairsBlock(POLISHED_MARBLE.getState(), Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
     POLISHED_MARBLE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
     POLISHED_MARBLE_WALL(new WallBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
 
-    MARBLE_BRICKS(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(net.minecraft.sound.BlockSoundGroup.CALCITE)), itemSettings()),
+    MARBLE_BRICKS(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_BRICK_STAIRS(new StairsBlock(POLISHED_MARBLE.getState(), Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
     MARBLE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
     MARBLE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
 
-    MARBLE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.CALCITE).sounds(net.minecraft.sound.BlockSoundGroup.CALCITE)), itemSettings()),
-    MARBLE_CHISELED(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(net.minecraft.sound.BlockSoundGroup.CALCITE)), itemSettings()),
-    MARBLE_CHISELED_FACE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(net.minecraft.sound.BlockSoundGroup.CALCITE)), itemSettings()),
-    MARBLE_PATTERNED(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(net.minecraft.sound.BlockSoundGroup.CALCITE)), itemSettings()),
-    MARBLE_AIR(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(net.minecraft.sound.BlockSoundGroup.CALCITE)), itemSettings()),
+    MARBLE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
+    MARBLE_CHISELED(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
+    MARBLE_CHISELED_FACE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
+    MARBLE_PATTERNED(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
+    MARBLE_AIR(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
 
     //shiverstone
     SHIVERSTONE_STAIRS(new StairsBlock(BlocksNatural.SHIVERSTONE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings()),
@@ -972,12 +973,12 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     //TRANSLATION_CANVAS(new TranslationCanvasBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().sounds(BlockSoundGroup.CANDLE).nonOpaque()), itemSettings().group(BOOKS)),
 
     // clay pots go here (not the baking item one)
-    ROUNDED_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
-    ROUNDED_BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
+    ROUNDED_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSounds.POT.sound).breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
+    ROUNDED_BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSounds.POT.sound).breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
 
-    BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
-    BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).nonOpaque().breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
-    GREEN_CLAY_POT(new ExplosiveClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).nonOpaque().breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BROWN_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSounds.POT.sound).breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
+    BLUE_CLAY_POT(new ClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSounds.POT.sound).nonOpaque().breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
+    GREEN_CLAY_POT(new ExplosiveClayPotBlock(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSounds.POT.sound).nonOpaque().breakInstantly()), itemSettings().group(NON_NATURAL_BLOCKS)),
     //PURPLE_CLAY_POT(new SoulClayPot(Block.Settings.of(BlockMats.POT).strength(0.3f).sounds(BlockSoundGroup.POT.sound).nonOpaque().breakInstantly(), UniformIntProvider.create(2, 6)), itemSettings().group(NON_NATURAL_BLOCKS)),
 
     DEEPSLATE_URN_PLAIN(new UrnBlock(BlockSettings.urn()), itemSettings().group(NON_NATURAL_BLOCKS)),
@@ -999,11 +1000,11 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
 
     //lodged and rusty blocks go here
     //GODDESS_BLADE_BLOCK(new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.EPIC).group(BOOKS)),
-    SWORD_BLOCK(new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
-    SHOVEL_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
-    PICKAXE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
-    AXE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
-    HOE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(net.minecraft.sound.BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
+    SWORD_BLOCK(new SwordBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
+    SHOVEL_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
+    PICKAXE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
+    AXE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
+    HOE_BLOCK(new PickaxeBlock(Block.Settings.of(Material.DECORATION).nonOpaque().breakInstantly().sounds(BlockSoundGroup.CHAIN)), itemSettings().rarity(Rarity.UNCOMMON).group(NON_NATURAL_BLOCKS)),
 
     //RUSTED_CHEST(new RustedChestBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings().group(BOOKS).rarity(Rarity.RARE)),
     //CHAINED_RUSTED_CHEST(new RustedChestBlock(Block.Settings.copy(Blocks.OAK_WOOD)), itemSettings().group(BOOKS).rarity(Rarity.RARE)),

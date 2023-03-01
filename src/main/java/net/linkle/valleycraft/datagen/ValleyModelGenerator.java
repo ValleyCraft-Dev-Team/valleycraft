@@ -8,7 +8,7 @@ import static net.minecraft.block.Blocks.PACKED_MUD;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.util.BlockEnum;
+import net.linkle.valleycraft.enums.BlockEnum;
 import net.linkle.valleycraft.util.IdProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -142,7 +142,7 @@ class ValleyModelGenerator extends FabricModelProvider {
         wall(ADVENTURINE_BRICK_WALL.block, map, generator);
 
         // SHALE
-        map = textureAll("block/shale_side");
+        map = textureAll("block/shale_side").put(TextureKey.TOP, Main.makeId("block/shale_top")).put(TextureKey.SIDE, Main.makeId("block/shale_side")).put(TextureKey.BOTTOM, Main.makeId("block/shale_top"));
         slab(SHALE_SLAB.block, SHALE.block, map, generator);
         stairs(SHALE_STAIRS.block, map, generator);
         wall(SHALE_WALL.block, map, generator);

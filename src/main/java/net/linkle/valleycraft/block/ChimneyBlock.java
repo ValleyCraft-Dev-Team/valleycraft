@@ -26,10 +26,10 @@ public class ChimneyBlock extends BlockWithWater {
     }
 
     static {
-        LEFT_X_SHAPE = Block.createCuboidShape(0,0,0,2,16,16);
-        RIGHT_X_SHAPE = Block.createCuboidShape(14,0,0,16,16,16);
-        LEFT_Z_SHAPE = Block.createCuboidShape(0,0,0,16,16,2);
-        RIGHT_Z_SHAPE = Block.createCuboidShape(0,0,14,16,16,16);
+        LEFT_X_SHAPE = Block.createCuboidShape(0,0,0,1,16,16);
+        RIGHT_X_SHAPE = Block.createCuboidShape(15,0,0,16,16,16);
+        LEFT_Z_SHAPE = Block.createCuboidShape(0,0,0,16,16,1);
+        RIGHT_Z_SHAPE = Block.createCuboidShape(0,0,15,16,16,16);
         FULL_SHAPE = VoxelShapes.union(LEFT_X_SHAPE, RIGHT_X_SHAPE,LEFT_Z_SHAPE, RIGHT_Z_SHAPE);
     }
 }

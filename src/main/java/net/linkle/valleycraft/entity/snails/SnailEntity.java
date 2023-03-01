@@ -26,28 +26,23 @@ public class SnailEntity extends AnimalEntity {
 
     public SnailEntity(EntityType<? extends SnailEntity> type, World world) {
         super(type, world);
-        this.setPathfindingPenalty(PathNodeType.WATER, 8.0F);
-        this.setPathfindingPenalty(PathNodeType.WATER_BORDER, 16.0F);
-        this.setPathfindingPenalty(PathNodeType.LAVA, 16.0F);
-        this.setPathfindingPenalty(PathNodeType.DANGER_FIRE, 16.0F);
-        this.setPathfindingPenalty(PathNodeType.DAMAGE_FIRE, 16.0F);
+        setPathfindingPenalty(PathNodeType.WATER, 8.0F);
+        setPathfindingPenalty(PathNodeType.WATER_BORDER, 16.0F);
+        setPathfindingPenalty(PathNodeType.LAVA, 16.0F);
+        setPathfindingPenalty(PathNodeType.DANGER_FIRE, 16.0F);
+        setPathfindingPenalty(PathNodeType.DAMAGE_FIRE, 16.0F);
     }
 
     @Override
     protected void initGoals() {
         goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new AnimalMateGoal(this, 0.5D));
-        this.goalSelector.add(2, new EscapeDangerGoal(this, 0.75D));
-        this.goalSelector.add(3, new TemptGoal(this, 0.5D, BREEDING_INGREDIENT, false));
-        this.goalSelector.add(4, new FollowParentGoal(this, 0.5D));
-        this.goalSelector.add(5, new WanderAroundFarGoal(this, 1.0D));
-        this.goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 2.0F));
-        this.goalSelector.add(7, new LookAroundGoal(this));
-    }
-
-    @Override
-    public void tickMovement() {
-        super.tickMovement();
+        goalSelector.add(1, new AnimalMateGoal(this, 0.5D));
+        goalSelector.add(2, new EscapeDangerGoal(this, 0.75D));
+        goalSelector.add(3, new TemptGoal(this, 0.5D, BREEDING_INGREDIENT, false));
+        goalSelector.add(4, new FollowParentGoal(this, 0.5D));
+        goalSelector.add(5, new WanderAroundFarGoal(this, 1.0D));
+        goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 2.0F));
+        goalSelector.add(7, new LookAroundGoal(this));
     }
 
     @Override
@@ -57,7 +52,7 @@ public class SnailEntity extends AnimalEntity {
 
     public static DefaultAttributeContainer.Builder createSnailAttributes() {
         return MobEntity.createMobAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 3.0)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.25);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.1);
     }
 
     @Override
@@ -86,7 +81,7 @@ public class SnailEntity extends AnimalEntity {
     }
 
     static {
-        BREEDING_INGREDIENT = Ingredient.ofItems(new ItemConvertible[] { Items.BEETROOT,
-                FoodIngredients.HEARTY_BEETROOT, FoodIngredients.CAVE_ROOT, FoodIngredients.ONION });
+        BREEDING_INGREDIENT = Ingredient.ofItems(Items.BEETROOT,
+                FoodIngredients.HEARTY_BEETROOT, FoodIngredients.CAVE_ROOT, FoodIngredients.ONION);
     }
 }
