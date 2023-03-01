@@ -13,6 +13,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowerBlock;
 import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.util.Util;
 import net.minecraft.util.registry.Registry;
 
@@ -52,7 +53,7 @@ public class ModFlowerBlock extends FlowerBlock {
 
     /** Create the block with a custom effect in stew. */
     public ModFlowerBlock(@Nullable StatusEffect effectInStew, int effectDuration, Settings settings) {
-        super(effectInStew, effectDuration, settings);
+        super(effectInStew==null?StatusEffects.LUCK:effectInStew, effectDuration, settings);
         this.effectInStew = Optional.ofNullable(effectInStew);
         this.effectDuration = effectDuration < 0 ? OptionalInt.empty() : OptionalInt.of(effectDuration);
     }
