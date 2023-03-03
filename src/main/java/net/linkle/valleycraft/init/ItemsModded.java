@@ -109,6 +109,7 @@ public enum ItemsModded implements ItemEnum {
 
     GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(64))),
     ELDER_GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(64))),
+    LICHES_IRON_BONE_AMULET(new Item(itemSettings().rarity(Rarity.EPIC))),
     WARDEN_ANTLER(new Item(itemSettings().rarity(Rarity.EPIC))),
 
     TOTEM_OF_TRADE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),

@@ -50,7 +50,9 @@ public enum Baubles implements ItemEnum {
 
     //miniboss keepsakes
     ELDER_GUARDIAN_SPIKE_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
-    /**warden keepsake replaces this line**/
+    WARDEN_HEART_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
+    LICHES_LUCKY_BONE_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
+
     //boss keepsakes
     NETHER_STAR_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
     ENDER_DRAGON_TALISMAN(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)));

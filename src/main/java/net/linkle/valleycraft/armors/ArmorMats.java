@@ -129,8 +129,8 @@ public enum ArmorMats implements ArmorMaterial {
     GREEN_CLOAK("green_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ItemsModded.CLOTH)),
     PURPLE_CLOAK("purple_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ItemsModded.CLOTH)),
     CYAN_CLOAK("cyan_cloak", ints(0,0,4,2), 15, 15, equipLeather(), items(ItemsModded.CLOTH)),
-    LICH_CLOAK("lich_cloak", ints(0,0,5,3), 15, 22, equipLeather(), items(ItemsModded.CLOTH)),
-    CLAM_BREASTPLATE("blue_breastplate", ints(1,2), 10, 15, equipTurtle(), items(BlocksNatural.CLAM_BLOCK)),
+    LICH_CLOAK("lich_cloak", ints(0,0,7,3), 15, 22, equipLeather(), items(ItemsModded.CLOTH)),
+    CLAM_BREASTPLATE("blue_breastplate", ints(1,2), 10, 22, equipTurtle(), items(BlocksNatural.CLAM_BLOCK)),
 
     DIVING("diving", ints(2,5,7,3), 15, 5, equipLeather(), items(ItemsModded.PRIMSTEEL_INGOT)),
     COPPER_DIVING("copper_diving", ints(2,5,7,2), 15, 5, equipLeather(), items(COPPER_INGOT));
