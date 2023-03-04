@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:iron_necklace"
+  },
+  "addition": {
+    "item": "valleycraft:liches_iron_bone_amulet"
+  },
+  "result": {
+    "item": "valleycraft:liches_lucky_bone_keepsake"
+  }
+}

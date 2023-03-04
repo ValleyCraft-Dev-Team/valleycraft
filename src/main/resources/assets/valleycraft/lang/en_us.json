@@ -165,6 +165,8 @@
   "item.valleycraft.librarians_hat": "Librarian Hat and Glasses",
   "item.valleycraft.villager_tunic": "Villager Tunic",
   "item.valleycraft.emerald_talisman": "Emerald Amulet",
+  "item.valleycraft.lapis_lazuli_talisman": "Lapis Lazuli Amulet",
+
   "item.valleycraft.amethyst_talisman": "Amethyst Amulet",
   "item.valleycraft.echo_shard_talisman": "Echo Shard Amulet",
   "item.valleycraft.undying_necklace": "Totem of Undying Talisman",
@@ -173,6 +175,7 @@
   "item.valleycraft.elder_guardian_spike_keepsake": "Elder Guardian Spine Keepsake",
   "item.valleycraft.liches_lucky_bone_keepsake": "Lich's Iron Bone Keepsake",
   "item.valleycraft.liches_iron_bone_amulet": "Lich's Iron Bone Brooch",
+  "item.valleycraft.warden_heart_keepsake": "Warden Soul Keepsake",
 
   "item.valleycraft.lich_hood_keepsake": "Lich Hood",
   "item.valleycraft.lich_cloak_keepsake": "Lich Cloak",
@@ -826,11 +829,12 @@
   "item.valleycraft.sweet_chicken_risotto": "§6Sweet Chicken Tikka Masala",
 
   "item.valleycraft.milk": "Milk Bottle",
-  "item.valleycraft.morel_oil": "Morel Oil Bottle",
+  "item.valleycraft.morel_oil": "Oil Bottle",
   "block.valleycraft.morel": "Morel",
   "item.valleycraft.aloe_vera": "Aloe Vera",
   "item.valleycraft.cave_root": "Cave Root",
   "item.valleycraft.fire_pepper": "Spicy Pepper",
+  "item.valleycraft.sunflower_seeds": "Sunflower Seeds",
 
   "item.valleycraft.beef_stew": "Beef Stew",
 

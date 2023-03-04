@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:iron_necklace"
+  },
+  "addition": {
+    "item": "valleycraft:warden_antler"
+  },
+  "result": {
+    "item": "valleycraft:warden_heart_keepsake"
+  }
+}

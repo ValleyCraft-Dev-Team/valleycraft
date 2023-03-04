@@ -59,6 +59,7 @@ public enum FoodIngredients implements ItemEnum {
     .addText("item.valleycraft.dishes.tooltip").addText("item.valleycraft.dishes.tooltip_5")),
     
     PUMPKIN_SLICE(new FoodItem(settings(), 2, Nourishment.LOW)),
+    //SUNFLOWER_SEEDS(new FoodItem(settings(), 1, Nourishment.NORMAL)),
 
     RAW_ABYSSWATCHER(new FoodItem(settings(), 3, Nourishment.POOR)),
     RAW_STONEROLLER_MINNOW(new FoodItem(settings(), 1, Nourishment.POOR)),

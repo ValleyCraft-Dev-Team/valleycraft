@@ -3,6 +3,9 @@
   "ingredients": [
     {
       "item": "valleycraft:iron_scrap"
+    },
+    {
+      "item": "valleycraft:liches_iron_bone_amulet"
     }
   ],
   "result": {
