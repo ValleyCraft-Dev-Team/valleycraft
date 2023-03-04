@@ -67,7 +67,7 @@ public class RushBlock extends SugarCaneBlock implements Waterloggable {
             int i;
             for(i = 1; world.getBlockState(pos.down(i)).isOf(this); ++i) {
             }
-            if (i < 4) {
+            if (i < 6) {
                 int age = state.get(AGE);
                 if (age == 15) {
                     world.setBlockState(pos.up(), this.getDefaultState());

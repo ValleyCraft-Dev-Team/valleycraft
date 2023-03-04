@@ -79,8 +79,6 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     TALL_ALLIUM(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
     TALL_LAVENDER(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
     TALL_AZURE_BLUET(new ModTallFlowerBlock(), itemSettings(), TallBlockItem::new),
-    
-    CATTAILS(new CattailsBlock(), itemSettings(), TallBlockItem::new),
 
     //BEE_NEST_WALL(new Block(Block.Settings.copy(Blocks.BEE_NEST)), itemSettings()),
 
@@ -139,6 +137,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     LARGE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
     LUSH_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
 
+    CATTAILS(new CattailsBlock(), itemSettings(), TallBlockItem::new),
     RUSHES(new RushBlock(Block.Settings.copy(Blocks.SUGAR_CANE).nonOpaque().breakInstantly().noCollision()), itemSettings()),
 
     SMALLEST_LILYPADS(new LilyPadBlock(Block.Settings.copy(Blocks.LILY_PAD)), itemSettings(), PlaceableOnWaterItem::new),

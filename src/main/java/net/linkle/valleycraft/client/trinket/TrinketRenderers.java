@@ -21,6 +21,7 @@ public class TrinketRenderers {
         register(new BodyRenderer("echo_shard"), Baubles.ECHO_SHARD_TALISMAN);
         register(new BodyRenderer("emerald_talisman"), Baubles.EMERALD_TALISMAN);
         register(new BodyRenderer("ender_pearl_talisman"), Baubles.ENDER_PEARL_TALISMAN);
+        register(new BodyRenderer("lapis_lazuli_talisman"), Baubles.LAPIS_LAZULI_TALISMAN);
         register(new BodyRenderer("nether_quartz_talisman"), Baubles.NETHER_QUARTZ_TALISMAN);
         register(new BodyRenderer("prismarine_crystal_talisman"), Baubles.PRISMARINE_TALISMAN);
         //leather base

@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
+    "valleycraft:makeshift_knife",
+
     "valleycraft:knife_wooden",
+    "valleycraft:knife_bone",
     "valleycraft:knife_golden",
     "valleycraft:knife_stone",
     "valleycraft:knife_primsteel",
@@ -9,13 +12,18 @@
     "valleycraft:knife_rosegold",
     "valleycraft:knife_diamond",
     "valleycraft:knife_netherite",
+    "valleycraft:knife_echochalcum",
+
     "valleycraft:dagger_wooden",
+    "valleycraft:dagger_bone",
     "valleycraft:dagger_golden",
     "valleycraft:dagger_stone",
     "valleycraft:dagger_primsteel",
     "valleycraft:dagger_iron",
     "valleycraft:dagger_rosegold",
     "valleycraft:dagger_diamond",
-    "valleycraft:dagger_netherite"
+    "valleycraft:dagger_netherite",
+    "valleycraft:dagger_echochalcum"
+
   ]
 }

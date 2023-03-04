@@ -37,6 +37,7 @@ public enum Baubles implements ItemEnum {
     ECHO_SHARD_TALISMAN(new Item(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
     EMERALD_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     ENDER_PEARL_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
+    LAPIS_LAZULI_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     NETHER_QUARTZ_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     PRISMARINE_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
 
