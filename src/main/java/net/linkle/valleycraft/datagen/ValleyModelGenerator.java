@@ -458,10 +458,10 @@ class ValleyModelGenerator extends FabricModelProvider {
         stairs(SCORCHSTONE_MOSAIC_STAIRS.block, map, generator);
 
         // VOLCANIC_STONE
-        map = textureAll(VOLCANIC_STONE);
-        slab(VOLCANIC_STONE_SLAB.block, VOLCANIC_STONE.block, map, generator);
-        stairs(VOLCANIC_STONE_STAIRS.block, map, generator);
-        wall(VOLCANIC_STONE_WALL.block, map, generator);
+        //map = textureAll(VOLCANIC_STONE);
+        //slab(VOLCANIC_STONE_SLAB.block, VOLCANIC_STONE.block, map, generator);
+        //stairs(VOLCANIC_STONE_STAIRS.block, map, generator);
+        //wall(VOLCANIC_STONE_WALL.block, map, generator);
 
         // POLISHED_PACKED_MUD
         map = textureAll(POLISHED_PACKED_MUD);
