@@ -19,11 +19,6 @@
     "valleycraft:orange_poppy",
     "valleycraft:yellow_poppy",
     "valleycraft:white_poppy",
-    "valleycraft:tall_cornflower",
-    "valleycraft:tall_oxeye_daisy",
-    "valleycraft:tall_allium",
-    "valleycraft:tall_lavender",
-    "valleycraft:tall_azure_bluet",
     "valleycraft:meadow_flowers",
     "valleycraft:wild_puff_ball",
     "valleycraft:wild_amethystle",
@@ -44,6 +39,9 @@
     "valleycraft:wild_onion",
     "valleycraft:wild_herbs",
     "valleycraft:wild_puff_ball",
-    "valleycraft:jungle_bush"
+    "valleycraft:jungle_bush",
+    "valleycraft:lily_of_the_mountains",
+    "valleycraft:goddess_lily",
+    "valleycraft:poison_blossom"
   ]
 }
