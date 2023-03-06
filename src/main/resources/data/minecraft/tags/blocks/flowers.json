@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:yellow_flowering_lilypad",
+    "valleycraft:white_flowering_lilypad",
+    "valleycraft:red_flowering_lilypad",
+    "valleycraft:purple_flowering_lilypad",
+    "valleycraft:pink_flowering_lilypad",
+    "valleycraft:blue_flowering_lilypad",
+    "valleycraft:iceplant"
+  ]
+}

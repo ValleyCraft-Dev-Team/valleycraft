@@ -7,6 +7,9 @@
     "valleycraft:shivercap",
     "valleycraft:stalwart_shroom",
     "valleycraft:morel",
-    "minecraft:brown_mushroom"
+    "minecraft:red_mushroom",
+    "valleycraft:red_cluster",
+    "valleycraft:glow_cap_cluster",
+    "valleycraft:jungle_cap_cluster"
   ]
 }
