@@ -38,7 +38,7 @@ class RenderLayers {
         put(PRIMSTEEL_TRAPDOOR, cullout);
         put(SCULK_BLOSSOM, cullout);
         //put(CHAINED_RUSTED_CHEST, cullout);
-        put(CRAFTING_MAT, cullout);
+        //put(CRAFTING_MAT, cullout);
         put(WITCH_LADLE, cullout);
         put(FIREGUARD, cullout);
         put(NEST, cullout);

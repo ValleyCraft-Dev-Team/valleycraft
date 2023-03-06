@@ -21,7 +21,7 @@ public class Groups {
     public static final ItemGroup TIERED_DISHES = create("dishes", () -> TIERED_DISHES_ICON);
 
     public static final ItemGroup VC_ITEMS = create("items", () -> ITEMS_ICON);
-    public static final ItemGroup VC_TOOLS = create("tools", () -> BlocksModded.CRAFTING_MAT);
+    public static final ItemGroup VC_TOOLS = create("tools", () -> Tools.CLIMBING_AXE);
     public static final ItemGroup CLOTHING = create("clothing", () -> Armors.STRAW_HAT);
 
     public static final ItemGroup NON_NATURAL_BLOCKS = create("blocks", () -> BlocksModded.APPLE_DOOR);

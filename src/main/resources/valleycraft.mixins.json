@@ -9,7 +9,6 @@
     "LivingEntityMixin",
     "PlayerEntityMixin",
     "ItemEntityMixin",
-    "CraftingScreenHandlerMixin",
     "EnchantmentHelperMixin"
   ],
   "client": [

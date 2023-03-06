@@ -6,7 +6,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import net.linkle.valleycraft.item.SoulItem;
+import net.linkle.valleycraft.item.SoulPetItem;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ItemEntity;
@@ -26,7 +26,7 @@ abstract class ItemEntityMixin extends Entity {
 
     @Inject(method = "damage", at = @At("HEAD"), cancellable = true)
     public void damage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> info) {
-        if (source != DamageSource.OUT_OF_WORLD && getStack().getItem() instanceof SoulItem) {
+        if (source != DamageSource.OUT_OF_WORLD && getStack().getItem() instanceof SoulPetItem) {
             info.setReturnValue(false);
         }
     }
