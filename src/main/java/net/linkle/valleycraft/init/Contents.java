@@ -99,6 +99,7 @@ public class Contents {
         putFuels(ItemsModded.HANDLE, 250);
         putFuels(ItemsModded.REINFORCED_HANDLE, 250);
         putFuels(ItemsModded.STURDY_HANDLE, 250);
+        putFuels(ItemsModded.COAL_NUGGET, 400);
         putFuels(ItemsModded.ANTHRACITE, 1600);
         putFuels(BlocksModded.ANTHRACITE_BLOCK, 16000);
         putFuels(ItemsModded.BRIMSTONE_SHARD, 800);

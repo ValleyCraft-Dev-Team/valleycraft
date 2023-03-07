@@ -166,6 +166,8 @@
   "item.valleycraft.villager_tunic": "Villager Tunic",
   "item.valleycraft.emerald_talisman": "Emerald Amulet",
   "item.valleycraft.lapis_lazuli_talisman": "Lapis Lazuli Amulet",
+  "item.valleycraft.coal_nugget": "Coal Nugget",
+  "item.valleycraft.brine": "Brine Bottle",
 
   "item.valleycraft.amethyst_talisman": "Amethyst Amulet",
   "item.valleycraft.echo_shard_talisman": "Echo Shard Amulet",
@@ -1290,6 +1292,7 @@
   "item.valleycraft.makeshift_hoe": "Makeshift Hoe",
   "item.valleycraft.makeshift_shovel": "Makeshift Shovel",
   "item.valleycraft.makeshift_knife": "Makeshift Knife",
+  "item.valleycraft.makeshift_shears": "Makeshift Shears",
 
   "item.valleycraft.bone_spear": "Bone Spear",
   "item.valleycraft.bone_pickaxe": "Bone Pickaxe",
@@ -1478,7 +1481,7 @@
   "item.valleycraft.toast": "Toasted Bread Slice",
   "item.valleycraft.eggs_on_toast": "Eggs on Toast",
   "item.valleycraft.grilled_cheese": "Cheese Sandwich",
-  "item.valleycraft.atole_milk": "Maize Atole",
+  "item.valleycraft.atole_milk": "Maize Atole Bottle",
   "item.valleycraft.kelp_salad": "Kelp Salad",
   "item.valleycraft.brown_mushroom_salad": "Brown Mushroom Salad",
   "item.valleycraft.orange_mushroom_salad": "Green Mushroom Salad",

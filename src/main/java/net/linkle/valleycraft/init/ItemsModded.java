@@ -84,6 +84,7 @@ public enum ItemsModded implements ItemEnum {
     FLOUR(new Item(itemSettings().group(INGREDIENTS))),
     MAIZE_FLOUR(new Item(itemSettings().group(INGREDIENTS))),
 
+    COAL_NUGGET(new Item(itemSettings())),
     SALTPETER(new Item(itemSettings())),
     ANTHRACITE(new Item(itemSettings())),
     BRIMSTONE_SHARD(new Item(itemSettings())),

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:rosegold_ingot"
+    }
+  },
+  "result": {
+    "item": "valleycraft:rosegold_leggings",
+    "count": 1
+  }
+}

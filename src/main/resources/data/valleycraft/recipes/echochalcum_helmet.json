@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_helmet"
+  },
+  "addition": {
+    "item": "valleycraft:echochalcum_ingot"
+  },
+  "result": {
+    "item": "valleycraft:echochalcum_helmet"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:leather_necklace"
+  },
+  "addition": {
+    "item": "valleycraft:crystallized_honeydrop"
+  },
+  "result": {
+    "item": "valleycraft:crystallized_honey_necklace"
+  }
+}

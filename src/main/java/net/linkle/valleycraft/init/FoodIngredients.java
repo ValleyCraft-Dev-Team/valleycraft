@@ -20,6 +20,7 @@ import net.linkle.valleycraft.Main;
 public enum FoodIngredients implements ItemEnum {
 
     /**recipes done**/
+    BRINE(new Tier1Bottle(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 1, Nourishment.POOR, StatusEffects.NAUSEA).hideTooltip()),
     MILK(new BottleItem(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 1, Nourishment.EXCELLENT).setMilk()),
     MOREL_OIL(new Tier1Bottle(settings().recipeRemainder(net.minecraft.item.Items.GLASS_BOTTLE).maxCount(16), 2, Nourishment.POOR, StatusEffects.SLOWNESS).hideTooltip()),
     BUTTER(new FoodItem(settings(), 0, Nourishment.POOR)),
