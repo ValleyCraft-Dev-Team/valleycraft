@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.item;
 
+import net.linkle.valleycraft.init.ItemsModded;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -15,35 +16,31 @@ import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 public class ArrowBundleItem extends Item {
-    public ArrowBundleItem(Item.Settings settings) {
+    public ArrowBundleItem(Settings settings) {
         super(settings);
     }
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        PlayerEntity playerEntity = user instanceof PlayerEntity ? (PlayerEntity)user : null;
-        if (playerEntity instanceof ServerPlayerEntity) {
-            Criteria.CONSUME_ITEM.trigger((ServerPlayerEntity)playerEntity, stack);
-        }
+        if (user instanceof PlayerEntity player && !player.getAbilities().creativeMode) {
+            if (player instanceof ServerPlayerEntity serverPlayer)
+                Criteria.CONSUME_ITEM.trigger(serverPlayer, stack);
+            player.incrementStat(Stats.USED.getOrCreateStat(this));
 
-        if (playerEntity != null) {
-            playerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
-            if (!playerEntity.getAbilities().creativeMode) {
-                stack.decrement(1);
-            }
-        }
+            stack.decrement(1);
+            var inventory = player.getInventory();
 
-        if (playerEntity == null || !playerEntity.getAbilities().creativeMode) {
             if (stack.isEmpty()) {
+                inventory.insertStack(new ItemStack(ItemsModded.PLANT_FIBER_STRING, 1));
                 return new ItemStack(Items.ARROW, 8);
             }
 
-            if (playerEntity != null) {
-                playerEntity.getInventory().insertStack(new ItemStack(Items.ARROW, 8));
-            }
+            inventory.insertStack(new ItemStack(ItemsModded.PLANT_FIBER_STRING, 1));
+            inventory.insertStack(new ItemStack(Items.ARROW, 8));
+            return stack;
         }
 
-        return stack.isEmpty() ? new ItemStack(Items.ARROW, 8) : stack;
+        return stack;
     }
 
     @Override

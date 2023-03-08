@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "tag": "c:strings"
+    },
+    {
+      "tag": "c:strings"
+    },
+    {
+      "tag": "c:strings"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:string_spool",
+    "count": 1
+  }
+}

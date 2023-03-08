@@ -1,6 +1,5 @@
 package net.linkle.valleycraft.item;
 
-import net.linkle.valleycraft.init.ItemsModded;
 import net.linkle.valleycraft.init.Tools;
 import net.minecraft.advancement.criterion.Criteria;
 import net.minecraft.entity.LivingEntity;
@@ -16,8 +15,8 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
-public class StringSpoolItem extends Item {
-    public StringSpoolItem(Settings settings) {
+public class DriftwoodBranchItem extends Item {
+    public DriftwoodBranchItem(Settings settings) {
         super(settings);
     }
 
@@ -32,12 +31,10 @@ public class StringSpoolItem extends Item {
             var inventory = player.getInventory();
 
             if (stack.isEmpty()) {
-                inventory.insertStack(new ItemStack(ItemsModded.PLANT_FIBER_STRING, 3));
-                return new ItemStack(Items.STICK, 1);
+                inventory.insertStack(new ItemStack(Items.STICK, MathHelper.nextInt(world.random, 1, 3)));
             }
 
-            inventory.insertStack(new ItemStack(ItemsModded.PLANT_FIBER_STRING, 3));
-            inventory.insertStack(new ItemStack(Items.STICK, 1));
+            inventory.insertStack(new ItemStack(Items.STICK, MathHelper.nextInt(world.random, 1, 3)));
             return stack;
         }
 

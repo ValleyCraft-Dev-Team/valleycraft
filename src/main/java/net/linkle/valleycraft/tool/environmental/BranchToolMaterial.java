@@ -15,7 +15,7 @@ public class BranchToolMaterial implements ToolMaterial {
         //Environmental: 32
         //Diamond: 1561
         //Netherite: 2031
-        return 32;
+        return 8;
     }
 
     @Override

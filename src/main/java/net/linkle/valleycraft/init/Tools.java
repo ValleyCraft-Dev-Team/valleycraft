@@ -36,10 +36,11 @@ public class Tools {
 
     //environmental tools
     public static final Item BRANCH = new BranchWeaponItem(new BranchToolMaterial(), 3, -2.0f);
+    public static final Item DRIFTWOOD_BRANCH = new BranchWeaponItem(new BranchToolMaterial(), 3, -2.0f);
 
     //public static final Item MAKESHIFT_SPEAR = new BranchSpearItem(ModToolMaterials.MAKESHIFT_WOOD, 4, -2.8f);
-    public static final Item MAKESHIFT_PICKAXE = new BranchPickaxeItem(ModToolMaterials.MAKESHIFT_STONE, 3, -3.0f);
-    public static final Item MAKESHIFT_AXE = new BranchAxeItem(ModToolMaterials.MAKESHIFT_FLINT, 3, -3.0f);
+    public static final Item MAKESHIFT_PICKAXE = new BranchPickaxeItem(ModToolMaterials.MAKESHIFT_FLINT, 3, -3.0f);
+    public static final Item MAKESHIFT_AXE = new BranchAxeItem(ModToolMaterials.MAKESHIFT_STONE, 3, -3.0f);
     public static final Item MAKESHIFT_SHOVEL = new BranchShovelItem(ModToolMaterials.MAKESHIFT_WOOD, 1, -3.0f);
     public static final Item MAKESHIFT_HOE = new BranchHoeItem(ModToolMaterials.MAKESHIFT_WOOD, 0, -3.0f);
     public static final Item FLINT_AND_PRIMSTEEL = new FlintAndSteelItem((new Item.Settings()).maxDamage(4).group(VC_TOOLS));
@@ -128,6 +129,8 @@ public class Tools {
     public static void initialize() {
         //Environmental
         Reg.register("branch", BRANCH);
+        Reg.register("driftwood_branch", DRIFTWOOD_BRANCH);
+
         //Reg.register("sharp_flint", FLINT);
         //Reg.register("hefty_rock", HEFTY_ROCK);
         Reg.register("throwing_rock", THROWING_ROCK);
