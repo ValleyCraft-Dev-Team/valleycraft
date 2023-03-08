@@ -119,6 +119,7 @@ public enum ItemsModded implements ItemEnum {
     BOMB_BAG(new BombBagItem(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON))),
     ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_TOOLS))),
     SEED_BAG(new SeedBagItem(itemSettings().group(VC_ITEMS))),
+    STRING_SPOOL(new StringSpoolItem(itemSettings().group(VC_ITEMS))),
     PUFF_BALL(new Item(itemSettings())),
     CLOTH(new Item(itemSettings())),
 

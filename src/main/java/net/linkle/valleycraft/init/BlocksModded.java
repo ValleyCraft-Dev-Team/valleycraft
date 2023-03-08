@@ -34,7 +34,7 @@ import net.minecraft.world.BlockView;
 
 public enum BlocksModded implements ItemEnum, BlockEnum {
 
-    //CRAFTING_MAT(new CraftingMatBauble(Block.Settings.of(Material.DECORATION).sounds(BlockSoundGroup.WOOL).breakInstantly().noCollision().nonOpaque()), toolItemSettings()),
+    CRAFTING_MAT(new CraftingMatBlock(Block.Settings.of(Material.DECORATION).sounds(BlockSoundGroup.WOOL).breakInstantly().noCollision().nonOpaque()), toolItemSettings()),
     CRATE(new CrateBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     DEEPSLATE_CHEST(new DeepslateChestBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)), itemSettings()),
     COFFIN(new DeepslateChestBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)), itemSettings()),

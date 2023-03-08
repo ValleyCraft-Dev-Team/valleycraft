@@ -82,6 +82,10 @@
   "item.valleycraft.dishes.tooltip_10": "give hastening energy.",
   "item.valleycraft.fastfood.tooltip": "Can be eaten very",
   "item.valleycraft.fastfood.tooltip_2": "rapidly on the run.",
+  "item.valley.warm.tooltip": "Increases jump height",
+  "item.valley.warm.tooltip_2": "and prevents frostbite.",
+  "item.valley.fast.tooltip": "Increases movement speed.",
+  "item.valley.night.tooltip": "Allows you to see in the dark.",
 
   "item.valley.tier_one.tooltip": "§7Effect Tier: §6★☆☆",
   "item.valley.tier_two.tooltip": "§7Effect Tier: §6★★☆",
@@ -157,6 +161,7 @@
   "item.valleycraft.rusted_pickaxe": "Rusty Iron Pickaxe",
   "item.valleycraft.arrow_bundle": "Arrow Bundle",
   "item.valleycraft.bomb_bag": "Bomb Bag",
+  "item.valleycraft.string_spool": "Spool of String",
   "item.valleycraft.hot_plate": "Hot Plate",
   "item.valleycraft.primsteel_raw": "Raw Primsteel",
   "item.valleycraft.primsteel_nugget": "Primsteel Nugget",
@@ -205,6 +210,7 @@
   "item.valley.scalpel.tooltip": "Cuts Coral without damaging it.",
   "item.valleycraft.coral_knife_guardian": "Blue Spine Scalpel",
   "item.valleycraft.lapis_lazuli_talisman": "Lapis Lazuli Amulet",
+
 
   "item.valleycraft.feather": "Feather Hairpin",
   "item.valleycraft.crow_feather": "Crow Feather Hairpin",

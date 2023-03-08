@@ -23,7 +23,8 @@
     "recipes": [
       "minecraft:skeleton_skull",
       "valleycraft:villager_skull",
-      "valleycraft:piglin_skull"
+      "valleycraft:piglin_skull",
+      "valleycraft:enderman_skull"
     ]
   }
 }

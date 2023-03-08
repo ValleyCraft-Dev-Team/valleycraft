@@ -5,9 +5,11 @@ import static net.minecraft.util.Rarity.EPIC;
 
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.armors.ArmorMats;
+import net.linkle.valleycraft.armors.FastFeatherItem;
+import net.linkle.valleycraft.armors.WarmBootItem;
 import net.linkle.valleycraft.enums.ItemEnum;
 import net.linkle.valleycraft.item.ClothingArmorItem;
-import net.linkle.valleycraft.item.NightGoggleItem;
+import net.linkle.valleycraft.armors.NightGoggleItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterials;
@@ -27,7 +29,7 @@ public enum Armors implements ItemEnum {
     BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
     BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
 
-    FUR_BOOTS(new ArmorItem(ArmorMats.RABBIT, EquipmentSlot.FEET, settingsNormal())),
+    FUR_BOOTS(new WarmBootItem(ArmorMats.RABBIT, EquipmentSlot.FEET, settingsNormal())),
 
     DIERDRA_LAUREL(new ArmorItem(ArmorMats.DIERDRA_LAUREL, EquipmentSlot.HEAD, settingsNormal())),
     FLOWER_CROWN(new ArmorItem(ArmorMats.FLOWERING_HAT, EquipmentSlot.HEAD, settingsNormal())),
@@ -37,10 +39,10 @@ public enum Armors implements ItemEnum {
     TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
     TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
-    SEAGULL_FEATHER(new ArmorItem(ArmorMats.SEAGULL_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
-    DUCK_FEATHER(new ArmorItem(ArmorMats.DUCK_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
-    CROW_FEATHER(new ArmorItem(ArmorMats.CROW_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
-    FEATHER(new ArmorItem(ArmorMats.WHITE_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    SEAGULL_FEATHER(new FastFeatherItem(ArmorMats.SEAGULL_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    DUCK_FEATHER(new FastFeatherItem(ArmorMats.DUCK_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    CROW_FEATHER(new FastFeatherItem(ArmorMats.CROW_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    FEATHER(new FastFeatherItem(ArmorMats.WHITE_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
 
     REINFORCED_LEATHER_HELMET(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_GOLDEN_HELMET(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.HEAD, settingsNormal())),

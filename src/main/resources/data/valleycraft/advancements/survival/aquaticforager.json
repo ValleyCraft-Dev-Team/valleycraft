@@ -19,7 +19,7 @@
         "items": [
           {
             "items": [
-              "valleycraft:clam_block",
+              "valleycraft:clam_block"
             ]
           }
         ]
@@ -31,7 +31,7 @@
         "items": [
           {
             "items": [
-              "valleycraft:urchin_block",
+              "valleycraft:urchin_block"
             ]
           }
         ]
@@ -43,7 +43,7 @@
         "items": [
           {
             "items": [
-              "minecraft:kelp",
+              "minecraft:kelp"
             ]
           }
         ]
@@ -55,7 +55,7 @@
         "items": [
           {
             "items": [
-              "valleycraft:glow_kelp",
+              "valleycraft:glow_kelp"
             ]
           }
         ]
@@ -67,7 +67,7 @@
         "items": [
           {
             "items": [
-              "valleycraft:orange_kelp",
+              "valleycraft:orange_kelp"
             ]
           }
         ]

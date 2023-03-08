@@ -137,7 +137,7 @@ public class Tools {
         Reg.register("makeshift_pickaxe", MAKESHIFT_PICKAXE);
         Reg.register("makeshift_axe", MAKESHIFT_AXE);
         Reg.register("makeshift_hoe", MAKESHIFT_HOE);
-        Reg.register("makeshift_shears", MAKESHIFT_SHEARS);
+        //Reg.register("makeshift_shears", MAKESHIFT_SHEARS);
         Reg.register("flint_and_primsteel", FLINT_AND_PRIMSTEEL);
 
         //dont add makeshift spear until adding in regular spears -> 1.1 w/ throwing ability?
