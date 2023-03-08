@@ -20,7 +20,7 @@ public class Client implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        Sprites.intialize();
+        Sprites.initialize();
         RenderLayers.intialize();
         ColorProvider.intialize();
         Particles.initializeClient();

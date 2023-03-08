@@ -44,7 +44,7 @@ public class Tools {
     public static final Item MAKESHIFT_SHOVEL = new BranchShovelItem(ModToolMaterials.MAKESHIFT_WOOD, 1, -3.0f);
     public static final Item MAKESHIFT_HOE = new BranchHoeItem(ModToolMaterials.MAKESHIFT_WOOD, 0, -3.0f);
     public static final Item FLINT_AND_PRIMSTEEL = new FlintAndSteelItem((new Item.Settings()).maxDamage(4).group(VC_TOOLS));
-    public static final Item MAKESHIFT_SHEARS = new ShearsItem((new Item.Settings()).maxDamage(4).group(VC_TOOLS));
+    //public static final Item MAKESHIFT_SHEARS = new ShearsItem((new Item.Settings()).maxDamage(4).group(VC_TOOLS));
 
     public static final Item RUSTY_SWORD = new RustySwordItem(new RustyMaterial(),4, -2.4f);
     public static final Item RUSTY_PICKAXE = new RustyPickaxeItem(new RustyMaterial(),2, -2.8f);

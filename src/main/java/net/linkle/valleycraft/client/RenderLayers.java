@@ -1,5 +1,11 @@
 package net.linkle.valleycraft.client;
 
+import static net.linkle.valleycraft.Main.LOGGER;
+import static net.linkle.valleycraft.init.BlocksModded.*;
+import static net.linkle.valleycraft.init.BlocksNatural.*;
+
+import java.util.HashSet;
+
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -7,13 +13,6 @@ import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.registry.Registry;
-
-import static net.linkle.valleycraft.init.BlocksModded.*;
-import static net.linkle.valleycraft.init.BlocksNatural.*;
-
-import java.util.HashSet;
-
-import static net.linkle.valleycraft.Main.LOGGER;
 
 @Environment(EnvType.CLIENT)
 class RenderLayers {

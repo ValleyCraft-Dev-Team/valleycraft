@@ -3,6 +3,7 @@ package net.linkle.valleycraft.client.armor;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.client.rendering.v1.ArmorRenderer;
+import net.linkle.valleycraft.client.armor.renderer.CowPokeHatRenderer;
 import net.linkle.valleycraft.client.armor.renderer.StrawHatRenderer;
 import net.linkle.valleycraft.init.Armors;
 import net.minecraft.item.ItemConvertible;
