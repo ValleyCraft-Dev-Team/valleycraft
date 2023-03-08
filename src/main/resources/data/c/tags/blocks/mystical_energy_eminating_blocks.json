@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "#c:shelves",
+    "#c:fossil_ores",
+    "#c:bone_blocks",
+    "#c:skulls",
+    "#c:skeletal_remains",
+    "#c:heads",
+    "#c:cave_paintings",
+    "minecraft:enchanting_table",
+    "valleycraft:ornate_obsidian_table",
+    "valleycraft:clothed_ornate_obsidian_table",
+    "valleycraft:witch_ladle",
+    "valleycraft:exp_bottle_block",
+    "minecraft:cauldron"
+  ]
+}

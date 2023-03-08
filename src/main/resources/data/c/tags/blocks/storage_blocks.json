@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#c:crates",
+    "minecraft:barrel",
+    "minecraft:chest",
+    "minecraft:trapped_chest",
+    "valleycraft:memory_box",
+    "valleycraft:cabinet",
+    "valleycraft:counter_drawer",
+    "valleycraft:coffin",
+    "valleycraft:deepslate_chest"
+  ]
+}

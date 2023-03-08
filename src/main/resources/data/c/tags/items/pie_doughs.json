@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:chocolate_pie_dough",
+    "valleycraft:pumpkin_pie_dough",
+    "valleycraft:apple_pie_dough",
+    "valleycraft:sweet_berry_pie_dough",
+    "valleycraft:glow_berry_pie_dough",
+    "valleycraft:chorus_fruit_pie_dough",
+    "valleycraft:enchanted_apple_pie_dough"
+  ]
+}

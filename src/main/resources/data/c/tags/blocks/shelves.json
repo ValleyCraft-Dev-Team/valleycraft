@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bookshelf",
+    "valleycraft:empty_shelf",
+    "valleycraft:anthro_bookshelf",
+    "valleycraft:beekeeping_bookshelf",
+    "valleycraft:cartography_bookshelf",
+    "valleycraft:potion_bookshelf",
+    "valleycraft:scroll_bookshelf",
+    "valleycraft:tool_bookshelf"
+  ]
+}

@@ -2,14 +2,15 @@
   "replace": false,
   "values": [
     "valleycraft:morel",
-    "valleycraft:glow_cap",
-    "valleycraft:jungle_cap",
-    "valleycraft:shivercap",
-    "valleycraft:stalwart_shroom",
-    "valleycraft:morel",
-    "valleycraft:red_cluster",
+    "minecraft:brown_mushroom",
     "valleycraft:brown_cluster",
+    "minecraft:red_mushroom",
+    "valleycraft:red_cluster",
+    "valleycraft:jungle_cap",
+    "valleycraft:jungle_cap_cluster",
+    "valleycraft:glow_cap",
     "valleycraft:glow_cap_cluster",
-    "valleycraft:jungle_cap_cluster"
+    "valleycraft:shivercap",
+    "valleycraft:stalwart_shroom"
   ]
 }

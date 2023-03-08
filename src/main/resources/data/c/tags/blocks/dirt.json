@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:dry_dirt"
+    "valleycraft:dry_dirt",
+    "valleycraft:iron_rich_dirt",
+    "minecraft:dirt",
+    "minecraft:coarse_dirt",
+    "minecraft:rooted_dirt",
+    "minecraft:podzol",
+    "minecraft:mycelium",
+    "minecraft:grass_block"
   ]
 }

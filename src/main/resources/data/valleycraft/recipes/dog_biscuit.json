@@ -5,13 +5,13 @@
       "item": "minecraft:bone_meal"
     },
     {
-      "item": "valleycraft:flour"
+      "tag": "c:flour"
     },
     {
       "item": "valleycraft:salt"
     },
     {
-      "item": "valleycraft:milk"
+      "tag": "c:milk_bottles"
     }
   ],
   "result": {

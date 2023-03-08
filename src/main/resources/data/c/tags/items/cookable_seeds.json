@@ -1,15 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:wheat_seeds",
-    "minecraft:pumpkin_seeds",
-    "minecraft:melon_seeds",
-    "minecraft:beetroot_seeds",
-    "valleycraft:puff_ball_seeds",
-    "valleycraft:onion_seeds",
-    "valleycraft:fire_pepper_seeds",
-    "valleycraft:cave_root_seeds",
-    "valleycraft:ancient_flower_seeds",
-    "valleycraft:amethystle_seeds"
+    "#c:seeds"
   ]
 }

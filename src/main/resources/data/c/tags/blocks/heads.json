@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:head_zombie_alex",
+    "valleycraft:head_zombie_efe",
+    "valleycraft:head_drowned_alex",
+    "valleycraft:head_drowned_efe",
+    "valleycraft:head_drowned_steve",
+    "valleycraft:head_husk_alex",
+    "valleycraft:head_husk_efe",
+    "valleycraft:head_husk_steve",
+    "valleycraft:head_rotten_alex",
+    "valleycraft:head_rotten_efe",
+    "valleycraft:head_rotten_steve",
+    "minecraft:player_head",
+    "minecraft:zombie_head",
+    "minecraft:creeper_head",
+    "minecraft:dragon_head"
+  ]
+}

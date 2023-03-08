@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:raw_rice"
+    "valleycraft:raw_rice",
+    "minecraft:wheat"
   ]
 }

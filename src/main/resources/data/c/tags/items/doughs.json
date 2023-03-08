@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:hardtack_dough",
+    "#c:bread_doughs",
+    "#c:pie_doughs",
+    "#c:cake_doughs",
+    "#c:cookie_doughs"
+  ]
+}

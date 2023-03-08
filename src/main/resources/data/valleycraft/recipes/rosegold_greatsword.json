@@ -4,7 +4,7 @@
     "item": "valleycraft:rosegold_sword"
   },
   "addition": {
-    "item": "valleycraft:rosegold_ingot"
+    "tag": "c:rose_gold_ingots"
   },
   "result": {
     "item": "valleycraft:rosegold_greatsword"

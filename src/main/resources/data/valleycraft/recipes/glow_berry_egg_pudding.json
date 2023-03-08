@@ -8,7 +8,7 @@
       "item": "minecraft:egg"
     },
     {
-      "item": "valleycraft:milk"
+      "tag": "c:milk_bottles"
     },
     {
       "item": "minecraft:sugar"

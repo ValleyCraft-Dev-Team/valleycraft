@@ -8,7 +8,7 @@
       "item": "minecraft:slime_ball"
     },
     {
-      "item": "valleycraft:milk"
+      "tag": "c:milk_bottles"
     },
     {
       "item": "valleycraft:salt"

@@ -9,14 +9,14 @@
       "item": "minecraft:gold_ingot"
     },
     "v": {
-      "item": "valleycraft:primsteel_ingot"
+      "tag": "c:primsteel_ingots"
     },
     "c": {
       "item": "minecraft:copper_ingot"
     }
   },
   "result": {
-    "item": "valleycraft:rosegold_ingot",
+    "tag": "c:rose_gold_ingots",
     "count": 1
   }
 }

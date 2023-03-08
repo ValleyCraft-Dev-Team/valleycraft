@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#c:brasium_ingots",
+    "#c:rose_gold_ingots",
+    "#c:echochalcum_ingots",
+    "minecraft:netherite_ingot"
+  ]
+}

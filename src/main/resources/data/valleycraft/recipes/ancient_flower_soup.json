@@ -8,7 +8,7 @@
       "item": "valleycraft:baked_apple"
     },
     {
-      "item": "valleycraft:milk"
+      "tag": "c:milk_bottles"
     },
     {
       "item": "minecraft:red_mushroom"

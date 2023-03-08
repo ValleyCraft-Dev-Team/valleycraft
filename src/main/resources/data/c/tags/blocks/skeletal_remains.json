@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:villager_skeletal_remains",
+    "valleycraft:piglin_skeletal_remains",
+    "valleycraft:skeletal_remains"
+  ]
+}

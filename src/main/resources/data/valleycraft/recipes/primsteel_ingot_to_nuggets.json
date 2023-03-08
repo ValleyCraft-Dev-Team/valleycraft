@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "valleycraft:primsteel_ingot"
+      "tag": "c:primsteel_ingots"
     }
   ],
   "result": {

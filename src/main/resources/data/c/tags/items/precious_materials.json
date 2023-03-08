@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#c:gems",
+    "valleycraft:crystallized_honeydrop",
+    "valleycraft:guardian_spike",
+    "valleycraft:elder_guardian_spike",
+    "valleycraft:warden_antler",
+    "valleycraft:dragon_tooth",
+    "minecraft:scute"
+  ]
+}

@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "valleycraft:milk"
+      "tag": "c:milk_bottles"
     },
     {
       "item": "valleycraft:maize_flour"

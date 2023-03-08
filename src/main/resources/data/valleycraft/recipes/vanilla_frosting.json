@@ -11,7 +11,7 @@
       "item": "minecraft:sugar"
     },
     {
-      "item": "valleycraft:milk"
+      "tag": "c:milk_bottles"
     },
     {
       "item": "valleycraft:butter"

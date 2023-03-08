@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:erdstone_cave_painting_portrait",
+    "valleycraft:erdstone_cave_painting_zombies",
+    "valleycraft:erdstone_cave_painting_family",
+    "valleycraft:erdstone_cave_painting_home"
+  ]
+}

@@ -14,7 +14,7 @@
       "item": "minecraft:egg"
     },
     {
-      "item": "valleycraft:flour"
+      "tag": "c:flour"
     }
   ],
   "result": {
