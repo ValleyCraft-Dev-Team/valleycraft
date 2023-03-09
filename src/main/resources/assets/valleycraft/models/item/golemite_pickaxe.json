@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "valleycraft:item/tools/pickaxes/golemite_pickaxe"
-  }
-}

@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:rocks",
-    "valleycraft:flint_rocks"
+    "valleycraft:rock_item"
   ]
 }

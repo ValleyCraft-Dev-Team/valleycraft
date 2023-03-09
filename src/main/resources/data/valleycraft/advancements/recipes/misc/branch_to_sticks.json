@@ -7,8 +7,7 @@
           {
             "items": [
               "valleycraft:branch",
-              "valleycraft:driftwood_branch",
-              "valleycraft:plank"
+              "valleycraft:driftwood_branch"
             ]
           }
         ]
@@ -23,7 +22,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:stick"
+      "valleycraft:branches_to_sticks"
     ]
   }
 }

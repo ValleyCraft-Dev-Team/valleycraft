@@ -163,7 +163,7 @@
   "item.valleycraft.arrow_bundle": "Arrow Bundle",
   "item.valleycraft.bomb_bag": "Bomb Bag",
   "item.valleycraft.string_spool": "Spool of String",
-  "item.valleycraft.hot_plate": "Hot Plate",
+  "item.valleycraft.hot_plate": "Conductive Stone Plate",
   "item.valleycraft.primsteel_raw": "Raw Primsteel",
   "item.valleycraft.primsteel_nugget": "Primsteel Nugget",
   "item.valleycraft.primsteel_ingot": "Primsteel Ingot",
@@ -372,7 +372,6 @@
   "block.valleycraft.book_stack_6": "VII Placed Books",
   "block.valleycraft.book_stack_7": "VIII Placed Books",
   "block.valleycraft.book_stack_8": "IX Placed Books",
-  "block.valleycraft.ink_well": "Ink Well and Quill",
 
   "block.valleycraft.ice_ore": "Ice Ore",
   "block.valleycraft.packed_snow": "Packed Snow",
@@ -384,7 +383,7 @@
   "block.valleycraft.rough_red_sandstone": "Rough Red Sandstone",
   "block.valleycraft.scalding_red_sandstone": "Rough Red Sandstone Magma Block",
   "block.valleycraft.stratified_red_sandstone": "Stratified Red Sandstone",
-
+  "item.valleycraft.trigger_mechanism": "Trigger Mechanism",
   "item.valleycraft.agitator": "Redstone Agitator",
   "item.valleycraft.beast_bone": "Small Bone",
   "item.valleycraft.bow_string": "Bow Drawstring",
@@ -432,7 +431,7 @@
   "block.valleycraft.defective_spawner": "Defective Spawner",
 
   "uncommon_items": "yellow",
-  "item.valleycraft.rune_etching_blade": "Rune Etching Blade",
+  "item.valleycraft.rune_etching_blade": "Rune Etching Quill",
   "item.valleycraft.trader_head_scarf": "Wandering Trader Headscarf",
   "item.valleycraft.trader_coat": "Wandering Trader Coat",
   "item.valleycraft.trader_skirt": "Wandering Trader Skirt",
@@ -749,8 +748,9 @@
   "block.valleycraft.sugarcane_bale": "Sugar Cane Bale",
 
   "block.valleycraft.bone_joint": "Bone Joint Block",
-  "block.valleycraft.rocks": "Rock",
+  "block.valleycraft.rocks": "Rock Pile",
   "block.valleycraft.flint_rocks": "Flint Rock Pile",
+  "block.valleycraft.rock_item": "Rock",
 
   "block.valleycraft.canvas_block": "Canvas Block",
   "block.valleycraft.canvas_carpet": "Canvas Carpet",
@@ -1097,13 +1097,11 @@
   "item.valleycraft.swimsuit_masc": "Masc Swimsuit",
   "item.valleycraft.swimsuit_neutral": "Swimsuit",
 
-  "item.valleycraft.scale_mail": "Scale Mail Chestplate",
-  "item.valleycraft.scale_mail_skirt": "Scale Mail Skirt",
   "item.valleycraft.throwing_rock": "Throwing Rock",
-  "item.valleycraft.golemite_boots": "Primsteel Boots",
-  "item.valleycraft.golemite_helmet": "Primsteel Helmet",
-  "item.valleycraft.golemite_leggings": "Primsteel Leggings",
-  "item.valleycraft.golemite_chestplate": "Primsteel Chestplate",
+  "item.valleycraft.primsteel_boots": "Primsteel Boots",
+  "item.valleycraft.primsteel_helmet": "Primsteel Helmet",
+  "item.valleycraft.primsteel_leggings": "Primsteel Leggings",
+  "item.valleycraft.primsteel_chestplate": "Primsteel Chestplate",
 
   "item.valleycraft.seaologer_token": "Seaologer Rune",
   "item.valleycraft.strayas_cartography_bag": "Archaeologist's Gear",
@@ -1439,7 +1437,7 @@
   "item.valleycraft.plant_fiber_canvas": "Plant Fiber Canvas",
   "item.valleycraft.treated_leather": "Treated Leather",
   "item.valleycraft.ink_bottle": "Ink Bottle",
-  "item.valleycraft.quill": "Quill Pen",
+  "item.valleycraft.quill": "Quill",
   "item.valleycraft.brimstone_shard": "Brimstone Shards",
   "item.valleycraft.spyglass_lense": "Amethyst Lens",
   "item.valleycraft.echo_shard_lense": "Scoptic Echo Shard Lens",

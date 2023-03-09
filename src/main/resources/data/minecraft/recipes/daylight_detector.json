@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "QQQ",
+    "VPV"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "V": {
+      "item": "valleycraft:plank"
+    },
+    "P": {
+      "item": "valleycraft:hot_plate"
+    }
+  },
+  "result": {
+    "item": "minecraft:daylight_detector",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R#",
+    "RHR",
+    "#R#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:white_dye"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "H": {
+      "item": "minecraft:hay_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:target",
+    "count": 1
+  }
+}

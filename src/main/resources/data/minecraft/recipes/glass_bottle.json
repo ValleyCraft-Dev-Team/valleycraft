@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "G G",
+    " G "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "minecraft:glass_bottle",
+    "count": 3
+  }
+}

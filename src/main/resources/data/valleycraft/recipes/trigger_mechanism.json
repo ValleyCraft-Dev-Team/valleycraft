@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #",
+    "i "
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "valleycraft:trigger_mechanism",
+    "count": 1
+  }
+}

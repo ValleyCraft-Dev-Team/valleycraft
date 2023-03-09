@@ -10,7 +10,7 @@
     "description": {
       "text": "Kill a Lich"
     },
-    "frame": "task",
+    "frame": "goal",
     "hidden": "false"
   },
   "criteria": {

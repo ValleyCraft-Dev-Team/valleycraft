@@ -44,6 +44,7 @@ public enum ItemsModded implements ItemEnum {
     AMETHYSTLE_SEEDS(new AliasedBlockItem(BlocksNatural.AMETHYSTLES.block, itemSettings())),
 
     GLOW_BALL(new GlowBallItem(itemSettings().group(VC_TOOLS))),
+    ROCK_ITEM(new Item(itemSettings())),
     FIBER(new Item(itemSettings())),
     DRIED_FIBER(new Item(itemSettings())),
     PLANT_FIBER_STRING(new Item(itemSettings())),
@@ -101,6 +102,7 @@ public enum ItemsModded implements ItemEnum {
     DIAMOND_FRAGMENTS(new Item(itemSettings())),
     ECHOCHALCUM_INGOT(new Item(itemSettings())),
     NETHERITE_NUGGET(new Item(itemSettings())),
+    TRIGGER_MECHANISM(new Item(itemSettings())),
     SPYGLASS_LENSE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
     ECHO_SHARD_LENSE(new Item(itemSettings().rarity(Rarity.RARE))),
     HOT_PLATE(new Item(itemSettings().rarity(Rarity.RARE))),

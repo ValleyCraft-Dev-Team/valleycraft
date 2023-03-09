@@ -88,7 +88,7 @@ public enum ArmorMats implements ArmorMaterial {
     CHEF("chef", ints(2,3), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
     EVOKER("evoker", ints(2,3), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
 
-    PRIMSTEEL("golemite", ints(1,4,5,2), 15, 18, equipIron(), items(ItemsModded.PRIMSTEEL_INGOT)),
+    PRIMSTEEL("primsteel", ints(1,4,5,2), 15, 18, equipIron(), items(ItemsModded.PRIMSTEEL_INGOT)),
     ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ItemsModded.ROSEGOLD_INGOT), 0.75f, 0.0f),
     SCALE("scale", ints(0,6,7,3), 15, 9, equipChain(), items(net.minecraft.item.Items.IRON_INGOT)),
     LEATHER_NO_OVERLAY("leather_no_overlay", ints(1,2,3,2), 7, 9, equipLeather(), items(ItemsModded.TREATED_LEATHER)),

@@ -5,10 +5,10 @@
       "text": "Jack-Of-All-Tools"
     },
     "icon": {
-      "item": "valleycraft:scythe_golden"
+      "item": "valleycraft:hatchet_iron"
     },
     "description": {
-      "text": "Create one of every basic tool type"
+      "text": "Create one of every basic tool and weapon type"
     },
     "frame": "goal"
   },

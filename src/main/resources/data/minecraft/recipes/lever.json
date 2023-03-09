@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "C"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "C": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "minecraft:lever",
+    "count": 1
+  }
+}

@@ -31,11 +31,9 @@ public class ArrowBundleItem extends Item {
             var inventory = player.getInventory();
 
             if (stack.isEmpty()) {
-                inventory.insertStack(new ItemStack(ItemsModded.PLANT_FIBER_STRING, 1));
                 return new ItemStack(Items.ARROW, 8);
             }
 
-            inventory.insertStack(new ItemStack(ItemsModded.PLANT_FIBER_STRING, 1));
             inventory.insertStack(new ItemStack(Items.ARROW, 8));
             return stack;
         }

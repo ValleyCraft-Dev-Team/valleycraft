@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#F#"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:rock_item"
+    },
+    "F": {
+      "item": "minecraft:flint"
+    }
+  },
+  "result": {
+    "item": "valleycraft:flint_rocks",
+    "count": 1
+  }
+}

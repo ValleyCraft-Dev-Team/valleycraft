@@ -1,12 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "ic",
-    "ci"
+    "pc",
+    "cg"
   ],
   "key": {
-    "i": {
-      "item": "minecraft:iron_ingot"
+    "p": {
+      "item": "valleycraft:primsteel_ingot"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
     },
     "c": {
       "item": "minecraft:copper_ingot"

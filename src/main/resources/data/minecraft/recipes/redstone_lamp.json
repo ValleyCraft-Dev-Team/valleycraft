@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#R#",
+    "RGR",
+    "#R#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_nugget"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "G": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "result": {
+    "item": "minecraft:redstone_lamp",
+    "count": 1
+  }
+}
