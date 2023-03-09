@@ -14,6 +14,7 @@ public class ArmorRenderers {
     
     public static void intialize() {
         register(new StrawHatRenderer(), Armors.STRAW_HAT);
+        register(new CowPokeHatRenderer(), Armors.COWPOKE_HAT);
     }
     
     private static void register(ArmorRenderer renderer, ItemConvertible... items) {

@@ -29,6 +29,7 @@ public enum Armors implements ItemEnum {
     BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
     BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
 
+    COWPOKE_HAT(new ArmorItem(ArmorMats.COWPOKE_HAT, EquipmentSlot.HEAD, settingsNormal())),
     FUR_BOOTS(new WarmBootItem(ArmorMats.RABBIT, EquipmentSlot.FEET, settingsNormal())),
 
     DIERDRA_LAUREL(new ArmorItem(ArmorMats.DIERDRA_LAUREL, EquipmentSlot.HEAD, settingsNormal())),
