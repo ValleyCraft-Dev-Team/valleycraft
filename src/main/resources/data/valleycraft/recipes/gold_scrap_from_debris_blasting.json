@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 2.0,
+  "ingredient": {
+    "item": "valleycraft:ancient_gold_debris"
+  },
+  "result": "valleycraft:gold_scrap"
+}

@@ -44,6 +44,7 @@ class RenderLayers {
         put(IRON_BRAZIER, cullout);
         put(SPIDER_EGG, cullout);
         put(REDSTONE_LANTERN, cullout);
+        put(REDSTONE_LAMPTERN, cullout);
 
         put(GUIDESTONE_BACK, cullout);
         put(GUIDESTONE_BLANK, cullout);

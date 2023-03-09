@@ -43,7 +43,9 @@
               "valleycraft:rusted_axe",
               "valleycraft:rusted_hoe",
               "valleycraft:rusted_pickaxe",
-              "valleycraft:rusted_shovel"
+              "valleycraft:rusted_shovel",
+              "valleycraft:ancient_iron_debris",
+              "valleycraft:ancient_gold_debris"
             ]
           }
         ]

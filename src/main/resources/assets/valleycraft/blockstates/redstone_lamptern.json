@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "powered=true,hanging=false": {
+      "model": "valleycraft:block/redstone_lamptern"
+    },
+    "powered=false,hanging=false": {
+      "model": "valleycraft:block/redstone_lamptern_off"
+    },
+    "powered=true,hanging=true": {
+      "model": "valleycraft:block/redstone_lamptern_hanging"
+    },
+    "powered=false,hanging=true": {
+      "model": "valleycraft:block/redstone_lamptern_hanging_off"
+    }
+  }
+}

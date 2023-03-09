@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "minecraft:glow_ink_sac"
+              "minecraft:iron_ingot"
             ]
           }
         ]
@@ -21,8 +21,7 @@
   ],
   "rewards": {
     "recipes": [
-      "valleycraft:glow_ball",
-      "valleycraft:glowsquid_lantern"
+      "valleycraft:trigger_mechanism"
     ]
   }
 }

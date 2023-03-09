@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "minecraft:glow_ink_sac"
+              "valleycraft:ancient_iron_debris"
             ]
           }
         ]
@@ -21,8 +21,8 @@
   ],
   "rewards": {
     "recipes": [
-      "valleycraft:glow_ball",
-      "valleycraft:glowsquid_lantern"
+      "valleycraft:iron_scrap_from_debris",
+      "valleycraft:iron_scrap_from_debris_blasting"
     ]
   }
 }

@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "minecraft:glow_ink_sac"
+              "valleycraft:ancient_gold_debris"
             ]
           }
         ]
@@ -21,8 +21,8 @@
   ],
   "rewards": {
     "recipes": [
-      "valleycraft:glow_ball",
-      "valleycraft:glowsquid_lantern"
+      "valleycraft:gold_scrap_from_debris",
+      "valleycraft:gold_scrap_from_debris_blasting"
     ]
   }
 }

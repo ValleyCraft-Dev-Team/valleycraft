@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "GLG",
+    "#G#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:redstone"
+    },
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "L": {
+      "item": "valleycraft:redstone_lantern"
+    }
+  },
+  "result": {
+    "item": "valleycraft:redstone_lamptern",
+    "count": 1
+  }
+}

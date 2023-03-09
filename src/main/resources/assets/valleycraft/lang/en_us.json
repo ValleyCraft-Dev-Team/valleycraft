@@ -162,7 +162,7 @@
   "item.valleycraft.rusted_pickaxe": "Rusty Iron Pickaxe",
   "item.valleycraft.arrow_bundle": "Arrow Bundle",
   "item.valleycraft.bomb_bag": "Bomb Bag",
-  "item.valleycraft.string_spool": "Spool of String",
+  "item.valleycraft.string_spool": "Spool of Plant Fiber String",
   "item.valleycraft.hot_plate": "Conductive Stone Plate",
   "item.valleycraft.primsteel_raw": "Raw Primsteel",
   "item.valleycraft.primsteel_nugget": "Primsteel Nugget",
@@ -400,6 +400,8 @@
   "block.valleycraft.campfire_pot": "Survivor's Campfire",
   "block.valleycraft.lantern_hanger": "Lantern Hanger",
   "block.valleycraft.storekeeps_counter": "Storekeeper's Counter",
+  "block.valleycraft.redstone_lantern": "Toggleable Redstone Lantern",
+  "block.valleycraft.redstone_lamptern": "Toggleable Redstone Lamptern",
 
   "item.valleycraft.red_hood": "Crimson Hood",
   "item.valleycraft.red_cloak": "Crimson Cloak",
@@ -699,6 +701,8 @@
   "block.valleycraft.loose_rocks": "Loose Cobblestone Debris",
   "block.valleycraft.skeletal_remains_slumped": "Ancient Slumped-Over Skeletal Remains",
   "block.valleycraft.skeletal_best_friend_remains": "Ancient Friends' Skeletal Remains",
+  "block.valleycraft.ancient_iron_debris": "Ancient Iron Debris",
+  "block.valleycraft.ancient_gold_debris": "Ancient Gold Debris",
 
   "block.valleycraft.brazier": "Tall Brazier",
   "block.valleycraft.soul_brazier": "Tall Soul Brazier",

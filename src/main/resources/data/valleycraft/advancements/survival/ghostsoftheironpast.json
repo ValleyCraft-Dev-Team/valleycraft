@@ -1,0 +1,38 @@
+{
+  "parent": "valleycraft:survival/history_lessons",
+  "display": {
+    "title": {
+      "text": "Ancient Invaders"
+    },
+    "icon": {
+      "item": "valleycraft:ancient_iron_debris"
+    },
+    "description": {
+      "text": "How did they discover this dimension?"
+    },
+    "frame": "task",
+    "hidden": "false"
+  },
+  "criteria": {
+    "artifact": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:piglin_skull",
+              "valleycraft:piglin_skeletal_remains",
+              "valleycraft:ancient_iron_debris",
+              "valleycraft:ancient_gold_debris"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "artifact"
+    ]
+  ]
+}

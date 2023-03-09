@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "valleycraft:block/ancient_iron_debris_top",
+    "side": "valleycraft:block/ancient_iron_debris_side"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredient": {
+    "item": "valleycraft:ancient_iron_debris"
+  },
+  "result": "valleycraft:iron_scrap"
+}

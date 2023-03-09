@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#G#",
+    "#L#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_nugget"
+    },
+    "G": {
+      "item": "minecraft:redstone_torch"
+    },
+    "G": {
+      "item": "minecraft:lever"
+    }
+  },
+  "result": {
+    "item": "valleycraft:redstone_lantern",
+    "count": 1
+  }
+}
