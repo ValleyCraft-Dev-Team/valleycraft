@@ -1,7 +1,5 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.enums.BlockEntityEnum.registerRenderer;
-
 import java.util.stream.Stream;
 
 import net.fabricmc.api.EnvType;
@@ -15,7 +13,6 @@ import net.linkle.valleycraft.util.BlockConvertible;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.client.render.block.entity.ChestBlockEntityRenderer;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -34,7 +31,7 @@ public enum BlockEntities implements BlockEntityEnum {
     
     @Environment(EnvType.CLIENT)
     public static void initializeClient() {
-        registerRenderer(DEEPSLATE_CHEST, ChestBlockEntityRenderer::new);
+        
     }
     
     private final BlockEntityType<?> type;

@@ -1,18 +1,12 @@
 package net.linkle.valleycraft.block;
 
 import net.minecraft.block.*;
-import net.minecraft.client.item.TooltipContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
-
-import java.util.List;
 
 public class CraftingMatBlock extends CraftingTableBlock {
     protected static final VoxelShape SHAPE = Block.createCuboidShape(1, 0, 1, 15, 1, 15);

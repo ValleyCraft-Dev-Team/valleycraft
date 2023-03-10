@@ -12,7 +12,7 @@ import net.minecraft.item.ItemConvertible;
 @Environment(EnvType.CLIENT)
 public class ArmorRenderers {
     
-    public static void intialize() {
+    public static void initialize() {
         register(new StrawHatRenderer(), Armors.STRAW_HAT);
         register(new CowPokeHatRenderer(), Armors.COWPOKE_HAT);
     }

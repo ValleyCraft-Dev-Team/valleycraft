@@ -18,7 +18,7 @@ import net.minecraft.util.registry.Registry;
 class RenderLayers {
 
     @SuppressWarnings("unused")
-    static void intialize() {
+    static void initialize() {
         // Only use cullout if the block's texture contains empty pixels (fully transparent).
         var cullout = RenderLayer.getCutout();
 

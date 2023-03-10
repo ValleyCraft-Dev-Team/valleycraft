@@ -19,7 +19,7 @@ import net.minecraft.item.ItemConvertible;
 @SuppressWarnings("unused")
 class ColorProvider {
 
-    static void intialize() {
+    static void initialize() {
         BlockColorProvider blockProvider;
         ItemColorProvider itemProvider;
         

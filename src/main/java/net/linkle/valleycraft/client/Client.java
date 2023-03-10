@@ -21,14 +21,14 @@ public class Client implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         Sprites.initialize();
-        RenderLayers.intialize();
-        ColorProvider.intialize();
+        RenderLayers.initialize();
+        ColorProvider.initialize();
         Particles.initializeClient();
         Entities.initializeClient();
-        FluidRenders.intialize();
+        FluidRenders.initialize();
         BlockEntities.initializeClient();
-        ArmorRenderers.intialize();
-        TrinketRenderers.intialize();
+        ArmorRenderers.initialize();
+        TrinketRenderers.initialize();
         ClientNetwork.initialize();
 
         GeoArmorRenderer.registerArmorRenderer(new ClothArmorRenderer(),

@@ -21,7 +21,7 @@ import net.minecraft.world.*;
 
 public class ClayPotBlock extends FallingBlock implements Waterloggable {
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(1, 0, 1, 15, 16, 15);
+    protected static final VoxelShape SHAPE = Block.createCuboidShape(3, 0, 3, 13, 13, 13);
     
     public ClayPotBlock(Settings settings) {
         super(settings);

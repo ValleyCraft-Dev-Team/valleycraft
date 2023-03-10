@@ -8,7 +8,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.util.math.BlockPos;
 
-public class CrateBlock extends BarrelBlock {
+public class CrateBlock extends HorizontalContainerBlock {
     
     public CrateBlock(Settings settings) {
         super(settings);

@@ -10,7 +10,7 @@ import net.minecraft.item.ItemConvertible;
 
 // Trinket
 public class TrinketRenderers {
-    public static void intialize() {
+    public static void initialize() {
         // Check valleycraft/textures/models/trinket for textures
 
         //iron base

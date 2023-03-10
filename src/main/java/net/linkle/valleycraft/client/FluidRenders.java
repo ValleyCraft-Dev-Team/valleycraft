@@ -19,7 +19,7 @@ class FluidRenders {
     
     private static final ArrayList<Identifier> TEXS = new ArrayList<>();
     
-    static void intialize() {
+    static void initialize() {
         // Register the textures.
         ClientSpriteRegistryCallback.event(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE).register((atlas, registry) -> TEXS.forEach(registry::register));
         
