@@ -793,6 +793,8 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     MOSSY_SANDSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
 
     CHISELED_SANDSTONE_BLANK(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CHISELED_SANDSTONE_TEMPLE_REST(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
+    CHISELED_SANDSTONE_PYRAMID(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
 
     //red sandstone
     RED_SANDSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
@@ -811,6 +813,8 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     MOSSY_RED_SANDSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.SANDSTONE)), itemSettings()),
 
     CHISELED_RED_SANDSTONE_BLANK(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE))),
+    CHISELED_RED_SANDSTONE_PIGLIN(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE))),
+    CHISELED_RED_SANDSTONE_PORTAL(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE))),
 
     //scorchstone
     SCORCHSTONE_STAIRS(new StairsBlock(BlocksNatural.SCORCHSTONE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),

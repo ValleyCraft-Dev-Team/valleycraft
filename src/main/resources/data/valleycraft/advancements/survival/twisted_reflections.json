@@ -1,0 +1,36 @@
+{
+  "parent": "valleycraft:survival/historylessons",
+  "display": {
+    "title": {
+      "text": "Twisted Reflections"
+    },
+    "icon": {
+      "item": "valleycraft:withered_skull_shard"
+    },
+    "description": {
+      "text": "Who- or what- are the Withered?"
+    },
+    "frame": "challenge",
+    "hidden": "true"
+  },
+  "criteria": {
+    "withered": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:withered_skull_shard",
+              "minecraft:wither_skeleton_skull",
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "withered"
+    ]
+  ]
+}

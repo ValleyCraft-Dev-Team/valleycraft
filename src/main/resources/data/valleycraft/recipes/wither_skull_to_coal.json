@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "c:small_bones"
+      "item": "minecraft:wither_skeleton_skull"
     }
   ],
   "result": {
-    "item": "minecraft:bone_meal",
+    "item": "minecraft:coal",
     "count": 1
   }
 }

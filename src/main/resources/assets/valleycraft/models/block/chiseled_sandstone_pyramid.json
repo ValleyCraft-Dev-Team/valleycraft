@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cube_column",
   "textures": {
     "end": "minecraft:block/sandstone_top",
-    "side": "valleycraft:block/chiseled_sandstone_portal_leaving"
+    "side": "valleycraft:block/chiseled_sandstone_pyramid"
   }
 }

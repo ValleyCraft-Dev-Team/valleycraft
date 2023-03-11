@@ -334,16 +334,13 @@
   "block.valleycraft.stone_tiles": "Stone Brick Tiles",
   "block.valleycraft.polished_stone": "Polished Stone",
 
-  "block.valleycraft.chiseled_sandstone_blank": "Chiseled Sandstone",
-  "block.valleycraft.chiseled_sandstone_portal_coming": "Chiseled Sandstone",
-  "block.valleycraft.chiseled_sandstone_portal_leaving": "Chiseled Sandstone",
-  "block.valleycraft.chiseled_sandstone_enderman": "Chiseled Sandstone",
-  "block.valleycraft.chiseled_sandstone_rest": "Chiseled Sandstone",
-  "block.valleycraft.chiseled_sandstone_temple": "Chiseled Sandstone",
+  "block.valleycraft.chiseled_sandstone_blank": "Blank Chiseled Sandstone",
+  "block.valleycraft.chiseled_sandstone_temple_rest": "Chiseled Sandstone",
+  "block.valleycraft.chiseled_sandstone_pyramid": "Chiseled Sandstone",
 
+  "block.valleycraft.chiseled_red_sandstone_blank": "Blank Chiseled Red Sandstone",
   "block.valleycraft.chiseled_red_sandstone_piglin": "Chiseled Red Sandstone",
-  "block.valleycraft.chiseled_red_sandstone_portal_coming": "Chiseled Red Sandstone",
-  "block.valleycraft.chiseled_red_sandstone_portal_leaving": "Chiseled Red Sandstone",
+  "block.valleycraft.chiseled_red_sandstone_portal": "Chiseled Red Sandstone",
 
   "block.valleycraft.cobblestone_chimney": "Cobblestone Chimney",
   "block.valleycraft.cobblestone_brick_chimney": "Cobblestone Brick Chimney",

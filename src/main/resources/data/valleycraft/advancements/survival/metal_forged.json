@@ -1,0 +1,41 @@
+{
+  "parent": "valleycraft:survival/entrylog",
+  "display": {
+    "title": {
+      "text": "Prima Hypothesi Golemantica"
+    },
+    "icon": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "description": {
+      "text": "Behind every face- a soul?"
+    },
+    "frame": "goal"
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "criteria": {
+    "summoned_golem": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:iron_golem",
+              "type": "minecraft:snow_golem",
+              "type": "minecraft:wither"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:summoned_entity"
+    }
+  },
+  "requirements": [
+    [
+      "summoned_golem"
+    ]
+  ]
+}

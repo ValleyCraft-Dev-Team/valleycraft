@@ -1,0 +1,37 @@
+{
+  "parent": "valleycraft:survival/metal_forged",
+  "display": {
+    "title": {
+      "text": "A Terrible Fate"
+    },
+    "icon": {
+      "item": "minecraft:iron_axe"
+    },
+    "description": {
+      "text": "Lay the tortured Golem to rest."
+    },
+    "frame": "challenge",
+    "hidden": "true"
+  },
+  "criteria": {
+    "minecraft:ravager": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:ravager"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "requirements": [
+    [
+      "ravager"
+    ]
+  ]
+}

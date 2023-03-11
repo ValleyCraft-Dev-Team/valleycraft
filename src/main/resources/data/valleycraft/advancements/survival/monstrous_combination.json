@@ -1,0 +1,37 @@
+{
+  "parent": "valleycraft:survival/metal_forged",
+  "display": {
+    "title": {
+      "text": "A Monstrous Combination"
+    },
+    "icon": {
+      "item": "minecraft:wither_rose"
+    },
+    "description": {
+      "text": "3 Wither Skeleton Skulls + 4 Soul Sand = ???"
+    },
+    "frame": "challenge",
+    "hidden": "true"
+  },
+  "criteria": {
+    "summoned": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:wither"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:summoned_entity"
+    }
+  },
+  "requirements": [
+    [
+      "summoned"
+    ]
+  ]
+}

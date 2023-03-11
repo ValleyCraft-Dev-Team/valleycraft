@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "c:small_bones"
+      "tag": "c:small_withered_bones"
     }
   ],
   "result": {
-    "item": "minecraft:bone_meal",
+    "item": "valleycraft:coal_nugget",
     "count": 1
   }
 }
