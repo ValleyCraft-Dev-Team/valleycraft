@@ -86,6 +86,10 @@
   "entity.valleycraft.sculk_snail": "Sculked Cave-Snail",
   "entity.valleycraft.cave_snail": "Cave-Snail",
 
+  "item.valleycraft.snail_shell": "Over-Snail Shell",
+  "item.valleycraft.sculk_snail_shell": "Sculked Cave-Snail Shell",
+  "item.valleycraft.cave_snail_shell": "Cave-Snail Shell",
+
   "block.valleycraft.dishes.tooltip": "Used in special dishes to",
   "item.valleycraft.dishes.tooltip": "Used in special dishes to",
   "block.valleycraft.dishes.tooltip_2": "give fire resistance.",
@@ -739,6 +743,7 @@
   "block.valleycraft.skeletal_best_friend_remains": "Ancient Friends' Skeletal Remains",
   "block.valleycraft.ancient_iron_debris": "Ancient Iron Debris",
   "block.valleycraft.ancient_gold_debris": "Ancient Gold Debris",
+  "block.valleycraft.headless_skeletal_remains": "Headless Skeletal Remains",
 
   "block.valleycraft.brazier": "Tall Brazier",
   "block.valleycraft.soul_brazier": "Tall Soul Brazier",
@@ -797,14 +802,14 @@
   "block.valleycraft.canvas_carpet": "Canvas Carpet",
   "block.valleycraft.curtain": "Canvas Curtain",
 
-  "block.valleycraft.empty_bottle_block": "Empty Bottle Block",
-  "block.valleycraft.water_bottle_block": "Water Bottle Block",
-  "block.valleycraft.glow_berry_bottle_block": "Glow Berry Juice Bottle Block",
-  "block.valleycraft.milk_bottle_block": "Milk Bottle Block",
-  "block.valleycraft.honey_bottle_block": "Honey Bottle Block",
-  "block.valleycraft.exp_bottle_block": "Bottle o' Enchanting Block",
+  "block.valleycraft.empty_bottle_block": "Placed Empty Bottle",
+  "block.valleycraft.water_bottle_block": "Placed Water Bottle",
+  "block.valleycraft.glow_berry_bottle_block": "Placed Glow Berry Juice Bottle",
+  "block.valleycraft.milk_bottle_block": "Placed Milk Bottle",
+  "block.valleycraft.honey_bottle_block": "Placed Honey Bottle",
+  "block.valleycraft.exp_bottle_block": "Placed Bottle o' Enchanting Block",
 
-  "block.valleycraft.ink_bottle_block": "Ink Bottle Block",
+  "block.valleycraft.ink_bottle_block": "Placed Ink Bottle",
 
   "block.valleycraft.pumice_smooth": "Polished Pumice",
   "block.valleycraft.pumice": "Pumice",
@@ -1354,7 +1359,7 @@
   "item.valleycraft.efe_boots": "Old Boots",
   "item.valleycraft.crown": "Golden Crown",
   "item.valleycraft.blight_crown": "Blighted Crown",
-  "block.valleycraft.translation_canvas": "Translation Canvas",
+  "block.valleycraft.translation_canvas": "Placed Translation Canvas",
   "item.valleycraft.ancient_dungeon_key": "Ancient Dungeon Key",
   "item.valleycraft.polished_glowstone_chunk": "Smooth Glowstone Chunk",
   "item.valleycraft.stuck_slime": "Jar of Friendly Slime",
@@ -1623,7 +1628,7 @@
   "block.valleycraft.potted_yellow_poppy": "Potted Yellow Poppy",
   "block.valleycraft.potted_yellow_tulip": "Potted Yellow Tulip",
 
-  "block.valleycraft.witch_ladle": "Cauldron Ladle",
+  "block.valleycraft.witch_ladle": "Placed Cauldron Ladle",
 
   "item.valleycraft.soul_item_withered": "Withered Lost Soul",
   "item.valleycraft.soul_item_fading": "Fading Lost Soul",
@@ -1660,9 +1665,9 @@
   "item.valleycraft.duck_spawn_egg": "Duck Spawn Egg",
   "item.valleycraft.mossy_sheep_spawn_egg": "Mossy Sheep Spawn Egg",
   "item.valleycraft.brown_bear_spawn_egg": "Woodland Bear Spawn Egg",
-  "item.valleycraft.snail_spawn_egg": "Snail Spawn Egg",
-  "item.valleycraft.cave_snail_spawn_egg": "Cave Snail Spawn Egg",
-  "item.valleycraft.sculk_snail_spawn_egg": "Sculk Snail Spawn Egg",
+  "item.valleycraft.snail_spawn_egg": "Over-Snail Spawn Egg",
+  "item.valleycraft.cave_snail_spawn_egg": "Cave-Snail Spawn Egg",
+  "item.valleycraft.sculk_snail_spawn_egg": "Sculked Cave-Snail Spawn Egg",
 
   "item.valleycraft.raw_abysswatcher": "Raw Abysswatcher",
   "item.valleycraft.raw_stoneroller_minnow": "Raw Stoneroller Minnow",

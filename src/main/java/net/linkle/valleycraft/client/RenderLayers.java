@@ -368,6 +368,7 @@ class RenderLayers {
         put(JUNGLE_CAP_CLUSTER, cullout);
         put(BURNT_OUT_TORCH, cullout);
         put(BURNT_OUT_CANDLE, cullout);
+        put(HEADLESS_SKELETAL_REMAINS, cullout);
         put(SKELETAL_REMAINS, cullout);
         put(VILLAGER_SKELETAL_REMAINS, cullout);
         put(PIGLIN_SKELETAL_REMAINS, cullout);
@@ -386,10 +387,10 @@ class RenderLayers {
         put(ENDERMAN_SKULL, cullout);
 
         put(COFFIN, cullout);
-        put(COFFIN, transparent);
+        put(COFFIN, translucent);
 
         put(DEEPSLATE_CHEST, cullout);
-        put(DEEPSLATE_CHEST, transparent);
+        put(DEEPSLATE_CHEST, translucent);
 
         put(VILLAGER_SKULL, cullout);
         put(PIGLIN_SKULL, cullout);
