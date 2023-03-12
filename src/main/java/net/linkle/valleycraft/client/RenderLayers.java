@@ -386,7 +386,10 @@ class RenderLayers {
         put(ENDERMAN_SKULL, cullout);
 
         put(COFFIN, cullout);
+        put(COFFIN, transparent);
+
         put(DEEPSLATE_CHEST, cullout);
+        put(DEEPSLATE_CHEST, transparent);
 
         put(VILLAGER_SKULL, cullout);
         put(PIGLIN_SKULL, cullout);

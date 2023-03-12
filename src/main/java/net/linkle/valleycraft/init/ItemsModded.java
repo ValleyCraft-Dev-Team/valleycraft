@@ -122,6 +122,7 @@ public enum ItemsModded implements ItemEnum {
     ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_TOOLS))),
     SEED_BAG(new SeedBagItem(itemSettings().group(VC_ITEMS))),
     STRING_SPOOL(new StringSpoolItem(itemSettings().group(VC_ITEMS).recipeRemainder(Items.STICK))),
+    STRING_SPOOL_NORMAL(new StringSpoolNormalItem(itemSettings().group(VC_ITEMS).recipeRemainder(Items.STICK))),
     PUFF_BALL(new Item(itemSettings())),
     CLOTH(new Item(itemSettings())),
 

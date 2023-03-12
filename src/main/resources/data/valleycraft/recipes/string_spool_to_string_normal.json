@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:string_spool_normal"
+    }
+  ],
+  "result": {
+    "item": "minecraft:string",
+    "count": 3
+  }
+}

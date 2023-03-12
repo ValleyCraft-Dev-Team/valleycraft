@@ -24,6 +24,7 @@
     "recipes": [
       "valleycraft:rope",
       "valleycraft:string_spool",
+      "valleycraft:string_spool_normal",
       "valleycraft:bow_string",
       "valleycraft:arrow_bundle"
     ]

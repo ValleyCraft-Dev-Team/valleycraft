@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": {
-      "item": "valleycraft:string_spool"
+      "tag": "c:string_spools"
     },
     "L": {
       "tag": "c:leather_alternatives"

@@ -14,7 +14,7 @@
     "hidden": "true"
   },
   "criteria": {
-    "minecraft:ravager": {
+    "ravager": {
       "conditions": {
         "entity": [
           {

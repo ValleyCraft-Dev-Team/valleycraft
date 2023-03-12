@@ -55,16 +55,16 @@
       "item": "valleycraft:primsteel_hoe"
     },
     {
-      "item": "valleycraft:golemite_helmet"
+      "item": "valleycraft:primsteel_helmet"
     },
     {
-      "item": "valleycraft:golemite_chestplate"
+      "item": "valleycraft:primsteel_chestplate"
     },
     {
-      "item": "valleycraft:golemite_leggings"
+      "item": "valleycraft:primsteel_leggings"
     },
     {
-      "item": "valleycraft:golemite_boots"
+      "item": "valleycraft:primsteel_boots"
     }
   ],
   "result": "valleycraft:primsteel_scrap"
