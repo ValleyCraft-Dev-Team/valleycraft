@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "valleycraft:item/misc/sculked_cave_snail_shell"
+  }
+}

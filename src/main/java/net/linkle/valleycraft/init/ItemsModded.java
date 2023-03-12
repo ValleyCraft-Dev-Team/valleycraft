@@ -66,6 +66,9 @@ public enum ItemsModded implements ItemEnum {
     CROWS_FEATHER(new Item(itemSettings())),
     METAL_FEATHER(new Item(itemSettings().rarity(RARE))),
     SLIME_BLOB(new Item(itemSettings())),
+    SNAIL_SHELL(new Item(itemSettings())),
+    CAVE_SNAIL_SHELL(new Item(itemSettings())),
+    SCULK_SNAIL_SHELL(new Item(itemSettings())),
 
     HANDLE(new Item(itemSettings())),
     STURDY_HANDLE(new Item(itemSettings())),
