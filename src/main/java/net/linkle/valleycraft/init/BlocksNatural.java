@@ -341,7 +341,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     ERDSTONE_CAVE_PAINTING_FAMILY(new CavePainting(Block.Settings.copy(Blocks.STONE), "family"), itemSettings()),
 
     // Tree Seeds
-    DIVINE_ACORN(new SeedBlock(Blocks.OAK_SAPLING)),
+    //DIVINE_ACORN(new SeedBlock(Blocks.OAK_SAPLING)),
     OAK_SEED(new SeedBlock(Blocks.OAK_SAPLING)),
     BIRCH_SEED(new SeedBlock(Blocks.BIRCH_SAPLING)),
     SPRUCE_SEED(new SeedBlock(Blocks.SPRUCE_SAPLING)),
