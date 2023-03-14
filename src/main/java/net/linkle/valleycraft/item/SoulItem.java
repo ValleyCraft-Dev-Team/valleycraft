@@ -7,6 +7,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsage;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
@@ -21,7 +23,8 @@ public class SoulItem extends Item {
         if (user instanceof PlayerEntity player) {
             if (player instanceof ServerPlayerEntity serverPlayer)
                 Criteria.CONSUME_ITEM.trigger(serverPlayer, stack);
-            player.addExperience(4);
+            world.playSound((ServerPlayerEntity)null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
+            player.addExperience(21);
         }
         return stack;
     }

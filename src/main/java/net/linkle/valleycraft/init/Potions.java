@@ -30,10 +30,10 @@ public class Potions {
     public static Potion HASTE_POTION_LONG = registerPotion("haste_potion_long", new Potion(new StatusEffectInstance(StatusEffects.HASTE, 480 * 20)));
     public static Potion HASTE_POTION_FAST = registerPotion("haste_potion_fast", new Potion(new StatusEffectInstance(StatusEffects.HASTE, 90 * 20, 1)));
 
-    public static Potion FERAL_STRENGTH = registerPotion("feral_strength_potion", new Potion(new StatusEffectInstance(StatusEffects.STRENGTH, 45 * 20, 3), new StatusEffectInstance(StatusEffects.NAUSEA, 45 *20, 2)));
-    public static Potion FERAL_STRENGTH_LONG = registerPotion("feral_strength_potion_long", new Potion(new StatusEffectInstance(StatusEffects.STRENGTH, 90 * 20, 3), new StatusEffectInstance(StatusEffects.NAUSEA, 90 *20, 2)));
+    public static Potion FERAL_STRENGTH = registerPotion("feral_strength_potion", new Potion(new StatusEffectInstance(StatusEffects.STRENGTH, 45 * 20, 2), new StatusEffectInstance(StatusEffects.NAUSEA, 45 *20, 2)));
+    public static Potion FERAL_STRENGTH_LONG = registerPotion("feral_strength_potion_long", new Potion(new StatusEffectInstance(StatusEffects.STRENGTH, 90 * 20, 2), new StatusEffectInstance(StatusEffects.NAUSEA, 90 *20, 2)));
 
-    public static Potion DRAGONHEARTED = registerPotion("dragonhearted_potion", new Potion(new StatusEffectInstance(StatusEffects.STRENGTH, 45 * 20, 4), new StatusEffectInstance(StatusEffects.BLINDNESS, 45 *20, 1), new StatusEffectInstance(StatusEffects.POISON, 21 *20, 1)));
+    public static Potion DRAGONHEARTED = registerPotion("dragonhearted_potion", new Potion(new StatusEffectInstance(StatusEffects.STRENGTH, 45 * 20, 3), new StatusEffectInstance(StatusEffects.POISON, 21 *20, 1)));
     public static Potion BAD_OMEN = registerPotion("terrible_omen_potion", new Potion(new StatusEffectInstance(StatusEffects.BAD_OMEN, 6000 * 20, 5), new StatusEffectInstance(StatusEffects.BLINDNESS, 6000 *20, 1), new StatusEffectInstance(ModEffects.SOUL_FADING, 21 *20, 1)));
 
     public static void initialize() {

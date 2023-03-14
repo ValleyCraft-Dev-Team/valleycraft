@@ -1184,6 +1184,7 @@
 
   "item.valleycraft.sludge_bucket": "Bucket of Blight-Sludge",
   "effect.valleycraft.rot_blight": "Blighted",
+  "effect.valleycraft.soul_fading": "Soul Fading",
 
   "item.valleycraft.slime_blob": "Blob of Jelly",
   "item.valleycraft.evil_crystal": "Blight Crystal",
@@ -1262,6 +1263,10 @@
   "item.minecraft.tipped_arrow.effect.levitation_potion": "Arrow of Levitation",
   "item.minecraft.splash_potion.effect.levitation_potion_long": "Splash Potion of Levitation",
   "item.minecraft.splash_potion.effect.levitation_potion_fast": "Splash Potion of Levitation",
+  "item.minecraft.tipped_arrow.effect.levitation_potion_long": "Arrow of Levitation",
+  "item.minecraft.tipped_arrow.effect.levitation_potion_fast": "Arrow of Levitation",
+  "item.minecraft.lingering_potion.effect.levitation_potion_long": "Lingering Potion of Levitation",
+  "item.minecraft.lingering_potion.effect.levitation_potion_fast": "Lingering Potion of Levitation",
 
   "item.minecraft.potion.effect.rot_blight_potion": "Potion of Blight Essence",
   "item.minecraft.splash_potion.effect.rot_blight_potion": "Splash Potion of Blight Essence",
