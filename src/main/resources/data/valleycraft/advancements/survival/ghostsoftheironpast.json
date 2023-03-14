@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:survival/history_lessons",
+  "parent": "valleycraft:survival/historylessons",
   "display": {
     "title": {
       "text": "Ancient Invaders"
@@ -11,7 +11,7 @@
       "text": "How did they discover this dimension?"
     },
     "frame": "task",
-    "hidden": "false"
+    "hidden": "true"
   },
   "criteria": {
     "artifact_piglin": {

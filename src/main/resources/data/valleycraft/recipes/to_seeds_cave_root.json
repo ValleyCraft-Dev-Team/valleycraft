@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:cave_root"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:cave_root_seeds",
+    "count": 1
+  }
+}

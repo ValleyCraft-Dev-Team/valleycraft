@@ -247,6 +247,10 @@ class RenderLayers {
         put(PRIMSTEEL_GRATE, cullout);
         put(PRIMSTEEL_CHAIN, cullout);
         put(IRON_CHAIN, cullout);
+        put(LARGE_PRIMSTEEL_CHAIN, cullout);
+        put(LARGE_IRON_CHAIN, cullout);
+        put(LARGE_CHAIN, cullout);
+
         put(IRON_GRATE, cullout);
         put(WATTLE_GRATE, cullout);
         put(TERRARIUM_GLASS, cullout);

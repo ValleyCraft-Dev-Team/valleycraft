@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#V",
+    "OO",
+    "OO"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:arrow_bundle"
+    },
+    "V": {
+      "item": "valleycraft:knife_iron"
+    },
+    "O": {
+      "tag": "c:plank_items"
+    }
+  },
+  "result": {
+    "item": "minecraft:fletching_table",
+    "count": 1
+  }
+}

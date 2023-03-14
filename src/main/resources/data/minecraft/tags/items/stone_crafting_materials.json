@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#valleycraft:cobblestones"
+    "#valleycraft:cobblestones",
+    "minecraft:stone"
   ]
 }

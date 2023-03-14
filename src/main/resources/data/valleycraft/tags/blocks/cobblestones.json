@@ -3,6 +3,9 @@
   "values": [
     "valleycraft:cobbled_shale",
     "valleycraft:carmine_cobblestone",
-    "valleycraft:erdcobblestone"
+    "valleycraft:erdcobblestone",
+    "minecraft:cobblestone",
+    "minecraft:cobbled_deepslate",
+    "minecraft:blackstone"
   ]
 }

@@ -463,6 +463,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     PRIMSTEEL_TILED_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
 
     PRIMSTEEL_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
+    LARGE_PRIMSTEEL_CHAIN(new LargeChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     PRIMSTEEL_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
     PRIMSTEEL_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     PRIMSTEEL_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
@@ -473,14 +474,18 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     IRON_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     IRON_PLATE_STAIRS(new StairsBlock(IRON_PLATE_BLOCK.getState(), Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     IRON_PLATE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+
     IRON_CUT_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     IRON_CUT_STAIRS(new StairsBlock(IRON_CUT_BLOCK.getState(), Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     IRON_CUT_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
 
     IRON_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
+    LARGE_IRON_CHAIN(new LargeChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
     IRON_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
     IRON_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
-    
+
+    LARGE_CHAIN(new LargeChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
+
     DEEPSLATE_PRESSURE_PLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(Blocks.STONE_PRESSURE_PLATE)), itemSettings()),
     SHALE_PRESSURE_PLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(Blocks.STONE_PRESSURE_PLATE).strength(0.2f)), itemSettings()),
 

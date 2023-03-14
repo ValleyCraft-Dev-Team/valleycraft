@@ -3,13 +3,10 @@
   "ingredients": [
     {
       "item": "valleycraft:puff_ball"
-    },
-    {
-      "item": "valleycraft:puff_ball"
     }
   ],
   "result": {
-    "item": "valleycraft:cloth",
+    "item": "valleycraft:puff_ball_seeds",
     "count": 1
   }
 }

@@ -3,10 +3,13 @@
   "ingredients": [
     {
       "item": "valleycraft:puff_ball"
+    },
+    {
+      "item": "valleycraft:puff_ball"
     }
   ],
   "result": {
-    "item": "minecraft:string",
-    "count": 2
+    "item": "valleycraft:string",
+    "count": 1
   }
 }

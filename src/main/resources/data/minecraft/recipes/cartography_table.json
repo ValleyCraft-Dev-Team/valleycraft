@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#F",
+    "OO",
+    "OO"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:maps"
+    },
+    "F": {
+      "tag": "c:quills"
+    },
+    "O": {
+      "tag": "c:plank_items"
+    }
+  },
+  "result": {
+    "item": "minecraft:cartography_table",
+    "count": 1
+  }
+}

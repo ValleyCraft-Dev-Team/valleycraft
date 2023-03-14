@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#V#",
+    "#B#"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plank"
+    },
+    "V": {
+      "tag": "c:string_spools"
+    },
+    "B": {
+      "item": "valleycraft:empty_bookshelf"
+    }
+  },
+  "result": {
+    "item": "minecraft:loom",
+    "count": 1
+  }
+}

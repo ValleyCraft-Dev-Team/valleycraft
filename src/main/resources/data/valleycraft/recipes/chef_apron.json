@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#V#",
+    "WVW",
+    "LVL"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:string_spools"
+    },
+    "V": {
+      "item": "valleycraft:cloth"
+    },
+    "W": {
+      "item": "minecraft:white_dye"
+    },
+    "L": {
+      "item": "minecraft:lime_dye"
+    }
+  },
+  "result": {
+    "item": "valleycraft:chef_apron",
+    "count": 1
+  }
+}
