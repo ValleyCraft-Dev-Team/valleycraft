@@ -2,7 +2,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "valleycraft:entity/zombies/alex_miner"
+		"1": "valleycraft:entity/zombies/alex_miner",
+		"particle": "valleycraft:entity/zombies/alex_miner"
+
 	},
 	"elements": [
 		{
