@@ -38,7 +38,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     CRATE(new CrateBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     DEEPSLATE_CHEST(new DeepslateChestBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)), itemSettings()),
     COFFIN(new CoffinBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)), itemSettings()),
-    MILLSTONE(new MillstoneBlock(Block.Settings.copy(Blocks.STONECUTTER).resistance(6).hardness(2.25f)), itemSettings()),
+    //MILLSTONE(new MillstoneBlock(Block.Settings.copy(Blocks.STONECUTTER).resistance(6).hardness(2.25f)), itemSettings()),
 
     /**cook_poi**/
     BRICK_STOVE(new StoveBlock(Block.Settings.copy(Blocks.SMOKER)), itemSettings()),
