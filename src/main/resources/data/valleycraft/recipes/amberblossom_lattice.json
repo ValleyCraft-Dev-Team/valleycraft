@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "/ /",
+    " / ",
+    "/ /"
+  ],
+  "key": {
+    "/": {
+      "item": "valleycraft:mamon_planks"
+    }
+  },
+  "result": {
+    "item": "valleycraft:amberblossom_lattice",
+    "count": 16
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:scarecrow"
+    },
+    {
+      "item": "minecraft:target"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:scarecrow_target",
+    "count": 1
+  }
+}

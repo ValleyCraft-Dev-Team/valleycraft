@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "VVV"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:rope"
+    },
+    "V": {
+      "item": "valleycraft:plank"
+    }
+  },
+  "result": {
+    "item": "valleycraft:rope_bridge",
+    "count": 3
+  }
+}

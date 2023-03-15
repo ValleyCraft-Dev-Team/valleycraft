@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#C"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass_bottle"
+    },
+    "C": {
+      "item": "minecraft:candle"
+    }
+  },
+  "result": {
+    "item": "valleycraft:candle_bottle",
+    "count": 1
+  }
+}

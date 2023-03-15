@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " V",
+    "__",
+    "VV"
+  ],
+  "key": {
+    "_": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "V": {
+      "item": "valleycraft:plank"
+    }
+  },
+  "result": {
+    "item": "valleycraft:wattle_chair",
+    "count": 2
+  }
+}

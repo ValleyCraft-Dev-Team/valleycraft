@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": {
-      "item": "valleycraft:plank"
+      "tag": "c:plank_items"
     },
     "V": {
       "tag": "c:leather_alternatives"

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#V",
+    "V#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:dirt"
+    },
+    "V": {
+      "item": "valleycraft:rock_item"
+    }
+  },
+  "result": {
+    "item": "valleycraft:dirt_road",
+    "count": 4
+  }
+}

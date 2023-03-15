@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "LBG",
+    "CCC"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plant_fiber_canvas"
+    },
+    "L": {
+      "item": "valleycraft:beast_bone"
+    },
+    "B": {
+      "item": "minecraft:barrel"
+    },
+    "G": {
+      "tag": "c:water_holding_items"
+    },
+    "C": {
+      "item": "minecraft:book"
+    }
+  },
+  "result": {
+    "tag": "c:plank_items",
+    "count": 1
+  }
+}

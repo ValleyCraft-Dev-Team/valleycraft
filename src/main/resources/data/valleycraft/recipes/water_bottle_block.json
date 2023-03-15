@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:potion"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:water_bottle_block",
+    "count": 1
+  }
+}

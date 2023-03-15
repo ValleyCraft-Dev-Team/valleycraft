@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "WLW",
+    " V "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:jack_o_lantern"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    "L": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "V": {
+      "tag": "c:plank_items"
+    }
+  },
+  "result": {
+    "item": "valleycraft:scarecrow_glowing",
+    "count": 1
+  }
+}

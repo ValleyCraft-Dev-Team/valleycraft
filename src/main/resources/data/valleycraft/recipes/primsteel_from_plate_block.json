@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:primsteel_plate_block"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:primsteel_ingot",
+    "count": 9
+  }
+}

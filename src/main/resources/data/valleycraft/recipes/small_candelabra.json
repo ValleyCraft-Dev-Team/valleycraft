@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "c"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:candle"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "valleycraft:small_candelabra",
+    "count": 1
+  }
+}

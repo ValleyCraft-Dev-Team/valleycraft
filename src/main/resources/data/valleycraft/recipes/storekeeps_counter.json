@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#Bg",
+    "LVC"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "B": {
+      "item": "minecraft:blue_carpet"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "minecraft:book"
+    },
+    "V": {
+      "item": "valleycraft:crate"
+    },
+    "C": {
+      "item": "minecraft:candle"
+    }
+  },
+  "result": {
+    "item": "valleycraft:storekeeps_counter",
+    "count": 1
+  }
+}

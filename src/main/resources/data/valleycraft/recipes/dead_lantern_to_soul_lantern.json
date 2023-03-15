@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:dead_lantern"
+    },
+    {
+      "item": "minecraft:soul_torch"
+    }
+  ],
+  "result": {
+    "item": "minecraft:soul_lantern",
+    "count": 1
+  }
+}

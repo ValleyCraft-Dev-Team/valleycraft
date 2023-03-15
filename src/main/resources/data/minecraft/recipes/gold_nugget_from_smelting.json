@@ -68,6 +68,9 @@
     },
     {
       "item": "valleycraft:golden_thigh_guards"
+    },
+    {
+      "item": "minecraft:powered_rail"
     }
   ],
   "result": "valleycraft:gold_scrap"

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#/",
+    " I"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:rock_item"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "valleycraft:lantern_hanger",
+    "count": 1
+  }
+}

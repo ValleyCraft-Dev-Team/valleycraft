@@ -65,6 +65,12 @@
     },
     {
       "item": "valleycraft:primsteel_boots"
+    },
+    {
+      "item": "valleycraft:large_primsteel_chain"
+    },
+    {
+      "item": "valleycraft:primsteel_ladder"
     }
   ],
   "result": "valleycraft:primsteel_scrap"

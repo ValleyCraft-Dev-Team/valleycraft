@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:empty_bookshelf"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:anthro_bookshelf",
+    "count": 1
+  }
+}

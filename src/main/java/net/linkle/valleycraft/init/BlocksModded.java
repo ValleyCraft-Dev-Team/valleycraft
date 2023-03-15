@@ -135,6 +135,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     TREATED_LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f)), itemSettings()),
     TREATED_LEATHER_CARPET(new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).strength(0.8f)), itemSettings()),
     MEMBRANE_BLOCK(new MembraneBlock(Block.Settings.copy(Blocks.GLASS).sounds(net.minecraft.sound.BlockSoundGroup.WOOL).strength(0.8f).breakInstantly()), itemSettings()),
+    /**Membrane Carpet -> 1.1?**/
 
     CURTAIN(new CurtainBlock(), itemSettings()),
     FIREGUARD(new FireGuardBlock(AbstractBlock.Settings.of(Material.METAL).sounds(BlockSoundGroup.CHAIN).nonOpaque()), itemSettings()),
@@ -196,6 +197,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     GUIDESTONE_SYMBOL_HEART(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
     GUIDESTONE_SYMBOL_HUNGER(new GuidestoneBlock(Block.Settings.copy(Blocks.STONE).strength(1, 5).nonOpaque()), itemSettings()),
 
+    /**datagen recipes below this point - stairs/slabs/walls ONLY**/
     //wattle and daub
     BLOCK_DAUB(new Block(Block.Settings.copy(Blocks.TUFF)), itemSettings()),
     DAUB_STAIRS(new StairsBlock(BLOCK_DAUB.getState(), Block.Settings.copy(Blocks.TUFF)), itemSettings()),
@@ -207,12 +209,12 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     BLOCK_WATTLE_AND_DAUB_PLUS(new Block(Block.Settings.copy(net.minecraft.block.Blocks.TUFF)), itemSettings()),
 
     BLOCK_WATTLE_AND_GLASS(new GlassBlock(Block.Settings.copy(Blocks.GLASS)), itemSettings()), // block_wattle_and_glass
-    BLOCK_WATTLE_AND_GLASS_CROSS(new GlassBlock(Block.Settings.copy(net.minecraft.block.Blocks.GLASS)), itemSettings()), // block_wattle_and_glass_cross
-    BLOCK_WATTLE_AND_GLASS_PLUS(new GlassBlock(Block.Settings.copy(net.minecraft.block.Blocks.GLASS)), itemSettings()), // block_wattle_and_glass_plus
-    
     BLOCK_WATTLE_AND_GLASS_PANE(new PaneBlock(Block.Settings.copy(Blocks.GLASS_PANE)), itemSettings()),
+    BLOCK_WATTLE_AND_GLASS_CROSS(new GlassBlock(Block.Settings.copy(net.minecraft.block.Blocks.GLASS)), itemSettings()), // block_wattle_and_glass_cross
     BLOCK_WATTLE_AND_GLASS_CROSS_PANE(new PaneBlock(Block.Settings.copy(net.minecraft.block.Blocks.GLASS_PANE)), itemSettings()),
+    BLOCK_WATTLE_AND_GLASS_PLUS(new GlassBlock(Block.Settings.copy(net.minecraft.block.Blocks.GLASS)), itemSettings()), // block_wattle_and_glass_plus
     BLOCK_WATTLE_AND_GLASS_PLUS_PANE(new PaneBlock(Block.Settings.copy(net.minecraft.block.Blocks.GLASS_PANE)), itemSettings()),
+
 
     WATTLE_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR)), itemSettings()),
     WATTLE_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.OAK_TRAPDOOR)), itemSettings()),

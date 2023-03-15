@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "valleycraft:shale_gravestone"
+  },
+  "result": "valleycraft:shale_gravestone_spirit",
+  "count": 1
+}

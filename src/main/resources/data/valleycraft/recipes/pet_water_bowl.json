@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:brick"
+    },
+    {
+      "tag": "c:water_holding_items"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:pet_water_bowl",
+    "count": 1
+  }
+}

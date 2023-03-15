@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:scarecrow_glowing"
+    },
+    {
+      "item": "valleycraft:straw_hat"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:scarecrow_hat_glowing",
+    "count": 1
+  }
+}

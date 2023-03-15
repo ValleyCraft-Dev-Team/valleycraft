@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "valleycraft:guidestone_blank"
+  },
+  "result": "valleycraft:guidestone_tool_sword",
+  "count": 1
+}

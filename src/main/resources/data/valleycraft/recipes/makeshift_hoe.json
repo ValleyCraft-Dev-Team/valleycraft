@@ -9,7 +9,7 @@
       "item": "valleycraft:fiber"
     },
     "Q": {
-      "item": "valleycraft:plank"
+      "tag": "c:plank_items"
     }
   },
   "result": {

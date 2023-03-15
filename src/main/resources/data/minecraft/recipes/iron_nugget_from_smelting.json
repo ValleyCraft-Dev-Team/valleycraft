@@ -91,7 +91,37 @@
       "item": "valleycraft:rusted_sword"
     },
     {
+      "item": "valleycraft:rusted_shovel"
+    },
+    {
+      "item": "valleycraft:rusted_axe"
+    },
+    {
+      "item": "valleycraft:rusted_hoe"
+    },
+    {
       "item": "valleycraft:liches_iron_bone_amulet"
+    },
+    {
+      "item": "valleycraft:fireguard"
+    },
+    {
+      "item": "valleycraft:large_chain"
+    },
+    {
+      "item": "valleycraft:large_iron_chain"
+    },
+    {
+      "item": "valleycraft:iron_ladder"
+    },
+    {
+      "item": "minecraft:rail"
+    },
+    {
+      "item": "minecraft:detector_rail"
+    },
+    {
+      "item": "minecraft:activator_rail"
     }
   ],
   "result": "valleycraft:iron_scrap"

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:empty_bookshelf"
+    },
+    {
+      "item": "minecraft:shears"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:beekeeping_bookshelf",
+    "count": 1
+  }
+}

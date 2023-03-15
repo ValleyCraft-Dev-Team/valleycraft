@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:empty_bookshelf"
+    },
+    {
+      "item": "minecraft:shears"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "tag": "c:plank_items"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:tool_bookshelf",
+    "count": 1
+  }
+}

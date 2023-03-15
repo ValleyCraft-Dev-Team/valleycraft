@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:counter"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:counter_corner",
+    "count": 1
+  }
+}

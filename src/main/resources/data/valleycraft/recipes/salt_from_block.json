@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:salt_block"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:salt",
+    "count": 9
+  }
+}

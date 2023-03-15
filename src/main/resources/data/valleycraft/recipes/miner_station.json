@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iOi",
+    "iOi"
+  ],
+  "key": {
+    "i": {
+      "item": "valleycraft:primsteel_ingot"
+    },
+    "O": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "valleycraft:miner_station",
+    "count": 1
+  }
+}

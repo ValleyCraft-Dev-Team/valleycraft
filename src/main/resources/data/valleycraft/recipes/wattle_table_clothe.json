@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "V"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plant_fiber_canvas"
+    },
+    "V": {
+      "item": "valleycraft:wattle_table"
+    }
+  },
+  "result": {
+    "item": "valleycraft:wattle_table_clothe",
+    "count": 1
+  }
+}

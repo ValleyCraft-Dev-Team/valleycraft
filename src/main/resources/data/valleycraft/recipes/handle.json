@@ -8,7 +8,7 @@
       "item": "valleycraft:plant_fiber_string"
     },
     "V": {
-      "item": "valleycraft:plank"
+      "tag": "c:plank_items"
     }
   },
   "result": {

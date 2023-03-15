@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:empty_bookshelf"
+    },
+    {
+      "item": "minecraft:map"
+    },
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:candle"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:cartography_bookshelf",
+    "count": 1
+  }
+}

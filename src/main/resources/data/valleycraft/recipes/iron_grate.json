@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "///",
+    "///",
+    "///"
+  ],
+  "key": {
+    "/": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "item": "valleycraft:iron_grate",
+    "count": 4
+  }
+}

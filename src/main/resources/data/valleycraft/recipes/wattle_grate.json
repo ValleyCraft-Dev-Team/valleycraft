@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "///",
+    "///",
+    "///"
+  ],
+  "key": {
+    "/": {
+      "item": "valleycraft:wattle_bars"
+    }
+  },
+  "result": {
+    "item": "valleycraft:wattle_grate",
+    "count": 4
+  }
+}

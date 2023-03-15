@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#WL",
+    "BFS"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:apple"
+    },
+    "W": {
+      "item": "minecraft:writable_book"
+    },
+    "L": {
+      "item": "minecraft:lead"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    },
+    "F": {
+      "item": "valleycraft:stablehand_counter"
+    },
+    "S": {
+      "item": "minecraft:saddle"
+    }
+  },
+  "result": {
+    "item": "valleycraft:stablehand_station",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:plank_items"
+    },
+    {
+      "item": "minecraft:chest"
+    },
+    {
+      "tag": "c:plank_items"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:cabinet",
+    "count": 1
+  }
+}

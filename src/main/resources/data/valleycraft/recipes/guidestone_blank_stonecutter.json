@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "valleycraft:erdcobblestone"
+  },
+  "result": "valleycraft:guidestone_blank",
+  "count": 1
+}

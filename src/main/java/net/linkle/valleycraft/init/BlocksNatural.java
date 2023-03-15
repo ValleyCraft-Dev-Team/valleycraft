@@ -2,8 +2,7 @@ package net.linkle.valleycraft.init;
 
 import static net.linkle.valleycraft.init.Groups.*;
 import static net.linkle.valleycraft.util.PlantBlockSettings.*;
-import static net.linkle.valleycraft.util.PlantGroundPredicates.ARID_DESERT;
-import static net.linkle.valleycraft.util.PlantGroundPredicates.DIRT;
+import static net.linkle.valleycraft.util.PlantGroundPredicates.*;
 import static net.linkle.valleycraft.util.PlantVoxelShapes.*;
 
 import java.util.function.BiFunction;
@@ -36,8 +35,8 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     BLACK_DAHLIA(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     FLOWERING_CACTUS(new ModCactusBlock(FLOWERING_CACTUS_SHAPE), itemSettings()),
     SMALL_CACTUS(new ModCactusBlock(CACTUS_SHAPE), itemSettings()),
-    TUMBLEWEED(new ModPlantBlock(TUMBLEWEED_SHAPE, FLOWER).ground(ARID_DESERT), itemSettings()),
-    THORNY_BUSH(new ThornyBushBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT), itemSettings()),
+    TUMBLEWEED(new ModPlantBlock(TUMBLEWEED_SHAPE, FLOWER).ground(ARID_DESERT_PLANT), itemSettings()),
+    THORNY_BUSH(new ThornyBushBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER).ground(ARID_DESERT_PLANT), itemSettings()),
     FLUFFY_DANDELION(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     FOXTAIL_FERN(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     JUNGLE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
@@ -127,9 +126,9 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     CAVE_ROOT_CROP(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 10/16f)),
     ANCIENT_FLOWERS(new MultiCropBlock(MultiCropBlock.settings()).genSize(2, 12/16f)),
     ANCIENT_FLOWER_BLOCK(new ModGlowingAncientFlowerBlock(OFFSET_FLOWER).ground(DIRT), alisasedItemSettings()),
-    STAMINELLA_BERRY_PLANT(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 10/16f)),
+    STAMINELLA_BERRY_PLANT(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(DIRT).AloeShape()),
     AMETHYSTLES(new MultiCropBlock(MultiCropBlock.settings()).genSize(1, 12/16f)),
-    ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(ARID_DESERT).AloeShape()),
+    ALOE_VERAS(new BushBlock(Block.Settings.copy(Blocks.SWEET_BERRY_BUSH)).ground(ARID_DESERT_CROP).AloeShape()),
 
     MIMIC_FLOWER(new MimicFlowerBlock(MimicFlowerBlock.settings(0).ticksRandomly()), itemSettings()),
     //CAVE_ROOTS(new HangingPlant(Block.Settings.copy(Blocks.HANGING_ROOTS)), itemSettings()),
