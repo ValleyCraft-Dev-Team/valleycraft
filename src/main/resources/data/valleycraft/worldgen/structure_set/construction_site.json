@@ -1,7 +1,7 @@
 {
   "structures": [
     {
-      "structure": "valleycraft:construction_sites",
+      "structure": "valleycraft:construction_site",
       "weight": 1
     }
   ],
@@ -9,9 +9,9 @@
     // Make sure this is unique and does not match any other structure set's salt
     "salt": 1690666001,
 
-    "spacing": 10,
+    "spacing": 30,
 
-    "separation": 6,
+    "separation": 12,
 
     "type": "minecraft:random_spread"
   }
