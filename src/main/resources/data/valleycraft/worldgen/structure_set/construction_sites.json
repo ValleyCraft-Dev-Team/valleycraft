@@ -1,21 +1,17 @@
 {
   "structures": [
     {
-      "structure": "valleycraft:ruins/construction_sites/construction_site_1",
-      "weight": 1
-    },
-    {
-      "structure": "valleycraft:ruins/construction_sites/construction_site_2",
+      "structure": "valleycraft:construction_sites",
       "weight": 1
     }
   ],
   "placement": {
     // Make sure this is unique and does not match any other structure set's salt
-    "salt": 1690000001,
+    "salt": 1690666001,
 
-    "spacing": 30,
+    "spacing": 10,
 
-    "separation": 15,
+    "separation": 6,
 
     "type": "minecraft:random_spread"
   }
