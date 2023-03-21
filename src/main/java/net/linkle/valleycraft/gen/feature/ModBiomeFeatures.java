@@ -1,6 +1,7 @@
 package net.linkle.valleycraft.gen.feature;
 
 import net.linkle.valleycraft.init.Entities;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.world.biome.SpawnSettings;
 import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
@@ -29,6 +30,7 @@ public class ModBiomeFeatures extends DefaultBiomeFeatures {
     public static void addWilderSwampMobs(net.minecraft.world.biome.SpawnSettings.Builder builder) {
         addPerchRiver(builder);
         addStonerollerRiver(builder);
+        addSalmonRiver(builder);
     }
 
     public static void addWilderJungleMobs(net.minecraft.world.biome.SpawnSettings.Builder builder) {
@@ -165,6 +167,10 @@ public class ModBiomeFeatures extends DefaultBiomeFeatures {
 
     public static void addPerchRiver(net.minecraft.world.biome.SpawnSettings.Builder builder) {
         builder.spawn(SpawnGroup.WATER_CREATURE, new SpawnSettings.SpawnEntry(Entities.PERCH.type(), 16, 3, 8));
+    }
+
+    public static void addSalmonRiver(SpawnSettings.Builder builder) {
+        builder.spawn(SpawnGroup.WATER_AMBIENT, new SpawnSettings.SpawnEntry(EntityType.SALMON, 16, 3, 6));
     }
 
     public static void addPerchForest(net.minecraft.world.biome.SpawnSettings.Builder builder) {

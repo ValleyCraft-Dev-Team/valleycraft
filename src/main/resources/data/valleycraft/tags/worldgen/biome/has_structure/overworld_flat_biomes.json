@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:snowy_plains",
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:sparse_jungle",
+    "valleycraft:meadows",
+    "valleycraft:desert",
+    "valleycraft:savanna",
+    "valleycraft:rainy_desert"
+  ]
+}
