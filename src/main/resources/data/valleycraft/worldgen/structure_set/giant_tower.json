@@ -1,15 +1,15 @@
 {
   "structures": [
     {
-      "structure": "valleycraft:mining_pit_small",
+      "structure": "valleycraft:giant_tower",
       "weight": 1
     }
   ],
   "placement": {
     // Make sure this is unique and does not match any other structure set's salt
-    "salt": 1666000001,
+    "salt": 1666000020,
 
-    "spacing": 60,
+    "spacing": 80,
 
     "separation": 40,
 

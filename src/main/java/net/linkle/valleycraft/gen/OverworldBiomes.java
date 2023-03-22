@@ -131,7 +131,6 @@ public class OverworldBiomes {
     public static Biome snowyOldGrowthTaiga() {
         var gens = new GenBuilder();
         addDefaultFeatures(gens);
-        //addTaigaGrass(gens);
 
         addFrozenLavaSpring(gens);
         addMossyRocks(gens);

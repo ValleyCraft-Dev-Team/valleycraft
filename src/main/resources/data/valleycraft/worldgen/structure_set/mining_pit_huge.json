@@ -7,7 +7,7 @@
   ],
   "placement": {
     // Make sure this is unique and does not match any other structure set's salt
-    "salt": 1690666056,
+    "salt": 1666000002,
 
     "spacing": 60,
 

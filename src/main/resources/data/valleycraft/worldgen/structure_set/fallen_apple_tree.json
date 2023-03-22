@@ -1,17 +1,17 @@
 {
   "structures": [
     {
-      "structure": "valleycraft:mining_pit_small",
+      "structure": "valleycraft:fallen_apple_tree",
       "weight": 1
     }
   ],
   "placement": {
     // Make sure this is unique and does not match any other structure set's salt
-    "salt": 1666000001,
+    "salt": 1666000010,
 
-    "spacing": 60,
+    "spacing": 0,
 
-    "separation": 40,
+    "separation": 0,
 
     "type": "minecraft:random_spread"
   }
