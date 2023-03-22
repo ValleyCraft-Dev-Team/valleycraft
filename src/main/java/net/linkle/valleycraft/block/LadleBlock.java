@@ -8,6 +8,7 @@ import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
@@ -31,6 +32,24 @@ public class LadleBlock extends HorizontalWithWaterBlock {
             case EAST ->  EAST_SHAPE;
             default -> NORTH_SHAPE;
         };
+    }
+    
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        var state = super.getPlacementState(ctx);
+        
+        var pos = ctx.getHitPos();
+        if (MathHelper.approximatelyEquals(pos.y, Math.round(pos.y))) {
+            var x = MathHelper.fractionalPart(pos.x);
+            var z = MathHelper.fractionalPart(pos.z);
+            
+            final Direction face;
+            if (x < 0.5) face = z > 0.5 ? Direction.WEST : Direction.NORTH;
+            else face = z > 0.5 ? Direction.SOUTH : Direction.EAST;
+            state = state.with(FACING, face);
+        }
+        
+        return state;
     }
     
     @Override
