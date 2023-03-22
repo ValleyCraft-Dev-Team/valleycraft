@@ -79,14 +79,7 @@ public class OverworldBiomes {
         addDefaultOres(gens);
         addDefaultDisks(gens);
     }
-
-    static void addDefaultPlantFeatures(GenerationSettings.Builder gens) {
-        addDefaultMushrooms(gens);
-        addDefaultFlowers(gens);
-        addDefaultGrass(gens);
-        addDefaultVegetation(gens);
-    }
-
+    
     static void addTaigaMushrooms(GenerationSettings.Builder gens) {
         gens.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.BROWN_MUSHROOM_TAIGA);
         gens.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.RED_MUSHROOM_TAIGA);
@@ -97,9 +90,8 @@ public class OverworldBiomes {
     public static Biome amberDarkForest() {
         var gens = new GenBuilder();
         addDefaultFeatures(gens);
-        //addDefaultPlantFeatures(gens);
         addMossyRocks(gens);
-        //addLargeFerns(gens);
+        addLargeFerns(gens);
         addGiantTaigaGrass(gens);
         addSweetBerryBushes(gens);
         gens.feature(VEGETAL_DECORATION, VegetationPlaced.AMBERBLOSSOM_VEGETATION.entry);
@@ -131,15 +123,13 @@ public class OverworldBiomes {
     public static Biome snowyOldGrowthTaiga() {
         var gens = new GenBuilder();
         addDefaultFeatures(gens);
-
         addFrozenLavaSpring(gens);
         addMossyRocks(gens);
         addInfestedStone(gens);
-
         addLargeFerns(gens);
         addGiantTaigaGrass(gens);
         addSweetBerryBushesSnowy(gens);
-        gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_OLD_GROWTH_SPRUCE_TAIGA);
+        //gens.feature(VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_OLD_GROWTH_SPRUCE_TAIGA);
 
         var spawns = new SpawnSettings.Builder();
 
@@ -170,7 +160,7 @@ public class OverworldBiomes {
         addLargeFerns(gens);
         addForestFlowers(gens);
         addTaigaGrass(gens);
-        addDefaultVegetation(gens);
+        //addDefaultVegetation(gens);
         addSweetBerryBushesSnowy(gens);
 
         var spawns = new SpawnSettings.Builder();
@@ -202,7 +192,7 @@ public class OverworldBiomes {
         addLargeFerns(gens);
         addForestFlowers(gens);
         addTaigaGrass(gens);
-        addDefaultVegetation(gens);
+        //addDefaultVegetation(gens);
         addSweetBerryBushesSnowy(gens);
 
         var spawns = new SpawnSettings.Builder();
@@ -231,11 +221,10 @@ public class OverworldBiomes {
     public static Biome rainyDesert() {
         var gens = new GenBuilder();
 
-        addDefaultFeatures(gens);
-        addDesertFeatures(gens);
         addFossils(gens);
-        addSeagrassOnStone(gens);
+        addDefaultFeatures(gens);
         addDesertVegetation(gens);
+        addDesertFeatures(gens);
 
         var spawns = new SpawnSettings.Builder();
         addDesertMobs(spawns);
@@ -255,13 +244,12 @@ public class OverworldBiomes {
 
     public static Biome marshlands() {
         var gens = new GenBuilder();
-
+        
+        addFossils(gens);
         addDefaultFeatures(gens);
         addDesertFeatures(gens);
-        addFossils(gens);
-        //addSeagrassOnStone(gens);
-        //addSwampVegetation(gens);
-        //addWHSwampFeatures(gens);
+        addWHSwampFeatures(gens);
+        addSwampVegetation(gens);
 
         var spawns = new SpawnSettings.Builder();
         addWilderSwampMobs(spawns);
@@ -284,7 +272,6 @@ public class OverworldBiomes {
         var gens = new GenBuilder();
 
         addDefaultFeatures(gens);
-        addDefaultPlantFeatures(gens);
         addSparseMelons(gens);
 
         var spawns = new SpawnSettings.Builder();

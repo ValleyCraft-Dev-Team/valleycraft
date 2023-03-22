@@ -10,9 +10,9 @@ import net.minecraft.world.gen.feature.PlacedFeature;
 public class GenBuilder extends Builder {
     
     /** used to remove duplicated features */
-    //private final Int2ObjectOpenHashMap<HashSet<Object>> map = new Int2ObjectOpenHashMap<>();
+//    private final Int2ObjectOpenHashMap<HashSet<Object>> map = new Int2ObjectOpenHashMap<>();
     
-    private final HashSet<Object> set = new HashSet<>(200);
+//    private final HashSet<Object> set = new HashSet<>(200);
     
     @Override
     public Builder feature(int stepIndex, RegistryEntry<PlacedFeature> featureEntry) {
