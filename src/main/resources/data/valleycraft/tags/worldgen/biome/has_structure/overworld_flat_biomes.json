@@ -5,9 +5,9 @@
     "minecraft:plains",
     "minecraft:sunflower_plains",
     "minecraft:sparse_jungle",
-    "valleycraft:meadows",
-    "valleycraft:desert",
-    "valleycraft:savanna",
+    "minecraft:meadow",
+    "minecraft:desert",
+    "minecraft:savanna",
     "valleycraft:rainy_desert"
   ]
 }

@@ -19,7 +19,7 @@ public enum Biomes implements IdProvider {
     RAINY_COLD_FOREST(OverworldBiomes.coldForest()),
     RAINY_DESERT(OverworldBiomes.rainyDesert()),
     MARSHLANDS(OverworldBiomes.marshlands()),
-    WINDSWEPT_FOREST(OverworldBiomes.windsweptForest());
+    WINDSWEPT_FOREST_OAK(OverworldBiomes.windsweptForest());
 
     //AMBER_BIRCH_FOREST(OverworldBiomes.amberBirchForest());
     //OLD_GROWTH_AMBER_BIRCH_FOREST(OverworldBiomes.amberBirchForestTall());

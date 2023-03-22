@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "valleycraft:swamp_hut",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    // Make sure this is unique and does not match any other structure set's salt
+    "salt": 1666000052,
+
+    "spacing": 100,
+
+    "separation": 70,
+
+    "type": "minecraft:random_spread"
+  }
+}

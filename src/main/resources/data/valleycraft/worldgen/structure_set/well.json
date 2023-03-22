@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "valleycraft:well",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    // Make sure this is unique and does not match any other structure set's salt
+    "salt": 1666000043,
+
+    "spacing": 80,
+
+    "separation": 60,
+
+    "type": "minecraft:random_spread"
+  }
+}

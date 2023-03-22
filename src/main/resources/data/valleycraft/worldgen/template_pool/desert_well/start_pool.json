@@ -1,0 +1,15 @@
+{
+ "name": "valleycraft:desert_well/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 10,
+      "element": {
+        "location": "valleycraft:biome_specific/desert/desert_well_loot",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

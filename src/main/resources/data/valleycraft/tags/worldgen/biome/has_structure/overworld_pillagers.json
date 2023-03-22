@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:desert",
+    "minecraft:plains",
+    "minecraft:meadow",
+    "minecraft:grove",
+    "minecraft:snowy_slopes",
+    "minecraft:jagged_peaks",
+    "minecraft:frozen_peaks",
+    "minecraft:stony_peaks",
+    "minecraft:savanna",
+    "minecraft:snowy_taiga",
+    "minecraft:snowy_plains",
+    "minecraft:sunflower_plains",
+    "minecraft:taiga",
+    "minecraft:dark_forest"
+  ]
+}

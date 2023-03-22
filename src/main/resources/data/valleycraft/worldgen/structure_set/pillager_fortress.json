@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "valleycraft:pillager_fortress",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    // Make sure this is unique and does not match any other structure set's salt
+    "salt": 1666000041,
+
+    "spacing": 200,
+
+    "separation": 160,
+
+    "type": "minecraft:random_spread"
+  }
+}

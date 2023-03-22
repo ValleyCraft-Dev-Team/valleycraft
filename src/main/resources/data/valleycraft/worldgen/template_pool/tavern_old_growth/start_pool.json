@@ -1,0 +1,15 @@
+{
+ "name": "valleycraft:tavern_old_growth/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "valleycraft:homesteads/taverns/old_growth_tavern",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

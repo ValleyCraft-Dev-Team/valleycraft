@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "valleycraft:raft_floating",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    // Make sure this is unique and does not match any other structure set's salt
+    "salt": 1666000038,
+
+    "spacing": 80,
+
+    "separation": 70,
+
+    "type": "minecraft:random_spread"
+  }
+}

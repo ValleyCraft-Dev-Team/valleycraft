@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "valleycraft:boatwreck",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    // Make sure this is unique and does not match any other structure set's salt
+    "salt": 1666000034,
+
+    "spacing": 80,
+
+    "separation": 50,
+
+    "type": "minecraft:random_spread"
+  }
+}
