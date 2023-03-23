@@ -7,11 +7,11 @@
   ],
   "placement": {
     // Make sure this is unique and does not match any other structure set's salt
-    "salt": 1666000010,
+    "salt": 1666030010,
 
-    "spacing": 1,
+    "spacing": 6,
 
-    "separation": 0,
+    "separation": 3,
 
     "type": "minecraft:random_spread"
   }

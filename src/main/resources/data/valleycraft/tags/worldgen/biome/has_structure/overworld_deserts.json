@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:desert",
-    "valleycraft:rainy_desert"
+    "minecraft:desert"
   ]
 }

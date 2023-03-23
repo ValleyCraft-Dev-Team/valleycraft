@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "valleycraft:fallen_dark_oak_tree",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    // Make sure this is unique and does not match any other structure set's salt
+    "salt": 1666050017,
+
+    "spacing": 4,
+
+    "separation": 3,
+
+    "type": "minecraft:random_spread"
+  }
+}

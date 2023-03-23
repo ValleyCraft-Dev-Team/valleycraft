@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "valleycraft:fallen_mangrove_tree",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    // Make sure this is unique and does not match any other structure set's salt
+    "salt": 1666100016,
+
+    "spacing": 3,
+
+    "separation": 2,
+
+    "type": "minecraft:random_spread"
+  }
+}

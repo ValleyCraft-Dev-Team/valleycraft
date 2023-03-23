@@ -13,13 +13,8 @@ import net.minecraft.world.biome.Biome;
 public enum Biomes implements IdProvider {
     
     // Biome List
-    AMBER_DARK_FOREST(OverworldBiomes.amberDarkForest()),
-    FROZEN_OLD_GROWTH_FOREST(OverworldBiomes.snowyOldGrowthTaiga()),
-    SNOWY_COLD_FOREST(OverworldBiomes.snowyColdForest()),
-    RAINY_COLD_FOREST(OverworldBiomes.coldForest()),
-    RAINY_DESERT(OverworldBiomes.rainyDesert()),
-    MARSHLANDS(OverworldBiomes.marshlands()),
-    WINDSWEPT_FOREST_OAK(OverworldBiomes.windsweptForest());
+    AMBER_DARK_FOREST(OverworldBiomes.amberDarkForest());
+    //FROZEN_OLD_GROWTH_FOREST(OverworldBiomes.snowyOldGrowthTaiga());
 
     //AMBER_BIRCH_FOREST(OverworldBiomes.amberBirchForest());
     //OLD_GROWTH_AMBER_BIRCH_FOREST(OverworldBiomes.amberBirchForestTall());

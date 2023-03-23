@@ -5,16 +5,43 @@
     {
       "weight": 10,
       "element": {
-        "location": "valleycraft:environment/logs/fallen_logs/spruce_small",
+        "location": "valleycraft:environment/logs/fallen_logs/spruce_hollow",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
     {
-      "weight": 5,
+      "weight": 10,
       "element": {
-        "location": "valleycraft:environment/logs/fallen_logs/spruce_mushroom",
+        "location": "valleycraft:environment/logs/fallen_logs/spruce_small_mushrooms",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "valleycraft:environment/logs/fallen_logs/spruce_small",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "valleycraft:environment/logs/fallen_logs/spruce_stump_small",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "valleycraft:environment/logs/fallen_logs/spruce_with_stump",
         "processors": "minecraft:empty",
         "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"

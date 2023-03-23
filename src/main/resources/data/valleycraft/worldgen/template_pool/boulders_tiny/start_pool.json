@@ -5,7 +5,7 @@
     {
       "weight": 10,
       "element": {
-        "location": "valleycraft:environment/boulders/cobble_1",
+        "location": "valleycraft:environment/boulders/tiny/cobble_1",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

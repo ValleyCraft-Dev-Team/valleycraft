@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "valleycraft:plant_fiber_string"
+      "tag": "c:strings_for_bow_string"
     },
     {
-      "item": "valleycraft:plant_fiber_string"
+      "tag": "c:strings_for_bow_string"
     },
     {
-      "item": "valleycraft:plant_fiber_string"
+      "tag": "c:strings_for_bow_string"
     },
     {
       "tag": "c:glues"

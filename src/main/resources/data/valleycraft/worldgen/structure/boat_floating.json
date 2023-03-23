@@ -5,7 +5,7 @@
   "max_distance_from_center": 80,
   "biomes": "#valleycraft:has_structure/overworld_oceans",
   "step": "surface_structures",
-  "terrain_adaptation": "beard_thin",
+  "terrain_adaptation": "none",
   "start_height": {
     "absolute": -2
   },

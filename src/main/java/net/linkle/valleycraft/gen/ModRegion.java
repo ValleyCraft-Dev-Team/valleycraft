@@ -23,12 +23,6 @@ public class ModRegion extends Region {
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<NoiseHypercube, RegistryKey<Biome>>> mapper) {
         addBiomeSimilar(mapper, BiomeKeys.DARK_FOREST, Biomes.AMBER_DARK_FOREST.key);
-        addBiomeSimilar(mapper, BiomeKeys.FOREST, Biomes.WINDSWEPT_FOREST_OAK.key);
-        addBiomeSimilar(mapper, BiomeKeys.MANGROVE_SWAMP, Biomes.MARSHLANDS.key);
-        addBiomeSimilar(mapper, BiomeKeys.DESERT, Biomes.RAINY_DESERT.key);
-        addBiomeSimilar(mapper, BiomeKeys.SNOWY_TAIGA, Biomes.SNOWY_COLD_FOREST.key);
-        addBiomeSimilar(mapper, BiomeKeys.TAIGA, Biomes.RAINY_COLD_FOREST.key);
-        addBiomeSimilar(mapper, BiomeKeys.FROZEN_PEAKS, Biomes.FROZEN_OLD_GROWTH_FOREST.key);
 
         //addBiomeSimilar(mapper, BiomeKeys.OLD_GROWTH_BIRCH_FOREST, ModBiomes.OLD_GROWTH_AMBER_BIRCH_FOREST.key);
     }

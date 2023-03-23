@@ -5,6 +5,15 @@
     {
       "weight": 10,
       "element": {
+        "location": "valleycraft:environment/logs/fallen_logs/birch_hollow",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
         "location": "valleycraft:environment/logs/fallen_logs/birch_small",
         "processors": "minecraft:empty",
         "projection": "rigid",
@@ -12,11 +21,20 @@
       }
     },
     {
-      "weight": 5,
+      "weight": 10,
       "element": {
-        "location": "valleycraft:environment/logs/fallen_logs/birch_mushroom",
+        "location": "valleycraft:environment/logs/fallen_logs/birch_stump_small",
         "processors": "minecraft:empty",
-        "projection": "terrain_matching",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "valleycraft:environment/logs/fallen_logs/birch_with_stump",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     }

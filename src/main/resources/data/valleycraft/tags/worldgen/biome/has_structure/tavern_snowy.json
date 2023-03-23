@@ -7,8 +7,6 @@
     "minecraft:jagged_peaks",
     "minecraft:snowy_plains",
     "minecraft:snowy_slopes",
-    "minecraft:snowy_taiga",
-    "valleycraft:frozen_old_growth_forest",
-    "valleycraft:snowy_cold_forest"
+    "minecraft:snowy_taiga"
   ]
 }

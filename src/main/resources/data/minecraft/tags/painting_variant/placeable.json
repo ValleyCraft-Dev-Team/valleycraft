@@ -11,8 +11,21 @@
     "valleycraft:home",
     "valleycraft:hex_airship",
     "valleycraft:cycles",
+    "valleycraft:cycles_two",
     "valleycraft:island",
     "valleycraft:house",
-    "valleycraft:belaenu"
+    "valleycraft:belaenu",
+    "valleycraft:depths",
+    "valleycraft:ruin",
+    "valleycraft:elder_large",
+    "valleycraft:elder_small",
+    "valleycraft:wretch",
+    "valleycraft:wretch_prior",
+    "valleycraft:air",
+    "valleycraft:earth",
+    "valleycraft:fire",
+    "valleycraft:water",
+    "valleycraft:spirit",
+    "valleycraft:tender_rose"
   ]
 }

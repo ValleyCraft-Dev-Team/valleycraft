@@ -18,14 +18,27 @@ public class Paintings {
     public static final PaintingVariant HOME = registerPainting("home", new PaintingVariant(32,16));
     public static final PaintingVariant HEX_AIRSHIP = registerPainting("hex_airship", new PaintingVariant(48,32));
     public static final PaintingVariant CYCLES = registerPainting("cycles", new PaintingVariant(32,16));
+    public static final PaintingVariant CYCLES_TWO = registerPainting("cycles_two", new PaintingVariant(32,16));
     public static final PaintingVariant ISLAND = registerPainting("island", new PaintingVariant(32,32));
     public static final PaintingVariant HOUSE = registerPainting("house", new PaintingVariant(16,16));
     public static final PaintingVariant BELAENU = registerPainting("belaenu", new PaintingVariant(16,32));
+    public static final PaintingVariant DEPTHS = registerPainting("depths", new PaintingVariant(32,32));
+    public static final PaintingVariant RUIN = registerPainting("ruin", new PaintingVariant(48,32));
+    public static final PaintingVariant ELDER_LARGE = registerPainting("elder_large", new PaintingVariant(32,32));
+    public static final PaintingVariant ELDER_SMALL = registerPainting("elder_small", new PaintingVariant(32,16));
+    public static final PaintingVariant WRETCH = registerPainting("wretch", new PaintingVariant(16,32));
+    public static final PaintingVariant WRETCH_PRIOR = registerPainting("wretch_prior", new PaintingVariant(16,32));
+    public static final PaintingVariant AIR = registerPainting("air", new PaintingVariant(16,16));
+    public static final PaintingVariant EARTH = registerPainting("earth", new PaintingVariant(16,16));
+    public static final PaintingVariant FIRE = registerPainting("fire", new PaintingVariant(16,16));
+    public static final PaintingVariant WATER = registerPainting("water", new PaintingVariant(16,16));
+    public static final PaintingVariant SPIRIT = registerPainting("spirit", new PaintingVariant(16,16));
+    public static final PaintingVariant TENDER_ROSE = registerPainting("tender_rose", new PaintingVariant(32,32));
 
     private static PaintingVariant registerPainting(String name, PaintingVariant paintingVariant) {
         return Registry.register(Registry.PAINTING_VARIANT, new Identifier(Main.ID, name), paintingVariant);
     }
-    
+
 
 
     public static void initialize() {

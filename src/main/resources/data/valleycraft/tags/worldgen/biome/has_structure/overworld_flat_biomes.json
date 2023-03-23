@@ -7,7 +7,6 @@
     "minecraft:sparse_jungle",
     "minecraft:meadow",
     "minecraft:desert",
-    "minecraft:savanna",
-    "valleycraft:rainy_desert"
+    "minecraft:savanna"
   ]
 }
