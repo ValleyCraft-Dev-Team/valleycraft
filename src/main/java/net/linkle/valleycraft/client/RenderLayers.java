@@ -37,7 +37,7 @@ class RenderLayers {
         put(PRIMSTEEL_TRAPDOOR, cullout);
         put(SCULK_BLOSSOM, cullout);
         //put(CHAINED_RUSTED_CHEST, cullout);
-        //put(CRAFTING_MAT, cullout);
+        put(CRAFTING_MAT, cullout);
         put(WITCH_LADLE, cullout);
         put(FIREGUARD, cullout);
         put(NEST, cullout);
@@ -288,21 +288,13 @@ class RenderLayers {
         put(SOUL_BRAZIER, cullout);
         
         put(EMPTY_BOTTLE_BLOCK, cullout);
-        put(EMPTY_BOTTLE_BLOCK, translucent);
-        put(EXP_BOTTLE_BLOCK, cullout);
         put(EXP_BOTTLE_BLOCK, translucent);
-        put(GLOW_BERRY_BOTTLE_BLOCK, cullout);
         put(GLOW_BERRY_BOTTLE_BLOCK, translucent);
-        put(HONEY_BOTTLE_BLOCK, cullout);
         put(HONEY_BOTTLE_BLOCK, translucent);
         put(INK_BOTTLE_BLOCK, cullout);
-        put(INK_BOTTLE_BLOCK, translucent);
         put(MILK_BOTTLE_BLOCK, cullout);
-        put(MILK_BOTTLE_BLOCK, translucent);
-        put(WATER_BOTTLE_BLOCK, cullout);
         put(WATER_BOTTLE_BLOCK, translucent);
         put(CANDLE_BOTTLE, cullout);
-        put(CANDLE_BOTTLE, translucent);
 
         put(WATTLE_STOOL, cullout);
         put(WATTLE_TABLE, cullout);
@@ -351,7 +343,6 @@ class RenderLayers {
         //put(OCELOT_STATUE, cullout);
         put(SPIKE_TRAP, cullout);
         put(SPIKE_TRAP_EXTENSION, cullout);
-        put(FAN_MOLD, cullout);
         put(FAN_MOLD, translucent);
 
         put(HOLLOW_ACACIA_LOG, cullout);

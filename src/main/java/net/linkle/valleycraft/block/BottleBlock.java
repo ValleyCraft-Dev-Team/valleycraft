@@ -16,7 +16,7 @@ public class BottleBlock extends BlockWithWater {
     protected static final VoxelShape SHAPE = Block.createCuboidShape(5, 0, 5, 11, 9, 11);
 
     public BottleBlock() {
-        this(settings().nonOpaque());
+        this(settings());
     }
     
     public BottleBlock(Settings settings) {

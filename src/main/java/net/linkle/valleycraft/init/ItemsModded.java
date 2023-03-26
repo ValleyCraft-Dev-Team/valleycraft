@@ -83,7 +83,7 @@ public enum ItemsModded implements ItemEnum {
     QUILL(new Item(itemSettings())),
     RUNE_ETCHING_BLADE(new Item(itemSettings().rarity(Rarity.UNCOMMON))),
     BOOK_RUNECALLING(new Item(itemSettings().rarity(EPIC))),
-    LIFE_GEM(new SoulItem(itemSettings().rarity(UNCOMMON))),
+    LIFE_GEM(new LifeGemItem(itemSettings().rarity(UNCOMMON))),
 
     BOW_STRING(new Item(itemSettings())),
     FLOUR(new Item(itemSettings().group(INGREDIENTS))),

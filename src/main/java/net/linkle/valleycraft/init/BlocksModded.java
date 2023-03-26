@@ -95,11 +95,11 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     PET_WATER_BOWL(new PetWaterBowlBlock(Block.Settings.copy(Blocks.TERRACOTTA).nonOpaque().breakInstantly()), itemSettings()),
     EMPTY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     WATER_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
-    GLOW_BERRY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    GLOW_BERRY_BOTTLE_BLOCK(new BottleBlock(BottleBlock.settings().luminance(s->12)), itemSettings()),
     MILK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     HONEY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
-    EXP_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    EXP_BOTTLE_BLOCK(new BottleBlock(BottleBlock.settings().luminance(s->8)), itemSettings()),
 
     WATTLE_STOOL(new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     WATTLE_CHAIR(new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
