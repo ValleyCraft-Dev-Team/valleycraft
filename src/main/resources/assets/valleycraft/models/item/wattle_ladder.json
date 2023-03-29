@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:block/wattle_ladder"
+    "layer0": "valleycraft:item/block_items/wattle_ladder"
   }
 }

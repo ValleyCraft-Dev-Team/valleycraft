@@ -1,0 +1,187 @@
+{
+  "name": "Basic Cooking",
+  "icon": "valleycraft:sandwich_chicken",
+  "category": "valleycraft:letter",
+  "read_by_default": "true",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Note to Self: Write a section about special ingredients which give magical effects when I have time. -Hael"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:hardtack_dough",
+      "title": "Hardtack Dough",
+      "text": "Simple and quick to cook even at a campfire if you don't have water or a proper stove to spare."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "valleycraft:cooked_hardtack_smelting",
+      "title": "Hardtack",
+      "text": "Tastes like a dry Brick of Salt and Flour, but it's filling."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:flour",
+      "title": "Flour",
+      "text": "Used for creating Bread, Pastries, and more, this is borderline universal in cooking."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:morel_oil",
+      "title": "Oil Bottle",
+      "text": "Used often in Stir Fries and other dishes."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:milk",
+      "title": "Milk Bottle",
+      "text": "Used to make Cheese, Butter, Pastries, and more."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:butter",
+      "title": "Butter",
+      "text": "Useful for baking, occasionally as an Oil alternative, too."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:broth_vegetable",
+      "title": "Vegetable Broth",
+      "text": "Tastes good alone, but useful for soups."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:broth",
+      "title": "Bone Broth",
+      "text": "For a more savory taste than Vegetable Broth."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:beef_stew",
+      "title": "Beef Stew",
+      "text": "Far more filling than a plain slab of Steak and a Baked Potato."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:pumpkin_soup",
+      "title": "Pumpkin Soup",
+      "text": "Lanjya's specialty. I always tend to burn it somehow. It's a curse."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:bread",
+      "title": "Bread Dough",
+      "text": "Standard Bread Dough."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "valleycraft:cooked_bread_smelting",
+      "title": "Bread",
+      "text": "Cooks quickly, too."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:toast",
+      "title": "Toast",
+      "text": "Doesn't taste great on it's own, but it makes for great sandwiches."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:sandwich_mutton",
+      "title": "Mutton Sandwich",
+      "text": "I prefer Fish Sandwiches or Eggs on Toast, personally. -Lanjya"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:mushroom_stew",
+      "title": "Mushroom Stew",
+      "text": "Be sure to use Brown Mushrooms to neutralize the other ones!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:sweet_berry_pie_dough",
+      "title": "Sweet Berry Pie Dough",
+      "text": "Tastes better raw than cooked in my opinion, but I dislike pie's texture."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "valleycraft:sweet_berry_pie_smelting",
+      "title": "Sweet Berry Pie",
+      "text": "Smells lovely when baking."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:sweet_berry_pie_slice",
+      "title": "Sweet Berry Pie Slice",
+      "text": "I guess you could eat it all at once, but I'd rather not make myself feel sick."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:vanilla_frosting",
+      "title": "Vanilla Frosting",
+      "text": "Makes for great cakes and cookies."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:chocolate",
+      "title": "Chocolate",
+      "text": "Honestly, I could eat an entire Crate of this on its own in one sitting."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:cake",
+      "title": "Cake Dough",
+      "text": "Tastes wonderful, I prefer Chocolate Cake personally though."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "valleycraft:cake_smelting",
+      "title": "Cake",
+      "text": "I'm starting to crave cake while writing this book now."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "valleycraft:fried_egg_smelting",
+      "title": "Fried Egg",
+      "text": "Tastes wonderful."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:kelp_salad",
+      "title": "Kelp Salad",
+      "text": "Not a favorite of mine, but it's filling."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "valleycraft:baked_seeds_smelting",
+      "title": "Baked Seeds",
+      "text": "Fruits, Vegetables, and Seeds can always be cooked on their own."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:carrot_juice",
+      "title": "Carrot Juice",
+      "text": "Some make for good juices, as well."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:cod_gefilte",
+      "title": "Cod Gefilte",
+      "text": "A personal favorite of mine, but it's certainly an acquired taste. -Hael"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:dog_biscuit",
+      "title": "Dog Biscuit",
+      "text": "Perfect for your little furry friends."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:cured_flesh",
+      "title": "Brine-Cured Flesh",
+      "text": "Makes for good Dog or Wolf food, I don't recommend eating it yourself, however."
+    }
+  ]
+}

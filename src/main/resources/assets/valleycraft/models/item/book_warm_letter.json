@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/books/friendly_letter"
+    "layer0": "valleycraft:item/books/hael"
   }
 }

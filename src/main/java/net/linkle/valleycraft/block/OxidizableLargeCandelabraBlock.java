@@ -20,7 +20,7 @@ public class OxidizableLargeCandelabraBlock extends AbstractOxidizableCandelabra
     public static final EnumProperty<Axis> AXIS = Properties.HORIZONTAL_AXIS;
     
     public OxidizableLargeCandelabraBlock(OxidationLevel level) {
-        super(level, 10);
+        super(level, 12);
         setDefaultState(getDefaultState().with(AXIS, Axis.Z));
     }
     

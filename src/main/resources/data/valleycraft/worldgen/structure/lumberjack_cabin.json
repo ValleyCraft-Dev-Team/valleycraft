@@ -3,7 +3,7 @@
   "start_pool": "valleycraft:lumberjack_cabin/start_pool",
   "size": 2,
   "max_distance_from_center": 80,
-  "biomes": "#valleycraft:has_structure/overworld_forests_all_types",
+  "biomes": "#valleycraft:has_structure/lumberjack_safe",
   "step": "surface_structures",
   "terrain_adaptation": "beard_thin",
   "start_height": {

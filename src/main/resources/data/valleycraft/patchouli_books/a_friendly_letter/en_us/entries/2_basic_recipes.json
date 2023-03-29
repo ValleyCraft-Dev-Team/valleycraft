@@ -1,0 +1,127 @@
+{
+  "name": "Makeshift Tools",
+  "icon": "valleycraft:makeshift_pickaxe",
+  "category": "valleycraft:letter",
+  "read_by_default": "true",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "If you don't want to hurt your hands, you should consider making some Makeshift Tools before you start gathering a ton of resources."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:makeshift_knife",
+      "title": "Makeshift Knife",
+      "text": "A good weapon, and great for gathering plant fiber until you can make a real knife or scythe."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:makeshift_axe",
+      "title": "Makeshift Axe",
+      "text": "Works well enough for most chopping needs. A suitable weapon, too."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:makeshift_pickaxe",
+      "title": "Makeshift Pickaxe",
+      "text": "Not the best for mining, but good enough to gather materials like Primsteel Ore."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:makeshift_shovel",
+      "title": "Makeshift Shovel",
+      "text": "Moves dirt more efficiently than your bare hands, but not by much."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:makeshift_hoe",
+      "title": "Makeshift Hoe",
+      "text": "Not great, but good enough to start farming quickly. Don't starve out there!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:flint_and_primsteel",
+      "title": "Flint and Primsteel",
+      "text": "Not as good as using Iron, but hey, it works."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:campfire",
+      "title": "Campfire",
+      "text": "With warmth on your side, you'll be alright."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:torch",
+      "title": "Torches",
+      "text": "Light seems to dissuade Monsters from appearing somehow."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:stake",
+      "title": "Stake",
+      "text": "Perfect for placing Torches on around your campsite to scare away monsters."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:lantern",
+      "title": "Lantern",
+      "text": "A large variety of these exist, personally I prefer a Glow Squid Lantern any day. Not too bright, not too dark."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:lantern_hanger",
+      "title": "Lantern Hanger",
+      "text": "Great for lighting up halls or marking doorways with Lanterns."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:throwing_rock",
+      "title": "Throwing Rock",
+      "text": "Not as good as an arrow; But hey, whatever downs the enemy."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:wooden_staff",
+      "title": "Wooden Staff",
+      "text": "I prefer Bamboo Staffs, they're much lighter- but these work well if heftier weapons aren't your style."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:wooden_oar",
+      "title": "Wooden Oar",
+      "text": "If you plan to travel the sea in a raft, you can't forget these!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:makeshift_knife_bone",
+      "title": "Makeshift Bone Knife",
+      "text": "A bit grisly, but it works just as well as any proper stone tool, in a pinch."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:makeshift_axe_bone",
+      "title": "Makeshift Bone Axe",
+      "text": "...And since there's always so many undead skeletons about, resources to make them are plentiful."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:makeshift_pickaxe_bone",
+      "title": "Makeshift Bone Pickaxe",
+      "text": "Still gives me the heebie jeebies to use them though."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:makeshift_shovel_bone",
+      "title": "Makeshift Bone Shovel",
+      "text": "Just try not to think about where they came from too much."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:makeshift_hoe_bone",
+      "title": "Makeshift Bone Hoe",
+      "text": "Then again, if you're using these- that's probably the least of your concerns."
+    }
+  ]
+}

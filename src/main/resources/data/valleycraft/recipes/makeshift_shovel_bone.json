@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #",
+    "V#"
+  ],
+  "key": {
+    "V": {
+      "item": "valleycraft:rope"
+    },
+    "#": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "item": "valleycraft:bone_shovel",
+    "count": 1
+  }
+}
+

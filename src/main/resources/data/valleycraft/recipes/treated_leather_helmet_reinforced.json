@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#S#"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:treated_leather"
+    },
+    "S": {
+      "item": "valleycraft:leather_strap"
+    }
+  },
+  "result": {
+    "item": "valleycraft:reinforced_leather_helmet",
+    "count": 1
+  }
+}

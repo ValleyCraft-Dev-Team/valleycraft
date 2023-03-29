@@ -3,11 +3,14 @@
   "key": {
     "#": {
       "tag": "c:plank_items"
+    },
+    "e": {
+      "item": "minecraft:dirt"
     }
   },
   "pattern": [
-    "# #",
-    "# #",
+    "###",
+    "#e#",
     "###"
   ],
   "result": {

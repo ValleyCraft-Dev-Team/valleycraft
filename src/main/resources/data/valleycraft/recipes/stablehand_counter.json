@@ -23,7 +23,7 @@
     }
   },
   "result": {
-    "tag": "c:plank_items",
+    "item": "valleycraft:stablehand_counter",
     "count": 1
   }
 }

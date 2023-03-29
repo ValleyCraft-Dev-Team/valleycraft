@@ -151,7 +151,8 @@ public enum ItemsModded implements ItemEnum {
     BROWN_BEAR_SPAWN_EGG(new SpawnEggItem(Entities.BROWN_BEAR.type(), 0x3e2912, 0x291a0c, itemSettings())),
     SNAIL_SPAWN_EGG(new SpawnEggItem(Entities.SNAIL.type(), 0xf1da85, 0xb88d55, itemSettings())),
     CAVE_SNAIL_SPAWN_EGG(new SpawnEggItem(Entities.CAVE_SNAIL.type(), 0xa08d71, 0x735450, itemSettings())),
-    SCULK_SNAIL_SPAWN_EGG(new SpawnEggItem(Entities.SCULK_SNAIL.type(), 0x009295, 0x0c232c, itemSettings()));
+    SCULK_SNAIL_SPAWN_EGG(new SpawnEggItem(Entities.SCULK_SNAIL.type(), 0x009295, 0x0c232c, itemSettings())),
+    LETTER_ICON(new Item(hiddenItemSettings()));
 
     public static void initialize() {
         FoodTiered.initialize();
@@ -161,6 +162,9 @@ public enum ItemsModded implements ItemEnum {
     
     private static Item.Settings itemSettings() {
         return new Item.Settings().group(VC_ITEMS);
+    }
+    private static Item.Settings hiddenItemSettings() {
+        return new Item.Settings();
     }
 
     // ### The Enum Class Itself ###

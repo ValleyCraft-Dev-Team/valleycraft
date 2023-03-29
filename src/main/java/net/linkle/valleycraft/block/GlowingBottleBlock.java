@@ -16,7 +16,7 @@ public class GlowingBottleBlock extends BlockWithWater {
     protected static final VoxelShape SHAPE = Block.createCuboidShape(5, 0, 5, 11, 9, 11);
 
     public GlowingBottleBlock() {
-        this(settings().luminance(s ->7).nonOpaque());
+        this(settings().luminance(s ->6).nonOpaque());
     }
 
     public GlowingBottleBlock(Settings settings) {

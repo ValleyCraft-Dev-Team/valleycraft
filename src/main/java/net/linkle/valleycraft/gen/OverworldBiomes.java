@@ -105,7 +105,7 @@ public class OverworldBiomes {
 
         // cave mobs
         addBatsAndMonsters(spawns);
-        addWilderCaveMobs(spawns);
+        //addWilderCaveMobs(spawns);
 
         float temps = 0.7f;
         var effects = new BiomeEffects.Builder();
@@ -139,7 +139,7 @@ public class OverworldBiomes {
         addFarmAnimals(spawns);
         // cave mobs
         addBatsAndMonsters(spawns);
-        addWilderCaveMobs(spawns);
+        //addWilderCaveMobs(spawns);
 
         float temps = -0.5f;
         var effects = new BiomeEffects.Builder();

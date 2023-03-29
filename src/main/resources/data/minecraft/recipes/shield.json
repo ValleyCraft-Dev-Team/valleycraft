@@ -2,13 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "W": {
-      "tag": "minecraft:planks"
+      "tag": "c:plank_items"
     },
     "o": {
       "item": "minecraft:iron_ingot"
     }
   },
   "pattern": [
+    "oWo",
     "oWo",
     "oWo"
   ],

@@ -10,7 +10,7 @@ import net.minecraft.world.BlockView;
 public class OxidizableMediumCandelabraBlock extends AbstractOxidizableCandelabraBlock {
 
     public OxidizableMediumCandelabraBlock(OxidationLevel level) {
-        super(level, 7);
+        super(level, 9);
     }
 
     @Override

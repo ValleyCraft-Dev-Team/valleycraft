@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:iron_ladder"
+    }
+  ],
+  "result": {
+    "item": "minecraft:rail",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "How'd I Get This?",
+  "icon": "valleycraft:letter_icon",
+  "category": "valleycraft:letter",
+  "read_by_default": "true",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "I'm sure you're wondering how this book appeared by now, and to answer that- I stuck it in your pocket! You aren't the first odd looking fellow I've found passed out in the Overworld and certainly not the last. You didn't have any gear so I grabbed a copy of a book I am writing to assist others on your journeys."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "I regret I didn't have more to give you, but due to my small stature, carrying extra gear for others or even gear I can readily part with is a challenge. But if I finally finish writing my book, I'll make sure a new copy goes your way, too. It's a simple guide that should help you and others survive out here, written by your's truly, Hael- along with my"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "assistant Lanjya. If you decide you don't want it, I implore you at least take the few pages of advice and crafting recipes I've chosen to include in the Crafting Stations section to heart with you. These recipes are for equipment that will allow you to do more advanced crafting as well as aid in your survival. There's recipes for Tools, advanced"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "components such as Bow String, proper furniture like Chairs, plus some other odds and ends. Best of luck out there, friend- and may our paths cross again once more under more favorable conditions. Signed, Hael and Lanjya."
+    }
+  ]
+}
+

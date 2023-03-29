@@ -1,0 +1,128 @@
+{
+  "name": "Crafting Stations",
+  "icon": "valleycraft:crafting_mat",
+  "category": "valleycraft:letter",
+  "read_by_default": "true",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "This chapter focuses on just about any sort of device you could imagine using for creating new tools and blocks. For recipes for the key ingredients to a Crafting Mat/Table, see the next chapter."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:crafting_mat",
+      "title": "Crafting Mat",
+      "text": "Crafting Mats allow you to use a 3x3 grid for crafting- they also break instantly, perfect for on the go!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:crafting_table",
+      "title": "Crafting Table",
+      "text": "A stationary crafting location. These are lot better for your back than crafting on the ground too."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:crafting_mat_from_table",
+      "title": "Crafting Mat from Table",
+      "text": "You can always strip the mat from the table if you're going back out to explore."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:furnace",
+      "title": "Furnace",
+      "text": "A basic furnace for cooking or smelting."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:brick_stove",
+      "title": "Brick Stove",
+      "text": "The perfect place to cook."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:blast_furnace",
+      "title": "Blast Furnace",
+      "text": "An efficient furnace for smelting."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:smoker",
+      "title": "Smoker",
+      "text": "A device for smoking foods."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:smithing_table",
+      "title": "Smithing Table",
+      "text": "Used to enhance and upgrade tools, also used by some to set gemstones and trinkets on necklaces."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:grindstone",
+      "title": "Grindstone",
+      "text": "For repairing and unenchanting tools."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:cartography_table",
+      "title": "Cartography Table",
+      "text": "For copying, preservering, and expanding maps."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:fletching_table",
+      "title": "Fletching Table",
+      "text": "Good for fixing up arrows. At least according to the local villagers. Not sure how to use it."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:loom",
+      "title": "Loom",
+      "text": "Used to design Banners."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:composter",
+      "title": "Composter",
+      "text": "Turn that old plant waste into something more useful!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:stonecutter",
+      "title": "Stonecutter",
+      "text": "A spinning blade used for shaping and carving stones, bricks, and guidestones."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:cauldron",
+      "title": "Cauldron",
+      "text": "Good for anything from washing clothes to gathering rain water."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:brewing_stand",
+      "title": "Brewing Stand",
+      "text": "An extremely complex device, but great for making potions."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:ornate_obsidian_table",
+      "title": "Ornate Obsidian Table",
+      "text": "A sturdy desk, usually used by Scholars and Alchemists."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:clothed_ornate_obsidian_table",
+      "title": "Tablecloth",
+      "text": "A nice way to pretty up these rather barren desks."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:enchanting_table",
+      "title": "Enchanting Table",
+      "text": "Used by some Scholars acoompanied by Souls, and Lapis Lazuli to enchant things with eldritch Runes."
+    }
+  ]
+}

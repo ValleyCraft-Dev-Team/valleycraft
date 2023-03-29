@@ -1,0 +1,43 @@
+{
+  "name": "Special Recipes",
+  "icon": "valleycraft:honey_glazed_crepe",
+  "category": "valleycraft:letter",
+  "read_by_default": "true",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "There are some peculiar recipes concocted out there, by Chefs, Alchemists, and even the odd Scholar or two- concocted for their unique properties. I haven't learned most, but here's the few I do know."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:shivercap_skewer",
+      "title": "Spicy Shivercap Skewer",
+      "text": "Shivercap is widely known for giving fire resistance when cooked properly."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:honey_glazed_crepe",
+      "title": "Honey Glazed Crepe",
+      "text": "The honey appears to give a regenerative effect when cooked."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:glow_squid_soup",
+      "title": "Glow Squid Soup",
+      "text": "Glow Squid Tentacles can give a curious effect allowing breathing underwater temporarily."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:golden_endura_carrot",
+      "title": "Golden Enduria Carrot",
+      "text": "Some Alchemists cover their food in Gold, they claim it sustains them more. Tastes terrible."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:golden_watermelon_juice",
+      "title": "Glistering Melon Juice",
+      "text": "The only Golden food or drink that I can stand the taste of. -Lanjya"
+    }
+  ]
+}

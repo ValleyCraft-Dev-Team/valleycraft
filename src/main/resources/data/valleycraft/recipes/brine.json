@@ -8,7 +8,11 @@
       "item": "minecraft:kelp"
     },
     {
-      "item": "minecraft:potion"
+      "item": "minecraft:kelp"
+    },
+    {
+      "item": "minecraft:potion",
+      "nbt": "{Potion:\"minecraft:water\"}"
     }
   ],
   "result": {

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:flint"
+    },
+    {
+      "item": "valleycraft:primsteel_nugget"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:flint_and_primsteel",
+    "count": 1
+  }
+}

@@ -20,7 +20,7 @@ public class OxidizableWallCandelabraBlock extends AbstractOxidizableCandelabraB
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     
     public OxidizableWallCandelabraBlock(OxidationLevel level) {
-        super(level, 5);
+        super(level, 6);
         setDefaultState(getDefaultState().with(FACING, Direction.NORTH));
     }
     

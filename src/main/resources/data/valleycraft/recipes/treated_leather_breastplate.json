@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S S",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:treated_leather"
+    },
+    "S": {
+      "item": "valleycraft:leather_strap"
+    }
+  },
+  "result": {
+    "item": "valleycraft:leather_breastplate",
+    "count": 1
+  }
+}

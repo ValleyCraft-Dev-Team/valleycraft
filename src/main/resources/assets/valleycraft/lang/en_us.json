@@ -133,7 +133,7 @@
   "item.valleycraft.driftwood_branch": "Driftwood Branch",
 
   "item.valleycraft.amethyst_goggles": "Brasium Goggles",
-  "item.valleycraft.nightvision_goggles": "Night Vision Goggles",
+  "item.valleycraft.nightvision_goggles": "Brasium Night Vision Goggles",
 
   "item.valleycraft.oak_seed": "Oak Acorn",
   "item.valleycraft.dark_oak_seed": "Dark Oak Acorn",
@@ -189,7 +189,7 @@
 
   "item.valleycraft.arrow_bundle": "Arrow Bundle",
   "item.valleycraft.bomb_bag": "Bomb Bag",
-  "item.valleycraft.string_spool": "Spool of Plant Fiber String",
+  "item.valleycraft.string_spool": "Spool of Fiber String",
   "item.valleycraft.string_spool_normal": "Spool of String",
   "item.valleycraft.hot_plate": "Conductive Stone Plate",
   "item.valleycraft.primsteel_raw": "Raw Primsteel",
@@ -496,8 +496,9 @@
   "item.valleycraft.thermal_blaze_core": "Thermal Blaze Core",
   "item.valleycraft.visor": "Golemancer Smithing Mask",
   "item.valleycraft.strange_catalyst": "Radiating Catalyst",
+  "item.valleycraft.letter_icon": "Friendly Letter",
 
-  "block.valleycraft.log_pile": "Log Pile",
+  "block.valleycraft.log_pile": "Stacked Logs",
   "block.valleycraft.big_flower_pot_block": "Planter Box",
 
   "block.valleycraft.hollow_acacia_log": "Hollow Acacia Log",
@@ -1055,7 +1056,7 @@
   "item.valleycraft.cooked_beast_liver": "Cooked Liver",
 
   "item.valleycraft.monster_claw": "Sharp Claw",
-  "item.valleycraft.plant_fiber_string": "Plant Fiber String",
+  "item.valleycraft.plant_fiber_string": "Fiber String",
   "item.valleycraft.diamond_plate": "Diametal Alloy Ingot",
   "item.valleycraft.brasium_ingot": "Brasium Ingot",
 
@@ -1436,7 +1437,7 @@
   "block.valleycraft.barrel_planter": "Planter Barrel",
   "block.valleycraft.rain_collector": "Rain Collector",
   "block.valleycraft.water_strainer": "Water Strainer",
-  "block.valleycraft.pet_water_bowl": "Water Bowl",
+  "block.valleycraft.pet_water_bowl": "Clay Bowl",
   "block.valleycraft.black_cushion": "Black Cushion",
   "block.valleycraft.blue_cushion": "Blue Cushion",
   "block.valleycraft.brown_cushion": "Brown Cushion",
@@ -1550,11 +1551,11 @@
   "item.valleycraft.makeshift_shears": "Makeshift Shears",
 
   "item.valleycraft.bone_spear": "Bone Spear",
-  "item.valleycraft.bone_pickaxe": "Bone Pickaxe",
-  "item.valleycraft.bone_axe": "Bone Axe",
-  "item.valleycraft.bone_hoe": "Bone Hoe",
-  "item.valleycraft.bone_shovel": "Bone Shovel",
-  "item.valleycraft.bone_knife": "Bone Knife",
+  "item.valleycraft.bone_pickaxe": "Makeshift Bone Pickaxe",
+  "item.valleycraft.bone_axe": "Makeshift Bone Axe",
+  "item.valleycraft.bone_hoe": "Makeshift Bone Hoe",
+  "item.valleycraft.bone_shovel": "Makeshift Bone Shovel",
+  "item.valleycraft.bone_knife": "Makeshift Bone Knife",
   "item.valleycraft.bone_sword": "Bone Sword",
 
   "item.valleycraft.prismace": "Prismarine Mace",
@@ -1690,7 +1691,7 @@
   "item.valleycraft.soul_item_amalgamated": "Lost Amalgamated Soul",
   "item.valleycraft.soul_item_dragon": "Lost Dragon Soul",
 
-  "item.valleycraft.plant_fiber_canvas": "Plant Fiber Canvas",
+  "item.valleycraft.plant_fiber_canvas": "Fiber Canvas",
   "item.valleycraft.treated_leather": "Treated Leather",
   "item.valleycraft.ink_bottle": "Ink Bottle",
   "item.valleycraft.quill": "Quill",
@@ -2119,10 +2120,10 @@
   "block.valleycraft.adventurine_wall": "Adventurite Wall",
   "block.valleycraft.adventurine_slab": "Adventurite Slab",
   "block.valleycraft.adventurine_stairs": "Adventurite Stairs",
-  "block.valleycraft.erdstone_mosaic": "Mosaic Erdstone Tile",
-  "block.valleycraft.erdstone_mosaic_wall": "Mosaic Erdstone Tile Wall",
-  "block.valleycraft.erdstone_mosaic_slab": "Mosaic Erdstone Tile Slab",
-  "block.valleycraft.erdstone_mosaic_stairs": "Mosaic Erdstone Tile Stairs",
+  "block.valleycraft.erdstone_mosaic": "Erdstone Tile",
+  "block.valleycraft.erdstone_mosaic_wall": "Erdstone Tile Wall",
+  "block.valleycraft.erdstone_mosaic_slab": "Erdstone Tile Slab",
+  "block.valleycraft.erdstone_mosaic_stairs": "Erdstone Tile Stairs",
   "block.valleycraft.erdstone_capped": "Capped Erdstone Bricks",
   "block.valleycraft.chiseled_erdstone_craftable": "Chiseled Erdstone",
   "block.valleycraft.erdstone_tile_wall": "Erdstone Tile Wall",

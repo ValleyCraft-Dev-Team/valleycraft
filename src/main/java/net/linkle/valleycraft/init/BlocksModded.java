@@ -95,11 +95,19 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     PET_WATER_BOWL(new PetWaterBowlBlock(Block.Settings.copy(Blocks.TERRACOTTA).nonOpaque().breakInstantly()), itemSettings()),
     EMPTY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     WATER_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+<<<<<<< Updated upstream
     GLOW_BERRY_BOTTLE_BLOCK(new BottleBlock(BottleBlock.settings().luminance(s->12)), itemSettings()),
     MILK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     HONEY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     EXP_BOTTLE_BLOCK(new BottleBlock(BottleBlock.settings().luminance(s->8)), itemSettings()),
+=======
+    GLOW_BERRY_BOTTLE_BLOCK(new GlowingBottleBlock(), itemSettings()),
+    MILK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    HONEY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    EXP_BOTTLE_BLOCK(new GlowingBottleBlock(), itemSettings()),
+>>>>>>> Stashed changes
 
     WATTLE_STOOL(new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     WATTLE_CHAIR(new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
@@ -570,6 +578,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     SHALE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
 
     SHALE_RUNE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    SHALE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).hardness(6).hardness(2.25f)), itemSettings()),
 
     //marble
     MARBLE_STAIRS(new StairsBlock(BlocksNatural.MARBLE.getState(), Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
@@ -925,6 +934,22 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     SMOOTH_STONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS)), itemSettings()),
 
     SMOOTH_STONE_CAPPED(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+
+    //cairnstone
+
+    POLISHED_CAIRNSTONE(new Block(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
+    POLISHED_CAIRNSTONE_STAIRS(new StairsBlock(POLISHED_STONE.getState(), Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
+    POLISHED_CAIRNSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
+    POLISHED_CAIRNSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
+
+    CAIRNSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
+    CAIRNSTONE_BRICK_STAIRS(new StairsBlock(POLISHED_STONE.getState(), Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
+    CAIRNSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
+    CAIRNSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
+
+    CHISELED_CAIRNSTONE(new Block(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
+    MAGMA_FILLED_CHISELED_CAIRNSTONE(new Block(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f).luminance(s -> 6)), itemSettings()),
+    CAIRNSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
 
     //INDUSTRIAL_CHIMNEY(new ChimneyBlock(Block.Settings.copy(Blocks.SMOOTH_BASALT).nonOpaque()), itemSettings()),
     COBBLESTONE_CHIMNEY(new ChimneyBlock(Block.Settings.copy(Blocks.COBBLESTONE).nonOpaque()), itemSettings()),

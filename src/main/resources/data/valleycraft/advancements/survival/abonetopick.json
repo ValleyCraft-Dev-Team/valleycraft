@@ -19,18 +19,11 @@
         "items": [
           {
             "items": [
-              "valleycraft:bone_sword",
               "valleycraft:bone_shovel",
               "valleycraft:bone_pickaxe",
               "valleycraft:bone_axe",
               "valleycraft:bone_hoe",
-              "valleycraft:knife_bone",
-              "valleycraft:hatchet_bone",
-              "valleycraft:woodcutter_axe_bone",
-              "valleycraft:scythe_bone",
-              "valleycraft:dagger_bone",
-              "valleycraft:traveler_bone",
-              "valleycraft:bone_greatsword"
+              "valleycraft:knife_bone"
             ]
           }
         ]

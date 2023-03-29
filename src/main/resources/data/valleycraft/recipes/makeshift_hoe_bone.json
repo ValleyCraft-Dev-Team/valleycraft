@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "VQ"
+  ],
+  "key": {
+    "V": {
+      "item": "valleycraft:rope"
+    },
+    "Q": {
+      "item": "minecraft:bone"
+    },
+    "#": {
+      "item": "valleycraft:beast_bone"
+    }
+  },
+  "result": {
+    "item": "valleycraft:bone_hoe",
+    "count": 1
+  }
+}
+

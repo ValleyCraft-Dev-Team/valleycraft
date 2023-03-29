@@ -1,0 +1,175 @@
+{
+  "name": "Basic Materials",
+  "icon": "valleycraft:handle",
+  "category": "valleycraft:letter",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "",
+      "text": "This chapter focuses on most of the simpler materials you'll find yourself needing sooner rather than later."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:plant_fiber_string",
+      "title": "Fiber String",
+      "text": "String made from Plant Fibers."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:string_spool",
+      "title": "Spool of Fiber String",
+      "text": "Perfect for storing string or for making clothing."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:plant_fiber_canvas",
+      "title": "Fiber Canvas",
+      "text": "Makes decent clothing and even book covers or item frames."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:rope",
+      "title": "Rope",
+      "text": "Great for climbing, but I prefer a free-standing ladder any day."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "valleycraft:dried_fiber",
+      "title": "Dried Plant Fiber",
+      "text": "Primarily used to create Daub or Thatch."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:string_spool_normal",
+      "title": "Spool of String",
+      "text": "This string is much less abrasive on the skin."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:string_to_cloth",
+      "title": "Cloth",
+      "text": "Can be made into a variety of soft items such as clothing."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:cloth_to_wool",
+      "title": "Wool",
+      "text": "Useful for Beds or Carpet."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:plank",
+      "title": "Planks",
+      "text": "Useful for just about everything."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:stick",
+      "title": "Sticks",
+      "text": "Likewise just as useful as its larger counterpart."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:daub",
+      "title": "Daub",
+      "text": "Decent for building structures out of Wattle and Daub, or for sealing Rain Collector Barrels."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:handle",
+      "title": "Tool Handle",
+      "text": "The key to any tool or weapon is a decent handle."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:sturdy_handle",
+      "title": "Sturdy Tool Handle",
+      "text": "For a great tool or weapon, a proper handle is needed."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:reinforced_handle",
+      "title": "Specialized Tool Handle",
+      "text": "Some tools such as Rock Picks require specialized handles."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:gunpowder",
+      "title": "Gunpowder",
+      "text": "Useful for TNT or throwable potions which explode on impact."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:bow_string",
+      "title": "Bow String",
+      "text": "The sticky stuff used on the string gives it the strength it needs for sending arrows flying."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:trigger_mechanism",
+      "title": "Trigger Mechanism",
+      "text": "Used primarily for Crossbows."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:treated_leather",
+      "title": "Treated Leather",
+      "text": "Good for sturdier leather clothes and components like straps."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:treated_leather_straps",
+      "title": "Leather Strap",
+      "text": "Used to make a plethora of items such as some armor types and saddles."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:bowl",
+      "title": "Bowls",
+      "text": "Great for cooking up soups."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:glass_bottle",
+      "title": "Glass Bottle",
+      "text": "Can hold a variety of liquids."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:brine",
+      "title": "Brine",
+      "text": "Don't drink this unless you want to be nauseous for what feels like eternity."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "valleycraft:brine_to_salt_smelting",
+      "title": "Salt",
+      "text": "Can't find any Salt for cooking? Just leach it out of Kelp from Sea Water!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:quill",
+      "title": "Quill",
+      "text": "Long to write a book too? This beats using charcoal on a sign any day."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:ink_bottle",
+      "title": "Ink Bottle",
+      "text": "Don't forget the ink!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:book",
+      "title": "Book",
+      "text": "And of course, the book."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:writable_book",
+      "title": "Book and Quill",
+      "text": "Who knows, maybe you'll write an even better guide than this, haha!"
+    }
+  ]
+}

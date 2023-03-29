@@ -1,0 +1,66 @@
+{
+  "name": "Misc Useful Recipes",
+  "icon": "valleycraft:clay_pot",
+  "category": "valleycraft:letter",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Here lies any sort of odd tool type that didn't fit in the makeshift or regular tools category, such as Rain Collectors, Shelves, and Clay Pots."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:glow_ball",
+      "title": "Glowing Jelly Ball",
+      "text": "Throw these suckers if you want to light up an area afar, or test the depths of a bottomless cave."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:clay_pot",
+      "title": "Clay Pot",
+      "text": "A decent way of transporting water. Not as useful as an Iron Bucket, but you can carry more of these."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:name_tag",
+      "title": "Name Tag",
+      "text": "A simple way of naming your pets."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:rain_collector",
+      "title": "Rain Collector",
+      "text": "Rain water tastes better than from a well in my opinion."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:water_strainer",
+      "title": "Water Strainer",
+      "text": "Protects the oceans, and gets you free junk. Best thing ever."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:barrel_planter",
+      "title": "Barrel Planter",
+      "text": "Great for growing some plants indoors without getting dirt everywhere."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:flower_pot",
+      "title": "Flower Pot",
+      "text": "Great for decorative plants kept indoors, aside from crops."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:scaffolding",
+      "title": "Scaffolding",
+      "text": "Useful when building larger structures."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:sprinkler",
+      "title": "Sprinkler",
+      "text": "Great for watering large areas!"
+    }
+  ]
+}

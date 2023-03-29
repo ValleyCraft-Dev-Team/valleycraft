@@ -10,7 +10,7 @@
       "item": "valleycraft:plank"
     },
     "V": {
-      "item": "valleycraft:crafting_mat"
+      "tag": "c:crafting_table_key_ingredients"
     },
     "O": {
       "tag": "minecraft:planks"

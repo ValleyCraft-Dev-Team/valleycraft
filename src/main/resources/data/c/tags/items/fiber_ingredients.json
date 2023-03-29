@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "valleycraft:fiber",
+    "valleycraft:dried_fiber",
+    "minecraft:vine",
+    "valleycraft:arid_vines",
+    "minecraft:sugar_cane",
+    "minecraft:kelp",
+    "valleycraft:rushes",
+    "minecraft:grass",
+    "minecraft:tall_grass",
+    "minecraft:fern",
+    "minecraft:large_fern",
+    "minecraft:seagrass",
+    "valleycraft:moss_sproutlet",
+    "valleycraft:foxtail_fern",
+    "valleycraft:desert_shrub",
+    "valleycraft:leatherleaf_fern",
+    "valleycraft:beach_grass",
+    "minecraft:hanging_roots",
+    "minecraft:crimson_roots",
+    "minecraft:warped_roots",
+    "valleycraft:cattails"
+  ]
+}
