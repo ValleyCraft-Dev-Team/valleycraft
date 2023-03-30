@@ -324,6 +324,7 @@
   "block.valleycraft.polished_shale": "Polished Shale",
   "block.valleycraft.shale_bricks": "Shale Bricks",
   "block.valleycraft.shale_rune_bricks": "Chiseled Shale Bricks",
+  "block.valleycraft.shale_pillar": "Shale Pillar",
 
   "block.valleycraft.marble": "Marble",
   "block.valleycraft.polished_marble": "Polished Marble",
@@ -2144,6 +2145,22 @@
   "block.valleycraft.erdstone_wall": "Erdstone Wall",
   "block.valleycraft.erdstone_slab": "Erdstone Slab",
   "block.valleycraft.erdstone_stairs": "Erdstone Stairs",
+
+  "block.valleycraft.cairnstone_bricks": "Cairnstone Bricks",
+  "block.valleycraft.cairnstone_brick_wall": "Cairnstone Brick Wall",
+  "block.valleycraft.cairnstone_brick_slab": "Cairnstone Brick Slab",
+  "block.valleycraft.cairnstone_brick_stairs": "Cairnstone Brick Stairs",
+  "block.valleycraft.cairnstone": "Cairnstone",
+  "block.valleycraft.cairnstone_wall": "Cairnstone Wall",
+  "block.valleycraft.cairnstone_slab": "Cairnstone Slab",
+  "block.valleycraft.cairnstone_stairs": "Cairnstone Stairs",
+  "block.valleycraft.polished_cairnstone": "Polished Cairnstone",
+  "block.valleycraft.polished_cairnstone_wall": "Polished Cairnstone Wall",
+  "block.valleycraft.polished_cairnstone_slab": "Polished Cairnstone Slab",
+  "block.valleycraft.polished_cairnstone_stairs": "Polished Cairnstone Stairs",
+  "block.valleycraft.chiseled_cairnstone": "Chiseled Cairnstone",
+  "block.valleycraft.magma_filled_chiseled_cairnstone": "Radiant Chiseled Cairnstone",
+  "block.valleycraft.cairnstone_pillar": "Cairnstone Pillar",
 
   "block.valleycraft.": ""
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "valleycraft:block/magma_filled_chiseled_cairnstone"
+  }
+}

@@ -1,5 +1,21 @@
 {
   "replace": false,
   "values": [
+    "valleycraft:cairnstone",
+    "valleycraft:cairnstone_stairs",
+    "valleycraft:cairnstone_slab",
+    "valleycraft:cairnstone_wall",
+    "valleycraft:polished_cairnstone",
+    "valleycraft:polished_cairnstone_stairs",
+    "valleycraft:polished_cairnstone_slab",
+    "valleycraft:polished_cairnstone_wall",
+    "valleycraft:cairnstone_bricks",
+    "valleycraft:cairnstone_brick_stairs",
+    "valleycraft:cairnstone_brick_slab",
+    "valleycraft:cairnstone_brick_wall",
+    "valleycraft:chiseled_cairnstone",
+    "valleycraft:magma_filled_chiseled_cairnstone",
+    "valleycraft:cairnstone_pillar"
+
   ]
 }

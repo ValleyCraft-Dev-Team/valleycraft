@@ -1,7 +1,6 @@
 package net.linkle.valleycraft.datagen;
 
 import static net.linkle.valleycraft.init.BlocksModded.*;
-import static net.linkle.valleycraft.init.BlocksModded.GRANITE_BRICK_SLAB;
 import static net.linkle.valleycraft.init.BlocksNatural.*;
 import static net.minecraft.block.Blocks.PACKED_MUD;
 
@@ -164,6 +163,23 @@ class ValleyModelGenerator extends FabricModelProvider {
         slab(SHALE_BRICK_SLAB.block, SHALE_BRICKS.block, map, generator);
         stairs(SHALE_BRICK_STAIRS.block, map, generator);
         wall(SHALE_BRICK_WALL.block, map, generator);
+
+        // CAIRNSTONE
+        // SHALE_BRICKS
+        map = textureAll(CAIRNSTONE);
+        slab(CAIRNSTONE_SLAB.block, CAIRNSTONE.block, map, generator);
+        stairs(CAIRNSTONE_STAIRS.block, map, generator);
+        wall(CAIRNSTONE_WALL.block, map, generator);
+
+        map = textureAll(POLISHED_CAIRNSTONE);
+        slab(POLISHED_CAIRNSTONE_SLAB.block, POLISHED_CAIRNSTONE.block, map, generator);
+        stairs(POLISHED_CAIRNSTONE_STAIRS.block,     map, generator);
+        wall(POLISHED_CAIRNSTONE_WALL.block, map, generator);
+
+        map = textureAll(CAIRNSTONE_BRICKS);
+        slab(CAIRNSTONE_BRICK_SLAB.block, CAIRNSTONE_BRICKS.block, map, generator);
+        stairs(CAIRNSTONE_BRICK_STAIRS.block, map, generator);
+        wall(CAIRNSTONE_BRICK_WALL.block, map, generator);
 
         // MARBLE
         map = textureAll(MARBLE);

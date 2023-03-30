@@ -95,19 +95,12 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     PET_WATER_BOWL(new PetWaterBowlBlock(Block.Settings.copy(Blocks.TERRACOTTA).nonOpaque().breakInstantly()), itemSettings()),
     EMPTY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     WATER_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
-<<<<<<< Updated upstream
-    GLOW_BERRY_BOTTLE_BLOCK(new BottleBlock(BottleBlock.settings().luminance(s->12)), itemSettings()),
-    MILK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
-    HONEY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
-    INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
-    EXP_BOTTLE_BLOCK(new BottleBlock(BottleBlock.settings().luminance(s->8)), itemSettings()),
-=======
+
     GLOW_BERRY_BOTTLE_BLOCK(new GlowingBottleBlock(), itemSettings()),
     MILK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     HONEY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
     EXP_BOTTLE_BLOCK(new GlowingBottleBlock(), itemSettings()),
->>>>>>> Stashed changes
 
     WATTLE_STOOL(new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     WATTLE_CHAIR(new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
@@ -936,6 +929,9 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     SMOOTH_STONE_CAPPED(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
 
     //cairnstone
+    CAIRNSTONE_STAIRS(new StairsBlock(POLISHED_STONE.getState(), Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
+    CAIRNSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
+    CAIRNSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
 
     POLISHED_CAIRNSTONE(new Block(Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),
     POLISHED_CAIRNSTONE_STAIRS(new StairsBlock(POLISHED_STONE.getState(), Block.Settings.copy(Blocks.STONE_BRICKS).resistance(1200).hardness(52f)), itemSettings()),

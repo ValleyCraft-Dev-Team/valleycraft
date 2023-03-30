@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "valleycraft:block/cairnstone_brick_slab"
+    },
+    "type=double": {
+      "model": "valleycraft:block/cairnstone_bricks"
+    },
+    "type=top": {
+      "model": "valleycraft:block/cairnstone_brick_slab_top"
+    }
+  }
+}

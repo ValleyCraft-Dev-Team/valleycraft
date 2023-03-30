@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "valleycraft:block/volcanic_stone",
-    "side": "valleycraft:block/volcanic_stone",
-    "top": "valleycraft:block/volcanic_stone"
-  }
-}
