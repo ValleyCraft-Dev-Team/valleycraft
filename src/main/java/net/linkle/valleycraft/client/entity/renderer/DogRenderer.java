@@ -1,13 +1,12 @@
 package net.linkle.valleycraft.client.entity.renderer;
 
-import java.util.List;
-
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.client.entity.renderer.feature.DogCollarFeatureRenderer;
 import net.linkle.valleycraft.entity.DogEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
+import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.EntityRendererFactory.Context;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.render.entity.model.EntityModelLayers;
@@ -18,10 +17,11 @@ import net.minecraft.util.Identifier;
 @Environment(EnvType.CLIENT)
 public class DogRenderer extends MobEntityRenderer<DogEntity, WolfEntityModel<DogEntity>> {
 
-    private static final List<Textures> TEXTURES = List.of(new Textures("border_collie/collie"), new Textures("golden_retriever/retriever"));
-    
-    public DogRenderer(Context context) {
+	private final Textures textures;
+	
+    public DogRenderer(Context context, Textures textures) {
         super(context, new WolfEntityModel<>(context.getPart(EntityModelLayers.WOLF)), 0.5f);
+        this.textures = textures;
         addFeature(new DogCollarFeatureRenderer(this));
     }
 
@@ -44,24 +44,27 @@ public class DogRenderer extends MobEntityRenderer<DogEntity, WolfEntityModel<Do
 
     @Override
     public Identifier getTexture(DogEntity entity) {
-        var texture = TEXTURES.get(entity.getDogType());
         if (entity.isTamed()) {
-            return texture.tamed;
+            return textures.tamed;
         }
         if (entity.hasAngerTime()) {
-            return texture.angry;
+            return textures.angry;
         }
-        return texture.wild;
+        return textures.wild;
+    }
+    
+    /** @param texture file name of the dog texture. */
+    public static EntityRendererFactory<DogEntity> create(String texture) {
+        return context -> new DogRenderer(context, new Textures(texture));
     }
     
     private static class Textures {
-        final Identifier tamed, angry, wild, collar;
+        final Identifier tamed, angry, wild;
         
         public Textures(String type) {
             tamed = id(type.concat("_tame"));
             angry = id(type.concat("_angry"));
-            wild = id(type.concat(""));
-            collar = id(type.concat("_collar"));
+            wild = id(type);
         }
         
         static Identifier id(String path) {

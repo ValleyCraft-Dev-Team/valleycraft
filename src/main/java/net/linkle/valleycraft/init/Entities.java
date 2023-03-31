@@ -56,7 +56,10 @@ public enum Entities implements EntityEnum {
     MOSSY_SHEEP(createMob(SpawnGroup.CREATURE, MossySheepEntity::new).dimensions(new EntityDimensions(0.9f, 1.4f, false)).trackRangeChunks(10)
             .spawnRestriction(Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn)),
     
-    DOG(createMob(SpawnGroup.CREATURE, DogEntity::new).dimensions(new EntityDimensions(0.6f, 0.85f, false)).trackRangeChunks(10)
+    COLLIE(createMob(SpawnGroup.CREATURE, DogEntity::new).dimensions(new EntityDimensions(0.6f, 0.85f, false)).trackRangeChunks(10)
+            .spawnRestriction(Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, DogEntity::isValidNaturalSpawn)),
+    
+    RETRIEVER(createMob(SpawnGroup.CREATURE, DogEntity::new).dimensions(new EntityDimensions(0.6f, 0.85f, false)).trackRangeChunks(10)
             .spawnRestriction(Location.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, DogEntity::isValidNaturalSpawn)),
     
     BROWN_BEAR(createMob(SpawnGroup.CREATURE, BearEntity::new).dimensions(new EntityDimensions(1.3f, 1.25f, false)).trackRangeChunks(10)
@@ -103,7 +106,8 @@ public enum Entities implements EntityEnum {
         registerAttribute(CHICKEN, ChickenVariant.createChickenAttributes());
         registerAttribute(DUCK, DuckEntity.createDuckAttributes());
         registerAttribute(MOSSY_SHEEP, MossySheepEntity.createSheepAttributes());
-        registerAttribute(DOG, DogEntity.createWolfAttributes());
+        registerAttribute(COLLIE, DogEntity.createDogAttributes());
+        registerAttribute(RETRIEVER, DogEntity.createDogAttributes());
         registerAttribute(BROWN_BEAR, BearEntity.createBearAttributes());
         
         registerAttribute(ZOD, UndeadFishEntity.createUndeadFishAttributes());
@@ -131,7 +135,8 @@ public enum Entities implements EntityEnum {
         registerRenderer(CHICKEN, ChickenVariantRenderer::new);
         registerRenderer(DUCK, DuckRenderer::new);
         registerRenderer(MOSSY_SHEEP, MossySheepRenderer::new);
-        registerRenderer(DOG, DogRenderer::new);
+        registerRenderer(COLLIE, DogRenderer.create("collie"));
+        registerRenderer(RETRIEVER, DogRenderer.create("retriever"));
         registerRenderer(BROWN_BEAR, BrownBearRenderer::new);
         
         registerRenderer(ZOD, CodEntityRenderer.create("zod"));
