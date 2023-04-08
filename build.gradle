@@ -79,7 +79,7 @@ dependencies {
 	modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
 
 	// GeckoLib.
-	modImplementation "software.bernie.geckolib:geckolib-fabric-1.19:${project.geckolib_version}"
+	//modImplementation "software.bernie.geckolib:geckolib-fabric-1.19:${project.geckolib_version}"
 }
 
 processResources {
