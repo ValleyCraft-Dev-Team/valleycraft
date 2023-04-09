@@ -1,0 +1,97 @@
+{
+  "name": "Proper Tools",
+  "icon": "valleycraft:scythe_iron",
+  "category": "valleycraft:letter",
+  "read_by_default": "true",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Everything from Pickaxes to Scythes is in this chapter, as well as weapons such as Daggers, Greatswords, and Bows. Most of these can be made from most material types including Metals, Stone, Wood, and more."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:knife_iron",
+      "title": "Knife",
+      "text": "A fast but small weapon for self defense, also good at harvesting plant Fiber."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "valleycraft:dagger_iron",
+      "title": "Dagger",
+      "text": "Created with a Knife and Claw in a Smithing Table. Faster than a Knife but bad at harvesting plant Fiber."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "valleycraft:traveler_iron",
+      "title": "Traveler's Sword",
+      "text": "Created with a Knife and matching base material in a Smithing Table. Similar to a proper Sword but smaller, faster, and less damaging."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:iron_sword",
+      "title": "Sword",
+      "text": "A standard sword, used by Knights and Commonfolk alike."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "valleycraft:iron_greatsword",
+      "title": "Greatsword",
+      "text": "Created with a Sword and matching base material in a Smithing Table. Similar to a proper Sword but bigger, slower, and more damaging."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:iron_axe",
+      "title": "Axe",
+      "text": "A standard axe used to strip logs, fell trees, and occasionally in combat."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:hatchet_iron",
+      "title": "Hatchet",
+      "text": "A small axe used fell trees, and often in combat by Barbarians."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "valleycraft:woodcutter_axe_iron",
+      "title": "Timbercutter's Axe",
+      "text": "Created with an Axe and matching base material in a Smithing Table. Incredibly slow in combat but very strong, mostly used for chopping tons of trees."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:iron_hoe",
+      "title": "Hoe",
+      "text": "Used to till Dirt into Farmland for planting crops."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "valleycraft:scythe_iron",
+      "title": "Scythe",
+      "text": "Created with a Hoe and matching base material in a Smithing Table. Great for decapitating mobs and harvesting plant Fiber or Wheat in higher yields."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:iron_shovel",
+      "title": "Shovel",
+      "text": "Used to dig holes, flatten Dirt into Paths, or extinguish Campfires and Braziers."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:bow",
+      "title": "Bow",
+      "text": "A basic bow."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "valleycraft:brasium_compound_bow",
+      "title": "Pulley Bow",
+      "text": "Created with a Bow and Brasium in a Smithing Table. Further range than a regular Bow."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:crossbow",
+      "title": "Crossbow",
+      "text": "A slow but strong ranged weapon."
+    }
+  ]
+}

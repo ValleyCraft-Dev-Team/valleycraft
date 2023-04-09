@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.block;
 
+import net.linkle.valleycraft.init.ModDamageSources;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -35,7 +36,7 @@ public class ModGlowingMushroomBlock extends ModMushroomBlock {
                 double d = Math.abs(entity.getX() - entity.lastRenderX);
                 double e = Math.abs(entity.getZ() - entity.lastRenderZ);
                 if (d >= 0.003000000026077032D || e >= 0.003000000026077032D) {
-                    entity.damage(DamageSource.IN_FIRE, 1.0F);
+                    entity.damage(ModDamageSources.GLOWCAP, 1.0F);
                 }
             }
 

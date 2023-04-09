@@ -6,6 +6,7 @@
     "minecraft:cobbled_deepslate_slab",
     "valleycraft:cobbled_shale_slab",
     "valleycraft:carmine_cobblestone_slab",
-    "valleycraft:erdcobblestone_slab"
+    "valleycraft:erdcobblestone_slab",
+    "minecraft:stone_slab"
   ]
 }

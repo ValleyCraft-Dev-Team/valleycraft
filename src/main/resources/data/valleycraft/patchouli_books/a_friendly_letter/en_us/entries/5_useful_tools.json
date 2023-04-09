@@ -1,18 +1,18 @@
 {
-  "name": "Misc Useful Recipes",
-  "icon": "valleycraft:clay_pot",
+  "name": "Specialized Gear",
+  "icon": "valleycraft:climbing_axe",
   "category": "valleycraft:letter",
   "sortnum": 5,
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Here lies any sort of odd tool type that didn't fit in the makeshift or regular tools category, such as Rain Collectors, Shelves, and Clay Pots."
+      "text": "Here lies any sort of odd tool type that didn't fit in the makeshift or regular tools category, such as Rain Collectors, Ice Tongs, Shelves, and Clay Pots."
     },
     {
       "type": "patchouli:crafting",
       "recipe": "valleycraft:glow_ball",
       "title": "Glowing Jelly Ball",
-      "text": "Throw these suckers if you want to light up an area afar, or test the depths of a bottomless cave."
+      "text": "Throw these sticky blobs if you want to light up an area afar, or test the depths of a bottomless cave before diving in."
     },
     {
       "type": "patchouli:crafting",
@@ -22,9 +22,100 @@
     },
     {
       "type": "patchouli:crafting",
+      "recipe": "valleycraft:climbing_axe",
+      "title": "Climbing Axe",
+      "text": "Used to scale up cliff sides and mountains. Don't look down!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:shears",
+      "title": "Shears",
+      "text": "For harvesting delicate plants, leaves, and wool."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:ice_tongs",
+      "title": "Ice Tongs",
+      "text": "Useful for harvesting lots of Ice without it melting or shattering to bits."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:anthropologists_rock_pick",
+      "title": "Rock Hammer",
+      "text": "Used by Anthropologists and Crystal Miners alike to safely harvest fossils, geodes, ancient ruins, you name it!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:flint_and_steel",
+      "title": "Flint and Steel",
+      "text": "For quickly lighting fires."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:fishing_rod",
+      "title": "Fishing Rod",
+      "text": "A nice way to relax- unless you have poor luck and end up fishing up junk all day."
+    },
+
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:rope_ladder",
+      "title": "Rope Ladder",
+      "text": "A cheap but effective ladder."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:ladder",
+      "title": "Ladder",
+      "text": "Cheap to produce, but too weak to stand on its own."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:wattle_ladder",
+      "title": "Plank Ladder",
+      "text": "Great for climbing and it can stand on it's own."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:bamboo_ladder",
+      "title": "Bamboo Ladder",
+      "text": "Good for climbing, renewable, and it can stand on it's own."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:iron_ladder",
+      "title": "Metal Ladders",
+      "text": "Great for climbing, and it's more damage/blast resistant than a regular ladder."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:rope_bridge_anchor",
+      "title": "Rope Bridge Anchor",
+      "text": "It's best to secure your Rope Bridges to these."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:rope_bridge",
+      "title": "Rope Bridge",
+      "text": "For traversing large gaps such as ravines."
+    },
+    {
+      "type": "patchouli:crafting",
       "recipe": "valleycraft:name_tag",
       "title": "Name Tag",
       "text": "A simple way of naming your pets."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:saddle",
+      "title": "Saddle",
+      "text": "If you plan to travel on horse-back, these are a necessity."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:leather_horse_armor",
+      "title": "Horse Armor",
+      "text": "Decent for protecting your noble steed."
     },
     {
       "type": "patchouli:crafting",

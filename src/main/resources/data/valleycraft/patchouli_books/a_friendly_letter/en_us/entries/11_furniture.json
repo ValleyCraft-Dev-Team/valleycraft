@@ -1,0 +1,211 @@
+{
+  "name": "Furniture",
+  "icon": "valleycraft:crate",
+  "category": "valleycraft:letter",
+  "read_by_default": "true",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Whether it's Beds, Chests, or Coffins- we all need something to drop our gear in and call home."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:crate",
+      "title": "Crate",
+      "text": "Decent for storage."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:barrel",
+      "title": "Barrel",
+      "text": "Good for storage or making planters."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:chest",
+      "title": "Chest",
+      "text": "Two can be combined into a double-wide storage container."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:deepslate_chest",
+      "title": "Deepslate Chest",
+      "text": "Heavy, and a slight eye-sore, but holds more than a regular Chest."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:wattle_stool",
+      "title": "Plank Stool",
+      "text": "Kick back and rest your feet a while."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:wattle_chair",
+      "title": "Plank Chair",
+      "text": "Comes with free back support."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:wattle_table",
+      "title": "Plank Table",
+      "text": "Not the best looking table, but it does the job."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:counter",
+      "title": "Counter",
+      "text": "The table's awkward relative."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:counter_corner",
+      "title": "Counter Corner",
+      "text": "Counters, but curved."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:counter_drawer",
+      "title": "Counter Drawer",
+      "text": "Provides a small amount of storage."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:cabinet",
+      "title": "Cabinet",
+      "text": "Not much storage space, but good for taking advantage of unused wall/ceiling space."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:coffin",
+      "title": "Coffin",
+      "text": "For a final resting place."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:grave_marker",
+      "title": "Grave Marker",
+      "text": "For honoring the dead."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:shale_gravestone",
+      "title": "Gravestone",
+      "text": "For honoring the dead. Can be detailed with a Stonecutter."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:empty_bookshelf",
+      "title": "Empty Shelf",
+      "text": "Good for storing Books, Scrolls, Potions- most anything, really."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:red_bed_to_cushion",
+      "title": "Cushions",
+      "text": "They make for good pet beds, seats, or extending beds!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:pet_water_bowl",
+      "title": "Clay Bowl",
+      "text": "Good for cooking or keeping pets hydrated."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:fireguard",
+      "title": "Fireguard",
+      "text": "Keep your pets safe!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:brazier",
+      "title": "Brazier",
+      "text": "Reminds me of the Iron Braziers I found in the Dungeons made by the Ancient Ones."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:curtain",
+      "title": "Canvas Curtain",
+      "text": "Because you probably don't want to see the monsters outside at night."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:keg",
+      "title": "Keg",
+      "text": "Stay hyrdrated, me hearties, yo ho!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:wastebin",
+      "title": "Copper Wastebin",
+      "text": "Blight-Sludge. Pretty, but destructive."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:oak_lattice",
+      "title": "Lattices",
+      "text": "Useful as fences, walls, or even windows."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:log_pile",
+      "title": "Stacked Logs",
+      "text": "Good for holding up roofs, acting as ceiling lattices, or impromptu stairs."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:thatch_block",
+      "title": "Thatch",
+      "text": "Makes for cheap but effective roofing and soft floors."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:wall_candelabra",
+      "title": "Wall Candelabra",
+      "text": "A nice way to display a candle on a wall."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:small_candelabra",
+      "title": "Small Candelabra",
+      "text": "A nice way to display a candle."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:medium_candelabra",
+      "title": "Medium Candelabra",
+      "text": "A fancy way to display a candle, slightly brighter than a Small Candelabra, too."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:large_candelabra",
+      "title": "Large Candelabra",
+      "text": "An elegant way to display several candles and light up a room."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:target",
+      "title": "Target",
+      "text": "Great for practicing Archery. Produces a redstone signal when hit, too."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:lectern",
+      "title": "Lectern",
+      "text": "Made for displaying books, journals, notes, et cet."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:item_frame",
+      "title": "Item Frame",
+      "text": "Made for displaying items or maps."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "minecraft:jukebox",
+      "title": "Jukebox",
+      "text": "No one knows how to make Music Discs anymore- but making a device to play the ones you find is simple enough."
+    }
+  ]
+}

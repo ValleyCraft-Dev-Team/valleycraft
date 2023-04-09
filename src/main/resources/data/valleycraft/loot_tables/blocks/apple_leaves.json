@@ -42,7 +42,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "valleycraft:apple_sapling",
+              "name": "valleycraft:apple_seed",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"
@@ -137,7 +137,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:apple",
+          "name": "valleycraft:apple_sapling",
           "conditions": [
             {
               "condition": "minecraft:survives_explosion"

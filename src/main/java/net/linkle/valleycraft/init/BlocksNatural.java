@@ -157,6 +157,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     BEACH_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
     ICEPLANT(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
 
+    JELLYCAP(new OceanMushroomBlock(), itemSettings()),
     GLOW_KELP(new GlowKelpBlock(), itemSettings()),
     GLOW_KELP_PLANT(new GlowKelpPlantBlock()),
     ORANGE_KELP(new OrangeKelpBlock(), itemSettings()),
@@ -200,11 +201,11 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
 
     //hollow logs
     HOLLOW_ACACIA_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.ACACIA_LOG)), itemSettings()),
+    HOLLOW_MAMON_LOG(new HollowLogBlock(Block.Settings.copy(MAMON_LOG.block)), itemSettings()),
     HOLLOW_APPLE_LOG(new HollowLogBlock(Block.Settings.copy(APPLE_LOG.block)), itemSettings()),
     HOLLOW_BIRCH_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.BIRCH_LOG)), itemSettings()),
     HOLLOW_DARK_OAK_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.DARK_OAK_LOG)), itemSettings()),
     HOLLOW_JUNGLE_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.JUNGLE_LOG)), itemSettings()),
-    HOLLOW_MAMON_LOG(new HollowLogBlock(Block.Settings.copy(MAMON_LOG.block)), itemSettings()),
     HOLLOW_MANGROVE_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.MANGROVE_LOG)), itemSettings()),
     HOLLOW_OAK_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.OAK_LOG)), itemSettings()),
     HOLLOW_SPRUCE_LOG(new HollowLogBlock(Block.Settings.copy(Blocks.SPRUCE_LOG)), itemSettings()),
@@ -213,6 +214,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     ARID_VINES_PLANT(new VineBodyBlock()),
     //CAVE_MOSS(new CaveMossBlock(), itemSettings()),
     //CRYSTAL_CAVE_MOSS(new CaveMossBlock(), itemSettings()),
+    GNARLED_ROOTS(new GlowLichenBlock(Block.Settings.copy(Blocks.GLOW_LICHEN).luminance(s -> 0)), itemSettings()),
 
     SLUDGE_FLUID(new SludgeFluidBlock(Fluids.SLUDGE_STILL.flowable())),
 
@@ -225,6 +227,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
 
     DRY_DIRT(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
     IRON_RICH_DIRT(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
+    FINE_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),
     SANDY_GRAVEL(new FallingBlock(Block.Settings.copy(Blocks.GRAVEL)), itemSettings()),
     MOSSY_STONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     CARMINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
@@ -236,10 +239,27 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     VERDANTINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
 
+    DIRT_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
     ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
     FLINT_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
 
-    //TODO rename adventurine to adventurite
+    DRIPSTONE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    DRIPSTONE_FLINT_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    SHALE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    DEEPSLATE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+
+    COAL_ORE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    RAW_PRIMSTEEL_ORE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    RAW_COPPER_ORE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    RAW_IRON_ORE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    RAW_GOLD_ORE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+
+    REDSTONE_CRYSTAL(new RedstoneCrystalBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+
+    NETHERACK_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    ANTHRACITE_ORE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    ENDSTONE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+
     ADVENTURINE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
     ERDSTONE(new Block(Block.Settings.copy(Blocks.DEEPSLATE_IRON_ORE).hardness(2)), itemSettings()),
     ERDCOBBLESTONE(new Block(Block.Settings.copy(Blocks.COBBLED_DEEPSLATE).hardness(2)), itemSettings()),
@@ -285,6 +305,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     BRIMSTONE_CRYSTAL(new BrimstoneCrystalClusterBlock(7,3, FabricBlockSettings.copyOf(Blocks.AMETHYST_CLUSTER).nonOpaque().luminance(s -> 8)), itemSettings()),
     NETHER_SALT_ORE(new OreBlock(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
     NETHER_COAL_ORE(new OreBlock(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
+    NETHER_NETHERITE_ORE(new OreBlock(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
     //NETHER_PIG_IRON_ORE(new OreBlock(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
     //NETHER_GARNET_ORE(new OreBlock(Block.Settings.copy(Blocks.NETHER_QUARTZ_ORE), UniformIntProvider.create(2, 6)), itemSettings()),
 

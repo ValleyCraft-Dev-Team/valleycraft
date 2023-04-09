@@ -24,7 +24,7 @@ public class FastFeatherItem extends ArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (slot == EquipmentSlot.HEAD.getEntitySlotId() && entity instanceof LivingEntity living) {
-            living.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 10, 0, true, false, true));
+            living.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 15 * 20, 0, true, false, true));
         }
     }
 

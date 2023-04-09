@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:survival/solveetcoagula",
+  "display": {
+    "title": {
+      "text": "Explosive Chemistry"
+    },
+    "icon": {
+      "item": "valleycraft:saltpeter"
+    },
+    "description": {
+      "text": "Saltpeter + Charcoal = Gunpowder = TNT = BOOM!",
+      "color": "gold"
+    },
+    "hidden": false
+  },
+  "criteria": {
+    "tnt": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:tnt"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "tnt"
+    ]
+  ]
+}

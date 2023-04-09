@@ -20,6 +20,11 @@
   "subtitle.valleycraft:curtain_open": "Curtain opens",
   "subtitle.valleycraft:sprinkler": "Sprinkler ticks and hisses",
 
+  "death.attack.jellycap": "%1$s was stung to death",
+  "death.attack.jellycap.player": "%1$s walked into a Jellycap whilst trying to escape %2$s",
+  "death.attack.glowcap": "%1$s was seared to death",
+  "death.attack.glowcap.player": "%1$s walked into a Glowcap whilst trying to escape %2$s",
+
   "item.valleycraft.allay_bottle": "Bottle o' Allay",
 
   "item.valleycraft.ancient_record_music_disc": "Music Disc",
@@ -107,6 +112,8 @@
   "item.valley.warm.tooltip_2": "and prevents frostbite.",
   "item.valley.fast.tooltip": "Increases movement speed.",
   "item.valley.night.tooltip": "Allows you to see in the dark.",
+  "item.valley.turtle_chest.tooltip": "Increases resistance but",
+  "item.valley.turtle_chest.tooltip_2": "lowers your movement speed.",
 
   "item.valley.tier_one.tooltip": "§7Effect Tier: §6★☆☆",
   "item.valley.tier_two.tooltip": "§7Effect Tier: §6★★☆",
@@ -240,11 +247,11 @@
   "item.valleycraft.coral_knife_guardian": "Blue Spine Scalpel",
   "item.valleycraft.lapis_lazuli_talisman": "Lapis Lazuli Amulet",
 
-
-  "item.valleycraft.feather": "Feather Hairpin",
-  "item.valleycraft.crow_feather": "Crow Feather Hairpin",
-  "item.valleycraft.seagull_feather": "Seagull Feather Hairpin",
-  "item.valleycraft.duck_feather": "Duck Feather Hairpin",
+  "item.valleycraft.hunters_cap": "Hunter's Hat",
+  "item.valleycraft.feather": "Feathered Hunter's Hat",
+  "item.valleycraft.crow_feather": "Crow-Feathered Hunter's Hat",
+  "item.valleycraft.seagull_feather": "Seagull-Feathered Hunter's Hat",
+  "item.valleycraft.duck_feather": "Duck-Feathered Hunter's Hat",
   "item.valleycraft.guardian_spike": "Orange Guardian Spine",
   "item.valleycraft.elder_guardian_spike": "Blue Elder Guardian Spine",
   "item.valleycraft.ducks_egg": "Duck Egg",
@@ -742,6 +749,7 @@
   "block.valleycraft.jungle_cap_cluster": "Green Mushroom Cluster",
   "block.valleycraft.glow_cap": "Glowcap",
   "block.valleycraft.glow_cap_cluster": "Glowcap Cluster",
+  "block.valleycraft.jellycap": "Jellycap",
   "block.valleycraft.goop_cap": "Goopshroom",
   "block.valleycraft.warding_shroom": "Warding Shroomlets",
   "block.valleycraft.sticky_shroom": "Honeycap",
@@ -855,6 +863,7 @@
   "block.valleycraft.salt_ore": "Salt Ore",
   "block.valleycraft.nether_sand": "Amaranthine Nether Sand",
   "block.valleycraft.brimstone_crystal": "Brimstone Cluster",
+  "block.valleycraft.nether_netherite_ore": "Netherite Ore",
 
   "item.valleycraft.salt": "Salt",
   "item.valleycraft.saltpeter": "Saltpeter",
@@ -2161,6 +2170,26 @@
   "block.valleycraft.chiseled_cairnstone": "Chiseled Cairnstone",
   "block.valleycraft.magma_filled_chiseled_cairnstone": "Radiant Chiseled Cairnstone",
   "block.valleycraft.cairnstone_pillar": "Cairnstone Pillar",
+
+  "block.valleycraft.acacia_bracketed": "Bracketed Acacia Log",
+  "block.valleycraft.amberblossom_bracketed": "Bracketed Amberblossom Log",
+  "block.valleycraft.apple_bracketed": "Bracketed Apple Log",
+  "block.valleycraft.birch_bracketed": "Bracketed Birch Log",
+  "block.valleycraft.dark_oak_bracketed": "Bracketed Dark Oak Log",
+  "block.valleycraft.jungle_bracketed": "Bracketed Jungle Log",
+  "block.valleycraft.mangrove_bracketed": "Bracketed Mangrove Log",
+  "block.valleycraft.oak_bracketed": "Bracketed Oak Log",
+  "block.valleycraft.spruce_bracketed": "Bracketed Spruce Log",
+
+  "block.valleycraft.stripped_acacia_bracketed": "Bracketed Stripped Acacia Log",
+  "block.valleycraft.stripped_amberblossom_bracketed": "Bracketed Stripped Amberblossom Log",
+  "block.valleycraft.stripped_apple_bracketed": "Bracketed Stripped Apple Log",
+  "block.valleycraft.stripped_birch_bracketed": "Bracketed Stripped Birch Log",
+  "block.valleycraft.stripped_dark_oak_bracketed": "Bracketed Stripped Dark Oak Log",
+  "block.valleycraft.stripped_jungle_bracketed": "Bracketed Stripped Jungle Log",
+  "block.valleycraft.stripped_mangrove_bracketed": "Bracketed Stripped Mangrove Log",
+  "block.valleycraft.stripped_oak_bracketed": "Bracketed Stripped Oak Log",
+  "block.valleycraft.stripped_spruce_bracketed": "Bracketed Stripped Spruce Log",
 
   "block.valleycraft.": ""
 }

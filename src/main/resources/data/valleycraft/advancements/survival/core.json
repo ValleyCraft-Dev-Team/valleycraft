@@ -1,0 +1,39 @@
+{
+  "parent": "valleycraft:survival/rudimentary_geology",
+  "display": {
+    "title": {
+      "text": "To dig and dig makes us rich."
+    },
+    "icon": {
+      "item": "valleycraft:anthropologists_rock_pick"
+    },
+    "description": {
+      "text": "Harvest a Budding Geode Core from Smooth Basalt",
+      "color": "gold"
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "valleycraft:budding_geode_core_enriched_blasting"
+    ]
+  },
+  "criteria": {
+    "budding_geode_core": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:budding_geode_core"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "budding_geode_core"
+    ]
+  ]
+}

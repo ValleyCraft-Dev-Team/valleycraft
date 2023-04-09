@@ -24,7 +24,7 @@ public class NightGoggleItem extends ArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (slot == EquipmentSlot.HEAD.getEntitySlotId() && entity instanceof LivingEntity living) {
-            living.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 15*20, 0, true, false, true));
+            living.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 15 * 20, 0, true, false, true));
         }
     }
 

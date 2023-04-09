@@ -15,7 +15,15 @@
   },
   "criteria": {
     "scraping_by": {
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [

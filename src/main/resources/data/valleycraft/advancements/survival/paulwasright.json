@@ -10,7 +10,7 @@
     "description": {
       "text": "Paul was right?"
     },
-    "frame": "challenge",
+    "frame": "task",
     "hidden": "true"
   },
   "criteria": {

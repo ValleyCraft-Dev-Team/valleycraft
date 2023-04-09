@@ -34,6 +34,7 @@ public class Paintings {
     public static final PaintingVariant WATER = registerPainting("water", new PaintingVariant(16,16));
     public static final PaintingVariant SPIRIT = registerPainting("spirit", new PaintingVariant(16,16));
     public static final PaintingVariant TENDER_ROSE = registerPainting("tender_rose", new PaintingVariant(32,32));
+    public static final PaintingVariant VOID = registerPainting("void", new PaintingVariant(32,16));
 
     private static PaintingVariant registerPainting(String name, PaintingVariant paintingVariant) {
         return Registry.register(Registry.PAINTING_VARIANT, new Identifier(Main.ID, name), paintingVariant);

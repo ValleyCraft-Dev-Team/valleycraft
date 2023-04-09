@@ -1,0 +1,36 @@
+{
+  "parent": "valleycraft:survival/budding_amethyst",
+  "display": {
+    "title": {
+      "text": "Eureka!"
+    },
+    "icon": {
+      "item": "minecraft:budding_amethyst"
+    },
+    "description": {
+      "text": "Artificially grow Budding Amethyst to grow more Clusters",
+      "color": "light_purple"
+    },
+    "frame": "challenge",
+    "hidden": false
+  },
+  "criteria": {
+    "budding_amethyst": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:budding_amethyst"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "budding_amethyst"
+    ]
+  ]
+}

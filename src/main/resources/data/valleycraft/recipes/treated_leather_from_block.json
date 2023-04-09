@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:treated_leather_block"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:treated_leather",
+    "count": 4
+  }
+}

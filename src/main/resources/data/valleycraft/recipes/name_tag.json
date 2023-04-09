@@ -1,17 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#",
-    "P"
-  ],
-  "key": {
-    "#": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "tag": "c:strings"
     },
-    "P": {
+    {
       "item": "minecraft:paper"
     }
-  },
+  ],
   "result": {
     "item": "minecraft:name_tag",
     "count": 1

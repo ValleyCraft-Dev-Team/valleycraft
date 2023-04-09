@@ -1,0 +1,95 @@
+{
+  "parent": "valleycraft:survival/paulwasright",
+  "display": {
+    "title": {
+      "text": "Fowl Play"
+    },
+    "icon": {
+      "item": "valleycraft:seagulls_feather"
+    },
+    "description": {
+      "text": "Gather one of every type of feather."
+    },
+    "frame": "challenge",
+    "hidden": "true"
+  },
+  "criteria": {
+    "metal_feather": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:metal_feather"
+            ]
+          }
+        ]
+      }
+    },
+    "feather": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:feather"
+            ]
+          }
+        ]
+      }
+    },
+    "seagulls_feather": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:seagulls_feather"
+            ]
+          }
+        ]
+      }
+    },
+    "crows_feather": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:crows_feather"
+            ]
+          }
+        ]
+      }
+    },
+    "ducks_feather": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:ducks_feather"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "feather"
+    ],
+    [
+      "metal_feather"
+    ],
+    [
+      "ducks_feather"
+    ],
+    [
+      "crows_feather"
+    ],
+    [
+      "seagulls_feather"
+    ]
+  ]
+}

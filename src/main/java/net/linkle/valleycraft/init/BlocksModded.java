@@ -238,6 +238,27 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     CRIMSON_LATTICE(new PaneBlock(Block.Settings.copy(Blocks.CRIMSON_PLANKS).nonOpaque()), itemSettings()),
     WARPED_LATTICE(new PaneBlock(Block.Settings.copy(Blocks.WARPED_PLANKS).nonOpaque()), itemSettings()),
 
+    //bracketed logs
+    ACACIA_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    AMBERBLOSSOM_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    APPLE_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    BIRCH_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    DARK_OAK_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    JUNGLE_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    MANGROVE_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    OAK_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    SPRUCE_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+
+    STRIPPED_ACACIA_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    STRIPPED_AMBERBLOSSOM_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    STRIPPED_APPLE_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    STRIPPED_BIRCH_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    STRIPPED_DARK_OAK_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    STRIPPED_JUNGLE_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    STRIPPED_MANGROVE_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    STRIPPED_OAK_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+    STRIPPED_SPRUCE_BRACKETED(new PillarBlock(Block.Settings.copy(Blocks.STRIPPED_OAK_LOG)), itemSettings()),
+
     //thatch
     THATCH_BLOCK(new PillarBlock(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
     THATCH_STAIRS(new StairsBlock(THATCH_BLOCK.getState(), Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),

@@ -24,7 +24,7 @@ public class WarmBootItem extends ArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (slot == EquipmentSlot.FEET.getEntitySlotId() && entity instanceof LivingEntity living) {
-            living.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 10, 1, true, false, true));
+            living.addStatusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 15 * 20, 1, true, false, true));
         }
     }
 

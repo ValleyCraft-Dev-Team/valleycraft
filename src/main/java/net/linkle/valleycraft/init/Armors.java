@@ -4,12 +4,9 @@ import static net.linkle.valleycraft.init.Groups.CLOTHING;
 import static net.minecraft.util.Rarity.EPIC;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.armors.ArmorMats;
-import net.linkle.valleycraft.armors.FastFeatherItem;
-import net.linkle.valleycraft.armors.WarmBootItem;
+import net.linkle.valleycraft.armors.*;
 import net.linkle.valleycraft.enums.ItemEnum;
 import net.linkle.valleycraft.item.ClothingArmorItem;
-import net.linkle.valleycraft.armors.NightGoggleItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterials;
@@ -37,9 +34,10 @@ public enum Armors implements ItemEnum {
     DRIPLEAF_HAT(new ArmorItem(ArmorMats.DRIPLEAF, EquipmentSlot.HEAD, settingsNormal())),
 
     CLAM_BREASTPLATE(new ArmorItem(ArmorMats.CLAM_BREASTPLATE, EquipmentSlot.CHEST, settingsNormal())),
-    TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
-    TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
+    TURTLE_CHESTPLATE(new TurtleChestItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
+    //TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
+    HUNTERS_CAP(new ArmorItem(ArmorMats.HUNTERS_CAP, EquipmentSlot.HEAD, settingsNormal())),
     SEAGULL_FEATHER(new FastFeatherItem(ArmorMats.SEAGULL_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
     DUCK_FEATHER(new FastFeatherItem(ArmorMats.DUCK_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
     CROW_FEATHER(new FastFeatherItem(ArmorMats.CROW_FEATHER, EquipmentSlot.HEAD, settingsNormal())),

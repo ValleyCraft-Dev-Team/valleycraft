@@ -1,0 +1,39 @@
+{
+  "parent": "valleycraft:survival/core",
+  "display": {
+    "title": {
+      "text": "Why does this takes so blasted long?"
+    },
+    "icon": {
+      "item": "valleycraft:budding_geode_core_enriched"
+    },
+    "description": {
+      "text": "Enrich a Geode with a Blasting Furnace",
+      "color": "gold"
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "valleycraft:budding_amethyst"
+    ]
+  },
+  "criteria": {
+    "enriched_geode": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:budding_geode_core_enriched"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "enriched_geode"
+    ]
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "parent": "valleycraft:survival/craftingmat",
+  "display": {
+    "title": {
+      "text": "Travel Guide"
+    },
+    "icon": {
+      "item": "valleycraft:guidestone_campsite"
+    },
+    "description": {
+      "text": "Craft and Chisel some Guidestones for navigation."
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "guidestone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:guidestone_back",
+              "valleycraft:guidestone_forward",
+              "valleycraft:guidestone_here",
+              "valleycraft:guidestone_left",
+              "valleycraft:guidestone_right",
+              "valleycraft:guidestone_campsite",
+              "valleycraft:guidestone_dungeon",
+              "valleycraft:guidestone_homestead",
+              "valleycraft:guidestone_port",
+              "valleycraft:guidestone_portal",
+              "valleycraft:guidestone_stables",
+              "valleycraft:guidestone_tower",
+              "valleycraft:guidestone_trade",
+              "valleycraft:guidestone_village",
+              "valleycraft:guidestone_tool_axe",
+              "valleycraft:guidestone_tool_bow",
+              "valleycraft:guidestone_tool_fishing_rod",
+              "valleycraft:guidestone_tool_hoe",
+              "valleycraft:guidestone_tool_pickaxe",
+              "valleycraft:guidestone_tool_potion",
+              "valleycraft:guidestone_tool_shovel",
+              "valleycraft:guidestone_tool_sword",
+              "valleycraft:guidestone_symbol_death",
+              "valleycraft:guidestone_symbol_heart",
+              "valleycraft:guidestone_symbol_hunger"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "guidestone"
+    ]
+  ]
+}

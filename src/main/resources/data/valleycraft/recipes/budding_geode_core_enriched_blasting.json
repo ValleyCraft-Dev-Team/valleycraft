@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "valleycraft:budding_geode_core"
+  },
+  "result": "valleycraft:budding_geode_core_enriched",
+  "experience": 20,
+  "cookingtime": 20000
+}

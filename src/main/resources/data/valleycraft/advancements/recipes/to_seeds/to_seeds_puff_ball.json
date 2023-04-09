@@ -1,0 +1,27 @@
+{
+  "parent": "valleycraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:puff_ball"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "valleycraft:to_seeds_puff_ball"
+    ]
+  }
+}

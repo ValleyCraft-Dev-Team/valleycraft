@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "valleycraft:dry_dirt",
-    "valleycraft:iron_rich_dirt"
+    "valleycraft:iron_rich_dirt",
+    "valleycraft:barrel_planter"
   ]
 }

@@ -1,14 +1,14 @@
 {
-  "parent": "valleycraft:survival/lefestin",
+  "parent": "valleycraft:survival/craftingmat",
   "display": {
     "title": {
       "text": "Dressed for the Occasion"
     },
     "icon": {
-      "item": "valleycraft:chef_apron"
+      "item": "valleycraft:feather"
     },
     "description": {
-      "text": "Craft a Chef's Toque and Apron, Straw Hat, and Cowpoke Hat"
+      "text": "Craft a Chef's Toque & Apron, Straw Hat, Hunter's Hat, and Cowpoke Hat"
     },
     "frame": "goal"
   },
@@ -63,6 +63,18 @@
           }
         ]
       }
+    },
+    "hunters_cap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:cowpoke_hat"
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -77,6 +89,9 @@
     ],
     [
       "cowpoke_hat"
+    ],
+    [
+      "hunters_cap"
     ]
   ]
 }

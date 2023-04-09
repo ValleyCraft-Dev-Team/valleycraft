@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:totem_of_undying",
+    "valleycraft:totem_of_trade",
+    "valleycraft:totem_of_pacifism",
+    "valleycraft:totem_of_knowledge"
+  ]
+}

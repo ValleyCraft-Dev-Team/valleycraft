@@ -10,7 +10,7 @@
     "description": {
       "text": "Acquire a Book and Quill for writing"
     },
-    "frame": "task",
+    "frame": "goal",
     "hidden": "false"
   },
   "criteria": {

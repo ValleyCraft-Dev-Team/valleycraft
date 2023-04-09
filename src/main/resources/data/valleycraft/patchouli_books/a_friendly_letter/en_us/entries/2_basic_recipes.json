@@ -95,6 +95,12 @@
     },
     {
       "type": "patchouli:crafting",
+      "recipe": "minecraft:oak_boat",
+      "title": "\"Boat\"",
+      "text": "More of an over glorified raft, but they work. These are easy to make and good enough for basic sea-faring."
+    },
+    {
+      "type": "patchouli:crafting",
       "recipe": "valleycraft:makeshift_knife_bone",
       "title": "Makeshift Bone Knife",
       "text": "A bit grisly, but it works just as well as any proper stone tool, in a pinch."
@@ -103,7 +109,7 @@
       "type": "patchouli:crafting",
       "recipe": "valleycraft:makeshift_axe_bone",
       "title": "Makeshift Bone Axe",
-      "text": "...And since there's always so many undead skeletons about, resources to make them are plentiful."
+      "text": "...And since there's always so many undead skeletons scouting about, resources to make them are plentiful."
     },
     {
       "type": "patchouli:crafting",

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "valleycraft:block/stripped_oak_bracketed_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "valleycraft:block/stripped_oak_bracketed"
+    },
+    "axis=z": {
+      "model": "valleycraft:block/stripped_oak_bracketed_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#C#",
+    "CNC",
+    "#C#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:amethyst_block"
+    },
+    "C": {
+      "item": "minecraft:calcite"
+    },
+    "N": {
+      "item": "valleycraft:budding_geode_core_enriched"
+    }
+  },
+  "result": {
+    "item": "minecraft:budding_amethyst",
+    "count": 1
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:survival/ghostsoftheironpast",
+  "display": {
+    "title": {
+      "text": "Missed a Spot!"
+    },
+    "icon": {
+      "item": "valleycraft:netherite_nugget"
+    },
+    "description": {
+      "text": "Find the few remnants of a long extinct ore."
+    },
+    "frame": "challenge",
+    "hidden": "true"
+  },
+  "criteria": {
+    "nether_netherite_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:nether_netherite_ore"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "nether_netherite_ore"
+    ]
+  ]
+}

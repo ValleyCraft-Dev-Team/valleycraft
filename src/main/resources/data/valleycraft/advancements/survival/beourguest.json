@@ -1,0 +1,71 @@
+{
+  "parent": "valleycraft:survival/lefestin",
+  "display": {
+    "title": {
+      "text": "Be Our Guest!"
+    },
+    "icon": {
+      "item": "valleycraft:wattle_table_clothe"
+    },
+    "description": {
+      "text": "Craft a Plank Table, Tablecloth, Chair, and Large Candelabra"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "wattle_table_clothe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:wattle_table_clothe"
+            ]
+          }
+        ]
+      }
+    },
+    "wattle_chair": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:wattle_chair"
+            ]
+          }
+        ]
+      }
+    },
+    "candelabra": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:large_candelabra",
+              "valleycraft:large_candelabra_exposed",
+              "valleycraft:large_candelabra_oxidized",
+              "valleycraft:large_candelabra_weathered",
+              "valleycraft:waxed_large_candelabra",
+              "valleycraft:waxed_large_candelabra_exposed",
+              "valleycraft:waxed_large_candelabra_oxidized",
+              "valleycraft:waxed_large_candelabra_weathered"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wattle_table_clothe"
+    ],
+    [
+      "wattle_chair"
+    ],
+    [
+      "candelabra"
+    ]
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "name": "Clothing & Armor",
+  "icon": "valleycraft:straw_hat",
+  "category": "valleycraft:letter",
+  "read_by_default": "true",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "I assume you want to stay prepared for the elements out there, so here's some simple clothing and armor recipes. Armor can be crafted from most materials, ranging from Rose Gold to Planks or even Turtle Scutes."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:bikini_neutral_repaired",
+      "title": "Garments",
+      "text": "Decent protection for under armor."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:bikini_repaired",
+      "title": "Femme Garments",
+      "text": "Less covering, but a different variant."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:bikini_masc_repaired",
+      "title": "Masc Garments",
+      "text": "The least covering, but yet another variant."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:chef_apron",
+      "title": "Chef Apron",
+      "text": "Good for working in the kitchen."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:chef_toque",
+      "title": "Chef Toque",
+      "text": "The most emblematic part of any Chef's uniform."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:straw_hat",
+      "title": "Straw Hat",
+      "text": "Great for those warm sunny days."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:cowpoke_hat",
+      "title": "Cowpoke Hat",
+      "text": "Whether herding cows or running from boulders, it's a great fashion statement."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:hunters_cap",
+      "title": "Hunter's Hat",
+      "text": "Partaking in a Night of the Hunt? Good luck then."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:leather_necklace",
+      "title": "Leather Necklace",
+      "text": "Usually smithed with a trinket into a Talisman or Keepsake."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:iron_necklace",
+      "title": "Iron Necklace",
+      "text": "Smithed with gems into an Amulet."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:amethyst_goggles",
+      "title": "Brasium Goggles",
+      "text": "Commonly worn by Brasiumpunkers and Airship Pilots."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:fur_boots",
+      "title": "Warm Boots",
+      "text": "Great for traveling over Powdered Snow."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:hairpin_feather",
+      "title": "Feather Hairpin",
+      "text": "I think Crow Feathers make for most elegant Hairpins, but I'm no fashion expert."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:treated_leather_helmet",
+      "title": "Helmets & Hoods",
+      "text": "Good protection against undead Skeleton Archers. They always aim for the head."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:treated_leather_helmet_reinforced",
+      "title": "Masked Helmets & Hoods",
+      "text": "For a stealthy and secretive approach."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:treated_leather_breastplate",
+      "title": "Breastplates",
+      "text": "Lighter than a Chestplate, but less protective."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:treated_leather_chestplate",
+      "title": "Chestplates",
+      "text": "Heavy but protective."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:treated_leather_leggings",
+      "title": "Leggings",
+      "text": "Protective, but likewise the heaviest option."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:treated_leather_hauberk",
+      "title": "Hauberks",
+      "text": "Somewhere between a Skirt and a Kilt, but better."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:treated_leather_thigh_guards",
+      "title": "Thigh Guards",
+      "text": "The least heavy option, but also the least protective."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:treated_leather_boots",
+      "title": "Boots",
+      "text": "Simple but protective. Boots made from leather can help you walk on top of snow, too."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:treated_leather_sandals",
+      "title": "Sandals",
+      "text": "Great for deserts or beaches."
+    }
+  ]
+}

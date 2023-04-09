@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:fiber_ingredients"
+    },
+    {
+      "tag": "c:fiber_ingredients"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:fiber",
+    "count": 3
+  }
+}

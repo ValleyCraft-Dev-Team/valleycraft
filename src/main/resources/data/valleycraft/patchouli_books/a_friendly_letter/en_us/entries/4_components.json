@@ -34,6 +34,12 @@
       "text": "Great for climbing, but I prefer a free-standing ladder any day."
     },
     {
+      "type": "patchouli:crafting",
+      "recipe": "valleycraft:net",
+      "title": "Net",
+      "text": "Good for climbing or falling upon."
+    },
+    {
       "type": "patchouli:smelting",
       "recipe": "valleycraft:dried_fiber",
       "title": "Dried Plant Fiber",

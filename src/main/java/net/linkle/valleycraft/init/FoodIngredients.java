@@ -78,11 +78,13 @@ public enum FoodIngredients implements ItemEnum {
 
     RAW_BACON(new FoodItem(settings(), 2, Nourishment.POOR, true)),
     
-    RAW_BIRD_THIGH(new FoodItem(settings(), 2, Nourishment.POOR)),
+    RAW_BIRD_THIGH(new FoodItem(settings(), 2, Nourishment.POOR, true)),
     RAW_BEAST_LIVER(new FoodItem(settings(), 4, Nourishment.LOW, true)),
     RAW_BEAST_HEART(new FoodItem(settings(), 6, Nourishment.LOW, true)),
-    RAW_BAT_WING(new FoodItem(settings(), 2, Nourishment.POOR)),
-    RAW_SILVERFISH(new FoodItem(settings(), 1, Nourishment.POOR)),
+    RAW_CANID(new FoodItem(settings(), 4, Nourishment.LOW, true)),
+    RAW_BAT_WING(new FoodItem(settings(), 2, Nourishment.POOR, true)),
+    RAW_CAVE_MAGGOT(new FoodItem(settings(), 1, Nourishment.POOR, true)),
+    RAW_SILVERFISH(new FoodItem(settings(), 1, Nourishment.POOR, true)),
     RAW_PHANTOM_EYE(new NegativeFoodItem_2_Effects(settings(), 3, Nourishment.POOR, StatusEffects.NAUSEA, StatusEffects.NIGHT_VISION).hideTooltip()),
     RAW_TRIPE(new NegativeFoodItem_2_Effects(settings(), 6, Nourishment.LOW, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
     MONSTER_HEART(new NegativeFoodItem_2_Effects(settings(), 8, Nourishment.LOW, StatusEffects.MINING_FATIGUE, StatusEffects.HUNGER).hideTooltip()),

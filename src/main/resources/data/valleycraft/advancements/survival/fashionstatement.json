@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:survival/craftingmat",
+  "parent": "valleycraft:survival/dressedfortheoccasion",
   "display": {
     "title": {
       "text": "Magical Fashion Statement"
@@ -25,6 +25,7 @@
               "valleycraft:echo_shard_talisman",
               "valleycraft:emerald_talisman",
               "valleycraft:ender_pearl_talisman",
+              "valleycraft:lapis_lazuli_talisman",
               "valleycraft:nether_quartz_talisman",
               "valleycraft:prismarine_talisman",
               "valleycraft:crystallized_honey_necklace",
@@ -34,7 +35,9 @@
               "valleycraft:dragon_tooth_keepsake",
               "valleycraft:elder_guardian_spike_keepsake",
               "valleycraft:nether_star_keepsake",
-              "valleycraft:ender_dragon_talisman"
+              "valleycraft:ender_dragon_talisman",
+              "valleycraft:warden_heart_keepsake",
+              "valleycraft:liches_lucky_bone_keepsake"
             ]
           }
         ]

@@ -1,0 +1,47 @@
+{
+  "parent": "valleycraft:survival/entry_log",
+  "display": {
+    "title": {
+      "text": "There's geodes in them thar hills!",
+      "color": "light_purple"
+    },
+    "icon": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "description": {
+      "text": "Find an Amethyst Geode"
+    },
+    "frame": "task",
+    "hidden": false
+  },
+  "rewards": {
+    "recipes": [
+      "valleycraft:anthropologists_rock_pick"
+    ]
+  },
+  "criteria": {
+    "related_items": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:amethyst_cluster",
+              "minecraft:amethyst_shard",
+              "minecraft:amethyst_block",
+              "minecraft:small_amethyst_bud",
+              "minecraft:medium_amethyst_bud",
+              "minecraft:large_amethyst_bud",
+              "minecraft:budding_amethyst"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "related_items"
+    ]
+  ]
+}

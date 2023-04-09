@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X#X",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:treated_leather"
+    },
+    "X": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "valleycraft:cowpoke_hat",
+    "count": 1
+  }
+}

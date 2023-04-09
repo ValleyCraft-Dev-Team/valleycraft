@@ -206,7 +206,27 @@ class RenderLayers {
         put(PURPLE_FLOWERING_LILYPAD, cullout);
         put(PINK_FLOWERING_LILYPAD, cullout);
         put(BLUE_FLOWERING_LILYPAD, cullout);
+
         put(ROCKS, cullout);
+        put(FLINT_ROCKS, cullout);
+        put(DIRT_ROCKS, cullout);
+        put(DRIPSTONE_ROCKS, cullout);
+        put(SHALE_ROCKS, cullout);
+        put(DEEPSLATE_ROCKS, cullout);
+
+        put(COAL_ORE_ROCKS, cullout);
+        put(RAW_PRIMSTEEL_ORE_ROCKS, cullout);
+        put(RAW_COPPER_ORE_ROCKS, cullout);
+        put(RAW_IRON_ORE_ROCKS, cullout);
+        put(RAW_GOLD_ORE_ROCKS, cullout);
+
+        put(NETHERACK_ROCKS, cullout);
+        put(ANTHRACITE_ORE_ROCKS, cullout);
+        put(ENDSTONE_ROCKS, cullout);
+        put(REDSTONE_CRYSTAL, cullout);
+        put(JELLYCAP, translucent);
+        put(GNARLED_ROOTS, cullout);
+
         put(APPLE_LEAVES, cullout);
         put(APPLE_LEAVES_EMPTY, cullout);
         put(ALGAE, cullout);

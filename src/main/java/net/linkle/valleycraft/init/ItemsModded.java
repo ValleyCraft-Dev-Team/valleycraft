@@ -89,6 +89,8 @@ public enum ItemsModded implements ItemEnum {
     FLOUR(new Item(itemSettings().group(INGREDIENTS))),
     MAIZE_FLOUR(new Item(itemSettings().group(INGREDIENTS))),
 
+    BUDDING_GEODE_CORE(new Item(itemSettings())),
+    BUDDING_GEODE_CORE_ENRICHED(new Item(itemSettings())),
     COAL_NUGGET(new Item(itemSettings())),
     SALTPETER(new Item(itemSettings())),
     ANTHRACITE(new Item(itemSettings())),
@@ -120,7 +122,10 @@ public enum ItemsModded implements ItemEnum {
     WARDEN_ANTLER(new Item(itemSettings().rarity(Rarity.EPIC))),
 
     TOTEM_OF_TRADE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),
-    TOTEM_OF_APPRECIATION(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(1))),
+    TOTEM_OF_PACIFISM(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),
+    TOTEM_OF_APPRECIATION(new Item(hiddenItemSettings().rarity(Rarity.RARE).maxCount(1))),
+    TOTEM_OF_KNOWLEDGE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(1))),
+
     //TOTEM_OF_FRIENDSHIP(new Item(itemSettings().group(VC_ITEMS).rarity(EPIC).maxCount(1))),
     BOMB_BAG(new BombBagItem(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON))),
     ARROW_BUNDLE(new ArrowBundleItem(itemSettings().group(VC_TOOLS))),
