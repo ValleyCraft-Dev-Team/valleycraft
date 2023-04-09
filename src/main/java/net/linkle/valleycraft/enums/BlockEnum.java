@@ -11,7 +11,6 @@ public interface BlockEnum extends BlockConvertible, IdProvider {
     default BlockState getState() {
         return asBlock().getDefaultState();
     }
-    
     /** upcast to
      * @throws ClassCastException */
     @SuppressWarnings("unchecked")

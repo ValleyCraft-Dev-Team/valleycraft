@@ -32,9 +32,9 @@ public class CabinetBlock extends HorizontalWaterContainerBlock {
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
     	return switch (state.get(FACING)) {
 		case NORTH -> NORTH_SHAPE;
-		case EAST -> NORTH_SHAPE;
-		case SOUTH -> NORTH_SHAPE;
-		case WEST -> NORTH_SHAPE;
+		case EAST -> EAST_SHAPE;
+		case SOUTH -> SOUTH_SHAPE;
+		case WEST -> WEST_SHAPE;
 		default -> NORTH_SHAPE;
 		};
     }

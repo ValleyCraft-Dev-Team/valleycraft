@@ -93,9 +93,7 @@ public class SimpleConfig {
             map.put(key, temp.get(key));
         }
 
-        PrintWriter printer = null;
-        try {
-            printer = new PrintWriter(file, "UTF-8");
+        try (var printer = new PrintWriter(file, "UTF-8")) {
             printer.write("# value type sheet\n");
             printer.write("# Boolean: true or false (true)\n");
             printer.write("# Integer: a number without decimal (42)\n");
@@ -119,9 +117,6 @@ public class SimpleConfig {
             }
         } catch (Exception e) {
             LOGGER.warn(ERROR + file.getName());
-        } finally {
-            if (printer != null)
-                printer.close();
         }
     }
 

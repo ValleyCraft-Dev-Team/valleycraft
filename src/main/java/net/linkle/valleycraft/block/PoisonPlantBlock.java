@@ -3,6 +3,8 @@ package net.linkle.valleycraft.block;
 import net.linkle.valleycraft.effect.ModEffects;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -29,12 +31,20 @@ public class PoisonPlantBlock extends ModPlantBlock {
     
     @Override
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-        int color = ModEffects.ROT_BLIGHT.getColor();
-        double r = (double)(color >> 16 & 0xFF) / 255.0;
-        double g = (double)(color >> 8 & 0xFF) / 255.0;
-        double b = (double)(color >> 0 & 0xFF) / 255.0;
-        var shape = getOutlineShape(state, world, pos, ShapeContext.absent());
-        Vec3d center = shape.getBoundingBox().getCenter();
-        world.addParticle(ParticleTypes.EFFECT, pos.getX()+center.getX(), pos.getY()+center.getY(), pos.getZ()+center.getZ(), r, g, b);
+        var shape = this.getOutlineShape(state, world, pos, ShapeContext.absent());
+        var vec = shape.getBoundingBox().getCenter();
+        double x = (double)pos.getX() + vec.x;
+        double z = (double)pos.getZ() + vec.z;
+        for (int i = 0; i < 3; ++i) {
+            if (!random.nextBoolean()) continue;
+            var pm = MinecraftClient.getInstance().particleManager;
+            var p = pm.addParticle(ParticleTypes.EFFECT, x + random.nextDouble() / 5.0, (double)pos.getY() + (0.5 - random.nextDouble()), z + random.nextDouble() / 5.0, 0, 0, 0);
+            var c = ModEffects.ROT_BLIGHT.getColor();
+            var r = (float)(c >> 16 & 0xFF) / 255.0f;
+            var g = (float)(c >> 8 & 0xFF) / 255.0f;
+            var b = (float)(c >> 0 & 0xFF) / 255.0f;
+            var v = 0.75f + random.nextFloat() * 0.25f;
+            p.setColor(r*v, g * v, b * v);
+        }
     }
 }

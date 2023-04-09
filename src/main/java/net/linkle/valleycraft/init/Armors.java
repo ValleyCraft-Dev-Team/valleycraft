@@ -4,9 +4,11 @@ import static net.linkle.valleycraft.init.Groups.CLOTHING;
 import static net.minecraft.util.Rarity.EPIC;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.armors.*;
+import net.linkle.valleycraft.armors.ArmorMats;
+import net.linkle.valleycraft.armors.FastFeatherItem;
+import net.linkle.valleycraft.armors.NightGoggleItem;
+import net.linkle.valleycraft.armors.WarmBootItem;
 import net.linkle.valleycraft.enums.ItemEnum;
-import net.linkle.valleycraft.item.ClothingArmorItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterials;
@@ -34,10 +36,9 @@ public enum Armors implements ItemEnum {
     DRIPLEAF_HAT(new ArmorItem(ArmorMats.DRIPLEAF, EquipmentSlot.HEAD, settingsNormal())),
 
     CLAM_BREASTPLATE(new ArmorItem(ArmorMats.CLAM_BREASTPLATE, EquipmentSlot.CHEST, settingsNormal())),
-    TURTLE_CHESTPLATE(new TurtleChestItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
-    //TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
+    TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
+    TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
-    HUNTERS_CAP(new ArmorItem(ArmorMats.HUNTERS_CAP, EquipmentSlot.HEAD, settingsNormal())),
     SEAGULL_FEATHER(new FastFeatherItem(ArmorMats.SEAGULL_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
     DUCK_FEATHER(new FastFeatherItem(ArmorMats.DUCK_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
     CROW_FEATHER(new FastFeatherItem(ArmorMats.CROW_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
@@ -127,18 +128,12 @@ public enum Armors implements ItemEnum {
     ECHOCHALCUM_BOOTS(new ArmorItem(ArmorMats.ECHOCHALCUM, EquipmentSlot.FEET, settingsNormal())),
 
     LICH_HOOD_KEEPSAKE(new ArmorItem(ArmorMats.LICH_CLOAK, EquipmentSlot.HEAD, settingsNormal().rarity(EPIC).maxCount(1))),
-    LICH_CLOAK_KEEPSAKE(new ArmorItem(ArmorMats.LICH_CLOAK, EquipmentSlot.CHEST, settingsNormal().rarity(EPIC).maxCount(1))),
+    LICH_CLOAK_KEEPSAKE(new ArmorItem(ArmorMats.LICH_CLOAK, EquipmentSlot.CHEST, settingsNormal().rarity(EPIC).maxCount(1)));
 
     //DIVING_HELMET(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.HEAD, settingsArtifacts(Rarity.RARE))),
     //DIVING_CHESTPLATE(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.CHEST, settingsArtifacts(Rarity.RARE))),
     //DIVING_LEGGINGS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.LEGS, settingsArtifacts(Rarity.RARE))),
     //DIVING_BOOTS(new ArmorItem(ArmorMats.DIVING, EquipmentSlot.FEET, settingsArtifacts(Rarity.RARE))),
-
-    //test to get the 3d armor models running
-    TEST_HELMET(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.HEAD, settingDebug())),
-    TEST_CHESTPLATE(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.CHEST, settingDebug())),
-    TEST_LEGGINGS(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.LEGS, settingDebug())),
-    TEST_BOOTS(new ClothingArmorItem(ArmorMats.CLOTH, EquipmentSlot.FEET, settingDebug()));
 
     /** Called from {@link ItemsModded} */
     public static void initialize() {
