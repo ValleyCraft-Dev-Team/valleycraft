@@ -24,8 +24,9 @@ public enum BlockEntities implements BlockEntityEnum {
 
     COUNTER(CounterBlockEntity::new, BlocksModded.COUNTER),
     CABINET(CabinetBlockEntity::new, BlocksModded.CABINET),
-    STOVE(StoveBlockEntity::new, BlocksModded.BRICK_STOVE);
-    
+    STOVE(StoveBlockEntity::new, BlocksModded.BRICK_STOVE),
+    MEMORYBOX(MemoryBoxEntity::new, BlocksModded.MEMORY_BOX);
+
     public static void initialize() {
     }
     

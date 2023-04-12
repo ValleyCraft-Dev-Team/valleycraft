@@ -1,7 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/raw_copper_block"
+		"0": "block/raw_copper_block",
+		"particle": "block/raw_copper_block"
+
 	},
 	"elements": [
 		{

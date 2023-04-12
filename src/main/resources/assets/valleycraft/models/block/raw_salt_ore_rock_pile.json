@@ -1,7 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "valleycraft:block/salt_block"
+		"0": "valleycraft:block/salt_block",
+		"particle": "valleycraft:block/salt_block"
+
 	},
 	"elements": [
 		{

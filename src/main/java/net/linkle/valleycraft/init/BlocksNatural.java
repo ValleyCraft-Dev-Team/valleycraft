@@ -243,11 +243,13 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
     FLINT_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
 
-    DRIPSTONE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
-    DRIPSTONE_FLINT_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    ERDCOBBLESTONE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    //DRIPSTONE_FLINT_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
     SHALE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
+    DRIPSTONE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
     DEEPSLATE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
 
+    SALT_ORE_ROCKS(new RockBlock(), itemSettings().group(FLORA_GROUP)),
     COAL_ORE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
     RAW_PRIMSTEEL_ORE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
     RAW_COPPER_ORE_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),

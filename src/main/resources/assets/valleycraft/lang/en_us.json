@@ -114,10 +114,15 @@
   "item.valley.night.tooltip": "Allows you to see in the dark.",
   "item.valley.turtle_chest.tooltip": "Increases resistance but",
   "item.valley.turtle_chest.tooltip_2": "lowers your movement speed.",
+  "item.valley.familiar.tooltip": "\"This feels familiar but I'm",
+  "item.valley.familiar.tooltip_2": "unsure as to how or from where.\"",
 
   "item.valley.tier_one.tooltip": "§7Effect Tier: §6★☆☆",
   "item.valley.tier_two.tooltip": "§7Effect Tier: §6★★☆",
   "item.valley.tier_three.tooltip": "§7Effect Tier: §6★★★",
+
+  "item.valleycraft.old_clothes": "Threadbare Tunic & Trousers",
+  "item.valleycraft.old_clothes_repaired": "Tunic & Trousers",
 
   "nourishing_items": "§6",
   "block.valleycraft.shivercap": "§6Shivercap",
@@ -583,6 +588,7 @@
   "container.valleycraft.coffin": "Coffin",
   "container.valleycraft.deepslate": "Deepslate Chest",
   "container.valleycraft.memory_box": "Memory Box",
+  "block.valleycraft.memory_box": "Memory Box",
 
   "block.valleycraft.stake": "Stake",
   "block.valleycraft.sprinkler": "Sprinkler",
@@ -790,6 +796,8 @@
   "item.valleycraft.ribcage": "Skeleton Ribcage",
   "item.valleycraft.wither_ribcage": "Wither Skeleton Ribcage",
   "item.valleycraft.life_gem": "Life Gem",
+  "item.valleycraft.budding_geode_core": "Budding Geode Core",
+  "item.valleycraft.budding_geode_core_enriched": "Thermally Enriched Budding Geode Core",
 
   "block.valleycraft.clover": "Northern Clover",
 
@@ -1080,7 +1088,7 @@
   "item.valleycraft.moblin_talisman": "Moblin Talisman",
   "item.valleycraft.flower_crown": "Flowering Azalea Crown",
   "item.valleycraft.dierdra_laurel": "Vine Crown",
-  "item.valleycraft.turtle_chestplate": "Turtle Shell Chestplate",
+  "item.valleycraft.turtle_chestplate": "Large Turtle Shell",
   "item.valleycraft.turtle_leggings": "Turtle Shell Leggings",
   "item.valleycraft.turtle_boots": "Turtle Shell Boots",
   "item.valleycraft.straw_hat": "Straw Hat",

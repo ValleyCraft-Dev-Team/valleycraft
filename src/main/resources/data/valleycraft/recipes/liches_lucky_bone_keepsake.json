@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "valleycraft:iron_necklace"
+    "item": "valleycraft:leather_necklace"
   },
   "addition": {
     "item": "valleycraft:liches_iron_bone_amulet"

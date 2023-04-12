@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:survival/scraping_by",
+  "display": {
+    "title": {
+      "text": "Cycles"
+    },
+    "icon": {
+      "item": "valleycraft:life_gem"
+    },
+    "description": {
+      "text": "\"Don't think on it too much, eh?\""
+    },
+    "frame": "task",
+    "hidden": "true"
+  },
+  "criteria": {
+    "life_gem": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:life_gem"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "life_gem"
+    ]
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:survival/craftingmat",
+  "parent": "valleycraft:survival/fixerupper",
   "display": {
     "title": {
       "text": "Dressed for the Occasion"

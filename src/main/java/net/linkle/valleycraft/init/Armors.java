@@ -4,10 +4,7 @@ import static net.linkle.valleycraft.init.Groups.CLOTHING;
 import static net.minecraft.util.Rarity.EPIC;
 
 import net.linkle.valleycraft.Main;
-import net.linkle.valleycraft.armors.ArmorMats;
-import net.linkle.valleycraft.armors.FastFeatherItem;
-import net.linkle.valleycraft.armors.NightGoggleItem;
-import net.linkle.valleycraft.armors.WarmBootItem;
+import net.linkle.valleycraft.armors.*;
 import net.linkle.valleycraft.enums.ItemEnum;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
@@ -18,6 +15,9 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public enum Armors implements ItemEnum {
+    OLD_CLOTHES(new OldClothesItem(ArmorMats.OLD_CLOTHES, EquipmentSlot.LEGS, settingsNormal())),
+    OLD_CLOTHES_REPAIRED(new OldClothesItem(ArmorMats.OLD_CLOTHES_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+
     STRAW_HAT(new ArmorItem(ArmorMats.STRAW_HAT, EquipmentSlot.HEAD, settingsNormal())),
     AMETHYST_GOGGLES(new ArmorItem(ArmorMats.AMETHYST_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
     NIGHTVISION_GOGGLES(new NightGoggleItem(ArmorMats.NIGHTVISION_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
@@ -36,8 +36,8 @@ public enum Armors implements ItemEnum {
     DRIPLEAF_HAT(new ArmorItem(ArmorMats.DRIPLEAF, EquipmentSlot.HEAD, settingsNormal())),
 
     CLAM_BREASTPLATE(new ArmorItem(ArmorMats.CLAM_BREASTPLATE, EquipmentSlot.CHEST, settingsNormal())),
-    TURTLE_CHESTPLATE(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
-    TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
+    TURTLE_CHESTPLATE(new TurtleChestItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
+    //TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
     SEAGULL_FEATHER(new FastFeatherItem(ArmorMats.SEAGULL_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
     DUCK_FEATHER(new FastFeatherItem(ArmorMats.DUCK_FEATHER, EquipmentSlot.HEAD, settingsNormal())),

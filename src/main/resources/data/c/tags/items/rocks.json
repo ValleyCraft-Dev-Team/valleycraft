@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:rock_item"
+    "valleycraft:rock_item",
+    "valleycraft:shale_rock_item",
+    "valleycraft:deepslate_rock_item",
+    "valleycraft:dripstone_rock_item",
+    "valleycraft:erdcobblestone_rock_item"
   ]
 }

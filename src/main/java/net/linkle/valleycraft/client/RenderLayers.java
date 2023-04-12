@@ -213,6 +213,7 @@ class RenderLayers {
         put(DRIPSTONE_ROCKS, cullout);
         put(SHALE_ROCKS, cullout);
         put(DEEPSLATE_ROCKS, cullout);
+        put(ERDCOBBLESTONE_ROCKS, cullout);
 
         put(COAL_ORE_ROCKS, cullout);
         put(RAW_PRIMSTEEL_ORE_ROCKS, cullout);
@@ -224,7 +225,7 @@ class RenderLayers {
         put(ANTHRACITE_ORE_ROCKS, cullout);
         put(ENDSTONE_ROCKS, cullout);
         put(REDSTONE_CRYSTAL, cullout);
-        put(JELLYCAP, translucent);
+        put(JELLYCAP, cullout);
         put(GNARLED_ROOTS, cullout);
 
         put(APPLE_LEAVES, cullout);

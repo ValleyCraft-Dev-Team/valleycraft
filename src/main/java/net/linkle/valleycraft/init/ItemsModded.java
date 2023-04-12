@@ -44,7 +44,14 @@ public enum ItemsModded implements ItemEnum {
     AMETHYSTLE_SEEDS(new AliasedBlockItem(BlocksNatural.AMETHYSTLES.block, itemSettings())),
 
     GLOW_BALL(new GlowBallItem(itemSettings().group(VC_TOOLS))),
+    ERDCOBBLESTONE_ROCK_ITEM(new Item(itemSettings())),
     ROCK_ITEM(new Item(itemSettings())),
+    SHALE_ROCK_ITEM(new Item(itemSettings())),
+    DRIPSTONE_ROCK_ITEM(new Item(itemSettings())),
+    DEEPSLATE_ROCK_ITEM(new Item(itemSettings())),
+    NETHERACK_ROCK_ITEM(new Item(itemSettings())),
+    ENDSTONE_ROCK_ITEM(new Item(itemSettings())),
+
     FIBER(new Item(itemSettings())),
     DRIED_FIBER(new Item(itemSettings())),
     PLANT_FIBER_STRING(new Item(itemSettings())),

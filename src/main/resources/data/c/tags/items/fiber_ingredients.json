@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:fiber",
-    "valleycraft:dried_fiber",
     "minecraft:vine",
     "valleycraft:arid_vines",
     "minecraft:sugar_cane",

@@ -1,7 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "valleycraft:block/dirt_road"
+		"0": "valleycraft:block/dirt_road",
+		"particle": "valleycraft:block/dirt_road"
+
 	},
 	"elements": [
 		{

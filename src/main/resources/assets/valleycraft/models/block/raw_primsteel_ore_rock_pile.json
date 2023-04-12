@@ -1,7 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "valleycraft:block/raw_primsteel_block"
+		"0": "valleycraft:block/raw_primsteel_block",
+		"particle": "valleycraft:block/raw_primsteel_block"
+
 	},
 	"elements": [
 		{

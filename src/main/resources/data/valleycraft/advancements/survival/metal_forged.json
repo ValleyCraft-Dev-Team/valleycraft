@@ -10,7 +10,7 @@
     "description": {
       "text": "Behind every face- a soul?"
     },
-    "frame": "goal"
+    "frame": "task"
   },
   "rewards": {
     "experience": 5

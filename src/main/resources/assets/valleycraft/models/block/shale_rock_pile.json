@@ -1,7 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "valleycraft:block/shale_side"
+		"0": "valleycraft:block/shale_side",
+		"particle": "valleycraft:block/shale_side"
 	},
 	"elements": [
 		{

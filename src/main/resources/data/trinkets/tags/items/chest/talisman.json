@@ -8,18 +8,22 @@
     "valleycraft:echo_shard_talisman",
     "valleycraft:emerald_talisman",
     "valleycraft:ender_pearl_talisman",
+    "valleycraft:lapis_lazuli_talisman",
     "valleycraft:nether_quartz_talisman",
     "valleycraft:prismarine_talisman",
 
     "valleycraft:leather_necklace",
-    "valleycraft:guardian_spike_talisman",
+    "valleycraft:crystallized_honey_necklace",
     "valleycraft:scute_necklace",
     "valleycraft:undying_necklace",
+    "valleycraft:guardian_spike_talisman",
     "valleycraft:dragon_tooth_keepsake",
-    "valleycraft:crystallized_honey_necklace",
+
+    "valleycraft:elder_guardian_spike_keepsake",
+    "valleycraft:warden_heart_keepsake",
+    "valleycraft:liches_lucky_bone_keepsake",
 
     "valleycraft:nether_star_keepsake",
-    "valleycraft:elder_guardian_spike_keepsake",
     "valleycraft:ender_dragon_talisman"
   ]
 }

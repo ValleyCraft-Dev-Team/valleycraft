@@ -51,6 +51,8 @@ public enum ArmorMats implements ArmorMaterial {
     SEAGULL_FEATHER("seagull_feather", ints(1,5,6,2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
     DUCK_FEATHER("duck_feather", ints(1,5,6,2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
     HUNTERS_CAP("hunters_cap", ints(1,5,6,2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
+    OLD_CLOTHES("basic_clothes", ints(2,2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
+    OLD_CLOTHES_REPAIRED("repaired_basic_clothes", ints(2,4), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
 
     CIRCLET_GOLD("golden_circlet", ints(0,0,0,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     CIRCLET_IRON("iron_circlet", ints(0,0,0,1), 15, 9, equipChain(), items(Items.IRON_INGOT)),

@@ -1,0 +1,28 @@
+{
+  "parent": "valleycraft:recipes/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crafting_table",
+              "valleycraft:crafting_mat"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "valleycraft:repaired_old_clothing"
+    ]
+  }
+}

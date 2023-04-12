@@ -1,0 +1,35 @@
+{
+  "parent": "valleycraft:survival/craftingmat",
+  "display": {
+    "title": {
+      "text": "Good As Old!"
+    },
+    "icon": {
+      "item": "valleycraft:old_clothes_repaired"
+    },
+    "description": {
+      "text": "Repair the Threadbare Tunic & Trousers"
+    },
+    "frame": "goal",
+    "hidden": "false"
+  },
+  "criteria": {
+    "old_clothes": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "valleycraft:old_clothes_repaired"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "old_clothes"
+    ]
+  ]
+}

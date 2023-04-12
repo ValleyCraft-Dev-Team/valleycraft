@@ -1,5 +1,5 @@
 {
-  "parent": "valleycraft:survival/entrylog",
+  "parent": "valleycraft:survival/cycles",
   "display": {
     "title": {
       "text": "Hollowed"
