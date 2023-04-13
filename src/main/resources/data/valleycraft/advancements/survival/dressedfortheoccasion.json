@@ -8,7 +8,7 @@
       "item": "valleycraft:feather"
     },
     "description": {
-      "text": "Craft a Chef's Toque & Apron, Straw Hat, Hunter's Hat, and Cowpoke Hat"
+      "text": "Craft a Chef's Toque & Apron, Straw Hat, Hunting Hat, and Cowpoke Hat"
     },
     "frame": "goal"
   },
@@ -70,7 +70,11 @@
         "items": [
           {
             "items": [
-              "valleycraft:cowpoke_hat"
+              "valleycraft:seagull_feather",
+              "valleycraft:duck_feather",
+              "valleycraft:crow_feather",
+              "valleycraft:feather",
+              "valleycraft:hunters_hat"
             ]
           }
         ]

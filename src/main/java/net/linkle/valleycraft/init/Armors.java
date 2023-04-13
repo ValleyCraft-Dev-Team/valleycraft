@@ -39,6 +39,7 @@ public enum Armors implements ItemEnum {
     TURTLE_CHESTPLATE(new TurtleChestItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
     //TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
+    HUNTERS_HAT(new ArmorItem(ArmorMats.HUNTERS_CAP, EquipmentSlot.HEAD, settingsNormal())),
     SEAGULL_FEATHER(new FastFeatherItem(ArmorMats.SEAGULL_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
     DUCK_FEATHER(new FastFeatherItem(ArmorMats.DUCK_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
     CROW_FEATHER(new FastFeatherItem(ArmorMats.CROW_FEATHER, EquipmentSlot.HEAD, settingsNormal())),

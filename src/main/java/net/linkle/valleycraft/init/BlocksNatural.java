@@ -238,6 +238,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     SHIVERSTONE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     VERDANTINE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     MARBLE(new Block(Block.Settings.copy(Blocks.CALCITE)), itemSettings()),
+    JASPER(new WarmBlock(Block.Settings.copy(Blocks.DIORITE).ticksRandomly().slipperiness(0.6f)), itemSettings()),
 
     DIRT_ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),
     ROCKS(new RockBlock(), itemSettings().group(Groups.FLORA_GROUP)),

@@ -17,9 +17,9 @@ public enum ArmorMats implements ArmorMaterial {
 
     ALEX("ruined_alex_zombie", ints(2), 10, 15, equipLeather(), items(Items.LEATHER)),
     EFE("ruined_efe_zombie", ints(2), 10, 15, equipLeather(), items(Items.LEATHER)),
-    BIKINI("bikini", ints(1,2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
-    BIKINI_NEUTRAL("neutral_bikini", ints(1,2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
-    BIKINI_REPAIRED("bikini_repaired", ints(1,2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
+    BIKINI("bikini", ints(2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
+    BIKINI_NEUTRAL("neutral_bikini", ints(2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
+    BIKINI_REPAIRED("bikini_repaired", ints(2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
     BIKINI_NEUTRAL_REPAIRED("neutral_bikini_repaired", ints(1,2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
     BIKINI_COAT("wretch", ints(1,2), 10, 15, equipLeather(), items(Items.LEATHER)),
     BIKINI_MASC("bikini_masc", ints(1,2), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),

@@ -1,5 +1,6 @@
 package net.linkle.valleycraft.init;
 
+import static net.linkle.valleycraft.init.BlocksNatural.JASPER;
 import static net.linkle.valleycraft.init.Groups.NON_NATURAL_BLOCKS;
 import static net.linkle.valleycraft.init.Groups.VC_TOOLS;
 import static net.linkle.valleycraft.util.BookStackVoxelShapes.*;
@@ -615,6 +616,8 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     MARBLE_CHISELED_FACE(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_PATTERNED(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_AIR(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
+
+    POLISHED_JASPER(new WarmBlock(Block.Settings.copy(Blocks.DIORITE).ticksRandomly().slipperiness(0.6f)), itemSettings()),
 
     //shiverstone
     SHIVERSTONE_STAIRS(new StairsBlock(BlocksNatural.SHIVERSTONE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings()),

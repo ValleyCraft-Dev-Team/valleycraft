@@ -52,6 +52,7 @@ public enum FoodRegular implements ItemEnum {
     COOKED_BACON(new FastFoodItem(settings(), 3, Nourishment.NORMAL, true)),
     COOKED_BAT(new FastFoodItem(settings(), 3, Nourishment.NORMAL, true)),
     FRIED_EGG(new FoodItem(settings(), 4, Nourishment.NORMAL, true)),
+    HARD_BOILED_EGG(new FoodItem(settings(), 6, Nourishment.NORMAL, true)),
     COOKED_BEAST_LIVER(new FoodItem(settings(), 8, Nourishment.GOOD, true)),
     COOKED_BEAST_HEART(new FoodItem(settings(), 10, Nourishment.GOOD, true)),
     COOKED_CANID(new FoodItem(settings(), 8, Nourishment.GOOD, true)),

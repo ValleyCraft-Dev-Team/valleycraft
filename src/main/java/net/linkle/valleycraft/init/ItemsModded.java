@@ -22,7 +22,8 @@ public enum ItemsModded implements ItemEnum {
     WATER_FILLED_CLAY_POT(new WaterClayPotItem(itemSettings().maxCount(4).group(VC_ITEMS).recipeRemainder(ItemsModded.CLAY_POT.item), 0, 0.0f)),
 
     ROPE(new RopeItem(itemSettings().group(VC_ITEMS))),
-    
+    EGG_BUCKET(new Item(itemSettings().group(INGREDIENTS))),
+
     // tree seeds
     OAK_SEED(new AliasedBlockItem(BlocksNatural.OAK_SEED.block, itemSettings())),
     DARK_OAK_SEED(new AliasedBlockItem(BlocksNatural.DARK_OAK_SEED.block, itemSettings())),

@@ -162,6 +162,7 @@
   "item.valleycraft.ice_tongs": "Ice Tongs",
 
   "item.valleycraft.stablehand_hat": "Stablehand Cap",
+  "item.valleycraft.hunters_hat": "Hunting Hat",
 
   "item.valleycraft.dragon_tooth": "Ancient Dragon Tooth",
   "block.valleycraft.sculk_blossom": "Sculk Pollen Blossom",
@@ -981,6 +982,11 @@
   "item.valleycraft.cooked_bat": "Cooked Bat Wing",
   "item.valleycraft.cooked_bacon": "Bacon",
   "item.valleycraft.fried_egg": "Fried Egg",
+  "item.valleycraft.egg_bucket": "Bucket of Egg",
+  "item.valleycraft.hard_boiled_egg": "Hard Boiled Egg",
+  "block.valleycraft.jasper": "Warm Jasper",
+  "block.valleycraft.polished_jasper": "Warm Polished Jasper",
+
   "item.valleycraft.cooked_sardine": "Cooked Sardine",
   "item.valleycraft.cooked_tropical_fish": "Cooked Tropical Fish",
   "item.valleycraft.cake_slice": "Slice of Cake",
