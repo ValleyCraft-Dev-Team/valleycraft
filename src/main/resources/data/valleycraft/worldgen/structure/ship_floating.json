@@ -3,7 +3,7 @@
   "start_pool": "valleycraft:ship_floating/start_pool",
   "size": 2,
   "max_distance_from_center": 80,
-  "biomes": "#valleycraft:has_structure/overworld_oceans",
+  "biomes": "#valleycraft:has_structure/overworld_oceans_and_beaches",
   "step": "surface_structures",
   "terrain_adaptation": "none",
   "start_height": {
