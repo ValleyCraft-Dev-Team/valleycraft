@@ -226,6 +226,7 @@ class RenderLayers {
         put(ENDSTONE_ROCKS, cullout);
         put(REDSTONE_CRYSTAL, cullout);
         put(JELLYCAP, cullout);
+        put(JELLYCAP, translucent);
         put(GNARLED_ROOTS, cullout);
 
         put(APPLE_LEAVES, cullout);
@@ -400,7 +401,6 @@ class RenderLayers {
         put(HEAD_ROTTEN_STEVE, cullout);
         put(ENDERMAN_SKULL, cullout);
 
-        put(COFFIN, cullout);
         put(COFFIN, translucent);
 
         put(DEEPSLATE_CHEST, cullout);
