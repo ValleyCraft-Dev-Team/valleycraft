@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:salmon_pie_dough"
+    }
+  ],
+  "result": "valleycraft:salmon_pie"
+}

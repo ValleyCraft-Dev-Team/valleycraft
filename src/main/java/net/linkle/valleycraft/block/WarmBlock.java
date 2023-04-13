@@ -47,7 +47,7 @@ public class WarmBlock extends Block {
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
         if (!world.isClient) {
             if (entity instanceof LivingEntity living) {
-                living.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 1));
+                living.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 3, 0, true, false));
             }
         }
     }

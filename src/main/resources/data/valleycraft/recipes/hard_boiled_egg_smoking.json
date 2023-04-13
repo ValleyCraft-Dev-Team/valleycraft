@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:egg_bucket"
+    }
+  ],
+  "result": "valleycraft:hard_boiled_egg"
+}
