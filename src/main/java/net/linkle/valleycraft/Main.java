@@ -43,7 +43,7 @@ public class Main implements ModInitializer {
 		TreeConfigs.initialize();
 		VegetationPlaced.initialize();
 		Biomes.initialize();
-		GensModded.initialize();
+		//GensModded.initialize();
 		
 		Particles.initialize();
 		Sounds.initialize();

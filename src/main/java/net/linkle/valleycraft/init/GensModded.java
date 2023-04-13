@@ -6,6 +6,7 @@ import java.util.stream.Stream;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBiomeTags;
+import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.enums.BlockEnum;
 import net.linkle.valleycraft.util.MoreBiomeSelectors;
 import net.linkle.valleycraft.util.Reg;
@@ -30,6 +31,7 @@ import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 
 public class GensModded {
 
+	/** Currently disabled in {@link Main} */
 	public static void initialize() {
 		RegistryEntry<PlacedFeature> placed;
         RegistryEntry<ConfiguredFeature<?, ?>> config;

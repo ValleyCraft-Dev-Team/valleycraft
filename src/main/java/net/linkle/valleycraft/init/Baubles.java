@@ -3,7 +3,10 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.armors.ArmorMats;
 import net.linkle.valleycraft.enums.ItemEnum;
+import net.linkle.valleycraft.interfaces.TrinketEffectItem;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -42,20 +45,20 @@ public enum Baubles implements ItemEnum {
     PRISMARINE_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
 
     //leather base
-    LEATHER_NECKLACE(new Item(itemSettings().group(CLOTHING).maxCount(1))),
-    CRYSTALLIZED_HONEY_NECKLACE(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
-    SCUTE_NECKLACE(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
+    LEATHER_NECKLACE(new TrinketEffectItem(itemSettings().group(CLOTHING).maxCount(1))),
+    CRYSTALLIZED_HONEY_NECKLACE(new TrinketEffectItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.HEALTH_BOOST, 0)),
+    SCUTE_NECKLACE(new TrinketEffectItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.REGENERATION, 0)),
     UNDYING_NECKLACE(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     GUARDIAN_SPIKE_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
-    DRAGON_TOOTH_KEEPSAKE(new Item(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1))),
+    DRAGON_TOOTH_KEEPSAKE(new TrinketEffectItem(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.STRENGTH, 0)),
 
     //miniboss keepsakes
     ELDER_GUARDIAN_SPIKE_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
-    WARDEN_HEART_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
-    LICHES_LUCKY_BONE_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
+    WARDEN_HEART_KEEPSAKE(new TrinketEffectItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.BLINDNESS, 1).addEffect(StatusEffects.STRENGTH, 1)),
+    LICHES_LUCKY_BONE_KEEPSAKE(new TrinketEffectItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.HUNGER, 1).addEffect(StatusEffects.REGENERATION, 0)),
 
     //boss keepsakes
-    NETHER_STAR_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
+    NETHER_STAR_KEEPSAKE(new TrinketEffectItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.SLOW_FALLING, 0)),
     ENDER_DRAGON_TALISMAN(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)));
 
 
