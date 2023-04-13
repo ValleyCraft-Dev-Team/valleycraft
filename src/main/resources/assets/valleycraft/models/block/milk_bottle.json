@@ -4,7 +4,7 @@
 	"textures": {
 		"0": "valleycraft:block/potion_bottle_block",
 		"1": "valleycraft:block/bottle_block_liquid_milk",
-		"particle": "valleycraft:block/potion_bottle_block"
+		"particle": "block/glass"
 	},
 	"elements": [
 		{
