@@ -2,7 +2,6 @@ package net.linkle.valleycraft.client.trinket;
 
 import dev.emi.trinkets.api.client.TrinketRenderer;
 import dev.emi.trinkets.api.client.TrinketRendererRegistry;
-import net.linkle.valleycraft.client.trinket.renderer.ArmRenderer;
 import net.linkle.valleycraft.client.trinket.renderer.BodyRenderer;
 import net.linkle.valleycraft.init.Baubles;
 import net.linkle.valleycraft.init.ItemsModded;
