@@ -41,14 +41,20 @@ public class TrinketRenderers {
         register(new BodyRenderer("liches_lucky_bone_talisman"), Baubles.LICHES_LUCKY_BONE_KEEPSAKE);
         register(new BodyRenderer("nether_star_keepsake"), Baubles.NETHER_STAR_KEEPSAKE);
         register(new BodyRenderer("ender_dragon_talisman"), Baubles.ENDER_DRAGON_TALISMAN);
+        
+        
+        // * NEW! *
+        //register(new FullRenderer("body"), body);
+        // * NEW! *
+        
 
         //unique
-        //register(new TalismanRenderer("fishing_hook_necklace"), ModBaubles.FISHING_HOOK_TALISMAN);
-        //register(new TalismanRenderer("seaologer_rune_necklace"), ModBaubles.SEAOLOGER_RUNE_NECKLACE);
-        //register(new TalismanRenderer("arrowhead_necklace"), ModBaubles.ARROWHEAD_TALISMAN);
-        //register(new TalismanRenderer("evil_crystal_keepsake"), ModBaubles.EVIL_CRYSTAL_KEEPSAKE);
-        //register(new TalismanRenderer("moblin_talisman"), ModBaubles.MOBLIN_TALISMAN);
-        //register(new TalismanRenderer("stray_necklace"), ModBaubles.STRAY_TALISMAN);
+        //register(new BodyRenderer("fishing_hook_necklace"), ModBaubles.FISHING_HOOK_TALISMAN);
+        //register(new BodyRenderer("seaologer_rune_necklace"), ModBaubles.SEAOLOGER_RUNE_NECKLACE);
+        //register(new BodyRenderer("arrowhead_necklace"), ModBaubles.ARROWHEAD_TALISMAN);
+        //register(new BodyRenderer("evil_crystal_keepsake"), ModBaubles.EVIL_CRYSTAL_KEEPSAKE);
+        //register(new BodyRenderer("moblin_talisman"), ModBaubles.MOBLIN_TALISMAN);
+        //register(new BodyRenderer("stray_necklace"), ModBaubles.STRAY_TALISMAN);
         
         //register(new ArmRenderer(""), null);
     }
