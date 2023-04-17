@@ -21,6 +21,7 @@ public enum Armors implements ItemEnum {
     STRAW_HAT(new ArmorItem(ArmorMats.STRAW_HAT, EquipmentSlot.HEAD, settingsNormal())),
     AMETHYST_GOGGLES(new ArmorItem(ArmorMats.AMETHYST_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
     NIGHTVISION_GOGGLES(new NightGoggleItem(ArmorMats.NIGHTVISION_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
+    LABCOAT(new ArmorItem(ArmorMats.LABCOAT, EquipmentSlot.LEGS, settingsNormal())),
     CHEF_HAT(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsNormal())),
     CHEF_APRON(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.LEGS, settingsNormal())),
 

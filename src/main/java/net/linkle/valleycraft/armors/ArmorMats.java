@@ -89,6 +89,7 @@ public enum ArmorMats implements ArmorMaterial {
     BUTTON("button", ints(0,0,7,2), 10, 15, equipChain(), items(Items.STRING)),
     CHEF("chef", ints(2,3), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
     EVOKER("evoker", ints(2,3), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
+    LABCOAT("labcoat", ints(2,3), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
 
     PRIMSTEEL("primsteel", ints(1,4,5,2), 15, 18, equipIron(), items(ItemsModded.PRIMSTEEL_INGOT)),
     ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ItemsModded.ROSEGOLD_INGOT), 0.75f, 0.0f),
