@@ -27,9 +27,9 @@ public class FullRenderer implements TrinketRenderer {
     
     private final Identifier texture;
     
-    /** @param texture file name in valleycraft/textures/models/trinket */
+    /** @param texture file name in valleycraft/textures/models/clothing */
     public FullRenderer(String texture) {
-        this.texture = Main.makeId("textures/models/trinket/"+texture+".png");
+        this.texture = Main.makeId("textures/models/clothing/"+texture+".png");
     }
     
     @Override

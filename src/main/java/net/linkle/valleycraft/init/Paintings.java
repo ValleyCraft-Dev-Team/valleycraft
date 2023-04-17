@@ -26,8 +26,6 @@ public class Paintings {
     public static final PaintingVariant RUIN = registerPainting("ruin", new PaintingVariant(48,32));
     public static final PaintingVariant ELDER_LARGE = registerPainting("elder_large", new PaintingVariant(32,32));
     public static final PaintingVariant ELDER_SMALL = registerPainting("elder_small", new PaintingVariant(32,16));
-    public static final PaintingVariant WRETCH = registerPainting("wretch", new PaintingVariant(16,32));
-    public static final PaintingVariant WRETCH_PRIOR = registerPainting("wretch_prior", new PaintingVariant(16,32));
     public static final PaintingVariant AIR = registerPainting("air", new PaintingVariant(16,16));
     public static final PaintingVariant EARTH = registerPainting("earth", new PaintingVariant(16,16));
     public static final PaintingVariant FIRE = registerPainting("fire", new PaintingVariant(16,16));

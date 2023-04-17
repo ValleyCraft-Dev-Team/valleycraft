@@ -30,6 +30,7 @@ public class Main implements ModInitializer {
 		Fishing.initialize();
 			//initializes fish bucket items
 		Tools.initialize();
+		Clothing.initialize();
 		Armors.initialize();
 
 	    Groups.initialize();
