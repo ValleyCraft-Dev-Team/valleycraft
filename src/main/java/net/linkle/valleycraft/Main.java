@@ -51,7 +51,6 @@ public class Main implements ModInitializer {
 		Music.initialize();
 			//currently unused, ancient disk is being added to Legendarium instead probably
 		Entities.initialize();
-		Paintings.initialize();
 		ModFluidTags.initialize();
 		ModLootTables.initialize();
 		Events.initialize();
