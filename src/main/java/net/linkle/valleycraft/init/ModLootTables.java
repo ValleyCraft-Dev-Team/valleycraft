@@ -37,35 +37,36 @@ public class ModLootTables {
 
         LootTableHelper.appendLoot(EntityType.SQUID.getLootTableId(), builder);
         */
-        LootBuilder builder_warden = LootBuilder.create();
-        builder_warden.rolls(1).with(ItemEntry.builder(ItemsModded.WARDEN_ANTLER)
-                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2, 2)))
-        );
-        builder_warden.rolls(1).with(ItemEntry.builder(ItemsModded.LIFE_GEM)
-                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 3)))
-        );
-        LootTableHelper.appendLoot(EntityType.WARDEN.getLootTableId(), builder_warden);
 
-        LootBuilder builder_ender_dragon = LootBuilder.create();
-        builder_ender_dragon.rolls(1).with(ItemEntry.builder(ItemsModded.DRAGON_TOOTH)
-                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
-        );
-        builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.ENDER_DRAGON_EYE)
-                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2)))
-        );
-        builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.ENDER_DRAGON_GLAND)
-                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2)))
-        );
-        builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.RAW_ENDERMITE)
-                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(8, 24)))
-        );
-        builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART)
-                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 1)))
-        );
-        builder_ender_dragon.rolls(1).with(ItemEntry.builder(ItemsModded.LIFE_GEM)
-                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(6, 6)))
-        );
-        LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder_ender_dragon);
+        //LootBuilder builder_warden = LootBuilder.create();
+        //builder_warden.rolls(1).with(ItemEntry.builder(ItemsModded.WARDEN_ANTLER)
+        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2, 2)))
+        //);
+        //builder_warden.rolls(1).with(ItemEntry.builder(ItemsModded.LIFE_GEM)
+        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 3)))
+        //);
+        //LootTableHelper.appendLoot(EntityType.WARDEN.getLootTableId(), builder_warden);
+        //
+        //LootBuilder builder_ender_dragon = LootBuilder.create();
+        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(ItemsModded.DRAGON_TOOTH)
+        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
+        //);
+        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.ENDER_DRAGON_EYE)
+        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2)))
+        //);
+        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.ENDER_DRAGON_GLAND)
+        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2)))
+        //);
+        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.RAW_ENDERMITE)
+        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(8, 24)))
+        //);
+        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART)
+        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 1)))
+        //);
+        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(ItemsModded.LIFE_GEM)
+        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(6, 6)))
+        //);
+        //LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder_ender_dragon);
 
     }
 

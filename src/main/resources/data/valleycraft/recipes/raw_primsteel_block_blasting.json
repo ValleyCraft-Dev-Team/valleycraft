@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "valleycraft:raw_primsteel_block"
   },
-  "result": "valleycraft:primsteel_block",
+  "result": "valleycraft:primsteel_plate_block",
   "experience": 3.2,
   "cookingtime": 900
 }

@@ -281,7 +281,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:head_husk_steve"
+          "name": "valleycraft:head_husk_steve"
         }
       ],
       "conditions": [
