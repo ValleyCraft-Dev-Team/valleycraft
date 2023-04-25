@@ -7,6 +7,7 @@ import net.minecraft.util.registry.Registry;
 public class ModEffects {
     public static StatusEffect ROT_BLIGHT = register("rot_blight", new RotBlightEffect());
     public static StatusEffect SOUL_FADING = register("soul_fading", new SoulFadingEffect());
+    public static StatusEffect CLEANSED = register("cleansed", new CleansedEffect());
 
     public static void initialize() {}
     
