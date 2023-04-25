@@ -2,6 +2,20 @@
   "replace": false,
   "values": [
     "valleycraft:rocks",
-    "valleycraft:flint_rocks"
+    "valleycraft:flint_rocks",
+    "valleycraft:dirt_rocks",
+    "valleycraft:erdcobblestone_rocks",
+    "valleycraft:shale_rocks",
+    "valleycraft:dripstone_rocks",
+    "valleycraft:deepslate_rocks",
+    "valleycraft:salt_ore_rocks",
+    "valleycraft:coal_ore_rocks",
+    "valleycraft:anthracite_ore_rocks",
+    "valleycraft:raw_copper_ore_rocks",
+    "valleycraft:raw_gold_ore_rocks",
+    "valleycraft:raw_primsteel_ore_rocks",
+    "valleycraft:raw_iron_ore_rocks",
+    "valleycraft:netherack_rocks",
+    "valleycraft:endstone_rocks"
   ]
 }

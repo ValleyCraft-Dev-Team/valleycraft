@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:hollow_mamon_log"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:mamon_planks",
+    "count": 1
+  }
+}

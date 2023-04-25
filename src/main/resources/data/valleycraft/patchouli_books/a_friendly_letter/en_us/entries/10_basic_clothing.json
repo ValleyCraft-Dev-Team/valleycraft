@@ -83,12 +83,6 @@
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "valleycraft:hairpin_feather",
-      "title": "Feather Hairpin",
-      "text": "I think Crow Feathers make for most elegant Hairpins, but I'm no fashion expert."
-    },
-    {
-      "type": "patchouli:crafting",
       "recipe": "valleycraft:treated_leather_helmet",
       "title": "Helmets & Hoods",
       "text": "Good protection against undead Skeleton Archers. They always aim for the head."

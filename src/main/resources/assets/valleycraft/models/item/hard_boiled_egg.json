@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "valleycraft:item/food/cooked_items/fried_egg"
+    "layer0": "valleycraft:item/food/cooked_items/hard_boiled_egg"
   }
 }

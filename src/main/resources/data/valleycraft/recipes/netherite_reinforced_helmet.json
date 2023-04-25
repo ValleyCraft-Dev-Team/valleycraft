@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:reinforced_diamond_helmet"
+  },
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "item": "valleycraft:reinforced_netherite_helmet"
+  }
+}

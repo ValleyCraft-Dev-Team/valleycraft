@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:anthracite"
+    }
+  },
+  "result": {
+    "item": "valleycraft:anthracite_ore_rocks",
+    "count": 1
+  }
+}

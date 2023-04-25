@@ -46,8 +46,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
+                "min": 0,
+                "max": 1
               },
               "add": false
             }
@@ -98,10 +98,29 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
+                "min": 0,
+                "max": 1
               },
               "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:dirt",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
             }
           ]
         },
@@ -159,24 +178,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:dirt",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1,
-              "add": false
-            },
-            {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "min": 0,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:rotten_flesh",
           "functions": [
             {
@@ -197,7 +198,13 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
         {
           "type": "minecraft:item",
           "name": "valleycraft:cloth",
@@ -211,16 +218,22 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "bonus_rolls": 0,
-      "entries": [
+        },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:purified_water"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:hardtack"
         },
         {
           "type": "minecraft:item",
@@ -277,7 +290,7 @@
         },
         {
           "condition": "minecraft:random_chance_with_looting",
-          "chance": 0.1,
+          "chance": 0.075,
           "looting_multiplier": 0.1
         }
       ]

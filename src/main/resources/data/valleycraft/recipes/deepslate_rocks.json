@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:deepslate_rock_item",
+    "count": 4
+  }
+}

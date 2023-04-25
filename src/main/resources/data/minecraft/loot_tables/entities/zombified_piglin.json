@@ -46,8 +46,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
+                "min": 0,
+                "max": 1
               },
               "add": false
             }
@@ -98,8 +98,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
+                "min": 0,
+                "max": 1
               },
               "add": false
             }
@@ -186,6 +186,14 @@
       "rolls": 1,
       "bonus_rolls": 0,
       "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:nether_wart_stir_fry"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:magma_creme_soup"
+        },
         {
           "type": "minecraft:item",
           "name": "valleycraft:gold_scrap",

@@ -46,8 +46,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
+                "min": 0,
+                "max": 1
               },
               "add": false
             }
@@ -98,10 +98,29 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
+                "min": 0,
+                "max": 1
               },
               "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:dirt",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
             }
           ]
         },
@@ -188,15 +207,41 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "valleycraft:cloth",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:emerald"
         },
         {
           "type": "minecraft:item",
-          "name": "valleycraft:pumpkin_slice"
+          "name": "minecraft:bread"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:hardtack"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:purified_water"
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:carrot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "valleycraft:pumpkin_slice"
         },
         {
           "type": "minecraft:item",

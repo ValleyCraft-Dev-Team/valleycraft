@@ -16,7 +16,7 @@ public class AncientFlowerAliasedBlock extends AliasedBlockItem {
     }
 
     public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {
-        tooltip.add( Text.translatable("item.valleycraft.dishes.tooltip_7"));
         tooltip.add( Text.translatable("item.valleycraft.dishes.tooltip"));
+        tooltip.add( Text.translatable("item.valleycraft.dishes.tooltip_7"));
     }
 }

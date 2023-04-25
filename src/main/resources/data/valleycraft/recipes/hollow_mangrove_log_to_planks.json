@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:hollow_mangrove_log"
+    }
+  ],
+  "result": {
+    "item": "minecraft:mangrove_planks",
+    "count": 1
+  }
+}

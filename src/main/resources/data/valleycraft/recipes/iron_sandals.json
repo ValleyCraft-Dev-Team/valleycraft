@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S S",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "valleycraft:leather_strap"
+    }
+  },
+  "result": {
+    "item": "valleycraft:iron_sandals",
+    "count": 1
+  }
+}

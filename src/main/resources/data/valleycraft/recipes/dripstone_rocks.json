@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "minecraft:dripstone"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:dripstone_rock_item",
+    "count": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:end_stone"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:endstone_rock_item",
+    "count": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:cobbled_shale"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:shale_rock_item",
+    "count": 4
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:erdcobblestone"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:erdcobblestone_rock_item",
+    "count": 4
+  }
+}

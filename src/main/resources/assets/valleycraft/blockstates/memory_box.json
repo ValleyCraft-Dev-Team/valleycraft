@@ -1,11 +1,5 @@
 {
   "variants": {
-    "facing=down,open=false": {
-      "model": "valleycraft:block/memory_box_closed"
-    },
-    "facing=down,open=true": {
-      "model": "valleycraft:block/memory_box_open"
-    },
     "facing=east,open=false": {
       "y": 90,
       "model": "valleycraft:block/memory_box_closed"
@@ -26,12 +20,6 @@
     },
     "facing=south,open=true": {
       "y": 180,
-      "model": "valleycraft:block/memory_box_open"
-    },
-    "facing=up,open=false": {
-      "model": "valleycraft:block/memory_box_closed"
-    },
-    "facing=up,open=true": {
       "model": "valleycraft:block/memory_box_open"
     },
     "facing=west,open=false": {

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#S#"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:rosegold_ingot"
+    },
+    "S": {
+      "item": "valleycraft:leather_strap"
+    }
+  },
+  "result": {
+    "item": "valleycraft:reinforced_rosegold_helmet",
+    "count": 1
+  }
+}

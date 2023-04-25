@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "valleycraft:raw_cave_maggot"
+    }
+  ],
+  "result": "valleycraft:cooked_cave_maggot"
+}

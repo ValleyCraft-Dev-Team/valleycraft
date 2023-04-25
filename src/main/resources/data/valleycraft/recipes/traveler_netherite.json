@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "valleycraft:knife_netherite"
+    "item": "valleycraft:traveler_diamond"
   },
   "addition": {
     "item": "minecraft:netherite_ingot"

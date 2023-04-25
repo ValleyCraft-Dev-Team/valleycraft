@@ -920,7 +920,7 @@
   "item.valleycraft.glow_berry_stew": "§6Glow Berry Stew",
   "item.valleycraft.glow_squid_soup": "§6Glow Squid Soup",
   "item.valleycraft.shivercap_stir_fry": "§6Shivercap Stir Fry",
-  "item.valleycraft.spicy_beef_risotto": "§6Spicy Beef Risotto",
+  "item.valleycraft.spicy_beef_risotto": "§6Spicy Steak Risotto",
   "item.valleycraft.sweet_chicken_risotto": "§6Sweet Chicken Tikka Masala",
 
   "item.valleycraft.milk": "Milk Bottle",
@@ -941,7 +941,7 @@
   "block.valleycraft.quicksand": "Searing Quicksand",
   "block.valleycraft.spider_egg": "Spider Egg",
 
-  "item.valleycraft.beef_stew": "Beef Stew",
+  "item.valleycraft.beef_stew": "Steak Stew",
 
   "item.valleycraft.maize": "Maize",
   "item.valleycraft.miners_lettuce": "Miner's Lettuce",
@@ -1774,7 +1774,7 @@
   "item.valleycraft.cooked_mossy_crab": "Cooked Mossy Crab",
   "item.valleycraft.cooked_tripe": "Cooked Spider Tripe",
   "item.valleycraft.cooked_beast_heart": "Cooked Heart",
-  "item.valleycraft.cooked_canid": "Cooked Canid",
+  "item.valleycraft.cooked_canid": "Cooked Canid Steak",
   "item.valleycraft.cooked_sea_urchin": "Cooked Sea Urchin",
   "item.valleycraft.cooked_clam": "Cooked Clam",
   "item.valleycraft.toast": "Toasted Bread Slice",

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:anthracite_block"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:anthracite",
+    "count": 9
+  }
+}

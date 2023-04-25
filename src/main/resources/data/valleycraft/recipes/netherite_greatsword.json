@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:netherite_sword"
+    "item": "valleycraft:diamond_greatsword"
   },
   "addition": {
     "item": "minecraft:netherite_ingot"

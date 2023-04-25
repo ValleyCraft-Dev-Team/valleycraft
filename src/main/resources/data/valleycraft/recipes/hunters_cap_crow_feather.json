@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:hunters_hat"
+  },
+  "addition": {
+    "item": "valleycraft:crows_feather"
+  },
+  "result": {
+    "item": "valleycraft:crow_feather"
+  }
+}

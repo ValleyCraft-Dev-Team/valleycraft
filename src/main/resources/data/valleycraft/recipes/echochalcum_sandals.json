@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:diamond_sandals"
+  },
+  "addition": {
+    "item": "valleycraft:echochalcum_ingot"
+  },
+  "result": {
+    "item": "valleycraft:echochalcum_sandals"
+  }
+}

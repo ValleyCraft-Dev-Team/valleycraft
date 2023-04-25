@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:erdcobblestone_rock_item"
+    }
+  },
+  "result": {
+    "item": "valleycraft:erdcobblestone_rocks",
+    "count": 1
+  }
+}

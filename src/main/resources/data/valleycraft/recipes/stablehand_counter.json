@@ -16,7 +16,7 @@
       "item": "minecraft:barrel"
     },
     "G": {
-      "tag": "c:water_holding_items"
+      "tag": "c:purified_water"
     },
     "C": {
       "item": "minecraft:book"

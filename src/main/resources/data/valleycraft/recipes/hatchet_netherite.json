@@ -1,19 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "##",
-    "#V"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:netherite_ingot"
-    },
-    "V": {
-      "item": "valleycraft:reinforced_handle"
-    }
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "valleycraft:hatchet_diamond"
+  },
+  "addition": {
+    "item": "minecraft:netherite_ingot"
   },
   "result": {
-    "item": "valleycraft:hatchet_netherite",
-    "count": 1
+    "item": "valleycraft:hatchet_netherite"
   }
 }

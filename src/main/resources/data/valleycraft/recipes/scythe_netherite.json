@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:netherite_hoe"
+    "item": "valleycraft:scythe_diamond"
   },
   "addition": {
     "item": "minecraft:netherite_ingot"

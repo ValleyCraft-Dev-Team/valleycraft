@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#F#"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:rock_item"
+    },
+    "F": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "valleycraft:dirt_rocks",
+    "count": 1
+  }
+}

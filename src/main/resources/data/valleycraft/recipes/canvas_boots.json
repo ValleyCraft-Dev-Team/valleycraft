@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:plant_fiber_canvas"
+    }
+  },
+  "result": {
+    "item": "valleycraft:canvas_boots",
+    "count": 1
+  }
+}

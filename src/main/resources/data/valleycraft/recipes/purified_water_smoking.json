@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "minecraft:potion",
+      "nbt": "{Potion:\"minecraft:water\"}"
+    }
+  ],
+  "result": "valleycraft:purified_water"
+}

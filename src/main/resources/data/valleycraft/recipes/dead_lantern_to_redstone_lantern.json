@@ -6,6 +6,9 @@
     },
     {
       "item": "minecraft:redstone_torch"
+    },
+    {
+      "item": "minecraft:lever"
     }
   ],
   "result": {

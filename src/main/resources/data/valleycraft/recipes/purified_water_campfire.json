@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": [
+    {
+      "item": "minecraft:potion",
+      "nbt": "{Potion:\"minecraft:water\"}"
+    }
+  ],
+  "result": "valleycraft:purified_water"
+}

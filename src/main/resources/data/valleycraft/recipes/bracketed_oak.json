@@ -1,18 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "#O#",
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:iron_nugget"
-    },
-    "O": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:oak_log"
+    },
+    {
+      "item": "minecraft:iron_ingot"
     }
-  },
+  ],
   "result": {
     "item": "valleycraft:oak_bracketed",
     "count": 1

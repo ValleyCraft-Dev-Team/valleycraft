@@ -225,7 +225,6 @@ class RenderLayers {
         put(ANTHRACITE_ORE_ROCKS, cullout);
         put(ENDSTONE_ROCKS, cullout);
         put(REDSTONE_CRYSTAL, cullout);
-        put(JELLYCAP, cullout);
         put(JELLYCAP, translucent);
         put(GNARLED_ROOTS, cullout);
 

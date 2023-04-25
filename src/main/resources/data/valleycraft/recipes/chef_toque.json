@@ -6,7 +6,7 @@
   ],
   "key": {
     "#": {
-      "tag": "c:string_spools"
+      "item": "valleycraft:string_spool_normal"
     },
     "V": {
       "item": "valleycraft:cloth"
