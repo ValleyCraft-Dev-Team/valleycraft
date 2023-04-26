@@ -20,7 +20,7 @@
     ]
   },
   "criteria": {
-    "related_items": {
+    "amethyst": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -41,7 +41,7 @@
   },
   "requirements": [
     [
-      "related_items"
+      "amethyst"
     ]
   ]
 }

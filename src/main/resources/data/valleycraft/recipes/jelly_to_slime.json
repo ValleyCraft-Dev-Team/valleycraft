@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:slime_blob"
+    },
+    {
+      "item": "minecraft:glow_lichen"
+    },
+    {
+      "item": "valleycraft:algae"
+    }
+  ],
+  "result": {
+    "item": "minecraft:slime_ball",
+    "count": 1
+  }
+}

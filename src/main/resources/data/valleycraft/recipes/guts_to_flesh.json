@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#V"
+  ],
+  "key": {
+    "#": {
+      "item": "valleycraft:monster_guts"
+    },
+    "V": {
+      "item": "valleycraft:salt"
+    }
+  },
+  "result": {
+    "item": "minecraft:rotten_flesh",
+    "count": 3
+  }
+}

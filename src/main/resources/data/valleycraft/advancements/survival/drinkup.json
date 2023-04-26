@@ -1,25 +1,25 @@
 {
-  "parent": "valleycraft:survival/nowthatsanaxe",
+  "parent": "valleycraft:survival/dontstarve",
   "display": {
     "title": {
-      "text": "Trapper"
+      "text": "Drink Up"
     },
     "icon": {
-      "item": "valleycraft:spike_trap"
+      "item": "valleycraft:purified_water"
     },
     "description": {
-      "text": "Craft a Spike Trap"
+      "text": "Purify water to drink or cook with."
     },
     "frame": "task"
   },
   "criteria": {
-    "spike_trap": {
+    "water": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "valleycraft:spike_trap"
+              "valleycraft:purified_water"
             ]
           }
         ]
@@ -28,7 +28,7 @@
   },
   "requirements": [
     [
-      "spike_trap"
+      "water"
     ]
   ]
 }
