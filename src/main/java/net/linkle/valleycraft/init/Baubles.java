@@ -47,7 +47,7 @@ public enum Baubles implements ItemEnum {
     //leather base
     LEATHER_NECKLACE(new TrinketEffectItem(itemSettings().group(CLOTHING).maxCount(1))),
     CRYSTALLIZED_HONEY_NECKLACE(new TrinketEffectItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.HEALTH_BOOST, 0)),
-    SCUTE_NECKLACE(new TrinketEffectItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.REGENERATION, 0)),
+    SCUTE_NECKLACE(new TrinketEffectItem(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.RESISTANCE, 0)),
     UNDYING_NECKLACE(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     GUARDIAN_SPIKE_TALISMAN(new Item(itemSettings().rarity(UNCOMMON).group(CLOTHING).maxCount(1))),
     DRAGON_TOOTH_KEEPSAKE(new TrinketEffectItem(itemSettings().rarity(RARE).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.STRENGTH, 0)),

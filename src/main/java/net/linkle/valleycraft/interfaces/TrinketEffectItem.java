@@ -31,10 +31,9 @@ public class TrinketEffectItem extends TrinketItem {
 	
 	@Override
 	public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-		var comp = TrinketsApi.getTrinketComponent(entity);
-		if (comp.isPresent() && comp.get().isEquipped(stack.getItem())) {
+		if (slot.inventory().getStack(slot.index()).getItem() == stack.getItem()) {
 			for (var effect : effects) {
-				entity.addStatusEffect(new StatusEffectInstance(effect.effect(), 10, effect.amplifier(), true, false, true));
+				entity.addStatusEffect(new StatusEffectInstance(effect.effect(), 60, effect.amplifier(), true, false, true));
 			}
 		}
 	}

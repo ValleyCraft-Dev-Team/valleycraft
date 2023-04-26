@@ -20,14 +20,14 @@ public class ModPlantBlock extends PlantBlock {
 
     /** The ground whitelist for placing plant. */
     protected Predicate<BlockState> groundList = PlantGroundPredicates.DIRT;
-
+    
+    public ModPlantBlock(Settings settings) {
+        this(PlantVoxelShapes.DEFAULT_PLANT_SHAPE, settings);
+    }
+    
     public ModPlantBlock(VoxelShape shape, Settings settings) {
         super(settings);
         this.shape = shape;
-    }
-
-    public ModPlantBlock(Settings settings) {
-        this(PlantVoxelShapes.DEFAULT_PLANT_SHAPE, settings);
     }
     
     /** Set ground whitelist for placing plant. */
