@@ -10,7 +10,18 @@
     "absolute": 0
   },
   "project_start_to_heightmap": "WORLD_SURFACE",
-  "use_expansion_hack": false,
+  "use_expansion_hack": true,
   "spawn_overrides": {
+    "monster": {
+      "bounding_box": "full",
+      "spawns": [
+        {
+          "type": "minecraft:pillager",
+          "maxCount": 1,
+          "minCount": 1,
+          "weight": 1
+        }
+      ]
+    }
   }
 }

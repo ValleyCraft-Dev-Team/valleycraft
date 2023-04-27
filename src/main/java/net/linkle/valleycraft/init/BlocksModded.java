@@ -148,8 +148,8 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     IRON_BRAZIER(new IronBrazierBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4f, 5f).luminance(lightFromLit(15)).nonOpaque().ticksRandomly()), itemSettings()),
     IRON_SOUL_BRAZIER(new IronBrazierBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4f, 5f).luminance(lightFromLit(10)).nonOpaque().ticksRandomly()), itemSettings()),
 
-    CAMPFIRE_POT(new CampfirePotBlock(Block.Settings.copy(Blocks.CAULDRON).strength(4f, 5f).luminance(lightFromLit(15)).nonOpaque().ticksRandomly()), itemSettings()),
-    SOUL_CAMPFIRE_POT(new CampfirePotBlock(Block.Settings.copy(Blocks.CAULDRON).strength(4f, 5f).luminance(lightFromLit(15)).nonOpaque().ticksRandomly()), itemSettings()),
+    CAMPFIRE_POT(new CampfirePotBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4f, 5f).luminance(s -> 15).nonOpaque().ticksRandomly()), itemSettings()),
+    SOUL_CAMPFIRE_POT(new CampfirePotBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4f, 5f).luminance(s -> 15).nonOpaque().ticksRandomly()), itemSettings()),
 
     BONFIRE(new BonfireBlock(Block.Settings.copy(Blocks.CAMPFIRE).luminance(s -> 15).nonOpaque().ticksRandomly()), itemSettings()),
 

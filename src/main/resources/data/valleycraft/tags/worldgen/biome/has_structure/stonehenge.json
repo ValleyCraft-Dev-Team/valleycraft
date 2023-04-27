@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "minecraft:grove",
-    "minecraft:jagged_peaks",
 
     "minecraft:old_growth_birch_forest",
     "minecraft:old_growth_pine_taiga",
@@ -10,7 +9,6 @@
 
     "minecraft:snowy_taiga",
     "minecraft:stony_peaks",
-    "minecraft:stony_shore",
     "minecraft:taiga",
     "minecraft:windswept_forest",
     "minecraft:windswept_gravelly_hills",

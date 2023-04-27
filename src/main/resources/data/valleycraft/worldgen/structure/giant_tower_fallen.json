@@ -5,11 +5,11 @@
   "max_distance_from_center": 80,
   "biomes": "#valleycraft:has_structure/overworld_land",
   "step": "surface_structures",
-  "terrain_adaptation": "beard_thin",
+  "terrain_adaptation": "none",
   "start_height": {
     "absolute": -5
   },
-  "project_start_to_heightmap": "WORLD_SURFACE",
+  "project_start_to_heightmap": "OCEAN_FLOOR",
   "use_expansion_hack": false,
   "spawn_overrides": {
   }

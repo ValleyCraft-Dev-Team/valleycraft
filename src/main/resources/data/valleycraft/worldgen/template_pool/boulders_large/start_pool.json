@@ -12,9 +12,45 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 10,
+      "element": {
+        "location": "valleycraft:environment/boulders/large/erd_cobble_5",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "valleycraft:environment/boulders/large/mossy_cobble_5",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
       "element": {
         "location": "valleycraft:environment/boulders/large/cobble_5_sword",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "valleycraft:environment/boulders/large/mossy_cobble_5_sword",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "valleycraft:environment/boulders/large/erd_cobble_5_sword",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -32,6 +68,24 @@
     {
       "weight": 10,
       "element": {
+        "location": "valleycraft:environment/boulders/large/erd_cobble_6",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "valleycraft:environment/boulders/large/mossy_cobble_6",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
         "location": "valleycraft:environment/boulders/large/cobble_7",
         "processors": "minecraft:empty",
         "projection": "rigid",
@@ -39,9 +93,18 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 10,
       "element": {
-        "location": "valleycraft:environment/boulders/large/cobble_7_sword",
+        "location": "valleycraft:environment/boulders/large/mossy_cobble_7",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "location": "valleycraft:environment/boulders/large/erd_cobble_7",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
