@@ -1,13 +1,16 @@
 package net.linkle.valleycraft.item;
 
 import java.util.Map;
+import java.util.function.Supplier;
 
 import org.jetbrains.annotations.Nullable;
 
 import net.linkle.valleycraft.block.RopeBlockExt;
+import net.linkle.valleycraft.enums.BlockEnum;
 import net.linkle.valleycraft.init.BlocksModded;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPlacementContext;
@@ -16,19 +19,19 @@ import net.minecraft.util.math.Direction;
 
 public class RopeItem extends AliasedBlockItem {
 
-    protected final Block verticalBlock;
-    protected final Block horizontalBlock;
+    protected final Supplier<BlockEnum> verticalBlock;
+    protected final Supplier<BlockEnum> horizontalBlock;
     
     public RopeItem(Settings settings) {
-        super(BlocksModded.ROPE_VERTICAL.block, settings);
-        this.verticalBlock = BlocksModded.ROPE_VERTICAL.block;
-        this.horizontalBlock = BlocksModded.ROPE_HORIZONTAL.block;
+        super(Blocks.AIR, settings);
+        this.verticalBlock = () -> BlocksModded.ROPE_VERTICAL;
+        this.horizontalBlock = () -> BlocksModded.ROPE_HORIZONTAL;
     }
     
     @Override
     @Nullable
     protected BlockState getPlacementState(ItemPlacementContext context) {
-        var block = context.getSide().getAxis().isVertical() ? verticalBlock : horizontalBlock;
+        var block = context.getSide().getAxis().isVertical() ? verticalBlock.get().asBlock() : horizontalBlock.get().asBlock();
         var state = block.getPlacementState(context);
         return state != null && this.canPlace(context, state) ? state : null;
     }
@@ -61,8 +64,13 @@ public class RopeItem extends AliasedBlockItem {
     }
     
     @Override
+    public Block getBlock() {
+    	return verticalBlock.get().asBlock();
+    }
+    
+    @Override
     public void appendBlocks(Map<Block, Item> map, Item item) {
-        super.appendBlocks(map, item);
-        map.put(horizontalBlock, item);
+    	map.put(verticalBlock.get().asBlock(), item);
+        map.put(horizontalBlock.get().asBlock(), item);
     }
 }

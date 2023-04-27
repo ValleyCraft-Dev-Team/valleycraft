@@ -6,18 +6,20 @@ import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
 import java.util.Iterator;
 
-public class CattailsBlock extends TallPlantBlock implements FluidFillable {
+public class CattailsBlock extends TallPlantBlock implements FluidFillable, Fertilizable {
     
     public CattailsBlock() {
         this(Settings.of(Material.UNDERWATER_PLANT).noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS).offsetType(AbstractBlock.OffsetType.XZ).ticksRandomly());
@@ -111,4 +113,19 @@ public class CattailsBlock extends TallPlantBlock implements FluidFillable {
         }
 
     }
+
+	@Override
+	public boolean isFertilizable(BlockView view, BlockPos pos, BlockState state, boolean bool) {
+		return true;
+	}
+
+	@Override
+	public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
+		return true;
+	}
+
+	@Override
+	public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
+		Block.dropStack(world, pos, new ItemStack(this));
+	}
 }

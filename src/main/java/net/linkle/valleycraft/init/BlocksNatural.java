@@ -96,7 +96,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     SHIVERCAP(new ShivercapBlock(), itemSettings().group(INGREDIENTS)),
     STALWART_SHROOM(new StalwartBlock(), itemSettings().group(INGREDIENTS)),
 
-    SHORT_GRASS(new ModPlantBlock(SHORT_GRASS_SHAPE, OFFSET_REPLACEABLE), itemSettings()),
+    SHORT_GRASS(new GrowablePlantBlock(OFFSET_REPLACEABLE, new Identifier("grass")), itemSettings()),
     SNOWFLOWER(new ModFlowerBlock(OFFSET_FLOWER), itemSettings()),
     SPROUT(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
     WEEPING_GHOST_WILLOW(new WeepingGhostWillowBlock(), itemSettings()),
@@ -133,9 +133,9 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     MIMIC_FLOWER(new MimicFlowerBlock(MimicFlowerBlock.settings(0).ticksRandomly()), itemSettings()),
     //CAVE_ROOTS(new HangingPlant(Block.Settings.copy(Blocks.HANGING_ROOTS)), itemSettings()),
     DESERT_SHRUB(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
-    BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    BUSH(new GrowablePlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER, "large_bush"), itemSettings()),
     LARGE_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, FLOWER), itemSettings()),
-    LUSH_BUSH(new ModPlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER), itemSettings()),
+    LUSH_BUSH(new GrowablePlantBlock(DEFAULT_PLANT_SHAPE, OFFSET_FLOWER, "tall_living_bush"), itemSettings()),
 
     CATTAILS(new CattailsBlock(), itemSettings(), TallBlockItem::new),
     RUSHES(new RushBlock(Block.Settings.copy(Blocks.SUGAR_CANE).nonOpaque().breakInstantly().noCollision()), itemSettings()),
