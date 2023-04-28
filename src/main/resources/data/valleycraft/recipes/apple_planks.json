@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "valleycraft:apple_log"
+    }
+  ],
+  "result": {
+    "item": "valleycraft:apple_planks",
+    "count": 4
+  }
+}
