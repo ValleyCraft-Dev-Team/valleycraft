@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#-#",
+    "#-3"
+  ],
+  "key": {
+    "-": {
+      "item": "minecraft:stick"
+    },
+    "#":{
+       "item":"valleycraft:mamon_planks"
+    }
+  },
+  "result": {
+    "item": "valleycraft:mamon_fence",
+    "count": 1
+  }
+}
