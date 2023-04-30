@@ -32,7 +32,9 @@ class RenderLayers {
         put(WATTLE_DOOR, cullout);
         put(WATTLE_TRAPDOOR, cullout);
         put(GLASS_DOOR, cullout);
+        put(GLASS_TRAPDOOR, cullout);
         put(TINTED_GLASS_DOOR, translucent);
+        put(TINTED_GLASS_TRAPDOOR, translucent);
         put(PRIMSTEEL_DOOR, cullout);
         put(PRIMSTEEL_TRAPDOOR, cullout);
         put(SCULK_BLOSSOM, cullout);

@@ -26,6 +26,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
@@ -83,7 +84,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.ENCHANTING_TABLE)), itemSettings()),
     CLOTHED_ORNATE_OBSIDIAN_TABLE(new OrnateTableBlock(Block.Settings.copy(Blocks.ENCHANTING_TABLE)), itemSettings()),
     LOG_PILE(new LogPile(Block.Settings.of(Material.WOOD).strength(2.0f).sounds(BlockSoundGroup.WOOD).nonOpaque()), itemSettings()),
-
+    
     BOOK_STACK_0(new BookStackBlock(BLOCK_SHAPE_0), itemSettings()),
     BOOK_STACK_1(new BookStackBlock(BLOCK_SHAPE_1), itemSettings()),
     BOOK_STACK_2(new BookStackBlock(BLOCK_SHAPE_2), itemSettings()),
@@ -109,22 +110,22 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     WATTLE_TABLE(new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     WATTLE_TABLE_CLOTHE(new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
 
-    BLACK_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    BLUE_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    BROWN_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    CYAN_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    GRAY_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    GREEN_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    LIGHT_BLUE_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    LIGHT_GRAY_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    LIME_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    MAGENTA_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    ORANGE_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    PURPLE_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    PINK_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    YELLOW_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    WHITE_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    RED_CUSHION(new CushionBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    BLACK_CUSHION(new CushionBlock(DyeColor.BLACK), itemSettings()),
+    BLUE_CUSHION(new CushionBlock(DyeColor.BLUE), itemSettings()),
+    BROWN_CUSHION(new CushionBlock(DyeColor.BROWN), itemSettings()),
+    CYAN_CUSHION(new CushionBlock(DyeColor.CYAN), itemSettings()),
+    GRAY_CUSHION(new CushionBlock(DyeColor.GRAY), itemSettings()),
+    GREEN_CUSHION(new CushionBlock(DyeColor.GREEN), itemSettings()),
+    LIGHT_BLUE_CUSHION(new CushionBlock(DyeColor.LIGHT_BLUE), itemSettings()),
+    LIGHT_GRAY_CUSHION(new CushionBlock(DyeColor.LIGHT_GRAY), itemSettings()),
+    LIME_CUSHION(new CushionBlock(DyeColor.LIME), itemSettings()),
+    MAGENTA_CUSHION(new CushionBlock(DyeColor.MAGENTA), itemSettings()),
+    ORANGE_CUSHION(new CushionBlock(DyeColor.ORANGE), itemSettings()),
+    PURPLE_CUSHION(new CushionBlock(DyeColor.PURPLE), itemSettings()),
+    PINK_CUSHION(new CushionBlock(DyeColor.PINK), itemSettings()),
+    YELLOW_CUSHION(new CushionBlock(DyeColor.YELLOW), itemSettings()),
+    WHITE_CUSHION(new CushionBlock(DyeColor.WHITE), itemSettings()),
+    RED_CUSHION(new CushionBlock(DyeColor.RED), itemSettings()),
 
     DIRT_ROAD(new Block(Block.Settings.copy(Blocks.COARSE_DIRT)), itemSettings()),
 
@@ -145,11 +146,11 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
 
     BRAZIER(new BrazierBlock(15, 2), itemSettings()),
     SOUL_BRAZIER(new BrazierBlock(10, 2), itemSettings()),
-    IRON_BRAZIER(new IronBrazierBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4f, 5f).luminance(lightFromLit(15)).nonOpaque().ticksRandomly()), itemSettings()),
-    IRON_SOUL_BRAZIER(new IronBrazierBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4f, 5f).luminance(lightFromLit(10)).nonOpaque().ticksRandomly()), itemSettings()),
+    IRON_BRAZIER(new IronBrazierBlock(true, 1, Block.Settings.copy(Blocks.IRON_BLOCK).strength(4f, 5f).luminance(lightFromLit(15)).nonOpaque().ticksRandomly()), itemSettings()),
+    IRON_SOUL_BRAZIER(new IronBrazierBlock(false, 2, Block.Settings.copy(Blocks.IRON_BLOCK).strength(4f, 5f).luminance(lightFromLit(10)).nonOpaque().ticksRandomly()), itemSettings()),
 
-    CAMPFIRE_POT(new CampfirePotBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4f, 5f).luminance(s -> 15).nonOpaque().ticksRandomly()), itemSettings()),
-    SOUL_CAMPFIRE_POT(new CampfirePotBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4f, 5f).luminance(s -> 15).nonOpaque().ticksRandomly()), itemSettings()),
+    CAMPFIRE_POT(new CampfirePotBlock(true, 1, Block.Settings.copy(Blocks.CAULDRON).luminance(lightFromLit(15)).ticksRandomly()), itemSettings()),
+    SOUL_CAMPFIRE_POT(new CampfirePotBlock(false, 2, Block.Settings.copy(Blocks.CAULDRON).luminance(lightFromLit(10)).ticksRandomly()), itemSettings()),
 
     BONFIRE(new BonfireBlock(Block.Settings.copy(Blocks.CAMPFIRE).luminance(s -> 15).nonOpaque().ticksRandomly()), itemSettings()),
 
@@ -279,9 +280,11 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     TIGHTLY_WEAVED_THATCH_BLOCK(new Block(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
     TIGHTLY_WEAVED_THATCH_STAIRS(new StairsBlock(TIGHTLY_WEAVED_THATCH_BLOCK.getState(), Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
     TIGHTLY_WEAVED_THATCH_SLAB(new SlabBlock(Block.Settings.copy(Blocks.HAY_BLOCK)), itemSettings()),
-
-    GLASS_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).hardness(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque()), itemSettings()),
-    TINTED_GLASS_DOOR(new DoorBlock(Block.Settings.copy(Blocks.OAK_DOOR).hardness(0.3f).sounds(BlockSoundGroup.GLASS)), itemSettings()),
+    
+    GLASS_DOOR(new DoorBlock(Block.Settings.of(Material.GLASS, Blocks.GLASS.getDefaultMapColor()).hardness(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque()), itemSettings()),
+    GLASS_TRAPDOOR(new TrapdoorBlock(Block.Settings.of(Material.GLASS, Blocks.GLASS.getDefaultMapColor()).hardness(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque()), itemSettings()),
+    TINTED_GLASS_DOOR(new DoorBlock(Block.Settings.of(Material.GLASS, Blocks.TINTED_GLASS.getDefaultMapColor()).hardness(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque()), itemSettings()),
+    TINTED_GLASS_TRAPDOOR(new TrapdoorBlock(Block.Settings.of(Material.GLASS, Blocks.TINTED_GLASS.getDefaultMapColor()).hardness(0.3f).sounds(BlockSoundGroup.GLASS).nonOpaque()), itemSettings()),
 
     REDSTONE_LANTERN(new RedstoneLanternBlock(), itemSettings()),
     REDSTONE_LAMPTERN(new RedstoneLampternBlock(), itemSettings()),

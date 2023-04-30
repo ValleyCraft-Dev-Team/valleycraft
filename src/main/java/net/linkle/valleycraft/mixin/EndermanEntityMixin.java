@@ -12,11 +12,11 @@ import net.minecraft.entity.player.PlayerEntity;
 
 @Mixin(EndermanEntity.class)
 abstract class EndermanEntityMixin {
-	@Inject(method = "isPlayerStaring", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "isPlayerStaring", at = @At("HEAD"), cancellable = true)
     void isPlayerStaring(PlayerEntity player, CallbackInfoReturnable<Boolean> info) {
-		var comp = TrinketsApi.getTrinketComponent(player);
-		if (comp.isPresent() && comp.get().isEquipped(Baubles.ENDER_DRAGON_TALISMAN.item)) {
-			info.setReturnValue(false);
-		}
+        var comp = TrinketsApi.getTrinketComponent(player);
+        if (comp.isPresent() && comp.get().isEquipped(Baubles.ENDER_DRAGON_TALISMAN.item)) {
+            info.setReturnValue(false);
+        }
     }
 }

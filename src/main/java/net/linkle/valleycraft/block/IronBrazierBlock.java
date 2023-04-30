@@ -8,6 +8,7 @@ import net.linkle.valleycraft.util.Util;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
@@ -45,8 +46,13 @@ public class IronBrazierBlock extends BlockWithWater {
     protected static final VoxelShape BOTTOM_SHAPE;
     protected static final VoxelShape FULL_SHAPE;    public static final BooleanProperty LIT = Properties.LIT;
     
-    public IronBrazierBlock(Settings settings) {
+    private final boolean emitsParticles;
+    private final int fireDamage;
+    
+    public IronBrazierBlock(boolean emitsParticles, int fireDamage, Settings settings) {
         super(settings);
+        this.emitsParticles = emitsParticles;
+        this.fireDamage = fireDamage;
     }
     
     @Override

@@ -638,6 +638,10 @@ class ValleyModelGenerator extends FabricModelProvider {
         generator.registerDoor(GLASS_DOOR.block);
         generator.registerDoor(PRIMSTEEL_DOOR.block);
         generator.registerDoor(TINTED_GLASS_DOOR.block);
+        
+        // trapdoors
+        generator.registerOrientableTrapdoor(GLASS_TRAPDOOR.block);
+        generator.registerOrientableTrapdoor(TINTED_GLASS_TRAPDOOR.block);
     }
 
     @Override
