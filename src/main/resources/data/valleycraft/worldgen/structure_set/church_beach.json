@@ -9,9 +9,9 @@
     // Make sure this is unique and does not match any other structure set's salt
     "salt": 1666000074,
 
-    "spacing": 100,
+    "spacing": 90,
 
-    "separation": 70,
+    "separation": 30,
 
     "type": "minecraft:random_spread"
   }
