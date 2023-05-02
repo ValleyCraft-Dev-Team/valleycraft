@@ -68,10 +68,7 @@ dependencies {
 	
 	// Patchouli mod for books.
 	modImplementation "vazkii.patchouli:Patchouli:${minecraft_version}-${project.patchouli_version}"
-	
-	// TerraBlender Biome API.
-	modImplementation "com.github.glitchfiend:TerraBlender-fabric:${minecraft_version}-${terrablender_version}"
-	
+
 	// Trinkets API.
 	modImplementation "dev.emi:trinkets:${trinkets_version}"
 	

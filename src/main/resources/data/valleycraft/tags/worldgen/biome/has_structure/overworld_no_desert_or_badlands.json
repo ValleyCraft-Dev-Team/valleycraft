@@ -44,8 +44,6 @@
     "minecraft:frozen_ocean",
     "minecraft:lukewarm_ocean",
     "minecraft:ocean",
-    "minecraft:warm_ocean",
-
-    "valleycraft:amber_dark_forest"
+    "minecraft:warm_ocean"
   ]
 }

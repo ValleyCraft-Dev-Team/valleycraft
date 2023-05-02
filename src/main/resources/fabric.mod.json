@@ -26,9 +26,6 @@
     "client": [
       "net.linkle.valleycraft.client.Client"
     ],
-    "terrablender": [
-      "net.linkle.valleycraft.TerraBlender"
-    ],
     "fabric-datagen": [
       "net.linkle.valleycraft.datagen.ModDatagen"
     ]
@@ -49,7 +46,6 @@
   "depends": {
     "fabricloader": ">=0.14.9",
     "patchouli": ">=1.19.2-76-FABRIC",
-    "terrablender": ">=2.0.1.127",
     "trinkets": ">=3.4.1",
     "fabric": "*",
     "minecraft": "~1.19",

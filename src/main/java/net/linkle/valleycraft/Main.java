@@ -43,7 +43,6 @@ public class Main implements ModInitializer {
 		ModFoliagePlacerType.initialize();
 		TreeConfigs.initialize();
 		VegetationPlaced.initialize();
-		Biomes.initialize();
 		//GensModded.initialize();
 		
 		Particles.initialize();

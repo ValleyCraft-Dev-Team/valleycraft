@@ -11,7 +11,7 @@
 
     "spacing": 90,
 
-    "separation": 60,
+    "separation": 30,
 
     "type": "minecraft:random_spread"
   }
