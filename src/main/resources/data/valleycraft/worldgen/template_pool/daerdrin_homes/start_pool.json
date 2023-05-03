@@ -1,0 +1,24 @@
+{
+ "name": "valleycraft:daerdrin_homes/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "valleycraft:underground/daerdrin_lush_caves/daerdrin_house_medium_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "valleycraft:underground/daerdrin_lush_caves/daerdrin_house_small_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

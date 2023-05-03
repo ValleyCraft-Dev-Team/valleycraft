@@ -232,7 +232,7 @@ class RenderLayers {
         put(ENDSTONE_ROCKS, cullout);
         put(REDSTONE_CRYSTAL, cullout);
         put(JELLYCAP, translucent);
-        put(GNARLED_ROOTS, cullout);
+        //put(GNARLED_ROOTS, cullout);
 
         put(APPLE_LEAVES, cullout);
         put(APPLE_LEAVES_EMPTY, cullout);

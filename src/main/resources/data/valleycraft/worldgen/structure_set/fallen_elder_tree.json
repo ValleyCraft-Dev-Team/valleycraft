@@ -9,7 +9,7 @@
     // Make sure this is unique and does not match any other structure set's salt
     "salt": 1666060008,
 
-    "spacing": 50,
+    "spacing": 40,
 
     "separation": 30,
 

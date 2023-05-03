@@ -214,7 +214,7 @@ public enum BlocksNatural implements ItemEnum, BlockEnum {
     ARID_VINES_PLANT(new VineBodyBlock()),
     //CAVE_MOSS(new CaveMossBlock(), itemSettings()),
     //CRYSTAL_CAVE_MOSS(new CaveMossBlock(), itemSettings()),
-    GNARLED_ROOTS(new GlowLichenBlock(Block.Settings.copy(Blocks.GLOW_LICHEN).luminance(s -> 0)), itemSettings()),
+    //GNARLED_ROOTS(new GlowLichenBlock(Block.Settings.copy(Blocks.GLOW_LICHEN).luminance(s -> 0)), itemSettings()),
 
     SLUDGE_FLUID(new SludgeFluidBlock(Fluids.SLUDGE_STILL.flowable())),
 
