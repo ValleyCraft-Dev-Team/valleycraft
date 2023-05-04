@@ -11,6 +11,7 @@ import net.linkle.valleycraft.enums.BlockEnum;
 import net.linkle.valleycraft.util.MoreBiomeSelectors;
 import net.linkle.valleycraft.util.Reg;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.util.collection.DataPool;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.biome.BiomeKeys;
@@ -39,7 +40,7 @@ public class GensModded {
         var vegetal = GenerationStep.Feature.VEGETAL_DECORATION;
         
         placed = registerPlant(createConfig("black_dahlia", 60, BlocksNatural.BLACK_DAHLIA), 20);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FLOWER_FOREST), vegetal, placed.getKey().get());
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.FLOWER_FORESTS), vegetal, placed.getKey().get());
         
         placed = registerPlant(createConfig("flowering_cactus", 60, BlocksNatural.FLOWERING_CACTUS), 20);
         BiomeModifications.addFeature(MoreBiomeSelectors.tag(ConventionalBiomeTags.DESERT), vegetal, placed.getKey().get());
@@ -60,7 +61,7 @@ public class GensModded {
         BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.JUNGLE), vegetal, placed.getKey().get());
         
         placed = registerPlant(createConfig("panflowers", 60, BlocksNatural.PANFLOWERS), 20);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FLOWER_FOREST), vegetal, placed.getKey().get());
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.FLOWER_FORESTS), vegetal, placed.getKey().get());
         
         placed = registerPlant(createConfig("clover", 60, BlocksNatural.CLOVER), 20);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_PINE_TAIGA, BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA), vegetal, placed.getKey().get());
@@ -70,6 +71,96 @@ public class GensModded {
         
         placed = registerPlant(createConfig("lavender", 60, BlocksNatural.LAVENDER, BlocksNatural.TALL_LAVENDER), 20);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FLOWER_FOREST, BiomeKeys.MANGROVE_SWAMP), vegetal, placed.getKey().get());
+	
+        placed = registerPlant(createConfig("mossweed", 60, BlocksNatural.MOSS_SPROUTLET), 20);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("orange_beauty", 60, BlocksNatural.ORANGE_BEAUTY), 20);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ConventionalBiomeTags.JUNGLE), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("tulips_forests", 60, BlocksNatural.BLACK_TULIP, BlocksNatural.LIGHT_BLUE_TULIP, BlocksNatural.PURPLE_TULIP, BlocksNatural.YELLOW_TULIP), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.FLOWER_FORESTS), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("tulips_plains", 60, BlocksNatural.BLACK_TULIP, BlocksNatural.LIGHT_BLUE_TULIP, BlocksNatural.PURPLE_TULIP, BlocksNatural.YELLOW_TULIP), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.PLAINS), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("bracken_fern", 60, BlocksNatural.BIG_FERN), 20);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ConventionalBiomeTags.JUNGLE), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("lily_of_the_mountains", 60, BlocksNatural.LILY_OF_THE_MOUNTAINS), 20);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ConventionalBiomeTags.MOUNTAIN), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("lily_of_the_blight", 60, BlocksNatural.POISON_BLOSSOM), 20);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("lily_of_the_sea", 60, BlocksNatural.GODDESS_LILY), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.OCEAN, ConventionalBiomeTags.BEACH), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("knapweed_forest", 60, BlocksNatural.KNAPWEED), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.FOREST, ConventionalBiomeTags.FLOWER_FORESTS), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("lupine", 60, BlocksNatural.PINK_LUPINE, BlocksNatural.RED_LUPINE, BlocksNatural.YELLOW_LUPINE), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.TAIGA).or(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA)), vegetal, placed.getKey().get());
+	
+        placed = registerPlant(createConfig("poppy_forest", 60, BlocksNatural.ORANGE_POPPY, BlocksNatural.YELLOW_POPPY, BlocksNatural.WHITE_POPPY), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.FOREST, ConventionalBiomeTags.FLOWER_FORESTS), vegetal, placed.getKey().get());
+	
+        placed = registerPlant(createConfig("poppy_plain", 60, BlocksNatural.ORANGE_POPPY, BlocksNatural.YELLOW_POPPY, BlocksNatural.WHITE_POPPY), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.PLAINS), vegetal, placed.getKey().get());
+	
+        placed = registerPlant(createConfig("lush_creosote_bush", 60, BlocksNatural.LUSH_BUSH), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.SAVANNA, ConventionalBiomeTags.BADLANDS), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("lush_creosote_bush_tall", 60, BlocksNatural.TALL_LIVING_BUSH), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.SAVANNA, ConventionalBiomeTags.BADLANDS), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("lush_creosote_bush_tall", 60, BlocksNatural.TALL_LIVING_BUSH), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.SAVANNA, ConventionalBiomeTags.BADLANDS), vegetal, placed.getKey().get());
+	
+        placed = registerPlant(createConfig("tall_cornflower", 60, BlocksNatural.TALL_CORNFLOWER), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.FOREST, ConventionalBiomeTags.FLOWER_FORESTS, ConventionalBiomeTags.PLAINS), vegetal, placed.getKey().get());
+	
+        placed = registerPlant(createConfig("tall_oxeye_daisy", 60, BlocksNatural.TALL_OXEYE_DAISY), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.FOREST, ConventionalBiomeTags.FLOWER_FORESTS, ConventionalBiomeTags.PLAINS), vegetal, placed.getKey().get());
+	
+        placed = registerPlant(createConfig("tall_allium", 60, BlocksNatural.TALL_ALLIUM), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.FLOWER_FORESTS), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("snowflower", 60, BlocksNatural.SNOWFLOWER), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.SNOWY, ConventionalBiomeTags.SNOWY_PLAINS), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("meadow_flowers", 60, BlocksNatural.MEADOW_FLOWERS), 20);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.MEADOW, BiomeKeys.BIRCH_FOREST, BiomeKeys.OLD_GROWTH_BIRCH_FOREST), vegetal, placed.getKey().get());
+    
+        placed = registerPlant(createConfig("wild_herbs", 60, BlocksNatural.WILD_HERBS), 20);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("wild_rice", 60, BlocksNatural.WILD_RICE), 20);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ConventionalBiomeTags.JUNGLE), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("wild_spicy_pepper", 60, BlocksNatural.WILD_FIRE_PEPPER), 20);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ConventionalBiomeTags.BADLANDS), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("wild_onion", 60, BlocksNatural.WILD_ONION), 20);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ConventionalBiomeTags.FOREST), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("wild_onion", 60, BlocksNatural.WILD_ONION), 20);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ConventionalBiomeTags.FOREST), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("wild_wheat", 60, BlocksNatural.WILD_WHEAT), 20);
+        BiomeModifications.addFeature(BiomeSelectors.tag(ConventionalBiomeTags.PLAINS), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("wild_miners_lettuce", 60, BlocksNatural.WILD_MINERS_LETTUCE), 20);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.OLD_GROWTH_BIRCH_FOREST, BiomeKeys.OLD_GROWTH_PINE_TAIGA, BiomeKeys.OLD_GROWTH_SPRUCE_TAIGA), vegetal, placed.getKey().get());
+	
+        placed = registerPlant(createConfig("wild_beet", 60, BlocksNatural.WILD_BEET), 20);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DARK_FOREST), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("wild_carrot", 60, BlocksNatural.WILD_CARROT), 20);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.BIRCH_FOREST), vegetal, placed.getKey().get());
+        
+        placed = registerPlant(createConfig("wild_potato", 60, BlocksNatural.WILD_POTATO), 20);
+        BiomeModifications.addFeature(MoreBiomeSelectors.includeByTag(ConventionalBiomeTags.MOUNTAIN), vegetal, placed.getKey().get());
 	}
 	
 	/** Create a random patch feature config. */
