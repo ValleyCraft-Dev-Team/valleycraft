@@ -10,6 +10,7 @@ import net.linkle.valleycraft.gen.feature.VegetationPlaced;
 import net.linkle.valleycraft.gen.foliage.ModFoliagePlacerType;
 import net.linkle.valleycraft.init.*;
 import net.linkle.valleycraft.network.ServerNetwork;
+import net.linkle.valleycraft.tags.ModBlockTags;
 import net.linkle.valleycraft.tags.ModFluidTags;
 import net.linkle.valleycraft.villager.CustomTradeRegistry;
 import net.linkle.valleycraft.villager.ModVillagers;
@@ -50,6 +51,7 @@ public class Main implements ModInitializer {
 		Music.initialize();
 			//currently unused, ancient disk is being added to Legendarium instead probably
 		Entities.initialize();
+		ModBlockTags.initialize();
 		ModFluidTags.initialize();
 		ModLootTables.initialize();
 		Events.initialize();

@@ -16,6 +16,15 @@ public class MoreBiomeSelectors {
 	public static Predicate<BiomeSelectionContext> tag(TagKey<Biome> tag) {
 		return BiomeSelectors.tag(tag);
 	}
+    
+    @SafeVarargs
+    public static Predicate<BiomeSelectionContext> allMatchByTag(TagKey<Biome>... keys) {
+        return allMatchByTag(Set.of(keys));
+    }
+    
+    public static Predicate<BiomeSelectionContext> allMatchByTag(Collection<TagKey<Biome>> keys) {
+        return context -> keys.stream().allMatch(context::hasTag);
+    }
 	
 	/** {@link BiomeSelectors#tag(TagKey)} */
 	public static Predicate<BiomeSelectionContext> includeByTag(TagKey<Biome> tag) {
@@ -30,4 +39,13 @@ public class MoreBiomeSelectors {
 	public static Predicate<BiomeSelectionContext> includeByTag(Collection<TagKey<Biome>> keys) {
 		return context -> keys.stream().anyMatch(context::hasTag);
 	}
+	
+    @SafeVarargs
+    public static Predicate<BiomeSelectionContext> excludeByTag(TagKey<Biome>... keys) {
+        return excludeByTag(Set.of(keys));
+    }
+    
+    public static Predicate<BiomeSelectionContext> excludeByTag(Collection<TagKey<Biome>> keys) {
+        return context -> keys.stream().noneMatch(context::hasTag);
+    }
 }
