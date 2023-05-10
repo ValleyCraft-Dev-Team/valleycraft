@@ -44,14 +44,14 @@ import net.minecraft.world.gen.stateprovider.WeightedBlockStateProvider;
 
 public class GensModded {
 
-	/** Currently disabled in {@link Main} */
-	public static void initialize() {
-		plants();
-		blobs();
-	}
-	
-	private static void plants() {
-	    RegistryEntry<PlacedFeature> placed;
+    /** Currently disabled in {@link Main} */
+    public static void initialize() {
+        plants();
+        blobs();
+    }
+
+    private static void plants() {
+        RegistryEntry<PlacedFeature> placed;
         RegistryEntry<ConfiguredFeature<?, ?>> config;
         List<PlacementModifier> list;
         var vegetal = GenerationStep.Feature.VEGETAL_DECORATION;

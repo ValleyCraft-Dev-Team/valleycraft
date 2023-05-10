@@ -23,7 +23,7 @@ public class LootTableHelper {
 
     /** Create and append a new pool. */
     public static void appendLoot(Identifier lootID, LootBuilder loot) {
-        APPEND_MAP.put(lootID, loot.build());
+        APPEND_MAP.put(lootID, loot);
     }
 
     /** Inject pool with new entry. */
