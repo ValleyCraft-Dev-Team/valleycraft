@@ -110,22 +110,22 @@ public class LootBuilder extends LootPool.Builder {
 
     @Override
     public LootBuilder rolls(LootNumberProvider range) {
-        rolls(range);
+        super.rolls(range);
         return this;
     }
 
     public LootBuilder rolls(float value) {
-        rolls(ConstantLootNumberProvider.create(value));
+        super.rolls(ConstantLootNumberProvider.create(value));
         return this;
     }
 
     public LootBuilder rolls(float min, float max) {
-        rolls(UniformLootNumberProvider.create(min, max));
+        super.rolls(UniformLootNumberProvider.create(min, max));
         return this;
     }
 
     public LootBuilder with(ItemConvertible item) {
-        with(ItemEntry.builder(item));
+        super.with(ItemEntry.builder(item));
         return this;
     }
 

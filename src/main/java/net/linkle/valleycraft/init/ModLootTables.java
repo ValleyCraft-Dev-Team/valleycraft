@@ -3,17 +3,15 @@ package net.linkle.valleycraft.init;
 import net.linkle.valleycraft.Main;
 import net.linkle.valleycraft.util.loot.LootBuilder;
 import net.linkle.valleycraft.util.loot.LootTableHelper;
-import net.linkle.valleycraft.util.loot.LootUtils;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.server.BlockLootTableGenerator;
 import net.minecraft.data.server.ChestLootTableGenerator;
 import net.minecraft.data.server.EntityLootTableGenerator;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Items;
-import net.minecraft.loot.LootTables;
 import net.minecraft.loot.condition.EntityPropertiesLootCondition;
-import net.minecraft.loot.condition.MatchToolLootCondition;
+import net.minecraft.loot.condition.KilledByPlayerLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
+import net.minecraft.loot.condition.RandomChanceWithLootingLootCondition;
 import net.minecraft.loot.context.LootContext.EntityTarget;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.FurnaceSmeltLootFunction;
@@ -138,7 +136,6 @@ public class ModLootTables {
         LootTableHelper.appendLoot(EntityType.COW.getLootTableId(), builder);
         
         builder = LootBuilder.create().rolls(1);
-        builder = LootBuilder.create().rolls(1);
         builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(10)
             .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))            
         );
@@ -169,7 +166,7 @@ public class ModLootTables {
         );
         LootTableHelper.appendLoot(EntityType.DONKEY.getLootTableId(), builder);
         
-        // drowned (still WIP)
+        // drowned
         builder = LootBuilder.create().rolls(1);
         builder.with(ItemEntry.builder(ItemsModded.LIFE_GEM)
             .conditionally(RandomChanceLootCondition.builder(0.25f))
@@ -199,7 +196,147 @@ public class ModLootTables {
         builder.with(ItemEntry.builder(Items.BONE).weight(5));
         builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(8));
         LootTableHelper.appendLoot(EntityType.DROWNED.getLootTableId(), builder);
-
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.CLOTH)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
+        );
+        builder.with(FoodRegular.HARDTACK);
+        builder.with(FoodIngredients.ONION);
+        builder.conditionally(KilledByPlayerLootCondition.builder());
+        builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.025f, 0.01f));
+        LootTableHelper.appendLoot(EntityType.DROWNED.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(BlocksNatural.HEAD_DROWNED_STEVE);
+        builder.conditionally(KilledByPlayerLootCondition.builder());
+        builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.075f, 0.01f));
+        LootTableHelper.appendLoot(EntityType.DROWNED.getLootTableId(), builder);
+        
+        // elder guardian
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.LIFE_GEM)
+            .conditionally(RandomChanceLootCondition.builder(0.25f))
+        );
+        LootTableHelper.appendLoot(EntityType.ELDER_GUARDIAN.getLootTableId(), builder);
+        
+        // enderman
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.LIFE_GEM)
+            .conditionally(RandomChanceLootCondition.builder(0.35f))
+        );
+        LootTableHelper.appendLoot(EntityType.ENDERMAN.getLootTableId(), builder);
+        
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(3)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(Items.BONE).weight(5));
+        builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(8));
+        LootTableHelper.appendLoot(EntityType.ENDERMAN.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_ENDERMAN_EYE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2), false))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_ENDERMITE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+        );
+        builder.conditionally(KilledByPlayerLootCondition.builder());
+        LootTableHelper.appendLoot(EntityType.ENDERMAN.getLootTableId(), builder);
+        
+        // endermite
+        builder = LootBuilder.create().rolls(1);
+        builder.with(FoodIngredients.RAW_ENDERMITE);
+        LootTableHelper.appendLoot(EntityType.ENDERMITE.getLootTableId(), builder);
+        
+        // evoker
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.LIFE_GEM)
+            .conditionally(RandomChanceLootCondition.builder(0.35f))
+        );
+        LootTableHelper.appendLoot(EntityType.EVOKER.getLootTableId(), builder);
+        
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(3)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(Items.BONE).weight(5));
+        LootTableHelper.appendLoot(EntityType.EVOKER.getLootTableId(), builder);
+        
+        // fox
+        builder = LootBuilder.create().rolls(0, 1);
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_BEAST_HEART).weight(3));
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_BEAST_LIVER).weight(5));
+        LootTableHelper.appendLoot(EntityType.FOX.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_CANID)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2, 4), false)) 
+            .apply(FurnaceSmeltLootFunction.builder().conditionally(EntityPropertiesLootCondition.builder(EntityTarget.THIS, NEEDS_ENTITY_ON_FIRE)))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+        );
+        LootTableHelper.appendLoot(EntityType.FOX.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(3)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(Items.BONE).weight(5));
+        LootTableHelper.appendLoot(EntityType.FOX.getLootTableId(), builder);
+        
+        // frog
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(Items.BONE_MEAL)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2, 4), false)) 
+        );
+        LootTableHelper.appendLoot(EntityType.FROG.getLootTableId(), builder);
+        
+        // glow squid
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_GLOWSQUID_TENTACLE)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3)))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+            .apply(FurnaceSmeltLootFunction.builder().conditionally(EntityPropertiesLootCondition.builder(EntityTarget.THIS, NEEDS_ENTITY_ON_FIRE)))
+        );
+        LootTableHelper.appendLoot(EntityType.GLOW_SQUID.getLootTableId(), builder);
+        
+        // goat
+        builder = LootBuilder.create().rolls(0, 1);
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_BEAST_HEART).weight(3));
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_BEAST_LIVER).weight(5));
+        LootTableHelper.appendLoot(EntityType.GOAT.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(10)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))            
+        );
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))   
+        );
+        LootTableHelper.appendLoot(EntityType.GOAT.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(0, 1);
+        builder.with(Items.WHITE_WOOL);
+        LootTableHelper.appendLoot(EntityType.GOAT.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(Items.MUTTON)
+                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3)))
+                .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+                .apply(FurnaceSmeltLootFunction.builder().conditionally(EntityPropertiesLootCondition.builder(EntityTarget.THIS, NEEDS_ENTITY_ON_FIRE)))
+        );
+        LootTableHelper.appendLoot(EntityType.GOAT.getLootTableId(), builder);
+        
         //LootBuilder builder_warden = LootBuilder.create();
         //builder_warden.rolls(1).with(ItemEntry.builder(ItemsModded.WARDEN_ANTLER)
         //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2, 2)))

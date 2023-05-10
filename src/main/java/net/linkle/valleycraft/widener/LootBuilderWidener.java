@@ -1,4 +1,4 @@
-package net.linkle.valleycraft.mixin;
+package net.linkle.valleycraft.widener;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 
 @Mixin(LootTable.Builder.class)
-public interface LootBuilderMixin {
+public interface LootBuilderWidener {
     @Accessor
     List<LootPool> getPools();
 }
