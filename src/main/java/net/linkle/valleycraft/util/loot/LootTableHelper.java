@@ -22,7 +22,7 @@ public class LootTableHelper {
     private static final ArrayListMultimap<Identifier, Consumer<LootPool.Builder>> INJECT_MAP = ArrayListMultimap.create(64, 5);
 
     /** Create and append a new pool. */
-    public static void appendLoot(Identifier lootID, LootBuilder loot) {
+    public static void appendLoot(Identifier lootID, LootPool.Builder loot) {
         APPEND_MAP.put(lootID, loot);
     }
 
