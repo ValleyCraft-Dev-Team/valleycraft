@@ -57,7 +57,7 @@ public class Main implements ModInitializer {
 		Events.initialize();
 
 		ModEffects.initialize();
-		Potions.initialize();
+		ModPotions.initialize();
 		ModVillagers.registerVillagers();
 		CustomTradeRegistry.setupTrades();
 		ServerNetwork.initialize();

@@ -7,8 +7,8 @@ import net.minecraft.data.server.BlockLootTableGenerator;
 import net.minecraft.data.server.ChestLootTableGenerator;
 import net.minecraft.data.server.EntityLootTableGenerator;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Items;
-import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.EntityPropertiesLootCondition;
 import net.minecraft.loot.condition.KilledByPlayerLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -18,8 +18,11 @@ import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.FurnaceSmeltLootFunction;
 import net.minecraft.loot.function.LootingEnchantLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.function.SetPotionLootFunction;
+import net.minecraft.loot.function.SetStewEffectLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.potion.Potions;
 import net.minecraft.predicate.entity.EntityFlagsPredicate;
 import net.minecraft.predicate.entity.EntityPredicate;
 import net.minecraft.util.Identifier;
@@ -115,6 +118,13 @@ public class ModLootTables {
             .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
         );
         LootTableHelper.appendLoot(EntityType.CHICKEN.getLootTableId(), builder);
+        
+        // creeper
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(Items.CREEPER_HEAD));
+        builder.conditionally(KilledByPlayerLootCondition.builder());
+        builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.075f, 0.01f));
+        LootTableHelper.appendLoot(EntityType.CREEPER.getLootTableId(), builder);
         
         // cow
         builder = LootBuilder.create().rolls(0, 1);
@@ -567,6 +577,539 @@ public class ModLootTables {
             .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))   
         );
         LootTableHelper.appendLoot(EntityType.RABBIT.getLootTableId(), builder);
+        
+        // ravager
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.65f);
+        LootTableHelper.appendLoot(EntityType.RAVAGER.getLootTableId(), builder);
+        
+        // sheep
+        builder = LootBuilder.create().rolls(0, 1);
+        rawBeasts(builder);
+        LootTableHelper.appendLoot(EntityType.SHEEP.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        bones(builder);
+        LootTableHelper.appendLoot(EntityType.SHEEP.getLootTableId(), builder);
+        
+        // silverfish
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_SILVERFISH)
+            .apply(FurnaceSmeltLootFunction.builder().conditionally(EntityPropertiesLootCondition.builder(EntityTarget.THIS, NEEDS_ENTITY_ON_FIRE)))
+        );
+        LootTableHelper.appendLoot(EntityType.SILVERFISH.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))   
+        );
+        LootTableHelper.appendLoot(EntityType.SILVERFISH.getLootTableId(), builder);
+        
+        // skeleton horse
+        builder = LootBuilder.create().rolls(1);
+        bones(builder);
+        LootTableHelper.appendLoot(EntityType.SKELETON_HORSE.getLootTableId(), builder);
+        
+        // skeleton
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.15f);
+        LootTableHelper.appendLoot(EntityType.SKELETON.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(8));
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(10)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(4)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2)))
+        );
+        LootTableHelper.appendLoot(EntityType.SKELETON.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.ARROW_BUNDLE).weight(7));
+        builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.02f, 0.01f));
+        LootTableHelper.appendLoot(EntityType.SKELETON.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.SKELETON_SKULL);
+        builder.conditionally(KilledByPlayerLootCondition.builder());
+        builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.1f, 0.1f));
+        LootTableHelper.appendLoot(EntityType.SKELETON.getLootTableId(), builder);
+        
+        // snow golem
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.15f);
+        LootTableHelper.appendLoot(EntityType.SNOW_GOLEM.getLootTableId(), builder);
+        
+        // spider
+        builder = LootBuilder.create().rolls(0, 1);
+        rawBeasts(builder);
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_CAVE_MAGGOT).weight(7));
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_SILVERFISH).weight(7));
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_ABYSSWATCHER).weight(5));
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_BAT_WING).weight(5));
+        LootTableHelper.appendLoot(EntityType.SPIDER.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_TRIPE));
+        LootTableHelper.appendLoot(EntityType.SPIDER.getLootTableId(), builder);
+        
+        // squid
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_SQUID_TENTACLE)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3)))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+            .apply(FurnaceSmeltLootFunction.builder().conditionally(EntityPropertiesLootCondition.builder(EntityTarget.THIS, NEEDS_ENTITY_ON_FIRE)))
+        );
+        LootTableHelper.appendLoot(EntityType.SQUID.getLootTableId(), builder);
+        
+        // stray
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.15f);
+        LootTableHelper.appendLoot(EntityType.STRAY.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(8));
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(10)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(4)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2)))
+        );
+        LootTableHelper.appendLoot(EntityType.STRAY.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.ARROW_BUNDLE).weight(7));
+        builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.02f, 0.01f));
+        LootTableHelper.appendLoot(EntityType.STRAY.getLootTableId(), builder);
+        
+        // strider
+        builder = LootBuilder.create().rolls(0, 1);
+        rawBeasts(builder);
+        LootTableHelper.appendLoot(EntityType.STRIDER.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        bones(builder);
+        LootTableHelper.appendLoot(EntityType.STRIDER.getLootTableId(), builder);
+        
+        // trader llama
+        builder = LootBuilder.create().rolls(0, 1);
+        rawBeasts(builder);
+        LootTableHelper.appendLoot(EntityType.TRADER_LLAMA.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        bones(builder);
+        LootTableHelper.appendLoot(EntityType.TRADER_LLAMA.getLootTableId(), builder);
+        
+        // turtle
+        builder = LootBuilder.create().rolls(0, 1);
+        rawBeasts(builder);
+        LootTableHelper.appendLoot(EntityType.TURTLE.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        bones(builder);
+        LootTableHelper.appendLoot(EntityType.TURTLE.getLootTableId(), builder);
+        
+        // vex
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.25f);
+        LootTableHelper.appendLoot(EntityType.VEX.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(Items.PHANTOM_MEMBRANE)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+        );
+        builder.conditionally(KilledByPlayerLootCondition.builder());
+        LootTableHelper.appendLoot(EntityType.VEX.getLootTableId(), builder);
+        
+        // villager
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.35f);
+        LootTableHelper.appendLoot(EntityType.VILLAGER.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.TOTEM_OF_TRADE)
+            .conditionally(RandomChanceLootCondition.builder(0.1f)
+                    )
+        );
+        builder.with(ItemEntry.builder(ItemsModded.TOTEM_OF_PACIFISM)
+            .conditionally(RandomChanceLootCondition.builder(0.5f))
+        );
+        LootTableHelper.appendLoot(EntityType.VILLAGER.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(10)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))            
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))   
+        );
+        builder.with(ItemEntry.builder(Items.BONE).weight(5)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))   
+        );
+        LootTableHelper.appendLoot(EntityType.VILLAGER.getLootTableId(), builder);
+        
+        // vindicator
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.35f);
+        LootTableHelper.appendLoot(EntityType.VINDICATOR.getLootTableId(), builder);
+        
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))            
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(3)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))   
+        );
+        builder.with(ItemEntry.builder(Items.BONE).weight(5)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))   
+        );
+        LootTableHelper.appendLoot(EntityType.VINDICATOR.getLootTableId(), builder);
+        
+        // wandering trader
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.35f);
+        LootTableHelper.appendLoot(EntityType.WANDERING_TRADER.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))            
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(3)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))   
+        );
+        builder.with(ItemEntry.builder(Items.BONE).weight(5)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))   
+        );
+        builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))   
+        );
+        LootTableHelper.appendLoot(EntityType.WANDERING_TRADER.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(Items.MILK_BUCKET)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))            
+        );
+        builder.with(ItemEntry.builder(Items.POTION)
+            .apply(SetPotionLootFunction.builder(Potions.INVISIBILITY))
+            .conditionally(RandomChanceLootCondition.builder(0.35f))
+        );
+        LootTableHelper.appendLoot(EntityType.WANDERING_TRADER.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.TOTEM_OF_TRADE)
+            .conditionally(RandomChanceLootCondition.builder(0.1f))
+        );
+        builder.with(ItemEntry.builder(ItemsModded.TOTEM_OF_PACIFISM)
+            .conditionally(RandomChanceLootCondition.builder(0.25f))
+        );
+        LootTableHelper.appendLoot(EntityType.WANDERING_TRADER.getLootTableId(), builder);
+        
+        // witch
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.35f);
+        LootTableHelper.appendLoot(EntityType.WITCH.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))            
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(3)
+                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
+        );
+        builder.with(ItemEntry.builder(Items.BONE).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))   
+        );
+        builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(8)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))   
+        );
+        LootTableHelper.appendLoot(EntityType.WITCH.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(Items.EMERALD)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+        );
+        builder.conditionally(KilledByPlayerLootCondition.builder());
+        LootTableHelper.appendLoot(EntityType.WITCH.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(0, 1);
+        builder.with(ItemEntry.builder(Items.SUSPICIOUS_STEW)
+            .apply(SetStewEffectLootFunction.builder().withEffect(StatusEffects.BLINDNESS, UniformLootNumberProvider.create(5*20, 7*20)))
+        );
+        builder.with(ItemEntry.builder(Items.SUSPICIOUS_STEW)
+            .apply(SetStewEffectLootFunction.builder().withEffect(StatusEffects.JUMP_BOOST, UniformLootNumberProvider.create(7*20, 10*20)))
+        );
+        builder.with(ItemEntry.builder(Items.SUSPICIOUS_STEW)
+            .apply(SetStewEffectLootFunction.builder().withEffect(StatusEffects.NIGHT_VISION, UniformLootNumberProvider.create(7*20, 10*20)))
+        );
+        builder.with(ItemEntry.builder(Items.SUSPICIOUS_STEW)
+            .apply(SetStewEffectLootFunction.builder().withEffect(StatusEffects.POISON, UniformLootNumberProvider.create(10*20, 20*20)))
+        );
+        builder.with(ItemEntry.builder(Items.SUSPICIOUS_STEW)
+            .apply(SetStewEffectLootFunction.builder().withEffect(StatusEffects.SATURATION, UniformLootNumberProvider.create(7*20, 10*20)))
+        );
+        builder.with(ItemEntry.builder(Items.SUSPICIOUS_STEW)
+            .apply(SetStewEffectLootFunction.builder().withEffect(StatusEffects.WEAKNESS, UniformLootNumberProvider.create(6*20, 8*20)))
+        );
+        LootTableHelper.appendLoot(EntityType.WITCH.getLootTableId(), builder);
+        
+        // wither skeleton
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.COAL_NUGGET).weight(5)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+        );
+        builder.with(ItemEntry.builder(ItemsModded.COAL_NUGGET).weight(1)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+        );
+        LootTableHelper.appendLoot(EntityType.WITHER_SKELETON.getLootTableId(), builder);
+        
+        // wither
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.LIFE_GEM)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(3)))
+        );
+        LootTableHelper.appendLoot(EntityType.WITHER.getLootTableId(), builder);
+        
+        // wolf
+        builder = LootBuilder.create().rolls(0, 1);
+        rawBeasts(builder);
+        LootTableHelper.appendLoot(EntityType.WOLF.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_CANID)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2, 4), false))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+            .apply(FurnaceSmeltLootFunction.builder().conditionally(EntityPropertiesLootCondition.builder(EntityTarget.THIS, NEEDS_ENTITY_ON_FIRE)))
+        );
+        LootTableHelper.appendLoot(EntityType.WOLF.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        bones(builder);
+        LootTableHelper.appendLoot(EntityType.WOLF.getLootTableId(), builder);
+        
+        // hoglin
+        builder = LootBuilder.create().rolls(0, 1);
+        rawBeasts(builder);
+        LootTableHelper.appendLoot(EntityType.HOGLIN.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        bones(builder);
+        LootTableHelper.appendLoot(EntityType.HOGLIN.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.PIG_HIDE)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 3), false))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+        );
+        LootTableHelper.appendLoot(EntityType.HOGLIN.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_HEART).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_GUTS).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_LIVER).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2), false))
+        );
+        LootTableHelper.appendLoot(EntityType.HOGLIN.getLootTableId(), builder);
+        
+        // zombie horse
+        builder = LootBuilder.create().rolls(0, 1);
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_HEART).weight(3)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_GUTS).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_LIVER).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2), false))
+        );
+        LootTableHelper.appendLoot(EntityType.ZOMBIE_HORSE.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(0, 1);
+        bones(builder);
+        LootTableHelper.appendLoot(EntityType.ZOMBIE_HORSE.getLootTableId(), builder);
+        
+        // zombie villager
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.15f);
+        LootTableHelper.appendLoot(EntityType.ZOMBIE_VILLAGER.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_HEART).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_GUTS).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_LIVER).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+        );
+        builder.with(ItemEntry.builder(Items.DIRT).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+        );
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(3)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(Items.BONE).weight(5));
+        builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))            
+        );
+        LootTableHelper.appendLoot(EntityType.ZOMBIE_VILLAGER.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.CLOTH)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2), false))
+        );
+        builder.with(ItemEntry.builder(Items.EMERALD));
+        builder.with(ItemEntry.builder(Items.BREAD));
+        builder.with(ItemEntry.builder(FoodRegular.HARDTACK));
+        builder.with(ItemEntry.builder(FoodIngredients.PURIFIED_WATER));
+        builder.with(ItemEntry.builder(FoodIngredients.PUMPKIN_SLICE));
+        builder.conditionally(KilledByPlayerLootCondition.builder());
+        builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.025f, 0.01f));
+        LootTableHelper.appendLoot(EntityType.ZOMBIE_VILLAGER.getLootTableId(), builder);
+        
+        // zombie
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.15f);
+        LootTableHelper.appendLoot(EntityType.ZOMBIE.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_HEART).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_GUTS).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_LIVER).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+        );
+        builder.with(ItemEntry.builder(Items.DIRT).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+            .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+        );
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(3)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(Items.BONE).weight(5));
+        builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))            
+        );
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.CLOTH)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2), false))
+        );
+        builder.with(ItemEntry.builder(Items.EMERALD));
+        builder.with(ItemEntry.builder(Items.BREAD));
+        builder.with(ItemEntry.builder(FoodRegular.HARDTACK));
+        builder.with(ItemEntry.builder(FoodIngredients.PURIFIED_WATER));
+        builder.with(ItemEntry.builder(FoodIngredients.PUMPKIN_SLICE));
+        builder.with(ItemEntry.builder(FoodIngredients.CAVE_ROOT));
+        builder.conditionally(KilledByPlayerLootCondition.builder());
+        builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.025f, 0.01f));
+        LootTableHelper.appendLoot(EntityType.ZOMBIE.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(Items.ZOMBIE_HEAD));
+        builder.conditionally(KilledByPlayerLootCondition.builder());
+        builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.075f, 0.01f));
+        LootTableHelper.appendLoot(EntityType.ZOMBIE.getLootTableId(), builder);
+        
+        // zombified piglin
+        builder = LootBuilder.create().rolls(1);
+        lifeGem(builder, 0.15f);
+        LootTableHelper.appendLoot(EntityType.ZOMBIFIED_PIGLIN.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_HEART).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_GUTS).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.MONSTER_LIVER).weight(5)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        );
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+        );
+        builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(ItemsModded.SKULL_SHARD).weight(3)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
+        );
+        builder.with(ItemEntry.builder(Items.BONE).weight(5));
+        builder.with(ItemEntry.builder(Items.BONE_MEAL).weight(8)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))            
+        );
+        LootTableHelper.appendLoot(EntityType.ZOMBIFIED_PIGLIN.getLootTableId(), builder);
+        
+        builder.with(ItemEntry.builder(FoodRegular.NETHER_WART_STIR_FRY));
+        builder.with(ItemEntry.builder(FoodRegular.MAGMA_CREME_SOUP));
+        builder.with(ItemEntry.builder(ItemsModded.GOLD_SCRAP)
+           .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2), false))
+           .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+        );
+        builder.conditionally(KilledByPlayerLootCondition.builder());
+        builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.3f, 0.01f));
+        LootTableHelper.appendLoot(EntityType.ZOMBIFIED_PIGLIN.getLootTableId(), builder);
         
         //LootBuilder builder_warden = LootBuilder.create();
         //builder_warden.rolls(1).with(ItemEntry.builder(ItemsModded.WARDEN_ANTLER)
