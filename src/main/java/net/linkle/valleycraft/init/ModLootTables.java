@@ -1,18 +1,23 @@
 package net.linkle.valleycraft.init;
 
 import net.linkle.valleycraft.Main;
+import net.linkle.valleycraft.tags.ModItemTags;
 import net.linkle.valleycraft.util.loot.LootBuilder;
 import net.linkle.valleycraft.util.loot.LootTableHelper;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.BlockLootTableGenerator;
 import net.minecraft.data.server.ChestLootTableGenerator;
 import net.minecraft.data.server.EntityLootTableGenerator;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Items;
 import net.minecraft.loot.condition.EntityPropertiesLootCondition;
 import net.minecraft.loot.condition.KilledByPlayerLootCondition;
+import net.minecraft.loot.condition.MatchToolLootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.condition.RandomChanceWithLootingLootCondition;
+import net.minecraft.loot.condition.SurvivesExplosionLootCondition;
 import net.minecraft.loot.context.LootContext.EntityTarget;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.FurnaceSmeltLootFunction;
@@ -23,8 +28,11 @@ import net.minecraft.loot.function.SetStewEffectLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.potion.Potions;
+import net.minecraft.predicate.NumberRange.IntRange;
 import net.minecraft.predicate.entity.EntityFlagsPredicate;
 import net.minecraft.predicate.entity.EntityPredicate;
+import net.minecraft.predicate.item.EnchantmentPredicate;
+import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.util.Identifier;
 
 public class ModLootTables {
@@ -1111,35 +1119,52 @@ public class ModLootTables {
         builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.3f, 0.01f));
         LootTableHelper.appendLoot(EntityType.ZOMBIFIED_PIGLIN.getLootTableId(), builder);
         
-        //LootBuilder builder_warden = LootBuilder.create();
-        //builder_warden.rolls(1).with(ItemEntry.builder(ItemsModded.WARDEN_ANTLER)
-        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2, 2)))
-        //);
-        //builder_warden.rolls(1).with(ItemEntry.builder(ItemsModded.LIFE_GEM)
-        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 3)))
-        //);
-        //LootTableHelper.appendLoot(EntityType.WARDEN.getLootTableId(), builder_warden);
-        //
-        //LootBuilder builder_ender_dragon = LootBuilder.create();
-        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(ItemsModded.DRAGON_TOOTH)
-        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
-        //);
-        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.ENDER_DRAGON_EYE)
-        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2)))
-        //);
-        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.ENDER_DRAGON_GLAND)
-        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2)))
-        //);
-        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.RAW_ENDERMITE)
-        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(8, 24)))
-        //);
-        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART)
-        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 1)))
-        //);
-        //builder_ender_dragon.rolls(1).with(ItemEntry.builder(ItemsModded.LIFE_GEM)
-        //        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(6, 6)))
-        //);
-        //LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder_ender_dragon);
+        builder = LootBuilder.create().rolls(1);
+        builder.rolls(1).with(ItemEntry.builder(ItemsModded.WARDEN_ANTLER)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2)))
+        );
+        
+        // warden
+        LootTableHelper.appendLoot(EntityType.WARDEN.getLootTableId(), builder);
+        builder = LootBuilder.create().rolls(1);
+        builder.rolls(1).with(ItemEntry.builder(ItemsModded.LIFE_GEM)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(3)))
+        );
+        LootTableHelper.appendLoot(EntityType.WARDEN.getLootTableId(), builder);
+        
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.DRAGON_TOOTH)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
+        );
+        
+        // ender dragon
+        LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder);
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.ENDER_DRAGON_EYE)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2)))
+        );
+        LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder);
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.ENDER_DRAGON_GLAND)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2)))
+        );
+        LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder);
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.RAW_ENDERMITE)
+            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(8, 24)))
+        );
+        LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder);
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
+        );
+        LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder);
+        builder = LootBuilder.create().rolls(1);
+        builder.with(ItemEntry.builder(ItemsModded.LIFE_GEM)
+            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(6)))
+        );
+        LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder);
+        
 
     }
 
@@ -1174,6 +1199,173 @@ public class ModLootTables {
         LootTableHelper.appendLoot(Blocks.GRASS.getLootTableId(), builder);
         LootTableHelper.appendLoot(Blocks.TALL_GRASS.getLootTableId(), builder);
         */
+        
+        LootBuilder builder;
+        
+        // amethyst_cluster
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.AMETHYST_CLUSTER);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().items(Tools.ANTHROPOLOGISTS_ROCK_PICK)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.AMETHYST_CLUSTER.getLootTableId(), builder);
+        
+        // blue ice
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.BLUE_ICE);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().items(Tools.ICE_TONGS)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.BLUE_ICE.getLootTableId(), builder);
+        
+        // bookshelf
+        builder = LootBuilder.create().rolls(1);
+        builder.with(BlocksModded.EMPTY_BOOKSHELF);
+        LootTableHelper.appendLoot(Blocks.BOOKSHELF.getLootTableId(), builder);
+        
+        // brain coral block
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.BRAIN_CORAL_BLOCK);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.BRAIN_CORAL_BLOCK.getLootTableId(), builder);
+        
+        // brain coral fan
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.BRAIN_CORAL_FAN);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.BRAIN_CORAL_FAN.getLootTableId(), builder);
+        
+        // brain coral
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.BRAIN_CORAL);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.BRAIN_CORAL.getLootTableId(), builder);
+        
+        // bubble coral block
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.BUBBLE_CORAL_BLOCK);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.BUBBLE_CORAL_BLOCK.getLootTableId(), builder);
+        
+        // bubble coral fan
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.BUBBLE_CORAL_FAN);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.BUBBLE_CORAL_FAN.getLootTableId(), builder);
+        
+        // bubble coral
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.BUBBLE_CORAL);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.BUBBLE_CORAL.getLootTableId(), builder);
+        
+        // fire coral block
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.FIRE_CORAL_BLOCK);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.FIRE_CORAL_BLOCK.getLootTableId(), builder);
+        
+        // fire coral fan
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.FIRE_CORAL_FAN);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.FIRE_CORAL_FAN.getLootTableId(), builder);
+        
+        // fire coral
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.FIRE_CORAL);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.FIRE_CORAL.getLootTableId(), builder);
+        
+        // horn coral block
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.HORN_CORAL_BLOCK);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.HORN_CORAL_BLOCK.getLootTableId(), builder);
+        
+        // horn coral fan
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.HORN_CORAL_FAN);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.HORN_CORAL_FAN.getLootTableId(), builder);
+        
+        // horn coral
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.HORN_CORAL);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.HORN_CORAL.getLootTableId(), builder);
+        
+        // ice
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.ICE);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().items(Tools.ICE_TONGS)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.ICE.getLootTableId(), builder);
+        
+        // large amethyst bud
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.LARGE_AMETHYST_BUD);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().items(Tools.ANTHROPOLOGISTS_ROCK_PICK)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.LARGE_AMETHYST_BUD.getLootTableId(), builder);
+        
+        // medium amethyst bud
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.MEDIUM_AMETHYST_BUD);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().items(Tools.ANTHROPOLOGISTS_ROCK_PICK)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.MEDIUM_AMETHYST_BUD.getLootTableId(), builder);
+        
+        // packed ice
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.PACKED_ICE);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().items(Tools.ICE_TONGS)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.PACKED_ICE.getLootTableId(), builder);
+        
+        // small amethyst bud
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.SMALL_AMETHYST_BUD);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().items(Tools.ANTHROPOLOGISTS_ROCK_PICK)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.SMALL_AMETHYST_BUD.getLootTableId(), builder);
+        
+        // spawner
+        builder = LootBuilder.create().rolls(1);
+        builder.with(BlocksModded.DEFECTIVE_SPAWNER);
+        builder.conditionally(SurvivesExplosionLootCondition.builder());
+        LootTableHelper.appendLoot(Blocks.SPAWNER.getLootTableId(), builder);
+        
+        // tube coral block
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.TUBE_CORAL_BLOCK);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.TUBE_CORAL_BLOCK.getLootTableId(), builder);
+        
+        // tube coral fan
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.TUBE_CORAL_FAN);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.TUBE_CORAL_FAN.getLootTableId(), builder);
+        
+        // tube coral
+        builder = LootBuilder.create().rolls(1);
+        builder.with(Items.TUBE_CORAL);
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().tag(ModItemTags.CORAL_KNIFE)));
+        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
+        LootTableHelper.appendLoot(Blocks.TUBE_CORAL.getLootTableId(), builder);
     }
     
     // common loots start

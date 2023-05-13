@@ -128,6 +128,8 @@ public class Tools {
 
     public static final Item SCYTHE_IRON = new ScytheBase(ToolMaterials.IRON, SCYTHE_BASE_DAMAGE, SCYTHE_BASE_SPEED, BASIC_SETTINGS);
     public static final Item DAGGER_IRON = new DaggerBase(ToolMaterials.IRON, DAGGER_BASE_DAMAGE, DAGGER_BASE_SPEED, BASIC_SETTINGS);
+    
+    public static final Item ICE_TONGS = new PickaxeItem(ModToolMaterials.BRASIUM, PICKAXE_BASE_DAMAGE, PICKAXE_BASE_SPEED, BASIC_SETTINGS);
 
     public static void initialize() {
         //Environmental
@@ -165,7 +167,7 @@ public class Tools {
         Reg.register("wooden_oar", WOODEN_OAR);
         Reg.register("climbing_axe", CLIMBING_AXE);
         Reg.register("anthropologists_rock_pick", ANTHROPOLOGISTS_ROCK_PICK);
-        Reg.register("ice_tongs", new PickaxeItem(ModToolMaterials.BRASIUM, PICKAXE_BASE_DAMAGE, PICKAXE_BASE_SPEED, BASIC_SETTINGS));
+        Reg.register("ice_tongs", ICE_TONGS);
         Reg.register("brasium_compound_bow", BRASIUM_COMPOUND);
         Reg.register("coral_knife", new Scalpel(ModToolMaterials.GUARDIAN, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS_UNCOMMON));
         Item knifeElder = Reg.register("coral_knife_guardian", new UnbreakableScalpelBase(ModToolMaterials.ELDER_GUARDIAN, TRAVELER_BASE_DAMAGE, TRAVELER_BASE_SPEED, BASIC_SETTINGS_RARE));

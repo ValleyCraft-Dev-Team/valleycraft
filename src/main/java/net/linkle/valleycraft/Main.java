@@ -12,6 +12,7 @@ import net.linkle.valleycraft.init.*;
 import net.linkle.valleycraft.network.ServerNetwork;
 import net.linkle.valleycraft.tags.ModBlockTags;
 import net.linkle.valleycraft.tags.ModFluidTags;
+import net.linkle.valleycraft.tags.ModItemTags;
 import net.linkle.valleycraft.villager.CustomTradeRegistry;
 import net.linkle.valleycraft.villager.ModVillagers;
 import net.minecraft.util.Identifier;
@@ -52,6 +53,7 @@ public class Main implements ModInitializer {
 			//currently unused, ancient disk is being added to Legendarium instead probably
 		Entities.initialize();
 		ModBlockTags.initialize();
+		ModItemTags.initialize();
 		ModFluidTags.initialize();
 		ModLootTables.initialize();
 		Events.initialize();
