@@ -1,6 +1,8 @@
 package net.linkle.valleycraft.util.loot;
 
-import net.fabricmc.fabric.api.loot.v2.FabricLootPoolBuilder;
+import java.util.Collection;
+import java.util.function.Function;
+
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.LootCondition;
@@ -11,68 +13,120 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.LootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 
-/** Loot Pool Builder helper class. */
-public class LootBuilder {
-    private final LootPool.Builder pool = new LootPool.Builder();
-    private final FabricLootPoolBuilder poolExt = (FabricLootPoolBuilder)pool;
+/** A extended Loot Pool Builder with extra features. */
+public class LootBuilder extends LootPool.Builder {
 
+    @Override
+    public <E> LootBuilder apply(Iterable<E> functions,
+            Function<E, net.minecraft.loot.function.LootFunction.Builder> toBuilderFunction) {
+        super.apply(functions, toBuilderFunction);
+        return this;
+    }
+
+    @Override
+    public <E> LootBuilder apply(E[] functions,
+            Function<E, net.minecraft.loot.function.LootFunction.Builder> toBuilderFunction) {
+        super.apply(functions, toBuilderFunction);
+        return this;
+    }
+
+    @Override
+    public <E> LootBuilder conditionally(Iterable<E> conditions,
+            Function<E, net.minecraft.loot.condition.LootCondition.Builder> toBuilderFunction) {
+        super.conditionally(conditions, toBuilderFunction);
+        return this;
+    }
+
+    @Override
+    public LootBuilder getThisConditionConsumingBuilder() {
+        return this;
+    }
+
+    @Override
+    public LootBuilder with(LootPoolEntry entry) {
+        super.with(entry);
+        return this;
+    }
+
+    @Override
+    public LootBuilder with(Collection<? extends LootPoolEntry> entries) {
+        super.with(entries);
+        return this;
+    }
+
+    @Override
+    public LootBuilder conditionally(LootCondition condition) {
+        super.conditionally(condition);
+        return this;
+    }
+
+    @Override
+    public LootBuilder conditionally(Collection<? extends LootCondition> conditions) {
+        super.conditionally(conditions);
+        return this;
+    }
+
+    @Override
+    public LootBuilder apply(LootFunction function) {
+        super.apply(function);
+        return this;
+    }
+
+    @Override
+    public LootBuilder apply(Collection<? extends LootFunction> functions) {
+        super.apply(functions);
+        return this;
+    }
+
+    @Override
+    public LootBuilder bonusRolls(LootNumberProvider bonusRolls) {
+        super.bonusRolls(bonusRolls);
+        return this;
+    }
+
+    @Override
+    public LootBuilder with(net.minecraft.loot.entry.LootPoolEntry.Builder<?> entry) {
+        super.with(entry);
+        return this;
+    }
+
+    @Override
+    public LootBuilder getThisFunctionConsumingBuilder() {
+        super.getThisFunctionConsumingBuilder();
+        return this;
+    }
+
+    @Override
+    public LootBuilder apply(net.minecraft.loot.function.LootFunction.Builder function) {
+        super.apply(function);
+        return this;
+    }
+
+    @Override
+    public LootBuilder conditionally(net.minecraft.loot.condition.LootCondition.Builder condition) {
+        super.conditionally(condition);
+        return this;
+    }
+
+    @Override
     public LootBuilder rolls(LootNumberProvider range) {
-        pool.rolls(range);
+        super.rolls(range);
         return this;
     }
 
     public LootBuilder rolls(float value) {
-        pool.rolls(ConstantLootNumberProvider.create(value));
+        super.rolls(ConstantLootNumberProvider.create(value));
         return this;
     }
 
     public LootBuilder rolls(float min, float max) {
-        pool.rolls(UniformLootNumberProvider.create(min, max));
-        return this;
-    }
-    
-    public LootBuilder bonusRolls(LootNumberProvider bonusRolls) {
-        pool.bonusRolls(bonusRolls);
-        return this;
-    }
-
-    public LootBuilder with(LootPoolEntry.Builder<?> entry) {
-        pool.with(entry);
+        super.rolls(UniformLootNumberProvider.create(min, max));
         return this;
     }
 
     public LootBuilder with(ItemConvertible item) {
-        pool.with(ItemEntry.builder(item));
+        super.with(ItemEntry.builder(item));
         return this;
-    }
-
-    public LootBuilder conditionally(LootCondition.Builder condition) {
-        pool.conditionally(condition);
-        return this;
-    }
-
-    public LootBuilder apply(LootFunction.Builder function) {
-        pool.apply(function);
-        return this;
-    }
-
-    public LootBuilder with(LootPoolEntry entry) {
-        poolExt.with(entry);
-        return this;
-    }
-
-    public LootBuilder conditionally(LootCondition condition) {
-        poolExt.conditionally(condition);
-        return this;
-    }
-
-    public LootBuilder apply(LootFunction function) {
-        poolExt.apply(function);
-        return this;
-    }
-
-    public LootPool.Builder build() {
-        return pool;
     }
 
     public static LootBuilder create() {
