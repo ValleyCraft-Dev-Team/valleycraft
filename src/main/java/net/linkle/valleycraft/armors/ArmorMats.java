@@ -59,7 +59,7 @@ public enum ArmorMats implements ArmorMaterial {
     CIRCLET_DIAMOND("diamond_circlet", ints(0,0,0,2), 15, 9, equipChain(), items(Items.DIAMOND)),
     CIRCLET_ROSEGOLD("rosegold_circlet", ints(0,0,0,2), 15, 15, equipChain(), items(ItemsModded.ROSEGOLD_INGOT)),
     CIRCLET_NETHERITE("netherite_circlet", ints(0,0,0,3), 15, 15, equipChain(), items(Items.NETHERITE_INGOT)),
-    CIRCLET_PRIMSTEEL("primsteel_circlet", ints(0,0,0,1), 15, 15, equipChain(), items(ItemsModded.PRIMSTEEL_INGOT)),
+    //CIRCLET_PRIMSTEEL("primsteel_circlet", ints(0,0,0,1), 15, 15, equipChain(), items(ItemsModded.PRIMSTEEL_INGOT)),
     CIRCLET_LEATHER("leather_circlet", ints(0,0,0,1), 15, 15, equipChain(), items(ItemsModded.TREATED_LEATHER)),
     CIRCLET_ECHOCHALCUM("sculkerite_circlet", ints(0,0,0,3), 15, 22, equipChain(), items(ItemsModded.ECHOCHALCUM_INGOT)),
 
@@ -91,7 +91,7 @@ public enum ArmorMats implements ArmorMaterial {
     EVOKER("evoker", ints(2,3), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
     LABCOAT("labcoat", ints(2,3), 10, 15, equipLeather(), items(ItemsModded.CLOTH)),
 
-    PRIMSTEEL("primsteel", ints(1,4,5,2), 15, 18, equipIron(), items(ItemsModded.PRIMSTEEL_INGOT)),
+    //PRIMSTEEL("primsteel", ints(1,4,5,2), 15, 18, equipIron(), items(ItemsModded.PRIMSTEEL_INGOT)),
     ROSEGOLD("rosegold", ints(2,5,7,2), 15, 15, equipGold(), items(ItemsModded.ROSEGOLD_INGOT), 0.75f, 0.0f),
     SCALE("scale", ints(0,6,7,3), 15, 9, equipChain(), items(Items.IRON_INGOT)),
     LEATHER_NO_OVERLAY("leather_no_overlay", ints(1,2,3,2), 7, 9, equipLeather(), items(ItemsModded.TREATED_LEATHER)),
@@ -108,7 +108,7 @@ public enum ArmorMats implements ArmorMaterial {
     RF_LEATHER("reinforced_leather", ints(1,1,2,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     RF_GOLD("reinforced_gold", ints(1,1,4,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     RF_IRON("reinforced_iron", ints(2,3,5,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
-    RF_PRIMSTEEL("reinforced_primsteel", ints(1,2,4,3), 15, 18, equipChain(), items(ItemsModded.PRIMSTEEL_INGOT)),
+    //RF_PRIMSTEEL("reinforced_primsteel", ints(1,2,4,3), 15, 18, equipChain(), items(ItemsModded.PRIMSTEEL_INGOT)),
     RF_ROSEGOLD("reinforced_rosegold", ints(2,3,5,3), 15, 15, equipChain(), items(ItemsModded.ROSEGOLD_INGOT),0.75f, 0.0f),
     RF_DIAMOND("reinforced_diamond", ints(3,4,7,4), 15, 10, equipChain(), items(Items.DIAMOND), 2.0f, 0.0f),
     RF_NETHERITE("reinforced_netherite", ints(3,4,7,4), 15, 15, equipChain(), items(Items.NETHERITE_INGOT), 3.0f, 0.0f),
@@ -117,7 +117,7 @@ public enum ArmorMats implements ArmorMaterial {
     HAUBERK_LEATHER("leather_hauberk", ints(1,2,2,2), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     HAUBERK_GOLD("gold_hauberk", ints(1,3,4,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
     HAUBERK_IRON("iron_hauberk", ints(2,5,5,3), 15, 25, equipChain(), items(Items.GOLD_INGOT)),
-    HAUBERK_PRIMSTEEL("primsteel_hauberk", ints(1,4,4,3), 15, 18, equipChain(), items(ItemsModded.PRIMSTEEL_INGOT)),
+    //HAUBERK_PRIMSTEEL("primsteel_hauberk", ints(1,4,4,3), 15, 18, equipChain(), items(ItemsModded.PRIMSTEEL_INGOT)),
     HAUBERK_ROSEGOLD("rosegold_hauberk", ints(2,5,5,3), 15, 15, equipChain(), items(ItemsModded.ROSEGOLD_INGOT),0.75f, 0.0f),
     HAUBERK_DIAMOND("diamond_hauberk", ints(3,6,7,4), 15, 10, equipChain(), items(Items.DIAMOND), 2.0f, 0.0f),
     HAUBERK_NETHERITE("netherite_hauberk", ints(3,6,7,4), 15, 15, equipChain(), items(Items.NETHERITE_INGOT), 3.0f, 0.0f),
@@ -135,7 +135,7 @@ public enum ArmorMats implements ArmorMaterial {
     LICH_CLOAK("lich_cloak", ints(0,0,7,3), 15, 22, equipLeather(), items(ItemsModded.CLOTH)),
     CLAM_BREASTPLATE("blue_breastplate", ints(1,2), 10, 22, equipTurtle(), items(BlocksNatural.CLAM_BLOCK)),
 
-    DIVING("diving", ints(2,5,7,3), 15, 5, equipLeather(), items(ItemsModded.PRIMSTEEL_INGOT)),
+    DIVING("diving", ints(2,5,7,3), 15, 5, equipLeather(), items(Items.COPPER_INGOT)),
     COPPER_DIVING("copper_diving", ints(2,5,7,2), 15, 5, equipLeather(), items(Items.COPPER_INGOT));
 
     // ### Other Utility Methods ###

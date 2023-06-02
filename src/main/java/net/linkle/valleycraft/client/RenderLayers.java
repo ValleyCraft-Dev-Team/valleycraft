@@ -35,12 +35,12 @@ class RenderLayers {
         put(GLASS_TRAPDOOR, cullout);
         put(TINTED_GLASS_DOOR, translucent);
         put(TINTED_GLASS_TRAPDOOR, translucent);
-        put(PRIMSTEEL_DOOR, cullout);
-        put(PRIMSTEEL_TRAPDOOR, cullout);
+        //put(PRIMSTEEL_DOOR, cullout);
+        //put(PRIMSTEEL_TRAPDOOR, cullout);
         put(SCULK_BLOSSOM, cullout);
         //put(CHAINED_RUSTED_CHEST, cullout);
         put(CRAFTING_MAT, cullout);
-        put(WITCH_LADLE, cullout);
+        //put(WITCH_LADLE, cullout);
         put(FIREGUARD, cullout);
         put(NEST, cullout);
         put(IRON_BRAZIER, cullout);
@@ -48,7 +48,7 @@ class RenderLayers {
         put(SPIDER_EGG, cullout);
         put(REDSTONE_LANTERN, cullout);
         put(REDSTONE_LAMPTERN, cullout);
-        put(BONFIRE, cullout);
+        //put(BONFIRE, cullout);
         put(CAMPFIRE_POT, cullout);
         put(SOUL_CAMPFIRE_POT, cullout);
 
@@ -78,7 +78,7 @@ class RenderLayers {
         put(GUIDESTONE_TOWER, cullout);
         put(GUIDESTONE_TRADE, cullout);
         put(GUIDESTONE_VILLAGE, cullout);
-        put(MEMBRANE_BLOCK, translucent);
+        //put(MEMBRANE_BLOCK, translucent);
 
         put(BLACK_CUSHION, cullout);
         put(BLUE_CUSHION, cullout);
@@ -222,7 +222,7 @@ class RenderLayers {
         put(ERDCOBBLESTONE_ROCKS, cullout);
 
         put(COAL_ORE_ROCKS, cullout);
-        put(RAW_PRIMSTEEL_ORE_ROCKS, cullout);
+        //put(RAW_PRIMSTEEL_ORE_ROCKS, cullout);
         put(RAW_COPPER_ORE_ROCKS, cullout);
         put(RAW_IRON_ORE_ROCKS, cullout);
         put(RAW_GOLD_ORE_ROCKS, cullout);
@@ -270,10 +270,10 @@ class RenderLayers {
 
         put(ROPE_LADDER, cullout);
         //put(NET_BLOCK, cullout);
-        put(PRIMSTEEL_GRATE, cullout);
-        put(PRIMSTEEL_CHAIN, cullout);
+        //put(PRIMSTEEL_GRATE, cullout);
+        //put(PRIMSTEEL_CHAIN, cullout);
         put(IRON_CHAIN, cullout);
-        put(LARGE_PRIMSTEEL_CHAIN, cullout);
+        //put(LARGE_PRIMSTEEL_CHAIN, cullout);
         put(LARGE_IRON_CHAIN, cullout);
         put(LARGE_CHAIN, cullout);
 
@@ -314,18 +314,18 @@ class RenderLayers {
         put(BRAZIER, cullout);
         put(SOUL_BRAZIER, cullout);
         
-        put(EMPTY_BOTTLE_BLOCK, cullout);
-        put(EXP_BOTTLE_BLOCK, translucent);
-        put(GLOW_BERRY_BOTTLE_BLOCK, translucent);
-        put(HONEY_BOTTLE_BLOCK, translucent);
-        put(INK_BOTTLE_BLOCK, cullout);
-        put(MILK_BOTTLE_BLOCK, cullout);
-        put(WATER_BOTTLE_BLOCK, translucent);
-        put(CANDLE_BOTTLE, cullout);
+        //put(EMPTY_BOTTLE_BLOCK, cullout);
+        //put(EXP_BOTTLE_BLOCK, translucent);
+        //put(GLOW_BERRY_BOTTLE_BLOCK, translucent);
+        //put(HONEY_BOTTLE_BLOCK, translucent);
+        //put(INK_BOTTLE_BLOCK, cullout);
+        //put(MILK_BOTTLE_BLOCK, cullout);
+        //put(WATER_BOTTLE_BLOCK, translucent);
+        //put(CANDLE_BOTTLE, cullout);
 
         put(WATTLE_STOOL, cullout);
         put(WATTLE_TABLE, cullout);
-        put(WATTLE_TABLE_CLOTHE, cullout);
+        //put(WATTLE_TABLE_CLOTHE, cullout);
         put(WATTLE_CHAIR, cullout);
         put(ORNATE_OBSIDIAN_TABLE, cullout);
         put(CLOTHED_ORNATE_OBSIDIAN_TABLE, cullout);
@@ -406,7 +406,7 @@ class RenderLayers {
         put(HEAD_ROTTEN_STEVE, cullout);
         put(ENDERMAN_SKULL, cullout);
 
-        put(COFFIN, translucent);
+        //put(COFFIN, translucent);
 
         put(DEEPSLATE_CHEST, cullout);
         put(DEEPSLATE_CHEST, translucent);
@@ -416,12 +416,12 @@ class RenderLayers {
         put(PICKAXE_BLOCK, cullout);
         put(DEAD_LANTERN, cullout);
         put(STAKE, cullout);
-        put(LUMBERJACK_STATION, cullout);
+        //put(LUMBERJACK_STATION, cullout);
         put(LANTERN_HANGER, cullout);
         put(LOG_PILE, cullout);
         put(KEG, cullout);
         put(SMALL_CACTUS, cullout);
-        put(PRIMSTEEL_BARS, cullout);
+        //put(PRIMSTEEL_BARS, cullout);
         put(BLOCK_WATTLE_AND_GLASS, cullout);
         put(BLOCK_WATTLE_AND_GLASS_PLUS, cullout);
         put(BLOCK_WATTLE_AND_GLASS_CROSS, cullout);
@@ -439,7 +439,7 @@ class RenderLayers {
         put(SCARECROW_TARGET, cullout);
         put(GLOW_SEAGRASS, cullout);
         put(IRON_LADDER, cullout);
-        put(PRIMSTEEL_LADDER, cullout);
+        //put(PRIMSTEEL_LADDER, cullout);
         put(WATTLE_LADDER, cullout);
         put(BAMBOO_LADDER, cullout);
         put(BRIMSTONE_CRYSTAL, cullout);

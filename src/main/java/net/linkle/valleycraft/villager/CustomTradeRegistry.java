@@ -96,7 +96,7 @@ public class CustomTradeRegistry {
                 factories -> {
                     factories.add(((entity, random) -> new TradeOffer(
                             new ItemStack(net.minecraft.item.Items.EMERALD, 3),
-                            new ItemStack(FoodIngredients.ENDURA_CARROT, 1),
+                         new ItemStack(FoodIngredients.ENDURA_CARROT, 1),
                             16, 30, 0.05f)));
                     factories.add(((entity, random) -> new TradeOffer(
                             new ItemStack(net.minecraft.item.Items.EMERALD, 5),
@@ -106,7 +106,7 @@ public class CustomTradeRegistry {
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.STABLEHAND, 5,
                 factories -> {
-                    factories.add(((entity, random) -> new TradeOffer(
+                       factories.add(((entity, random) -> new TradeOffer(
                             new ItemStack(net.minecraft.item.Items.EMERALD, 16),
                             new ItemStack(net.minecraft.item.Items.GOLD_INGOT, 6),
                             new ItemStack(net.minecraft.item.Items.GOLDEN_HORSE_ARMOR, 1),

@@ -17,7 +17,7 @@ public enum Fishing implements ItemEnum {
     PERCH_BUCKET(new EntityBucketItem(Entities.PERCH.type(), Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(Groups.VC_ITEMS).maxCount(1))),
 
     //TODO fix zod eyes they look dumb
-    ZOD_BUCKET(new EntityBucketItem(Entities.ZOD.type(), Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(Groups.VC_ITEMS).maxCount(1))),
+    //ZOD_BUCKET(new EntityBucketItem(Entities.ZOD.type(), Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(Groups.VC_ITEMS).maxCount(1))),
     BONEFIN_BUCKET(new EntityBucketItem(Entities.BONEFIN.type(), Fluids.WATER, SoundEvents.ITEM_BUCKET_EMPTY_FISH, new Item.Settings().group(Groups.VC_ITEMS).maxCount(1)));
 
     //TODO add Flounder? or 1.1?

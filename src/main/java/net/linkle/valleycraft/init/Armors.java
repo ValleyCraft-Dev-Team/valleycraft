@@ -15,19 +15,19 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 
 public enum Armors implements ItemEnum {
-    OLD_CLOTHES(new OldClothesItem(ArmorMats.OLD_CLOTHES, EquipmentSlot.LEGS, settingsNormal())),
-    OLD_CLOTHES_REPAIRED(new OldClothesItem(ArmorMats.OLD_CLOTHES_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    //OLD_CLOTHES(new OldClothesItem(ArmorMats.OLD_CLOTHES, EquipmentSlot.LEGS, settingsNormal())),
+    //OLD_CLOTHES_REPAIRED(new OldClothesItem(ArmorMats.OLD_CLOTHES_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
 
     STRAW_HAT(new ArmorItem(ArmorMats.STRAW_HAT, EquipmentSlot.HEAD, settingsNormal())),
-    AMETHYST_GOGGLES(new ArmorItem(ArmorMats.AMETHYST_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
+    //AMETHYST_GOGGLES(new ArmorItem(ArmorMats.AMETHYST_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
     NIGHTVISION_GOGGLES(new NightGoggleItem(ArmorMats.NIGHTVISION_GOGGLES, EquipmentSlot.HEAD, settingsNormal())),
     //LABCOAT(new ArmorItem(ArmorMats.LABCOAT, EquipmentSlot.LEGS, settingsNormal())),
     CHEF_HAT(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.HEAD, settingsNormal())),
     CHEF_APRON(new ArmorItem(ArmorMats.CHEF, EquipmentSlot.LEGS, settingsNormal())),
 
-    BIKINI_NEUTRAL_REPAIRED(new ArmorItem(ArmorMats.BIKINI_NEUTRAL_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
-    BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
-    BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    //BIKINI_NEUTRAL_REPAIRED(new ArmorItem(ArmorMats.BIKINI_NEUTRAL_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    //BIKINI_REPAIRED(new ArmorItem(ArmorMats.BIKINI_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
+    //BIKINI_MASC_REPAIRED(new ArmorItem(ArmorMats.BIKINI_MASC_REPAIRED, EquipmentSlot.LEGS, settingsNormal())),
 
     COWPOKE_HAT(new ArmorItem(ArmorMats.COWPOKE_HAT, EquipmentSlot.HEAD, settingsNormal())),
     FUR_BOOTS(new WarmBootItem(ArmorMats.RABBIT, EquipmentSlot.FEET, settingsNormal())),
@@ -40,15 +40,15 @@ public enum Armors implements ItemEnum {
     TURTLE_CHESTPLATE(new TurtleChestItem(ArmorMaterials.TURTLE, EquipmentSlot.CHEST, settingsNormal())),
     //TURTLE_BOOTS(new ArmorItem(ArmorMaterials.TURTLE, EquipmentSlot.FEET, settingsNormal())),
 
-    HUNTERS_HAT(new ArmorItem(ArmorMats.HUNTERS_CAP, EquipmentSlot.HEAD, settingsNormal())),
-    SEAGULL_FEATHER(new FastFeatherItem(ArmorMats.SEAGULL_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
-    DUCK_FEATHER(new FastFeatherItem(ArmorMats.DUCK_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
-    CROW_FEATHER(new FastFeatherItem(ArmorMats.CROW_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
-    FEATHER(new FastFeatherItem(ArmorMats.WHITE_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    //HUNTERS_HAT(new ArmorItem(ArmorMats.HUNTERS_CAP, EquipmentSlot.HEAD, settingsNormal())),
+    //SEAGULL_FEATHER(new FastFeatherItem(ArmorMats.SEAGULL_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    //DUCK_FEATHER(new FastFeatherItem(ArmorMats.DUCK_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    //CROW_FEATHER(new FastFeatherItem(ArmorMats.CROW_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
+    //FEATHER(new FastFeatherItem(ArmorMats.WHITE_FEATHER, EquipmentSlot.HEAD, settingsNormal())),
 
     REINFORCED_LEATHER_HELMET(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_GOLDEN_HELMET(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.HEAD, settingsNormal())),
-    REINFORCED_PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
+    //REINFORCED_PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_IRON_HELMET(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_ROSEGOLD_HELMET(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
     REINFORCED_DIAMOND_HELMET(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.HEAD, settingsNormal())),
@@ -57,7 +57,7 @@ public enum Armors implements ItemEnum {
 
     LEATHER_BREASTPLATE(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.CHEST, settingsNormal())),
     GOLDEN_BREASTPLATE(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.CHEST, settingsNormal())),
-    PRIMSTEEL_BREASTPLATE(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
+    //PRIMSTEEL_BREASTPLATE(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
     IRON_BREASTPLATE(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.CHEST, settingsNormal())),
     ROSEGOLD_BREASTPLATE(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),
     DIAMOND_BREASTPLATE(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.CHEST, settingsNormal())),
@@ -66,7 +66,7 @@ public enum Armors implements ItemEnum {
 
     LEATHER_SANDALS(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.FEET, settingsNormal())),
     GOLDEN_SANDALS(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.FEET, settingsNormal())),
-    PRIMSTEEL_SANDALS(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
+    //PRIMSTEEL_SANDALS(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
     IRON_SANDALS(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.FEET, settingsNormal())),
     ROSEGOLD_SANDALS(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.FEET, settingsNormal())),
     DIAMOND_SANDALS(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.FEET, settingsNormal())),
@@ -75,7 +75,7 @@ public enum Armors implements ItemEnum {
 
     LEATHER_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_LEATHER, EquipmentSlot.LEGS, settingsNormal())),
     GOLDEN_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_GOLD, EquipmentSlot.LEGS, settingsNormal())),
-    PRIMSTEEL_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    //PRIMSTEEL_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
     IRON_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_IRON, EquipmentSlot.LEGS, settingsNormal())),
     ROSEGOLD_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
     DIAMOND_HAUBERK(new ArmorItem(ArmorMats.HAUBERK_DIAMOND, EquipmentSlot.LEGS, settingsNormal())),
@@ -84,7 +84,7 @@ public enum Armors implements ItemEnum {
 
     LEATHER_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_LEATHER, EquipmentSlot.LEGS, settingsNormal())),
     GOLDEN_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_GOLD, EquipmentSlot.LEGS, settingsNormal())),
-    PRIMSTEEL_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    //PRIMSTEEL_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
     IRON_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_IRON, EquipmentSlot.LEGS, settingsNormal())),
     ROSEGOLD_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_ROSEGOLD, EquipmentSlot.LEGS, settingsNormal())),
     DIAMOND_THIGH_GUARDS(new ArmorItem(ArmorMats.RF_DIAMOND, EquipmentSlot.LEGS, settingsNormal())),
@@ -114,10 +114,10 @@ public enum Armors implements ItemEnum {
     LEATHER_LEGGINGS(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.LEGS, settingsNormal())),
     LEATHER_BOOTS(new ArmorItem(ArmorMats.LEATHER_NO_OVERLAY, EquipmentSlot.FEET, settingsNormal())),
 
-    PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
-    PRIMSTEEL_CHESTPLATE(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
-    PRIMSTEEL_LEGGINGS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
-    PRIMSTEEL_BOOTS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
+    //PRIMSTEEL_HELMET(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.HEAD, settingsNormal())),
+    //PRIMSTEEL_CHESTPLATE(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.CHEST, settingsNormal())),
+    //PRIMSTEEL_LEGGINGS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.LEGS, settingsNormal())),
+    //PRIMSTEEL_BOOTS(new ArmorItem(ArmorMats.PRIMSTEEL, EquipmentSlot.FEET, settingsNormal())),
 
     ROSEGOLD_HELMET(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.HEAD, settingsNormal())),
     ROSEGOLD_CHESTPLATE(new ArmorItem(ArmorMats.ROSEGOLD, EquipmentSlot.CHEST, settingsNormal())),

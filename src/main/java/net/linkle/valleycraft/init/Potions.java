@@ -37,7 +37,7 @@ public class Potions {
     public static Potion BAD_OMEN = registerPotion("terrible_omen_potion", new Potion(new StatusEffectInstance(StatusEffects.BAD_OMEN, 6000 * 20, 5), new StatusEffectInstance(StatusEffects.BLINDNESS, 6000 *20, 1), new StatusEffectInstance(ModEffects.SOUL_FADING, 21 *20, 1)));
 
     public static void initialize() {
-        registerRecipe(net.minecraft.potion.Potions.WATER, FoodIngredients.INFECTED_MONSTER_HEART.item, Potions.ROT_BLIGHT_POTION);
+        registerRecipe(net.minecraft.potion.Potions.WATER, FoodIngredients.MONSTER_HEART.item, Potions.ROT_BLIGHT_POTION);
 
         registerRecipe(net.minecraft.potion.Potions.AWKWARD, Items.SCUTE, net.minecraft.potion.Potions.TURTLE_MASTER);
 
@@ -73,7 +73,7 @@ public class Potions {
     }
     
     private static void registerRecipe(Potion input, Item item, Potion output) {
-        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, FoodIngredients.INFECTED_MONSTER_HEART.item, Potions.ROT_BLIGHT_POTION);
+        BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, FoodIngredients.MONSTER_HEART.item, Potions.ROT_BLIGHT_POTION);
 
         BrewingRecipeRegistryWidener.invokeRegisterPotionRecipe(net.minecraft.potion.Potions.AWKWARD, Items.SCUTE, net.minecraft.potion.Potions.TURTLE_MASTER);
 

@@ -54,8 +54,8 @@ public enum Baubles implements ItemEnum {
 
     //miniboss keepsakes
     ELDER_GUARDIAN_SPIKE_KEEPSAKE(new Item(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1))),
-    WARDEN_HEART_KEEPSAKE(new TrinketEffectItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.BLINDNESS, 1).addEffect(StatusEffects.STRENGTH, 1)),
-    LICHES_LUCKY_BONE_KEEPSAKE(new TrinketEffectItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.HUNGER, 1).addEffect(StatusEffects.REGENERATION, 0)),
+    //WARDEN_HEART_KEEPSAKE(new TrinketEffectItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.BLINDNESS, 1).addEffect(StatusEffects.STRENGTH, 1)),
+    //LICHES_LUCKY_BONE_KEEPSAKE(new TrinketEffectItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.HUNGER, 1).addEffect(StatusEffects.REGENERATION, 0)),
 
     //boss keepsakes
     NETHER_STAR_KEEPSAKE(new TrinketEffectItem(itemSettings().rarity(EPIC).group(CLOTHING).maxCount(1)).addEffect(StatusEffects.SLOW_FALLING, 0)),

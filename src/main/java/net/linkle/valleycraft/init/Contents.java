@@ -109,7 +109,7 @@ public class Contents {
         putCompost(FoodIngredients.RAW_WORM, levelHigher);
         putCompost(ItemsModded.SNAIL_SHELL, levelHigher);
         putCompost(ItemsModded.CAVE_SNAIL_SHELL, levelHigher);
-        putCompost(ItemsModded.SCULK_SNAIL_SHELL, levelHigher);
+        //putCompost(ItemsModded.SCULK_SNAIL_SHELL, levelHigher);
         putCompost(BlocksNatural.CLAM_BLOCK, levelHigh);
         putCompost(FoodRegular.COOKED_CLAM, levelHigher);
 
@@ -157,7 +157,7 @@ public class Contents {
         putCompost(FoodIngredients.RAW_TRIPE, levelLow);
         putCompost(FoodIngredients.RAW_SILVERFISH, levelLow);
         putCompost(FoodIngredients.RAW_ENDERMITE, levelLow);
-        putCompost(FoodIngredients.ZOD, levelLow);
+        //putCompost(FoodIngredients.ZOD, levelLow);
         putCompost(BlocksNatural.STALWART_SHROOM, levelVeryHigh);
         putCompost(BlocksNatural.SHIVERCAP, levelVeryHigh);
 

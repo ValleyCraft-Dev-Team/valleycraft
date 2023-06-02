@@ -1,6 +1,6 @@
 package net.linkle.valleycraft.init;
 
-import static net.linkle.valleycraft.init.BlocksNatural.JASPER;
+//import static net.linkle.valleycraft.init.BlocksNatural.JASPER;
 import static net.linkle.valleycraft.init.Groups.NON_NATURAL_BLOCKS;
 import static net.linkle.valleycraft.init.Groups.VC_TOOLS;
 import static net.linkle.valleycraft.util.BookStackVoxelShapes.*;
@@ -38,9 +38,9 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
 
     CRAFTING_MAT(new CraftingMatBlock(Block.Settings.of(Material.DECORATION).sounds(BlockSoundGroup.WOOL).breakInstantly().noCollision().nonOpaque()), toolItemSettings()),
     CRATE(new CrateBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
-    MEMORY_BOX(new MemoryBoxBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
+    //MEMORY_BOX(new MemoryBoxBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     DEEPSLATE_CHEST(new DeepslateChestBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)), itemSettings()),
-    COFFIN(new CoffinBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)), itemSettings()),
+    //COFFIN(new CoffinBlock(Block.Settings.copy(Blocks.DEEPSLATE_BRICKS)), itemSettings()),
     //MILLSTONE(new MillstoneBlock(Block.Settings.copy(Blocks.STONECUTTER).resistance(6).hardness(2.25f)), itemSettings()),
 
     /**cook_poi**/
@@ -51,23 +51,23 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     STABLEHAND_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     STABLEHAND_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     /**miner_poi**/
-    MINER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    //MINER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     /**beekeeper_poi**/
-    BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    //BEEKEEPER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     /**lumberjack_poi**/
-    LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(Blocks.STONECUTTER).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
+    //LUMBERJACK_STATION(new WoodCutterBlock(Block.Settings.copy(Blocks.STONECUTTER).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
     /**storekeeper_poi**/
-    STOREKEEPS_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    //STOREKEEPS_COUNTER(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
     /**gardener_poi**/
-    GARDENER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
+    //GARDENER_STATION(new HorizontalBlock(Block.Settings.copy(Blocks.OAK_PLANKS)), itemSettings()),
 
-    BARREL_PLANTER(new Block(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
+    //BARREL_PLANTER(new Block(Block.Settings.copy(Blocks.BARREL)), itemSettings()),
     RAIN_COLLECTOR(new RainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque()), itemSettings()),
     LEVELED_RAIN_COLLECTOR(new LeveledRainCollectorBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque())),
     //WATER_SHOWERER(new ShowerBlock(Block.Settings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(1.8f).nonOpaque().ticksRandomly()), itemSettings()),
     SPRINKLER(new SprinklerBlock(), itemSettings()),
     WATER_STRAINER(new WaterStrainerBlock(), itemSettings()),
-    WITCH_LADLE(new LadleBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().noCollision().nonOpaque()), itemSettings()),
+    //WITCH_LADLE(new LadleBlock(Block.Settings.copy(Blocks.OAK_PLANKS).breakInstantly().noCollision().nonOpaque()), itemSettings()),
 
     COUNTER_DRAWER(new CounterDrawerBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     COUNTER(new CounterBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
@@ -95,20 +95,20 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     BOOK_STACK_7(new BookStackBlock(BLOCK_SHAPE_7), itemSettings()),
     BOOK_STACK_8(new BookStackBlock(BLOCK_SHAPE_8), itemSettings()),
     //INK_WELL(new InkWellBlock(), itemSettings()),
-    PET_WATER_BOWL(new PetWaterBowlBlock(Block.Settings.copy(Blocks.TERRACOTTA).nonOpaque().breakInstantly()), itemSettings()),
-    EMPTY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
-    WATER_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    //PET_WATER_BOWL(new PetWaterBowlBlock(Block.Settings.copy(Blocks.TERRACOTTA).nonOpaque().breakInstantly()), itemSettings()),
+    //EMPTY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    //WATER_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
 
-    GLOW_BERRY_BOTTLE_BLOCK(new GlowingBottleBlock(), itemSettings()),
-    MILK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
-    HONEY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
-    INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
-    EXP_BOTTLE_BLOCK(new GlowingBottleBlock(), itemSettings()),
+    //GLOW_BERRY_BOTTLE_BLOCK(new GlowingBottleBlock(), itemSettings()),
+    //MILK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    //HONEY_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    //INK_BOTTLE_BLOCK(new BottleBlock(), itemSettings()),
+    //EXP_BOTTLE_BLOCK(new GlowingBottleBlock(), itemSettings()),
 
     WATTLE_STOOL(new StoolBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     WATTLE_CHAIR(new ChairBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
     WATTLE_TABLE(new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
-    WATTLE_TABLE_CLOTHE(new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
+    //WATTLE_TABLE_CLOTHE(new TableBlock(Block.Settings.copy(Blocks.OAK_PLANKS).nonOpaque()), itemSettings()),
 
     BLACK_CUSHION(new CushionBlock(DyeColor.BLACK), itemSettings()),
     BLUE_CUSHION(new CushionBlock(DyeColor.BLUE), itemSettings()),
@@ -138,7 +138,7 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     LEATHER_CARPET(new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).strength(0.8f)), itemSettings()),
     TREATED_LEATHER_BLOCK(new Block(Block.Settings.copy(Blocks.BROWN_WOOL).strength(0.8f)), itemSettings()),
     TREATED_LEATHER_CARPET(new CarpetBlock(Block.Settings.copy(Blocks.BROWN_CARPET).strength(0.8f)), itemSettings()),
-    MEMBRANE_BLOCK(new MembraneBlock(Block.Settings.copy(Blocks.GLASS).sounds(net.minecraft.sound.BlockSoundGroup.WOOL).strength(0.8f).breakInstantly()), itemSettings()),
+    //MEMBRANE_BLOCK(new MembraneBlock(Block.Settings.copy(Blocks.GLASS).sounds(net.minecraft.sound.BlockSoundGroup.WOOL).strength(0.8f).breakInstantly()), itemSettings()),
     /**Membrane Carpet -> 1.1?**/
 
     CURTAIN(new CurtainBlock(), itemSettings()),
@@ -152,9 +152,9 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     CAMPFIRE_POT(new CampfirePotBlock(true, 1, Block.Settings.copy(Blocks.CAULDRON).luminance(lightFromLit(15)).ticksRandomly()), itemSettings()),
     SOUL_CAMPFIRE_POT(new CampfirePotBlock(false, 2, Block.Settings.copy(Blocks.CAULDRON).luminance(lightFromLit(10)).ticksRandomly()), itemSettings()),
 
-    BONFIRE(new BonfireBlock(Block.Settings.copy(Blocks.CAMPFIRE).luminance(s -> 15).nonOpaque().ticksRandomly()), itemSettings()),
+    //BONFIRE(new BonfireBlock(Block.Settings.copy(Blocks.CAMPFIRE).luminance(s -> 15).nonOpaque().ticksRandomly()), itemSettings()),
 
-    CANDLE_BOTTLE(new CandleBottleBlock(), itemSettings()),
+    //CANDLE_BOTTLE(new CandleBottleBlock(), itemSettings()),
     
     GLOW_SPLATTER(new GlowSplatterBlock()),
 
@@ -490,21 +490,21 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     ROSEGOLD_BLOCK(new Block(Block.Settings.copy(Blocks.GOLD_BLOCK).strength(4.1f, 5.0f)), itemSettings()),
     SCULKERITE_BLOCK(new Block(Block.Settings.copy(Blocks.NETHERITE_BLOCK)), itemSettings()),
 
-    PRIMSTEEL_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
-    PRIMSTEEL_PLATE_STAIRS(new StairsBlock(PRIMSTEEL_PLATE_BLOCK.getState(), Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
-    PRIMSTEEL_PLATE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
-    PRIMSTEEL_TILED_PLATE(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
-    PRIMSTEEL_TILED_STAIRS(new StairsBlock(PRIMSTEEL_TILED_PLATE.getState(), Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
-    PRIMSTEEL_TILED_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    //PRIMSTEEL_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    //PRIMSTEEL_PLATE_STAIRS(new StairsBlock(PRIMSTEEL_PLATE_BLOCK.getState(), Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    //PRIMSTEEL_PLATE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    //PRIMSTEEL_TILED_PLATE(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    //PRIMSTEEL_TILED_STAIRS(new StairsBlock(PRIMSTEEL_TILED_PLATE.getState(), Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
+    //PRIMSTEEL_TILED_SLAB(new SlabBlock(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
 
-    PRIMSTEEL_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
-    LARGE_PRIMSTEEL_CHAIN(new LargeChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
-    PRIMSTEEL_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
-    PRIMSTEEL_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
-    PRIMSTEEL_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
-    PRIMSTEEL_DOOR(new DoorBlock(Block.Settings.copy(Blocks.IRON_DOOR)), itemSettings()),
-    PRIMSTEEL_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.IRON_TRAPDOOR)), itemSettings()),
-    PRIMSTEEL_PRESSURE_PLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)), itemSettings()),
+    //PRIMSTEEL_CHAIN(new ChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
+    //LARGE_PRIMSTEEL_CHAIN(new LargeChainBlock(Block.Settings.copy(Blocks.CHAIN)), itemSettings()),
+    //PRIMSTEEL_GRATE(new GrateBlock(Block.Settings.copy(Blocks.IRON_BLOCK).strength(4.1f, 5.0f).nonOpaque()), itemSettings()),
+    //PRIMSTEEL_LADDER(new ModLadderBlock(ModLadderBlock.settings().strength(3.0f).sounds(BlockSoundGroup.METAL)), itemSettings()),
+    //PRIMSTEEL_BARS(new PaneBlock(Block.Settings.copy(Blocks.IRON_BARS)), itemSettings()),
+    //PRIMSTEEL_DOOR(new DoorBlock(Block.Settings.copy(Blocks.IRON_DOOR)), itemSettings()),
+    //PRIMSTEEL_TRAPDOOR(new TrapdoorBlock(Block.Settings.copy(Blocks.IRON_TRAPDOOR)), itemSettings()),
+    //PRIMSTEEL_PRESSURE_PLATE(new PressurePlateBlock(ActivationRule.MOBS, Block.Settings.copy(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE)), itemSettings()),
 
     IRON_PLATE_BLOCK(new Block(Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
     IRON_PLATE_STAIRS(new StairsBlock(IRON_PLATE_BLOCK.getState(), Block.Settings.copy(Blocks.IRON_BLOCK)), itemSettings()),
@@ -568,19 +568,19 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     ERDSTONE_MOSAIC_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(1)), itemSettings()),
 
     //adventurine
-    ADVENTURINE_STAIRS(new StairsBlock(BlocksNatural.ADVENTURINE.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
-    ADVENTURINE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
-    ADVENTURINE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
-
-    POLISHED_ADVENTURINE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
-    POLISHED_ADVENTURINE_STAIRS(new StairsBlock(POLISHED_ADVENTURINE.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
-    POLISHED_ADVENTURINE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
-    POLISHED_ADVENTURINE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
-
-    ADVENTURINE_BRICKS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
-    ADVENTURINE_BRICK_STAIRS(new StairsBlock(ADVENTURINE_BRICKS.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
-    ADVENTURINE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
-    ADVENTURINE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    //ADVENTURINE_STAIRS(new StairsBlock(BlocksNatural.ADVENTURINE.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    //ADVENTURINE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    //ADVENTURINE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+//
+    //POLISHED_ADVENTURINE(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    //POLISHED_ADVENTURINE_STAIRS(new StairsBlock(POLISHED_ADVENTURINE.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    //POLISHED_ADVENTURINE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    //POLISHED_ADVENTURINE_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+//
+    //ADVENTURINE_BRICKS(new Block(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    //ADVENTURINE_BRICK_STAIRS(new StairsBlock(ADVENTURINE_BRICKS.getState(), Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    //ADVENTURINE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
+    //ADVENTURINE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.DEEPSLATE).hardness(2).resistance(2500f).luminance(s ->5)), itemSettings()),
 
     //shale
     SHALE_STAIRS(new StairsBlock(BlocksNatural.SHALE.getState(), Block.Settings.copy(Blocks.STONE).sounds(BlockSoundGroup.BASALT).resistance(6).hardness(2.25f)), itemSettings()),
@@ -626,22 +626,22 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     MARBLE_PATTERNED(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
     MARBLE_AIR(new Block(Block.Settings.copy(Blocks.CALCITE).sounds(BlockSoundGroup.CALCITE)), itemSettings()),
 
-    POLISHED_JASPER(new WarmBlock(Block.Settings.copy(Blocks.DIORITE).ticksRandomly().slipperiness(0.6f)), itemSettings()),
+    //POLISHED_JASPER(new WarmBlock(Block.Settings.copy(Blocks.DIORITE).ticksRandomly().slipperiness(0.6f)), itemSettings()),
 
     //shiverstone
-    SHIVERSTONE_STAIRS(new StairsBlock(BlocksNatural.SHIVERSTONE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    SHIVERSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    SHIVERSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-
-    SHIVERSTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
-    SHIVERSTONE_SMOOTH_STAIRS(new StairsBlock(SHIVERSTONE_SMOOTH.getState(), Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
-    SHIVERSTONE_SMOOTH_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
-    SHIVERSTONE_SMOOTH_WALL(new WallBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
-
-    SHIVERSTONE_TILES(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
-    SHIVERSTONE_TILE_STAIRS(new StairsBlock(SHIVERSTONE_TILES.getState(), Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
-    SHIVERSTONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
-    SHIVERSTONE_TILE_WALL(new WallBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    //SHIVERSTONE_STAIRS(new StairsBlock(BlocksNatural.SHIVERSTONE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    //SHIVERSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    //SHIVERSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+//
+    //SHIVERSTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    //SHIVERSTONE_SMOOTH_STAIRS(new StairsBlock(SHIVERSTONE_SMOOTH.getState(), Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    //SHIVERSTONE_SMOOTH_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    //SHIVERSTONE_SMOOTH_WALL(new WallBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+//
+    //SHIVERSTONE_TILES(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    //SHIVERSTONE_TILE_STAIRS(new StairsBlock(SHIVERSTONE_TILES.getState(), Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    //SHIVERSTONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    //SHIVERSTONE_TILE_WALL(new WallBlock(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
 
     //serpentinite
     SERPENTINITE_STAIRS(new StairsBlock(BlocksNatural.SERPENTINITE.getState(), Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
@@ -665,10 +665,10 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     SHIVERSTONE_WATER(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
 
     // polished stones
-    VERDANTINE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
-    DIABASE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
+    //VERDANTINE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    //DIABASE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
     //LIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings()),
-    GRIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
+    //GRIMESTONE_SMOOTH(new Block(Block.Settings.copy(Blocks.SMOOTH_STONE)), itemSettings()),
 
     // carmine
     CARMINE_STAIRS(new StairsBlock(BlocksNatural.CARMINE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings()),
@@ -860,38 +860,38 @@ public enum BlocksModded implements ItemEnum, BlockEnum {
     CHISELED_RED_SANDSTONE_PORTAL(new Block(Block.Settings.copy(Blocks.RED_SANDSTONE))),
 
     //scorchstone
-    SCORCHSTONE_STAIRS(new StairsBlock(BlocksNatural.SCORCHSTONE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_STAIRS(new StairsBlock(BlocksNatural.SCORCHSTONE.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
 
-    SCORCHSTONE_POLISHED(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_POLISHED_STAIRS(new StairsBlock(SCORCHSTONE_POLISHED.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_POLISHED_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_POLISHED_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_POLISHED(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_POLISHED_STAIRS(new StairsBlock(SCORCHSTONE_POLISHED.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_POLISHED_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_POLISHED_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
 
-    SCORCHSTONE_TILES(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_TILE_STAIRS(new StairsBlock(SCORCHSTONE_TILES.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_TILE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_TILES(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_TILE_STAIRS(new StairsBlock(SCORCHSTONE_TILES.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_TILE_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_TILE_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
 
-    SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_BRICK_STAIRS(new StairsBlock(SCORCHSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_BRICK_STAIRS(new StairsBlock(SCORCHSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
 
-    MOSSY_SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    MOSSY_SCORCHSTONE_BRICK_STAIRS(new StairsBlock(MOSSY_SCORCHSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    MOSSY_SCORCHSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    MOSSY_SCORCHSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //MOSSY_SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //MOSSY_SCORCHSTONE_BRICK_STAIRS(new StairsBlock(MOSSY_SCORCHSTONE_BRICKS.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //MOSSY_SCORCHSTONE_BRICK_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //MOSSY_SCORCHSTONE_BRICK_WALL(new WallBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
 
-    SCORCHSTONE_CHISELED_FACE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_CHISELED_FACE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     //CHISELED_SCORCHSTONE_BRICKS(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_FIRE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_FIRE(new Block(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_PILLAR(new PillarBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
     //SCORCHSTONE_WINDOW(new GrateBlock(Block.Settings.copy(Blocks.STONE).nonOpaque()), itemSettings().fireproof()),
-    SCORCHSTONE_MOSAIC(new PillarBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_MOSAIC_STAIRS(new StairsBlock(SCORCHSTONE_MOSAIC.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
-    SCORCHSTONE_MOSAIC_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_MOSAIC(new PillarBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_MOSAIC_STAIRS(new StairsBlock(SCORCHSTONE_MOSAIC.getState(), Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
+    //SCORCHSTONE_MOSAIC_SLAB(new SlabBlock(Block.Settings.copy(Blocks.STONE)), itemSettings().fireproof()),
 
     //volc
     //VOLCANIC_STONE_STAIRS(new StairsBlock(VOLCANIC_STONE.getState(), Block.Settings.copy(Blocks.TUFF)), itemSettings()),

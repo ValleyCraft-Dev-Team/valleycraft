@@ -68,11 +68,11 @@ public enum Entities implements EntityEnum {
     // Snails
     SNAIL(createMob(SpawnGroup.AMBIENT, SnailEntity::new).dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(5)),
     CAVE_SNAIL(createMob(SpawnGroup.AMBIENT, CaveSnailEntity::new).dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(5)),
-    SCULK_SNAIL(createMob(SpawnGroup.AMBIENT, SculkSnailEntity::new).dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(5)),
+    //SCULK_SNAIL(createMob(SpawnGroup.AMBIENT, SculkSnailEntity::new).dimensions(new EntityDimensions(0.5F, 0.4F, true)).trackRangeChunks(5)),
     
     // fishes
-    ZOD(createMob(SpawnGroup.MONSTER, ZodEntity::new).trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
-            .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, UndeadFishEntity::canSpawn)),
+    //ZOD(createMob(SpawnGroup.MONSTER, ZodEntity::new).trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
+    //        .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, UndeadFishEntity::canSpawn)),
     
     BONEFIN(createMob(SpawnGroup.MONSTER, BonefinEntity::new).trackRangeChunks(5).dimensions(EntityDimensions.fixed(0.5f, 0.3f))
             .spawnRestriction(SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, BonefinEntity::canSpawn)),
@@ -99,7 +99,7 @@ public enum Entities implements EntityEnum {
     public static void initialize() {
         registerAttribute(SNAIL, SnailEntity.createSnailAttributes());
         registerAttribute(CAVE_SNAIL, CaveSnailEntity.createSnailAttributes());
-        registerAttribute(SCULK_SNAIL, SculkSnailEntity.createSnailAttributes());
+        //registerAttribute(SCULK_SNAIL, SculkSnailEntity.createSnailAttributes());
         
         registerAttribute(PUPKIN, PupkinEntity.createPupkinAttributes());
         registerAttribute(DAIRY_COW, DairyCowEntity.createCowAttributes());
@@ -110,7 +110,7 @@ public enum Entities implements EntityEnum {
         registerAttribute(RETRIEVER, DogEntity.createDogAttributes());
         registerAttribute(BROWN_BEAR, BearEntity.createBearAttributes());
         
-        registerAttribute(ZOD, UndeadFishEntity.createUndeadFishAttributes());
+        //registerAttribute(ZOD, UndeadFishEntity.createUndeadFishAttributes());
         registerAttribute(BONEFIN, UndeadFishEntity.createUndeadFishAttributes());
         
         registerAttribute(STONEROLLER_MINNOW, FishEntity.createFishAttributes());
@@ -128,7 +128,7 @@ public enum Entities implements EntityEnum {
         
         registerRenderer(SNAIL, SnailEntityRenderer.create("snail"));
         registerRenderer(CAVE_SNAIL, SnailEntityRenderer.create("cave_snail"));
-        registerRenderer(SCULK_SNAIL, SnailEntityRenderer.create("sculk_snail"));
+        //registerRenderer(SCULK_SNAIL, SnailEntityRenderer.create("sculk_snail"));
         
         registerRenderer(PUPKIN, PupkinEntityRenderer::new);
         registerRenderer(DAIRY_COW, CowRenderer.create("dairy_cow"));
@@ -139,7 +139,7 @@ public enum Entities implements EntityEnum {
         registerRenderer(RETRIEVER, DogRenderer.create("retriever"));
         registerRenderer(BROWN_BEAR, BrownBearRenderer::new);
         
-        registerRenderer(ZOD, CodEntityRenderer.create("zod"));
+        //registerRenderer(ZOD, CodEntityRenderer.create("zod"));
         registerRenderer(ABYSSWATCHER, CodEntityRenderer.create("abysswatcher"));
         registerRenderer(BONEFIN, SalmonEntityRenderer.create("bonefin"));
         registerRenderer(STONEROLLER_MINNOW, CodEntityRenderer.create("minnow"));

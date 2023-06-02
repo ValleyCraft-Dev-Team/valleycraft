@@ -31,7 +31,7 @@ class ColorProvider {
         blockColor((state, world, pos, tintIndex) -> {
             if (world == null || pos == null) return -1;
             return BiomeColors.getWaterColor(world, pos);
-        }, BlocksModded.LEVELED_RAIN_COLLECTOR, BlocksModded.PET_WATER_BOWL);
+        }, BlocksModded.LEVELED_RAIN_COLLECTOR);
         
         /*
         blockColor((state, world, pos, tintIndex) -> {

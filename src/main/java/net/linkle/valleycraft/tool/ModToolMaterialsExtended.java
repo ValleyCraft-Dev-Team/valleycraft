@@ -12,9 +12,9 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterialsExtended implements ToolMaterial {
 
-    PRIMSTEEL_EXTENDED(2, 285, 5.0F, 1.5F, 18, () -> {
-        return Ingredient.ofItems(ItemsModded.PRIMSTEEL_INGOT);
-    }),
+    //PRIMSTEEL_EXTENDED(2, 285, 5.0F, 1.5F, 18, () -> {
+    //    return Ingredient.ofItems(ItemsModded.PRIMSTEEL_INGOT);
+    //}),
     ROSEGOLD_EXTENDED(1, 660, 7.0F, 2.0F, 15, () -> {
         return Ingredient.ofItems(ItemsModded.ROSEGOLD_INGOT);
     }),

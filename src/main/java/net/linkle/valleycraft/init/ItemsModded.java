@@ -76,7 +76,7 @@ public enum ItemsModded implements ItemEnum {
     SLIME_BLOB(new Item(itemSettings())),
     SNAIL_SHELL(new Item(itemSettings())),
     CAVE_SNAIL_SHELL(new Item(itemSettings())),
-    SCULK_SNAIL_SHELL(new Item(itemSettings())),
+    //SCULK_SNAIL_SHELL(new Item(itemSettings())),
 
     HANDLE(new Item(itemSettings())),
     STURDY_HANDLE(new Item(itemSettings())),
@@ -106,10 +106,10 @@ public enum ItemsModded implements ItemEnum {
     COPPER_NUGGET(new Item(itemSettings())),
     COPPER_SCRAP(new Item(itemSettings())),
     GOLD_SCRAP(new Item(itemSettings())),
-    PRIMSTEEL_RAW(new Item(itemSettings())),
-    PRIMSTEEL_NUGGET(new Item(itemSettings())),
-    PRIMSTEEL_SCRAP(new Item(itemSettings())),
-    PRIMSTEEL_INGOT(new Item(itemSettings())),
+    //PRIMSTEEL_RAW(new Item(itemSettings())),
+    //PRIMSTEEL_NUGGET(new Item(itemSettings())),
+    //PRIMSTEEL_SCRAP(new Item(itemSettings())),
+    //PRIMSTEEL_INGOT(new Item(itemSettings())),
     IRON_SCRAP(new Item(itemSettings())),
     BRASIUM_INGOT(new Item(itemSettings())),
     ROSEGOLD_INGOT(new Item(itemSettings())),
@@ -126,8 +126,8 @@ public enum ItemsModded implements ItemEnum {
 
     GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(64))),
     ELDER_GUARDIAN_SPIKE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.RARE).maxCount(64))),
-    LICHES_IRON_BONE_AMULET(new Item(itemSettings().rarity(Rarity.EPIC))),
-    WARDEN_ANTLER(new Item(itemSettings().rarity(Rarity.EPIC))),
+    //LICHES_IRON_BONE_AMULET(new Item(itemSettings().rarity(Rarity.EPIC))),
+    //WARDEN_ANTLER(new Item(itemSettings().rarity(Rarity.EPIC))),
 
     TOTEM_OF_TRADE(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),
     TOTEM_OF_PACIFISM(new Item(itemSettings().group(VC_ITEMS).rarity(Rarity.UNCOMMON).maxCount(1))),
@@ -153,7 +153,7 @@ public enum ItemsModded implements ItemEnum {
     SARDINE_SPAWN_EGG(new SpawnEggItem(Entities.SARDINE.type(), 0x2E445B, 0xA1B1CC, itemSettings())),
     STONEROLLER_MINNOW_SPAWN_EGG(new SpawnEggItem(Entities.STONEROLLER_MINNOW.type(), 0x608C85, 0xCCCCCC, itemSettings())),
     BONEFIN_SPAWN_EGG(new SpawnEggItem(Entities.BONEFIN.type(), 0xE5E0CE, 0xBFB799, itemSettings())),
-    ZOD_SPAWN_EGG(new SpawnEggItem(Entities.ZOD.type(), 0x557571, 0xCCB599, itemSettings())),
+    //ZOD_SPAWN_EGG(new SpawnEggItem(Entities.ZOD.type(), 0x557571, 0xCCB599, itemSettings())),
     PUPKIN_SPAWN_EGG(new SpawnEggItem(Entities.PUPKIN.type(), 0xe38a1d, 0x441300, itemSettings())),
     DAIRY_COW_SPAWN_EGG(new SpawnEggItem(Entities.DAIRY_COW.type(), 0xf1f1f1, 0x282828, itemSettings())),
     CHICKEN_SPAWN_EGG(new SpawnEggItem(Entities.CHICKEN.type(), 0xac5d31, 0xc19343, itemSettings())),
@@ -164,7 +164,7 @@ public enum ItemsModded implements ItemEnum {
     BROWN_BEAR_SPAWN_EGG(new SpawnEggItem(Entities.BROWN_BEAR.type(), 0x3e2912, 0x291a0c, itemSettings())),
     SNAIL_SPAWN_EGG(new SpawnEggItem(Entities.SNAIL.type(), 0xf1da85, 0xb88d55, itemSettings())),
     CAVE_SNAIL_SPAWN_EGG(new SpawnEggItem(Entities.CAVE_SNAIL.type(), 0xa08d71, 0x735450, itemSettings())),
-    SCULK_SNAIL_SPAWN_EGG(new SpawnEggItem(Entities.SCULK_SNAIL.type(), 0x009295, 0x0c232c, itemSettings())),
+    //SCULK_SNAIL_SPAWN_EGG(new SpawnEggItem(Entities.SCULK_SNAIL.type(), 0x009295, 0x0c232c, itemSettings())),
     LETTER_ICON(new Item(hiddenItemSettings()));
 
     public static void initialize() {

@@ -32,12 +32,12 @@ public class TrinketRenderers {
         register(new BodyRenderer("dragon_tooth_necklace"), Baubles.DRAGON_TOOTH_KEEPSAKE);
 
         //misc
-        register(new BodyRenderer("liches_lucky_bone_brooch"), ItemsModded.LICHES_IRON_BONE_AMULET);
+        //register(new BodyRenderer("liches_lucky_bone_brooch"), ItemsModded.LICHES_IRON_BONE_AMULET);
 
         //strange base
         register(new BodyRenderer("elder_guardian_spike_talisman"), Baubles.ELDER_GUARDIAN_SPIKE_KEEPSAKE);
-        register(new BodyRenderer("warden_heart_necklace"), Baubles.WARDEN_HEART_KEEPSAKE);
-        register(new BodyRenderer("liches_lucky_bone_talisman"), Baubles.LICHES_LUCKY_BONE_KEEPSAKE);
+        //register(new BodyRenderer("warden_heart_necklace"), Baubles.WARDEN_HEART_KEEPSAKE);
+        //register(new BodyRenderer("liches_lucky_bone_talisman"), Baubles.LICHES_LUCKY_BONE_KEEPSAKE);
         register(new BodyRenderer("nether_star_keepsake"), Baubles.NETHER_STAR_KEEPSAKE);
         register(new BodyRenderer("ender_dragon_talisman"), Baubles.ENDER_DRAGON_TALISMAN);
         

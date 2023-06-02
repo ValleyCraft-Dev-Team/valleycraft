@@ -83,7 +83,7 @@ public class ModBiomeFeatures extends DefaultBiomeFeatures {
     }
 
     public static void addWilderDeepDarkMobs(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        addDeepDarkRegionSnails(builder);
+        //addDeepDarkRegionSnails(builder);
     }
 
     /**region categorized mob spawns**/
@@ -98,16 +98,16 @@ public class ModBiomeFeatures extends DefaultBiomeFeatures {
 
     public static void addHostileCaveRegionFish(net.minecraft.world.biome.SpawnSettings.Builder builder) {
         addBoneFins(builder);
-        addZods(builder);
+        //addZods(builder);
     }
 
     public static void addPassiveCaveRegionFish(net.minecraft.world.biome.SpawnSettings.Builder builder) {
         addAbyssWatchers(builder);
     }
 
-    public static void addDeepDarkRegionSnails(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        addSculkSnails(builder);
-    }
+    //public static void addDeepDarkRegionSnails(net.minecraft.world.biome.SpawnSettings.Builder builder) {
+        //addSculkSnails(builder);
+    //}
 
     /**individual mob spawns**/
 
@@ -144,9 +144,9 @@ public class ModBiomeFeatures extends DefaultBiomeFeatures {
         builder.spawn(SpawnGroup.AMBIENT, new SpawnSettings.SpawnEntry(Entities.CAVE_SNAIL.type(), 10, 8, 8));
     }
 
-    public static void addSculkSnails(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.AMBIENT, new SpawnSettings.SpawnEntry(Entities.SCULK_SNAIL.type(), 10, 8, 8));
-    }
+    //public static void addSculkSnails(net.minecraft.world.biome.SpawnSettings.Builder builder) {
+        //builder.spawn(SpawnGroup.AMBIENT, new SpawnSettings.SpawnEntry(Entities.SCULK_SNAIL.type(), 10, 8, 8));
+    //}
 
     /** fish **/
     public static void addSardines(net.minecraft.world.biome.SpawnSettings.Builder builder) {
@@ -186,7 +186,7 @@ public class ModBiomeFeatures extends DefaultBiomeFeatures {
         builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(Entities.BONEFIN.type(), 100, 4, 4));
     }
 
-    public static void addZods(net.minecraft.world.biome.SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(Entities.ZOD.type(), 100, 4, 4));
-    }
+    //public static void addZods(net.minecraft.world.biome.SpawnSettings.Builder builder) {
+        //builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(Entities.ZOD.type(), 100, 4, 4));
+    //}
 }

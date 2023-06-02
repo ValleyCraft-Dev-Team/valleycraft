@@ -20,12 +20,12 @@ public enum BlockEntities implements BlockEntityEnum {
 
     CRATE(CrateBlockEntity::new, BlocksModded.CRATE),
     DEEPSLATE_CHEST(DeepslateChestBlockEntity::new, BlocksModded.DEEPSLATE_CHEST),
-    COFFIN(CoffinBlockEntity::new, BlocksModded.COFFIN),
+    //COFFIN(CoffinBlockEntity::new, BlocksModded.COFFIN),
 
     COUNTER(CounterBlockEntity::new, BlocksModded.COUNTER),
     CABINET(CabinetBlockEntity::new, BlocksModded.CABINET),
-    STOVE(StoveBlockEntity::new, BlocksModded.BRICK_STOVE),
-    MEMORYBOX(MemoryBoxEntity::new, BlocksModded.MEMORY_BOX);
+    STOVE(StoveBlockEntity::new, BlocksModded.BRICK_STOVE);
+    //MEMORYBOX(MemoryBoxEntity::new, BlocksModded.MEMORY_BOX);
 
     public static void initialize() {
     }

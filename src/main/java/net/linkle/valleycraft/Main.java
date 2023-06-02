@@ -30,7 +30,6 @@ public class Main implements ModInitializer {
 		Fishing.initialize();
 			//initializes fish bucket items
 		Tools.initialize();
-		Clothing.initialize();
 		Armors.initialize();
 
 	    Groups.initialize();
@@ -47,8 +46,6 @@ public class Main implements ModInitializer {
 		
 		Particles.initialize();
 		Sounds.initialize();
-		Music.initialize();
-			//currently unused, ancient disk is being added to Legendarium instead probably
 		Entities.initialize();
 		ModFluidTags.initialize();
 		ModLootTables.initialize();

@@ -37,7 +37,7 @@ public class BombBagItem extends Item {
             }
 
             inventory.insertStack(new ItemStack(Items.TNT, MathHelper.nextInt(world.random, 3, 6)));
-            inventory.insertStack(new ItemStack(Tools.FLINT_AND_PRIMSTEEL, 1));
+            inventory.insertStack(new ItemStack(Items.FLINT_AND_STEEL, 1));
             return stack;
         }
 
