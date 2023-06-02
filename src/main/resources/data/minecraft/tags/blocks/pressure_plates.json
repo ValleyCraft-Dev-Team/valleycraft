@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:primsteel_pressure_plate",
     "valleycraft:deepslate_pressure_plate",
     "valleycraft:shale_pressure_plate"
   ]

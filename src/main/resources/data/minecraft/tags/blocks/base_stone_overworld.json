@@ -12,14 +12,10 @@
     "valleycraft:mossy_stone",
     "valleycraft:diabase",
     "valleycraft:serpentinite",
-    "valleycraft:grimestone",
-    "valleycraft:shiverstone",
-    "valleycraft:verdantine",
     "valleycraft:marble",
     "valleycraft:rough_sandstone",
     "valleycraft:rough_red_sandstone",
     "valleycraft:stratified_sandstone",
-    "valleycraft:stratified_red_sandstone",
-    "valleycraft:scorchstone"
+    "valleycraft:stratified_red_sandstone"
   ]
 }

@@ -2,9 +2,6 @@
   "replace": false,
   "values": [
     "valleycraft:chef_hat",
-    "valleycraft:chef_apron",
-    "valleycraft:bikini_masc_repaired",
-    "valleycraft:bikini_repaired",
-    "valleycraft:bikini_neutral_repaired"
+    "valleycraft:chef_apron"
   ]
 }

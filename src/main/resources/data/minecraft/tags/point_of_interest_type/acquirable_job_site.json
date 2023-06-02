@@ -2,12 +2,6 @@
   "replace": false,
   "values": [
     "valleycraft:stablehand_poi",
-    "valleycraft:innkeeper_poi",
-    "valleycraft:lumberjack_poi",
-    "valleycraft:cook_poi",
-    "valleycraft:beekeeper_poi",
-    "valleycraft:miner_poi",
-    "valleycraft:storekeeper_poi",
-    "valleycraft:gardener_poi"
+    "valleycraft:innkeeper_poi"
   ]
 }

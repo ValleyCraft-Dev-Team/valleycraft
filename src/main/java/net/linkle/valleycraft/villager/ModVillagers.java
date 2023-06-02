@@ -23,9 +23,9 @@ public class ModVillagers {
     public static final VillagerProfession STABLEHAND = registerPro("stablehand", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY,
             new Identifier(Main.ID, "stablehand_poi")));
 
-    //public static final PointOfInterestType INNKEEPER_POI = registerPOI("innkeeper_poi", BlocksModded.KEG.block);
-    //public static final VillagerProfession INNKEEPER = registerPro("innkeeper", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "innkeeper_poi")));
-//
+    public static final PointOfInterestType INNKEEPER_POI = registerPOI("innkeeper_poi", BlocksModded.KEG.block);
+    public static final VillagerProfession INNKEEPER = registerPro("innkeeper", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "innkeeper_poi")));
+
     ////can generate alone
     //public static final PointOfInterestType LUMBERJACK_POI = registerPOI("lumberjack_poi", BlocksModded.LUMBERJACK_STATION.block);
     //public static final VillagerProfession LUMBERJACK = registerPro("lumberjack", RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Main.ID, "lumberjack_poi")));

@@ -96,8 +96,8 @@ public enum FoodIngredients implements ItemEnum {
     //INFECTED_MONSTER_LIVER(new NegativeFoodItem_3_Effects(settings(), 3, Nourishment.LOW, StatusEffects.NAUSEA, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT).hideTooltip()),
     //ZOD(new NegativeFoodItem_3_Effects(settings().group(Groups.INGREDIENTS), 5, Nourishment.POOR, StatusEffects.HUNGER, ModEffects.ROT_BLIGHT, StatusEffects.NAUSEA).hideTooltip()),
     RAW_ENDERMAN_EYE(new Tier1NormalNoText(settings(), 3, Nourishment.LOW, StatusEffects.WEAKNESS).hideTooltip()),
-    //ENDER_DRAGON_EYE(new EnderDragonEyeFoodItem(settings().rarity(Rarity.EPIC).fireproof(), 3, Nourishment.LOW, StatusEffects.POISON, StatusEffects.BLINDNESS, ModEffects.ROT_BLIGHT).hideTooltip()),
-    //ENDER_DRAGON_GLAND(new NegativeFoodItem_3_Effects(settings().rarity(Rarity.EPIC).fireproof(), 6, Nourishment.LOW, StatusEffects.BLINDNESS, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
+    ENDER_DRAGON_EYE(new EnderDragonEyeFoodItem(settings().rarity(Rarity.EPIC).fireproof(), 3, Nourishment.LOW, StatusEffects.POISON, StatusEffects.BLINDNESS, ModEffects.ROT_BLIGHT).hideTooltip()),
+    ENDER_DRAGON_GLAND(new NegativeFoodItem_3_Effects(settings().rarity(Rarity.EPIC).fireproof(), 6, Nourishment.LOW, StatusEffects.BLINDNESS, StatusEffects.HUNGER, StatusEffects.NAUSEA).hideTooltip()),
     RAW_ENDERMITE(new EndermiteFoodItem(settings(), 3, Nourishment.POOR, StatusEffects.POISON, StatusEffects.BLINDNESS, StatusEffects.NAUSEA).hideTooltip()),
 
     HARDTACK_DOUGH(new FoodItem(settings(), 1, Nourishment.POOR)),

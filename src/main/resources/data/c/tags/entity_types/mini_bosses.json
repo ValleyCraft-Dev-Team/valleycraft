@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:lich",
     "minecraft:warden",
     "minecraft:elder_guardian"
   ]

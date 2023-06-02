@@ -924,15 +924,15 @@ public class ModLootTables {
         builder.with(ItemEntry.builder(FoodIngredients.MONSTER_LIVER).weight(5)
             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
         );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
-            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2), false))
-        );
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
+        //    .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2), false))
+        //);
         LootTableHelper.appendLoot(EntityType.HOGLIN.getLootTableId(), builder);
         
         // zombie horse
@@ -946,15 +946,15 @@ public class ModLootTables {
         builder.with(ItemEntry.builder(FoodIngredients.MONSTER_LIVER).weight(5)
             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
         );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
-            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2), false))
-        );
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
+        //    .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 2), false))
+        //);
         LootTableHelper.appendLoot(EntityType.ZOMBIE_HORSE.getLootTableId(), builder);
         
         builder = LootBuilder.create().rolls(0, 1);
@@ -976,15 +976,15 @@ public class ModLootTables {
         builder.with(ItemEntry.builder(FoodIngredients.MONSTER_LIVER).weight(5)
             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
         );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
-            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
-        );
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
+        //    .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+        //);
         builder.with(ItemEntry.builder(Items.DIRT).weight(5)
             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
             .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
@@ -1029,15 +1029,15 @@ public class ModLootTables {
         builder.with(ItemEntry.builder(FoodIngredients.MONSTER_LIVER).weight(5)
             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
         );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
-            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
-        );
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
+        //    .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+        //);
         builder.with(ItemEntry.builder(Items.DIRT).weight(5)
             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
             .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
@@ -1088,15 +1088,15 @@ public class ModLootTables {
         builder.with(ItemEntry.builder(FoodIngredients.MONSTER_LIVER).weight(5)
             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
         );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
-            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
-        );
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
+        //    .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+        //);
         builder.with(ItemEntry.builder(ItemsModded.BEAST_BONE).weight(8)
             .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))   
         );
@@ -1119,10 +1119,10 @@ public class ModLootTables {
         builder.conditionally(RandomChanceWithLootingLootCondition.builder(0.3f, 0.01f));
         LootTableHelper.appendLoot(EntityType.ZOMBIFIED_PIGLIN.getLootTableId(), builder);
         
-        builder = LootBuilder.create().rolls(1);
-        builder.rolls(1).with(ItemEntry.builder(ItemsModded.WARDEN_ANTLER)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2)))
-        );
+        //builder = LootBuilder.create().rolls(1);
+        //builder.rolls(1).with(ItemEntry.builder(ItemsModded.WARDEN_ANTLER)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(2)))
+        //);
         
         // warden
         LootTableHelper.appendLoot(EntityType.WARDEN.getLootTableId(), builder);
@@ -1153,11 +1153,11 @@ public class ModLootTables {
         builder.with(ItemEntry.builder(FoodIngredients.RAW_ENDERMITE)
             .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(8, 24)))
         );
-        LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder);
-        builder = LootBuilder.create().rolls(1);
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
-        );
+        //LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder);
+        //builder = LootBuilder.create().rolls(1);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
+        //);
         LootTableHelper.appendLoot(EntityType.ENDER_DRAGON.getLootTableId(), builder);
         builder = LootBuilder.create().rolls(1);
         builder.with(ItemEntry.builder(ItemsModded.LIFE_GEM)
@@ -1205,7 +1205,6 @@ public class ModLootTables {
         // amethyst_cluster
         builder = LootBuilder.create().rolls(1);
         builder.with(Items.AMETHYST_CLUSTER);
-        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().items(Tools.ANTHROPOLOGISTS_ROCK_PICK)));
         builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
         LootTableHelper.appendLoot(Blocks.AMETHYST_CLUSTER.getLootTableId(), builder);
         
@@ -1315,14 +1314,12 @@ public class ModLootTables {
         // large amethyst bud
         builder = LootBuilder.create().rolls(1);
         builder.with(Items.LARGE_AMETHYST_BUD);
-        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().items(Tools.ANTHROPOLOGISTS_ROCK_PICK)));
         builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
         LootTableHelper.appendLoot(Blocks.LARGE_AMETHYST_BUD.getLootTableId(), builder);
         
         // medium amethyst bud
         builder = LootBuilder.create().rolls(1);
         builder.with(Items.MEDIUM_AMETHYST_BUD);
-        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().items(Tools.ANTHROPOLOGISTS_ROCK_PICK)));
         builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
         LootTableHelper.appendLoot(Blocks.MEDIUM_AMETHYST_BUD.getLootTableId(), builder);
         
@@ -1336,7 +1333,6 @@ public class ModLootTables {
         // small amethyst bud
         builder = LootBuilder.create().rolls(1);
         builder.with(Items.SMALL_AMETHYST_BUD);
-        builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().items(Tools.ANTHROPOLOGISTS_ROCK_PICK)));
         builder.conditionally(MatchToolLootCondition.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, IntRange.atLeast(1)))).invert());
         LootTableHelper.appendLoot(Blocks.SMALL_AMETHYST_BUD.getLootTableId(), builder);
         
@@ -1403,15 +1399,15 @@ public class ModLootTables {
         builder.with(ItemEntry.builder(FoodIngredients.MONSTER_LIVER).weight(5)
             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
         );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
-            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
-        );
-        builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
-            .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
-        );
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_LIVER).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_HEART).weight(3)
+        //    .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1), false))
+        //);
+        //builder.with(ItemEntry.builder(FoodIngredients.INFECTED_MONSTER_GUTS).weight(5)
+        //    .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1), false))
+        //);
     }
     
     // common loots end

@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "valleycraft:infected_monster_guts",
-    "valleycraft:infected_monster_liver",
     "valleycraft:raw_endermite",
     "valleycraft:ender_dragon_gland",
     "valleycraft:ender_dragon_eye"

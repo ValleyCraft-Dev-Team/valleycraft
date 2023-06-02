@@ -193,9 +193,9 @@ public class GensModded {
         List<PlacementModifier> list;
         var ores = GenerationStep.Feature.UNDERGROUND_ORES;
         
-        config = createOreConfig("primsteel_rich_dirt", BASE_STONE_OVERWORLD, 33, BlocksNatural.IRON_RICH_DIRT.getState());
-        placed = registerOre(config, modifiersWithCount(14, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), ores, placed.getKey().get());
+        //config = createOreConfig("primsteel_rich_dirt", BASE_STONE_OVERWORLD, 33, BlocksNatural.IRON_RICH_DIRT.getState());
+        //placed = registerOre(config, modifiersWithCount(14, HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.getTop())));
+        //BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), ores, placed.getKey().get());
         
         config = createOreConfig("mossy stone", BASE_STONE_OVERWORLD, 33, BlocksNatural.MOSSY_STONE.getState());
         placed = registerOre(config, modifiersWithCount(7, HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.getTop())));

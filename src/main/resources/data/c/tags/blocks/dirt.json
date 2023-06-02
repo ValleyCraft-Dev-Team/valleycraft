@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "valleycraft:dry_dirt",
-    "valleycraft:iron_rich_dirt",
     "minecraft:dirt",
     "minecraft:coarse_dirt",
     "minecraft:rooted_dirt",
