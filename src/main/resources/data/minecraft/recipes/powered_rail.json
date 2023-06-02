@@ -7,13 +7,16 @@
     "R": {
       "item": "minecraft:redstone"
     },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
     "X": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:iron_ingot"
     }
   },
   "pattern": [
     "X#X",
-    "XRX",
+    "CRC",
     "X#X"
   ],
   "result": {
