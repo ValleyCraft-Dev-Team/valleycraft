@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "valleycraft:shiverstone_smooth_stairs"
-  },
-  "result": "valleycraft:shiverstone_smooth"
-}

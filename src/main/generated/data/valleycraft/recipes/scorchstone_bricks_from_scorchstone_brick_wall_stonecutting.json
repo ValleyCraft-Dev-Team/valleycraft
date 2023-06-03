@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "valleycraft:scorchstone_brick_wall"
-  },
-  "result": "valleycraft:scorchstone_bricks"
-}

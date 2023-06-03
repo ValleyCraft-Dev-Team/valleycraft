@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "valleycraft:block/mossy_scorchstone_bricks",
-    "side": "valleycraft:block/mossy_scorchstone_bricks",
-    "top": "valleycraft:block/mossy_scorchstone_bricks"
-  }
-}

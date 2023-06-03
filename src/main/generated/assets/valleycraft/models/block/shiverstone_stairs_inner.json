@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "valleycraft:block/shiverstone",
-    "side": "valleycraft:block/shiverstone",
-    "top": "valleycraft:block/shiverstone"
-  }
-}

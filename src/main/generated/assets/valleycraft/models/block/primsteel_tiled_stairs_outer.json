@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "valleycraft:block/primsteel_tiled_plate",
-    "side": "valleycraft:block/primsteel_tiled_plate",
-    "top": "valleycraft:block/primsteel_tiled_plate"
-  }
-}

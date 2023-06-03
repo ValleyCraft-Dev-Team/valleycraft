@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "valleycraft:block/adventurine",
-    "side": "valleycraft:block/adventurine",
-    "top": "valleycraft:block/adventurine"
-  }
-}

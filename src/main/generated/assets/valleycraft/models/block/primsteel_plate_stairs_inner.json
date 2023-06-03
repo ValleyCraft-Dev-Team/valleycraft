@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "valleycraft:block/primsteel_plate_block",
-    "side": "valleycraft:block/primsteel_plate_block",
-    "top": "valleycraft:block/primsteel_plate_block"
-  }
-}

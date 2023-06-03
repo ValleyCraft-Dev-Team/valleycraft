@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "valleycraft:block/primsteel_tiled_plate",
-    "side": "valleycraft:block/primsteel_tiled_plate",
-    "top": "valleycraft:block/primsteel_tiled_plate"
-  }
-}

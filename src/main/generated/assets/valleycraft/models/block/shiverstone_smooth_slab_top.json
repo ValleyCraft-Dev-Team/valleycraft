@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "valleycraft:block/shiverstone_smooth",
-    "side": "valleycraft:block/shiverstone_smooth",
-    "top": "valleycraft:block/shiverstone_smooth"
-  }
-}

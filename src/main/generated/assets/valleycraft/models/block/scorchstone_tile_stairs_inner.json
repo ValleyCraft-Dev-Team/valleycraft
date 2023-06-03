@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "valleycraft:block/scorchstone_tiles",
-    "side": "valleycraft:block/scorchstone_tiles",
-    "top": "valleycraft:block/scorchstone_tiles"
-  }
-}

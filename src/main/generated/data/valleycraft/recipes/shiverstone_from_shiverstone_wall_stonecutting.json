@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "valleycraft:shiverstone_wall"
-  },
-  "result": "valleycraft:shiverstone"
-}
